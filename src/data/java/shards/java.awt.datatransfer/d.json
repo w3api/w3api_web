@@ -1,0 +1,264 @@
+{
+  "java.awt.datatransfer/DataFlavor": {
+    "id": "java.awt.datatransfer.DataFlavor",
+    "name": "DataFlavor",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.916849",
+    "updatedDate": "2026-03-08T21:40:20.916849",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "DataFlavor"
+    ],
+    "attributes": [
+      "allHtmlFlavor",
+      "fragmentHtmlFlavor",
+      "imageFlavor",
+      "javaFileListFlavor",
+      "javaJVMLocalObjectMimeType",
+      "javaRemoteObjectMimeType",
+      "javaSerializedObjectMimeType",
+      "plainTextFlavor",
+      "selectionHtmlFlavor",
+      "stringFlavor"
+    ],
+    "methods": [
+      "clone",
+      "equals",
+      "getDefaultRepresentationClass",
+      "getDefaultRepresentationClassAsString",
+      "getHumanPresentableName",
+      "getMimeType",
+      "getParameter",
+      "getPrimaryType",
+      "getReaderForText",
+      "getRepresentationClass",
+      "getSubType",
+      "getTextPlainUnicodeFlavor",
+      "hashCode",
+      "isFlavorJavaFileListType",
+      "isFlavorRemoteObjectType",
+      "isFlavorSerializedObjectType",
+      "isFlavorTextType",
+      "isMimeTypeEqual",
+      "isMimeTypeSerializedObject",
+      "isRepresentationClassByteBuffer",
+      "isRepresentationClassCharBuffer",
+      "isRepresentationClassInputStream",
+      "isRepresentationClassReader",
+      "isRepresentationClassRemote",
+      "isRepresentationClassSerializable",
+      "match",
+      "normalizeMimeType",
+      "normalizeMimeTypeParameter",
+      "readExternal",
+      "selectBestTextFlavor",
+      "setHumanPresentableName",
+      "toString",
+      "tryToLoadClass",
+      "writeExternal"
+    ]
+  },
+  "java.awt.datatransfer/DataFlavor/DataFlavor": {
+    "id": "java.awt.datatransfer.DataFlavor.DataFlavor",
+    "name": "DataFlavor",
+    "type": "constructor",
+    "parent": "DataFlavor",
+    "signatures": [
+      "public DataFlavor()",
+      "public DataFlavor(Class<?> representationClass, String humanPresentableName)",
+      "public DataFlavor(String mimeType)",
+      "public DataFlavor(String mimeType, String humanPresentableName)",
+      "public DataFlavor(String mimeType, String humanPresentableName, ClassLoader classLoader)"
+    ],
+    "signature_hash": "32c554c2a8c010974e5a8dbad7e3aef56237a78bec22ca2637aa47c0e926866e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html",
+    "parameters": [
+      {
+        "name": "representationClass",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<?>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "humanPresentableName",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "mimeType",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "classLoader",
+        "has_default": false,
+        "default_value": null,
+        "type": "ClassLoader",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Constructs a newDataFlavor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a newDataFlavor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.916895",
+    "updatedDate": "2026-03-08T21:40:20.916895",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.datatransfer/SystemFlavorMap/decodeDataFlavor": {
+    "id": "java.awt.datatransfer.SystemFlavorMap.decodeDataFlavor",
+    "name": "decodeDataFlavor",
+    "type": "method",
+    "parent": "SystemFlavorMap",
+    "signatures": [
+      "public static DataFlavor decodeDataFlavor(String nat)"
+    ],
+    "signature_hash": "f2c1ea5eb5671586e6b74b2d24b47aa916ed4a716ea9b94e64c8cd0a3926be03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html",
+    "parameters": [
+      {
+        "name": "nat",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static DataFlavor",
+    "exceptions": [
+      {
+        "name": "ClassNotFoundException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Decodes aStringnative for use as aDataFlavor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decodes aStringnative for use as aDataFlavor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.917924",
+    "updatedDate": "2026-03-08T21:40:20.917925",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.datatransfer/SystemFlavorMap/decodeJavaMIMEType": {
+    "id": "java.awt.datatransfer.SystemFlavorMap.decodeJavaMIMEType",
+    "name": "decodeJavaMIMEType",
+    "type": "method",
+    "parent": "SystemFlavorMap",
+    "signatures": [
+      "public static String decodeJavaMIMEType(String nat)"
+    ],
+    "signature_hash": "31f91528321da5abb7a584b0b60a9a311a391ba40140b24eac393698836f5b39",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html",
+    "parameters": [
+      {
+        "name": "nat",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static String",
+    "exceptions": [],
+    "description": "Decodes aStringnative for use as a Java MIME type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decodes aStringnative for use as a Java MIME type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.917941",
+    "updatedDate": "2026-03-08T21:40:20.917942",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

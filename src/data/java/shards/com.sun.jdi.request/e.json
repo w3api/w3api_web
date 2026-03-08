@@ -1,0 +1,271 @@
+{
+  "com.sun.jdi.request/EventRequest": {
+    "id": "com.sun.jdi.request.EventRequest",
+    "name": "EventRequest",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/request/EventRequest.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.719207",
+    "updatedDate": "2026-03-08T21:40:20.719208",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "SUSPEND_ALL",
+      "SUSPEND_EVENT_THREAD",
+      "SUSPEND_NONE"
+    ],
+    "methods": [
+      "addCountFilter",
+      "disable",
+      "enable",
+      "getProperty",
+      "isEnabled",
+      "putProperty",
+      "setEnabled",
+      "setSuspendPolicy",
+      "suspendPolicy"
+    ]
+  },
+  "com.sun.jdi.request/EventRequestManager": {
+    "id": "com.sun.jdi.request.EventRequestManager",
+    "name": "EventRequestManager",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/request/EventRequestManager.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.719480",
+    "updatedDate": "2026-03-08T21:40:20.719481",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "accessWatchpointRequests",
+      "breakpointRequests",
+      "classPrepareRequests",
+      "classUnloadRequests",
+      "createAccessWatchpointRequest",
+      "createBreakpointRequest",
+      "createClassPrepareRequest",
+      "createClassUnloadRequest",
+      "createExceptionRequest",
+      "createMethodEntryRequest",
+      "createMethodExitRequest",
+      "createModificationWatchpointRequest",
+      "createMonitorContendedEnterRequest",
+      "createMonitorContendedEnteredRequest",
+      "createMonitorWaitRequest",
+      "createMonitorWaitedRequest",
+      "createStepRequest",
+      "createThreadDeathRequest",
+      "createThreadStartRequest",
+      "createVMDeathRequest",
+      "deleteAllBreakpoints",
+      "deleteEventRequest",
+      "deleteEventRequests",
+      "exceptionRequests",
+      "methodEntryRequests",
+      "methodExitRequests",
+      "modificationWatchpointRequests",
+      "monitorContendedEnterRequests",
+      "monitorContendedEnteredRequests",
+      "monitorWaitRequests",
+      "monitorWaitedRequests",
+      "stepRequests",
+      "threadDeathRequests",
+      "threadStartRequests",
+      "vmDeathRequests"
+    ]
+  },
+  "com.sun.jdi.request/ExceptionRequest": {
+    "id": "com.sun.jdi.request.ExceptionRequest",
+    "name": "ExceptionRequest",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/request/ExceptionRequest.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.720238",
+    "updatedDate": "2026-03-08T21:40:20.720239",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "addClassExclusionFilter",
+      "addClassFilter",
+      "addInstanceFilter",
+      "addThreadFilter",
+      "exception",
+      "notifyCaught",
+      "notifyUncaught"
+    ]
+  },
+  "com.sun.jdi.request/EventRequest/enable": {
+    "id": "com.sun.jdi.request.EventRequest.enable",
+    "name": "enable",
+    "type": "method",
+    "parent": "EventRequest",
+    "signatures": [
+      "public void enable()"
+    ],
+    "signature_hash": "2ab346fb48ee15a4f715b972046d8265f8aa8a9cf86c0cf6f6f6fb2a60f2f569",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/request/EventRequest.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "InvalidRequestStateException",
+        "package": "com.sun.jdi.request"
+      },
+      {
+        "name": "IllegalThreadStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Same assetEnabled(true).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Same assetEnabled(true).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.719250",
+    "updatedDate": "2026-03-08T21:40:20.719251",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi.request/ExceptionRequest/exception": {
+    "id": "com.sun.jdi.request.ExceptionRequest.exception",
+    "name": "exception",
+    "type": "method",
+    "parent": "ExceptionRequest",
+    "signatures": [
+      "public ReferenceType exception()"
+    ],
+    "signature_hash": "7897220d6cb1f45eb8a26050d1883540d7417c6c4469cb59ada1e9b48feeb3da",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/request/ExceptionRequest.html",
+    "parameters": [],
+    "return_type": "ReferenceType",
+    "exceptions": [],
+    "description": "Returns exception type for which exception events are requested.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns exception type for which exception events are requested.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.720340",
+    "updatedDate": "2026-03-08T21:40:20.720341",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi.request/EventRequestManager/exceptionRequests": {
+    "id": "com.sun.jdi.request.EventRequestManager.exceptionRequests",
+    "name": "exceptionRequests",
+    "type": "method",
+    "parent": "EventRequestManager",
+    "signatures": [
+      "public List<ExceptionRequest> exceptionRequests()"
+    ],
+    "signature_hash": "46322ab306932838f317fd76fbc7d988fa5cdd0e9caced1af92a5c0d7f570c41",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/request/EventRequestManager.html",
+    "parameters": [],
+    "return_type": "List<ExceptionRequest>",
+    "exceptions": [],
+    "description": "Return an unmodifiable list of the enabled and disabled exception requests.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return an unmodifiable list of the enabled and disabled exception requests.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.719876",
+    "updatedDate": "2026-03-08T21:40:20.719877",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

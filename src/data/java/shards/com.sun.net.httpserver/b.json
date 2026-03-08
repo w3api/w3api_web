@@ -1,0 +1,238 @@
+{
+  "com.sun.net.httpserver/BasicAuthenticator": {
+    "id": "com.sun.net.httpserver.BasicAuthenticator",
+    "name": "BasicAuthenticator",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/BasicAuthenticator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.727399",
+    "updatedDate": "2026-03-08T21:40:20.727400",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "BasicAuthenticator"
+    ],
+    "attributes": [
+      "realm"
+    ],
+    "methods": [
+      "authenticate",
+      "checkCredentials",
+      "getRealm"
+    ]
+  },
+  "com.sun.net.httpserver/BasicAuthenticator/BasicAuthenticator": {
+    "id": "com.sun.net.httpserver.BasicAuthenticator.BasicAuthenticator",
+    "name": "BasicAuthenticator",
+    "type": "constructor",
+    "parent": "BasicAuthenticator",
+    "signatures": [
+      "public BasicAuthenticator(String realm)",
+      "public BasicAuthenticator(String realm, Charset charset)"
+    ],
+    "signature_hash": "53a78f6d24ca35ee08a596413da4b56b32871666c3c8872044dd839144e5e546",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/BasicAuthenticator.html",
+    "parameters": [
+      {
+        "name": "realm",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "charset",
+        "has_default": false,
+        "default_value": null,
+        "type": "Charset",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates aBasicAuthenticatorfor the given HTTP realm.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates aBasicAuthenticatorfor the given HTTP realm.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.727428",
+    "updatedDate": "2026-03-08T21:40:20.727429",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Filter/beforeHandler": {
+    "id": "com.sun.net.httpserver.Filter.beforeHandler",
+    "name": "beforeHandler",
+    "type": "method",
+    "parent": "Filter",
+    "signatures": [
+      "public static Filter beforeHandler(String description, Consumer<HttpExchange> operation)"
+    ],
+    "signature_hash": "b9aca23ca64aab10d9d2a38c180483017076d09582728261d79026b06ce37c3f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Filter.html",
+    "parameters": [
+      {
+        "name": "description",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "operation",
+        "type": "Consumer<HttpExchange>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static Filter",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns a pre-processingFilterwith the given description and\noperation.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a pre-processingFilterwith the given description and\noperation.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.726904",
+    "updatedDate": "2026-03-08T21:40:20.726905",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpServer/bind": {
+    "id": "com.sun.net.httpserver.HttpServer.bind",
+    "name": "bind",
+    "type": "method",
+    "parent": "HttpServer",
+    "signatures": [
+      "public abstract void bind(InetSocketAddress addr, int backlog)"
+    ],
+    "signature_hash": "f694977dd7c063da65a55be2b9d98aad316e80f68f0da4d0d0dac7d19b4781a0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpServer.html",
+    "parameters": [
+      {
+        "name": "addr",
+        "type": "InetSocketAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "backlog",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "BindException",
+        "package": "java.net"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Binds a currently unboundHttpServerto the given address and\nport number.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Binds a currently unboundHttpServerto the given address and\nport number.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.726615",
+    "updatedDate": "2026-03-08T21:40:20.726616",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

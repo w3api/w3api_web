@@ -1,0 +1,323 @@
+{
+  "java.net.http/HttpResponse<T>/body": {
+    "id": "java.net.http.HttpResponse<T>.body",
+    "name": "body",
+    "type": "method",
+    "parent": "HttpResponse<T>",
+    "signatures": [
+      "public T body()"
+    ],
+    "signature_hash": "8becfe54b0ca43e3c15ea3869f9b0ef432e1eadfbefdbadee5359d980d316580",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.html",
+    "parameters": [],
+    "return_type": "T",
+    "exceptions": [],
+    "description": "Returns the body.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the body.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.195278",
+    "updatedDate": "2026-03-08T21:40:21.195279",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpRequest/bodyPublisher": {
+    "id": "java.net.http.HttpRequest.bodyPublisher",
+    "name": "bodyPublisher",
+    "type": "method",
+    "parent": "HttpRequest",
+    "signatures": [
+      "public abstract Optional<HttpRequest.BodyPublisher> bodyPublisher()"
+    ],
+    "signature_hash": "b0a36d6146397ef04a2f7337d0dadb45932b2d8715e04456334ceffb42130cbb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.html",
+    "parameters": [],
+    "return_type": "abstract Optional<HttpRequest.BodyPublisher>",
+    "exceptions": [],
+    "description": "Returns anOptionalcontaining theHttpRequest.BodyPublisherset on\nthis request.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns anOptionalcontaining theHttpRequest.BodyPublisherset on\nthis request.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.195124",
+    "updatedDate": "2026-03-08T21:40:21.195125",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodyHandlers/buffering": {
+    "id": "java.net.http.HttpResponse.BodyHandlers.buffering",
+    "name": "buffering",
+    "type": "method",
+    "parent": "HttpResponse.BodyHandlers",
+    "signatures": [
+      "public static<T> HttpResponse.BodyHandler<T> buffering(HttpResponse.BodyHandler<T> downstreamHandler, int bufferSize)"
+    ],
+    "signature_hash": "637bcfd85d7d00969e35f51a743737b27f9afe34f57a7234aefd9ebec20ca6b4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+    "parameters": [
+      {
+        "name": "downstreamHandler",
+        "type": "HttpResponse.BodyHandler<T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "bufferSize",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static<T> HttpResponse.BodyHandler<T>",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aBodyHandlerwhich, when invoked, returns abuffering BodySubscriberthat buffers data before delivering it to the downstream subscriber.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodyHandlerwhich, when invoked, returns abuffering BodySubscriberthat buffers data before delivering it to the downstream subscriber.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.196799",
+    "updatedDate": "2026-03-08T21:40:21.196800",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodySubscribers/buffering": {
+    "id": "java.net.http.HttpResponse.BodySubscribers.buffering",
+    "name": "buffering",
+    "type": "method",
+    "parent": "HttpResponse.BodySubscribers",
+    "signatures": [
+      "public static<T> HttpResponse.BodySubscriber<T> buffering(HttpResponse.BodySubscriber<T> downstream, int bufferSize)"
+    ],
+    "signature_hash": "30c63a011218c9eb9a3127fc6c588b327d74eedfa09bf36bffd01c82e707d7e2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+    "parameters": [
+      {
+        "name": "downstream",
+        "type": "HttpResponse.BodySubscriber<T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "bufferSize",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static<T> HttpResponse.BodySubscriber<T>",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aBodySubscriberwhich buffers data before delivering\nit to the given downstream subscriber.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodySubscriberwhich buffers data before delivering\nit to the given downstream subscriber.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197195",
+    "updatedDate": "2026-03-08T21:40:21.197196",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpClient.Builder/build": {
+    "id": "java.net.http.HttpClient.Builder.build",
+    "name": "build",
+    "type": "method",
+    "parent": "HttpClient.Builder",
+    "signatures": [
+      "public HttpClient build()"
+    ],
+    "signature_hash": "57dd154de5ab0634b4af46acb0dcf6f31a00ef3b24817005a26c47de26576f99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.Builder.html",
+    "parameters": [],
+    "return_type": "HttpClient",
+    "exceptions": [
+      {
+        "name": "UncheckedIOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Returns a newHttpClientbuilt from the current state of this\nbuilder.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a newHttpClientbuilt from the current state of this\nbuilder.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.195615",
+    "updatedDate": "2026-03-08T21:40:21.195616",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpRequest.Builder/build": {
+    "id": "java.net.http.HttpRequest.Builder.build",
+    "name": "build",
+    "type": "method",
+    "parent": "HttpRequest.Builder",
+    "signatures": [
+      "public HttpRequest build()"
+    ],
+    "signature_hash": "009950bec4649917a5f4caaea05c195e9b6e12d327f1538ffa542548aebede7b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html",
+    "parameters": [],
+    "return_type": "HttpRequest",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Builds and returns anHttpRequest.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Builds and returns anHttpRequest.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.196445",
+    "updatedDate": "2026-03-08T21:40:21.196446",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket.Builder/buildAsync": {
+    "id": "java.net.http.WebSocket.Builder.buildAsync",
+    "name": "buildAsync",
+    "type": "method",
+    "parent": "WebSocket.Builder",
+    "signatures": [
+      "public CompletableFuture<WebSocket> buildAsync(URI uri, WebSocket.Listener listener)"
+    ],
+    "signature_hash": "ba129dc876515d074d0ee7f5046c4d9b667c3e8050ba0435587c18fe7daf5ed2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.Builder.html",
+    "parameters": [
+      {
+        "name": "uri",
+        "type": "URI",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "listener",
+        "type": "WebSocket.Listener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "CompletableFuture<WebSocket>",
+    "exceptions": [],
+    "description": "Builds aWebSocketconnected to the givenURIand\nassociated with the givenListener.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Builds aWebSocketconnected to the givenURIand\nassociated with the givenListener.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197780",
+    "updatedDate": "2026-03-08T21:40:21.197780",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

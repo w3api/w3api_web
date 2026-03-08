@@ -1,0 +1,346 @@
+---
+import StarlightLayout from '../../layouts/StarlightLayout.astro';
+import { sidebar } from '../../config/sidebar';
+import { Code } from "astro-expressive-code/components";
+import rutas from '../../data/java/routes.json'
+import { Breadcrumbs } from "astro-breadcrumbs";
+import "astro-breadcrumbs/breadcrumbs.css";
+
+
+// Importar todos los archivos de distribución de shards
+const distributionModules = import.meta.glob('../../data/java/modules/*.json', { eager: true })
+
+// Importar todos los shards
+const shardModules = import.meta.glob('../../data/java/shards/**/*.json', { eager: true })
+
+
+export async function getStaticPaths() {
+  const paths: any[] = []
+  
+  // Rutas simple: array de slugs
+  const routeSlugs = rutas || [];
+  
+  routeSlugs.forEach((slug: string) => {    
+    paths.push({
+      params: { slug },
+      props: { language: 'Java', languageName: 'Java' }
+    })
+  })
+    
+  return paths
+}
+
+interface Props {
+  language: string
+  languageName: string
+}
+
+
+const { language, languageName } = Astro.props
+const slug = Astro.params.slug
+
+
+
+// Primero, al ser Java me voy a ver dónde están los paquetes java
+// Del fichero Java saco el fichero que tiene las distribución en sharding
+// Necesito del slug la parte de java y el nombre del paquete
+const [packageName] = slug.split('/').slice(0, 1)
+
+// Ahora voy al fichero con la distribución de shards y busco el shard que contiene ese paquete
+// const distribution = javaIndex.packages?.find((p: any) => p.package === packageName)
+// const distributionPath = distribution?.distributionFile
+
+const distributionPath =  packageName + ".json"
+
+if (!distributionPath) throw new Error("Distribution File not found")
+
+// Acceder al módulo de distribución que ya fue importado por glob
+const moduleKey = `../../data/java/modules/${distributionPath}` 
+const distributionModule = distributionModules[moduleKey] as any
+const distributionFile = distributionModule.default || distributionModule
+
+// Buscar la ruta en el índice de distribución
+const routeMeta = distributionFile.find((r: any) => r.slug === slug)
+
+if (!routeMeta) throw new Error("Not found")
+
+// Acceder al módulo del shard que ya fue importado por glob
+const shardPath = `../../data/${routeMeta.shard}`
+const shardModule = shardModules[shardPath] as any
+const shard = shardModule.default || shardModule
+const doc = shard[slug]
+
+
+const headings = [
+  { level: 2, title: 'Description', id: 'description' },
+  ...(doc.constructors?.length > 0 ? [{ level: 2, title: 'Constructors', id: 'constructors' }] : []),
+  ...(doc.methods?.length > 0 ? [{ level: 2, title: 'Methods', id: 'methods' }] : []),
+  ...(doc.attributes?.length > 0 ? [{ level: 2, title: 'Atributos', id: 'attributes' }] : []),
+  ...(doc.example?.length > 0 ? [{ level: 2, title: 'Example', id: 'example' }] : []),
+  { level: 2, title: 'Original Documentation', id: 'original-documentation' }
+]
+
+// Generar tabla de contenidos dinámicamente
+const tableOfContents = headings.map(h => ({
+  depth: h.level,
+  text: h.title,
+  slug: h.id
+}))
+---
+
+
+<StarlightLayout
+  title={doc.name}
+  description={`${languageName} ${doc.type} ${doc.name}`}
+  siteTitle="W3Api"
+  sidebar={sidebar}
+  tableOfContents={tableOfContents}
+  currentLanguage="java"  
+  logoSrc='/logo.webp'
+  filterLabel="Paquetes"
+>
+
+<main>
+
+  <article>
+    <header class="sl-content-header">
+    
+      <h1>{doc.name}</h1>
+
+      <Breadcrumbs excludeCurrentPage indexText="Inicio"  separatorAriaHidden={false} >
+      <svg
+        slot="separator"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+      <svg
+        slot="index"
+        aria-label="Página Principal"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"> </path><polyline
+          points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+    </Breadcrumbs>
+
+    </header>
+
+    <hr class="header-divider" />
+
+  <section id="metadata">
+    <div class="metadata-badges">
+      <span class="sl-badge sl-badge-tip">{doc.type}</span>
+      
+      {doc.metadata?.added_version && (
+        <span class="sl-badge sl-badge-success">
+          Added in {doc.metadata.added_version}
+        </span>
+      )}
+      
+      {doc.metadata?.deprecated && doc.metadata?.deprecated_version && doc.metadata.deprecated_version !== "unknown" && (
+        <span class="sl-badge sl-badge-caution">
+          Deprecated in {doc.metadata.deprecated_version}
+        </span>
+      )}
+      
+      {doc.metadata?.deprecated && (!doc.metadata?.deprecated_version || doc.metadata.deprecated_version === "unknown") && (
+        <span class="sl-badge sl-badge-caution">
+          Deprecated
+        </span>
+      )}
+    </div>
+  </section>
+
+  <section id="description">
+    <h2>Description</h2>
+    <p>{doc.description || "No description available."}</p>
+  </section>
+
+  {doc.constructors && doc.constructors.length > 0 && (
+    <section id="constructors">
+      <h2>Constructors</h2>
+      <ul>
+        {doc.constructors.map((constructor: string) => (
+          <li>
+            <a href={`/java/${slug}/${constructor}/`}>
+              {constructor}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {doc.methods && doc.methods.length > 0 && (
+    <section id="methods">
+      <h2>Methods</h2>
+      <ul>
+        {doc.methods.map((method: string) => (
+          <li>
+            <a href={`/java/${slug}/${method}/`}>
+              {method}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {doc.attributes && doc.attributes.length > 0 && (
+    <section id="attributes">
+      <h2>Atributos</h2>
+      <ul>
+        {doc.attributes.map((attribute: string) => (
+          <li>
+            <a href={`/java/${slug}/${attribute}/`}>
+              {attribute}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {doc.signatures && doc.signatures.length > 0 && (
+    <section id="sintaxis">
+      <h2>Sintaxis</h2>
+      <Code
+        code={doc.signatures.join('\n')}
+        lang="java"
+      />      
+    </section>
+  )}  
+
+    {doc.parameters && doc.parameters.length > 0 && (
+    <section id="parameters">
+      <h2>Parameters</h2>
+      <ul>
+        {doc.parameters.map((param: any) => (
+          <li>
+            <strong>{param.type} {param.name}</strong> - {param.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {doc.exceptions && doc.exceptions.length > 0 && (
+    <section id="exceptions">
+      <h2>Excepciones</h2>
+      <ul>
+        {doc.exceptions.map((exception: any) => (
+          <li>
+            <a href={`/java/${exception.package}/${exception.name}/`}>
+              {exception.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {doc.example && doc.example.length > 0 && (
+    <section id="example">
+      <h2>Ejemplo</h2>
+            <Code
+              code={doc.example}
+              lang="java"
+            />   
+    </section>
+  )}
+
+  </article>
+  <aside>
+
+    {doc.relatedArticles && doc.relatedArticles.length > 0 && (
+      <section id="related-articles">
+        <h3>Artículos Relacionados</h3>
+        <ul>
+          {doc.relatedArticles.map((article: string) => (
+            <li>
+              <a href={`/java/${article}/`}>
+                {article}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <section id="original-documentation">
+      <h2>Original Documentation</h2>
+      <p>
+        <a href={doc.url} target="_blank" rel="noopener noreferrer">
+          View on Oracle Documentation →
+        </a>
+      </p>
+    </section>
+  </aside>
+
+</main>
+
+<style>
+  .header-divider {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 1rem 0;
+  }
+
+  .sl-content-header h1 {
+    margin: 0;
+  }
+
+  #metadata {
+    margin: 1.5rem 0;
+  }
+
+  .metadata-badges {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .metadata-badges .sl-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    white-space: nowrap;
+  }
+
+  .sl-badge-tip {
+    background-color: var(--sl-color-accent-low);
+    color: var(--sl-color-accent);
+  }
+
+  .sl-badge-success {
+    background-color: #dcfce7;
+    color: #166534;
+  }
+
+  .sl-badge-caution {
+    background-color: #fef3c7;
+    color: #b45309;
+  }
+  
+</style>
+
+</StarlightLayout>

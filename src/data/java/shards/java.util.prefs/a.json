@@ -1,0 +1,415 @@
+{
+  "java.util.prefs/AbstractPreferences": {
+    "id": "java.util.prefs.AbstractPreferences",
+    "name": "AbstractPreferences",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.483947",
+    "updatedDate": "2026-03-08T21:40:21.483948",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "AbstractPreferences"
+    ],
+    "attributes": [
+      "lock",
+      "newNode"
+    ],
+    "methods": [
+      "absolutePath",
+      "addNodeChangeListener",
+      "addPreferenceChangeListener",
+      "cachedChildren",
+      "childSpi",
+      "childrenNames",
+      "childrenNamesSpi",
+      "clear",
+      "exportNode",
+      "exportSubtree",
+      "flush",
+      "flushSpi",
+      "get",
+      "getBoolean",
+      "getByteArray",
+      "getChild",
+      "getDouble",
+      "getFloat",
+      "getInt",
+      "getLong",
+      "getSpi",
+      "isRemoved",
+      "isUserNode",
+      "keys",
+      "keysSpi",
+      "name",
+      "node",
+      "nodeExists",
+      "parent",
+      "put",
+      "putBoolean",
+      "putByteArray",
+      "putDouble",
+      "putFloat",
+      "putInt",
+      "putLong",
+      "putSpi",
+      "remove",
+      "removeNode",
+      "removeNodeChangeListener",
+      "removeNodeSpi",
+      "removePreferenceChangeListener",
+      "removeSpi",
+      "sync",
+      "syncSpi",
+      "toString"
+    ]
+  },
+  "java.util.prefs/AbstractPreferences/AbstractPreferences": {
+    "id": "java.util.prefs.AbstractPreferences.AbstractPreferences",
+    "name": "AbstractPreferences",
+    "type": "constructor",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public AbstractPreferences(AbstractPreferences parent, String name)"
+    ],
+    "signature_hash": "5fba271bfa36583f56a6f544f3f2056774c6948da2fcaeaa3699683f96b9f1b4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "parent",
+        "type": "AbstractPreferences",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates a preference node with the specified parent and the specified\nname relative to its parent.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a preference node with the specified parent and the specified\nname relative to its parent.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.483965",
+    "updatedDate": "2026-03-08T21:40:21.483966",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/absolutePath": {
+    "id": "java.util.prefs.AbstractPreferences.absolutePath",
+    "name": "absolutePath",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public String absolutePath()"
+    ],
+    "signature_hash": "868b5f4a121e5b091925f0370e37debfac5e3320553b859c2546029317e566df",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": "Implements theabsolutePathmethod as per the specification inPreferences.absolutePath().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements theabsolutePathmethod as per the specification inPreferences.absolutePath().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.483977",
+    "updatedDate": "2026-03-08T21:40:21.483977",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/absolutePath": {
+    "id": "java.util.prefs.Preferences.absolutePath",
+    "name": "absolutePath",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract String absolutePath()"
+    ],
+    "signature_hash": "ac33b0f66e906f8ea3fd6a0385335927403014a6ea145c3f50e387d1a12e75ec",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": "Returns this preference node's absolute path name.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns this preference node's absolute path name.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.484713",
+    "updatedDate": "2026-03-08T21:40:21.484714",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/addNodeChangeListener": {
+    "id": "java.util.prefs.AbstractPreferences.addNodeChangeListener",
+    "name": "addNodeChangeListener",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public void addNodeChangeListener(NodeChangeListener ncl)"
+    ],
+    "signature_hash": "17e519fbdc2c4d6564af86b3c412180bd5abecfca148ee80ba7430f07de15db5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "ncl",
+        "type": "NodeChangeListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Registers the specified listener to receivenode change eventsfor this node.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Registers the specified listener to receivenode change eventsfor this node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.483992",
+    "updatedDate": "2026-03-08T21:40:21.483993",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/addNodeChangeListener": {
+    "id": "java.util.prefs.Preferences.addNodeChangeListener",
+    "name": "addNodeChangeListener",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract void addNodeChangeListener(NodeChangeListener ncl)"
+    ],
+    "signature_hash": "0476bcac958a4f467cf7d50d763798527aa5cdd7ccd204e025edb635b12a0c3f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [
+      {
+        "name": "ncl",
+        "type": "NodeChangeListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Registers the specified listener to receivenode change eventsfor this node.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Registers the specified listener to receivenode change eventsfor this node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.484730",
+    "updatedDate": "2026-03-08T21:40:21.484731",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/addPreferenceChangeListener": {
+    "id": "java.util.prefs.AbstractPreferences.addPreferenceChangeListener",
+    "name": "addPreferenceChangeListener",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public void addPreferenceChangeListener(PreferenceChangeListener pcl)"
+    ],
+    "signature_hash": "9e573afa09055fa90a05704c574eb95576f337e309d4263d124aa9ef8f91eb51",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "pcl",
+        "type": "PreferenceChangeListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Registers the specified listener to receivepreference change\neventsfor this preference node.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Registers the specified listener to receivepreference change\neventsfor this preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.484007",
+    "updatedDate": "2026-03-08T21:40:21.484008",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/addPreferenceChangeListener": {
+    "id": "java.util.prefs.Preferences.addPreferenceChangeListener",
+    "name": "addPreferenceChangeListener",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract void addPreferenceChangeListener(PreferenceChangeListener pcl)"
+    ],
+    "signature_hash": "0879e0aa510bf2023c034c9769b4aa20b20337d8ffc718d639297912d94e768d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [
+      {
+        "name": "pcl",
+        "type": "PreferenceChangeListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Registers the specified listener to receivepreference change\neventsfor this preference node.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Registers the specified listener to receivepreference change\neventsfor this preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.484747",
+    "updatedDate": "2026-03-08T21:40:21.484748",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

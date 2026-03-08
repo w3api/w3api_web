@@ -1,0 +1,2615 @@
+{
+  "java.awt/Event": {
+    "id": "java.awt.Event",
+    "name": "Event",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Event.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.778599",
+    "updatedDate": "2026-03-08T21:40:20.778600",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "Event"
+    ],
+    "attributes": [
+      "ACTION_EVENT",
+      "ALT_MASK",
+      "BACK_SPACE",
+      "CAPS_LOCK",
+      "CTRL_MASK",
+      "DELETE",
+      "DOWN",
+      "END",
+      "ENTER",
+      "ESCAPE",
+      "F1",
+      "F10",
+      "F11",
+      "F12",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "GOT_FOCUS",
+      "HOME",
+      "INSERT",
+      "KEY_ACTION",
+      "KEY_ACTION_RELEASE",
+      "KEY_PRESS",
+      "KEY_RELEASE",
+      "LEFT",
+      "LIST_DESELECT",
+      "LIST_SELECT",
+      "LOAD_FILE",
+      "LOST_FOCUS",
+      "META_MASK",
+      "MOUSE_DOWN",
+      "MOUSE_DRAG",
+      "MOUSE_ENTER",
+      "MOUSE_EXIT",
+      "MOUSE_MOVE",
+      "MOUSE_UP",
+      "NUM_LOCK",
+      "PAUSE",
+      "PGDN",
+      "PGUP",
+      "PRINT_SCREEN",
+      "RIGHT",
+      "SAVE_FILE",
+      "SCROLL_ABSOLUTE",
+      "SCROLL_BEGIN",
+      "SCROLL_END",
+      "SCROLL_LINE_DOWN",
+      "SCROLL_LINE_UP",
+      "SCROLL_LOCK",
+      "SCROLL_PAGE_DOWN",
+      "SCROLL_PAGE_UP",
+      "SHIFT_MASK",
+      "TAB",
+      "UP",
+      "WINDOW_DEICONIFY",
+      "WINDOW_DESTROY",
+      "WINDOW_EXPOSE",
+      "WINDOW_ICONIFY",
+      "WINDOW_MOVED",
+      "arg",
+      "clickCount",
+      "evt",
+      "id",
+      "key",
+      "modifiers",
+      "target",
+      "when",
+      "x",
+      "y"
+    ],
+    "methods": [
+      "controlDown",
+      "metaDown",
+      "paramString",
+      "shiftDown",
+      "toString",
+      "translate"
+    ]
+  },
+  "java.awt/EventQueue": {
+    "id": "java.awt.EventQueue",
+    "name": "EventQueue",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/EventQueue.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.782387",
+    "updatedDate": "2026-03-08T21:40:20.782388",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "EventQueue"
+    ],
+    "methods": [
+      "Any",
+      "Component",
+      "MenuComponent",
+      "Other"
+    ]
+  },
+  "java.awt/Event/Event": {
+    "id": "java.awt.Event.Event",
+    "name": "Event",
+    "type": "constructor",
+    "parent": "Event",
+    "signatures": [
+      "public Event(Object target, int id, Object arg)",
+      "public Event(Object target, long when, int id, int x, int y, int key, int modifiers)",
+      "public Event(Object target, long when, int id, int x, int y, int key, int modifiers, Object arg)"
+    ],
+    "signature_hash": "755df8e93e7ea13a55453ef9166cd1c2a6c66880f6c1fb932ec9591036fa534f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Event.html",
+    "parameters": [
+      {
+        "name": "target",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "id",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "arg",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "when",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "key",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "modifiers",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Deprecated.NOTE:TheEventclass is obsolete and is\navailable only for backwards compatibility.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.NOTE:TheEventclass is obsolete and is\navailable only for backwards compatibility.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.778689",
+    "updatedDate": "2026-03-08T21:40:20.778690",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/EventQueue/EventQueue": {
+    "id": "java.awt.EventQueue.EventQueue",
+    "name": "EventQueue",
+    "type": "constructor",
+    "parent": "EventQueue",
+    "signatures": [
+      "public EventQueue()"
+    ],
+    "signature_hash": "31d463b633364a7a08dcfa1d795acc75f6aa93d93065974be43c2fa7aee1cc18",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/EventQueue.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Initializes a new instance ofEventQueue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Initializes a new instance ofEventQueue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.782434",
+    "updatedDate": "2026-03-08T21:40:20.782435",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/E": {
+    "id": "java.awt.PageAttributes.MediaType.E",
+    "name": "E",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType E"
+    ],
+    "signature_hash": "8e9a82ca2468b1262c17b4779a8a87857dce49d68c336da7f13c30f903e76157",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "The MediaType instance for Engineering E, 34 x 44 in.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The MediaType instance for Engineering E, 34 x 44 in.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.840655",
+    "updatedDate": "2026-03-08T21:40:20.840656",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/BorderLayout/EAST": {
+    "id": "java.awt.BorderLayout.EAST",
+    "name": "EAST",
+    "type": "field",
+    "parent": "BorderLayout",
+    "signatures": [
+      "static final String EAST"
+    ],
+    "signature_hash": "86771ffcbf62dabd15fdf4c35d22b8c6e89c512c4ad66e36fd02b18f782fb0d0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/BorderLayout.html",
+    "parameters": [],
+    "return_type": "static final String",
+    "exceptions": [],
+    "description": "The east layout constraint (right side of container).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The east layout constraint (right side of container).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.757338",
+    "updatedDate": "2026-03-08T21:40:20.757339",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/GridBagConstraints/EAST": {
+    "id": "java.awt.GridBagConstraints.EAST",
+    "name": "EAST",
+    "type": "field",
+    "parent": "GridBagConstraints",
+    "signatures": [
+      "static final int EAST"
+    ],
+    "signature_hash": "f43465900cc7571d0b2841477527efe7b4aa0b738d46b2fe788b3e0031d1964a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/GridBagConstraints.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "Put the component on the right side of its display area,\ncentered vertically.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Put the component on the right side of its display area,\ncentered vertically.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.800510",
+    "updatedDate": "2026-03-08T21:40:20.800511",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Event/END": {
+    "id": "java.awt.Event.END",
+    "name": "END",
+    "type": "field",
+    "parent": "Event",
+    "signatures": [
+      "static final int END"
+    ],
+    "signature_hash": "8fda200566ddf2c8b68dc222b0b2b4d9642519887b30e4ee98e5e60fcf820b48",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Event.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "Deprecated.The End key, a non-ASCII action key.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.The End key, a non-ASCII action key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.779400",
+    "updatedDate": "2026-03-08T21:40:20.779401",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Event/ENTER": {
+    "id": "java.awt.Event.ENTER",
+    "name": "ENTER",
+    "type": "field",
+    "parent": "Event",
+    "signatures": [
+      "static final int ENTER"
+    ],
+    "signature_hash": "bbd4231558d6885bcfc6eecfb7452b4c71d0866bb9002d4ef73025f50c84222d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Event.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "Deprecated.The Enter key.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.The Enter key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.779450",
+    "updatedDate": "2026-03-08T21:40:20.779451",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_10": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_10",
+    "name": "ENV_10",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_10"
+    ],
+    "signature_hash": "96f3a82ed80463ab931c27cc3c7f30b59e98b7155b1e8498ee13b7168d043b66",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_NUMBER_10_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_NUMBER_10_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.840734",
+    "updatedDate": "2026-03-08T21:40:20.840735",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_10X13": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_10X13",
+    "name": "ENV_10X13",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_10X13"
+    ],
+    "signature_hash": "33da17ef946a3756d0b37084781715c43ca96e7a2991b044a85536cb0b2c26d6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_10X13_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_10X13_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.840813",
+    "updatedDate": "2026-03-08T21:40:20.840814",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_10X14": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_10X14",
+    "name": "ENV_10X14",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_10X14"
+    ],
+    "signature_hash": "2d4cde847d435c1da6b5bf1a9f59da07d7fabdf0a4860b8d41779cc394ae4048",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_10X14_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_10X14_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.840893",
+    "updatedDate": "2026-03-08T21:40:20.840893",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_10X15": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_10X15",
+    "name": "ENV_10X15",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_10X15"
+    ],
+    "signature_hash": "2c6899e266f396968082d9684877358d83147826e535e7d01d863a68fe14dbe8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_10X15_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_10X15_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.840972",
+    "updatedDate": "2026-03-08T21:40:20.840972",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_11": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_11",
+    "name": "ENV_11",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_11"
+    ],
+    "signature_hash": "a0218de3bcc140b5fb7481b9a4b58372c031fc8316eb7ae176a8512384a29a59",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_NUMBER_11_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_NUMBER_11_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.841053",
+    "updatedDate": "2026-03-08T21:40:20.841054",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_12": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_12",
+    "name": "ENV_12",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_12"
+    ],
+    "signature_hash": "e1b793af86fe8c850ba631d378bbeec62e4f93bdbba0c5d58ec40e19d43917ec",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_NUMBER_12_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_NUMBER_12_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.841230",
+    "updatedDate": "2026-03-08T21:40:20.841233",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_14": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_14",
+    "name": "ENV_14",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_14"
+    ],
+    "signature_hash": "ece1a9477553e037e317e9f545c77acd04fbf606c26746d34be141913ef8c546",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_NUMBER_14_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_NUMBER_14_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.841353",
+    "updatedDate": "2026-03-08T21:40:20.841354",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_6X9": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_6X9",
+    "name": "ENV_6X9",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_6X9"
+    ],
+    "signature_hash": "96f34c3bef6683440e98b97b301aa8b820e4a5de883038e997a8515918c67835",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_6X9_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_6X9_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.841453",
+    "updatedDate": "2026-03-08T21:40:20.841454",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_7X9": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_7X9",
+    "name": "ENV_7X9",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_7X9"
+    ],
+    "signature_hash": "e1610c40c83001d2af0ca5519eb4059892ebf284163a492dd392327379f7b06b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_7X9_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_7X9_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.841549",
+    "updatedDate": "2026-03-08T21:40:20.841550",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_9": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_9",
+    "name": "ENV_9",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_9"
+    ],
+    "signature_hash": "7710472ea62aa90c624363d0c65a05fd39a3c9fadea3f015630ca7edd20dec61",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_NUMBER_9_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_NUMBER_9_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.841640",
+    "updatedDate": "2026-03-08T21:40:20.841641",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_9X11": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_9X11",
+    "name": "ENV_9X11",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_9X11"
+    ],
+    "signature_hash": "7a3380c77537f18fedeca18b4876e4a94042ae5613bae5beebea3edbd23223bf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_9X11_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_9X11_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.841728",
+    "updatedDate": "2026-03-08T21:40:20.841728",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_9X12": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_9X12",
+    "name": "ENV_9X12",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_9X12"
+    ],
+    "signature_hash": "9d1170fce7e9c0ae7d8c03da61d5b7b80da6d17778ff55648ebf4b5c79f89957",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for NA_9X12_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for NA_9X12_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.841811",
+    "updatedDate": "2026-03-08T21:40:20.841811",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_INVITE": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_INVITE",
+    "name": "ENV_INVITE",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_INVITE"
+    ],
+    "signature_hash": "d0eb00b45fee30884a0cd3acef95043b1880ac36cdf9c53ea7fe9453be706af8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for INVITE_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for INVITE_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.841899",
+    "updatedDate": "2026-03-08T21:40:20.841899",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_ITALY": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_ITALY",
+    "name": "ENV_ITALY",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_ITALY"
+    ],
+    "signature_hash": "1c55c06634d9c3fe348addc3978f8fbd0e3b170697b79c781267f4017d5293dc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for ITALY_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for ITALY_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.841982",
+    "updatedDate": "2026-03-08T21:40:20.841983",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_MONARCH": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_MONARCH",
+    "name": "ENV_MONARCH",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_MONARCH"
+    ],
+    "signature_hash": "5d600b037c278fcf3ef273dde837420c8465f0394d32cda7d38f183d1ebed714",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for MONARCH_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for MONARCH_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.842065",
+    "updatedDate": "2026-03-08T21:40:20.842066",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/ENV_PERSONAL": {
+    "id": "java.awt.PageAttributes.MediaType.ENV_PERSONAL",
+    "name": "ENV_PERSONAL",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType ENV_PERSONAL"
+    ],
+    "signature_hash": "4ba5ade3e398720732de8b4aeadd520130e5ce1945c62de800720d8b2bc91082",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "An alias for PERSONAL_ENVELOPE.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for PERSONAL_ENVELOPE.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.842148",
+    "updatedDate": "2026-03-08T21:40:20.842149",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/MediaTracker/ERRORED": {
+    "id": "java.awt.MediaTracker.ERRORED",
+    "name": "ERRORED",
+    "type": "field",
+    "parent": "MediaTracker",
+    "signatures": [
+      "static final int ERRORED"
+    ],
+    "signature_hash": "9ac258bad424a133d66972e351457d282aa46e3280021c8f8999dc9ea42c5d34",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/MediaTracker.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "Flag indicating that the downloading of media encountered\nan error.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Flag indicating that the downloading of media encountered\nan error.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.826863",
+    "updatedDate": "2026-03-08T21:40:20.826864",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Event/ESCAPE": {
+    "id": "java.awt.Event.ESCAPE",
+    "name": "ESCAPE",
+    "type": "field",
+    "parent": "Event",
+    "signatures": [
+      "static final int ESCAPE"
+    ],
+    "signature_hash": "4e6b0b39ba5d66caeb2b3330eb93584c9cfe401be32e6e53631419aca192e811",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Event.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "Deprecated.The Escape key.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.The Escape key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.779575",
+    "updatedDate": "2026-03-08T21:40:20.779576",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes.MediaType/EXECUTIVE": {
+    "id": "java.awt.PageAttributes.MediaType.EXECUTIVE",
+    "name": "EXECUTIVE",
+    "type": "field",
+    "parent": "PageAttributes.MediaType",
+    "signatures": [
+      "static final PageAttributes.MediaType EXECUTIVE"
+    ],
+    "signature_hash": "595ad6aaf044f1687b7319e5005b9c7684aa1e8673b1c2e8d8e7b62fbbd6e7dc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html",
+    "parameters": [],
+    "return_type": "static final PageAttributes.MediaType",
+    "exceptions": [],
+    "description": "The MediaType instance for Executive, 7 1/4 x 10 1/2 in.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The MediaType instance for Executive, 7 1/4 x 10 1/2 in.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.842231",
+    "updatedDate": "2026-03-08T21:40:20.842232",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Cursor/E_RESIZE_CURSOR": {
+    "id": "java.awt.Cursor.E_RESIZE_CURSOR",
+    "name": "E_RESIZE_CURSOR",
+    "type": "field",
+    "parent": "Cursor",
+    "signatures": [
+      "static final int E_RESIZE_CURSOR"
+    ],
+    "signature_hash": "2c337e5829778eccbe4bbef8f8ba1dc3a2d00d3bd7eb354dc1fbc2d1385c923e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Cursor.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "The east-resize cursor type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The east-resize cursor type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.773792",
+    "updatedDate": "2026-03-08T21:40:20.773793",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Frame/E_RESIZE_CURSOR": {
+    "id": "java.awt.Frame.E_RESIZE_CURSOR",
+    "name": "E_RESIZE_CURSOR",
+    "type": "field",
+    "parent": "Frame",
+    "signatures": [
+      "static final int E_RESIZE_CURSOR"
+    ],
+    "signature_hash": "2c337e5829778eccbe4bbef8f8ba1dc3a2d00d3bd7eb354dc1fbc2d1385c923e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Frame.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "Deprecated.replaced byCursor.E_RESIZE_CURSOR.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.replaced byCursor.E_RESIZE_CURSOR.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.791000",
+    "updatedDate": "2026-03-08T21:40:20.791001",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Event/evt": {
+    "id": "java.awt.Event.evt",
+    "name": "evt",
+    "type": "field",
+    "parent": "Event",
+    "signatures": [
+      "Event evt"
+    ],
+    "signature_hash": "2247e98df61ea14b3c1e6d58937f15e2ba07cc64bb423f39f30f425d11169d53",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Event.html",
+    "parameters": [],
+    "return_type": "Event",
+    "exceptions": [],
+    "description": "Deprecated.The next event.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.The next event.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.779654",
+    "updatedDate": "2026-03-08T21:40:20.779655",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/TextField/echoCharIsSet": {
+    "id": "java.awt.TextField.echoCharIsSet",
+    "name": "echoCharIsSet",
+    "type": "method",
+    "parent": "TextField",
+    "signatures": [
+      "public boolean echoCharIsSet()"
+    ],
+    "signature_hash": "8c358f7bbc3fa8204dba96bbb0f3b974deea607f2823749a50df275bc654deca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/TextField.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Indicates whether or not this text field has a\ncharacter set for echoing.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates whether or not this text field has a\ncharacter set for echoing.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.892885",
+    "updatedDate": "2026-03-08T21:40:20.892886",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Desktop/edit": {
+    "id": "java.awt.Desktop.edit",
+    "name": "edit",
+    "type": "method",
+    "parent": "Desktop",
+    "signatures": [
+      "public void edit(File file)"
+    ],
+    "signature_hash": "e9d6576c9aa4fb031298fa3808769dc32daee8afaf32702a47b2927a360f8348",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Desktop.html",
+    "parameters": [
+      {
+        "name": "file",
+        "type": "File",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Launches the associated editor application and opens a file for\nediting.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Launches the associated editor application and opens a file for\nediting.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.775476",
+    "updatedDate": "2026-03-08T21:40:20.775477",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Component/enable": {
+    "id": "java.awt.Component.enable",
+    "name": "enable",
+    "type": "method",
+    "parent": "Component",
+    "signatures": [
+      "public void enable()",
+      "public void enable(boolean b)"
+    ],
+    "signature_hash": "d16467ccb491e5dc94b40e7ff6d2a4f18d6c075475f149f4f53f134ae38fb7b4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Component.html",
+    "parameters": [
+      {
+        "name": "b",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Deprecated.As of JDK version 1.1,\nreplaced bysetEnabled(boolean).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.As of JDK version 1.1,\nreplaced bysetEnabled(boolean).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.763275",
+    "updatedDate": "2026-03-08T21:40:20.763275",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/MenuItem/enable": {
+    "id": "java.awt.MenuItem.enable",
+    "name": "enable",
+    "type": "method",
+    "parent": "MenuItem",
+    "signatures": [
+      "public void enable()",
+      "public void enable(boolean b)"
+    ],
+    "signature_hash": "d16467ccb491e5dc94b40e7ff6d2a4f18d6c075475f149f4f53f134ae38fb7b4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/MenuItem.html",
+    "parameters": [
+      {
+        "name": "b",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Deprecated.As of JDK version 1.1,\nreplaced bysetEnabled(boolean).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.As of JDK version 1.1,\nreplaced bysetEnabled(boolean).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.831852",
+    "updatedDate": "2026-03-08T21:40:20.831853",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Component/enableEvents": {
+    "id": "java.awt.Component.enableEvents",
+    "name": "enableEvents",
+    "type": "method",
+    "parent": "Component",
+    "signatures": [
+      "public protected final void enableEvents(long eventsToEnable)"
+    ],
+    "signature_hash": "ca361f1366ce6718d9538922322405113993645afad41f94b24fe2c488e1d214",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Component.html",
+    "parameters": [
+      {
+        "name": "eventsToEnable",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "protected final void",
+    "exceptions": [],
+    "description": "Enables the events defined by the specified event mask parameter\nto be delivered to this component.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enables the events defined by the specified event mask parameter\nto be delivered to this component.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.763309",
+    "updatedDate": "2026-03-08T21:40:20.763310",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/MenuItem/enableEvents": {
+    "id": "java.awt.MenuItem.enableEvents",
+    "name": "enableEvents",
+    "type": "method",
+    "parent": "MenuItem",
+    "signatures": [
+      "public protected final void enableEvents(long eventsToEnable)"
+    ],
+    "signature_hash": "ca361f1366ce6718d9538922322405113993645afad41f94b24fe2c488e1d214",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/MenuItem.html",
+    "parameters": [
+      {
+        "name": "eventsToEnable",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "protected final void",
+    "exceptions": [],
+    "description": "Enables event delivery to this menu item for events\nto be defined by the specified event mask parameter",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enables event delivery to this menu item for events\nto be defined by the specified event mask parameter",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.831934",
+    "updatedDate": "2026-03-08T21:40:20.831935",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Component/enableInputMethods": {
+    "id": "java.awt.Component.enableInputMethods",
+    "name": "enableInputMethods",
+    "type": "method",
+    "parent": "Component",
+    "signatures": [
+      "public void enableInputMethods(boolean enable)"
+    ],
+    "signature_hash": "ae93ae0a9bb4a891a4d7aef4b9d84d6d3d43e08b4bb03d51db7ead11d9f98680",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Component.html",
+    "parameters": [
+      {
+        "name": "enable",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Enables or disables input method support for this component.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enables or disables input method support for this component.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.763340",
+    "updatedDate": "2026-03-08T21:40:20.763341",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/TextComponent/enableInputMethods": {
+    "id": "java.awt.TextComponent.enableInputMethods",
+    "name": "enableInputMethods",
+    "type": "method",
+    "parent": "TextComponent",
+    "signatures": [
+      "public void enableInputMethods(boolean enable)"
+    ],
+    "signature_hash": "ae93ae0a9bb4a891a4d7aef4b9d84d6d3d43e08b4bb03d51db7ead11d9f98680",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/TextComponent.html",
+    "parameters": [
+      {
+        "name": "enable",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Enables or disables input method support for this text component.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enables or disables input method support for this text component.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.889815",
+    "updatedDate": "2026-03-08T21:40:20.889816",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Desktop/enableSuddenTermination": {
+    "id": "java.awt.Desktop.enableSuddenTermination",
+    "name": "enableSuddenTermination",
+    "type": "method",
+    "parent": "Desktop",
+    "signatures": [
+      "public void enableSuddenTermination()"
+    ],
+    "signature_hash": "0dec596e3ff8000830a6e95633d7e0c7320f3388c0cc3cb68ff442eed0310599",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Desktop.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Enables this application to be suddenly terminated.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enables this application to be suddenly terminated.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.775516",
+    "updatedDate": "2026-03-08T21:40:20.775517",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PrintJob/end": {
+    "id": "java.awt.PrintJob.end",
+    "name": "end",
+    "type": "method",
+    "parent": "PrintJob",
+    "signatures": [
+      "public abstract void end()"
+    ],
+    "signature_hash": "4f20c4ad0a9ade31b25cec9b0e3f751285756105de29e193f20121bb1339d271",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PrintJob.html",
+    "parameters": [],
+    "return_type": "abstract void",
+    "exceptions": [],
+    "description": "Ends the print job and does any necessary cleanup.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Ends the print job and does any necessary cleanup.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.856212",
+    "updatedDate": "2026-03-08T21:40:20.856213",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/DefaultKeyboardFocusManager/enqueueKeyEvents": {
+    "id": "java.awt.DefaultKeyboardFocusManager.enqueueKeyEvents",
+    "name": "enqueueKeyEvents",
+    "type": "method",
+    "parent": "DefaultKeyboardFocusManager",
+    "signatures": [
+      "public protected void enqueueKeyEvents(long after, Component untilFocused)"
+    ],
+    "signature_hash": "da85865603be64b98cf620bbdda37aca7931cf464547d963382fb2eb3a5f28cf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/DefaultKeyboardFocusManager.html",
+    "parameters": [
+      {
+        "name": "after",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "untilFocused",
+        "type": "Component",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "protected void",
+    "exceptions": [],
+    "description": "Delays dispatching of KeyEvents until the specified Component becomes\nthe focus owner.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Delays dispatching of KeyEvents until the specified Component becomes\nthe focus owner.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.774962",
+    "updatedDate": "2026-03-08T21:40:20.774963",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/KeyboardFocusManager/enqueueKeyEvents": {
+    "id": "java.awt.KeyboardFocusManager.enqueueKeyEvents",
+    "name": "enqueueKeyEvents",
+    "type": "method",
+    "parent": "KeyboardFocusManager",
+    "signatures": [
+      "public protected abstract void enqueueKeyEvents(long after, Component untilFocused)"
+    ],
+    "signature_hash": "46ede2fcdc923139718c8e707f9e991818b7da1e59781f9aa9832b4df9b425af",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/KeyboardFocusManager.html",
+    "parameters": [
+      {
+        "name": "after",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "untilFocused",
+        "type": "Component",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "protected abstract void",
+    "exceptions": [],
+    "description": "Called by the AWT to notify the KeyboardFocusManager that it should\ndelay dispatching of KeyEvents until the specified Component becomes\nthe focus owner.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called by the AWT to notify the KeyboardFocusManager that it should\ndelay dispatching of KeyEvents until the specified Component becomes\nthe focus owner.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.815630",
+    "updatedDate": "2026-03-08T21:40:20.815631",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/SecondaryLoop/enter": {
+    "id": "java.awt.SecondaryLoop.enter",
+    "name": "enter",
+    "type": "method",
+    "parent": "SecondaryLoop",
+    "signatures": [
+      "public boolean enter()"
+    ],
+    "signature_hash": "67ccdc7354cb9b64847a366f04a52bf0b79071497cab552022cbffa726f198af",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/SecondaryLoop.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Blocks the execution of the current thread and enters a new\nsecondary event loop on the event dispatch thread.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Blocks the execution of the current thread and enters a new\nsecondary event loop on the event dispatch thread.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.877232",
+    "updatedDate": "2026-03-08T21:40:20.877233",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/RenderingHints/entrySet": {
+    "id": "java.awt.RenderingHints.entrySet",
+    "name": "entrySet",
+    "type": "method",
+    "parent": "RenderingHints",
+    "signatures": [
+      "public Set<Map.Entry<Object, Object>> entrySet()"
+    ],
+    "signature_hash": "bdbdacb5da72ccad3051d4fc9f96c3642ae3072aed3882bda9fa8ea17168671d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/RenderingHints.html",
+    "parameters": [],
+    "return_type": "Set<Map.Entry<Object, Object>>",
+    "exceptions": [],
+    "description": "Returns aSetview of the mappings contained\nin thisRenderingHints.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aSetview of the mappings contained\nin thisRenderingHints.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.861534",
+    "updatedDate": "2026-03-08T21:40:20.861534",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/AlphaComposite/equals": {
+    "id": "java.awt.AlphaComposite.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "AlphaComposite",
+    "signatures": [
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "4afeb0868b55bdd8e18a00a3cb43d83e0714378d1c4bb36f0936daefc060e2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/AlphaComposite.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines whether the specified object is equal to thisAlphaComposite.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines whether the specified object is equal to thisAlphaComposite.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.753171",
+    "updatedDate": "2026-03-08T21:40:20.753171",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/AWTKeyStroke/equals": {
+    "id": "java.awt.AWTKeyStroke.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "AWTKeyStroke",
+    "signatures": [
+      "public final boolean equals(Object anObject)"
+    ],
+    "signature_hash": "97e6f33e26f40647930fdbd4587a8ba1efd979d341b05f6909c77fd5700d7e26",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/AWTKeyStroke.html",
+    "parameters": [
+      {
+        "name": "anObject",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final boolean",
+    "exceptions": [],
+    "description": "Returns true if this object is identical to the specified object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns true if this object is identical to the specified object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.755304",
+    "updatedDate": "2026-03-08T21:40:20.755305",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/BasicStroke/equals": {
+    "id": "java.awt.BasicStroke.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "BasicStroke",
+    "signatures": [
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "4afeb0868b55bdd8e18a00a3cb43d83e0714378d1c4bb36f0936daefc060e2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/BasicStroke.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Tests if a specified object is equal to thisBasicStrokeby first testing if it is aBasicStrokeand then comparing\nits width, join, cap, miter limit, dash, and dash phase attributes with\nthose of thisBasicStroke.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tests if a specified object is equal to thisBasicStrokeby first testing if it is aBasicStrokeand then comparing\nits width, join, cap, miter limit, dash, and dash phase attributes with\nthose of thisBas...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.755712",
+    "updatedDate": "2026-03-08T21:40:20.755713",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Color/equals": {
+    "id": "java.awt.Color.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "Color",
+    "signatures": [
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "4afeb0868b55bdd8e18a00a3cb43d83e0714378d1c4bb36f0936daefc060e2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Color.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines whether another object is equal to thisColor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines whether another object is equal to thisColor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.760995",
+    "updatedDate": "2026-03-08T21:40:20.760996",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Dimension/equals": {
+    "id": "java.awt.Dimension.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "Dimension",
+    "signatures": [
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "4afeb0868b55bdd8e18a00a3cb43d83e0714378d1c4bb36f0936daefc060e2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Dimension.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Checks whether two dimension objects have equal values.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks whether two dimension objects have equal values.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.777783",
+    "updatedDate": "2026-03-08T21:40:20.777784",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/DisplayMode/equals": {
+    "id": "java.awt.DisplayMode.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "DisplayMode",
+    "signatures": [
+      "public boolean equals(DisplayMode dm)"
+    ],
+    "signature_hash": "8525e8fe451a229d1de65ae5f5deddfa4b904c69b862144af04f8fa80a7f2829",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/DisplayMode.html",
+    "parameters": [
+      {
+        "name": "dm",
+        "type": "DisplayMode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Returns whether the two display modes are equal.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns whether the two display modes are equal.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.778313",
+    "updatedDate": "2026-03-08T21:40:20.778314",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Font/equals": {
+    "id": "java.awt.Font.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "Font",
+    "signatures": [
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "4afeb0868b55bdd8e18a00a3cb43d83e0714378d1c4bb36f0936daefc060e2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Font.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Compares thisFontobject to the specifiedObject.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compares thisFontobject to the specifiedObject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.785554",
+    "updatedDate": "2026-03-08T21:40:20.785555",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Insets/equals": {
+    "id": "java.awt.Insets.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "Insets",
+    "signatures": [
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "4afeb0868b55bdd8e18a00a3cb43d83e0714378d1c4bb36f0936daefc060e2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Insets.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Checks whether two insets objects are equal.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks whether two insets objects are equal.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.808910",
+    "updatedDate": "2026-03-08T21:40:20.808910",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/JobAttributes/equals": {
+    "id": "java.awt.JobAttributes.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "JobAttributes",
+    "signatures": [
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "4afeb0868b55bdd8e18a00a3cb43d83e0714378d1c4bb36f0936daefc060e2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/JobAttributes.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines whether two JobAttributes are equal to each other.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines whether two JobAttributes are equal to each other.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.810064",
+    "updatedDate": "2026-03-08T21:40:20.810065",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/MenuShortcut/equals": {
+    "id": "java.awt.MenuShortcut.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "MenuShortcut",
+    "signatures": [
+      "public boolean equals(MenuShortcut s)",
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "ab8cf72d2cd392b19e5706404ac6fe99b8b73f734ce34edf8cea657a2c3c7f85",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/MenuShortcut.html",
+    "parameters": [
+      {
+        "name": "s",
+        "has_default": false,
+        "default_value": null,
+        "type": "MenuShortcut",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "obj",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Returns whether this MenuShortcut is the same as another:\nequality is defined to mean that both MenuShortcuts use the same key\nand both either use or don't use the SHIFT key.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns whether this MenuShortcut is the same as another:\nequality is defined to mean that both MenuShortcuts use the same key\nand both either use or don't use the SHIFT key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.833379",
+    "updatedDate": "2026-03-08T21:40:20.833379",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/PageAttributes/equals": {
+    "id": "java.awt.PageAttributes.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "PageAttributes",
+    "signatures": [
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "4afeb0868b55bdd8e18a00a3cb43d83e0714378d1c4bb36f0936daefc060e2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/PageAttributes.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines whether two PageAttributes are equal to each other.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines whether two PageAttributes are equal to each other.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.835374",
+    "updatedDate": "2026-03-08T21:40:20.835375",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Point/equals": {
+    "id": "java.awt.Point.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "Point",
+    "signatures": [
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "4afeb0868b55bdd8e18a00a3cb43d83e0714378d1c4bb36f0936daefc060e2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Point.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines whether or not two points are equal.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines whether or not two points are equal.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.852606",
+    "updatedDate": "2026-03-08T21:40:20.852607",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/Rectangle/equals": {
+    "id": "java.awt.Rectangle.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "Rectangle",
+    "signatures": [
+      "public boolean equals(Object obj)"
+    ],
+    "signature_hash": "4afeb0868b55bdd8e18a00a3cb43d83e0714378d1c4bb36f0936daefc060e2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/Rectangle.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Checks whether two rectangles are equal.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks whether two rectangles are equal.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.858127",
+    "updatedDate": "2026-03-08T21:40:20.858128",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/RenderingHints/equals": {
+    "id": "java.awt.RenderingHints.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "RenderingHints",
+    "signatures": [
+      "public boolean equals(Object o)"
+    ],
+    "signature_hash": "8d37d11c7ecfc0d0589696a89cb385888c83bd3e43ea0c95a3b4ae4ef78180ce",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/RenderingHints.html",
+    "parameters": [
+      {
+        "name": "o",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Compares the specifiedObjectwith thisRenderingHintsfor equality.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compares the specifiedObjectwith thisRenderingHintsfor equality.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.861626",
+    "updatedDate": "2026-03-08T21:40:20.861627",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/RenderingHints.Key/equals": {
+    "id": "java.awt.RenderingHints.Key.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "RenderingHints.Key",
+    "signatures": [
+      "public final boolean equals(Object o)"
+    ],
+    "signature_hash": "e5d86df0afc9a50f73ae73d1d0ff09d76863d3d1bef2fd39079056ecc15d61e3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/RenderingHints.Key.html",
+    "parameters": [
+      {
+        "name": "o",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final boolean",
+    "exceptions": [],
+    "description": "The equals method for all Key objects will return the same\nresult as the equality operator '=='.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The equals method for all Key objects will return the same\nresult as the equality operator '=='.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.867079",
+    "updatedDate": "2026-03-08T21:40:20.867080",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/ScrollPane/eventTypeEnabled": {
+    "id": "java.awt.ScrollPane.eventTypeEnabled",
+    "name": "eventTypeEnabled",
+    "type": "method",
+    "parent": "ScrollPane",
+    "signatures": [
+      "public protected boolean eventTypeEnabled(int type)"
+    ],
+    "signature_hash": "a3be32b8f6d2de08501b8fc70446614c503c3dadd9c79f9631e702242802ef57",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/ScrollPane.html",
+    "parameters": [
+      {
+        "name": "type",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "protected boolean",
+    "exceptions": [],
+    "description": "If wheel scrolling is enabled, we return true for MouseWheelEvents",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If wheel scrolling is enabled, we return true for MouseWheelEvents",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.873013",
+    "updatedDate": "2026-03-08T21:40:20.873014",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt/SecondaryLoop/exit": {
+    "id": "java.awt.SecondaryLoop.exit",
+    "name": "exit",
+    "type": "method",
+    "parent": "SecondaryLoop",
+    "signatures": [
+      "public boolean exit()"
+    ],
+    "signature_hash": "3d8acf65f6eda83bd374ff9aab5ccbc4d89f7b6a32ceaa1ac327705bd97f40f4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/SecondaryLoop.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Unblocks the execution of the thread blocked by theenter()method and exits the secondary loop.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Unblocks the execution of the thread blocked by theenter()method and exits the secondary loop.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.877326",
+    "updatedDate": "2026-03-08T21:40:20.877327",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

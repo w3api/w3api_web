@@ -1,0 +1,551 @@
+{
+  "java.nio.file.spi/FileSystemProvider/newAsynchronousFileChannel": {
+    "id": "java.nio.file.spi.FileSystemProvider.newAsynchronousFileChannel",
+    "name": "newAsynchronousFileChannel",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public AsynchronousFileChannel newAsynchronousFileChannel(Path path, Set<? extends OpenOption> options, ExecutorService executor, FileAttribute<?>... attrs)"
+    ],
+    "signature_hash": "94c331f3cf57a642377383c4023ff37ff23864256bc4867d741d6786216916d3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "type": "Set<? extends OpenOption>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "executor",
+        "type": "ExecutorService",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attrs",
+        "type": "FileAttribute<?>...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "AsynchronousFileChannel",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "FileAlreadyExistsException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens or creates a file for reading and/or writing, returning an\nasynchronous file channel to access the file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens or creates a file for reading and/or writing, returning an\nasynchronous file channel to access the file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219354",
+    "updatedDate": "2026-03-08T21:40:21.219355",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/newByteChannel": {
+    "id": "java.nio.file.spi.FileSystemProvider.newByteChannel",
+    "name": "newByteChannel",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract SeekableByteChannel newByteChannel(Path path, Set<? extends OpenOption> options, FileAttribute<?>... attrs)"
+    ],
+    "signature_hash": "a60ed79c92670e920683014370b723ee56b3f9e8535b2f7bf59a5c335c619b0c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "type": "Set<? extends OpenOption>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attrs",
+        "type": "FileAttribute<?>...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract SeekableByteChannel",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "FileAlreadyExistsException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens or creates a file, returning a seekable byte channel to access the\nfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens or creates a file, returning a seekable byte channel to access the\nfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219379",
+    "updatedDate": "2026-03-08T21:40:21.219380",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/newDirectoryStream": {
+    "id": "java.nio.file.spi.FileSystemProvider.newDirectoryStream",
+    "name": "newDirectoryStream",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract DirectoryStream<Path> newDirectoryStream(Path dir, DirectoryStream.Filter<? super Path> filter)"
+    ],
+    "signature_hash": "4ffe75e82ff1a99bcd361beda66a91c331bf6b18738579c4763f20d37406e47d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "dir",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "filter",
+        "type": "DirectoryStream.Filter<? super Path>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract DirectoryStream<Path>",
+    "exceptions": [
+      {
+        "name": "NotDirectoryException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens a directory, returning aDirectoryStreamto iterate over\nthe entries in the directory.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens a directory, returning aDirectoryStreamto iterate over\nthe entries in the directory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219402",
+    "updatedDate": "2026-03-08T21:40:21.219403",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/newFileChannel": {
+    "id": "java.nio.file.spi.FileSystemProvider.newFileChannel",
+    "name": "newFileChannel",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public FileChannel newFileChannel(Path path, Set<? extends OpenOption> options, FileAttribute<?>... attrs)"
+    ],
+    "signature_hash": "2f7e5e51cde3a1fb8ac420fedb124299efcfcc8265b1e1d50e4a7e2ed8feec30",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "type": "Set<? extends OpenOption>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attrs",
+        "type": "FileAttribute<?>...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "FileChannel",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "FileAlreadyExistsException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens or creates a file for reading and/or writing, returning a file\nchannel to access the file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens or creates a file for reading and/or writing, returning a file\nchannel to access the file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219428",
+    "updatedDate": "2026-03-08T21:40:21.219429",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/newFileSystem": {
+    "id": "java.nio.file.spi.FileSystemProvider.newFileSystem",
+    "name": "newFileSystem",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract FileSystem newFileSystem(URI uri, Map<String, ?> env)",
+      "public FileSystem newFileSystem(Path path, Map<String, ?> env)"
+    ],
+    "signature_hash": "b606b7066cf578e94abfa6de5d922d4573ed5a02013c7fb179e1475b0971bf51",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "uri",
+        "has_default": false,
+        "default_value": null,
+        "type": "URI",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Map<String",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "env",
+        "has_default": false,
+        "default_value": null,
+        "type": "?>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "path",
+        "has_default": false,
+        "default_value": null,
+        "type": "Path",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract FileSystem",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "FileSystemAlreadyExistsException",
+        "package": "java.nio.file"
+      }
+    ],
+    "description": "Constructs a newFileSystemobject identified by a URI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a newFileSystemobject identified by a URI.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219462",
+    "updatedDate": "2026-03-08T21:40:21.219463",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/newInputStream": {
+    "id": "java.nio.file.spi.FileSystemProvider.newInputStream",
+    "name": "newInputStream",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public InputStream newInputStream(Path path, OpenOption... options)"
+    ],
+    "signature_hash": "b4e7e5d91bbfdcf48f8ec5d8862f98340e6b5d0aa8de04ed8b81007581495999",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "type": "OpenOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "InputStream",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens a file, returning an input stream to read from the file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens a file, returning an input stream to read from the file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219481",
+    "updatedDate": "2026-03-08T21:40:21.219482",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/newOutputStream": {
+    "id": "java.nio.file.spi.FileSystemProvider.newOutputStream",
+    "name": "newOutputStream",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public OutputStream newOutputStream(Path path, OpenOption... options)"
+    ],
+    "signature_hash": "27a1d1fc58abdb6ec5b6062f7c67f237897a29c5cf8e9bde592593d692c34052",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "type": "OpenOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "OutputStream",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "FileAlreadyExistsException",
+        "package": "java.nio.file"
+      }
+    ],
+    "description": "Opens or creates a file, returning an output stream that may be used to\nwrite bytes to the file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens or creates a file, returning an output stream that may be used to\nwrite bytes to the file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219501",
+    "updatedDate": "2026-03-08T21:40:21.219502",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

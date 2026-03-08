@@ -1,0 +1,931 @@
+{
+  "java.awt.geom/FlatteningPathIterator": {
+    "id": "java.awt.geom.FlatteningPathIterator",
+    "name": "FlatteningPathIterator",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.947853",
+    "updatedDate": "2026-03-08T21:40:20.947853",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "FlatteningPathIterator"
+    ],
+    "methods": [
+      "currentSegment",
+      "getFlatness",
+      "getRecursionLimit",
+      "getWindingRule",
+      "isDone",
+      "next"
+    ]
+  },
+  "java.awt.geom/FlatteningPathIterator/FlatteningPathIterator": {
+    "id": "java.awt.geom.FlatteningPathIterator.FlatteningPathIterator",
+    "name": "FlatteningPathIterator",
+    "type": "constructor",
+    "parent": "FlatteningPathIterator",
+    "signatures": [
+      "public FlatteningPathIterator(PathIterator src, double flatness)",
+      "public FlatteningPathIterator(PathIterator src, double flatness, int limit)"
+    ],
+    "signature_hash": "22af62dbd5069b16be96461d9875e4055f9317a94f43209a6826c3b959b144e0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html",
+    "parameters": [
+      {
+        "name": "src",
+        "has_default": false,
+        "default_value": null,
+        "type": "PathIterator",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "flatness",
+        "has_default": false,
+        "default_value": null,
+        "type": "double",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "limit",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Constructs a newFlatteningPathIteratorobject that\nflattens a path as it iterates over it.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a newFlatteningPathIteratorobject that\nflattens a path as it iterates over it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.947890",
+    "updatedDate": "2026-03-08T21:40:20.947890",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.geom/Arc2D.Float/Float": {
+    "id": "java.awt.geom.Arc2D.Float.Float",
+    "name": "Float",
+    "type": "constructor",
+    "parent": "Arc2D.Float",
+    "signatures": [
+      "public Float()",
+      "public Float(float x, float y, float w, float h, float start, float extent, int type)",
+      "public Float(int type)",
+      "public Float(Rectangle2D ellipseBounds, float start, float extent, int type)"
+    ],
+    "signature_hash": "deff4055e2ade2efd9fa0e26e94f34fb0d0d76b8b1ab12cdc7d3f6f472c410e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html",
+    "parameters": [
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "w",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "h",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "start",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "extent",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ellipseBounds",
+        "has_default": false,
+        "default_value": null,
+        "type": "Rectangle2D",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructs a new OPEN arc, initialized to location (0, 0),\nsize (0, 0), angular extents (start = 0, extent = 0).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a new OPEN arc, initialized to location (0, 0),\nsize (0, 0), angular extents (start = 0, extent = 0).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.944762",
+    "updatedDate": "2026-03-08T21:40:20.944762",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.geom/CubicCurve2D.Float/Float": {
+    "id": "java.awt.geom.CubicCurve2D.Float.Float",
+    "name": "Float",
+    "type": "constructor",
+    "parent": "CubicCurve2D.Float",
+    "signatures": [
+      "public Float()",
+      "public Float(float x1, float y1, float ctrlx1, float ctrly1, float ctrlx2, float ctrly2, float x2, float y2)"
+    ],
+    "signature_hash": "0de395d8d04e69d2a6ebc82891cf0938f284bb02460eb53a9ade67ac4b47875b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html",
+    "parameters": [
+      {
+        "name": "x1",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y1",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ctrlx1",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ctrly1",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ctrlx2",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ctrly2",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x2",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y2",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructs and initializes a CubicCurve with coordinates\n(0, 0, 0, 0, 0, 0, 0, 0).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs and initializes a CubicCurve with coordinates\n(0, 0, 0, 0, 0, 0, 0, 0).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.946569",
+    "updatedDate": "2026-03-08T21:40:20.946570",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.geom/Ellipse2D.Float/Float": {
+    "id": "java.awt.geom.Ellipse2D.Float.Float",
+    "name": "Float",
+    "type": "constructor",
+    "parent": "Ellipse2D.Float",
+    "signatures": [
+      "public Float()",
+      "public Float(float x, float y, float w, float h)"
+    ],
+    "signature_hash": "c00ed9e439b2fa23257f2001a8a86b39efae326ae5afe76d0b5c6fbb03204aba",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html",
+    "parameters": [
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "w",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "h",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructs a newEllipse2D, initialized to\nlocation (0, 0) and size (0, 0).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a newEllipse2D, initialized to\nlocation (0, 0) and size (0, 0).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.947602",
+    "updatedDate": "2026-03-08T21:40:20.947603",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.geom/Line2D.Float/Float": {
+    "id": "java.awt.geom.Line2D.Float.Float",
+    "name": "Float",
+    "type": "constructor",
+    "parent": "Line2D.Float",
+    "signatures": [
+      "public Float()",
+      "public Float(float x1, float y1, float x2, float y2)",
+      "public Float(Point2D p1, Point2D p2)"
+    ],
+    "signature_hash": "368dbfd08b575df01f0644598fddc97a0f8e62adf5518bfc059586e596122522",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/Line2D.Float.html",
+    "parameters": [
+      {
+        "name": "x1",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y1",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x2",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y2",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p1",
+        "has_default": false,
+        "default_value": null,
+        "type": "Point2D",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p2",
+        "has_default": false,
+        "default_value": null,
+        "type": "Point2D",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructs and initializes a Line with coordinates (0, 0) → (0, 0).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs and initializes a Line with coordinates (0, 0) → (0, 0).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.949488",
+    "updatedDate": "2026-03-08T21:40:20.949489",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.geom/Path2D.Float/Float": {
+    "id": "java.awt.geom.Path2D.Float.Float",
+    "name": "Float",
+    "type": "constructor",
+    "parent": "Path2D.Float",
+    "signatures": [
+      "public Float()",
+      "public Float(int rule)",
+      "public Float(int rule, int initialCapacity)",
+      "public Float(Shape s)",
+      "public Float(Shape s, AffineTransform at)"
+    ],
+    "signature_hash": "6d6d0ccd4bf41c4b10be4544f64bb54454d0448cf7082bc96f2e8037f0124e7e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/Path2D.Float.html",
+    "parameters": [
+      {
+        "name": "rule",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "initialCapacity",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "s",
+        "has_default": false,
+        "default_value": null,
+        "type": "Shape",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "at",
+        "has_default": false,
+        "default_value": null,
+        "type": "AffineTransform",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Constructs a new empty single precisionPath2Dobject\nwith a default winding rule ofPath2D.WIND_NON_ZERO.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a new empty single precisionPath2Dobject\nwith a default winding rule ofPath2D.WIND_NON_ZERO.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.950998",
+    "updatedDate": "2026-03-08T21:40:20.950999",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.geom/Point2D.Float/Float": {
+    "id": "java.awt.geom.Point2D.Float.Float",
+    "name": "Float",
+    "type": "constructor",
+    "parent": "Point2D.Float",
+    "signatures": [
+      "public Float()",
+      "public Float(float x, float y)"
+    ],
+    "signature_hash": "8d776a1a19229951e1e06d9c5d7ee5ed4440eb3e4a7594a327c93aa0b6b4fb6f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/Point2D.Float.html",
+    "parameters": [
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructs and initializes aPoint2Dwith\ncoordinates (0, 0).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs and initializes aPoint2Dwith\ncoordinates (0, 0).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.951948",
+    "updatedDate": "2026-03-08T21:40:20.951949",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.geom/QuadCurve2D.Float/Float": {
+    "id": "java.awt.geom.QuadCurve2D.Float.Float",
+    "name": "Float",
+    "type": "constructor",
+    "parent": "QuadCurve2D.Float",
+    "signatures": [
+      "public Float()",
+      "public Float(float x1, float y1, float ctrlx, float ctrly, float x2, float y2)"
+    ],
+    "signature_hash": "29d124e409898f78dfbfc5786efbabc6b54ace18613b2867a3e8a2a8fd7d1c5e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html",
+    "parameters": [
+      {
+        "name": "x1",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y1",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ctrlx",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ctrly",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x2",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y2",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructs and initializes aQuadCurve2Dwith\ncoordinates (0, 0, 0, 0, 0, 0).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs and initializes aQuadCurve2Dwith\ncoordinates (0, 0, 0, 0, 0, 0).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.953554",
+    "updatedDate": "2026-03-08T21:40:20.953554",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.geom/Rectangle2D.Float/Float": {
+    "id": "java.awt.geom.Rectangle2D.Float.Float",
+    "name": "Float",
+    "type": "constructor",
+    "parent": "Rectangle2D.Float",
+    "signatures": [
+      "public Float()",
+      "public Float(float x, float y, float w, float h)"
+    ],
+    "signature_hash": "c00ed9e439b2fa23257f2001a8a86b39efae326ae5afe76d0b5c6fbb03204aba",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/Rectangle2D.Float.html",
+    "parameters": [
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "w",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "h",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructs a newRectangle2D, initialized to\nlocation (0.0, 0.0) and size (0.0, 0.0).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a newRectangle2D, initialized to\nlocation (0.0, 0.0) and size (0.0, 0.0).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.955373",
+    "updatedDate": "2026-03-08T21:40:20.955374",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.geom/RoundRectangle2D.Float/Float": {
+    "id": "java.awt.geom.RoundRectangle2D.Float.Float",
+    "name": "Float",
+    "type": "constructor",
+    "parent": "RoundRectangle2D.Float",
+    "signatures": [
+      "public Float()",
+      "public Float(float x, float y, float w, float h, float arcw, float arch)"
+    ],
+    "signature_hash": "e307750e892f77683277f5e9cb6b42e362b604e1c88858fefd65331ab0e845c5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html",
+    "parameters": [
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "w",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "h",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "arcw",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "arch",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructs a newRoundRectangle2D, initialized to\nlocation (0.0, 0.0), size (0.0, 0.0), and corner arcs\nof radius 0.0.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a newRoundRectangle2D, initialized to\nlocation (0.0, 0.0), size (0.0, 0.0), and corner arcs\nof radius 0.0.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.957874",
+    "updatedDate": "2026-03-08T21:40:20.957875",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

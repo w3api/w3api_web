@@ -1,0 +1,811 @@
+{
+  "javax.lang.model.type/TypeKind/valueOf": {
+    "id": "javax.lang.model.type.TypeKind.valueOf",
+    "name": "valueOf",
+    "type": "method",
+    "parent": "TypeKind",
+    "signatures": [
+      "public static TypeKind valueOf(String name)"
+    ],
+    "signature_hash": "cfb9f84f6bcc36e52e8aa5a44462aa136ab3bb0b5a46ed2d689e0493f3625bbf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeKind.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static TypeKind",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the enum constant of this class with the specified name.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the enum constant of this class with the specified name.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551691",
+    "updatedDate": "2026-03-08T21:40:21.551692",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeKind/values": {
+    "id": "javax.lang.model.type.TypeKind.values",
+    "name": "values",
+    "type": "method",
+    "parent": "TypeKind",
+    "signatures": [
+      "public static TypeKind[] values()"
+    ],
+    "signature_hash": "5d187e4c5a4cd54d1ef434b08342c81b9c2fe32b683c5c35e86d954e68bfcca2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeKind.html",
+    "parameters": [],
+    "return_type": "static TypeKind[]",
+    "exceptions": [],
+    "description": "Returns an array containing the constants of this enum class, in\nthe order they are declared.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an array containing the constants of this enum class, in\nthe order they are declared.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551703",
+    "updatedDate": "2026-03-08T21:40:21.551704",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visit": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visit",
+    "name": "visit",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public default R visit(TypeMirror t)",
+      "public R visit(TypeMirror t, P p)"
+    ],
+    "signature_hash": "c4d6b97061b88d50e4bee94b0dfe59cc736c2446ebad3456bf73ce5f210f4c09",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "has_default": false,
+        "default_value": null,
+        "type": "TypeMirror",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "has_default": false,
+        "default_value": null,
+        "type": "P",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default R",
+    "exceptions": [],
+    "description": "A convenience method equivalent tovisit(t, null).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A convenience method equivalent tovisit(t, null).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551780",
+    "updatedDate": "2026-03-08T21:40:21.551781",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitArray": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitArray",
+    "name": "visitArray",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitArray(ArrayType t, P p)"
+    ],
+    "signature_hash": "fa85d1cdaa646f9dfb174ff3d15a2332850dfb14a83492edfaeb3b0dbfde8515",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "ArrayType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits an array type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits an array type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551795",
+    "updatedDate": "2026-03-08T21:40:21.551796",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitDeclared": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitDeclared",
+    "name": "visitDeclared",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitDeclared(DeclaredType t, P p)"
+    ],
+    "signature_hash": "282f0f29d37fc297ff17c01a566ae50fe9814ca27b08bb10be56d1bd6026b605",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "DeclaredType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits a declared type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits a declared type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551811",
+    "updatedDate": "2026-03-08T21:40:21.551812",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitError": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitError",
+    "name": "visitError",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitError(ErrorType t, P p)"
+    ],
+    "signature_hash": "6ee5fc280e3fa9542005c5a89420f8ddf45c6388504ecae6338ab4ec282038be",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "ErrorType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits an error type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits an error type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551827",
+    "updatedDate": "2026-03-08T21:40:21.551828",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitExecutable": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitExecutable",
+    "name": "visitExecutable",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitExecutable(ExecutableType t, P p)"
+    ],
+    "signature_hash": "d2d05ff9e6c98566baceabf59dc587aec18b9f0b00c6a5e9b7b6a15256e370c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "ExecutableType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits an executable type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits an executable type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551843",
+    "updatedDate": "2026-03-08T21:40:21.551843",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitIntersection": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitIntersection",
+    "name": "visitIntersection",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitIntersection(IntersectionType t, P p)"
+    ],
+    "signature_hash": "ca8411ff9f02421ee5870a5cd1c2a679b36d84615fda3aad0ccf88daef373cc7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "IntersectionType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits an intersection type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits an intersection type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551858",
+    "updatedDate": "2026-03-08T21:40:21.551859",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitNoType": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitNoType",
+    "name": "visitNoType",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitNoType(NoType t, P p)"
+    ],
+    "signature_hash": "5a4731874b7df8f6f2231e78f9318b2573ff220b6eec9d2ba93a8a0b8377c4a7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "NoType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits aNoTypeinstance.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits aNoTypeinstance.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551873",
+    "updatedDate": "2026-03-08T21:40:21.551874",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitNull": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitNull",
+    "name": "visitNull",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitNull(NullType t, P p)"
+    ],
+    "signature_hash": "b3a554ed0fecfccf8abbe6d4576b30f4c36c9053abecbd3bce29a513556fe292",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "NullType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits the null type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits the null type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551888",
+    "updatedDate": "2026-03-08T21:40:21.551889",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitPrimitive": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitPrimitive",
+    "name": "visitPrimitive",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitPrimitive(PrimitiveType t, P p)"
+    ],
+    "signature_hash": "50360ca84784f9319bc25de1ec848318d38dcde840fbd87bb3d3e3fe7595c881",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "PrimitiveType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits a primitive type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits a primitive type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551903",
+    "updatedDate": "2026-03-08T21:40:21.551904",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitTypeVariable": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitTypeVariable",
+    "name": "visitTypeVariable",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitTypeVariable(TypeVariable t, P p)"
+    ],
+    "signature_hash": "c42ec652c59e12d5c649608d61df90f06435912289cd6f4e847b8450e9cd32b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "TypeVariable",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits a type variable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits a type variable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551918",
+    "updatedDate": "2026-03-08T21:40:21.551919",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitUnion": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitUnion",
+    "name": "visitUnion",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitUnion(UnionType t, P p)"
+    ],
+    "signature_hash": "b1330f55a8ce180fa51c4b411a4cb9d5f59b05afa385fc355fe1766e48c05774",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "UnionType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits a union type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits a union type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551935",
+    "updatedDate": "2026-03-08T21:40:21.551935",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitUnknown": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitUnknown",
+    "name": "visitUnknown",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitUnknown(TypeMirror t, P p)"
+    ],
+    "signature_hash": "a6f0ebcdaa368267e7bbd01e68418c013b343b8f050a34cf36e7e69fddb565bc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "TypeMirror",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [
+      {
+        "name": "UnknownTypeException",
+        "package": "javax.lang.model.type"
+      }
+    ],
+    "description": "Visits an unknown kind of type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits an unknown kind of type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551951",
+    "updatedDate": "2026-03-08T21:40:21.551952",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.lang.model.type/TypeVisitor<R,P>/visitWildcard": {
+    "id": "javax.lang.model.type.TypeVisitor<R,P>.visitWildcard",
+    "name": "visitWildcard",
+    "type": "method",
+    "parent": "TypeVisitor<R,P>",
+    "signatures": [
+      "public R visitWildcard(WildcardType t, P p)"
+    ],
+    "signature_hash": "ee41b1fd5b2d3501de600ac537ec9e0dc37fc0a91bef616b3f7f8bd1e8ae2a64",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "WildcardType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "p",
+        "type": "P",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "R",
+    "exceptions": [],
+    "description": "Visits a wildcard type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Visits a wildcard type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.551966",
+    "updatedDate": "2026-03-08T21:40:21.551967",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

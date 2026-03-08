@@ -1,0 +1,976 @@
+{
+  "java.lang.invoke/VarHandle/accessModeType": {
+    "id": "java.lang.invoke.VarHandle.accessModeType",
+    "name": "accessModeType",
+    "type": "method",
+    "parent": "VarHandle",
+    "signatures": [
+      "public final MethodType accessModeType(VarHandle.AccessMode accessMode)"
+    ],
+    "signature_hash": "a1c80644a430f24d54c9006e516977f1ee27855b6659920b9b8f5b8d6ecaf1e5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/VarHandle.html",
+    "parameters": [
+      {
+        "name": "accessMode",
+        "type": "VarHandle.AccessMode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final MethodType",
+    "exceptions": [],
+    "description": "Obtains the access mode type for this VarHandle and a given access mode.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the access mode type for this VarHandle and a given access mode.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.153263",
+    "updatedDate": "2026-03-08T21:40:21.153264",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/VarHandle/acquireFence": {
+    "id": "java.lang.invoke.VarHandle.acquireFence",
+    "name": "acquireFence",
+    "type": "method",
+    "parent": "VarHandle",
+    "signatures": [
+      "public static void acquireFence()"
+    ],
+    "signature_hash": "b005088946b374ff487100fb81e7d7d9356f9d8ead8ea91fcac7fa160ca8e3e7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/VarHandle.html",
+    "parameters": [],
+    "return_type": "static void",
+    "exceptions": [],
+    "description": "Ensures that loads before the fence will not be reordered with loads and\nstores after the fence.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Ensures that loads before the fence will not be reordered with loads and\nstores after the fence.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.153275",
+    "updatedDate": "2026-03-08T21:40:21.153276",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/LambdaMetafactory/altMetafactory": {
+    "id": "java.lang.invoke.LambdaMetafactory.altMetafactory",
+    "name": "altMetafactory",
+    "type": "method",
+    "parent": "LambdaMetafactory",
+    "signatures": [
+      "public static CallSite altMetafactory(MethodHandles.Lookup caller, String interfaceMethodName, MethodType factoryType, Object... args)"
+    ],
+    "signature_hash": "92dc341fa1b8466b932293606de25d23d3ad5e9fd41a4ebb1acf97509bbfede7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html",
+    "parameters": [
+      {
+        "name": "caller",
+        "type": "MethodHandles.Lookup",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "interfaceMethodName",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "factoryType",
+        "type": "MethodType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "Object...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static CallSite",
+    "exceptions": [
+      {
+        "name": "LambdaConversionException",
+        "package": "java.lang.invoke"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Facilitates the creation of simple \"function objects\" that implement one\nor more interfaces by delegation to a providedMethodHandle,\nafter appropriate type adaptation and partial evaluation of arguments.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Facilitates the creation of simple \"function objects\" that implement one\nor more interfaces by delegation to a providedMethodHandle,\nafter appropriate type adaptation and partial evaluation of argumen...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.155200",
+    "updatedDate": "2026-03-08T21:40:21.155201",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodType/appendParameterTypes": {
+    "id": "java.lang.invoke.MethodType.appendParameterTypes",
+    "name": "appendParameterTypes",
+    "type": "method",
+    "parent": "MethodType",
+    "signatures": [
+      "public MethodType appendParameterTypes(Class<?>... ptypesToInsert)",
+      "public MethodType appendParameterTypes(List<Class<?>> ptypesToInsert)"
+    ],
+    "signature_hash": "d7b787f70b13267f50e583df679c446dfd7865083c03ceeaf820bed34245d006",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodType.html",
+    "parameters": [
+      {
+        "name": "ptypesToInsert",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<?>...|List<Class<?>>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "MethodType",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Finds or creates a method type with additional parameter types.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Finds or creates a method type with additional parameter types.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.154091",
+    "updatedDate": "2026-03-08T21:40:21.154092",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandles/arrayConstructor": {
+    "id": "java.lang.invoke.MethodHandles.arrayConstructor",
+    "name": "arrayConstructor",
+    "type": "method",
+    "parent": "MethodHandles",
+    "signatures": [
+      "public static MethodHandle arrayConstructor(Class<?> arrayClass)"
+    ],
+    "signature_hash": "5534f446854582c3bcf2273b8169a00bbf6650b79aefbccd08a0285558c6059a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+    "parameters": [
+      {
+        "name": "arrayClass",
+        "type": "Class<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static MethodHandle",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Produces a method handle constructing arrays of a desired type,\nas if by theanewarraybytecode.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Produces a method handle constructing arrays of a desired type,\nas if by theanewarraybytecode.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.155782",
+    "updatedDate": "2026-03-08T21:40:21.155783",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandles/arrayElementGetter": {
+    "id": "java.lang.invoke.MethodHandles.arrayElementGetter",
+    "name": "arrayElementGetter",
+    "type": "method",
+    "parent": "MethodHandles",
+    "signatures": [
+      "public static MethodHandle arrayElementGetter(Class<?> arrayClass)"
+    ],
+    "signature_hash": "28e86f4b3ccd742f644c529d1389799b4cc3d612a3699e356712dac0049fe799",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+    "parameters": [
+      {
+        "name": "arrayClass",
+        "type": "Class<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static MethodHandle",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Produces a method handle giving read access to elements of an array,\nas if by theaaloadbytecode.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Produces a method handle giving read access to elements of an array,\nas if by theaaloadbytecode.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.155830",
+    "updatedDate": "2026-03-08T21:40:21.155831",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandles/arrayElementSetter": {
+    "id": "java.lang.invoke.MethodHandles.arrayElementSetter",
+    "name": "arrayElementSetter",
+    "type": "method",
+    "parent": "MethodHandles",
+    "signatures": [
+      "public static MethodHandle arrayElementSetter(Class<?> arrayClass)"
+    ],
+    "signature_hash": "8092c465437e5cebe225d4623b3fd661fc48cff08c85c7d06d2b0d785737b55c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+    "parameters": [
+      {
+        "name": "arrayClass",
+        "type": "Class<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static MethodHandle",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Produces a method handle giving write access to elements of an array,\nas if by theastorebytecode.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Produces a method handle giving write access to elements of an array,\nas if by theastorebytecode.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.155852",
+    "updatedDate": "2026-03-08T21:40:21.155853",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandles/arrayElementVarHandle": {
+    "id": "java.lang.invoke.MethodHandles.arrayElementVarHandle",
+    "name": "arrayElementVarHandle",
+    "type": "method",
+    "parent": "MethodHandles",
+    "signatures": [
+      "public static VarHandle arrayElementVarHandle(Class<?> arrayClass)"
+    ],
+    "signature_hash": "56d2bae6aea6d2a47a879861607bd593f223bf73f6f42b300ba6460a7eedd7b4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+    "parameters": [
+      {
+        "name": "arrayClass",
+        "type": "Class<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static VarHandle",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Produces a VarHandle giving access to elements of an array of typearrayClass.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Produces a VarHandle giving access to elements of an array of typearrayClass.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.155874",
+    "updatedDate": "2026-03-08T21:40:21.155875",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandles/arrayLength": {
+    "id": "java.lang.invoke.MethodHandles.arrayLength",
+    "name": "arrayLength",
+    "type": "method",
+    "parent": "MethodHandles",
+    "signatures": [
+      "public static MethodHandle arrayLength(Class<?> arrayClass)"
+    ],
+    "signature_hash": "d517b0c1a220233d16759f90f883c529f3cacbe2172d3152c24d6bbbc909f7b4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+    "parameters": [
+      {
+        "name": "arrayClass",
+        "type": "Class<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static MethodHandle",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Produces a method handle returning the length of an array,\nas if by thearraylengthbytecode.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Produces a method handle returning the length of an array,\nas if by thearraylengthbytecode.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.155897",
+    "updatedDate": "2026-03-08T21:40:21.155898",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/TypeDescriptor.OfField<F>>/arrayType": {
+    "id": "java.lang.invoke.TypeDescriptor.OfField<F>>.arrayType",
+    "name": "arrayType",
+    "type": "method",
+    "parent": "TypeDescriptor.OfField<F>>",
+    "signatures": [
+      "public F arrayType()"
+    ],
+    "signature_hash": "27d8205f0e408c56ff95936ae7b943cc6d9299f434e797e2930e8d6a4cec492f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/TypeDescriptor.OfField.html",
+    "parameters": [],
+    "return_type": "F",
+    "exceptions": [],
+    "description": "Return a descriptor for the array type whose component type is described by this\ndescriptor",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a descriptor for the array type whose component type is described by this\ndescriptor",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.159028",
+    "updatedDate": "2026-03-08T21:40:21.159029",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/ConstantBootstraps/arrayVarHandle": {
+    "id": "java.lang.invoke.ConstantBootstraps.arrayVarHandle",
+    "name": "arrayVarHandle",
+    "type": "method",
+    "parent": "ConstantBootstraps",
+    "signatures": [
+      "public static VarHandle arrayVarHandle(MethodHandles.Lookup lookup, String name, Class<VarHandle> type, Class<?> arrayClass)"
+    ],
+    "signature_hash": "8fd2b6ef62e9b9d9578e01521142524c5215c434cb54fd59d0b0bd043f0cb540",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html",
+    "parameters": [
+      {
+        "name": "lookup",
+        "type": "MethodHandles.Lookup",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "Class<VarHandle>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "arrayClass",
+        "type": "Class<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static VarHandle",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Finds aVarHandlefor an array type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Finds aVarHandlefor an array type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.154736",
+    "updatedDate": "2026-03-08T21:40:21.154737",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandle/asCollector": {
+    "id": "java.lang.invoke.MethodHandle.asCollector",
+    "name": "asCollector",
+    "type": "method",
+    "parent": "MethodHandle",
+    "signatures": [
+      "public MethodHandle asCollector(int collectArgPos, Class<?> arrayType, int arrayLength)",
+      "public MethodHandle asCollector(Class<?> arrayType, int arrayLength)"
+    ],
+    "signature_hash": "d46aba01d858852dea490a472a160b0f33f854d9bcd21b235f10d1aaaeb019a3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+    "parameters": [
+      {
+        "name": "collectArgPos",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "arrayType",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<?>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "arrayLength",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "MethodHandle",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongMethodTypeException",
+        "package": "java.lang.invoke"
+      }
+    ],
+    "description": "Makes anarray-collectingmethod handle, which accepts a given number of positional arguments starting\nat a given position, and collects them into an array argument.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Makes anarray-collectingmethod handle, which accepts a given number of positional arguments starting\nat a given position, and collects them into an array argument.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.152958",
+    "updatedDate": "2026-03-08T21:40:21.152959",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandle/asFixedArity": {
+    "id": "java.lang.invoke.MethodHandle.asFixedArity",
+    "name": "asFixedArity",
+    "type": "method",
+    "parent": "MethodHandle",
+    "signatures": [
+      "public MethodHandle asFixedArity()"
+    ],
+    "signature_hash": "c68750e6126ae636234c6669ecfe6ff74e879796a088734f799176615e1a0508",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+    "parameters": [],
+    "return_type": "MethodHandle",
+    "exceptions": [],
+    "description": "Makes afixed aritymethod handle which is otherwise\n equivalent to the current method handle.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Makes afixed aritymethod handle which is otherwise\n equivalent to the current method handle.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.153017",
+    "updatedDate": "2026-03-08T21:40:21.153020",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandleProxies/asInterfaceInstance": {
+    "id": "java.lang.invoke.MethodHandleProxies.asInterfaceInstance",
+    "name": "asInterfaceInstance",
+    "type": "method",
+    "parent": "MethodHandleProxies",
+    "signatures": [
+      "public static<T> T asInterfaceInstance(Class<T> intfc, MethodHandle target)"
+    ],
+    "signature_hash": "8401415a00c4bfad4f7af04a743252c137844590bed2c288b0c66dbe9255154d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html",
+    "parameters": [
+      {
+        "name": "intfc",
+        "type": "Class<T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "target",
+        "type": "MethodHandle",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static<T> T",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongMethodTypeException",
+        "package": "java.lang.invoke"
+      }
+    ],
+    "description": "Produces an instance of the given single-method interface which redirects\nits calls to the given method handle.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Produces an instance of the given single-method interface which redirects\nits calls to the given method handle.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.155682",
+    "updatedDate": "2026-03-08T21:40:21.155683",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandle/asSpreader": {
+    "id": "java.lang.invoke.MethodHandle.asSpreader",
+    "name": "asSpreader",
+    "type": "method",
+    "parent": "MethodHandle",
+    "signatures": [
+      "public MethodHandle asSpreader(int spreadArgPos, Class<?> arrayType, int arrayLength)",
+      "public MethodHandle asSpreader(Class<?> arrayType, int arrayLength)"
+    ],
+    "signature_hash": "77a3bce984b6ea501e95c87351a405dc004066179cebfca9aa984811fd14fca0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+    "parameters": [
+      {
+        "name": "spreadArgPos",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "arrayType",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<?>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "arrayLength",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "MethodHandle",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongMethodTypeException",
+        "package": "java.lang.invoke"
+      }
+    ],
+    "description": "Makes anarray-spreadingmethod handle, which accepts an array argument at a given position and spreads\nits elements as positional arguments in place of the array.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Makes anarray-spreadingmethod handle, which accepts an array argument at a given position and spreads\nits elements as positional arguments in place of the array.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.153056",
+    "updatedDate": "2026-03-08T21:40:21.153057",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandle/asType": {
+    "id": "java.lang.invoke.MethodHandle.asType",
+    "name": "asType",
+    "type": "method",
+    "parent": "MethodHandle",
+    "signatures": [
+      "public final MethodHandle asType(MethodType newType)"
+    ],
+    "signature_hash": "fe6c518541de19f9b15332aaf05a4b697b42b91c4ea8de629e2c8a73b05227cf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+    "parameters": [
+      {
+        "name": "newType",
+        "type": "MethodType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final MethodHandle",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongMethodTypeException",
+        "package": "java.lang.invoke"
+      }
+    ],
+    "description": "Produces an adapter method handle which adapts the type of the\ncurrent method handle to a new type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Produces an adapter method handle which adapts the type of the\ncurrent method handle to a new type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.153073",
+    "updatedDate": "2026-03-08T21:40:21.153074",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandle/asVarargsCollector": {
+    "id": "java.lang.invoke.MethodHandle.asVarargsCollector",
+    "name": "asVarargsCollector",
+    "type": "method",
+    "parent": "MethodHandle",
+    "signatures": [
+      "public MethodHandle asVarargsCollector(Class<?> arrayType)"
+    ],
+    "signature_hash": "31b5db11ab5e647c92cbca11598c6f94448fdea0c5b88991e9e13c79e9391b49",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+    "parameters": [
+      {
+        "name": "arrayType",
+        "type": "Class<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "MethodHandle",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Makes avariable arityadapter which is able to accept\n any number of trailing positional arguments and collect them\n into an array argument.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Makes avariable arityadapter which is able to accept\n any number of trailing positional arguments and collect them\n into an array argument.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.153090",
+    "updatedDate": "2026-03-08T21:40:21.153091",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

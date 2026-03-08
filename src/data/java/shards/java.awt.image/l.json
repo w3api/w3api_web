@@ -1,0 +1,418 @@
+{
+  "java.awt.image/LookupOp": {
+    "id": "java.awt.image.LookupOp",
+    "name": "LookupOp",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/LookupOp.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.971279",
+    "updatedDate": "2026-03-08T21:40:20.971280",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "LookupOp"
+    ],
+    "methods": [
+      "createCompatibleDestImage",
+      "createCompatibleDestRaster",
+      "filter",
+      "getBounds2D",
+      "getPoint2D",
+      "getRenderingHints",
+      "getTable"
+    ]
+  },
+  "java.awt.image/LookupTable": {
+    "id": "java.awt.image.LookupTable",
+    "name": "LookupTable",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/LookupTable.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.971577",
+    "updatedDate": "2026-03-08T21:40:20.971578",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "LookupTable"
+    ],
+    "methods": [
+      "getNumComponents",
+      "getOffset",
+      "lookupPixel"
+    ]
+  },
+  "java.awt.image/LookupOp/LookupOp": {
+    "id": "java.awt.image.LookupOp.LookupOp",
+    "name": "LookupOp",
+    "type": "constructor",
+    "parent": "LookupOp",
+    "signatures": [
+      "public LookupOp(LookupTable lookup, RenderingHints hints)"
+    ],
+    "signature_hash": "17267f37c1c18d9e71ad00d4d525ca6c115e9d48cdbe73ff5d2bee285c955ed0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/LookupOp.html",
+    "parameters": [
+      {
+        "name": "lookup",
+        "type": "LookupTable",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "hints",
+        "type": "RenderingHints",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructs aLookupOpobject given the lookup\ntable and aRenderingHintsobject, which might\nbenull.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs aLookupOpobject given the lookup\ntable and aRenderingHintsobject, which might\nbenull.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.971313",
+    "updatedDate": "2026-03-08T21:40:20.971314",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image/LookupTable/LookupTable": {
+    "id": "java.awt.image.LookupTable.LookupTable",
+    "name": "LookupTable",
+    "type": "constructor",
+    "parent": "LookupTable",
+    "signatures": [
+      "public LookupTable(int offset, int numComponents)"
+    ],
+    "signature_hash": "c4e5f68fa3c327d9f2616d33f596e45ac2b2174c32901b22ebffcae71926881e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/LookupTable.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "numComponents",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Constructs a new LookupTable from the number of components and an offset\ninto the lookup table.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a new LookupTable from the number of components and an offset\ninto the lookup table.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.971610",
+    "updatedDate": "2026-03-08T21:40:20.971611",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image/ByteLookupTable/lookupPixel": {
+    "id": "java.awt.image.ByteLookupTable.lookupPixel",
+    "name": "lookupPixel",
+    "type": "method",
+    "parent": "ByteLookupTable",
+    "signatures": [
+      "public byte[] lookupPixel(byte[]src, byte[]dst)",
+      "public int[] lookupPixel(int[]src, int[]dst)"
+    ],
+    "signature_hash": "25faf971faa596d0422d9e85f4951127a4cf51712b2bd9473974e83cf3e0ece8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/ByteLookupTable.html",
+    "parameters": [
+      {
+        "name": "byte[]src",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "byte[]dst",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "int[]src",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "int[]dst",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "byte[]",
+    "exceptions": [
+      {
+        "name": "ArrayIndexOutOfBoundsException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an array of samples of a pixel, translated with the lookup\ntable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an array of samples of a pixel, translated with the lookup\ntable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.962546",
+    "updatedDate": "2026-03-08T21:40:20.962547",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image/LookupTable/lookupPixel": {
+    "id": "java.awt.image.LookupTable.lookupPixel",
+    "name": "lookupPixel",
+    "type": "method",
+    "parent": "LookupTable",
+    "signatures": [
+      "public abstract int[] lookupPixel(int[]src, int[]dest)"
+    ],
+    "signature_hash": "5a0391e4389252e70b71bff1fd34ccc30193b0b5eca982c683485cb9ce8f6bee",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/LookupTable.html",
+    "parameters": [
+      {
+        "name": "int[]src",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "int[]dest",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract int[]",
+    "exceptions": [],
+    "description": "Returns anintarray of components for\none pixel.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns anintarray of components for\none pixel.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.971742",
+    "updatedDate": "2026-03-08T21:40:20.971743",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image/ShortLookupTable/lookupPixel": {
+    "id": "java.awt.image.ShortLookupTable.lookupPixel",
+    "name": "lookupPixel",
+    "type": "method",
+    "parent": "ShortLookupTable",
+    "signatures": [
+      "public int[] lookupPixel(int[]src, int[]dst)",
+      "public short[] lookupPixel(short[]src, short[]dst)"
+    ],
+    "signature_hash": "0193d95179e78cd4ea022a674387727cdf48c1a260a29fca5d2b241ba61f0bbf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/ShortLookupTable.html",
+    "parameters": [
+      {
+        "name": "int[]src",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "int[]dst",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "short[]src",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "short[]dst",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int[]",
+    "exceptions": [
+      {
+        "name": "ArrayIndexOutOfBoundsException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an array of samples of a pixel, translated with the lookup\ntable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an array of samples of a pixel, translated with the lookup\ntable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.979489",
+    "updatedDate": "2026-03-08T21:40:20.979490",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

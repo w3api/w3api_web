@@ -1,0 +1,935 @@
+{
+  "javax.net.ssl/CertPathTrustManagerParameters": {
+    "id": "javax.net.ssl.CertPathTrustManagerParameters",
+    "name": "CertPathTrustManagerParameters",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.604487",
+    "updatedDate": "2026-03-08T21:40:21.604488",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "CertPathTrustManagerParameters"
+    ],
+    "methods": [
+      "getParameters"
+    ]
+  },
+  "javax.net.ssl/CertPathTrustManagerParameters/CertPathTrustManagerParameters": {
+    "id": "javax.net.ssl.CertPathTrustManagerParameters.CertPathTrustManagerParameters",
+    "name": "CertPathTrustManagerParameters",
+    "type": "constructor",
+    "parent": "CertPathTrustManagerParameters",
+    "signatures": [
+      "public CertPathTrustManagerParameters(CertPathParameters parameters)"
+    ],
+    "signature_hash": "1efac3fda33119eed25cf721217dcbb277ede98b4e3c3f4561099931bd970a55",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html",
+    "parameters": [
+      {
+        "name": "parameters",
+        "type": "CertPathParameters",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Construct new CertPathTrustManagerParameters from the specified\nparameters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Construct new CertPathTrustManagerParameters from the specified\nparameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.604503",
+    "updatedDate": "2026-03-08T21:40:21.604504",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/X509ExtendedTrustManager/checkClientTrusted": {
+    "id": "javax.net.ssl.X509ExtendedTrustManager.checkClientTrusted",
+    "name": "checkClientTrusted",
+    "type": "method",
+    "parent": "X509ExtendedTrustManager",
+    "signatures": [
+      "public abstract void checkClientTrusted(X509Certificate[]chain, String authType, Socket socket)",
+      "public abstract void checkClientTrusted(X509Certificate[]chain, String authType, SSLEngine engine)"
+    ],
+    "signature_hash": "8d6ea21361be4d97ebd13cfc6d1596688317191353d0a8afac0e26c89108667f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/X509ExtendedTrustManager.html",
+    "parameters": [
+      {
+        "name": "X509Certificate[]chain",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "authType",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "socket",
+        "has_default": false,
+        "default_value": null,
+        "type": "Socket",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "engine",
+        "has_default": false,
+        "default_value": null,
+        "type": "SSLEngine",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "CertificateException",
+        "package": "javax.security.cert"
+      }
+    ],
+    "description": "Given the partial or complete certificate chain provided by the\npeer, build and validate the certificate path based on the\nauthentication type and ssl parameters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Given the partial or complete certificate chain provided by the\npeer, build and validate the certificate path based on the\nauthentication type and ssl parameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.610813",
+    "updatedDate": "2026-03-08T21:40:21.610814",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/X509TrustManager/checkClientTrusted": {
+    "id": "javax.net.ssl.X509TrustManager.checkClientTrusted",
+    "name": "checkClientTrusted",
+    "type": "method",
+    "parent": "X509TrustManager",
+    "signatures": [
+      "public void checkClientTrusted(X509Certificate[]chain, String authType)"
+    ],
+    "signature_hash": "bd2f379a1c8c0f4399aaae6f962580748ea7964aa5e98979c65c7c2551be1e81",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/X509TrustManager.html",
+    "parameters": [
+      {
+        "name": "X509Certificate[]chain",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "authType",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "CertificateException",
+        "package": "javax.security.cert"
+      }
+    ],
+    "description": "Given the partial or complete certificate chain provided by the\npeer, build a certificate path to a trusted root and return if\nit can be validated and is trusted for client SSL\nauthentication based on the authentication type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Given the partial or complete certificate chain provided by the\npeer, build a certificate path to a trusted root and return if\nit can be validated and is trusted for client SSL\nauthentication based on...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.611142",
+    "updatedDate": "2026-03-08T21:40:21.611143",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/X509ExtendedTrustManager/checkServerTrusted": {
+    "id": "javax.net.ssl.X509ExtendedTrustManager.checkServerTrusted",
+    "name": "checkServerTrusted",
+    "type": "method",
+    "parent": "X509ExtendedTrustManager",
+    "signatures": [
+      "public abstract void checkServerTrusted(X509Certificate[]chain, String authType, Socket socket)",
+      "public abstract void checkServerTrusted(X509Certificate[]chain, String authType, SSLEngine engine)"
+    ],
+    "signature_hash": "97a0814437e9873a110a5911f6891624b1ab2090103455730f73cdf46caae37f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/X509ExtendedTrustManager.html",
+    "parameters": [
+      {
+        "name": "X509Certificate[]chain",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "authType",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "socket",
+        "has_default": false,
+        "default_value": null,
+        "type": "Socket",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "engine",
+        "has_default": false,
+        "default_value": null,
+        "type": "SSLEngine",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "CertificateException",
+        "package": "javax.security.cert"
+      }
+    ],
+    "description": "Given the partial or complete certificate chain provided by the\npeer, build and validate the certificate path based on the\nauthentication type and ssl parameters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Given the partial or complete certificate chain provided by the\npeer, build and validate the certificate path based on the\nauthentication type and ssl parameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.610860",
+    "updatedDate": "2026-03-08T21:40:21.610861",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/X509TrustManager/checkServerTrusted": {
+    "id": "javax.net.ssl.X509TrustManager.checkServerTrusted",
+    "name": "checkServerTrusted",
+    "type": "method",
+    "parent": "X509TrustManager",
+    "signatures": [
+      "public void checkServerTrusted(X509Certificate[]chain, String authType)"
+    ],
+    "signature_hash": "5e98844c07635da784c091de22ca4e9197bb0f5d9a7e09422ebf6810d18f0a4f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/X509TrustManager.html",
+    "parameters": [
+      {
+        "name": "X509Certificate[]chain",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "authType",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "CertificateException",
+        "package": "javax.security.cert"
+      }
+    ],
+    "description": "Given the partial or complete certificate chain provided by the\npeer, build a certificate path to a trusted root and return if\nit can be validated and is trusted for server SSL\nauthentication based on the authentication type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Given the partial or complete certificate chain provided by the\npeer, build a certificate path to a trusted root and return if\nit can be validated and is trusted for server SSL\nauthentication based on...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.611175",
+    "updatedDate": "2026-03-08T21:40:21.611176",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/X509KeyManager/chooseClientAlias": {
+    "id": "javax.net.ssl.X509KeyManager.chooseClientAlias",
+    "name": "chooseClientAlias",
+    "type": "method",
+    "parent": "X509KeyManager",
+    "signatures": [
+      "public String chooseClientAlias(String[]keyType, Principal[]issuers, Socket socket)"
+    ],
+    "signature_hash": "2f9452a2c6fe49b4ee8ce00843d98de337ef40d48962c36eeee0d7ad862a7bed",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/X509KeyManager.html",
+    "parameters": [
+      {
+        "name": "String[]keyType",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Principal[]issuers",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "socket",
+        "type": "Socket",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [],
+    "description": "Choose an alias to authenticate the client side of a secure\nsocket given the public key type and the list of\ncertificate issuer authorities recognized by the peer (if any).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Choose an alias to authenticate the client side of a secure\nsocket given the public key type and the list of\ncertificate issuer authorities recognized by the peer (if any).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.610921",
+    "updatedDate": "2026-03-08T21:40:21.610922",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/X509ExtendedKeyManager/chooseEngineClientAlias": {
+    "id": "javax.net.ssl.X509ExtendedKeyManager.chooseEngineClientAlias",
+    "name": "chooseEngineClientAlias",
+    "type": "method",
+    "parent": "X509ExtendedKeyManager",
+    "signatures": [
+      "public String chooseEngineClientAlias(String[]keyType, Principal[]issuers, SSLEngine engine)"
+    ],
+    "signature_hash": "6d303419d613d6c967fa0c330889d1d588c2d03967249682bd69879fc0d79731",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/X509ExtendedKeyManager.html",
+    "parameters": [
+      {
+        "name": "String[]keyType",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Principal[]issuers",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "engine",
+        "type": "SSLEngine",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [],
+    "description": "Choose an alias to authenticate the client side of anSSLEngineconnection given the public key type\nand the list of certificate issuer authorities recognized by\nthe peer (if any).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Choose an alias to authenticate the client side of anSSLEngineconnection given the public key type\nand the list of certificate issuer authorities recognized by\nthe peer (if any).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.610691",
+    "updatedDate": "2026-03-08T21:40:21.610692",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/X509ExtendedKeyManager/chooseEngineServerAlias": {
+    "id": "javax.net.ssl.X509ExtendedKeyManager.chooseEngineServerAlias",
+    "name": "chooseEngineServerAlias",
+    "type": "method",
+    "parent": "X509ExtendedKeyManager",
+    "signatures": [
+      "public String chooseEngineServerAlias(String keyType, Principal[]issuers, SSLEngine engine)"
+    ],
+    "signature_hash": "7e72cb938b293181d1d15d017dfb74882ff489be71892002b804ee3cc61008c7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/X509ExtendedKeyManager.html",
+    "parameters": [
+      {
+        "name": "keyType",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Principal[]issuers",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "engine",
+        "type": "SSLEngine",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [],
+    "description": "Choose an alias to authenticate the server side of anSSLEngineconnection given the public key type\nand the list of certificate issuer authorities recognized by\nthe peer (if any).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Choose an alias to authenticate the server side of anSSLEngineconnection given the public key type\nand the list of certificate issuer authorities recognized by\nthe peer (if any).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.610724",
+    "updatedDate": "2026-03-08T21:40:21.610725",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/X509KeyManager/chooseServerAlias": {
+    "id": "javax.net.ssl.X509KeyManager.chooseServerAlias",
+    "name": "chooseServerAlias",
+    "type": "method",
+    "parent": "X509KeyManager",
+    "signatures": [
+      "public String chooseServerAlias(String keyType, Principal[]issuers, Socket socket)"
+    ],
+    "signature_hash": "9d53a7694efadfa8b3713f6b87f41199ed074e386a063e245741eac44c1aadd8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/X509KeyManager.html",
+    "parameters": [
+      {
+        "name": "keyType",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Principal[]issuers",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "socket",
+        "type": "Socket",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [],
+    "description": "Choose an alias to authenticate the server side of a secure\nsocket given the public key type and the list of\ncertificate issuer authorities recognized by the peer (if any).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Choose an alias to authenticate the server side of a secure\nsocket given the public key type and the list of\ncertificate issuer authorities recognized by the peer (if any).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.610956",
+    "updatedDate": "2026-03-08T21:40:21.610957",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/SSLEngine/closeInbound": {
+    "id": "javax.net.ssl.SSLEngine.closeInbound",
+    "name": "closeInbound",
+    "type": "method",
+    "parent": "SSLEngine",
+    "signatures": [
+      "public abstract void closeInbound()"
+    ],
+    "signature_hash": "b1957428189892ca13a1ce5ea3650a53bee14bd64e56129d667215297ed1a965",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/SSLEngine.html",
+    "parameters": [],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "SSLException",
+        "package": "javax.net.ssl"
+      }
+    ],
+    "description": "Signals that no more inbound network data will be sent\nto thisSSLEngine.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Signals that no more inbound network data will be sent\nto thisSSLEngine.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.606132",
+    "updatedDate": "2026-03-08T21:40:21.606133",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/SSLEngine/closeOutbound": {
+    "id": "javax.net.ssl.SSLEngine.closeOutbound",
+    "name": "closeOutbound",
+    "type": "method",
+    "parent": "SSLEngine",
+    "signatures": [
+      "public abstract void closeOutbound()"
+    ],
+    "signature_hash": "004662d42643f7143f9429d4aa243469ec2818a3b75f0a631fea33f27b2c6d67",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/SSLEngine.html",
+    "parameters": [],
+    "return_type": "abstract void",
+    "exceptions": [],
+    "description": "Signals that no more outbound application data will be sent\non thisSSLEngine.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Signals that no more outbound application data will be sent\non thisSSLEngine.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.606147",
+    "updatedDate": "2026-03-08T21:40:21.606148",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/SNIHostName/createSNIMatcher": {
+    "id": "javax.net.ssl.SNIHostName.createSNIMatcher",
+    "name": "createSNIMatcher",
+    "type": "method",
+    "parent": "SNIHostName",
+    "signatures": [
+      "public static SNIMatcher createSNIMatcher(String regex)"
+    ],
+    "signature_hash": "bd1327ce015a9d4d3f97ee67455f1ba2429227dc84f7f6b45339b04ba990331e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/SNIHostName.html",
+    "parameters": [
+      {
+        "name": "regex",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static SNIMatcher",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "PatternSyntaxException",
+        "package": "java.util.regex"
+      }
+    ],
+    "description": "Creates anSNIMatcherobject forSNIHostNames.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates anSNIMatcherobject forSNIHostNames.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.605373",
+    "updatedDate": "2026-03-08T21:40:21.605374",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/SSLContext/createSSLEngine": {
+    "id": "javax.net.ssl.SSLContext.createSSLEngine",
+    "name": "createSSLEngine",
+    "type": "method",
+    "parent": "SSLContext",
+    "signatures": [
+      "public final SSLEngine createSSLEngine()",
+      "public final SSLEngine createSSLEngine(String peerHost, int peerPort)"
+    ],
+    "signature_hash": "1c7978c8d054a0a90586508fb3df74330560a677ebb29d6f77637b3e5ce5f9fc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/SSLContext.html",
+    "parameters": [
+      {
+        "name": "peerHost",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "peerPort",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final SSLEngine",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates a newSSLEngineusing this context.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a newSSLEngineusing this context.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.605650",
+    "updatedDate": "2026-03-08T21:40:21.605650",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.net.ssl/SSLSocketFactory/createSocket": {
+    "id": "javax.net.ssl.SSLSocketFactory.createSocket",
+    "name": "createSocket",
+    "type": "method",
+    "parent": "SSLSocketFactory",
+    "signatures": [
+      "public Socket createSocket(Socket s, InputStream consumed, boolean autoClose)",
+      "public abstract Socket createSocket(Socket s, String host, int port, boolean autoClose)"
+    ],
+    "signature_hash": "f7ce6c29102743cb41cce8d36db1d4c7a81a36246a76d9062d2279b324fc6abd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html",
+    "parameters": [
+      {
+        "name": "s",
+        "has_default": false,
+        "default_value": null,
+        "type": "Socket",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "consumed",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "autoClose",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "host",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "port",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Socket",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates a server modeSocketlayered over an\nexisting connected socket, and is able to read data which has\nalready been consumed/removed from theSocket's\nunderlyingInputStream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a server modeSocketlayered over an\nexisting connected socket, and is able to read data which has\nalready been consumed/removed from theSocket's\nunderlyingInputStream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.610171",
+    "updatedDate": "2026-03-08T21:40:21.610171",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

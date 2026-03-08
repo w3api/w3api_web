@@ -1,0 +1,295 @@
+{
+  "jdk.jshell/DeclarationSnippet": {
+    "id": "jdk.jshell.DeclarationSnippet",
+    "name": "DeclarationSnippet",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/DeclarationSnippet.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.409048",
+    "updatedDate": "2026-03-08T21:40:22.409049",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell/Diag": {
+    "id": "jdk.jshell.Diag",
+    "name": "Diag",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/Diag.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.409069",
+    "updatedDate": "2026-03-08T21:40:22.409070",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "NOPOS"
+    ],
+    "methods": [
+      "getCode",
+      "getEndPosition",
+      "getMessage",
+      "getPosition",
+      "getStartPosition",
+      "isError"
+    ]
+  },
+  "jdk.jshell/SourceCodeAnalysis/dependents": {
+    "id": "jdk.jshell.SourceCodeAnalysis.dependents",
+    "name": "dependents",
+    "type": "method",
+    "parent": "SourceCodeAnalysis",
+    "signatures": [
+      "public abstract Collection<Snippet> dependents(Snippet snippet)"
+    ],
+    "signature_hash": "bc493f3f5c23b3413219409c251285ba5565519c37ef6483026655794060eb2c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/SourceCodeAnalysis.html",
+    "parameters": [
+      {
+        "name": "snippet",
+        "type": "Snippet",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract Collection<Snippet>",
+    "exceptions": [],
+    "description": "Returns a collection ofSnippets which might need updating if the\ngivenSnippetis updated.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection ofSnippets which might need updating if the\ngivenSnippetis updated.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.408936",
+    "updatedDate": "2026-03-08T21:40:22.408937",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell/JShell/diagnostics": {
+    "id": "jdk.jshell.JShell.diagnostics",
+    "name": "diagnostics",
+    "type": "method",
+    "parent": "JShell",
+    "signatures": [
+      "public Stream<Diag> diagnostics(Snippet snippet)"
+    ],
+    "signature_hash": "b123a95f559539db024fe5800c770fb7dc3cccb929566eb75c8c78e4f5731764",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/JShell.html",
+    "parameters": [
+      {
+        "name": "snippet",
+        "type": "Snippet",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Stream<Diag>",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Return the diagnostics of the most recent evaluation of the snippet.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the diagnostics of the most recent evaluation of the snippet.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.408422",
+    "updatedDate": "2026-03-08T21:40:22.408423",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell/SourceCodeAnalysis/documentation": {
+    "id": "jdk.jshell.SourceCodeAnalysis.documentation",
+    "name": "documentation",
+    "type": "method",
+    "parent": "SourceCodeAnalysis",
+    "signatures": [
+      "public abstract List<SourceCodeAnalysis.Documentation> documentation(String input, int cursor, boolean computeJavadoc)"
+    ],
+    "signature_hash": "aad6128a242bc6411c626eb5d2e0d4a3ecfd8d6c0009c4dc5d28022341c541c1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/SourceCodeAnalysis.html",
+    "parameters": [
+      {
+        "name": "input",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cursor",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "computeJavadoc",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract List<SourceCodeAnalysis.Documentation>",
+    "exceptions": [],
+    "description": "Compute documentation for the given user's input.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compute documentation for the given user's input.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.408956",
+    "updatedDate": "2026-03-08T21:40:22.408957",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell/JShell/drop": {
+    "id": "jdk.jshell.JShell.drop",
+    "name": "drop",
+    "type": "method",
+    "parent": "JShell",
+    "signatures": [
+      "public List<SnippetEvent> drop(Snippet snippet)"
+    ],
+    "signature_hash": "cd97473aba7cf5a015f0fc965fbff1f27687d81f17a5474df8ca8029e1c42fe8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/JShell.html",
+    "parameters": [
+      {
+        "name": "snippet",
+        "type": "Snippet",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "List<SnippetEvent>",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Remove a declaration from the state.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Remove a declaration from the state.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.408435",
+    "updatedDate": "2026-03-08T21:40:22.408436",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

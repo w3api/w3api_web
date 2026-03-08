@@ -1,0 +1,247 @@
+{
+  "com.sun.jdi.connect.spi/TransportService/startListening": {
+    "id": "com.sun.jdi.connect.spi.TransportService.startListening",
+    "name": "startListening",
+    "type": "method",
+    "parent": "TransportService",
+    "signatures": [
+      "public abstract TransportService.ListenKey startListening()",
+      "public abstract TransportService.ListenKey startListening(String address)"
+    ],
+    "signature_hash": "1d44ab579b2ecf1dc210546f212421b0ea1743e708039c6be203e9dbb456e192",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/spi/TransportService.html",
+    "parameters": [
+      {
+        "name": "address",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract TransportService.ListenKey",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Listens on an address chosen by the transport service.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Listens on an address chosen by the transport service.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.718215",
+    "updatedDate": "2026-03-08T21:40:20.718216",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi.connect.spi/TransportService/stopListening": {
+    "id": "com.sun.jdi.connect.spi.TransportService.stopListening",
+    "name": "stopListening",
+    "type": "method",
+    "parent": "TransportService",
+    "signatures": [
+      "public abstract void stopListening(TransportService.ListenKey listenKey)"
+    ],
+    "signature_hash": "dc9eb22c8460f05baee1a036fdef67f13e407a7814b6aa85412c316a3691396b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/spi/TransportService.html",
+    "parameters": [
+      {
+        "name": "listenKey",
+        "type": "TransportService.ListenKey",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Stop listening for inbound connections.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Stop listening for inbound connections.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.718235",
+    "updatedDate": "2026-03-08T21:40:20.718236",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi.connect.spi/TransportService.Capabilities/supportsAcceptTimeout": {
+    "id": "com.sun.jdi.connect.spi.TransportService.Capabilities.supportsAcceptTimeout",
+    "name": "supportsAcceptTimeout",
+    "type": "method",
+    "parent": "TransportService.Capabilities",
+    "signatures": [
+      "public abstract boolean supportsAcceptTimeout()"
+    ],
+    "signature_hash": "3078ef7307caf5d55d1f2a4067c6190559ed9919bc6d527022a7a4862a11a4db",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/spi/TransportService.Capabilities.html",
+    "parameters": [],
+    "return_type": "abstract boolean",
+    "exceptions": [],
+    "description": "Tell whether or not this transport service supports a\ntimeout while waiting for a target VM to connect.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tell whether or not this transport service supports a\ntimeout while waiting for a target VM to connect.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.718381",
+    "updatedDate": "2026-03-08T21:40:20.718382",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi.connect.spi/TransportService.Capabilities/supportsAttachTimeout": {
+    "id": "com.sun.jdi.connect.spi.TransportService.Capabilities.supportsAttachTimeout",
+    "name": "supportsAttachTimeout",
+    "type": "method",
+    "parent": "TransportService.Capabilities",
+    "signatures": [
+      "public abstract boolean supportsAttachTimeout()"
+    ],
+    "signature_hash": "dec86958e8bb990426dce68af1e97948b9f01e8665a5cfd55221b950943fbc67",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/spi/TransportService.Capabilities.html",
+    "parameters": [],
+    "return_type": "abstract boolean",
+    "exceptions": [],
+    "description": "Tell whether or not this transport service supports a timeout\nwhen attaching to a target VM.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tell whether or not this transport service supports a timeout\nwhen attaching to a target VM.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.718395",
+    "updatedDate": "2026-03-08T21:40:20.718396",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi.connect.spi/TransportService.Capabilities/supportsHandshakeTimeout": {
+    "id": "com.sun.jdi.connect.spi.TransportService.Capabilities.supportsHandshakeTimeout",
+    "name": "supportsHandshakeTimeout",
+    "type": "method",
+    "parent": "TransportService.Capabilities",
+    "signatures": [
+      "public abstract boolean supportsHandshakeTimeout()"
+    ],
+    "signature_hash": "0d4eb8ba118c8b8f61f64463a8f10b381db4951987be3b4d6361a7f98b6ea17c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/spi/TransportService.Capabilities.html",
+    "parameters": [],
+    "return_type": "abstract boolean",
+    "exceptions": [],
+    "description": "Tells whether or not this transport service supports a\ntimeout when handshaking with the target VM.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tells whether or not this transport service supports a\ntimeout when handshaking with the target VM.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.718419",
+    "updatedDate": "2026-03-08T21:40:20.718420",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi.connect.spi/TransportService.Capabilities/supportsMultipleConnections": {
+    "id": "com.sun.jdi.connect.spi.TransportService.Capabilities.supportsMultipleConnections",
+    "name": "supportsMultipleConnections",
+    "type": "method",
+    "parent": "TransportService.Capabilities",
+    "signatures": [
+      "public abstract boolean supportsMultipleConnections()"
+    ],
+    "signature_hash": "cef3846b8f84cc3c4b3a5bbd2bf28653680a855d8eb7752973ce42125c3ba859",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/spi/TransportService.Capabilities.html",
+    "parameters": [],
+    "return_type": "abstract boolean",
+    "exceptions": [],
+    "description": "Tells whether or not this transport service can support\nmultiple concurrent connections to a single address that\nit is listening on.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tells whether or not this transport service can support\nmultiple concurrent connections to a single address that\nit is listening on.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.718435",
+    "updatedDate": "2026-03-08T21:40:20.718436",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

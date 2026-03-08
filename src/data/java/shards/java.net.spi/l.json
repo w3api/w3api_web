@@ -1,0 +1,158 @@
+{
+  "java.net.spi/InetAddressResolver/lookupByAddress": {
+    "id": "java.net.spi.InetAddressResolver.lookupByAddress",
+    "name": "lookupByAddress",
+    "type": "method",
+    "parent": "InetAddressResolver",
+    "signatures": [
+      "public String lookupByAddress(byte[]addr)"
+    ],
+    "signature_hash": "5ef83cca177f3a34eca476c31b6e0dfbcc1c36c49c213c36baf4b3a6f5408d9b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/net/spi/InetAddressResolver.html",
+    "parameters": [
+      {
+        "name": "byte[]addr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [
+      {
+        "name": "UnknownHostException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Lookup the host name corresponding to the raw IP address provided.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Lookup the host name corresponding to the raw IP address provided.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.198152",
+    "updatedDate": "2026-03-08T21:40:21.198153",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.spi/InetAddressResolver/lookupByName": {
+    "id": "java.net.spi.InetAddressResolver.lookupByName",
+    "name": "lookupByName",
+    "type": "method",
+    "parent": "InetAddressResolver",
+    "signatures": [
+      "public Stream<InetAddress> lookupByName(String host, InetAddressResolver.LookupPolicy lookupPolicy)"
+    ],
+    "signature_hash": "13a970213ee1426f4dab27272a247d6a19f09a1e76f2205561069605f846999b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/net/spi/InetAddressResolver.html",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lookupPolicy",
+        "type": "InetAddressResolver.LookupPolicy",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Stream<InetAddress>",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnknownHostException",
+        "package": "java.rmi"
+      }
+    ],
+    "description": "Given the name of a host, returns a stream of IP addresses of the requested\naddress family associated with a provided hostname.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Given the name of a host, returns a stream of IP addresses of the requested\naddress family associated with a provided hostname.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.198176",
+    "updatedDate": "2026-03-08T21:40:21.198177",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.spi/InetAddressResolverProvider.Configuration/lookupLocalHostName": {
+    "id": "java.net.spi.InetAddressResolverProvider.Configuration.lookupLocalHostName",
+    "name": "lookupLocalHostName",
+    "type": "method",
+    "parent": "InetAddressResolverProvider.Configuration",
+    "signatures": [
+      "public String lookupLocalHostName()"
+    ],
+    "signature_hash": "a05b1e4778b26d72d280865b80806d152d3377c97092155c01e846358342104d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/net/spi/InetAddressResolverProvider.Configuration.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": "Reads the localhost name from the system configuration.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads the localhost name from the system configuration.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.198343",
+    "updatedDate": "2026-03-08T21:40:21.198344",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

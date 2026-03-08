@@ -1,0 +1,284 @@
+{
+  "javax.sound.sampled.spi/FormatConversionProvider/isConversionSupported": {
+    "id": "javax.sound.sampled.spi.FormatConversionProvider.isConversionSupported",
+    "name": "isConversionSupported",
+    "type": "method",
+    "parent": "FormatConversionProvider",
+    "signatures": [
+      "public boolean isConversionSupported(AudioFormat.Encoding targetEncoding, AudioFormat sourceFormat)",
+      "public boolean isConversionSupported(AudioFormat targetFormat, AudioFormat sourceFormat)"
+    ],
+    "signature_hash": "e2af9eebd8f2a690c9306bb3eb01cb6f01b88473511c6cbc2a6af073bef38adf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html",
+    "parameters": [
+      {
+        "name": "targetEncoding",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFormat.Encoding",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "sourceFormat",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFormat",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "targetFormat",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFormat",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Indicates whether the format converter supports conversion to a\nparticular encoding from a particular format.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates whether the format converter supports conversion to a\nparticular encoding from a particular format.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.693430",
+    "updatedDate": "2026-03-08T21:40:21.693431",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled.spi/AudioFileWriter/isFileTypeSupported": {
+    "id": "javax.sound.sampled.spi.AudioFileWriter.isFileTypeSupported",
+    "name": "isFileTypeSupported",
+    "type": "method",
+    "parent": "AudioFileWriter",
+    "signatures": [
+      "public boolean isFileTypeSupported(AudioFileFormat.Type fileType)",
+      "public boolean isFileTypeSupported(AudioFileFormat.Type fileType, AudioInputStream stream)"
+    ],
+    "signature_hash": "9e3ee4d5c1e659f82bf9801da56ba77c30890764983e47d3288a801de3782782",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html",
+    "parameters": [
+      {
+        "name": "fileType",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFileFormat.Type",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "stream",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioInputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Indicates whether file writing support for the specified file type is\nprovided by this audio file writer.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates whether file writing support for the specified file type is\nprovided by this audio file writer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.693244",
+    "updatedDate": "2026-03-08T21:40:21.693245",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled.spi/MixerProvider/isMixerSupported": {
+    "id": "javax.sound.sampled.spi.MixerProvider.isMixerSupported",
+    "name": "isMixerSupported",
+    "type": "method",
+    "parent": "MixerProvider",
+    "signatures": [
+      "public boolean isMixerSupported(Mixer.Info info)"
+    ],
+    "signature_hash": "870c580f2a56b870b1953b15c33efc68982f228ae9c0276ae1b2296cb03329dc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html",
+    "parameters": [
+      {
+        "name": "info",
+        "type": "Mixer.Info",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Indicates whether the mixer provider supports the mixer represented by\nthe specified mixer info object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates whether the mixer provider supports the mixer represented by\nthe specified mixer info object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.693529",
+    "updatedDate": "2026-03-08T21:40:21.693530",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled.spi/FormatConversionProvider/isSourceEncodingSupported": {
+    "id": "javax.sound.sampled.spi.FormatConversionProvider.isSourceEncodingSupported",
+    "name": "isSourceEncodingSupported",
+    "type": "method",
+    "parent": "FormatConversionProvider",
+    "signatures": [
+      "public boolean isSourceEncodingSupported(AudioFormat.Encoding sourceEncoding)"
+    ],
+    "signature_hash": "01d1a53d92d442e21268518db59464ea4fee1b12c81e1911ba4866c7c6336bee",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html",
+    "parameters": [
+      {
+        "name": "sourceEncoding",
+        "type": "AudioFormat.Encoding",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Indicates whether the format converter supports conversion from the\nspecified source format encoding.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates whether the format converter supports conversion from the\nspecified source format encoding.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.693447",
+    "updatedDate": "2026-03-08T21:40:21.693448",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled.spi/FormatConversionProvider/isTargetEncodingSupported": {
+    "id": "javax.sound.sampled.spi.FormatConversionProvider.isTargetEncodingSupported",
+    "name": "isTargetEncodingSupported",
+    "type": "method",
+    "parent": "FormatConversionProvider",
+    "signatures": [
+      "public boolean isTargetEncodingSupported(AudioFormat.Encoding targetEncoding)"
+    ],
+    "signature_hash": "869751da7924dacf510fdb549d50ae06361b154e819c15276ae6673d944f17ca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html",
+    "parameters": [
+      {
+        "name": "targetEncoding",
+        "type": "AudioFormat.Encoding",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Indicates whether the format converter supports conversion to the\nspecified target format encoding.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates whether the format converter supports conversion to the\nspecified target format encoding.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.693464",
+    "updatedDate": "2026-03-08T21:40:21.693464",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

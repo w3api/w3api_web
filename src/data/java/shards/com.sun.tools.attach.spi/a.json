@@ -1,0 +1,147 @@
+{
+  "com.sun.tools.attach.spi/AttachProvider": {
+    "id": "com.sun.tools.attach.spi.AttachProvider",
+    "name": "AttachProvider",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.attach/com/sun/tools/attach/spi/AttachProvider.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.751805",
+    "updatedDate": "2026-03-08T21:40:20.751806",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "AttachProvider"
+    ],
+    "methods": [
+      "attachVirtualMachine",
+      "listVirtualMachines",
+      "name",
+      "providers",
+      "type"
+    ]
+  },
+  "com.sun.tools.attach.spi/AttachProvider/AttachProvider": {
+    "id": "com.sun.tools.attach.spi.AttachProvider.AttachProvider",
+    "name": "AttachProvider",
+    "type": "constructor",
+    "parent": "AttachProvider",
+    "signatures": [
+      "public AttachProvider()"
+    ],
+    "signature_hash": "89815013c862269d40bea30be2bf6518a39d87a390fa01b4d361b7b28b5b1ae8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.attach/com/sun/tools/attach/spi/AttachProvider.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Initializes a new instance of this class.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Initializes a new instance of this class.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.751816",
+    "updatedDate": "2026-03-08T21:40:20.751817",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.tools.attach.spi/AttachProvider/attachVirtualMachine": {
+    "id": "com.sun.tools.attach.spi.AttachProvider.attachVirtualMachine",
+    "name": "attachVirtualMachine",
+    "type": "method",
+    "parent": "AttachProvider",
+    "signatures": [
+      "public VirtualMachine attachVirtualMachine(VirtualMachineDescriptor vmd)",
+      "public abstract VirtualMachine attachVirtualMachine(String id)"
+    ],
+    "signature_hash": "a8f7055f619e832b7fa63c1f1b432de3b66f57487fb36fe76a7dba79b23cb671",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.attach/com/sun/tools/attach/spi/AttachProvider.html",
+    "parameters": [
+      {
+        "name": "vmd",
+        "has_default": false,
+        "default_value": null,
+        "type": "VirtualMachineDescriptor",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "id",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "VirtualMachine",
+    "exceptions": [
+      {
+        "name": "AttachNotSupportedException",
+        "package": "com.sun.tools.attach"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Attaches to a Java virtual machine.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Attaches to a Java virtual machine.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.751838",
+    "updatedDate": "2026-03-08T21:40:20.751839",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

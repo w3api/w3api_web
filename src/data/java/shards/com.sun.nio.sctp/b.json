@@ -1,0 +1,542 @@
+{
+  "com.sun.nio.sctp/SctpChannel/bind": {
+    "id": "com.sun.nio.sctp.SctpChannel.bind",
+    "name": "bind",
+    "type": "method",
+    "parent": "SctpChannel",
+    "signatures": [
+      "public abstract SctpChannel bind(SocketAddress local)"
+    ],
+    "signature_hash": "8a7d07840d125adc61002b3023b219366a1e64e4274a16c32a14b68db2317d5a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.sctp/com/sun/nio/sctp/SctpChannel.html",
+    "parameters": [
+      {
+        "name": "local",
+        "type": "SocketAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract SctpChannel",
+    "exceptions": [
+      {
+        "name": "AlreadyConnectedException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ConnectionPendingException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "UnsupportedAddressTypeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Binds the channel's socket to a local address.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Binds the channel's socket to a local address.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.728947",
+    "updatedDate": "2026-03-08T21:40:20.728948",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.nio.sctp/SctpServerChannel/bind": {
+    "id": "com.sun.nio.sctp.SctpServerChannel.bind",
+    "name": "bind",
+    "type": "method",
+    "parent": "SctpServerChannel",
+    "signatures": [
+      "public final SctpServerChannel bind(SocketAddress local)",
+      "public abstract SctpServerChannel bind(SocketAddress local, int backlog)"
+    ],
+    "signature_hash": "71596b6c4a8279a194943287127a06b36d194203ce01581d10edab7139f01750",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.sctp/com/sun/nio/sctp/SctpServerChannel.html",
+    "parameters": [
+      {
+        "name": "local",
+        "has_default": false,
+        "default_value": null,
+        "type": "SocketAddress",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "backlog",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final SctpServerChannel",
+    "exceptions": [
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "UnsupportedAddressTypeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Binds the channel's socket to a local address and configures the socket\nto listen for associations.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Binds the channel's socket to a local address and configures the socket\nto listen for associations.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.729294",
+    "updatedDate": "2026-03-08T21:40:20.729295",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.nio.sctp/SctpMultiChannel/bind": {
+    "id": "com.sun.nio.sctp.SctpMultiChannel.bind",
+    "name": "bind",
+    "type": "method",
+    "parent": "SctpMultiChannel",
+    "signatures": [
+      "public final SctpMultiChannel bind(SocketAddress local)",
+      "public abstract SctpMultiChannel bind(SocketAddress local, int backlog)"
+    ],
+    "signature_hash": "6e0cc54fcb4828b8246c0a5f84b9197c4d835fe719484dbd02fc36413418b97b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.sctp/com/sun/nio/sctp/SctpMultiChannel.html",
+    "parameters": [
+      {
+        "name": "local",
+        "has_default": false,
+        "default_value": null,
+        "type": "SocketAddress",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "backlog",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final SctpMultiChannel",
+    "exceptions": [
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "UnsupportedAddressTypeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Binds the channel's socket to a local address and configures the socket\nto listen for connections.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Binds the channel's socket to a local address and configures the socket\nto listen for connections.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.729487",
+    "updatedDate": "2026-03-08T21:40:20.729488",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.nio.sctp/SctpChannel/bindAddress": {
+    "id": "com.sun.nio.sctp.SctpChannel.bindAddress",
+    "name": "bindAddress",
+    "type": "method",
+    "parent": "SctpChannel",
+    "signatures": [
+      "public abstract SctpChannel bindAddress(InetAddress address)"
+    ],
+    "signature_hash": "f0c4521360df2f4165ba82bbb4a3d7f8235fa0e4a6cc3436c9683d0a23483f26",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.sctp/com/sun/nio/sctp/SctpChannel.html",
+    "parameters": [
+      {
+        "name": "address",
+        "type": "InetAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract SctpChannel",
+    "exceptions": [
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ConnectionPendingException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NotYetBoundException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Adds the given address to the bound addresses for the channel's\nsocket.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds the given address to the bound addresses for the channel's\nsocket.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.728964",
+    "updatedDate": "2026-03-08T21:40:20.728965",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.nio.sctp/SctpServerChannel/bindAddress": {
+    "id": "com.sun.nio.sctp.SctpServerChannel.bindAddress",
+    "name": "bindAddress",
+    "type": "method",
+    "parent": "SctpServerChannel",
+    "signatures": [
+      "public abstract SctpServerChannel bindAddress(InetAddress address)"
+    ],
+    "signature_hash": "e8010dd002c5cd17c0cc69b4545a30efb88a32609a775b61c0589dec6ba7d6c3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.sctp/com/sun/nio/sctp/SctpServerChannel.html",
+    "parameters": [
+      {
+        "name": "address",
+        "type": "InetAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract SctpServerChannel",
+    "exceptions": [
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NotYetBoundException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Adds the given address to the bound addresses for the channel's\nsocket.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds the given address to the bound addresses for the channel's\nsocket.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.729312",
+    "updatedDate": "2026-03-08T21:40:20.729313",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.nio.sctp/SctpMultiChannel/bindAddress": {
+    "id": "com.sun.nio.sctp.SctpMultiChannel.bindAddress",
+    "name": "bindAddress",
+    "type": "method",
+    "parent": "SctpMultiChannel",
+    "signatures": [
+      "public abstract SctpMultiChannel bindAddress(InetAddress address)"
+    ],
+    "signature_hash": "8efc29353a07b8df7c8bbdbc26c8b0d9b693cbaea6d58ae8fc8d24bdb178cb3f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.sctp/com/sun/nio/sctp/SctpMultiChannel.html",
+    "parameters": [
+      {
+        "name": "address",
+        "type": "InetAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract SctpMultiChannel",
+    "exceptions": [
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NotYetBoundException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Adds the given address to the bound addresses for the channel's\nsocket.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds the given address to the bound addresses for the channel's\nsocket.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.729505",
+    "updatedDate": "2026-03-08T21:40:20.729506",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.nio.sctp/SctpMultiChannel/branch": {
+    "id": "com.sun.nio.sctp.SctpMultiChannel.branch",
+    "name": "branch",
+    "type": "method",
+    "parent": "SctpMultiChannel",
+    "signatures": [
+      "public abstract SctpChannel branch(Association association)"
+    ],
+    "signature_hash": "7c9c5f295954032a607d2be8333eba49d2d3d9a4fb9ba3f6100405324aca71d2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.sctp/com/sun/nio/sctp/SctpMultiChannel.html",
+    "parameters": [
+      {
+        "name": "association",
+        "type": "Association",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract SctpChannel",
+    "exceptions": [
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Branches off an association.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Branches off an association.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.729521",
+    "updatedDate": "2026-03-08T21:40:20.729522",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.nio.sctp/SendFailedNotification/buffer": {
+    "id": "com.sun.nio.sctp.SendFailedNotification.buffer",
+    "name": "buffer",
+    "type": "method",
+    "parent": "SendFailedNotification",
+    "signatures": [
+      "public abstract ByteBuffer buffer()"
+    ],
+    "signature_hash": "f67b8021f17741bacc48f888db9cefe3c211b65150ea2a5d9768de382fccfc8e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.sctp/com/sun/nio/sctp/SendFailedNotification.html",
+    "parameters": [],
+    "return_type": "abstract ByteBuffer",
+    "exceptions": [],
+    "description": "Returns the data that was to be sent.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the data that was to be sent.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.731027",
+    "updatedDate": "2026-03-08T21:40:20.731028",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.nio.sctp/MessageInfo/bytes": {
+    "id": "com.sun.nio.sctp.MessageInfo.bytes",
+    "name": "bytes",
+    "type": "method",
+    "parent": "MessageInfo",
+    "signatures": [
+      "public abstract int bytes()"
+    ],
+    "signature_hash": "1681a98875c4c6eb34c282c0f73636e15b22351a0067acb8e1d908da1a1c15b1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.sctp/com/sun/nio/sctp/MessageInfo.html",
+    "parameters": [],
+    "return_type": "abstract int",
+    "exceptions": [],
+    "description": "Returns the number of bytes read for the received message.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the number of bytes read for the received message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.729797",
+    "updatedDate": "2026-03-08T21:40:20.729798",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

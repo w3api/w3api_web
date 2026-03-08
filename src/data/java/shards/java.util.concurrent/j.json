@@ -1,0 +1,254 @@
+{
+  "java.util.concurrent/ForkJoinTask<V>/join": {
+    "id": "java.util.concurrent.ForkJoinTask<V>.join",
+    "name": "join",
+    "type": "method",
+    "parent": "ForkJoinTask<V>",
+    "signatures": [
+      "public final V join()"
+    ],
+    "signature_hash": "17568e301175f09d02d0294cd0af7cf1c5ef5c84d7765bf03875de50cea8650d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ForkJoinTask.html",
+    "parameters": [],
+    "return_type": "final V",
+    "exceptions": [],
+    "description": "Returns the result of the computation when itis done.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the result of the computation when itis done.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.433905",
+    "updatedDate": "2026-03-08T21:40:21.433905",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/CompletableFuture<T>/join": {
+    "id": "java.util.concurrent.CompletableFuture<T>.join",
+    "name": "join",
+    "type": "method",
+    "parent": "CompletableFuture<T>",
+    "signatures": [
+      "public T join()"
+    ],
+    "signature_hash": "88a9313c3230a6162d7a67efc3237720adfb396650203968992a84d6162c2f24",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/CompletableFuture.html",
+    "parameters": [],
+    "return_type": "T",
+    "exceptions": [
+      {
+        "name": "CancellationException",
+        "package": "java.util.concurrent"
+      },
+      {
+        "name": "CompletionException",
+        "package": "java.util.concurrent"
+      }
+    ],
+    "description": "Returns the result value when complete, or throws an\n(unchecked) exception if completed exceptionally.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the result value when complete, or throws an\n(unchecked) exception if completed exceptionally.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.451968",
+    "updatedDate": "2026-03-08T21:40:21.451969",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/StructuredTaskScope<T,R>/join": {
+    "id": "java.util.concurrent.StructuredTaskScope<T,R>.join",
+    "name": "join",
+    "type": "method",
+    "parent": "StructuredTaskScope<T,R>",
+    "signatures": [
+      "public R join()"
+    ],
+    "signature_hash": "4f66c09790645355d77a96986a4d6bf49718152102e8e43d7c0cf1668f14f568",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html",
+    "parameters": [],
+    "return_type": "R",
+    "exceptions": [
+      {
+        "name": "WrongThreadException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "StructuredTaskScope.FailedExceptionPREVIEW"
+      },
+      {
+        "name": "StructuredTaskScope.TimeoutExceptionPREVIEW"
+      },
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the result, or throws, after waiting for all subtasks to complete or\nthe scope to becancelled.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the result, or throws, after waiting for all subtasks to complete or\nthe scope to becancelled.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.460717",
+    "updatedDate": "2026-03-08T21:40:21.460718",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "21",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent": {
+    "type": "module",
+    "name": "java.util.concurrent",
+    "id": "java.util.concurrent",
+    "description": "Module java.util.concurrent",
+    "classes": [
+      "AbstractExecutorService",
+      "ArrayBlockingQueue<E>",
+      "CompletableFuture<T>",
+      "ConcurrentHashMap.KeySetView<K,V>",
+      "ConcurrentHashMap<K,V>",
+      "ConcurrentLinkedDeque<E>",
+      "ConcurrentLinkedQueue<E>",
+      "ConcurrentSkipListMap<K,V>",
+      "ConcurrentSkipListSet<E>",
+      "CopyOnWriteArrayList<E>",
+      "CopyOnWriteArraySet<E>",
+      "CountDownLatch",
+      "CountedCompleter<T>",
+      "CyclicBarrier",
+      "DelayQueue<E",
+      "Exchanger<V>",
+      "ExecutorCompletionService<V>",
+      "Executors",
+      "Flow",
+      "ForkJoinPool",
+      "ForkJoinTask<V>",
+      "ForkJoinWorkerThread",
+      "FutureTask<V>",
+      "LinkedBlockingDeque<E>",
+      "LinkedBlockingQueue<E>",
+      "LinkedTransferQueue<E>",
+      "Phaser",
+      "PriorityBlockingQueue<E>",
+      "RecursiveAction",
+      "RecursiveTask<V>",
+      "ScheduledThreadPoolExecutor",
+      "Semaphore",
+      "SubmissionPublisher<T>",
+      "SynchronousQueue<E>",
+      "ThreadLocalRandom",
+      "ThreadPoolExecutor",
+      "ThreadPoolExecutor.AbortPolicy",
+      "ThreadPoolExecutor.CallerRunsPolicy",
+      "ThreadPoolExecutor.DiscardOldestPolicy",
+      "ThreadPoolExecutor.DiscardPolicy"
+    ],
+    "enums": [
+      "Future.State",
+      "StructuredTaskScope.Subtask.State",
+      "TimeUnit"
+    ],
+    "exceptions": [
+      {
+        "name": "BrokenBarrierException",
+        "package": "java.util.concurrent"
+      },
+      {
+        "name": "CancellationException",
+        "package": "java.util.concurrent"
+      },
+      {
+        "name": "CompletionException",
+        "package": "java.util.concurrent"
+      },
+      {
+        "name": "ExecutionException",
+        "package": "java.util.concurrent"
+      },
+      {
+        "name": "RejectedExecutionException",
+        "package": "java.util.concurrent"
+      },
+      {
+        "name": "StructureViolationException",
+        "package": "java.util.concurrent"
+      },
+      {
+        "name": "StructuredTaskScope.FailedException",
+        "package": "java.util.concurrent"
+      },
+      {
+        "name": "StructuredTaskScope.TimeoutException",
+        "package": "java.util.concurrent"
+      },
+      {
+        "name": "TimeoutException",
+        "package": "java.util.concurrent"
+      }
+    ],
+    "interfaces": [
+      "BlockingDeque<E>",
+      "BlockingQueue<E>",
+      "Callable<V>",
+      "CompletableFuture.AsynchronousCompletionTask",
+      "CompletionService<V>",
+      "CompletionStage<T>",
+      "ConcurrentMap<K,V>",
+      "ConcurrentNavigableMap<K,V>",
+      "Delayed",
+      "Executor",
+      "ExecutorService",
+      "Flow.Processor<T,R>",
+      "Flow.Publisher<T>",
+      "Flow.Subscriber<T>",
+      "Flow.Subscription",
+      "ForkJoinPool.ForkJoinWorkerThreadFactory",
+      "ForkJoinPool.ManagedBlocker",
+      "Future<V>",
+      "RejectedExecutionHandler",
+      "RunnableFuture<V>",
+      "RunnableScheduledFuture<V>",
+      "ScheduledExecutorService",
+      "ScheduledFuture<V>",
+      "StructuredTaskScope.Configuration",
+      "StructuredTaskScope.Joiner<T,R>",
+      "StructuredTaskScope.Subtask<T>",
+      "StructuredTaskScope<T,R>",
+      "ThreadFactory",
+      "TransferQueue<E>"
+    ]
+  }
+}

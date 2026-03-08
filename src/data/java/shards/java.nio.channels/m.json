@@ -1,0 +1,224 @@
+{
+  "java.nio.channels/MembershipKey": {
+    "id": "java.nio.channels.MembershipKey",
+    "name": "MembershipKey",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/MembershipKey.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.209383",
+    "updatedDate": "2026-03-08T21:40:21.209384",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "MembershipKey"
+    ],
+    "methods": [
+      "block",
+      "channel",
+      "drop",
+      "group",
+      "isValid",
+      "networkInterface",
+      "sourceAddress",
+      "unblock"
+    ]
+  },
+  "java.nio.channels/MembershipKey/MembershipKey": {
+    "id": "java.nio.channels.MembershipKey.MembershipKey",
+    "name": "MembershipKey",
+    "type": "constructor",
+    "parent": "MembershipKey",
+    "signatures": [
+      "public MembershipKey()"
+    ],
+    "signature_hash": "bb62f8d7dcfcf117ad6505787d5e51e16fb66b52ab20e09cc906e228ed1134ea",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/MembershipKey.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Initializes a new instance of this class.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Initializes a new instance of this class.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.209405",
+    "updatedDate": "2026-03-08T21:40:21.209406",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels/MulticastChannel": {
+    "id": "java.nio.channels.MulticastChannel",
+    "name": "MulticastChannel",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/MulticastChannel.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.204258",
+    "updatedDate": "2026-03-08T21:40:21.204259",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "close",
+      "join"
+    ]
+  },
+  "java.nio.channels/FileChannel/map": {
+    "id": "java.nio.channels.FileChannel.map",
+    "name": "map",
+    "type": "method",
+    "parent": "FileChannel",
+    "signatures": [
+      "public abstract MappedByteBuffer map(FileChannel.MapMode mode, long position, long size)",
+      "public MemorySegment map(FileChannel.MapMode mode, long offset, long size, Arena arena)"
+    ],
+    "signature_hash": "71c6e7f7a391fa483219a93a9b3878d937c97720dfaf9f20e4864a8a83565aae",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/FileChannel.html",
+    "parameters": [
+      {
+        "name": "mode",
+        "has_default": false,
+        "default_value": null,
+        "type": "FileChannel.MapMode",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "position",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "size",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "offset",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "arena",
+        "has_default": false,
+        "default_value": null,
+        "type": "Arena",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract MappedByteBuffer",
+    "exceptions": [
+      {
+        "name": "NonReadableChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NonWritableChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Maps a region of this channel's file directly into memory.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Maps a region of this channel's file directly into memory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.204561",
+    "updatedDate": "2026-03-08T21:40:21.204561",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

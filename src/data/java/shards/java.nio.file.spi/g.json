@@ -1,0 +1,259 @@
+{
+  "java.nio.file.spi/FileSystemProvider/getFileAttributeView": {
+    "id": "java.nio.file.spi.FileSystemProvider.getFileAttributeView",
+    "name": "getFileAttributeView",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract<V extends FileAttributeView>V getFileAttributeView(Path path, Class<V> type, LinkOption... options)"
+    ],
+    "signature_hash": "bf62cfc0aaa018c31ab2a433bbae88addeba21d29f87bbe2dce1207ccc2896a3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "Class<V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "type": "LinkOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract<V extends FileAttributeView>V",
+    "exceptions": [],
+    "description": "Returns a file attribute view of a given type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a file attribute view of a given type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219196",
+    "updatedDate": "2026-03-08T21:40:21.219196",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/getFileStore": {
+    "id": "java.nio.file.spi.FileSystemProvider.getFileStore",
+    "name": "getFileStore",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract FileStore getFileStore(Path path)"
+    ],
+    "signature_hash": "3475cb6b3e0bf96779502f1017c38ea385b2b5c0c991cd9be50a8eefb2da5e62",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract FileStore",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Returns theFileStorerepresenting the file store where a file\nis located.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns theFileStorerepresenting the file store where a file\nis located.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219210",
+    "updatedDate": "2026-03-08T21:40:21.219211",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/getFileSystem": {
+    "id": "java.nio.file.spi.FileSystemProvider.getFileSystem",
+    "name": "getFileSystem",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract FileSystem getFileSystem(URI uri)"
+    ],
+    "signature_hash": "5531f36fb2fd91f248c4958e7ae02bbce28bd346d036bc34fb8c329ae8ed81e0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "uri",
+        "type": "URI",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract FileSystem",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "FileSystemNotFoundException",
+        "package": "java.nio.file"
+      }
+    ],
+    "description": "Returns an existingFileSystemcreated by this provider.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an existingFileSystemcreated by this provider.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219233",
+    "updatedDate": "2026-03-08T21:40:21.219234",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/getPath": {
+    "id": "java.nio.file.spi.FileSystemProvider.getPath",
+    "name": "getPath",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract Path getPath(URI uri)"
+    ],
+    "signature_hash": "2aa13bf1610f85dbe0492e6ceca7d3e0c632a112cac71452c3ae5f20d54db995",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "uri",
+        "type": "URI",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract Path",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "FileSystemNotFoundException",
+        "package": "java.nio.file"
+      }
+    ],
+    "description": "Return aPathobject by converting the givenURI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return aPathobject by converting the givenURI.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219247",
+    "updatedDate": "2026-03-08T21:40:21.219248",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/getScheme": {
+    "id": "java.nio.file.spi.FileSystemProvider.getScheme",
+    "name": "getScheme",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract String getScheme()"
+    ],
+    "signature_hash": "0b5c2d76e606e3d2761f31f95eb9dbc187549320ca2eda6b9d44aa97fa7b942c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": "Returns the URI scheme that identifies this provider.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the URI scheme that identifies this provider.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219259",
+    "updatedDate": "2026-03-08T21:40:21.219260",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "java.nio.channels.spi/AbstractSelectableChannel/register": {
+    "id": "java.nio.channels.spi.AbstractSelectableChannel.register",
+    "name": "register",
+    "type": "method",
+    "parent": "AbstractSelectableChannel",
+    "signatures": [
+      "public final SelectionKey register(Selector sel, int ops, Object att)"
+    ],
+    "signature_hash": "1e549fbbe859e7f6c84dadb988e60b3493e8770ba310dcee3901608f08f6fd83",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/spi/AbstractSelectableChannel.html",
+    "parameters": [
+      {
+        "name": "sel",
+        "type": "Selector",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ops",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "att",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final SelectionKey",
+    "exceptions": [
+      {
+        "name": "ClosedSelectorException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IllegalBlockingModeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IllegalSelectorException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "CancelledKeyException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      }
+    ],
+    "description": "Registers this channel with the given selector, returning a selection key.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Registers this channel with the given selector, returning a selection key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.210338",
+    "updatedDate": "2026-03-08T21:40:21.210339",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels.spi/AbstractSelector/register": {
+    "id": "java.nio.channels.spi.AbstractSelector.register",
+    "name": "register",
+    "type": "method",
+    "parent": "AbstractSelector",
+    "signatures": [
+      "public protected abstract SelectionKey register(AbstractSelectableChannel ch, int ops, Object att)"
+    ],
+    "signature_hash": "c45c675ad615b7ad19730abb75c6f4f5624743c87488180024bb9b0c76985862",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/spi/AbstractSelector.html",
+    "parameters": [
+      {
+        "name": "ch",
+        "type": "AbstractSelectableChannel",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ops",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "att",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "protected abstract SelectionKey",
+    "exceptions": [],
+    "description": "Registers the given channel with this selector.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Registers the given channel with this selector.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.210532",
+    "updatedDate": "2026-03-08T21:40:21.210532",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

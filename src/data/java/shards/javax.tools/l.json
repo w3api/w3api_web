@@ -1,0 +1,327 @@
+{
+  "javax.tools/JavaFileManager/list": {
+    "id": "javax.tools.JavaFileManager.list",
+    "name": "list",
+    "type": "method",
+    "parent": "JavaFileManager",
+    "signatures": [
+      "public Iterable<JavaFileObject> list(JavaFileManager.Location location, String packageName, Set<JavaFileObject.Kind> kinds, boolean recurse)"
+    ],
+    "signature_hash": "ace85ef03cff055c1e2aa1f273bd0b2de964149e28f27db917c9619bc7873834",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/tools/JavaFileManager.html",
+    "parameters": [
+      {
+        "name": "location",
+        "type": "JavaFileManager.Location",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "packageName",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "kinds",
+        "type": "Set<JavaFileObject.Kind>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "recurse",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Iterable<JavaFileObject>",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Lists all file objects matching the given criteria in the given\npackage-oriented location.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Lists all file objects matching the given criteria in the given\npackage-oriented location.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.354373",
+    "updatedDate": "2026-03-08T21:40:22.354374",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.tools/ForwardingJavaFileManager<M/list": {
+    "id": "javax.tools.ForwardingJavaFileManager<M.list",
+    "name": "list",
+    "type": "method",
+    "parent": "ForwardingJavaFileManager<M",
+    "signatures": [
+      "public Iterable<JavaFileObject> list(JavaFileManager.Location location, String packageName, Set<JavaFileObject.Kind> kinds, boolean recurse)"
+    ],
+    "signature_hash": "ace85ef03cff055c1e2aa1f273bd0b2de964149e28f27db917c9619bc7873834",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html",
+    "parameters": [
+      {
+        "name": "location",
+        "type": "JavaFileManager.Location",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "packageName",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "kinds",
+        "type": "Set<JavaFileObject.Kind>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "recurse",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Iterable<JavaFileObject>",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Lists all file objects matching the given criteria in the given\npackage-oriented location.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Lists all file objects matching the given criteria in the given\npackage-oriented location.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.355827",
+    "updatedDate": "2026-03-08T21:40:22.355828",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.tools/JavaFileManager/listLocationsForModules": {
+    "id": "javax.tools.JavaFileManager.listLocationsForModules",
+    "name": "listLocationsForModules",
+    "type": "method",
+    "parent": "JavaFileManager",
+    "signatures": [
+      "public default Iterable<Set<JavaFileManager.Location>> listLocationsForModules(JavaFileManager.Location location)"
+    ],
+    "signature_hash": "9747cac37338c98b589157dba7ec2c59a72c74d72bf7b65c6c9776b05a201f68",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/tools/JavaFileManager.html",
+    "parameters": [
+      {
+        "name": "location",
+        "type": "JavaFileManager.Location",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default Iterable<Set<JavaFileManager.Location>>",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Lists the locations for all the modules in a module-oriented location or an output location.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Lists the locations for all the modules in a module-oriented location or an output location.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.354392",
+    "updatedDate": "2026-03-08T21:40:22.354392",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.tools/ForwardingJavaFileManager<M/listLocationsForModules": {
+    "id": "javax.tools.ForwardingJavaFileManager<M.listLocationsForModules",
+    "name": "listLocationsForModules",
+    "type": "method",
+    "parent": "ForwardingJavaFileManager<M",
+    "signatures": [
+      "public Iterable<Set<JavaFileManager.Location>> listLocationsForModules(JavaFileManager.Location location)"
+    ],
+    "signature_hash": "fa0563dafd43e6e882ee33a0728735df6dd8ca2e57761563c925a873b56eaa24",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html",
+    "parameters": [
+      {
+        "name": "location",
+        "type": "JavaFileManager.Location",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Iterable<Set<JavaFileManager.Location>>",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Lists the locations for all the modules in a module-oriented location or an output location.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Lists the locations for all the modules in a module-oriented location or an output location.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.355848",
+    "updatedDate": "2026-03-08T21:40:22.355849",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.tools/StandardLocation/locationFor": {
+    "id": "javax.tools.StandardLocation.locationFor",
+    "name": "locationFor",
+    "type": "method",
+    "parent": "StandardLocation",
+    "signatures": [
+      "public static JavaFileManager.Location locationFor(String name)"
+    ],
+    "signature_hash": "3252717cfbd63d2a7b7f66f50015d47211114b6783c937cf4b27e07eca59a633",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/tools/StandardLocation.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static JavaFileManager.Location",
+    "exceptions": [],
+    "description": "Returns a location object with the given name.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a location object with the given name.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.356956",
+    "updatedDate": "2026-03-08T21:40:22.356957",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

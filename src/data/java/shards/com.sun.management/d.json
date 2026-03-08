@@ -1,0 +1,178 @@
+{
+  "com.sun.management/DiagnosticCommandMBean": {
+    "id": "com.sun.management.DiagnosticCommandMBean",
+    "name": "DiagnosticCommandMBean",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.management/com/sun/management/DiagnosticCommandMBean.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.721606",
+    "updatedDate": "2026-03-08T21:40:20.721607",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.management/HotSpotDiagnosticMXBean/dumpHeap": {
+    "id": "com.sun.management.HotSpotDiagnosticMXBean.dumpHeap",
+    "name": "dumpHeap",
+    "type": "method",
+    "parent": "HotSpotDiagnosticMXBean",
+    "signatures": [
+      "public void dumpHeap(String outputFile, boolean live)"
+    ],
+    "signature_hash": "cdde169f223227b92003764f0b69c78623fe67cb4e4439316533c442cc768d92",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.management/com/sun/management/HotSpotDiagnosticMXBean.html",
+    "parameters": [
+      {
+        "name": "outputFile",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "live",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Dumps the heap to theoutputFilefile in the same\nformat as the hprof heap dump.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Dumps the heap to theoutputFilefile in the same\nformat as the hprof heap dump.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.722065",
+    "updatedDate": "2026-03-08T21:40:20.722065",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.management/HotSpotDiagnosticMXBean/dumpThreads": {
+    "id": "com.sun.management.HotSpotDiagnosticMXBean.dumpThreads",
+    "name": "dumpThreads",
+    "type": "method",
+    "parent": "HotSpotDiagnosticMXBean",
+    "signatures": [
+      "public default void dumpThreads(String outputFile, HotSpotDiagnosticMXBean.ThreadDumpFormat format)"
+    ],
+    "signature_hash": "a23fa8a4beb496a6249cbe20a1a855f40af36e406d5f1f17f048dc953a4dd6c2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.management/com/sun/management/HotSpotDiagnosticMXBean.html",
+    "parameters": [
+      {
+        "name": "outputFile",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "format",
+        "type": "HotSpotDiagnosticMXBean.ThreadDumpFormat",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Generate a thread dump to the given file in the given format.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Generate a thread dump to the given file in the given format.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:20.722091",
+    "updatedDate": "2026-03-08T21:40:20.722092",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

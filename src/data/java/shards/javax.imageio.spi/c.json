@@ -1,0 +1,521 @@
+{
+  "javax.imageio.spi/ImageReaderSpi/canDecodeInput": {
+    "id": "javax.imageio.spi.ImageReaderSpi.canDecodeInput",
+    "name": "canDecodeInput",
+    "type": "method",
+    "parent": "ImageReaderSpi",
+    "signatures": [
+      "public abstract boolean canDecodeInput(Object source)"
+    ],
+    "signature_hash": "c4e4bed91b05e34341c626efe937ec428a7048dafb202dcf78d54bf4a7c82c6e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html",
+    "parameters": [
+      {
+        "name": "source",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract boolean",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Returnstrueif the supplied source object appears\nto be of the format supported by this reader.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif the supplied source object appears\nto be of the format supported by this reader.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.543330",
+    "updatedDate": "2026-03-08T21:40:21.543331",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ImageWriterSpi/canEncodeImage": {
+    "id": "javax.imageio.spi.ImageWriterSpi.canEncodeImage",
+    "name": "canEncodeImage",
+    "type": "method",
+    "parent": "ImageWriterSpi",
+    "signatures": [
+      "public boolean canEncodeImage(RenderedImage im)",
+      "public abstract boolean canEncodeImage(ImageTypeSpecifier type)"
+    ],
+    "signature_hash": "861ffa89b67bcc8ecd03a8ce7fef9338cc59ad78f7ef2d172800f6e9ee9fe673",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html",
+    "parameters": [
+      {
+        "name": "im",
+        "has_default": false,
+        "default_value": null,
+        "type": "RenderedImage",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "has_default": false,
+        "default_value": null,
+        "type": "ImageTypeSpecifier",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returnstrueif theImageWriterimplementation associated with this service provider is able to\nencode the givenRenderedImageinstance.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif theImageWriterimplementation associated with this service provider is able to\nencode the givenRenderedImageinstance.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.544098",
+    "updatedDate": "2026-03-08T21:40:21.544098",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ImageInputStreamSpi/canUseCacheFile": {
+    "id": "javax.imageio.spi.ImageInputStreamSpi.canUseCacheFile",
+    "name": "canUseCacheFile",
+    "type": "method",
+    "parent": "ImageInputStreamSpi",
+    "signatures": [
+      "public boolean canUseCacheFile()"
+    ],
+    "signature_hash": "18b27676b69fecceecdd07e30c265b5335f2cfa16aba70e1575bc748c02bd0c6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Returnstrueif theImageInputStreamimplementation associated with this service provider can\noptionally make use of a cache file for improved performance\nand/or memory footrprint.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif theImageInputStreamimplementation associated with this service provider can\noptionally make use of a cache file for improved performance\nand/or memory footrprint.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.543016",
+    "updatedDate": "2026-03-08T21:40:21.543017",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ImageOutputStreamSpi/canUseCacheFile": {
+    "id": "javax.imageio.spi.ImageOutputStreamSpi.canUseCacheFile",
+    "name": "canUseCacheFile",
+    "type": "method",
+    "parent": "ImageOutputStreamSpi",
+    "signatures": [
+      "public boolean canUseCacheFile()"
+    ],
+    "signature_hash": "18b27676b69fecceecdd07e30c265b5335f2cfa16aba70e1575bc748c02bd0c6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Returnstrueif theImageOutputStreamimplementation associated with this service provider can\noptionally make use of a cacheFilefor improved\nperformance and/or memory footrprint.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif theImageOutputStreamimplementation associated with this service provider can\noptionally make use of a cacheFilefor improved\nperformance and/or memory footrprint.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.543134",
+    "updatedDate": "2026-03-08T21:40:21.543134",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ServiceRegistry/contains": {
+    "id": "javax.imageio.spi.ServiceRegistry.contains",
+    "name": "contains",
+    "type": "method",
+    "parent": "ServiceRegistry",
+    "signatures": [
+      "public boolean contains(Object provider)"
+    ],
+    "signature_hash": "ff24747cff710cd8093fce8f7050fb36e2d44cc3d685a00fd9de777323d55074",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html",
+    "parameters": [
+      {
+        "name": "provider",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returnstrueifprovideris currently\nregistered.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueifprovideris currently\nregistered.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.544350",
+    "updatedDate": "2026-03-08T21:40:21.544351",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ImageInputStreamSpi/createInputStreamInstance": {
+    "id": "javax.imageio.spi.ImageInputStreamSpi.createInputStreamInstance",
+    "name": "createInputStreamInstance",
+    "type": "method",
+    "parent": "ImageInputStreamSpi",
+    "signatures": [
+      "public ImageInputStream createInputStreamInstance(Object input)",
+      "public abstract ImageInputStream createInputStreamInstance(Object input, boolean useCache, File cacheDir)"
+    ],
+    "signature_hash": "0430481392f159a319ef762c945e0b54137818e320cf975b04e4f5ed74945e89",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html",
+    "parameters": [
+      {
+        "name": "input",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "useCache",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cacheDir",
+        "has_default": false,
+        "default_value": null,
+        "type": "File",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "ImageInputStream",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Returns an instance of theImageInputStreamimplementation associated with this service provider.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an instance of theImageInputStreamimplementation associated with this service provider.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.543045",
+    "updatedDate": "2026-03-08T21:40:21.543046",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ImageOutputStreamSpi/createOutputStreamInstance": {
+    "id": "javax.imageio.spi.ImageOutputStreamSpi.createOutputStreamInstance",
+    "name": "createOutputStreamInstance",
+    "type": "method",
+    "parent": "ImageOutputStreamSpi",
+    "signatures": [
+      "public ImageOutputStream createOutputStreamInstance(Object output)",
+      "public abstract ImageOutputStream createOutputStreamInstance(Object output, boolean useCache, File cacheDir)"
+    ],
+    "signature_hash": "9c419b4d51393dc2e4612e9d0682f0ff2d7a76eb0ac993dcd1139ae95521be1e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html",
+    "parameters": [
+      {
+        "name": "output",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "useCache",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cacheDir",
+        "has_default": false,
+        "default_value": null,
+        "type": "File",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "ImageOutputStream",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Returns an instance of theImageOutputStreamimplementation associated with this service provider.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an instance of theImageOutputStreamimplementation associated with this service provider.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.543160",
+    "updatedDate": "2026-03-08T21:40:21.543161",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ImageReaderSpi/createReaderInstance": {
+    "id": "javax.imageio.spi.ImageReaderSpi.createReaderInstance",
+    "name": "createReaderInstance",
+    "type": "method",
+    "parent": "ImageReaderSpi",
+    "signatures": [
+      "public ImageReader createReaderInstance()",
+      "public abstract ImageReader createReaderInstance(Object extension)"
+    ],
+    "signature_hash": "5fdc73528c4a355dd13f1bf5099d885476b63f3b74a3ecd332d2c7bcd40703d8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html",
+    "parameters": [
+      {
+        "name": "extension",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "ImageReader",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Returns an instance of theImageReaderimplementation associated with this service provider.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an instance of theImageReaderimplementation associated with this service provider.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.543348",
+    "updatedDate": "2026-03-08T21:40:21.543349",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ImageTranscoderSpi/createTranscoderInstance": {
+    "id": "javax.imageio.spi.ImageTranscoderSpi.createTranscoderInstance",
+    "name": "createTranscoderInstance",
+    "type": "method",
+    "parent": "ImageTranscoderSpi",
+    "signatures": [
+      "public abstract ImageTranscoder createTranscoderInstance()"
+    ],
+    "signature_hash": "99e7fe4efcfd82d23766e49333c204b9290211a912fed59aa5e629930869d478",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html",
+    "parameters": [],
+    "return_type": "abstract ImageTranscoder",
+    "exceptions": [],
+    "description": "Returns an instance of theImageTranscoderimplementation associated with this service provider.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an instance of theImageTranscoderimplementation associated with this service provider.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.543935",
+    "updatedDate": "2026-03-08T21:40:21.543935",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ImageWriterSpi/createWriterInstance": {
+    "id": "javax.imageio.spi.ImageWriterSpi.createWriterInstance",
+    "name": "createWriterInstance",
+    "type": "method",
+    "parent": "ImageWriterSpi",
+    "signatures": [
+      "public ImageWriter createWriterInstance()",
+      "public abstract ImageWriter createWriterInstance(Object extension)"
+    ],
+    "signature_hash": "a3fb566bd16a82e2cca8d0ffdb671256f570029da4627b2df2687cd6dd7e65a2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html",
+    "parameters": [
+      {
+        "name": "extension",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "ImageWriter",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Returns an instance of theImageWriterimplementation associated with this service provider.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an instance of theImageWriterimplementation associated with this service provider.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.544118",
+    "updatedDate": "2026-03-08T21:40:21.544119",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

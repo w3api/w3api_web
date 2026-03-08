@@ -1,0 +1,300 @@
+{
+  "java.rmi.registry/Registry/REGISTRY_PORT": {
+    "id": "java.rmi.registry.Registry.REGISTRY_PORT",
+    "name": "REGISTRY_PORT",
+    "type": "field",
+    "parent": "Registry",
+    "signatures": [
+      "static final int REGISTRY_PORT"
+    ],
+    "signature_hash": "7e4ead52217e0c8a1ec38e221508ce240f42cab044b4bbae27ac1c9b5c5d5890",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/registry/Registry.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "Well known port for registry.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Well known port for registry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.220734",
+    "updatedDate": "2026-03-08T21:40:21.220735",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.registry/Registry": {
+    "id": "java.rmi.registry.Registry",
+    "name": "Registry",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/registry/Registry.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.220633",
+    "updatedDate": "2026-03-08T21:40:21.220634",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "REGISTRY_PORT"
+    ],
+    "methods": [
+      "bind",
+      "list",
+      "lookup",
+      "rebind",
+      "unbind"
+    ]
+  },
+  "java.rmi.registry/RegistryHandler": {
+    "id": "java.rmi.registry.RegistryHandler",
+    "name": "RegistryHandler",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/registry/RegistryHandler.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.220743",
+    "updatedDate": "2026-03-08T21:40:21.220744",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "registryImpl",
+      "registryStub"
+    ]
+  },
+  "java.rmi.registry/Registry/rebind": {
+    "id": "java.rmi.registry.Registry.rebind",
+    "name": "rebind",
+    "type": "method",
+    "parent": "Registry",
+    "signatures": [
+      "public void rebind(String name, Remote obj)"
+    ],
+    "signature_hash": "0d44b4b25414201f46d927d013a2f8847996ccdc3b3ee0222edfa49ad0b21530",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/registry/Registry.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "obj",
+        "type": "Remote",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "RemoteException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "ServerException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "AccessException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Replaces the binding for the specifiednamein\nthis registry with the supplied remote reference.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Replaces the binding for the specifiednamein\nthis registry with the supplied remote reference.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.220697",
+    "updatedDate": "2026-03-08T21:40:21.220698",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.registry/RegistryHandler/registryImpl": {
+    "id": "java.rmi.registry.RegistryHandler.registryImpl",
+    "name": "registryImpl",
+    "type": "method",
+    "parent": "RegistryHandler",
+    "signatures": [
+      "public Registry registryImpl(int port)"
+    ],
+    "signature_hash": "94a4c663681c53c37678322d5ffcc37f6da2115a96f61cb68568fb14dc40f2db",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/registry/RegistryHandler.html",
+    "parameters": [
+      {
+        "name": "port",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Registry",
+    "exceptions": [
+      {
+        "name": "RemoteException",
+        "package": "java.rmi"
+      }
+    ],
+    "description": "Deprecated.no replacement.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.no replacement.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.220758",
+    "updatedDate": "2026-03-08T21:40:21.220759",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.registry/RegistryHandler/registryStub": {
+    "id": "java.rmi.registry.RegistryHandler.registryStub",
+    "name": "registryStub",
+    "type": "method",
+    "parent": "RegistryHandler",
+    "signatures": [
+      "public Registry registryStub(String host, int port)"
+    ],
+    "signature_hash": "0f3d952f29dc97e2f8238ca05bc8e55eddd7193b56825cc71d065013ace6eefa",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/registry/RegistryHandler.html",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "port",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Registry",
+    "exceptions": [
+      {
+        "name": "RemoteException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "UnknownHostException",
+        "package": "java.rmi"
+      }
+    ],
+    "description": "Deprecated.no replacement.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.no replacement.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.220774",
+    "updatedDate": "2026-03-08T21:40:21.220775",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,641 @@
+{
+  "java.lang.invoke/WrongMethodTypeException/WrongMethodTypeException": {
+    "id": "java.lang.invoke.WrongMethodTypeException.WrongMethodTypeException",
+    "name": "WrongMethodTypeException",
+    "type": "constructor",
+    "parent": "WrongMethodTypeException",
+    "signatures": [
+      "public WrongMethodTypeException()",
+      "public WrongMethodTypeException(String s)"
+    ],
+    "signature_hash": "2f630255ee61033b583ddd0e38632bf433515ef421a01ac4f7fe22a51a6ea92f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/WrongMethodTypeException.html",
+    "parameters": [
+      {
+        "name": "s",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructs aWrongMethodTypeExceptionwith no detail message.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs aWrongMethodTypeExceptionwith no detail message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.159824",
+    "updatedDate": "2026-03-08T21:40:21.159825",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/WrongMethodTypeException": {
+    "id": "java.lang.invoke.WrongMethodTypeException",
+    "name": "WrongMethodTypeException",
+    "type": "exception",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/WrongMethodTypeException.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.159796",
+    "updatedDate": "2026-03-08T21:40:21.159797",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "WrongMethodTypeException"
+    ]
+  },
+  "java.lang.invoke/VarHandle/weakCompareAndSet": {
+    "id": "java.lang.invoke.VarHandle.weakCompareAndSet",
+    "name": "weakCompareAndSet",
+    "type": "method",
+    "parent": "VarHandle",
+    "signatures": [
+      "public final boolean weakCompareAndSet(Object... args)"
+    ],
+    "signature_hash": "f11723b91c60af42639bb2fc004f42e218b28c47606fe36ed9b4e60ece604231",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/VarHandle.html",
+    "parameters": [
+      {
+        "name": "args",
+        "type": "Object...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final boolean",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongMethodTypeException",
+        "package": "java.lang.invoke"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Possibly atomically sets the value of a variable to thenewValuewith the memory semantics ofsetVolatile(Object...)if the variable's\ncurrent value, referred to as thewitness value,==theexpectedValue, as accessed with the memory semantics ofgetVolatile(Object...).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Possibly atomically sets the value of a variable to thenewValuewith the memory semantics ofsetVolatile(Object...)if the variable's\ncurrent value, referred to as thewitness value,==theexpectedValue, as...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.153959",
+    "updatedDate": "2026-03-08T21:40:21.153960",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/VarHandle/weakCompareAndSetAcquire": {
+    "id": "java.lang.invoke.VarHandle.weakCompareAndSetAcquire",
+    "name": "weakCompareAndSetAcquire",
+    "type": "method",
+    "parent": "VarHandle",
+    "signatures": [
+      "public final boolean weakCompareAndSetAcquire(Object... args)"
+    ],
+    "signature_hash": "0fb97c24d8e2839916d7c86fce28d6b27faeada0998f0b741bb1f417ca8e5ce2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/VarHandle.html",
+    "parameters": [
+      {
+        "name": "args",
+        "type": "Object...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final boolean",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongMethodTypeException",
+        "package": "java.lang.invoke"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Possibly atomically sets the value of a variable to thenewValuewith the semantics ofset(Object...)if the variable's current value,\nreferred to as thewitness value,==theexpectedValue, as accessed with the memory semantics ofgetAcquire(Object...).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Possibly atomically sets the value of a variable to thenewValuewith the semantics ofset(Object...)if the variable's current value,\nreferred to as thewitness value,==theexpectedValue, as accessed with ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.153980",
+    "updatedDate": "2026-03-08T21:40:21.153981",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/VarHandle/weakCompareAndSetPlain": {
+    "id": "java.lang.invoke.VarHandle.weakCompareAndSetPlain",
+    "name": "weakCompareAndSetPlain",
+    "type": "method",
+    "parent": "VarHandle",
+    "signatures": [
+      "public final boolean weakCompareAndSetPlain(Object... args)"
+    ],
+    "signature_hash": "84dc8e37fd261021b7b5c315eb1c175df77e886e2156df4298a89496b0023310",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/VarHandle.html",
+    "parameters": [
+      {
+        "name": "args",
+        "type": "Object...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final boolean",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongMethodTypeException",
+        "package": "java.lang.invoke"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Possibly atomically sets the value of a variable to thenewValuewith the semantics ofset(Object...)if the variable's current value,\nreferred to as thewitness value,==theexpectedValue, as accessed with the memory semantics ofget(Object...).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Possibly atomically sets the value of a variable to thenewValuewith the semantics ofset(Object...)if the variable's current value,\nreferred to as thewitness value,==theexpectedValue, as accessed with ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.153999",
+    "updatedDate": "2026-03-08T21:40:21.154000",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/VarHandle/weakCompareAndSetRelease": {
+    "id": "java.lang.invoke.VarHandle.weakCompareAndSetRelease",
+    "name": "weakCompareAndSetRelease",
+    "type": "method",
+    "parent": "VarHandle",
+    "signatures": [
+      "public final boolean weakCompareAndSetRelease(Object... args)"
+    ],
+    "signature_hash": "4c7e760b7790c6f24cb0727eeacf4978284305e1a130fc617ae00d8028e4199e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/VarHandle.html",
+    "parameters": [
+      {
+        "name": "args",
+        "type": "Object...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final boolean",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongMethodTypeException",
+        "package": "java.lang.invoke"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Possibly atomically sets the value of a variable to thenewValuewith the semantics ofsetRelease(Object...)if the variable's current\nvalue, referred to as thewitness value,==theexpectedValue, as accessed with the memory semantics ofget(Object...).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Possibly atomically sets the value of a variable to thenewValuewith the semantics ofsetRelease(Object...)if the variable's current\nvalue, referred to as thewitness value,==theexpectedValue, as accesse...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.154019",
+    "updatedDate": "2026-03-08T21:40:21.154020",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandles/whileLoop": {
+    "id": "java.lang.invoke.MethodHandles.whileLoop",
+    "name": "whileLoop",
+    "type": "method",
+    "parent": "MethodHandles",
+    "signatures": [
+      "public static MethodHandle whileLoop(MethodHandle init, MethodHandle pred, MethodHandle body)"
+    ],
+    "signature_hash": "dba31220ed4d0aac00ca49c3ae0e810613c0caf784f24ca130fff7268cb57bff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+    "parameters": [
+      {
+        "name": "init",
+        "type": "MethodHandle",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pred",
+        "type": "MethodHandle",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "body",
+        "type": "MethodHandle",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static MethodHandle",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Constructs awhileloop from an initializer, a body, and a predicate.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs awhileloop from an initializer, a body, and a predicate.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.157100",
+    "updatedDate": "2026-03-08T21:40:21.157101",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/VarHandle/withInvokeBehavior": {
+    "id": "java.lang.invoke.VarHandle.withInvokeBehavior",
+    "name": "withInvokeBehavior",
+    "type": "method",
+    "parent": "VarHandle",
+    "signatures": [
+      "public abstract VarHandle withInvokeBehavior()"
+    ],
+    "signature_hash": "2a701e7b2a2c79fdfe79b2d4506289553677ba9da0351ab6dadfcbe77580b117",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/VarHandle.html",
+    "parameters": [],
+    "return_type": "abstract VarHandle",
+    "exceptions": [],
+    "description": "Returns a VarHandle, with access to the same variable(s) as this VarHandle, but whose\ninvocation behavior of access mode methods is adjusted toinvoke behavior.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a VarHandle, with access to the same variable(s) as this VarHandle, but whose\ninvocation behavior of access mode methods is adjusted toinvoke behavior.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.154034",
+    "updatedDate": "2026-03-08T21:40:21.154035",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/VarHandle/withInvokeExactBehavior": {
+    "id": "java.lang.invoke.VarHandle.withInvokeExactBehavior",
+    "name": "withInvokeExactBehavior",
+    "type": "method",
+    "parent": "VarHandle",
+    "signatures": [
+      "public abstract VarHandle withInvokeExactBehavior()"
+    ],
+    "signature_hash": "a806a20e44cd8aa1dca169fac36c7c8df97e171bb025f858ed6d063de272db83",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/VarHandle.html",
+    "parameters": [],
+    "return_type": "abstract VarHandle",
+    "exceptions": [],
+    "description": "Returns a VarHandle, with access to the same variable(s) as this VarHandle, but whose\ninvocation behavior of access mode methods is adjusted toinvoke-exact behavior.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a VarHandle, with access to the same variable(s) as this VarHandle, but whose\ninvocation behavior of access mode methods is adjusted toinvoke-exact behavior.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.154049",
+    "updatedDate": "2026-03-08T21:40:21.154050",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandle/withVarargs": {
+    "id": "java.lang.invoke.MethodHandle.withVarargs",
+    "name": "withVarargs",
+    "type": "method",
+    "parent": "MethodHandle",
+    "signatures": [
+      "public MethodHandle withVarargs(boolean makeVarargs)"
+    ],
+    "signature_hash": "32feed59f88a39ad019e035c672e943a20903808d3c85685bdd046d3702b16a8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+    "parameters": [
+      {
+        "name": "makeVarargs",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "MethodHandle",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adapts this method handle to bevariable arityif the boolean flag is true, elsefixed arity.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adapts this method handle to bevariable arityif the boolean flag is true, elsefixed arity.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.153235",
+    "updatedDate": "2026-03-08T21:40:21.153236",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodType/wrap": {
+    "id": "java.lang.invoke.MethodType.wrap",
+    "name": "wrap",
+    "type": "method",
+    "parent": "MethodType",
+    "signatures": [
+      "public MethodType wrap()"
+    ],
+    "signature_hash": "96448b7130fe785d3843e907e7f80e742c7342e097670965cd0be8d3fe09d01f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodType.html",
+    "parameters": [],
+    "return_type": "MethodType",
+    "exceptions": [],
+    "description": "Converts all primitive types to their corresponding wrapper types.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Converts all primitive types to their corresponding wrapper types.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.154612",
+    "updatedDate": "2026-03-08T21:40:21.154613",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandleProxies/wrapperInstanceTarget": {
+    "id": "java.lang.invoke.MethodHandleProxies.wrapperInstanceTarget",
+    "name": "wrapperInstanceTarget",
+    "type": "method",
+    "parent": "MethodHandleProxies",
+    "signatures": [
+      "public static MethodHandle wrapperInstanceTarget(Object x)"
+    ],
+    "signature_hash": "5386277999f4f74e3f7d8a56146b73e3f211d0061510b9b88b0052a450da4ae2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static MethodHandle",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Produces or recovers a target method handle which is behaviorally\nequivalent to the unique method of this wrapper instance.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Produces or recovers a target method handle which is behaviorally\nequivalent to the unique method of this wrapper instance.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.155723",
+    "updatedDate": "2026-03-08T21:40:21.155724",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.invoke/MethodHandleProxies/wrapperInstanceType": {
+    "id": "java.lang.invoke.MethodHandleProxies.wrapperInstanceType",
+    "name": "wrapperInstanceType",
+    "type": "method",
+    "parent": "MethodHandleProxies",
+    "signatures": [
+      "public static Class<?> wrapperInstanceType(Object x)"
+    ],
+    "signature_hash": "4ebed71fc5d7c64f84a8d376fd854bffd8c7b9701fd5e24cff50e1f97b41131a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static Class<?>",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Recovers the unique single-method interface type for which this wrapper instance was created.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Recovers the unique single-method interface type for which this wrapper instance was created.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.155744",
+    "updatedDate": "2026-03-08T21:40:21.155745",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

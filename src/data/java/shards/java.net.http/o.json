@@ -1,0 +1,1484 @@
+{
+  "java.net.http/HttpHeaders/of": {
+    "id": "java.net.http.HttpHeaders.of",
+    "name": "of",
+    "type": "method",
+    "parent": "HttpHeaders",
+    "signatures": [
+      "public static HttpHeaders of(Map<String, List<String>> headerMap, BiPredicate<String, String> filter)"
+    ],
+    "signature_hash": "28a31ef75b9b1c84769138178213fe6a6ced107bd9522d856d4452d0a2604014",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpHeaders.html",
+    "parameters": [
+      {
+        "name": "Map<String",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "headerMap",
+        "type": "List<String>>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "BiPredicate<String",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "filter",
+        "type": "String>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpHeaders",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an HTTP headers from the given map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an HTTP headers from the given map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.196150",
+    "updatedDate": "2026-03-08T21:40:21.196151",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.PushPromiseHandler<T>/of": {
+    "id": "java.net.http.HttpResponse.PushPromiseHandler<T>.of",
+    "name": "of",
+    "type": "method",
+    "parent": "HttpResponse.PushPromiseHandler<T>",
+    "signatures": [
+      "public static<T> HttpResponse.PushPromiseHandler<T> of(Function<HttpRequest, HttpResponse.BodyHandler<T>> pushPromiseHandler, ConcurrentMap<HttpRequest, CompletableFuture<HttpResponse<T>>> pushPromisesMap)"
+    ],
+    "signature_hash": "eb4f07eab7eec01787a21c083bdaa61db3184cc32d3d0418850c61c8459a7924",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html",
+    "parameters": [
+      {
+        "name": "Function<HttpRequest",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pushPromiseHandler",
+        "type": "HttpResponse.BodyHandler<T>>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ConcurrentMap<HttpRequest",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pushPromisesMap",
+        "type": "CompletableFuture<HttpResponse<T>>>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static<T> HttpResponse.PushPromiseHandler<T>",
+    "exceptions": [],
+    "description": "Returns a push promise handler that accumulates push promises, and\ntheir responses, into the given map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a push promise handler that accumulates push promises, and\ntheir responses, into the given map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197639",
+    "updatedDate": "2026-03-08T21:40:21.197640",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpRequest.BodyPublishers/ofByteArray": {
+    "id": "java.net.http.HttpRequest.BodyPublishers.ofByteArray",
+    "name": "ofByteArray",
+    "type": "method",
+    "parent": "HttpRequest.BodyPublishers",
+    "signatures": [
+      "public static HttpRequest.BodyPublisher ofByteArray(byte[]buf)",
+      "public static HttpRequest.BodyPublisher ofByteArray(byte[]buf, int offset, int length)"
+    ],
+    "signature_hash": "cca3cce993d54270934bbca770df82db7f94220dacdcdc260d77a25d888630d8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html",
+    "parameters": [
+      {
+        "name": "byte[]buf",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "offset",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "length",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpRequest.BodyPublisher",
+    "exceptions": [],
+    "description": "Returns a request body publisher whose body is the given byte array.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a request body publisher whose body is the given byte array.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.196312",
+    "updatedDate": "2026-03-08T21:40:21.196313",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodyHandlers/ofByteArray": {
+    "id": "java.net.http.HttpResponse.BodyHandlers.ofByteArray",
+    "name": "ofByteArray",
+    "type": "method",
+    "parent": "HttpResponse.BodyHandlers",
+    "signatures": [
+      "public static HttpResponse.BodyHandler<byte[]> ofByteArray()"
+    ],
+    "signature_hash": "94e41792bb88b05c65187da897690b310e4b669c71af06e6bd1c5885c24da3ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+    "parameters": [],
+    "return_type": "static HttpResponse.BodyHandler<byte[]>",
+    "exceptions": [],
+    "description": "Returns aBodyHandler<byte[]>that returns aBodySubscriber<byte[]>obtained\nfromBodySubscribers.ofByteArray().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodyHandler<byte[]>that returns aBodySubscriber<byte[]>obtained\nfromBodySubscribers.ofByteArray().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.196954",
+    "updatedDate": "2026-03-08T21:40:21.196955",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodySubscribers/ofByteArray": {
+    "id": "java.net.http.HttpResponse.BodySubscribers.ofByteArray",
+    "name": "ofByteArray",
+    "type": "method",
+    "parent": "HttpResponse.BodySubscribers",
+    "signatures": [
+      "public static HttpResponse.BodySubscriber<byte[]> ofByteArray()"
+    ],
+    "signature_hash": "1d78ea7ca514ed3fc2fe1b13788e497750a8a8e2afbbbb2cf0476f1ded44fe73",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+    "parameters": [],
+    "return_type": "static HttpResponse.BodySubscriber<byte[]>",
+    "exceptions": [],
+    "description": "Returns aBodySubscriberwhich stores the response body as a\nbyte array.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodySubscriberwhich stores the response body as a\nbyte array.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197379",
+    "updatedDate": "2026-03-08T21:40:21.197380",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodyHandlers/ofByteArrayConsumer": {
+    "id": "java.net.http.HttpResponse.BodyHandlers.ofByteArrayConsumer",
+    "name": "ofByteArrayConsumer",
+    "type": "method",
+    "parent": "HttpResponse.BodyHandlers",
+    "signatures": [
+      "public static HttpResponse.BodyHandler<Void> ofByteArrayConsumer(Consumer<Optional<byte[]>> consumer)"
+    ],
+    "signature_hash": "8fe4c727648ba059a3eda62b8443725e51a5af989977ce2d63fa2a7c5fe0ec51",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+    "parameters": [
+      {
+        "name": "consumer",
+        "type": "Consumer<Optional<byte[]>>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpResponse.BodyHandler<Void>",
+    "exceptions": [],
+    "description": "Returns aBodyHandler<Void>that returns aBodySubscriber<Void>obtained fromBodySubscribers.ofByteArrayConsumer(Consumer).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodyHandler<Void>that returns aBodySubscriber<Void>obtained fromBodySubscribers.ofByteArrayConsumer(Consumer).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.196977",
+    "updatedDate": "2026-03-08T21:40:21.196978",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodySubscribers/ofByteArrayConsumer": {
+    "id": "java.net.http.HttpResponse.BodySubscribers.ofByteArrayConsumer",
+    "name": "ofByteArrayConsumer",
+    "type": "method",
+    "parent": "HttpResponse.BodySubscribers",
+    "signatures": [
+      "public static HttpResponse.BodySubscriber<Void> ofByteArrayConsumer(Consumer<Optional<byte[]>> consumer)"
+    ],
+    "signature_hash": "1825d1bae535b58ae5309805cc4a2fe0e690cf23bb51f04abc515a58096efa26",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+    "parameters": [
+      {
+        "name": "consumer",
+        "type": "Consumer<Optional<byte[]>>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpResponse.BodySubscriber<Void>",
+    "exceptions": [],
+    "description": "Returns aBodySubscriberwhich provides the incoming body\ndata to the provided Consumer ofOptional<byte[]>.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodySubscriberwhich provides the incoming body\ndata to the provided Consumer ofOptional<byte[]>.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197401",
+    "updatedDate": "2026-03-08T21:40:21.197402",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpRequest.BodyPublishers/ofByteArrays": {
+    "id": "java.net.http.HttpRequest.BodyPublishers.ofByteArrays",
+    "name": "ofByteArrays",
+    "type": "method",
+    "parent": "HttpRequest.BodyPublishers",
+    "signatures": [
+      "public static HttpRequest.BodyPublisher ofByteArrays(Iterable<byte[]> iter)"
+    ],
+    "signature_hash": "6cf633523634dd61d7cc0ff47a9a54c1f68a409b7961e7cbaf852e17a84065a9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html",
+    "parameters": [
+      {
+        "name": "iter",
+        "type": "Iterable<byte[]>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpRequest.BodyPublisher",
+    "exceptions": [],
+    "description": "A request body publisher that takes data from anIterableof byte arrays.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A request body publisher that takes data from anIterableof byte arrays.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.196337",
+    "updatedDate": "2026-03-08T21:40:21.196338",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpRequest.BodyPublishers/ofFile": {
+    "id": "java.net.http.HttpRequest.BodyPublishers.ofFile",
+    "name": "ofFile",
+    "type": "method",
+    "parent": "HttpRequest.BodyPublishers",
+    "signatures": [
+      "public static HttpRequest.BodyPublisher ofFile(Path path)"
+    ],
+    "signature_hash": "ea3697144e0f75f217ce3889a58c9b5665a3c88193aed39eff2166696aed7a44",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpRequest.BodyPublisher",
+    "exceptions": [
+      {
+        "name": "FileNotFoundException",
+        "package": "java.io"
+      }
+    ],
+    "description": "A request body publisher that takes data from the contents of a File.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A request body publisher that takes data from the contents of a File.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.196365",
+    "updatedDate": "2026-03-08T21:40:21.196366",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodyHandlers/ofFile": {
+    "id": "java.net.http.HttpResponse.BodyHandlers.ofFile",
+    "name": "ofFile",
+    "type": "method",
+    "parent": "HttpResponse.BodyHandlers",
+    "signatures": [
+      "public static HttpResponse.BodyHandler<Path> ofFile(Path file)",
+      "public static HttpResponse.BodyHandler<Path> ofFile(Path file, OpenOption... openOptions)"
+    ],
+    "signature_hash": "62e66cbc01824ae1b7011bf908e55bd1b9e86587772b6dd3d272ba9dbf32fee4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+    "parameters": [
+      {
+        "name": "file",
+        "has_default": false,
+        "default_value": null,
+        "type": "Path",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "openOptions",
+        "has_default": false,
+        "default_value": null,
+        "type": "OpenOption...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpResponse.BodyHandler<Path>",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aBodyHandler<Path>that returns aBodySubscriber<Path>.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodyHandler<Path>that returns aBodySubscriber<Path>.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197006",
+    "updatedDate": "2026-03-08T21:40:21.197007",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodySubscribers/ofFile": {
+    "id": "java.net.http.HttpResponse.BodySubscribers.ofFile",
+    "name": "ofFile",
+    "type": "method",
+    "parent": "HttpResponse.BodySubscribers",
+    "signatures": [
+      "public static HttpResponse.BodySubscriber<Path> ofFile(Path file)",
+      "public static HttpResponse.BodySubscriber<Path> ofFile(Path file, OpenOption... openOptions)"
+    ],
+    "signature_hash": "922c1592a57e60e76bf50d26f2fb60d0f0c40ad0bc8e6d0dcf0c24ede5b6b026",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+    "parameters": [
+      {
+        "name": "file",
+        "has_default": false,
+        "default_value": null,
+        "type": "Path",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "openOptions",
+        "has_default": false,
+        "default_value": null,
+        "type": "OpenOption...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpResponse.BodySubscriber<Path>",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aBodySubscriberwhich stores the response body in a\nfile opened with the given name.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodySubscriberwhich stores the response body in a\nfile opened with the given name.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197430",
+    "updatedDate": "2026-03-08T21:40:21.197431",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodyHandlers/ofFileDownload": {
+    "id": "java.net.http.HttpResponse.BodyHandlers.ofFileDownload",
+    "name": "ofFileDownload",
+    "type": "method",
+    "parent": "HttpResponse.BodyHandlers",
+    "signatures": [
+      "public static HttpResponse.BodyHandler<Path> ofFileDownload(Path directory, OpenOption... openOptions)"
+    ],
+    "signature_hash": "215706bc1581bd320d449ca0c9e70d538b906286195766d13b4ef93a538e8ba3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+    "parameters": [
+      {
+        "name": "directory",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "openOptions",
+        "type": "OpenOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpResponse.BodyHandler<Path>",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aBodyHandler<Path>that returns aBodySubscriber<Path>\nwhere the download directory is specified, but the filename is\nobtained from theContent-Dispositionresponse header.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodyHandler<Path>that returns aBodySubscriber<Path>\nwhere the download directory is specified, but the filename is\nobtained from theContent-Dispositionresponse header.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197030",
+    "updatedDate": "2026-03-08T21:40:21.197032",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpRequest.BodyPublishers/ofInputStream": {
+    "id": "java.net.http.HttpRequest.BodyPublishers.ofInputStream",
+    "name": "ofInputStream",
+    "type": "method",
+    "parent": "HttpRequest.BodyPublishers",
+    "signatures": [
+      "public static HttpRequest.BodyPublisher ofInputStream(Supplier<? extends InputStream> streamSupplier)"
+    ],
+    "signature_hash": "6bf111f09da36fa7f41c3d5f7a14753a877718515d403de679c0cf7b9e75da74",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html",
+    "parameters": [
+      {
+        "name": "streamSupplier",
+        "type": "Supplier<? extends InputStream>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpRequest.BodyPublisher",
+    "exceptions": [],
+    "description": "A request body publisher that reads its data from anInputStream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A request body publisher that reads its data from anInputStream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.196388",
+    "updatedDate": "2026-03-08T21:40:21.196389",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodyHandlers/ofInputStream": {
+    "id": "java.net.http.HttpResponse.BodyHandlers.ofInputStream",
+    "name": "ofInputStream",
+    "type": "method",
+    "parent": "HttpResponse.BodyHandlers",
+    "signatures": [
+      "public static HttpResponse.BodyHandler<InputStream> ofInputStream()"
+    ],
+    "signature_hash": "610586b3366efdc6d2908beaef0d25e74c1a9471932ce6d22cfe710353080c56",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+    "parameters": [],
+    "return_type": "static HttpResponse.BodyHandler<InputStream>",
+    "exceptions": [],
+    "description": "Returns aBodyHandler<InputStream>that returns aBodySubscriber<InputStream>obtained fromBodySubscribers.ofInputStream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodyHandler<InputStream>that returns aBodySubscriber<InputStream>obtained fromBodySubscribers.ofInputStream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197049",
+    "updatedDate": "2026-03-08T21:40:21.197050",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodySubscribers/ofInputStream": {
+    "id": "java.net.http.HttpResponse.BodySubscribers.ofInputStream",
+    "name": "ofInputStream",
+    "type": "method",
+    "parent": "HttpResponse.BodySubscribers",
+    "signatures": [
+      "public static HttpResponse.BodySubscriber<InputStream> ofInputStream()"
+    ],
+    "signature_hash": "da4fbec08a01e3a9f522bc0ca706fd78a24f771a7d9de48e2b470e7c08df561a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+    "parameters": [],
+    "return_type": "static HttpResponse.BodySubscriber<InputStream>",
+    "exceptions": [],
+    "description": "Returns aBodySubscriberwhich streams the response body as\nanInputStream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodySubscriberwhich streams the response body as\nanInputStream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197448",
+    "updatedDate": "2026-03-08T21:40:21.197449",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodyHandlers/ofLines": {
+    "id": "java.net.http.HttpResponse.BodyHandlers.ofLines",
+    "name": "ofLines",
+    "type": "method",
+    "parent": "HttpResponse.BodyHandlers",
+    "signatures": [
+      "public static HttpResponse.BodyHandler<Stream<String>> ofLines()"
+    ],
+    "signature_hash": "57f11f033b3d51aa923c7b7f528ed319daf1ac7b2d4216cc4681f7add846f492",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+    "parameters": [],
+    "return_type": "static HttpResponse.BodyHandler<Stream<String>>",
+    "exceptions": [],
+    "description": "Returns aBodyHandler<Stream<String>>that returns aBodySubscriber<Stream<String>>obtained\nfromBodySubscribers.ofLines(charset).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodyHandler<Stream<String>>that returns aBodySubscriber<Stream<String>>obtained\nfromBodySubscribers.ofLines(charset).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197066",
+    "updatedDate": "2026-03-08T21:40:21.197067",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodySubscribers/ofLines": {
+    "id": "java.net.http.HttpResponse.BodySubscribers.ofLines",
+    "name": "ofLines",
+    "type": "method",
+    "parent": "HttpResponse.BodySubscribers",
+    "signatures": [
+      "public static HttpResponse.BodySubscriber<Stream<String>> ofLines(Charset charset)"
+    ],
+    "signature_hash": "aa6932d4bcdbbd178b3ea214e9783fcaa15a29cb23daf7057c16d0d7eea5b4ad",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+    "parameters": [
+      {
+        "name": "charset",
+        "type": "Charset",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpResponse.BodySubscriber<Stream<String>>",
+    "exceptions": [],
+    "description": "Returns aBodySubscriberwhich streams the response body as\naStream<String>, where each string in the stream\ncorresponds to a line as defined byBufferedReader.lines().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodySubscriberwhich streams the response body as\naStream<String>, where each string in the stream\ncorresponds to a line as defined byBufferedReader.lines().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197468",
+    "updatedDate": "2026-03-08T21:40:21.197469",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodyHandlers/ofPublisher": {
+    "id": "java.net.http.HttpResponse.BodyHandlers.ofPublisher",
+    "name": "ofPublisher",
+    "type": "method",
+    "parent": "HttpResponse.BodyHandlers",
+    "signatures": [
+      "public static HttpResponse.BodyHandler<Flow.Publisher<List<ByteBuffer>>> ofPublisher()"
+    ],
+    "signature_hash": "6d74b54650e4d31a1eb3c8a8c1f9e027f63c50e9c5b8f1412a473fe8aaeb17d6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+    "parameters": [],
+    "return_type": "static HttpResponse.BodyHandler<Flow.Publisher<List<ByteBuffer>>>",
+    "exceptions": [],
+    "description": "Returns aBodyHandler<Publisher<List<ByteBuffer>>>that creates aBodySubscriber<Publisher<List<ByteBuffer>>>obtained fromBodySubscribers.ofPublisher().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodyHandler<Publisher<List<ByteBuffer>>>that creates aBodySubscriber<Publisher<List<ByteBuffer>>>obtained fromBodySubscribers.ofPublisher().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197084",
+    "updatedDate": "2026-03-08T21:40:21.197085",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodySubscribers/ofPublisher": {
+    "id": "java.net.http.HttpResponse.BodySubscribers.ofPublisher",
+    "name": "ofPublisher",
+    "type": "method",
+    "parent": "HttpResponse.BodySubscribers",
+    "signatures": [
+      "public static HttpResponse.BodySubscriber<Flow.Publisher<List<ByteBuffer>>> ofPublisher()"
+    ],
+    "signature_hash": "4dba5eed5774faafa80f668033e7c91f3d1d42b2eecaaa2c914d40210afa3d64",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+    "parameters": [],
+    "return_type": "static HttpResponse.BodySubscriber<Flow.Publisher<List<ByteBuffer>>>",
+    "exceptions": [],
+    "description": "Returns a response subscriber which publishes the response body\nthrough aPublisher<List<ByteBuffer>>.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a response subscriber which publishes the response body\nthrough aPublisher<List<ByteBuffer>>.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197487",
+    "updatedDate": "2026-03-08T21:40:21.197488",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpRequest.BodyPublishers/ofString": {
+    "id": "java.net.http.HttpRequest.BodyPublishers.ofString",
+    "name": "ofString",
+    "type": "method",
+    "parent": "HttpRequest.BodyPublishers",
+    "signatures": [
+      "public static HttpRequest.BodyPublisher ofString(String body)",
+      "public static HttpRequest.BodyPublisher ofString(String s, Charset charset)"
+    ],
+    "signature_hash": "47c75da2084a7161c72c6e35afcb47421f588af9f85ea1a213c4886f5b20f05e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html",
+    "parameters": [
+      {
+        "name": "body",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "s",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "charset",
+        "has_default": false,
+        "default_value": null,
+        "type": "Charset",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpRequest.BodyPublisher",
+    "exceptions": [],
+    "description": "Returns a request body publisher whose body is the givenString, converted using theUTF_8character set.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a request body publisher whose body is the givenString, converted using theUTF_8character set.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.196416",
+    "updatedDate": "2026-03-08T21:40:21.196417",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodyHandlers/ofString": {
+    "id": "java.net.http.HttpResponse.BodyHandlers.ofString",
+    "name": "ofString",
+    "type": "method",
+    "parent": "HttpResponse.BodyHandlers",
+    "signatures": [
+      "public static HttpResponse.BodyHandler<String> ofString()",
+      "public static HttpResponse.BodyHandler<String> ofString(Charset charset)"
+    ],
+    "signature_hash": "a4132c8c29d55e2217a7380629652cd536c6bc87299f2e89cb862e87e78c9c58",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+    "parameters": [
+      {
+        "name": "charset",
+        "has_default": false,
+        "default_value": null,
+        "type": "Charset",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpResponse.BodyHandler<String>",
+    "exceptions": [],
+    "description": "Returns aBodyHandler<String>that returns aBodySubscriber<String>obtained fromBodySubscribers.ofString(Charset).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodyHandler<String>that returns aBodySubscriber<String>obtained fromBodySubscribers.ofString(Charset).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197107",
+    "updatedDate": "2026-03-08T21:40:21.197108",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse.BodySubscribers/ofString": {
+    "id": "java.net.http.HttpResponse.BodySubscribers.ofString",
+    "name": "ofString",
+    "type": "method",
+    "parent": "HttpResponse.BodySubscribers",
+    "signatures": [
+      "public static HttpResponse.BodySubscriber<String> ofString(Charset charset)"
+    ],
+    "signature_hash": "94569451f3f13b99464ecf9cf6b0e3db7ffe7df806dd701b183cb416b3d78268",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+    "parameters": [
+      {
+        "name": "charset",
+        "type": "Charset",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static HttpResponse.BodySubscriber<String>",
+    "exceptions": [],
+    "description": "Returns a body subscriber which stores the response body as aStringconverted using the givenCharset.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a body subscriber which stores the response body as aStringconverted using the givenCharset.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197507",
+    "updatedDate": "2026-03-08T21:40:21.197508",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket.Listener/onBinary": {
+    "id": "java.net.http.WebSocket.Listener.onBinary",
+    "name": "onBinary",
+    "type": "method",
+    "parent": "WebSocket.Listener",
+    "signatures": [
+      "public default CompletionStage<?> onBinary(WebSocket webSocket, ByteBuffer data, boolean last)"
+    ],
+    "signature_hash": "f7744eb0cef554777958fa6fb7d48fad0f365e231e98785a418734296fcd53c9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.Listener.html",
+    "parameters": [
+      {
+        "name": "webSocket",
+        "type": "WebSocket",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "data",
+        "type": "ByteBuffer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "last",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default CompletionStage<?>",
+    "exceptions": [],
+    "description": "A binary data has been received.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A binary data has been received.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197894",
+    "updatedDate": "2026-03-08T21:40:21.197895",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket.Listener/onClose": {
+    "id": "java.net.http.WebSocket.Listener.onClose",
+    "name": "onClose",
+    "type": "method",
+    "parent": "WebSocket.Listener",
+    "signatures": [
+      "public default CompletionStage<?> onClose(WebSocket webSocket, int statusCode, String reason)"
+    ],
+    "signature_hash": "fec3ac4ff3c58a81e59c2628d16fab123a9e89b654bfb369d409ed3454060f85",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.Listener.html",
+    "parameters": [
+      {
+        "name": "webSocket",
+        "type": "WebSocket",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "statusCode",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "reason",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default CompletionStage<?>",
+    "exceptions": [],
+    "description": "Receives a Close message indicating the WebSocket's input has been\nclosed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Receives a Close message indicating the WebSocket's input has been\nclosed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197921",
+    "updatedDate": "2026-03-08T21:40:21.197922",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket.Listener/onError": {
+    "id": "java.net.http.WebSocket.Listener.onError",
+    "name": "onError",
+    "type": "method",
+    "parent": "WebSocket.Listener",
+    "signatures": [
+      "public default void onError(WebSocket webSocket, Throwable error)"
+    ],
+    "signature_hash": "72eb34c9e07ffa9bbea0d38ada3ab6acf4669a3adb9974940a715489d735c4d5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.Listener.html",
+    "parameters": [
+      {
+        "name": "webSocket",
+        "type": "WebSocket",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "error",
+        "type": "Throwable",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default void",
+    "exceptions": [],
+    "description": "An error has occurred.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An error has occurred.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197944",
+    "updatedDate": "2026-03-08T21:40:21.197945",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket.Listener/onOpen": {
+    "id": "java.net.http.WebSocket.Listener.onOpen",
+    "name": "onOpen",
+    "type": "method",
+    "parent": "WebSocket.Listener",
+    "signatures": [
+      "public default void onOpen(WebSocket webSocket)"
+    ],
+    "signature_hash": "82216b722184f9374198e50be6e504fcad0d78bb0eaf20fb1613d272dc20b9e2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.Listener.html",
+    "parameters": [
+      {
+        "name": "webSocket",
+        "type": "WebSocket",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default void",
+    "exceptions": [],
+    "description": "AWebSockethas been connected.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "AWebSockethas been connected.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197964",
+    "updatedDate": "2026-03-08T21:40:21.197965",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket.Listener/onPing": {
+    "id": "java.net.http.WebSocket.Listener.onPing",
+    "name": "onPing",
+    "type": "method",
+    "parent": "WebSocket.Listener",
+    "signatures": [
+      "public default CompletionStage<?> onPing(WebSocket webSocket, ByteBuffer message)"
+    ],
+    "signature_hash": "db92f82ca8553ec9f73c484bbfcdffdf0ec3ce28ba710a26035904d4f468ae42",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.Listener.html",
+    "parameters": [
+      {
+        "name": "webSocket",
+        "type": "WebSocket",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "message",
+        "type": "ByteBuffer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default CompletionStage<?>",
+    "exceptions": [],
+    "description": "A Ping message has been received.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A Ping message has been received.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.197987",
+    "updatedDate": "2026-03-08T21:40:21.197988",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket.Listener/onPong": {
+    "id": "java.net.http.WebSocket.Listener.onPong",
+    "name": "onPong",
+    "type": "method",
+    "parent": "WebSocket.Listener",
+    "signatures": [
+      "public default CompletionStage<?> onPong(WebSocket webSocket, ByteBuffer message)"
+    ],
+    "signature_hash": "b0f3d3418fbd9f1a2032157388da780d84755e503b1b30f5950ad836cea751f2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.Listener.html",
+    "parameters": [
+      {
+        "name": "webSocket",
+        "type": "WebSocket",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "message",
+        "type": "ByteBuffer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default CompletionStage<?>",
+    "exceptions": [],
+    "description": "A Pong message has been received.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A Pong message has been received.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.198010",
+    "updatedDate": "2026-03-08T21:40:21.198010",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket.Listener/onText": {
+    "id": "java.net.http.WebSocket.Listener.onText",
+    "name": "onText",
+    "type": "method",
+    "parent": "WebSocket.Listener",
+    "signatures": [
+      "public default CompletionStage<?> onText(WebSocket webSocket, CharSequence data, boolean last)"
+    ],
+    "signature_hash": "6fb46b1b3632638be7bcaa4fe67ef98b87c449378e26e0dfe70053042c32eead",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.Listener.html",
+    "parameters": [
+      {
+        "name": "webSocket",
+        "type": "WebSocket",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "data",
+        "type": "CharSequence",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "last",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default CompletionStage<?>",
+    "exceptions": [],
+    "description": "A textual data has been received.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A textual data has been received.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.198036",
+    "updatedDate": "2026-03-08T21:40:21.198037",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

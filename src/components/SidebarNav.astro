@@ -1,0 +1,292 @@
+---
+import LanguageSelector from './LanguageSelector.astro';
+
+interface SidebarItem {
+  label: string;
+  link?: string;
+  items?: SidebarItem[];
+  badge?: { text: string; variant?: 'default' | 'note' | 'tip' | 'caution' | 'danger' | 'success' };
+  collapsed?: boolean;
+}
+
+interface Props {
+  items: SidebarItem[];
+  currentPath: string;
+  currentLanguage?: string;
+  hasSidebar: boolean;
+  filterLabel?: string;
+}
+
+const { items, currentPath, currentLanguage = 'java', hasSidebar, filterLabel } = Astro.props;
+---
+
+{hasSidebar && (
+  <nav id="sidebar" class="sl-sidebar" aria-label="Navegación principal">          
+    <div class="sl-sidebar-inner">
+      <LanguageSelector currentLanguage={currentLanguage} />
+      <div class="sl-search-filter">
+        {filterLabel && <label class="sl-search-label">{filterLabel}</label>}
+        <input 
+          id="sidebar-search" 
+          type="text" 
+          placeholder="Filtrar..." 
+          class="sl-search-input"
+          aria-label="Filtrar navegación"
+        />
+      </div>
+      {items.map((group) => (
+        <div class="sl-sidebar-group">
+          {group.items ? (
+            <>
+              <details open={!group.collapsed} class="sl-sidebar-details">
+                <summary class="sl-sidebar-group-label">
+                  <svg class="sl-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"/>
+                  </svg>
+                  {group.label}
+                </summary>
+                <ul class="sl-sidebar-list">
+                  {group.items.map((item) => (
+                    <li>
+                      <a
+                        href={`/${item.link}`}
+                        class:list={['sl-sidebar-link', { 'sl-active': item.link === currentPath }]}
+                        aria-current={item.link === currentPath ? 'page' : undefined}
+                      >
+                        {item.label}
+                        {item.badge && (
+                          <span class={`sl-badge sl-badge-${item.badge.variant ?? 'default'}`}>
+                            {item.badge.text}
+                          </span>
+                        )}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </>
+          ) : (
+            <a
+              href={group.link}
+              class:list={['sl-sidebar-link sl-sidebar-link-top', { 'sl-active': group.link === currentPath }]}
+              aria-current={group.link === currentPath ? 'page' : undefined}
+            >
+              {group.label}
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  </nav>
+)}
+
+<style>
+  /* ============================
+     SIDEBAR
+     ============================ */
+  .sl-sidebar {
+    position: fixed;
+    top: var(--sl-header-height);
+    bottom: 0;
+    inset-inline-start: 0;
+    width: var(--sl-sidebar-width);
+    overflow-y: auto;
+    background-color: var(--sl-color-bg-sidebar);
+    border-inline-end: 1px solid var(--sl-color-hairline);
+    z-index: 8;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    scrollbar-width: thin;
+    scrollbar-color: var(--sl-color-gray-3) transparent;
+  }
+
+  .sl-sidebar[data-open="true"] {
+    transform: translateX(0);
+  }
+
+  @media (min-width: 50rem) {
+    .sl-sidebar {
+      transform: translateX(0);
+    }
+  }
+
+  .sl-sidebar-inner {
+    padding: 1rem 0 2rem;
+  }
+
+  /* Search Filter */
+  .sl-search-filter {
+    padding: 0.75rem 1rem;
+  }
+
+  .sl-search-label {
+    display: block;
+    font-size: var(--sl-text-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sl-color-gray-5);
+    margin-bottom: 0.5rem;
+  }
+
+  .sl-search-input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--sl-color-hairline-shade);
+    border-radius: var(--sl-border-radius);
+    background-color: var(--sl-color-bg-sidebar);
+    color: var(--sl-color-text);
+    font-size: var(--sl-text-sm);
+    font-family: var(--sl-font);
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+  }
+
+  .sl-search-input:focus {
+    outline: none;
+    border-color: var(--sl-color-accent);
+    box-shadow: 0 0 0 2px var(--sl-color-accent-low);
+  }
+
+  .sl-search-input::placeholder {
+    color: var(--sl-color-gray-4);
+  }
+
+  /* Groups */
+  .sl-sidebar-group {
+    margin-bottom: 0.25rem;
+  }
+
+  .sl-sidebar-details {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sl-sidebar-group-label {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.375rem 1rem;
+    font-size: var(--sl-text-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sl-color-gray-4);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+  .sl-sidebar-group-label::-webkit-details-marker { display: none; }
+  .sl-sidebar-group-label::marker { display: none; }
+  .sl-sidebar-group-label:hover { color: var(--sl-color-text); }
+
+  .sl-chevron {
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .sl-sidebar-details[open] .sl-chevron {
+    transform: rotate(90deg);
+  }
+
+  /* Links */
+  .sl-sidebar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sl-sidebar-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.3rem 1rem 0.3rem 1.75rem;
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-text);
+    border-inline-start: 2px solid transparent;
+    transition: color 0.15s, background 0.15s, border-color 0.15s;
+    text-decoration: none;
+  }
+  .sl-sidebar-link:hover {
+    color: var(--sl-color-accent-high);
+    background: var(--sl-color-bg-accent);
+    border-inline-start-color: var(--sl-color-accent);
+  }
+  .sl-sidebar-link.sl-active {
+    color: var(--sl-color-accent-high);
+    background: var(--sl-color-bg-accent);
+    border-inline-start-color: var(--sl-color-accent);
+    font-weight: 600;
+  }
+
+  .sl-sidebar-link-top {
+    padding-inline-start: 1rem;
+    font-weight: 600;
+  }
+
+  /* Badges */
+  .sl-badge {
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 0.1em 0.45em;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  .sl-badge-default  { background: var(--sl-color-bg-badge-default); color: var(--sl-color-text-badge-default); }
+  .sl-badge-note     { background: #dbeafe; color: #1e40af; }
+  .sl-badge-tip      { background: #dcfce7; color: #166534; }
+  .sl-badge-caution  { background: #fef9c3; color: #854d0e; }
+  .sl-badge-danger   { background: #fee2e2; color: #991b1b; }
+  .sl-badge-success  { background: #dcfce7; color: #166534; }
+
+  [data-theme="dark"] .sl-badge-note    { background: #1e3a5f; color: #93c5fd; }
+  [data-theme="dark"] .sl-badge-tip     { background: #14532d; color: #86efac; }
+  [data-theme="dark"] .sl-badge-caution { background: #451a03; color: #fcd34d; }
+  [data-theme="dark"] .sl-badge-danger  { background: #450a0a; color: #fca5a5; }
+  [data-theme="dark"] .sl-badge-success { background: #14532d; color: #86efac; }
+</style>
+
+<script>
+  const searchInput = document.getElementById('sidebar-search') as HTMLInputElement;
+  const sidebarGroups = document.querySelectorAll('.sl-sidebar-group');
+  const detailsElements = document.querySelectorAll('.sl-sidebar-details');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = (e.target as HTMLInputElement).value.toLowerCase();
+
+      sidebarGroups.forEach((group) => {
+        const details = group.querySelector('.sl-sidebar-details');
+        const links = group.querySelectorAll('.sl-sidebar-link');
+        let hasMatches = false;
+
+        links.forEach((link) => {
+          const text = link.textContent?.toLowerCase() || '';
+          const matches = query === '' || text.includes(query);
+          (link.parentElement as HTMLElement).style.display = matches ? '' : 'none';
+          if (matches) hasMatches = true;
+        });
+
+        if (details) {
+          // Mostrar/ocultar el grupo
+          (group as HTMLElement).style.display = hasMatches || query === '' ? '' : 'none';
+          
+          // Abrir automáticamente si hay coincidencias
+          if (query !== '' && hasMatches) {
+            (details as HTMLDetailsElement).open = true;
+          } else if (query === '') {
+            (details as HTMLDetailsElement).open = !(details as any).__originalCollapsed;
+          }
+        }
+      });
+    });
+
+    // Guardar estado original collapsed
+    detailsElements.forEach((details) => {
+      (details as any).__originalCollapsed = !(details as HTMLDetailsElement).open;
+    });
+  }
+</script>

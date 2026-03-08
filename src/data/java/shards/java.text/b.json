@@ -1,0 +1,291 @@
+{
+  "java.text/Bidi": {
+    "id": "java.text.Bidi",
+    "name": "Bidi",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/text/Bidi.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.282086",
+    "updatedDate": "2026-03-08T21:40:21.282087",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "Bidi"
+    ],
+    "attributes": [
+      "DIRECTION_DEFAULT_LEFT_TO_RIGHT",
+      "DIRECTION_DEFAULT_RIGHT_TO_LEFT",
+      "DIRECTION_LEFT_TO_RIGHT",
+      "DIRECTION_RIGHT_TO_LEFT"
+    ],
+    "methods": [
+      "baseIsLeftToRight",
+      "createLineBidi",
+      "getBaseLevel",
+      "getLength",
+      "getLevelAt",
+      "getRunCount",
+      "getRunLevel",
+      "getRunLimit",
+      "getRunStart",
+      "isLeftToRight",
+      "isMixed",
+      "isRightToLeft",
+      "reorderVisually",
+      "requiresBidi",
+      "toString"
+    ]
+  },
+  "java.text/BreakIterator": {
+    "id": "java.text.BreakIterator",
+    "name": "BreakIterator",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/text/BreakIterator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.282408",
+    "updatedDate": "2026-03-08T21:40:21.282409",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "BreakIterator"
+    ],
+    "attributes": [
+      "DONE"
+    ],
+    "methods": [
+      "clone",
+      "current",
+      "first",
+      "following",
+      "getAvailableLocales",
+      "getCharacterInstance",
+      "getLineInstance",
+      "getSentenceInstance",
+      "getText",
+      "getWordInstance",
+      "isBoundary",
+      "last",
+      "next",
+      "preceding",
+      "previous",
+      "setText"
+    ]
+  },
+  "java.text/Bidi/Bidi": {
+    "id": "java.text.Bidi.Bidi",
+    "name": "Bidi",
+    "type": "constructor",
+    "parent": "Bidi",
+    "signatures": [
+      "public Bidi(char[]text, int textStart, byte[]embeddings, int embStart, int paragraphLength, int flags)",
+      "public Bidi(String paragraph, int flags)",
+      "public Bidi(AttributedCharacterIterator paragraph)"
+    ],
+    "signature_hash": "0736d073def5d3e84f977493d958a609445373dd636156890426b50af0099c7d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/text/Bidi.html",
+    "parameters": [
+      {
+        "name": "char[]text",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "textStart",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "byte[]embeddings",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "embStart",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "paragraphLength",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "flags",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "paragraph",
+        "has_default": false,
+        "default_value": null,
+        "type": "String|AttributedCharacterIterator",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create Bidi from the given text, embedding, and direction information.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create Bidi from the given text, embedding, and direction information.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.282131",
+    "updatedDate": "2026-03-08T21:40:21.282132",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.text/BreakIterator/BreakIterator": {
+    "id": "java.text.BreakIterator.BreakIterator",
+    "name": "BreakIterator",
+    "type": "constructor",
+    "parent": "BreakIterator",
+    "signatures": [
+      "public BreakIterator()"
+    ],
+    "signature_hash": "fc98b1f23c85a84f6a4ec2e81613a59b78cd139950351f65cfd782ce1e2fbb85",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/text/BreakIterator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Constructor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.282420",
+    "updatedDate": "2026-03-08T21:40:21.282421",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.text/Bidi/baseIsLeftToRight": {
+    "id": "java.text.Bidi.baseIsLeftToRight",
+    "name": "baseIsLeftToRight",
+    "type": "method",
+    "parent": "Bidi",
+    "signatures": [
+      "public boolean baseIsLeftToRight()"
+    ],
+    "signature_hash": "6e6c3e2b8331f13853f94bf7bdb2ab7e07a7167ffbca2fbc7556387176e2e485",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/text/Bidi.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Return true if the base direction is left-to-right.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return true if the base direction is left-to-right.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.282152",
+    "updatedDate": "2026-03-08T21:40:21.282153",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

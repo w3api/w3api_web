@@ -1,0 +1,129 @@
+{
+  "javax.sql.rowset/Predicate/evaluate": {
+    "id": "javax.sql.rowset.Predicate.evaluate",
+    "name": "evaluate",
+    "type": "method",
+    "parent": "Predicate",
+    "signatures": [
+      "public boolean evaluate(Object value, int column)",
+      "public boolean evaluate(Object value, String columnName)",
+      "public boolean evaluate(RowSet rs)"
+    ],
+    "signature_hash": "f461fe5d596ede0cf60290ffbf235d173963b9a631bba017f7df35a30c5734ac",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/Predicate.html",
+    "parameters": [
+      {
+        "name": "value",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "column",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnName",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "rs",
+        "has_default": false,
+        "default_value": null,
+        "type": "RowSet",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "This method is called by aFilteredRowSetobject\nto check whether the value lies between the filtering criterion (or criteria\nif multiple constraints exist) set using thesetFilter()method.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method is called by aFilteredRowSetobject\nto check whether the value lies between the filtering criterion (or criteria\nif multiple constraints exist) set using thesetFilter()method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.697575",
+    "updatedDate": "2026-03-08T21:40:21.697576",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sql.rowset/CachedRowSet/execute": {
+    "id": "javax.sql.rowset.CachedRowSet.execute",
+    "name": "execute",
+    "type": "method",
+    "parent": "CachedRowSet",
+    "signatures": [
+      "public void execute(Connection conn)"
+    ],
+    "signature_hash": "b94fa97c6f967d3b686fb2150a9ab3aff4a46cff8f6f6ac8c90d1b0da8900593",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html",
+    "parameters": [
+      {
+        "name": "conn",
+        "type": "Connection",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Populates thisCachedRowSetobject with data, using the\ngiven connection to produce the result set from which the data will be read.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Populates thisCachedRowSetobject with data, using the\ngiven connection to produce the result set from which the data will be read.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.696974",
+    "updatedDate": "2026-03-08T21:40:21.696975",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

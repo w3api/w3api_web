@@ -1,0 +1,434 @@
+{
+  "java.nio.channels.spi/AsynchronousChannelProvider/openAsynchronousChannelGroup": {
+    "id": "java.nio.channels.spi.AsynchronousChannelProvider.openAsynchronousChannelGroup",
+    "name": "openAsynchronousChannelGroup",
+    "type": "method",
+    "parent": "AsynchronousChannelProvider",
+    "signatures": [
+      "public abstract AsynchronousChannelGroup openAsynchronousChannelGroup(int nThreads, ThreadFactory threadFactory)",
+      "public abstract AsynchronousChannelGroup openAsynchronousChannelGroup(ExecutorService executor, int initialSize)"
+    ],
+    "signature_hash": "63871f62f8e3586f3030cbab54e3ac488a1bdafdb2a371d41321e10e62b36ac8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html",
+    "parameters": [
+      {
+        "name": "nThreads",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "threadFactory",
+        "has_default": false,
+        "default_value": null,
+        "type": "ThreadFactory",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "executor",
+        "has_default": false,
+        "default_value": null,
+        "type": "ExecutorService",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "initialSize",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract AsynchronousChannelGroup",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Constructs a new asynchronous channel group with a fixed thread pool.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a new asynchronous channel group with a fixed thread pool.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.210588",
+    "updatedDate": "2026-03-08T21:40:21.210589",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels.spi/AsynchronousChannelProvider/openAsynchronousServerSocketChannel": {
+    "id": "java.nio.channels.spi.AsynchronousChannelProvider.openAsynchronousServerSocketChannel",
+    "name": "openAsynchronousServerSocketChannel",
+    "type": "method",
+    "parent": "AsynchronousChannelProvider",
+    "signatures": [
+      "public abstract AsynchronousServerSocketChannel openAsynchronousServerSocketChannel(AsynchronousChannelGroup group)"
+    ],
+    "signature_hash": "10b0b14b3e87e28a8e5263187ce76c2727446eafa88b99d965b130dc76677af3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html",
+    "parameters": [
+      {
+        "name": "group",
+        "type": "AsynchronousChannelGroup",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract AsynchronousServerSocketChannel",
+    "exceptions": [
+      {
+        "name": "IllegalChannelGroupException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ShutdownChannelGroupException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens an asynchronous server-socket channel.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens an asynchronous server-socket channel.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.210608",
+    "updatedDate": "2026-03-08T21:40:21.210609",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels.spi/AsynchronousChannelProvider/openAsynchronousSocketChannel": {
+    "id": "java.nio.channels.spi.AsynchronousChannelProvider.openAsynchronousSocketChannel",
+    "name": "openAsynchronousSocketChannel",
+    "type": "method",
+    "parent": "AsynchronousChannelProvider",
+    "signatures": [
+      "public abstract AsynchronousSocketChannel openAsynchronousSocketChannel(AsynchronousChannelGroup group)"
+    ],
+    "signature_hash": "7926de9beeea5528391445049179ce74cd13d7c15bb8cc9df091c7d7bd7b1b72",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html",
+    "parameters": [
+      {
+        "name": "group",
+        "type": "AsynchronousChannelGroup",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract AsynchronousSocketChannel",
+    "exceptions": [
+      {
+        "name": "IllegalChannelGroupException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ShutdownChannelGroupException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens an asynchronous socket channel.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens an asynchronous socket channel.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.210626",
+    "updatedDate": "2026-03-08T21:40:21.210627",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels.spi/SelectorProvider/openDatagramChannel": {
+    "id": "java.nio.channels.spi.SelectorProvider.openDatagramChannel",
+    "name": "openDatagramChannel",
+    "type": "method",
+    "parent": "SelectorProvider",
+    "signatures": [
+      "public abstract DatagramChannel openDatagramChannel()",
+      "public abstract DatagramChannel openDatagramChannel(ProtocolFamily family)"
+    ],
+    "signature_hash": "8a22fa653ba8a5bf804f570738adc26a0011111f387eb59a317998f54dfcd135",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html",
+    "parameters": [
+      {
+        "name": "family",
+        "has_default": false,
+        "default_value": null,
+        "type": "ProtocolFamily",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract DatagramChannel",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens a datagram channel.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens a datagram channel.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.210701",
+    "updatedDate": "2026-03-08T21:40:21.210702",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels.spi/SelectorProvider/openPipe": {
+    "id": "java.nio.channels.spi.SelectorProvider.openPipe",
+    "name": "openPipe",
+    "type": "method",
+    "parent": "SelectorProvider",
+    "signatures": [
+      "public abstract Pipe openPipe()"
+    ],
+    "signature_hash": "bedb7cc19d1fe23b9978da3f76c929451b8f411da3edb3a17b9e73a7702c3921",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html",
+    "parameters": [],
+    "return_type": "abstract Pipe",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens a pipe.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens a pipe.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.210723",
+    "updatedDate": "2026-03-08T21:40:21.210724",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels.spi/SelectorProvider/openSelector": {
+    "id": "java.nio.channels.spi.SelectorProvider.openSelector",
+    "name": "openSelector",
+    "type": "method",
+    "parent": "SelectorProvider",
+    "signatures": [
+      "public abstract AbstractSelector openSelector()"
+    ],
+    "signature_hash": "df2711e1c6420e3353b27cb8808e2a86941127c31984f80839fccbeaad05c74f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html",
+    "parameters": [],
+    "return_type": "abstract AbstractSelector",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens a selector.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens a selector.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.210739",
+    "updatedDate": "2026-03-08T21:40:21.210739",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels.spi/SelectorProvider/openServerSocketChannel": {
+    "id": "java.nio.channels.spi.SelectorProvider.openServerSocketChannel",
+    "name": "openServerSocketChannel",
+    "type": "method",
+    "parent": "SelectorProvider",
+    "signatures": [
+      "public abstract ServerSocketChannel openServerSocketChannel()",
+      "public ServerSocketChannel openServerSocketChannel(ProtocolFamily family)"
+    ],
+    "signature_hash": "7cf0f8bb2d8ca12b89412f0892daa46f874906ff14dc8905402a10fb1f9fd73c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html",
+    "parameters": [
+      {
+        "name": "family",
+        "has_default": false,
+        "default_value": null,
+        "type": "ProtocolFamily",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract ServerSocketChannel",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens a server-socket channel.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens a server-socket channel.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.210758",
+    "updatedDate": "2026-03-08T21:40:21.210759",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels.spi/SelectorProvider/openSocketChannel": {
+    "id": "java.nio.channels.spi.SelectorProvider.openSocketChannel",
+    "name": "openSocketChannel",
+    "type": "method",
+    "parent": "SelectorProvider",
+    "signatures": [
+      "public abstract SocketChannel openSocketChannel()",
+      "public SocketChannel openSocketChannel(ProtocolFamily family)"
+    ],
+    "signature_hash": "574ba7f185e9f4dfc1c69b27ccffc7d976e1f65af7fcd5041fce889e717f291f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html",
+    "parameters": [
+      {
+        "name": "family",
+        "has_default": false,
+        "default_value": null,
+        "type": "ProtocolFamily",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract SocketChannel",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Opens a socket channel.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Opens a socket channel.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.210777",
+    "updatedDate": "2026-03-08T21:40:21.210778",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

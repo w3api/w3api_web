@@ -1,0 +1,292 @@
+{
+  "javax.xml.parsers/ParserConfigurationException/ParserConfigurationException": {
+    "id": "javax.xml.parsers.ParserConfigurationException.ParserConfigurationException",
+    "name": "ParserConfigurationException",
+    "type": "constructor",
+    "parent": "ParserConfigurationException",
+    "signatures": [
+      "public ParserConfigurationException()",
+      "public ParserConfigurationException(String msg)"
+    ],
+    "signature_hash": "c2ce0e85606393f914759355cff510da29c3649b52a3cb665d840bec094cfc00",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/javax/xml/parsers/ParserConfigurationException.html",
+    "parameters": [
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a newParserConfigurationExceptionwith no\ndetail message.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a newParserConfigurationExceptionwith no\ndetail message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.366742",
+    "updatedDate": "2026-03-08T21:40:22.366743",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.xml.parsers/ParserConfigurationException": {
+    "id": "javax.xml.parsers.ParserConfigurationException",
+    "name": "ParserConfigurationException",
+    "type": "exception",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/javax/xml/parsers/ParserConfigurationException.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.366724",
+    "updatedDate": "2026-03-08T21:40:22.366725",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "ParserConfigurationException"
+    ]
+  },
+  "javax.xml.parsers/DocumentBuilder/parse": {
+    "id": "javax.xml.parsers.DocumentBuilder.parse",
+    "name": "parse",
+    "type": "method",
+    "parent": "DocumentBuilder",
+    "signatures": [
+      "public Document parse(File f)",
+      "public Document parse(InputStream is)",
+      "public Document parse(InputStream is, String systemId)",
+      "public Document parse(String uri)",
+      "public abstract Document parse(InputSource is)"
+    ],
+    "signature_hash": "4a3759862ab5b687e91640c00b9b8d06b0ee94022337740a647062b141ffcc3b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html",
+    "parameters": [
+      {
+        "name": "f",
+        "has_default": false,
+        "default_value": null,
+        "type": "File",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "is",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream|InputSource",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "systemId",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "uri",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Document",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "SAXException",
+        "package": "org.xml.sax"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Parse the content of the given file as an XML document\nand return a new DOMDocumentobject.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parse the content of the given file as an XML document\nand return a new DOMDocumentobject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.366173",
+    "updatedDate": "2026-03-08T21:40:22.366174",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.xml.parsers/SAXParser/parse": {
+    "id": "javax.xml.parsers.SAXParser.parse",
+    "name": "parse",
+    "type": "method",
+    "parent": "SAXParser",
+    "signatures": [
+      "public void parse(File f, HandlerBase hb)",
+      "public void parse(File f, DefaultHandler dh)",
+      "public void parse(InputStream is, HandlerBase hb)",
+      "public void parse(InputStream is, HandlerBase hb, String systemId)",
+      "public void parse(InputStream is, DefaultHandler dh)",
+      "public void parse(InputStream is, DefaultHandler dh, String systemId)",
+      "public void parse(String uri, HandlerBase hb)",
+      "public void parse(String uri, DefaultHandler dh)",
+      "public void parse(InputSource is, HandlerBase hb)",
+      "public void parse(InputSource is, DefaultHandler dh)"
+    ],
+    "signature_hash": "efed834313ff037bbff8cee99aac126f1f602758150b0d434deb7143f5bed2b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/javax/xml/parsers/SAXParser.html",
+    "parameters": [
+      {
+        "name": "f",
+        "has_default": false,
+        "default_value": null,
+        "type": "File",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "hb",
+        "has_default": false,
+        "default_value": null,
+        "type": "HandlerBase",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dh",
+        "has_default": false,
+        "default_value": null,
+        "type": "DefaultHandler",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "is",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream|InputSource",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "systemId",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "uri",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "SAXException",
+        "package": "org.xml.sax"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Parse the content of the file specified as XML using the\nspecifiedHandlerBase.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parse the content of the file specified as XML using the\nspecifiedHandlerBase.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.366941",
+    "updatedDate": "2026-03-08T21:40:22.366942",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

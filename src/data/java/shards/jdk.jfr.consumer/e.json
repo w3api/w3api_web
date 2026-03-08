@@ -1,0 +1,108 @@
+{
+  "jdk.jfr.consumer/EventStream": {
+    "id": "jdk.jfr.consumer.EventStream",
+    "name": "EventStream",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/EventStream.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.406625",
+    "updatedDate": "2026-03-08T21:40:22.406626",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "14",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "awaitTermination",
+      "close",
+      "onClose",
+      "onError",
+      "onEvent",
+      "onFlush",
+      "onMetadata",
+      "openFile",
+      "openRepository",
+      "remove",
+      "setEndTime",
+      "setOrdered",
+      "setReuse",
+      "setStartTime",
+      "start",
+      "startAsync"
+    ]
+  },
+  "jdk.jfr.consumer/RecordingStream/enable": {
+    "id": "jdk.jfr.consumer.RecordingStream.enable",
+    "name": "enable",
+    "type": "method",
+    "parent": "RecordingStream",
+    "signatures": [
+      "public EventSettings enable(Class<? extends Event> eventClass)",
+      "public EventSettings enable(String name)"
+    ],
+    "signature_hash": "7a73eff4b2f1283c4e65dd435889cc1916b95b46d4fb2c15dcce6c20fe5e3c9d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordingStream.html",
+    "parameters": [
+      {
+        "name": "eventClass",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<? extends Event>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "EventSettings",
+    "exceptions": [],
+    "description": "Enables event.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enables event.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.408044",
+    "updatedDate": "2026-03-08T21:40:22.408045",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "14",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

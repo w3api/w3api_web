@@ -1,0 +1,2455 @@
+{
+  "java.sql/Wrapper/unwrap": {
+    "id": "java.sql.Wrapper.unwrap",
+    "name": "unwrap",
+    "type": "method",
+    "parent": "Wrapper",
+    "signatures": [
+      "public <T> T unwrap(Class<T> iface)"
+    ],
+    "signature_hash": "01bb0553a2dde6f0f5c30e9cc676b136e16e4c3964fc2300ac954471375f05dd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Wrapper.html",
+    "parameters": [
+      {
+        "name": "iface",
+        "type": "Class<T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "<T> T",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Returns an object that implements the given interface to allow access to\nnon-standard methods, or standard methods not exposed by the proxy.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an object that implements the given interface to allow access to\nnon-standard methods, or standard methods not exposed by the proxy.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.281573",
+    "updatedDate": "2026-03-08T21:40:21.281574",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateArray": {
+    "id": "java.sql.ResultSet.updateArray",
+    "name": "updateArray",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateArray(int columnIndex, Array x)",
+      "public void updateArray(String columnLabel, Array x)"
+    ],
+    "signature_hash": "e065a504d90b745eb0d75d868a78aa43c4aea7be7f68379bf1a346f3985639b4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "Array",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with ajava.sql.Arrayvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with ajava.sql.Arrayvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267142",
+    "updatedDate": "2026-03-08T21:40:21.267143",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateAsciiStream": {
+    "id": "java.sql.ResultSet.updateAsciiStream",
+    "name": "updateAsciiStream",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateAsciiStream(int columnIndex, InputStream x)",
+      "public void updateAsciiStream(int columnIndex, InputStream x, int length)",
+      "public void updateAsciiStream(int columnIndex, InputStream x, long length)",
+      "public void updateAsciiStream(String columnLabel, InputStream x)",
+      "public void updateAsciiStream(String columnLabel, InputStream x, int length)",
+      "public void updateAsciiStream(String columnLabel, InputStream x, long length)"
+    ],
+    "signature_hash": "7ca65641d0acb5bd892d00ce04ff8f7907aa2c452763fed5105b69c18354d70c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "length",
+        "has_default": false,
+        "default_value": null,
+        "type": "int|long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with an ascii stream value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with an ascii stream value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267223",
+    "updatedDate": "2026-03-08T21:40:21.267224",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateBigDecimal": {
+    "id": "java.sql.ResultSet.updateBigDecimal",
+    "name": "updateBigDecimal",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateBigDecimal(int columnIndex, BigDecimal x)",
+      "public void updateBigDecimal(String columnLabel, BigDecimal x)"
+    ],
+    "signature_hash": "2b111bfc032e0895d20ea1226a37dca8cd6a8d2bb04067e37617b031c4466b01",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "BigDecimal",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with ajava.math.BigDecimalvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with ajava.math.BigDecimalvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267271",
+    "updatedDate": "2026-03-08T21:40:21.267272",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateBinaryStream": {
+    "id": "java.sql.ResultSet.updateBinaryStream",
+    "name": "updateBinaryStream",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateBinaryStream(int columnIndex, InputStream x)",
+      "public void updateBinaryStream(int columnIndex, InputStream x, int length)",
+      "public void updateBinaryStream(int columnIndex, InputStream x, long length)",
+      "public void updateBinaryStream(String columnLabel, InputStream x)",
+      "public void updateBinaryStream(String columnLabel, InputStream x, int length)",
+      "public void updateBinaryStream(String columnLabel, InputStream x, long length)"
+    ],
+    "signature_hash": "6e83ab829c642116070df4a2fef635b1fe672ff6187a89bef65cb268b82d2268",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "length",
+        "has_default": false,
+        "default_value": null,
+        "type": "int|long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with a binary stream value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with a binary stream value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267352",
+    "updatedDate": "2026-03-08T21:40:21.267353",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateBlob": {
+    "id": "java.sql.ResultSet.updateBlob",
+    "name": "updateBlob",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateBlob(int columnIndex, InputStream inputStream)",
+      "public void updateBlob(int columnIndex, InputStream inputStream, long length)",
+      "public void updateBlob(int columnIndex, Blob x)",
+      "public void updateBlob(String columnLabel, InputStream inputStream)",
+      "public void updateBlob(String columnLabel, InputStream inputStream, long length)",
+      "public void updateBlob(String columnLabel, Blob x)"
+    ],
+    "signature_hash": "ee095489c4c8d6c25e0ef25a8d41437f9a2ddda7c0b019de5da6d518663e8963",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "inputStream",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "length",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "Blob",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column using the given input stream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column using the given input stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267462",
+    "updatedDate": "2026-03-08T21:40:21.267463",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateBoolean": {
+    "id": "java.sql.ResultSet.updateBoolean",
+    "name": "updateBoolean",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateBoolean(int columnIndex, boolean x)",
+      "public void updateBoolean(String columnLabel, boolean x)"
+    ],
+    "signature_hash": "89f24a5c2244dcd7ad45de50cd0bc6702678b87b940fc786d151217d0d219f01",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with abooleanvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with abooleanvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267508",
+    "updatedDate": "2026-03-08T21:40:21.267509",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateByte": {
+    "id": "java.sql.ResultSet.updateByte",
+    "name": "updateByte",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateByte(int columnIndex, byte x)",
+      "public void updateByte(String columnLabel, byte x)"
+    ],
+    "signature_hash": "1322b9b9235ac1fe98faf19da07ddf28e05e68ca2a8ff5a89e3bf8cfffebb1cc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "byte",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with abytevalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with abytevalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267553",
+    "updatedDate": "2026-03-08T21:40:21.267554",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateBytes": {
+    "id": "java.sql.ResultSet.updateBytes",
+    "name": "updateBytes",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateBytes(int columnIndex, byte[]x)",
+      "public void updateBytes(String columnLabel, byte[]x)"
+    ],
+    "signature_hash": "2cff3631ede8d0f1cb956c9d640952e0a36e92b1500d8a3941115a540654362a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "byte[]x",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with abytearray value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with abytearray value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267602",
+    "updatedDate": "2026-03-08T21:40:21.267603",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateCharacterStream": {
+    "id": "java.sql.ResultSet.updateCharacterStream",
+    "name": "updateCharacterStream",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateCharacterStream(int columnIndex, Reader x)",
+      "public void updateCharacterStream(int columnIndex, Reader x, int length)",
+      "public void updateCharacterStream(int columnIndex, Reader x, long length)",
+      "public void updateCharacterStream(String columnLabel, Reader reader)",
+      "public void updateCharacterStream(String columnLabel, Reader reader, int length)",
+      "public void updateCharacterStream(String columnLabel, Reader reader, long length)"
+    ],
+    "signature_hash": "a886c1aec18316afe67a515f2f6782f535237ad1610004de41f0272bf57aa744",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "Reader",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "length",
+        "has_default": false,
+        "default_value": null,
+        "type": "int|long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "reader",
+        "has_default": false,
+        "default_value": null,
+        "type": "Reader",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with a character stream value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with a character stream value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267682",
+    "updatedDate": "2026-03-08T21:40:21.267683",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateClob": {
+    "id": "java.sql.ResultSet.updateClob",
+    "name": "updateClob",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateClob(int columnIndex, Reader reader)",
+      "public void updateClob(int columnIndex, Reader reader, long length)",
+      "public void updateClob(int columnIndex, Clob x)",
+      "public void updateClob(String columnLabel, Reader reader)",
+      "public void updateClob(String columnLabel, Reader reader, long length)",
+      "public void updateClob(String columnLabel, Clob x)"
+    ],
+    "signature_hash": "f6a1833f2bc0362bf39f5b8ffc1262bd6c651a5c870da2ed12ee2ffc60727430",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "reader",
+        "has_default": false,
+        "default_value": null,
+        "type": "Reader",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "length",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "Clob",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column using the givenReaderobject.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column using the givenReaderobject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267758",
+    "updatedDate": "2026-03-08T21:40:21.267759",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateDate": {
+    "id": "java.sql.ResultSet.updateDate",
+    "name": "updateDate",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateDate(int columnIndex, Date x)",
+      "public void updateDate(String columnLabel, Date x)"
+    ],
+    "signature_hash": "b0aea9d515287b7020e99b256f0e4c9eba5b9f129be93090d32a69d75f6841c5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "Date",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with ajava.sql.Datevalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with ajava.sql.Datevalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267802",
+    "updatedDate": "2026-03-08T21:40:21.267803",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateDouble": {
+    "id": "java.sql.ResultSet.updateDouble",
+    "name": "updateDouble",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateDouble(int columnIndex, double x)",
+      "public void updateDouble(String columnLabel, double x)"
+    ],
+    "signature_hash": "3cc92176460d7d6b982c65cd9c89e83df4de4a6307eeed1dffb4af564612a620",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "double",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with adoublevalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with adoublevalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267849",
+    "updatedDate": "2026-03-08T21:40:21.267850",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateFloat": {
+    "id": "java.sql.ResultSet.updateFloat",
+    "name": "updateFloat",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateFloat(int columnIndex, float x)",
+      "public void updateFloat(String columnLabel, float x)"
+    ],
+    "signature_hash": "945ba302d639a3332c6e562bab7be983569e18d3aae0d9f690e435dae3fc7cc5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "float",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with afloatvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with afloatvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267895",
+    "updatedDate": "2026-03-08T21:40:21.267895",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateInt": {
+    "id": "java.sql.ResultSet.updateInt",
+    "name": "updateInt",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateInt(int columnIndex, int x)",
+      "public void updateInt(String columnLabel, int x)"
+    ],
+    "signature_hash": "a6827245030cabdbace4b6bb363f9e2b359c462de5909d25706a1361b064cbf6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with anintvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with anintvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267939",
+    "updatedDate": "2026-03-08T21:40:21.267940",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateLong": {
+    "id": "java.sql.ResultSet.updateLong",
+    "name": "updateLong",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateLong(int columnIndex, long x)",
+      "public void updateLong(String columnLabel, long x)"
+    ],
+    "signature_hash": "72bcaf17e2abe433c3f4b7851f9d91ab879d452c27a0e1663a9d199348fdc3bd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with alongvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with alongvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.267986",
+    "updatedDate": "2026-03-08T21:40:21.267987",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateNCharacterStream": {
+    "id": "java.sql.ResultSet.updateNCharacterStream",
+    "name": "updateNCharacterStream",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateNCharacterStream(int columnIndex, Reader x)",
+      "public void updateNCharacterStream(int columnIndex, Reader x, long length)",
+      "public void updateNCharacterStream(String columnLabel, Reader reader)",
+      "public void updateNCharacterStream(String columnLabel, Reader reader, long length)"
+    ],
+    "signature_hash": "2510f38433c8474f9c8e1d4a2c2ef052993f710fdf38dba6fd049dbe88727d09",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "Reader",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "length",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "reader",
+        "has_default": false,
+        "default_value": null,
+        "type": "Reader",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with a character stream value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with a character stream value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268050",
+    "updatedDate": "2026-03-08T21:40:21.268050",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateNClob": {
+    "id": "java.sql.ResultSet.updateNClob",
+    "name": "updateNClob",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateNClob(int columnIndex, Reader reader)",
+      "public void updateNClob(int columnIndex, Reader reader, long length)",
+      "public void updateNClob(int columnIndex, NClob nClob)",
+      "public void updateNClob(String columnLabel, Reader reader)",
+      "public void updateNClob(String columnLabel, Reader reader, long length)",
+      "public void updateNClob(String columnLabel, NClob nClob)"
+    ],
+    "signature_hash": "6447d00c22890b2236a79a88514b9f9d7e4331168c090ddb53ecdabd04cdb927",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "reader",
+        "has_default": false,
+        "default_value": null,
+        "type": "Reader",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "length",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "nClob",
+        "has_default": false,
+        "default_value": null,
+        "type": "NClob",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column using the givenReaderThe data will be read from the stream\nas needed until end-of-stream is reached.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column using the givenReaderThe data will be read from the stream\nas needed until end-of-stream is reached.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268137",
+    "updatedDate": "2026-03-08T21:40:21.268138",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateNString": {
+    "id": "java.sql.ResultSet.updateNString",
+    "name": "updateNString",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateNString(int columnIndex, String nString)",
+      "public void updateNString(String columnLabel, String nString)"
+    ],
+    "signature_hash": "59dcf03d45730269dbe8ecaec71fec56e0f1c5c9cce0a41134df6622fba1d1a1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "nString",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with aStringvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with aStringvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268184",
+    "updatedDate": "2026-03-08T21:40:21.268185",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateNull": {
+    "id": "java.sql.ResultSet.updateNull",
+    "name": "updateNull",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateNull(int columnIndex)",
+      "public void updateNull(String columnLabel)"
+    ],
+    "signature_hash": "2b60d4f5e494872bc86040a773560fb1f8b92968d5b18b3609333dd231455aa1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with anullvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with anullvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268226",
+    "updatedDate": "2026-03-08T21:40:21.268227",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateObject": {
+    "id": "java.sql.ResultSet.updateObject",
+    "name": "updateObject",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateObject(int columnIndex, Object x)",
+      "public void updateObject(int columnIndex, Object x, int scaleOrLength)",
+      "public default void updateObject(int columnIndex, Object x, SQLType targetSqlType)",
+      "public default void updateObject(int columnIndex, Object x, SQLType targetSqlType, int scaleOrLength)",
+      "public void updateObject(String columnLabel, Object x)",
+      "public void updateObject(String columnLabel, Object x, int scaleOrLength)",
+      "public default void updateObject(String columnLabel, Object x, SQLType targetSqlType)",
+      "public default void updateObject(String columnLabel, Object x, SQLType targetSqlType, int scaleOrLength)"
+    ],
+    "signature_hash": "b17cc9471163abe71694a6faac228c2aa5b273ae77eca9da32e1862a9832a93f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "scaleOrLength",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "targetSqlType",
+        "has_default": false,
+        "default_value": null,
+        "type": "SQLType",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with anObjectvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with anObjectvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268333",
+    "updatedDate": "2026-03-08T21:40:21.268334",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateRef": {
+    "id": "java.sql.ResultSet.updateRef",
+    "name": "updateRef",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateRef(int columnIndex, Ref x)",
+      "public void updateRef(String columnLabel, Ref x)"
+    ],
+    "signature_hash": "66cc8d7624e5fb370a40f05fb170b8ab491bfe12b33afafbbfc5aad4ef401786",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "Ref",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with ajava.sql.Refvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with ajava.sql.Refvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268380",
+    "updatedDate": "2026-03-08T21:40:21.268381",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateRow": {
+    "id": "java.sql.ResultSet.updateRow",
+    "name": "updateRow",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateRow()"
+    ],
+    "signature_hash": "d8970e4988c3955763a7fb90d88895cd127a757e6cea4e3e44b8e94a0efb97b9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the underlying database with the new contents of the\ncurrent row of thisResultSetobject.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the underlying database with the new contents of the\ncurrent row of thisResultSetobject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268414",
+    "updatedDate": "2026-03-08T21:40:21.268415",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateRowId": {
+    "id": "java.sql.ResultSet.updateRowId",
+    "name": "updateRowId",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateRowId(int columnIndex, RowId x)",
+      "public void updateRowId(String columnLabel, RowId x)"
+    ],
+    "signature_hash": "dce534c940f8c6e1d499f69ab367bd9bb03a0789bf58c8b6a8a0faf5ba9e7eb2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "RowId",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with aRowIdvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with aRowIdvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268460",
+    "updatedDate": "2026-03-08T21:40:21.268461",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateSQLXML": {
+    "id": "java.sql.ResultSet.updateSQLXML",
+    "name": "updateSQLXML",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateSQLXML(int columnIndex, SQLXML xmlObject)",
+      "public void updateSQLXML(String columnLabel, SQLXML xmlObject)"
+    ],
+    "signature_hash": "8ca9d31227bb8d8295855f03cf47aedb904c21dc0dfd6b970e1aa7f9bb76c030",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "xmlObject",
+        "has_default": false,
+        "default_value": null,
+        "type": "SQLXML",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with ajava.sql.SQLXMLvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with ajava.sql.SQLXMLvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268554",
+    "updatedDate": "2026-03-08T21:40:21.268555",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateShort": {
+    "id": "java.sql.ResultSet.updateShort",
+    "name": "updateShort",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateShort(int columnIndex, short x)",
+      "public void updateShort(String columnLabel, short x)"
+    ],
+    "signature_hash": "2c10791322e30db994e04e3757fc2d1c01afd1d25cddc0061f510ef30a0659a7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "short",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with ashortvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with ashortvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268505",
+    "updatedDate": "2026-03-08T21:40:21.268506",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateString": {
+    "id": "java.sql.ResultSet.updateString",
+    "name": "updateString",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateString(int columnIndex, String x)",
+      "public void updateString(String columnLabel, String x)"
+    ],
+    "signature_hash": "6466fc3df8a1f84747ef1143b35305c01d4eeb87be51ab8fb47d4aa8d53487d7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with aStringvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with aStringvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268600",
+    "updatedDate": "2026-03-08T21:40:21.268600",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateTime": {
+    "id": "java.sql.ResultSet.updateTime",
+    "name": "updateTime",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateTime(int columnIndex, Time x)",
+      "public void updateTime(String columnLabel, Time x)"
+    ],
+    "signature_hash": "628ac02b848efb98d239e7efc8e2f5b1571d276fb9265b24cead6088527a8215",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "Time",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with ajava.sql.Timevalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with ajava.sql.Timevalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268644",
+    "updatedDate": "2026-03-08T21:40:21.268645",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ResultSet/updateTimestamp": {
+    "id": "java.sql.ResultSet.updateTimestamp",
+    "name": "updateTimestamp",
+    "type": "method",
+    "parent": "ResultSet",
+    "signatures": [
+      "public void updateTimestamp(int columnIndex, Timestamp x)",
+      "public void updateTimestamp(String columnLabel, Timestamp x)"
+    ],
+    "signature_hash": "3be3e52d3b581e94e7c7321c0970c49f5780be97528cc5cf40e6e5db1e32c592",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
+    "parameters": [
+      {
+        "name": "columnIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "has_default": false,
+        "default_value": null,
+        "type": "Timestamp",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnLabel",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      },
+      {
+        "name": "SQLFeatureNotSupportedException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Updates the designated column with ajava.sql.Timestampvalue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Updates the designated column with ajava.sql.Timestampvalue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.268691",
+    "updatedDate": "2026-03-08T21:40:21.268692",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/DatabaseMetaData/updatesAreDetected": {
+    "id": "java.sql.DatabaseMetaData.updatesAreDetected",
+    "name": "updatesAreDetected",
+    "type": "method",
+    "parent": "DatabaseMetaData",
+    "signatures": [
+      "public boolean updatesAreDetected(int type)"
+    ],
+    "signature_hash": "643fa73ebe0a34e7e7ba965796951f8d52b68a41eb5a5cfe30ef117da1dd0320",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/DatabaseMetaData.html",
+    "parameters": [
+      {
+        "name": "type",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Retrieves whether or not a visible row update can be detected by\ncalling the methodResultSet.rowUpdated.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves whether or not a visible row update can be detected by\ncalling the methodResultSet.rowUpdated.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.258812",
+    "updatedDate": "2026-03-08T21:40:21.258813",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ConnectionBuilder/user": {
+    "id": "java.sql.ConnectionBuilder.user",
+    "name": "user",
+    "type": "method",
+    "parent": "ConnectionBuilder",
+    "signatures": [
+      "public ConnectionBuilder user(String username)"
+    ],
+    "signature_hash": "0492e945b2855ab3d6b5c5a97303e25d9644fec8b07006f9904b64a7da714a56",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ConnectionBuilder.html",
+    "parameters": [
+      {
+        "name": "username",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "ConnectionBuilder",
+    "exceptions": [],
+    "description": "Specifies the username to be used when creating a connection",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Specifies the username to be used when creating a connection",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.254864",
+    "updatedDate": "2026-03-08T21:40:21.254865",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/DatabaseMetaData/usesLocalFilePerTable": {
+    "id": "java.sql.DatabaseMetaData.usesLocalFilePerTable",
+    "name": "usesLocalFilePerTable",
+    "type": "method",
+    "parent": "DatabaseMetaData",
+    "signatures": [
+      "public boolean usesLocalFilePerTable()"
+    ],
+    "signature_hash": "a6c5f1ed487a4f22c44693b3e40e14b6e3b7b99aab5be7ae2e48807b617af822",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/DatabaseMetaData.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Retrieves whether this database uses a file for each table.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves whether this database uses a file for each table.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.258836",
+    "updatedDate": "2026-03-08T21:40:21.258837",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/DatabaseMetaData/usesLocalFiles": {
+    "id": "java.sql.DatabaseMetaData.usesLocalFiles",
+    "name": "usesLocalFiles",
+    "type": "method",
+    "parent": "DatabaseMetaData",
+    "signatures": [
+      "public boolean usesLocalFiles()"
+    ],
+    "signature_hash": "834e3f95bbf4b59d49cafa57b41d2252716b432aa557fcb58e23ae58b42799cc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/DatabaseMetaData.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Retrieves whether this database stores tables in a local file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves whether this database stores tables in a local file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.258861",
+    "updatedDate": "2026-03-08T21:40:21.258862",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

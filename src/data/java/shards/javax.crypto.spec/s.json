@@ -1,0 +1,193 @@
+{
+  "javax.crypto.spec/SecretKeySpec": {
+    "id": "javax.crypto.spec.SecretKeySpec",
+    "name": "SecretKeySpec",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/crypto/spec/SecretKeySpec.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.520473",
+    "updatedDate": "2026-03-08T21:40:21.520474",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "SecretKeySpec"
+    ],
+    "methods": [
+      "equals",
+      "getAlgorithm",
+      "getEncoded",
+      "getFormat",
+      "hashCode"
+    ]
+  },
+  "javax.crypto.spec/SecretKeySpec/SecretKeySpec": {
+    "id": "javax.crypto.spec.SecretKeySpec.SecretKeySpec",
+    "name": "SecretKeySpec",
+    "type": "constructor",
+    "parent": "SecretKeySpec",
+    "signatures": [
+      "public SecretKeySpec(byte[]key, int offset, int len, String algorithm)",
+      "public SecretKeySpec(byte[]key, String algorithm)"
+    ],
+    "signature_hash": "9bda237554a840ae04e47f7e4fdafe2e936822d5085019c8add405242741e033",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/crypto/spec/SecretKeySpec.html",
+    "parameters": [
+      {
+        "name": "byte[]key",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "offset",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "len",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "algorithm",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Constructs a secret key from the given byte array, using the firstlenbytes ofkey, starting atoffsetinclusive.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a secret key from the given byte array, using the firstlenbytes ofkey, starting atoffsetinclusive.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.520509",
+    "updatedDate": "2026-03-08T21:40:21.520510",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.crypto.spec/HKDFParameterSpec.Extract/salts": {
+    "id": "javax.crypto.spec.HKDFParameterSpec.Extract.salts",
+    "name": "salts",
+    "type": "method",
+    "parent": "HKDFParameterSpec.Extract",
+    "signatures": [
+      "public List<SecretKey> salts()"
+    ],
+    "signature_hash": "598b48d94645388c59b82702d9153fe45c90f7d2f322f9148e62132265e74289",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.Extract.html",
+    "parameters": [],
+    "return_type": "List<SecretKey>",
+    "exceptions": [],
+    "description": "Returns an unmodifiableListof salt values in the order they\nwere added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an unmodifiableListof salt values in the order they\nwere added.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.519614",
+    "updatedDate": "2026-03-08T21:40:21.519614",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "25",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.crypto.spec/HKDFParameterSpec.ExtractThenExpand/salts": {
+    "id": "javax.crypto.spec.HKDFParameterSpec.ExtractThenExpand.salts",
+    "name": "salts",
+    "type": "method",
+    "parent": "HKDFParameterSpec.ExtractThenExpand",
+    "signatures": [
+      "public List<SecretKey> salts()"
+    ],
+    "signature_hash": "598b48d94645388c59b82702d9153fe45c90f7d2f322f9148e62132265e74289",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.ExtractThenExpand.html",
+    "parameters": [],
+    "return_type": "List<SecretKey>",
+    "exceptions": [],
+    "description": "Returns an unmodifiableListof salt values in the order they\nwere added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an unmodifiableListof salt values in the order they\nwere added.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.519687",
+    "updatedDate": "2026-03-08T21:40:21.519688",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "25",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

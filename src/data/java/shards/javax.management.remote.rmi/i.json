@@ -1,0 +1,808 @@
+{
+  "javax.management.remote.rmi/RMIConnection/invoke": {
+    "id": "javax.management.remote.rmi.RMIConnection.invoke",
+    "name": "invoke",
+    "type": "method",
+    "parent": "RMIConnection",
+    "signatures": [
+      "public Object invoke(ObjectName name, String operationName, MarshalledObject params, String[]signature, Subject delegationSubject)"
+    ],
+    "signature_hash": "c69a6718e19dbc66b14d6339d5a706b1d216186006022d1225446fdd90adadcc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "operationName",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "params",
+        "type": "MarshalledObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "String[]signature",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delegationSubject",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Object",
+    "exceptions": [
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      },
+      {
+        "name": "MBeanException",
+        "package": "javax.management"
+      },
+      {
+        "name": "ReflectionException",
+        "package": "javax.management"
+      },
+      {
+        "name": "SecurityException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "RuntimeOperationsException",
+        "package": "javax.management"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.invoke(ObjectName, String, Object[], String[]).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.invoke(ObjectName, String, Object[], String[]).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.590436",
+    "updatedDate": "2026-03-08T21:40:21.590437",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectionImpl/invoke": {
+    "id": "javax.management.remote.rmi.RMIConnectionImpl.invoke",
+    "name": "invoke",
+    "type": "method",
+    "parent": "RMIConnectionImpl",
+    "signatures": [
+      "public Object invoke(ObjectName name, String operationName, MarshalledObject params, String[]signature, Subject delegationSubject)"
+    ],
+    "signature_hash": "c69a6718e19dbc66b14d6339d5a706b1d216186006022d1225446fdd90adadcc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "operationName",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "params",
+        "type": "MarshalledObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "String[]signature",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delegationSubject",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Object",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      },
+      {
+        "name": "MBeanException",
+        "package": "javax.management"
+      },
+      {
+        "name": "ReflectionException",
+        "package": "javax.management"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.invoke(ObjectName, String, Object[], String[]).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.invoke(ObjectName, String, Object[], String[]).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.591158",
+    "updatedDate": "2026-03-08T21:40:21.591159",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectionImpl_Stub/invoke": {
+    "id": "javax.management.remote.rmi.RMIConnectionImpl_Stub.invoke",
+    "name": "invoke",
+    "type": "method",
+    "parent": "RMIConnectionImpl_Stub",
+    "signatures": [
+      "public Object invoke(ObjectName $param_ObjectName_1, String $param_String_2, MarshalledObject $param_MarshalledObject_3, String[]$param_arrayOf_String_4, Subject $param_Subject_5)"
+    ],
+    "signature_hash": "60678fd7b29b1bd7d5d80ce6cd23517b57678898c8fefed4b5cd5fbd052e1387",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html",
+    "parameters": [
+      {
+        "name": "$param_ObjectName_1",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "$param_String_2",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "$param_MarshalledObject_3",
+        "type": "MarshalledObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "String[]$param_arrayOf_String_4",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "$param_Subject_5",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Object",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      },
+      {
+        "name": "MBeanException",
+        "package": "javax.management"
+      },
+      {
+        "name": "ReflectionException",
+        "package": "javax.management"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.invoke(ObjectName, String, Object[], String[]).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.invoke(ObjectName, String, Object[], String[]).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.591982",
+    "updatedDate": "2026-03-08T21:40:21.591983",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectorServer/isActive": {
+    "id": "javax.management.remote.rmi.RMIConnectorServer.isActive",
+    "name": "isActive",
+    "type": "method",
+    "parent": "RMIConnectorServer",
+    "signatures": [
+      "public boolean isActive()"
+    ],
+    "signature_hash": "967d21828dd4b7396b26e55f80c4b30972f51b68d2fa61b73d106a476da86ea0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines whether the connector server is active.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines whether the connector server is active.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.589059",
+    "updatedDate": "2026-03-08T21:40:21.589060",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnection/isInstanceOf": {
+    "id": "javax.management.remote.rmi.RMIConnection.isInstanceOf",
+    "name": "isInstanceOf",
+    "type": "method",
+    "parent": "RMIConnection",
+    "signatures": [
+      "public boolean isInstanceOf(ObjectName name, String className, Subject delegationSubject)"
+    ],
+    "signature_hash": "bc022c98d449e36184a18ae050e38cb14abe7286f00ffb45853b7103919e83de",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "className",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delegationSubject",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      },
+      {
+        "name": "SecurityException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "RuntimeOperationsException",
+        "package": "javax.management"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.isInstanceOf(ObjectName, String).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.isInstanceOf(ObjectName, String).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.590461",
+    "updatedDate": "2026-03-08T21:40:21.590462",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectionImpl/isInstanceOf": {
+    "id": "javax.management.remote.rmi.RMIConnectionImpl.isInstanceOf",
+    "name": "isInstanceOf",
+    "type": "method",
+    "parent": "RMIConnectionImpl",
+    "signatures": [
+      "public boolean isInstanceOf(ObjectName name, String className, Subject delegationSubject)"
+    ],
+    "signature_hash": "bc022c98d449e36184a18ae050e38cb14abe7286f00ffb45853b7103919e83de",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "className",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delegationSubject",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.isInstanceOf(ObjectName, String).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.isInstanceOf(ObjectName, String).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.591183",
+    "updatedDate": "2026-03-08T21:40:21.591184",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectionImpl_Stub/isInstanceOf": {
+    "id": "javax.management.remote.rmi.RMIConnectionImpl_Stub.isInstanceOf",
+    "name": "isInstanceOf",
+    "type": "method",
+    "parent": "RMIConnectionImpl_Stub",
+    "signatures": [
+      "public boolean isInstanceOf(ObjectName $param_ObjectName_1, String $param_String_2, Subject $param_Subject_3)"
+    ],
+    "signature_hash": "f6d63e848e8c065af05c0ba6fc0b46b05cc778df6d22f8006a0a421b3c11d72d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html",
+    "parameters": [
+      {
+        "name": "$param_ObjectName_1",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "$param_String_2",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "$param_Subject_3",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.isInstanceOf(ObjectName, String).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.isInstanceOf(ObjectName, String).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.592008",
+    "updatedDate": "2026-03-08T21:40:21.592009",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnection/isRegistered": {
+    "id": "javax.management.remote.rmi.RMIConnection.isRegistered",
+    "name": "isRegistered",
+    "type": "method",
+    "parent": "RMIConnection",
+    "signatures": [
+      "public boolean isRegistered(ObjectName name, Subject delegationSubject)"
+    ],
+    "signature_hash": "6641cb3763d678540cfdf6dddb8c53c2dc3d3f044b28c4f8cd1cdefdd83771e4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delegationSubject",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "RuntimeOperationsException",
+        "package": "javax.management"
+      },
+      {
+        "name": "SecurityException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.isRegistered(ObjectName).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.isRegistered(ObjectName).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.590484",
+    "updatedDate": "2026-03-08T21:40:21.590485",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectionImpl/isRegistered": {
+    "id": "javax.management.remote.rmi.RMIConnectionImpl.isRegistered",
+    "name": "isRegistered",
+    "type": "method",
+    "parent": "RMIConnectionImpl",
+    "signatures": [
+      "public boolean isRegistered(ObjectName name, Subject delegationSubject)"
+    ],
+    "signature_hash": "6641cb3763d678540cfdf6dddb8c53c2dc3d3f044b28c4f8cd1cdefdd83771e4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delegationSubject",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.isRegistered(ObjectName).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.isRegistered(ObjectName).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.591207",
+    "updatedDate": "2026-03-08T21:40:21.591208",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectionImpl_Stub/isRegistered": {
+    "id": "javax.management.remote.rmi.RMIConnectionImpl_Stub.isRegistered",
+    "name": "isRegistered",
+    "type": "method",
+    "parent": "RMIConnectionImpl_Stub",
+    "signatures": [
+      "public boolean isRegistered(ObjectName $param_ObjectName_1, Subject $param_Subject_2)"
+    ],
+    "signature_hash": "ffd79fe9db4fe454d2872fdfd883d7532bbe611235b67396ab4bd22bf423dfee",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html",
+    "parameters": [
+      {
+        "name": "$param_ObjectName_1",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "$param_Subject_2",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.isRegistered(ObjectName).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.isRegistered(ObjectName).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.592031",
+    "updatedDate": "2026-03-08T21:40:21.592032",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

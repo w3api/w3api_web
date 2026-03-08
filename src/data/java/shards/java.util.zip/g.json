@@ -1,0 +1,1532 @@
+{
+  "java.util.zip/GZIPInputStream": {
+    "id": "java.util.zip.GZIPInputStream",
+    "name": "GZIPInputStream",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/GZIPInputStream.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499078",
+    "updatedDate": "2026-03-08T21:40:21.499079",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "GZIPInputStream"
+    ],
+    "attributes": [
+      "GZIP_MAGIC",
+      "crc",
+      "eos"
+    ],
+    "methods": [
+      "close",
+      "read"
+    ]
+  },
+  "java.util.zip/GZIPOutputStream": {
+    "id": "java.util.zip.GZIPOutputStream",
+    "name": "GZIPOutputStream",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/GZIPOutputStream.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499201",
+    "updatedDate": "2026-03-08T21:40:21.499202",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "GZIPOutputStream"
+    ],
+    "attributes": [
+      "crc"
+    ],
+    "methods": [
+      "finish",
+      "write"
+    ]
+  },
+  "java.util.zip/GZIPInputStream/GZIPInputStream": {
+    "id": "java.util.zip.GZIPInputStream.GZIPInputStream",
+    "name": "GZIPInputStream",
+    "type": "constructor",
+    "parent": "GZIPInputStream",
+    "signatures": [
+      "public GZIPInputStream(InputStream in)",
+      "public GZIPInputStream(InputStream in, int size)"
+    ],
+    "signature_hash": "0bf73162abc86e6b8fac84650458a547752fc46372c7b191272512c7c39caf7d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/GZIPInputStream.html",
+    "parameters": [
+      {
+        "name": "in",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "size",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "ZipException",
+        "package": "java.util.zip"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates a new input stream with a default buffer size.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new input stream with a default buffer size.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499105",
+    "updatedDate": "2026-03-08T21:40:21.499106",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/GZIPOutputStream/GZIPOutputStream": {
+    "id": "java.util.zip.GZIPOutputStream.GZIPOutputStream",
+    "name": "GZIPOutputStream",
+    "type": "constructor",
+    "parent": "GZIPOutputStream",
+    "signatures": [
+      "public GZIPOutputStream(OutputStream out)",
+      "public GZIPOutputStream(OutputStream out, boolean syncFlush)",
+      "public GZIPOutputStream(OutputStream out, int size)",
+      "public GZIPOutputStream(OutputStream out, int size, boolean syncFlush)"
+    ],
+    "signature_hash": "7cab7d86410e2b29e30a03827f5c042a1b869f012ac99dd61c951c54a9297ae7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/GZIPOutputStream.html",
+    "parameters": [
+      {
+        "name": "out",
+        "has_default": false,
+        "default_value": null,
+        "type": "OutputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "syncFlush",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "size",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates a new output stream with a default buffer size.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new output stream with a default buffer size.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499246",
+    "updatedDate": "2026-03-08T21:40:21.499247",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/GZIPInputStream/GZIP_MAGIC": {
+    "id": "java.util.zip.GZIPInputStream.GZIP_MAGIC",
+    "name": "GZIP_MAGIC",
+    "type": "field",
+    "parent": "GZIPInputStream",
+    "signatures": [
+      "static final int GZIP_MAGIC"
+    ],
+    "signature_hash": "a265786915e48ebc4f989d3b9d2af47f1ccceb62c9d9928c12435654792bcf54",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/GZIPInputStream.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "GZIP header magic number.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "GZIP header magic number.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499189",
+    "updatedDate": "2026-03-08T21:40:21.499190",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Deflater/getAdler": {
+    "id": "java.util.zip.Deflater.getAdler",
+    "name": "getAdler",
+    "type": "method",
+    "parent": "Deflater",
+    "signatures": [
+      "public int getAdler()"
+    ],
+    "signature_hash": "d236861c4ef5f24f8ef359725064fc350e785eca3c79da0e4c3abb1fc3f2ca2f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Deflater.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the ADLER-32 value of the uncompressed data.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the ADLER-32 value of the uncompressed data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.498335",
+    "updatedDate": "2026-03-08T21:40:21.498335",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Inflater/getAdler": {
+    "id": "java.util.zip.Inflater.getAdler",
+    "name": "getAdler",
+    "type": "method",
+    "parent": "Inflater",
+    "signatures": [
+      "public int getAdler()"
+    ],
+    "signature_hash": "d236861c4ef5f24f8ef359725064fc350e785eca3c79da0e4c3abb1fc3f2ca2f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Inflater.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the ADLER-32 value of the uncompressed data.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the ADLER-32 value of the uncompressed data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499401",
+    "updatedDate": "2026-03-08T21:40:21.499402",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Deflater/getBytesRead": {
+    "id": "java.util.zip.Deflater.getBytesRead",
+    "name": "getBytesRead",
+    "type": "method",
+    "parent": "Deflater",
+    "signatures": [
+      "public long getBytesRead()"
+    ],
+    "signature_hash": "4093b85f3fcdd818588d4894695e9460d16537cb40cc04574306e779925cd8d7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Deflater.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the total number of uncompressed bytes input so far.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the total number of uncompressed bytes input so far.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.498347",
+    "updatedDate": "2026-03-08T21:40:21.498348",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Inflater/getBytesRead": {
+    "id": "java.util.zip.Inflater.getBytesRead",
+    "name": "getBytesRead",
+    "type": "method",
+    "parent": "Inflater",
+    "signatures": [
+      "public long getBytesRead()"
+    ],
+    "signature_hash": "4093b85f3fcdd818588d4894695e9460d16537cb40cc04574306e779925cd8d7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Inflater.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the total number of compressed bytes input so far.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the total number of compressed bytes input so far.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499417",
+    "updatedDate": "2026-03-08T21:40:21.499418",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Deflater/getBytesWritten": {
+    "id": "java.util.zip.Deflater.getBytesWritten",
+    "name": "getBytesWritten",
+    "type": "method",
+    "parent": "Deflater",
+    "signatures": [
+      "public long getBytesWritten()"
+    ],
+    "signature_hash": "35646fb62d020261093cd4775ecec97a769a67c0bc69a5423891f5f3b1a9b89a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Deflater.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the total number of compressed bytes output so far.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the total number of compressed bytes output so far.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.498360",
+    "updatedDate": "2026-03-08T21:40:21.498360",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Inflater/getBytesWritten": {
+    "id": "java.util.zip.Inflater.getBytesWritten",
+    "name": "getBytesWritten",
+    "type": "method",
+    "parent": "Inflater",
+    "signatures": [
+      "public long getBytesWritten()"
+    ],
+    "signature_hash": "35646fb62d020261093cd4775ecec97a769a67c0bc69a5423891f5f3b1a9b89a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Inflater.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the total number of uncompressed bytes output so far.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the total number of uncompressed bytes output so far.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499432",
+    "updatedDate": "2026-03-08T21:40:21.499433",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/CheckedInputStream/getChecksum": {
+    "id": "java.util.zip.CheckedInputStream.getChecksum",
+    "name": "getChecksum",
+    "type": "method",
+    "parent": "CheckedInputStream",
+    "signatures": [
+      "public Checksum getChecksum()"
+    ],
+    "signature_hash": "374df20b3ad0af34cea93f3fdc36dbb070a4940475ab714f1fbd96d152526f5e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/CheckedInputStream.html",
+    "parameters": [],
+    "return_type": "Checksum",
+    "exceptions": [],
+    "description": "Returns the Checksum for this input stream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the Checksum for this input stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.497855",
+    "updatedDate": "2026-03-08T21:40:21.497856",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/CheckedOutputStream/getChecksum": {
+    "id": "java.util.zip.CheckedOutputStream.getChecksum",
+    "name": "getChecksum",
+    "type": "method",
+    "parent": "CheckedOutputStream",
+    "signatures": [
+      "public Checksum getChecksum()"
+    ],
+    "signature_hash": "374df20b3ad0af34cea93f3fdc36dbb070a4940475ab714f1fbd96d152526f5e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/CheckedOutputStream.html",
+    "parameters": [],
+    "return_type": "Checksum",
+    "exceptions": [],
+    "description": "Returns the Checksum for this output stream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the Checksum for this output stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.497928",
+    "updatedDate": "2026-03-08T21:40:21.497929",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getComment": {
+    "id": "java.util.zip.ZipEntry.getComment",
+    "name": "getComment",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public String getComment()"
+    ],
+    "signature_hash": "2afa3f4e511a0b8f677d7d0fa60036bae79f8440d8570c85f48360a35fb31172",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": "Returns the comment string for the entry.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the comment string for the entry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500128",
+    "updatedDate": "2026-03-08T21:40:21.500129",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipFile/getComment": {
+    "id": "java.util.zip.ZipFile.getComment",
+    "name": "getComment",
+    "type": "method",
+    "parent": "ZipFile",
+    "signatures": [
+      "public String getComment()"
+    ],
+    "signature_hash": "2afa3f4e511a0b8f677d7d0fa60036bae79f8440d8570c85f48360a35fb31172",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipFile.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the ZIP file comment.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the ZIP file comment.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.501489",
+    "updatedDate": "2026-03-08T21:40:21.501490",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getCompressedSize": {
+    "id": "java.util.zip.ZipEntry.getCompressedSize",
+    "name": "getCompressedSize",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public long getCompressedSize()"
+    ],
+    "signature_hash": "3c25ac3ffcacf98e71ad7a0191c82c6ba04e5b1205e41e7d29ac22e45fc4823d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": "Returns the size of the compressed entry data.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the size of the compressed entry data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500144",
+    "updatedDate": "2026-03-08T21:40:21.500145",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getCrc": {
+    "id": "java.util.zip.ZipEntry.getCrc",
+    "name": "getCrc",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public long getCrc()"
+    ],
+    "signature_hash": "8220b5603c259f557c43fdc8713704a5021c602db6b26ce7574f74663dc57d2f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": "Returns the CRC-32 checksum of the uncompressed entry data.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the CRC-32 checksum of the uncompressed entry data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500160",
+    "updatedDate": "2026-03-08T21:40:21.500161",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getCreationTime": {
+    "id": "java.util.zip.ZipEntry.getCreationTime",
+    "name": "getCreationTime",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public FileTime getCreationTime()"
+    ],
+    "signature_hash": "ec8ae0f0d8860c79415bf08187832c3e0043d749dc8411945b5586be54365bc0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "FileTime",
+    "exceptions": [],
+    "description": "Returns the creation time of the entry.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the creation time of the entry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500176",
+    "updatedDate": "2026-03-08T21:40:21.500177",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipFile/getEntry": {
+    "id": "java.util.zip.ZipFile.getEntry",
+    "name": "getEntry",
+    "type": "method",
+    "parent": "ZipFile",
+    "signatures": [
+      "public ZipEntry getEntry(String name)"
+    ],
+    "signature_hash": "65c362f2a737b63931947cb500025710640919c84529da7a4eb37e51f9904fe9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipFile.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "ZipEntry",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the ZIP file entry for the specified name, or null\nif not found.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the ZIP file entry for the specified name, or null\nif not found.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.501510",
+    "updatedDate": "2026-03-08T21:40:21.501511",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getExtra": {
+    "id": "java.util.zip.ZipEntry.getExtra",
+    "name": "getExtra",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public byte[] getExtra()"
+    ],
+    "signature_hash": "d82b37f5b036c4b295391d15bbaf313da24a342429b08823cabf4986b2076629",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "byte[]",
+    "exceptions": [],
+    "description": "Returns the extra field data for the entry.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the extra field data for the entry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500192",
+    "updatedDate": "2026-03-08T21:40:21.500193",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipFile/getInputStream": {
+    "id": "java.util.zip.ZipFile.getInputStream",
+    "name": "getInputStream",
+    "type": "method",
+    "parent": "ZipFile",
+    "signatures": [
+      "public InputStream getInputStream(ZipEntry entry)"
+    ],
+    "signature_hash": "56f9711d1d28baa35e38cb5ed65bd0869732856efef7a19dfdeeef492210fdc8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipFile.html",
+    "parameters": [
+      {
+        "name": "entry",
+        "type": "ZipEntry",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "InputStream",
+    "exceptions": [
+      {
+        "name": "ZipException",
+        "package": "java.util.zip"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an input stream for reading the contents of the specified\nZIP file entry.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an input stream for reading the contents of the specified\nZIP file entry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.501534",
+    "updatedDate": "2026-03-08T21:40:21.501535",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getLastAccessTime": {
+    "id": "java.util.zip.ZipEntry.getLastAccessTime",
+    "name": "getLastAccessTime",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public FileTime getLastAccessTime()"
+    ],
+    "signature_hash": "16a9555b3ee5028e98d67bed24c9834833d333e21fae83bfc79cba1b0cfaed13",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "FileTime",
+    "exceptions": [],
+    "description": "Returns the last access time of the entry.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the last access time of the entry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500209",
+    "updatedDate": "2026-03-08T21:40:21.500209",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getLastModifiedTime": {
+    "id": "java.util.zip.ZipEntry.getLastModifiedTime",
+    "name": "getLastModifiedTime",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public FileTime getLastModifiedTime()"
+    ],
+    "signature_hash": "6e9573b2da07604a323f2fd08f21e064ed2822c72b4cfb54dc7b6147c0742f3f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "FileTime",
+    "exceptions": [],
+    "description": "Returns the last modification time of the entry.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the last modification time of the entry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500225",
+    "updatedDate": "2026-03-08T21:40:21.500226",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getMethod": {
+    "id": "java.util.zip.ZipEntry.getMethod",
+    "name": "getMethod",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public int getMethod()"
+    ],
+    "signature_hash": "69da7a0f4e44bb7d11fb67eca2fc5890637a25555b383f06ab93e7a3e5bb77af",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Returns the compression method of the entry.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the compression method of the entry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500243",
+    "updatedDate": "2026-03-08T21:40:21.500244",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getName": {
+    "id": "java.util.zip.ZipEntry.getName",
+    "name": "getName",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public String getName()"
+    ],
+    "signature_hash": "239fbe3eb64d679cbac1161825b07d6a8436ead3c6c3d140d9caec2275827023",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": "Returns the name of the entry.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the name of the entry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500258",
+    "updatedDate": "2026-03-08T21:40:21.500259",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipFile/getName": {
+    "id": "java.util.zip.ZipFile.getName",
+    "name": "getName",
+    "type": "method",
+    "parent": "ZipFile",
+    "signatures": [
+      "public String getName()"
+    ],
+    "signature_hash": "239fbe3eb64d679cbac1161825b07d6a8436ead3c6c3d140d9caec2275827023",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipFile.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": "Returns the path name of the ZIP file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the path name of the ZIP file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.501555",
+    "updatedDate": "2026-03-08T21:40:21.501556",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipInputStream/getNextEntry": {
+    "id": "java.util.zip.ZipInputStream.getNextEntry",
+    "name": "getNextEntry",
+    "type": "method",
+    "parent": "ZipInputStream",
+    "signatures": [
+      "public ZipEntry getNextEntry()"
+    ],
+    "signature_hash": "4a24c2996a39f62999a288e9073624fd3e4689d05c1fd68057d621700bca7124",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipInputStream.html",
+    "parameters": [],
+    "return_type": "ZipEntry",
+    "exceptions": [
+      {
+        "name": "ZipException",
+        "package": "java.util.zip"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Reads the next ZIP file entry and positions the stream at the\nbeginning of the entry data.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads the next ZIP file entry and positions the stream at the\nbeginning of the entry data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.502603",
+    "updatedDate": "2026-03-08T21:40:21.502604",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Inflater/getRemaining": {
+    "id": "java.util.zip.Inflater.getRemaining",
+    "name": "getRemaining",
+    "type": "method",
+    "parent": "Inflater",
+    "signatures": [
+      "public int getRemaining()"
+    ],
+    "signature_hash": "038c06db664edb7b7b12f68d560eee78c5731a90ddd4e6e85c5d57e1fa42aa99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Inflater.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Returns the total number of bytes remaining in the input buffer.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the total number of bytes remaining in the input buffer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499446",
+    "updatedDate": "2026-03-08T21:40:21.499447",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getSize": {
+    "id": "java.util.zip.ZipEntry.getSize",
+    "name": "getSize",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public long getSize()"
+    ],
+    "signature_hash": "328a1e478b83e8f066b57de0fd1ff4aa1aab3d1274337bef192573b7414565a5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": "Returns the uncompressed size of the entry data.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the uncompressed size of the entry data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500274",
+    "updatedDate": "2026-03-08T21:40:21.500275",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getTime": {
+    "id": "java.util.zip.ZipEntry.getTime",
+    "name": "getTime",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public long getTime()"
+    ],
+    "signature_hash": "e908edc1322f03e7ca2dd841fb14f8c24df7b4eaa009531591d695d31b6fe131",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": "Returns the last modification time of the entry.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the last modification time of the entry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500289",
+    "updatedDate": "2026-03-08T21:40:21.500290",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/ZipEntry/getTimeLocal": {
+    "id": "java.util.zip.ZipEntry.getTimeLocal",
+    "name": "getTimeLocal",
+    "type": "method",
+    "parent": "ZipEntry",
+    "signatures": [
+      "public LocalDateTime getTimeLocal()"
+    ],
+    "signature_hash": "3e401099d0407b1591bb7eacd3e26647b2610e96c8a04f32139ed4bc4a9b37ca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/ZipEntry.html",
+    "parameters": [],
+    "return_type": "LocalDateTime",
+    "exceptions": [],
+    "description": "Returns the last modification time of the entry in local date-time.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the last modification time of the entry in local date-time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.500305",
+    "updatedDate": "2026-03-08T21:40:21.500306",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Deflater/getTotalIn": {
+    "id": "java.util.zip.Deflater.getTotalIn",
+    "name": "getTotalIn",
+    "type": "method",
+    "parent": "Deflater",
+    "signatures": [
+      "public int getTotalIn()"
+    ],
+    "signature_hash": "b541821a57415f48cdfad48e229722a76633ba6a4ae6918b2d29ffbaecd7f06f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Deflater.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Deprecated.UsegetBytesRead()instead",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.UsegetBytesRead()instead",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.498372",
+    "updatedDate": "2026-03-08T21:40:21.498373",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Inflater/getTotalIn": {
+    "id": "java.util.zip.Inflater.getTotalIn",
+    "name": "getTotalIn",
+    "type": "method",
+    "parent": "Inflater",
+    "signatures": [
+      "public int getTotalIn()"
+    ],
+    "signature_hash": "b541821a57415f48cdfad48e229722a76633ba6a4ae6918b2d29ffbaecd7f06f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Inflater.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Deprecated.UsegetBytesRead()instead",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.UsegetBytesRead()instead",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499462",
+    "updatedDate": "2026-03-08T21:40:21.499463",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Deflater/getTotalOut": {
+    "id": "java.util.zip.Deflater.getTotalOut",
+    "name": "getTotalOut",
+    "type": "method",
+    "parent": "Deflater",
+    "signatures": [
+      "public int getTotalOut()"
+    ],
+    "signature_hash": "8d96bbafaf8879a396b2b0d32c8ad2791183117cbb4dd82292259ac2c56d4255",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Deflater.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Deprecated.UsegetBytesWritten()instead",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.UsegetBytesWritten()instead",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.498384",
+    "updatedDate": "2026-03-08T21:40:21.498385",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Inflater/getTotalOut": {
+    "id": "java.util.zip.Inflater.getTotalOut",
+    "name": "getTotalOut",
+    "type": "method",
+    "parent": "Inflater",
+    "signatures": [
+      "public int getTotalOut()"
+    ],
+    "signature_hash": "8d96bbafaf8879a396b2b0d32c8ad2791183117cbb4dd82292259ac2c56d4255",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Inflater.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Deprecated.UsegetBytesWritten()instead",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.UsegetBytesWritten()instead",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.499479",
+    "updatedDate": "2026-03-08T21:40:21.499480",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Adler32/getValue": {
+    "id": "java.util.zip.Adler32.getValue",
+    "name": "getValue",
+    "type": "method",
+    "parent": "Adler32",
+    "signatures": [
+      "public long getValue()"
+    ],
+    "signature_hash": "6312707baec082c4b214426d5136596c44c029ef5e268d68b9c592960ee4c0bd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Adler32.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": "Returns the checksum value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the checksum value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.497779",
+    "updatedDate": "2026-03-08T21:40:21.497779",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/Checksum/getValue": {
+    "id": "java.util.zip.Checksum.getValue",
+    "name": "getValue",
+    "type": "method",
+    "parent": "Checksum",
+    "signatures": [
+      "public long getValue()"
+    ],
+    "signature_hash": "6312707baec082c4b214426d5136596c44c029ef5e268d68b9c592960ee4c0bd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/Checksum.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": "Returns the current checksum value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the current checksum value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.497971",
+    "updatedDate": "2026-03-08T21:40:21.497972",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/CRC32/getValue": {
+    "id": "java.util.zip.CRC32.getValue",
+    "name": "getValue",
+    "type": "method",
+    "parent": "CRC32",
+    "signatures": [
+      "public long getValue()"
+    ],
+    "signature_hash": "6312707baec082c4b214426d5136596c44c029ef5e268d68b9c592960ee4c0bd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/CRC32.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": "Returns CRC-32 value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns CRC-32 value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.498047",
+    "updatedDate": "2026-03-08T21:40:21.498048",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.zip/CRC32C/getValue": {
+    "id": "java.util.zip.CRC32C.getValue",
+    "name": "getValue",
+    "type": "method",
+    "parent": "CRC32C",
+    "signatures": [
+      "public long getValue()"
+    ],
+    "signature_hash": "6312707baec082c4b214426d5136596c44c029ef5e268d68b9c592960ee4c0bd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/zip/CRC32C.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": "Returns CRC-32C value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns CRC-32C value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.498119",
+    "updatedDate": "2026-03-08T21:40:21.498120",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

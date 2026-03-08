@@ -1,0 +1,331 @@
+{
+  "java.rmi.server/UID": {
+    "id": "java.rmi.server.UID",
+    "name": "UID",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/UID.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.222833",
+    "updatedDate": "2026-03-08T21:40:21.222834",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "UID"
+    ],
+    "methods": [
+      "equals",
+      "hashCode",
+      "read",
+      "toString",
+      "write"
+    ]
+  },
+  "java.rmi.server/UnicastRemoteObject": {
+    "id": "java.rmi.server.UnicastRemoteObject",
+    "name": "UnicastRemoteObject",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.220787",
+    "updatedDate": "2026-03-08T21:40:21.220788",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "UnicastRemoteObject"
+    ],
+    "methods": [
+      "clone",
+      "exportObject",
+      "unexportObject"
+    ]
+  },
+  "java.rmi.server/UID/UID": {
+    "id": "java.rmi.server.UID.UID",
+    "name": "UID",
+    "type": "constructor",
+    "parent": "UID",
+    "signatures": [
+      "public UID()",
+      "public UID(short num)"
+    ],
+    "signature_hash": "27d37237a132a422bcacce6ed2851288c39179fc19a8c837618117a5a9244ac8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/UID.html",
+    "parameters": [
+      {
+        "name": "num",
+        "has_default": false,
+        "default_value": null,
+        "type": "short",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Generates aUIDthat is unique over time with\nrespect to the host that it was generated on.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Generates aUIDthat is unique over time with\nrespect to the host that it was generated on.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.222853",
+    "updatedDate": "2026-03-08T21:40:21.222854",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.server/UnicastRemoteObject/UnicastRemoteObject": {
+    "id": "java.rmi.server.UnicastRemoteObject.UnicastRemoteObject",
+    "name": "UnicastRemoteObject",
+    "type": "constructor",
+    "parent": "UnicastRemoteObject",
+    "signatures": [
+      "public UnicastRemoteObject()",
+      "public UnicastRemoteObject(int port)",
+      "public UnicastRemoteObject(int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf)"
+    ],
+    "signature_hash": "70a12606092489c459c6fba5641ea02ad658d8ab2c73ceb77176220d92dc7c89",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html",
+    "parameters": [
+      {
+        "name": "port",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "csf",
+        "has_default": false,
+        "default_value": null,
+        "type": "RMIClientSocketFactory",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ssf",
+        "has_default": false,
+        "default_value": null,
+        "type": "RMIServerSocketFactory",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "RemoteException",
+        "package": "java.rmi"
+      }
+    ],
+    "description": "Creates and exports a new UnicastRemoteObject object using an\nanonymous port.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates and exports a new UnicastRemoteObject object using an\nanonymous port.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.220815",
+    "updatedDate": "2026-03-08T21:40:21.220816",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.server/Unreferenced": {
+    "id": "java.rmi.server.Unreferenced",
+    "name": "Unreferenced",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/Unreferenced.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.222957",
+    "updatedDate": "2026-03-08T21:40:21.222958",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "unreferenced"
+    ]
+  },
+  "java.rmi.server/UnicastRemoteObject/unexportObject": {
+    "id": "java.rmi.server.UnicastRemoteObject.unexportObject",
+    "name": "unexportObject",
+    "type": "method",
+    "parent": "UnicastRemoteObject",
+    "signatures": [
+      "public static boolean unexportObject(Remote obj, boolean force)"
+    ],
+    "signature_hash": "3ae6124f62ccf8fc678dc2d89f4780f8bb7ba87775e44f139b733983cf2f611d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "Remote",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "force",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static boolean",
+    "exceptions": [
+      {
+        "name": "NoSuchObjectException",
+        "package": "java.rmi"
+      }
+    ],
+    "description": "Removes the remote object, obj, from the RMI runtime.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes the remote object, obj, from the RMI runtime.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.220906",
+    "updatedDate": "2026-03-08T21:40:21.220907",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.server/Unreferenced/unreferenced": {
+    "id": "java.rmi.server.Unreferenced.unreferenced",
+    "name": "unreferenced",
+    "type": "method",
+    "parent": "Unreferenced",
+    "signatures": [
+      "public void unreferenced()"
+    ],
+    "signature_hash": "ae408f6ab8b52984331b94f1981638ae56c40b7c8ed16a4b1b75ed9a8e32da5f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/Unreferenced.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Called by the RMI runtime sometime after the runtime determines that\nthe reference list, the list of clients referencing the remote object,\nbecomes empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called by the RMI runtime sometime after the runtime determines that\nthe reference list, the list of clients referencing the remote object,\nbecomes empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.222974",
+    "updatedDate": "2026-03-08T21:40:21.222974",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

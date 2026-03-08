@@ -1,0 +1,189 @@
+{
+  "javax.sound.sampled/AudioFileFormat.Type/WAVE": {
+    "id": "javax.sound.sampled.AudioFileFormat.Type.WAVE",
+    "name": "WAVE",
+    "type": "field",
+    "parent": "AudioFileFormat.Type",
+    "signatures": [
+      "static final AudioFileFormat.Type WAVE"
+    ],
+    "signature_hash": "dcdc5180d07f6342413ea838f6b64c35f3e2a21710afb7d1cf11a8ce34053eac",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html",
+    "parameters": [],
+    "return_type": "static final AudioFileFormat.Type",
+    "exceptions": [],
+    "description": "Specifies a WAVE file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Specifies a WAVE file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.688263",
+    "updatedDate": "2026-03-08T21:40:21.688264",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/write": {
+    "id": "javax.sound.sampled.AudioSystem.write",
+    "name": "write",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static int write(AudioInputStream stream, AudioFileFormat.Type fileType, File out)",
+      "public static int write(AudioInputStream stream, AudioFileFormat.Type fileType, OutputStream out)"
+    ],
+    "signature_hash": "97f13a6f6ed838f39085908e69af582362a0116609df843ed657d43eb4cb60f2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "stream",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioInputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fileType",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFileFormat.Type",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "out",
+        "has_default": false,
+        "default_value": null,
+        "type": "File|OutputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static int",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Writes a stream of bytes representing an audio file of the specified file\ntype to the external file provided.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Writes a stream of bytes representing an audio file of the specified file\ntype to the external file provided.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.689416",
+    "updatedDate": "2026-03-08T21:40:21.689417",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/SourceDataLine/write": {
+    "id": "javax.sound.sampled.SourceDataLine.write",
+    "name": "write",
+    "type": "method",
+    "parent": "SourceDataLine",
+    "signatures": [
+      "public int write(byte[]b, int off, int len)"
+    ],
+    "signature_hash": "4513cd1da7694cd6a63f1ffa1564b179210bc68510a7ee54f72ce732de0fb34f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/SourceDataLine.html",
+    "parameters": [
+      {
+        "name": "byte[]b",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "off",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "len",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ArrayIndexOutOfBoundsException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Writes audio data to the mixer via this source data line.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Writes audio data to the mixer via this source data line.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.692957",
+    "updatedDate": "2026-03-08T21:40:21.692958",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

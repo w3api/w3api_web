@@ -1,0 +1,102 @@
+{
+  "java.util.stream/Collectors/joining": {
+    "id": "java.util.stream.Collectors.joining",
+    "name": "joining",
+    "type": "method",
+    "parent": "Collectors",
+    "signatures": [
+      "public static Collector<CharSequence, ?, String> joining()",
+      "public static Collector<CharSequence, ?, String> joining(CharSequence delimiter)",
+      "public static Collector<CharSequence, ?, String> joining(CharSequence delimiter, CharSequence prefix, CharSequence suffix)"
+    ],
+    "signature_hash": "3dd20f417d3058e56eaf2370bf839ea6dc1acd37963dfc8c77a01662df9d5376",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [
+      {
+        "name": "delimiter",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharSequence",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "prefix",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharSequence",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "suffix",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharSequence",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static Collector<CharSequence, ?, String>",
+    "exceptions": [],
+    "description": "Returns aCollectorthat concatenates the input elements into aString, in encounter order.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aCollectorthat concatenates the input elements into aString, in encounter order.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.495398",
+    "updatedDate": "2026-03-08T21:40:21.495399",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream": {
+    "type": "module",
+    "name": "java.util.stream",
+    "id": "java.util.stream",
+    "description": "Module java.util.stream",
+    "classes": [
+      "Collectors",
+      "Gatherers",
+      "StreamSupport"
+    ],
+    "enums": [
+      "Collector.Characteristics"
+    ],
+    "interfaces": [
+      "BaseStream<T,S>>",
+      "Collector<T,A,R>",
+      "DoubleStream",
+      "DoubleStream.Builder",
+      "DoubleStream.DoubleMapMultiConsumer",
+      "Gatherer.Downstream<T>",
+      "Gatherer.Integrator.Greedy<A,T,R>",
+      "Gatherer.Integrator<A,T,R>",
+      "Gatherer<T,A,R>",
+      "IntStream",
+      "IntStream.Builder",
+      "IntStream.IntMapMultiConsumer",
+      "LongStream",
+      "LongStream.Builder",
+      "LongStream.LongMapMultiConsumer",
+      "Stream.Builder<T>",
+      "Stream<T>"
+    ]
+  }
+}

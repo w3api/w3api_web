@@ -1,0 +1,1397 @@
+{
+  "java.lang.classfile/Reader": {
+    "id": "java.lang.classfile.Reader",
+    "name": "Reader",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.122759",
+    "updatedDate": "2026-03-08T21:40:21.122760",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "classfileLength",
+      "copyBytesTo",
+      "customAttributes",
+      "flags",
+      "readBytes",
+      "readDouble",
+      "readEntry",
+      "readEntryOrNull",
+      "readFloat",
+      "readInt",
+      "readLong",
+      "readS1",
+      "readS2",
+      "readU1",
+      "readU2",
+      "superclassEntry",
+      "thisClassEntry"
+    ]
+  },
+  "java.lang.classfile/AttributeMapper<A/readAttribute": {
+    "id": "java.lang.classfile.AttributeMapper<A.readAttribute",
+    "name": "readAttribute",
+    "type": "method",
+    "parent": "AttributeMapper<A",
+    "signatures": [
+      "public A readAttribute(AttributedElement enclosing, ClassReader cf, int pos)"
+    ],
+    "signature_hash": "a444f3c319685301471540667f3149bf44801a0d27d13441f963c1680bf9070e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AttributeMapper.html",
+    "parameters": [
+      {
+        "name": "enclosing",
+        "type": "AttributedElement",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cf",
+        "type": "ClassReader",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pos",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "A",
+    "exceptions": [],
+    "description": "Creates anAttributeinstance from aclassfile for the\nClass-File API.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates anAttributeinstance from aclassfile for the\nClass-File API.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.108603",
+    "updatedDate": "2026-03-08T21:40:21.108603",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readBytes": {
+    "id": "java.lang.classfile.Reader.readBytes",
+    "name": "readBytes",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public byte[] readBytes(int offset, int len)"
+    ],
+    "signature_hash": "b6cc5d1c3ffefb2b3697c7a4fa1c2891d886a12555f8b7de1165e78598ee6941",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "len",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "byte[]",
+    "exceptions": [],
+    "description": "Returns a copy of the bytes at the specified range in theclassfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a copy of the bytes at the specified range in theclassfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.122980",
+    "updatedDate": "2026-03-08T21:40:21.122981",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readDouble": {
+    "id": "java.lang.classfile.Reader.readDouble",
+    "name": "readDouble",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public double readDouble(int offset)"
+    ],
+    "signature_hash": "c99b4ef3f2d82d55430493c84eeb6356845e8454e2da1a200064a0f28610654b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "double",
+    "exceptions": [],
+    "description": "Returns the double value at the specified offset within theclassfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the double value at the specified offset within theclassfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.123015",
+    "updatedDate": "2026-03-08T21:40:21.123016",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readEntry": {
+    "id": "java.lang.classfile.Reader.readEntry",
+    "name": "readEntry",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public PoolEntry readEntry(int offset)",
+      "public <T extends PoolEntry>T readEntry(int offset, Class<T> cls)"
+    ],
+    "signature_hash": "2a32bb77535cd281b582c30a58f501b782270ac757d66e841e72bbcf29296fc2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cls",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "PoolEntry",
+    "exceptions": [
+      {
+        "name": "ConstantPoolException",
+        "package": "java.lang.classfile.constantpool"
+      }
+    ],
+    "description": "Returns the constant pool entry whose index is given at the specified\noffset within theclassfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the constant pool entry whose index is given at the specified\noffset within theclassfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.123060",
+    "updatedDate": "2026-03-08T21:40:21.123061",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readEntryOrNull": {
+    "id": "java.lang.classfile.Reader.readEntryOrNull",
+    "name": "readEntryOrNull",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public PoolEntry readEntryOrNull(int offset)",
+      "public <T extends PoolEntry>T readEntryOrNull(int offset, Class<T> cls)"
+    ],
+    "signature_hash": "042aeead32f91cbb75a678f9f9357d646301838122237211d300d70ff5248c16",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cls",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "PoolEntry",
+    "exceptions": [
+      {
+        "name": "ConstantPoolException",
+        "package": "java.lang.classfile.constantpool"
+      }
+    ],
+    "description": "Returns the constant pool entry whose index is given at the specified\noffset within theclassfile, ornullif the index at the\nspecified offset is zero.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the constant pool entry whose index is given at the specified\noffset within theclassfile, ornullif the index at the\nspecified offset is zero.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.123105",
+    "updatedDate": "2026-03-08T21:40:21.123105",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readFloat": {
+    "id": "java.lang.classfile.Reader.readFloat",
+    "name": "readFloat",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public float readFloat(int offset)"
+    ],
+    "signature_hash": "c4138f24c83f6e0a9951e4bcfdd4ecff8d272a6cb2073261e78367494c0a5462",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "float",
+    "exceptions": [],
+    "description": "Returns the float value at the specified offset within theclassfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the float value at the specified offset within theclassfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.123142",
+    "updatedDate": "2026-03-08T21:40:21.123143",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readInt": {
+    "id": "java.lang.classfile.Reader.readInt",
+    "name": "readInt",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public int readInt(int offset)"
+    ],
+    "signature_hash": "be40d73fe611f8bf947446bd6a8a9838494b2a79762fe86d9d672bf897b27019",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Returns the signed int at the specified offset within theclassfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the signed int at the specified offset within theclassfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.123179",
+    "updatedDate": "2026-03-08T21:40:21.123181",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readLong": {
+    "id": "java.lang.classfile.Reader.readLong",
+    "name": "readLong",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public long readLong(int offset)"
+    ],
+    "signature_hash": "52b21cb9673b2ef47af7014a666d5912d533f515d3c585fe7e5bc19b5f25cdf6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "long",
+    "exceptions": [],
+    "description": "Returns the signed long at the specified offset within theclassfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the signed long at the specified offset within theclassfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.123217",
+    "updatedDate": "2026-03-08T21:40:21.123218",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readS1": {
+    "id": "java.lang.classfile.Reader.readS1",
+    "name": "readS1",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public int readS1(int offset)"
+    ],
+    "signature_hash": "95c0ce23de1fe6a69da88a48c24187408d1c81b9c3e6a91d530787640da2062f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Returns the signed byte at the specified offset within theclassfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the signed byte at the specified offset within theclassfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.123253",
+    "updatedDate": "2026-03-08T21:40:21.123254",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readS2": {
+    "id": "java.lang.classfile.Reader.readS2",
+    "name": "readS2",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public int readS2(int offset)"
+    ],
+    "signature_hash": "504b9102e7057b19fe8fecc30715a61e3b7e0a793aeb425189c0a68369613192",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Returns the signed byte at the specified offset within theclassfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the signed byte at the specified offset within theclassfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.123292",
+    "updatedDate": "2026-03-08T21:40:21.123293",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readU1": {
+    "id": "java.lang.classfile.Reader.readU1",
+    "name": "readU1",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public int readU1(int offset)"
+    ],
+    "signature_hash": "c651774d029241b372599e0d6ffb40c80fbcc920590178cc7d9f782132a863c6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Returns the unsigned byte at the specified offset within theclassfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the unsigned byte at the specified offset within theclassfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.123328",
+    "updatedDate": "2026-03-08T21:40:21.123329",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Reader/readU2": {
+    "id": "java.lang.classfile.Reader.readU2",
+    "name": "readU2",
+    "type": "method",
+    "parent": "Reader",
+    "signatures": [
+      "public int readU2(int offset)"
+    ],
+    "signature_hash": "d6ce269f0159c704ed2b08c16b78a5167165a51c26dac5d0cdc0830f0144375d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassReader.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Returns the unsigned short at the specified offset within theclassfile.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the unsigned short at the specified offset within theclassfile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.123364",
+    "updatedDate": "2026-03-08T21:40:21.123365",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/CodeBuilder/receiverSlot": {
+    "id": "java.lang.classfile.CodeBuilder.receiverSlot",
+    "name": "receiverSlot",
+    "type": "method",
+    "parent": "CodeBuilder",
+    "signatures": [
+      "public int receiverSlot()"
+    ],
+    "signature_hash": "24e7eebb0880967d8814384c4ad8effff0584366bd15bd85b19e45e2a4936203",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/CodeBuilder.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the local variable slot associated with the receiver.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the local variable slot associated with the receiver.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.121162",
+    "updatedDate": "2026-03-08T21:40:21.121165",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Attributes/record": {
+    "id": "java.lang.classfile.Attributes.record",
+    "name": "record",
+    "type": "method",
+    "parent": "Attributes",
+    "signatures": [
+      "public static AttributeMapper<RecordAttribute> record()"
+    ],
+    "signature_hash": "9e7ccf68db680c1123c535ec562f5dad3903ac193be6e5c9a467e9552c1782d2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Attributes.html",
+    "parameters": [],
+    "return_type": "static AttributeMapper<RecordAttribute>",
+    "exceptions": [],
+    "description": "Returns the mapper for theRecordattribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the mapper for theRecordattribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.108961",
+    "updatedDate": "2026-03-08T21:40:21.108962",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/BufWriter/reserveSpace": {
+    "id": "java.lang.classfile.BufWriter.reserveSpace",
+    "name": "reserveSpace",
+    "type": "method",
+    "parent": "BufWriter",
+    "signatures": [
+      "public void reserveSpace(int freeBytes)"
+    ],
+    "signature_hash": "9aed0f4793134aa0b6b199236c48fd15ca32dbc93c44c0b34944d4000478036d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/BufWriter.html",
+    "parameters": [
+      {
+        "name": "freeBytes",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Ensures that the buffer has at leastfreeBytesbytes of free space\nin the end of the buffer.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Ensures that the buffer has at leastfreeBytesbytes of free space\nin the end of the buffer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.113330",
+    "updatedDate": "2026-03-08T21:40:21.113331",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Value.OfBoolean/resolvedValue": {
+    "id": "java.lang.classfile.Value.OfBoolean.resolvedValue",
+    "name": "resolvedValue",
+    "type": "method",
+    "parent": "Value.OfBoolean",
+    "signatures": [
+      "public default Boolean resolvedValue()"
+    ],
+    "signature_hash": "91ab4ada664e2264da03729c86819fe0eb5a954dd7f5af857bfa0bb7aba85696",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AnnotationValue.OfBoolean.html",
+    "parameters": [],
+    "return_type": "default Boolean",
+    "exceptions": [],
+    "description": "Returns the resolved boolean value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the resolved boolean value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.112044",
+    "updatedDate": "2026-03-08T21:40:21.112045",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Value.OfByte/resolvedValue": {
+    "id": "java.lang.classfile.Value.OfByte.resolvedValue",
+    "name": "resolvedValue",
+    "type": "method",
+    "parent": "Value.OfByte",
+    "signatures": [
+      "public default Byte resolvedValue()"
+    ],
+    "signature_hash": "e4366b60fe69b0c2310cfa17d119432ea90adc0109281a9c7d20f66ffbcc9639",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AnnotationValue.OfByte.html",
+    "parameters": [],
+    "return_type": "default Byte",
+    "exceptions": [],
+    "description": "Returns the resolved byte value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the resolved byte value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.112120",
+    "updatedDate": "2026-03-08T21:40:21.112121",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Value.OfChar/resolvedValue": {
+    "id": "java.lang.classfile.Value.OfChar.resolvedValue",
+    "name": "resolvedValue",
+    "type": "method",
+    "parent": "Value.OfChar",
+    "signatures": [
+      "public default Character resolvedValue()"
+    ],
+    "signature_hash": "4b0c637dd8058084eef52d7ca9601ed0a5befc95932a016d05928ad6d01ffcc8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AnnotationValue.OfChar.html",
+    "parameters": [],
+    "return_type": "default Character",
+    "exceptions": [],
+    "description": "Returns the resolved char value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the resolved char value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.112196",
+    "updatedDate": "2026-03-08T21:40:21.112197",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Value.OfConstant/resolvedValue": {
+    "id": "java.lang.classfile.Value.OfConstant.resolvedValue",
+    "name": "resolvedValue",
+    "type": "method",
+    "parent": "Value.OfConstant",
+    "signatures": [
+      "public Constable resolvedValue()"
+    ],
+    "signature_hash": "9ca9d3642b3d0630aa1f9f59ebef420496521eccf3ef4d210d564e79c90bd96f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AnnotationValue.OfConstant.html",
+    "parameters": [],
+    "return_type": "Constable",
+    "exceptions": [],
+    "description": "Returns the resolved live constant value, as an object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the resolved live constant value, as an object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.112308",
+    "updatedDate": "2026-03-08T21:40:21.112309",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Value.OfDouble/resolvedValue": {
+    "id": "java.lang.classfile.Value.OfDouble.resolvedValue",
+    "name": "resolvedValue",
+    "type": "method",
+    "parent": "Value.OfDouble",
+    "signatures": [
+      "public default Double resolvedValue()"
+    ],
+    "signature_hash": "2691aa777a7254ece722a3807f4a8650be47869369e60419d719533dd16902b3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AnnotationValue.OfDouble.html",
+    "parameters": [],
+    "return_type": "default Double",
+    "exceptions": [],
+    "description": "Returns the resolved double value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the resolved double value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.112391",
+    "updatedDate": "2026-03-08T21:40:21.112391",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Value.OfFloat/resolvedValue": {
+    "id": "java.lang.classfile.Value.OfFloat.resolvedValue",
+    "name": "resolvedValue",
+    "type": "method",
+    "parent": "Value.OfFloat",
+    "signatures": [
+      "public default Float resolvedValue()"
+    ],
+    "signature_hash": "51212fb630a88a49d4abba040254ffe6b5491968054a4e50cf9464dd67c8b6d0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AnnotationValue.OfFloat.html",
+    "parameters": [],
+    "return_type": "default Float",
+    "exceptions": [],
+    "description": "Returns the resolved float value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the resolved float value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.112541",
+    "updatedDate": "2026-03-08T21:40:21.112542",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Value.OfInt/resolvedValue": {
+    "id": "java.lang.classfile.Value.OfInt.resolvedValue",
+    "name": "resolvedValue",
+    "type": "method",
+    "parent": "Value.OfInt",
+    "signatures": [
+      "public default Integer resolvedValue()"
+    ],
+    "signature_hash": "53c788ebfb3bbb9e611a479e5c4764c12e95b5e422571e7edc31c928fadd9bc2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AnnotationValue.OfInt.html",
+    "parameters": [],
+    "return_type": "default Integer",
+    "exceptions": [],
+    "description": "Returns the resolved int value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the resolved int value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.112621",
+    "updatedDate": "2026-03-08T21:40:21.112622",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Value.OfLong/resolvedValue": {
+    "id": "java.lang.classfile.Value.OfLong.resolvedValue",
+    "name": "resolvedValue",
+    "type": "method",
+    "parent": "Value.OfLong",
+    "signatures": [
+      "public default Long resolvedValue()"
+    ],
+    "signature_hash": "676d6336109a2138fd1614ffa4e17114883f06d3f298f7a1e38671c2ca228003",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AnnotationValue.OfLong.html",
+    "parameters": [],
+    "return_type": "default Long",
+    "exceptions": [],
+    "description": "Returns the resolved long value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the resolved long value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.112719",
+    "updatedDate": "2026-03-08T21:40:21.112720",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Value.OfShort/resolvedValue": {
+    "id": "java.lang.classfile.Value.OfShort.resolvedValue",
+    "name": "resolvedValue",
+    "type": "method",
+    "parent": "Value.OfShort",
+    "signatures": [
+      "public default Short resolvedValue()"
+    ],
+    "signature_hash": "9578872f8e503b99db3923b64b8eac3f0435c632d72ad69fbc39c631522c69a0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AnnotationValue.OfShort.html",
+    "parameters": [],
+    "return_type": "default Short",
+    "exceptions": [],
+    "description": "Returns the resolved short value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the resolved short value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.112776",
+    "updatedDate": "2026-03-08T21:40:21.112777",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Value.OfString/resolvedValue": {
+    "id": "java.lang.classfile.Value.OfString.resolvedValue",
+    "name": "resolvedValue",
+    "type": "method",
+    "parent": "Value.OfString",
+    "signatures": [
+      "public default String resolvedValue()"
+    ],
+    "signature_hash": "b02d693624df1938f721c14ee81f3da4622beca01791003d8ac56a448f16bfe9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AnnotationValue.OfString.html",
+    "parameters": [],
+    "return_type": "default String",
+    "exceptions": [],
+    "description": "Returns the resolved string value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the resolved string value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.112854",
+    "updatedDate": "2026-03-08T21:40:21.112855",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/MethodSignature/result": {
+    "id": "java.lang.classfile.MethodSignature.result",
+    "name": "result",
+    "type": "method",
+    "parent": "MethodSignature",
+    "signatures": [
+      "public Signature result()"
+    ],
+    "signature_hash": "e1825ce88a6457e078bee8bac3976b8e8f94f7e1e5c2ecfa2a273333b6790190",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/MethodSignature.html",
+    "parameters": [],
+    "return_type": "Signature",
+    "exceptions": [],
+    "description": "Returns the signatures of the return value of this method.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the signatures of the return value of this method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.125569",
+    "updatedDate": "2026-03-08T21:40:21.125570",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/CodeBuilder/return_": {
+    "id": "java.lang.classfile.CodeBuilder.return_",
+    "name": "return_",
+    "type": "method",
+    "parent": "CodeBuilder",
+    "signatures": [
+      "public default CodeBuilder return_()",
+      "public default CodeBuilder return_(TypeKind tk)"
+    ],
+    "signature_hash": "3fa1b0f729802077e9a117afe628dcdc767a95dd8bde6401e349bf87fe8f0326",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/CodeBuilder.html",
+    "parameters": [
+      {
+        "name": "tk",
+        "has_default": false,
+        "default_value": null,
+        "type": "TypeKind",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default CodeBuilder",
+    "exceptions": [],
+    "description": "Generates an instruction to returnvoidfrom this\nmethod.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Generates an instruction to returnvoidfrom this\nmethod.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.121204",
+    "updatedDate": "2026-03-08T21:40:21.121205",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Attributes/runtimeInvisibleAnnotations": {
+    "id": "java.lang.classfile.Attributes.runtimeInvisibleAnnotations",
+    "name": "runtimeInvisibleAnnotations",
+    "type": "method",
+    "parent": "Attributes",
+    "signatures": [
+      "public static AttributeMapper<RuntimeInvisibleAnnotationsAttribute> runtimeInvisibleAnnotations()"
+    ],
+    "signature_hash": "d15d4de4b7cc78f92d50ef1ecbff63e88d684bdb31d546f46c5f91df9f615d45",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Attributes.html",
+    "parameters": [],
+    "return_type": "static AttributeMapper<RuntimeInvisibleAnnotationsAttribute>",
+    "exceptions": [],
+    "description": "Returns the mapper for theRuntimeInvisibleAnnotationsattribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the mapper for theRuntimeInvisibleAnnotationsattribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.108975",
+    "updatedDate": "2026-03-08T21:40:21.108976",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Attributes/runtimeInvisibleParameterAnnotations": {
+    "id": "java.lang.classfile.Attributes.runtimeInvisibleParameterAnnotations",
+    "name": "runtimeInvisibleParameterAnnotations",
+    "type": "method",
+    "parent": "Attributes",
+    "signatures": [
+      "public static AttributeMapper<RuntimeInvisibleParameterAnnotationsAttribute> runtimeInvisibleParameterAnnotations()"
+    ],
+    "signature_hash": "05f40256814695de62250e6ebe588972e9d25a8eb970583c56b5fc5871ef4299",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Attributes.html",
+    "parameters": [],
+    "return_type": "static AttributeMapper<RuntimeInvisibleParameterAnnotationsAttribute>",
+    "exceptions": [],
+    "description": "Returns the mapper for theRuntimeInvisibleParameterAnnotationsattribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the mapper for theRuntimeInvisibleParameterAnnotationsattribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.108989",
+    "updatedDate": "2026-03-08T21:40:21.108990",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Attributes/runtimeInvisibleTypeAnnotations": {
+    "id": "java.lang.classfile.Attributes.runtimeInvisibleTypeAnnotations",
+    "name": "runtimeInvisibleTypeAnnotations",
+    "type": "method",
+    "parent": "Attributes",
+    "signatures": [
+      "public static AttributeMapper<RuntimeInvisibleTypeAnnotationsAttribute> runtimeInvisibleTypeAnnotations()"
+    ],
+    "signature_hash": "0520f2d86d22307d9251ed5074fef38a3ddf03ea96087a4967cf3d4731744697",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Attributes.html",
+    "parameters": [],
+    "return_type": "static AttributeMapper<RuntimeInvisibleTypeAnnotationsAttribute>",
+    "exceptions": [],
+    "description": "Returns the mapper for theRuntimeInvisibleTypeAnnotationsattribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the mapper for theRuntimeInvisibleTypeAnnotationsattribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.109003",
+    "updatedDate": "2026-03-08T21:40:21.109004",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Attributes/runtimeVisibleAnnotations": {
+    "id": "java.lang.classfile.Attributes.runtimeVisibleAnnotations",
+    "name": "runtimeVisibleAnnotations",
+    "type": "method",
+    "parent": "Attributes",
+    "signatures": [
+      "public static AttributeMapper<RuntimeVisibleAnnotationsAttribute> runtimeVisibleAnnotations()"
+    ],
+    "signature_hash": "25f859818cf2fcadd538ead464a5fd1bfd66f626e0a6f4b93e01bc8bdac90c97",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Attributes.html",
+    "parameters": [],
+    "return_type": "static AttributeMapper<RuntimeVisibleAnnotationsAttribute>",
+    "exceptions": [],
+    "description": "Returns the mapper for theRuntimeVisibleAnnotationsattribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the mapper for theRuntimeVisibleAnnotationsattribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.109017",
+    "updatedDate": "2026-03-08T21:40:21.109018",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Attributes/runtimeVisibleParameterAnnotations": {
+    "id": "java.lang.classfile.Attributes.runtimeVisibleParameterAnnotations",
+    "name": "runtimeVisibleParameterAnnotations",
+    "type": "method",
+    "parent": "Attributes",
+    "signatures": [
+      "public static AttributeMapper<RuntimeVisibleParameterAnnotationsAttribute> runtimeVisibleParameterAnnotations()"
+    ],
+    "signature_hash": "4356c428837a3038ad03d36208eb25d9bbf826c8c00f3ac896c8f7d50ca0ca1e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Attributes.html",
+    "parameters": [],
+    "return_type": "static AttributeMapper<RuntimeVisibleParameterAnnotationsAttribute>",
+    "exceptions": [],
+    "description": "Returns the mapper for theRuntimeVisibleParameterAnnotationsattribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the mapper for theRuntimeVisibleParameterAnnotationsattribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.109031",
+    "updatedDate": "2026-03-08T21:40:21.109032",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Attributes/runtimeVisibleTypeAnnotations": {
+    "id": "java.lang.classfile.Attributes.runtimeVisibleTypeAnnotations",
+    "name": "runtimeVisibleTypeAnnotations",
+    "type": "method",
+    "parent": "Attributes",
+    "signatures": [
+      "public static AttributeMapper<RuntimeVisibleTypeAnnotationsAttribute> runtimeVisibleTypeAnnotations()"
+    ],
+    "signature_hash": "bd763b157660455e9435d5ef316d24e15cc31f80d3717c66bb83bb98edd84f59",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Attributes.html",
+    "parameters": [],
+    "return_type": "static AttributeMapper<RuntimeVisibleTypeAnnotationsAttribute>",
+    "exceptions": [],
+    "description": "Returns the mapper for theRuntimeVisibleTypeAnnotationsattribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the mapper for theRuntimeVisibleTypeAnnotationsattribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.109045",
+    "updatedDate": "2026-03-08T21:40:21.109046",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

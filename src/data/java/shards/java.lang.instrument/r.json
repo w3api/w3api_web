@@ -1,0 +1,310 @@
+{
+  "java.lang.instrument/Instrumentation/redefineClasses": {
+    "id": "java.lang.instrument.Instrumentation.redefineClasses",
+    "name": "redefineClasses",
+    "type": "method",
+    "parent": "Instrumentation",
+    "signatures": [
+      "public void redefineClasses(ClassDefinition... definitions)"
+    ],
+    "signature_hash": "1ded94dafdf760fc0630322ffb0abe1c2a432cd32107ec374815050d6bf2d2e1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+    "parameters": [
+      {
+        "name": "definitions",
+        "type": "ClassDefinition...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "UnmodifiableClassException",
+        "package": "java.lang.instrument"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClassNotFoundException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Redefine the supplied set of classes using the supplied class files.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Redefine the supplied set of classes using the supplied class files.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.152558",
+    "updatedDate": "2026-03-08T21:40:21.152559",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.instrument/Instrumentation/redefineModule": {
+    "id": "java.lang.instrument.Instrumentation.redefineModule",
+    "name": "redefineModule",
+    "type": "method",
+    "parent": "Instrumentation",
+    "signatures": [
+      "public void redefineModule(Module module, Set<Module> extraReads, Map<String, Set<Module>> extraExports, Map<String, Set<Module>> extraOpens, Set<Class<?>> extraUses, Map<Class<?>, List<Class<?>>> extraProvides)"
+    ],
+    "signature_hash": "c94a979a446aeeebc9045673191ba70f32658f12de2bdc8816ccf340d27a0f60",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+    "parameters": [
+      {
+        "name": "module",
+        "type": "Module",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "extraReads",
+        "type": "Set<Module>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Map<String",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "extraExports",
+        "type": "Set<Module>>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Map<String",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "extraOpens",
+        "type": "Set<Module>>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "extraUses",
+        "type": "Set<Class<?>>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Map<Class<?>",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "extraProvides",
+        "type": "List<Class<?>>>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnmodifiableModuleException",
+        "package": "java.lang.instrument"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Redefine a module to expand the set of modules that it reads, the set of\npackages that it exports or opens, or the services that it uses or\nprovides.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Redefine a module to expand the set of modules that it reads, the set of\npackages that it exports or opens, or the services that it uses or\nprovides.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.152605",
+    "updatedDate": "2026-03-08T21:40:21.152606",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.instrument/Instrumentation/removeTransformer": {
+    "id": "java.lang.instrument.Instrumentation.removeTransformer",
+    "name": "removeTransformer",
+    "type": "method",
+    "parent": "Instrumentation",
+    "signatures": [
+      "public boolean removeTransformer(ClassFileTransformer transformer)"
+    ],
+    "signature_hash": "516e1f9ea5777b615daaa14ded15227d47b9c8c2493e39b1a0ec9533a8a4a2e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+    "parameters": [
+      {
+        "name": "transformer",
+        "type": "ClassFileTransformer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Unregisters the supplied transformer.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Unregisters the supplied transformer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.152622",
+    "updatedDate": "2026-03-08T21:40:21.152623",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.instrument/Instrumentation/retransformClasses": {
+    "id": "java.lang.instrument.Instrumentation.retransformClasses",
+    "name": "retransformClasses",
+    "type": "method",
+    "parent": "Instrumentation",
+    "signatures": [
+      "public void retransformClasses(Class<?>... classes)"
+    ],
+    "signature_hash": "4716d36180569e95080a129378cd377bb636fa757be6db68e1aa13b42a597461",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+    "parameters": [
+      {
+        "name": "classes",
+        "type": "Class<?>...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "UnmodifiableClassException",
+        "package": "java.lang.instrument"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Retransform the supplied set of classes.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retransform the supplied set of classes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.152638",
+    "updatedDate": "2026-03-08T21:40:21.152639",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,619 @@
+{
+  "javax.management.remote.rmi/RMIConnector/addConnectionNotificationListener": {
+    "id": "javax.management.remote.rmi.RMIConnector.addConnectionNotificationListener",
+    "name": "addConnectionNotificationListener",
+    "type": "method",
+    "parent": "RMIConnector",
+    "signatures": [
+      "public void addConnectionNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback)"
+    ],
+    "signature_hash": "d9a28ca084205e60100f717fda4e63daacf22d05152d4e7f6242c07b54542b10",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html",
+    "parameters": [
+      {
+        "name": "listener",
+        "type": "NotificationListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "filter",
+        "type": "NotificationFilter",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "handback",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Adds a listener to be informed of changes in connection\nstatus.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds a listener to be informed of changes in connection\nstatus.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.589900",
+    "updatedDate": "2026-03-08T21:40:21.589901",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnection/addNotificationListener": {
+    "id": "javax.management.remote.rmi.RMIConnection.addNotificationListener",
+    "name": "addNotificationListener",
+    "type": "method",
+    "parent": "RMIConnection",
+    "signatures": [
+      "public void addNotificationListener(ObjectName name, ObjectName listener, MarshalledObject filter, MarshalledObject handback, Subject delegationSubject)"
+    ],
+    "signature_hash": "071b10230505d26beda7e45b351664f7ebdc8ece8f376ccfe6c80d98f1275f09",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "listener",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "filter",
+        "type": "MarshalledObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "handback",
+        "type": "MarshalledObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delegationSubject",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      },
+      {
+        "name": "RuntimeOperationsException",
+        "package": "javax.management"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "SecurityException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, ObjectName, NotificationFilter, Object).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, ObjectName, NotificationFilter, Object).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.590067",
+    "updatedDate": "2026-03-08T21:40:21.590068",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectionImpl/addNotificationListener": {
+    "id": "javax.management.remote.rmi.RMIConnectionImpl.addNotificationListener",
+    "name": "addNotificationListener",
+    "type": "method",
+    "parent": "RMIConnectionImpl",
+    "signatures": [
+      "public void addNotificationListener(ObjectName name, ObjectName listener, MarshalledObject filter, MarshalledObject handback, Subject delegationSubject)"
+    ],
+    "signature_hash": "071b10230505d26beda7e45b351664f7ebdc8ece8f376ccfe6c80d98f1275f09",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "listener",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "filter",
+        "type": "MarshalledObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "handback",
+        "type": "MarshalledObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delegationSubject",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, ObjectName, NotificationFilter, Object).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, ObjectName, NotificationFilter, Object).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.590770",
+    "updatedDate": "2026-03-08T21:40:21.590771",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectionImpl_Stub/addNotificationListener": {
+    "id": "javax.management.remote.rmi.RMIConnectionImpl_Stub.addNotificationListener",
+    "name": "addNotificationListener",
+    "type": "method",
+    "parent": "RMIConnectionImpl_Stub",
+    "signatures": [
+      "public void addNotificationListener(ObjectName $param_ObjectName_1, ObjectName $param_ObjectName_2, MarshalledObject $param_MarshalledObject_3, MarshalledObject $param_MarshalledObject_4, Subject $param_Subject_5)"
+    ],
+    "signature_hash": "a8fff774700e7ddd6093eb2466c10afe8345b20c9f34e312d6bd8371e03346d3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html",
+    "parameters": [
+      {
+        "name": "$param_ObjectName_1",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "$param_ObjectName_2",
+        "type": "ObjectName",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "$param_MarshalledObject_3",
+        "type": "MarshalledObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "$param_MarshalledObject_4",
+        "type": "MarshalledObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "$param_Subject_5",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, ObjectName, NotificationFilter, Object).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, ObjectName, NotificationFilter, Object).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.591542",
+    "updatedDate": "2026-03-08T21:40:21.591543",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnection/addNotificationListeners": {
+    "id": "javax.management.remote.rmi.RMIConnection.addNotificationListeners",
+    "name": "addNotificationListeners",
+    "type": "method",
+    "parent": "RMIConnection",
+    "signatures": [
+      "public Integer[] addNotificationListeners(ObjectName[]names, MarshalledObject[]filters, Subject[]delegationSubjects)"
+    ],
+    "signature_hash": "756b2030bafa265b7f09dbaa8a3c8454873a0be09e80627989d595219c376af6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html",
+    "parameters": [
+      {
+        "name": "ObjectName[]names",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "MarshalledObject[]filters",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Subject[]delegationSubjects",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Integer[]",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      },
+      {
+        "name": "SecurityException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, NotificationListener, NotificationFilter, Object).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, NotificationListener, NotificationFilter, Object).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.590097",
+    "updatedDate": "2026-03-08T21:40:21.590098",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectionImpl/addNotificationListeners": {
+    "id": "javax.management.remote.rmi.RMIConnectionImpl.addNotificationListeners",
+    "name": "addNotificationListeners",
+    "type": "method",
+    "parent": "RMIConnectionImpl",
+    "signatures": [
+      "public Integer[] addNotificationListeners(ObjectName[]names, MarshalledObject[]filters, Subject[]delegationSubjects)"
+    ],
+    "signature_hash": "756b2030bafa265b7f09dbaa8a3c8454873a0be09e80627989d595219c376af6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html",
+    "parameters": [
+      {
+        "name": "ObjectName[]names",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "MarshalledObject[]filters",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Subject[]delegationSubjects",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Integer[]",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, NotificationListener, NotificationFilter, Object).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, NotificationListener, NotificationFilter, Object).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.590801",
+    "updatedDate": "2026-03-08T21:40:21.590802",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote.rmi/RMIConnectionImpl_Stub/addNotificationListeners": {
+    "id": "javax.management.remote.rmi.RMIConnectionImpl_Stub.addNotificationListeners",
+    "name": "addNotificationListeners",
+    "type": "method",
+    "parent": "RMIConnectionImpl_Stub",
+    "signatures": [
+      "public Integer[] addNotificationListeners(ObjectName[]$param_arrayOf_ObjectName_1, MarshalledObject[]$param_arrayOf_MarshalledObject_2, Subject[]$param_arrayOf_Subject_3)"
+    ],
+    "signature_hash": "d282b10b89b2ebb55848843b52d3e7c9d7dee592830caadd0b61591510fab2d5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html",
+    "parameters": [
+      {
+        "name": "ObjectName[]$param_arrayOf_ObjectName_1",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "MarshalledObject[]$param_arrayOf_MarshalledObject_2",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Subject[]$param_arrayOf_Subject_3",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Integer[]",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "InstanceNotFoundException",
+        "package": "javax.management"
+      }
+    ],
+    "description": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, NotificationListener, NotificationFilter, Object).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles the methodMBeanServerConnection.addNotificationListener(ObjectName, NotificationListener, NotificationFilter, Object).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.591577",
+    "updatedDate": "2026-03-08T21:40:21.591578",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

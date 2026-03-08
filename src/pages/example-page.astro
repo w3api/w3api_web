@@ -1,0 +1,64 @@
+---
+// src/pages/docs/introduccion.astro
+import StarlightLayout from '../layouts/StarlightLayout.astro';
+import { sidebar } from '../config/sidebar.ts';
+
+
+// Table of contents — ideally auto-generated from headings
+const tableOfContents = [
+  { depth: 2, text: '¿Qué es Astro?', slug: 'que-es-astro' },
+  { depth: 2, text: 'Instalación rápida', slug: 'instalacion-rapida' },
+  { depth: 3, text: 'Requisitos', slug: 'requisitos' },
+  { depth: 3, text: 'Crear un proyecto', slug: 'crear-proyecto' },
+  { depth: 2, text: 'Estructura del proyecto', slug: 'estructura' },
+  { depth: 2, text: 'Siguientes pasos', slug: 'siguientes-pasos' },
+];
+---
+
+<StarlightLayout
+  title="Introducción"
+  description="Aprende los conceptos básicos de Astro y cómo empezar tu primer proyecto."
+  siteTitle="Mi Docs"
+  sidebar={sidebar}
+  tableOfContents={tableOfContents}
+  currentLanguage="java"
+>
+  <h1>Introducción</h1>
+  <p>Bienvenido a la documentación. Este layout imita fielmente el diseño de <strong>Starlight</strong> pero como un componente Layout reutilizable en cualquier proyecto Astro.</p>
+
+  <h2 id="que-es-astro">¿Qué es Astro?</h2>
+  <p>Astro es un framework web todo-en-uno diseñado para construir sitios web rápidos y orientados al contenido. Puedes usar tus frameworks favoritos (React, Vue, Svelte…) con cero JS por defecto.</p>
+
+  <blockquote>
+    Astro es único en su enfoque "islands architecture" que permite hidratar solo los componentes interactivos.
+  </blockquote>
+
+  <h2 id="instalacion-rapida">Instalación rápida</h2>
+  <p>La forma más sencilla de empezar es con el CLI oficial:</p>
+
+  <pre><code>npm create astro@latest</code></pre>
+
+  <h3 id="requisitos">Requisitos</h3>
+  <ul>
+    <li>Node.js 18 o superior</li>
+    <li>npm / pnpm / yarn</li>
+    <li>Un editor de código moderno</li>
+  </ul>
+
+  <h3 id="crear-proyecto">Crear un proyecto</h3>
+  <p>Sigue el asistente interactivo o usa una plantilla:</p>
+  <pre><code>npm create astro@latest -- --template starlight</code></pre>
+
+  <h2 id="estructura">Estructura del proyecto</h2>
+  <p>Un proyecto Astro típico tiene esta estructura:</p>
+  <pre><code>├── src/
+│   ├── layouts/
+│   │   └── StarlightLayout.astro   ← este archivo
+│   ├── pages/
+│   └── content/
+├── public/
+└── astro.config.mjs</code></pre>
+
+  <h2 id="siguientes-pasos">Siguientes pasos</h2>
+  <p>Una vez instalado, explora la documentación de <a href="https://docs.astro.build">Astro</a> o personaliza el layout con las CSS custom properties incluidas.</p>
+</StarlightLayout>

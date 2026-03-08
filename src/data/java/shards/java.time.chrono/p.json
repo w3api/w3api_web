@@ -1,0 +1,1046 @@
+{
+  "java.time.chrono/Chronology/period": {
+    "id": "java.time.chrono.Chronology.period",
+    "name": "period",
+    "type": "method",
+    "parent": "Chronology",
+    "signatures": [
+      "public default ChronoPeriod period(int years, int months, int days)"
+    ],
+    "signature_hash": "2ab3ac2922445daa8cec0f6af1fa4a3001507415960169f60e0d92ba6461ba27",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/Chronology.html",
+    "parameters": [
+      {
+        "name": "years",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "months",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "days",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default ChronoPeriod",
+    "exceptions": [],
+    "description": "Obtains a period for this chronology based on years, months and days.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains a period for this chronology based on years, months and days.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.314323",
+    "updatedDate": "2026-03-08T21:40:21.314324",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/IsoChronology/period": {
+    "id": "java.time.chrono.IsoChronology.period",
+    "name": "period",
+    "type": "method",
+    "parent": "IsoChronology",
+    "signatures": [
+      "public Period period(int years, int months, int days)"
+    ],
+    "signature_hash": "a94452f7124af83b39550e2794f5e650f389e63479456994b59438e16e7c6cc1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/IsoChronology.html",
+    "parameters": [
+      {
+        "name": "years",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "months",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "days",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Period",
+    "exceptions": [],
+    "description": "Obtains a period for this chronology based on years, months and days.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains a period for this chronology based on years, months and days.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.318929",
+    "updatedDate": "2026-03-08T21:40:21.318929",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/ChronoLocalDate/plus": {
+    "id": "java.time.chrono.ChronoLocalDate.plus",
+    "name": "plus",
+    "type": "method",
+    "parent": "ChronoLocalDate",
+    "signatures": [
+      "public default ChronoLocalDate plus(long amountToAdd, TemporalUnit unit)",
+      "public default ChronoLocalDate plus(TemporalAmount amount)"
+    ],
+    "signature_hash": "3d1cae4b586336e9cc3a5c2a479fceb2f418f547e1ab19424a77e47386547081",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/ChronoLocalDate.html",
+    "parameters": [
+      {
+        "name": "amountToAdd",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalAmount",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default ChronoLocalDate",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      },
+      {
+        "name": "ArithmeticException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an object of the same type as this object with the specified period added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an object of the same type as this object with the specified period added.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.314723",
+    "updatedDate": "2026-03-08T21:40:21.314724",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/ChronoLocalDateTime<D/plus": {
+    "id": "java.time.chrono.ChronoLocalDateTime<D.plus",
+    "name": "plus",
+    "type": "method",
+    "parent": "ChronoLocalDateTime<D",
+    "signatures": [
+      "public ChronoLocalDateTime<D> plus(long amountToAdd, TemporalUnit unit)",
+      "public default ChronoLocalDateTime<D> plus(TemporalAmount amount)"
+    ],
+    "signature_hash": "306c537b7b2170287fd1d15ef8703e9fe3c73385876d16c41cc8d1e756ab3608",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html",
+    "parameters": [
+      {
+        "name": "amountToAdd",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalAmount",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "ChronoLocalDateTime<D>",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      },
+      {
+        "name": "ArithmeticException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an object of the same type as this object with the specified period added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an object of the same type as this object with the specified period added.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.316670",
+    "updatedDate": "2026-03-08T21:40:21.316671",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/ChronoPeriod/plus": {
+    "id": "java.time.chrono.ChronoPeriod.plus",
+    "name": "plus",
+    "type": "method",
+    "parent": "ChronoPeriod",
+    "signatures": [
+      "public ChronoPeriod plus(TemporalAmount amountToAdd)"
+    ],
+    "signature_hash": "949b913e6cc92b78611a37bda2fb6fc922940f8e63f355d07cff2f2e09c1b991",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/ChronoPeriod.html",
+    "parameters": [
+      {
+        "name": "amountToAdd",
+        "type": "TemporalAmount",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "ChronoPeriod",
+    "exceptions": [
+      {
+        "name": "ArithmeticException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns a copy of this period with the specified period added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a copy of this period with the specified period added.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.317108",
+    "updatedDate": "2026-03-08T21:40:21.317109",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/ChronoZonedDateTime<D/plus": {
+    "id": "java.time.chrono.ChronoZonedDateTime<D.plus",
+    "name": "plus",
+    "type": "method",
+    "parent": "ChronoZonedDateTime<D",
+    "signatures": [
+      "public ChronoZonedDateTime<D> plus(long amountToAdd, TemporalUnit unit)",
+      "public default ChronoZonedDateTime<D> plus(TemporalAmount amount)"
+    ],
+    "signature_hash": "ee3894c6624b6738ba885714887b9a57d2dbc9b94e76afe56a59a75e6fa0c65d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html",
+    "parameters": [
+      {
+        "name": "amountToAdd",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalAmount",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "ChronoZonedDateTime<D>",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      },
+      {
+        "name": "ArithmeticException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an object of the same type as this object with the specified period added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an object of the same type as this object with the specified period added.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.317494",
+    "updatedDate": "2026-03-08T21:40:21.317495",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/HijrahDate/plus": {
+    "id": "java.time.chrono.HijrahDate.plus",
+    "name": "plus",
+    "type": "method",
+    "parent": "HijrahDate",
+    "signatures": [
+      "public HijrahDate plus(long amountToAdd, TemporalUnit unit)",
+      "public HijrahDate plus(TemporalAmount amount)"
+    ],
+    "signature_hash": "ac83e4843f1ad2a2ea6970c45bb06ae9bf582cab25851ce541cf5e88ddb5e5fc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/HijrahDate.html",
+    "parameters": [
+      {
+        "name": "amountToAdd",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalAmount",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "HijrahDate",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      },
+      {
+        "name": "ArithmeticException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an object of the same type as this object with the specified period added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an object of the same type as this object with the specified period added.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.318309",
+    "updatedDate": "2026-03-08T21:40:21.318310",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/JapaneseDate/plus": {
+    "id": "java.time.chrono.JapaneseDate.plus",
+    "name": "plus",
+    "type": "method",
+    "parent": "JapaneseDate",
+    "signatures": [
+      "public JapaneseDate plus(long amountToAdd, TemporalUnit unit)",
+      "public JapaneseDate plus(TemporalAmount amount)"
+    ],
+    "signature_hash": "97530df5d575e4c67575b6dc5a127a1bcaa246896a1a5433c9a880c434f26578",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/JapaneseDate.html",
+    "parameters": [
+      {
+        "name": "amountToAdd",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalAmount",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "JapaneseDate",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      },
+      {
+        "name": "ArithmeticException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an object of the same type as this object with the specified period added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an object of the same type as this object with the specified period added.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.319527",
+    "updatedDate": "2026-03-08T21:40:21.319528",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/MinguoDate/plus": {
+    "id": "java.time.chrono.MinguoDate.plus",
+    "name": "plus",
+    "type": "method",
+    "parent": "MinguoDate",
+    "signatures": [
+      "public MinguoDate plus(long amountToAdd, TemporalUnit unit)",
+      "public MinguoDate plus(TemporalAmount amount)"
+    ],
+    "signature_hash": "e820bcebe88b5ae6d7b11c47571ec29261c23aca2e3d5f8c01be04114eca9798",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/MinguoDate.html",
+    "parameters": [
+      {
+        "name": "amountToAdd",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalAmount",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "MinguoDate",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      },
+      {
+        "name": "ArithmeticException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an object of the same type as this object with the specified period added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an object of the same type as this object with the specified period added.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.320240",
+    "updatedDate": "2026-03-08T21:40:21.320241",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/ThaiBuddhistDate/plus": {
+    "id": "java.time.chrono.ThaiBuddhistDate.plus",
+    "name": "plus",
+    "type": "method",
+    "parent": "ThaiBuddhistDate",
+    "signatures": [
+      "public ThaiBuddhistDate plus(long amountToAdd, TemporalUnit unit)",
+      "public ThaiBuddhistDate plus(TemporalAmount amount)"
+    ],
+    "signature_hash": "d8ea3d1666cbff86ef46437dd040bc140e08901a059850107082963969f58d91",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/ThaiBuddhistDate.html",
+    "parameters": [
+      {
+        "name": "amountToAdd",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalAmount",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "ThaiBuddhistDate",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      },
+      {
+        "name": "ArithmeticException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an object of the same type as this object with the specified period added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an object of the same type as this object with the specified period added.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.320858",
+    "updatedDate": "2026-03-08T21:40:21.320859",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/Chronology/prolepticYear": {
+    "id": "java.time.chrono.Chronology.prolepticYear",
+    "name": "prolepticYear",
+    "type": "method",
+    "parent": "Chronology",
+    "signatures": [
+      "public int prolepticYear(Era era, int yearOfEra)"
+    ],
+    "signature_hash": "4a2795c14ae45875b2f7a59088cece574aa0c0a81428d378c1508b9b684c68ff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/Chronology.html",
+    "parameters": [
+      {
+        "name": "era",
+        "type": "Era",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "yearOfEra",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Calculates the proleptic-year given the era and year-of-era.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Calculates the proleptic-year given the era and year-of-era.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.314339",
+    "updatedDate": "2026-03-08T21:40:21.314340",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/HijrahChronology/prolepticYear": {
+    "id": "java.time.chrono.HijrahChronology.prolepticYear",
+    "name": "prolepticYear",
+    "type": "method",
+    "parent": "HijrahChronology",
+    "signatures": [
+      "public int prolepticYear(Era era, int yearOfEra)"
+    ],
+    "signature_hash": "4a2795c14ae45875b2f7a59088cece574aa0c0a81428d378c1508b9b684c68ff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/HijrahChronology.html",
+    "parameters": [
+      {
+        "name": "era",
+        "type": "Era",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "yearOfEra",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Calculates the proleptic-year given the era and year-of-era.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Calculates the proleptic-year given the era and year-of-era.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.315092",
+    "updatedDate": "2026-03-08T21:40:21.315093",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/JapaneseChronology/prolepticYear": {
+    "id": "java.time.chrono.JapaneseChronology.prolepticYear",
+    "name": "prolepticYear",
+    "type": "method",
+    "parent": "JapaneseChronology",
+    "signatures": [
+      "public int prolepticYear(Era era, int yearOfEra)"
+    ],
+    "signature_hash": "4a2795c14ae45875b2f7a59088cece574aa0c0a81428d378c1508b9b684c68ff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/JapaneseChronology.html",
+    "parameters": [
+      {
+        "name": "era",
+        "type": "Era",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "yearOfEra",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Calculates the proleptic-year given the era and year-of-era.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Calculates the proleptic-year given the era and year-of-era.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.315418",
+    "updatedDate": "2026-03-08T21:40:21.315419",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/MinguoChronology/prolepticYear": {
+    "id": "java.time.chrono.MinguoChronology.prolepticYear",
+    "name": "prolepticYear",
+    "type": "method",
+    "parent": "MinguoChronology",
+    "signatures": [
+      "public int prolepticYear(Era era, int yearOfEra)"
+    ],
+    "signature_hash": "4a2795c14ae45875b2f7a59088cece574aa0c0a81428d378c1508b9b684c68ff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/MinguoChronology.html",
+    "parameters": [
+      {
+        "name": "era",
+        "type": "Era",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "yearOfEra",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Calculates the proleptic-year given the era and year-of-era.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Calculates the proleptic-year given the era and year-of-era.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.315764",
+    "updatedDate": "2026-03-08T21:40:21.315765",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/ThaiBuddhistChronology/prolepticYear": {
+    "id": "java.time.chrono.ThaiBuddhistChronology.prolepticYear",
+    "name": "prolepticYear",
+    "type": "method",
+    "parent": "ThaiBuddhistChronology",
+    "signatures": [
+      "public int prolepticYear(Era era, int yearOfEra)"
+    ],
+    "signature_hash": "4a2795c14ae45875b2f7a59088cece574aa0c0a81428d378c1508b9b684c68ff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html",
+    "parameters": [
+      {
+        "name": "era",
+        "type": "Era",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "yearOfEra",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Calculates the proleptic-year given the era and year-of-era.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Calculates the proleptic-year given the era and year-of-era.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.316123",
+    "updatedDate": "2026-03-08T21:40:21.316123",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.chrono/IsoChronology/prolepticYear": {
+    "id": "java.time.chrono.IsoChronology.prolepticYear",
+    "name": "prolepticYear",
+    "type": "method",
+    "parent": "IsoChronology",
+    "signatures": [
+      "public int prolepticYear(Era era, int yearOfEra)"
+    ],
+    "signature_hash": "4a2795c14ae45875b2f7a59088cece574aa0c0a81428d378c1508b9b684c68ff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/IsoChronology.html",
+    "parameters": [
+      {
+        "name": "era",
+        "type": "Era",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "yearOfEra",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Calculates the proleptic-year given the era and year-of-era.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Calculates the proleptic-year given the era and year-of-era.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.318953",
+    "updatedDate": "2026-03-08T21:40:21.318954",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

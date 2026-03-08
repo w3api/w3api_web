@@ -1,0 +1,276 @@
+{
+  "java.security/PEMRecord/leadingData": {
+    "id": "java.security.PEMRecord.leadingData",
+    "name": "leadingData",
+    "type": "method",
+    "parent": "PEMRecord",
+    "signatures": [
+      "public byte[] leadingData()"
+    ],
+    "signature_hash": "bd38f29f5d399a423e08531d2822221fdcec8684565ebc71aa4f5926fe0ac4c1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/PEMRecord.html",
+    "parameters": [],
+    "return_type": "byte[]",
+    "exceptions": [],
+    "description": "Returns the value of theleadingDatarecord component.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the value of theleadingDatarecord component.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.231214",
+    "updatedDate": "2026-03-08T21:40:21.231215",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "25",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security/KeyStore/load": {
+    "id": "java.security.KeyStore.load",
+    "name": "load",
+    "type": "method",
+    "parent": "KeyStore",
+    "signatures": [
+      "public final void load(InputStream stream, char[]password)",
+      "public final void load(KeyStore.LoadStoreParameter param)"
+    ],
+    "signature_hash": "0401aa96a934495e9ed64bde23c5e4a3a5e2e776a8f8e210e3740b9cbbeed3a9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/KeyStore.html",
+    "parameters": [
+      {
+        "name": "stream",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "char[]password",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "param",
+        "has_default": false,
+        "default_value": null,
+        "type": "KeyStore.LoadStoreParameter",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "final void",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "UnrecoverableKeyException",
+        "package": "java.security"
+      },
+      {
+        "name": "NoSuchAlgorithmException",
+        "package": "java.security"
+      },
+      {
+        "name": "CertificateException",
+        "package": "javax.security.cert"
+      }
+    ],
+    "description": "Loads this keystore from the given input stream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Loads this keystore from the given input stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.228298",
+    "updatedDate": "2026-03-08T21:40:21.228298",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security/Provider/load": {
+    "id": "java.security.Provider.load",
+    "name": "load",
+    "type": "method",
+    "parent": "Provider",
+    "signatures": [
+      "public void load(InputStream inStream)"
+    ],
+    "signature_hash": "ede08dbeb8c752a8dc7b211d6901c520a247b280f8d3639f209be09efdb8bfc8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/Provider.html",
+    "parameters": [
+      {
+        "name": "inStream",
+        "type": "InputStream",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Reads a property list (key and element pairs) from the input stream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads a property list (key and element pairs) from the input stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.234065",
+    "updatedDate": "2026-03-08T21:40:21.234066",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security/AuthProvider/login": {
+    "id": "java.security.AuthProvider.login",
+    "name": "login",
+    "type": "method",
+    "parent": "AuthProvider",
+    "signatures": [
+      "public abstract void login(Subject subject, CallbackHandler handler)"
+    ],
+    "signature_hash": "15d1591712f7822e536e12a3f3dcbddf4710afc4a1287f25617ce93fd95b5974",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/AuthProvider.html",
+    "parameters": [
+      {
+        "name": "subject",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "handler",
+        "type": "CallbackHandler",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "LoginException",
+        "package": "javax.security.auth.login"
+      }
+    ],
+    "description": "Log in to this provider.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Log in to this provider.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.224525",
+    "updatedDate": "2026-03-08T21:40:21.224526",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security/AuthProvider/logout": {
+    "id": "java.security.AuthProvider.logout",
+    "name": "logout",
+    "type": "method",
+    "parent": "AuthProvider",
+    "signatures": [
+      "public abstract void logout()"
+    ],
+    "signature_hash": "83dcbbd00a6e0c763bf924ae7c3799aafd550b97fc1810440b13dd52a6a4a17f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/AuthProvider.html",
+    "parameters": [],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "LoginException",
+        "package": "javax.security.auth.login"
+      }
+    ],
+    "description": "Log out from this provider.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Log out from this provider.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.224542",
+    "updatedDate": "2026-03-08T21:40:21.224542",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

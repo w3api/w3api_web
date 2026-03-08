@@ -1,0 +1,172 @@
+{
+  "org.ietf.jgss/Oid": {
+    "id": "org.ietf.jgss.Oid",
+    "name": "Oid",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/Oid.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.416702",
+    "updatedDate": "2026-03-08T21:40:22.416703",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "Oid"
+    ],
+    "methods": [
+      "containedIn",
+      "equals",
+      "getDER",
+      "hashCode",
+      "toString"
+    ]
+  },
+  "org.ietf.jgss/Oid/Oid": {
+    "id": "org.ietf.jgss.Oid.Oid",
+    "name": "Oid",
+    "type": "constructor",
+    "parent": "Oid",
+    "signatures": [
+      "public Oid(byte[]data)",
+      "public Oid(InputStream derOid)",
+      "public Oid(String strOid)"
+    ],
+    "signature_hash": "e898673f70c9aa78fc295105bc83fc76333dc7ec8936ed1b85a6778d4ffdbe33",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/Oid.html",
+    "parameters": [
+      {
+        "name": "byte[]data",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "derOid",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "strOid",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "GSSException",
+        "package": "org.ietf.jgss"
+      }
+    ],
+    "description": "Creates an Oid object from its ASN.1 DER encoding.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates an Oid object from its ASN.1 DER encoding.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.416732",
+    "updatedDate": "2026-03-08T21:40:22.416733",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSException/OLD_TOKEN": {
+    "id": "org.ietf.jgss.GSSException.OLD_TOKEN",
+    "name": "OLD_TOKEN",
+    "type": "field",
+    "parent": "GSSException",
+    "signatures": [
+      "static final int OLD_TOKEN"
+    ],
+    "signature_hash": "006bf87dbd286108f980a4665a67cdfc2128d95ad4d7b76bccc5d57740427408",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSException.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "The token's validity period has expired.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The token's validity period has expired.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.415963",
+    "updatedDate": "2026-03-08T21:40:22.415964",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss": {
+    "type": "module",
+    "name": "org.ietf.jgss",
+    "id": "org.ietf.jgss",
+    "description": "Module org.ietf.jgss",
+    "classes": [
+      "ChannelBinding",
+      "GSSManager",
+      "MessageProp",
+      "Oid"
+    ],
+    "exceptions": [
+      {
+        "name": "GSSException",
+        "package": "org.ietf.jgss"
+      }
+    ],
+    "interfaces": [
+      "GSSCredential",
+      "GSSName"
+    ]
+  }
+}

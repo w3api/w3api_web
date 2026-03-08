@@ -1,0 +1,685 @@
+{
+  "javax.sql.rowset.spi/SyncFactory": {
+    "id": "javax.sql.rowset.spi.SyncFactory",
+    "name": "SyncFactory",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703540",
+    "updatedDate": "2026-03-08T21:40:21.703541",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "ROWSET_SYNC_PROVIDER",
+      "ROWSET_SYNC_PROVIDER_VERSION",
+      "ROWSET_SYNC_VENDOR"
+    ],
+    "methods": [
+      "getInstance",
+      "getLogger",
+      "getRegisteredProviders",
+      "getSyncFactory",
+      "registerProvider",
+      "setJNDIContext",
+      "setLogger",
+      "unregisterProvider"
+    ]
+  },
+  "javax.sql.rowset.spi/SyncProvider": {
+    "id": "javax.sql.rowset.spi.SyncProvider",
+    "name": "SyncProvider",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703257",
+    "updatedDate": "2026-03-08T21:40:21.703257",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "SyncProvider"
+    ],
+    "attributes": [
+      "DATASOURCE_DB_LOCK",
+      "DATASOURCE_NO_LOCK",
+      "DATASOURCE_ROW_LOCK",
+      "DATASOURCE_TABLE_LOCK",
+      "GRADE_CHECK_ALL_AT_COMMIT",
+      "GRADE_CHECK_MODIFIED_AT_COMMIT",
+      "GRADE_LOCK_WHEN_LOADED",
+      "GRADE_LOCK_WHEN_MODIFIED",
+      "GRADE_NONE",
+      "NONUPDATABLE_VIEW_SYNC",
+      "UPDATABLE_VIEW_SYNC"
+    ],
+    "methods": [
+      "getDataSourceLock",
+      "getProviderGrade",
+      "getProviderID",
+      "getRowSetReader",
+      "getRowSetWriter",
+      "getVendor",
+      "getVersion",
+      "setDataSourceLock",
+      "supportsUpdatableView"
+    ]
+  },
+  "javax.sql.rowset.spi/SyncFactoryException/SyncFactoryException": {
+    "id": "javax.sql.rowset.spi.SyncFactoryException.SyncFactoryException",
+    "name": "SyncFactoryException",
+    "type": "constructor",
+    "parent": "SyncFactoryException",
+    "signatures": [
+      "public SyncFactoryException()",
+      "public SyncFactoryException(String msg)"
+    ],
+    "signature_hash": "ceef347c7472b371e666a226e03dabe05fe612711cd66d052ef92f2e5a5057eb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactoryException.html",
+    "parameters": [
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Creates newSyncFactoryExceptionwithout detail message.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates newSyncFactoryExceptionwithout detail message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703729",
+    "updatedDate": "2026-03-08T21:40:21.703730",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sql.rowset.spi/SyncProvider/SyncProvider": {
+    "id": "javax.sql.rowset.spi.SyncProvider.SyncProvider",
+    "name": "SyncProvider",
+    "type": "constructor",
+    "parent": "SyncProvider",
+    "signatures": [
+      "public SyncProvider()"
+    ],
+    "signature_hash": "305fcddc78f1bf073dc65cffb89dbeedc27b146e1cfa8a2df2d9e5007dea661d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Creates a defaultSyncProviderobject.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a defaultSyncProviderobject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703268",
+    "updatedDate": "2026-03-08T21:40:21.703268",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sql.rowset.spi/SyncProviderException/SyncProviderException": {
+    "id": "javax.sql.rowset.spi.SyncProviderException.SyncProviderException",
+    "name": "SyncProviderException",
+    "type": "constructor",
+    "parent": "SyncProviderException",
+    "signatures": [
+      "public SyncProviderException()",
+      "public SyncProviderException(String msg)",
+      "public SyncProviderException(SyncResolver syncResolver)"
+    ],
+    "signature_hash": "e75dad6db7ffd28b7e162dcc31db397d321245cbe7ac95550d69a4a9cde57274",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProviderException.html",
+    "parameters": [
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "syncResolver",
+        "has_default": false,
+        "default_value": null,
+        "type": "SyncResolver",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates a newSyncProviderExceptionobject without a detail message.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a newSyncProviderExceptionobject without a detail message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703767",
+    "updatedDate": "2026-03-08T21:40:21.703767",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sql.rowset.spi/SyncFactoryException": {
+    "id": "javax.sql.rowset.spi.SyncFactoryException",
+    "name": "SyncFactoryException",
+    "type": "exception",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactoryException.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703713",
+    "updatedDate": "2026-03-08T21:40:21.703713",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "SyncFactoryException"
+    ]
+  },
+  "javax.sql.rowset.spi/SyncProviderException": {
+    "id": "javax.sql.rowset.spi.SyncProviderException",
+    "name": "SyncProviderException",
+    "type": "exception",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProviderException.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703738",
+    "updatedDate": "2026-03-08T21:40:21.703739",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "SyncProviderException"
+    ],
+    "methods": [
+      "getSyncResolver",
+      "setSyncResolver"
+    ]
+  },
+  "javax.sql.rowset.spi/SyncResolver": {
+    "id": "javax.sql.rowset.spi.SyncResolver",
+    "name": "SyncResolver",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703807",
+    "updatedDate": "2026-03-08T21:40:21.703808",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "DELETE_ROW_CONFLICT",
+      "INSERT_ROW_CONFLICT",
+      "NO_ROW_CONFLICT",
+      "UPDATE_ROW_CONFLICT"
+    ],
+    "methods": [
+      "getConflictValue",
+      "getStatus",
+      "nextConflict",
+      "previousConflict",
+      "setResolvedValue"
+    ]
+  },
+  "javax.sql.rowset.spi/SyncProvider/setDataSourceLock": {
+    "id": "javax.sql.rowset.spi.SyncProvider.setDataSourceLock",
+    "name": "setDataSourceLock",
+    "type": "method",
+    "parent": "SyncProvider",
+    "signatures": [
+      "public abstract void setDataSourceLock(int datasource_lock)"
+    ],
+    "signature_hash": "00142afbf8f95d93debe47ed80cb077f2edc949ed7158dee0b9f8cfa7c18da33",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html",
+    "parameters": [
+      {
+        "name": "datasource_lock",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "SyncProviderException",
+        "package": "javax.sql.rowset.spi"
+      }
+    ],
+    "description": "Sets a lock on the underlying data source at the level indicated bydatasource_lock.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets a lock on the underlying data source at the level indicated bydatasource_lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703368",
+    "updatedDate": "2026-03-08T21:40:21.703368",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sql.rowset.spi/SyncFactory/setJNDIContext": {
+    "id": "javax.sql.rowset.spi.SyncFactory.setJNDIContext",
+    "name": "setJNDIContext",
+    "type": "method",
+    "parent": "SyncFactory",
+    "signatures": [
+      "public static void setJNDIContext(Context ctx)"
+    ],
+    "signature_hash": "424d1cfbd215bf100ee2537866d518897c7120eda459bba6ca38e06409964e6c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html",
+    "parameters": [
+      {
+        "name": "ctx",
+        "type": "Context",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static void",
+    "exceptions": [
+      {
+        "name": "SyncFactoryException",
+        "package": "javax.sql.rowset.spi"
+      }
+    ],
+    "description": "Sets the initial JNDI context from which SyncProvider implementations\ncan be retrieved from a JNDI namespace",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets the initial JNDI context from which SyncProvider implementations\ncan be retrieved from a JNDI namespace",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703627",
+    "updatedDate": "2026-03-08T21:40:21.703628",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sql.rowset.spi/SyncFactory/setLogger": {
+    "id": "javax.sql.rowset.spi.SyncFactory.setLogger",
+    "name": "setLogger",
+    "type": "method",
+    "parent": "SyncFactory",
+    "signatures": [
+      "public static void setLogger(Logger logger)",
+      "public static void setLogger(Logger logger, Level level)"
+    ],
+    "signature_hash": "f842dddcce6cb98f033438daad1c8b5efb1050340efecbef89aacd79af02cfd5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html",
+    "parameters": [
+      {
+        "name": "logger",
+        "has_default": false,
+        "default_value": null,
+        "type": "Logger",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "level",
+        "has_default": false,
+        "default_value": null,
+        "type": "Level",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Sets the logging object to be used by theSyncProviderimplementation provided by theSyncFactory.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets the logging object to be used by theSyncProviderimplementation provided by theSyncFactory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703650",
+    "updatedDate": "2026-03-08T21:40:21.703651",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sql.rowset.spi/SyncResolver/setResolvedValue": {
+    "id": "javax.sql.rowset.spi.SyncResolver.setResolvedValue",
+    "name": "setResolvedValue",
+    "type": "method",
+    "parent": "SyncResolver",
+    "signatures": [
+      "public void setResolvedValue(int index, Object obj)",
+      "public void setResolvedValue(String columnName, Object obj)"
+    ],
+    "signature_hash": "0c1586a84ad46118c835e4deecc9b7802ddcceaaf73ba04709f29093aa1775aa",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html",
+    "parameters": [
+      {
+        "name": "index",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "obj",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "columnName",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SQLException",
+        "package": "java.sql"
+      }
+    ],
+    "description": "Setsobjas the value in columnindexin the current row of theRowSetobject that is being synchronized.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Setsobjas the value in columnindexin the current row of theRowSetobject that is being synchronized.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703905",
+    "updatedDate": "2026-03-08T21:40:21.703906",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sql.rowset.spi/SyncProviderException/setSyncResolver": {
+    "id": "javax.sql.rowset.spi.SyncProviderException.setSyncResolver",
+    "name": "setSyncResolver",
+    "type": "method",
+    "parent": "SyncProviderException",
+    "signatures": [
+      "public void setSyncResolver(SyncResolver syncResolver)"
+    ],
+    "signature_hash": "56094606c9c5c08599e37371e1db78fe923ad2f9c3cebef025d4d0dac8f8c842",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProviderException.html",
+    "parameters": [
+      {
+        "name": "syncResolver",
+        "type": "SyncResolver",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Sets theSyncResolverobject for thisSyncProviderExceptionobject to the one supplied.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets theSyncResolverobject for thisSyncProviderExceptionobject to the one supplied.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703797",
+    "updatedDate": "2026-03-08T21:40:21.703798",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sql.rowset.spi/SyncProvider/supportsUpdatableView": {
+    "id": "javax.sql.rowset.spi.SyncProvider.supportsUpdatableView",
+    "name": "supportsUpdatableView",
+    "type": "method",
+    "parent": "SyncProvider",
+    "signatures": [
+      "public abstract int supportsUpdatableView()"
+    ],
+    "signature_hash": "b672679ff01aa0687f673e5b8c2e8de4148726496f6b8ec095c23878b9c88033",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html",
+    "parameters": [],
+    "return_type": "abstract int",
+    "exceptions": [],
+    "description": "Returns whether thisSyncProviderimplementation\ncan perform synchronization between aRowSetobject\nand the SQLVIEWin the data source from which\ntheRowSetobject got its data.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns whether thisSyncProviderimplementation\ncan perform synchronization between aRowSetobject\nand the SQLVIEWin the data source from which\ntheRowSetobject got its data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.703380",
+    "updatedDate": "2026-03-08T21:40:21.703381",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

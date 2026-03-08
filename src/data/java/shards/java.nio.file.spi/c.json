@@ -1,0 +1,370 @@
+{
+  "java.nio.file.spi/FileSystemProvider/checkAccess": {
+    "id": "java.nio.file.spi.FileSystemProvider.checkAccess",
+    "name": "checkAccess",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract void checkAccess(Path path, AccessMode... modes)"
+    ],
+    "signature_hash": "fcba254f3d35209639844f37179eca85402919c949a58d18fd6d87f4da88af93",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "modes",
+        "type": "AccessMode...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NoSuchFileException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "AccessDeniedException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Checks the existence, and optionally the accessibility, of a file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks the existence, and optionally the accessibility, of a file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219056",
+    "updatedDate": "2026-03-08T21:40:21.219057",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/copy": {
+    "id": "java.nio.file.spi.FileSystemProvider.copy",
+    "name": "copy",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract void copy(Path source, Path target, CopyOption... options)"
+    ],
+    "signature_hash": "a5d32f4e13cdd796efbfabae1c7ef068aeab2d4c680278383d41c442196ffb70",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "source",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "target",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "type": "CopyOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "FileAlreadyExistsException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "DirectoryNotEmptyException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Copy a file to a target file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copy a file to a target file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219076",
+    "updatedDate": "2026-03-08T21:40:21.219077",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/createDirectory": {
+    "id": "java.nio.file.spi.FileSystemProvider.createDirectory",
+    "name": "createDirectory",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract void createDirectory(Path dir, FileAttribute<?>... attrs)"
+    ],
+    "signature_hash": "18294376a0054df4cd6cedecdb1f6db349601607c04524a0a2b27b72ccefc833",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "dir",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attrs",
+        "type": "FileAttribute<?>...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "FileAlreadyExistsException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Creates a new directory.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new directory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219094",
+    "updatedDate": "2026-03-08T21:40:21.219095",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/createLink": {
+    "id": "java.nio.file.spi.FileSystemProvider.createLink",
+    "name": "createLink",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public void createLink(Path link, Path existing)"
+    ],
+    "signature_hash": "93085b54339473ed40ce7056a6959473dd05077af73c5a550444f99e0cbf5a91",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "link",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "existing",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "FileAlreadyExistsException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Creates a new link (directory entry) for an existing file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new link (directory entry) for an existing file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219110",
+    "updatedDate": "2026-03-08T21:40:21.219111",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/createSymbolicLink": {
+    "id": "java.nio.file.spi.FileSystemProvider.createSymbolicLink",
+    "name": "createSymbolicLink",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public void createSymbolicLink(Path link, Path target, FileAttribute<?>... attrs)"
+    ],
+    "signature_hash": "8514c1236d23c90c48dd9883e4162edd9c17e6a994cf97cdf6b3f79b36ba7e54",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "link",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "target",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attrs",
+        "type": "FileAttribute<?>...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "FileAlreadyExistsException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Creates a symbolic link to a target.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a symbolic link to a target.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219131",
+    "updatedDate": "2026-03-08T21:40:21.219132",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

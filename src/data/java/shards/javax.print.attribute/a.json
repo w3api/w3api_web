@@ -1,0 +1,803 @@
+{
+  "javax.print.attribute/AttributeSetUtilities": {
+    "id": "javax.print.attribute.AttributeSetUtilities",
+    "name": "AttributeSetUtilities",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.616452",
+    "updatedDate": "2026-03-08T21:40:21.616453",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "synchronizedView",
+      "unmodifiableView",
+      "verifyAttributeCategory",
+      "verifyAttributeValue",
+      "verifyCategoryForValue"
+    ]
+  },
+  "javax.print.attribute/Attribute": {
+    "id": "javax.print.attribute.Attribute",
+    "name": "Attribute",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/Attribute.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614346",
+    "updatedDate": "2026-03-08T21:40:21.614347",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getCategory",
+      "getName"
+    ]
+  },
+  "javax.print.attribute/AttributeSet": {
+    "id": "javax.print.attribute.AttributeSet",
+    "name": "AttributeSet",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/AttributeSet.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614422",
+    "updatedDate": "2026-03-08T21:40:21.614423",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "add",
+      "addAll",
+      "clear",
+      "containsKey",
+      "containsValue",
+      "equals",
+      "get",
+      "hashCode",
+      "isEmpty",
+      "remove",
+      "size",
+      "toArray"
+    ]
+  },
+  "javax.print.attribute/AttributeSet/add": {
+    "id": "javax.print.attribute.AttributeSet.add",
+    "name": "add",
+    "type": "method",
+    "parent": "AttributeSet",
+    "signatures": [
+      "public boolean add(Attribute attribute)"
+    ],
+    "signature_hash": "8728f15f660c5156ca79f71a68b5638a2a819a127365e30a4d9ce5c4f06182ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/AttributeSet.html",
+    "parameters": [
+      {
+        "name": "attribute",
+        "type": "Attribute",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      }
+    ],
+    "description": "Adds the specified attribute to this attribute set if it is not already\npresent, first removing any existing value in the same attribute category\nas the specified attribute value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds the specified attribute to this attribute set if it is not already\npresent, first removing any existing value in the same attribute category\nas the specified attribute value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614438",
+    "updatedDate": "2026-03-08T21:40:21.614439",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/HashAttributeSet/add": {
+    "id": "javax.print.attribute.HashAttributeSet.add",
+    "name": "add",
+    "type": "method",
+    "parent": "HashAttributeSet",
+    "signatures": [
+      "public boolean add(Attribute attribute)"
+    ],
+    "signature_hash": "8728f15f660c5156ca79f71a68b5638a2a819a127365e30a4d9ce5c4f06182ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html",
+    "parameters": [
+      {
+        "name": "attribute",
+        "type": "Attribute",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      }
+    ],
+    "description": "Adds the specified attribute to this attribute set if it is not already\npresent, first removing any existing in the same attribute category as\nthe specified attribute value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds the specified attribute to this attribute set if it is not already\npresent, first removing any existing in the same attribute category as\nthe specified attribute value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614685",
+    "updatedDate": "2026-03-08T21:40:21.614686",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/DocAttributeSet/add": {
+    "id": "javax.print.attribute.DocAttributeSet.add",
+    "name": "add",
+    "type": "method",
+    "parent": "DocAttributeSet",
+    "signatures": [
+      "public boolean add(Attribute attribute)"
+    ],
+    "signature_hash": "8728f15f660c5156ca79f71a68b5638a2a819a127365e30a4d9ce5c4f06182ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/DocAttributeSet.html",
+    "parameters": [
+      {
+        "name": "attribute",
+        "type": "Attribute",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds the specified attribute value to this attribute set if it is not\nalready present, first removing any existing value in the same attribute\ncategory as the specified attribute value (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds the specified attribute value to this attribute set if it is not\nalready present, first removing any existing value in the same attribute\ncategory as the specified attribute value (optional opera...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614889",
+    "updatedDate": "2026-03-08T21:40:21.614890",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/PrintRequestAttributeSet/add": {
+    "id": "javax.print.attribute.PrintRequestAttributeSet.add",
+    "name": "add",
+    "type": "method",
+    "parent": "PrintRequestAttributeSet",
+    "signatures": [
+      "public boolean add(Attribute attribute)"
+    ],
+    "signature_hash": "8728f15f660c5156ca79f71a68b5638a2a819a127365e30a4d9ce5c4f06182ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/PrintRequestAttributeSet.html",
+    "parameters": [
+      {
+        "name": "attribute",
+        "type": "Attribute",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds the specified attribute value to this attribute set if it is not\nalready present, first removing any existing value in the same attribute\ncategory as the specified attribute value (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds the specified attribute value to this attribute set if it is not\nalready present, first removing any existing value in the same attribute\ncategory as the specified attribute value (optional opera...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614937",
+    "updatedDate": "2026-03-08T21:40:21.614938",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/PrintJobAttributeSet/add": {
+    "id": "javax.print.attribute.PrintJobAttributeSet.add",
+    "name": "add",
+    "type": "method",
+    "parent": "PrintJobAttributeSet",
+    "signatures": [
+      "public boolean add(Attribute attribute)"
+    ],
+    "signature_hash": "8728f15f660c5156ca79f71a68b5638a2a819a127365e30a4d9ce5c4f06182ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/PrintJobAttributeSet.html",
+    "parameters": [
+      {
+        "name": "attribute",
+        "type": "Attribute",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds the specified attribute value to this attribute set if it is not\nalready present, first removing any existing value in the same attribute\ncategory as the specified attribute value (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds the specified attribute value to this attribute set if it is not\nalready present, first removing any existing value in the same attribute\ncategory as the specified attribute value (optional opera...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614983",
+    "updatedDate": "2026-03-08T21:40:21.614984",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/PrintServiceAttributeSet/add": {
+    "id": "javax.print.attribute.PrintServiceAttributeSet.add",
+    "name": "add",
+    "type": "method",
+    "parent": "PrintServiceAttributeSet",
+    "signatures": [
+      "public boolean add(Attribute attribute)"
+    ],
+    "signature_hash": "8728f15f660c5156ca79f71a68b5638a2a819a127365e30a4d9ce5c4f06182ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/PrintServiceAttributeSet.html",
+    "parameters": [
+      {
+        "name": "attribute",
+        "type": "Attribute",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds the specified attribute value to this attribute set if it is not\nalready present, first removing any existing value in the same attribute\ncategory as the specified attribute value (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds the specified attribute value to this attribute set if it is not\nalready present, first removing any existing value in the same attribute\ncategory as the specified attribute value (optional opera...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.615030",
+    "updatedDate": "2026-03-08T21:40:21.615030",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/AttributeSet/addAll": {
+    "id": "javax.print.attribute.AttributeSet.addAll",
+    "name": "addAll",
+    "type": "method",
+    "parent": "AttributeSet",
+    "signatures": [
+      "public boolean addAll(AttributeSet attributes)"
+    ],
+    "signature_hash": "1a6686e13e6e15a981a4b72cb51ac82098d16e652f78aa2ea39df29161d348c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/AttributeSet.html",
+    "parameters": [
+      {
+        "name": "attributes",
+        "type": "AttributeSet",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds all of the elements in the specified set to this attribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds all of the elements in the specified set to this attribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614453",
+    "updatedDate": "2026-03-08T21:40:21.614454",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/HashAttributeSet/addAll": {
+    "id": "javax.print.attribute.HashAttributeSet.addAll",
+    "name": "addAll",
+    "type": "method",
+    "parent": "HashAttributeSet",
+    "signatures": [
+      "public boolean addAll(AttributeSet attributes)"
+    ],
+    "signature_hash": "1a6686e13e6e15a981a4b72cb51ac82098d16e652f78aa2ea39df29161d348c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html",
+    "parameters": [
+      {
+        "name": "attributes",
+        "type": "AttributeSet",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds all of the elements in the specified set to this attribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds all of the elements in the specified set to this attribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614703",
+    "updatedDate": "2026-03-08T21:40:21.614704",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/DocAttributeSet/addAll": {
+    "id": "javax.print.attribute.DocAttributeSet.addAll",
+    "name": "addAll",
+    "type": "method",
+    "parent": "DocAttributeSet",
+    "signatures": [
+      "public boolean addAll(AttributeSet attributes)"
+    ],
+    "signature_hash": "1a6686e13e6e15a981a4b72cb51ac82098d16e652f78aa2ea39df29161d348c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/DocAttributeSet.html",
+    "parameters": [
+      {
+        "name": "attributes",
+        "type": "AttributeSet",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds all of the elements in the specified set to this attribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds all of the elements in the specified set to this attribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614908",
+    "updatedDate": "2026-03-08T21:40:21.614909",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/PrintRequestAttributeSet/addAll": {
+    "id": "javax.print.attribute.PrintRequestAttributeSet.addAll",
+    "name": "addAll",
+    "type": "method",
+    "parent": "PrintRequestAttributeSet",
+    "signatures": [
+      "public boolean addAll(AttributeSet attributes)"
+    ],
+    "signature_hash": "1a6686e13e6e15a981a4b72cb51ac82098d16e652f78aa2ea39df29161d348c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/PrintRequestAttributeSet.html",
+    "parameters": [
+      {
+        "name": "attributes",
+        "type": "AttributeSet",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds all of the elements in the specified set to this attribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds all of the elements in the specified set to this attribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614954",
+    "updatedDate": "2026-03-08T21:40:21.614954",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/PrintJobAttributeSet/addAll": {
+    "id": "javax.print.attribute.PrintJobAttributeSet.addAll",
+    "name": "addAll",
+    "type": "method",
+    "parent": "PrintJobAttributeSet",
+    "signatures": [
+      "public boolean addAll(AttributeSet attributes)"
+    ],
+    "signature_hash": "1a6686e13e6e15a981a4b72cb51ac82098d16e652f78aa2ea39df29161d348c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/PrintJobAttributeSet.html",
+    "parameters": [
+      {
+        "name": "attributes",
+        "type": "AttributeSet",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds all of the elements in the specified set to this attribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds all of the elements in the specified set to this attribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.614999",
+    "updatedDate": "2026-03-08T21:40:21.615000",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.print.attribute/PrintServiceAttributeSet/addAll": {
+    "id": "javax.print.attribute.PrintServiceAttributeSet.addAll",
+    "name": "addAll",
+    "type": "method",
+    "parent": "PrintServiceAttributeSet",
+    "signatures": [
+      "public boolean addAll(AttributeSet attributes)"
+    ],
+    "signature_hash": "1a6686e13e6e15a981a4b72cb51ac82098d16e652f78aa2ea39df29161d348c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/print/attribute/PrintServiceAttributeSet.html",
+    "parameters": [
+      {
+        "name": "attributes",
+        "type": "AttributeSet",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "UnmodifiableSetException",
+        "package": "javax.print.attribute"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds all of the elements in the specified set to this attribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds all of the elements in the specified set to this attribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.615046",
+    "updatedDate": "2026-03-08T21:40:21.615047",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

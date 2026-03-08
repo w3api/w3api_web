@@ -1,0 +1,368 @@
+{
+  "jdk.dynalink.linker/GuardingDynamicLinkerExporter/AUTOLOAD_PERMISSION_NAME": {
+    "id": "jdk.dynalink.linker.GuardingDynamicLinkerExporter.AUTOLOAD_PERMISSION_NAME",
+    "name": "AUTOLOAD_PERMISSION_NAME",
+    "type": "field",
+    "parent": "GuardingDynamicLinkerExporter",
+    "signatures": [
+      "static final String AUTOLOAD_PERMISSION_NAME"
+    ],
+    "signature_hash": "b320a05475a682ff40f5a431c5cc14fcb7583ee3bd74434df3d55267522e4daa",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/linker/GuardingDynamicLinkerExporter.html",
+    "parameters": [],
+    "return_type": "static final String",
+    "exceptions": [],
+    "description": "The name of the runtime permission for creating instances of this class.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The name of the runtime permission for creating instances of this class.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.377039",
+    "updatedDate": "2026-03-08T21:40:22.377040",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink.linker/GuardedInvocation/addSwitchPoint": {
+    "id": "jdk.dynalink.linker.GuardedInvocation.addSwitchPoint",
+    "name": "addSwitchPoint",
+    "type": "method",
+    "parent": "GuardedInvocation",
+    "signatures": [
+      "public GuardedInvocation addSwitchPoint(SwitchPoint newSwitchPoint)"
+    ],
+    "signature_hash": "1ecca7348229c4cbdf4991e37062ac2cda43fd4996780ca546632f7360031293",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/linker/GuardedInvocation.html",
+    "parameters": [
+      {
+        "name": "newSwitchPoint",
+        "type": "SwitchPoint",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "GuardedInvocation",
+    "exceptions": [],
+    "description": "Create a new guarded invocation with an added switch point.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a new guarded invocation with an added switch point.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.377259",
+    "updatedDate": "2026-03-08T21:40:22.377260",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink.linker/GuardedInvocation/asType": {
+    "id": "jdk.dynalink.linker.GuardedInvocation.asType",
+    "name": "asType",
+    "type": "method",
+    "parent": "GuardedInvocation",
+    "signatures": [
+      "public GuardedInvocation asType(MethodType newType)",
+      "public GuardedInvocation asType(CallSiteDescriptor desc)",
+      "public GuardedInvocation asType(LinkerServices linkerServices, MethodType newType)"
+    ],
+    "signature_hash": "a7f30166ee370f7ec53039f70a1bfc9fa0632f699f938024e3debd8c8ee09444",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/linker/GuardedInvocation.html",
+    "parameters": [
+      {
+        "name": "newType",
+        "has_default": false,
+        "default_value": null,
+        "type": "MethodType",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "desc",
+        "has_default": false,
+        "default_value": null,
+        "type": "CallSiteDescriptor",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "linkerServices",
+        "has_default": false,
+        "default_value": null,
+        "type": "LinkerServices",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "GuardedInvocation",
+    "exceptions": [],
+    "description": "Changes the type of the invocation, as ifMethodHandle.asType(MethodType)was applied to its invocation\nand its guard, if it has one (with return type changed to boolean, and\nparameter count potentially truncated for the guard).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Changes the type of the invocation, as ifMethodHandle.asType(MethodType)was applied to its invocation\nand its guard, if it has one (with return type changed to boolean, and\nparameter count potentially...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.377546",
+    "updatedDate": "2026-03-08T21:40:22.377547",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink.linker/LinkerServices/asType": {
+    "id": "jdk.dynalink.linker.LinkerServices.asType",
+    "name": "asType",
+    "type": "method",
+    "parent": "LinkerServices",
+    "signatures": [
+      "public MethodHandle asType(MethodHandle handle, MethodType fromType)"
+    ],
+    "signature_hash": "bcb3997021ed0662635c91a94067189cdc3229c117840ddeb85dd01acec8d393",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/linker/LinkerServices.html",
+    "parameters": [
+      {
+        "name": "handle",
+        "type": "MethodHandle",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fromType",
+        "type": "MethodType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "MethodHandle",
+    "exceptions": [],
+    "description": "Similar toMethodHandle.asType(MethodType)except it also hooks\nin method handles produced by all availableGuardingTypeConverterFactoryimplementations, providing for\nlanguage-specific type coercing of parameters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar toMethodHandle.asType(MethodType)except it also hooks\nin method handles produced by all availableGuardingTypeConverterFactoryimplementations, providing for\nlanguage-specific type coercing of p...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.377791",
+    "updatedDate": "2026-03-08T21:40:22.377791",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink.linker/MethodTypeConversionStrategy/asType": {
+    "id": "jdk.dynalink.linker.MethodTypeConversionStrategy.asType",
+    "name": "asType",
+    "type": "method",
+    "parent": "MethodTypeConversionStrategy",
+    "signatures": [
+      "public MethodHandle asType(MethodHandle target, MethodType newType)"
+    ],
+    "signature_hash": "419d6b403fcbc8b6dab61fe9f6d1fbbccf4a830c5cac837c191954097a1048ee",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/linker/MethodTypeConversionStrategy.html",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "MethodHandle",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "newType",
+        "type": "MethodType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "MethodHandle",
+    "exceptions": [],
+    "description": "Converts a method handle to a new type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Converts a method handle to a new type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.378063",
+    "updatedDate": "2026-03-08T21:40:22.378064",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink.linker/LinkerServices/asTypeLosslessReturn": {
+    "id": "jdk.dynalink.linker.LinkerServices.asTypeLosslessReturn",
+    "name": "asTypeLosslessReturn",
+    "type": "method",
+    "parent": "LinkerServices",
+    "signatures": [
+      "public default MethodHandle asTypeLosslessReturn(MethodHandle handle, MethodType fromType)"
+    ],
+    "signature_hash": "fd223109232007e632252bf7fca5c46facd520ae1c2b0b85764552f02f019c2d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/linker/LinkerServices.html",
+    "parameters": [
+      {
+        "name": "handle",
+        "type": "MethodHandle",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fromType",
+        "type": "MethodType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default MethodHandle",
+    "exceptions": [],
+    "description": "Similar toasType(MethodHandle, MethodType)except it treats\nreturn value type conversion specially.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar toasType(MethodHandle, MethodType)except it treats\nreturn value type conversion specially.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.377809",
+    "updatedDate": "2026-03-08T21:40:22.377810",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink.linker/GuardedInvocation/asTypeSafeReturn": {
+    "id": "jdk.dynalink.linker.GuardedInvocation.asTypeSafeReturn",
+    "name": "asTypeSafeReturn",
+    "type": "method",
+    "parent": "GuardedInvocation",
+    "signatures": [
+      "public GuardedInvocation asTypeSafeReturn(LinkerServices linkerServices, MethodType newType)"
+    ],
+    "signature_hash": "b45988a1bc362e72fa80e87d12a99a253231b2e0076305f54546602f602862ec",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/linker/GuardedInvocation.html",
+    "parameters": [
+      {
+        "name": "linkerServices",
+        "type": "LinkerServices",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "newType",
+        "type": "MethodType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "GuardedInvocation",
+    "exceptions": [],
+    "description": "Changes the type of the invocation, as ifLinkerServices.asTypeLosslessReturn(MethodHandle, MethodType)was\napplied to its invocation andLinkerServices.asType(MethodHandle, MethodType)applied to its\nguard, if it has one (with return type changed to boolean, and parameter\ncount potentially truncated for the guard).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Changes the type of the invocation, as ifLinkerServices.asTypeLosslessReturn(MethodHandle, MethodType)was\napplied to its invocation andLinkerServices.asType(MethodHandle, MethodType)applied to its\ngua...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:22.377567",
+    "updatedDate": "2026-03-08T21:40:22.377568",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

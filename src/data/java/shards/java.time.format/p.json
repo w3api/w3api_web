@@ -1,0 +1,517 @@
+{
+  "java.time.format/DateTimeFormatterBuilder/padNext": {
+    "id": "java.time.format.DateTimeFormatterBuilder.padNext",
+    "name": "padNext",
+    "type": "method",
+    "parent": "DateTimeFormatterBuilder",
+    "signatures": [
+      "public DateTimeFormatterBuilder padNext(int padWidth)",
+      "public DateTimeFormatterBuilder padNext(int padWidth, char padChar)"
+    ],
+    "signature_hash": "528c6b440c801e88f257fc1f8029b8fcdbe9ecb38cc7f649407f2f52863ff85b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
+    "parameters": [
+      {
+        "name": "padWidth",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "padChar",
+        "has_default": false,
+        "default_value": null,
+        "type": "char",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "DateTimeFormatterBuilder",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Causes the next added printer/parser to pad to a fixed width using a space.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Causes the next added printer/parser to pad to a fixed width using a space.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.322368",
+    "updatedDate": "2026-03-08T21:40:21.322369",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.format/DateTimeFormatter/parse": {
+    "id": "java.time.format.DateTimeFormatter.parse",
+    "name": "parse",
+    "type": "method",
+    "parent": "DateTimeFormatter",
+    "signatures": [
+      "public TemporalAccessor parse(CharSequence text)",
+      "public TemporalAccessor parse(CharSequence text, ParsePosition position)",
+      "public <T> T parse(CharSequence text, TemporalQuery<T> query)"
+    ],
+    "signature_hash": "96455fc4bc291ee78540e36ed1b458c67825783fd6d72af8c07493a5af43adcb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatter.html",
+    "parameters": [
+      {
+        "name": "text",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharSequence",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "position",
+        "has_default": false,
+        "default_value": null,
+        "type": "ParsePosition",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "query",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalQuery<T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "TemporalAccessor",
+    "exceptions": [],
+    "description": "Fully parses the text producing a temporal object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Fully parses the text producing a temporal object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.321391",
+    "updatedDate": "2026-03-08T21:40:21.321392",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.format/DateTimeFormatter/parseBest": {
+    "id": "java.time.format.DateTimeFormatter.parseBest",
+    "name": "parseBest",
+    "type": "method",
+    "parent": "DateTimeFormatter",
+    "signatures": [
+      "public TemporalAccessor parseBest(CharSequence text, TemporalQuery<?>... queries)"
+    ],
+    "signature_hash": "74c21f79a1ec6f92e4eb61b18c98b29875276402a548817ef9f6b1427c10a8ce",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatter.html",
+    "parameters": [
+      {
+        "name": "text",
+        "type": "CharSequence",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "queries",
+        "type": "TemporalQuery<?>...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "TemporalAccessor",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "DateTimeParseException",
+        "package": "java.time.format"
+      }
+    ],
+    "description": "Fully parses the text producing an object of one of the specified types.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Fully parses the text producing an object of one of the specified types.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.321409",
+    "updatedDate": "2026-03-08T21:40:21.321410",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.format/DateTimeFormatterBuilder/parseCaseInsensitive": {
+    "id": "java.time.format.DateTimeFormatterBuilder.parseCaseInsensitive",
+    "name": "parseCaseInsensitive",
+    "type": "method",
+    "parent": "DateTimeFormatterBuilder",
+    "signatures": [
+      "public DateTimeFormatterBuilder parseCaseInsensitive()"
+    ],
+    "signature_hash": "0434672477eb3374f1583f369c7963ed4deae7062eb06916d1f287be789e711a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
+    "parameters": [],
+    "return_type": "DateTimeFormatterBuilder",
+    "exceptions": [],
+    "description": "Changes the parse style to be case insensitive for the remainder of the formatter.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Changes the parse style to be case insensitive for the remainder of the formatter.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.322382",
+    "updatedDate": "2026-03-08T21:40:21.322383",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.format/DateTimeFormatterBuilder/parseCaseSensitive": {
+    "id": "java.time.format.DateTimeFormatterBuilder.parseCaseSensitive",
+    "name": "parseCaseSensitive",
+    "type": "method",
+    "parent": "DateTimeFormatterBuilder",
+    "signatures": [
+      "public DateTimeFormatterBuilder parseCaseSensitive()"
+    ],
+    "signature_hash": "d849b80403bebfe612e145dad1e173905c8b1c95003a9dd18966ffb4befd1a77",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
+    "parameters": [],
+    "return_type": "DateTimeFormatterBuilder",
+    "exceptions": [],
+    "description": "Changes the parse style to be case sensitive for the remainder of the formatter.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Changes the parse style to be case sensitive for the remainder of the formatter.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.322396",
+    "updatedDate": "2026-03-08T21:40:21.322396",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.format/DateTimeFormatterBuilder/parseDefaulting": {
+    "id": "java.time.format.DateTimeFormatterBuilder.parseDefaulting",
+    "name": "parseDefaulting",
+    "type": "method",
+    "parent": "DateTimeFormatterBuilder",
+    "signatures": [
+      "public DateTimeFormatterBuilder parseDefaulting(TemporalField field, long value)"
+    ],
+    "signature_hash": "08107112f3a74f00547131101064f0d9261f820b66986ba3d9d0427f198bdf5d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
+    "parameters": [
+      {
+        "name": "field",
+        "type": "TemporalField",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "DateTimeFormatterBuilder",
+    "exceptions": [],
+    "description": "Appends a default value for a field to the formatter for use in parsing.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Appends a default value for a field to the formatter for use in parsing.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.322414",
+    "updatedDate": "2026-03-08T21:40:21.322415",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.format/DateTimeFormatterBuilder/parseLenient": {
+    "id": "java.time.format.DateTimeFormatterBuilder.parseLenient",
+    "name": "parseLenient",
+    "type": "method",
+    "parent": "DateTimeFormatterBuilder",
+    "signatures": [
+      "public DateTimeFormatterBuilder parseLenient()"
+    ],
+    "signature_hash": "1206a5571f3e77a70837415f7e78e74a5315320f7cde367670ee4f04b16401ba",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
+    "parameters": [],
+    "return_type": "DateTimeFormatterBuilder",
+    "exceptions": [],
+    "description": "Changes the parse style to be lenient for the remainder of the formatter.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Changes the parse style to be lenient for the remainder of the formatter.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.322427",
+    "updatedDate": "2026-03-08T21:40:21.322428",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.format/DateTimeFormatterBuilder/parseStrict": {
+    "id": "java.time.format.DateTimeFormatterBuilder.parseStrict",
+    "name": "parseStrict",
+    "type": "method",
+    "parent": "DateTimeFormatterBuilder",
+    "signatures": [
+      "public DateTimeFormatterBuilder parseStrict()"
+    ],
+    "signature_hash": "312c483254310d1b77a08c476d03dfef5a1932112e75aa35b34e1734fa107193",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
+    "parameters": [],
+    "return_type": "DateTimeFormatterBuilder",
+    "exceptions": [],
+    "description": "Changes the parse style to be strict for the remainder of the formatter.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Changes the parse style to be strict for the remainder of the formatter.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.322441",
+    "updatedDate": "2026-03-08T21:40:21.322442",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.format/DateTimeFormatter/parseUnresolved": {
+    "id": "java.time.format.DateTimeFormatter.parseUnresolved",
+    "name": "parseUnresolved",
+    "type": "method",
+    "parent": "DateTimeFormatter",
+    "signatures": [
+      "public TemporalAccessor parseUnresolved(CharSequence text, ParsePosition position)"
+    ],
+    "signature_hash": "c57400cc5c501cf101f03cf0c921fd45412a182ef02241b4d2ec3b3189006793",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatter.html",
+    "parameters": [
+      {
+        "name": "text",
+        "type": "CharSequence",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "position",
+        "type": "ParsePosition",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "TemporalAccessor",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Parses the text using this formatter, without resolving the result, intended\nfor advanced use cases.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parses the text using this formatter, without resolving the result, intended\nfor advanced use cases.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.321451",
+    "updatedDate": "2026-03-08T21:40:21.321452",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.format/DateTimeFormatter/parsedExcessDays": {
+    "id": "java.time.format.DateTimeFormatter.parsedExcessDays",
+    "name": "parsedExcessDays",
+    "type": "method",
+    "parent": "DateTimeFormatter",
+    "signatures": [
+      "public static final TemporalQuery<Period> parsedExcessDays()"
+    ],
+    "signature_hash": "65c657156dea9cbf9631537872c074ae8f7c62e84f2c00a3d7c7806c416faef6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatter.html",
+    "parameters": [],
+    "return_type": "static final TemporalQuery<Period>",
+    "exceptions": [],
+    "description": "A query that provides access to the excess days that were parsed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A query that provides access to the excess days that were parsed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.321421",
+    "updatedDate": "2026-03-08T21:40:21.321422",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time.format/DateTimeFormatter/parsedLeapSecond": {
+    "id": "java.time.format.DateTimeFormatter.parsedLeapSecond",
+    "name": "parsedLeapSecond",
+    "type": "method",
+    "parent": "DateTimeFormatter",
+    "signatures": [
+      "public static final TemporalQuery<Boolean> parsedLeapSecond()"
+    ],
+    "signature_hash": "99ec30994e2e56143d6e5f48ba21a342834abe5896386451ad3c168557dd1fa1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatter.html",
+    "parameters": [],
+    "return_type": "static final TemporalQuery<Boolean>",
+    "exceptions": [],
+    "description": "A query that provides access to whether a leap-second was parsed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A query that provides access to whether a leap-second was parsed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.321433",
+    "updatedDate": "2026-03-08T21:40:21.321434",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

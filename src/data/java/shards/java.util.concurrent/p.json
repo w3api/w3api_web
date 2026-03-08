@@ -1,0 +1,3155 @@
+{
+  "java.util.concurrent/Phaser": {
+    "id": "java.util.concurrent.Phaser",
+    "name": "Phaser",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Phaser.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.442242",
+    "updatedDate": "2026-03-08T21:40:21.442242",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "Phaser"
+    ],
+    "methods": [
+      "arrive",
+      "arriveAndAwaitAdvance",
+      "arriveAndDeregister",
+      "awaitAdvance",
+      "awaitAdvanceInterruptibly",
+      "bulkRegister",
+      "forceTermination",
+      "getArrivedParties",
+      "getParent",
+      "getPhase",
+      "getRegisteredParties",
+      "getRoot",
+      "getUnarrivedParties",
+      "isTerminated",
+      "onAdvance",
+      "register",
+      "toString"
+    ]
+  },
+  "java.util.concurrent/PriorityBlockingQueue<E>": {
+    "id": "java.util.concurrent.PriorityBlockingQueue<E>",
+    "name": "PriorityBlockingQueue<E>",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.437245",
+    "updatedDate": "2026-03-08T21:40:21.437246",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "PriorityBlockingQueue"
+    ],
+    "methods": [
+      "add",
+      "clear",
+      "comparator",
+      "contains",
+      "drainTo",
+      "forEach",
+      "iterator",
+      "offer",
+      "peek",
+      "poll",
+      "put",
+      "remainingCapacity",
+      "remove",
+      "removeAll",
+      "removeIf",
+      "retainAll",
+      "size",
+      "spliterator",
+      "take",
+      "toArray"
+    ]
+  },
+  "java.util.concurrent/Phaser/Phaser": {
+    "id": "java.util.concurrent.Phaser.Phaser",
+    "name": "Phaser",
+    "type": "constructor",
+    "parent": "Phaser",
+    "signatures": [
+      "public Phaser()",
+      "public Phaser(int parties)",
+      "public Phaser(Phaser parent)",
+      "public Phaser(Phaser parent, int parties)"
+    ],
+    "signature_hash": "3643b4ee508f1702d33d02cce0336445679a159aefab46b45b2170de564c6a6e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Phaser.html",
+    "parameters": [
+      {
+        "name": "parties",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "parent",
+        "has_default": false,
+        "default_value": null,
+        "type": "Phaser",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates a new phaser with no initially registered parties, no\nparent, and initial phase number 0.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new phaser with no initially registered parties, no\nparent, and initial phase number 0.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.442286",
+    "updatedDate": "2026-03-08T21:40:21.442287",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/PriorityBlockingQueue<E>/PriorityBlockingQueue": {
+    "id": "java.util.concurrent.PriorityBlockingQueue<E>.PriorityBlockingQueue",
+    "name": "PriorityBlockingQueue",
+    "type": "constructor",
+    "parent": "PriorityBlockingQueue<E>",
+    "signatures": [
+      "public PriorityBlockingQueue()",
+      "public PriorityBlockingQueue(int initialCapacity)",
+      "public PriorityBlockingQueue(int initialCapacity, Comparator<? super E> comparator)",
+      "public PriorityBlockingQueue(Collection<? extends E> c)"
+    ],
+    "signature_hash": "540fdece49e502460a2d6bc8e903adf408ba9aebef4bd4a11f76d42bfc5de989",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html",
+    "parameters": [
+      {
+        "name": "initialCapacity",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "comparator",
+        "has_default": false,
+        "default_value": null,
+        "type": "Comparator<? super E>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "c",
+        "has_default": false,
+        "default_value": null,
+        "type": "Collection<? extends E>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates aPriorityBlockingQueuewith the default\ninitial capacity (11) that orders its elements according to\ntheirnatural ordering.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates aPriorityBlockingQueuewith the default\ninitial capacity (11) that orders its elements according to\ntheirnatural ordering.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.437289",
+    "updatedDate": "2026-03-08T21:40:21.437290",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentLinkedQueue<E>/peek": {
+    "id": "java.util.concurrent.ConcurrentLinkedQueue<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "ConcurrentLinkedQueue<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.434400",
+    "updatedDate": "2026-03-08T21:40:21.434400",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentLinkedDeque<E>/peek": {
+    "id": "java.util.concurrent.ConcurrentLinkedDeque<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "ConcurrentLinkedDeque<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the head of the queue represented by\nthis deque (in other words, the first element of this deque), or\nreturnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the head of the queue represented by\nthis deque (in other words, the first element of this deque), or\nreturnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435270",
+    "updatedDate": "2026-03-08T21:40:21.435271",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingQueue<E>/peek": {
+    "id": "java.util.concurrent.LinkedBlockingQueue<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "LinkedBlockingQueue<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435945",
+    "updatedDate": "2026-03-08T21:40:21.435946",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ArrayBlockingQueue<E>/peek": {
+    "id": "java.util.concurrent.ArrayBlockingQueue<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "ArrayBlockingQueue<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.436453",
+    "updatedDate": "2026-03-08T21:40:21.436454",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/SynchronousQueue<E>/peek": {
+    "id": "java.util.concurrent.SynchronousQueue<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "SynchronousQueue<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/SynchronousQueue.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Always returnsnull.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Always returnsnull.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.436976",
+    "updatedDate": "2026-03-08T21:40:21.436976",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/PriorityBlockingQueue<E>/peek": {
+    "id": "java.util.concurrent.PriorityBlockingQueue<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "PriorityBlockingQueue<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.437519",
+    "updatedDate": "2026-03-08T21:40:21.437519",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/DelayQueue<E/peek": {
+    "id": "java.util.concurrent.DelayQueue<E.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "DelayQueue<E",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/DelayQueue.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, theheadof this\nqueue, or returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, theheadof this\nqueue, or returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.438032",
+    "updatedDate": "2026-03-08T21:40:21.438033",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedTransferQueue<E>/peek": {
+    "id": "java.util.concurrent.LinkedTransferQueue<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "LinkedTransferQueue<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.438757",
+    "updatedDate": "2026-03-08T21:40:21.438758",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/peek": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the head of the queue represented by\nthis deque (in other words, the first element of this deque), or\nreturnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the head of the queue represented by\nthis deque (in other words, the first element of this deque), or\nreturnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.439986",
+    "updatedDate": "2026-03-08T21:40:21.439987",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentLinkedDeque<E>/peekFirst": {
+    "id": "java.util.concurrent.ConcurrentLinkedDeque<E>.peekFirst",
+    "name": "peekFirst",
+    "type": "method",
+    "parent": "ConcurrentLinkedDeque<E>",
+    "signatures": [
+      "public E peekFirst()"
+    ],
+    "signature_hash": "33f3d19f43dcae273802754fd9d7430a2e6b90dd2651c6d0f76586a90bdcf2c9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the first element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the first element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435289",
+    "updatedDate": "2026-03-08T21:40:21.435290",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/peekFirst": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.peekFirst",
+    "name": "peekFirst",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public E peekFirst()"
+    ],
+    "signature_hash": "33f3d19f43dcae273802754fd9d7430a2e6b90dd2651c6d0f76586a90bdcf2c9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the first element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the first element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.440012",
+    "updatedDate": "2026-03-08T21:40:21.440013",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentLinkedDeque<E>/peekLast": {
+    "id": "java.util.concurrent.ConcurrentLinkedDeque<E>.peekLast",
+    "name": "peekLast",
+    "type": "method",
+    "parent": "ConcurrentLinkedDeque<E>",
+    "signatures": [
+      "public E peekLast()"
+    ],
+    "signature_hash": "a439f82d75f9883fcb7bd77d4866fb84c5302bb11d8374804a4ed5ca613afe03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the last element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the last element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435310",
+    "updatedDate": "2026-03-08T21:40:21.435311",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/peekLast": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.peekLast",
+    "name": "peekLast",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public E peekLast()"
+    ],
+    "signature_hash": "a439f82d75f9883fcb7bd77d4866fb84c5302bb11d8374804a4ed5ca613afe03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the last element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the last element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.440039",
+    "updatedDate": "2026-03-08T21:40:21.440039",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ForkJoinTask<V>/peekNextLocalTask": {
+    "id": "java.util.concurrent.ForkJoinTask<V>.peekNextLocalTask",
+    "name": "peekNextLocalTask",
+    "type": "method",
+    "parent": "ForkJoinTask<V>",
+    "signatures": [
+      "public protected static ForkJoinTask<?> peekNextLocalTask()"
+    ],
+    "signature_hash": "3819857157171264214b44d68d1eea44b42b873bbdf15e46481656b5686f288c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ForkJoinTask.html",
+    "parameters": [],
+    "return_type": "protected static ForkJoinTask<?>",
+    "exceptions": [],
+    "description": "Returns, but does not unschedule or execute, a task queued by\nthe current thread but not yet executed, if one is immediately\navailable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns, but does not unschedule or execute, a task queued by\nthe current thread but not yet executed, if one is immediately\navailable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.433923",
+    "updatedDate": "2026-03-08T21:40:21.433924",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ExecutorCompletionService<V>/poll": {
+    "id": "java.util.concurrent.ExecutorCompletionService<V>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "ExecutorCompletionService<V>",
+    "signatures": [
+      "public Future<V> poll()",
+      "public Future<V> poll(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "0d0befdddbfc5b841a25156ccd311251ba2b0fef3f279b116a74bda7b5b9d897",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Future<V>",
+    "exceptions": [],
+    "description": "Retrieves and removes the Future representing the next\ncompleted task, ornullif none are present.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the Future representing the next\ncompleted task, ornullif none are present.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.433142",
+    "updatedDate": "2026-03-08T21:40:21.433143",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentLinkedQueue<E>/poll": {
+    "id": "java.util.concurrent.ConcurrentLinkedQueue<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "ConcurrentLinkedQueue<E>",
+    "signatures": [
+      "public E poll()"
+    ],
+    "signature_hash": "8e3b51c5fbce8943430f31d6a8467f6de395261ad3fef6114e6b65bac21a05ca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.434417",
+    "updatedDate": "2026-03-08T21:40:21.434417",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentLinkedDeque<E>/poll": {
+    "id": "java.util.concurrent.ConcurrentLinkedDeque<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "ConcurrentLinkedDeque<E>",
+    "signatures": [
+      "public E poll()"
+    ],
+    "signature_hash": "8e3b51c5fbce8943430f31d6a8467f6de395261ad3fef6114e6b65bac21a05ca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the head of the queue represented by this deque\n(in other words, the first element of this deque), or returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head of the queue represented by this deque\n(in other words, the first element of this deque), or returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435329",
+    "updatedDate": "2026-03-08T21:40:21.435330",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingQueue<E>/poll": {
+    "id": "java.util.concurrent.LinkedBlockingQueue<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "LinkedBlockingQueue<E>",
+    "signatures": [
+      "public E poll()",
+      "public E poll(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "8cec8904f2e3f5d4e8555f98f0f45da279c838f108e480e3e72ce26390bf4477",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435972",
+    "updatedDate": "2026-03-08T21:40:21.435973",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ArrayBlockingQueue<E>/poll": {
+    "id": "java.util.concurrent.ArrayBlockingQueue<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "ArrayBlockingQueue<E>",
+    "signatures": [
+      "public E poll()",
+      "public E poll(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "8cec8904f2e3f5d4e8555f98f0f45da279c838f108e480e3e72ce26390bf4477",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.436482",
+    "updatedDate": "2026-03-08T21:40:21.436483",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/SynchronousQueue<E>/poll": {
+    "id": "java.util.concurrent.SynchronousQueue<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "SynchronousQueue<E>",
+    "signatures": [
+      "public E poll()",
+      "public E poll(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "8cec8904f2e3f5d4e8555f98f0f45da279c838f108e480e3e72ce26390bf4477",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/SynchronousQueue.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Retrieves and removes the head of this queue, if another thread\nis currently making an element available.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head of this queue, if another thread\nis currently making an element available.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.437004",
+    "updatedDate": "2026-03-08T21:40:21.437005",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/PriorityBlockingQueue<E>/poll": {
+    "id": "java.util.concurrent.PriorityBlockingQueue<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "PriorityBlockingQueue<E>",
+    "signatures": [
+      "public E poll()",
+      "public E poll(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "8cec8904f2e3f5d4e8555f98f0f45da279c838f108e480e3e72ce26390bf4477",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.437547",
+    "updatedDate": "2026-03-08T21:40:21.437549",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/DelayQueue<E/poll": {
+    "id": "java.util.concurrent.DelayQueue<E.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "DelayQueue<E",
+    "signatures": [
+      "public E poll()",
+      "public E poll(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "8cec8904f2e3f5d4e8555f98f0f45da279c838f108e480e3e72ce26390bf4477",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/DelayQueue.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes theexpired headof\nthis queue, or returnsnullif this queue has noexpired elements.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes theexpired headof\nthis queue, or returnsnullif this queue has noexpired elements.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.438065",
+    "updatedDate": "2026-03-08T21:40:21.438067",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedTransferQueue<E>/poll": {
+    "id": "java.util.concurrent.LinkedTransferQueue<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "LinkedTransferQueue<E>",
+    "signatures": [
+      "public E poll()",
+      "public E poll(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "8cec8904f2e3f5d4e8555f98f0f45da279c838f108e480e3e72ce26390bf4477",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.438789",
+    "updatedDate": "2026-03-08T21:40:21.438790",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/poll": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public E poll()",
+      "public E poll(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "8cec8904f2e3f5d4e8555f98f0f45da279c838f108e480e3e72ce26390bf4477",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the head of the queue represented by this deque\n(in other words, the first element of this deque), or returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head of the queue represented by this deque\n(in other words, the first element of this deque), or returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.440072",
+    "updatedDate": "2026-03-08T21:40:21.440073",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/CompletionService<V>/poll": {
+    "id": "java.util.concurrent.CompletionService<V>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "CompletionService<V>",
+    "signatures": [
+      "public Future<V> poll()",
+      "public Future<V> poll(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "0d0befdddbfc5b841a25156ccd311251ba2b0fef3f279b116a74bda7b5b9d897",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/CompletionService.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Future<V>",
+    "exceptions": [],
+    "description": "Retrieves and removes the Future representing the next\ncompleted task, ornullif none are present.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the Future representing the next\ncompleted task, ornullif none are present.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.455175",
+    "updatedDate": "2026-03-08T21:40:21.455176",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentLinkedDeque<E>/pollFirst": {
+    "id": "java.util.concurrent.ConcurrentLinkedDeque<E>.pollFirst",
+    "name": "pollFirst",
+    "type": "method",
+    "parent": "ConcurrentLinkedDeque<E>",
+    "signatures": [
+      "public E pollFirst()"
+    ],
+    "signature_hash": "980ad1704fe2a518b75b7d324c63f135b9870fbdb9adc0ca2f3a26ebbc123f03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the first element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the first element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435347",
+    "updatedDate": "2026-03-08T21:40:21.435348",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/pollFirst": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.pollFirst",
+    "name": "pollFirst",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public E pollFirst()",
+      "public E pollFirst(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "68be620fdeb5aa127b882d339f9fa4e4f5c3d023841ec15c26205ee93cc37174",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the first element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the first element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.440106",
+    "updatedDate": "2026-03-08T21:40:21.440107",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentSkipListSet<E>/pollFirst": {
+    "id": "java.util.concurrent.ConcurrentSkipListSet<E>.pollFirst",
+    "name": "pollFirst",
+    "type": "method",
+    "parent": "ConcurrentSkipListSet<E>",
+    "signatures": [
+      "public E pollFirst()"
+    ],
+    "signature_hash": "980ad1704fe2a518b75b7d324c63f135b9870fbdb9adc0ca2f3a26ebbc123f03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the first (lowest) element,\nor returnsnullif this set is empty (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the first (lowest) element,\nor returnsnullif this set is empty (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.447691",
+    "updatedDate": "2026-03-08T21:40:21.447692",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentSkipListMap<K,V>/pollFirstEntry": {
+    "id": "java.util.concurrent.ConcurrentSkipListMap<K,V>.pollFirstEntry",
+    "name": "pollFirstEntry",
+    "type": "method",
+    "parent": "ConcurrentSkipListMap<K,V>",
+    "signatures": [
+      "public Map.Entry<K, V> pollFirstEntry()"
+    ],
+    "signature_hash": "dc680a771243e891c5fa4b33b04839def571a3c8644c776d62bea355ae8d7fa5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html",
+    "parameters": [],
+    "return_type": "Map.Entry<K, V>",
+    "exceptions": [],
+    "description": "Removes and returns a key-value mapping associated with\nthe least key in this map, ornullif the map is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes and returns a key-value mapping associated with\nthe least key in this map, ornullif the map is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.446455",
+    "updatedDate": "2026-03-08T21:40:21.446457",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentLinkedDeque<E>/pollLast": {
+    "id": "java.util.concurrent.ConcurrentLinkedDeque<E>.pollLast",
+    "name": "pollLast",
+    "type": "method",
+    "parent": "ConcurrentLinkedDeque<E>",
+    "signatures": [
+      "public E pollLast()"
+    ],
+    "signature_hash": "246d1ebe71fbdc82db9ec761a92ba3e4973b2b50c65e801fbf163dc47259d0b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the last element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the last element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435365",
+    "updatedDate": "2026-03-08T21:40:21.435366",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/pollLast": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.pollLast",
+    "name": "pollLast",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public E pollLast()",
+      "public E pollLast(long timeout, TimeUnit unit)"
+    ],
+    "signature_hash": "0d2858fd4f0b00758e409991fb9a6769fc89301f3f8b2f62fa7e2d4e32d936e1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [
+      {
+        "name": "timeout",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TimeUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the last element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the last element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.440141",
+    "updatedDate": "2026-03-08T21:40:21.440142",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentSkipListSet<E>/pollLast": {
+    "id": "java.util.concurrent.ConcurrentSkipListSet<E>.pollLast",
+    "name": "pollLast",
+    "type": "method",
+    "parent": "ConcurrentSkipListSet<E>",
+    "signatures": [
+      "public E pollLast()"
+    ],
+    "signature_hash": "246d1ebe71fbdc82db9ec761a92ba3e4973b2b50c65e801fbf163dc47259d0b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the last (highest) element,\nor returnsnullif this set is empty (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the last (highest) element,\nor returnsnullif this set is empty (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.447724",
+    "updatedDate": "2026-03-08T21:40:21.447725",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentSkipListMap<K,V>/pollLastEntry": {
+    "id": "java.util.concurrent.ConcurrentSkipListMap<K,V>.pollLastEntry",
+    "name": "pollLastEntry",
+    "type": "method",
+    "parent": "ConcurrentSkipListMap<K,V>",
+    "signatures": [
+      "public Map.Entry<K, V> pollLastEntry()"
+    ],
+    "signature_hash": "9e4aa4f8794eb7c9223eb838dfb0d21586c6272eec48f263b1c6f412c6f74a40",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html",
+    "parameters": [],
+    "return_type": "Map.Entry<K, V>",
+    "exceptions": [],
+    "description": "Removes and returns a key-value mapping associated with\nthe greatest key in this map, ornullif the map is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes and returns a key-value mapping associated with\nthe greatest key in this map, ornullif the map is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.446489",
+    "updatedDate": "2026-03-08T21:40:21.446489",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ForkJoinTask<V>/pollNextLocalTask": {
+    "id": "java.util.concurrent.ForkJoinTask<V>.pollNextLocalTask",
+    "name": "pollNextLocalTask",
+    "type": "method",
+    "parent": "ForkJoinTask<V>",
+    "signatures": [
+      "public protected static ForkJoinTask<?> pollNextLocalTask()"
+    ],
+    "signature_hash": "2b1209f31d22c6c311ae6b816ea77221be839873560219af0eca151ff3b84187",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ForkJoinTask.html",
+    "parameters": [],
+    "return_type": "protected static ForkJoinTask<?>",
+    "exceptions": [],
+    "description": "Unschedules and returns, without executing, the next task\nqueued by the current thread but not yet executed, if the\ncurrent thread is operating in a ForkJoinPool.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Unschedules and returns, without executing, the next task\nqueued by the current thread but not yet executed, if the\ncurrent thread is operating in a ForkJoinPool.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.433941",
+    "updatedDate": "2026-03-08T21:40:21.433942",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ForkJoinTask<V>/pollSubmission": {
+    "id": "java.util.concurrent.ForkJoinTask<V>.pollSubmission",
+    "name": "pollSubmission",
+    "type": "method",
+    "parent": "ForkJoinTask<V>",
+    "signatures": [
+      "public protected static ForkJoinTask<?> pollSubmission()"
+    ],
+    "signature_hash": "3589d642fcb33f0f0b15cdf9de056b46dfd8ab45109753d6acc6152d35315574",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ForkJoinTask.html",
+    "parameters": [],
+    "return_type": "protected static ForkJoinTask<?>",
+    "exceptions": [],
+    "description": "If the current thread is operating in a ForkJoinPool,\nunschedules and returns, without executing, a task externally\nsubmitted to the pool, if one is available.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the current thread is operating in a ForkJoinPool,\nunschedules and returns, without executing, a task externally\nsubmitted to the pool, if one is available.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.433959",
+    "updatedDate": "2026-03-08T21:40:21.433960",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ForkJoinTask<V>/pollTask": {
+    "id": "java.util.concurrent.ForkJoinTask<V>.pollTask",
+    "name": "pollTask",
+    "type": "method",
+    "parent": "ForkJoinTask<V>",
+    "signatures": [
+      "public protected static ForkJoinTask<?> pollTask()"
+    ],
+    "signature_hash": "ed96912403747f0b3c1df982b414ba2482930be1b0d3f4eb0429f8fcc6a28aca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ForkJoinTask.html",
+    "parameters": [],
+    "return_type": "protected static ForkJoinTask<?>",
+    "exceptions": [],
+    "description": "If the current thread is operating in a ForkJoinPool,\nunschedules and returns, without executing, the next task\nqueued by the current thread but not yet executed, if one is\navailable, or if not available, a task that was forked by some\nother thread, if available.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the current thread is operating in a ForkJoinPool,\nunschedules and returns, without executing, the next task\nqueued by the current thread but not yet executed, if one is\navailable, or if not availa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.433980",
+    "updatedDate": "2026-03-08T21:40:21.433981",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentLinkedDeque<E>/pop": {
+    "id": "java.util.concurrent.ConcurrentLinkedDeque<E>.pop",
+    "name": "pop",
+    "type": "method",
+    "parent": "ConcurrentLinkedDeque<E>",
+    "signatures": [
+      "public E pop()"
+    ],
+    "signature_hash": "a1709c38970ef1e5657757b4c84692b4f6535434695d086ff89e95b505f0d4b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "NoSuchElementException",
+        "package": "java.util"
+      }
+    ],
+    "description": "Pops an element from the stack represented by this deque.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pops an element from the stack represented by this deque.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435384",
+    "updatedDate": "2026-03-08T21:40:21.435385",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/pop": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.pop",
+    "name": "pop",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public E pop()"
+    ],
+    "signature_hash": "a1709c38970ef1e5657757b4c84692b4f6535434695d086ff89e95b505f0d4b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "NoSuchElementException",
+        "package": "java.util"
+      }
+    ],
+    "description": "Pops an element from the stack represented by this deque.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pops an element from the stack represented by this deque.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.440168",
+    "updatedDate": "2026-03-08T21:40:21.440169",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ThreadPoolExecutor/prestartAllCoreThreads": {
+    "id": "java.util.concurrent.ThreadPoolExecutor.prestartAllCoreThreads",
+    "name": "prestartAllCoreThreads",
+    "type": "method",
+    "parent": "ThreadPoolExecutor",
+    "signatures": [
+      "public int prestartAllCoreThreads()"
+    ],
+    "signature_hash": "045c269a0b0e5fd605e2add179f497bd343141d982292959e3b76d7e2aaf19e4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Starts all core threads, causing them to idly wait for work.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Starts all core threads, causing them to idly wait for work.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.431851",
+    "updatedDate": "2026-03-08T21:40:21.431852",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ThreadPoolExecutor/prestartCoreThread": {
+    "id": "java.util.concurrent.ThreadPoolExecutor.prestartCoreThread",
+    "name": "prestartCoreThread",
+    "type": "method",
+    "parent": "ThreadPoolExecutor",
+    "signatures": [
+      "public boolean prestartCoreThread()"
+    ],
+    "signature_hash": "5837e168aef3476917ec9a4045a13f2437b74d3853ae0e3d1c32647efd1b9dcc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Starts a core thread, causing it to idly wait for work.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Starts a core thread, causing it to idly wait for work.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.431864",
+    "updatedDate": "2026-03-08T21:40:21.431865",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/Executors/privilegedCallable": {
+    "id": "java.util.concurrent.Executors.privilegedCallable",
+    "name": "privilegedCallable",
+    "type": "method",
+    "parent": "Executors",
+    "signatures": [
+      "public static<T> Callable<T> privilegedCallable(Callable<T> callable)"
+    ],
+    "signature_hash": "4b52e5e1f004893cbdb1f7bd47c9288e4044a63c1e19b98af43ff4289a7df61f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Executors.html",
+    "parameters": [
+      {
+        "name": "callable",
+        "type": "Callable<T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static<T> Callable<T>",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Deprecated, for removal: This API element is subject to removal in a future version.This method originally returned aCallableobject\n      that when called, executed the givencallableunder the\n      current access control context.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated, for removal: This API element is subject to removal in a future version.This method originally returned aCallableobject\n      that when called, executed the givencallableunder the\n      cu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.432718",
+    "updatedDate": "2026-03-08T21:40:21.432719",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/Executors/privilegedCallableUsingCurrentClassLoader": {
+    "id": "java.util.concurrent.Executors.privilegedCallableUsingCurrentClassLoader",
+    "name": "privilegedCallableUsingCurrentClassLoader",
+    "type": "method",
+    "parent": "Executors",
+    "signatures": [
+      "public static<T> Callable<T> privilegedCallableUsingCurrentClassLoader(Callable<T> callable)"
+    ],
+    "signature_hash": "c6a29af552cdcdb965298eebb5901e7ffce98fbf72f1c521ed384c722599db7c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Executors.html",
+    "parameters": [
+      {
+        "name": "callable",
+        "type": "Callable<T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static<T> Callable<T>",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Deprecated, for removal: This API element is subject to removal in a future version.This method originally returned aCallableobject\n      that when called, executed the givencallableunder the\n      current access control context, with the current context class\n      loader as the context class loader.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated, for removal: This API element is subject to removal in a future version.This method originally returned aCallableobject\n      that when called, executed the givencallableunder the\n      cu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.432740",
+    "updatedDate": "2026-03-08T21:40:21.432740",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/Executors/privilegedThreadFactory": {
+    "id": "java.util.concurrent.Executors.privilegedThreadFactory",
+    "name": "privilegedThreadFactory",
+    "type": "method",
+    "parent": "Executors",
+    "signatures": [
+      "public static ThreadFactory privilegedThreadFactory()"
+    ],
+    "signature_hash": "cc2b00664b9a5365f9ba3b972cc201272b2dff9fb5ddf7d171fc129458bd7fe7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Executors.html",
+    "parameters": [],
+    "return_type": "static ThreadFactory",
+    "exceptions": [],
+    "description": "Deprecated, for removal: This API element is subject to removal in a future version.This method originally returned a thread factory that\n      created new threads that had the same access control context\n      as the current thread.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated, for removal: This API element is subject to removal in a future version.This method originally returned a thread factory that\n      created new threads that had the same access control con...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.432756",
+    "updatedDate": "2026-03-08T21:40:21.432757",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/CountedCompleter<T>/propagateCompletion": {
+    "id": "java.util.concurrent.CountedCompleter<T>.propagateCompletion",
+    "name": "propagateCompletion",
+    "type": "method",
+    "parent": "CountedCompleter<T>",
+    "signatures": [
+      "public final void propagateCompletion()"
+    ],
+    "signature_hash": "eab6887a3f8adef4702821648a473cb5ad5e93e522f81aff45ee945ffe4fc65f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/CountedCompleter.html",
+    "parameters": [],
+    "return_type": "final void",
+    "exceptions": [],
+    "description": "Equivalent totryComplete()but does not invokeonCompletion(CountedCompleter)along the completion path:\nIf the pending count is nonzero, decrements the count;\notherwise, similarly tries to complete this task's completer, if\none exists, else marks this task as complete.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Equivalent totryComplete()but does not invokeonCompletion(CountedCompleter)along the completion path:\nIf the pending count is nonzero, decrements the count;\notherwise, similarly tries to complete this...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.457745",
+    "updatedDate": "2026-03-08T21:40:21.457746",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ThreadPoolExecutor/purge": {
+    "id": "java.util.concurrent.ThreadPoolExecutor.purge",
+    "name": "purge",
+    "type": "method",
+    "parent": "ThreadPoolExecutor",
+    "signatures": [
+      "public void purge()"
+    ],
+    "signature_hash": "291a0c00d3922748c24e46f7ff8004c98cc8de8fd70cfed9700c90438831f421",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Tries to remove from the work queue allFuturetasks that have been cancelled.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tries to remove from the work queue allFuturetasks that have been cancelled.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.431878",
+    "updatedDate": "2026-03-08T21:40:21.431879",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentLinkedDeque<E>/push": {
+    "id": "java.util.concurrent.ConcurrentLinkedDeque<E>.push",
+    "name": "push",
+    "type": "method",
+    "parent": "ConcurrentLinkedDeque<E>",
+    "signatures": [
+      "public void push(E e)"
+    ],
+    "signature_hash": "7893d9c74b29233739da5d8fe3b2d35c4ba107aafc880f713b91572059a0e3bb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Pushes an element onto the stack represented by this deque (in other\nwords, at the head of this deque) if it is possible to do so\nimmediately without violating capacity restrictions, throwing anIllegalStateExceptionif no space is currently available.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pushes an element onto the stack represented by this deque (in other\nwords, at the head of this deque) if it is possible to do so\nimmediately without violating capacity restrictions, throwing anIllega...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435406",
+    "updatedDate": "2026-03-08T21:40:21.435407",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/push": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.push",
+    "name": "push",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public void push(E e)"
+    ],
+    "signature_hash": "7893d9c74b29233739da5d8fe3b2d35c4ba107aafc880f713b91572059a0e3bb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Pushes an element onto the stack represented by this deque (in other\nwords, at the head of this deque) if it is possible to do so\nimmediately without violating capacity restrictions, throwing anIllegalStateExceptionif no space is currently available.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pushes an element onto the stack represented by this deque (in other\nwords, at the head of this deque) if it is possible to do so\nimmediately without violating capacity restrictions, throwing anIllega...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.440198",
+    "updatedDate": "2026-03-08T21:40:21.440199",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingQueue<E>/put": {
+    "id": "java.util.concurrent.LinkedBlockingQueue<E>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "LinkedBlockingQueue<E>",
+    "signatures": [
+      "public void put(E e)"
+    ],
+    "signature_hash": "f192124ffc210efb708179cb8e3a2a56f07a63e2a51b70cb4c50998c586aaf8a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Inserts the specified element at the tail of this queue, waiting if\nnecessary for space to become available.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the specified element at the tail of this queue, waiting if\nnecessary for space to become available.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.435994",
+    "updatedDate": "2026-03-08T21:40:21.435995",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ArrayBlockingQueue<E>/put": {
+    "id": "java.util.concurrent.ArrayBlockingQueue<E>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "ArrayBlockingQueue<E>",
+    "signatures": [
+      "public void put(E e)"
+    ],
+    "signature_hash": "f192124ffc210efb708179cb8e3a2a56f07a63e2a51b70cb4c50998c586aaf8a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Inserts the specified element at the tail of this queue, waiting\nfor space to become available if the queue is full.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the specified element at the tail of this queue, waiting\nfor space to become available if the queue is full.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.436505",
+    "updatedDate": "2026-03-08T21:40:21.436505",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/SynchronousQueue<E>/put": {
+    "id": "java.util.concurrent.SynchronousQueue<E>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "SynchronousQueue<E>",
+    "signatures": [
+      "public void put(E e)"
+    ],
+    "signature_hash": "f192124ffc210efb708179cb8e3a2a56f07a63e2a51b70cb4c50998c586aaf8a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/SynchronousQueue.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Adds the specified element to this queue, waiting if necessary for\nanother thread to receive it.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds the specified element to this queue, waiting if necessary for\nanother thread to receive it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.437028",
+    "updatedDate": "2026-03-08T21:40:21.437028",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/PriorityBlockingQueue<E>/put": {
+    "id": "java.util.concurrent.PriorityBlockingQueue<E>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "PriorityBlockingQueue<E>",
+    "signatures": [
+      "public void put(E e)"
+    ],
+    "signature_hash": "f192124ffc210efb708179cb8e3a2a56f07a63e2a51b70cb4c50998c586aaf8a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Inserts the specified element into this priority queue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the specified element into this priority queue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.437573",
+    "updatedDate": "2026-03-08T21:40:21.437574",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/DelayQueue<E/put": {
+    "id": "java.util.concurrent.DelayQueue<E.put",
+    "name": "put",
+    "type": "method",
+    "parent": "DelayQueue<E",
+    "signatures": [
+      "public void put(E e)"
+    ],
+    "signature_hash": "f192124ffc210efb708179cb8e3a2a56f07a63e2a51b70cb4c50998c586aaf8a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/DelayQueue.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Inserts the specified element into this delay queue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the specified element into this delay queue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.438092",
+    "updatedDate": "2026-03-08T21:40:21.438093",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedTransferQueue<E>/put": {
+    "id": "java.util.concurrent.LinkedTransferQueue<E>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "LinkedTransferQueue<E>",
+    "signatures": [
+      "public void put(E e)"
+    ],
+    "signature_hash": "f192124ffc210efb708179cb8e3a2a56f07a63e2a51b70cb4c50998c586aaf8a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Inserts the specified element at the tail of this queue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the specified element at the tail of this queue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.438816",
+    "updatedDate": "2026-03-08T21:40:21.438817",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/put": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public void put(E e)"
+    ],
+    "signature_hash": "f192124ffc210efb708179cb8e3a2a56f07a63e2a51b70cb4c50998c586aaf8a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Inserts the specified element into the queue represented by this deque\n(in other words, at the tail of this deque), waiting if necessary for\nspace to become available.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the specified element into the queue represented by this deque\n(in other words, at the tail of this deque), waiting if necessary for\nspace to become available.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.440227",
+    "updatedDate": "2026-03-08T21:40:21.440228",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentHashMap<K,V>/put": {
+    "id": "java.util.concurrent.ConcurrentHashMap<K,V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "ConcurrentHashMap<K,V>",
+    "signatures": [
+      "public V put(K key, V value)"
+    ],
+    "signature_hash": "1872e986b4afc45b25826345adf05e6c986d61445f72dd373c75c28af725bf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Maps the specified key to the specified value in this table.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Maps the specified key to the specified value in this table.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.443956",
+    "updatedDate": "2026-03-08T21:40:21.443957",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentSkipListMap<K,V>/put": {
+    "id": "java.util.concurrent.ConcurrentSkipListMap<K,V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "ConcurrentSkipListMap<K,V>",
+    "signatures": [
+      "public V put(K key, V value)"
+    ],
+    "signature_hash": "1872e986b4afc45b25826345adf05e6c986d61445f72dd373c75c28af725bf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Associates the specified value with the specified key in this map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates the specified value with the specified key in this map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.446525",
+    "updatedDate": "2026-03-08T21:40:21.446525",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentHashMap<K,V>/putAll": {
+    "id": "java.util.concurrent.ConcurrentHashMap<K,V>.putAll",
+    "name": "putAll",
+    "type": "method",
+    "parent": "ConcurrentHashMap<K,V>",
+    "signatures": [
+      "public void putAll(Map<? extends K, ? extends V> m)"
+    ],
+    "signature_hash": "9cd08e1d9cc34dc735163c11e8d09464e64d86756c215e59fe5d0a8b9431f555",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html",
+    "parameters": [
+      {
+        "name": "K",
+        "type": "Map<? extends",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "m",
+        "type": "? extends V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Copies all of the mappings from the specified map to this one.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies all of the mappings from the specified map to this one.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.443991",
+    "updatedDate": "2026-03-08T21:40:21.443992",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/putFirst": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.putFirst",
+    "name": "putFirst",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public void putFirst(E e)"
+    ],
+    "signature_hash": "6e23ae45ebada53174c7fe5036f15b74141b1e9c60cd2254e4749ee1cc34b010",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Inserts the specified element at the front of this deque,\nwaiting if necessary for space to become available.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the specified element at the front of this deque,\nwaiting if necessary for space to become available.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.440256",
+    "updatedDate": "2026-03-08T21:40:21.440257",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentSkipListMap<K,V>/putFirst": {
+    "id": "java.util.concurrent.ConcurrentSkipListMap<K,V>.putFirst",
+    "name": "putFirst",
+    "type": "method",
+    "parent": "ConcurrentSkipListMap<K,V>",
+    "signatures": [
+      "public V putFirst(K k, V v)"
+    ],
+    "signature_hash": "aaaa4315965dddf2a218da23997307e62f8c86a2b2f5893dd848ba8e88a80e5e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html",
+    "parameters": [
+      {
+        "name": "k",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "v",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "ThrowsUnsupportedOperationException.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "ThrowsUnsupportedOperationException.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.446560",
+    "updatedDate": "2026-03-08T21:40:21.446561",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentHashMap<K,V>/putIfAbsent": {
+    "id": "java.util.concurrent.ConcurrentHashMap<K,V>.putIfAbsent",
+    "name": "putIfAbsent",
+    "type": "method",
+    "parent": "ConcurrentHashMap<K,V>",
+    "signatures": [
+      "public V putIfAbsent(K key, V value)"
+    ],
+    "signature_hash": "ee57b131bfb201471d35cb8481b2a551b76393828a80afc5813430cf0570c4de",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "If the specified key is not already associated\nwith a value, associates it with the given value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the specified key is not already associated\nwith a value, associates it with the given value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.444025",
+    "updatedDate": "2026-03-08T21:40:21.444026",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentSkipListMap<K,V>/putIfAbsent": {
+    "id": "java.util.concurrent.ConcurrentSkipListMap<K,V>.putIfAbsent",
+    "name": "putIfAbsent",
+    "type": "method",
+    "parent": "ConcurrentSkipListMap<K,V>",
+    "signatures": [
+      "public V putIfAbsent(K key, V value)"
+    ],
+    "signature_hash": "ee57b131bfb201471d35cb8481b2a551b76393828a80afc5813430cf0570c4de",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "If the specified key is not already associated\nwith a value, associates it with the given value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the specified key is not already associated\nwith a value, associates it with the given value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.446600",
+    "updatedDate": "2026-03-08T21:40:21.446601",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentMap<K,V>/putIfAbsent": {
+    "id": "java.util.concurrent.ConcurrentMap<K,V>.putIfAbsent",
+    "name": "putIfAbsent",
+    "type": "method",
+    "parent": "ConcurrentMap<K,V>",
+    "signatures": [
+      "public V putIfAbsent(K key, V value)"
+    ],
+    "signature_hash": "ee57b131bfb201471d35cb8481b2a551b76393828a80afc5813430cf0570c4de",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "If the specified key is not already associated\nwith a value, associates it with the given value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the specified key is not already associated\nwith a value, associates it with the given value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.456412",
+    "updatedDate": "2026-03-08T21:40:21.456412",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/LinkedBlockingDeque<E>/putLast": {
+    "id": "java.util.concurrent.LinkedBlockingDeque<E>.putLast",
+    "name": "putLast",
+    "type": "method",
+    "parent": "LinkedBlockingDeque<E>",
+    "signatures": [
+      "public void putLast(E e)"
+    ],
+    "signature_hash": "6caac8378c8264455831bd10251091721f8bca9ccc0423be222f6eb31cd1f98d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Inserts the specified element at the end of this deque,\nwaiting if necessary for space to become available.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the specified element at the end of this deque,\nwaiting if necessary for space to become available.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.440285",
+    "updatedDate": "2026-03-08T21:40:21.440286",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent/ConcurrentSkipListMap<K,V>/putLast": {
+    "id": "java.util.concurrent.ConcurrentSkipListMap<K,V>.putLast",
+    "name": "putLast",
+    "type": "method",
+    "parent": "ConcurrentSkipListMap<K,V>",
+    "signatures": [
+      "public V putLast(K k, V v)"
+    ],
+    "signature_hash": "40f646839ff1267fc71fd2e6e3516612e398225e7e3b7144155e3b3700989be8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html",
+    "parameters": [
+      {
+        "name": "k",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "v",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "ThrowsUnsupportedOperationException.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "ThrowsUnsupportedOperationException.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.446635",
+    "updatedDate": "2026-03-08T21:40:21.446636",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

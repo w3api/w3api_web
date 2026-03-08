@@ -1,0 +1,1292 @@
+{
+  "java.lang.constant/Desc/of": {
+    "id": "java.lang.constant.Desc.of",
+    "name": "of",
+    "type": "method",
+    "parent": "Desc",
+    "signatures": [
+      "public static ClassDesc of(String name)",
+      "public static ClassDesc of(String packageName, String className)"
+    ],
+    "signature_hash": "c9f0111770d98a4feb469c9458a5c9ec0cb4ed676664b3d205e7b790fdcbe1ee",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/ClassDesc.html",
+    "parameters": [
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "packageName",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "className",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static ClassDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aClassDescfor a class or interface type,\ngiven the name of the class or interface, such as\"java.lang.String\".",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aClassDescfor a class or interface type,\ngiven the name of the class or interface, such as\"java.lang.String\".",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.145161",
+    "updatedDate": "2026-03-08T21:40:21.145162",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/MethodTypeDesc/of": {
+    "id": "java.lang.constant.MethodTypeDesc.of",
+    "name": "of",
+    "type": "method",
+    "parent": "MethodTypeDesc",
+    "signatures": [
+      "public static MethodTypeDesc of(ClassDesc returnDesc)",
+      "public static MethodTypeDesc of(ClassDesc returnDesc, ClassDesc... paramDescs)",
+      "public static MethodTypeDesc of(ClassDesc returnDesc, List<ClassDesc> paramDescs)"
+    ],
+    "signature_hash": "eca767d648cdcaa181c8fb8a1ab2f539382d85f3d4ffaabc59275e49723970a2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
+    "parameters": [
+      {
+        "name": "returnDesc",
+        "has_default": false,
+        "default_value": null,
+        "type": "ClassDesc",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "paramDescs",
+        "has_default": false,
+        "default_value": null,
+        "type": "ClassDesc...|List<ClassDesc>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static MethodTypeDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aMethodTypeDescwith the given return type and no\nparameter types.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aMethodTypeDescwith the given return type and no\nparameter types.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.145393",
+    "updatedDate": "2026-03-08T21:40:21.145394",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/DynamicConstantDesc<T>/of": {
+    "id": "java.lang.constant.DynamicConstantDesc<T>.of",
+    "name": "of",
+    "type": "method",
+    "parent": "DynamicConstantDesc<T>",
+    "signatures": [
+      "public static<T> DynamicConstantDesc<T> of(DirectMethodHandleDesc bootstrapMethod)",
+      "public static<T> DynamicConstantDesc<T> of(DirectMethodHandleDesc bootstrapMethod, ConstantDesc... bootstrapArgs)"
+    ],
+    "signature_hash": "e919a6bdfe192b848ac628ae1930d54dc7ef8ddd556534f5cdd0302cf657f57b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/DynamicConstantDesc.html",
+    "parameters": [
+      {
+        "name": "bootstrapMethod",
+        "has_default": false,
+        "default_value": null,
+        "type": "DirectMethodHandleDesc",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "bootstrapArgs",
+        "has_default": false,
+        "default_value": null,
+        "type": "ConstantDesc...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static<T> DynamicConstantDesc<T>",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns a nominal descriptor for a dynamic constant whose bootstrap has\nno static arguments, whose name parameter isConstantDescs.DEFAULT_NAME,\nand whose type parameter is always the same as the bootstrap method return type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a nominal descriptor for a dynamic constant whose bootstrap has\nno static arguments, whose name parameter isConstantDescs.DEFAULT_NAME,\nand whose type parameter is always the same as the boots...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.145768",
+    "updatedDate": "2026-03-08T21:40:21.145769",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/DynamicCallSiteDesc/of": {
+    "id": "java.lang.constant.DynamicCallSiteDesc.of",
+    "name": "of",
+    "type": "method",
+    "parent": "DynamicCallSiteDesc",
+    "signatures": [
+      "public static DynamicCallSiteDesc of(DirectMethodHandleDesc bootstrapMethod, MethodTypeDesc invocationType)",
+      "public static DynamicCallSiteDesc of(DirectMethodHandleDesc bootstrapMethod, String invocationName, MethodTypeDesc invocationType)",
+      "public static DynamicCallSiteDesc of(DirectMethodHandleDesc bootstrapMethod, String invocationName, MethodTypeDesc invocationType, ConstantDesc... bootstrapArgs)"
+    ],
+    "signature_hash": "f65ca4c2bcc4cbc827ee23d5dd1e642098ddd81bc9621c9c84f7a5d2a7963c90",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/DynamicCallSiteDesc.html",
+    "parameters": [
+      {
+        "name": "bootstrapMethod",
+        "has_default": false,
+        "default_value": null,
+        "type": "DirectMethodHandleDesc",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "invocationType",
+        "has_default": false,
+        "default_value": null,
+        "type": "MethodTypeDesc",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "invocationName",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "bootstrapArgs",
+        "has_default": false,
+        "default_value": null,
+        "type": "ConstantDesc...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static DynamicCallSiteDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates a nominal descriptor for aninvokedynamiccall site whose\nbootstrap method has no static arguments and for which the name parameter\nisConstantDescs.DEFAULT_NAME.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a nominal descriptor for aninvokedynamiccall site whose\nbootstrap method has no static arguments and for which the name parameter\nisConstantDescs.DEFAULT_NAME.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.146079",
+    "updatedDate": "2026-03-08T21:40:21.146080",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/ModuleDesc/of": {
+    "id": "java.lang.constant.ModuleDesc.of",
+    "name": "of",
+    "type": "method",
+    "parent": "ModuleDesc",
+    "signatures": [
+      "public static ModuleDesc of(String name)"
+    ],
+    "signature_hash": "1ceb9a42c670b76b851677502ff8cd21fca6e93f8fe837822d40a2958bdaf7b5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/ModuleDesc.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static ModuleDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aModuleDescfor a module,\ngiven the name of the module.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aModuleDescfor a module,\ngiven the name of the module.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.146219",
+    "updatedDate": "2026-03-08T21:40:21.146219",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "21",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/PackageDesc/of": {
+    "id": "java.lang.constant.PackageDesc.of",
+    "name": "of",
+    "type": "method",
+    "parent": "PackageDesc",
+    "signatures": [
+      "public static PackageDesc of(String name)"
+    ],
+    "signature_hash": "0a3d4dcb374022a31f375bed24a62854459fdba344cf171d282a2f043cc4f84a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/PackageDesc.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static PackageDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aPackageDescfor a package,\ngiven the name of the package, such as\"java.lang\".",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aPackageDescfor a package,\ngiven the name of the package, such as\"java.lang\".",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.146287",
+    "updatedDate": "2026-03-08T21:40:21.146288",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "21",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/MethodHandleDesc/of": {
+    "id": "java.lang.constant.MethodHandleDesc.of",
+    "name": "of",
+    "type": "method",
+    "parent": "MethodHandleDesc",
+    "signatures": [
+      "public static DirectMethodHandleDesc of(DirectMethodHandleDesc.Kind kind, ClassDesc owner, String name, String lookupDescriptor)"
+    ],
+    "signature_hash": "03255fe21dc098dd1f84f0c4f14a1dde2792511633c1664fb5b7f947fcddf7a3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
+    "parameters": [
+      {
+        "name": "kind",
+        "type": "DirectMethodHandleDesc.Kind",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "owner",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lookupDescriptor",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static DirectMethodHandleDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates aMethodHandleDesccorresponding to an invocation of a\ndeclared method, invocation of a constructor, or access to a field.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates aMethodHandleDesccorresponding to an invocation of a\ndeclared method, invocation of a constructor, or access to a field.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.147662",
+    "updatedDate": "2026-03-08T21:40:21.147663",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/ConstantDescs/ofCallsiteBootstrap": {
+    "id": "java.lang.constant.ConstantDescs.ofCallsiteBootstrap",
+    "name": "ofCallsiteBootstrap",
+    "type": "method",
+    "parent": "ConstantDescs",
+    "signatures": [
+      "public static DirectMethodHandleDesc ofCallsiteBootstrap(ClassDesc owner, String name, ClassDesc returnType, ClassDesc... paramTypes)"
+    ],
+    "signature_hash": "a55fc21b9b1684434bb1535c4175ac0107165d23b2c4ba3382e3cf4a64792a73",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/ConstantDescs.html",
+    "parameters": [
+      {
+        "name": "owner",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "returnType",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "paramTypes",
+        "type": "ClassDesc...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static DirectMethodHandleDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aMethodHandleDesccorresponding to a bootstrap method for\naninvokedynamiccallsite, which is a static method whose leading\nparameter types areLookup,String, andMethodType.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aMethodHandleDesccorresponding to a bootstrap method for\naninvokedynamiccallsite, which is a static method whose leading\nparameter types areLookup,String, andMethodType.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.146345",
+    "updatedDate": "2026-03-08T21:40:21.146346",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/DynamicConstantDesc<T>/ofCanonical": {
+    "id": "java.lang.constant.DynamicConstantDesc<T>.ofCanonical",
+    "name": "ofCanonical",
+    "type": "method",
+    "parent": "DynamicConstantDesc<T>",
+    "signatures": [
+      "public static<T> ConstantDesc ofCanonical(DirectMethodHandleDesc bootstrapMethod, String constantName, ClassDesc constantType, ConstantDesc[]bootstrapArgs)"
+    ],
+    "signature_hash": "13f175bfc008f09c0460a88969861ff5d6acf9a52f59e129354db905074068b0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/DynamicConstantDesc.html",
+    "parameters": [
+      {
+        "name": "bootstrapMethod",
+        "type": "DirectMethodHandleDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "constantName",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "constantType",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ConstantDesc[]bootstrapArgs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static<T> ConstantDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns a nominal descriptor for a dynamic constant, transforming it into\na more specific type if the constant bootstrap is a well-known one and a\nmore specific nominal descriptor type (e.g., ClassDesc) is available.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a nominal descriptor for a dynamic constant, transforming it into\na more specific type if the constant bootstrap is a well-known one and a\nmore specific nominal descriptor type (e.g., ClassDes...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.145801",
+    "updatedDate": "2026-03-08T21:40:21.145802",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/ConstantDescs/ofConstantBootstrap": {
+    "id": "java.lang.constant.ConstantDescs.ofConstantBootstrap",
+    "name": "ofConstantBootstrap",
+    "type": "method",
+    "parent": "ConstantDescs",
+    "signatures": [
+      "public static DirectMethodHandleDesc ofConstantBootstrap(ClassDesc owner, String name, ClassDesc returnType, ClassDesc... paramTypes)"
+    ],
+    "signature_hash": "8210eacbc1e381ec44edece1c4ec65e90a429b01eff391e386c797858649fbec",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/ConstantDescs.html",
+    "parameters": [
+      {
+        "name": "owner",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "returnType",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "paramTypes",
+        "type": "ClassDesc...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static DirectMethodHandleDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aMethodHandleDesccorresponding to a bootstrap method for a\ndynamic constant, which is a static method whose leading arguments areLookup,String, andClass.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aMethodHandleDesccorresponding to a bootstrap method for a\ndynamic constant, which is a static method whose leading arguments areLookup,String, andClass.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.146374",
+    "updatedDate": "2026-03-08T21:40:21.146375",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/MethodHandleDesc/ofConstructor": {
+    "id": "java.lang.constant.MethodHandleDesc.ofConstructor",
+    "name": "ofConstructor",
+    "type": "method",
+    "parent": "MethodHandleDesc",
+    "signatures": [
+      "public static DirectMethodHandleDesc ofConstructor(ClassDesc owner, ClassDesc... paramTypes)"
+    ],
+    "signature_hash": "ee1b69b948ec6e42cd1302705dd40d38464dd5fe2161e423de95f38a59e010d2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
+    "parameters": [
+      {
+        "name": "owner",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "paramTypes",
+        "type": "ClassDesc...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static DirectMethodHandleDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aMethodHandleDesccorresponding to invocation of a constructor",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aMethodHandleDesccorresponding to invocation of a constructor",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.147689",
+    "updatedDate": "2026-03-08T21:40:21.147692",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/Desc/ofDescriptor": {
+    "id": "java.lang.constant.Desc.ofDescriptor",
+    "name": "ofDescriptor",
+    "type": "method",
+    "parent": "Desc",
+    "signatures": [
+      "public static ClassDesc ofDescriptor(String descriptor)"
+    ],
+    "signature_hash": "fb1f3fd3f9ffbb51053fcb4f209b0f897822300513b42014ffa5dda1c177137d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/ClassDesc.html",
+    "parameters": [
+      {
+        "name": "descriptor",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static ClassDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aClassDescgiven a descriptor string for a class,\ninterface, array, or primitive type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aClassDescgiven a descriptor string for a class,\ninterface, array, or primitive type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.145186",
+    "updatedDate": "2026-03-08T21:40:21.145187",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/MethodTypeDesc/ofDescriptor": {
+    "id": "java.lang.constant.MethodTypeDesc.ofDescriptor",
+    "name": "ofDescriptor",
+    "type": "method",
+    "parent": "MethodTypeDesc",
+    "signatures": [
+      "public static MethodTypeDesc ofDescriptor(String descriptor)"
+    ],
+    "signature_hash": "f7d2bfa576b48be365612e6aea23ab6a65a6907fa7199042d3a5635da226d1a3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
+    "parameters": [
+      {
+        "name": "descriptor",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static MethodTypeDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates aMethodTypeDescgiven a method descriptor string.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates aMethodTypeDescgiven a method descriptor string.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.145410",
+    "updatedDate": "2026-03-08T21:40:21.145410",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/MethodHandleDesc/ofField": {
+    "id": "java.lang.constant.MethodHandleDesc.ofField",
+    "name": "ofField",
+    "type": "method",
+    "parent": "MethodHandleDesc",
+    "signatures": [
+      "public static DirectMethodHandleDesc ofField(DirectMethodHandleDesc.Kind kind, ClassDesc owner, String fieldName, ClassDesc fieldType)"
+    ],
+    "signature_hash": "3fc7dbd3334682ea2a3cbf0c259ce804878fa4f0a5d8cab177ec97fca2b3988c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
+    "parameters": [
+      {
+        "name": "kind",
+        "type": "DirectMethodHandleDesc.Kind",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "owner",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fieldName",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fieldType",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static DirectMethodHandleDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates aMethodHandleDesccorresponding to a method handle\nthat accesses a field.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates aMethodHandleDesccorresponding to a method handle\nthat accesses a field.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.147725",
+    "updatedDate": "2026-03-08T21:40:21.147726",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/Desc/ofInternalName": {
+    "id": "java.lang.constant.Desc.ofInternalName",
+    "name": "ofInternalName",
+    "type": "method",
+    "parent": "Desc",
+    "signatures": [
+      "public static ClassDesc ofInternalName(String name)"
+    ],
+    "signature_hash": "780efb163510356e270c6d09b06485ca3ba2bebe055606b541b492dc71905dae",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/ClassDesc.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static ClassDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aClassDescfor a class or interface type,\ngiven the name of the class or interface in internal form,\nsuch as\"java/lang/String\".",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aClassDescfor a class or interface type,\ngiven the name of the class or interface in internal form,\nsuch as\"java/lang/String\".",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.145202",
+    "updatedDate": "2026-03-08T21:40:21.145203",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/PackageDesc/ofInternalName": {
+    "id": "java.lang.constant.PackageDesc.ofInternalName",
+    "name": "ofInternalName",
+    "type": "method",
+    "parent": "PackageDesc",
+    "signatures": [
+      "public static PackageDesc ofInternalName(String name)"
+    ],
+    "signature_hash": "5eb2d9437952c0d2dcf571d4ae3393e087b76c0ef38e9f076bcadfb4efbc7b77",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/PackageDesc.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static PackageDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns aPackageDescfor a package,\ngiven the name of the package in internal form,\nsuch as\"java/lang\".",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aPackageDescfor a package,\ngiven the name of the package in internal form,\nsuch as\"java/lang\".",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.146304",
+    "updatedDate": "2026-03-08T21:40:21.146305",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "21",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/MethodHandleDesc/ofMethod": {
+    "id": "java.lang.constant.MethodHandleDesc.ofMethod",
+    "name": "ofMethod",
+    "type": "method",
+    "parent": "MethodHandleDesc",
+    "signatures": [
+      "public static DirectMethodHandleDesc ofMethod(DirectMethodHandleDesc.Kind kind, ClassDesc owner, String name, MethodTypeDesc lookupMethodType)"
+    ],
+    "signature_hash": "349aeb3961d220c0bd03dc5a2d17a5f752cf88cd743cce22397aa80bb87e7ad9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
+    "parameters": [
+      {
+        "name": "kind",
+        "type": "DirectMethodHandleDesc.Kind",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "owner",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lookupMethodType",
+        "type": "MethodTypeDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static DirectMethodHandleDesc",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates aMethodHandleDesccorresponding to an invocation of a\ndeclared method or constructor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates aMethodHandleDesccorresponding to an invocation of a\ndeclared method or constructor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.147758",
+    "updatedDate": "2026-03-08T21:40:21.147759",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/DynamicConstantDesc<T>/ofNamed": {
+    "id": "java.lang.constant.DynamicConstantDesc<T>.ofNamed",
+    "name": "ofNamed",
+    "type": "method",
+    "parent": "DynamicConstantDesc<T>",
+    "signatures": [
+      "public static<T> DynamicConstantDesc<T> ofNamed(DirectMethodHandleDesc bootstrapMethod, String constantName, ClassDesc constantType, ConstantDesc... bootstrapArgs)"
+    ],
+    "signature_hash": "5c68cc6e46244d07f29a03b7d07f728b8036b843ec9a4f191463e49acb9844c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/DynamicConstantDesc.html",
+    "parameters": [
+      {
+        "name": "bootstrapMethod",
+        "type": "DirectMethodHandleDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "constantName",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "constantType",
+        "type": "ClassDesc",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "bootstrapArgs",
+        "type": "ConstantDesc...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static<T> DynamicConstantDesc<T>",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns a nominal descriptor for a dynamic constant.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a nominal descriptor for a dynamic constant.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.145831",
+    "updatedDate": "2026-03-08T21:40:21.145832",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.constant/DirectMethodHandleDesc/owner": {
+    "id": "java.lang.constant.DirectMethodHandleDesc.owner",
+    "name": "owner",
+    "type": "method",
+    "parent": "DirectMethodHandleDesc",
+    "signatures": [
+      "public ClassDesc owner()"
+    ],
+    "signature_hash": "52767414a6fee719561e2a8dc0d3e903b254bf59958e403c7593c86f881aaf5a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/constant/DirectMethodHandleDesc.html",
+    "parameters": [],
+    "return_type": "ClassDesc",
+    "exceptions": [],
+    "description": "Returns aClassDescdescribing the class declaring the\nmethod or field described by this nominal descriptor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aClassDescdescribing the class declaring the\nmethod or field described by this nominal descriptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.145570",
+    "updatedDate": "2026-03-08T21:40:21.145571",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "12",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

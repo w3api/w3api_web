@@ -1,0 +1,219 @@
+{
+  "java.nio.file.spi/FileSystemProvider/readAttributes": {
+    "id": "java.nio.file.spi.FileSystemProvider.readAttributes",
+    "name": "readAttributes",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public abstract<A extends BasicFileAttributes>A readAttributes(Path path, Class<A> type, LinkOption... options)",
+      "public abstract Map<String, Object> readAttributes(Path path, String attributes, LinkOption... options)"
+    ],
+    "signature_hash": "598908aeb18e6134ce11fe45ca748c92c8ed7b335afdb3a6d459c4193f64c657",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "path",
+        "has_default": false,
+        "default_value": null,
+        "type": "Path",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<A>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "has_default": false,
+        "default_value": null,
+        "type": "LinkOption...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attributes",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract<A extends BasicFileAttributes>A",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Reads a file's attributes as a bulk operation.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads a file's attributes as a bulk operation.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219536",
+    "updatedDate": "2026-03-08T21:40:21.219536",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/readAttributesIfExists": {
+    "id": "java.nio.file.spi.FileSystemProvider.readAttributesIfExists",
+    "name": "readAttributesIfExists",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public <A extends BasicFileAttributes>A readAttributesIfExists(Path path, Class<A> type, LinkOption... options)"
+    ],
+    "signature_hash": "913098b8330f8decea60f36825dec33c0b1a2f00bd69cef6ae7af52fb48587ae",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "Class<A>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "type": "LinkOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "<A extends BasicFileAttributes>A",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Reads a file's attributes as a bulk operation if it exists.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads a file's attributes as a bulk operation if it exists.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219557",
+    "updatedDate": "2026-03-08T21:40:21.219558",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file.spi/FileSystemProvider/readSymbolicLink": {
+    "id": "java.nio.file.spi.FileSystemProvider.readSymbolicLink",
+    "name": "readSymbolicLink",
+    "type": "method",
+    "parent": "FileSystemProvider",
+    "signatures": [
+      "public Path readSymbolicLink(Path link)"
+    ],
+    "signature_hash": "8e38ed70d4f92d3f32415afeca4e5a0f041911c11e75c81d6f7c9bca2c73b2de",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+    "parameters": [
+      {
+        "name": "link",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "Path",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NotLinkException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": "Reads the target of a symbolic link.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads the target of a symbolic link.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.219572",
+    "updatedDate": "2026-03-08T21:40:21.219573",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

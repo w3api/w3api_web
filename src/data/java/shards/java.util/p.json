@@ -1,0 +1,4382 @@
+{
+  "java.util/PriorityQueue<E>": {
+    "id": "java.util.PriorityQueue<E>",
+    "name": "PriorityQueue<E>",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PriorityQueue.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.395477",
+    "updatedDate": "2026-03-08T21:40:21.395477",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "PriorityQueue"
+    ],
+    "methods": [
+      "add",
+      "clear",
+      "comparator",
+      "contains",
+      "forEach",
+      "iterator",
+      "offer",
+      "peek",
+      "poll",
+      "remove",
+      "removeAll",
+      "removeIf",
+      "retainAll",
+      "size",
+      "spliterator",
+      "toArray"
+    ]
+  },
+  "java.util/Properties": {
+    "id": "java.util.Properties",
+    "name": "Properties",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Properties.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.378118",
+    "updatedDate": "2026-03-08T21:40:21.378119",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "Properties"
+    ],
+    "attributes": [
+      "defaults"
+    ],
+    "methods": [
+      "getProperty",
+      "list",
+      "load",
+      "loadFromXML",
+      "propertyNames",
+      "save",
+      "setProperty",
+      "store",
+      "storeToXML",
+      "stringPropertyNames"
+    ]
+  },
+  "java.util/PropertyPermission": {
+    "id": "java.util.PropertyPermission",
+    "name": "PropertyPermission",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PropertyPermission.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.396733",
+    "updatedDate": "2026-03-08T21:40:21.396734",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "PropertyPermission"
+    ],
+    "methods": [
+      "equals",
+      "getActions",
+      "hashCode",
+      "implies",
+      "newPermissionCollection"
+    ]
+  },
+  "java.util/PropertyResourceBundle": {
+    "id": "java.util.PropertyResourceBundle",
+    "name": "PropertyResourceBundle",
+    "type": "class",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PropertyResourceBundle.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.397228",
+    "updatedDate": "2026-03-08T21:40:21.397229",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "PropertyResourceBundle"
+    ],
+    "methods": [
+      "getKeys",
+      "handleGetObject",
+      "handleKeySet"
+    ]
+  },
+  "java.util/PriorityQueue<E>/PriorityQueue": {
+    "id": "java.util.PriorityQueue<E>.PriorityQueue",
+    "name": "PriorityQueue",
+    "type": "constructor",
+    "parent": "PriorityQueue<E>",
+    "signatures": [
+      "public PriorityQueue()",
+      "public PriorityQueue(int initialCapacity)",
+      "public PriorityQueue(int initialCapacity, Comparator<? super E> comparator)",
+      "public PriorityQueue(Collection<? extends E> c)",
+      "public PriorityQueue(Comparator<? super E> comparator)",
+      "public PriorityQueue(PriorityQueue<? extends E> c)",
+      "public PriorityQueue(SortedSet<? extends E> c)"
+    ],
+    "signature_hash": "e74eb5cdb8c447e42f7eda3eb7d26b53aed576c02dda8682989ff8c3b62c2a4f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PriorityQueue.html",
+    "parameters": [
+      {
+        "name": "initialCapacity",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "comparator",
+        "has_default": false,
+        "default_value": null,
+        "type": "Comparator<? super E>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "c",
+        "has_default": false,
+        "default_value": null,
+        "type": "Collection<? extends E>|PriorityQueue<? extends E>|SortedSet<? extends E>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates aPriorityQueuewith the default initial\ncapacity (11) that orders its elements according to theirnatural ordering.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates aPriorityQueuewith the default initial\ncapacity (11) that orders its elements according to theirnatural ordering.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.395572",
+    "updatedDate": "2026-03-08T21:40:21.395573",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Properties/Properties": {
+    "id": "java.util.Properties.Properties",
+    "name": "Properties",
+    "type": "constructor",
+    "parent": "Properties",
+    "signatures": [
+      "public Properties()",
+      "public Properties(int initialCapacity)",
+      "public Properties(Properties defaults)"
+    ],
+    "signature_hash": "9bb604d640501f8ce888d59d90457a285f734f0a8fc028f4c2b0565c5cae3a20",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Properties.html",
+    "parameters": [
+      {
+        "name": "initialCapacity",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "defaults",
+        "has_default": false,
+        "default_value": null,
+        "type": "Properties",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Creates an empty property list with no default values.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates an empty property list with no default values.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.378174",
+    "updatedDate": "2026-03-08T21:40:21.378175",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/PropertyPermission/PropertyPermission": {
+    "id": "java.util.PropertyPermission.PropertyPermission",
+    "name": "PropertyPermission",
+    "type": "constructor",
+    "parent": "PropertyPermission",
+    "signatures": [
+      "public PropertyPermission(String name, String actions)"
+    ],
+    "signature_hash": "590ea2e9abf83f3f6cf814140f48f9c975abec7e9e1034376f2aecf6f38ce01f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PropertyPermission.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "actions",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Deprecated, for removal: This API element is subject to removal in a future version.Creates a new PropertyPermission object with the specified name.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated, for removal: This API element is subject to removal in a future version.Creates a new PropertyPermission object with the specified name.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.396813",
+    "updatedDate": "2026-03-08T21:40:21.396814",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/PropertyResourceBundle/PropertyResourceBundle": {
+    "id": "java.util.PropertyResourceBundle.PropertyResourceBundle",
+    "name": "PropertyResourceBundle",
+    "type": "constructor",
+    "parent": "PropertyResourceBundle",
+    "signatures": [
+      "public PropertyResourceBundle(InputStream stream)",
+      "public PropertyResourceBundle(Reader reader)"
+    ],
+    "signature_hash": "f34259d6590fe61932fec4fcde4104108311b0b8c361c2b6a7a75f2d124e88c4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PropertyResourceBundle.html",
+    "parameters": [
+      {
+        "name": "stream",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "reader",
+        "has_default": false,
+        "default_value": null,
+        "type": "Reader",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "MalformedInputException",
+        "package": "java.nio.charset"
+      },
+      {
+        "name": "UnmappableCharacterException",
+        "package": "java.nio.charset"
+      }
+    ],
+    "description": "Creates a property resource bundle from anInputStream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a property resource bundle from anInputStream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.397306",
+    "updatedDate": "2026-03-08T21:40:21.397307",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Calendar/PM": {
+    "id": "java.util.Calendar.PM",
+    "name": "PM",
+    "type": "field",
+    "parent": "Calendar",
+    "signatures": [
+      "static final int PM"
+    ],
+    "signature_hash": "1e38d38b52de955d81340c4ccb90c59219347cf4920edeab55551ffcc2c68117",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Calendar.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": "Value of theAM_PMfield indicating the\nperiod of the day from noon to just before midnight.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Value of theAM_PMfield indicating the\nperiod of the day from noon to just before midnight.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.356275",
+    "updatedDate": "2026-03-08T21:40:21.356276",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Locale/PRC": {
+    "id": "java.util.Locale.PRC",
+    "name": "PRC",
+    "type": "field",
+    "parent": "Locale",
+    "signatures": [
+      "static final Locale PRC"
+    ],
+    "signature_hash": "c3309268798188be5a72d4a7c3a6fab5d26b984f22b8ded315382b3d94943e11",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html",
+    "parameters": [],
+    "return_type": "static final Locale",
+    "exceptions": [],
+    "description": "Useful constant for country.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Useful constant for country.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.376088",
+    "updatedDate": "2026-03-08T21:40:21.376089",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Locale/PRIVATE_USE_EXTENSION": {
+    "id": "java.util.Locale.PRIVATE_USE_EXTENSION",
+    "name": "PRIVATE_USE_EXTENSION",
+    "type": "field",
+    "parent": "Locale",
+    "signatures": [
+      "static final char PRIVATE_USE_EXTENSION"
+    ],
+    "signature_hash": "2421ff3648c010a5898d4a33dbb13f3abc96240b81638fed1c6944c112f7f274",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html",
+    "parameters": [],
+    "return_type": "static final char",
+    "exceptions": [],
+    "description": "The key for the private use extension ('x').",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The key for the private use extension ('x').",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.376130",
+    "updatedDate": "2026-03-08T21:40:21.376131",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ResourceBundle/parent": {
+    "id": "java.util.ResourceBundle.parent",
+    "name": "parent",
+    "type": "field",
+    "parent": "ResourceBundle",
+    "signatures": [
+      "protected ResourceBundle parent"
+    ],
+    "signature_hash": "f25b58261f19c7ad048bc381990670aaf0d73473377c2d6b955e110713866652",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ResourceBundle.html",
+    "parameters": [],
+    "return_type": "protected ResourceBundle",
+    "exceptions": [],
+    "description": "The parent bundle of this bundle.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The parent bundle of this bundle.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.399877",
+    "updatedDate": "2026-03-08T21:40:21.399878",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/PrimitiveIterator.OfDouble": {
+    "id": "java.util.PrimitiveIterator.OfDouble",
+    "name": "PrimitiveIterator.OfDouble",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.394729",
+    "updatedDate": "2026-03-08T21:40:21.394730",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "forEachRemaining",
+      "next",
+      "nextDouble"
+    ]
+  },
+  "java.util/PrimitiveIterator.OfInt": {
+    "id": "java.util.PrimitiveIterator.OfInt",
+    "name": "PrimitiveIterator.OfInt",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.394971",
+    "updatedDate": "2026-03-08T21:40:21.394974",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "forEachRemaining",
+      "next",
+      "nextInt"
+    ]
+  },
+  "java.util/PrimitiveIterator.OfLong": {
+    "id": "java.util.PrimitiveIterator.OfLong",
+    "name": "PrimitiveIterator.OfLong",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.395242",
+    "updatedDate": "2026-03-08T21:40:21.395243",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "forEachRemaining",
+      "next",
+      "nextLong"
+    ]
+  },
+  "java.util/PrimitiveIterator<T,T_CONS>": {
+    "id": "java.util.PrimitiveIterator<T,T_CONS>",
+    "name": "PrimitiveIterator<T,T_CONS>",
+    "type": "interface",
+    "parent": null,
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PrimitiveIterator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.394616",
+    "updatedDate": "2026-03-08T21:40:21.394617",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "forEachRemaining"
+    ]
+  },
+  "java.util/Arrays/parallelPrefix": {
+    "id": "java.util.Arrays.parallelPrefix",
+    "name": "parallelPrefix",
+    "type": "method",
+    "parent": "Arrays",
+    "signatures": [
+      "public static void parallelPrefix(double[]array, int fromIndex, int toIndex, DoubleBinaryOperator op)",
+      "public static void parallelPrefix(double[]array, DoubleBinaryOperator op)",
+      "public static void parallelPrefix(int[]array, int fromIndex, int toIndex, IntBinaryOperator op)",
+      "public static void parallelPrefix(int[]array, IntBinaryOperator op)",
+      "public static void parallelPrefix(long[]array, int fromIndex, int toIndex, LongBinaryOperator op)",
+      "public static void parallelPrefix(long[]array, LongBinaryOperator op)",
+      "public static<T> void parallelPrefix(T[]array, int fromIndex, int toIndex, BinaryOperator<T> op)",
+      "public static<T> void parallelPrefix(T[]array, BinaryOperator<T> op)"
+    ],
+    "signature_hash": "facbfd20ae25bb7a873ed41f8304fa38414d869a0a00912fb11d3f92d32fbddd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Arrays.html",
+    "parameters": [
+      {
+        "name": "double[]array",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fromIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "toIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "DoubleBinaryOperator|IntBinaryOperator|LongBinaryOperator|BinaryOperator<T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "int[]array",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "long[]array",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "T[]array",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "PerformsparallelPrefix(double[], DoubleBinaryOperator)for the given subrange of the array.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "PerformsparallelPrefix(double[], DoubleBinaryOperator)for the given subrange of the array.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.352315",
+    "updatedDate": "2026-03-08T21:40:21.352316",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Arrays/parallelSetAll": {
+    "id": "java.util.Arrays.parallelSetAll",
+    "name": "parallelSetAll",
+    "type": "method",
+    "parent": "Arrays",
+    "signatures": [
+      "public static void parallelSetAll(double[]array, IntToDoubleFunction generator)",
+      "public static void parallelSetAll(int[]array, IntUnaryOperator generator)",
+      "public static void parallelSetAll(long[]array, IntToLongFunction generator)",
+      "public static<T> void parallelSetAll(T[]array, IntFunction<? extends T> generator)"
+    ],
+    "signature_hash": "5dd37169e3ced57846542582bdc5ad0ab1ef1fc725f211e5e21ab2d94a487a6c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Arrays.html",
+    "parameters": [
+      {
+        "name": "double[]array",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "generator",
+        "has_default": false,
+        "default_value": null,
+        "type": "IntToDoubleFunction|IntUnaryOperator|IntToLongFunction|IntFunction<? extends T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "int[]array",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "long[]array",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "T[]array",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Set all elements of the specified array, in parallel, using the\nprovided generator function to compute each element.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set all elements of the specified array, in parallel, using the\nprovided generator function to compute each element.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.352371",
+    "updatedDate": "2026-03-08T21:40:21.352372",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Arrays/parallelSort": {
+    "id": "java.util.Arrays.parallelSort",
+    "name": "parallelSort",
+    "type": "method",
+    "parent": "Arrays",
+    "signatures": [
+      "public static void parallelSort(byte[]a)",
+      "public static void parallelSort(byte[]a, int fromIndex, int toIndex)",
+      "public static void parallelSort(char[]a)",
+      "public static void parallelSort(char[]a, int fromIndex, int toIndex)",
+      "public static void parallelSort(double[]a)",
+      "public static void parallelSort(double[]a, int fromIndex, int toIndex)",
+      "public static void parallelSort(float[]a)",
+      "public static void parallelSort(float[]a, int fromIndex, int toIndex)",
+      "public static void parallelSort(int[]a)",
+      "public static void parallelSort(int[]a, int fromIndex, int toIndex)",
+      "public static void parallelSort(long[]a)",
+      "public static void parallelSort(long[]a, int fromIndex, int toIndex)",
+      "public static void parallelSort(short[]a)",
+      "public static void parallelSort(short[]a, int fromIndex, int toIndex)",
+      "public static<T extends Comparable<? super T>>void parallelSort(T[]a)",
+      "public static<T extends Comparable<? super T>>void parallelSort(T[]a, int fromIndex, int toIndex)",
+      "public static<T> void parallelSort(T[]a, int fromIndex, int toIndex, Comparator<? super T> cmp)",
+      "public static<T> void parallelSort(T[]a, Comparator<? super T> cmp)"
+    ],
+    "signature_hash": "9dfed3118e353f19070aa5b4cbd880d1d6a7420d4cd66a37a633fa531b422ae7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Arrays.html",
+    "parameters": [
+      {
+        "name": "byte[]a",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fromIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "toIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "char[]a",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "double[]a",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "float[]a",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "int[]a",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "long[]a",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "short[]a",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "T[]a",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cmp",
+        "has_default": false,
+        "default_value": null,
+        "type": "Comparator<? super T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static void",
+    "exceptions": [],
+    "description": "Sorts the specified array into ascending numerical order.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sorts the specified array into ascending numerical order.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.352516",
+    "updatedDate": "2026-03-08T21:40:21.352516",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Collection<E>/parallelStream": {
+    "id": "java.util.Collection<E>.parallelStream",
+    "name": "parallelStream",
+    "type": "method",
+    "parent": "Collection<E>",
+    "signatures": [
+      "public default Stream<E> parallelStream()"
+    ],
+    "signature_hash": "ce465a9e60c45473cf6e2f06f1f807bc4f42543acfa9767f9271928aed39bb74",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html",
+    "parameters": [],
+    "return_type": "default Stream<E>",
+    "exceptions": [],
+    "description": "Returns a possibly parallelStreamwith this collection as its\nsource.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a possibly parallelStreamwith this collection as its\nsource.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.357441",
+    "updatedDate": "2026-03-08T21:40:21.357442",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Date/parse": {
+    "id": "java.util.Date.parse",
+    "name": "parse",
+    "type": "method",
+    "parent": "Date",
+    "signatures": [
+      "public static long parse(String s)"
+    ],
+    "signature_hash": "2b9d49efb7c348ead025ef19d0a9e8cc943b8fdad2e49c13e780106846afc886",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Date.html",
+    "parameters": [
+      {
+        "name": "s",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static long",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Deprecated.As of JDK version 1.1,\nreplaced byDateFormat.parse(String s).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.As of JDK version 1.1,\nreplaced byDateFormat.parse(String s).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.361656",
+    "updatedDate": "2026-03-08T21:40:21.361657",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Locale.LanguageRange/parse": {
+    "id": "java.util.Locale.LanguageRange.parse",
+    "name": "parse",
+    "type": "method",
+    "parent": "Locale.LanguageRange",
+    "signatures": [
+      "public static List<Locale.LanguageRange> parse(String ranges)",
+      "public static List<Locale.LanguageRange> parse(String ranges, Map<String, List<String>> map)"
+    ],
+    "signature_hash": "81395091615c453943b1281f936b1f59e407c414778ecda0424ad2e09e1a3d67",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.LanguageRange.html",
+    "parameters": [
+      {
+        "name": "ranges",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Map<String",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "map",
+        "has_default": false,
+        "default_value": null,
+        "type": "List<String>>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "static List<Locale.LanguageRange>",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Parses the givenrangesto generate a Language Priority List.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parses the givenrangesto generate a Language Priority List.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.383838",
+    "updatedDate": "2026-03-08T21:40:21.383839",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/HexFormat/parseHex": {
+    "id": "java.util.HexFormat.parseHex",
+    "name": "parseHex",
+    "type": "method",
+    "parent": "HexFormat",
+    "signatures": [
+      "public byte[] parseHex(char[]chars, int fromIndex, int toIndex)",
+      "public byte[] parseHex(CharSequence string)",
+      "public byte[] parseHex(CharSequence string, int fromIndex, int toIndex)"
+    ],
+    "signature_hash": "ae8eeeb5c5210ae6eab2808f07a1d69cbb4148d82a2868d7261070b54fbfe1d0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HexFormat.html",
+    "parameters": [
+      {
+        "name": "char[]chars",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fromIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "toIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "string",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharSequence",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "byte[]",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns a byte array containing hexadecimal values parsed from\na range of the character array.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a byte array containing hexadecimal values parsed from\na range of the character array.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.371461",
+    "updatedDate": "2026-03-08T21:40:21.371462",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ArrayDeque<E>/peek": {
+    "id": "java.util.ArrayDeque<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "ArrayDeque<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the head of the queue represented by\nthis deque, or returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the head of the queue represented by\nthis deque, or returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.349384",
+    "updatedDate": "2026-03-08T21:40:21.349385",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/LinkedList<E>/peek": {
+    "id": "java.util.LinkedList<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "LinkedList<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedList.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the head (first element) of this list.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the head (first element) of this list.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.381327",
+    "updatedDate": "2026-03-08T21:40:21.381328",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/PriorityQueue<E>/peek": {
+    "id": "java.util.PriorityQueue<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "PriorityQueue<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PriorityQueue.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.396087",
+    "updatedDate": "2026-03-08T21:40:21.396088",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Stack<E>/peek": {
+    "id": "java.util.Stack<E>.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "Stack<E>",
+    "signatures": [
+      "public E peek()"
+    ],
+    "signature_hash": "4e9ef516ab3764278b97d81d7e13764a5010f66141d210c652e7d61d93256448",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Stack.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "EmptyStackException",
+        "package": "java.util"
+      }
+    ],
+    "description": "Looks at the object at the top of this stack without removing it\nfrom the stack.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Looks at the object at the top of this stack without removing it\nfrom the stack.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.414013",
+    "updatedDate": "2026-03-08T21:40:21.414014",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ArrayDeque<E>/peekFirst": {
+    "id": "java.util.ArrayDeque<E>.peekFirst",
+    "name": "peekFirst",
+    "type": "method",
+    "parent": "ArrayDeque<E>",
+    "signatures": [
+      "public E peekFirst()"
+    ],
+    "signature_hash": "33f3d19f43dcae273802754fd9d7430a2e6b90dd2651c6d0f76586a90bdcf2c9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the first element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the first element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.349399",
+    "updatedDate": "2026-03-08T21:40:21.349400",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/LinkedList<E>/peekFirst": {
+    "id": "java.util.LinkedList<E>.peekFirst",
+    "name": "peekFirst",
+    "type": "method",
+    "parent": "LinkedList<E>",
+    "signatures": [
+      "public E peekFirst()"
+    ],
+    "signature_hash": "33f3d19f43dcae273802754fd9d7430a2e6b90dd2651c6d0f76586a90bdcf2c9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedList.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the first element of this list,\nor returnsnullif this list is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the first element of this list,\nor returnsnullif this list is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.381373",
+    "updatedDate": "2026-03-08T21:40:21.381374",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ArrayDeque<E>/peekLast": {
+    "id": "java.util.ArrayDeque<E>.peekLast",
+    "name": "peekLast",
+    "type": "method",
+    "parent": "ArrayDeque<E>",
+    "signatures": [
+      "public E peekLast()"
+    ],
+    "signature_hash": "a439f82d75f9883fcb7bd77d4866fb84c5302bb11d8374804a4ed5ca613afe03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the last element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the last element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.349415",
+    "updatedDate": "2026-03-08T21:40:21.349416",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/LinkedList<E>/peekLast": {
+    "id": "java.util.LinkedList<E>.peekLast",
+    "name": "peekLast",
+    "type": "method",
+    "parent": "LinkedList<E>",
+    "signatures": [
+      "public E peekLast()"
+    ],
+    "signature_hash": "a439f82d75f9883fcb7bd77d4866fb84c5302bb11d8374804a4ed5ca613afe03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedList.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves, but does not remove, the last element of this list,\nor returnsnullif this list is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves, but does not remove, the last element of this list,\nor returnsnullif this list is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.381419",
+    "updatedDate": "2026-03-08T21:40:21.381420",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ArrayDeque<E>/poll": {
+    "id": "java.util.ArrayDeque<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "ArrayDeque<E>",
+    "signatures": [
+      "public E poll()"
+    ],
+    "signature_hash": "8e3b51c5fbce8943430f31d6a8467f6de395261ad3fef6114e6b65bac21a05ca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the head of the queue represented by this deque\n(in other words, the first element of this deque), or returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head of the queue represented by this deque\n(in other words, the first element of this deque), or returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.349431",
+    "updatedDate": "2026-03-08T21:40:21.349432",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/LinkedList<E>/poll": {
+    "id": "java.util.LinkedList<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "LinkedList<E>",
+    "signatures": [
+      "public E poll()"
+    ],
+    "signature_hash": "8e3b51c5fbce8943430f31d6a8467f6de395261ad3fef6114e6b65bac21a05ca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedList.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the head (first element) of this list.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head (first element) of this list.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.381466",
+    "updatedDate": "2026-03-08T21:40:21.381467",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/PriorityQueue<E>/poll": {
+    "id": "java.util.PriorityQueue<E>.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "PriorityQueue<E>",
+    "signatures": [
+      "public E poll()"
+    ],
+    "signature_hash": "8e3b51c5fbce8943430f31d6a8467f6de395261ad3fef6114e6b65bac21a05ca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PriorityQueue.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the head of this queue,\nor returnsnullif this queue is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.396159",
+    "updatedDate": "2026-03-08T21:40:21.396159",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ArrayDeque<E>/pollFirst": {
+    "id": "java.util.ArrayDeque<E>.pollFirst",
+    "name": "pollFirst",
+    "type": "method",
+    "parent": "ArrayDeque<E>",
+    "signatures": [
+      "public E pollFirst()"
+    ],
+    "signature_hash": "980ad1704fe2a518b75b7d324c63f135b9870fbdb9adc0ca2f3a26ebbc123f03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the first element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the first element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.349448",
+    "updatedDate": "2026-03-08T21:40:21.349449",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/LinkedList<E>/pollFirst": {
+    "id": "java.util.LinkedList<E>.pollFirst",
+    "name": "pollFirst",
+    "type": "method",
+    "parent": "LinkedList<E>",
+    "signatures": [
+      "public E pollFirst()"
+    ],
+    "signature_hash": "980ad1704fe2a518b75b7d324c63f135b9870fbdb9adc0ca2f3a26ebbc123f03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedList.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the first element of this list,\nor returnsnullif this list is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the first element of this list,\nor returnsnullif this list is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.381512",
+    "updatedDate": "2026-03-08T21:40:21.381513",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/NavigableSet<E>/pollFirst": {
+    "id": "java.util.NavigableSet<E>.pollFirst",
+    "name": "pollFirst",
+    "type": "method",
+    "parent": "NavigableSet<E>",
+    "signatures": [
+      "public E pollFirst()"
+    ],
+    "signature_hash": "980ad1704fe2a518b75b7d324c63f135b9870fbdb9adc0ca2f3a26ebbc123f03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/NavigableSet.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Retrieves and removes the first (lowest) element,\nor returnsnullif this set is empty (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the first (lowest) element,\nor returnsnullif this set is empty (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.387817",
+    "updatedDate": "2026-03-08T21:40:21.387818",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/TreeSet<E>/pollFirst": {
+    "id": "java.util.TreeSet<E>.pollFirst",
+    "name": "pollFirst",
+    "type": "method",
+    "parent": "TreeSet<E>",
+    "signatures": [
+      "public E pollFirst()"
+    ],
+    "signature_hash": "980ad1704fe2a518b75b7d324c63f135b9870fbdb9adc0ca2f3a26ebbc123f03",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeSet.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the first (lowest) element,\nor returnsnullif this set is empty (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the first (lowest) element,\nor returnsnullif this set is empty (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.423255",
+    "updatedDate": "2026-03-08T21:40:21.423256",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/NavigableMap<K,V>/pollFirstEntry": {
+    "id": "java.util.NavigableMap<K,V>.pollFirstEntry",
+    "name": "pollFirstEntry",
+    "type": "method",
+    "parent": "NavigableMap<K,V>",
+    "signatures": [
+      "public Map.Entry<K, V> pollFirstEntry()"
+    ],
+    "signature_hash": "dc680a771243e891c5fa4b33b04839def571a3c8644c776d62bea355ae8d7fa5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/NavigableMap.html",
+    "parameters": [],
+    "return_type": "Map.Entry<K, V>",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Removes and returns a key-value mapping associated with\nthe least key in this map, ornullif the map is empty\n(optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes and returns a key-value mapping associated with\nthe least key in this map, ornullif the map is empty\n(optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.386360",
+    "updatedDate": "2026-03-08T21:40:21.386361",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/SequencedMap<K,V>/pollFirstEntry": {
+    "id": "java.util.SequencedMap<K,V>.pollFirstEntry",
+    "name": "pollFirstEntry",
+    "type": "method",
+    "parent": "SequencedMap<K,V>",
+    "signatures": [
+      "public default Map.Entry<K, V> pollFirstEntry()"
+    ],
+    "signature_hash": "b98e3420168b7df111ee47c413b75f50d0f09e75cb3564b70ba3089883a0568b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedMap.html",
+    "parameters": [],
+    "return_type": "default Map.Entry<K, V>",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Removes and returns the first key-value mapping in this map,\nornullif the map is empty (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes and returns the first key-value mapping in this map,\nornullif the map is empty (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.405032",
+    "updatedDate": "2026-03-08T21:40:21.405033",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "21",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/TreeMap<K,V>/pollFirstEntry": {
+    "id": "java.util.TreeMap<K,V>.pollFirstEntry",
+    "name": "pollFirstEntry",
+    "type": "method",
+    "parent": "TreeMap<K,V>",
+    "signatures": [
+      "public Map.Entry<K, V> pollFirstEntry()"
+    ],
+    "signature_hash": "dc680a771243e891c5fa4b33b04839def571a3c8644c776d62bea355ae8d7fa5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeMap.html",
+    "parameters": [],
+    "return_type": "Map.Entry<K, V>",
+    "exceptions": [],
+    "description": "Removes and returns a key-value mapping associated with\nthe least key in this map, ornullif the map is empty\n(optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes and returns a key-value mapping associated with\nthe least key in this map, ornullif the map is empty\n(optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.420703",
+    "updatedDate": "2026-03-08T21:40:21.420704",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ArrayDeque<E>/pollLast": {
+    "id": "java.util.ArrayDeque<E>.pollLast",
+    "name": "pollLast",
+    "type": "method",
+    "parent": "ArrayDeque<E>",
+    "signatures": [
+      "public E pollLast()"
+    ],
+    "signature_hash": "246d1ebe71fbdc82db9ec761a92ba3e4973b2b50c65e801fbf163dc47259d0b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the last element of this deque,\nor returnsnullif this deque is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the last element of this deque,\nor returnsnullif this deque is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.349464",
+    "updatedDate": "2026-03-08T21:40:21.349464",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/LinkedList<E>/pollLast": {
+    "id": "java.util.LinkedList<E>.pollLast",
+    "name": "pollLast",
+    "type": "method",
+    "parent": "LinkedList<E>",
+    "signatures": [
+      "public E pollLast()"
+    ],
+    "signature_hash": "246d1ebe71fbdc82db9ec761a92ba3e4973b2b50c65e801fbf163dc47259d0b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedList.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the last element of this list,\nor returnsnullif this list is empty.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the last element of this list,\nor returnsnullif this list is empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.381558",
+    "updatedDate": "2026-03-08T21:40:21.381559",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/NavigableSet<E>/pollLast": {
+    "id": "java.util.NavigableSet<E>.pollLast",
+    "name": "pollLast",
+    "type": "method",
+    "parent": "NavigableSet<E>",
+    "signatures": [
+      "public E pollLast()"
+    ],
+    "signature_hash": "246d1ebe71fbdc82db9ec761a92ba3e4973b2b50c65e801fbf163dc47259d0b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/NavigableSet.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Retrieves and removes the last (highest) element,\nor returnsnullif this set is empty (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the last (highest) element,\nor returnsnullif this set is empty (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.387869",
+    "updatedDate": "2026-03-08T21:40:21.387870",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/TreeSet<E>/pollLast": {
+    "id": "java.util.TreeSet<E>.pollLast",
+    "name": "pollLast",
+    "type": "method",
+    "parent": "TreeSet<E>",
+    "signatures": [
+      "public E pollLast()"
+    ],
+    "signature_hash": "246d1ebe71fbdc82db9ec761a92ba3e4973b2b50c65e801fbf163dc47259d0b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeSet.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Retrieves and removes the last (highest) element,\nor returnsnullif this set is empty (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves and removes the last (highest) element,\nor returnsnullif this set is empty (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.423332",
+    "updatedDate": "2026-03-08T21:40:21.423333",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/NavigableMap<K,V>/pollLastEntry": {
+    "id": "java.util.NavigableMap<K,V>.pollLastEntry",
+    "name": "pollLastEntry",
+    "type": "method",
+    "parent": "NavigableMap<K,V>",
+    "signatures": [
+      "public Map.Entry<K, V> pollLastEntry()"
+    ],
+    "signature_hash": "9e4aa4f8794eb7c9223eb838dfb0d21586c6272eec48f263b1c6f412c6f74a40",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/NavigableMap.html",
+    "parameters": [],
+    "return_type": "Map.Entry<K, V>",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Removes and returns a key-value mapping associated with\nthe greatest key in this map, ornullif the map is empty\n(optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes and returns a key-value mapping associated with\nthe greatest key in this map, ornullif the map is empty\n(optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.386413",
+    "updatedDate": "2026-03-08T21:40:21.386413",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/SequencedMap<K,V>/pollLastEntry": {
+    "id": "java.util.SequencedMap<K,V>.pollLastEntry",
+    "name": "pollLastEntry",
+    "type": "method",
+    "parent": "SequencedMap<K,V>",
+    "signatures": [
+      "public default Map.Entry<K, V> pollLastEntry()"
+    ],
+    "signature_hash": "e0d97332a7370d1c0609e88ad9984502229ff169acad820b65ab3c95596f4f4e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedMap.html",
+    "parameters": [],
+    "return_type": "default Map.Entry<K, V>",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Removes and returns the last key-value mapping in this map,\nornullif the map is empty (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes and returns the last key-value mapping in this map,\nornullif the map is empty (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.405102",
+    "updatedDate": "2026-03-08T21:40:21.405103",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "21",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/TreeMap<K,V>/pollLastEntry": {
+    "id": "java.util.TreeMap<K,V>.pollLastEntry",
+    "name": "pollLastEntry",
+    "type": "method",
+    "parent": "TreeMap<K,V>",
+    "signatures": [
+      "public Map.Entry<K, V> pollLastEntry()"
+    ],
+    "signature_hash": "9e4aa4f8794eb7c9223eb838dfb0d21586c6272eec48f263b1c6f412c6f74a40",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeMap.html",
+    "parameters": [],
+    "return_type": "Map.Entry<K, V>",
+    "exceptions": [],
+    "description": "Removes and returns a key-value mapping associated with\nthe greatest key in this map, ornullif the map is empty\n(optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes and returns a key-value mapping associated with\nthe greatest key in this map, ornullif the map is empty\n(optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.420778",
+    "updatedDate": "2026-03-08T21:40:21.420779",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ArrayDeque<E>/pop": {
+    "id": "java.util.ArrayDeque<E>.pop",
+    "name": "pop",
+    "type": "method",
+    "parent": "ArrayDeque<E>",
+    "signatures": [
+      "public E pop()"
+    ],
+    "signature_hash": "a1709c38970ef1e5657757b4c84692b4f6535434695d086ff89e95b505f0d4b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayDeque.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "NoSuchElementException",
+        "package": "java.util"
+      }
+    ],
+    "description": "Pops an element from the stack represented by this deque.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pops an element from the stack represented by this deque.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.349480",
+    "updatedDate": "2026-03-08T21:40:21.349481",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/LinkedList<E>/pop": {
+    "id": "java.util.LinkedList<E>.pop",
+    "name": "pop",
+    "type": "method",
+    "parent": "LinkedList<E>",
+    "signatures": [
+      "public E pop()"
+    ],
+    "signature_hash": "a1709c38970ef1e5657757b4c84692b4f6535434695d086ff89e95b505f0d4b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedList.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "NoSuchElementException",
+        "package": "java.util"
+      }
+    ],
+    "description": "Pops an element from the stack represented by this list.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pops an element from the stack represented by this list.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.381605",
+    "updatedDate": "2026-03-08T21:40:21.381606",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Stack<E>/pop": {
+    "id": "java.util.Stack<E>.pop",
+    "name": "pop",
+    "type": "method",
+    "parent": "Stack<E>",
+    "signatures": [
+      "public E pop()"
+    ],
+    "signature_hash": "a1709c38970ef1e5657757b4c84692b4f6535434695d086ff89e95b505f0d4b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Stack.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "EmptyStackException",
+        "package": "java.util"
+      }
+    ],
+    "description": "Removes the object at the top of this stack and returns that\nobject as the value of this function.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes the object at the top of this stack and returns that\nobject as the value of this function.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.414086",
+    "updatedDate": "2026-03-08T21:40:21.414087",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/HexFormat/prefix": {
+    "id": "java.util.HexFormat.prefix",
+    "name": "prefix",
+    "type": "method",
+    "parent": "HexFormat",
+    "signatures": [
+      "public String prefix()"
+    ],
+    "signature_hash": "bfb3e3b005b22e062126853d5c0d98fad42ac9df7811d72a18328726111f4a05",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HexFormat.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": "Returns the prefix used for each hexadecimal value in formatted hexadecimal strings.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the prefix used for each hexadecimal value in formatted hexadecimal strings.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.371500",
+    "updatedDate": "2026-03-08T21:40:21.371501",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ListIterator<E>/previous": {
+    "id": "java.util.ListIterator<E>.previous",
+    "name": "previous",
+    "type": "method",
+    "parent": "ListIterator<E>",
+    "signatures": [
+      "public E previous()"
+    ],
+    "signature_hash": "2aa25046058071d74768b418a6facf44d6bc5bc4c9bb78354ac50a506798bdaf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ListIterator.html",
+    "parameters": [],
+    "return_type": "E",
+    "exceptions": [
+      {
+        "name": "NoSuchElementException",
+        "package": "java.util"
+      }
+    ],
+    "description": "Returns the previous element in the list and moves the cursor\nposition backwards.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the previous element in the list and moves the cursor\nposition backwards.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.382526",
+    "updatedDate": "2026-03-08T21:40:21.382527",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/BitSet/previousClearBit": {
+    "id": "java.util.BitSet.previousClearBit",
+    "name": "previousClearBit",
+    "type": "method",
+    "parent": "BitSet",
+    "signatures": [
+      "public int previousClearBit(int fromIndex)"
+    ],
+    "signature_hash": "6fee624c62ab2505630fc60608ac3a678986817279f9ab225b63170229dab94d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/BitSet.html",
+    "parameters": [
+      {
+        "name": "fromIndex",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the index of the nearest bit that is set tofalsethat occurs on or before the specified starting index.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the index of the nearest bit that is set tofalsethat occurs on or before the specified starting index.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.353738",
+    "updatedDate": "2026-03-08T21:40:21.353739",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ListIterator<E>/previousIndex": {
+    "id": "java.util.ListIterator<E>.previousIndex",
+    "name": "previousIndex",
+    "type": "method",
+    "parent": "ListIterator<E>",
+    "signatures": [
+      "public int previousIndex()"
+    ],
+    "signature_hash": "482d84d8ad754c04dc737782ce8af9200a1dce5ff94bead6a6021b473b52ffe1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ListIterator.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Returns the index of the element that would be returned by a\nsubsequent call toprevious().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the index of the element that would be returned by a\nsubsequent call toprevious().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.382573",
+    "updatedDate": "2026-03-08T21:40:21.382574",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/BitSet/previousSetBit": {
+    "id": "java.util.BitSet.previousSetBit",
+    "name": "previousSetBit",
+    "type": "method",
+    "parent": "BitSet",
+    "signatures": [
+      "public int previousSetBit(int fromIndex)"
+    ],
+    "signature_hash": "65645368c71663093a384694441e2b903272bf2eb7d5f60d3d9260f195fbc2f9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/BitSet.html",
+    "parameters": [
+      {
+        "name": "fromIndex",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns the index of the nearest bit that is set totruethat occurs on or before the specified starting index.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the index of the nearest bit that is set totruethat occurs on or before the specified starting index.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.353762",
+    "updatedDate": "2026-03-08T21:40:21.353763",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Properties/propertyNames": {
+    "id": "java.util.Properties.propertyNames",
+    "name": "propertyNames",
+    "type": "method",
+    "parent": "Properties",
+    "signatures": [
+      "public Enumeration<?> propertyNames()"
+    ],
+    "signature_hash": "49bf7aa83d3e26f268f55e439b43362b34658ddc4720be0990f892c6f35e5fa3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Properties.html",
+    "parameters": [],
+    "return_type": "Enumeration<?>",
+    "exceptions": [
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Returns an enumeration of all the keys in this property list,\nincluding distinct keys in the default property list if a key\nof the same name has not already been found from the main\nproperties list.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an enumeration of all the keys in this property list,\nincluding distinct keys in the default property list if a key\nof the same name has not already been found from the main\nproperties list.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.378434",
+    "updatedDate": "2026-03-08T21:40:21.378435",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Timer/purge": {
+    "id": "java.util.Timer.purge",
+    "name": "purge",
+    "type": "method",
+    "parent": "Timer",
+    "signatures": [
+      "public int purge()"
+    ],
+    "signature_hash": "9bb2de0a59a5913d5bf8c80615c41f2bf9029dd209b460f221317d30c8b6663a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Timer.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Removes allcancelledtasks from this timer's task queue.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes allcancelledtasks from this timer's task queue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.415611",
+    "updatedDate": "2026-03-08T21:40:21.415612",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/ArrayDeque<E>/push": {
+    "id": "java.util.ArrayDeque<E>.push",
+    "name": "push",
+    "type": "method",
+    "parent": "ArrayDeque<E>",
+    "signatures": [
+      "public void push(E e)"
+    ],
+    "signature_hash": "7893d9c74b29233739da5d8fe3b2d35c4ba107aafc880f713b91572059a0e3bb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayDeque.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Pushes an element onto the stack represented by this deque.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pushes an element onto the stack represented by this deque.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.349505",
+    "updatedDate": "2026-03-08T21:40:21.349506",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/LinkedList<E>/push": {
+    "id": "java.util.LinkedList<E>.push",
+    "name": "push",
+    "type": "method",
+    "parent": "LinkedList<E>",
+    "signatures": [
+      "public void push(E e)"
+    ],
+    "signature_hash": "7893d9c74b29233739da5d8fe3b2d35c4ba107aafc880f713b91572059a0e3bb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedList.html",
+    "parameters": [
+      {
+        "name": "e",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Pushes an element onto the stack represented by this list.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pushes an element onto the stack represented by this list.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.381689",
+    "updatedDate": "2026-03-08T21:40:21.381689",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Stack<E>/push": {
+    "id": "java.util.Stack<E>.push",
+    "name": "push",
+    "type": "method",
+    "parent": "Stack<E>",
+    "signatures": [
+      "public E push(E item)"
+    ],
+    "signature_hash": "c093a0f6692aeb64b7333685c8fe6b22f2f37909cb9a21f3158d9a9c8aa33173",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Stack.html",
+    "parameters": [
+      {
+        "name": "item",
+        "type": "E",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "E",
+    "exceptions": [],
+    "description": "Pushes an item onto the top of this stack.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pushes an item onto the top of this stack.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.414159",
+    "updatedDate": "2026-03-08T21:40:21.414160",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/AbstractMap<K,V>/put": {
+    "id": "java.util.AbstractMap<K,V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "AbstractMap<K,V>",
+    "signatures": [
+      "public V put(K key, V value)"
+    ],
+    "signature_hash": "1872e986b4afc45b25826345adf05e6c986d61445f72dd373c75c28af725bf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/AbstractMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Associates the specified value with the specified key in this map\n(optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates the specified value with the specified key in this map\n(optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.348247",
+    "updatedDate": "2026-03-08T21:40:21.348248",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Dictionary<K,V>/put": {
+    "id": "java.util.Dictionary<K,V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "Dictionary<K,V>",
+    "signatures": [
+      "public abstract V put(K key, V value)"
+    ],
+    "signature_hash": "bfb50296a22d9d3d76a353bae91115f097b2caf2c4c06e329f0101ebc0957efd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Dictionary.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "abstract V",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Maps the specifiedkeyto the specifiedvaluein this dictionary.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Maps the specifiedkeyto the specifiedvaluein this dictionary.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.362260",
+    "updatedDate": "2026-03-08T21:40:21.362261",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/V>/put": {
+    "id": "java.util.V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "V>",
+    "signatures": [
+      "public V put(K key, V value)"
+    ],
+    "signature_hash": "1872e986b4afc45b25826345adf05e6c986d61445f72dd373c75c28af725bf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/EnumMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Associates the specified value with the specified key in this map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates the specified value with the specified key in this map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.363348",
+    "updatedDate": "2026-03-08T21:40:21.363349",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Map<K,V>/put": {
+    "id": "java.util.Map<K,V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "Map<K,V>",
+    "signatures": [
+      "public V put(K key, V value)"
+    ],
+    "signature_hash": "1872e986b4afc45b25826345adf05e6c986d61445f72dd373c75c28af725bf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Map.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Associates the specified value with the specified key in this map\n(optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates the specified value with the specified key in this map\n(optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.364479",
+    "updatedDate": "2026-03-08T21:40:21.364480",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/HashMap<K,V>/put": {
+    "id": "java.util.HashMap<K,V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "HashMap<K,V>",
+    "signatures": [
+      "public V put(K key, V value)"
+    ],
+    "signature_hash": "1872e986b4afc45b25826345adf05e6c986d61445f72dd373c75c28af725bf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HashMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [],
+    "description": "Associates the specified value with the specified key in this map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates the specified value with the specified key in this map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.369092",
+    "updatedDate": "2026-03-08T21:40:21.369093",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Hashtable<K,V>/put": {
+    "id": "java.util.Hashtable<K,V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "Hashtable<K,V>",
+    "signatures": [
+      "public V put(K key, V value)"
+    ],
+    "signature_hash": "1872e986b4afc45b25826345adf05e6c986d61445f72dd373c75c28af725bf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Hashtable.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Maps the specifiedkeyto the specifiedvaluein this hashtable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Maps the specifiedkeyto the specifiedvaluein this hashtable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.370632",
+    "updatedDate": "2026-03-08T21:40:21.370633",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/IdentityHashMap<K,V>/put": {
+    "id": "java.util.IdentityHashMap<K,V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "IdentityHashMap<K,V>",
+    "signatures": [
+      "public V put(K key, V value)"
+    ],
+    "signature_hash": "1872e986b4afc45b25826345adf05e6c986d61445f72dd373c75c28af725bf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/IdentityHashMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [],
+    "description": "Associates the specified value with the specified key in this identity\nhash map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates the specified value with the specified key in this identity\nhash map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.372473",
+    "updatedDate": "2026-03-08T21:40:21.372474",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/TreeMap<K,V>/put": {
+    "id": "java.util.TreeMap<K,V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "TreeMap<K,V>",
+    "signatures": [
+      "public V put(K key, V value)"
+    ],
+    "signature_hash": "1872e986b4afc45b25826345adf05e6c986d61445f72dd373c75c28af725bf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Associates the specified value with the specified key in this map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates the specified value with the specified key in this map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.420857",
+    "updatedDate": "2026-03-08T21:40:21.420858",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/WeakHashMap<K,V>/put": {
+    "id": "java.util.WeakHashMap<K,V>.put",
+    "name": "put",
+    "type": "method",
+    "parent": "WeakHashMap<K,V>",
+    "signatures": [
+      "public V put(K key, V value)"
+    ],
+    "signature_hash": "1872e986b4afc45b25826345adf05e6c986d61445f72dd373c75c28af725bf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/WeakHashMap.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [],
+    "description": "Associates the specified value with the specified key in this map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates the specified value with the specified key in this map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.430478",
+    "updatedDate": "2026-03-08T21:40:21.430479",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/AbstractMap<K,V>/putAll": {
+    "id": "java.util.AbstractMap<K,V>.putAll",
+    "name": "putAll",
+    "type": "method",
+    "parent": "AbstractMap<K,V>",
+    "signatures": [
+      "public void putAll(Map<? extends K, ? extends V> m)"
+    ],
+    "signature_hash": "9cd08e1d9cc34dc735163c11e8d09464e64d86756c215e59fe5d0a8b9431f555",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/AbstractMap.html",
+    "parameters": [
+      {
+        "name": "K",
+        "type": "Map<? extends",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "m",
+        "type": "? extends V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Copies all of the mappings from the specified map to this map\n(optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies all of the mappings from the specified map to this map\n(optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.348266",
+    "updatedDate": "2026-03-08T21:40:21.348267",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/V>/putAll": {
+    "id": "java.util.V>.putAll",
+    "name": "putAll",
+    "type": "method",
+    "parent": "V>",
+    "signatures": [
+      "public void putAll(Map<? extends K, ? extends V> m)"
+    ],
+    "signature_hash": "9cd08e1d9cc34dc735163c11e8d09464e64d86756c215e59fe5d0a8b9431f555",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/EnumMap.html",
+    "parameters": [
+      {
+        "name": "K",
+        "type": "Map<? extends",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "m",
+        "type": "? extends V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Copies all of the mappings from the specified map to this map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies all of the mappings from the specified map to this map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.363385",
+    "updatedDate": "2026-03-08T21:40:21.363386",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Map<K,V>/putAll": {
+    "id": "java.util.Map<K,V>.putAll",
+    "name": "putAll",
+    "type": "method",
+    "parent": "Map<K,V>",
+    "signatures": [
+      "public void putAll(Map<? extends K, ? extends V> m)"
+    ],
+    "signature_hash": "9cd08e1d9cc34dc735163c11e8d09464e64d86756c215e59fe5d0a8b9431f555",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Map.html",
+    "parameters": [
+      {
+        "name": "K",
+        "type": "Map<? extends",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "m",
+        "type": "? extends V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Copies all of the mappings from the specified map to this map\n(optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies all of the mappings from the specified map to this map\n(optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.364518",
+    "updatedDate": "2026-03-08T21:40:21.364519",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/HashMap<K,V>/putAll": {
+    "id": "java.util.HashMap<K,V>.putAll",
+    "name": "putAll",
+    "type": "method",
+    "parent": "HashMap<K,V>",
+    "signatures": [
+      "public void putAll(Map<? extends K, ? extends V> m)"
+    ],
+    "signature_hash": "9cd08e1d9cc34dc735163c11e8d09464e64d86756c215e59fe5d0a8b9431f555",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HashMap.html",
+    "parameters": [
+      {
+        "name": "K",
+        "type": "Map<? extends",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "m",
+        "type": "? extends V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Copies all of the mappings from the specified map to this map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies all of the mappings from the specified map to this map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.369133",
+    "updatedDate": "2026-03-08T21:40:21.369134",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Hashtable<K,V>/putAll": {
+    "id": "java.util.Hashtable<K,V>.putAll",
+    "name": "putAll",
+    "type": "method",
+    "parent": "Hashtable<K,V>",
+    "signatures": [
+      "public void putAll(Map<? extends K, ? extends V> t)"
+    ],
+    "signature_hash": "0e69db0f5b5f138dc37274406c9d5fcad9d28e48a8329a5804d7a523a7732f34",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Hashtable.html",
+    "parameters": [
+      {
+        "name": "K",
+        "type": "Map<? extends",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "t",
+        "type": "? extends V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Copies all of the mappings from the specified map to this hashtable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies all of the mappings from the specified map to this hashtable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.370676",
+    "updatedDate": "2026-03-08T21:40:21.370677",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/IdentityHashMap<K,V>/putAll": {
+    "id": "java.util.IdentityHashMap<K,V>.putAll",
+    "name": "putAll",
+    "type": "method",
+    "parent": "IdentityHashMap<K,V>",
+    "signatures": [
+      "public void putAll(Map<? extends K, ? extends V> m)"
+    ],
+    "signature_hash": "9cd08e1d9cc34dc735163c11e8d09464e64d86756c215e59fe5d0a8b9431f555",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/IdentityHashMap.html",
+    "parameters": [
+      {
+        "name": "K",
+        "type": "Map<? extends",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "m",
+        "type": "? extends V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Copies all of the mappings from the specified map to this map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies all of the mappings from the specified map to this map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.372518",
+    "updatedDate": "2026-03-08T21:40:21.372519",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/TreeMap<K,V>/putAll": {
+    "id": "java.util.TreeMap<K,V>.putAll",
+    "name": "putAll",
+    "type": "method",
+    "parent": "TreeMap<K,V>",
+    "signatures": [
+      "public void putAll(Map<? extends K, ? extends V> map)"
+    ],
+    "signature_hash": "98a4c2b222b78c4d9fcbc1efb27a0a2f9e3932c2b7fea41024dfdfac332d912d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeMap.html",
+    "parameters": [
+      {
+        "name": "K",
+        "type": "Map<? extends",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "map",
+        "type": "? extends V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Copies all of the mappings from the specified map to this map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies all of the mappings from the specified map to this map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.420938",
+    "updatedDate": "2026-03-08T21:40:21.420939",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/WeakHashMap<K,V>/putAll": {
+    "id": "java.util.WeakHashMap<K,V>.putAll",
+    "name": "putAll",
+    "type": "method",
+    "parent": "WeakHashMap<K,V>",
+    "signatures": [
+      "public void putAll(Map<? extends K, ? extends V> m)"
+    ],
+    "signature_hash": "9cd08e1d9cc34dc735163c11e8d09464e64d86756c215e59fe5d0a8b9431f555",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/WeakHashMap.html",
+    "parameters": [
+      {
+        "name": "K",
+        "type": "Map<? extends",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "m",
+        "type": "? extends V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Copies all of the mappings from the specified map to this map.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies all of the mappings from the specified map to this map.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.430563",
+    "updatedDate": "2026-03-08T21:40:21.430564",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/LinkedHashMap<K,V>/putFirst": {
+    "id": "java.util.LinkedHashMap<K,V>.putFirst",
+    "name": "putFirst",
+    "type": "method",
+    "parent": "LinkedHashMap<K,V>",
+    "signatures": [
+      "public V putFirst(K k, V v)"
+    ],
+    "signature_hash": "aaaa4315965dddf2a218da23997307e62f8c86a2b2f5893dd848ba8e88a80e5e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedHashMap.html",
+    "parameters": [
+      {
+        "name": "k",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "v",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [],
+    "description": "Inserts the given mapping into the map if it is not already present, or replaces the\nvalue of a mapping if it is already present (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the given mapping into the map if it is not already present, or replaces the\nvalue of a mapping if it is already present (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.379442",
+    "updatedDate": "2026-03-08T21:40:21.379443",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/SortedMap<K,V>/putFirst": {
+    "id": "java.util.SortedMap<K,V>.putFirst",
+    "name": "putFirst",
+    "type": "method",
+    "parent": "SortedMap<K,V>",
+    "signatures": [
+      "public default V putFirst(K k, V v)"
+    ],
+    "signature_hash": "e636191cb2b84e721c8825f2526d030e139b34bbb90fca03d10fa6554aa2cd27",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SortedMap.html",
+    "parameters": [
+      {
+        "name": "k",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "v",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "ThrowsUnsupportedOperationException.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "ThrowsUnsupportedOperationException.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.387016",
+    "updatedDate": "2026-03-08T21:40:21.387017",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/SequencedMap<K,V>/putFirst": {
+    "id": "java.util.SequencedMap<K,V>.putFirst",
+    "name": "putFirst",
+    "type": "method",
+    "parent": "SequencedMap<K,V>",
+    "signatures": [
+      "public default V putFirst(K k, V v)"
+    ],
+    "signature_hash": "e636191cb2b84e721c8825f2526d030e139b34bbb90fca03d10fa6554aa2cd27",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedMap.html",
+    "parameters": [
+      {
+        "name": "k",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "v",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Inserts the given mapping into the map if it is not already present, or replaces the\nvalue of a mapping if it is already present (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the given mapping into the map if it is not already present, or replaces the\nvalue of a mapping if it is already present (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.405175",
+    "updatedDate": "2026-03-08T21:40:21.405176",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "21",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/TreeMap<K,V>/putFirst": {
+    "id": "java.util.TreeMap<K,V>.putFirst",
+    "name": "putFirst",
+    "type": "method",
+    "parent": "TreeMap<K,V>",
+    "signatures": [
+      "public V putFirst(K k, V v)"
+    ],
+    "signature_hash": "aaaa4315965dddf2a218da23997307e62f8c86a2b2f5893dd848ba8e88a80e5e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeMap.html",
+    "parameters": [
+      {
+        "name": "k",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "v",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "ThrowsUnsupportedOperationException.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "ThrowsUnsupportedOperationException.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.421018",
+    "updatedDate": "2026-03-08T21:40:21.421019",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/Map<K,V>/putIfAbsent": {
+    "id": "java.util.Map<K,V>.putIfAbsent",
+    "name": "putIfAbsent",
+    "type": "method",
+    "parent": "Map<K,V>",
+    "signatures": [
+      "public default V putIfAbsent(K key, V value)"
+    ],
+    "signature_hash": "8858ae7c79ca5f4cbe0c3d0b36ae2f4f97251cf9b2b77b54c72ccebf37e58ade",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Map.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "If the specified key is not already associated with a value (or is mapped\ntonull) associates it with the given value and returnsnull, else returns the current value (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the specified key is not already associated with a value (or is mapped\ntonull) associates it with the given value and returnsnull, else returns the current value (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.364557",
+    "updatedDate": "2026-03-08T21:40:21.364557",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/LinkedHashMap<K,V>/putLast": {
+    "id": "java.util.LinkedHashMap<K,V>.putLast",
+    "name": "putLast",
+    "type": "method",
+    "parent": "LinkedHashMap<K,V>",
+    "signatures": [
+      "public V putLast(K k, V v)"
+    ],
+    "signature_hash": "40f646839ff1267fc71fd2e6e3516612e398225e7e3b7144155e3b3700989be8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedHashMap.html",
+    "parameters": [
+      {
+        "name": "k",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "v",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [],
+    "description": "Inserts the given mapping into the map if it is not already present, or replaces the\nvalue of a mapping if it is already present (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the given mapping into the map if it is not already present, or replaces the\nvalue of a mapping if it is already present (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.379493",
+    "updatedDate": "2026-03-08T21:40:21.379494",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/SortedMap<K,V>/putLast": {
+    "id": "java.util.SortedMap<K,V>.putLast",
+    "name": "putLast",
+    "type": "method",
+    "parent": "SortedMap<K,V>",
+    "signatures": [
+      "public default V putLast(K k, V v)"
+    ],
+    "signature_hash": "52698cc41aee5bb89b030faffb25c7941462656d0649e2b48aab28c112d63a42",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SortedMap.html",
+    "parameters": [
+      {
+        "name": "k",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "v",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "ThrowsUnsupportedOperationException.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "ThrowsUnsupportedOperationException.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.387071",
+    "updatedDate": "2026-03-08T21:40:21.387071",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/SequencedMap<K,V>/putLast": {
+    "id": "java.util.SequencedMap<K,V>.putLast",
+    "name": "putLast",
+    "type": "method",
+    "parent": "SequencedMap<K,V>",
+    "signatures": [
+      "public default V putLast(K k, V v)"
+    ],
+    "signature_hash": "52698cc41aee5bb89b030faffb25c7941462656d0649e2b48aab28c112d63a42",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedMap.html",
+    "parameters": [
+      {
+        "name": "k",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "v",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "default V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Inserts the given mapping into the map if it is not already present, or replaces the\nvalue of a mapping if it is already present (optional operation).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Inserts the given mapping into the map if it is not already present, or replaces the\nvalue of a mapping if it is already present (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.405248",
+    "updatedDate": "2026-03-08T21:40:21.405249",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "21",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util/TreeMap<K,V>/putLast": {
+    "id": "java.util.TreeMap<K,V>.putLast",
+    "name": "putLast",
+    "type": "method",
+    "parent": "TreeMap<K,V>",
+    "signatures": [
+      "public V putLast(K k, V v)"
+    ],
+    "signature_hash": "40f646839ff1267fc71fd2e6e3516612e398225e7e3b7144155e3b3700989be8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeMap.html",
+    "parameters": [
+      {
+        "name": "k",
+        "type": "K",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "v",
+        "type": "V",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "V",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "ThrowsUnsupportedOperationException.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "ThrowsUnsupportedOperationException.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-08T21:40:21.421096",
+    "updatedDate": "2026-03-08T21:40:21.421097",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}
