@@ -60,43 +60,35 @@ if (isPackageOnly) {
   // Es una ruta de solo paquete
   isPackagePage = true
   
-  // Obtener todos los elementos directos del paquete (sin métodos/atributos)
-  const packageElements = distributionFile
-    .filter((r: any) => r.slug.startsWith(packageName + '/'))
-    .filter((r: any) => r.slug.split('/').length === 2) // Solo elementos directos
+  // Obtener el shard del paquete
+  const routeMeta = distributionFile.find((r: any) => r.slug === packageName)
   
-  // Obtener el shard del paquete para extraer tipos
-  const firstElementMeta = packageElements[0]
-  if (firstElementMeta) {
-    const shardPath = `../../data/${firstElementMeta.shard}`
-    const shardModule = shardModules[shardPath] as any
-    const shard = shardModule.default || shardModule
-    
-    // Categorizar elementos por tipo
+  if (!routeMeta) throw new Error("Package not found")
+  
+  const shardPath = `../../data/${routeMeta.shard}`
+  const shardModule = shardModules[shardPath] as any
+  const shard = shardModule.default || shardModule
+  
+  // El documento del paquete ya contiene sus miembros
+  doc = shard[packageName]
+  
+  if (doc && doc.members) {
+    // Categorizar elementos por tipo usando los miembros ya presentes
     const membersByType: any = {}
-    packageElements.forEach((member: any) => {
-      const element = shard[member.slug]
-      const type = element?.type || 'other'
+    doc.members.forEach((member: any) => {
+      const type = member.type || 'other'
       if (!membersByType[type]) {
         membersByType[type] = []
       }
-      membersByType[type].push({ ...member, elementType: type, name: element?.name })
+      membersByType[type].push(member)
     })
-    
-    // Crear un objeto doc sintético para la página del paquete
-    doc = {
-      name: packageName,
-      type: 'Package',
-      description: `Paquete Java: ${packageName}`,
-      members: packageElements,
-      membersByType: membersByType
-    }
+    doc.membersByType = membersByType
   } else {
-    doc = {
+    doc = doc || {
       name: packageName,
       type: 'Package',
       description: `Paquete Java: ${packageName}`,
-      members: packageElements,
+      members: [],
       membersByType: {}
     }
   }
