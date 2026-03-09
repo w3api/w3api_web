@@ -215,21 +215,33 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
 </style>
 
 <script define:vars={{ algoliaAppId, algoliaSearchKey, algoliaIndexName }}>
-  import algoliasearch from 'algoliasearch';
-
   const searchBtn = document.getElementById('search-trigger');
   const searchModal = document.getElementById('search-modal');
   const searchCloseBtn = document.getElementById('search-close');
   const searchInput = document.getElementById('search-input');
   const searchResults = document.getElementById('search-results');
 
-  // Inicializar cliente de Algolia
   let searchClient = null;
   let searchIndex = null;
 
-  if (algoliaAppId && algoliaSearchKey && algoliaIndexName) {
-    searchClient = algoliasearch(algoliaAppId, algoliaSearchKey);
-    searchIndex = searchClient.initIndex(algoliaIndexName);
+  // Cargar Algolia desde CDN si está configurado
+  async function initAlgolia() {
+    if (!algoliaAppId || !algoliaSearchKey || !algoliaIndexName) {
+      console.warn('Algolia no está configurado. Instala algoliasearch y configura las variables de entorno.');
+      return false;
+    }
+
+    try {
+      // Cargar dinámicamente algoliasearch desde los módulos
+      const module = await import('algoliasearch');
+      const algoliasearch = module.default;
+      searchClient = algoliasearch(algoliaAppId, algoliaSearchKey);
+      searchIndex = searchClient.initIndex(algoliaIndexName);
+      return true;
+    } catch (error) {
+      console.error('Error al cargar Algolia:', error);
+      return false;
+    }
   }
 
   // Abrir modal
@@ -270,8 +282,17 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
       return;
     }
 
+    // Inicializar Algolia si no está ya inicializado
+    if (!searchIndex && algoliaAppId) {
+      const initialized = await initAlgolia();
+      if (!initialized) {
+        searchResults.innerHTML = '<div class="sl-search-no-results">Error al conectar con Algolia</div>';
+        return;
+      }
+    }
+
     if (!searchIndex) {
-      searchResults.innerHTML = '<div class="sl-search-no-results">Algolia no está configurado. Configura ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY y ALGOLIA_INDEX_NAME.</div>';
+      searchResults.innerHTML = '<div class="sl-search-no-results">Configura Algolia en las variables de entorno para usar la búsqueda.</div>';
       return;
     }
 
