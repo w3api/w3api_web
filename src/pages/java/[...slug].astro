@@ -65,12 +65,40 @@ if (isPackageOnly) {
     .filter((r: any) => r.slug.startsWith(packageName + '/'))
     .filter((r: any) => r.slug.split('/').length === 2) // Solo elementos directos
   
-  // Crear un objeto doc sintético para la página del paquete
-  doc = {
-    name: packageName,
-    type: 'Package',
-    description: `Paquete Java: ${packageName}`,
-    members: packageElements
+  // Obtener el shard del paquete para extraer tipos
+  const firstElementMeta = packageElements[0]
+  if (firstElementMeta) {
+    const shardPath = `../../data/${firstElementMeta.shard}`
+    const shardModule = shardModules[shardPath] as any
+    const shard = shardModule.default || shardModule
+    
+    // Categorizar elementos por tipo
+    const membersByType: any = {}
+    packageElements.forEach((member: any) => {
+      const element = shard[member.slug]
+      const type = element?.type || 'other'
+      if (!membersByType[type]) {
+        membersByType[type] = []
+      }
+      membersByType[type].push({ ...member, elementType: type, name: element?.name })
+    })
+    
+    // Crear un objeto doc sintético para la página del paquete
+    doc = {
+      name: packageName,
+      type: 'Package',
+      description: `Paquete Java: ${packageName}`,
+      members: packageElements,
+      membersByType: membersByType
+    }
+  } else {
+    doc = {
+      name: packageName,
+      type: 'Package',
+      description: `Paquete Java: ${packageName}`,
+      members: packageElements,
+      membersByType: {}
+    }
   }
 } else {
   // Es una ruta de elemento específico
@@ -192,18 +220,26 @@ const tableOfContents = headings.map(h => ({
     <p>{doc.description || "No description available."}</p>
   </section>
 
-  {isPackagePage && doc.members && doc.members.length > 0 && (
+  {isPackagePage && doc.membersByType && Object.keys(doc.membersByType).length > 0 && (
     <section id="members">
       <h2>Members</h2>
-      <ul>
-        {doc.members.map((member: any) => (
-          <li>
-            <a href={`/java/${member.slug}/`}>
-              {member.slug.split('/')[1]}
-            </a>
-          </li>
-        ))}
-      </ul>
+      {Object.entries(doc.membersByType).map(([type, members]: any) => {
+        const typeLabel = type.charAt(0).toUpperCase() + type.slice(1) + 's'
+        return (
+          <div class="members-category">
+            <h3>{typeLabel}</h3>
+            <ul>
+              {(members as any[]).map((member: any) => (
+                <li>
+                  <a href={`/java/${member.slug}/`}>
+                    {member.name || member.slug.split('/')[1]}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      })}
     </section>
   )}
 
@@ -377,6 +413,36 @@ const tableOfContents = headings.map(h => ({
   .sl-badge-caution {
     background-color: #fef3c7;
     color: #b45309;
+  }
+
+  .members-category h3 {
+    margin: 1.5rem 0 0.75rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--sl-color-text);
+    border-bottom: 1px solid var(--sl-color-hairline);
+    padding-bottom: 0.5rem;
+  }
+
+  .members-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+
+  .members-category li {
+    padding: 0.25rem 0;
+  }
+
+  .members-category a {
+    color: var(--sl-color-accent);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .members-category a:hover {
+    color: var(--sl-color-accent-high);
+    text-decoration: underline;
   }
   
 </style>
