@@ -1,93 +1,36 @@
 ---
 /**
  * Search.astro
- * Componente de búsqueda con integración Algolia
- * 
- * Requiere variables de entorno:
- * - ALGOLIA_APP_ID: ID de la aplicación Algolia
- * - ALGOLIA_SEARCH_KEY: Clave pública de búsqueda de Algolia
- * - ALGOLIA_INDEX_NAME: Nombre del índice en Algolia
+ * Componente de búsqueda con InstantSearch.js vía CDN
  */
 
-const algoliaAppId = import.meta.env.ALGOLIA_APP_ID;
-const algoliaSearchKey = import.meta.env.ALGOLIA_SEARCH_KEY;
-const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
+const appId = import.meta.env.PUBLIC_ALGOLIA_APP_ID;
+const apiKey = import.meta.env.PUBLIC_ALGOLIA_SEARCH_KEY;
+const indexName = import.meta.env.PUBLIC_ALGOLIA_INDEX_NAME;
 ---
 
 <div class="sl-search-container">
-  <div class="sl-search-wrapper">
-    <input 
-      type="text" 
-      id="search-input" 
-      placeholder="Buscar..."
-      class="sl-search-input"
-      autocomplete="off"
-      aria-label="Buscar clases, métodos, paquetes"
-    />
-    <svg class="sl-search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="11" cy="11" r="8"/>
-      <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-    </svg>
-
-    <!-- Dropdown de resultados -->
-    <div id="search-dropdown" class="sl-search-dropdown">
-      <div id="search-results" class="sl-search-results">
-        <!-- Los resultados se cargarán aquí -->
-      </div>
-    </div>
-  </div>
+  <div id="searchbox"></div>
+  <div id="hits"></div>
 </div>
 
 <style>
   .sl-search-container {
     width: 100%;
     max-width: 100%;
+    position: relative;
   }
 
-  .sl-search-wrapper {
+  #searchbox {
+    width: 100%;
+  }
+
+  #searchbox form {
     position: relative;
     width: 100%;
   }
 
-  .sl-search-input {
-    width: 100%;
-    padding: 0.5rem 2.5rem 0.5rem 0.75rem;
-    background-color: var(--sl-color-bg-nav);
-    border: 1px solid var(--sl-color-hairline);
-    border-radius: var(--sl-border-radius);
-    color: var(--sl-color-text);
-    font-size: 0.875rem;
-    font-family: inherit;
-    cursor: pointer;
-    transition: background-color 0.15s, border-color 0.15s;
-  }
-
-  .sl-search-input:hover {
-    background-color: var(--sl-color-accent-low);
-    border-color: var(--sl-color-accent);
-  }
-
-  .sl-search-input:focus {
-    outline: none;
-    border-color: var(--sl-color-accent);
-    background-color: var(--sl-color-bg);
-  }
-
-  .sl-search-input::placeholder {
-    color: var(--sl-color-gray-4);
-  }
-
-  .sl-search-icon {
-    position: absolute;
-    right: 0.75rem;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-    color: var(--sl-color-gray-4);
-  }
-
-  /* Dropdown styles */
-  .sl-search-dropdown {
+  #hits {
     display: none;
     position: absolute;
     top: 100%;
@@ -103,16 +46,80 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
-  .sl-search-dropdown.open {
+  #hits.open {
     display: block;
   }
 
-  .sl-search-results {
+  /* InstantSearch.js styles */
+  :global(.ais-SearchBox) {
+    width: 100%;
+  }
+
+  :global(.ais-SearchBox-form) {
+    position: relative;
+    width: 100%;
+  }
+
+  :global(.ais-SearchBox-input) {
+    width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+    background-color: var(--sl-color-bg-nav);
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: var(--sl-border-radius);
+    color: var(--sl-color-text);
+    font-size: 0.875rem;
+    font-family: inherit;
+    transition: background-color 0.15s, border-color 0.15s;
+    box-sizing: border-box;
+  }
+
+  :global(.ais-SearchBox-input:hover) {
+    background-color: var(--sl-color-accent-low);
+    border-color: var(--sl-color-accent);
+  }
+
+  :global(.ais-SearchBox-input:focus) {
+    outline: none;
+    border-color: var(--sl-color-accent);
+    background-color: var(--sl-color-bg);
+  }
+
+  :global(.ais-SearchBox-input::placeholder) {
+    color: var(--sl-color-gray-4);
+  }
+
+  :global(.ais-SearchBox-submit),
+  :global(.ais-SearchBox-reset) {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--sl-color-gray-4);
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  :global(.ais-SearchBox-submit:hover),
+  :global(.ais-SearchBox-reset:hover) {
+    color: var(--sl-color-text);
+  }
+
+  :global(.ais-Hits) {
     padding: 0;
   }
 
-  .sl-search-result-item {
-    display: block;
+  :global(.ais-Hits-list) {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  :global(.ais-Hits-item) {
+    display: block !important;
     padding: 0.75rem 1rem;
     text-decoration: none;
     color: inherit;
@@ -120,163 +127,118 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
     border-bottom: 1px solid var(--sl-color-hairline);
   }
 
-  .sl-search-result-item:last-child {
+  :global(.ais-Hits-item:last-child) {
     border-bottom: none;
   }
 
-  .sl-search-result-item:hover {
+  :global(.ais-Hits-item:hover) {
     background-color: var(--sl-color-accent-low);
   }
 
-  .sl-search-result-title {
+  :global(.ais-Hits-item h1) {
+    font-size: 0.875rem;
     font-weight: 600;
     color: var(--sl-color-accent);
-    margin-bottom: 0.25rem;
-    font-size: 0.875rem;
+    margin: 0 0 0.25rem 0;
   }
 
-  .sl-search-result-meta {
+  :global(.ais-Hits-item p) {
     font-size: 0.75rem;
     color: var(--sl-color-gray-4);
+    margin: 0;
   }
 
-  .sl-search-no-results {
+  :global(.ais-EmptyResults) {
     padding: 1.5rem 1rem;
-    text-align: center;
-    color: var(--sl-color-gray-4);
-    font-size: 0.875rem;
-  }
-
-  .sl-search-loading {
-    padding: 1rem;
     text-align: center;
     color: var(--sl-color-gray-4);
     font-size: 0.875rem;
   }
 </style>
 
-<script define:vars={{ algoliaAppId, algoliaSearchKey, algoliaIndexName }}>
-  const searchInput = document.getElementById('search-input');
-  const searchDropdown = document.getElementById('search-dropdown');
-  const searchResults = document.getElementById('search-results');
+<!-- CDN Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script>
 
-  let searchClient = null;
-  let searchIndex = null;
-
-  // Cargar Algolia dinámicamente
-  async function initAlgolia() {
-    if (!algoliaAppId || !algoliaSearchKey || !algoliaIndexName) {
-      console.warn('Algolia no está configurado.');
-      return false;
-    }
-
+<script define:vars={{ appId, apiKey, indexName }}>
+  function initSearch() {
     try {
-      const module = await import('algoliasearch');
-      const algoliasearch = module.default;
-      searchClient = algoliasearch(algoliaAppId, algoliaSearchKey);
-      searchIndex = searchClient.initIndex(algoliaIndexName);
-      return true;
-    } catch (error) {
-      console.error('Error al cargar Algolia:', error);
-      return false;
-    }
-  }
-
-  // Mostrar/ocultar dropdown
-  function toggleDropdown(show) {
-    if (show) {
-      searchDropdown.classList.add('open');
-    } else {
-      searchDropdown.classList.remove('open');
-    }
-  }
-
-  // Focus en input - mostrar dropdown
-  searchInput?.addEventListener('focus', () => {
-    if (searchInput.value.trim()) {
-      toggleDropdown(true);
-    }
-  });
-
-  // Click fuera del dropdown - cerrar
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.sl-search-wrapper')) {
-      toggleDropdown(false);
-    }
-  });
-
-  // Atajo de teclado Ctrl+K
-  document.addEventListener('keydown', (e) => {
-    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-      e.preventDefault();
-      searchInput?.focus();
-    }
-  });
-
-  // Búsqueda en tiempo real
-  let searchTimeout;
-  searchInput?.addEventListener('input', async (e) => {
-    clearTimeout(searchTimeout);
-    const query = e.target.value.trim();
-
-    if (!query) {
-      toggleDropdown(false);
-      return;
-    }
-
-    // Inicializar Algolia si no está ya inicializado
-    if (!searchIndex && algoliaAppId) {
-      const initialized = await initAlgolia();
-      if (!initialized) {
-        searchResults.innerHTML = '<div class="sl-search-no-results">Error al conectar con Algolia</div>';
-        toggleDropdown(true);
+      if (!window.algoliasearch || !window.instantsearch) {
+        setTimeout(initSearch, 100);
         return;
       }
-    }
 
-    if (!searchIndex) {
-      searchResults.innerHTML = '<div class="sl-search-no-results">Configura Algolia para usar búsqueda</div>';
-      toggleDropdown(true);
-      return;
-    }
+      console.log('✅ Librerías cargadas');
 
-    searchResults.innerHTML = '<div class="sl-search-loading">Buscando...</div>';
-    toggleDropdown(true);
-
-    searchTimeout = setTimeout(async () => {
-      try {
-        const { hits } = await searchIndex.search(query, {
-          hitsPerPage: 8,
-        });
-
-        if (hits.length === 0) {
-          searchResults.innerHTML = '<div class="sl-search-no-results">No se encontraron resultados</div>';
-          return;
-        }
-
-        searchResults.innerHTML = hits
-          .map(
-            (hit) => `
-          <a href="${hit.url || '#'}" class="sl-search-result-item">
-            <div class="sl-search-result-title">${hit.name || hit.title}</div>
-            <div class="sl-search-result-meta">${hit.type || 'Resultado'} • ${hit.package || 'Java'}</div>
-          </a>
-        `
-          )
-          .join('');
-      } catch (error) {
-        console.error('Search error:', error);
-        searchResults.innerHTML =
-          '<div class="sl-search-no-results">Error en la búsqueda</div>';
+      if (!appId || !apiKey || !indexName) {
+        console.error('❌ Algolia no configurado');
+        return;
       }
-    }, 300);
-  });
 
-  // Cerrar dropdown con Escape
-  searchInput?.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      toggleDropdown(false);
-      e.preventDefault();
+      const { algoliasearch } = window;
+      const { instantsearch } = window;
+
+      const searchClient = algoliasearch(appId, apiKey);
+      
+      const search = instantsearch({
+        indexName,
+        searchClient,
+      });
+
+      search.addWidgets([
+        instantsearch.widgets.searchBox({
+          container: '#searchbox',
+          placeholder: 'Buscar...',
+        }),
+        instantsearch.widgets.hits({
+          container: '#hits',
+          templates: {
+            item: (hit) => `
+              <a href="${hit.url || '#'}" class="ais-Hits-item">
+                <h1>${hit.elemento || hit.title}</h1>
+                <p>${hit.paquete || ''} • ${hit.lenguaje || 'Java'}</p>
+              </a>
+            `,
+            empty: 'Sin resultados',
+          },
+        }),
+        instantsearch.widgets.configure({
+          hitsPerPage: 8,
+        }),
+      ]);
+
+      search.on('render', () => {
+        const hits = document.getElementById('hits');
+        const input = document.querySelector('.ais-SearchBox-input');
+        if (input?.value?.trim()) {
+          hits?.classList.add('open');
+        } else {
+          hits?.classList.remove('open');
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.sl-search-container')) {
+          document.getElementById('hits')?.classList.remove('open');
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          document.getElementById('hits')?.classList.remove('open');
+        }
+      });
+
+      search.start();
+      console.log('✅ InstantSearch iniciado');
+    } catch (error) {
+      console.error('❌ Error:', error);
     }
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSearch);
+  } else {
+    initSearch();
+  }
 </script>

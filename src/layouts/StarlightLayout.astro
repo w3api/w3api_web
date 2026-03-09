@@ -104,6 +104,18 @@ const currentPath = Astro.url.pathname;
           <Search />
         </div>
 
+        <!-- NAVIGATION LINKS -->
+        <nav class="sl-header-nav">
+          <a href="/apis" class="sl-nav-link">APIs</a>
+          <a href="/lista-correo" class="sl-nav-link">Lista de Correo</a>
+          <a href="/blog" class="sl-nav-link">Blog</a>
+        </nav>
+
+        <!-- SOCIAL ICONS -->
+        <div class="sl-header-social">
+          <!-- Espacio para iconos de redes sociales -->
+        </div>
+
         <div class="sl-header-end">
           <!-- Theme toggle -->
           <button id="theme-toggle" class="sl-icon-btn" aria-label="Cambiar tema">
@@ -306,11 +318,38 @@ const currentPath = Astro.url.pathname;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex: 1;
+        flex: 0 0 300px;
         padding: 0 1rem;
         min-width: 200px;
-      }
         height: var(--sl-header-height);
+      }
+
+      /* Navigation Links */
+      .sl-header-nav {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        height: var(--sl-header-height);
+        flex-shrink: 0;
+      }
+
+      .sl-nav-link {
+        font-size: var(--sl-text-sm);
+        color: var(--sl-color-text);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.15s;
+      }
+      .sl-nav-link:hover { color: var(--sl-color-accent); }
+
+      /* Social Icons Placeholder */
+      .sl-header-social {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        height: var(--sl-header-height);
+        flex-shrink: 0;
+        min-width: 80px;
       }
 
       .sl-site-title {
