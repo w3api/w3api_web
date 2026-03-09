@@ -99,10 +99,12 @@ const currentPath = Astro.url.pathname;
           </a>
         </div>
 
-        <div class="sl-header-end">
-          <!-- Search -->
+        <!-- SEARCH CENTER -->
+        <div class="sl-header-center">
           <Search />
+        </div>
 
+        <div class="sl-header-end">
           <!-- Theme toggle -->
           <button id="theme-toggle" class="sl-icon-btn" aria-label="Cambiar tema">
             <svg class="sl-icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -296,6 +298,16 @@ const currentPath = Astro.url.pathname;
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        height: var(--sl-header-height);
+      }
+
+      .sl-header-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        max-width: 500px;
+      }
         height: var(--sl-header-height);
       }
 
