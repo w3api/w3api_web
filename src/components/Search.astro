@@ -15,228 +15,162 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
 ---
 
 <div class="sl-search-container">
-  <button class="sl-search-btn" id="search-trigger" aria-label="Buscar">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <div class="sl-search-wrapper">
+    <input 
+      type="text" 
+      id="search-input" 
+      placeholder="Buscar..."
+      class="sl-search-input"
+      autocomplete="off"
+      aria-label="Buscar clases, métodos, paquetes"
+    />
+    <svg class="sl-search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="11" cy="11" r="8"/>
       <line x1="21" y1="21" x2="16.65" y2="16.65"/>
     </svg>
-    <span class="sl-search-label">Buscar</span>
-    <kbd class="sl-search-kbd"><kbd>Ctrl</kbd><kbd>K</kbd></kbd>
-  </button>
 
-  <!-- Search Modal -->
-  <dialog id="search-modal" class="sl-search-modal">
-    <div class="sl-search-modal-content">
-      <div class="sl-search-modal-header">
-        <input 
-          type="text" 
-          id="search-input" 
-          placeholder="Buscar clases, métodos, paquetes..."
-          class="sl-search-input"
-          autocomplete="off"
-        />
-        <button id="search-close" class="sl-search-close" aria-label="Cerrar búsqueda">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-      </div>
-
+    <!-- Dropdown de resultados -->
+    <div id="search-dropdown" class="sl-search-dropdown">
       <div id="search-results" class="sl-search-results">
         <!-- Los resultados se cargarán aquí -->
       </div>
-
-      <div class="sl-search-modal-footer">
-        <span class="sl-search-info">Powered by Algolia</span>
-      </div>
     </div>
-  </dialog>
+  </div>
 </div>
 
 <style>
-  .sl-search-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
+  .sl-search-container {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .sl-search-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .sl-search-input {
+    width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 0.75rem;
     background-color: var(--sl-color-bg-nav);
     border: 1px solid var(--sl-color-hairline);
     border-radius: var(--sl-border-radius);
     color: var(--sl-color-text);
     font-size: 0.875rem;
+    font-family: inherit;
     cursor: pointer;
     transition: background-color 0.15s, border-color 0.15s;
   }
 
-  .sl-search-btn:hover {
+  .sl-search-input:hover {
     background-color: var(--sl-color-accent-low);
     border-color: var(--sl-color-accent);
   }
 
-  .sl-search-label {
-    display: none;
-  }
-
-  .sl-search-kbd {
-    display: flex;
-    gap: 0.25rem;
-    margin-left: 0.5rem;
-  }
-
-  .sl-search-kbd kbd {
-    padding: 0.15rem 0.35rem;
-    background-color: var(--sl-color-bg);
-    border: 1px solid var(--sl-color-hairline-shade);
-    border-radius: 0.25rem;
-    font-size: 0.75rem;
-    font-family: monospace;
-    color: var(--sl-color-gray-5);
-  }
-
-  @media (min-width: 50rem) {
-    .sl-search-label {
-      display: inline;
-    }
-  }
-
-  /* Modal styles */
-  .sl-search-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    padding: 0;
-    display: none;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 10vh;
-    z-index: 1000;
-  }
-
-  .sl-search-modal[open] {
-    display: flex;
-  }
-
-  .sl-search-modal::backdrop {
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .sl-search-modal-content {
-    background: var(--sl-color-bg);
-    border: 1px solid var(--sl-color-hairline);
-    border-radius: var(--sl-border-radius);
-    width: 90%;
-    max-width: 600px;
-    max-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-  }
-
-  .sl-search-modal-header {
-    padding: 1rem;
-    border-bottom: 1px solid var(--sl-color-hairline);
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-
-  .sl-search-input {
-    flex: 1;
-    padding: 0.5rem 0.75rem;
-    background: var(--sl-color-bg);
-    border: none;
-    color: var(--sl-color-text);
-    font-size: 1rem;
-    font-family: inherit;
+  .sl-search-input:focus {
     outline: none;
+    border-color: var(--sl-color-accent);
+    background-color: var(--sl-color-bg);
   }
 
   .sl-search-input::placeholder {
     color: var(--sl-color-gray-4);
   }
 
-  .sl-search-close {
-    padding: 0.25rem;
-    background: none;
-    border: none;
+  .sl-search-icon {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
     color: var(--sl-color-gray-4);
-    cursor: pointer;
-    transition: color 0.15s;
   }
 
-  .sl-search-close:hover {
-    color: var(--sl-color-text);
+  /* Dropdown styles */
+  .sl-search-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0.5rem;
+    background: var(--sl-color-bg);
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: var(--sl-border-radius);
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .sl-search-dropdown.open {
+    display: block;
   }
 
   .sl-search-results {
-    flex: 1;
-    overflow-y: auto;
     padding: 0;
   }
 
   .sl-search-result-item {
-    padding: 1rem;
-    border-bottom: 1px solid var(--sl-color-hairline);
+    display: block;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     color: inherit;
     transition: background-color 0.15s;
-  }
-
-  .sl-search-result-item:hover {
-    background-color: var(--sl-color-accent-low);
+    border-bottom: 1px solid var(--sl-color-hairline);
   }
 
   .sl-search-result-item:last-child {
     border-bottom: none;
   }
 
+  .sl-search-result-item:hover {
+    background-color: var(--sl-color-accent-low);
+  }
+
   .sl-search-result-title {
     font-weight: 600;
     color: var(--sl-color-accent);
     margin-bottom: 0.25rem;
+    font-size: 0.875rem;
   }
 
   .sl-search-result-meta {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: var(--sl-color-gray-4);
   }
 
   .sl-search-no-results {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
     color: var(--sl-color-gray-4);
+    font-size: 0.875rem;
   }
 
-  .sl-search-modal-footer {
-    padding: 0.75rem 1rem;
-    border-top: 1px solid var(--sl-color-hairline);
-    font-size: 0.75rem;
-    color: var(--sl-color-gray-5);
-    text-align: right;
+  .sl-search-loading {
+    padding: 1rem;
+    text-align: center;
+    color: var(--sl-color-gray-4);
+    font-size: 0.875rem;
   }
 </style>
 
 <script define:vars={{ algoliaAppId, algoliaSearchKey, algoliaIndexName }}>
-  const searchBtn = document.getElementById('search-trigger');
-  const searchModal = document.getElementById('search-modal');
-  const searchCloseBtn = document.getElementById('search-close');
   const searchInput = document.getElementById('search-input');
+  const searchDropdown = document.getElementById('search-dropdown');
   const searchResults = document.getElementById('search-results');
 
   let searchClient = null;
   let searchIndex = null;
 
-  // Cargar Algolia desde CDN si está configurado
+  // Cargar Algolia dinámicamente
   async function initAlgolia() {
     if (!algoliaAppId || !algoliaSearchKey || !algoliaIndexName) {
-      console.warn('Algolia no está configurado. Instala algoliasearch y configura las variables de entorno.');
+      console.warn('Algolia no está configurado.');
       return false;
     }
 
     try {
-      // Cargar dinámicamente algoliasearch desde los módulos
       const module = await import('algoliasearch');
       const algoliasearch = module.default;
       searchClient = algoliasearch(algoliaAppId, algoliaSearchKey);
@@ -248,21 +182,26 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
     }
   }
 
-  // Abrir modal
-  searchBtn?.addEventListener('click', () => {
-    searchModal?.showModal();
-    searchInput?.focus();
+  // Mostrar/ocultar dropdown
+  function toggleDropdown(show) {
+    if (show) {
+      searchDropdown.classList.add('open');
+    } else {
+      searchDropdown.classList.remove('open');
+    }
+  }
+
+  // Focus en input - mostrar dropdown
+  searchInput?.addEventListener('focus', () => {
+    if (searchInput.value.trim()) {
+      toggleDropdown(true);
+    }
   });
 
-  // Cerrar modal
-  searchCloseBtn?.addEventListener('click', () => {
-    searchModal?.close();
-  });
-
-  // Cerrar modal con Escape
-  searchModal?.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      searchModal.close();
+  // Click fuera del dropdown - cerrar
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.sl-search-wrapper')) {
+      toggleDropdown(false);
     }
   });
 
@@ -270,7 +209,6 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
   document.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
       e.preventDefault();
-      searchModal?.showModal();
       searchInput?.focus();
     }
   });
@@ -282,7 +220,7 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
     const query = e.target.value.trim();
 
     if (!query) {
-      searchResults.innerHTML = '';
+      toggleDropdown(false);
       return;
     }
 
@@ -291,19 +229,24 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
       const initialized = await initAlgolia();
       if (!initialized) {
         searchResults.innerHTML = '<div class="sl-search-no-results">Error al conectar con Algolia</div>';
+        toggleDropdown(true);
         return;
       }
     }
 
     if (!searchIndex) {
-      searchResults.innerHTML = '<div class="sl-search-no-results">Configura Algolia en las variables de entorno para usar la búsqueda.</div>';
+      searchResults.innerHTML = '<div class="sl-search-no-results">Configura Algolia para usar búsqueda</div>';
+      toggleDropdown(true);
       return;
     }
+
+    searchResults.innerHTML = '<div class="sl-search-loading">Buscando...</div>';
+    toggleDropdown(true);
 
     searchTimeout = setTimeout(async () => {
       try {
         const { hits } = await searchIndex.search(query, {
-          hitsPerPage: 10,
+          hitsPerPage: 8,
         });
 
         if (hits.length === 0) {
@@ -314,7 +257,7 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
         searchResults.innerHTML = hits
           .map(
             (hit) => `
-          <a href="${hit.url || '#'}" class="sl-search-result-item" onclick="document.getElementById('search-modal').close()">
+          <a href="${hit.url || '#'}" class="sl-search-result-item">
             <div class="sl-search-result-title">${hit.name || hit.title}</div>
             <div class="sl-search-result-meta">${hit.type || 'Resultado'} • ${hit.package || 'Java'}</div>
           </a>
@@ -327,5 +270,13 @@ const algoliaIndexName = import.meta.env.ALGOLIA_INDEX_NAME;
           '<div class="sl-search-no-results">Error en la búsqueda</div>';
       }
     }, 300);
+  });
+
+  // Cerrar dropdown con Escape
+  searchInput?.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      toggleDropdown(false);
+      e.preventDefault();
+    }
   });
 </script>
