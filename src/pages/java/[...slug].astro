@@ -39,18 +39,9 @@ interface Props {
 const { language, languageName } = Astro.props
 const slug = Astro.params.slug
 
-
-
-// Primero, al ser Java me voy a ver dónde están los paquetes java
-// Del fichero Java saco el fichero que tiene las distribución en sharding
-// Necesito del slug la parte de java y el nombre del paquete
+// Obtener el nombre del paquete (primera parte del slug)
 const [packageName] = slug.split('/').slice(0, 1)
-
-// Ahora voy al fichero con la distribución de shards y busco el shard que contiene ese paquete
-// const distribution = javaIndex.packages?.find((p: any) => p.package === packageName)
-// const distributionPath = distribution?.distributionFile
-
-const distributionPath =  packageName + ".json"
+const distributionPath = packageName + ".json"
 
 if (!distributionPath) throw new Error("Distribution File not found")
 
@@ -59,26 +50,56 @@ const moduleKey = `../../data/java/modules/${distributionPath}`
 const distributionModule = distributionModules[moduleKey] as any
 const distributionFile = distributionModule.default || distributionModule
 
-// Buscar la ruta en el índice de distribución
-const routeMeta = distributionFile.find((r: any) => r.slug === slug)
+// Detectar si es una ruta de solo paquete (sin elemento específico)
+const isPackageOnly = slug === packageName
 
-if (!routeMeta) throw new Error("Not found")
+let doc: any
+let isPackagePage = false
 
-// Acceder al módulo del shard que ya fue importado por glob
-const shardPath = `../../data/${routeMeta.shard}`
-const shardModule = shardModules[shardPath] as any
-const shard = shardModule.default || shardModule
-const doc = shard[slug]
+if (isPackageOnly) {
+  // Es una ruta de solo paquete
+  isPackagePage = true
+  
+  // Obtener todos los elementos directos del paquete (sin métodos/atributos)
+  const packageElements = distributionFile
+    .filter((r: any) => r.slug.startsWith(packageName + '/'))
+    .filter((r: any) => r.slug.split('/').length === 2) // Solo elementos directos
+  
+  // Crear un objeto doc sintético para la página del paquete
+  doc = {
+    name: packageName,
+    type: 'Package',
+    description: `Paquete Java: ${packageName}`,
+    members: packageElements
+  }
+} else {
+  // Es una ruta de elemento específico
+  // Buscar la ruta en el índice de distribución
+  const routeMeta = distributionFile.find((r: any) => r.slug === slug)
+  
+  if (!routeMeta) throw new Error("Not found")
+  
+  // Acceder al módulo del shard que ya fue importado por glob
+  const shardPath = `../../data/${routeMeta.shard}`
+  const shardModule = shardModules[shardPath] as any
+  const shard = shardModule.default || shardModule
+  doc = shard[slug]
+}
 
 
-const headings = [
-  { level: 2, title: 'Description', id: 'description' },
-  ...(doc.constructors?.length > 0 ? [{ level: 2, title: 'Constructors', id: 'constructors' }] : []),
-  ...(doc.methods?.length > 0 ? [{ level: 2, title: 'Methods', id: 'methods' }] : []),
-  ...(doc.attributes?.length > 0 ? [{ level: 2, title: 'Atributos', id: 'attributes' }] : []),
-  ...(doc.example?.length > 0 ? [{ level: 2, title: 'Example', id: 'example' }] : []),
-  { level: 2, title: 'Original Documentation', id: 'original-documentation' }
-]
+const headings = isPackagePage 
+  ? [
+      { level: 2, title: 'Description', id: 'description' },
+      { level: 2, title: 'Members', id: 'members' }
+    ]
+  : [
+      { level: 2, title: 'Description', id: 'description' },
+      ...(doc.constructors?.length > 0 ? [{ level: 2, title: 'Constructors', id: 'constructors' }] : []),
+      ...(doc.methods?.length > 0 ? [{ level: 2, title: 'Methods', id: 'methods' }] : []),
+      ...(doc.attributes?.length > 0 ? [{ level: 2, title: 'Atributos', id: 'attributes' }] : []),
+      ...(doc.example?.length > 0 ? [{ level: 2, title: 'Example', id: 'example' }] : []),
+      { level: 2, title: 'Original Documentation', id: 'original-documentation' }
+    ]
 
 // Generar tabla de contenidos dinámicamente
 const tableOfContents = headings.map(h => ({
@@ -171,7 +192,22 @@ const tableOfContents = headings.map(h => ({
     <p>{doc.description || "No description available."}</p>
   </section>
 
-  {doc.constructors && doc.constructors.length > 0 && (
+  {isPackagePage && doc.members && doc.members.length > 0 && (
+    <section id="members">
+      <h2>Members</h2>
+      <ul>
+        {doc.members.map((member: any) => (
+          <li>
+            <a href={`/java/${member.slug}/`}>
+              {member.slug.split('/')[1]}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {!isPackagePage && doc.constructors && doc.constructors.length > 0 && (
     <section id="constructors">
       <h2>Constructors</h2>
       <ul>
@@ -186,7 +222,7 @@ const tableOfContents = headings.map(h => ({
     </section>
   )}
 
-  {doc.methods && doc.methods.length > 0 && (
+  {!isPackagePage && doc.methods && doc.methods.length > 0 && (
     <section id="methods">
       <h2>Methods</h2>
       <ul>
@@ -201,7 +237,7 @@ const tableOfContents = headings.map(h => ({
     </section>
   )}
 
-  {doc.attributes && doc.attributes.length > 0 && (
+  {!isPackagePage && doc.attributes && doc.attributes.length > 0 && (
     <section id="attributes">
       <h2>Atributos</h2>
       <ul>
@@ -216,7 +252,7 @@ const tableOfContents = headings.map(h => ({
     </section>
   )}
 
-  {doc.signatures && doc.signatures.length > 0 && (
+  {!isPackagePage && doc.signatures && doc.signatures.length > 0 && (
     <section id="sintaxis">
       <h2>Sintaxis</h2>
       <Code
@@ -226,7 +262,7 @@ const tableOfContents = headings.map(h => ({
     </section>
   )}  
 
-    {doc.parameters && doc.parameters.length > 0 && (
+    {!isPackagePage && doc.parameters && doc.parameters.length > 0 && (
     <section id="parameters">
       <h2>Parameters</h2>
       <ul>
@@ -239,7 +275,7 @@ const tableOfContents = headings.map(h => ({
     </section>
   )}
 
-  {doc.exceptions && doc.exceptions.length > 0 && (
+  {!isPackagePage && doc.exceptions && doc.exceptions.length > 0 && (
     <section id="exceptions">
       <h2>Excepciones</h2>
       <ul>
@@ -254,7 +290,7 @@ const tableOfContents = headings.map(h => ({
     </section>
   )}
 
-  {doc.example && doc.example.length > 0 && (
+  {!isPackagePage && doc.example && doc.example.length > 0 && (
     <section id="example">
       <h2>Ejemplo</h2>
             <Code
@@ -267,7 +303,7 @@ const tableOfContents = headings.map(h => ({
   </article>
   <aside>
 
-    {doc.relatedArticles && doc.relatedArticles.length > 0 && (
+    {!isPackagePage && doc.relatedArticles && doc.relatedArticles.length > 0 && (
       <section id="related-articles">
         <h3>Artículos Relacionados</h3>
         <ul>
@@ -282,14 +318,16 @@ const tableOfContents = headings.map(h => ({
       </section>
     )}
 
-    <section id="original-documentation">
-      <h2>Original Documentation</h2>
-      <p>
-        <a href={doc.url} target="_blank" rel="noopener noreferrer">
-          View on Oracle Documentation →
-        </a>
-      </p>
-    </section>
+    {!isPackagePage && (
+      <section id="original-documentation">
+        <h2>Original Documentation</h2>
+        <p>
+          <a href={doc.url} target="_blank" rel="noopener noreferrer">
+            View on Oracle Documentation →
+          </a>
+        </p>
+      </section>
+    )}
   </aside>
 
 </main>
