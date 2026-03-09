@@ -194,7 +194,7 @@ const indexName = import.meta.env.PUBLIC_ALGOLIA_INDEX_NAME;
           container: '#hits',
           templates: {
             item: (hit) => `
-              <a href="${hit.url || '#'}" class="ais-Hits-item">
+              <a href="/${hit.lenguaje}/${hit.slug || '#'}/" class="ais-Hits-item">
                 <h1>${hit.elemento || hit.title}</h1>
                 <p>${hit.paquete || ''} • ${hit.lenguaje || 'Java'}</p>
               </a>
