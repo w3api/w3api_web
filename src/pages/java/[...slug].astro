@@ -69,26 +69,60 @@ if (isPackageOnly) {
   const shardModule = shardModules[shardPath] as any
   const shard = shardModule.default || shardModule
   
-  // El documento del paquete ya contiene sus miembros
+  // El documento del paquete ya contiene sus miembros agrupados por tipo
   doc = shard[packageName]
   
-  if (doc && doc.members) {
-    // Categorizar elementos por tipo usando los miembros ya presentes
+  if (doc) {
+    // Agrupar elementos por tipo (classes, interfaces, exceptions, enums, annotations)
     const membersByType: any = {}
-    doc.members.forEach((member: any) => {
-      const type = member.type || 'other'
-      if (!membersByType[type]) {
-        membersByType[type] = []
-      }
-      membersByType[type].push(member)
-    })
+    
+    // Propiedades que contienen listas de miembros
+    if (doc.classes && Array.isArray(doc.classes)) {
+      membersByType.class = doc.classes.map((name: string) => ({
+        name: name,
+        slug: `${packageName}/${name}`,
+        type: 'class'
+      }))
+    }
+    
+    if (doc.interfaces && Array.isArray(doc.interfaces)) {
+      membersByType.interface = doc.interfaces.map((name: string) => ({
+        name: name,
+        slug: `${packageName}/${name}`,
+        type: 'interface'
+      }))
+    }
+    
+    if (doc.exceptions && Array.isArray(doc.exceptions)) {
+      membersByType.exception = doc.exceptions.map((name: string) => ({
+        name: name,
+        slug: `${packageName}/${name}`,
+        type: 'exception'
+      }))
+    }
+    
+    if (doc.enums && Array.isArray(doc.enums)) {
+      membersByType.enum = doc.enums.map((name: string) => ({
+        name: name,
+        slug: `${packageName}/${name}`,
+        type: 'enum'
+      }))
+    }
+    
+    if (doc.annotations && Array.isArray(doc.annotations)) {
+      membersByType.annotation = doc.annotations.map((name: string) => ({
+        name: name,
+        slug: `${packageName}/${name}`,
+        type: 'annotation'
+      }))
+    }
+    
     doc.membersByType = membersByType
   } else {
-    doc = doc || {
+    doc = {
       name: packageName,
       type: 'Package',
       description: `Paquete Java: ${packageName}`,
-      members: [],
       membersByType: {}
     }
   }
