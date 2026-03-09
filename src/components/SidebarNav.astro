@@ -34,11 +34,21 @@ const { items, currentPath, currentLanguage = 'java', hasSidebar, filterLabel } 
           aria-label="Filtrar navegación"
         />
       </div>
-      {items.map((group) => (
+      {items.map((group) => {
+        // Detectar si algún item dentro del grupo está activo
+        // Normalizar currentPath para comparar sin el slash inicial
+        const normalizedPath = currentPath.startsWith('/') ? currentPath.slice(1) : currentPath;
+        
+        const hasActiveItem = group.items?.some((item) => {
+          // Comparar exacto o si el currentPath es un descendiente del item
+          return item.link === normalizedPath || normalizedPath.startsWith(item.link);
+        });
+        
+        return (
         <div class="sl-sidebar-group">
           {group.items ? (
             <>
-              <details open={!group.collapsed} class="sl-sidebar-details">
+              <details open={hasActiveItem || !group.collapsed} class="sl-sidebar-details">
                 <summary class="sl-sidebar-group-label">
                   <svg class="sl-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="9 18 15 12 9 6"/>
@@ -46,12 +56,16 @@ const { items, currentPath, currentLanguage = 'java', hasSidebar, filterLabel } 
                   {group.label}
                 </summary>
                 <ul class="sl-sidebar-list">
-                  {group.items.map((item) => (
+                  {group.items.map((item) => {
+                    const normalizedPath = currentPath.startsWith('/') ? currentPath.slice(1) : currentPath;
+                    // Marcar como activo si coincide exacto o si normalizedPath es descendiente del item
+                    const isActive = item.link === normalizedPath || normalizedPath.startsWith(item.link);
+                    return (
                     <li>
                       <a
                         href={`/${item.link}`}
-                        class:list={['sl-sidebar-link', { 'sl-active': item.link === currentPath }]}
-                        aria-current={item.link === currentPath ? 'page' : undefined}
+                        class:list={['sl-sidebar-link', { 'sl-active': isActive }]}
+                        aria-current={isActive ? 'page' : undefined}
                       >
                         {item.label}
                         {item.badge && (
@@ -61,21 +75,23 @@ const { items, currentPath, currentLanguage = 'java', hasSidebar, filterLabel } 
                         )}
                       </a>
                     </li>
-                  ))}
+                    );
+                  })}
                 </ul>
               </details>
             </>
           ) : (
             <a
               href={group.link}
-              class:list={['sl-sidebar-link sl-sidebar-link-top', { 'sl-active': group.link === currentPath }]}
-              aria-current={group.link === currentPath ? 'page' : undefined}
+              class:list={['sl-sidebar-link sl-sidebar-link-top', { 'sl-active': group.link === currentPath || (currentPath.startsWith('/') ? currentPath.slice(1) : currentPath).startsWith(group.link) }]}
+              aria-current={group.link === currentPath || (currentPath.startsWith('/') ? currentPath.slice(1) : currentPath).startsWith(group.link) ? 'page' : undefined}
             >
               {group.label}
             </a>
           )}
         </div>
-      ))}
+        );
+      })}
     </div>
   </nav>
 )}
@@ -250,6 +266,25 @@ const { items, currentPath, currentLanguage = 'java', hasSidebar, filterLabel } 
 </style>
 
 <script>
+  // Auto-scroll al elemento activo cuando se carga la página
+  document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('sidebar');
+    const activeLink = sidebar?.querySelector('.sl-sidebar-link.sl-active');
+    
+    if (activeLink && sidebar) {
+      // Esperar un poco para que el layout se estabilice
+      setTimeout(() => {
+        const linkPosition = (activeLink as HTMLElement).offsetTop;
+        const sidebarHeight = sidebar.clientHeight;
+        const scrollTop = sidebar.scrollTop;
+        
+        // Scroll con margen para que no quede en el borde
+        const targetScroll = linkPosition - sidebarHeight / 2 + 40;
+        sidebar.scrollTop = Math.max(0, targetScroll);
+      }, 100);
+    }
+  });
+
   const searchInput = document.getElementById('sidebar-search') as HTMLInputElement;
   const sidebarGroups = document.querySelectorAll('.sl-sidebar-group');
   const detailsElements = document.querySelectorAll('.sl-sidebar-details');
