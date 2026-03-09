@@ -299,6 +299,7 @@ const currentPath = Astro.url.pathname;
         align-items: center;
         gap: 0.5rem;
         height: var(--sl-header-height);
+        flex-shrink: 0;
       }
 
       .sl-header-center {
@@ -306,7 +307,8 @@ const currentPath = Astro.url.pathname;
         align-items: center;
         justify-content: center;
         flex: 1;
-        max-width: 500px;
+        padding: 0 1rem;
+        min-width: 200px;
       }
         height: var(--sl-header-height);
       }
