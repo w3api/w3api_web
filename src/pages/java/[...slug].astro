@@ -94,9 +94,9 @@ if (isPackageOnly) {
     }
     
     if (doc.exceptions && Array.isArray(doc.exceptions)) {
-      membersByType.exception = doc.exceptions.map((name: string) => ({
-        name: name,
-        slug: `${packageName}/${name}`,
+      membersByType.exception = doc.exceptions.map((exception: any) => ({
+        name: exception.name,
+        slug: `${packageName}/${exception.name}`,
         type: 'exception'
       }))
     }
@@ -219,7 +219,7 @@ const tableOfContents = headings.map(h => ({
 
   <section id="metadata">
     <div class="metadata-badges">
-      <span class="sl-badge sl-badge-tip">{doc.type}</span>
+      <span class="sl-badge sl-badge-tip">{isPackagePage ? 'Package' : doc.type}</span>
       
       {doc.metadata?.added_version && (
         <span class="sl-badge sl-badge-success">
