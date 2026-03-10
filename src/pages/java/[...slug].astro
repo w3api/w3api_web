@@ -219,7 +219,7 @@ const tableOfContents = headings.map(h => ({
 
   <section id="metadata">
     <div class="metadata-badges">
-      <span class="sl-badge sl-badge-tip">{isPackagePage ? 'Package' : doc.type}</span>
+      <span class="sl-badge sl-badge-tip">{isPackagePage ? 'package' : doc.type}</span>
       
       {doc.metadata?.added_version && (
         <span class="sl-badge sl-badge-success">
@@ -272,6 +272,7 @@ const tableOfContents = headings.map(h => ({
   {!isPackagePage && doc.constructors && doc.constructors.length > 0 && (
     <section id="constructors">
       <h2>Constructors</h2>
+      <div class="members-category">
       <ul>
         {doc.constructors.map((constructor: string) => (
           <li>
@@ -281,27 +282,31 @@ const tableOfContents = headings.map(h => ({
           </li>
         ))}
       </ul>
+      </div>
     </section>
   )}
 
   {!isPackagePage && doc.methods && doc.methods.length > 0 && (
     <section id="methods">
       <h2>Methods</h2>
-      <ul>
-        {doc.methods.map((method: string) => (
-          <li>
-            <a href={`/java/${slug}/${method}/`}>
-              {method}
-            </a>
-          </li>
-        ))}
-      </ul>
+        <div class="members-category">
+        <ul>
+          {doc.methods.map((method: string) => (
+            <li>
+              <a href={`/java/${slug}/${method}/`}>
+                {method}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )}
 
   {!isPackagePage && doc.attributes && doc.attributes.length > 0 && (
     <section id="attributes">
       <h2>Atributos</h2>
+      <div class="members-category">
       <ul>
         {doc.attributes.map((attribute: string) => (
           <li>
@@ -311,6 +316,7 @@ const tableOfContents = headings.map(h => ({
           </li>
         ))}
       </ul>
+      </div>
     </section>
   )}
 
@@ -340,6 +346,7 @@ const tableOfContents = headings.map(h => ({
   {!isPackagePage && doc.exceptions && doc.exceptions.length > 0 && (
     <section id="exceptions">
       <h2>Excepciones</h2>
+      <div class="members-category">
       <ul>
         {doc.exceptions.map((exception: any) => (
           <li>
@@ -349,6 +356,7 @@ const tableOfContents = headings.map(h => ({
           </li>
         ))}
       </ul>
+      </div>
     </section>
   )}
 
@@ -383,11 +391,13 @@ const tableOfContents = headings.map(h => ({
     {!isPackagePage && (
       <section id="original-documentation">
         <h2>Original Documentation</h2>
+        <div class="members-category">
         <p>
           <a href={doc.url} target="_blank" rel="noopener noreferrer">
             View on Oracle Documentation →
           </a>
         </p>
+      </div>
       </section>
     )}
   </aside>
@@ -457,7 +467,7 @@ const tableOfContents = headings.map(h => ({
   }
 
   .members-category li {
-    padding: 0.25rem 0;
+    padding: 0.1rem 0;
   }
 
   .members-category a {
