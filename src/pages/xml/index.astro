@@ -56,8 +56,16 @@ packages.forEach((pkg: any) => {
     
     if (packageDoc) {
       if (packageDoc.elements) pkg.elements = packageDoc.elements.length
-      if (packageDoc.attributes) pkg.attributes = packageDoc.attributes.length
       if (packageDoc.functions) pkg.functions = packageDoc.functions.length
+      
+      // Contar atributos dinámicamente recorriendo los items del shard
+      let attributeCount = 0
+      Object.values(shard).forEach((item: any) => {
+        if (item.type === 'attribute' && (item.id as string).startsWith(pkg.name + '.')) {
+          attributeCount++
+        }
+      })
+      pkg.attributes = attributeCount
     }
   }
 })
