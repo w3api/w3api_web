@@ -57,17 +57,23 @@ packages.forEach((pkg: any) => {
     if (packageDoc) {
       if (packageDoc.elements) pkg.elements = packageDoc.elements.length
       if (packageDoc.functions) pkg.functions = packageDoc.functions.length
-      
-      // Contar atributos dinámicamente recorriendo los items del shard
-      let attributeCount = 0
-      Object.values(shard).forEach((item: any) => {
-        if (item.type === 'attribute' && (item.id as string).startsWith(pkg.name + '.')) {
-          attributeCount++
-        }
-      })
-      pkg.attributes = attributeCount
     }
   }
+})
+
+// Contar atributos recorriendo TODOS los shards
+Object.values(shardModules).forEach((shardModule: any) => {
+  const shard = shardModule.default || shardModule
+  
+  Object.values(shard).forEach((item: any) => {
+    if (item.type === 'attribute') {
+      const packageName = (item.id as string).split('.')[0]
+      const pkg = packages.find(p => p.name === packageName)
+      if (pkg) {
+        pkg.attributes++
+      }
+    }
+  })
 })
 
 const headings = [
