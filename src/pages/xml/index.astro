@@ -1,6 +1,6 @@
 ---
 import StarlightLayout from '../../layouts/StarlightLayout.astro';
-import { sidebar } from '../../config/sidebar';
+import { sidebar } from '../../config/xml_sidebar';
 import rutas from '../../data/xml/routes.json'
 
 // Importar todos los archivos de distribución de shards
@@ -26,11 +26,9 @@ Object.entries(distributionModules).forEach(([key, module]: any) => {
             name: packageName,
             slug: packageName,
             totalElements: 0,
-            classes: 0,
-            interfaces: 0,
-            exceptions: 0,
-            enums: 0,
-            annotations: 0,
+            elements: 0,
+            attributes: 0,
+            functions: 0,
             shard: item.shard
           }
           packages.push(pkg)
@@ -57,11 +55,9 @@ packages.forEach((pkg: any) => {
     const packageDoc = shard[pkg.name]
     
     if (packageDoc) {
-      if (packageDoc.classes) pkg.classes = packageDoc.classes.length
-      if (packageDoc.interfaces) pkg.interfaces = packageDoc.interfaces.length
-      if (packageDoc.exceptions) pkg.exceptions = packageDoc.exceptions.length
-      if (packageDoc.enums) pkg.enums = packageDoc.enums.length
-      if (packageDoc.annotations) pkg.annotations = packageDoc.annotations.length
+      if (packageDoc.elements) pkg.elements = packageDoc.elements.length
+      if (packageDoc.attributes) pkg.attributes = packageDoc.attributes.length
+      if (packageDoc.functions) pkg.functions = packageDoc.functions.length
     }
   }
 })
@@ -97,18 +93,16 @@ const tableOfContents = headings.map(h => ({
     <hr class="header-divider" />
 
     <section id="packages">
-      <h2>Packages</h2>
+      <h2>Elementos</h2>
       
       <div class="packages-table-container">
         <table class="packages-table">
           <thead>
             <tr>
-              <th>Package Name</th>
-              <th class="text-right">Classes</th>
-              <th class="text-right">Interfaces</th>
-              <th class="text-right">Exceptions</th>
-              <th class="text-right">Enums</th>
-              <th class="text-right">Annotations</th>
+              <th>Element Name</th>
+              <th class="text-right">Elementos</th>
+              <th class="text-right">Atributos</th>
+              <th class="text-right">Funciones</th>
               <th class="text-right">Total</th>
             </tr>
           </thead>
@@ -120,11 +114,9 @@ const tableOfContents = headings.map(h => ({
                     {pkg.name}
                   </a>
                 </td>
-                <td class="text-right">{pkg.classes || 0}</td>
-                <td class="text-right">{pkg.interfaces || 0}</td>
-                <td class="text-right">{pkg.exceptions || 0}</td>
-                <td class="text-right">{pkg.enums || 0}</td>
-                <td class="text-right">{pkg.annotations || 0}</td>
+                <td class="text-right">{pkg.elements || 0}</td>
+                <td class="text-right">{pkg.attributes || 0}</td>
+                <td class="text-right">{pkg.functions || 0}</td>
                 <td class="text-right total">{pkg.totalElements}</td>
               </tr>
             ))}
