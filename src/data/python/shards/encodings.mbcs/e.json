@@ -1,0 +1,453 @@
+{
+  "encodings.mbcs/CodecInfo/encode": {
+    "id": "encodings.mbcs.CodecInfo.encode",
+    "name": "encode",
+    "type": "attribute",
+    "parent": "CodecInfo",
+    "signatures": [
+      "encode"
+    ],
+    "signature_hash": "b7d18e8f99d59abadbed0da4960b56f8fcc8513f5b27924ef80ca763f7fbc5c1",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.CodecInfo.encode",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The stateless encoding and decoding functions. These must be functions or methods which have the same interface as the encode() and decode() methods of Codec instances (see Codec Interface). The functions or methods are expected to work in a stateless mode.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The stateless encoding and decoding functions. These must be functions or methods which have the same interface as the encode() and decode() methods of Codec instances (see Codec Interface). The funct...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.926614",
+    "updatedDate": "2026-03-11T23:15:47.926615",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings.mbcs/EncodedFile": {
+    "id": "encodings.mbcs.EncodedFile",
+    "name": "EncodedFile",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.EncodedFile(file, data_encoding, file_encoding=None, errors='strict')"
+    ],
+    "signature_hash": "cf5b7c3e4836442eb8d1aad46006bf323e220354c30b0e05bad129b056897be5",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.EncodedFile",
+    "parameters": [
+      {
+        "name": "file",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "data_encoding",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "file_encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "'strict'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a StreamRecoder instance, a wrapped version of file which provides transparent transcoding. The original file is closed when the wrapped version is closed. Data written to the wrapped file is decoded according to the given data_encoding and then written to the original file as bytes using file_encoding. Bytes read from the original file are decoded according to file_encoding, and the result is encoded using data_encoding. If file_encoding is not given, it defaults to data_encoding. err...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a StreamRecoder instance, a wrapped version of file which provides transparent transcoding. The original file is closed when the wrapped version is closed. Data written to the wrapped file is d...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.926827",
+    "updatedDate": "2026-03-11T23:15:47.926828",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings.mbcs/encode": {
+    "id": "encodings.mbcs.encode",
+    "name": "encode",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.encode(obj, encoding='utf-8', errors='strict')"
+    ],
+    "signature_hash": "6c9f146833bd9c5dac8f30498a051f249aa9ee34994849d87b68ca5da0bfd608",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.encode",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "'utf-8'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "'strict'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Encodes obj using the codec registered for encoding. Errors may be given to set the desired error handling scheme. The default error handler is 'strict' meaning that encoding errors raise ValueError (or a more codec specific subclass, such as UnicodeEncodeError). Refer to Codec Base Classes for more information on codec error handling.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Encodes obj using the codec registered for encoding. Errors may be given to set the desired error handling scheme. The default error handler is 'strict' meaning that encoding errors raise ValueError (...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.926503",
+    "updatedDate": "2026-03-11T23:15:47.926504",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings.mbcs/escape_decode": {
+    "id": "encodings.mbcs.escape_decode",
+    "name": "escape_decode",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.escape_decode(input, errors=None)"
+    ],
+    "signature_hash": "d7d8d9a56b231aa3e10a08a3258e9a60295ecae72ca88f0e8840813724734902",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.codecs.escape_decode",
+    "parameters": [
+      {
+        "name": "input",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Decode input from escape sequences back to the original bytes. input must be a bytes-like object. Returns a tuple (output, length) where output is a bytes object and length is the number of bytes consumed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decode input from escape sequences back to the original bytes. input must be a bytes-like object. Returns a tuple (output, length) where output is a bytes object and length is the number of bytes cons...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.927548",
+    "updatedDate": "2026-03-11T23:15:47.927549",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings.mbcs/escape_encode": {
+    "id": "encodings.mbcs.escape_encode",
+    "name": "escape_encode",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.escape_encode(input, errors=None)"
+    ],
+    "signature_hash": "35fa68326bda3f7951c1fb316e893c17dfb3f8283a84774eef9952a560fd2c3f",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.codecs.escape_encode",
+    "parameters": [
+      {
+        "name": "input",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Encode input using escape sequences. Similar to how repr() on bytes produces escaped byte values. input must be a bytes object. Returns a tuple (output, length) where output is a bytes object and length is the number of bytes consumed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Encode input using escape sequences. Similar to how repr() on bytes produces escaped byte values. input must be a bytes object. Returns a tuple (output, length) where output is a bytes object and leng...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.927531",
+    "updatedDate": "2026-03-11T23:15:47.927532",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings.mbcs/Codec/encode": {
+    "id": "encodings.mbcs.Codec.encode",
+    "name": "encode",
+    "type": "method",
+    "parent": "Codec",
+    "signatures": [
+      "encode(input, errors='strict')"
+    ],
+    "signature_hash": "f8f8ef4dc2c8d584b519d0b603e7d277e17113ecedec8e405eb6b60cd73a969c",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.Codec.encode",
+    "parameters": [
+      {
+        "name": "input",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "'strict'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Encodes the object input and returns a tuple (output object, length consumed). For instance, text encoding converts a string object to a bytes object using a particular character set encoding (e.g., cp1252 or iso-8859-1). The errors argument defines the error handling to apply. It defaults to 'strict' handling. The method may not store state in the Codec instance. Use StreamWriter for codecs which have to keep state in order to make encoding efficient. The encoder must be able to handle zero ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Encodes the object input and returns a tuple (output object, length consumed). For instance, text encoding converts a string object to a bytes object using a particular character set encoding (e.g., c...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.927106",
+    "updatedDate": "2026-03-11T23:15:47.927107",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings.mbcs/IncrementalEncoder/encode": {
+    "id": "encodings.mbcs.IncrementalEncoder.encode",
+    "name": "encode",
+    "type": "method",
+    "parent": "IncrementalEncoder",
+    "signatures": [
+      "encode(object, final=False)"
+    ],
+    "signature_hash": "aa30bb1bedb9e730f268135beaf7f5cef0c70579b3a11a21b15b87282be445d4",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.IncrementalEncoder.encode",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "final",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Encodes object (taking the current state of the encoder into account) and returns the resulting encoded object. If this is the last call to encode() final must be true (the default is false).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Encodes object (taking the current state of the encoder into account) and returns the resulting encoded object. If this is the last call to encode() final must be true (the default is false).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.927163",
+    "updatedDate": "2026-03-11T23:15:47.927164",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings.mbcs": {
+    "type": "module",
+    "name": "encodings.mbcs",
+    "id": "encodings.mbcs",
+    "description": "Module encodings.mbcs",
+    "classes": [
+      "Codec",
+      "CodecInfo",
+      "IncrementalDecoder",
+      "IncrementalEncoder",
+      "StreamReader",
+      "StreamReaderWriter",
+      "StreamRecoder",
+      "StreamWriter"
+    ],
+    "constants": [
+      "BOM"
+    ],
+    "exceptions": [
+      "CodecRegistryError"
+    ],
+    "functions": [
+      "EncodedFile",
+      "ToASCII",
+      "ToUnicode",
+      "backslashreplace_errors",
+      "charmap_build",
+      "decode",
+      "encode",
+      "escape_decode",
+      "escape_encode",
+      "getdecoder",
+      "getencoder",
+      "getincrementaldecoder",
+      "getincrementalencoder",
+      "getreader",
+      "getwriter",
+      "ignore_errors",
+      "iterdecode",
+      "iterencode",
+      "lookup",
+      "lookup_error",
+      "nameprep",
+      "namereplace_errors",
+      "normalize_encoding",
+      "open",
+      "readbuffer_encode",
+      "register",
+      "register_error",
+      "replace_errors",
+      "search_function",
+      "strict_errors",
+      "unregister",
+      "win32_code_page_search_function",
+      "xmlcharrefreplace_errors"
+    ]
+  }
+}

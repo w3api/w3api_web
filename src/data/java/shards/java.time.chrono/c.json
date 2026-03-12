@@ -1,11 +1,47 @@
 {
+  "java.time.chrono/IsoEra/CE": {
+    "id": "java.time.chrono.IsoEra.CE",
+    "name": "CE",
+    "type": "enum_constant",
+    "parent": "IsoEra",
+    "signatures": [
+      "CE"
+    ],
+    "signature_hash": "d68956cd067ac773650ef6f94387fd88662528204b65eae20165055281041e0b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/IsoEra.html",
+    "parameters": [],
+    "return_type": "IsoEra",
+    "exceptions": [],
+    "description": "The singleton instance for the current era, 'Current Era',\nwhich has the numeric value 1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The singleton instance for the current era, 'Current Era',\nwhich has the numeric value 1.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.712720",
+    "updatedDate": "2026-03-11T23:15:40.712721",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
   "java.time.chrono/ChronoLocalDate": {
     "id": "java.time.chrono.ChronoLocalDate",
     "name": "ChronoLocalDate",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface ChronoLocalDate"
+    ],
+    "signature_hash": "6cb967d0b6a2b65787a326e43d74729d1946fba93073d81385dcd043f5ffcb4b",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/ChronoLocalDate.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +56,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.314431",
-    "updatedDate": "2026-03-08T21:40:21.314432",
+    "createdDate": "2026-03-11T23:15:40.707855",
+    "updatedDate": "2026-03-11T23:15:40.707856",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -57,13 +93,15 @@
       "with"
     ]
   },
-  "java.time.chrono/ChronoLocalDateTime<D": {
-    "id": "java.time.chrono.ChronoLocalDateTime<D",
-    "name": "ChronoLocalDateTime<D",
+  "java.time.chrono/ChronoLocalDateTime": {
+    "id": "java.time.chrono.ChronoLocalDateTime",
+    "name": "ChronoLocalDateTime",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface ChronoLocalDateTime<D extendsChronoLocalDate>"
+    ],
+    "signature_hash": "b5d1bb281eaa2f66ebc5240eb5219a039faa2b35805f0d5b23fc24f812c7114e",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html",
     "parameters": [],
     "return_type": "",
@@ -78,8 +116,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.316346",
-    "updatedDate": "2026-03-08T21:40:21.316347",
+    "createdDate": "2026-03-11T23:15:40.709784",
+    "updatedDate": "2026-03-11T23:15:40.709785",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -118,8 +156,10 @@
     "name": "ChronoPeriod",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface ChronoPeriod"
+    ],
+    "signature_hash": "6e0acf462d48a0d5e9c500d64d739a8333d1fbb0254a3a7d979485ba00fcb6be",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/ChronoPeriod.html",
     "parameters": [],
     "return_type": "",
@@ -134,8 +174,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.316840",
-    "updatedDate": "2026-03-08T21:40:21.316841",
+    "createdDate": "2026-03-11T23:15:40.710256",
+    "updatedDate": "2026-03-11T23:15:40.710257",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -163,13 +203,15 @@
       "toString"
     ]
   },
-  "java.time.chrono/ChronoZonedDateTime<D": {
-    "id": "java.time.chrono.ChronoZonedDateTime<D",
-    "name": "ChronoZonedDateTime<D",
+  "java.time.chrono/ChronoZonedDateTime": {
+    "id": "java.time.chrono.ChronoZonedDateTime",
+    "name": "ChronoZonedDateTime",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface ChronoZonedDateTime<D extendsChronoLocalDate>"
+    ],
+    "signature_hash": "e1eafd6348f00b19ffd7e4190993fe8a0c0f4d1e4ce50071f442b2bac0ed0152",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html",
     "parameters": [],
     "return_type": "",
@@ -184,8 +226,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.317172",
-    "updatedDate": "2026-03-08T21:40:21.317172",
+    "createdDate": "2026-03-11T23:15:40.710601",
+    "updatedDate": "2026-03-11T23:15:40.710602",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -230,8 +272,10 @@
     "name": "Chronology",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface Chronology"
+    ],
+    "signature_hash": "5545f99d115fb8411613ec74165281b2bed609548944ff3b9ce83b973dbd9dd5",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/chrono/Chronology.html",
     "parameters": [],
     "return_type": "",
@@ -246,8 +290,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.313946",
-    "updatedDate": "2026-03-08T21:40:21.313947",
+    "createdDate": "2026-03-11T23:15:40.707316",
+    "updatedDate": "2026-03-11T23:15:40.707317",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -319,8 +363,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.313962",
-    "updatedDate": "2026-03-08T21:40:21.313963",
+    "createdDate": "2026-03-11T23:15:40.707336",
+    "updatedDate": "2026-03-11T23:15:40.707337",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -364,8 +408,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.314476",
-    "updatedDate": "2026-03-08T21:40:21.314476",
+    "createdDate": "2026-03-11T23:15:40.707902",
+    "updatedDate": "2026-03-11T23:15:40.707902",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -409,8 +453,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.316254",
-    "updatedDate": "2026-03-08T21:40:21.316255",
+    "createdDate": "2026-03-11T23:15:40.709692",
+    "updatedDate": "2026-03-11T23:15:40.709693",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -420,11 +464,11 @@
       "popularity_score": 0
     }
   },
-  "java.time.chrono/ChronoLocalDateTime<D/compareTo": {
-    "id": "java.time.chrono.ChronoLocalDateTime<D.compareTo",
+  "java.time.chrono/ChronoLocalDateTime/compareTo": {
+    "id": "java.time.chrono.ChronoLocalDateTime.compareTo",
     "name": "compareTo",
     "type": "method",
-    "parent": "ChronoLocalDateTime<D",
+    "parent": "ChronoLocalDateTime",
     "signatures": [
       "public default int compareTo(ChronoLocalDateTime<?> other)"
     ],
@@ -454,8 +498,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.316408",
-    "updatedDate": "2026-03-08T21:40:21.316409",
+    "createdDate": "2026-03-11T23:15:40.709842",
+    "updatedDate": "2026-03-11T23:15:40.709843",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -465,11 +509,11 @@
       "popularity_score": 0
     }
   },
-  "java.time.chrono/ChronoZonedDateTime<D/compareTo": {
-    "id": "java.time.chrono.ChronoZonedDateTime<D.compareTo",
+  "java.time.chrono/ChronoZonedDateTime/compareTo": {
+    "id": "java.time.chrono.ChronoZonedDateTime.compareTo",
     "name": "compareTo",
     "type": "method",
-    "parent": "ChronoZonedDateTime<D",
+    "parent": "ChronoZonedDateTime",
     "signatures": [
       "public default int compareTo(ChronoZonedDateTime<?> other)"
     ],
@@ -499,8 +543,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.317192",
-    "updatedDate": "2026-03-08T21:40:21.317193",
+    "createdDate": "2026-03-11T23:15:40.710622",
+    "updatedDate": "2026-03-11T23:15:40.710623",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

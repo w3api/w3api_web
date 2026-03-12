@@ -1,6 +1,6 @@
 ---
 import StarlightLayout from '../../layouts/StarlightLayout.astro';
-import { sidebar } from '../../config/sidebar';
+import { sidebar } from '../../config/java_sidebar';
 import rutas from '../../data/java/routes.json'
 
 // Importar todos los archivos de distribución de shards
@@ -78,7 +78,7 @@ const tableOfContents = headings.map(h => ({
 ---
 
 <StarlightLayout
-  title="Java Packages"
+  title="Java"
   description="Listado completo de paquetes Java disponibles"
   siteTitle="W3Api"
   sidebar={sidebar}
@@ -91,7 +91,7 @@ const tableOfContents = headings.map(h => ({
 <main>
   <article>
     <header class="sl-content-header">
-      <h1>Java Packages</h1>
+      <h1>Java</h1>
     </header>
 
     <hr class="header-divider" />

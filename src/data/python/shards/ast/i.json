@@ -1,0 +1,507 @@
+{
+  "ast/If": {
+    "id": "ast.If",
+    "name": "If",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.If(test, body, orelse)"
+    ],
+    "signature_hash": "72d8b57bc254602ae762ff1e9f1454ba506d2a0f31f0a4d01804800c1b554df2",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.If",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "body",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "orelse",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An if statement. test holds a single node, such as a Compare node. body and orelse each hold a list of nodes. elif clauses don’t have a special representation in the AST, but rather appear as extra If nodes within the orelse section of the previous one. >>> print(ast.dump(ast.parse(\"\"\" ... if x: ... ... ... elif y: ... ... ... else: ... ... ... \"\"\"), indent=4)) Module( body=[ If( test=Name(id='x', ctx=Load()), body=[ Expr( value=Constant(value=Ellipsis))], orelse=[ If( test=Name(id='y', ctx=L...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An if statement. test holds a single node, such as a Compare node. body and orelse each hold a list of nodes. elif clauses don’t have a special representation in the AST, but rather appear as extra If...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878668",
+    "updatedDate": "2026-03-11T23:15:47.878669",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/IfExp": {
+    "id": "ast.IfExp",
+    "name": "IfExp",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.IfExp(test, body, orelse)"
+    ],
+    "signature_hash": "d86d07dec13af15a5457cc0a65ee100faf9a8142e1b40c25e23d8e15603b6057",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.IfExp",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "body",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "orelse",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An expression such as a if b else c. Each field holds a single node, so in the following example, all three are Name nodes. >>> print(ast.dump(ast.parse('a if b else c', mode='eval'), indent=4)) Expression( body=IfExp( test=Name(id='b', ctx=Load()), body=Name(id='a', ctx=Load()), orelse=Name(id='c', ctx=Load())))",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An expression such as a if b else c. Each field holds a single node, so in the following example, all three are Name nodes. >>> print(ast.dump(ast.parse('a if b else c', mode='eval'), indent=4)) Expre...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878321",
+    "updatedDate": "2026-03-11T23:15:47.878322",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Import": {
+    "id": "ast.Import",
+    "name": "Import",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Import(names)"
+    ],
+    "signature_hash": "5d1d2c9b908995baea8e174ef2072b887f6a57946ccc8ef9379932375815e7a2",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Import",
+    "parameters": [
+      {
+        "name": "names",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An import statement. names is a list of alias nodes. >>> print(ast.dump(ast.parse('import x,y,z'), indent=4)) Module( body=[ Import( names=[ alias(name='x'), alias(name='y'), alias(name='z')])])",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An import statement. names is a list of alias nodes. >>> print(ast.dump(ast.parse('import x,y,z'), indent=4)) Module( body=[ Import( names=[ alias(name='x'), alias(name='y'), alias(name='z')])])",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878612",
+    "updatedDate": "2026-03-11T23:15:47.878613",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/ImportFrom": {
+    "id": "ast.ImportFrom",
+    "name": "ImportFrom",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.ImportFrom(module, names, level)"
+    ],
+    "signature_hash": "154f9d96eb3a840d1231ff79b8df02ddd1f5ed7502b27b8e2610b676d88977a9",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.ImportFrom",
+    "parameters": [
+      {
+        "name": "module",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "names",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "level",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Represents from x import y. module is a raw string of the ‘from’ name, without any leading dots, or None for statements such as from . import foo. level is an integer holding the level of the relative import (0 means absolute import). >>> print(ast.dump(ast.parse('from y import x,y,z'), indent=4)) Module( body=[ ImportFrom( module='y', names=[ alias(name='x'), alias(name='y'), alias(name='z')], level=0)])",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Represents from x import y. module is a raw string of the ‘from’ name, without any leading dots, or None for statements such as from . import foo. level is an integer holding the level of the relative...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878632",
+    "updatedDate": "2026-03-11T23:15:47.878632",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Interactive": {
+    "id": "ast.Interactive",
+    "name": "Interactive",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Interactive(body)"
+    ],
+    "signature_hash": "7d87f238b7fb77b89da7e5fdcff68d99513b384489229f29daa5e93bc7fc2460",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Interactive",
+    "parameters": [
+      {
+        "name": "body",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A single interactive input, like in Interactive Mode. Node type generated by ast.parse() when mode is \"single\". body is a list of statement nodes. >>> print(ast.dump(ast.parse('x = 1; y = 2', mode='single'), indent=4)) Interactive( body=[ Assign( targets=[ Name(id='x', ctx=Store())], value=Constant(value=1)), Assign( targets=[ Name(id='y', ctx=Store())], value=Constant(value=2))])",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A single interactive input, like in Interactive Mode. Node type generated by ast.parse() when mode is \"single\". body is a list of statement nodes. >>> print(ast.dump(ast.parse('x = 1; y = 2', mode='si...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.877916",
+    "updatedDate": "2026-03-11T23:15:47.877917",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Interpolation": {
+    "id": "ast.Interpolation",
+    "name": "Interpolation",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Interpolation(value, str, conversion, format_spec=None)"
+    ],
+    "signature_hash": "8115d74c8fdf9d973009657803a16943c6c3c8090283cc7a9e7084eaa40a960d",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Interpolation",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "str",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "conversion",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "format_spec",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Added in version 3.14. Node representing a single interpolation field in a template string literal. value is any expression node (such as a literal, a variable, or a function call). This has the same meaning as FormattedValue.value. str is a constant containing the text of the interpolation expression. If str is set to None, then value is used to generate code when calling ast.unparse(). This no longer guarantees that the generated code is identical to the original and is intended for code ge...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Added in version 3.14. Node representing a single interpolation field in a template string literal. value is any expression node (such as a literal, a variable, or a function call). This has the same ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878023",
+    "updatedDate": "2026-03-11T23:15:47.878024",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/increment_lineno": {
+    "id": "ast.increment_lineno",
+    "name": "increment_lineno",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ast.increment_lineno(node, n=1)"
+    ],
+    "signature_hash": "2d78b4f90843d4f620fe8399efa1ff1dd3132dc200cc0be0c960b43fec0216c3",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.increment_lineno",
+    "parameters": [
+      {
+        "name": "node",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "n",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Increment the line number and end line number of each node in the tree starting at node by n. This is useful to “move code” to a different location in a file.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Increment the line number and end line number of each node in the tree starting at node by n. This is useful to “move code” to a different location in a file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.879624",
+    "updatedDate": "2026-03-11T23:15:47.879625",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/iter_child_nodes": {
+    "id": "ast.iter_child_nodes",
+    "name": "iter_child_nodes",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ast.iter_child_nodes(node)"
+    ],
+    "signature_hash": "d34498ddf92f25ee021e5247a33defc9fbfb528548fd4c1f3fc99b61d0e57a97",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.iter_child_nodes",
+    "parameters": [
+      {
+        "name": "node",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Yield all direct child nodes of node, that is, all fields that are nodes and all items of fields that are lists of nodes.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Yield all direct child nodes of node, that is, all fields that are nodes and all items of fields that are lists of nodes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.879675",
+    "updatedDate": "2026-03-11T23:15:47.879676",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/iter_fields": {
+    "id": "ast.iter_fields",
+    "name": "iter_fields",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ast.iter_fields(node)"
+    ],
+    "signature_hash": "53cd36fddf000157a1a2e700e8c08f0df7b72b047f5c74a9c78d4a62dea38529",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.iter_fields",
+    "parameters": [
+      {
+        "name": "node",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Yield a tuple of (fieldname, value) for each field in node._fields that is present on node.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Yield a tuple of (fieldname, value) for each field in node._fields that is present on node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.879659",
+    "updatedDate": "2026-03-11T23:15:47.879659",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

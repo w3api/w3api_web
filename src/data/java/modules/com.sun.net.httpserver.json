@@ -8,31 +8,19 @@
     "shard": "java/shards/com.sun.net.httpserver/a.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Authenticator.Failure",
-    "shard": "java/shards/com.sun.net.httpserver/a.json"
-  },
-  {
-    "slug": "com.sun.net.httpserver/Authenticator.Result",
-    "shard": "java/shards/com.sun.net.httpserver/a.json"
-  },
-  {
-    "slug": "com.sun.net.httpserver/Authenticator.Retry",
-    "shard": "java/shards/com.sun.net.httpserver/a.json"
-  },
-  {
-    "slug": "com.sun.net.httpserver/Authenticator.Success",
-    "shard": "java/shards/com.sun.net.httpserver/a.json"
-  },
-  {
     "slug": "com.sun.net.httpserver/BasicAuthenticator",
     "shard": "java/shards/com.sun.net.httpserver/b.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Filter",
+    "slug": "com.sun.net.httpserver/Chain",
+    "shard": "java/shards/com.sun.net.httpserver/c.json"
+  },
+  {
+    "slug": "com.sun.net.httpserver/Failure",
     "shard": "java/shards/com.sun.net.httpserver/f.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Filter.Chain",
+    "slug": "com.sun.net.httpserver/Filter",
     "shard": "java/shards/com.sun.net.httpserver/f.json"
   },
   {
@@ -76,7 +64,19 @@
     "shard": "java/shards/com.sun.net.httpserver/h.json"
   },
   {
+    "slug": "com.sun.net.httpserver/Result",
+    "shard": "java/shards/com.sun.net.httpserver/r.json"
+  },
+  {
+    "slug": "com.sun.net.httpserver/Retry",
+    "shard": "java/shards/com.sun.net.httpserver/r.json"
+  },
+  {
     "slug": "com.sun.net.httpserver/SimpleFileServer",
+    "shard": "java/shards/com.sun.net.httpserver/s.json"
+  },
+  {
+    "slug": "com.sun.net.httpserver/Success",
     "shard": "java/shards/com.sun.net.httpserver/s.json"
   },
   {
@@ -88,11 +88,11 @@
     "shard": "java/shards/com.sun.net.httpserver/b.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Filter.Chain/Chain",
+    "slug": "com.sun.net.httpserver/Chain/Chain",
     "shard": "java/shards/com.sun.net.httpserver/c.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Authenticator.Failure/Failure",
+    "slug": "com.sun.net.httpserver/Failure/Failure",
     "shard": "java/shards/com.sun.net.httpserver/f.json"
   },
   {
@@ -136,20 +136,32 @@
     "shard": "java/shards/com.sun.net.httpserver/h.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Authenticator.Result/Result",
+    "slug": "com.sun.net.httpserver/Result/Result",
     "shard": "java/shards/com.sun.net.httpserver/r.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Authenticator.Retry/Retry",
+    "slug": "com.sun.net.httpserver/Retry/Retry",
     "shard": "java/shards/com.sun.net.httpserver/r.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Authenticator.Success/Success",
+    "slug": "com.sun.net.httpserver/Success/Success",
     "shard": "java/shards/com.sun.net.httpserver/s.json"
   },
   {
-    "slug": "com.sun.net.httpserver/SimpleFileServer.OutputLevel",
-    "shard": "java/shards/com.sun.net.httpserver/s.json"
+    "slug": "com.sun.net.httpserver/OutputLevel",
+    "shard": "java/shards/com.sun.net.httpserver/o.json"
+  },
+  {
+    "slug": "com.sun.net.httpserver/OutputLevel/INFO",
+    "shard": "java/shards/com.sun.net.httpserver/i.json"
+  },
+  {
+    "slug": "com.sun.net.httpserver/OutputLevel/NONE",
+    "shard": "java/shards/com.sun.net.httpserver/n.json"
+  },
+  {
+    "slug": "com.sun.net.httpserver/OutputLevel/VERBOSE",
+    "shard": "java/shards/com.sun.net.httpserver/v.json"
   },
   {
     "slug": "com.sun.net.httpserver/BasicAuthenticator/realm",
@@ -248,7 +260,7 @@
     "shard": "java/shards/com.sun.net.httpserver/d.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Filter.Chain/doFilter",
+    "slug": "com.sun.net.httpserver/Chain/doFilter",
     "shard": "java/shards/com.sun.net.httpserver/d.json"
   },
   {
@@ -340,7 +352,7 @@
     "shard": "java/shards/com.sun.net.httpserver/g.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Authenticator.Success/getPrincipal",
+    "slug": "com.sun.net.httpserver/Success/getPrincipal",
     "shard": "java/shards/com.sun.net.httpserver/g.json"
   },
   {
@@ -400,11 +412,11 @@
     "shard": "java/shards/com.sun.net.httpserver/g.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Authenticator.Failure/getResponseCode",
+    "slug": "com.sun.net.httpserver/Failure/getResponseCode",
     "shard": "java/shards/com.sun.net.httpserver/g.json"
   },
   {
-    "slug": "com.sun.net.httpserver/Authenticator.Retry/getResponseCode",
+    "slug": "com.sun.net.httpserver/Retry/getResponseCode",
     "shard": "java/shards/com.sun.net.httpserver/g.json"
   },
   {
@@ -548,7 +560,7 @@
     "shard": "java/shards/com.sun.net.httpserver/t.json"
   },
   {
-    "slug": "com.sun.net.httpserver/SimpleFileServer.OutputLevel/valueOf",
+    "slug": "com.sun.net.httpserver/OutputLevel/valueOf",
     "shard": "java/shards/com.sun.net.httpserver/v.json"
   },
   {
@@ -556,7 +568,7 @@
     "shard": "java/shards/com.sun.net.httpserver/v.json"
   },
   {
-    "slug": "com.sun.net.httpserver/SimpleFileServer.OutputLevel/values",
+    "slug": "com.sun.net.httpserver/OutputLevel/values",
     "shard": "java/shards/com.sun.net.httpserver/v.json"
   },
   {

@@ -1,0 +1,738 @@
+{
+  "logging.handlers/SMTPHandler": {
+    "id": "logging.handlers.SMTPHandler",
+    "name": "SMTPHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.handlers.SMTPHandler(mailhost, fromaddr, toaddrs, subject, credentials=None, secure=None, timeout=1.0)"
+    ],
+    "signature_hash": "666126857df6cea7e312a24f8587b6915d16016188ec3721a267ba42a2398351",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SMTPHandler",
+    "parameters": [
+      {
+        "name": "mailhost",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fromaddr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "toaddrs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "subject",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "credentials",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "secure",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "1.0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a new instance of the SMTPHandler class. The instance is initialized with the from and to addresses and subject line of the email. The toaddrs should be a list of strings. To specify a non-standard SMTP port, use the (host, port) tuple format for the mailhost argument. If you use a string, the standard SMTP port is used. If your SMTP server requires authentication, you can specify a (username, password) tuple for the credentials argument. To specify the use of a secure protocol (TLS),...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the SMTPHandler class. The instance is initialized with the from and to addresses and subject line of the email. The toaddrs should be a list of strings. To specify a non-sta...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959745",
+    "updatedDate": "2026-03-11T23:15:47.959746",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "emit",
+      "getSubject"
+    ]
+  },
+  "logging.handlers/SocketHandler": {
+    "id": "logging.handlers.SocketHandler",
+    "name": "SocketHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.handlers.SocketHandler(host, port)"
+    ],
+    "signature_hash": "5d97113ae711010897e2987f56d70e4eebe3d29693c520ca52108d48578e4046",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SocketHandler",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "port",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a new instance of the SocketHandler class intended to communicate with a remote machine whose address is given by host and port. Changed in version 3.4: If port is specified as None, a Unix domain socket is created using the value in host - otherwise, a TCP socket is created. close()¶ Closes the socket. emit()¶ Pickles the record’s attribute dictionary and writes it to the socket in binary format. If there is an error with the socket, silently drops the packet. If the connection was p...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the SocketHandler class intended to communicate with a remote machine whose address is given by host and port. Changed in version 3.4: If port is specified as None, a Unix do...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959293",
+    "updatedDate": "2026-03-11T23:15:47.959294",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "close",
+      "createSocket",
+      "emit",
+      "handleError",
+      "makePickle",
+      "makeSocket",
+      "send"
+    ]
+  },
+  "logging.handlers/StreamHandler": {
+    "id": "logging.handlers.StreamHandler",
+    "name": "StreamHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.StreamHandler(stream=None)"
+    ],
+    "signature_hash": "21a4aeb2514ad5c1523bc158553c8bbc331ecff188b5934b6220ef1c58c13333",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.StreamHandler",
+    "parameters": [
+      {
+        "name": "stream",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a new instance of the StreamHandler class. If stream is specified, the instance will use it for logging output; otherwise, sys.stderr will be used. emit(record)¶ If a formatter is specified, it is used to format the record. The record is then written to the stream followed by terminator. If exception information is present, it is formatted using traceback.print_exception() and appended to the stream. flush()¶ Flushes the stream by calling its flush() method. Note that the close() meth...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the StreamHandler class. If stream is specified, the instance will use it for logging output; otherwise, sys.stderr will be used. emit(record)¶ If a formatter is specified, i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958741",
+    "updatedDate": "2026-03-11T23:15:47.958742",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "terminator"
+    ],
+    "methods": [
+      "emit",
+      "flush",
+      "setStream"
+    ]
+  },
+  "logging.handlers/SysLogHandler": {
+    "id": "logging.handlers.SysLogHandler",
+    "name": "SysLogHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.handlers.SysLogHandler(address=('localhost', SYSLOG_UDP_PORT), facility=LOG_USER, socktype=socket.SOCK_DGRAM, timeout=None)"
+    ],
+    "signature_hash": "2b0a0a2095897e817d7188928aec2b02979d5ba31fad501ac36e7a08ff9edba6",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SysLogHandler",
+    "parameters": [
+      {
+        "name": "address",
+        "type": "",
+        "has_default": true,
+        "default_value": "('localhost', SYSLOG_UDP_PORT)",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "facility",
+        "type": "",
+        "has_default": true,
+        "default_value": "LOG_USER",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "socktype",
+        "type": "",
+        "has_default": true,
+        "default_value": "socket.SOCK_DGRAM",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a new instance of the SysLogHandler class intended to communicate with a remote Unix machine whose address is given by address in the form of a (host, port) tuple. If address is not specified, ('localhost', 514) is used. The address is used to open a socket. An alternative to providing a (host, port) tuple is providing an address as a string, for example ‘/dev/log’. In this case, a Unix domain socket is used to send the message to the syslog. If facility is not specified, LOG_USER is ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the SysLogHandler class intended to communicate with a remote Unix machine whose address is given by address in the form of a (host, port) tuple. If address is not specified,...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959509",
+    "updatedDate": "2026-03-11T23:15:47.959510",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "close",
+      "createSocket",
+      "emit",
+      "encodePriority",
+      "mapPriority"
+    ]
+  },
+  "logging.handlers/SocketHandler/send": {
+    "id": "logging.handlers.SocketHandler.send",
+    "name": "send",
+    "type": "method",
+    "parent": "SocketHandler",
+    "signatures": [
+      "send(packet)"
+    ],
+    "signature_hash": "10c8a1177a0180a927634fa7158b3f1eaaa839dc18abc1b5cad891b19b0b64f9",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SocketHandler.send",
+    "parameters": [
+      {
+        "name": "packet",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Send a pickled byte-string packet to the socket. The format of the sent byte-string is as described in the documentation for makePickle(). This function allows for partial sends, which can happen when the network is busy.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Send a pickled byte-string packet to the socket. The format of the sent byte-string is as described in the documentation for makePickle(). This function allows for partial sends, which can happen when...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959396",
+    "updatedDate": "2026-03-11T23:15:47.959397",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/DatagramHandler/send": {
+    "id": "logging.handlers.DatagramHandler.send",
+    "name": "send",
+    "type": "method",
+    "parent": "DatagramHandler",
+    "signatures": [
+      "send(s)"
+    ],
+    "signature_hash": "10b168f7e795849bef8764b38899c4b400067d69067cb46bde06e0854d0d5da7",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.DatagramHandler.send",
+    "parameters": [
+      {
+        "name": "s",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Send a pickled byte-string to a socket. The format of the sent byte-string is as described in the documentation for SocketHandler.makePickle().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Send a pickled byte-string to a socket. The format of the sent byte-string is as described in the documentation for SocketHandler.makePickle().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959477",
+    "updatedDate": "2026-03-11T23:15:47.959478",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/StreamHandler/setStream": {
+    "id": "logging.handlers.StreamHandler.setStream",
+    "name": "setStream",
+    "type": "method",
+    "parent": "StreamHandler",
+    "signatures": [
+      "setStream(stream)"
+    ],
+    "signature_hash": "0abcdd791efd7955a7d156d1f39706c23ee523750bb64fae2064c26d8d6d6ec2",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.StreamHandler.setStream",
+    "parameters": [
+      {
+        "name": "stream",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Sets the instance’s stream to the specified value, if it is different. The old stream is flushed before the new stream is set. Parameters: stream – The stream that the handler should use. Returns: the old stream, if the stream was changed, or None if it wasn’t. Added in version 3.7.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets the instance’s stream to the specified value, if it is different. The old stream is flushed before the new stream is set. Parameters: stream – The stream that the handler should use. Returns: the...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958788",
+    "updatedDate": "2026-03-11T23:15:47.958789",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/MemoryHandler/setTarget": {
+    "id": "logging.handlers.MemoryHandler.setTarget",
+    "name": "setTarget",
+    "type": "method",
+    "parent": "MemoryHandler",
+    "signatures": [
+      "setTarget(target)"
+    ],
+    "signature_hash": "7aef8f925645cd28f57a2cfe8d284b2f53a3304a6e8b0db7ce472762ea41fed0",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.MemoryHandler.setTarget",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Sets the target handler for this handler.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets the target handler for this handler.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959914",
+    "updatedDate": "2026-03-11T23:15:47.959915",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/BufferingHandler/shouldFlush": {
+    "id": "logging.handlers.BufferingHandler.shouldFlush",
+    "name": "shouldFlush",
+    "type": "method",
+    "parent": "BufferingHandler",
+    "signatures": [
+      "shouldFlush(record)"
+    ],
+    "signature_hash": "abbcf2e2eee23c197349a655b8e6493dad7b8004611d0d070482098391ec4198",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.BufferingHandler.shouldFlush",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if the buffer is up to capacity. This method can be overridden to implement custom flushing strategies.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the buffer is up to capacity. This method can be overridden to implement custom flushing strategies.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959841",
+    "updatedDate": "2026-03-11T23:15:47.959842",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/MemoryHandler/shouldFlush": {
+    "id": "logging.handlers.MemoryHandler.shouldFlush",
+    "name": "shouldFlush",
+    "type": "method",
+    "parent": "MemoryHandler",
+    "signatures": [
+      "shouldFlush(record)"
+    ],
+    "signature_hash": "abbcf2e2eee23c197349a655b8e6493dad7b8004611d0d070482098391ec4198",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.MemoryHandler.shouldFlush",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Checks for buffer full or a record at the flushLevel or higher.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks for buffer full or a record at the flushLevel or higher.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959930",
+    "updatedDate": "2026-03-11T23:15:47.959931",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/RotatingFileHandler/shouldRollover": {
+    "id": "logging.handlers.RotatingFileHandler.shouldRollover",
+    "name": "shouldRollover",
+    "type": "method",
+    "parent": "RotatingFileHandler",
+    "signatures": [
+      "shouldRollover(record)"
+    ],
+    "signature_hash": "9ae766f43d9daacec46263189b30df1b3cfb24b25c05d7facbb750d7c39eeb39",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.RotatingFileHandler.shouldRollover",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "See if the supplied record would cause the file to exceed the configured size limit.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "See if the supplied record would cause the file to exceed the configured size limit.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959179",
+    "updatedDate": "2026-03-11T23:15:47.959179",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/TimedRotatingFileHandler/shouldRollover": {
+    "id": "logging.handlers.TimedRotatingFileHandler.shouldRollover",
+    "name": "shouldRollover",
+    "type": "method",
+    "parent": "TimedRotatingFileHandler",
+    "signatures": [
+      "shouldRollover(record)"
+    ],
+    "signature_hash": "9ae766f43d9daacec46263189b30df1b3cfb24b25c05d7facbb750d7c39eeb39",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.TimedRotatingFileHandler.shouldRollover",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "See if enough time has passed for a rollover to occur and if it has, compute the next rollover time.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "See if enough time has passed for a rollover to occur and if it has, compute the next rollover time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959274",
+    "updatedDate": "2026-03-11T23:15:47.959275",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/QueueListener/start": {
+    "id": "logging.handlers.QueueListener.start",
+    "name": "start",
+    "type": "method",
+    "parent": "QueueListener",
+    "signatures": [
+      "start()"
+    ],
+    "signature_hash": "0c89bb5894ba64a0d87b9a852cfcbe87824523d068979426602e7b9addc56f4d",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.QueueListener.start",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Starts the listener. This starts up a background thread to monitor the queue for LogRecords to process. Changed in version 3.14: Raises RuntimeError if called and the listener is already running.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Starts the listener. This starts up a background thread to monitor the queue for LogRecords to process. Changed in version 3.14: Raises RuntimeError if called and the listener is already running.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.960188",
+    "updatedDate": "2026-03-11T23:15:47.960189",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/QueueListener/stop": {
+    "id": "logging.handlers.QueueListener.stop",
+    "name": "stop",
+    "type": "method",
+    "parent": "QueueListener",
+    "signatures": [
+      "stop()"
+    ],
+    "signature_hash": "f9cc6414ba6b335a7e51876c96dc1fccb261bb873401681658cdb0084efbcb64",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.QueueListener.stop",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Stops the listener. This asks the thread to terminate, and then waits for it to do so. Note that if you don’t call this before your application exits, there may be some records still left on the queue, which won’t be processed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Stops the listener. This asks the thread to terminate, and then waits for it to do so. Note that if you don’t call this before your application exits, there may be some records still left on the queue...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.960205",
+    "updatedDate": "2026-03-11T23:15:47.960206",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

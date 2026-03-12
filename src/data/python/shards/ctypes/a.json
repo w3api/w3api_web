@@ -1,0 +1,264 @@
+{
+  "ctypes/_CFuncPtr/argtypes": {
+    "id": "ctypes._CFuncPtr.argtypes",
+    "name": "argtypes",
+    "type": "attribute",
+    "parent": "_CFuncPtr",
+    "signatures": [
+      "argtypes"
+    ],
+    "signature_hash": "8b47cb2a8ed2a81918b708d250f93a90879b4c035e0c2c0d293fb360815246c5",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CFuncPtr.argtypes",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Assign a tuple of ctypes types to specify the argument types that the function accepts. Functions using the stdcall calling convention can only be called with the same number of arguments as the length of this tuple; functions using the C calling convention accept additional, unspecified arguments as well. When a foreign function is called, each actual argument is passed to the from_param() class method of the items in the argtypes tuple, this method allows adapting the actual argument to an ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Assign a tuple of ctypes types to specify the argument types that the function accepts. Functions using the stdcall calling convention can only be called with the same number of arguments as the lengt...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891439",
+    "updatedDate": "2026-03-11T23:15:47.891440",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/Array": {
+    "id": "ctypes.Array",
+    "name": "Array",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ctypes.Array(*args)"
+    ],
+    "signature_hash": "5fd8cef83165a357ef37e19406855b374ffa60ea70a9347450ee3b8c0ff8898c",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.Array",
+    "parameters": [
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Abstract base class for arrays. The recommended way to create concrete array types is by multiplying any ctypes data type with a non-negative integer. Alternatively, you can subclass this type and define _length_ and _type_ class variables. Array elements can be read and written using standard subscript and slice accesses; for slice reads, the resulting object is not itself an Array. _length_¶ A positive integer specifying the number of elements in the array. Out-of-range subscripts result in...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Abstract base class for arrays. The recommended way to create concrete array types is by multiplying any ctypes data type with a non-negative integer. Alternatively, you can subclass this type and def...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.893095",
+    "updatedDate": "2026-03-11T23:15:47.893096",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "_length_",
+      "_type_"
+    ]
+  },
+  "ctypes/ArgumentError": {
+    "id": "ctypes.ArgumentError",
+    "name": "ArgumentError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception ctypes.ArgumentError"
+    ],
+    "signature_hash": "561eeb79810eda84badafac5bae71a2c9f5f3fb4c18f78473e0df83d0a698287",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.ArgumentError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This exception is raised when a foreign function call cannot convert one of the passed arguments.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This exception is raised when a foreign function call cannot convert one of the passed arguments.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.893217",
+    "updatedDate": "2026-03-11T23:15:47.893218",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/ARRAY": {
+    "id": "ctypes.ARRAY",
+    "name": "ARRAY",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ctypes.ARRAY(type, length)"
+    ],
+    "signature_hash": "20a6bdf07fa0661cdf2997537587241397b75585ccccc556ef40e0f3ff0b46f4",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.ARRAY",
+    "parameters": [
+      {
+        "name": "type",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "length",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create an array. Equivalent to type * length, where type is a ctypes data type and length an integer. This function is soft deprecated in favor of multiplication. There are no plans to remove it.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create an array. Equivalent to type * length, where type is a ctypes data type and length an integer. This function is soft deprecated in favor of multiplication. There are no plans to remove it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.893144",
+    "updatedDate": "2026-03-11T23:15:47.893145",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/addressof": {
+    "id": "ctypes.addressof",
+    "name": "addressof",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ctypes.addressof(obj)"
+    ],
+    "signature_hash": "de0837f8d99ea0eba669e37ffdae2b714e1c2dbb03cd9dacff3c5d4438d25393",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.addressof",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns the address of the memory buffer as integer. obj must be an instance of a ctypes type. Raises an auditing event ctypes.addressof with argument obj.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the address of the memory buffer as integer. obj must be an instance of a ctypes type. Raises an auditing event ctypes.addressof with argument obj.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891608",
+    "updatedDate": "2026-03-11T23:15:47.891609",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/alignment": {
+    "id": "ctypes.alignment",
+    "name": "alignment",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ctypes.alignment(obj_or_type)"
+    ],
+    "signature_hash": "5c562bccb9a2a2315563fc566a5c1e36f921862dfd87a7cce1b25b72e742e05c",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.alignment",
+    "parameters": [
+      {
+        "name": "obj_or_type",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns the alignment requirements of a ctypes type. obj_or_type must be a ctypes type or instance.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the alignment requirements of a ctypes type. obj_or_type must be a ctypes type or instance.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891622",
+    "updatedDate": "2026-03-11T23:15:47.891623",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,539 @@
+{
+  "importlib/InspectLoader": {
+    "id": "importlib.InspectLoader",
+    "name": "InspectLoader",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.abc.InspectLoader"
+    ],
+    "signature_hash": "fb30185bccabf3a3175310a296400457757b80745c7e8b85c9caa63d386f7deb",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.abc.InspectLoader",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An abstract base class for a loader which implements the optional PEP 302 protocol for loaders that inspect modules. get_code(fullname)¶ Return the code object for a module, or None if the module does not have a code object (as would be the case, for example, for a built-in module). Raise an ImportError if loader cannot find the requested module. Note While the method has a default implementation, it is suggested that it be overridden if possible for performance. Changed in version 3.4: No lo...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract base class for a loader which implements the optional PEP 302 protocol for loaders that inspect modules. get_code(fullname)¶ Return the code object for a module, or None if the module does...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.939037",
+    "updatedDate": "2026-03-11T23:15:47.939038",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.4",
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "exec_module",
+      "get_code",
+      "get_source",
+      "is_package",
+      "load_module",
+      "source_to_code"
+    ]
+  },
+  "importlib/import_module": {
+    "id": "importlib.import_module",
+    "name": "import_module",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "importlib.import_module(name, package=None)"
+    ],
+    "signature_hash": "900131102c844646863219542968077c34c965bcd9696bf8aa201756992c7630",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.import_module",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "package",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Import a module. The name argument specifies what module to import in absolute or relative terms (e.g. either pkg.mod or ..mod). If the name is specified in relative terms, then the package argument must be set to the name of the package which is to act as the anchor for resolving the package name (e.g. import_module('..mod', 'pkg.subpkg') will import pkg.mod). The import_module() function acts as a simplifying wrapper around importlib.__import__(). This means all semantics of the function ar...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Import a module. The name argument specifies what module to import in absolute or relative terms (e.g. either pkg.mod or ..mod). If the name is specified in relative terms, then the package argument m...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938766",
+    "updatedDate": "2026-03-11T23:15:47.938767",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/invalidate_caches": {
+    "id": "importlib.invalidate_caches",
+    "name": "invalidate_caches",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "importlib.invalidate_caches()"
+    ],
+    "signature_hash": "8676b7ed63dc5b5a80c5582ab8124d7c57fda5fba1180119e5a5461026d279a4",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.invalidate_caches",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Invalidate the internal caches of finders stored at sys.meta_path. If a finder implements invalidate_caches() then it will be called to perform the invalidation. This function should be called if any modules are created/installed while your program is running to guarantee all finders will notice the new module’s existence. Added in version 3.3. Changed in version 3.10: Namespace packages created/installed in a different sys.path location after the same namespace was already imported are noticed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Invalidate the internal caches of finders stored at sys.meta_path. If a finder implements invalidate_caches() then it will be called to perform the invalidation. This function should be called if any ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938781",
+    "updatedDate": "2026-03-11T23:15:47.938782",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/MetaPathFinder/invalidate_caches": {
+    "id": "importlib.MetaPathFinder.invalidate_caches",
+    "name": "invalidate_caches",
+    "type": "method",
+    "parent": "MetaPathFinder",
+    "signatures": [
+      "invalidate_caches()"
+    ],
+    "signature_hash": "69b3629e2fda8020d3b86c061674d0392805ffbe05436a34a319d5dfcebab50a",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.abc.MetaPathFinder.invalidate_caches",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An optional method which, when called, should invalidate any internal cache used by the finder. Used by importlib.invalidate_caches() when invalidating the caches of all finders on sys.meta_path. Changed in version 3.4: Returns None when called instead of NotImplemented.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An optional method which, when called, should invalidate any internal cache used by the finder. Used by importlib.invalidate_caches() when invalidating the caches of all finders on sys.meta_path. Chan...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938854",
+    "updatedDate": "2026-03-11T23:15:47.938855",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/PathEntryFinder/invalidate_caches": {
+    "id": "importlib.PathEntryFinder.invalidate_caches",
+    "name": "invalidate_caches",
+    "type": "method",
+    "parent": "PathEntryFinder",
+    "signatures": [
+      "invalidate_caches()"
+    ],
+    "signature_hash": "69b3629e2fda8020d3b86c061674d0392805ffbe05436a34a319d5dfcebab50a",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.abc.PathEntryFinder.invalidate_caches",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An optional method which, when called, should invalidate any internal cache used by the finder. Used by importlib.machinery.PathFinder.invalidate_caches() when invalidating the caches of all cached finders.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An optional method which, when called, should invalidate any internal cache used by the finder. Used by importlib.machinery.PathFinder.invalidate_caches() when invalidating the caches of all cached fi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938901",
+    "updatedDate": "2026-03-11T23:15:47.938902",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/PathFinder/invalidate_caches": {
+    "id": "importlib.PathFinder.invalidate_caches",
+    "name": "invalidate_caches",
+    "type": "method",
+    "parent": "PathFinder",
+    "signatures": [
+      "classmethod invalidate_caches()"
+    ],
+    "signature_hash": "0111fc78f38c2b5b3cf4636e69043180fb0cbb2596351c166c317be430e9bd92",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.machinery.PathFinder.invalidate_caches",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Calls importlib.abc.PathEntryFinder.invalidate_caches() on all finders stored in sys.path_importer_cache that define the method. Otherwise entries in sys.path_importer_cache set to None are deleted. Changed in version 3.7: Entries of None in sys.path_importer_cache are deleted.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Calls importlib.abc.PathEntryFinder.invalidate_caches() on all finders stored in sys.path_importer_cache that define the method. Otherwise entries in sys.path_importer_cache set to None are deleted. C...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.939581",
+    "updatedDate": "2026-03-11T23:15:47.939582",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/FileFinder/invalidate_caches": {
+    "id": "importlib.FileFinder.invalidate_caches",
+    "name": "invalidate_caches",
+    "type": "method",
+    "parent": "FileFinder",
+    "signatures": [
+      "invalidate_caches()"
+    ],
+    "signature_hash": "69b3629e2fda8020d3b86c061674d0392805ffbe05436a34a319d5dfcebab50a",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.machinery.FileFinder.invalidate_caches",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Clear out the internal cache.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Clear out the internal cache.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.939656",
+    "updatedDate": "2026-03-11T23:15:47.939657",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/InspectLoader/is_package": {
+    "id": "importlib.InspectLoader.is_package",
+    "name": "is_package",
+    "type": "method",
+    "parent": "InspectLoader",
+    "signatures": [
+      "is_package(fullname)"
+    ],
+    "signature_hash": "abec1a726ba0bbd1f1dab8052c1f6c5bb4780fdbf21b393355705eea5eaf105d",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.abc.InspectLoader.is_package",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An optional method to return a true value if the module is a package, a false value otherwise. ImportError is raised if the loader cannot find the module. Changed in version 3.4: Raises ImportError instead of NotImplementedError.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An optional method to return a true value if the module is a package, a false value otherwise. ImportError is raised if the loader cannot find the module. Changed in version 3.4: Raises ImportError in...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.939085",
+    "updatedDate": "2026-03-11T23:15:47.939086",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/SourceLoader/is_package": {
+    "id": "importlib.SourceLoader.is_package",
+    "name": "is_package",
+    "type": "method",
+    "parent": "SourceLoader",
+    "signatures": [
+      "is_package(fullname)"
+    ],
+    "signature_hash": "abec1a726ba0bbd1f1dab8052c1f6c5bb4780fdbf21b393355705eea5eaf105d",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.abc.SourceLoader.is_package",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Concrete implementation of InspectLoader.is_package(). A module is determined to be a package if its file path (as provided by ExecutionLoader.get_filename()) is a file named __init__ when the file extension is removed and the module name itself does not end in __init__.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Concrete implementation of InspectLoader.is_package(). A module is determined to be a package if its file path (as provided by ExecutionLoader.get_filename()) is a file named __init__ when the file ex...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.939405",
+    "updatedDate": "2026-03-11T23:15:47.939406",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/SourceFileLoader/is_package": {
+    "id": "importlib.SourceFileLoader.is_package",
+    "name": "is_package",
+    "type": "method",
+    "parent": "SourceFileLoader",
+    "signatures": [
+      "is_package(fullname)"
+    ],
+    "signature_hash": "abec1a726ba0bbd1f1dab8052c1f6c5bb4780fdbf21b393355705eea5eaf105d",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.machinery.SourceFileLoader.is_package",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if path appears to be for a package.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if path appears to be for a package.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.939736",
+    "updatedDate": "2026-03-11T23:15:47.939737",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/SourcelessFileLoader/is_package": {
+    "id": "importlib.SourcelessFileLoader.is_package",
+    "name": "is_package",
+    "type": "method",
+    "parent": "SourcelessFileLoader",
+    "signatures": [
+      "is_package(fullname)"
+    ],
+    "signature_hash": "abec1a726ba0bbd1f1dab8052c1f6c5bb4780fdbf21b393355705eea5eaf105d",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.machinery.SourcelessFileLoader.is_package",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Determines if the module is a package based on path.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines if the module is a package based on path.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.939896",
+    "updatedDate": "2026-03-11T23:15:47.939897",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/ExtensionFileLoader/is_package": {
+    "id": "importlib.ExtensionFileLoader.is_package",
+    "name": "is_package",
+    "type": "method",
+    "parent": "ExtensionFileLoader",
+    "signatures": [
+      "is_package(fullname)"
+    ],
+    "signature_hash": "abec1a726ba0bbd1f1dab8052c1f6c5bb4780fdbf21b393355705eea5eaf105d",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.machinery.ExtensionFileLoader.is_package",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns True if the file path points to a package’s __init__ module based on EXTENSION_SUFFIXES.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns True if the file path points to a package’s __init__ module based on EXTENSION_SUFFIXES.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.940048",
+    "updatedDate": "2026-03-11T23:15:47.940049",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib": {
+    "type": "module",
+    "name": "importlib",
+    "id": "importlib",
+    "description": "Module importlib",
+    "classes": [
+      "AppleFrameworkLoader",
+      "BuiltinImporter",
+      "ExecutionLoader",
+      "ExtensionFileLoader",
+      "FileFinder",
+      "FileLoader",
+      "FrozenImporter",
+      "InspectLoader",
+      "LazyLoader",
+      "Loader",
+      "MetaPathFinder",
+      "ModuleSpec",
+      "NamespaceLoader",
+      "PathEntryFinder",
+      "PathFinder",
+      "ResourceLoader",
+      "SourceFileLoader",
+      "SourceLoader",
+      "SourcelessFileLoader",
+      "WindowsRegistryFinder"
+    ],
+    "functions": [
+      "__import__",
+      "_incompatible_extension_module_restrictions",
+      "all_suffixes",
+      "cache_from_source",
+      "decode_source",
+      "find_spec",
+      "import_module",
+      "invalidate_caches",
+      "module_from_spec",
+      "reload",
+      "resolve_name",
+      "source_from_cache",
+      "source_hash",
+      "spec_from_file_location",
+      "spec_from_loader"
+    ]
+  }
+}

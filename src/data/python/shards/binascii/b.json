@@ -1,0 +1,274 @@
+{
+  "binascii/b2a_base64": {
+    "id": "binascii.b2a_base64",
+    "name": "b2a_base64",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "binascii.b2a_base64(data, *, newline=True)"
+    ],
+    "signature_hash": "d3825604c9c45e0064ad5ca1b9c0768c1785f5eca8867fa95a86cbe746e0ce74",
+    "url": "https://docs.python.org/3/library/binascii.html#module-binascii#binascii.b2a_base64",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "newline",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Convert binary data to a line of ASCII characters in base64 coding. The return value is the converted line, including a newline char if newline is true. The output of this function conforms to RFC 3548. Changed in version 3.6: Added the newline parameter.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convert binary data to a line of ASCII characters in base64 coding. The return value is the converted line, including a newline char if newline is true. The output of this function conforms to RFC 354...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881754",
+    "updatedDate": "2026-03-11T23:15:47.881755",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "binascii/b2a_hex": {
+    "id": "binascii.b2a_hex",
+    "name": "b2a_hex",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "binascii.b2a_hex(data[, sep[, bytes_per_sep=1]])"
+    ],
+    "signature_hash": "1d81eb556f1772b5c5baa77b234da232ffbee946e9783b8edf7318e9890f244b",
+    "url": "https://docs.python.org/3/library/binascii.html#module-binascii#binascii.b2a_hex",
+    "parameters": [
+      {
+        "name": "data[, sep[, bytes_per_sep",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the hexadecimal representation of the binary data. Every byte of data is converted into the corresponding 2-digit hex representation. The returned bytes object is therefore twice as long as the length of data. Similar functionality (but returning a text string) is also conveniently accessible using the bytes.hex() method. If sep is specified, it must be a single character str or bytes object. It will be inserted in the output after every bytes_per_sep input bytes. Separator placement i...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the hexadecimal representation of the binary data. Every byte of data is converted into the corresponding 2-digit hex representation. The returned bytes object is therefore twice as long as the...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881841",
+    "updatedDate": "2026-03-11T23:15:47.881841",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "binascii/b2a_qp": {
+    "id": "binascii.b2a_qp",
+    "name": "b2a_qp",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "binascii.b2a_qp(data, quotetabs=False, istext=True, header=False)"
+    ],
+    "signature_hash": "19dedf06758bdd242d16c50a7001e3385619740027ecce4d22b8b392beff8f82",
+    "url": "https://docs.python.org/3/library/binascii.html#module-binascii#binascii.b2a_qp",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "quotetabs",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "istext",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "header",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Convert binary data to a line(s) of ASCII characters in quoted-printable encoding. The return value is the converted line(s). If the optional argument quotetabs is present and true, all tabs and spaces will be encoded. If the optional argument istext is present and true, newlines are not encoded but trailing whitespace will be encoded. If the optional argument header is present and true, spaces will be encoded as underscores per RFC 1522. If the optional argument header is present and false, ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convert binary data to a line(s) of ASCII characters in quoted-printable encoding. The return value is the converted line(s). If the optional argument quotetabs is present and true, all tabs and space...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881792",
+    "updatedDate": "2026-03-11T23:15:47.881792",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "binascii/b2a_uu": {
+    "id": "binascii.b2a_uu",
+    "name": "b2a_uu",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "binascii.b2a_uu(data, *, backtick=False)"
+    ],
+    "signature_hash": "efb96bbc0773a3fcfe2aa2fe2db901b38d831fdf0d6b03f2481ecce56d383e61",
+    "url": "https://docs.python.org/3/library/binascii.html#module-binascii#binascii.b2a_uu",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "backtick",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Convert binary data to a line of ASCII characters, the return value is the converted line, including a newline char. The length of data should be at most 45. If backtick is true, zeros are represented by '`' instead of spaces. Changed in version 3.7: Added the backtick parameter.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convert binary data to a line of ASCII characters, the return value is the converted line, including a newline char. The length of data should be at most 45. If backtick is true, zeros are represented...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881704",
+    "updatedDate": "2026-03-11T23:15:47.881705",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "binascii": {
+    "type": "module",
+    "name": "binascii",
+    "id": "binascii",
+    "description": "Module binascii",
+    "exceptions": [
+      "Error",
+      "Incomplete"
+    ],
+    "functions": [
+      "a2b_base64",
+      "a2b_hex",
+      "a2b_qp",
+      "a2b_uu",
+      "b2a_base64",
+      "b2a_hex",
+      "b2a_qp",
+      "b2a_uu",
+      "crc32",
+      "crc_hqx"
+    ]
+  }
+}

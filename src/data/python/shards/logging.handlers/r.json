@@ -1,0 +1,280 @@
+{
+  "logging.handlers/BaseRotatingHandler/rotator": {
+    "id": "logging.handlers.BaseRotatingHandler.rotator",
+    "name": "rotator",
+    "type": "attribute",
+    "parent": "BaseRotatingHandler",
+    "signatures": [
+      "rotator"
+    ],
+    "signature_hash": "c28863b2667a61f03df3873e43afc9d87ba1daa6673d54af0a618bf1719d9a42",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.BaseRotatingHandler.rotator",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "If this attribute is set to a callable, the rotate() method delegates to this callable. The parameters passed to the callable are those passed to rotate(). Added in version 3.3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If this attribute is set to a callable, the rotate() method delegates to this callable. The parameters passed to the callable are those passed to rotate(). Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959061",
+    "updatedDate": "2026-03-11T23:15:47.959062",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/RotatingFileHandler": {
+    "id": "logging.handlers.RotatingFileHandler",
+    "name": "RotatingFileHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.handlers.RotatingFileHandler(filename, mode='a', maxBytes=0, backupCount=0, encoding=None, delay=False, errors=None)"
+    ],
+    "signature_hash": "5ee1bcd88eb539d2d5169a783e1f218c2f9296c6f62b54300434731d87b0ddf8",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.RotatingFileHandler",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "'a'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "maxBytes",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "backupCount",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delay",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a new instance of the RotatingFileHandler class. The specified file is opened and used as the stream for logging. If mode is not specified, 'a' is used. If encoding is not None, it is used to open the file with that encoding. If delay is true, then file opening is deferred until the first call to emit(). By default, the file grows indefinitely. If errors is provided, it determines how encoding errors are handled. You can use the maxBytes and backupCount values to allow the file to rol...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the RotatingFileHandler class. The specified file is opened and used as the stream for logging. If mode is not specified, 'a' is used. If encoding is not None, it is used to ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959136",
+    "updatedDate": "2026-03-11T23:15:47.959137",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "doRollover",
+      "emit",
+      "shouldRollover"
+    ]
+  },
+  "logging.handlers/WatchedFileHandler/reopenIfNeeded": {
+    "id": "logging.handlers.WatchedFileHandler.reopenIfNeeded",
+    "name": "reopenIfNeeded",
+    "type": "method",
+    "parent": "WatchedFileHandler",
+    "signatures": [
+      "reopenIfNeeded()"
+    ],
+    "signature_hash": "032ba0d30dadfd1fe0db0dbfeeb4f52075e0d85315c790e17fba4064bc7d1d3f",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.WatchedFileHandler.reopenIfNeeded",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Checks to see if the file has changed. If it has, the existing stream is flushed and closed and the file opened again, typically as a precursor to outputting the record to the file. Added in version 3.6.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks to see if the file has changed. If it has, the existing stream is flushed and closed and the file opened again, typically as a precursor to outputting the record to the file. Added in version 3...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958948",
+    "updatedDate": "2026-03-11T23:15:47.958949",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.6.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/BaseRotatingHandler/rotate": {
+    "id": "logging.handlers.BaseRotatingHandler.rotate",
+    "name": "rotate",
+    "type": "method",
+    "parent": "BaseRotatingHandler",
+    "signatures": [
+      "rotate(source, dest)"
+    ],
+    "signature_hash": "a43955222306d4d9622c1a1714af260be99c048f6904f4570d6c3d5305f44bab",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.BaseRotatingHandler.rotate",
+    "parameters": [
+      {
+        "name": "source",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dest",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "When rotating, rotate the current log. The default implementation calls the ‘rotator’ attribute of the handler, if it’s callable, passing the source and dest arguments to it. If the attribute isn’t callable (the default is None), the source is simply renamed to the destination. Parameters: source – The source filename. This is normally the base filename, e.g. ‘test.log’. dest – The destination filename. This is normally what the source is rotated to, e.g. ‘test.log.1’. Added in version 3.3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "When rotating, rotate the current log. The default implementation calls the ‘rotator’ attribute of the handler, if it’s callable, passing the source and dest arguments to it. If the attribute isn’t ca...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959102",
+    "updatedDate": "2026-03-11T23:15:47.959103",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/BaseRotatingHandler/rotation_filename": {
+    "id": "logging.handlers.BaseRotatingHandler.rotation_filename",
+    "name": "rotation_filename",
+    "type": "method",
+    "parent": "BaseRotatingHandler",
+    "signatures": [
+      "rotation_filename(default_name)"
+    ],
+    "signature_hash": "ce60bb541dd48fbf6597c276d67c88e6892228e5e1f0c170b19421b88f4c9679",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.BaseRotatingHandler.rotation_filename",
+    "parameters": [
+      {
+        "name": "default_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Modify the filename of a log file when rotating. This is provided so that a custom filename can be provided. The default implementation calls the ‘namer’ attribute of the handler, if it’s callable, passing the default name to it. If the attribute isn’t callable (the default is None), the name is returned unchanged. Parameters: default_name – The default name for the log file. Added in version 3.3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Modify the filename of a log file when rotating. This is provided so that a custom filename can be provided. The default implementation calls the ‘namer’ attribute of the handler, if it’s callable, pa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959081",
+    "updatedDate": "2026-03-11T23:15:47.959082",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

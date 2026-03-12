@@ -1,0 +1,109 @@
+{
+  "zoneinfo/ZoneInfo": {
+    "id": "zoneinfo.ZoneInfo",
+    "name": "ZoneInfo",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class zoneinfo.ZoneInfo(key)"
+    ],
+    "signature_hash": "5f227e585e2be0d097b2aefaeb35edd0f8e101ff6d5a657ad67994677e5e5af2",
+    "url": "https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo#zoneinfo.ZoneInfo",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A concrete datetime.tzinfo subclass that represents an IANA time zone specified by the string key. Calls to the primary constructor will always return objects that compare identically; put another way, barring cache invalidation via ZoneInfo.clear_cache(), for all values of key, the following assertion will always be true: a = ZoneInfo(key) b = ZoneInfo(key) assert a is b key must be in the form of a relative, normalized POSIX path, with no up-level references. The constructor will raise Valu...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A concrete datetime.tzinfo subclass that represents an IANA time zone specified by the string key. Calls to the primary constructor will always return objects that compare identically; put another way...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.144928",
+    "updatedDate": "2026-03-11T23:15:48.144929",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "key"
+    ],
+    "methods": [
+      "clear_cache",
+      "from_file",
+      "no_cache"
+    ]
+  },
+  "zoneinfo/ZoneInfoNotFoundError": {
+    "id": "zoneinfo.ZoneInfoNotFoundError",
+    "name": "ZoneInfoNotFoundError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception zoneinfo.ZoneInfoNotFoundError"
+    ],
+    "signature_hash": "20d465deb997004268021bc163d2dae9918a826746f4546b725fd61b35d0ee59",
+    "url": "https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo#zoneinfo.ZoneInfoNotFoundError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Raised when construction of a ZoneInfo object fails because the specified key could not be found on the system. This is a subclass of KeyError.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Raised when construction of a ZoneInfo object fails because the specified key could not be found on the system. This is a subclass of KeyError.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.145056",
+    "updatedDate": "2026-03-11T23:15:48.145057",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "zoneinfo": {
+    "type": "module",
+    "name": "zoneinfo",
+    "id": "zoneinfo",
+    "description": "Module zoneinfo",
+    "classes": [
+      "ZoneInfo"
+    ],
+    "constants": [
+      "TZPATH"
+    ],
+    "exceptions": [
+      "InvalidTZPathWarning",
+      "ZoneInfoNotFoundError"
+    ],
+    "functions": [
+      "available_timezones",
+      "reset_tzpath"
+    ]
+  }
+}

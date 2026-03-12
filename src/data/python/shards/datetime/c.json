@@ -1,0 +1,135 @@
+{
+  "datetime/datetime/combine": {
+    "id": "datetime.datetime.combine",
+    "name": "combine",
+    "type": "method",
+    "parent": "datetime",
+    "signatures": [
+      "classmethod datetime.combine(date, time, tzinfo=time.tzinfo)"
+    ],
+    "signature_hash": "a54de7fc71dd42cb3039e5f1458212f53b14ca9894ca088f0dc9663b5deb3125",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.datetime.combine",
+    "parameters": [
+      {
+        "name": "date",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "time",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "tzinfo",
+        "type": "",
+        "has_default": true,
+        "default_value": "time.tzinfo",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a new datetime object whose date components are equal to the given date object’s, and whose time components are equal to the given time object’s. If the tzinfo argument is provided, its value is used to set the tzinfo attribute of the result, otherwise the tzinfo attribute of the time argument is used. If the date argument is a datetime object, its time components and tzinfo attributes are ignored. For any datetime object d, d == datetime.combine(d.date(), d.time(), d.tzinfo). Changed ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a new datetime object whose date components are equal to the given date object’s, and whose time components are equal to the given time object’s. If the tzinfo argument is provided, its value i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.909731",
+    "updatedDate": "2026-03-11T23:15:47.909732",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "datetime/date/ctime": {
+    "id": "datetime.date.ctime",
+    "name": "ctime",
+    "type": "method",
+    "parent": "date",
+    "signatures": [
+      "date.ctime()"
+    ],
+    "signature_hash": "3dea411abcdac0c1317bff067811634ecab1333bb8b545bf1fbfe8d1dc35b6da",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.date.ctime",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a string representing the date: >>> from datetime import date >>> date(2002, 12, 4).ctime() 'Wed Dec 4 00:00:00 2002' d.ctime() is equivalent to: time.ctime(time.mktime(d.timetuple())) on platforms where the native C ctime() function (which time.ctime() invokes, but which date.ctime() does not invoke) conforms to the C standard.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a string representing the date: >>> from datetime import date >>> date(2002, 12, 4).ctime() 'Wed Dec 4 00:00:00 2002' d.ctime() is equivalent to: time.ctime(time.mktime(d.timetuple())) on platf...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.909529",
+    "updatedDate": "2026-03-11T23:15:47.909530",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "datetime/datetime/ctime": {
+    "id": "datetime.datetime.ctime",
+    "name": "ctime",
+    "type": "method",
+    "parent": "datetime",
+    "signatures": [
+      "datetime.ctime()"
+    ],
+    "signature_hash": "22fef8a1eacad5c48146601cc41e00e4a41179293a49602d7885bd6582a9a7c1",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.datetime.ctime",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a string representing the date and time: >>> from datetime import datetime >>> datetime(2002, 12, 4, 20, 30, 40).ctime() 'Wed Dec 4 20:30:40 2002' The output string will not include time zone information, regardless of whether the input is aware or naive. d.ctime() is equivalent to: time.ctime(time.mktime(d.timetuple())) on platforms where the native C ctime() function (which time.ctime() invokes, but which datetime.ctime() does not invoke) conforms to the C standard.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a string representing the date and time: >>> from datetime import datetime >>> datetime(2002, 12, 4, 20, 30, 40).ctime() 'Wed Dec 4 20:30:40 2002' The output string will not include time zone i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.910251",
+    "updatedDate": "2026-03-11T23:15:47.910252",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

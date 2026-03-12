@@ -1,0 +1,159 @@
+{
+  "ctypes/_CFuncPtr/restype": {
+    "id": "ctypes._CFuncPtr.restype",
+    "name": "restype",
+    "type": "attribute",
+    "parent": "_CFuncPtr",
+    "signatures": [
+      "restype"
+    ],
+    "signature_hash": "9bd9d1099d82dae0b1c8ffc46e1e487894bb89df4bd2c68d402560639ee234fb",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CFuncPtr.restype",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Assign a ctypes type to specify the result type of the foreign function. Use None for void, a function not returning anything. It is possible to assign a callable Python object that is not a ctypes type, in this case the function is assumed to return a C int, and the callable will be called with this integer, allowing further processing or error checking. Using this is deprecated, for more flexible post processing or error checking use a ctypes data type as restype and assign a callable to th...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Assign a ctypes type to specify the result type of the foreign function. Use None for void, a function not returning anything. It is possible to assign a callable Python object that is not a ctypes ty...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891416",
+    "updatedDate": "2026-03-11T23:15:47.891417",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/RTLD_GLOBAL": {
+    "id": "ctypes.RTLD_GLOBAL",
+    "name": "RTLD_GLOBAL",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ctypes.RTLD_GLOBAL"
+    ],
+    "signature_hash": "a64accd5b6164bdc3e28036068683ee12b40c9369e7bc3c5629c08b64784c73d",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Flag to use as mode parameter. On platforms where this flag is not available, it is defined as the integer zero.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Flag to use as mode parameter. On platforms where this flag is not available, it is defined as the integer zero.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891245",
+    "updatedDate": "2026-03-11T23:15:47.891246",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/RTLD_LOCAL": {
+    "id": "ctypes.RTLD_LOCAL",
+    "name": "RTLD_LOCAL",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ctypes.RTLD_LOCAL"
+    ],
+    "signature_hash": "e1574833966c7d48ebd06038540eba4e69a796f8ca63af359a8b83cc7313bbcd",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Flag to use as mode parameter. On platforms where this is not available, it is the same as RTLD_GLOBAL.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Flag to use as mode parameter. On platforms where this is not available, it is the same as RTLD_GLOBAL.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891255",
+    "updatedDate": "2026-03-11T23:15:47.891256",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/resize": {
+    "id": "ctypes.resize",
+    "name": "resize",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ctypes.resize(obj, size)"
+    ],
+    "signature_hash": "e1ee3be917fb3864f4c9d343c46a25386c01981554faa448eccf0506a38aac12",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.resize",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "size",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This function resizes the internal memory buffer of obj, which must be an instance of a ctypes type. It is not possible to make the buffer smaller than the native size of the objects type, as given by sizeof(type(obj)), but it is possible to enlarge the buffer.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This function resizes the internal memory buffer of obj, which must be an instance of a ctypes type. It is not possible to make the buffer smaller than the native size of the objects type, as given by...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891914",
+    "updatedDate": "2026-03-11T23:15:47.891915",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "ipaddress/IPv6Address/scope_id": {
+    "id": "ipaddress.IPv6Address.scope_id",
+    "name": "scope_id",
+    "type": "attribute",
+    "parent": "IPv6Address",
+    "signatures": [
+      "scope_id"
+    ],
+    "signature_hash": "d84c566fd89e0f0c413cccec43be6337aaf536c6bd6872f5c4720d2c670471e1",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.IPv6Address.scope_id",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "For scoped addresses as defined by RFC 4007, this property identifies the particular zone of the address’s scope that the address belongs to, as a string. When no scope zone is specified, this property will be None.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "For scoped addresses as defined by RFC 4007, this property identifies the particular zone of the address’s scope that the address belongs to, as a string. When no scope zone is specified, this propert...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.953320",
+    "updatedDate": "2026-03-11T23:15:47.953320",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ipaddress/IPv6Address/sixtofour": {
+    "id": "ipaddress.IPv6Address.sixtofour",
+    "name": "sixtofour",
+    "type": "attribute",
+    "parent": "IPv6Address",
+    "signatures": [
+      "sixtofour"
+    ],
+    "signature_hash": "edce0ef3997c3821d57409c617ee657865932ff40c3ae4a2a8c79b498a0a15d3",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.IPv6Address.sixtofour",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "For addresses that appear to be 6to4 addresses (starting with 2002::/16) as defined by RFC 3056, this property will report the embedded IPv4 address. For any other address, this property will be None.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "For addresses that appear to be 6to4 addresses (starting with 2002::/16) as defined by RFC 3056, this property will report the embedded IPv4 address. For any other address, this property will be None.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.953333",
+    "updatedDate": "2026-03-11T23:15:47.953334",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ipaddress/summarize_address_range": {
+    "id": "ipaddress.summarize_address_range",
+    "name": "summarize_address_range",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ipaddress.summarize_address_range(first, last)"
+    ],
+    "signature_hash": "89ff3cdf45e6b55122c526544edfd00710b3976b9817791f02288cb05b6795ec",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.summarize_address_range",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "last",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return an iterator of the summarized network range given the first and last IP addresses. first is the first IPv4Address or IPv6Address in the range and last is the last IPv4Address or IPv6Address in the range. A TypeError is raised if first or last are not IP addresses or are not of the same version. A ValueError is raised if last is not greater than first or if first address version is not 4 or 6. >>> [ipaddr for ipaddr in ipaddress.summarize_address_range( ... ipaddress.IPv4Address('192.0....",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return an iterator of the summarized network range given the first and last IP addresses. first is the first IPv4Address or IPv6Address in the range and last is the last IPv4Address or IPv6Address in ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.954719",
+    "updatedDate": "2026-03-11T23:15:47.954720",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ipaddress/IPv4Network/subnet_of": {
+    "id": "ipaddress.IPv4Network.subnet_of",
+    "name": "subnet_of",
+    "type": "method",
+    "parent": "IPv4Network",
+    "signatures": [
+      "subnet_of(other)"
+    ],
+    "signature_hash": "46d22b9d275279c75026c3a57222f776047c5583faef6393b1311f6caf558062",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.IPv4Network.subnet_of",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if this network is a subnet of other. >>> a = ip_network('192.168.1.0/24') >>> b = ip_network('192.168.1.128/30') >>> b.subnet_of(a) True Added in version 3.7.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if this network is a subnet of other. >>> a = ip_network('192.168.1.0/24') >>> b = ip_network('192.168.1.128/30') >>> b.subnet_of(a) True Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.953805",
+    "updatedDate": "2026-03-11T23:15:47.953806",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ipaddress/IPv6Network/subnet_of": {
+    "id": "ipaddress.IPv6Network.subnet_of",
+    "name": "subnet_of",
+    "type": "method",
+    "parent": "IPv6Network",
+    "signatures": [
+      "subnet_of(other)"
+    ],
+    "signature_hash": "46d22b9d275279c75026c3a57222f776047c5583faef6393b1311f6caf558062",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.IPv6Network.subnet_of",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.954234",
+    "updatedDate": "2026-03-11T23:15:47.954235",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ipaddress/IPv4Network/subnets": {
+    "id": "ipaddress.IPv4Network.subnets",
+    "name": "subnets",
+    "type": "method",
+    "parent": "IPv4Network",
+    "signatures": [
+      "subnets(prefixlen_diff=1, new_prefix=None)"
+    ],
+    "signature_hash": "dc70b2980669a65403b8eb8eaed88f9cd2b8a0be96e901149c7864589b9339b6",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.IPv4Network.subnets",
+    "parameters": [
+      {
+        "name": "prefixlen_diff",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "new_prefix",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The subnets that join to make the current network definition, depending on the argument values. prefixlen_diff is the amount our prefix length should be increased by. new_prefix is the desired new prefix of the subnets; it must be larger than our prefix. One and only one of prefixlen_diff and new_prefix must be set. Returns an iterator of network objects. >>> list(ip_network('192.0.2.0/24').subnets()) [IPv4Network('192.0.2.0/25'), IPv4Network('192.0.2.128/25')] >>> list(ip_network('192.0.2.0/...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The subnets that join to make the current network definition, depending on the argument values. prefixlen_diff is the amount our prefix length should be increased by. new_prefix is the desired new pre...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.953764",
+    "updatedDate": "2026-03-11T23:15:47.953765",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ipaddress/IPv6Network/subnets": {
+    "id": "ipaddress.IPv6Network.subnets",
+    "name": "subnets",
+    "type": "method",
+    "parent": "IPv6Network",
+    "signatures": [
+      "subnets(prefixlen_diff=1, new_prefix=None)"
+    ],
+    "signature_hash": "dc70b2980669a65403b8eb8eaed88f9cd2b8a0be96e901149c7864589b9339b6",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.IPv6Network.subnets",
+    "parameters": [
+      {
+        "name": "prefixlen_diff",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "new_prefix",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.954198",
+    "updatedDate": "2026-03-11T23:15:47.954199",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ipaddress/IPv4Network/supernet": {
+    "id": "ipaddress.IPv4Network.supernet",
+    "name": "supernet",
+    "type": "method",
+    "parent": "IPv4Network",
+    "signatures": [
+      "supernet(prefixlen_diff=1, new_prefix=None)"
+    ],
+    "signature_hash": "ef79e9c12a8a08ab772da1b81c2332c6aaf6e98cb739ecefa367c5128100df19",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.IPv4Network.supernet",
+    "parameters": [
+      {
+        "name": "prefixlen_diff",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "new_prefix",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The supernet containing this network definition, depending on the argument values. prefixlen_diff is the amount our prefix length should be decreased by. new_prefix is the desired new prefix of the supernet; it must be smaller than our prefix. One and only one of prefixlen_diff and new_prefix must be set. Returns a single network object. >>> ip_network('192.0.2.0/24').supernet() IPv4Network('192.0.2.0/23') >>> ip_network('192.0.2.0/24').supernet(prefixlen_diff=2) IPv4Network('192.0.0.0/22') >...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The supernet containing this network definition, depending on the argument values. prefixlen_diff is the amount our prefix length should be decreased by. new_prefix is the desired new prefix of the su...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.953788",
+    "updatedDate": "2026-03-11T23:15:47.953789",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ipaddress/IPv6Network/supernet": {
+    "id": "ipaddress.IPv6Network.supernet",
+    "name": "supernet",
+    "type": "method",
+    "parent": "IPv6Network",
+    "signatures": [
+      "supernet(prefixlen_diff=1, new_prefix=None)"
+    ],
+    "signature_hash": "ef79e9c12a8a08ab772da1b81c2332c6aaf6e98cb739ecefa367c5128100df19",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.IPv6Network.supernet",
+    "parameters": [
+      {
+        "name": "prefixlen_diff",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "new_prefix",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.954218",
+    "updatedDate": "2026-03-11T23:15:47.954219",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ipaddress/IPv4Network/supernet_of": {
+    "id": "ipaddress.IPv4Network.supernet_of",
+    "name": "supernet_of",
+    "type": "method",
+    "parent": "IPv4Network",
+    "signatures": [
+      "supernet_of(other)"
+    ],
+    "signature_hash": "d84756dff674a5fe1ca0456ebcee1cb9077fab6d538638b4a1691fe58d07c6ae",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.IPv4Network.supernet_of",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if this network is a supernet of other. >>> a = ip_network('192.168.1.0/24') >>> b = ip_network('192.168.1.128/30') >>> a.supernet_of(b) True Added in version 3.7.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if this network is a supernet of other. >>> a = ip_network('192.168.1.0/24') >>> b = ip_network('192.168.1.128/30') >>> a.supernet_of(b) True Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.953822",
+    "updatedDate": "2026-03-11T23:15:47.953822",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ipaddress/IPv6Network/supernet_of": {
+    "id": "ipaddress.IPv6Network.supernet_of",
+    "name": "supernet_of",
+    "type": "method",
+    "parent": "IPv6Network",
+    "signatures": [
+      "supernet_of(other)"
+    ],
+    "signature_hash": "d84756dff674a5fe1ca0456ebcee1cb9077fab6d538638b4a1691fe58d07c6ae",
+    "url": "https://docs.python.org/3/library/ipaddress.html#module-ipaddress#ipaddress.IPv6Network.supernet_of",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.954251",
+    "updatedDate": "2026-03-11T23:15:47.954252",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

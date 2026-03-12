@@ -1,0 +1,245 @@
+{
+  "logging/Logger/disabled": {
+    "id": "logging.Logger.disabled",
+    "name": "disabled",
+    "type": "attribute",
+    "parent": "Logger",
+    "signatures": [
+      "disabled"
+    ],
+    "signature_hash": "17eb3c0168d0d7b21ede5481150f17233427d89833ec121b4dbc4fb96cfab71e",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Logger.disabled",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This attribute disables handling of any events. It is set to False in the initializer, and only changed by logging configuration code. Note This attribute should be treated as read-only.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This attribute disables handling of any events. It is set to False in the initializer, and only changed by logging configuration code. Note This attribute should be treated as read-only.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957052",
+    "updatedDate": "2026-03-11T23:15:47.957053",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/DEBUG": {
+    "id": "logging.DEBUG",
+    "name": "DEBUG",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "logging.DEBUG"
+    ],
+    "signature_hash": "c459a3f31637bf7396a232a94311fdef693b9069e5a492baf33946729fdf3ec4",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.DEBUG",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957457",
+    "updatedDate": "2026-03-11T23:15:47.957458",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/debug": {
+    "id": "logging.debug",
+    "name": "debug",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "logging.debug(msg, *args, **kwargs)"
+    ],
+    "signature_hash": "fcf22c0c380cbea01af135688dd4ee8dfc4f3f052ab07d2b3e739388120fef81",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.debug",
+    "parameters": [
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This is a convenience function that calls Logger.debug(), on the root logger. The handling of the arguments is in every way identical to what is described in that method. The only difference is that if the root logger has no handlers, then basicConfig() is called, prior to calling debug on the root logger. For very short scripts or quick demonstrations of logging facilities, debug and the other module-level functions may be convenient. However, most programs will want to carefully and explici...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This is a convenience function that calls Logger.debug(), on the root logger. The handling of the arguments is in every way identical to what is described in that method. The only difference is that i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958220",
+    "updatedDate": "2026-03-11T23:15:47.958221",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/disable": {
+    "id": "logging.disable",
+    "name": "disable",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "logging.disable(level=CRITICAL)"
+    ],
+    "signature_hash": "0f98dcb788c4122cee44d782ca6c3227d6e933f55bd615bdf7d9aa0c9b8637fb",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.disable",
+    "parameters": [
+      {
+        "name": "level",
+        "type": "",
+        "has_default": true,
+        "default_value": "CRITICAL",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Provides an overriding level level for all loggers which takes precedence over the logger’s own level. When the need arises to temporarily throttle logging output down across the whole application, this function can be useful. Its effect is to disable all logging calls of severity level and below, so that if you call it with a value of INFO, then all INFO and DEBUG events would be discarded, whereas those of severity WARNING and above would be processed according to the logger’s effective lev...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Provides an overriding level level for all loggers which takes precedence over the logger’s own level. When the need arises to temporarily throttle logging output down across the whole application, th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958354",
+    "updatedDate": "2026-03-11T23:15:47.958355",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Logger/debug": {
+    "id": "logging.Logger.debug",
+    "name": "debug",
+    "type": "method",
+    "parent": "Logger",
+    "signatures": [
+      "debug(msg, *args, **kwargs)"
+    ],
+    "signature_hash": "cdae0a580609dec10360e61087db1fb2f245194e11f8aaea6e945c8ebecd4670",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Logger.debug",
+    "parameters": [
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Logs a message with level DEBUG on this logger. The msg is the message format string, and the args are the arguments which are merged into msg using the string formatting operator. (Note that this means that you can use keywords in the format string, together with a single dictionary argument.) No % formatting operation is performed on msg when no args are supplied. There are four keyword arguments in kwargs which are inspected: exc_info, stack_info, stacklevel and extra. If exc_info does not...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Logs a message with level DEBUG on this logger. The msg is the message format string, and the args are the arguments which are merged into msg using the string formatting operator. (Note that this mea...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957157",
+    "updatedDate": "2026-03-11T23:15:47.957158",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,833 @@
+{
+  "os/terminal_size/lines": {
+    "id": "os.terminal_size.lines",
+    "name": "lines",
+    "type": "attribute",
+    "parent": "terminal_size",
+    "signatures": [
+      "lines"
+    ],
+    "signature_hash": "5ea44c3961f16643e614435496b16115aa6d75458b5cc3fd5398aae291f3126b",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.terminal_size.lines",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Height of the terminal window in characters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Height of the terminal window in characters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021570",
+    "updatedDate": "2026-03-11T23:15:48.021571",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/linesep": {
+    "id": "os.linesep",
+    "name": "linesep",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "os.linesep"
+    ],
+    "signature_hash": "0b4ed7757820af2103ec1b5aed382c801ca74589f269bbf790a72809b6de566f",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.linesep",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The string used to separate (or, rather, terminate) lines on the current platform. This may be a single character, such as '\\n' for POSIX, or multiple characters, for example, '\\r\\n' for Windows. Do not use os.linesep as a line terminator when writing files opened in text mode (the default); use a single '\\n' instead, on all platforms.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The string used to separate (or, rather, terminate) lines on the current platform. This may be a single character, such as '\\n' for POSIX, or multiple characters, for example, '\\r\\n' for Windows. Do n...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.026882",
+    "updatedDate": "2026-03-11T23:15:48.026883",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/lchflags": {
+    "id": "os.lchflags",
+    "name": "lchflags",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.lchflags(path, flags)"
+    ],
+    "signature_hash": "014e3b68985b456bc819f9b047df04310c4d042b48b2d2b5a72616919d9b8610",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.lchflags",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "flags",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the flags of path to the numeric flags, like chflags(), but do not follow symbolic links. As of Python 3.3, this is equivalent to os.chflags(path, flags, follow_symlinks=False). Raises an auditing event os.chflags with arguments path, flags. Availability: Unix, not WASI. Changed in version 3.6: Accepts a path-like object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the flags of path to the numeric flags, like chflags(), but do not follow symbolic links. As of Python 3.3, this is equivalent to os.chflags(path, flags, follow_symlinks=False). Raises an auditing...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021908",
+    "updatedDate": "2026-03-11T23:15:48.021909",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/lchmod": {
+    "id": "os.lchmod",
+    "name": "lchmod",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.lchmod(path, mode)"
+    ],
+    "signature_hash": "103b1c3d72c22b61fbdb7993b9fc326b61e7b1d03889291a147b794a3ed641b6",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.lchmod",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Change the mode of path to the numeric mode. If path is a symlink, this affects the symlink rather than the target. See the docs for chmod() for possible values of mode. As of Python 3.3, this is equivalent to os.chmod(path, mode, follow_symlinks=False). lchmod() is not part of POSIX, but Unix implementations may have it if changing the mode of symbolic links is supported. Raises an auditing event os.chmod with arguments path, mode, dir_fd. Availability: Unix, Windows, not Linux, FreeBSD >= 1...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Change the mode of path to the numeric mode. If path is a symlink, this affects the symlink rather than the target. See the docs for chmod() for possible values of mode. As of Python 3.3, this is equi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021929",
+    "updatedDate": "2026-03-11T23:15:48.021930",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/lchown": {
+    "id": "os.lchown",
+    "name": "lchown",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.lchown(path, uid, gid)"
+    ],
+    "signature_hash": "a9df0669027e602f4b7abeb6e524dc5b7c60bd82a96704568b80458ff84d7ce6",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.lchown",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "uid",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "gid",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Change the owner and group id of path to the numeric uid and gid. This function will not follow symbolic links. As of Python 3.3, this is equivalent to os.chown(path, uid, gid, follow_symlinks=False). Raises an auditing event os.chown with arguments path, uid, gid, dir_fd. Availability: Unix. Changed in version 3.6: Accepts a path-like object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Change the owner and group id of path to the numeric uid and gid. This function will not follow symbolic links. As of Python 3.3, this is equivalent to os.chown(path, uid, gid, follow_symlinks=False)....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021951",
+    "updatedDate": "2026-03-11T23:15:48.021952",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/link": {
+    "id": "os.link",
+    "name": "link",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.link(src, dst, *, src_dir_fd=None, dst_dir_fd=None, follow_symlinks=True)"
+    ],
+    "signature_hash": "bb4b8ff00ebbe1aa382798df3645f0c9617cd5986ad27c14c9b398f513742327",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.link",
+    "parameters": [
+      {
+        "name": "src",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dst",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "src_dir_fd",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dst_dir_fd",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a hard link pointing to src named dst. This function can support specifying src_dir_fd and/or dst_dir_fd to supply paths relative to directory descriptors, and not following symlinks. The default value of follow_symlinks is False on Windows. Raises an auditing event os.link with arguments src, dst, src_dir_fd, dst_dir_fd. Availability: Unix, Windows. Changed in version 3.2: Added Windows support. Changed in version 3.3: Added the src_dir_fd, dst_dir_fd, and follow_symlinks parameters. ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a hard link pointing to src named dst. This function can support specifying src_dir_fd and/or dst_dir_fd to supply paths relative to directory descriptors, and not following symlinks. The defau...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021982",
+    "updatedDate": "2026-03-11T23:15:48.021983",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/listdir": {
+    "id": "os.listdir",
+    "name": "listdir",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.listdir(path='.')"
+    ],
+    "signature_hash": "7286d5dba61bfc837a25763ca9ac4c3299fccdaadbb0753335b112db73088e64",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.listdir",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": true,
+        "default_value": "'.'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a list containing the names of the entries in the directory given by path. The list is in arbitrary order, and does not include the special entries '.' and '..' even if they are present in the directory. If a file is removed from or added to the directory during the call of this function, whether a name for that file be included is unspecified. path may be a path-like object. If path is of type bytes (directly or indirectly through the PathLike interface), the filenames returned will a...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list containing the names of the entries in the directory given by path. The list is in arbitrary order, and does not include the special entries '.' and '..' even if they are present in the ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.022002",
+    "updatedDate": "2026-03-11T23:15:48.022003",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/listdrives": {
+    "id": "os.listdrives",
+    "name": "listdrives",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.listdrives()"
+    ],
+    "signature_hash": "bbf878849014c290d58266021ec9b9ca658c6c43ce5ffb1fae52fa3c73ee7bd9",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.listdrives",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a list containing the names of drives on a Windows system. A drive name typically looks like 'C:\\\\'. Not every drive name will be associated with a volume, and some may be inaccessible for a variety of reasons, including permissions, network connectivity or missing media. This function does not test for access. May raise OSError if an error occurs collecting the drive names. Raises an auditing event os.listdrives with no arguments. Availability: Windows Added in version 3.12.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list containing the names of drives on a Windows system. A drive name typically looks like 'C:\\\\'. Not every drive name will be associated with a volume, and some may be inaccessible for a va...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.022022",
+    "updatedDate": "2026-03-11T23:15:48.022023",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/listmounts": {
+    "id": "os.listmounts",
+    "name": "listmounts",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.listmounts(volume)"
+    ],
+    "signature_hash": "24986ce324eed930106e2e1e59fde50881bc8b0ade26bf222a6bdc9e61c71d79",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.listmounts",
+    "parameters": [
+      {
+        "name": "volume",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a list containing the mount points for a volume on a Windows system. volume must be represented as a GUID path, like those returned by os.listvolumes(). Volumes may be mounted in multiple locations or not at all. In the latter case, the list will be empty. Mount points that are not associated with a volume will not be returned by this function. The mount points return by this function will be absolute paths, and may be longer than the drive name. Raises OSError if the volume is not rec...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list containing the mount points for a volume on a Windows system. volume must be represented as a GUID path, like those returned by os.listvolumes(). Volumes may be mounted in multiple locat...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.022042",
+    "updatedDate": "2026-03-11T23:15:48.022043",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/listvolumes": {
+    "id": "os.listvolumes",
+    "name": "listvolumes",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.listvolumes()"
+    ],
+    "signature_hash": "29265a9f506b4817b478ad38f036bfb90fce333151fde43e75987a2192b2b9de",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.listvolumes",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a list containing the volumes in the system. Volumes are typically represented as a GUID path that looks like \\\\?\\Volume{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}\\. Files can usually be accessed through a GUID path, permissions allowing. However, users are generally not familiar with them, and so the recommended use of this function is to retrieve mount points using os.listmounts(). May raise OSError if an error occurs collecting the volumes. Raises an auditing event os.listvolumes with no...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list containing the volumes in the system. Volumes are typically represented as a GUID path that looks like \\\\?\\Volume{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}\\. Files can usually be accessed th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.022060",
+    "updatedDate": "2026-03-11T23:15:48.022061",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/listxattr": {
+    "id": "os.listxattr",
+    "name": "listxattr",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.listxattr(path=None, *, follow_symlinks=True)"
+    ],
+    "signature_hash": "9c0f5941dd304776a270da0955a6e873d9c2ac8d4b264c5d890b52bb2e20b8e7",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.listxattr",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a list of the extended filesystem attributes on path. The attributes in the list are represented as strings decoded with the filesystem encoding. If path is None, listxattr() will examine the current directory. This function can support specifying a file descriptor and not following symlinks. Raises an auditing event os.listxattr with argument path. Changed in version 3.6: Accepts a path-like object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list of the extended filesystem attributes on path. The attributes in the list are represented as strings decoded with the filesystem encoding. If path is None, listxattr() will examine the c...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.024135",
+    "updatedDate": "2026-03-11T23:15:48.024136",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/lockf": {
+    "id": "os.lockf",
+    "name": "lockf",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.lockf(fd, cmd, len, /)"
+    ],
+    "signature_hash": "3a1048a86c9398bb66e12a03aa70186065e2d418decebfe4aef088cbae94f7e0",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.lockf",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cmd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "len",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Apply, test or remove a POSIX lock on an open file descriptor. fd is an open file descriptor. cmd specifies the command to use - one of F_LOCK, F_TLOCK, F_ULOCK or F_TEST. len specifies the section of the file to lock. Raises an auditing event os.lockf with arguments fd, cmd, len. Availability: Unix. Added in version 3.3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Apply, test or remove a POSIX lock on an open file descriptor. fd is an open file descriptor. cmd specifies the command to use - one of F_LOCK, F_TLOCK, F_ULOCK or F_TEST. len specifies the section of...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018576",
+    "updatedDate": "2026-03-11T23:15:48.018580",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/login_tty": {
+    "id": "os.login_tty",
+    "name": "login_tty",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.login_tty(fd, /)"
+    ],
+    "signature_hash": "5828b98c5367d79f5ffafe188ab4c970b96a356b122dc7974c21c77317c5c3b0",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.login_tty",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Prepare the tty of which fd is a file descriptor for a new login session. Make the calling process a session leader; make the tty the controlling tty, the stdin, the stdout, and the stderr of the calling process; close fd. Availability: Unix, not WASI. Added in version 3.11.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prepare the tty of which fd is a file descriptor for a new login session. Make the calling process a session leader; make the tty the controlling tty, the stdin, the stdout, and the stderr of the call...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018671",
+    "updatedDate": "2026-03-11T23:15:48.018675",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/lseek": {
+    "id": "os.lseek",
+    "name": "lseek",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.lseek(fd, pos, whence, /)"
+    ],
+    "signature_hash": "7eb1b6e09f31af397283fa9015fdf3902524c7bbf50518a77cda2cb3773bb30b",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.lseek",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pos",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "whence",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the current position of file descriptor fd to position pos, modified by whence, and return the new position in bytes relative to the start of the file. Valid values for whence are: SEEK_SET or 0 – set pos relative to the beginning of the file SEEK_CUR or 1 – set pos relative to the current file position SEEK_END or 2 – set pos relative to the end of the file SEEK_HOLE – set pos to the next data location, relative to pos SEEK_DATA – set pos to the next data hole, relative to pos Changed in...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the current position of file descriptor fd to position pos, modified by whence, and return the new position in bytes relative to the start of the file. Valid values for whence are: SEEK_SET or 0 –...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018738",
+    "updatedDate": "2026-03-11T23:15:48.018742",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/lstat": {
+    "id": "os.lstat",
+    "name": "lstat",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.lstat(path, *, dir_fd=None)"
+    ],
+    "signature_hash": "780ec5cad4db0cbe5466f10a68b145667bfb96c800ad5becbfcdcb34b86d70aa",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.lstat",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dir_fd",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Perform the equivalent of an lstat() system call on the given path. Similar to stat(), but does not follow symbolic links. Return a stat_result object. On platforms that do not support symbolic links, this is an alias for stat(). As of Python 3.3, this is equivalent to os.stat(path, dir_fd=dir_fd, follow_symlinks=False). This function can also support paths relative to directory descriptors. See also The stat() function. Changed in version 3.2: Added support for Windows 6.0 (Vista) symbolic l...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Perform the equivalent of an lstat() system call on the given path. Similar to stat(), but does not follow symbolic links. Return a stat_result object. On platforms that do not support symbolic links,...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.022084",
+    "updatedDate": "2026-03-11T23:15:48.022085",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

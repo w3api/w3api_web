@@ -1,0 +1,918 @@
+{
+  "os/F_LOCK": {
+    "id": "os.F_LOCK",
+    "name": "F_LOCK",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "os.F_LOCK"
+    ],
+    "signature_hash": "278bcf0115782bef6b3ee5326f5010a8b0baa693dfb0beafb0484a1eba09baad",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.F_LOCK",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Flags that specify what action lockf() will take. Availability: Unix. Added in version 3.3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Flags that specify what action lockf() will take. Availability: Unix. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018617",
+    "updatedDate": "2026-03-11T23:15:48.018621",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/F_OK": {
+    "id": "os.F_OK",
+    "name": "F_OK",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "os.F_OK"
+    ],
+    "signature_hash": "d8a0c8c0fabc561725a879e43bd988799342e6ecb1f9885d7df9e7d704ba7774",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.F_OK",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Values to pass as the mode parameter of access() to test the existence, readability, writability and executability of path, respectively.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Values to pass as the mode parameter of access() to test the existence, readability, writability and executability of path, respectively.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021695",
+    "updatedDate": "2026-03-11T23:15:48.021696",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fchdir": {
+    "id": "os.fchdir",
+    "name": "fchdir",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fchdir(fd)"
+    ],
+    "signature_hash": "fd8931987af42feea5aab3da19f9c5a42182fcc61f8bdb8493ffb9ad473c543d",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fchdir",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Change the current working directory to the directory represented by the file descriptor fd. The descriptor must refer to an opened directory, not an open file. As of Python 3.3, this is equivalent to os.chdir(fd). Raises an auditing event os.chdir with argument path. Availability: Unix.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Change the current working directory to the directory represented by the file descriptor fd. The descriptor must refer to an opened directory, not an open file. As of Python 3.3, this is equivalent to...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021854",
+    "updatedDate": "2026-03-11T23:15:48.021855",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fchmod": {
+    "id": "os.fchmod",
+    "name": "fchmod",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fchmod(fd, mode)"
+    ],
+    "signature_hash": "e18b906d64d09769b85880a247e112914c0bc7abcccdc9ffc753113e4c89bfe5",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fchmod",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Change the mode of the file given by fd to the numeric mode. See the docs for chmod() for possible values of mode. As of Python 3.3, this is equivalent to os.chmod(fd, mode). Raises an auditing event os.chmod with arguments path, mode, dir_fd. Availability: Unix, Windows. The function is limited on WASI, see WebAssembly platforms for more information. Changed in version 3.13: Added support on Windows.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Change the mode of the file given by fd to the numeric mode. See the docs for chmod() for possible values of mode. As of Python 3.3, this is equivalent to os.chmod(fd, mode). Raises an auditing event ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.017876",
+    "updatedDate": "2026-03-11T23:15:48.017879",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fchown": {
+    "id": "os.fchown",
+    "name": "fchown",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fchown(fd, uid, gid)"
+    ],
+    "signature_hash": "a9c8e31c83cb21e75658e05a2db7bbfd1a0e12192a64b73ae9ffd56c27fefce2",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fchown",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "uid",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "gid",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Change the owner and group id of the file given by fd to the numeric uid and gid. To leave one of the ids unchanged, set it to -1. See chown(). As of Python 3.3, this is equivalent to os.chown(fd, uid, gid). Raises an auditing event os.chown with arguments path, uid, gid, dir_fd. Availability: Unix. The function is limited on WASI, see WebAssembly platforms for more information.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Change the owner and group id of the file given by fd to the numeric uid and gid. To leave one of the ids unchanged, set it to -1. See chown(). As of Python 3.3, this is equivalent to os.chown(fd, uid...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.017936",
+    "updatedDate": "2026-03-11T23:15:48.017940",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fdatasync": {
+    "id": "os.fdatasync",
+    "name": "fdatasync",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fdatasync(fd)"
+    ],
+    "signature_hash": "dddd95dfd34db5f2a1eee895827e012635b4aea1155b42da19f28fcf965f351b",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fdatasync",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Force write of file with filedescriptor fd to disk. Does not force update of metadata. Availability: Unix. Note This function is not available on MacOS.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Force write of file with filedescriptor fd to disk. Does not force update of metadata. Availability: Unix. Note This function is not available on MacOS.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.017985",
+    "updatedDate": "2026-03-11T23:15:48.017988",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fdopen": {
+    "id": "os.fdopen",
+    "name": "fdopen",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fdopen(fd, *args, **kwargs)"
+    ],
+    "signature_hash": "3270b5c08666e3c966b99ba1fece7d79b96bd364b4cf0148607a882bedd028e7",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fdopen",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return an open file object connected to the file descriptor fd. This is an alias of the open() built-in function and accepts the same arguments. The only difference is that the first argument of fdopen() must always be an integer.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return an open file object connected to the file descriptor fd. This is an alias of the open() built-in function and accepts the same arguments. The only difference is that the first argument of fdope...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.017452",
+    "updatedDate": "2026-03-11T23:15:48.017455",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fork": {
+    "id": "os.fork",
+    "name": "fork",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fork()"
+    ],
+    "signature_hash": "9a8518373e172bfacc0d35e5622364ecc509969f467efe7990c931f262b40b6d",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fork",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Fork a child process. Return 0 in the child and the child’s process id in the parent. If an error occurs OSError is raised. Note that some platforms including FreeBSD <= 6.3 and Cygwin have known issues when using fork() from a thread. Raises an auditing event os.fork with no arguments. Warning If you use TLS sockets in an application calling fork(), see the warning in the ssl documentation. Warning On macOS the use of this function is unsafe when mixed with using higher-level system APIs, an...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Fork a child process. Return 0 in the child and the child’s process id in the parent. If an error occurs OSError is raised. Note that some platforms including FreeBSD <= 6.3 and Cygwin have known issu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.024738",
+    "updatedDate": "2026-03-11T23:15:48.024739",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/forkpty": {
+    "id": "os.forkpty",
+    "name": "forkpty",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.forkpty()"
+    ],
+    "signature_hash": "d34303d9c5f4ded34c11ba4ef8b43c9bde0dab2f939776560e5f4d44471c133e",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.forkpty",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Fork a child process, using a new pseudo-terminal as the child’s controlling terminal. Return a pair of (pid, fd), where pid is 0 in the child, the new child’s process id in the parent, and fd is the file descriptor of the master end of the pseudo-terminal. For a more portable approach, use the pty module. If an error occurs OSError is raised. Raises an auditing event os.forkpty with no arguments. Warning On macOS the use of this function is unsafe when mixed with using higher-level system AP...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Fork a child process, using a new pseudo-terminal as the child’s controlling terminal. Return a pair of (pid, fd), where pid is 0 in the child, the new child’s process id in the parent, and fd is the ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.024761",
+    "updatedDate": "2026-03-11T23:15:48.024762",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fpathconf": {
+    "id": "os.fpathconf",
+    "name": "fpathconf",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fpathconf(fd, name, /)"
+    ],
+    "signature_hash": "74186a3cd97de5c2228603cc1c9b3b90f912d289d8db28585db63397f308d6d5",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fpathconf",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return system configuration information relevant to an open file. name specifies the configuration value to retrieve; it may be a string which is the name of a defined system value; these names are specified in a number of standards (POSIX.1, Unix 95, Unix 98, and others). Some platforms define additional names as well. The names known to the host operating system are given in the pathconf_names dictionary. For configuration variables not included in that mapping, passing an integer for name ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return system configuration information relevant to an open file. name specifies the configuration value to retrieve; it may be a string which is the name of a defined system value; these names are sp...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018047",
+    "updatedDate": "2026-03-11T23:15:48.018051",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fsdecode": {
+    "id": "os.fsdecode",
+    "name": "fsdecode",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fsdecode(filename)"
+    ],
+    "signature_hash": "e085b61cb23b64f0b6566d57a86f2e7b378dc3b74fbe921230fff0f23354d029",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fsdecode",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Decode the path-like filename from the filesystem encoding and error handler; return str unchanged. fsencode() is the reverse function. Added in version 3.2. Changed in version 3.6: Support added to accept objects implementing the os.PathLike interface.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decode the path-like filename from the filesystem encoding and error handler; return str unchanged. fsencode() is the reverse function. Added in version 3.2. Changed in version 3.6: Support added to a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.012729",
+    "updatedDate": "2026-03-11T23:15:48.012729",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fsencode": {
+    "id": "os.fsencode",
+    "name": "fsencode",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fsencode(filename)"
+    ],
+    "signature_hash": "1a5bd4e72d5aa3996e9fecafced395d9c3a54634a66c08b0b592c2a29b36c4ef",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fsencode",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Encode path-like filename to the filesystem encoding and error handler; return bytes unchanged. fsdecode() is the reverse function. Added in version 3.2. Changed in version 3.6: Support added to accept objects implementing the os.PathLike interface.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Encode path-like filename to the filesystem encoding and error handler; return bytes unchanged. fsdecode() is the reverse function. Added in version 3.2. Changed in version 3.6: Support added to accep...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.012715",
+    "updatedDate": "2026-03-11T23:15:48.012715",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fspath": {
+    "id": "os.fspath",
+    "name": "fspath",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fspath(path)"
+    ],
+    "signature_hash": "daa2e1e7ea497e5a1acd7b0cebed14805766bf51af2fa0993d0282983ce0dd2b",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fspath",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the file system representation of the path. If str or bytes is passed in, it is returned unchanged. Otherwise __fspath__() is called and its value is returned as long as it is a str or bytes object. In all other cases, TypeError is raised. Added in version 3.6.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the file system representation of the path. If str or bytes is passed in, it is returned unchanged. Otherwise __fspath__() is called and its value is returned as long as it is a str or bytes ob...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013263",
+    "updatedDate": "2026-03-11T23:15:48.013268",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.6.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fstat": {
+    "id": "os.fstat",
+    "name": "fstat",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fstat(fd)"
+    ],
+    "signature_hash": "76e38c636200d2259a4f9264c97f1e8e23323454edc060eeda961a3b06228419",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fstat",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get the status of the file descriptor fd. Return a stat_result object. As of Python 3.3, this is equivalent to os.stat(fd). See also The stat() function.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the status of the file descriptor fd. Return a stat_result object. As of Python 3.3, this is equivalent to os.stat(fd). See also The stat() function.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018095",
+    "updatedDate": "2026-03-11T23:15:48.018098",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fstatvfs": {
+    "id": "os.fstatvfs",
+    "name": "fstatvfs",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fstatvfs(fd, /)"
+    ],
+    "signature_hash": "5208181da9f3e2a599d2106bcbf18e55e4ce719c58c2284e0c4b968e496eaba8",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fstatvfs",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return information about the filesystem containing the file associated with file descriptor fd, like statvfs(). As of Python 3.3, this is equivalent to os.statvfs(fd). Availability: Unix.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return information about the filesystem containing the file associated with file descriptor fd, like statvfs(). As of Python 3.3, this is equivalent to os.statvfs(fd). Availability: Unix.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018147",
+    "updatedDate": "2026-03-11T23:15:48.018150",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fsync": {
+    "id": "os.fsync",
+    "name": "fsync",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fsync(fd)"
+    ],
+    "signature_hash": "d2590dc45af699bf748f4287b2c426823fe90c5fe532c5079a78eedf37e9722f",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fsync",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Force write of file with filedescriptor fd to disk. On Unix, this calls the native fsync() function; on Windows, the MS _commit() function. If you’re starting with a buffered Python file object f, first do f.flush(), and then do os.fsync(f.fileno()), to ensure that all internal buffers associated with f are written to disk. Availability: Unix, Windows.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Force write of file with filedescriptor fd to disk. On Unix, this calls the native fsync() function; on Windows, the MS _commit() function. If you’re starting with a buffered Python file object f, fir...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018198",
+    "updatedDate": "2026-03-11T23:15:48.018201",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/ftruncate": {
+    "id": "os.ftruncate",
+    "name": "ftruncate",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.ftruncate(fd, length, /)"
+    ],
+    "signature_hash": "8122d60718b810c81f01550dc318036e53a7965c52d05fadf7addb1cb7e2611d",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.ftruncate",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "length",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Truncate the file corresponding to file descriptor fd, so that it is at most length bytes in size. As of Python 3.3, this is equivalent to os.truncate(fd, length). Raises an auditing event os.truncate with arguments fd, length. Availability: Unix, Windows. Changed in version 3.5: Added support for Windows",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Truncate the file corresponding to file descriptor fd, so that it is at most length bytes in size. As of Python 3.3, this is equivalent to os.truncate(fd, length). Raises an auditing event os.truncate...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018257",
+    "updatedDate": "2026-03-11T23:15:48.018261",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/fwalk": {
+    "id": "os.fwalk",
+    "name": "fwalk",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.fwalk(top='.', topdown=True, onerror=None, *, follow_symlinks=False, dir_fd=None)"
+    ],
+    "signature_hash": "2085d2af2611f36611ee32988feab5b2df5f9a2cc028311db9a40ae36376ee68",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.fwalk",
+    "parameters": [
+      {
+        "name": "top",
+        "type": "",
+        "has_default": true,
+        "default_value": "'.'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "topdown",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "onerror",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dir_fd",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This behaves exactly like walk(), except that it yields a 4-tuple (dirpath, dirnames, filenames, dirfd), and it supports dir_fd. dirpath, dirnames and filenames are identical to walk() output, and dirfd is a file descriptor referring to the directory dirpath. This function always supports paths relative to directory descriptors and not following symlinks. Note however that, unlike other functions, the fwalk() default value for follow_symlinks is False. Note Since fwalk() yields file descripto...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This behaves exactly like walk(), except that it yields a 4-tuple (dirpath, dirnames, filenames, dirfd), and it supports dir_fd. dirpath, dirnames and filenames are identical to walk() output, and dir...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.023679",
+    "updatedDate": "2026-03-11T23:15:48.023680",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

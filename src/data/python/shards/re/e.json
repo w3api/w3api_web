@@ -1,0 +1,126 @@
+{
+  "re/Match/endpos": {
+    "id": "re.Match.endpos",
+    "name": "endpos",
+    "type": "attribute",
+    "parent": "Match",
+    "signatures": [
+      "Match.endpos"
+    ],
+    "signature_hash": "ef3e1a71d6cb63504c2219ed5accf52190ab6c9a4ce59485b5b4f5052ee39ed7",
+    "url": "https://docs.python.org/3/library/re.html#module-re#re.Match.endpos",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The value of endpos which was passed to the search() or match() method of a regex object. This is the index into the string beyond which the RE engine will not go.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The value of endpos which was passed to the search() or match() method of a regex object. This is the index into the string beyond which the RE engine will not go.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.035292",
+    "updatedDate": "2026-03-11T23:15:48.035293",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "re/escape": {
+    "id": "re.escape",
+    "name": "escape",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "re.escape(pattern)"
+    ],
+    "signature_hash": "893190b7ed6be3de9ac4551b5296f00ca92f320e31d4ff9f04de3ff1f5ff8a82",
+    "url": "https://docs.python.org/3/library/re.html#module-re#re.escape",
+    "parameters": [
+      {
+        "name": "pattern",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Escape special characters in pattern. This is useful if you want to match an arbitrary literal string that may have regular expression metacharacters in it. For example: >>> print(re.escape('https://www.python.org')) https://www\\.python\\.org >>> legal_chars = string.ascii_lowercase + string.digits + \"!#$%&'*+-.^_`|~:\" >>> print('[%s]+' % re.escape(legal_chars)) [abcdefghijklmnopqrstuvwxyz0123456789!\\#\\$%\\&'\\*\\+\\-\\.\\^_`\\|\\~:]+ >>> operators = ['+', '-', '*', '/', '**'] >>> print('|'.join(map(r...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Escape special characters in pattern. This is useful if you want to match an arbitrary literal string that may have regular expression metacharacters in it. For example: >>> print(re.escape('https://w...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.034847",
+    "updatedDate": "2026-03-11T23:15:48.034848",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "re/Match/expand": {
+    "id": "re.Match.expand",
+    "name": "expand",
+    "type": "method",
+    "parent": "Match",
+    "signatures": [
+      "Match.expand(template)"
+    ],
+    "signature_hash": "6a85d7a6432d27ff6277dc5b87d3b104f96493455a9fb4242122dffa3af13c9c",
+    "url": "https://docs.python.org/3/library/re.html#module-re#re.Match.expand",
+    "parameters": [
+      {
+        "name": "template",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the string obtained by doing backslash substitution on the template string template, as done by the sub() method. Escapes such as \\n are converted to the appropriate characters, and numeric backreferences (\\1, \\2) and named backreferences (\\g<1>, \\g<name>) are replaced by the contents of the corresponding group. The backreference \\g<0> will be replaced by the entire match. Changed in version 3.5: Unmatched groups are replaced with an empty string.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the string obtained by doing backslash substitution on the template string template, as done by the sub() method. Escapes such as \\n are converted to the appropriate characters, and numeric bac...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.035166",
+    "updatedDate": "2026-03-11T23:15:48.035167",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

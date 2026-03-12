@@ -4,8 +4,10 @@
     "name": "Annotation",
     "type": "annotation",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface Annotation"
+    ],
+    "signature_hash": "44dc7cea76c89b179ba492f273c83219b8e4b37bf3515bc809365f593e32d33c",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Annotation.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +22,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.110780",
-    "updatedDate": "2026-03-08T21:40:21.110781",
+    "createdDate": "2026-03-11T23:15:40.469911",
+    "updatedDate": "2026-03-11T23:15:40.469912",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -36,8 +38,10 @@
     "name": "Attributes",
     "type": "class",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "class Attributes"
+    ],
+    "signature_hash": "cc1321aa0f08b902be149372dceec81750c2b584178ee0468bec0670dad6a07a",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Attributes.html",
     "parameters": [],
     "return_type": "",
@@ -52,8 +56,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.108643",
-    "updatedDate": "2026-03-08T21:40:21.108644",
+    "createdDate": "2026-03-11T23:15:40.467399",
+    "updatedDate": "2026-03-11T23:15:40.467401",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -139,13 +143,15 @@
       "synthetic"
     ]
   },
-  "java.lang.classfile/AttributeMapper.AttributeStability": {
-    "id": "java.lang.classfile.AttributeMapper.AttributeStability",
-    "name": "AttributeMapper.AttributeStability",
+  "java.lang.classfile/AttributeStability": {
+    "id": "java.lang.classfile.AttributeStability",
+    "name": "AttributeStability",
     "type": "enum",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "enum AttributeStability"
+    ],
+    "signature_hash": "f3824737b25ed8c2fd538f03ca9b93cbd622f8a5dc4841e3294c548c9ebeeec9",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AttributeMapper.AttributeStability.html",
     "parameters": [],
     "return_type": "",
@@ -160,8 +166,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.113056",
-    "updatedDate": "2026-03-08T21:40:21.113057",
+    "createdDate": "2026-03-11T23:15:40.472346",
+    "updatedDate": "2026-03-11T23:15:40.472346",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -170,10 +176,774 @@
       "difficulty": null,
       "popularity_score": 0
     },
+    "enum_constants": [
+      "CP_REFS",
+      "LABELS",
+      "STATELESS",
+      "UNKNOWN",
+      "UNSTABLE"
+    ],
     "methods": [
       "valueOf",
       "values"
     ]
+  },
+  "java.lang.classfile/AttributesProcessingOption": {
+    "id": "java.lang.classfile.AttributesProcessingOption",
+    "name": "AttributesProcessingOption",
+    "type": "enum",
+    "parent": null,
+    "signatures": [
+      "enum AttributesProcessingOption"
+    ],
+    "signature_hash": "dc4234317206475d10c2fd2905a7daa52490a3fa8e783f8c4354866de8c77502",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassFile.AttributesProcessingOption.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.468523",
+    "updatedDate": "2026-03-11T23:15:40.468523",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "enum_constants": [
+      "DROP_UNKNOWN_ATTRIBUTES",
+      "DROP_UNSTABLE_ATTRIBUTES",
+      "PASS_ALL_ATTRIBUTES"
+    ],
+    "methods": [
+      "valueOf",
+      "values"
+    ]
+  },
+  "java.lang.classfile/Opcode/AALOAD": {
+    "id": "java.lang.classfile.Opcode.AALOAD",
+    "name": "AALOAD",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "AALOAD"
+    ],
+    "signature_hash": "ee556a84d62e7da0ab271bab763f5884ecabe9d94203162107172e8d07df1237",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Loadreferencefrom array.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Loadreferencefrom array.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485124",
+    "updatedDate": "2026-03-11T23:15:40.485125",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/AASTORE": {
+    "id": "java.lang.classfile.Opcode.AASTORE",
+    "name": "AASTORE",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "AASTORE"
+    ],
+    "signature_hash": "9db7d5af7068c76a5c2a2b1d5559109a46aa59e86c5dc8f9e25208fb924c61ac",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Store intoreferencearray.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Store intoreferencearray.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485158",
+    "updatedDate": "2026-03-11T23:15:40.485159",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ACONST_NULL": {
+    "id": "java.lang.classfile.Opcode.ACONST_NULL",
+    "name": "ACONST_NULL",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ACONST_NULL"
+    ],
+    "signature_hash": "5346e0388a53503273af52dbd3758762fe28105a3c3932748b59dbcd1bdb9f9a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Pushnull.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pushnull.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485192",
+    "updatedDate": "2026-03-11T23:15:40.485193",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ALOAD": {
+    "id": "java.lang.classfile.Opcode.ALOAD",
+    "name": "ALOAD",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ALOAD"
+    ],
+    "signature_hash": "6ebd272da8b3d680484ebd5ca941defb2688f6ff5730faacad2cca55d6a3d32a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Loadreferencefrom local variable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Loadreferencefrom local variable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485227",
+    "updatedDate": "2026-03-11T23:15:40.485228",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ALOAD_0": {
+    "id": "java.lang.classfile.Opcode.ALOAD_0",
+    "name": "ALOAD_0",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ALOAD_0"
+    ],
+    "signature_hash": "a243253fc04ac3128b49b060d3641a536f0393f65c860d6ef35139c822543db5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Loadreferencefrom local variable slot0.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Loadreferencefrom local variable slot0.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485261",
+    "updatedDate": "2026-03-11T23:15:40.485262",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ALOAD_1": {
+    "id": "java.lang.classfile.Opcode.ALOAD_1",
+    "name": "ALOAD_1",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ALOAD_1"
+    ],
+    "signature_hash": "72f45e23094be6727437c33d8ede11327b9ddc59576871d4fbf777edc0bc9375",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Loadreferencefrom local variable slot1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Loadreferencefrom local variable slot1.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485295",
+    "updatedDate": "2026-03-11T23:15:40.485296",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ALOAD_2": {
+    "id": "java.lang.classfile.Opcode.ALOAD_2",
+    "name": "ALOAD_2",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ALOAD_2"
+    ],
+    "signature_hash": "9f16110952fe4b50a95c402193028ce8bb082a75fe915c54a2d8bbdcd2186501",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Loadreferencefrom local variable slot2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Loadreferencefrom local variable slot2.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485329",
+    "updatedDate": "2026-03-11T23:15:40.485329",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ALOAD_3": {
+    "id": "java.lang.classfile.Opcode.ALOAD_3",
+    "name": "ALOAD_3",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ALOAD_3"
+    ],
+    "signature_hash": "5613f9e071e7260a0062c352339960d1c648962e7917c14e76cd639cb741b99d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Loadreferencefrom local variable slot3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Loadreferencefrom local variable slot3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485363",
+    "updatedDate": "2026-03-11T23:15:40.485364",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ALOAD_W": {
+    "id": "java.lang.classfile.Opcode.ALOAD_W",
+    "name": "ALOAD_W",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ALOAD_W"
+    ],
+    "signature_hash": "acb0285e1ed7b8faa0464aa11451e4c176e4013ac927761ef5b6f1304d4a1bad",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Loadreferencefrom local variable (wide index).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Loadreferencefrom local variable (wide index).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485398",
+    "updatedDate": "2026-03-11T23:15:40.485399",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ANEWARRAY": {
+    "id": "java.lang.classfile.Opcode.ANEWARRAY",
+    "name": "ANEWARRAY",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ANEWARRAY"
+    ],
+    "signature_hash": "a6a56e28440f938cc9adb3a854acb19e658e12984dfc06bd7259f8574401397a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Create new array ofreference.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create new array ofreference.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485432",
+    "updatedDate": "2026-03-11T23:15:40.485433",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ARETURN": {
+    "id": "java.lang.classfile.Opcode.ARETURN",
+    "name": "ARETURN",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ARETURN"
+    ],
+    "signature_hash": "8d6ee8889126d9e1f096a601a3df3e516e76241f71ae7d0b9991b973c7b5a346",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Returnreferencefrom method.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnreferencefrom method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485466",
+    "updatedDate": "2026-03-11T23:15:40.485467",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ARRAYLENGTH": {
+    "id": "java.lang.classfile.Opcode.ARRAYLENGTH",
+    "name": "ARRAYLENGTH",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ARRAYLENGTH"
+    ],
+    "signature_hash": "1047e495db7ddd3e3b665096563d8b2bde3ec07969e552524f3358375620d5ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Get length of array.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get length of array.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485500",
+    "updatedDate": "2026-03-11T23:15:40.485500",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Kind/ARRAY_LOAD": {
+    "id": "java.lang.classfile.Kind.ARRAY_LOAD",
+    "name": "ARRAY_LOAD",
+    "type": "enum_constant",
+    "parent": "Kind",
+    "signatures": [
+      "ARRAY_LOAD"
+    ],
+    "signature_hash": "e6a6eeb9fa7edaaf4cb1326cce895594c2c9629b30a92ee4c6aa753f89222ee5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.Kind.html",
+    "parameters": [],
+    "return_type": "Kind",
+    "exceptions": [],
+    "description": "Load from array.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Load from array.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.494065",
+    "updatedDate": "2026-03-11T23:15:40.494066",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Kind/ARRAY_STORE": {
+    "id": "java.lang.classfile.Kind.ARRAY_STORE",
+    "name": "ARRAY_STORE",
+    "type": "enum_constant",
+    "parent": "Kind",
+    "signatures": [
+      "ARRAY_STORE"
+    ],
+    "signature_hash": "96dc996f8c3ee9fac9e77b6fd9198418b8c2356e272ae849c1d099e15f2bcef8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.Kind.html",
+    "parameters": [],
+    "return_type": "Kind",
+    "exceptions": [],
+    "description": "Store into array.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Store into array.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.494108",
+    "updatedDate": "2026-03-11T23:15:40.494109",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ASTORE": {
+    "id": "java.lang.classfile.Opcode.ASTORE",
+    "name": "ASTORE",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ASTORE"
+    ],
+    "signature_hash": "51bee19c5cec2641fd6fcfaed0e46d44bddf5dad311e6a28b12a687b04eaefff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Storereferenceinto local variable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Storereferenceinto local variable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485534",
+    "updatedDate": "2026-03-11T23:15:40.485534",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ASTORE_0": {
+    "id": "java.lang.classfile.Opcode.ASTORE_0",
+    "name": "ASTORE_0",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ASTORE_0"
+    ],
+    "signature_hash": "9c5ef9b62bfab9b37baa44f1e2cdc8462ab1ea2845737f7ee4e0313fe9803d1a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Storereferenceinto local variable slot0.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Storereferenceinto local variable slot0.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485568",
+    "updatedDate": "2026-03-11T23:15:40.485568",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ASTORE_1": {
+    "id": "java.lang.classfile.Opcode.ASTORE_1",
+    "name": "ASTORE_1",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ASTORE_1"
+    ],
+    "signature_hash": "f60b701bedcae29a671db6a2151553f029c5a7c069ded221d80a07e426abc9a8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Storereferenceinto local variable slot1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Storereferenceinto local variable slot1.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485602",
+    "updatedDate": "2026-03-11T23:15:40.485602",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ASTORE_2": {
+    "id": "java.lang.classfile.Opcode.ASTORE_2",
+    "name": "ASTORE_2",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ASTORE_2"
+    ],
+    "signature_hash": "7659dbdd7566c0e017af061d44b925d017ee898230548deb79f8df3e726cbc08",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Storereferenceinto local variable slot2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Storereferenceinto local variable slot2.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485635",
+    "updatedDate": "2026-03-11T23:15:40.485636",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ASTORE_3": {
+    "id": "java.lang.classfile.Opcode.ASTORE_3",
+    "name": "ASTORE_3",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ASTORE_3"
+    ],
+    "signature_hash": "a3fd2a8a4c2058e6fa63efe78e74b7d3ea0a44ffb1f9a1ed2ca3b867460b086d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Storereferenceinto local variable slot3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Storereferenceinto local variable slot3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485670",
+    "updatedDate": "2026-03-11T23:15:40.485670",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ASTORE_W": {
+    "id": "java.lang.classfile.Opcode.ASTORE_W",
+    "name": "ASTORE_W",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ASTORE_W"
+    ],
+    "signature_hash": "7516eeb24d15bfe91465f9693613b93b243aea341f1c0091c63dcd412b433cbe",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Storereferenceinto local variable (wide index).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Storereferenceinto local variable (wide index).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485705",
+    "updatedDate": "2026-03-11T23:15:40.485706",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile/Opcode/ATHROW": {
+    "id": "java.lang.classfile.Opcode.ATHROW",
+    "name": "ATHROW",
+    "type": "enum_constant",
+    "parent": "Opcode",
+    "signatures": [
+      "ATHROW"
+    ],
+    "signature_hash": "643d173e490b41ef253d5bf18ef44eb7c6dd3829edce7ad11b824380945a2962",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Opcode.html",
+    "parameters": [],
+    "return_type": "Opcode",
+    "exceptions": [],
+    "description": "Throw exception or error.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Throw exception or error.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.485739",
+    "updatedDate": "2026-03-11T23:15:40.485740",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
   },
   "java.lang.classfile/Transform/ACCEPT_ALL": {
     "id": "java.lang.classfile.Transform.ACCEPT_ALL",
@@ -198,8 +968,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.124211",
-    "updatedDate": "2026-03-08T21:40:21.124212",
+    "createdDate": "2026-03-11T23:15:40.483221",
+    "updatedDate": "2026-03-11T23:15:40.483222",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -232,8 +1002,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.124654",
-    "updatedDate": "2026-03-08T21:40:21.124655",
+    "createdDate": "2026-03-11T23:15:40.483665",
+    "updatedDate": "2026-03-11T23:15:40.483666",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -266,8 +1036,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.124971",
-    "updatedDate": "2026-03-08T21:40:21.124972",
+    "createdDate": "2026-03-11T23:15:40.483959",
+    "updatedDate": "2026-03-11T23:15:40.483960",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -300,8 +1070,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.125969",
-    "updatedDate": "2026-03-08T21:40:21.125969",
+    "createdDate": "2026-03-11T23:15:40.484842",
+    "updatedDate": "2026-03-11T23:15:40.484843",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -334,8 +1104,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114071",
-    "updatedDate": "2026-03-08T21:40:21.114073",
+    "createdDate": "2026-03-11T23:15:40.473551",
+    "updatedDate": "2026-03-11T23:15:40.473554",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -368,8 +1138,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114099",
-    "updatedDate": "2026-03-08T21:40:21.114100",
+    "createdDate": "2026-03-11T23:15:40.473576",
+    "updatedDate": "2026-03-11T23:15:40.473577",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -402,8 +1172,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114125",
-    "updatedDate": "2026-03-08T21:40:21.114126",
+    "createdDate": "2026-03-11T23:15:40.473600",
+    "updatedDate": "2026-03-11T23:15:40.473601",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -436,8 +1206,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114150",
-    "updatedDate": "2026-03-08T21:40:21.114151",
+    "createdDate": "2026-03-11T23:15:40.473623",
+    "updatedDate": "2026-03-11T23:15:40.473624",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -470,8 +1240,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114174",
-    "updatedDate": "2026-03-08T21:40:21.114175",
+    "createdDate": "2026-03-11T23:15:40.473646",
+    "updatedDate": "2026-03-11T23:15:40.473647",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -504,8 +1274,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114198",
-    "updatedDate": "2026-03-08T21:40:21.114199",
+    "createdDate": "2026-03-11T23:15:40.473669",
+    "updatedDate": "2026-03-11T23:15:40.473670",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -538,8 +1308,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114222",
-    "updatedDate": "2026-03-08T21:40:21.114223",
+    "createdDate": "2026-03-11T23:15:40.473692",
+    "updatedDate": "2026-03-11T23:15:40.473693",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -572,8 +1342,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114245",
-    "updatedDate": "2026-03-08T21:40:21.114246",
+    "createdDate": "2026-03-11T23:15:40.473715",
+    "updatedDate": "2026-03-11T23:15:40.473716",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -606,8 +1376,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114269",
-    "updatedDate": "2026-03-08T21:40:21.114270",
+    "createdDate": "2026-03-11T23:15:40.473745",
+    "updatedDate": "2026-03-11T23:15:40.473746",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -640,8 +1410,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114293",
-    "updatedDate": "2026-03-08T21:40:21.114294",
+    "createdDate": "2026-03-11T23:15:40.473773",
+    "updatedDate": "2026-03-11T23:15:40.473774",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -674,8 +1444,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114317",
-    "updatedDate": "2026-03-08T21:40:21.114318",
+    "createdDate": "2026-03-11T23:15:40.473798",
+    "updatedDate": "2026-03-11T23:15:40.473798",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -708,8 +1478,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114342",
-    "updatedDate": "2026-03-08T21:40:21.114343",
+    "createdDate": "2026-03-11T23:15:40.473821",
+    "updatedDate": "2026-03-11T23:15:40.473821",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -742,8 +1512,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114366",
-    "updatedDate": "2026-03-08T21:40:21.114367",
+    "createdDate": "2026-03-11T23:15:40.473843",
+    "updatedDate": "2026-03-11T23:15:40.473844",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -776,8 +1546,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114390",
-    "updatedDate": "2026-03-08T21:40:21.114391",
+    "createdDate": "2026-03-11T23:15:40.473866",
+    "updatedDate": "2026-03-11T23:15:40.473867",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -810,8 +1580,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114414",
-    "updatedDate": "2026-03-08T21:40:21.114417",
+    "createdDate": "2026-03-11T23:15:40.473890",
+    "updatedDate": "2026-03-11T23:15:40.473891",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -844,8 +1614,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114440",
-    "updatedDate": "2026-03-08T21:40:21.114441",
+    "createdDate": "2026-03-11T23:15:40.473913",
+    "updatedDate": "2026-03-11T23:15:40.473914",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -878,8 +1648,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114464",
-    "updatedDate": "2026-03-08T21:40:21.114465",
+    "createdDate": "2026-03-11T23:15:40.473937",
+    "updatedDate": "2026-03-11T23:15:40.473938",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -912,8 +1682,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114488",
-    "updatedDate": "2026-03-08T21:40:21.114489",
+    "createdDate": "2026-03-11T23:15:40.473960",
+    "updatedDate": "2026-03-11T23:15:40.473961",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -946,8 +1716,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114512",
-    "updatedDate": "2026-03-08T21:40:21.114513",
+    "createdDate": "2026-03-11T23:15:40.473983",
+    "updatedDate": "2026-03-11T23:15:40.473984",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -980,8 +1750,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114536",
-    "updatedDate": "2026-03-08T21:40:21.114537",
+    "createdDate": "2026-03-11T23:15:40.474006",
+    "updatedDate": "2026-03-11T23:15:40.474007",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1014,8 +1784,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114560",
-    "updatedDate": "2026-03-08T21:40:21.114561",
+    "createdDate": "2026-03-11T23:15:40.474030",
+    "updatedDate": "2026-03-11T23:15:40.474030",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1048,8 +1818,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114584",
-    "updatedDate": "2026-03-08T21:40:21.114585",
+    "createdDate": "2026-03-11T23:15:40.474053",
+    "updatedDate": "2026-03-11T23:15:40.474054",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1082,8 +1852,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.114608",
-    "updatedDate": "2026-03-08T21:40:21.114609",
+    "createdDate": "2026-03-11T23:15:40.474076",
+    "updatedDate": "2026-03-11T23:15:40.474077",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1093,11 +1863,11 @@
       "popularity_score": 0
     }
   },
-  "java.lang.classfile/TypeAnnotation.TypePathComponent/ARRAY": {
-    "id": "java.lang.classfile.TypeAnnotation.TypePathComponent.ARRAY",
+  "java.lang.classfile/TypePathComponent/ARRAY": {
+    "id": "java.lang.classfile.TypePathComponent.ARRAY",
     "name": "ARRAY",
     "type": "field",
-    "parent": "TypeAnnotation.TypePathComponent",
+    "parent": "TypePathComponent",
     "signatures": [
       "static final TypeAnnotation.TypePathComponent ARRAY"
     ],
@@ -1116,8 +1886,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.132752",
-    "updatedDate": "2026-03-08T21:40:21.132754",
+    "createdDate": "2026-03-11T23:15:40.502783",
+    "updatedDate": "2026-03-11T23:15:40.502784",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1132,8 +1902,10 @@
     "name": "AccessFlags",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface AccessFlags"
+    ],
+    "signature_hash": "0064fa63d2b9f96948759f7adf4191c27bcffb01e839431bd0015cc8e6c154e7",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AccessFlags.html",
     "parameters": [],
     "return_type": "",
@@ -1148,8 +1920,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.110694",
-    "updatedDate": "2026-03-08T21:40:21.110694",
+    "createdDate": "2026-03-11T23:15:40.469822",
+    "updatedDate": "2026-03-11T23:15:40.469822",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1163,6 +1935,44 @@
       "flagsMask",
       "has",
       "location"
+    ]
+  },
+  "java.lang.classfile/ArrayTypeSig": {
+    "id": "java.lang.classfile.ArrayTypeSig",
+    "name": "ArrayTypeSig",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface ArrayTypeSig"
+    ],
+    "signature_hash": "bbd9163a37d77582857005b3e4b7743180bc73fb9b0d825df615f36aab505a83",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/Signature.ArrayTypeSig.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.495455",
+    "updatedDate": "2026-03-11T23:15:40.495456",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "componentSignature",
+      "of"
     ]
   },
   "java.lang.classfile/Attribute<A>>": {
@@ -1186,8 +1996,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.112892",
-    "updatedDate": "2026-03-08T21:40:21.112893",
+    "createdDate": "2026-03-11T23:15:40.472155",
+    "updatedDate": "2026-03-11T23:15:40.472158",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1222,8 +2032,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.108558",
-    "updatedDate": "2026-03-08T21:40:21.108559",
+    "createdDate": "2026-03-11T23:15:40.467314",
+    "updatedDate": "2026-03-11T23:15:40.467315",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1240,13 +2050,53 @@
       "writeAttribute"
     ]
   },
+  "java.lang.classfile/AttributeMapperOption": {
+    "id": "java.lang.classfile.AttributeMapperOption",
+    "name": "AttributeMapperOption",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface AttributeMapperOption"
+    ],
+    "signature_hash": "e7da4972ba4ec6cecb6c0e5c83d59b41f85a6b6cf3faf90ed7145e34d89e3cf7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/ClassFile.AttributeMapperOption.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.469237",
+    "updatedDate": "2026-03-11T23:15:40.469238",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "attributeMapper",
+      "of"
+    ]
+  },
   "java.lang.classfile/AttributedElement": {
     "id": "java.lang.classfile.AttributedElement",
     "name": "AttributedElement",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface AttributedElement"
+    ],
+    "signature_hash": "d9bcc5500179c60d471f3a14ebea051b968bd2820954f9c6f890c1ef94cdf26e",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/AttributedElement.html",
     "parameters": [],
     "return_type": "",
@@ -1261,8 +2111,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.112950",
-    "updatedDate": "2026-03-08T21:40:21.112951",
+    "createdDate": "2026-03-11T23:15:40.472229",
+    "updatedDate": "2026-03-11T23:15:40.472230",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1300,8 +2150,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115392",
-    "updatedDate": "2026-03-08T21:40:21.115393",
+    "createdDate": "2026-03-11T23:15:40.474805",
+    "updatedDate": "2026-03-11T23:15:40.474806",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1334,8 +2184,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115418",
-    "updatedDate": "2026-03-08T21:40:21.115419",
+    "createdDate": "2026-03-11T23:15:40.474831",
+    "updatedDate": "2026-03-11T23:15:40.474831",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1384,8 +2234,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.121628",
-    "updatedDate": "2026-03-08T21:40:21.121629",
+    "createdDate": "2026-03-11T23:15:40.480919",
+    "updatedDate": "2026-03-11T23:15:40.480920",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1439,8 +2289,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.122030",
-    "updatedDate": "2026-03-08T21:40:21.122031",
+    "createdDate": "2026-03-11T23:15:40.481291",
+    "updatedDate": "2026-03-11T23:15:40.481292",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1473,8 +2323,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115454",
-    "updatedDate": "2026-03-08T21:40:21.115455",
+    "createdDate": "2026-03-11T23:15:40.474858",
+    "updatedDate": "2026-03-11T23:15:40.474859",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1518,8 +2368,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115483",
-    "updatedDate": "2026-03-08T21:40:21.115484",
+    "createdDate": "2026-03-11T23:15:40.474886",
+    "updatedDate": "2026-03-11T23:15:40.474887",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1552,8 +2402,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.108571",
-    "updatedDate": "2026-03-08T21:40:21.108572",
+    "createdDate": "2026-03-11T23:15:40.467326",
+    "updatedDate": "2026-03-11T23:15:40.467327",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1597,8 +2447,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115514",
-    "updatedDate": "2026-03-08T21:40:21.115515",
+    "createdDate": "2026-03-11T23:15:40.474914",
+    "updatedDate": "2026-03-11T23:15:40.474915",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1642,8 +2492,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.122066",
-    "updatedDate": "2026-03-08T21:40:21.122067",
+    "createdDate": "2026-03-11T23:15:40.481326",
+    "updatedDate": "2026-03-11T23:15:40.481327",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1687,8 +2537,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.123890",
-    "updatedDate": "2026-03-08T21:40:21.123891",
+    "createdDate": "2026-03-11T23:15:40.482940",
+    "updatedDate": "2026-03-11T23:15:40.482941",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1732,8 +2582,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.124533",
-    "updatedDate": "2026-03-08T21:40:21.124534",
+    "createdDate": "2026-03-11T23:15:40.483548",
+    "updatedDate": "2026-03-11T23:15:40.483548",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1777,8 +2627,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.124813",
-    "updatedDate": "2026-03-08T21:40:21.124814",
+    "createdDate": "2026-03-11T23:15:40.483808",
+    "updatedDate": "2026-03-11T23:15:40.483809",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1822,8 +2672,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.125760",
-    "updatedDate": "2026-03-08T21:40:21.125761",
+    "createdDate": "2026-03-11T23:15:40.484642",
+    "updatedDate": "2026-03-11T23:15:40.484643",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1878,8 +2728,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115549",
-    "updatedDate": "2026-03-08T21:40:21.115550",
+    "createdDate": "2026-03-11T23:15:40.474950",
+    "updatedDate": "2026-03-11T23:15:40.474950",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1889,11 +2739,11 @@
       "popularity_score": 0
     }
   },
-  "java.lang.classfile/Value.OfAnnotation/annotation": {
-    "id": "java.lang.classfile.Value.OfAnnotation.annotation",
+  "java.lang.classfile/OfAnnotation/annotation": {
+    "id": "java.lang.classfile.OfAnnotation.annotation",
     "name": "annotation",
     "type": "method",
-    "parent": "Value.OfAnnotation",
+    "parent": "OfAnnotation",
     "signatures": [
       "public Annotation annotation()"
     ],
@@ -1912,8 +2762,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.111936",
-    "updatedDate": "2026-03-08T21:40:21.111937",
+    "createdDate": "2026-03-11T23:15:40.471165",
+    "updatedDate": "2026-03-11T23:15:40.471166",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1946,8 +2796,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.128484",
-    "updatedDate": "2026-03-08T21:40:21.128485",
+    "createdDate": "2026-03-11T23:15:40.497660",
+    "updatedDate": "2026-03-11T23:15:40.497661",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1980,8 +2830,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.108656",
-    "updatedDate": "2026-03-08T21:40:21.108657",
+    "createdDate": "2026-03-11T23:15:40.467414",
+    "updatedDate": "2026-03-11T23:15:40.467414",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2014,8 +2864,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115576",
-    "updatedDate": "2026-03-08T21:40:21.115577",
+    "createdDate": "2026-03-11T23:15:40.474976",
+    "updatedDate": "2026-03-11T23:15:40.474977",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2048,8 +2898,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.113149",
-    "updatedDate": "2026-03-08T21:40:21.113150",
+    "createdDate": "2026-03-11T23:15:40.472541",
+    "updatedDate": "2026-03-11T23:15:40.472542",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2082,8 +2932,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.125424",
-    "updatedDate": "2026-03-08T21:40:21.125425",
+    "createdDate": "2026-03-11T23:15:40.484323",
+    "updatedDate": "2026-03-11T23:15:40.484324",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2132,8 +2982,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115632",
-    "updatedDate": "2026-03-08T21:40:21.115633",
+    "createdDate": "2026-03-11T23:15:40.475030",
+    "updatedDate": "2026-03-11T23:15:40.475031",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2182,8 +3032,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115661",
-    "updatedDate": "2026-03-08T21:40:21.115662",
+    "createdDate": "2026-03-11T23:15:40.475060",
+    "updatedDate": "2026-03-11T23:15:40.475061",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2216,8 +3066,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115603",
-    "updatedDate": "2026-03-08T21:40:21.115603",
+    "createdDate": "2026-03-11T23:15:40.475001",
+    "updatedDate": "2026-03-11T23:15:40.475002",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2250,8 +3100,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.133089",
-    "updatedDate": "2026-03-08T21:40:21.133090",
+    "createdDate": "2026-03-11T23:15:40.503239",
+    "updatedDate": "2026-03-11T23:15:40.503240",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2295,8 +3145,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115690",
-    "updatedDate": "2026-03-08T21:40:21.115691",
+    "createdDate": "2026-03-11T23:15:40.475088",
+    "updatedDate": "2026-03-11T23:15:40.475089",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2340,8 +3190,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.122101",
-    "updatedDate": "2026-03-08T21:40:21.122102",
+    "createdDate": "2026-03-11T23:15:40.481360",
+    "updatedDate": "2026-03-11T23:15:40.481361",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2385,8 +3235,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.122141",
-    "updatedDate": "2026-03-08T21:40:21.122142",
+    "createdDate": "2026-03-11T23:15:40.481394",
+    "updatedDate": "2026-03-11T23:15:40.481395",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2419,8 +3269,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.115717",
-    "updatedDate": "2026-03-08T21:40:21.115717",
+    "createdDate": "2026-03-11T23:15:40.475114",
+    "updatedDate": "2026-03-11T23:15:40.475115",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2453,8 +3303,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.109694",
-    "updatedDate": "2026-03-08T21:40:21.109694",
+    "createdDate": "2026-03-11T23:15:40.468471",
+    "updatedDate": "2026-03-11T23:15:40.468472",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2464,11 +3314,11 @@
       "popularity_score": 0
     }
   },
-  "java.lang.classfile/File.AttributeMapperOption/attributeMapper": {
-    "id": "java.lang.classfile.File.AttributeMapperOption.attributeMapper",
+  "java.lang.classfile/AttributeMapperOption/attributeMapper": {
+    "id": "java.lang.classfile.AttributeMapperOption.attributeMapper",
     "name": "attributeMapper",
     "type": "method",
-    "parent": "File.AttributeMapperOption",
+    "parent": "AttributeMapperOption",
     "signatures": [
       "public Function<Utf8Entry, AttributeMapper<?>> attributeMapper()"
     ],
@@ -2487,8 +3337,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.110149",
-    "updatedDate": "2026-03-08T21:40:21.110150",
+    "createdDate": "2026-03-11T23:15:40.469255",
+    "updatedDate": "2026-03-11T23:15:40.469256",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2521,8 +3371,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.112912",
-    "updatedDate": "2026-03-08T21:40:21.112913",
+    "createdDate": "2026-03-11T23:15:40.472187",
+    "updatedDate": "2026-03-11T23:15:40.472188",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2555,8 +3405,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.109709",
-    "updatedDate": "2026-03-08T21:40:21.109710",
+    "createdDate": "2026-03-11T23:15:40.468495",
+    "updatedDate": "2026-03-11T23:15:40.468496",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2589,8 +3439,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.112932",
-    "updatedDate": "2026-03-08T21:40:21.112933",
+    "createdDate": "2026-03-11T23:15:40.472210",
+    "updatedDate": "2026-03-11T23:15:40.472210",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2623,8 +3473,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.112970",
-    "updatedDate": "2026-03-08T21:40:21.112971",
+    "createdDate": "2026-03-11T23:15:40.472250",
+    "updatedDate": "2026-03-11T23:15:40.472251",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

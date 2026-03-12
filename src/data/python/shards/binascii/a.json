@@ -1,0 +1,222 @@
+{
+  "binascii/a2b_base64": {
+    "id": "binascii.a2b_base64",
+    "name": "a2b_base64",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "binascii.a2b_base64(string, /, *, strict_mode=False)"
+    ],
+    "signature_hash": "70cc6169558e43d7415f709730aa12ab65d13ed62100af25498f14d673e03ab8",
+    "url": "https://docs.python.org/3/library/binascii.html#module-binascii#binascii.a2b_base64",
+    "parameters": [
+      {
+        "name": "string",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "strict_mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Convert a block of base64 data back to binary and return the binary data. More than one line may be passed at a time. If strict_mode is true, only valid base64 data will be converted. Invalid base64 data will raise binascii.Error. Valid base64: Conforms to RFC 3548. Contains only characters from the base64 alphabet. Contains no excess data after padding (including excess padding, newlines, etc.). Does not start with a padding. Changed in version 3.11: Added the strict_mode parameter.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convert a block of base64 data back to binary and return the binary data. More than one line may be passed at a time. If strict_mode is true, only valid base64 data will be converted. Invalid base64 d...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881737",
+    "updatedDate": "2026-03-11T23:15:47.881738",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "binascii/a2b_hex": {
+    "id": "binascii.a2b_hex",
+    "name": "a2b_hex",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "binascii.a2b_hex(hexstr)"
+    ],
+    "signature_hash": "1a632054510d9d15aff3bdc2df105872ac9ed6acb1f930a8d5b2cf5730b9aaf4",
+    "url": "https://docs.python.org/3/library/binascii.html#module-binascii#binascii.a2b_hex",
+    "parameters": [
+      {
+        "name": "hexstr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the binary data represented by the hexadecimal string hexstr. This function is the inverse of b2a_hex(). hexstr must contain an even number of hexadecimal digits (which can be upper or lower case), otherwise an Error exception is raised. Similar functionality (accepting only text string arguments, but more liberal towards whitespace) is also accessible using the bytes.fromhex() class method.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the binary data represented by the hexadecimal string hexstr. This function is the inverse of b2a_hex(). hexstr must contain an even number of hexadecimal digits (which can be upper or lower ca...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881854",
+    "updatedDate": "2026-03-11T23:15:47.881855",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "binascii/a2b_qp": {
+    "id": "binascii.a2b_qp",
+    "name": "a2b_qp",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "binascii.a2b_qp(data, header=False)"
+    ],
+    "signature_hash": "1a5399ca485ee02c254a05104fcd76db9975a05f604bcda63117cca7de3f651e",
+    "url": "https://docs.python.org/3/library/binascii.html#module-binascii#binascii.a2b_qp",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "header",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Convert a block of quoted-printable data back to binary and return the binary data. More than one line may be passed at a time. If the optional argument header is present and true, underscores will be decoded as spaces.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convert a block of quoted-printable data back to binary and return the binary data. More than one line may be passed at a time. If the optional argument header is present and true, underscores will be...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881769",
+    "updatedDate": "2026-03-11T23:15:47.881770",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "binascii/a2b_uu": {
+    "id": "binascii.a2b_uu",
+    "name": "a2b_uu",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "binascii.a2b_uu(string)"
+    ],
+    "signature_hash": "9ad0f6e4350b5e93716bde7434ba8bec1a0f34482c2f942c23733887e5870f75",
+    "url": "https://docs.python.org/3/library/binascii.html#module-binascii#binascii.a2b_uu",
+    "parameters": [
+      {
+        "name": "string",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Convert a single line of uuencoded data back to binary and return the binary data. Lines normally contain 45 (binary) bytes, except for the last line. Line data may be followed by whitespace.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convert a single line of uuencoded data back to binary and return the binary data. Lines normally contain 45 (binary) bytes, except for the last line. Line data may be followed by whitespace.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881687",
+    "updatedDate": "2026-03-11T23:15:47.881688",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

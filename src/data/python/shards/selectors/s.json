@@ -1,0 +1,141 @@
+{
+  "selectors/SelectSelector": {
+    "id": "selectors.SelectSelector",
+    "name": "SelectSelector",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class selectors.SelectSelector"
+    ],
+    "signature_hash": "b37a515a5c429e6b528d524f53af71815a3d36355982b64a6bcfb5c04ac53e70",
+    "url": "https://docs.python.org/3/library/selectors.html#module-selectors#selectors.SelectSelector",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "select.select()-based selector.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "select.select()-based selector.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.037663",
+    "updatedDate": "2026-03-11T23:15:48.037664",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "selectors/SelectorKey": {
+    "id": "selectors.SelectorKey",
+    "name": "SelectorKey",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class selectors.SelectorKey"
+    ],
+    "signature_hash": "7a5dd9d59606bc9b1c4e1c584544f2e80572658df04948a006fa7709c8a5c08a",
+    "url": "https://docs.python.org/3/library/selectors.html#module-selectors#selectors.SelectorKey",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A SelectorKey is a namedtuple used to associate a file object to its underlying file descriptor, selected event mask and attached data. It is returned by several BaseSelector methods. fileobj¶ File object registered. fd¶ Underlying file descriptor. events¶ Events that must be waited for on this file object. data¶ Optional opaque data associated to this file object: for example, this could be used to store a per-client session ID.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A SelectorKey is a namedtuple used to associate a file object to its underlying file descriptor, selected event mask and attached data. It is returned by several BaseSelector methods. fileobj¶ File ob...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.037465",
+    "updatedDate": "2026-03-11T23:15:48.037465",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "data",
+      "events",
+      "fd",
+      "fileobj"
+    ]
+  },
+  "selectors/BaseSelector/select": {
+    "id": "selectors.BaseSelector.select",
+    "name": "select",
+    "type": "method",
+    "parent": "BaseSelector",
+    "signatures": [
+      "abstractmethod select(timeout=None)"
+    ],
+    "signature_hash": "d567198af4e81689a9fa50abc2a21961ad4f396dc71de11f007db70746862e4b",
+    "url": "https://docs.python.org/3/library/selectors.html#module-selectors#selectors.BaseSelector.select",
+    "parameters": [
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Wait until some registered file objects become ready, or the timeout expires. If timeout > 0, this specifies the maximum wait time, in seconds. If timeout <= 0, the call won’t block, and will report the currently ready file objects. If timeout is None, the call will block until a monitored file object becomes ready. This returns a list of (key, events) tuples, one for each ready file object. key is the SelectorKey instance corresponding to a ready file object. events is a bitmask of events re...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Wait until some registered file objects become ready, or the timeout expires. If timeout > 0, this specifies the maximum wait time, in seconds. If timeout <= 0, the call won’t block, and will report t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.037603",
+    "updatedDate": "2026-03-11T23:15:48.037603",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "selectors": {
+    "type": "module",
+    "name": "selectors",
+    "id": "selectors",
+    "description": "Module selectors",
+    "classes": [
+      "BaseSelector",
+      "DefaultSelector",
+      "DevpollSelector",
+      "EpollSelector",
+      "KqueueSelector",
+      "PollSelector",
+      "SelectSelector",
+      "SelectorKey"
+    ],
+    "constants": [
+      "EVENT_READ",
+      "EVENT_WRITE"
+    ]
+  }
+}

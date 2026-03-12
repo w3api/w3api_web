@@ -1,0 +1,201 @@
+{
+  "contextlib/ExitStack/pop_all": {
+    "id": "contextlib.ExitStack.pop_all",
+    "name": "pop_all",
+    "type": "method",
+    "parent": "ExitStack",
+    "signatures": [
+      "pop_all()"
+    ],
+    "signature_hash": "05511d77bbe75451a74ad21c1ef19c378d8623c9dacb1e98534228c673aea84d",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.ExitStack.pop_all",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Transfers the callback stack to a fresh ExitStack instance and returns it. No callbacks are invoked by this operation - instead, they will now be invoked when the new stack is closed (either explicitly or implicitly at the end of a with statement). For example, a group of files can be opened as an “all or nothing” operation as follows: with ExitStack() as stack: files = [stack.enter_context(open(fname)) for fname in filenames] # Hold onto the close method, but don't call it yet. close_files =...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Transfers the callback stack to a fresh ExitStack instance and returns it. No callbacks are invoked by this operation - instead, they will now be invoked when the new stack is closed (either explicitl...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889736",
+    "updatedDate": "2026-03-11T23:15:47.889736",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/ExitStack/push": {
+    "id": "contextlib.ExitStack.push",
+    "name": "push",
+    "type": "method",
+    "parent": "ExitStack",
+    "signatures": [
+      "push(exit)"
+    ],
+    "signature_hash": "6ff0bbccaf43613cc031446e41f79aa1c00229b31e0a9a40a2d3596aeed7bd7f",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.ExitStack.push",
+    "parameters": [
+      {
+        "name": "exit",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Adds a context manager’s __exit__() method to the callback stack. As __enter__ is not invoked, this method can be used to cover part of an __enter__() implementation with a context manager’s own __exit__() method. If passed an object that is not a context manager, this method assumes it is a callback with the same signature as a context manager’s __exit__() method and adds it directly to the callback stack. By returning true values, these callbacks can suppress exceptions the same way context...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds a context manager’s __exit__() method to the callback stack. As __enter__ is not invoked, this method can be used to cover part of an __enter__() implementation with a context manager’s own __exi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889700",
+    "updatedDate": "2026-03-11T23:15:47.889701",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/AsyncExitStack/push_async_callback": {
+    "id": "contextlib.AsyncExitStack.push_async_callback",
+    "name": "push_async_callback",
+    "type": "method",
+    "parent": "AsyncExitStack",
+    "signatures": [
+      "push_async_callback(callback, /, *args, **kwds)"
+    ],
+    "signature_hash": "58ec219d6465645c0655b62146a483bcef150bbd605c2486d4fc686714c97442",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.AsyncExitStack.push_async_callback",
+    "parameters": [
+      {
+        "name": "callback",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "kwds",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Similar to ExitStack.callback() but expects a coroutine function.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to ExitStack.callback() but expects a coroutine function.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889811",
+    "updatedDate": "2026-03-11T23:15:47.889812",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/AsyncExitStack/push_async_exit": {
+    "id": "contextlib.AsyncExitStack.push_async_exit",
+    "name": "push_async_exit",
+    "type": "method",
+    "parent": "AsyncExitStack",
+    "signatures": [
+      "push_async_exit(exit)"
+    ],
+    "signature_hash": "c221846195cd1e53ff2bf30d867bcac6e68bffeab908e594a85efbdcd731e633",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.AsyncExitStack.push_async_exit",
+    "parameters": [
+      {
+        "name": "exit",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Similar to ExitStack.push() but expects either an asynchronous context manager or a coroutine function.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to ExitStack.push() but expects either an asynchronous context manager or a coroutine function.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889792",
+    "updatedDate": "2026-03-11T23:15:47.889793",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

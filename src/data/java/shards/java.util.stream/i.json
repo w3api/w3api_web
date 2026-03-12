@@ -1,11 +1,84 @@
 {
+  "java.util.stream/Characteristics/IDENTITY_FINISH": {
+    "id": "java.util.stream.Characteristics.IDENTITY_FINISH",
+    "name": "IDENTITY_FINISH",
+    "type": "enum_constant",
+    "parent": "Characteristics",
+    "signatures": [
+      "IDENTITY_FINISH"
+    ],
+    "signature_hash": "003ca035ac479ece3a9e46d8a975b4dbffb95e241b907043e0914d266214e154",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.Characteristics.html",
+    "parameters": [],
+    "return_type": "Characteristics",
+    "exceptions": [],
+    "description": "Indicates that the finisher function is the identity function and\ncan be elided.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates that the finisher function is the identity function and\ncan be elided.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.893997",
+    "updatedDate": "2026-03-11T23:15:40.893998",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/IntMapMultiConsumer": {
+    "id": "java.util.stream.IntMapMultiConsumer",
+    "name": "IntMapMultiConsumer",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface IntMapMultiConsumer"
+    ],
+    "signature_hash": "192d1bbd41604ee6f38e4bd74b614c64e6bb319cceb7e84020503e8924653737",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.IntMapMultiConsumer.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.894518",
+    "updatedDate": "2026-03-11T23:15:40.894520",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "16",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "accept"
+    ]
+  },
   "java.util.stream/IntStream": {
     "id": "java.util.stream.IntStream",
     "name": "IntStream",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface IntStream"
+    ],
+    "signature_hash": "fd423830055f1a815a2102bf24a45ad15cb41ba2570a88c9af4e4b30410c0c7e",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +93,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.491810",
-    "updatedDate": "2026-03-08T21:40:21.491811",
+    "createdDate": "2026-03-11T23:15:40.887022",
+    "updatedDate": "2026-03-11T23:15:40.887023",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -74,14 +147,16 @@
       "toArray"
     ]
   },
-  "java.util.stream/IntStream.Builder": {
-    "id": "java.util.stream.IntStream.Builder",
-    "name": "IntStream.Builder",
+  "java.util.stream/Integrator": {
+    "id": "java.util.stream.Integrator",
+    "name": "Integrator",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.Builder.html",
+    "signatures": [
+      "interface Integrator<A,T,R>"
+    ],
+    "signature_hash": "37c4fc3e851705cafae89c802ac82df41488cf969426416cae3bedc16b5784b8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Gatherer.Integrator.html",
     "parameters": [],
     "return_type": "",
     "exceptions": [],
@@ -95,62 +170,27 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.497392",
-    "updatedDate": "2026-03-08T21:40:21.497393",
+    "createdDate": "2026-03-11T23:15:40.894270",
+    "updatedDate": "2026-03-11T23:15:40.894271",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
-      "added_version": "1.8",
+      "added_version": "24",
       "tags": [],
       "difficulty": null,
       "popularity_score": 0
     },
     "methods": [
-      "accept",
-      "add",
-      "build"
+      "integrate",
+      "of",
+      "ofGreedy"
     ]
   },
-  "java.util.stream/IntStream.IntMapMultiConsumer": {
-    "id": "java.util.stream.IntStream.IntMapMultiConsumer",
-    "name": "IntStream.IntMapMultiConsumer",
-    "type": "interface",
-    "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.IntMapMultiConsumer.html",
-    "parameters": [],
-    "return_type": "",
-    "exceptions": [],
-    "description": "",
-    "example": "",
-    "articles": [],
-    "info": {
-      "status": "empty",
-      "excerpt": "",
-      "keyword": "",
-      "seo_position": 0,
-      "visits": 0
-    },
-    "createdDate": "2026-03-08T21:40:21.497478",
-    "updatedDate": "2026-03-08T21:40:21.497479",
-    "metadata": {
-      "deprecated": false,
-      "deprecated_version": null,
-      "added_version": "16",
-      "tags": [],
-      "difficulty": null,
-      "popularity_score": 0
-    },
-    "methods": [
-      "accept"
-    ]
-  },
-  "java.util.stream/Gatherer<T,A,R>/initializer": {
-    "id": "java.util.stream.Gatherer<T,A,R>.initializer",
+  "java.util.stream/Gatherer/initializer": {
+    "id": "java.util.stream.Gatherer.initializer",
     "name": "initializer",
     "type": "method",
-    "parent": "Gatherer<T,A,R>",
+    "parent": "Gatherer",
     "signatures": [
       "public default Supplier<A> initializer()"
     ],
@@ -169,8 +209,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496237",
-    "updatedDate": "2026-03-08T21:40:21.496238",
+    "createdDate": "2026-03-11T23:15:40.892233",
+    "updatedDate": "2026-03-11T23:15:40.892234",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -245,8 +285,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496700",
-    "updatedDate": "2026-03-08T21:40:21.496701",
+    "createdDate": "2026-03-11T23:15:40.893568",
+    "updatedDate": "2026-03-11T23:15:40.893569",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -256,11 +296,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Gatherer.Integrator<A,T,R>/integrate": {
-    "id": "java.util.stream.Gatherer.Integrator<A,T,R>.integrate",
+  "java.util.stream/Integrator/integrate": {
+    "id": "java.util.stream.Integrator.integrate",
     "name": "integrate",
     "type": "method",
-    "parent": "Gatherer.Integrator<A,T,R>",
+    "parent": "Integrator",
     "signatures": [
       "public boolean integrate(A state, T element, Gatherer.Downstream<? super R> downstream)"
     ],
@@ -310,8 +350,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.497296",
-    "updatedDate": "2026-03-08T21:40:21.497297",
+    "createdDate": "2026-03-11T23:15:40.894304",
+    "updatedDate": "2026-03-11T23:15:40.894305",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -321,11 +361,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Gatherer<T,A,R>/integrator": {
-    "id": "java.util.stream.Gatherer<T,A,R>.integrator",
+  "java.util.stream/Gatherer/integrator": {
+    "id": "java.util.stream.Gatherer.integrator",
     "name": "integrator",
     "type": "method",
-    "parent": "Gatherer<T,A,R>",
+    "parent": "Gatherer",
     "signatures": [
       "public Gatherer.Integrator<A, T, R> integrator()"
     ],
@@ -344,8 +384,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496257",
-    "updatedDate": "2026-03-08T21:40:21.496258",
+    "createdDate": "2026-03-11T23:15:40.892332",
+    "updatedDate": "2026-03-11T23:15:40.892345",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -378,8 +418,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496840",
-    "updatedDate": "2026-03-08T21:40:21.496841",
+    "createdDate": "2026-03-11T23:15:40.893732",
+    "updatedDate": "2026-03-11T23:15:40.893733",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -389,11 +429,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Gatherer.Downstream<T>/isRejecting": {
-    "id": "java.util.stream.Gatherer.Downstream<T>.isRejecting",
+  "java.util.stream/Downstream/isRejecting": {
+    "id": "java.util.stream.Downstream.isRejecting",
     "name": "isRejecting",
     "type": "method",
-    "parent": "Gatherer.Downstream<T>",
+    "parent": "Downstream",
     "signatures": [
       "public default boolean isRejecting()"
     ],
@@ -412,8 +452,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.497224",
-    "updatedDate": "2026-03-08T21:40:21.497225",
+    "createdDate": "2026-03-11T23:15:40.894223",
+    "updatedDate": "2026-03-11T23:15:40.894224",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -423,11 +463,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Stream<T>/iterate": {
-    "id": "java.util.stream.Stream<T>.iterate",
+  "java.util.stream/Stream/iterate": {
+    "id": "java.util.stream.Stream.iterate",
     "name": "iterate",
     "type": "method",
-    "parent": "Stream<T>",
+    "parent": "Stream",
     "signatures": [
       "public static<T> Stream<T> iterate(T seed, Predicate<? super T> hasNext, UnaryOperator<T> next)",
       "public static<T> Stream<T> iterate(T seed, UnaryOperator<T> f)"
@@ -488,8 +528,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.491343",
-    "updatedDate": "2026-03-08T21:40:21.491345",
+    "createdDate": "2026-03-11T23:15:40.886538",
+    "updatedDate": "2026-03-11T23:15:40.886539",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -564,8 +604,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.492218",
-    "updatedDate": "2026-03-08T21:40:21.492219",
+    "createdDate": "2026-03-11T23:15:40.887398",
+    "updatedDate": "2026-03-11T23:15:40.887399",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -640,8 +680,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.493607",
-    "updatedDate": "2026-03-08T21:40:21.493608",
+    "createdDate": "2026-03-11T23:15:40.888687",
+    "updatedDate": "2026-03-11T23:15:40.888689",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -716,8 +756,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.494419",
-    "updatedDate": "2026-03-08T21:40:21.494420",
+    "createdDate": "2026-03-11T23:15:40.889646",
+    "updatedDate": "2026-03-11T23:15:40.889648",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -750,8 +790,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496860",
-    "updatedDate": "2026-03-08T21:40:21.496860",
+    "createdDate": "2026-03-11T23:15:40.893753",
+    "updatedDate": "2026-03-11T23:15:40.893754",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

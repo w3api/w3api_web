@@ -1,11 +1,81 @@
 {
+  "com.sun.source.doctree/Kind/CODE": {
+    "id": "com.sun.source.doctree.Kind.CODE",
+    "name": "CODE",
+    "type": "enum_constant",
+    "parent": "Kind",
+    "signatures": [
+      "CODE"
+    ],
+    "signature_hash": "07a9d7b4a9a23915a61bc89bb0357bf47b348cf4174eb965bb1df8fbfa18b0b5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.Kind.html",
+    "parameters": [],
+    "return_type": "Kind",
+    "exceptions": [],
+    "description": "Used for instances ofLiteralTreerepresenting an@codetag.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Used for instances ofLiteralTreerepresenting an@codetag.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.060082",
+    "updatedDate": "2026-03-11T23:15:40.060083",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.source.doctree/Kind/COMMENT": {
+    "id": "com.sun.source.doctree.Kind.COMMENT",
+    "name": "COMMENT",
+    "type": "enum_constant",
+    "parent": "Kind",
+    "signatures": [
+      "COMMENT"
+    ],
+    "signature_hash": "71772a68c6d1eeb195691104b12656353e37dc9c3079cd85c555515a78aac90b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.Kind.html",
+    "parameters": [],
+    "return_type": "Kind",
+    "exceptions": [],
+    "description": "Used for instances ofCommentTreerepresenting an HTML comment.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Used for instances ofCommentTreerepresenting an HTML comment.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.060095",
+    "updatedDate": "2026-03-11T23:15:40.060096",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
   "com.sun.source.doctree/CommentTree": {
     "id": "com.sun.source.doctree.CommentTree",
     "name": "CommentTree",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface CommentTree"
+    ],
+    "signature_hash": "b8cab00602922e6d993e6ce303ea8fd39bb6291b9410c7cdb487310a352f1c53",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/doctree/CommentTree.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +90,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:20.733665",
-    "updatedDate": "2026-03-08T21:40:20.733666",
+    "createdDate": "2026-03-11T23:15:40.059799",
+    "updatedDate": "2026-03-11T23:15:40.059800",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -40,8 +110,8 @@
     "id": "com.sun.source.doctree",
     "description": "Module com.sun.source.doctree",
     "enums": [
-      "AttributeTree.ValueKind",
-      "DocTree.Kind"
+      "Kind",
+      "ValueKind"
     ],
     "interfaces": [
       "AttributeTree",
@@ -52,7 +122,7 @@
       "DocCommentTree",
       "DocRootTree",
       "DocTree",
-      "DocTreeVisitor<R,P>",
+      "DocTreeVisitor",
       "DocTypeTree",
       "EndElementTree",
       "EntityTree",

@@ -1,0 +1,225 @@
+{
+  "logging.handlers/HTTPHandler": {
+    "id": "logging.handlers.HTTPHandler",
+    "name": "HTTPHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.handlers.HTTPHandler(host, url, method='GET', secure=False, credentials=None, context=None)"
+    ],
+    "signature_hash": "5eb7c680486daba602cac579082c4577d29777770330bf8a2ecd074f7346e084",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.HTTPHandler",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "url",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "method",
+        "type": "",
+        "has_default": true,
+        "default_value": "'GET'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "secure",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "credentials",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a new instance of the HTTPHandler class. The host can be of the form host:port, should you need to use a specific port number. If no method is specified, GET is used. If secure is true, a HTTPS connection will be used. The context parameter may be set to a ssl.SSLContext instance to configure the SSL settings used for the HTTPS connection. If credentials is specified, it should be a 2-tuple consisting of userid and password, which will be placed in a HTTP ‘Authorization’ header using ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the HTTPHandler class. The host can be of the form host:port, should you need to use a specific port number. If no method is specified, GET is used. If secure is true, a HTTP...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959960",
+    "updatedDate": "2026-03-11T23:15:47.959961",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "emit",
+      "mapLogRecord"
+    ]
+  },
+  "logging.handlers/NullHandler/handle": {
+    "id": "logging.handlers.NullHandler.handle",
+    "name": "handle",
+    "type": "method",
+    "parent": "NullHandler",
+    "signatures": [
+      "handle(record)"
+    ],
+    "signature_hash": "35d16fa8afa21737fa4cf8b0b313bebe7e8936280b31d0a0d6a435f1197a6208",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.NullHandler.handle",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method does nothing.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method does nothing.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958894",
+    "updatedDate": "2026-03-11T23:15:47.958895",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/QueueListener/handle": {
+    "id": "logging.handlers.QueueListener.handle",
+    "name": "handle",
+    "type": "method",
+    "parent": "QueueListener",
+    "signatures": [
+      "handle(record)"
+    ],
+    "signature_hash": "35d16fa8afa21737fa4cf8b0b313bebe7e8936280b31d0a0d6a435f1197a6208",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.QueueListener.handle",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Handle a record. This just loops through the handlers offering them the record to handle. The actual object passed to the handlers is that which is returned from prepare().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handle a record. This just loops through the handlers offering them the record to handle. The actual object passed to the handlers is that which is returned from prepare().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.960172",
+    "updatedDate": "2026-03-11T23:15:47.960173",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/SocketHandler/handleError": {
+    "id": "logging.handlers.SocketHandler.handleError",
+    "name": "handleError",
+    "type": "method",
+    "parent": "SocketHandler",
+    "signatures": [
+      "handleError()"
+    ],
+    "signature_hash": "30bd48d527b69911c595b90e96321d0f2b0307b61c1f229bf50ebfb9e15f64c2",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SocketHandler.handleError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Handles an error which has occurred during emit(). The most likely cause is a lost connection. Closes the socket so that we can retry on the next event.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles an error which has occurred during emit(). The most likely cause is a lost connection. Closes the socket so that we can retry on the next event.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959337",
+    "updatedDate": "2026-03-11T23:15:47.959338",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

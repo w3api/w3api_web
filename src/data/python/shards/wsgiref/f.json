@@ -1,0 +1,57 @@
+{
+  "wsgiref/FileWrapper": {
+    "id": "wsgiref.FileWrapper",
+    "name": "FileWrapper",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class wsgiref.util.FileWrapper(filelike, blksize=8192)"
+    ],
+    "signature_hash": "e323891e4af2b8d8ad1df95c881b4cfe661b64c6071917b9f52d560aecb967e3",
+    "url": "https://docs.python.org/3/library/wsgiref.html#module-wsgiref#wsgiref.util.FileWrapper",
+    "parameters": [
+      {
+        "name": "filelike",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "blksize",
+        "type": "",
+        "has_default": true,
+        "default_value": "8192",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A concrete implementation of the wsgiref.types.FileWrapper protocol used to convert a file-like object to an iterator. The resulting objects are iterables. As the object is iterated over, the optional blksize parameter will be repeatedly passed to the filelike object’s read() method to obtain bytestrings to yield. When read() returns an empty bytestring, iteration is ended and is not resumable. If filelike has a close() method, the returned object will also have a close() method, and it will ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A concrete implementation of the wsgiref.types.FileWrapper protocol used to convert a file-like object to an iterator. The resulting objects are iterables. As the object is iterated over, the optional...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.114680",
+    "updatedDate": "2026-03-11T23:15:48.114681",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

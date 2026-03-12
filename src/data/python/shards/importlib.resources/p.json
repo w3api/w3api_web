@@ -1,0 +1,57 @@
+{
+  "importlib.resources/path": {
+    "id": "importlib.resources.path",
+    "name": "path",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "importlib.resources.path(anchor, *path_names)"
+    ],
+    "signature_hash": "f833c0ef735e3dbf1866aae53ad9d577369c566d23b532ef8dd99dc8f383dcd0",
+    "url": "https://docs.python.org/3/library/importlib.resources.html#module-importlib.resources#importlib.resources.path",
+    "parameters": [
+      {
+        "name": "anchor",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "path_names",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Provides the path to the resource as an actual file system path. This function returns a context manager for use in a with statement. The context manager provides a pathlib.Path object. Exiting the context manager cleans up any temporary files created, e.g. when the resource needs to be extracted from a zip file. For example, the stat() method requires an actual file system path; it can be used like this: with importlib.resources.path(anchor, \"resource.txt\") as fspath: result = fspath.stat() ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Provides the path to the resource as an actual file system path. This function returns a context manager for use in a with statement. The context manager provides a pathlib.Path object. Exiting the co...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.944859",
+    "updatedDate": "2026-03-11T23:15:47.944860",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

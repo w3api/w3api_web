@@ -1,0 +1,162 @@
+{
+  "platform/android_ver": {
+    "id": "platform.android_ver",
+    "name": "android_ver",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "platform.android_ver(release='', api_level=0, manufacturer='', model='', device='', is_emulator=False)"
+    ],
+    "signature_hash": "5403f788458f00777c4fa9a7c981feec126274b30b73935d2b51185a7972c5b1",
+    "url": "https://docs.python.org/3/library/platform.html#module-platform#platform.android_ver",
+    "parameters": [
+      {
+        "name": "release",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "api_level",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "manufacturer",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "model",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "device",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "is_emulator",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get Android device information. Returns a namedtuple() with the following attributes. Values which cannot be determined are set to the defaults given as parameters. release - Android version, as a string (e.g. \"14\"). api_level - API level of the running device, as an integer (e.g. 34 for Android 14). To get the API level which Python was built against, see sys.getandroidapilevel(). manufacturer - Manufacturer name. model - Model name – typically the marketing name or model number. device - De...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get Android device information. Returns a namedtuple() with the following attributes. Values which cannot be determined are set to the defaults given as parameters. release - Android version, as a str...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.031805",
+    "updatedDate": "2026-03-11T23:15:48.031806",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "platform/architecture": {
+    "id": "platform.architecture",
+    "name": "architecture",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "platform.architecture(executable=sys.executable, bits='', linkage='')"
+    ],
+    "signature_hash": "e9ea3a6a6ad08424f5090d59221cf39e1964bf4f46345e015510a63db499a4a3",
+    "url": "https://docs.python.org/3/library/platform.html#module-platform#platform.architecture",
+    "parameters": [
+      {
+        "name": "executable",
+        "type": "",
+        "has_default": true,
+        "default_value": "sys.executable",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "bits",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "linkage",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Queries the given executable (defaults to the Python interpreter binary) for various architecture information. Returns a tuple (bits, linkage) which contain information about the bit architecture and the linkage format used for the executable. Both values are returned as strings. Values that cannot be determined are returned as given by the parameter presets. If bits is given as '', the sizeof(pointer) (or sizeof(long) on Python version < 1.5.2) is used as indicator for the supported pointer ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Queries the given executable (defaults to the Python interpreter binary) for various architecture information. Returns a tuple (bits, linkage) which contain information about the bit architecture and ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.031415",
+    "updatedDate": "2026-03-11T23:15:48.031416",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

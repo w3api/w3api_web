@@ -1,9 +1,111 @@
 {
-  "java.security.cert/Certificate.CertificateRep/readResolve": {
-    "id": "java.security.cert.Certificate.CertificateRep.readResolve",
+  "java.security.cert/CRLReason/REMOVE_FROM_CRL": {
+    "id": "java.security.cert.CRLReason.REMOVE_FROM_CRL",
+    "name": "REMOVE_FROM_CRL",
+    "type": "enum_constant",
+    "parent": "CRLReason",
+    "signatures": [
+      "REMOVE_FROM_CRL"
+    ],
+    "signature_hash": "9cb98c45410192f305e0e4f3774046390d1987768e9fcdbee7c12f68904ccccb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/CRLReason.html",
+    "parameters": [],
+    "return_type": "CRLReason",
+    "exceptions": [],
+    "description": "This reason indicates that the certificate was previously on hold\nand should be removed from the CRL.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This reason indicates that the certificate was previously on hold\nand should be removed from the CRL.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.610708",
+    "updatedDate": "2026-03-11T23:15:40.610709",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/BasicReason/REVOKED": {
+    "id": "java.security.cert.BasicReason.REVOKED",
+    "name": "REVOKED",
+    "type": "enum_constant",
+    "parent": "BasicReason",
+    "signatures": [
+      "REVOKED"
+    ],
+    "signature_hash": "351b89d619aed08bfb74f2d332d6c2b45b9da262aa0262e858bed99d1479582f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html",
+    "parameters": [],
+    "return_type": "BasicReason",
+    "exceptions": [],
+    "description": "The certificate is revoked.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The certificate is revoked.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.609748",
+    "updatedDate": "2026-03-11T23:15:40.609749",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/Reason": {
+    "id": "java.security.cert.Reason",
+    "name": "Reason",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Reason"
+    ],
+    "signature_hash": "6690d63ce5d0b2811120b156de0e4aa9867ccda3092ad26837776a32b1644380",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/CertPathValidatorException.Reason.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.609791",
+    "updatedDate": "2026-03-11T23:15:40.609792",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/CertificateRep/readResolve": {
+    "id": "java.security.cert.CertificateRep.readResolve",
     "name": "readResolve",
     "type": "method",
-    "parent": "Certificate.CertificateRep",
+    "parent": "CertificateRep",
     "signatures": [
       "public protected Object readResolve()"
     ],
@@ -27,8 +129,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.238991",
-    "updatedDate": "2026-03-08T21:40:21.238992",
+    "createdDate": "2026-03-11T23:15:40.608108",
+    "updatedDate": "2026-03-11T23:15:40.608109",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -38,11 +140,11 @@
       "popularity_score": 0
     }
   },
-  "java.security.cert/CertPath.CertPathRep/readResolve": {
-    "id": "java.security.cert.CertPath.CertPathRep.readResolve",
+  "java.security.cert/CertPathRep/readResolve": {
+    "id": "java.security.cert.CertPathRep.readResolve",
     "name": "readResolve",
     "type": "method",
-    "parent": "CertPath.CertPathRep",
+    "parent": "CertPathRep",
     "signatures": [
       "public protected Object readResolve()"
     ],
@@ -66,8 +168,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.239788",
-    "updatedDate": "2026-03-08T21:40:21.239789",
+    "createdDate": "2026-03-11T23:15:40.608956",
+    "updatedDate": "2026-03-11T23:15:40.608957",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

@@ -1,0 +1,745 @@
+{
+  "logging/Filter": {
+    "id": "logging.Filter",
+    "name": "Filter",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.Filter(name='')"
+    ],
+    "signature_hash": "af271fcf2e30d72b7fa7a9d6d2ba7c18445298ba449160d08714b6fb8444dfd1",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Filter",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns an instance of the Filter class. If name is specified, it names a logger which, together with its children, will have its events allowed through the filter. If name is the empty string, allows every event. filter(record)¶ Is the specified record to be logged? Returns false for no, true for yes. Filters can either modify log records in-place or return a completely different record instance which will replace the original log record in any future processing of the event.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an instance of the Filter class. If name is specified, it names a logger which, together with its children, will have its events allowed through the filter. If name is the empty string, allows...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957979",
+    "updatedDate": "2026-03-11T23:15:47.957980",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "filter"
+    ]
+  },
+  "logging/Formatter": {
+    "id": "logging.Formatter",
+    "name": "Formatter",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.Formatter(fmt=None, datefmt=None, style='%', validate=True, *, defaults=None)"
+    ],
+    "signature_hash": "ff041535aa04843083bd68314c89daaf3d7d593abc0f93562da2ac0b2fa25d1d",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Formatter",
+    "parameters": [
+      {
+        "name": "fmt",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "datefmt",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "style",
+        "type": "",
+        "has_default": true,
+        "default_value": "'%'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "validate",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "defaults",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Responsible for converting a LogRecord to an output string to be interpreted by a human or external system. Parameters: fmt (str) – A format string in the given style for the logged output as a whole. The possible mapping keys are drawn from the LogRecord object’s LogRecord attributes. If not specified, '%(message)s' is used, which is just the logged message. datefmt (str) – A format string for the date/time portion of the logged output. If not specified, the default described in formatTime()...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Responsible for converting a LogRecord to an output string to be interpreted by a human or external system. Parameters: fmt (str) – A format string in the given style for the logged output as a whole....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957815",
+    "updatedDate": "2026-03-11T23:15:47.957816",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "format",
+      "formatException",
+      "formatStack",
+      "formatTime"
+    ]
+  },
+  "logging/Logger/filter": {
+    "id": "logging.Logger.filter",
+    "name": "filter",
+    "type": "method",
+    "parent": "Logger",
+    "signatures": [
+      "filter(record)"
+    ],
+    "signature_hash": "e2b36e10ac5aadb90ea58c02341e0218f5a901b990c6972398103506bc04fe90",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Logger.filter",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Apply this logger’s filters to the record and return True if the record is to be processed. The filters are consulted in turn, until one of them returns a false value. If none of them return a false value, the record will be processed (passed to handlers). If one returns a false value, no further processing of the record occurs.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Apply this logger’s filters to the record and return True if the record is to be processed. The filters are consulted in turn, until one of them returns a false value. If none of them return a false v...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957322",
+    "updatedDate": "2026-03-11T23:15:47.957322",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Handler/filter": {
+    "id": "logging.Handler.filter",
+    "name": "filter",
+    "type": "method",
+    "parent": "Handler",
+    "signatures": [
+      "filter(record)"
+    ],
+    "signature_hash": "e2b36e10ac5aadb90ea58c02341e0218f5a901b990c6972398103506bc04fe90",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Handler.filter",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Apply this handler’s filters to the record and return True if the record is to be processed. The filters are consulted in turn, until one of them returns a false value. If none of them return a false value, the record will be emitted. If one returns a false value, the handler will not emit the record.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Apply this handler’s filters to the record and return True if the record is to be processed. The filters are consulted in turn, until one of them returns a false value. If none of them return a false ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957688",
+    "updatedDate": "2026-03-11T23:15:47.957689",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Filter/filter": {
+    "id": "logging.Filter.filter",
+    "name": "filter",
+    "type": "method",
+    "parent": "Filter",
+    "signatures": [
+      "filter(record)"
+    ],
+    "signature_hash": "e2b36e10ac5aadb90ea58c02341e0218f5a901b990c6972398103506bc04fe90",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Filter.filter",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Is the specified record to be logged? Returns false for no, true for yes. Filters can either modify log records in-place or return a completely different record instance which will replace the original log record in any future processing of the event.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Is the specified record to be logged? Returns false for no, true for yes. Filters can either modify log records in-place or return a completely different record instance which will replace the origina...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958005",
+    "updatedDate": "2026-03-11T23:15:47.958006",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Logger/findCaller": {
+    "id": "logging.Logger.findCaller",
+    "name": "findCaller",
+    "type": "method",
+    "parent": "Logger",
+    "signatures": [
+      "findCaller(stack_info=False, stacklevel=1)"
+    ],
+    "signature_hash": "1ad08258f4f8ad1f6fcd5ca43272e5b86d8fd9ad8c594e66f43fe71d626bea0d",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Logger.findCaller",
+    "parameters": [
+      {
+        "name": "stack_info",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "stacklevel",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Finds the caller’s source filename and line number. Returns the filename, line number, function name and stack information as a 4-element tuple. The stack information is returned as None unless stack_info is True. The stacklevel parameter is passed from code calling the debug() and other APIs. If greater than 1, the excess is used to skip stack frames before determining the values to be returned. This will generally be useful when calling logging APIs from helper/wrapper code, so that the inf...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Finds the caller’s source filename and line number. Returns the filename, line number, function name and stack information as a 4-element tuple. The stack information is returned as None unless stack_...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957373",
+    "updatedDate": "2026-03-11T23:15:47.957374",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Handler/flush": {
+    "id": "logging.Handler.flush",
+    "name": "flush",
+    "type": "method",
+    "parent": "Handler",
+    "signatures": [
+      "flush()"
+    ],
+    "signature_hash": "a5830dd8ddf7648505f67ce656cb6256bc28813661804b8640e234e22bbf306c",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Handler.flush",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Ensure all logging output has been flushed. This version does nothing and is intended to be implemented by subclasses.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Ensure all logging output has been flushed. This version does nothing and is intended to be implemented by subclasses.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957702",
+    "updatedDate": "2026-03-11T23:15:47.957703",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Handler/format": {
+    "id": "logging.Handler.format",
+    "name": "format",
+    "type": "method",
+    "parent": "Handler",
+    "signatures": [
+      "format(record)"
+    ],
+    "signature_hash": "8b03b294e489d2f9a0350a6b6801c64328acb02d7b18060eec0324c61bf2bed1",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Handler.format",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Do formatting for a record - if a formatter is set, use it. Otherwise, use the default formatter for the module.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Do formatting for a record - if a formatter is set, use it. Otherwise, use the default formatter for the module.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957766",
+    "updatedDate": "2026-03-11T23:15:47.957767",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Formatter/format": {
+    "id": "logging.Formatter.format",
+    "name": "format",
+    "type": "method",
+    "parent": "Formatter",
+    "signatures": [
+      "format(record)"
+    ],
+    "signature_hash": "8b03b294e489d2f9a0350a6b6801c64328acb02d7b18060eec0324c61bf2bed1",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Formatter.format",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The record’s attribute dictionary is used as the operand to a string formatting operation. Returns the resulting string. Before formatting the dictionary, a couple of preparatory steps are carried out. The message attribute of the record is computed using msg % args. If the formatting string contains '(asctime)', formatTime() is called to format the event time. If there is exception information, it is formatted using formatException() and appended to the message. Note that the formatted excep...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The record’s attribute dictionary is used as the operand to a string formatting operation. Returns the resulting string. Before formatting the dictionary, a couple of preparatory steps are carried out...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957833",
+    "updatedDate": "2026-03-11T23:15:47.957834",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/BufferingFormatter/format": {
+    "id": "logging.BufferingFormatter.format",
+    "name": "format",
+    "type": "method",
+    "parent": "BufferingFormatter",
+    "signatures": [
+      "format(records)"
+    ],
+    "signature_hash": "f68c47f92a2f806fbb0f3802fb8be50d44b03f848a2526ee984987c9311a0b8d",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.BufferingFormatter.format",
+    "parameters": [
+      {
+        "name": "records",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return formatted text for a list of records. The base implementation just returns the empty string if there are no records; otherwise, it returns the concatenation of the header, each record formatted with the line formatter, and the footer.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return formatted text for a list of records. The base implementation just returns the empty string if there are no records; otherwise, it returns the concatenation of the header, each record formatted...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957960",
+    "updatedDate": "2026-03-11T23:15:47.957961",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Formatter/formatException": {
+    "id": "logging.Formatter.formatException",
+    "name": "formatException",
+    "type": "method",
+    "parent": "Formatter",
+    "signatures": [
+      "formatException(exc_info)"
+    ],
+    "signature_hash": "8dee87f4a8cd4cd78ac2b77eeab26f8ec25b407a4f7a9acf01f42a1b5e105b4d",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Formatter.formatException",
+    "parameters": [
+      {
+        "name": "exc_info",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Formats the specified exception information (a standard exception tuple as returned by sys.exc_info()) as a string. This default implementation just uses traceback.print_exception(). The resulting string is returned.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Formats the specified exception information (a standard exception tuple as returned by sys.exc_info()) as a string. This default implementation just uses traceback.print_exception(). The resulting str...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957871",
+    "updatedDate": "2026-03-11T23:15:47.957872",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/BufferingFormatter/formatFooter": {
+    "id": "logging.BufferingFormatter.formatFooter",
+    "name": "formatFooter",
+    "type": "method",
+    "parent": "BufferingFormatter",
+    "signatures": [
+      "formatFooter(records)"
+    ],
+    "signature_hash": "5bd5d0e9466cc2d1092dc5fea70cd6ece0697407474ea1e305492da8af84cd53",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.BufferingFormatter.formatFooter",
+    "parameters": [
+      {
+        "name": "records",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a footer for a list of records. The base implementation just returns the empty string. You will need to override this method if you want specific behaviour, e.g. to show the count of records or a separator line.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a footer for a list of records. The base implementation just returns the empty string. You will need to override this method if you want specific behaviour, e.g. to show the count of records or...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957943",
+    "updatedDate": "2026-03-11T23:15:47.957944",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/BufferingFormatter/formatHeader": {
+    "id": "logging.BufferingFormatter.formatHeader",
+    "name": "formatHeader",
+    "type": "method",
+    "parent": "BufferingFormatter",
+    "signatures": [
+      "formatHeader(records)"
+    ],
+    "signature_hash": "630ddfe6ab34e1b0367a9e655f77a313db5cc7ae029e8cbbe5ee2a187e12867c",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.BufferingFormatter.formatHeader",
+    "parameters": [
+      {
+        "name": "records",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a header for a list of records. The base implementation just returns the empty string. You will need to override this method if you want specific behaviour, e.g. to show the count of records, a title or a separator line.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a header for a list of records. The base implementation just returns the empty string. You will need to override this method if you want specific behaviour, e.g. to show the count of records, a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957926",
+    "updatedDate": "2026-03-11T23:15:47.957927",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Formatter/formatStack": {
+    "id": "logging.Formatter.formatStack",
+    "name": "formatStack",
+    "type": "method",
+    "parent": "Formatter",
+    "signatures": [
+      "formatStack(stack_info)"
+    ],
+    "signature_hash": "7cea03bfb6d1239575b43953ba784cc1d56c3b60514fbfdeb611256feeb8048d",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Formatter.formatStack",
+    "parameters": [
+      {
+        "name": "stack_info",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Formats the specified stack information (a string as returned by traceback.print_stack(), but with the last newline removed) as a string. This default implementation just returns the input value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Formats the specified stack information (a string as returned by traceback.print_stack(), but with the last newline removed) as a string. This default implementation just returns the input value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957888",
+    "updatedDate": "2026-03-11T23:15:47.957889",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Formatter/formatTime": {
+    "id": "logging.Formatter.formatTime",
+    "name": "formatTime",
+    "type": "method",
+    "parent": "Formatter",
+    "signatures": [
+      "formatTime(record, datefmt=None)"
+    ],
+    "signature_hash": "97aaa0a5bd9b0005ca55e7cdc0a88cab76f9efc1a98d4532c4ce5d15b5676865",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Formatter.formatTime",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "datefmt",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method should be called from format() by a formatter which wants to make use of a formatted time. This method can be overridden in formatters to provide for any specific requirement, but the basic behavior is as follows: if datefmt (a string) is specified, it is used with time.strftime() to format the creation time of the record. Otherwise, the format ‘%Y-%m-%d %H:%M:%S,uuu’ is used, where the uuu part is a millisecond value and the other letters are as per the time.strftime() documentat...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method should be called from format() by a formatter which wants to make use of a formatted time. This method can be overridden in formatters to provide for any specific requirement, but the basi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957854",
+    "updatedDate": "2026-03-11T23:15:47.957855",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -20,6 +20,18 @@
     "shard": "java/shards/javax.crypto/c.json"
   },
   {
+    "slug": "javax.crypto/Decapsulator",
+    "shard": "java/shards/javax.crypto/d.json"
+  },
+  {
+    "slug": "javax.crypto/Encapsulated",
+    "shard": "java/shards/javax.crypto/e.json"
+  },
+  {
+    "slug": "javax.crypto/Encapsulator",
+    "shard": "java/shards/javax.crypto/e.json"
+  },
+  {
     "slug": "javax.crypto/EncryptedPrivateKeyInfo",
     "shard": "java/shards/javax.crypto/e.json"
   },
@@ -41,18 +53,6 @@
   },
   {
     "slug": "javax.crypto/KEM",
-    "shard": "java/shards/javax.crypto/k.json"
-  },
-  {
-    "slug": "javax.crypto/KEM.Decapsulator",
-    "shard": "java/shards/javax.crypto/k.json"
-  },
-  {
-    "slug": "javax.crypto/KEM.Encapsulated",
-    "shard": "java/shards/javax.crypto/k.json"
-  },
-  {
-    "slug": "javax.crypto/KEM.Encapsulator",
     "shard": "java/shards/javax.crypto/k.json"
   },
   {
@@ -124,7 +124,7 @@
     "shard": "java/shards/javax.crypto/d.json"
   },
   {
-    "slug": "javax.crypto/KEM.Encapsulated/Encapsulated",
+    "slug": "javax.crypto/Encapsulated/Encapsulated",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
@@ -264,19 +264,19 @@
     "shard": "java/shards/javax.crypto/s.json"
   },
   {
+    "slug": "javax.crypto/DecapsulatorSpi",
+    "shard": "java/shards/javax.crypto/d.json"
+  },
+  {
+    "slug": "javax.crypto/EncapsulatorSpi",
+    "shard": "java/shards/javax.crypto/e.json"
+  },
+  {
     "slug": "javax.crypto/KDFParameters",
     "shard": "java/shards/javax.crypto/k.json"
   },
   {
     "slug": "javax.crypto/KEMSpi",
-    "shard": "java/shards/javax.crypto/k.json"
-  },
-  {
-    "slug": "javax.crypto/KEMSpi.DecapsulatorSpi",
-    "shard": "java/shards/javax.crypto/k.json"
-  },
-  {
-    "slug": "javax.crypto/KEMSpi.EncapsulatorSpi",
     "shard": "java/shards/javax.crypto/k.json"
   },
   {
@@ -304,7 +304,7 @@
     "shard": "java/shards/javax.crypto/c.json"
   },
   {
-    "slug": "javax.crypto/KEM.Decapsulator/decapsulate",
+    "slug": "javax.crypto/Decapsulator/decapsulate",
     "shard": "java/shards/javax.crypto/d.json"
   },
   {
@@ -328,19 +328,19 @@
     "shard": "java/shards/javax.crypto/d.json"
   },
   {
-    "slug": "javax.crypto/KEM.Encapsulator/encapsulate",
+    "slug": "javax.crypto/Encapsulator/encapsulate",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
-    "slug": "javax.crypto/KEM.Encapsulated/encapsulation",
+    "slug": "javax.crypto/Encapsulated/encapsulation",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
-    "slug": "javax.crypto/KEM.Decapsulator/encapsulationSize",
+    "slug": "javax.crypto/Decapsulator/encapsulationSize",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
-    "slug": "javax.crypto/KEM.Encapsulator/encapsulationSize",
+    "slug": "javax.crypto/Encapsulator/encapsulationSize",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
@@ -348,7 +348,7 @@
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
-    "slug": "javax.crypto/KEMSpi.DecapsulatorSpi/engineDecapsulate",
+    "slug": "javax.crypto/DecapsulatorSpi/engineDecapsulate",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
@@ -372,15 +372,15 @@
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
-    "slug": "javax.crypto/KEMSpi.EncapsulatorSpi/engineEncapsulate",
+    "slug": "javax.crypto/EncapsulatorSpi/engineEncapsulate",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
-    "slug": "javax.crypto/KEMSpi.DecapsulatorSpi/engineEncapsulationSize",
+    "slug": "javax.crypto/DecapsulatorSpi/engineEncapsulationSize",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
-    "slug": "javax.crypto/KEMSpi.EncapsulatorSpi/engineEncapsulationSize",
+    "slug": "javax.crypto/EncapsulatorSpi/engineEncapsulationSize",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
@@ -468,11 +468,11 @@
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
-    "slug": "javax.crypto/KEMSpi.DecapsulatorSpi/engineSecretSize",
+    "slug": "javax.crypto/DecapsulatorSpi/engineSecretSize",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
-    "slug": "javax.crypto/KEMSpi.EncapsulatorSpi/engineSecretSize",
+    "slug": "javax.crypto/EncapsulatorSpi/engineSecretSize",
     "shard": "java/shards/javax.crypto/e.json"
   },
   {
@@ -720,7 +720,7 @@
     "shard": "java/shards/javax.crypto/i.json"
   },
   {
-    "slug": "javax.crypto/KEM.Encapsulated/key",
+    "slug": "javax.crypto/Encapsulated/key",
     "shard": "java/shards/javax.crypto/k.json"
   },
   {
@@ -736,15 +736,15 @@
     "shard": "java/shards/javax.crypto/n.json"
   },
   {
-    "slug": "javax.crypto/KEM.Encapsulated/params",
+    "slug": "javax.crypto/Encapsulated/params",
     "shard": "java/shards/javax.crypto/p.json"
   },
   {
-    "slug": "javax.crypto/KEM.Decapsulator/providerName",
+    "slug": "javax.crypto/Decapsulator/providerName",
     "shard": "java/shards/javax.crypto/p.json"
   },
   {
-    "slug": "javax.crypto/KEM.Encapsulator/providerName",
+    "slug": "javax.crypto/Encapsulator/providerName",
     "shard": "java/shards/javax.crypto/p.json"
   },
   {
@@ -756,11 +756,11 @@
     "shard": "java/shards/javax.crypto/r.json"
   },
   {
-    "slug": "javax.crypto/KEM.Decapsulator/secretSize",
+    "slug": "javax.crypto/Decapsulator/secretSize",
     "shard": "java/shards/javax.crypto/s.json"
   },
   {
-    "slug": "javax.crypto/KEM.Encapsulator/secretSize",
+    "slug": "javax.crypto/Encapsulator/secretSize",
     "shard": "java/shards/javax.crypto/s.json"
   },
   {

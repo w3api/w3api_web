@@ -1,0 +1,47 @@
+{
+  "contextlib/nullcontext": {
+    "id": "contextlib.nullcontext",
+    "name": "nullcontext",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "contextlib.nullcontext(enter_result=None)"
+    ],
+    "signature_hash": "6a785e0a27eefc23cd5aa4b7f40a245070ee434fab619f4426e5c82645c3fb6b",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.nullcontext",
+    "parameters": [
+      {
+        "name": "enter_result",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a context manager that returns enter_result from __enter__, but otherwise does nothing. It is intended to be used as a stand-in for an optional context manager, for example: def myfunction(arg, ignore_exceptions=False): if ignore_exceptions: # Use suppress to ignore all exceptions. cm = contextlib.suppress(Exception) else: # Do not ignore any exceptions, cm has no effect. cm = contextlib.nullcontext() with cm: # Do something An example using enter_result: def process_file(file_or_path)...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a context manager that returns enter_result from __enter__, but otherwise does nothing. It is intended to be used as a stand-in for an optional context manager, for example: def myfunction(arg,...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889558",
+    "updatedDate": "2026-03-11T23:15:47.889559",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

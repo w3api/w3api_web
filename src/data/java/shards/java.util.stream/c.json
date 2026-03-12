@@ -4,8 +4,10 @@
     "name": "Collectors",
     "type": "class",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "class Collectors"
+    ],
+    "signature_hash": "a9c18aa2ac9771342347f7adfc7a452b4e7dcef0fc039c4beab8d52ddeaac537",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +22,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.495026",
-    "updatedDate": "2026-03-08T21:40:21.495027",
+    "createdDate": "2026-03-11T23:15:40.890332",
+    "updatedDate": "2026-03-11T23:15:40.890333",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -63,13 +65,15 @@
       "toUnmodifiableSet"
     ]
   },
-  "java.util.stream/Collector.Characteristics": {
-    "id": "java.util.stream.Collector.Characteristics",
-    "name": "Collector.Characteristics",
+  "java.util.stream/Characteristics": {
+    "id": "java.util.stream.Characteristics",
+    "name": "Characteristics",
     "type": "enum",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "enum Characteristics"
+    ],
+    "signature_hash": "fa5c230323f4e6881794b6e9207cde5e4429c723586b3e04cc4884013f0a474b",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.Characteristics.html",
     "parameters": [],
     "return_type": "",
@@ -84,8 +88,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496980",
-    "updatedDate": "2026-03-08T21:40:21.496981",
+    "createdDate": "2026-03-11T23:15:40.893901",
+    "updatedDate": "2026-03-11T23:15:40.893902",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -94,18 +98,59 @@
       "difficulty": null,
       "popularity_score": 0
     },
+    "enum_constants": [
+      "CONCURRENT",
+      "IDENTITY_FINISH",
+      "UNORDERED"
+    ],
     "methods": [
       "valueOf",
       "values"
     ]
   },
-  "java.util.stream/Collector<T,A,R>": {
-    "id": "java.util.stream.Collector<T,A,R>",
-    "name": "Collector<T,A,R>",
+  "java.util.stream/Characteristics/CONCURRENT": {
+    "id": "java.util.stream.Characteristics.CONCURRENT",
+    "name": "CONCURRENT",
+    "type": "enum_constant",
+    "parent": "Characteristics",
+    "signatures": [
+      "CONCURRENT"
+    ],
+    "signature_hash": "852eda03ba687d3efce8cbc7d65421c0ac8726f80713b558978e035668ad9da7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.Characteristics.html",
+    "parameters": [],
+    "return_type": "Characteristics",
+    "exceptions": [],
+    "description": "Indicates that this collector isconcurrent, meaning that\nthe result container can support the accumulator function being\ncalled concurrently with the same result container from multiple\nthreads.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates that this collector isconcurrent, meaning that\nthe result container can support the accumulator function being\ncalled concurrently with the same result container from multiple\nthreads.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.893975",
+    "updatedDate": "2026-03-11T23:15:40.893976",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collector": {
+    "id": "java.util.stream.Collector",
+    "name": "Collector",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface Collector<T,A,R>"
+    ],
+    "signature_hash": "e2b2b472f9dce251e0b3ec6e8f2c8a04780103fcce959843ee3f059fa004e632",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html",
     "parameters": [],
     "return_type": "",
@@ -120,8 +165,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.494833",
-    "updatedDate": "2026-03-08T21:40:21.494834",
+    "createdDate": "2026-03-11T23:15:40.890098",
+    "updatedDate": "2026-03-11T23:15:40.890099",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -139,11 +184,11 @@
       "supplier"
     ]
   },
-  "java.util.stream/Collector<T,A,R>/characteristics": {
-    "id": "java.util.stream.Collector<T,A,R>.characteristics",
+  "java.util.stream/Collector/characteristics": {
+    "id": "java.util.stream.Collector.characteristics",
     "name": "characteristics",
     "type": "method",
-    "parent": "Collector<T,A,R>",
+    "parent": "Collector",
     "signatures": [
       "public Set<Collector.Characteristics> characteristics()"
     ],
@@ -162,8 +207,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.494890",
-    "updatedDate": "2026-03-08T21:40:21.494891",
+    "createdDate": "2026-03-11T23:15:40.890144",
+    "updatedDate": "2026-03-11T23:15:40.890145",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -196,8 +241,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496820",
-    "updatedDate": "2026-03-08T21:40:21.496821",
+    "createdDate": "2026-03-11T23:15:40.893709",
+    "updatedDate": "2026-03-11T23:15:40.893710",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -207,11 +252,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Stream<T>/collect": {
-    "id": "java.util.stream.Stream<T>.collect",
+  "java.util.stream/Stream/collect": {
+    "id": "java.util.stream.Stream.collect",
     "name": "collect",
     "type": "method",
-    "parent": "Stream<T>",
+    "parent": "Stream",
     "signatures": [
       "public <R> R collect(Supplier<R> supplier, BiConsumer<R, ? super T> accumulator, BiConsumer<R, R> combiner)",
       "public <R, A> R collect(Collector<? super T, A, R> collector)"
@@ -302,8 +347,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.490965",
-    "updatedDate": "2026-03-08T21:40:21.490965",
+    "createdDate": "2026-03-11T23:15:40.886201",
+    "updatedDate": "2026-03-11T23:15:40.886202",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -377,8 +422,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.491989",
-    "updatedDate": "2026-03-08T21:40:21.491990",
+    "createdDate": "2026-03-11T23:15:40.887152",
+    "updatedDate": "2026-03-11T23:15:40.887152",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -452,8 +497,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.492751",
-    "updatedDate": "2026-03-08T21:40:21.492752",
+    "createdDate": "2026-03-11T23:15:40.888238",
+    "updatedDate": "2026-03-11T23:15:40.888240",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -527,8 +572,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.494152",
-    "updatedDate": "2026-03-08T21:40:21.494153",
+    "createdDate": "2026-03-11T23:15:40.889325",
+    "updatedDate": "2026-03-11T23:15:40.889326",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -612,8 +657,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.495130",
-    "updatedDate": "2026-03-08T21:40:21.495131",
+    "createdDate": "2026-03-11T23:15:40.890446",
+    "updatedDate": "2026-03-11T23:15:40.890447",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -623,11 +668,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Collector<T,A,R>/combiner": {
-    "id": "java.util.stream.Collector<T,A,R>.combiner",
+  "java.util.stream/Collector/combiner": {
+    "id": "java.util.stream.Collector.combiner",
     "name": "combiner",
     "type": "method",
-    "parent": "Collector<T,A,R>",
+    "parent": "Collector",
     "signatures": [
       "public BinaryOperator<A> combiner()"
     ],
@@ -646,8 +691,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.494907",
-    "updatedDate": "2026-03-08T21:40:21.494908",
+    "createdDate": "2026-03-11T23:15:40.890194",
+    "updatedDate": "2026-03-11T23:15:40.890195",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -657,11 +702,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Gatherer<T,A,R>/combiner": {
-    "id": "java.util.stream.Gatherer<T,A,R>.combiner",
+  "java.util.stream/Gatherer/combiner": {
+    "id": "java.util.stream.Gatherer.combiner",
     "name": "combiner",
     "type": "method",
-    "parent": "Gatherer<T,A,R>",
+    "parent": "Gatherer",
     "signatures": [
       "public default BinaryOperator<A> combiner()"
     ],
@@ -680,8 +725,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496138",
-    "updatedDate": "2026-03-08T21:40:21.496139",
+    "createdDate": "2026-03-11T23:15:40.892025",
+    "updatedDate": "2026-03-11T23:15:40.892026",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -691,11 +736,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Stream<T>/concat": {
-    "id": "java.util.stream.Stream<T>.concat",
+  "java.util.stream/Stream/concat": {
+    "id": "java.util.stream.Stream.concat",
     "name": "concat",
     "type": "method",
-    "parent": "Stream<T>",
+    "parent": "Stream",
     "signatures": [
       "public static<T> Stream<T> concat(Stream<? extends T> a, Stream<? extends T> b)"
     ],
@@ -735,8 +780,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.490984",
-    "updatedDate": "2026-03-08T21:40:21.490985",
+    "createdDate": "2026-03-11T23:15:40.886223",
+    "updatedDate": "2026-03-11T23:15:40.886223",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -790,8 +835,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.492009",
-    "updatedDate": "2026-03-08T21:40:21.492010",
+    "createdDate": "2026-03-11T23:15:40.887171",
+    "updatedDate": "2026-03-11T23:15:40.887172",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -845,8 +890,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.492774",
-    "updatedDate": "2026-03-08T21:40:21.492775",
+    "createdDate": "2026-03-11T23:15:40.888264",
+    "updatedDate": "2026-03-11T23:15:40.888265",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -900,8 +945,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.494176",
-    "updatedDate": "2026-03-08T21:40:21.494177",
+    "createdDate": "2026-03-11T23:15:40.889349",
+    "updatedDate": "2026-03-11T23:15:40.889350",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -911,11 +956,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Stream<T>/count": {
-    "id": "java.util.stream.Stream<T>.count",
+  "java.util.stream/Stream/count": {
+    "id": "java.util.stream.Stream.count",
     "name": "count",
     "type": "method",
-    "parent": "Stream<T>",
+    "parent": "Stream",
     "signatures": [
       "public long count()"
     ],
@@ -934,8 +979,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.490996",
-    "updatedDate": "2026-03-08T21:40:21.490997",
+    "createdDate": "2026-03-11T23:15:40.886235",
+    "updatedDate": "2026-03-11T23:15:40.886235",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -968,8 +1013,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.492022",
-    "updatedDate": "2026-03-08T21:40:21.492023",
+    "createdDate": "2026-03-11T23:15:40.887184",
+    "updatedDate": "2026-03-11T23:15:40.887185",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1002,8 +1047,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.492789",
-    "updatedDate": "2026-03-08T21:40:21.492790",
+    "createdDate": "2026-03-11T23:15:40.888280",
+    "updatedDate": "2026-03-11T23:15:40.888281",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1036,8 +1081,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.494192",
-    "updatedDate": "2026-03-08T21:40:21.494193",
+    "createdDate": "2026-03-11T23:15:40.889365",
+    "updatedDate": "2026-03-11T23:15:40.889366",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1070,8 +1115,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.495149",
-    "updatedDate": "2026-03-08T21:40:21.495150",
+    "createdDate": "2026-03-11T23:15:40.890467",
+    "updatedDate": "2026-03-11T23:15:40.890468",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

@@ -20,6 +20,10 @@
     "shard": "java/shards/java.util.concurrent.locks/l.json"
   },
   {
+    "slug": "java.util.concurrent.locks/ReadLock",
+    "shard": "java/shards/java.util.concurrent.locks/r.json"
+  },
+  {
     "slug": "java.util.concurrent.locks/ReentrantLock",
     "shard": "java/shards/java.util.concurrent.locks/r.json"
   },
@@ -28,16 +32,12 @@
     "shard": "java/shards/java.util.concurrent.locks/r.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.ReadLock",
-    "shard": "java/shards/java.util.concurrent.locks/r.json"
-  },
-  {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.WriteLock",
-    "shard": "java/shards/java.util.concurrent.locks/r.json"
-  },
-  {
     "slug": "java.util.concurrent.locks/StampedLock",
     "shard": "java/shards/java.util.concurrent.locks/s.json"
+  },
+  {
+    "slug": "java.util.concurrent.locks/WriteLock",
+    "shard": "java/shards/java.util.concurrent.locks/w.json"
   },
   {
     "slug": "java.util.concurrent.locks/AbstractOwnableSynchronizer/AbstractOwnableSynchronizer",
@@ -52,7 +52,7 @@
     "shard": "java/shards/java.util.concurrent.locks/a.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.ReadLock/ReadLock",
+    "slug": "java.util.concurrent.locks/ReadLock/ReadLock",
     "shard": "java/shards/java.util.concurrent.locks/r.json"
   },
   {
@@ -68,7 +68,7 @@
     "shard": "java/shards/java.util.concurrent.locks/s.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.WriteLock/WriteLock",
+    "slug": "java.util.concurrent.locks/WriteLock/WriteLock",
     "shard": "java/shards/java.util.concurrent.locks/w.json"
   },
   {
@@ -180,7 +180,7 @@
     "shard": "java/shards/java.util.concurrent.locks/g.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.WriteLock/getHoldCount",
+    "slug": "java.util.concurrent.locks/WriteLock/getHoldCount",
     "shard": "java/shards/java.util.concurrent.locks/g.json"
   },
   {
@@ -364,7 +364,7 @@
     "shard": "java/shards/java.util.concurrent.locks/i.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.WriteLock/isHeldByCurrentThread",
+    "slug": "java.util.concurrent.locks/WriteLock/isHeldByCurrentThread",
     "shard": "java/shards/java.util.concurrent.locks/i.json"
   },
   {
@@ -428,11 +428,11 @@
     "shard": "java/shards/java.util.concurrent.locks/l.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.ReadLock/lock",
+    "slug": "java.util.concurrent.locks/ReadLock/lock",
     "shard": "java/shards/java.util.concurrent.locks/l.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.WriteLock/lock",
+    "slug": "java.util.concurrent.locks/WriteLock/lock",
     "shard": "java/shards/java.util.concurrent.locks/l.json"
   },
   {
@@ -444,11 +444,11 @@
     "shard": "java/shards/java.util.concurrent.locks/l.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.ReadLock/lockInterruptibly",
+    "slug": "java.util.concurrent.locks/ReadLock/lockInterruptibly",
     "shard": "java/shards/java.util.concurrent.locks/l.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.WriteLock/lockInterruptibly",
+    "slug": "java.util.concurrent.locks/WriteLock/lockInterruptibly",
     "shard": "java/shards/java.util.concurrent.locks/l.json"
   },
   {
@@ -460,11 +460,11 @@
     "shard": "java/shards/java.util.concurrent.locks/n.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.ReadLock/newCondition",
+    "slug": "java.util.concurrent.locks/ReadLock/newCondition",
     "shard": "java/shards/java.util.concurrent.locks/n.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.WriteLock/newCondition",
+    "slug": "java.util.concurrent.locks/WriteLock/newCondition",
     "shard": "java/shards/java.util.concurrent.locks/n.json"
   },
   {
@@ -560,11 +560,11 @@
     "shard": "java/shards/java.util.concurrent.locks/t.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.ReadLock/toString",
+    "slug": "java.util.concurrent.locks/ReadLock/toString",
     "shard": "java/shards/java.util.concurrent.locks/t.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.WriteLock/toString",
+    "slug": "java.util.concurrent.locks/WriteLock/toString",
     "shard": "java/shards/java.util.concurrent.locks/t.json"
   },
   {
@@ -624,11 +624,11 @@
     "shard": "java/shards/java.util.concurrent.locks/t.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.ReadLock/tryLock",
+    "slug": "java.util.concurrent.locks/ReadLock/tryLock",
     "shard": "java/shards/java.util.concurrent.locks/t.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.WriteLock/tryLock",
+    "slug": "java.util.concurrent.locks/WriteLock/tryLock",
     "shard": "java/shards/java.util.concurrent.locks/t.json"
   },
   {
@@ -676,11 +676,11 @@
     "shard": "java/shards/java.util.concurrent.locks/u.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.ReadLock/unlock",
+    "slug": "java.util.concurrent.locks/ReadLock/unlock",
     "shard": "java/shards/java.util.concurrent.locks/u.json"
   },
   {
-    "slug": "java.util.concurrent.locks/ReentrantReadWriteLock.WriteLock/unlock",
+    "slug": "java.util.concurrent.locks/WriteLock/unlock",
     "shard": "java/shards/java.util.concurrent.locks/u.json"
   },
   {

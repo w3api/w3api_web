@@ -1,9 +1,52 @@
 {
-  "java.net.http/HttpResponse.BodyHandlers/limiting": {
-    "id": "java.net.http.HttpResponse.BodyHandlers.limiting",
+  "java.net.http/Listener": {
+    "id": "java.net.http.Listener",
+    "name": "Listener",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Listener"
+    ],
+    "signature_hash": "ae7cf71db1d936da9da4d8cdf7b181bff54f4d80ab001a17ce5d279c33e5e57e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.Listener.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.566569",
+    "updatedDate": "2026-03-11T23:15:40.566570",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "onBinary",
+      "onClose",
+      "onError",
+      "onOpen",
+      "onPing",
+      "onPong",
+      "onText"
+    ]
+  },
+  "java.net.http/BodyHandlers/limiting": {
+    "id": "java.net.http.BodyHandlers.limiting",
     "name": "limiting",
     "type": "method",
-    "parent": "HttpResponse.BodyHandlers",
+    "parent": "BodyHandlers",
     "signatures": [
       "public static<T> HttpResponse.BodyHandler<T> limiting(HttpResponse.BodyHandler<T> downstreamHandler, long capacity)"
     ],
@@ -48,8 +91,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.196933",
-    "updatedDate": "2026-03-08T21:40:21.196934",
+    "createdDate": "2026-03-11T23:15:40.565687",
+    "updatedDate": "2026-03-11T23:15:40.565688",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -59,11 +102,11 @@
       "popularity_score": 0
     }
   },
-  "java.net.http/HttpResponse.BodySubscribers/limiting": {
-    "id": "java.net.http.HttpResponse.BodySubscribers.limiting",
+  "java.net.http/BodySubscribers/limiting": {
+    "id": "java.net.http.BodySubscribers.limiting",
     "name": "limiting",
     "type": "method",
-    "parent": "HttpResponse.BodySubscribers",
+    "parent": "BodySubscribers",
     "signatures": [
       "public static<T> HttpResponse.BodySubscriber<T> limiting(HttpResponse.BodySubscriber<T> downstreamSubscriber, long capacity)"
     ],
@@ -108,8 +151,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.197320",
-    "updatedDate": "2026-03-08T21:40:21.197321",
+    "createdDate": "2026-03-11T23:15:40.566075",
+    "updatedDate": "2026-03-11T23:15:40.566076",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -119,11 +162,11 @@
       "popularity_score": 0
     }
   },
-  "java.net.http/HttpClient.Builder/localAddress": {
-    "id": "java.net.http.HttpClient.Builder.localAddress",
+  "java.net.http/Builder/localAddress": {
+    "id": "java.net.http.Builder.localAddress",
     "name": "localAddress",
     "type": "method",
-    "parent": "HttpClient.Builder",
+    "parent": "Builder",
     "signatures": [
       "public default HttpClient.Builder localAddress(InetAddress localAddr)"
     ],
@@ -158,8 +201,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.195745",
-    "updatedDate": "2026-03-08T21:40:21.195746",
+    "createdDate": "2026-03-11T23:15:40.564527",
+    "updatedDate": "2026-03-11T23:15:40.564527",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

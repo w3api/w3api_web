@@ -1,0 +1,221 @@
+{
+  "csv/writer": {
+    "id": "csv.writer",
+    "name": "writer",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "csv.writer(csvfile, /, dialect='excel', **fmtparams)"
+    ],
+    "signature_hash": "e2714fe418bafcab0b928f0043c017b953d5bdff11e490ad15159da35493a7c4",
+    "url": "https://docs.python.org/3/library/csv.html#module-csv#csv.writer",
+    "parameters": [
+      {
+        "name": "csvfile",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dialect",
+        "type": "",
+        "has_default": true,
+        "default_value": "'excel'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fmtparams",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a writer object responsible for converting the user’s data into delimited strings on the given file-like object. csvfile can be any object with a write() method. If csvfile is a file object, it should be opened with newline='' [1]. An optional dialect parameter can be given which is used to define a set of parameters specific to a particular CSV dialect. It may be an instance of a subclass of the Dialect class or one of the strings returned by the list_dialects() function. The other op...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a writer object responsible for converting the user’s data into delimited strings on the given file-like object. csvfile can be any object with a write() method. If csvfile is a file object, it...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.890599",
+    "updatedDate": "2026-03-11T23:15:47.890600",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "csv/DictWriter/writeheader": {
+    "id": "csv.DictWriter.writeheader",
+    "name": "writeheader",
+    "type": "method",
+    "parent": "DictWriter",
+    "signatures": [
+      "DictWriter.writeheader()"
+    ],
+    "signature_hash": "17f4a0cd8826b3d08029f9fb7965bcfd1b16efe4679db974a31a4c12c23b91f2",
+    "url": "https://docs.python.org/3/library/csv.html#module-csv#csv.DictWriter.writeheader",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Write a row with the field names (as specified in the constructor) to the writer’s file object, formatted according to the current dialect. Return the return value of the csvwriter.writerow() call used internally. Added in version 3.2. Changed in version 3.8: writeheader() now also returns the value returned by the csvwriter.writerow() method it uses internally.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Write a row with the field names (as specified in the constructor) to the writer’s file object, formatted according to the current dialect. Return the return value of the csvwriter.writerow() call use...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891116",
+    "updatedDate": "2026-03-11T23:15:47.891116",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "csv/csvwriter/writerow": {
+    "id": "csv.csvwriter.writerow",
+    "name": "writerow",
+    "type": "method",
+    "parent": "csvwriter",
+    "signatures": [
+      "csvwriter.writerow(row, /)"
+    ],
+    "signature_hash": "16b5ed065beedd1be57b204a82effaf95f2dffb35bba1789037fe57bcfb64dd8",
+    "url": "https://docs.python.org/3/library/csv.html#module-csv#csv.csvwriter.writerow",
+    "parameters": [
+      {
+        "name": "row",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Write the row parameter to the writer’s file object, formatted according to the current Dialect. Return the return value of the call to the write method of the underlying file object. Changed in version 3.5: Added support of arbitrary iterables.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Write the row parameter to the writer’s file object, formatted according to the current Dialect. Return the return value of the call to the write method of the underlying file object. Changed in versi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891065",
+    "updatedDate": "2026-03-11T23:15:47.891066",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "csv/csvwriter/writerows": {
+    "id": "csv.csvwriter.writerows",
+    "name": "writerows",
+    "type": "method",
+    "parent": "csvwriter",
+    "signatures": [
+      "csvwriter.writerows(rows, /)"
+    ],
+    "signature_hash": "9c2e30a23a972609750bd2452c3de21d695f86a80aa6ba4cfe1887eff7342e1e",
+    "url": "https://docs.python.org/3/library/csv.html#module-csv#csv.csvwriter.writerows",
+    "parameters": [
+      {
+        "name": "rows",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Write all elements in rows (an iterable of row objects as described above) to the writer’s file object, formatted according to the current dialect.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Write all elements in rows (an iterable of row objects as described above) to the writer’s file object, formatted according to the current dialect.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891089",
+    "updatedDate": "2026-03-11T23:15:47.891090",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

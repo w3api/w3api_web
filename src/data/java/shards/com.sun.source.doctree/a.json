@@ -1,27 +1,29 @@
 {
-  "com.sun.source.doctree/AttributeTree.ValueKind": {
-    "id": "com.sun.source.doctree.AttributeTree.ValueKind",
-    "name": "AttributeTree.ValueKind",
-    "type": "enum",
-    "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/doctree/AttributeTree.ValueKind.html",
+  "com.sun.source.doctree/Kind/ATTRIBUTE": {
+    "id": "com.sun.source.doctree.Kind.ATTRIBUTE",
+    "name": "ATTRIBUTE",
+    "type": "enum_constant",
+    "parent": "Kind",
+    "signatures": [
+      "ATTRIBUTE"
+    ],
+    "signature_hash": "57dc5083c3434a9d44d5d0dfa9aa1e0ed15aca1b28fad32152e6b1d805e1aca7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.Kind.html",
     "parameters": [],
-    "return_type": "",
+    "return_type": "Kind",
     "exceptions": [],
-    "description": "",
+    "description": "Used for instances ofAttributeTreerepresenting an attribute in an HTML element or tag.",
     "example": "",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "",
+      "excerpt": "Used for instances ofAttributeTreerepresenting an attribute in an HTML element or tag.",
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:20.733559",
-    "updatedDate": "2026-03-08T21:40:20.733559",
+    "createdDate": "2026-03-11T23:15:40.060058",
+    "updatedDate": "2026-03-11T23:15:40.060059",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -29,19 +31,51 @@
       "tags": [],
       "difficulty": null,
       "popularity_score": 0
+    }
+  },
+  "com.sun.source.doctree/Kind/AUTHOR": {
+    "id": "com.sun.source.doctree.Kind.AUTHOR",
+    "name": "AUTHOR",
+    "type": "enum_constant",
+    "parent": "Kind",
+    "signatures": [
+      "AUTHOR"
+    ],
+    "signature_hash": "bb612d263d6024147d34a626776f3b3fa8e1ca279c2af04a9ed3f064f83f669a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.Kind.html",
+    "parameters": [],
+    "return_type": "Kind",
+    "exceptions": [],
+    "description": "Used for instances ofAuthorTreerepresenting an@authortag.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Used for instances ofAuthorTreerepresenting an@authortag.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
     },
-    "methods": [
-      "valueOf",
-      "values"
-    ]
+    "createdDate": "2026-03-11T23:15:40.060069",
+    "updatedDate": "2026-03-11T23:15:40.060070",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
   },
   "com.sun.source.doctree/AttributeTree": {
     "id": "com.sun.source.doctree.AttributeTree",
     "name": "AttributeTree",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface AttributeTree"
+    ],
+    "signature_hash": "baf43dbca24802ba6e4ca30ef83133cbeb4a73f7cbb135e935dedcae63a889e5",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/doctree/AttributeTree.html",
     "parameters": [],
     "return_type": "",
@@ -56,8 +90,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:20.733515",
-    "updatedDate": "2026-03-08T21:40:20.733515",
+    "createdDate": "2026-03-11T23:15:40.059625",
+    "updatedDate": "2026-03-11T23:15:40.059626",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -77,8 +111,10 @@
     "name": "AuthorTree",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface AuthorTree"
+    ],
+    "signature_hash": "082a87ac1a6efde8d826339b038816413d06b49613732ee6c356fda848c72a41",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/doctree/AuthorTree.html",
     "parameters": [],
     "return_type": "",
@@ -93,8 +129,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:20.733598",
-    "updatedDate": "2026-03-08T21:40:20.733598",
+    "createdDate": "2026-03-11T23:15:40.059755",
+    "updatedDate": "2026-03-11T23:15:40.059756",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -161,8 +197,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:20.733833",
-    "updatedDate": "2026-03-08T21:40:20.733834",
+    "createdDate": "2026-03-11T23:15:40.059978",
+    "updatedDate": "2026-03-11T23:15:40.059979",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

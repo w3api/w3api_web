@@ -1,0 +1,57 @@
+{
+  "itertools/zip_longest": {
+    "id": "itertools.zip_longest",
+    "name": "zip_longest",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.zip_longest(*iterables, fillvalue=None)"
+    ],
+    "signature_hash": "da6ba2dd379372991adc7330b3361e5c228165a6b6654d84d0a4e44344ba77ce",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.zip_longest",
+    "parameters": [
+      {
+        "name": "iterables",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fillvalue",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Make an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. If not specified, fillvalue defaults to None. Iteration continues until the longest iterable is exhausted. Roughly equivalent to: def zip_longest(*iterables, fillvalue=None): # zip_longest('ABCD', 'xy', fillvalue='-') → Ax By C- D- iterators = list(map(iter, iterables)) num_active = len(iterators) if not num_active: return while True: values...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Make an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. If not specified, fillvalue defaults to None. ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.955216",
+    "updatedDate": "2026-03-11T23:15:47.955217",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

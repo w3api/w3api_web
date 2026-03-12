@@ -1,0 +1,67 @@
+{
+  "email.utils/getaddresses": {
+    "id": "email.utils.getaddresses",
+    "name": "getaddresses",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "email.utils.getaddresses(fieldvalues, *, strict=True)"
+    ],
+    "signature_hash": "45db29e7d23de2f3e2a72abac2f028289255132f3990c78a4b93157e80cf101c",
+    "url": "https://docs.python.org/3/library/email.utils.html#module-email.utils#email.utils.getaddresses",
+    "parameters": [
+      {
+        "name": "fieldvalues",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "strict",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method returns a list of 2-tuples of the form returned by parseaddr(). fieldvalues is a sequence of header field values as might be returned by Message.get_all. If strict is true, use a strict parser which rejects malformed inputs. Here’s a simple example that gets all the recipients of a message: from email.utils import getaddresses tos = msg.get_all('to', []) ccs = msg.get_all('cc', []) resent_tos = msg.get_all('resent-to', []) resent_ccs = msg.get_all('resent-cc', []) all_recipients =...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method returns a list of 2-tuples of the form returned by parseaddr(). fieldvalues is a sequence of header field values as might be returned by Message.get_all. If strict is true, use a strict pa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923609",
+    "updatedDate": "2026-03-11T23:15:47.923610",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

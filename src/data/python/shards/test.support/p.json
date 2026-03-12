@@ -1,0 +1,258 @@
+{
+  "test.support/support/PGO": {
+    "id": "test.support.support.PGO",
+    "name": "PGO",
+    "type": "constant",
+    "parent": "support",
+    "signatures": [
+      "test.support.PGO"
+    ],
+    "signature_hash": "773fa7f52c50c899abbb91245c3227b3736b54693dde2d8d8acd386f8bd0f163",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.PGO",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set when tests can be skipped when they are not useful for PGO.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set when tests can be skipped when they are not useful for PGO.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062275",
+    "updatedDate": "2026-03-11T23:15:48.062276",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/support/PIPE_MAX_SIZE": {
+    "id": "test.support.support.PIPE_MAX_SIZE",
+    "name": "PIPE_MAX_SIZE",
+    "type": "constant",
+    "parent": "support",
+    "signatures": [
+      "test.support.PIPE_MAX_SIZE"
+    ],
+    "signature_hash": "4b0fe85d481aa5d283ee534192bf78682e717a9d076dbe388514cd164b97f7f6",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.PIPE_MAX_SIZE",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A constant that is likely larger than the underlying OS pipe buffer size, to make writes blocking.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A constant that is likely larger than the underlying OS pipe buffer size, to make writes blocking.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062287",
+    "updatedDate": "2026-03-11T23:15:48.062288",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/support/Py_DEBUG": {
+    "id": "test.support.support.Py_DEBUG",
+    "name": "Py_DEBUG",
+    "type": "constant",
+    "parent": "support",
+    "signatures": [
+      "test.support.Py_DEBUG"
+    ],
+    "signature_hash": "764dbc1234f96c2595005bd73d462ef2543f6453df5c5316f3a6ca4d0b0649eb",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.Py_DEBUG",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "True if Python was built with the Py_DEBUG macro defined, that is, if Python was built in debug mode. Added in version 3.12.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "True if Python was built with the Py_DEBUG macro defined, that is, if Python was built in debug mode. Added in version 3.12.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062298",
+    "updatedDate": "2026-03-11T23:15:48.062299",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/patch": {
+    "id": "test.support.patch",
+    "name": "patch",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.patch(test_instance, object_to_patch, attr_name, new_value)"
+    ],
+    "signature_hash": "95984dfe528a985c1f0d1289ae57026a549d8978060a8446f1909c6a43df7b12",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.patch",
+    "parameters": [
+      {
+        "name": "test_instance",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "object_to_patch",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attr_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "new_value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Override object_to_patch.attr_name with new_value. Also add cleanup procedure to test_instance to restore object_to_patch for attr_name. The attr_name should be a valid attribute for object_to_patch.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Override object_to_patch.attr_name with new_value. Also add cleanup procedure to test_instance to restore object_to_patch for attr_name. The attr_name should be a valid attribute for object_to_patch.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.063447",
+    "updatedDate": "2026-03-11T23:15:48.063448",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/print_warning": {
+    "id": "test.support.print_warning",
+    "name": "print_warning",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.print_warning(msg)"
+    ],
+    "signature_hash": "2ff79064c0d8c49b9ca78037323127a08eef564b093e315e143466fd1e2a9e5f",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.print_warning",
+    "parameters": [
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Print a warning into sys.__stderr__. Format the message as: f\"Warning -- {msg}\". If msg is made of multiple lines, add \"Warning -- \" prefix to each line. Added in version 3.9.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Print a warning into sys.__stderr__. Format the message as: f\"Warning -- {msg}\". If msg is made of multiple lines, add \"Warning -- \" prefix to each line. Added in version 3.9.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062839",
+    "updatedDate": "2026-03-11T23:15:48.062840",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.9.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/python_is_optimized": {
+    "id": "test.support.python_is_optimized",
+    "name": "python_is_optimized",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.python_is_optimized()"
+    ],
+    "signature_hash": "258646b145b228a7ca5d583e1857c8a43852d582c87ca70f10ed6358266c5eaf",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.python_is_optimized",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if Python was not built with -O0 or -Og.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if Python was not built with -O0 or -Og.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062546",
+    "updatedDate": "2026-03-11T23:15:48.062547",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "ast/BinOp": {
+    "id": "ast.BinOp",
+    "name": "BinOp",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.BinOp(left, op, right)"
+    ],
+    "signature_hash": "509184a8f6f7fb186023f80064442aea0e4a1cfb43251e65845a0d412ea7119f",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.BinOp",
+    "parameters": [
+      {
+        "name": "left",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "op",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "right",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A binary operation (like addition or division). op is the operator, and left and right are any expression nodes. >>> print(ast.dump(ast.parse('x + y', mode='eval'), indent=4)) Expression( body=BinOp( left=Name(id='x', ctx=Load()), op=Add(), right=Name(id='y', ctx=Load())))",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A binary operation (like addition or division). op is the operator, and left and right are any expression nodes. >>> print(ast.dump(ast.parse('x + y', mode='eval'), indent=4)) Expression( body=BinOp( ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878195",
+    "updatedDate": "2026-03-11T23:15:47.878196",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/BoolOp": {
+    "id": "ast.BoolOp",
+    "name": "BoolOp",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.BoolOp(op, values)"
+    ],
+    "signature_hash": "015a5d2bdfa131e08dc35ad6c9649db2b49728a93802d78661cf49b2b03a504e",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.BoolOp",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "values",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A boolean operation, ‘or’ or ‘and’. op is Or or And. values are the values involved. Consecutive operations with the same operator, such as a or b or c, are collapsed into one node with several values. This doesn’t include not, which is a UnaryOp. >>> print(ast.dump(ast.parse('x or y', mode='eval'), indent=4)) Expression( body=BoolOp( op=Or(), values=[ Name(id='x', ctx=Load()), Name(id='y', ctx=Load())]))",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A boolean operation, ‘or’ or ‘and’. op is Or or And. values are the values involved. Consecutive operations with the same operator, such as a or b or c, are collapsed into one node with several values...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878222",
+    "updatedDate": "2026-03-11T23:15:47.878223",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Break": {
+    "id": "ast.Break",
+    "name": "Break",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Break"
+    ],
+    "signature_hash": "609f63e54ee82a4c121d290248598af7b60749f2603be0adee165a75308097d3",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Break",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The break and continue statements. >>> print(ast.dump(ast.parse(\"\"\"\\ ... for a in b: ... if a > 5: ... break ... else: ... continue ... ... \"\"\"), indent=4)) Module( body=[ For( target=Name(id='a', ctx=Store()), iter=Name(id='b', ctx=Load()), body=[ If( test=Compare( left=Name(id='a', ctx=Load()), ops=[ Gt()], comparators=[ Constant(value=5)]), body=[ Break()], orelse=[ Continue()])])])",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The break and continue statements. >>> print(ast.dump(ast.parse(\"\"\"\\ ... for a in b: ... if a > 5: ... break ... else: ... continue ... ... \"\"\"), indent=4)) Module( body=[ For( target=Name(id='a', ctx...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878797",
+    "updatedDate": "2026-03-11T23:15:47.878798",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

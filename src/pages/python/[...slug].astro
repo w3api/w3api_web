@@ -1,6 +1,6 @@
 ---
 import StarlightLayout from '../../layouts/StarlightLayout.astro';
-import { sidebar } from '../../config/sidebar';
+import { sidebar } from '../../config/python_sidebar';
 import { Code } from "astro-expressive-code/components";
 import rutas from '../../data/python/routes.json'
 import { Breadcrumbs } from "astro-breadcrumbs";
@@ -73,7 +73,7 @@ if (isPackageOnly) {
   doc = shard[packageName]
   
   if (doc) {
-    // Agrupar elementos por tipo (classes, interfaces, exceptions, enums, annotations)
+    // Agrupar elementos por tipo (classes, functions, methods, constants, exceptions para Python)
     const membersByType: any = {}
     
     // Propiedades que contienen listas de miembros
@@ -85,35 +85,35 @@ if (isPackageOnly) {
       }))
     }
     
-    if (doc.interfaces && Array.isArray(doc.interfaces)) {
-      membersByType.interface = doc.interfaces.map((name: string) => ({
+    if (doc.functions && Array.isArray(doc.functions)) {
+      membersByType.function = doc.functions.map((name: string) => ({
         name: name,
         slug: `${packageName}/${name}`,
-        type: 'interface'
+        type: 'function'
+      }))
+    }
+    
+    if (doc.methods && Array.isArray(doc.methods)) {
+      membersByType.method = doc.methods.map((name: string) => ({
+        name: name,
+        slug: `${packageName}/${name}`,
+        type: 'method'
+      }))
+    }
+    
+    if (doc.constants && Array.isArray(doc.constants)) {
+      membersByType.constant = doc.constants.map((name: string) => ({
+        name: name,
+        slug: `${packageName}/${name}`,
+        type: 'constant'
       }))
     }
     
     if (doc.exceptions && Array.isArray(doc.exceptions)) {
       membersByType.exception = doc.exceptions.map((exception: any) => ({
-        name: exception.name,
-        slug: `${packageName}/${exception.name}`,
+        name: typeof exception === 'string' ? exception : exception.name,
+        slug: `${packageName}/${typeof exception === 'string' ? exception : exception.name}`,
         type: 'exception'
-      }))
-    }
-    
-    if (doc.enums && Array.isArray(doc.enums)) {
-      membersByType.enum = doc.enums.map((name: string) => ({
-        name: name,
-        slug: `${packageName}/${name}`,
-        type: 'enum'
-      }))
-    }
-    
-    if (doc.annotations && Array.isArray(doc.annotations)) {
-      membersByType.annotation = doc.annotations.map((name: string) => ({
-        name: name,
-        slug: `${packageName}/${name}`,
-        type: 'annotation'
       }))
     }
     
@@ -173,7 +173,7 @@ const tableOfContents = headings.map(h => ({
   tableOfContents={tableOfContents}
   currentLanguage="python"  
   logoSrc='/logo.webp'
-  filterLabel="Paquetes"
+  filterLabel="Módulos"
 >
 
 <main>
@@ -280,6 +280,19 @@ const tableOfContents = headings.map(h => ({
     </section>
   )}  
 
+  {!isPackagePage && doc.parameters && doc.parameters.length > 0 && (
+    <section id="parameters">
+      <h2>Parameters</h2>
+      <ul>
+        {doc.parameters.map((param: any) => (
+          <li>
+            <strong>{param.type} {param.name}</strong> - {param.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
   {!isPackagePage && doc.constructors && doc.constructors.length > 0 && (
     <section id="constructors">
       <h2>Constructors</h2>
@@ -328,18 +341,6 @@ const tableOfContents = headings.map(h => ({
         ))}
       </ul>
       </div>
-    </section>
-  )}
-    {!isPackagePage && doc.parameters && doc.parameters.length > 0 && (
-    <section id="parameters">
-      <h2>Parameters</h2>
-      <ul>
-        {doc.parameters.map((param: any) => (
-          <li>
-            <strong>{param.type} {param.name}</strong> - {param.description}
-          </li>
-        ))}
-      </ul>
     </section>
   )}
 

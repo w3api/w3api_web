@@ -1,0 +1,367 @@
+{
+  "random/SystemRandom": {
+    "id": "random.SystemRandom",
+    "name": "SystemRandom",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class random.SystemRandom([seed])"
+    ],
+    "signature_hash": "5d2f39ce2895544e876e7a7338b7b45447ac9a4a318a1be08db5f7ced3ca807a",
+    "url": "https://docs.python.org/3/library/random.html#module-random#random.SystemRandom",
+    "parameters": [
+      {
+        "name": "seed",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Class that uses the os.urandom() function for generating random numbers from sources provided by the operating system. Not available on all systems. Does not rely on software state, and sequences are not reproducible. Accordingly, the seed() method has no effect and is ignored. The getstate() and setstate() methods raise NotImplementedError if called.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Class that uses the os.urandom() function for generating random numbers from sources provided by the operating system. Not available on all systems. Does not rely on software state, and sequences are ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.034540",
+    "updatedDate": "2026-03-11T23:15:48.034541",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "random/sample": {
+    "id": "random.sample",
+    "name": "sample",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "random.sample(population, k, *, counts=None)"
+    ],
+    "signature_hash": "d30be3600185bc1d36d66cf957808d3fcecf16ecdba9aa0b01581937a5b7780c",
+    "url": "https://docs.python.org/3/library/random.html#module-random#random.sample",
+    "parameters": [
+      {
+        "name": "population",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "k",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "counts",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a k length list of unique elements chosen from the population sequence. Used for random sampling without replacement. Returns a new list containing elements from the population while leaving the original population unchanged. The resulting list is in selection order so that all sub-slices will also be valid random samples. This allows raffle winners (the sample) to be partitioned into grand prize and second place winners (the subslices). Members of the population need not be hashable o...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a k length list of unique elements chosen from the population sequence. Used for random sampling without replacement. Returns a new list containing elements from the population while leaving th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.034232",
+    "updatedDate": "2026-03-11T23:15:48.034233",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "random/seed": {
+    "id": "random.seed",
+    "name": "seed",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "random.seed(a=None, version=2)"
+    ],
+    "signature_hash": "50db6d204166a69a5eb7dd3ab793dbc19c40c040d94265e4c031a8bce51e09a8",
+    "url": "https://docs.python.org/3/library/random.html#module-random#random.seed",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "version",
+        "type": "",
+        "has_default": true,
+        "default_value": "2",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Initialize the random number generator. If a is omitted or None, the current system time is used. If randomness sources are provided by the operating system, they are used instead of the system time (see the os.urandom() function for details on availability). If a is an int, its absolute value is used directly. With version 2 (the default), a str, bytes, or bytearray object gets converted to an int and all of its bits are used. With version 1 (provided for reproducing random sequences from ol...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Initialize the random number generator. If a is omitted or None, the current system time is used. If randomness sources are provided by the operating system, they are used instead of the system time (...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.034063",
+    "updatedDate": "2026-03-11T23:15:48.034064",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "random/setstate": {
+    "id": "random.setstate",
+    "name": "setstate",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "random.setstate(state)"
+    ],
+    "signature_hash": "aa1721dacb83a5a8c6e7e0242d0ee23df30d3c7530a1ffcb789728027a35efd0",
+    "url": "https://docs.python.org/3/library/random.html#module-random#random.setstate",
+    "parameters": [
+      {
+        "name": "state",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "state should have been obtained from a previous call to getstate(), and setstate() restores the internal state of the generator to what it was at the time getstate() was called.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "state should have been obtained from a previous call to getstate(), and setstate() restores the internal state of the generator to what it was at the time getstate() was called.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.034085",
+    "updatedDate": "2026-03-11T23:15:48.034086",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "random/shuffle": {
+    "id": "random.shuffle",
+    "name": "shuffle",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "random.shuffle(x)"
+    ],
+    "signature_hash": "808b01ec89f3503179971c22d76f59126b17119a7d0ac66765856e4a08bfe59d",
+    "url": "https://docs.python.org/3/library/random.html#module-random#random.shuffle",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Shuffle the sequence x in place. To shuffle an immutable sequence and return a new shuffled list, use sample(x, k=len(x)) instead. Note that even for small len(x), the total number of permutations of x can quickly grow larger than the period of most random number generators. This implies that most permutations of a long sequence can never be generated. For example, a sequence of length 2080 is the largest that can fit within the period of the Mersenne Twister random number generator. Changed ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Shuffle the sequence x in place. To shuffle an immutable sequence and return a new shuffled list, use sample(x, k=len(x)) instead. Note that even for small len(x), the total number of permutations of ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.034213",
+    "updatedDate": "2026-03-11T23:15:48.034214",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "random/Random/seed": {
+    "id": "random.Random.seed",
+    "name": "seed",
+    "type": "method",
+    "parent": "Random",
+    "signatures": [
+      "seed(a=None, version=2)"
+    ],
+    "signature_hash": "aca94cbd037478334287c1b2adb0d4108ac67cca55564755234a9f79e3ff3044",
+    "url": "https://docs.python.org/3/library/random.html#module-random#random.Random.seed",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "version",
+        "type": "",
+        "has_default": true,
+        "default_value": "2",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Override this method in subclasses to customise the seed() behaviour of Random instances.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Override this method in subclasses to customise the seed() behaviour of Random instances.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.034452",
+    "updatedDate": "2026-03-11T23:15:48.034453",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "random/Random/setstate": {
+    "id": "random.Random.setstate",
+    "name": "setstate",
+    "type": "method",
+    "parent": "Random",
+    "signatures": [
+      "setstate(state)"
+    ],
+    "signature_hash": "5de42bd1371df19aec8f3bbf980ae0dc25a4189c7fb4d4400c0e3a88af916c60",
+    "url": "https://docs.python.org/3/library/random.html#module-random#random.Random.setstate",
+    "parameters": [
+      {
+        "name": "state",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Override this method in subclasses to customise the setstate() behaviour of Random instances.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Override this method in subclasses to customise the setstate() behaviour of Random instances.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.034478",
+    "updatedDate": "2026-03-11T23:15:48.034479",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "weakref/WeakKeyDictionary": {
+    "id": "weakref.WeakKeyDictionary",
+    "name": "WeakKeyDictionary",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class weakref.WeakKeyDictionary([dict])"
+    ],
+    "signature_hash": "52f0f5589a3922f4d74c526ea86089d05c5d6ed534c6b6ba1b99bc36e7f4a4cf",
+    "url": "https://docs.python.org/3/library/weakref.html#module-weakref#weakref.WeakKeyDictionary",
+    "parameters": [
+      {
+        "name": "dict",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Mapping class that references keys weakly. Entries in the dictionary will be discarded when there is no longer a strong reference to the key. This can be used to associate additional data with an object owned by other parts of an application without adding attributes to those objects. This can be especially useful with objects that override attribute accesses. Note that when a key with equal value to an existing key (but not equal identity) is inserted into the dictionary, it replaces the val...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Mapping class that references keys weakly. Entries in the dictionary will be discarded when there is no longer a strong reference to the key. This can be used to associate additional data with an obje...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.113127",
+    "updatedDate": "2026-03-11T23:15:48.113128",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "keyrefs"
+    ]
+  },
+  "weakref/WeakMethod": {
+    "id": "weakref.WeakMethod",
+    "name": "WeakMethod",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class weakref.WeakMethod(method[, callback])"
+    ],
+    "signature_hash": "81fedc3d8c2fa8b42cc1223bed79ebe227a9ec28a4f17792aa77f1e355f31d17",
+    "url": "https://docs.python.org/3/library/weakref.html#module-weakref#weakref.WeakMethod",
+    "parameters": [
+      {
+        "name": "method[, callback",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A custom ref subclass which simulates a weak reference to a bound method (i.e., a method defined on a class and looked up on an instance). Since a bound method is ephemeral, a standard weak reference cannot keep hold of it. WeakMethod has special code to recreate the bound method until either the object or the original function dies: >>> class C: ... def method(self): ... print(\"method called!\") ... >>> c = C() >>> r = weakref.ref(c.method) >>> r() >>> r = weakref.WeakMethod(c.method) >>> r()...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A custom ref subclass which simulates a weak reference to a bound method (i.e., a method defined on a class and looked up on an instance). Since a bound method is ephemeral, a standard weak reference ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.113196",
+    "updatedDate": "2026-03-11T23:15:48.113197",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "weakref/WeakSet": {
+    "id": "weakref.WeakSet",
+    "name": "WeakSet",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class weakref.WeakSet([elements])"
+    ],
+    "signature_hash": "f27a528558b56bf27c43f11526d0c046aa354af62c23c3cb3f69402895da80b3",
+    "url": "https://docs.python.org/3/library/weakref.html#module-weakref#weakref.WeakSet",
+    "parameters": [
+      {
+        "name": "elements",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set class that keeps weak references to its elements. An element will be discarded when no strong reference to it exists any more.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set class that keeps weak references to its elements. An element will be discarded when no strong reference to it exists any more.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.113179",
+    "updatedDate": "2026-03-11T23:15:48.113180",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "weakref/WeakValueDictionary": {
+    "id": "weakref.WeakValueDictionary",
+    "name": "WeakValueDictionary",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class weakref.WeakValueDictionary([dict])"
+    ],
+    "signature_hash": "e8eeb3710fd72bab117ebac186c42c3b3d74647a63bf3f078296613cb44dcf2d",
+    "url": "https://docs.python.org/3/library/weakref.html#module-weakref#weakref.WeakValueDictionary",
+    "parameters": [
+      {
+        "name": "dict",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Mapping class that references values weakly. Entries in the dictionary will be discarded when no strong reference to the value exists any more. Changed in version 3.9: Added support for | and |= operators, as specified in PEP 584.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Mapping class that references values weakly. Entries in the dictionary will be discarded when no strong reference to the value exists any more. Changed in version 3.9: Added support for | and |= opera...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.113153",
+    "updatedDate": "2026-03-11T23:15:48.113154",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "valuerefs"
+    ]
+  },
+  "weakref": {
+    "type": "module",
+    "name": "weakref",
+    "id": "weakref",
+    "description": "Module weakref",
+    "classes": [
+      "WeakKeyDictionary",
+      "WeakMethod",
+      "WeakSet",
+      "WeakValueDictionary",
+      "finalize",
+      "ref"
+    ],
+    "constants": [
+      "CallableProxyType",
+      "ProxyType",
+      "ProxyTypes",
+      "ReferenceType"
+    ],
+    "functions": [
+      "getweakrefcount",
+      "getweakrefs",
+      "proxy"
+    ]
+  }
+}

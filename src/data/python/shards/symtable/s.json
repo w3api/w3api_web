@@ -1,0 +1,227 @@
+{
+  "symtable/Symbol": {
+    "id": "symtable.Symbol",
+    "name": "Symbol",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class symtable.Symbol"
+    ],
+    "signature_hash": "8390edfda92d4fd84fbaf8f5488f2fe17e94234067e1c7953b026b4e88c73cd5",
+    "url": "https://docs.python.org/3/library/symtable.html#module-symtable#symtable.Symbol",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An entry in a SymbolTable corresponding to an identifier in the source. The constructor is not public. get_name()¶ Return the symbol’s name. is_referenced()¶ Return True if the symbol is used in its block. is_imported()¶ Return True if the symbol is created from an import statement. is_parameter()¶ Return True if the symbol is a parameter. is_type_parameter()¶ Return True if the symbol is a type parameter. Added in version 3.14. is_global()¶ Return True if the symbol is global. is_nonlocal()¶...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An entry in a SymbolTable corresponding to an identifier in the source. The constructor is not public. get_name()¶ Return the symbol’s name. is_referenced()¶ Return True if the symbol is used in its b...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.050856",
+    "updatedDate": "2026-03-11T23:15:48.050857",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "get_name",
+      "get_namespace",
+      "get_namespaces",
+      "is_annotated",
+      "is_assigned",
+      "is_comp_cell",
+      "is_comp_iter",
+      "is_declared_global",
+      "is_free",
+      "is_free_class",
+      "is_global",
+      "is_imported",
+      "is_local",
+      "is_namespace",
+      "is_nonlocal",
+      "is_parameter",
+      "is_referenced",
+      "is_type_parameter"
+    ]
+  },
+  "symtable/SymbolTable": {
+    "id": "symtable.SymbolTable",
+    "name": "SymbolTable",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class symtable.SymbolTable"
+    ],
+    "signature_hash": "39c2c5560e43ba19e5affc7cdd0fd994b4d63c0b76784875bad3782c84056b4c",
+    "url": "https://docs.python.org/3/library/symtable.html#module-symtable#symtable.SymbolTable",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A namespace table for a block. The constructor is not public. get_type()¶ Return the type of the symbol table. Possible values are members of the SymbolTableType enumeration. Changed in version 3.12: Added 'annotation', 'TypeVar bound', 'type alias', and 'type parameter' as possible return values. Changed in version 3.13: Return values are members of the SymbolTableType enumeration. The exact values of the returned string may change in the future, and thus, it is recommended to use SymbolTabl...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A namespace table for a block. The constructor is not public. get_type()¶ Return the type of the symbol table. Possible values are members of the SymbolTableType enumeration. Changed in version 3.12: ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.050592",
+    "updatedDate": "2026-03-11T23:15:48.050593",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "get_children",
+      "get_id",
+      "get_identifiers",
+      "get_lineno",
+      "get_name",
+      "get_symbols",
+      "get_type",
+      "has_children",
+      "is_nested",
+      "is_optimized",
+      "lookup"
+    ]
+  },
+  "symtable/SymbolTableType": {
+    "id": "symtable.SymbolTableType",
+    "name": "SymbolTableType",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class symtable.SymbolTableType"
+    ],
+    "signature_hash": "03a75269f543155dba1812d0128cda353a2aae79408cc0084d27e95dd720d757",
+    "url": "https://docs.python.org/3/library/symtable.html#module-symtable#symtable.SymbolTableType",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An enumeration indicating the type of a SymbolTable object. MODULE = \"module\"¶ Used for the symbol table of a module. FUNCTION = \"function\"¶ Used for the symbol table of a function. CLASS = \"class\"¶ Used for the symbol table of a class. The following members refer to different flavors of annotation scopes. ANNOTATION = \"annotation\"¶ Used for annotations if from __future__ import annotations is active. TYPE_ALIAS = \"type alias\"¶ Used for the symbol table of type constructions. TYPE_PARAMETERS ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An enumeration indicating the type of a SymbolTable object. MODULE = \"module\"¶ Used for the symbol table of a module. FUNCTION = \"function\"¶ Used for the symbol table of a function. CLASS = \"class\"¶ U...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.050501",
+    "updatedDate": "2026-03-11T23:15:48.050501",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "ANNOTATION",
+      "CLASS",
+      "FUNCTION",
+      "MODULE",
+      "TYPE_ALIAS",
+      "TYPE_PARAMETERS",
+      "TYPE_VARIABLE"
+    ]
+  },
+  "symtable/symtable": {
+    "id": "symtable.symtable",
+    "name": "symtable",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "symtable.symtable(code, filename, compile_type)"
+    ],
+    "signature_hash": "db6f32e70834285dcab052c5a95ca928079a8f50f4f9b42dbf9d0f4abefeaa07",
+    "url": "https://docs.python.org/3/library/symtable.html#module-symtable#symtable.symtable",
+    "parameters": [
+      {
+        "name": "code",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "compile_type",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the toplevel SymbolTable for the Python source code. filename is the name of the file containing the code. compile_type is like the mode argument to compile().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the toplevel SymbolTable for the Python source code. filename is the name of the file containing the code. compile_type is like the mode argument to compile().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.050486",
+    "updatedDate": "2026-03-11T23:15:48.050487",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "symtable": {
+    "type": "module",
+    "name": "symtable",
+    "id": "symtable",
+    "description": "Module symtable",
+    "classes": [
+      "Class",
+      "Function",
+      "Symbol",
+      "SymbolTable",
+      "SymbolTableType"
+    ],
+    "functions": [
+      "symtable"
+    ]
+  }
+}

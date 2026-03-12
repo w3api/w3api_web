@@ -1,0 +1,191 @@
+{
+  "ast/Eq": {
+    "id": "ast.Eq",
+    "name": "Eq",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Eq"
+    ],
+    "signature_hash": "27c517dee1d55489614832adb76fdee9fd50ad2b29f259e76078576952cabaec",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Eq",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Comparison operator tokens.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Comparison operator tokens.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878266",
+    "updatedDate": "2026-03-11T23:15:47.878267",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/ExceptHandler": {
+    "id": "ast.ExceptHandler",
+    "name": "ExceptHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.ExceptHandler(type, name, body)"
+    ],
+    "signature_hash": "c9c69b431e3a2376fa3503b43e70b57384bc3617418510013ec177cc959bb7ba",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.ExceptHandler",
+    "parameters": [
+      {
+        "name": "type",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "body",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A single except clause. type is the exception type it will match, typically a Name node (or None for a catch-all except: clause). name is a raw string for the name to hold the exception, or None if the clause doesn’t have as foo. body is a list of nodes. >>> print(ast.dump(ast.parse(\"\"\"\\ ... try: ... a + 1 ... except TypeError: ... pass ... \"\"\"), indent=4)) Module( body=[ Try( body=[ Expr( value=BinOp( left=Name(id='a', ctx=Load()), op=Add(), right=Constant(value=1)))], handlers=[ ExceptHandl...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A single except clause. type is the exception type it will match, typically a Name node (or None for a catch-all except: clause). name is a raw string for the name to hold the exception, or None if th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878862",
+    "updatedDate": "2026-03-11T23:15:47.878862",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Expr": {
+    "id": "ast.Expr",
+    "name": "Expr",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Expr(value)"
+    ],
+    "signature_hash": "14293443829f01ffd6127a9fa82593515749f2b0306f1339be8cf96ca2cc0d24",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Expr",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "When an expression, such as a function call, appears as a statement by itself with its return value not used or stored, it is wrapped in this container. value holds one of the other nodes in this section, a Constant, a Name, a Lambda, a Yield or YieldFrom node. >>> print(ast.dump(ast.parse('-a'), indent=4)) Module( body=[ Expr( value=UnaryOp( op=USub(), operand=Name(id='a', ctx=Load())))])",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "When an expression, such as a function call, appears as a statement by itself with its return value not used or stored, it is wrapped in this container. value holds one of the other nodes in this sect...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878151",
+    "updatedDate": "2026-03-11T23:15:47.878151",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Expression": {
+    "id": "ast.Expression",
+    "name": "Expression",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Expression(body)"
+    ],
+    "signature_hash": "cf0856f1510fd9c70ebf44152824c0a47723ffd99af2daa25a3f66e2548ea5d9",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Expression",
+    "parameters": [
+      {
+        "name": "body",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A single Python expression input. Node type generated by ast.parse() when mode is \"eval\". body is a single node, one of the expression types. >>> print(ast.dump(ast.parse('123', mode='eval'), indent=4)) Expression( body=Constant(value=123))",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A single Python expression input. Node type generated by ast.parse() when mode is \"eval\". body is a single node, one of the expression types. >>> print(ast.dump(ast.parse('123', mode='eval'), indent=4...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.877901",
+    "updatedDate": "2026-03-11T23:15:47.877902",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

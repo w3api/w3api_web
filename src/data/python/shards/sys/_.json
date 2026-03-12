@@ -1,0 +1,624 @@
+{
+  "sys/__breakpointhook__": {
+    "id": "sys.__breakpointhook__",
+    "name": "__breakpointhook__",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "sys.__breakpointhook__"
+    ],
+    "signature_hash": "4b6035279012fc741e20710df53327da63e557a04a29e29fa1d64816c6b4ab04",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys.__breakpointhook__",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "These objects contain the original values of breakpointhook, displayhook, excepthook, and unraisablehook at the start of the program. They are saved so that breakpointhook, displayhook and excepthook, unraisablehook can be restored in case they happen to get replaced with broken or alternative objects. Added in version 3.7: __breakpointhook__ Added in version 3.8: __unraisablehook__",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "These objects contain the original values of breakpointhook, displayhook, excepthook, and unraisablehook at the start of the program. They are saved so that breakpointhook, displayhook and excepthook,...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.051712",
+    "updatedDate": "2026-03-11T23:15:48.051713",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/__interactivehook__": {
+    "id": "sys.__interactivehook__",
+    "name": "__interactivehook__",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "sys.__interactivehook__"
+    ],
+    "signature_hash": "23faf10e89d8034595347759c93139f08b26d93b0f5e1063f37d2003e6ae6a9f",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys.__interactivehook__",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "When this attribute exists, its value is automatically called (with no arguments) when the interpreter is launched in interactive mode. This is done after the PYTHONSTARTUP file is read, so that you can set this hook there. The site module sets this. Raises an auditing event cpython.run_interactivehook with the hook object as the argument when the hook is called on startup. Added in version 3.4.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "When this attribute exists, its value is automatically called (with no arguments) when the interpreter is launched in interactive mode. This is done after the PYTHONSTARTUP file is read, so that you c...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.052799",
+    "updatedDate": "2026-03-11T23:15:48.052800",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/__stdin__": {
+    "id": "sys.__stdin__",
+    "name": "__stdin__",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "sys.__stdin__"
+    ],
+    "signature_hash": "37c3f070c6660fbf3b626b98d2257379305e2ecd5424ac51a67ce1ca726b39f7",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys.__stdin__",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "These objects contain the original values of stdin, stderr and stdout at the start of the program. They are used during finalization, and could be useful to print to the actual standard stream no matter if the sys.std* object has been redirected. It can also be used to restore the actual files to known working file objects in case they have been overwritten with a broken object. However, the preferred way to do this is to explicitly save the previous stream before replacing it, and restore th...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "These objects contain the original values of stdin, stderr and stdout at the start of the program. They are used during finalization, and could be useful to print to the actual standard stream no matt...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.053488",
+    "updatedDate": "2026-03-11T23:15:48.053489",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_emscripten_info": {
+    "id": "sys._emscripten_info",
+    "name": "_emscripten_info",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "sys._emscripten_info"
+    ],
+    "signature_hash": "af9bb195599e503e25fdc0acc2368852f8ce8e5915cbd2b81c40697f923dbfe8",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._emscripten_info",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A named tuple holding information about the environment on the wasm32-emscripten platform. The named tuple is provisional and may change in the future. _emscripten_info.emscripten_version¶ Emscripten version as tuple of ints (major, minor, micro), e.g. (3, 1, 8). _emscripten_info.runtime¶ Runtime string, e.g. browser user agent, 'Node.js v14.18.2', or 'UNKNOWN'. _emscripten_info.pthreads¶ True if Python is compiled with Emscripten pthreads support. _emscripten_info.shared_memory¶ True if Pyth...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A named tuple holding information about the environment on the wasm32-emscripten platform. The named tuple is provisional and may change in the future. _emscripten_info.emscripten_version¶ Emscripten ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.051619",
+    "updatedDate": "2026-03-11T23:15:48.051619",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_jit": {
+    "id": "sys._jit",
+    "name": "_jit",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "sys._jit"
+    ],
+    "signature_hash": "6eee693342a5722e98b4c5343fb4c12988fcb5d9d71263e7a2870eea7c101102",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._jit",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Utilities for observing just-in-time compilation. CPython implementation detail: JIT compilation is an experimental implementation detail of CPython. sys._jit is not guaranteed to exist or behave the same way in all Python implementations, versions, or build configurations. Added in version 3.14. _jit.is_available()¶ Return True if the current Python executable supports JIT compilation, and False otherwise. This can be controlled by building CPython with the --experimental-jit option on Windo...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Utilities for observing just-in-time compilation. CPython implementation detail: JIT compilation is an experimental implementation detail of CPython. sys._jit is not guaranteed to exist or behave the ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.052864",
+    "updatedDate": "2026-03-11T23:15:48.052865",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_xoptions": {
+    "id": "sys._xoptions",
+    "name": "_xoptions",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "sys._xoptions"
+    ],
+    "signature_hash": "c679cd8b9322676fb9b370b2bbe74d3eccba9208cbcc5f383e95de51c09d6b1b",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._xoptions",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A dictionary of the various implementation-specific flags passed through the -X command-line option. Option names are either mapped to their values, if given explicitly, or to True. Example: $ ./python -Xa=b -Xc Python 3.2a3+ (py3k, Oct 16 2010, 20:14:50) [GCC 4.4.3] on linux2 Type \"help\", \"copyright\", \"credits\" or \"license\" for more information. >>> import sys >>> sys._xoptions {'a': 'b', 'c': True} CPython implementation detail: This is a CPython-specific way of accessing options passed thr...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A dictionary of the various implementation-specific flags passed through the -X command-line option. Option names are either mapped to their values, if given explicitly, or to True. Example: $ ./pytho...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.053728",
+    "updatedDate": "2026-03-11T23:15:48.053729",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_clear_internal_caches": {
+    "id": "sys._clear_internal_caches",
+    "name": "_clear_internal_caches",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._clear_internal_caches()"
+    ],
+    "signature_hash": "15bf5978578da8d14c3d58bc114523dd10be7e84c11beb47453bbbc5a2f7d717",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._clear_internal_caches",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Clear all internal performance-related caches. Use this function only to release unnecessary references and memory blocks when hunting for leaks. Added in version 3.13.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Clear all internal performance-related caches. Use this function only to release unnecessary references and memory blocks when hunting for leaks. Added in version 3.13.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.051507",
+    "updatedDate": "2026-03-11T23:15:48.051508",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_clear_type_cache": {
+    "id": "sys._clear_type_cache",
+    "name": "_clear_type_cache",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._clear_type_cache()"
+    ],
+    "signature_hash": "c829e2ba8cb9273d2336d6db4dad5ec89e7108cce66623deaf8d29c83afd987d",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._clear_type_cache",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Clear the internal type cache. The type cache is used to speed up attribute and method lookups. Use the function only to drop unnecessary references during reference leak debugging. This function should be used for internal and specialized purposes only. Deprecated since version 3.13: Use the more general _clear_internal_caches() function instead.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Clear the internal type cache. The type cache is used to speed up attribute and method lookups. Use the function only to drop unnecessary references during reference leak debugging. This function shou...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.051494",
+    "updatedDate": "2026-03-11T23:15:48.051495",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.13",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_current_exceptions": {
+    "id": "sys._current_exceptions",
+    "name": "_current_exceptions",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._current_exceptions()"
+    ],
+    "signature_hash": "184ca99ed1366abfa6614216dd46dfe2b11a3732730e92a0f3347eec462c7a7b",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._current_exceptions",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a dictionary mapping each thread’s identifier to the topmost exception currently active in that thread at the time the function is called. If a thread is not currently handling an exception, it is not included in the result dictionary. This is most useful for statistical profiling. This function should be used for internal and specialized purposes only. Raises an auditing event sys._current_exceptions with no arguments. Changed in version 3.12: Each value in the dictionary is now a sin...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a dictionary mapping each thread’s identifier to the topmost exception currently active in that thread at the time the function is called. If a thread is not currently handling an exception, it...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.051542",
+    "updatedDate": "2026-03-11T23:15:48.051543",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_current_frames": {
+    "id": "sys._current_frames",
+    "name": "_current_frames",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._current_frames()"
+    ],
+    "signature_hash": "c523df985d9244e9ce8c895fc8e3ca05df180c202bfa26a73488aa8eb7ef7fe4",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._current_frames",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a dictionary mapping each thread’s identifier to the topmost stack frame currently active in that thread at the time the function is called. Note that functions in the traceback module can build the call stack given such a frame. This is most useful for debugging deadlock: this function does not require the deadlocked threads’ cooperation, and such threads’ call stacks are frozen for as long as they remain deadlocked. The frame returned for a non-deadlocked thread may bear no relations...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a dictionary mapping each thread’s identifier to the topmost stack frame currently active in that thread at the time the function is called. Note that functions in the traceback module can buil...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.051520",
+    "updatedDate": "2026-03-11T23:15:48.051521",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_debugmallocstats": {
+    "id": "sys._debugmallocstats",
+    "name": "_debugmallocstats",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._debugmallocstats()"
+    ],
+    "signature_hash": "9fef08d58fb1fbf04bea904dd2bc498d3fcbe22c1ee5a2fbe93eb46642ea5bc9",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._debugmallocstats",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Print low-level information to stderr about the state of CPython’s memory allocator. If Python is built in debug mode (configure --with-pydebug option), it also performs some expensive internal consistency checks. Added in version 3.3. CPython implementation detail: This function is specific to CPython. The exact output format is not defined here, and may change.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Print low-level information to stderr about the state of CPython’s memory allocator. If Python is built in debug mode (configure --with-pydebug option), it also performs some expensive internal consis...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.051568",
+    "updatedDate": "2026-03-11T23:15:48.051569",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_enablelegacywindowsfsencoding": {
+    "id": "sys._enablelegacywindowsfsencoding",
+    "name": "_enablelegacywindowsfsencoding",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._enablelegacywindowsfsencoding()"
+    ],
+    "signature_hash": "e669b551dc59e8d95e7cffcd720e21b14b2aa0da4ade8c4d4f6b213bcbe56509",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._enablelegacywindowsfsencoding",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Changes the filesystem encoding and error handler to ‘mbcs’ and ‘replace’ respectively, for consistency with versions of Python prior to 3.6. This is equivalent to defining the PYTHONLEGACYWINDOWSFSENCODING environment variable before launching Python. See also sys.getfilesystemencoding() and sys.getfilesystemencodeerrors(). Availability: Windows. Note Changing the filesystem encoding after Python startup is risky because the old fsencoding or paths encoded by the old fsencoding may be cached...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Changes the filesystem encoding and error handler to ‘mbcs’ and ‘replace’ respectively, for consistency with versions of Python prior to 3.6. This is equivalent to defining the PYTHONLEGACYWINDOWSFSEN...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.053443",
+    "updatedDate": "2026-03-11T23:15:48.053444",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.13",
+      "added_version": "3.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_getframe": {
+    "id": "sys._getframe",
+    "name": "_getframe",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._getframe([depth])"
+    ],
+    "signature_hash": "199e3b4cf56426154e7357b7434999bfe054634a2bd74a7dd8402cf10f20847d",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._getframe",
+    "parameters": [
+      {
+        "name": "depth",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a frame object from the call stack. If optional integer depth is given, return the frame object that many calls below the top of the stack. If that is deeper than the call stack, ValueError is raised. The default for depth is zero, returning the frame at the top of the call stack. Raises an auditing event sys._getframe with argument frame. CPython implementation detail: This function should be used for internal and specialized purposes only. It is not guaranteed to exist in all impleme...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a frame object from the call stack. If optional integer depth is given, return the frame object that many calls below the top of the stack. If that is deeper than the call stack, ValueError is ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.052393",
+    "updatedDate": "2026-03-11T23:15:48.052394",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_getframemodulename": {
+    "id": "sys._getframemodulename",
+    "name": "_getframemodulename",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._getframemodulename([depth])"
+    ],
+    "signature_hash": "06408f37a4348db85f97f17b43e391a5cfbe600b2551ecedd088d2c678bf015e",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._getframemodulename",
+    "parameters": [
+      {
+        "name": "depth",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the name of a module from the call stack. If optional integer depth is given, return the module that many calls below the top of the stack. If that is deeper than the call stack, or if the module is unidentifiable, None is returned. The default for depth is zero, returning the module at the top of the call stack. Raises an auditing event sys._getframemodulename with argument depth. CPython implementation detail: This function should be used for internal and specialized purposes only. I...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the name of a module from the call stack. If optional integer depth is given, return the module that many calls below the top of the stack. If that is deeper than the call stack, or if the modu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.052413",
+    "updatedDate": "2026-03-11T23:15:48.052414",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_is_gil_enabled": {
+    "id": "sys._is_gil_enabled",
+    "name": "_is_gil_enabled",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._is_gil_enabled()"
+    ],
+    "signature_hash": "956356294f3437b6ce0883bc2d41c9a6aaabea34f459878e1a720b3b809d1ef5",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._is_gil_enabled",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if the GIL is enabled and False if it is disabled. Added in version 3.13. CPython implementation detail: It is not guaranteed to exist in all implementations of Python.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the GIL is enabled and False if it is disabled. Added in version 3.13. CPython implementation detail: It is not guaranteed to exist in all implementations of Python.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.052832",
+    "updatedDate": "2026-03-11T23:15:48.052833",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_is_immortal": {
+    "id": "sys._is_immortal",
+    "name": "_is_immortal",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._is_immortal(op)"
+    ],
+    "signature_hash": "caf1e9bfbef578119806f53ba3090735775528b8536d081266c76f86da409d31",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._is_immortal",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if the given object is immortal, False otherwise. Note Objects that are immortal (and thus return True upon being passed to this function) are not guaranteed to be immortal in future versions, and vice versa for mortal objects. Added in version 3.14. CPython implementation detail: This function should be used for specialized purposes only. It is not guaranteed to exist in all implementations of Python.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the given object is immortal, False otherwise. Note Objects that are immortal (and thus return True upon being passed to this function) are not guaranteed to be immortal in future versi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.052958",
+    "updatedDate": "2026-03-11T23:15:48.052959",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sys/_is_interned": {
+    "id": "sys._is_interned",
+    "name": "_is_interned",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sys._is_interned(string)"
+    ],
+    "signature_hash": "4cf07fe4774e966e9ba712ecf1bf3a4bc7c6d47e0d750155da6808aca9fada37",
+    "url": "https://docs.python.org/3/library/sys.html#module-sys#sys._is_interned",
+    "parameters": [
+      {
+        "name": "string",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if the given string is “interned”, False otherwise. Added in version 3.13. CPython implementation detail: It is not guaranteed to exist in all implementations of Python.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the given string is “interned”, False otherwise. Added in version 3.13. CPython implementation detail: It is not guaranteed to exist in all implementations of Python.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.052975",
+    "updatedDate": "2026-03-11T23:15:48.052976",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "zipfile/ZipFile/open": {
+    "id": "zipfile.ZipFile.open",
+    "name": "open",
+    "type": "method",
+    "parent": "ZipFile",
+    "signatures": [
+      "ZipFile.open(name, mode='r', pwd=None, *, force_zip64=False)"
+    ],
+    "signature_hash": "e066c328de1717c49a7c9f5b4d9c08c3fc8de936c6caa0fa9652ddde0b31fde5",
+    "url": "https://docs.python.org/3/library/zipfile.html#module-zipfile#zipfile.ZipFile.open",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "'r'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pwd",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "force_zip64",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Access a member of the archive as a binary file-like object. name can be either the name of a file within the archive or a ZipInfo object. The mode parameter, if included, must be 'r' (the default) or 'w'. pwd is the password used to decrypt encrypted ZIP files as a bytes object. open() is also a context manager and therefore supports the with statement: with ZipFile('spam.zip') as myzip: with myzip.open('eggs.txt') as myfile: print(myfile.read()) With mode 'r' the file-like object (ZipExtFil...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Access a member of the archive as a binary file-like object. name can be either the name of a file within the archive or a ZipInfo object. The mode parameter, if included, must be 'r' (the default) or...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.143455",
+    "updatedDate": "2026-03-11T23:15:48.143456",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "zipfile/Path/open": {
+    "id": "zipfile.Path.open",
+    "name": "open",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.open(mode='r', *, pwd, **)"
+    ],
+    "signature_hash": "0864e5d3ffb01876693d779dd21508fe2b37fcf539224e7cc9a94951298dd516",
+    "url": "https://docs.python.org/3/library/zipfile.html#module-zipfile#zipfile.Path.open",
+    "parameters": [
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "'r'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pwd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Invoke ZipFile.open() on the current path. Allows opening for read or write, text or binary through supported modes: ‘r’, ‘w’, ‘rb’, ‘wb’. Positional and keyword arguments are passed through to io.TextIOWrapper when opened as text and ignored otherwise. pwd is the pwd parameter to ZipFile.open(). Changed in version 3.9: Added support for text and binary modes for open. Default mode is now text. Changed in version 3.11.2: The encoding parameter can be supplied as a positional argument without ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Invoke ZipFile.open() on the current path. Allows opening for read or write, text or binary through supported modes: ‘r’, ‘w’, ‘rb’, ‘wb’. Positional and keyword arguments are passed through to io.Tex...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.143737",
+    "updatedDate": "2026-03-11T23:15:48.143738",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

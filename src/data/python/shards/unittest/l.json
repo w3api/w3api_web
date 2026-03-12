@@ -1,0 +1,290 @@
+{
+  "unittest/TestCase/longMessage": {
+    "id": "unittest.TestCase.longMessage",
+    "name": "longMessage",
+    "type": "attribute",
+    "parent": "TestCase",
+    "signatures": [
+      "longMessage"
+    ],
+    "signature_hash": "b4270a48a72db2e8bc9544be90a831d2e7a37f5f092ab0464d93313388f9d32a",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.longMessage",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This class attribute determines what happens when a custom failure message is passed as the msg argument to an assertXYY call that fails. True is the default value. In this case, the custom message is appended to the end of the standard failure message. When set to False, the custom message replaces the standard message. The class setting can be overridden in individual test methods by assigning an instance attribute, self.longMessage, to True or False before calling the assert methods. The c...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class attribute determines what happens when a custom failure message is passed as the msg argument to an assertXYY call that fails. True is the default value. In this case, the custom message is...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104861",
+    "updatedDate": "2026-03-11T23:15:48.104862",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/IsolatedAsyncioTestCase/loop_factory": {
+    "id": "unittest.IsolatedAsyncioTestCase.loop_factory",
+    "name": "loop_factory",
+    "type": "attribute",
+    "parent": "IsolatedAsyncioTestCase",
+    "signatures": [
+      "loop_factory"
+    ],
+    "signature_hash": "04f49139a9d8b6acee62351303264c1027364299ab61a2e2f7c92275eb546f02",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.IsolatedAsyncioTestCase.loop_factory",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The loop_factory passed to asyncio.Runner. Override in subclasses with asyncio.EventLoop to avoid using the asyncio policy system. Added in version 3.13.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The loop_factory passed to asyncio.Runner. Override in subclasses with asyncio.EventLoop to avoid using the asyncio policy system. Added in version 3.13.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105084",
+    "updatedDate": "2026-03-11T23:15:48.105085",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestLoader/loadTestsFromModule": {
+    "id": "unittest.TestLoader.loadTestsFromModule",
+    "name": "loadTestsFromModule",
+    "type": "method",
+    "parent": "TestLoader",
+    "signatures": [
+      "loadTestsFromModule(module, *, pattern=None)"
+    ],
+    "signature_hash": "6e8baa743f8533674f32b07c683bdc017312310abd028a107f3364104898b8cd",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestLoader.loadTestsFromModule",
+    "parameters": [
+      {
+        "name": "module",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pattern",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a suite of all test cases contained in the given module. This method searches module for classes derived from TestCase and creates an instance of the class for each test method defined for the class. Note While using a hierarchy of TestCase-derived classes can be convenient in sharing fixtures and helper functions, defining test methods on base classes that are not intended to be instantiated directly does not play well with this method. Doing so, however, can be useful when the fixtur...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a suite of all test cases contained in the given module. This method searches module for classes derived from TestCase and creates an instance of the class for each test method defined for the ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105402",
+    "updatedDate": "2026-03-11T23:15:48.105403",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestLoader/loadTestsFromName": {
+    "id": "unittest.TestLoader.loadTestsFromName",
+    "name": "loadTestsFromName",
+    "type": "method",
+    "parent": "TestLoader",
+    "signatures": [
+      "loadTestsFromName(name, module=None)"
+    ],
+    "signature_hash": "4e212d30fa060618299ec4a077fde548c6181d83eca10cc5136d354e90bac580",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestLoader.loadTestsFromName",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "module",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a suite of all test cases given a string specifier. The specifier name is a “dotted name” that may resolve either to a module, a test case class, a test method within a test case class, a TestSuite instance, or a callable object which returns a TestCase or TestSuite instance. These checks are applied in the order listed here; that is, a method on a possible test case class will be picked up as “a test method within a test case class”, rather than “a callable object”. For example, if yo...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a suite of all test cases given a string specifier. The specifier name is a “dotted name” that may resolve either to a module, a test case class, a test method within a test case class, a TestS...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105424",
+    "updatedDate": "2026-03-11T23:15:48.105424",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestLoader/loadTestsFromNames": {
+    "id": "unittest.TestLoader.loadTestsFromNames",
+    "name": "loadTestsFromNames",
+    "type": "method",
+    "parent": "TestLoader",
+    "signatures": [
+      "loadTestsFromNames(names, module=None)"
+    ],
+    "signature_hash": "5de7d2ac2a097cdbdcba352228a296fb9df55c3bc6cdfdc2aef0855a79eb0cc8",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestLoader.loadTestsFromNames",
+    "parameters": [
+      {
+        "name": "names",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "module",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Similar to loadTestsFromName(), but takes a sequence of names rather than a single name. The return value is a test suite which supports all the tests defined for each name.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to loadTestsFromName(), but takes a sequence of names rather than a single name. The return value is a test suite which supports all the tests defined for each name.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105444",
+    "updatedDate": "2026-03-11T23:15:48.105445",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestLoader/loadTestsFromTestCase": {
+    "id": "unittest.TestLoader.loadTestsFromTestCase",
+    "name": "loadTestsFromTestCase",
+    "type": "method",
+    "parent": "TestLoader",
+    "signatures": [
+      "loadTestsFromTestCase(testCaseClass)"
+    ],
+    "signature_hash": "6fba5e1df6bb6a30ff38fe6a59e37ead3a58330fce418c831b532a3c52c88594",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestLoader.loadTestsFromTestCase",
+    "parameters": [
+      {
+        "name": "testCaseClass",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a suite of all test cases contained in the TestCase-derived testCaseClass. A test case instance is created for each method named by getTestCaseNames(). By default these are the method names beginning with test. If getTestCaseNames() returns no methods, but the runTest() method is implemented, a single test case is created for that method instead.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a suite of all test cases contained in the TestCase-derived testCaseClass. A test case instance is created for each method named by getTestCaseNames(). By default these are the method names beg...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105362",
+    "updatedDate": "2026-03-11T23:15:48.105363",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

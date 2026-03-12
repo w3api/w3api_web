@@ -1,0 +1,87 @@
+{
+  "wsgiref/make_server": {
+    "id": "wsgiref.make_server",
+    "name": "make_server",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "wsgiref.simple_server.make_server(host, port, app, server_class=WSGIServer, handler_class=WSGIRequestHandler)"
+    ],
+    "signature_hash": "be91346b38e5b386d1d37728f2f24dfc7add31159239e148d2716cd720d52550",
+    "url": "https://docs.python.org/3/library/wsgiref.html#module-wsgiref#wsgiref.simple_server.make_server",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "port",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "app",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "server_class",
+        "type": "",
+        "has_default": true,
+        "default_value": "WSGIServer",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "handler_class",
+        "type": "",
+        "has_default": true,
+        "default_value": "WSGIRequestHandler",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a new WSGI server listening on host and port, accepting connections for app. The return value is an instance of the supplied server_class, and will process requests using the specified handler_class. app must be a WSGI application object, as defined by PEP 3333. Example usage: from wsgiref.simple_server import make_server, demo_app with make_server('', 8000, demo_app) as httpd: print(\"Serving HTTP on port 8000...\") # Respond to requests until process is killed httpd.serve_forever() # A...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a new WSGI server listening on host and port, accepting connections for app. The return value is an instance of the supplied server_class, and will process requests using the specified handler_...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.114756",
+    "updatedDate": "2026-03-11T23:15:48.114757",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

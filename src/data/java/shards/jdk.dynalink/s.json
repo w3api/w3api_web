@@ -4,8 +4,10 @@
     "name": "SecureLookupSupplier",
     "type": "class",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "class SecureLookupSupplier"
+    ],
+    "signature_hash": "c046c38ee04634732b0136d52d62e1718f6054eb5902c40be51fbc5953d4c3ea",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/SecureLookupSupplier.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +22,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.376549",
-    "updatedDate": "2026-03-08T21:40:22.376550",
+    "createdDate": "2026-03-11T23:15:42.194926",
+    "updatedDate": "2026-03-11T23:15:42.194927",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -80,8 +82,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.376567",
-    "updatedDate": "2026-03-08T21:40:22.376568",
+    "createdDate": "2026-03-11T23:15:42.194944",
+    "updatedDate": "2026-03-11T23:15:42.194945",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -96,8 +98,10 @@
     "name": "StandardNamespace",
     "type": "enum",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "enum StandardNamespace"
+    ],
+    "signature_hash": "a4b506d45cda355d3b620dc66e60a59c1e91733b874865d47378a5231b1d2480",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/StandardNamespace.html",
     "parameters": [],
     "return_type": "",
@@ -112,8 +116,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.376615",
-    "updatedDate": "2026-03-08T21:40:22.376616",
+    "createdDate": "2026-03-11T23:15:42.195002",
+    "updatedDate": "2026-03-11T23:15:42.195003",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -122,6 +126,11 @@
       "difficulty": null,
       "popularity_score": 0
     },
+    "enum_constants": [
+      "ELEMENT",
+      "METHOD",
+      "PROPERTY"
+    ],
     "methods": [
       "findFirst",
       "valueOf",
@@ -133,8 +142,10 @@
     "name": "StandardOperation",
     "type": "enum",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "enum StandardOperation"
+    ],
+    "signature_hash": "2de4209b153662794041cd7e57ae70451abcd6493b0123931acbf09b96be78a2",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/StandardOperation.html",
     "parameters": [],
     "return_type": "",
@@ -149,8 +160,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.376672",
-    "updatedDate": "2026-03-08T21:40:22.376673",
+    "createdDate": "2026-03-11T23:15:42.195154",
+    "updatedDate": "2026-03-11T23:15:42.195155",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -159,9 +170,472 @@
       "difficulty": null,
       "popularity_score": 0
     },
+    "enum_constants": [
+      "CALL",
+      "GET",
+      "NEW",
+      "REMOVE",
+      "SET"
+    ],
     "methods": [
       "valueOf",
       "values"
     ]
+  },
+  "jdk.dynalink/StandardOperation/SET": {
+    "id": "jdk.dynalink.StandardOperation.SET",
+    "name": "SET",
+    "type": "enum_constant",
+    "parent": "StandardOperation",
+    "signatures": [
+      "SET"
+    ],
+    "signature_hash": "2992d15897b5bbe71ad94b6609637dbaef1d085d2ca5431355b42b733231f992",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/StandardOperation.html",
+    "parameters": [],
+    "return_type": "StandardOperation",
+    "exceptions": [],
+    "description": "Set the value in a namespace defined on an object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the value in a namespace defined on an object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.195259",
+    "updatedDate": "2026-03-11T23:15:42.195260",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/DynamicLinkerFactory/setAutoConversionStrategy": {
+    "id": "jdk.dynalink.DynamicLinkerFactory.setAutoConversionStrategy",
+    "name": "setAutoConversionStrategy",
+    "type": "method",
+    "parent": "DynamicLinkerFactory",
+    "signatures": [
+      "public void setAutoConversionStrategy(MethodTypeConversionStrategy autoConversionStrategy)"
+    ],
+    "signature_hash": "95e4e8d15d0cadb3c05e3ec07aec697d83c7210704a90db82cd9b69f9840007a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/DynamicLinkerFactory.html",
+    "parameters": [
+      {
+        "name": "autoConversionStrategy",
+        "type": "MethodTypeConversionStrategy",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Sets an object representing the conversion strategy for automatic type\nconversions.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets an object representing the conversion strategy for automatic type\nconversions.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.194240",
+    "updatedDate": "2026-03-11T23:15:42.194241",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/DynamicLinkerFactory/setClassLoader": {
+    "id": "jdk.dynalink.DynamicLinkerFactory.setClassLoader",
+    "name": "setClassLoader",
+    "type": "method",
+    "parent": "DynamicLinkerFactory",
+    "signatures": [
+      "public void setClassLoader(ClassLoader classLoader)"
+    ],
+    "signature_hash": "790ea206f5cb1e9d7860d3df54a4917c1c81194b04174da5fe25e8d83d74a8b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/DynamicLinkerFactory.html",
+    "parameters": [
+      {
+        "name": "classLoader",
+        "type": "ClassLoader",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Sets the class loader for automatic discovery of available guarding\ndynamic linkers.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets the class loader for automatic discovery of available guarding\ndynamic linkers.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.194256",
+    "updatedDate": "2026-03-11T23:15:42.194257",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/DynamicLinkerFactory/setFallbackLinkers": {
+    "id": "jdk.dynalink.DynamicLinkerFactory.setFallbackLinkers",
+    "name": "setFallbackLinkers",
+    "type": "method",
+    "parent": "DynamicLinkerFactory",
+    "signatures": [
+      "public void setFallbackLinkers(List<? extends GuardingDynamicLinker> fallbackLinkers)",
+      "public void setFallbackLinkers(GuardingDynamicLinker... fallbackLinkers)"
+    ],
+    "signature_hash": "399d2df1ca497f34bb2307663268a7352888919722f978cb2956c4d3adf34031",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/DynamicLinkerFactory.html",
+    "parameters": [
+      {
+        "name": "fallbackLinkers",
+        "has_default": false,
+        "default_value": null,
+        "type": "List<? extends GuardingDynamicLinker>|GuardingDynamicLinker...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Sets the fallback guarding dynamic linkers.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets the fallback guarding dynamic linkers.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.194305",
+    "updatedDate": "2026-03-11T23:15:42.194306",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/DynamicLinkerFactory/setInternalObjectsFilter": {
+    "id": "jdk.dynalink.DynamicLinkerFactory.setInternalObjectsFilter",
+    "name": "setInternalObjectsFilter",
+    "type": "method",
+    "parent": "DynamicLinkerFactory",
+    "signatures": [
+      "public void setInternalObjectsFilter(MethodHandleTransformer internalObjectsFilter)"
+    ],
+    "signature_hash": "338550bf583d745e40a6985db901de3bd384dbe30c64b0eb1c6f68ab15faecf6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/DynamicLinkerFactory.html",
+    "parameters": [
+      {
+        "name": "internalObjectsFilter",
+        "type": "MethodHandleTransformer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Sets a method handle transformer that is supposed to act as the\nimplementation ofLinkerServices.filterInternalObjects(MethodHandle)for linker\nservices of dynamic linkers created by this factory.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets a method handle transformer that is supposed to act as the\nimplementation ofLinkerServices.filterInternalObjects(MethodHandle)for linker\nservices of dynamic linkers created by this factory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.194323",
+    "updatedDate": "2026-03-11T23:15:42.194324",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/DynamicLinkerFactory/setPrelinkTransformer": {
+    "id": "jdk.dynalink.DynamicLinkerFactory.setPrelinkTransformer",
+    "name": "setPrelinkTransformer",
+    "type": "method",
+    "parent": "DynamicLinkerFactory",
+    "signatures": [
+      "public void setPrelinkTransformer(GuardedInvocationTransformer prelinkTransformer)"
+    ],
+    "signature_hash": "dbac6be0501163c0a47a4c29dfa665d0b3f8d534a8c4291ed1e834c8e2104c3d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/DynamicLinkerFactory.html",
+    "parameters": [
+      {
+        "name": "prelinkTransformer",
+        "type": "GuardedInvocationTransformer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Set the pre-link transformer.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the pre-link transformer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.194346",
+    "updatedDate": "2026-03-11T23:15:42.194347",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/DynamicLinkerFactory/setPrioritizedLinker": {
+    "id": "jdk.dynalink.DynamicLinkerFactory.setPrioritizedLinker",
+    "name": "setPrioritizedLinker",
+    "type": "method",
+    "parent": "DynamicLinkerFactory",
+    "signatures": [
+      "public void setPrioritizedLinker(GuardingDynamicLinker prioritizedLinker)"
+    ],
+    "signature_hash": "ecd68ec64ad438a3b87db4cbf75ead5d6ed8e95b3c2ff085198191ebd257039c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/DynamicLinkerFactory.html",
+    "parameters": [
+      {
+        "name": "prioritizedLinker",
+        "type": "GuardingDynamicLinker",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Sets a single prioritized linker.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets a single prioritized linker.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.194380",
+    "updatedDate": "2026-03-11T23:15:42.194381",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/DynamicLinkerFactory/setPrioritizedLinkers": {
+    "id": "jdk.dynalink.DynamicLinkerFactory.setPrioritizedLinkers",
+    "name": "setPrioritizedLinkers",
+    "type": "method",
+    "parent": "DynamicLinkerFactory",
+    "signatures": [
+      "public void setPrioritizedLinkers(List<? extends GuardingDynamicLinker> prioritizedLinkers)",
+      "public void setPrioritizedLinkers(GuardingDynamicLinker... prioritizedLinkers)"
+    ],
+    "signature_hash": "8c0c7a163af9f9e11e12325d1b5fcd7bbee5acbdf592fdaba9c83af3ec805ffe",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/DynamicLinkerFactory.html",
+    "parameters": [
+      {
+        "name": "prioritizedLinkers",
+        "has_default": false,
+        "default_value": null,
+        "type": "List<? extends GuardingDynamicLinker>|GuardingDynamicLinker...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": "Sets the prioritized guarding dynamic linkers.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets the prioritized guarding dynamic linkers.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.194410",
+    "updatedDate": "2026-03-11T23:15:42.194411",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/DynamicLinkerFactory/setSyncOnRelink": {
+    "id": "jdk.dynalink.DynamicLinkerFactory.setSyncOnRelink",
+    "name": "setSyncOnRelink",
+    "type": "method",
+    "parent": "DynamicLinkerFactory",
+    "signatures": [
+      "public void setSyncOnRelink(boolean syncOnRelink)"
+    ],
+    "signature_hash": "8d55cec5ac73f4dc1465fc762ef9a92301064f764b1ce1dd1c69e8a642754d8b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/DynamicLinkerFactory.html",
+    "parameters": [
+      {
+        "name": "syncOnRelink",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Sets whether the dynamic linker created by this factory will invokeMutableCallSite.syncAll(MutableCallSite[])after a call site is\nrelinked.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets whether the dynamic linker created by this factory will invokeMutableCallSite.syncAll(MutableCallSite[])after a call site is\nrelinked.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.194427",
+    "updatedDate": "2026-03-11T23:15:42.194428",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/DynamicLinkerFactory/setUnstableRelinkThreshold": {
+    "id": "jdk.dynalink.DynamicLinkerFactory.setUnstableRelinkThreshold",
+    "name": "setUnstableRelinkThreshold",
+    "type": "method",
+    "parent": "DynamicLinkerFactory",
+    "signatures": [
+      "public void setUnstableRelinkThreshold(int unstableRelinkThreshold)"
+    ],
+    "signature_hash": "ff66b236fd1d9c5bff8d1e6f6b82ab22ab639c3df2e6bb63b84a4c26268e77e0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/DynamicLinkerFactory.html",
+    "parameters": [
+      {
+        "name": "unstableRelinkThreshold",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": "Sets the unstable relink threshold; the number of times a call site is\nrelinked after which it will be considered unstable, and subsequent link\nrequests for it will indicate this.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets the unstable relink threshold; the number of times a call site is\nrelinked after which it will be considered unstable, and subsequent link\nrequests for it will indicate this.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.194446",
+    "updatedDate": "2026-03-11T23:15:42.194447",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
   }
 }

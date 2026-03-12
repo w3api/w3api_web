@@ -1,0 +1,138 @@
+{
+  "pathlib/PurePath/anchor": {
+    "id": "pathlib.PurePath.anchor",
+    "name": "anchor",
+    "type": "attribute",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.anchor"
+    ],
+    "signature_hash": "635b1b9e56c00d22cb3f5353ffa987e602c70bc45421c062f871bf139eb89d94",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.anchor",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The concatenation of the drive and root: >>> PureWindowsPath('c:/Program Files/').anchor 'c:\\\\' >>> PureWindowsPath('c:Program Files/').anchor 'c:' >>> PurePosixPath('/etc').anchor '/' >>> PureWindowsPath('//host/share').anchor '\\\\\\\\host\\\\share\\\\'",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The concatenation of the drive and root: >>> PureWindowsPath('c:/Program Files/').anchor 'c:\\\\' >>> PureWindowsPath('c:Program Files/').anchor 'c:' >>> PurePosixPath('/etc').anchor '/' >>> PureWindows...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.027732",
+    "updatedDate": "2026-03-11T23:15:48.027733",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/absolute": {
+    "id": "pathlib.Path.absolute",
+    "name": "absolute",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.absolute()"
+    ],
+    "signature_hash": "587968402d046e4db50caf3a311d74654ec5ce96f29fb428a998e743757a5da1",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.absolute",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Make the path absolute, without normalization or resolving symlinks. Returns a new path object: >>> p = Path('tests') >>> p PosixPath('tests') >>> p.absolute() PosixPath('/home/antoine/pathlib/tests')",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Make the path absolute, without normalization or resolving symlinks. Returns a new path object: >>> p = Path('tests') >>> p PosixPath('tests') >>> p.absolute() PosixPath('/home/antoine/pathlib/tests')",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.028181",
+    "updatedDate": "2026-03-11T23:15:48.028181",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PurePath/as_posix": {
+    "id": "pathlib.PurePath.as_posix",
+    "name": "as_posix",
+    "type": "method",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.as_posix()"
+    ],
+    "signature_hash": "597f1a8d3cee25e9877c1152a275fb8f6b1bc0a5c78ddf2e054385fea28f8625",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.as_posix",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a string representation of the path with forward slashes (/): >>> p = PureWindowsPath('c:\\\\windows') >>> str(p) 'c:\\\\windows' >>> p.as_posix() 'c:/windows'",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a string representation of the path with forward slashes (/): >>> p = PureWindowsPath('c:\\\\windows') >>> str(p) 'c:\\\\windows' >>> p.as_posix() 'c:/windows'",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.027825",
+    "updatedDate": "2026-03-11T23:15:48.027825",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/as_uri": {
+    "id": "pathlib.Path.as_uri",
+    "name": "as_uri",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.as_uri()"
+    ],
+    "signature_hash": "f1d6a9817e014b1965a0b3aa6fdd53271bd9f59ae0d0ac11ee6b3409864d211e",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.as_uri",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Represent the path as a ‘file’ URI. ValueError is raised if the path isn’t absolute. >>> p = PosixPath('/etc/passwd') >>> p.as_uri() 'file:///etc/passwd' >>> p = WindowsPath('c:/Windows') >>> p.as_uri() 'file:///c:/Windows' Deprecated since version 3.14, will be removed in version 3.19: Calling this method from PurePath rather than Path is possible but deprecated. The method’s use of os.fsencode() makes it strictly impure.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Represent the path as a ‘file’ URI. ValueError is raised if the path isn’t absolute. >>> p = PosixPath('/etc/passwd') >>> p.as_uri() 'file:///etc/passwd' >>> p = WindowsPath('c:/Windows') >>> p.as_uri...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.028126",
+    "updatedDate": "2026-03-11T23:15:48.028127",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.14",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

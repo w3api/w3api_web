@@ -1,9 +1,9 @@
 {
-  "jdk.jshell.spi/ExecutionControl.InternalException/InternalException": {
-    "id": "jdk.jshell.spi.ExecutionControl.InternalException.InternalException",
+  "jdk.jshell.spi/InternalException/InternalException": {
+    "id": "jdk.jshell.spi.InternalException.InternalException",
     "name": "InternalException",
     "type": "constructor",
-    "parent": "ExecutionControl.InternalException",
+    "parent": "InternalException",
     "signatures": [
       "public InternalException(String message)"
     ],
@@ -33,8 +33,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.412550",
-    "updatedDate": "2026-03-08T21:40:22.412551",
+    "createdDate": "2026-03-11T23:15:42.242375",
+    "updatedDate": "2026-03-11T23:15:42.242376",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -44,11 +44,48 @@
       "popularity_score": 0
     }
   },
-  "jdk.jshell.spi/ExecutionControl.ResolutionException/id": {
-    "id": "jdk.jshell.spi.ExecutionControl.ResolutionException.id",
+  "jdk.jshell.spi/InternalException": {
+    "id": "jdk.jshell.spi.InternalException",
+    "name": "InternalException",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "class InternalException"
+    ],
+    "signature_hash": "324e073a19a002a8f8e6039afd7fb9bed13c19dd23a69275fd36fc5bc8ac9233",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/spi/ExecutionControl.InternalException.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.242360",
+    "updatedDate": "2026-03-11T23:15:42.242361",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "InternalException"
+    ]
+  },
+  "jdk.jshell.spi/ResolutionException/id": {
+    "id": "jdk.jshell.spi.ResolutionException.id",
     "name": "id",
     "type": "method",
-    "parent": "ExecutionControl.ResolutionException",
+    "parent": "ResolutionException",
     "signatures": [
       "public int id()"
     ],
@@ -67,8 +104,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.412615",
-    "updatedDate": "2026-03-08T21:40:22.412616",
+    "createdDate": "2026-03-11T23:15:42.242448",
+    "updatedDate": "2026-03-11T23:15:42.242449",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -101,8 +138,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.412816",
-    "updatedDate": "2026-03-08T21:40:22.412816",
+    "createdDate": "2026-03-11T23:15:42.242667",
+    "updatedDate": "2026-03-11T23:15:42.242668",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -112,11 +149,11 @@
       "popularity_score": 0
     }
   },
-  "jdk.jshell.spi/ExecutionControl.ClassInstallException/installed": {
-    "id": "jdk.jshell.spi.ExecutionControl.ClassInstallException.installed",
+  "jdk.jshell.spi/InstallException/installed": {
+    "id": "jdk.jshell.spi.InstallException.installed",
     "name": "installed",
     "type": "method",
-    "parent": "ExecutionControl.ClassInstallException",
+    "parent": "InstallException",
     "signatures": [
       "public boolean[] installed()"
     ],
@@ -135,8 +172,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.412483",
-    "updatedDate": "2026-03-08T21:40:22.412484",
+    "createdDate": "2026-03-11T23:15:42.242274",
+    "updatedDate": "2026-03-11T23:15:42.242275",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -181,28 +218,22 @@
     "return_type": "String",
     "exceptions": [
       {
-        "name": "ExecutionControl.UserException",
-        "package": "jdk.jshell.spi"
+        "name": "ExecutionControl.UserException"
       },
       {
-        "name": "ExecutionControl.ResolutionException",
-        "package": "jdk.jshell.spi"
+        "name": "ExecutionControl.ResolutionException"
       },
       {
-        "name": "ExecutionControl.StoppedException",
-        "package": "jdk.jshell.spi"
+        "name": "ExecutionControl.StoppedException"
       },
       {
-        "name": "ExecutionControl.EngineTerminationException",
-        "package": "jdk.jshell.spi"
+        "name": "ExecutionControl.EngineTerminationException"
       },
       {
-        "name": "ExecutionControl.InternalException",
-        "package": "jdk.jshell.spi"
+        "name": "ExecutionControl.InternalException"
       },
       {
-        "name": "ExecutionControl.RunException",
-        "package": "jdk.jshell.spi"
+        "name": "ExecutionControl.RunException"
       }
     ],
     "description": "Invokes an executable Snippet by calling a method on the specified\nwrapper class.",
@@ -215,8 +246,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.412251",
-    "updatedDate": "2026-03-08T21:40:22.412252",
+    "createdDate": "2026-03-11T23:15:42.242028",
+    "updatedDate": "2026-03-11T23:15:42.242029",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

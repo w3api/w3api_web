@@ -1,0 +1,669 @@
+{
+  "importlib.abc/ModuleSpec/submodule_search_locations": {
+    "id": "importlib.abc.ModuleSpec.submodule_search_locations",
+    "name": "submodule_search_locations",
+    "type": "attribute",
+    "parent": "ModuleSpec",
+    "signatures": [
+      "submodule_search_locations"
+    ],
+    "signature_hash": "89826e004d1cdc7e496488fa37a41eacc2e791c92581409dd824660586fe2b53",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.machinery.ModuleSpec.submodule_search_locations",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A (possibly empty) sequence of strings enumerating the locations in which a package’s submodules will be found (see module.__path__). Most of the time there will only be a single directory in this list. The finder should set this attribute to a sequence, even an empty one, to indicate to the import system that the module is a package. It should be set to None for non-package modules. It is set automatically later to a special object for namespace packages.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A (possibly empty) sequence of strings enumerating the locations in which a package’s submodules will be found (see module.__path__). Most of the time there will only be a single directory in this lis...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.942091",
+    "updatedDate": "2026-03-11T23:15:47.942092",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/SourceFileLoader": {
+    "id": "importlib.abc.SourceFileLoader",
+    "name": "SourceFileLoader",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.machinery.SourceFileLoader(fullname, path)"
+    ],
+    "signature_hash": "0d2e9cd0a8edeac9ef63d0692d6b8e08c57b19776db068f97c9604f2a47ebdee",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.machinery.SourceFileLoader",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A concrete implementation of importlib.abc.SourceLoader by subclassing importlib.abc.FileLoader and providing some concrete implementations of other methods. Added in version 3.3. name¶ The name of the module that this loader will handle. path¶ The path to the source file. is_package(fullname)¶ Return True if path appears to be for a package. path_stats(path)¶ Concrete implementation of importlib.abc.SourceLoader.path_stats(). set_data(path, data)¶ Concrete implementation of importlib.abc.Sou...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A concrete implementation of importlib.abc.SourceLoader by subclassing importlib.abc.FileLoader and providing some concrete implementations of other methods. Added in version 3.3. name¶ The name of th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.941592",
+    "updatedDate": "2026-03-11T23:15:47.941593",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.6",
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "name",
+      "path"
+    ],
+    "methods": [
+      "is_package",
+      "load_module",
+      "path_stats",
+      "set_data"
+    ]
+  },
+  "importlib.abc/SourceLoader": {
+    "id": "importlib.abc.SourceLoader",
+    "name": "SourceLoader",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.abc.SourceLoader"
+    ],
+    "signature_hash": "35e1e60e02370193c8de7b79c51906f782dec19d8c35c536621919f1deeed1de",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.abc.SourceLoader",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An abstract base class for implementing source (and optionally bytecode) file loading. The class inherits from both ResourceLoader and ExecutionLoader, requiring the implementation of: ResourceLoader.get_data() ExecutionLoader.get_filename()Should only return the path to the source file; sourceless loading is not supported. The abstract methods defined by this class are to add optional bytecode file support. Not implementing these optional methods (or causing them to raise NotImplementedError...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract base class for implementing source (and optionally bytecode) file loading. The class inherits from both ResourceLoader and ExecutionLoader, requiring the implementation of: ResourceLoader....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.941164",
+    "updatedDate": "2026-03-11T23:15:47.941165",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.3",
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "exec_module",
+      "get_code",
+      "get_source",
+      "is_package",
+      "load_module",
+      "path_mtime",
+      "path_stats",
+      "set_data"
+    ]
+  },
+  "importlib.abc/SourcelessFileLoader": {
+    "id": "importlib.abc.SourcelessFileLoader",
+    "name": "SourcelessFileLoader",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.machinery.SourcelessFileLoader(fullname, path)"
+    ],
+    "signature_hash": "d2c2cbfc42538539929aba9d4c71e9e9e549e09de740bd0099a2ecc1d37e2826",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.machinery.SourcelessFileLoader",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A concrete implementation of importlib.abc.FileLoader which can import bytecode files (i.e. no source code files exist). Please note that direct use of bytecode files (and thus not source code files) inhibits your modules from being usable by all Python implementations or new versions of Python which change the bytecode format. Added in version 3.3. name¶ The name of the module the loader will handle. path¶ The path to the bytecode file. is_package(fullname)¶ Determines if the module is a pac...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A concrete implementation of importlib.abc.FileLoader which can import bytecode files (i.e. no source code files exist). Please note that direct use of bytecode files (and thus not source code files) ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.941722",
+    "updatedDate": "2026-03-11T23:15:47.941723",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.6",
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "name",
+      "path"
+    ],
+    "methods": [
+      "get_code",
+      "get_source",
+      "is_package",
+      "load_module"
+    ]
+  },
+  "importlib.abc/machinery/SOURCE_SUFFIXES": {
+    "id": "importlib.abc.machinery.SOURCE_SUFFIXES",
+    "name": "SOURCE_SUFFIXES",
+    "type": "constant",
+    "parent": "machinery",
+    "signatures": [
+      "importlib.machinery.SOURCE_SUFFIXES"
+    ],
+    "signature_hash": "4d6aa28601c47900e6828ffa6860dabf2fed234956d52695281c4512550548ac",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.machinery.SOURCE_SUFFIXES",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A list of strings representing the recognized file suffixes for source modules. Added in version 3.3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A list of strings representing the recognized file suffixes for source modules. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.941313",
+    "updatedDate": "2026-03-11T23:15:47.941313",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/source_from_cache": {
+    "id": "importlib.abc.source_from_cache",
+    "name": "source_from_cache",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "importlib.util.source_from_cache(path)"
+    ],
+    "signature_hash": "7a7f454b92dd3483d3fa619082e3014ff4ab160d32ebd8561c0ac98e026bf08d",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.util.source_from_cache",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Given the path to a PEP 3147 file name, return the associated source code file path. For example, if path is /foo/bar/__pycache__/baz.cpython-32.pyc the returned path would be /foo/bar/baz.py. path need not exist, however if it does not conform to PEP 3147 or PEP 488 format, a ValueError is raised. If sys.implementation.cache_tag is not defined, NotImplementedError is raised. Added in version 3.4. Changed in version 3.6: Accepts a path-like object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Given the path to a PEP 3147 file name, return the associated source code file path. For example, if path is /foo/bar/__pycache__/baz.cpython-32.pyc the returned path would be /foo/bar/baz.py. path ne...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.942266",
+    "updatedDate": "2026-03-11T23:15:47.942267",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/source_hash": {
+    "id": "importlib.abc.source_hash",
+    "name": "source_hash",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "importlib.util.source_hash(source_bytes)"
+    ],
+    "signature_hash": "7f8af204216c40310c1ed32433554fdea9f4322598f946e4b711f47f18c6707c",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.util.source_hash",
+    "parameters": [
+      {
+        "name": "source_bytes",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the hash of source_bytes as bytes. A hash-based .pyc file embeds the source_hash() of the corresponding source file’s contents in its header. Added in version 3.7.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the hash of source_bytes as bytes. A hash-based .pyc file embeds the source_hash() of the corresponding source file’s contents in its header. Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.942430",
+    "updatedDate": "2026-03-11T23:15:47.942431",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/spec_from_file_location": {
+    "id": "importlib.abc.spec_from_file_location",
+    "name": "spec_from_file_location",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "importlib.util.spec_from_file_location(name, location, *, loader=None, submodule_search_locations=None)"
+    ],
+    "signature_hash": "c95feadae3a3862f9af9388aa9e66de12f2139e2120c4d2ba815997a14c7424b",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.util.spec_from_file_location",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "location",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "loader",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "submodule_search_locations",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A factory function for creating a ModuleSpec instance based on the path to a file. Missing information will be filled in on the spec by making use of loader APIs and by the implication that the module will be file-based. Added in version 3.4. Changed in version 3.6: Accepts a path-like object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A factory function for creating a ModuleSpec instance based on the path to a file. Missing information will be filled in on the spec by making use of loader APIs and by the implication that the module...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.942412",
+    "updatedDate": "2026-03-11T23:15:47.942413",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/spec_from_loader": {
+    "id": "importlib.abc.spec_from_loader",
+    "name": "spec_from_loader",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "importlib.util.spec_from_loader(name, loader, *, origin=None, is_package=None)"
+    ],
+    "signature_hash": "5e9035e02d03598c902b389e3daa82e492f38af0d5cd15faeefb12a883028b89",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.util.spec_from_loader",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "loader",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "origin",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "is_package",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A factory function for creating a ModuleSpec instance based on a loader. The parameters have the same meaning as they do for ModuleSpec. The function uses available loader APIs, such as InspectLoader.is_package(), to fill in any missing information on the spec. Added in version 3.4.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A factory function for creating a ModuleSpec instance based on a loader. The parameters have the same meaning as they do for ModuleSpec. The function uses available loader APIs, such as InspectLoader....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.942384",
+    "updatedDate": "2026-03-11T23:15:47.942385",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/SourceLoader/set_data": {
+    "id": "importlib.abc.SourceLoader.set_data",
+    "name": "set_data",
+    "type": "method",
+    "parent": "SourceLoader",
+    "signatures": [
+      "set_data(path, data)"
+    ],
+    "signature_hash": "a90e49fa5cba52ab357ec2d5d184a8b4662c6016f0d092d3af7ba026965982c6",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.abc.SourceLoader.set_data",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Optional abstract method which writes the specified bytes to a file path. Any intermediate directories which do not exist are to be created automatically. When writing to the path fails because the path is read-only (errno.EACCES/PermissionError), do not propagate the exception. Changed in version 3.4: No longer raises NotImplementedError when called.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Optional abstract method which writes the specified bytes to a file path. Any intermediate directories which do not exist are to be created automatically. When writing to the path fails because the pa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.941216",
+    "updatedDate": "2026-03-11T23:15:47.941217",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/SourceFileLoader/set_data": {
+    "id": "importlib.abc.SourceFileLoader.set_data",
+    "name": "set_data",
+    "type": "method",
+    "parent": "SourceFileLoader",
+    "signatures": [
+      "set_data(path, data)"
+    ],
+    "signature_hash": "a90e49fa5cba52ab357ec2d5d184a8b4662c6016f0d092d3af7ba026965982c6",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.machinery.SourceFileLoader.set_data",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Concrete implementation of importlib.abc.SourceLoader.set_data().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Concrete implementation of importlib.abc.SourceLoader.set_data().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.941685",
+    "updatedDate": "2026-03-11T23:15:47.941686",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/InspectLoader/source_to_code": {
+    "id": "importlib.abc.InspectLoader.source_to_code",
+    "name": "source_to_code",
+    "type": "method",
+    "parent": "InspectLoader",
+    "signatures": [
+      "static source_to_code(data, path='<string>')"
+    ],
+    "signature_hash": "03a03127b498c5835bab675463fe1720cf67ac603c5a9ed3bfa01c26c3e5f8e1",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.abc.InspectLoader.source_to_code",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "",
+        "has_default": true,
+        "default_value": "'<string>'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a code object from Python source. The data argument can be whatever the compile() function supports (i.e. string or bytes). The path argument should be the “path” to where the source code originated from, which can be an abstract concept (e.g. location in a zip file). With the subsequent code object one can execute it in a module by running exec(code, module.__dict__). Added in version 3.4. Changed in version 3.5: Made the method static.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a code object from Python source. The data argument can be whatever the compile() function supports (i.e. string or bytes). The path argument should be the “path” to where the source code origi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.941006",
+    "updatedDate": "2026-03-11T23:15:47.941007",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

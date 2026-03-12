@@ -4,7 +4,7 @@
     "shard": "java/shards/com.sun.nio.sctp/c.json"
   },
   {
-    "slug": "com.sun.nio.sctp/AbstractNotificationHandler<T>",
+    "slug": "com.sun.nio.sctp/AbstractNotificationHandler",
     "shard": "java/shards/com.sun.nio.sctp/a.json"
   },
   {
@@ -14,6 +14,10 @@
   {
     "slug": "com.sun.nio.sctp/AssociationChangeNotification",
     "shard": "java/shards/com.sun.nio.sctp/a.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/InitMaxStreams",
+    "shard": "java/shards/com.sun.nio.sctp/i.json"
   },
   {
     "slug": "com.sun.nio.sctp/MessageInfo",
@@ -40,10 +44,6 @@
     "shard": "java/shards/com.sun.nio.sctp/s.json"
   },
   {
-    "slug": "com.sun.nio.sctp/SctpStandardSocketOptions.InitMaxStreams",
-    "shard": "java/shards/com.sun.nio.sctp/s.json"
-  },
-  {
     "slug": "com.sun.nio.sctp/SendFailedNotification",
     "shard": "java/shards/com.sun.nio.sctp/s.json"
   },
@@ -52,7 +52,7 @@
     "shard": "java/shards/com.sun.nio.sctp/s.json"
   },
   {
-    "slug": "com.sun.nio.sctp/AbstractNotificationHandler<T>/AbstractNotificationHandler",
+    "slug": "com.sun.nio.sctp/AbstractNotificationHandler/AbstractNotificationHandler",
     "shard": "java/shards/com.sun.nio.sctp/a.json"
   },
   {
@@ -104,7 +104,11 @@
     "shard": "java/shards/com.sun.nio.sctp/s.json"
   },
   {
-    "slug": "com.sun.nio.sctp/AssociationChangeNotification.AssocChangeEvent",
+    "slug": "com.sun.nio.sctp/AddressChangeEvent",
+    "shard": "java/shards/com.sun.nio.sctp/a.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AssocChangeEvent",
     "shard": "java/shards/com.sun.nio.sctp/a.json"
   },
   {
@@ -112,8 +116,56 @@
     "shard": "java/shards/com.sun.nio.sctp/h.json"
   },
   {
-    "slug": "com.sun.nio.sctp/PeerAddressChangeNotification.AddressChangeEvent",
-    "shard": "java/shards/com.sun.nio.sctp/p.json"
+    "slug": "com.sun.nio.sctp/AddressChangeEvent/ADDR_ADDED",
+    "shard": "java/shards/com.sun.nio.sctp/a.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AddressChangeEvent/ADDR_AVAILABLE",
+    "shard": "java/shards/com.sun.nio.sctp/a.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AddressChangeEvent/ADDR_CONFIRMED",
+    "shard": "java/shards/com.sun.nio.sctp/a.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AddressChangeEvent/ADDR_MADE_PRIMARY",
+    "shard": "java/shards/com.sun.nio.sctp/a.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AddressChangeEvent/ADDR_REMOVED",
+    "shard": "java/shards/com.sun.nio.sctp/a.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AddressChangeEvent/ADDR_UNREACHABLE",
+    "shard": "java/shards/com.sun.nio.sctp/a.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AssocChangeEvent/CANT_START",
+    "shard": "java/shards/com.sun.nio.sctp/c.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AssocChangeEvent/COMM_LOST",
+    "shard": "java/shards/com.sun.nio.sctp/c.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AssocChangeEvent/COMM_UP",
+    "shard": "java/shards/com.sun.nio.sctp/c.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/HandlerResult/CONTINUE",
+    "shard": "java/shards/com.sun.nio.sctp/c.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AssocChangeEvent/RESTART",
+    "shard": "java/shards/com.sun.nio.sctp/r.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/HandlerResult/RETURN",
+    "shard": "java/shards/com.sun.nio.sctp/r.json"
+  },
+  {
+    "slug": "com.sun.nio.sctp/AssocChangeEvent/SHUTDOWN",
+    "shard": "java/shards/com.sun.nio.sctp/s.json"
   },
   {
     "slug": "com.sun.nio.sctp/IllegalReceiveException",
@@ -172,11 +224,11 @@
     "shard": "java/shards/com.sun.nio.sctp/n.json"
   },
   {
-    "slug": "com.sun.nio.sctp/NotificationHandler<T>",
+    "slug": "com.sun.nio.sctp/NotificationHandler",
     "shard": "java/shards/com.sun.nio.sctp/n.json"
   },
   {
-    "slug": "com.sun.nio.sctp/SctpSocketOption<T>",
+    "slug": "com.sun.nio.sctp/SctpSocketOption",
     "shard": "java/shards/com.sun.nio.sctp/s.json"
   },
   {
@@ -276,7 +328,7 @@
     "shard": "java/shards/com.sun.nio.sctp/c.json"
   },
   {
-    "slug": "com.sun.nio.sctp/SctpStandardSocketOptions.InitMaxStreams/create",
+    "slug": "com.sun.nio.sctp/InitMaxStreams/create",
     "shard": "java/shards/com.sun.nio.sctp/c.json"
   },
   {
@@ -284,7 +336,7 @@
     "shard": "java/shards/com.sun.nio.sctp/c.json"
   },
   {
-    "slug": "com.sun.nio.sctp/SctpStandardSocketOptions.InitMaxStreams/equals",
+    "slug": "com.sun.nio.sctp/InitMaxStreams/equals",
     "shard": "java/shards/com.sun.nio.sctp/e.json"
   },
   {
@@ -336,15 +388,15 @@
     "shard": "java/shards/com.sun.nio.sctp/g.json"
   },
   {
-    "slug": "com.sun.nio.sctp/AbstractNotificationHandler<T>/handleNotification",
+    "slug": "com.sun.nio.sctp/AbstractNotificationHandler/handleNotification",
     "shard": "java/shards/com.sun.nio.sctp/h.json"
   },
   {
-    "slug": "com.sun.nio.sctp/NotificationHandler<T>/handleNotification",
+    "slug": "com.sun.nio.sctp/NotificationHandler/handleNotification",
     "shard": "java/shards/com.sun.nio.sctp/h.json"
   },
   {
-    "slug": "com.sun.nio.sctp/SctpStandardSocketOptions.InitMaxStreams/hashCode",
+    "slug": "com.sun.nio.sctp/InitMaxStreams/hashCode",
     "shard": "java/shards/com.sun.nio.sctp/h.json"
   },
   {
@@ -360,7 +412,7 @@
     "shard": "java/shards/com.sun.nio.sctp/i.json"
   },
   {
-    "slug": "com.sun.nio.sctp/SctpStandardSocketOptions.InitMaxStreams/maxInStreams",
+    "slug": "com.sun.nio.sctp/InitMaxStreams/maxInStreams",
     "shard": "java/shards/com.sun.nio.sctp/m.json"
   },
   {
@@ -368,7 +420,7 @@
     "shard": "java/shards/com.sun.nio.sctp/m.json"
   },
   {
-    "slug": "com.sun.nio.sctp/SctpStandardSocketOptions.InitMaxStreams/maxOutStreams",
+    "slug": "com.sun.nio.sctp/InitMaxStreams/maxOutStreams",
     "shard": "java/shards/com.sun.nio.sctp/m.json"
   },
   {
@@ -452,7 +504,7 @@
     "shard": "java/shards/com.sun.nio.sctp/t.json"
   },
   {
-    "slug": "com.sun.nio.sctp/SctpStandardSocketOptions.InitMaxStreams/toString",
+    "slug": "com.sun.nio.sctp/InitMaxStreams/toString",
     "shard": "java/shards/com.sun.nio.sctp/t.json"
   },
   {
@@ -484,7 +536,7 @@
     "shard": "java/shards/com.sun.nio.sctp/v.json"
   },
   {
-    "slug": "com.sun.nio.sctp/AssociationChangeNotification.AssocChangeEvent/valueOf",
+    "slug": "com.sun.nio.sctp/AssocChangeEvent/valueOf",
     "shard": "java/shards/com.sun.nio.sctp/v.json"
   },
   {
@@ -492,11 +544,11 @@
     "shard": "java/shards/com.sun.nio.sctp/v.json"
   },
   {
-    "slug": "com.sun.nio.sctp/PeerAddressChangeNotification.AddressChangeEvent/valueOf",
+    "slug": "com.sun.nio.sctp/AddressChangeEvent/valueOf",
     "shard": "java/shards/com.sun.nio.sctp/v.json"
   },
   {
-    "slug": "com.sun.nio.sctp/AssociationChangeNotification.AssocChangeEvent/values",
+    "slug": "com.sun.nio.sctp/AssocChangeEvent/values",
     "shard": "java/shards/com.sun.nio.sctp/v.json"
   },
   {
@@ -504,7 +556,7 @@
     "shard": "java/shards/com.sun.nio.sctp/v.json"
   },
   {
-    "slug": "com.sun.nio.sctp/PeerAddressChangeNotification.AddressChangeEvent/values",
+    "slug": "com.sun.nio.sctp/AddressChangeEvent/values",
     "shard": "java/shards/com.sun.nio.sctp/v.json"
   }
 ]

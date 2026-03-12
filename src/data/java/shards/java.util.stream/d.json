@@ -1,11 +1,50 @@
 {
+  "java.util.stream/DoubleMapMultiConsumer": {
+    "id": "java.util.stream.DoubleMapMultiConsumer",
+    "name": "DoubleMapMultiConsumer",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface DoubleMapMultiConsumer"
+    ],
+    "signature_hash": "af09a89ff8fd45bf026f189bc439339ae223545f1f5f7ac01543a2d469346ebd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.DoubleMapMultiConsumer.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.894146",
+    "updatedDate": "2026-03-11T23:15:40.894147",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "16",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "accept"
+    ]
+  },
   "java.util.stream/DoubleStream": {
     "id": "java.util.stream.DoubleStream",
     "name": "DoubleStream",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface DoubleStream"
+    ],
+    "signature_hash": "844fc40fb3fa4ffd4d667836b26eddef51a51b580ce419169e0068f0ae658c9f",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +59,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.494025",
-    "updatedDate": "2026-03-08T21:40:21.494025",
+    "createdDate": "2026-03-11T23:15:40.889174",
+    "updatedDate": "2026-03-11T23:15:40.889175",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -70,14 +109,16 @@
       "toArray"
     ]
   },
-  "java.util.stream/DoubleStream.Builder": {
-    "id": "java.util.stream.DoubleStream.Builder",
-    "name": "DoubleStream.Builder",
+  "java.util.stream/Downstream": {
+    "id": "java.util.stream.Downstream",
+    "name": "Downstream",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.Builder.html",
+    "signatures": [
+      "interface Downstream<T>"
+    ],
+    "signature_hash": "552f9b47b212fe6bb8e43a5882879a3e5fb34c4d9b8f2cdcc19ec44004109b6f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Gatherer.Downstream.html",
     "parameters": [],
     "return_type": "",
     "exceptions": [],
@@ -91,62 +132,26 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.497074",
-    "updatedDate": "2026-03-08T21:40:21.497075",
+    "createdDate": "2026-03-11T23:15:40.894197",
+    "updatedDate": "2026-03-11T23:15:40.894198",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
-      "added_version": "1.8",
+      "added_version": "24",
       "tags": [],
       "difficulty": null,
       "popularity_score": 0
     },
     "methods": [
-      "accept",
-      "add",
-      "build"
+      "isRejecting",
+      "push"
     ]
   },
-  "java.util.stream/DoubleStream.DoubleMapMultiConsumer": {
-    "id": "java.util.stream.DoubleStream.DoubleMapMultiConsumer",
-    "name": "DoubleStream.DoubleMapMultiConsumer",
-    "type": "interface",
-    "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.DoubleMapMultiConsumer.html",
-    "parameters": [],
-    "return_type": "",
-    "exceptions": [],
-    "description": "",
-    "example": "",
-    "articles": [],
-    "info": {
-      "status": "empty",
-      "excerpt": "",
-      "keyword": "",
-      "seo_position": 0,
-      "visits": 0
-    },
-    "createdDate": "2026-03-08T21:40:21.497159",
-    "updatedDate": "2026-03-08T21:40:21.497160",
-    "metadata": {
-      "deprecated": false,
-      "deprecated_version": null,
-      "added_version": "16",
-      "tags": [],
-      "difficulty": null,
-      "popularity_score": 0
-    },
-    "methods": [
-      "accept"
-    ]
-  },
-  "java.util.stream/Gatherer<T,A,R>/defaultCombiner": {
-    "id": "java.util.stream.Gatherer<T,A,R>.defaultCombiner",
+  "java.util.stream/Gatherer/defaultCombiner": {
+    "id": "java.util.stream.Gatherer.defaultCombiner",
     "name": "defaultCombiner",
     "type": "method",
-    "parent": "Gatherer<T,A,R>",
+    "parent": "Gatherer",
     "signatures": [
       "public static<A> BinaryOperator<A> defaultCombiner()"
     ],
@@ -165,8 +170,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496157",
-    "updatedDate": "2026-03-08T21:40:21.496158",
+    "createdDate": "2026-03-11T23:15:40.892101",
+    "updatedDate": "2026-03-11T23:15:40.892103",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -176,11 +181,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Gatherer<T,A,R>/defaultFinisher": {
-    "id": "java.util.stream.Gatherer<T,A,R>.defaultFinisher",
+  "java.util.stream/Gatherer/defaultFinisher": {
+    "id": "java.util.stream.Gatherer.defaultFinisher",
     "name": "defaultFinisher",
     "type": "method",
-    "parent": "Gatherer<T,A,R>",
+    "parent": "Gatherer",
     "signatures": [
       "public static<A, R> BiConsumer<A, Gatherer.Downstream<? super R>> defaultFinisher()"
     ],
@@ -199,8 +204,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496179",
-    "updatedDate": "2026-03-08T21:40:21.496179",
+    "createdDate": "2026-03-11T23:15:40.892130",
+    "updatedDate": "2026-03-11T23:15:40.892131",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -210,11 +215,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Gatherer<T,A,R>/defaultInitializer": {
-    "id": "java.util.stream.Gatherer<T,A,R>.defaultInitializer",
+  "java.util.stream/Gatherer/defaultInitializer": {
+    "id": "java.util.stream.Gatherer.defaultInitializer",
     "name": "defaultInitializer",
     "type": "method",
-    "parent": "Gatherer<T,A,R>",
+    "parent": "Gatherer",
     "signatures": [
       "public static<A> Supplier<A> defaultInitializer()"
     ],
@@ -233,8 +238,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496198",
-    "updatedDate": "2026-03-08T21:40:21.496199",
+    "createdDate": "2026-03-11T23:15:40.892182",
+    "updatedDate": "2026-03-11T23:15:40.892184",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -244,11 +249,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Stream<T>/distinct": {
-    "id": "java.util.stream.Stream<T>.distinct",
+  "java.util.stream/Stream/distinct": {
+    "id": "java.util.stream.Stream.distinct",
     "name": "distinct",
     "type": "method",
-    "parent": "Stream<T>",
+    "parent": "Stream",
     "signatures": [
       "public Stream<T> distinct()"
     ],
@@ -267,8 +272,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.491008",
-    "updatedDate": "2026-03-08T21:40:21.491009",
+    "createdDate": "2026-03-11T23:15:40.886256",
+    "updatedDate": "2026-03-11T23:15:40.886257",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -301,8 +306,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.492036",
-    "updatedDate": "2026-03-08T21:40:21.492037",
+    "createdDate": "2026-03-11T23:15:40.887198",
+    "updatedDate": "2026-03-11T23:15:40.887199",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -335,8 +340,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.492804",
-    "updatedDate": "2026-03-08T21:40:21.492804",
+    "createdDate": "2026-03-11T23:15:40.888322",
+    "updatedDate": "2026-03-11T23:15:40.888324",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -369,8 +374,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.494209",
-    "updatedDate": "2026-03-08T21:40:21.494209",
+    "createdDate": "2026-03-11T23:15:40.889392",
+    "updatedDate": "2026-03-11T23:15:40.889393",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -445,8 +450,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.496657",
-    "updatedDate": "2026-03-08T21:40:21.496658",
+    "createdDate": "2026-03-11T23:15:40.893439",
+    "updatedDate": "2026-03-11T23:15:40.893440",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -456,11 +461,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.stream/Stream<T>/dropWhile": {
-    "id": "java.util.stream.Stream<T>.dropWhile",
+  "java.util.stream/Stream/dropWhile": {
+    "id": "java.util.stream.Stream.dropWhile",
     "name": "dropWhile",
     "type": "method",
-    "parent": "Stream<T>",
+    "parent": "Stream",
     "signatures": [
       "public default Stream<T> dropWhile(Predicate<? super T> predicate)"
     ],
@@ -490,8 +495,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.491024",
-    "updatedDate": "2026-03-08T21:40:21.491025",
+    "createdDate": "2026-03-11T23:15:40.886274",
+    "updatedDate": "2026-03-11T23:15:40.886275",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -535,8 +540,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.492053",
-    "updatedDate": "2026-03-08T21:40:21.492054",
+    "createdDate": "2026-03-11T23:15:40.887217",
+    "updatedDate": "2026-03-11T23:15:40.887218",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -580,8 +585,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.492823",
-    "updatedDate": "2026-03-08T21:40:21.492824",
+    "createdDate": "2026-03-11T23:15:40.888427",
+    "updatedDate": "2026-03-11T23:15:40.888429",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -625,8 +630,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.494230",
-    "updatedDate": "2026-03-08T21:40:21.494231",
+    "createdDate": "2026-03-11T23:15:40.889417",
+    "updatedDate": "2026-03-11T23:15:40.889418",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

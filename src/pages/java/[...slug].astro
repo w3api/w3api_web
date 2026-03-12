@@ -1,6 +1,6 @@
 ---
 import StarlightLayout from '../../layouts/StarlightLayout.astro';
-import { sidebar } from '../../config/sidebar';
+import { sidebar } from '../../config/java_sidebar';
 import { Code } from "astro-expressive-code/components";
 import rutas from '../../data/java/routes.json'
 import { Breadcrumbs } from "astro-breadcrumbs";
@@ -131,6 +131,7 @@ if (isPackageOnly) {
   // Buscar la ruta en el índice de distribución
   const routeMeta = distributionFile.find((r: any) => r.slug === slug)
   
+  console.log(slug)
   if (!routeMeta) throw new Error("Not found")
   
   // Acceder al módulo del shard que ya fue importado por glob
@@ -250,7 +251,7 @@ const tableOfContents = headings.map(h => ({
     <section id="members">
       <h2>Members</h2>
       {Object.entries(doc.membersByType).map(([type, members]: any) => {
-        const typeLabel = type.charAt(0).toUpperCase() + type.slice(1) + 's'
+        const typeLabel = type.charAt(0).toUpperCase() + type.slice(1)
         return (
           <div class="members-category">
             <h3>{typeLabel}</h3>
@@ -266,6 +267,29 @@ const tableOfContents = headings.map(h => ({
           </div>
         )
       })}
+    </section>
+  )}
+
+  {!isPackagePage && doc.signatures && doc.signatures.length > 0 && (
+    <section id="sintaxis">
+      <h2>Sintaxis</h2>
+      <Code
+        code={doc.signatures.join('\n')}
+        lang="java"
+      />      
+    </section>
+  )}  
+
+   {!isPackagePage && doc.parameters && doc.parameters.length > 0 && (
+    <section id="parameters">
+      <h2>Parameters</h2>
+      <ul>
+        {doc.parameters.map((param: any) => (
+          <li>
+            <strong>{param.type} {param.name}</strong> - {param.description}
+          </li>
+        ))}
+      </ul>
     </section>
   )}
 
@@ -317,29 +341,6 @@ const tableOfContents = headings.map(h => ({
         ))}
       </ul>
       </div>
-    </section>
-  )}
-
-  {!isPackagePage && doc.signatures && doc.signatures.length > 0 && (
-    <section id="sintaxis">
-      <h2>Sintaxis</h2>
-      <Code
-        code={doc.signatures.join('\n')}
-        lang="java"
-      />      
-    </section>
-  )}  
-
-    {!isPackagePage && doc.parameters && doc.parameters.length > 0 && (
-    <section id="parameters">
-      <h2>Parameters</h2>
-      <ul>
-        {doc.parameters.map((param: any) => (
-          <li>
-            <strong>{param.type} {param.name}</strong> - {param.description}
-          </li>
-        ))}
-      </ul>
     </section>
   )}
 

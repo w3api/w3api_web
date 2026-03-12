@@ -1,0 +1,179 @@
+{
+  "contextvars/Context": {
+    "id": "contextvars.Context",
+    "name": "Context",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class contextvars.Context"
+    ],
+    "signature_hash": "cac8088692b494525dbab2be0cf589f25680711ec7c71f91eb6283f17f27d665",
+    "url": "https://docs.python.org/3/library/contextvars.html#module-contextvars#contextvars.Context",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A mapping of ContextVars to their values. Context() creates an empty context with no values in it. To get a copy of the current context use the copy_context() function. Each thread has its own effective stack of Context objects. The current context is the Context object at the top of the current thread’s stack. All Context objects in the stacks are considered to be entered. Entering a context, which can be done by calling its run() method, makes the context the current context by pushing it o...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A mapping of ContextVars to their values. Context() creates an empty context with no values in it. To get a copy of the current context use the copy_context() function. Each thread has its own effecti...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889986",
+    "updatedDate": "2026-03-11T23:15:47.889987",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "copy",
+      "get",
+      "items",
+      "keys",
+      "run",
+      "values"
+    ]
+  },
+  "contextvars/ContextVar": {
+    "id": "contextvars.ContextVar",
+    "name": "ContextVar",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class contextvars.ContextVar(name[, *, default])"
+    ],
+    "signature_hash": "756cdf7a640e6272999b7c8fcab228d3248569fcb22ab46589d17828393676d7",
+    "url": "https://docs.python.org/3/library/contextvars.html#module-contextvars#contextvars.ContextVar",
+    "parameters": [
+      {
+        "name": "name[, *, default",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This class is used to declare a new Context Variable, e.g.: var: ContextVar[int] = ContextVar('var', default=42) The required name parameter is used for introspection and debug purposes. The optional keyword-only default parameter is returned by ContextVar.get() when no value for the variable is found in the current context. Important: Context Variables should be created at the top module level and never in closures. Context objects hold strong references to context variables which prevents c...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class is used to declare a new Context Variable, e.g.: var: ContextVar[int] = ContextVar('var', default=42) The required name parameter is used for introspection and debug purposes. The optional ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889844",
+    "updatedDate": "2026-03-11T23:15:47.889845",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "name"
+    ],
+    "methods": [
+      "get",
+      "reset",
+      "set"
+    ]
+  },
+  "contextvars/copy_context": {
+    "id": "contextvars.copy_context",
+    "name": "copy_context",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "contextvars.copy_context()"
+    ],
+    "signature_hash": "f48f0084cfb43fd7cbd30481434dad38d7f7a27d99c6825dc5339ad77d273188",
+    "url": "https://docs.python.org/3/library/contextvars.html#module-contextvars#contextvars.copy_context",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a copy of the current Context object. The following snippet gets a copy of the current context and prints all variables and their values that are set in it: ctx: Context = copy_context() print(list(ctx.items())) The function has an O(1) complexity, i.e. works equally fast for contexts with a few context variables and for contexts that have a lot of them.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a copy of the current Context object. The following snippet gets a copy of the current context and prints all variables and their values that are set in it: ctx: Context = copy_context() print...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889972",
+    "updatedDate": "2026-03-11T23:15:47.889973",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextvars/Context/copy": {
+    "id": "contextvars.Context.copy",
+    "name": "copy",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "copy()"
+    ],
+    "signature_hash": "b45a5136ddfb1399cb2c8c48e3831faf7e5751d1e2228e2a6f947e9fb396d413",
+    "url": "https://docs.python.org/3/library/contextvars.html#module-contextvars#contextvars.Context.copy",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a shallow copy of the context object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a shallow copy of the context object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.890017",
+    "updatedDate": "2026-03-11T23:15:47.890018",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextvars": {
+    "type": "module",
+    "name": "contextvars",
+    "id": "contextvars",
+    "description": "Module contextvars",
+    "classes": [
+      "Context",
+      "ContextVar",
+      "Token"
+    ],
+    "functions": [
+      "copy_context"
+    ]
+  }
+}

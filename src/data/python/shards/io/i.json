@@ -1,0 +1,158 @@
+{
+  "io/IOBase": {
+    "id": "io.IOBase",
+    "name": "IOBase",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class io.IOBase"
+    ],
+    "signature_hash": "b0e7b4e2a356a37b4780083ed7a134c961e1cc3a340f30bc64af495d17c3f5e8",
+    "url": "https://docs.python.org/3/library/io.html#module-io#io.IOBase",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The abstract base class for all I/O classes. This class provides empty abstract implementations for many methods that derived classes can override selectively; the default implementations represent a file that cannot be read, written or seeked. Even though IOBase does not declare read() or write() because their signatures will vary, implementations and clients should consider those methods part of the interface. Also, implementations may raise a ValueError (or UnsupportedOperation) when opera...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The abstract base class for all I/O classes. This class provides empty abstract implementations for many methods that derived classes can override selectively; the default implementations represent a ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.950499",
+    "updatedDate": "2026-03-11T23:15:47.950500",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "closed"
+    ],
+    "methods": [
+      "__del__",
+      "close",
+      "fileno",
+      "flush",
+      "isatty",
+      "readable",
+      "readline",
+      "readlines",
+      "seek",
+      "seekable",
+      "tell",
+      "truncate",
+      "writable",
+      "writelines"
+    ]
+  },
+  "io/IncrementalNewlineDecoder": {
+    "id": "io.IncrementalNewlineDecoder",
+    "name": "IncrementalNewlineDecoder",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class io.IncrementalNewlineDecoder"
+    ],
+    "signature_hash": "6dcc6ff5f0fb5775f5607e6ae3e086c2d837685003dcd514341644f83c5cb0ee",
+    "url": "https://docs.python.org/3/library/io.html#module-io#io.IncrementalNewlineDecoder",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A helper codec that decodes newlines for universal newlines mode. It inherits from codecs.IncrementalDecoder.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A helper codec that decodes newlines for universal newlines mode. It inherits from codecs.IncrementalDecoder.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.952452",
+    "updatedDate": "2026-03-11T23:15:47.952453",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "io/IOBase/isatty": {
+    "id": "io.IOBase.isatty",
+    "name": "isatty",
+    "type": "method",
+    "parent": "IOBase",
+    "signatures": [
+      "isatty()"
+    ],
+    "signature_hash": "5c845929469100b03773fbc728c744d8a588d5e62388171736bb2421aeef4c4d",
+    "url": "https://docs.python.org/3/library/io.html#module-io#io.IOBase.isatty",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if the stream is interactive (i.e., connected to a terminal/tty device).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the stream is interactive (i.e., connected to a terminal/tty device).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.950563",
+    "updatedDate": "2026-03-11T23:15:47.950564",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "io": {
+    "type": "module",
+    "name": "io",
+    "id": "io",
+    "description": "Module io",
+    "classes": [
+      "BufferedIOBase",
+      "BufferedRWPair",
+      "BufferedRandom",
+      "BufferedReader",
+      "BufferedWriter",
+      "BytesIO",
+      "FileIO",
+      "IOBase",
+      "IncrementalNewlineDecoder",
+      "RawIOBase",
+      "Reader",
+      "StringIO",
+      "TextIOBase",
+      "TextIOWrapper",
+      "Writer"
+    ],
+    "constants": [
+      "DEFAULT_BUFFER_SIZE"
+    ],
+    "exceptions": [
+      "BlockingIOError",
+      "UnsupportedOperation"
+    ],
+    "functions": [
+      "open",
+      "open_code",
+      "text_encoding"
+    ]
+  }
+}

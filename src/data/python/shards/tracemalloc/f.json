@@ -1,0 +1,300 @@
+{
+  "tracemalloc/Frame/filename": {
+    "id": "tracemalloc.Frame.filename",
+    "name": "filename",
+    "type": "attribute",
+    "parent": "Frame",
+    "signatures": [
+      "filename"
+    ],
+    "signature_hash": "f974a07ea4988c92d27cf645c46bc533075d4dd5a8059c03fe460a4aa9d4dd5a",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Frame.filename",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Filename (str).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Filename (str).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096589",
+    "updatedDate": "2026-03-11T23:15:48.096590",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tracemalloc/Filter/filename_pattern": {
+    "id": "tracemalloc.Filter.filename_pattern",
+    "name": "filename_pattern",
+    "type": "attribute",
+    "parent": "Filter",
+    "signatures": [
+      "filename_pattern"
+    ],
+    "signature_hash": "c05d745e596a5eec9afd41421c15e9f572780765d86b52807254d223c7ea64da",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Filter.filename_pattern",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Filename pattern of the filter (str). Read-only property.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Filename pattern of the filter (str). Read-only property.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096556",
+    "updatedDate": "2026-03-11T23:15:48.096557",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tracemalloc/Filter": {
+    "id": "tracemalloc.Filter",
+    "name": "Filter",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class tracemalloc.Filter(inclusive: bool, filename_pattern: str, lineno: int = None, all_frames: bool = False, domain: int = None)"
+    ],
+    "signature_hash": "ae138a5aef068f96561096095b9e0d71b3f969baa492b9ab609d645eece4c9e8",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Filter",
+    "parameters": [
+      {
+        "name": "inclusive: bool",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "filename_pattern: str",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lineno: int",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "all_frames: bool",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "domain: int",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Filter on traces of memory blocks. See the fnmatch.fnmatch() function for the syntax of filename_pattern. The '.pyc' file extension is replaced with '.py'. Examples: Filter(True, subprocess.__file__) only includes traces of the subprocess module Filter(False, tracemalloc.__file__) excludes traces of the tracemalloc module Filter(False, \"<unknown>\") excludes empty tracebacks Changed in version 3.5: The '.pyo' file extension is no longer replaced with '.py'. Changed in version 3.6: Added the do...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Filter on traces of memory blocks. See the fnmatch.fnmatch() function for the syntax of filename_pattern. The '.pyc' file extension is replaced with '.py'. Examples: Filter(True, subprocess.__file__) ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096503",
+    "updatedDate": "2026-03-11T23:15:48.096504",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "all_frames",
+      "domain",
+      "filename_pattern",
+      "inclusive",
+      "lineno"
+    ]
+  },
+  "tracemalloc/Frame": {
+    "id": "tracemalloc.Frame",
+    "name": "Frame",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class tracemalloc.Frame"
+    ],
+    "signature_hash": "10bfacdf1d75c7df5e23b4dee0248843dfed05821a815a27c28beff8859acc65",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Frame",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Frame of a traceback. The Traceback class is a sequence of Frame instances. filename¶ Filename (str). lineno¶ Line number (int).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Frame of a traceback. The Traceback class is a sequence of Frame instances. filename¶ Filename (str). lineno¶ Line number (int).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096579",
+    "updatedDate": "2026-03-11T23:15:48.096579",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "filename",
+      "lineno"
+    ]
+  },
+  "tracemalloc/Snapshot/filter_traces": {
+    "id": "tracemalloc.Snapshot.filter_traces",
+    "name": "filter_traces",
+    "type": "method",
+    "parent": "Snapshot",
+    "signatures": [
+      "filter_traces(filters)"
+    ],
+    "signature_hash": "c5bc4fa766250eae533efa8072f0520393283241391c830c2d1216fc830954b9",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Snapshot.filter_traces",
+    "parameters": [
+      {
+        "name": "filters",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a new Snapshot instance with a filtered traces sequence, filters is a list of DomainFilter and Filter instances. If filters is an empty list, return a new Snapshot instance with a copy of the traces. All inclusive filters are applied at once, a trace is ignored if no inclusive filters match it. A trace is ignored if at least one exclusive filter matches it. Changed in version 3.6: DomainFilter instances are now also accepted in filters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a new Snapshot instance with a filtered traces sequence, filters is a list of DomainFilter and Filter instances. If filters is an empty list, return a new Snapshot instance with a copy of the t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096670",
+    "updatedDate": "2026-03-11T23:15:48.096671",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tracemalloc/Traceback/format": {
+    "id": "tracemalloc.Traceback.format",
+    "name": "format",
+    "type": "method",
+    "parent": "Traceback",
+    "signatures": [
+      "format(limit=None, most_recent_first=False)"
+    ],
+    "signature_hash": "7de3521faaa854b54a3874f920da72571add59972e50a5a9b16dc78727ed992d",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Traceback.format",
+    "parameters": [
+      {
+        "name": "limit",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "most_recent_first",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Format the traceback as a list of lines. Use the linecache module to retrieve lines from the source code. If limit is set, format the limit most recent frames if limit is positive. Otherwise, format the abs(limit) oldest frames. If most_recent_first is True, the order of the formatted frames is reversed, returning the most recent frame first instead of last. Similar to the traceback.format_tb() function, except that format() does not include newlines. Example: print(\"Traceback (most recent ca...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Format the traceback as a list of lines. Use the linecache module to retrieve lines from the source code. If limit is set, format the limit most recent frames if limit is positive. Otherwise, format t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096961",
+    "updatedDate": "2026-03-11T23:15:48.096962",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

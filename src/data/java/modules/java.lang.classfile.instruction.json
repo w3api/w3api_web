@@ -40,6 +40,10 @@
     "shard": "java/shards/java.lang.classfile.instruction/f.json"
   },
   {
+    "slug": "java.lang.classfile.instruction/ArgumentConstantInstruction",
+    "shard": "java/shards/java.lang.classfile.instruction/a.json"
+  },
+  {
     "slug": "java.lang.classfile.instruction/ArrayLoadInstruction",
     "shard": "java/shards/java.lang.classfile.instruction/a.json"
   },
@@ -60,31 +64,11 @@
     "shard": "java/shards/java.lang.classfile.instruction/c.json"
   },
   {
-    "slug": "java.lang.classfile.instruction/ConstantInstruction.ArgumentConstantInstruction",
-    "shard": "java/shards/java.lang.classfile.instruction/c.json"
-  },
-  {
-    "slug": "java.lang.classfile.instruction/ConstantInstruction.IntrinsicConstantInstruction",
-    "shard": "java/shards/java.lang.classfile.instruction/c.json"
-  },
-  {
-    "slug": "java.lang.classfile.instruction/ConstantInstruction.LoadConstantInstruction",
-    "shard": "java/shards/java.lang.classfile.instruction/c.json"
-  },
-  {
     "slug": "java.lang.classfile.instruction/ConvertInstruction",
     "shard": "java/shards/java.lang.classfile.instruction/c.json"
   },
   {
     "slug": "java.lang.classfile.instruction/DiscontinuedInstruction",
-    "shard": "java/shards/java.lang.classfile.instruction/d.json"
-  },
-  {
-    "slug": "java.lang.classfile.instruction/DiscontinuedInstruction.JsrInstruction",
-    "shard": "java/shards/java.lang.classfile.instruction/d.json"
-  },
-  {
-    "slug": "java.lang.classfile.instruction/DiscontinuedInstruction.RetInstruction",
     "shard": "java/shards/java.lang.classfile.instruction/d.json"
   },
   {
@@ -100,6 +84,10 @@
     "shard": "java/shards/java.lang.classfile.instruction/i.json"
   },
   {
+    "slug": "java.lang.classfile.instruction/IntrinsicConstantInstruction",
+    "shard": "java/shards/java.lang.classfile.instruction/i.json"
+  },
+  {
     "slug": "java.lang.classfile.instruction/InvokeDynamicInstruction",
     "shard": "java/shards/java.lang.classfile.instruction/i.json"
   },
@@ -108,11 +96,19 @@
     "shard": "java/shards/java.lang.classfile.instruction/i.json"
   },
   {
+    "slug": "java.lang.classfile.instruction/JsrInstruction",
+    "shard": "java/shards/java.lang.classfile.instruction/j.json"
+  },
+  {
     "slug": "java.lang.classfile.instruction/LabelTarget",
     "shard": "java/shards/java.lang.classfile.instruction/l.json"
   },
   {
     "slug": "java.lang.classfile.instruction/LineNumber",
+    "shard": "java/shards/java.lang.classfile.instruction/l.json"
+  },
+  {
+    "slug": "java.lang.classfile.instruction/LoadConstantInstruction",
     "shard": "java/shards/java.lang.classfile.instruction/l.json"
   },
   {
@@ -158,6 +154,10 @@
   {
     "slug": "java.lang.classfile.instruction/OperatorInstruction",
     "shard": "java/shards/java.lang.classfile.instruction/o.json"
+  },
+  {
+    "slug": "java.lang.classfile.instruction/RetInstruction",
+    "shard": "java/shards/java.lang.classfile.instruction/r.json"
   },
   {
     "slug": "java.lang.classfile.instruction/ReturnInstruction",
@@ -236,7 +236,7 @@
     "shard": "java/shards/java.lang.classfile.instruction/c.json"
   },
   {
-    "slug": "java.lang.classfile.instruction/ConstantInstruction.LoadConstantInstruction/constantEntry",
+    "slug": "java.lang.classfile.instruction/LoadConstantInstruction/constantEntry",
     "shard": "java/shards/java.lang.classfile.instruction/c.json"
   },
   {
@@ -244,7 +244,7 @@
     "shard": "java/shards/java.lang.classfile.instruction/c.json"
   },
   {
-    "slug": "java.lang.classfile.instruction/ConstantInstruction.ArgumentConstantInstruction/constantValue",
+    "slug": "java.lang.classfile.instruction/ArgumentConstantInstruction/constantValue",
     "shard": "java/shards/java.lang.classfile.instruction/c.json"
   },
   {
@@ -364,11 +364,11 @@
     "shard": "java/shards/java.lang.classfile.instruction/o.json"
   },
   {
-    "slug": "java.lang.classfile.instruction/DiscontinuedInstruction.JsrInstruction/of",
+    "slug": "java.lang.classfile.instruction/JsrInstruction/of",
     "shard": "java/shards/java.lang.classfile.instruction/o.json"
   },
   {
-    "slug": "java.lang.classfile.instruction/DiscontinuedInstruction.RetInstruction/of",
+    "slug": "java.lang.classfile.instruction/RetInstruction/of",
     "shard": "java/shards/java.lang.classfile.instruction/o.json"
   },
   {
@@ -492,7 +492,7 @@
     "shard": "java/shards/java.lang.classfile.instruction/s.json"
   },
   {
-    "slug": "java.lang.classfile.instruction/DiscontinuedInstruction.RetInstruction/slot",
+    "slug": "java.lang.classfile.instruction/RetInstruction/slot",
     "shard": "java/shards/java.lang.classfile.instruction/s.json"
   },
   {
@@ -532,7 +532,7 @@
     "shard": "java/shards/java.lang.classfile.instruction/t.json"
   },
   {
-    "slug": "java.lang.classfile.instruction/DiscontinuedInstruction.JsrInstruction/target",
+    "slug": "java.lang.classfile.instruction/JsrInstruction/target",
     "shard": "java/shards/java.lang.classfile.instruction/t.json"
   },
   {
@@ -584,15 +584,15 @@
     "shard": "java/shards/java.lang.classfile.instruction/t.json"
   },
   {
-    "slug": "java.lang.classfile.instruction/ConstantInstruction.ArgumentConstantInstruction/typeKind",
+    "slug": "java.lang.classfile.instruction/ArgumentConstantInstruction/typeKind",
     "shard": "java/shards/java.lang.classfile.instruction/t.json"
   },
   {
-    "slug": "java.lang.classfile.instruction/ConstantInstruction.IntrinsicConstantInstruction/typeKind",
+    "slug": "java.lang.classfile.instruction/IntrinsicConstantInstruction/typeKind",
     "shard": "java/shards/java.lang.classfile.instruction/t.json"
   },
   {
-    "slug": "java.lang.classfile.instruction/ConstantInstruction.LoadConstantInstruction/typeKind",
+    "slug": "java.lang.classfile.instruction/LoadConstantInstruction/typeKind",
     "shard": "java/shards/java.lang.classfile.instruction/t.json"
   },
   {

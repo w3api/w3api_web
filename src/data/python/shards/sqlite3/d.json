@@ -1,0 +1,179 @@
+{
+  "sqlite3/Cursor/description": {
+    "id": "sqlite3.Cursor.description",
+    "name": "description",
+    "type": "attribute",
+    "parent": "Cursor",
+    "signatures": [
+      "description"
+    ],
+    "signature_hash": "c9046f7a37ad0ea7cee73355984fa5428982f8b37c8f7bcec91f7ac71a7cd104",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Cursor.description",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Read-only attribute that provides the column names of the last query. To remain compatible with the Python DB API, it returns a 7-tuple for each column where the last six items of each tuple are None. It is set for SELECT statements without any matching rows as well.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read-only attribute that provides the column names of the last query. To remain compatible with the Python DB API, it returns a 7-tuple for each column where the last six items of each tuple are None....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.043948",
+    "updatedDate": "2026-03-11T23:15:48.043949",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/DataError": {
+    "id": "sqlite3.DataError",
+    "name": "DataError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception sqlite3.DataError"
+    ],
+    "signature_hash": "6946a5ca510c34d06e1c078e0140dc97b5c38a9ee84ff6ec4052b15bc3849306",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.DataError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Exception raised for errors caused by problems with the processed data, like numeric values out of range, and strings which are too long. DataError is a subclass of DatabaseError.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Exception raised for errors caused by problems with the processed data, like numeric values out of range, and strings which are too long. DataError is a subclass of DatabaseError.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.044250",
+    "updatedDate": "2026-03-11T23:15:48.044251",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/DatabaseError": {
+    "id": "sqlite3.DatabaseError",
+    "name": "DatabaseError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception sqlite3.DatabaseError"
+    ],
+    "signature_hash": "29c5881a271b2b3e33567ffdabdf95d496e2af10a461a1ce3b2a3778a29e9970",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.DatabaseError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Exception raised for errors that are related to the database. This serves as the base exception for several types of database errors. It is only raised implicitly through the specialised subclasses. DatabaseError is a subclass of Error.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Exception raised for errors that are related to the database. This serves as the base exception for several types of database errors. It is only raised implicitly through the specialised subclasses. D...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.044236",
+    "updatedDate": "2026-03-11T23:15:48.044237",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/Connection/deserialize": {
+    "id": "sqlite3.Connection.deserialize",
+    "name": "deserialize",
+    "type": "method",
+    "parent": "Connection",
+    "signatures": [
+      "deserialize(data, /, *, name='main')"
+    ],
+    "signature_hash": "a275075ee22b0469fbe2a510d69340200d782a267e0ae0549da26905e1d43b07",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Connection.deserialize",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "",
+        "has_default": true,
+        "default_value": "'main'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Deserialize a serialized database into a Connection. This method causes the database connection to disconnect from database name, and reopen name as an in-memory database based on the serialization contained in data. Parameters: data (bytes) – A serialized database. name (str) – The database name to deserialize into. Defaults to \"main\". Raises: OperationalError – If the database connection is currently involved in a read transaction or a backup operation. DatabaseError – If data does not cont...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deserialize a serialized database into a Connection. This method causes the database connection to disconnect from database name, and reopen name as an in-memory database based on the serialization co...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.043646",
+    "updatedDate": "2026-03-11T23:15:48.043647",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

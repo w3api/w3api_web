@@ -1,0 +1,337 @@
+{
+  "socket/recv_fds": {
+    "id": "socket.recv_fds",
+    "name": "recv_fds",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.recv_fds(sock, bufsize, maxfds[, flags])"
+    ],
+    "signature_hash": "eb0336edb55395c191dbbb7a99510db89c505653b52eb553c45ace2a224ca7b8",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.recv_fds",
+    "parameters": [
+      {
+        "name": "sock",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "bufsize",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "maxfds[, flags",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Receive up to maxfds file descriptors from an AF_UNIX socket sock. Return (msg, list(fds), flags, addr). Consult recvmsg() for the documentation of these parameters. Availability: Unix, not WASI. Unix platforms supporting recvmsg() and SCM_RIGHTS mechanism. Added in version 3.9. Note Any truncated integers at the end of the list of file descriptors.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Receive up to maxfds file descriptors from an AF_UNIX socket sock. Return (msg, list(fds), flags, addr). Consult recvmsg() for the documentation of these parameters. Availability: Unix, not WASI. Unix...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041539",
+    "updatedDate": "2026-03-11T23:15:48.041540",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.9.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/recv": {
+    "id": "socket.socket.recv",
+    "name": "recv",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.recv(bufsize[, flags])"
+    ],
+    "signature_hash": "f3f148afa296ec9fc0d22e3db1b845d3ef47daea954b51d476209a0e26fbedba",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.recv",
+    "parameters": [
+      {
+        "name": "bufsize[, flags",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Receive data from the socket. The return value is a bytes object representing the data received. The maximum amount of data to be received at once is specified by bufsize. A returned empty bytes object indicates that the client has disconnected. See the Unix manual page recv(2) for the meaning of the optional argument flags; it defaults to zero. Changed in version 3.5: If the system call is interrupted and the signal handler does not raise an exception, the method now retries the system call ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Receive data from the socket. The return value is a bytes object representing the data received. The maximum amount of data to be received at once is specified by bufsize. A returned empty bytes objec...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041878",
+    "updatedDate": "2026-03-11T23:15:48.041879",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/recv_into": {
+    "id": "socket.socket.recv_into",
+    "name": "recv_into",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.recv_into(buffer[, nbytes[, flags]])"
+    ],
+    "signature_hash": "362dbcfb327e73efd3260e69162bb58288dab6bc1cfa1d3ba19444d9ad2d882a",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.recv_into",
+    "parameters": [
+      {
+        "name": "buffer[, nbytes[, flags",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Receive up to nbytes bytes from the socket, storing the data into a buffer rather than creating a new bytestring. If nbytes is not specified (or 0), receive up to the size available in the given buffer. Returns the number of bytes received. See the Unix manual page recv(2) for the meaning of the optional argument flags; it defaults to zero.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Receive up to nbytes bytes from the socket, storing the data into a buffer rather than creating a new bytestring. If nbytes is not specified (or 0), receive up to the size available in the given buffe...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041986",
+    "updatedDate": "2026-03-11T23:15:48.041986",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/recvfrom": {
+    "id": "socket.socket.recvfrom",
+    "name": "recvfrom",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.recvfrom(bufsize[, flags])"
+    ],
+    "signature_hash": "9db1511343e39deecb7798489c8378638d395e0168e81c80dfb81c78e8a20036",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.recvfrom",
+    "parameters": [
+      {
+        "name": "bufsize[, flags",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Receive data from the socket. The return value is a pair (bytes, address) where bytes is a bytes object representing the data received and address is the address of the socket sending the data. See the Unix manual page recv(2) for the meaning of the optional argument flags; it defaults to zero. (The format of address depends on the address family — see above.) Changed in version 3.5: If the system call is interrupted and the signal handler does not raise an exception, the method now retries t...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Receive data from the socket. The return value is a pair (bytes, address) where bytes is a bytes object representing the data received and address is the address of the socket sending the data. See th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041898",
+    "updatedDate": "2026-03-11T23:15:48.041899",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/recvfrom_into": {
+    "id": "socket.socket.recvfrom_into",
+    "name": "recvfrom_into",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.recvfrom_into(buffer[, nbytes[, flags]])"
+    ],
+    "signature_hash": "6f34728d574f92b92dda6236fb86c943f738e5a52300993ce9fa9e922d4194a1",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.recvfrom_into",
+    "parameters": [
+      {
+        "name": "buffer[, nbytes[, flags",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Receive data from the socket, writing it into buffer instead of creating a new bytestring. The return value is a pair (nbytes, address) where nbytes is the number of bytes received and address is the address of the socket sending the data. See the Unix manual page recv(2) for the meaning of the optional argument flags; it defaults to zero. (The format of address depends on the address family — see above.)",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Receive data from the socket, writing it into buffer instead of creating a new bytestring. The return value is a pair (nbytes, address) where nbytes is the number of bytes received and address is the ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041963",
+    "updatedDate": "2026-03-11T23:15:48.041964",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/recvmsg": {
+    "id": "socket.socket.recvmsg",
+    "name": "recvmsg",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.recvmsg(bufsize[, ancbufsize[, flags]])"
+    ],
+    "signature_hash": "3fdf472c3b29917c07025b99e4dba715a7939addcd53a08fc6a17c6b1e0dc5ff",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.recvmsg",
+    "parameters": [
+      {
+        "name": "bufsize[, ancbufsize[, flags",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Receive normal data (up to bufsize bytes) and ancillary data from the socket. The ancbufsize argument sets the size in bytes of the internal buffer used to receive the ancillary data; it defaults to 0, meaning that no ancillary data will be received. Appropriate buffer sizes for ancillary data can be calculated using CMSG_SPACE() or CMSG_LEN(), and items which do not fit into the buffer might be truncated or discarded. The flags argument defaults to 0 and has the same meaning as for recv(). T...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Receive normal data (up to bufsize bytes) and ancillary data from the socket. The ancbufsize argument sets the size in bytes of the internal buffer used to receive the ancillary data; it defaults to 0...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041920",
+    "updatedDate": "2026-03-11T23:15:48.041921",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/recvmsg_into": {
+    "id": "socket.socket.recvmsg_into",
+    "name": "recvmsg_into",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.recvmsg_into(buffers[, ancbufsize[, flags]])"
+    ],
+    "signature_hash": "b3cc4812acd6ce19f19a6339bc8494567c4895fe144ce8bcf07da520881f9b67",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.recvmsg_into",
+    "parameters": [
+      {
+        "name": "buffers[, ancbufsize[, flags",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Receive normal data and ancillary data from the socket, behaving as recvmsg() would, but scatter the non-ancillary data into a series of buffers instead of returning a new bytes object. The buffers argument must be an iterable of objects that export writable buffers (e.g. bytearray objects); these will be filled with successive chunks of the non-ancillary data until it has all been written or there are no more buffers. The operating system may set a limit (sysconf() value SC_IOV_MAX) on the n...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Receive normal data and ancillary data from the socket, behaving as recvmsg() would, but scatter the non-ancillary data into a series of buffers instead of returning a new bytes object. The buffers ar...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041942",
+    "updatedDate": "2026-03-11T23:15:48.041943",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

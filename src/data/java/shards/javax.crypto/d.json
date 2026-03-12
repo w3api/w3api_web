@@ -1,4 +1,44 @@
 {
+  "javax.crypto/Decapsulator": {
+    "id": "javax.crypto.Decapsulator",
+    "name": "Decapsulator",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class Decapsulator"
+    ],
+    "signature_hash": "87cd698b19ae604e5ffd557b4fed84606e1fd361819985d3143d53b5105e6f8b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/crypto/KEM.Decapsulator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.926989",
+    "updatedDate": "2026-03-11T23:15:40.926990",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "21",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "decapsulate",
+      "encapsulationSize",
+      "providerName",
+      "secretSize"
+    ]
+  },
   "javax.crypto/DecapsulateException/DecapsulateException": {
     "id": "javax.crypto.DecapsulateException.DecapsulateException",
     "name": "DecapsulateException",
@@ -44,8 +84,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.515393",
-    "updatedDate": "2026-03-08T21:40:21.515393",
+    "createdDate": "2026-03-11T23:15:40.925870",
+    "updatedDate": "2026-03-11T23:15:40.925871",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -60,8 +100,10 @@
     "name": "DecapsulateException",
     "type": "exception",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "class DecapsulateException"
+    ],
+    "signature_hash": "6b75547c0c2470aec2b4f2da4a87bd3e96927a51cf928b191cbba64d117bc677",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/crypto/DecapsulateException.html",
     "parameters": [],
     "return_type": "",
@@ -76,8 +118,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.515366",
-    "updatedDate": "2026-03-08T21:40:21.515367",
+    "createdDate": "2026-03-11T23:15:40.925844",
+    "updatedDate": "2026-03-11T23:15:40.925845",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -113,8 +155,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.514688",
-    "updatedDate": "2026-03-08T21:40:21.514688",
+    "createdDate": "2026-03-11T23:15:40.924989",
+    "updatedDate": "2026-03-11T23:15:40.924990",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -124,11 +166,50 @@
       "popularity_score": 0
     }
   },
-  "javax.crypto/KEM.Decapsulator/decapsulate": {
-    "id": "javax.crypto.KEM.Decapsulator.decapsulate",
+  "javax.crypto/DecapsulatorSpi": {
+    "id": "javax.crypto.DecapsulatorSpi",
+    "name": "DecapsulatorSpi",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface DecapsulatorSpi"
+    ],
+    "signature_hash": "2429f692c0b5b200641b6840399cad187b51b56cac28e13f2a0d761e5c57ef5f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/crypto/KEMSpi.DecapsulatorSpi.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.927343",
+    "updatedDate": "2026-03-11T23:15:40.927344",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "21",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "engineDecapsulate",
+      "engineEncapsulationSize",
+      "engineSecretSize"
+    ]
+  },
+  "javax.crypto/Decapsulator/decapsulate": {
+    "id": "javax.crypto.Decapsulator.decapsulate",
     "name": "decapsulate",
     "type": "method",
-    "parent": "KEM.Decapsulator",
+    "parent": "Decapsulator",
     "signatures": [
       "public SecretKey decapsulate(byte[]encapsulation)",
       "public SecretKey decapsulate(byte[]encapsulation, int from, int to, String algorithm)"
@@ -198,8 +279,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.516552",
-    "updatedDate": "2026-03-08T21:40:21.516553",
+    "createdDate": "2026-03-11T23:15:40.927028",
+    "updatedDate": "2026-03-11T23:15:40.927029",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -256,8 +337,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.516093",
-    "updatedDate": "2026-03-08T21:40:21.516094",
+    "createdDate": "2026-03-11T23:15:40.926569",
+    "updatedDate": "2026-03-11T23:15:40.926570",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -324,8 +405,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.516139",
-    "updatedDate": "2026-03-08T21:40:21.516140",
+    "createdDate": "2026-03-11T23:15:40.926595",
+    "updatedDate": "2026-03-11T23:15:40.926596",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -452,8 +533,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.514250",
-    "updatedDate": "2026-03-08T21:40:21.514251",
+    "createdDate": "2026-03-11T23:15:40.924406",
+    "updatedDate": "2026-03-11T23:15:40.924407",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -524,8 +605,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.517687",
-    "updatedDate": "2026-03-08T21:40:21.517688",
+    "createdDate": "2026-03-11T23:15:40.928247",
+    "updatedDate": "2026-03-11T23:15:40.928248",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -588,8 +669,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.517058",
-    "updatedDate": "2026-03-08T21:40:21.517059",
+    "createdDate": "2026-03-11T23:15:40.927580",
+    "updatedDate": "2026-03-11T23:15:40.927581",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

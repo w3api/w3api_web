@@ -1,0 +1,172 @@
+{
+  "unittest.mock/PropertyMock": {
+    "id": "unittest.mock.PropertyMock",
+    "name": "PropertyMock",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class unittest.mock.PropertyMock(*args, **kwargs)"
+    ],
+    "signature_hash": "d55e1d500bca56c31290227a4287e934e17c8834a9f60a99906cbd4d70927a37",
+    "url": "https://docs.python.org/3/library/unittest.mock.html#module-unittest.mock#unittest.mock.PropertyMock",
+    "parameters": [
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A mock intended to be used as a property, or other descriptor, on a class. PropertyMock provides __get__() and __set__() methods so you can specify a return value when it is fetched. Fetching a PropertyMock instance from an object calls the mock, with no args. Setting it calls the mock with the value being set. >>> class Foo: ... @property ... def foo(self): ... return 'something' ... @foo.setter ... def foo(self, value): ... pass ... >>> with patch('__main__.Foo.foo', new_callable=PropertyMo...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A mock intended to be used as a property, or other descriptor, on a class. PropertyMock provides __get__() and __set__() methods so you can specify a return value when it is fetched. Fetching a Proper...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.106719",
+    "updatedDate": "2026-03-11T23:15:48.106720",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest.mock/patch": {
+    "id": "unittest.mock.patch",
+    "name": "patch",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "unittest.mock.patch(target, new=DEFAULT, spec=None, create=False, spec_set=None, autospec=None, new_callable=None, **kwargs)"
+    ],
+    "signature_hash": "8f45956a34a78c65ba4e5b54cf1a39adcec847e21315fb735151525848570327",
+    "url": "https://docs.python.org/3/library/unittest.mock.html#module-unittest.mock#unittest.mock.patch",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "new",
+        "type": "",
+        "has_default": true,
+        "default_value": "DEFAULT",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "spec",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "create",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "spec_set",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "autospec",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "new_callable",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "patch() acts as a function decorator, class decorator or a context manager. Inside the body of the function or with statement, the target is patched with a new object. When the function/with statement exits the patch is undone. If new is omitted, then the target is replaced with an AsyncMock if the patched object is an async function or a MagicMock otherwise. If patch() is used as a decorator and new is omitted, the created mock is passed in as an extra argument to the decorated function. If ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "patch() acts as a function decorator, class decorator or a context manager. Inside the body of the function or with statement, the target is patched with a new object. When the function/with statement...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.107082",
+    "updatedDate": "2026-03-11T23:15:48.107083",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

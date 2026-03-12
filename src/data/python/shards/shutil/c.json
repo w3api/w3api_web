@@ -1,0 +1,632 @@
+{
+  "shutil/chown": {
+    "id": "shutil.chown",
+    "name": "chown",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.chown(path, user=None, group=None, *, dir_fd=None, follow_symlinks=True)"
+    ],
+    "signature_hash": "a1987ac993f43e80cfcc27ce5ebc470784777571704cb137ac6f9c3b6f73525e",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.chown",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "user",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "group",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dir_fd",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Change owner user and/or group of the given path. user can be a system user name or a uid; the same applies to group. At least one argument is required. See also os.chown(), the underlying function. Raises an auditing event shutil.chown with arguments path, user, group. Availability: Unix. Added in version 3.3. Changed in version 3.13: Added dir_fd and follow_symlinks parameters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Change owner user and/or group of the given path. user can be a system user name or a uid; the same applies to group. At least one argument is required. See also os.chown(), the underlying function. R...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038626",
+    "updatedDate": "2026-03-11T23:15:48.038627",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shutil/copy": {
+    "id": "shutil.copy",
+    "name": "copy",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.copy(src, dst, *, follow_symlinks=True)"
+    ],
+    "signature_hash": "b2e88dd7265aa2e9556419a255b6b4c4927f18855a0a8693f761a3addad712ef",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.copy",
+    "parameters": [
+      {
+        "name": "src",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dst",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Copies the file src to the file or directory dst. src and dst should be path-like objects or strings. If dst specifies a directory, the file will be copied into dst using the base filename from src. If dst specifies a file that already exists, it will be replaced. Returns the path to the newly created file. If follow_symlinks is false, and src is a symbolic link, dst will be created as a symbolic link. If follow_symlinks is true and src is a symbolic link, dst will be a copy of the file src r...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies the file src to the file or directory dst. src and dst should be path-like objects or strings. If dst specifies a directory, the file will be copied into dst using the base filename from src. I...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038454",
+    "updatedDate": "2026-03-11T23:15:48.038455",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shutil/copy2": {
+    "id": "shutil.copy2",
+    "name": "copy2",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.copy2(src, dst, *, follow_symlinks=True)"
+    ],
+    "signature_hash": "5526721fb4211553f3338b0e548860c8032b406d4272adbcbe604b15e7bfe5d3",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.copy2",
+    "parameters": [
+      {
+        "name": "src",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dst",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Identical to copy() except that copy2() also attempts to preserve file metadata. When follow_symlinks is false, and src is a symbolic link, copy2() attempts to copy all metadata from the src symbolic link to the newly created dst symbolic link. However, this functionality is not available on all platforms. On platforms where some or all of this functionality is unavailable, copy2() will preserve all the metadata it can; copy2() never raises an exception because it cannot preserve file metadat...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Identical to copy() except that copy2() also attempts to preserve file metadata. When follow_symlinks is false, and src is a symbolic link, copy2() attempts to copy all metadata from the src symbolic ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038474",
+    "updatedDate": "2026-03-11T23:15:48.038475",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shutil/copyfile": {
+    "id": "shutil.copyfile",
+    "name": "copyfile",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.copyfile(src, dst, *, follow_symlinks=True)"
+    ],
+    "signature_hash": "c6537479c1d821ed32a42cef7dfe2dccfb14abff7ef2585bc49cae42bf6e640c",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.copyfile",
+    "parameters": [
+      {
+        "name": "src",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dst",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Copy the contents (no metadata) of the file named src to a file named dst and return dst in the most efficient way possible. src and dst are path-like objects or path names given as strings. dst must be the complete target file name; look at copy() for a copy that accepts a target directory path. If src and dst specify the same file, SameFileError is raised. The destination location must be writable; otherwise, an OSError exception will be raised. If dst already exists, it will be replaced. S...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copy the contents (no metadata) of the file named src to a file named dst and return dst in the most efficient way possible. src and dst are path-like objects or path names given as strings. dst must ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038372",
+    "updatedDate": "2026-03-11T23:15:48.038373",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shutil/copyfileobj": {
+    "id": "shutil.copyfileobj",
+    "name": "copyfileobj",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.copyfileobj(fsrc, fdst[, length])"
+    ],
+    "signature_hash": "470211f3d50bb1965c473d9ea1b17001b57ded034462e8470c13806bcdcb4772",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.copyfileobj",
+    "parameters": [
+      {
+        "name": "fsrc",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fdst[, length",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Copy the contents of the file-like object fsrc to the file-like object fdst. The integer length, if given, is the buffer size. In particular, a negative length value means to copy the data without looping over the source data in chunks; by default the data is read in chunks to avoid uncontrolled memory consumption. Note that if the current file position of the fsrc object is not 0, only the contents from the current file position to the end of the file will be copied. copyfileobj() will not g...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copy the contents of the file-like object fsrc to the file-like object fdst. The integer length, if given, is the buffer size. In particular, a negative length value means to copy the data without loo...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038351",
+    "updatedDate": "2026-03-11T23:15:48.038352",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shutil/copymode": {
+    "id": "shutil.copymode",
+    "name": "copymode",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.copymode(src, dst, *, follow_symlinks=True)"
+    ],
+    "signature_hash": "84c00c5e5e2e4d64a7f2764b671e53e9729933127f29b9316ab28d5a94d3ee27",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.copymode",
+    "parameters": [
+      {
+        "name": "src",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dst",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Copy the permission bits from src to dst. The file contents, owner, and group are unaffected. src and dst are path-like objects or path names given as strings. If follow_symlinks is false, and both src and dst are symbolic links, copymode() will attempt to modify the mode of dst itself (rather than the file it points to). This functionality is not available on every platform; please see copystat() for more information. If copymode() cannot modify symbolic links on the local platform, and it i...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copy the permission bits from src to dst. The file contents, owner, and group are unaffected. src and dst are path-like objects or path names given as strings. If follow_symlinks is false, and both sr...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038414",
+    "updatedDate": "2026-03-11T23:15:48.038415",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shutil/copystat": {
+    "id": "shutil.copystat",
+    "name": "copystat",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.copystat(src, dst, *, follow_symlinks=True)"
+    ],
+    "signature_hash": "7bf8714422a41aebfa52f0bd76b7ce06a22fd23723712c83d47598f3cc4baa3a",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.copystat",
+    "parameters": [
+      {
+        "name": "src",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dst",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Copy the permission bits, last access time, last modification time, and flags from src to dst. On Linux, copystat() also copies the “extended attributes” where possible. The file contents, owner, and group are unaffected. src and dst are path-like objects or path names given as strings. If follow_symlinks is false, and src and dst both refer to symbolic links, copystat() will operate on the symbolic links themselves rather than the files the symbolic links refer to—reading the information fro...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copy the permission bits, last access time, last modification time, and flags from src to dst. On Linux, copystat() also copies the “extended attributes” where possible. The file contents, owner, and ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038434",
+    "updatedDate": "2026-03-11T23:15:48.038434",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shutil/copytree": {
+    "id": "shutil.copytree",
+    "name": "copytree",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.copytree(src, dst, symlinks=False, ignore=None, copy_function=copy2, ignore_dangling_symlinks=False, dirs_exist_ok=False)"
+    ],
+    "signature_hash": "62675abc79d32eee3765b989d930eda8889e43a29c9b14481b9f4d28b0e29458",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.copytree",
+    "parameters": [
+      {
+        "name": "src",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dst",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ignore",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "copy_function",
+        "type": "",
+        "has_default": true,
+        "default_value": "copy2",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ignore_dangling_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dirs_exist_ok",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Recursively copy an entire directory tree rooted at src to a directory named dst and return the destination directory. All intermediate directories needed to contain dst will also be created by default. Permissions and times of directories are copied with copystat(), individual files are copied using copy2(). If symlinks is true, symbolic links in the source tree are represented as symbolic links in the new tree and the metadata of the original links will be copied as far as the platform allo...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Recursively copy an entire directory tree rooted at src to a directory named dst and return the destination directory. All intermediate directories needed to contain dst will also be created by defaul...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038530",
+    "updatedDate": "2026-03-11T23:15:48.038531",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

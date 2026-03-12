@@ -1,0 +1,680 @@
+{
+  "email.policy/EmailPolicy/header_factory": {
+    "id": "email.policy.EmailPolicy.header_factory",
+    "name": "header_factory",
+    "type": "attribute",
+    "parent": "EmailPolicy",
+    "signatures": [
+      "header_factory"
+    ],
+    "signature_hash": "cb1e2ae6f596fcc17a74cb7a1a05259ae90030398991321179d98668f095ed3b",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.EmailPolicy.header_factory",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A callable that takes two arguments, name and value, where name is a header field name and value is an unfolded header field value, and returns a string subclass that represents that header. A default header_factory (see headerregistry) is provided that supports custom parsing for the various address and date RFC 5322 header field types, and the major MIME header field stypes. Support for additional custom parsing will be added in the future.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A callable that takes two arguments, name and value, where name is a header field name and value is an unfolded header field value, and returns a string subclass that represents that header. A default...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923175",
+    "updatedDate": "2026-03-11T23:15:47.923175",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/policy/HTTP": {
+    "id": "email.policy.policy.HTTP",
+    "name": "HTTP",
+    "type": "constant",
+    "parent": "policy",
+    "signatures": [
+      "email.policy.HTTP"
+    ],
+    "signature_hash": "bf1821a52a7f7417b99214f7ea5cd9735daedf2f2876f019266166573f36cc4f",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.HTTP",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Suitable for serializing headers with for use in HTTP traffic. Like SMTP except that max_line_length is set to None (unlimited).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Suitable for serializing headers with for use in HTTP traffic. Like SMTP except that max_line_length is set to None (unlimited).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923348",
+    "updatedDate": "2026-03-11T23:15:47.923349",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/Policy/handle_defect": {
+    "id": "email.policy.Policy.handle_defect",
+    "name": "handle_defect",
+    "type": "method",
+    "parent": "Policy",
+    "signatures": [
+      "handle_defect(obj, defect)"
+    ],
+    "signature_hash": "7237a292522567eb039435c68a3f83f15fce4320cf34a6de275bff6ea2106511",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.Policy.handle_defect",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "defect",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Handle a defect found on obj. When the email package calls this method, defect will always be a subclass of MessageDefect. The default implementation checks the raise_on_defect flag. If it is True, defect is raised as an exception. If it is False (the default), obj and defect are passed to register_defect().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handle a defect found on obj. When the email package calls this method, defect will always be a subclass of MessageDefect. The default implementation checks the raise_on_defect flag. If it is True, de...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.922996",
+    "updatedDate": "2026-03-11T23:15:47.922997",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/Policy/header_fetch_parse": {
+    "id": "email.policy.Policy.header_fetch_parse",
+    "name": "header_fetch_parse",
+    "type": "method",
+    "parent": "Policy",
+    "signatures": [
+      "header_fetch_parse(name, value)"
+    ],
+    "signature_hash": "a7959d5aadf70aa8c58cd1b09e55a100cf5d6638a08152d9419f5e117e79bf2f",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.Policy.header_fetch_parse",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The email package calls this method with the name and value currently stored in the Message when that header is requested by the application program, and whatever the method returns is what is passed back to the application as the value of the header being retrieved. Note that there may be more than one header with the same name stored in the Message; the method is passed the specific name and value of the header destined to be returned to the application. value may contain surrogateescaped b...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The email package calls this method with the name and value currently stored in the Message when that header is requested by the application program, and whatever the method returns is what is passed ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923083",
+    "updatedDate": "2026-03-11T23:15:47.923084",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/EmailPolicy/header_fetch_parse": {
+    "id": "email.policy.EmailPolicy.header_fetch_parse",
+    "name": "header_fetch_parse",
+    "type": "method",
+    "parent": "EmailPolicy",
+    "signatures": [
+      "header_fetch_parse(name, value)"
+    ],
+    "signature_hash": "a7959d5aadf70aa8c58cd1b09e55a100cf5d6638a08152d9419f5e117e79bf2f",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.EmailPolicy.header_fetch_parse",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "If the value has a name attribute, it is returned to unmodified. Otherwise the name, and the value with any CR or LF characters removed, are passed to the header_factory, and the resulting header object is returned. Any surrogateescaped bytes get turned into the unicode unknown-character glyph.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the value has a name attribute, it is returned to unmodified. Otherwise the name, and the value with any CR or LF characters removed, are passed to the header_factory, and the resulting header obje...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923263",
+    "updatedDate": "2026-03-11T23:15:47.923264",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/Compat32/header_fetch_parse": {
+    "id": "email.policy.Compat32.header_fetch_parse",
+    "name": "header_fetch_parse",
+    "type": "method",
+    "parent": "Compat32",
+    "signatures": [
+      "header_fetch_parse(name, value)"
+    ],
+    "signature_hash": "a7959d5aadf70aa8c58cd1b09e55a100cf5d6638a08152d9419f5e117e79bf2f",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.Compat32.header_fetch_parse",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "If the value contains binary data, it is converted into a Header object using the unknown-8bit charset. Otherwise it is returned unmodified.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the value contains binary data, it is converted into a Header object using the unknown-8bit charset. Otherwise it is returned unmodified.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923436",
+    "updatedDate": "2026-03-11T23:15:47.923437",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/Policy/header_max_count": {
+    "id": "email.policy.Policy.header_max_count",
+    "name": "header_max_count",
+    "type": "method",
+    "parent": "Policy",
+    "signatures": [
+      "header_max_count(name)"
+    ],
+    "signature_hash": "04bdbcb57f6efcbef7f5d87574a32e1b7051e7faf400e2f6caf2f1d4ebbcb82f",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.Policy.header_max_count",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the maximum allowed number of headers named name. Called when a header is added to an EmailMessage or Message object. If the returned value is not 0 or None, and there are already a number of headers with the name name greater than or equal to the value returned, a ValueError is raised. Because the default behavior of Message.__setitem__ is to append the value to the list of headers, it is easy to create duplicate headers without realizing it. This method allows certain headers to be l...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the maximum allowed number of headers named name. Called when a header is added to an EmailMessage or Message object. If the returned value is not 0 or None, and there are already a number of h...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923030",
+    "updatedDate": "2026-03-11T23:15:47.923031",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/EmailPolicy/header_max_count": {
+    "id": "email.policy.EmailPolicy.header_max_count",
+    "name": "header_max_count",
+    "type": "method",
+    "parent": "EmailPolicy",
+    "signatures": [
+      "header_max_count(name)"
+    ],
+    "signature_hash": "04bdbcb57f6efcbef7f5d87574a32e1b7051e7faf400e2f6caf2f1d4ebbcb82f",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.EmailPolicy.header_max_count",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns the value of the max_count attribute of the specialized class used to represent the header with the given name.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the value of the max_count attribute of the specialized class used to represent the header with the given name.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923212",
+    "updatedDate": "2026-03-11T23:15:47.923213",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/Policy/header_source_parse": {
+    "id": "email.policy.Policy.header_source_parse",
+    "name": "header_source_parse",
+    "type": "method",
+    "parent": "Policy",
+    "signatures": [
+      "header_source_parse(sourcelines)"
+    ],
+    "signature_hash": "db67511efbb45e002f9d99308a8d72884644e3d1bd7b6ab0541695f372376352",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.Policy.header_source_parse",
+    "parameters": [
+      {
+        "name": "sourcelines",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The email package calls this method with a list of strings, each string ending with the line separation characters found in the source being parsed. The first line includes the field header name and separator. All whitespace in the source is preserved. The method should return the (name, value) tuple that is to be stored in the Message to represent the parsed header. If an implementation wishes to retain compatibility with the existing email package policies, name should be the case preserved...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The email package calls this method with a list of strings, each string ending with the line separation characters found in the source being parsed. The first line includes the field header name and s...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923047",
+    "updatedDate": "2026-03-11T23:15:47.923048",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/EmailPolicy/header_source_parse": {
+    "id": "email.policy.EmailPolicy.header_source_parse",
+    "name": "header_source_parse",
+    "type": "method",
+    "parent": "EmailPolicy",
+    "signatures": [
+      "header_source_parse(sourcelines)"
+    ],
+    "signature_hash": "db67511efbb45e002f9d99308a8d72884644e3d1bd7b6ab0541695f372376352",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.EmailPolicy.header_source_parse",
+    "parameters": [
+      {
+        "name": "sourcelines",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The name is parsed as everything up to the ‘:’ and returned unmodified. The value is determined by stripping leading whitespace off the remainder of the first line, joining all subsequent lines together, and stripping any trailing carriage return or linefeed characters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The name is parsed as everything up to the ‘:’ and returned unmodified. The value is determined by stripping leading whitespace off the remainder of the first line, joining all subsequent lines togeth...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923228",
+    "updatedDate": "2026-03-11T23:15:47.923229",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/Compat32/header_source_parse": {
+    "id": "email.policy.Compat32.header_source_parse",
+    "name": "header_source_parse",
+    "type": "method",
+    "parent": "Compat32",
+    "signatures": [
+      "header_source_parse(sourcelines)"
+    ],
+    "signature_hash": "db67511efbb45e002f9d99308a8d72884644e3d1bd7b6ab0541695f372376352",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.Compat32.header_source_parse",
+    "parameters": [
+      {
+        "name": "sourcelines",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The name is parsed as everything up to the ‘:’ and returned unmodified. The value is determined by stripping leading whitespace off the remainder of the first line, joining all subsequent lines together, and stripping any trailing carriage return or linefeed characters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The name is parsed as everything up to the ‘:’ and returned unmodified. The value is determined by stripping leading whitespace off the remainder of the first line, joining all subsequent lines togeth...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923405",
+    "updatedDate": "2026-03-11T23:15:47.923406",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/Policy/header_store_parse": {
+    "id": "email.policy.Policy.header_store_parse",
+    "name": "header_store_parse",
+    "type": "method",
+    "parent": "Policy",
+    "signatures": [
+      "header_store_parse(name, value)"
+    ],
+    "signature_hash": "d228e59340bf37b3da69fc794e54590408e814cd9d98c7b49131b83b096d3d7f",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.Policy.header_store_parse",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The email package calls this method with the name and value provided by the application program when the application program is modifying a Message programmatically (as opposed to a Message created by a parser). The method should return the (name, value) tuple that is to be stored in the Message to represent the header. If an implementation wishes to retain compatibility with the existing email package policies, the name and value should be strings or string subclasses that do not change the ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The email package calls this method with the name and value provided by the application program when the application program is modifying a Message programmatically (as opposed to a Message created by...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923065",
+    "updatedDate": "2026-03-11T23:15:47.923066",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/EmailPolicy/header_store_parse": {
+    "id": "email.policy.EmailPolicy.header_store_parse",
+    "name": "header_store_parse",
+    "type": "method",
+    "parent": "EmailPolicy",
+    "signatures": [
+      "header_store_parse(name, value)"
+    ],
+    "signature_hash": "d228e59340bf37b3da69fc794e54590408e814cd9d98c7b49131b83b096d3d7f",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.EmailPolicy.header_store_parse",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The name is returned unchanged. If the input value has a name attribute and it matches name ignoring case, the value is returned unchanged. Otherwise the name and value are passed to header_factory, and the resulting header object is returned as the value. In this case a ValueError is raised if the input value contains CR or LF characters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The name is returned unchanged. If the input value has a name attribute and it matches name ignoring case, the value is returned unchanged. Otherwise the name and value are passed to header_factory, a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923246",
+    "updatedDate": "2026-03-11T23:15:47.923247",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/Compat32/header_store_parse": {
+    "id": "email.policy.Compat32.header_store_parse",
+    "name": "header_store_parse",
+    "type": "method",
+    "parent": "Compat32",
+    "signatures": [
+      "header_store_parse(name, value)"
+    ],
+    "signature_hash": "d228e59340bf37b3da69fc794e54590408e814cd9d98c7b49131b83b096d3d7f",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.Compat32.header_store_parse",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The name and value are returned unmodified.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The name and value are returned unmodified.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923420",
+    "updatedDate": "2026-03-11T23:15:47.923421",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

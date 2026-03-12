@@ -1,0 +1,351 @@
+{
+  "unittest/TestCase/records": {
+    "id": "unittest.TestCase.records",
+    "name": "records",
+    "type": "attribute",
+    "parent": "TestCase",
+    "signatures": [
+      "records"
+    ],
+    "signature_hash": "a94e7bcfcbed3c846d491d4f47c948e53a23908d480248b3ffe9e126e83ea865",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.records",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A list of logging.LogRecord objects of the matching log messages.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A list of logging.LogRecord objects of the matching log messages.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104374",
+    "updatedDate": "2026-03-11T23:15:48.104375",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/registerResult": {
+    "id": "unittest.registerResult",
+    "name": "registerResult",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "unittest.registerResult(result)"
+    ],
+    "signature_hash": "d24578bb3e3a34b5315307755d1acf25dc4981c7fe3b06360e723d945495343a",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.registerResult",
+    "parameters": [
+      {
+        "name": "result",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Register a TestResult object for control-c handling. Registering a result stores a weak reference to it, so it doesn’t prevent the result from being garbage collected. Registering a TestResult object has no side-effects if control-c handling is not enabled, so test frameworks can unconditionally register all results they create independently of whether or not handling is enabled.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Register a TestResult object for control-c handling. Registering a result stores a weak reference to it, so it doesn’t prevent the result from being garbage collected. Registering a TestResult object ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.106263",
+    "updatedDate": "2026-03-11T23:15:48.106264",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/removeHandler": {
+    "id": "unittest.removeHandler",
+    "name": "removeHandler",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "unittest.removeHandler(function=None)"
+    ],
+    "signature_hash": "a528c1ca47cb2ea4a59917a3549d59f7e513f0d6855f5ab62d6699abb18d99a9",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.removeHandler",
+    "parameters": [
+      {
+        "name": "function",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "When called without arguments this function removes the control-c handler if it has been installed. This function can also be used as a test decorator to temporarily remove the handler while the test is being executed: @unittest.removeHandler def test_signal_handling(self): ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "When called without arguments this function removes the control-c handler if it has been installed. This function can also be used as a test decorator to temporarily remove the handler while the test ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.106300",
+    "updatedDate": "2026-03-11T23:15:48.106301",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/removeResult": {
+    "id": "unittest.removeResult",
+    "name": "removeResult",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "unittest.removeResult(result)"
+    ],
+    "signature_hash": "f54d5aae0f623768a3c61ea59652eda99870212d260d90d51c036d21c28de4bf",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.removeResult",
+    "parameters": [
+      {
+        "name": "result",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Remove a registered result. Once a result has been removed then stop() will no longer be called on that result object in response to a control-c.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Remove a registered result. Once a result has been removed then stop() will no longer be called on that result object in response to a control-c.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.106282",
+    "updatedDate": "2026-03-11T23:15:48.106282",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/run": {
+    "id": "unittest.TestCase.run",
+    "name": "run",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "run(result=None)"
+    ],
+    "signature_hash": "aaaeeb4cd24df1938d8f3c1722225f4a327c9f92bfd6cdd91e389895dbc3d9ae",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.run",
+    "parameters": [
+      {
+        "name": "result",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Run the test, collecting the result into the TestResult object passed as result. If result is omitted or None, a temporary result object is created (by calling the defaultTestResult() method) and used. The result object is returned to run()’s caller. The same effect may be had by simply calling the TestCase instance. Changed in version 3.3: Previous versions of run did not return the result. Neither did calling an instance.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Run the test, collecting the result into the TestResult object passed as result. If result is omitted or None, a temporary result object is created (by calling the defaultTestResult() method) and used...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104057",
+    "updatedDate": "2026-03-11T23:15:48.104058",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/IsolatedAsyncioTestCase/run": {
+    "id": "unittest.IsolatedAsyncioTestCase.run",
+    "name": "run",
+    "type": "method",
+    "parent": "IsolatedAsyncioTestCase",
+    "signatures": [
+      "run(result=None)"
+    ],
+    "signature_hash": "aaaeeb4cd24df1938d8f3c1722225f4a327c9f92bfd6cdd91e389895dbc3d9ae",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.IsolatedAsyncioTestCase.run",
+    "parameters": [
+      {
+        "name": "result",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Sets up a new event loop to run the test, collecting the result into the TestResult object passed as result. If result is omitted or None, a temporary result object is created (by calling the defaultTestResult() method) and used. The result object is returned to run()’s caller. At the end of the test all the tasks in the event loop are cancelled.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets up a new event loop to run the test, collecting the result into the TestResult object passed as result. If result is omitted or None, a temporary result object is created (by calling the defaultT...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105178",
+    "updatedDate": "2026-03-11T23:15:48.105179",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestSuite/run": {
+    "id": "unittest.TestSuite.run",
+    "name": "run",
+    "type": "method",
+    "parent": "TestSuite",
+    "signatures": [
+      "run(result)"
+    ],
+    "signature_hash": "6a6ed4cdd5092561639666f751750699dad403806d13cae2138d110bb330557b",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestSuite.run",
+    "parameters": [
+      {
+        "name": "result",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Run the tests associated with this suite, collecting the result into the test result object passed as result. Note that unlike TestCase.run(), TestSuite.run() requires the result object to be passed in.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Run the tests associated with this suite, collecting the result into the test result object passed as result. Note that unlike TestCase.run(), TestSuite.run() requires the result object to be passed i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105268",
+    "updatedDate": "2026-03-11T23:15:48.105269",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TextTestRunner/run": {
+    "id": "unittest.TextTestRunner.run",
+    "name": "run",
+    "type": "method",
+    "parent": "TextTestRunner",
+    "signatures": [
+      "run(test)"
+    ],
+    "signature_hash": "68035be6384f096e0bbe033917abaafc194116f4d4dffae04d0cef773834e227",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TextTestRunner.run",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method is the main public interface to the TextTestRunner. This method takes a TestSuite or TestCase instance. A TestResult is created by calling _makeResult() and the test(s) are run and the results printed to stdout.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method is the main public interface to the TextTestRunner. This method takes a TestSuite or TestCase instance. A TestResult is created by calling _makeResult() and the test(s) are run and the res...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.106119",
+    "updatedDate": "2026-03-11T23:15:48.106120",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

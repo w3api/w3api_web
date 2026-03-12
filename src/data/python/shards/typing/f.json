@@ -1,0 +1,159 @@
+{
+  "typing/ForwardRef": {
+    "id": "typing.ForwardRef",
+    "name": "ForwardRef",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.ForwardRef"
+    ],
+    "signature_hash": "000ac0ba843a1f4f97320bd93e5dd4be26091fe61af2ec8752ec4e9d11659e95",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.ForwardRef",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Class used for internal typing representation of string forward references. For example, List[\"SomeClass\"] is implicitly transformed into List[ForwardRef(\"SomeClass\")]. ForwardRef should not be instantiated by a user, but may be used by introspection tools. Note PEP 585 generic types such as list[\"SomeClass\"] will not be implicitly transformed into list[ForwardRef(\"SomeClass\")] and thus will not automatically resolve to list[SomeClass]. Added in version 3.7.4. Changed in version 3.14: This is...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Class used for internal typing representation of string forward references. For example, List[\"SomeClass\"] is implicitly transformed into List[ForwardRef(\"SomeClass\")]. ForwardRef should not be instan...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.102775",
+    "updatedDate": "2026-03-11T23:15:48.102776",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/FrozenSet": {
+    "id": "typing.FrozenSet",
+    "name": "FrozenSet",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.FrozenSet(frozenset, AbstractSet[T_co])"
+    ],
+    "signature_hash": "2fe7448c112d09a0e923818810b0d145d10821e4484915bce6f9db7c0467ef19",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.FrozenSet",
+    "parameters": [
+      {
+        "name": "frozenset",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "AbstractSet[T_co",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Deprecated alias to builtins.frozenset. Deprecated since version 3.9: builtins.frozenset now supports subscripting ([]). See PEP 585 and Generic Alias Type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated alias to builtins.frozenset. Deprecated since version 3.9: builtins.frozenset now supports subscripting ([]). See PEP 585 and Generic Alias Type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.102922",
+    "updatedDate": "2026-03-11T23:15:48.102923",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.9",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/Final": {
+    "id": "typing.Final",
+    "name": "Final",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "typing.Final"
+    ],
+    "signature_hash": "e1aa1b058cd3368cc0560fffa1d1d0d9b3607dbd17a7e7e4f471ed18b47d857b",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.Final",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Special typing construct to indicate final names to type checkers. Final names cannot be reassigned in any scope. Final names declared in class scopes cannot be overridden in subclasses. For example: MAX_SIZE: Final = 9000 MAX_SIZE += 1 # Error reported by type checker class Connection: TIMEOUT: Final[int] = 10 class FastConnector(Connection): TIMEOUT = 1 # Error reported by type checker There is no runtime checking of these properties. See PEP 591 for more details. Added in version 3.8. Chan...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Special typing construct to indicate final names to type checkers. Final names cannot be reassigned in any scope. Final names declared in class scopes cannot be overridden in subclasses. For example: ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.101501",
+    "updatedDate": "2026-03-11T23:15:48.101501",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/final": {
+    "id": "typing.final",
+    "name": "final",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@typing.final"
+    ],
+    "signature_hash": "a586dc79fb050a78951e73868b2d74e867740afcd72da23a35a7813c0cc3917c",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.final",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Decorator to indicate final methods and final classes. Decorating a method with @final indicates to a type checker that the method cannot be overridden in a subclass. Decorating a class with @final indicates that it cannot be subclassed. For example: class Base: @final def done(self) -> None: ... class Sub(Base): def done(self) -> None: # Error reported by type checker ... @final class Leaf: ... class Other(Leaf): # Error reported by type checker ... There is no runtime checking of these prop...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decorator to indicate final methods and final classes. Decorating a method with @final indicates to a type checker that the method cannot be overridden in a subclass. Decorating a class with @final in...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.102555",
+    "updatedDate": "2026-03-11T23:15:48.102556",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

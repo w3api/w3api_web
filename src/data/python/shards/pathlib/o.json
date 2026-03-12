@@ -1,0 +1,142 @@
+{
+  "pathlib/Path/open": {
+    "id": "pathlib.Path.open",
+    "name": "open",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.open(mode='r', buffering=-1, encoding=None, errors=None, newline=None)"
+    ],
+    "signature_hash": "68c27319dae0c98f3557f522ef619d6a6b51dd1d7fdff7c35bc79f392f3c1cdd",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.open",
+    "parameters": [
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "'r'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "buffering",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "newline",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Open the file pointed to by the path, like the built-in open() function does: >>> p = Path('setup.py') >>> with p.open() as f: ... f.readline() ... '#!/usr/bin/env python3\\n'",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Open the file pointed to by the path, like the built-in open() function does: >>> p = Path('setup.py') >>> with p.open() as f: ... f.readline() ... '#!/usr/bin/env python3\\n'",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.028464",
+    "updatedDate": "2026-03-11T23:15:48.028465",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/owner": {
+    "id": "pathlib.Path.owner",
+    "name": "owner",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.owner(*, follow_symlinks=True)"
+    ],
+    "signature_hash": "ec39bcc2aa1c228f88582cb8ae6cf296ddb24811160b0d00f6386b616740d52e",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.owner",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the name of the user owning the file. KeyError is raised if the file’s user identifier (UID) isn’t found in the system database. This method normally follows symlinks; to get the owner of the symlink, add the argument follow_symlinks=False. Changed in version 3.13: Raises UnsupportedOperation if the pwd module is not available. In earlier versions, NotImplementedError was raised. Changed in version 3.13: The follow_symlinks parameter was added.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the name of the user owning the file. KeyError is raised if the file’s user identifier (UID) isn’t found in the system database. This method normally follows symlinks; to get the owner of the s...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.028892",
+    "updatedDate": "2026-03-11T23:15:48.028893",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

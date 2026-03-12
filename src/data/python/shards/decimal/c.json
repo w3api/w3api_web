@@ -1,0 +1,1463 @@
+{
+  "decimal/Context/capitals": {
+    "id": "decimal.Context.capitals",
+    "name": "capitals",
+    "type": "attribute",
+    "parent": "Context",
+    "signatures": [
+      "capitals"
+    ],
+    "signature_hash": "74fe23b09abc9c6fa465e02c64e75dbd7879674d971ee801a013e682aac15269",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.capitals",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Either 0 or 1 (the default). If set to 1, exponents are printed with a capital E; otherwise, a lowercase e is used: Decimal('6.02e+23').",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Either 0 or 1 (the default). If set to 1, exponents are printed with a capital E; otherwise, a lowercase e is used: Decimal('6.02e+23').",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913466",
+    "updatedDate": "2026-03-11T23:15:47.913467",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/clamp": {
+    "id": "decimal.Context.clamp",
+    "name": "clamp",
+    "type": "attribute",
+    "parent": "Context",
+    "signatures": [
+      "clamp"
+    ],
+    "signature_hash": "d5fde054c77089694a31575462d47ddfba2cddc97bfeb977bf08631f40a51973",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.clamp",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Either 0 (the default) or 1. If set to 1, the exponent e of a Decimal instance representable in this context is strictly limited to the range Emin - prec + 1 <= e <= Emax - prec + 1. If clamp is 0 then a weaker condition holds: the adjusted exponent of the Decimal instance is at most Emax. When clamp is 1, a large normal number will, where possible, have its exponent reduced and a corresponding number of zeros added to its coefficient, in order to fit the exponent constraints; this preserves ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Either 0 (the default) or 1. If set to 1, the exponent e of a Decimal instance representable in this context is strictly limited to the range Emin - prec + 1 <= e <= Emax - prec + 1. If clamp is 0 the...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913502",
+    "updatedDate": "2026-03-11T23:15:47.913503",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Clamped": {
+    "id": "decimal.Clamped",
+    "name": "Clamped",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class decimal.Clamped"
+    ],
+    "signature_hash": "26e0e5ce40c9022e0fa3619e6f00843bdf5a9ac479434ae72d51c2637b95f4d2",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Clamped",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Altered an exponent to fit representation constraints. Typically, clamping occurs when an exponent falls outside the context’s Emin and Emax limits. If possible, the exponent is reduced to fit by adding zeros to the coefficient.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Altered an exponent to fit representation constraints. Typically, clamping occurs when an exponent falls outside the context’s Emin and Emax limits. If possible, the exponent is reduced to fit by addi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.915257",
+    "updatedDate": "2026-03-11T23:15:47.915258",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context": {
+    "id": "decimal.Context",
+    "name": "Context",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class decimal.Context(prec=None, rounding=None, Emin=None, Emax=None, capitals=None, clamp=None, flags=None, traps=None)"
+    ],
+    "signature_hash": "4b80474f9e174704bc804abc752adacecc51c5056bf29127f99102a967a6ee5f",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context",
+    "parameters": [
+      {
+        "name": "prec",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "rounding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Emin",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "Emax",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "capitals",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "clamp",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "flags",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "traps",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Creates a new context. If a field is not specified or is None, the default values are copied from the DefaultContext. If the flags field is not specified or is None, all flags are cleared. prec¶ An integer in the range [1, MAX_PREC] that sets the precision for arithmetic operations in the context. rounding¶ One of the constants listed in the section Rounding Modes. traps¶ flags¶ Lists of any signals to be set. Generally, new contexts should only set traps and leave the flags clear. Emin¶ Emax...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new context. If a field is not specified or is None, the default values are copied from the DefaultContext. If the flags field is not specified or is None, all flags are cleared. prec¶ An in...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913404",
+    "updatedDate": "2026-03-11T23:15:47.913405",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "Emin",
+      "capitals",
+      "clamp",
+      "prec",
+      "rounding",
+      "traps"
+    ],
+    "methods": [
+      "Etiny",
+      "Etop",
+      "abs",
+      "add",
+      "canonical",
+      "clear_flags",
+      "clear_traps",
+      "compare",
+      "compare_signal",
+      "compare_total",
+      "compare_total_mag",
+      "copy",
+      "copy_abs",
+      "copy_decimal",
+      "copy_negate",
+      "copy_sign",
+      "create_decimal",
+      "create_decimal_from_float",
+      "divide",
+      "divide_int",
+      "divmod",
+      "exp",
+      "fma",
+      "is_canonical",
+      "is_finite",
+      "is_infinite",
+      "is_nan",
+      "is_normal",
+      "is_qnan",
+      "is_signed",
+      "is_snan",
+      "is_subnormal",
+      "is_zero",
+      "ln",
+      "log10",
+      "logb",
+      "logical_and",
+      "logical_invert",
+      "logical_or",
+      "logical_xor",
+      "max",
+      "max_mag",
+      "min",
+      "min_mag",
+      "minus",
+      "multiply",
+      "next_minus",
+      "next_plus",
+      "next_toward",
+      "normalize",
+      "number_class",
+      "plus",
+      "power",
+      "quantize",
+      "radix",
+      "remainder",
+      "remainder_near",
+      "rotate",
+      "same_quantum",
+      "scaleb",
+      "shift",
+      "sqrt",
+      "subtract",
+      "to_eng_string",
+      "to_integral_exact",
+      "to_sci_string"
+    ]
+  },
+  "decimal/Decimal/canonical": {
+    "id": "decimal.Decimal.canonical",
+    "name": "canonical",
+    "type": "method",
+    "parent": "Decimal",
+    "signatures": [
+      "canonical()"
+    ],
+    "signature_hash": "611f39f4ff8c023a8d1b975ffcbcbb91f6a4d12f0deef4345d470834b4b1221f",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Decimal.canonical",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the canonical encoding of the argument. Currently, the encoding of a Decimal instance is always canonical, so this operation returns its argument unchanged.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the canonical encoding of the argument. Currently, the encoding of a Decimal instance is always canonical, so this operation returns its argument unchanged.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.912451",
+    "updatedDate": "2026-03-11T23:15:47.912452",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/canonical": {
+    "id": "decimal.Context.canonical",
+    "name": "canonical",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "canonical(x, /)"
+    ],
+    "signature_hash": "598346da428f84c7c35aabd0f2d52b5083e8b49be4d46faae3e9c2d85a22100e",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.canonical",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns the same Decimal object x.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the same Decimal object x.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913675",
+    "updatedDate": "2026-03-11T23:15:47.913675",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/clear_flags": {
+    "id": "decimal.Context.clear_flags",
+    "name": "clear_flags",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "clear_flags()"
+    ],
+    "signature_hash": "0002c32dadb4647d55e5512caaa5c3fec491f10898937e03305f71b19f196b90",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.clear_flags",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Resets all of the flags to 0.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Resets all of the flags to 0.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913515",
+    "updatedDate": "2026-03-11T23:15:47.913516",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/clear_traps": {
+    "id": "decimal.Context.clear_traps",
+    "name": "clear_traps",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "clear_traps()"
+    ],
+    "signature_hash": "c98f96893428c5806fdb2dfb54bfd116fde845acaf05cf31c133043d2a78e159",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.clear_traps",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Resets all of the traps to 0. Added in version 3.3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Resets all of the traps to 0. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913529",
+    "updatedDate": "2026-03-11T23:15:47.913530",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Decimal/compare": {
+    "id": "decimal.Decimal.compare",
+    "name": "compare",
+    "type": "method",
+    "parent": "Decimal",
+    "signatures": [
+      "compare(other, context=None)"
+    ],
+    "signature_hash": "f5916414ed3a3db4a3778ca4b8609e9698a33681a7e78d173aacd933922582c9",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Decimal.compare",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compare the values of two Decimal instances. compare() returns a Decimal instance, and if either operand is a NaN then the result is a NaN: a or b is a NaN ==> Decimal('NaN') a < b ==> Decimal('-1') a == b ==> Decimal('0') a > b ==> Decimal('1')",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compare the values of two Decimal instances. compare() returns a Decimal instance, and if either operand is a NaN then the result is a NaN: a or b is a NaN ==> Decimal('NaN') a < b ==> Decimal('-1') a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.912467",
+    "updatedDate": "2026-03-11T23:15:47.912468",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/compare": {
+    "id": "decimal.Context.compare",
+    "name": "compare",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "compare(x, y, /)"
+    ],
+    "signature_hash": "a957759fd680264f8cbf8b4c5b5a14625debd1b649870fc4d698d763a7c6e3e3",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.compare",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compares x and y numerically.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compares x and y numerically.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913692",
+    "updatedDate": "2026-03-11T23:15:47.913693",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Decimal/compare_signal": {
+    "id": "decimal.Decimal.compare_signal",
+    "name": "compare_signal",
+    "type": "method",
+    "parent": "Decimal",
+    "signatures": [
+      "compare_signal(other, context=None)"
+    ],
+    "signature_hash": "12505c80ae09924237f8998139b1167520c75bf1519fa883fd565055d3234bce",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Decimal.compare_signal",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This operation is identical to the compare() method, except that all NaNs signal. That is, if neither operand is a signaling NaN then any quiet NaN operand is treated as though it were a signaling NaN.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This operation is identical to the compare() method, except that all NaNs signal. That is, if neither operand is a signaling NaN then any quiet NaN operand is treated as though it were a signaling NaN...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.912484",
+    "updatedDate": "2026-03-11T23:15:47.912485",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/compare_signal": {
+    "id": "decimal.Context.compare_signal",
+    "name": "compare_signal",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "compare_signal(x, y, /)"
+    ],
+    "signature_hash": "4971c15a18fbfaf79586c0cf7ff6fa92bb9120c2080ce12e9a7942f320f8d9b9",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.compare_signal",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compares the values of the two operands numerically.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compares the values of the two operands numerically.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913709",
+    "updatedDate": "2026-03-11T23:15:47.913710",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Decimal/compare_total": {
+    "id": "decimal.Decimal.compare_total",
+    "name": "compare_total",
+    "type": "method",
+    "parent": "Decimal",
+    "signatures": [
+      "compare_total(other, context=None)"
+    ],
+    "signature_hash": "d6bba284d9791aea1b1a1988d2cd2b019c53335d1ee99801a363c95d419586a4",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Decimal.compare_total",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compare two operands using their abstract representation rather than their numerical value. Similar to the compare() method, but the result gives a total ordering on Decimal instances. Two Decimal instances with the same numeric value but different representations compare unequal in this ordering: >>> Decimal('12.0').compare_total(Decimal('12')) Decimal('-1') Quiet and signaling NaNs are also included in the total ordering. The result of this function is Decimal('0') if both operands have the...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compare two operands using their abstract representation rather than their numerical value. Similar to the compare() method, but the result gives a total ordering on Decimal instances. Two Decimal ins...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.912503",
+    "updatedDate": "2026-03-11T23:15:47.912504",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/compare_total": {
+    "id": "decimal.Context.compare_total",
+    "name": "compare_total",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "compare_total(x, y, /)"
+    ],
+    "signature_hash": "7751308d680e63dcd2d561a18de81941605fd7b40a5e8e9c598023cc82f67db2",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.compare_total",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compares two operands using their abstract representation.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compares two operands using their abstract representation.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913727",
+    "updatedDate": "2026-03-11T23:15:47.913728",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Decimal/compare_total_mag": {
+    "id": "decimal.Decimal.compare_total_mag",
+    "name": "compare_total_mag",
+    "type": "method",
+    "parent": "Decimal",
+    "signatures": [
+      "compare_total_mag(other, context=None)"
+    ],
+    "signature_hash": "598dff653a08500c826a7710c907bcc92b6216ee81923854f41c9d3837bad432",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Decimal.compare_total_mag",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compare two operands using their abstract representation rather than their value as in compare_total(), but ignoring the sign of each operand. x.compare_total_mag(y) is equivalent to x.copy_abs().compare_total(y.copy_abs()). This operation is unaffected by context and is quiet: no flags are changed and no rounding is performed. As an exception, the C version may raise InvalidOperation if the second operand cannot be converted exactly.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compare two operands using their abstract representation rather than their value as in compare_total(), but ignoring the sign of each operand. x.compare_total_mag(y) is equivalent to x.copy_abs().comp...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.912521",
+    "updatedDate": "2026-03-11T23:15:47.912522",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/compare_total_mag": {
+    "id": "decimal.Context.compare_total_mag",
+    "name": "compare_total_mag",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "compare_total_mag(x, y, /)"
+    ],
+    "signature_hash": "1054b1c2d6301933227f6b6659f36b8fad33fce1b15c3026407cd55aaced511e",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.compare_total_mag",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compares two operands using their abstract representation, ignoring sign.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compares two operands using their abstract representation, ignoring sign.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913745",
+    "updatedDate": "2026-03-11T23:15:47.913746",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Decimal/conjugate": {
+    "id": "decimal.Decimal.conjugate",
+    "name": "conjugate",
+    "type": "method",
+    "parent": "Decimal",
+    "signatures": [
+      "conjugate()"
+    ],
+    "signature_hash": "25407fa1c1f83cab0a7cd8bc5119a2a528078965cdab465e2617d388833403d7",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Decimal.conjugate",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Just returns self, this method is only to comply with the Decimal Specification.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Just returns self, this method is only to comply with the Decimal Specification.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.912533",
+    "updatedDate": "2026-03-11T23:15:47.912533",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/copy": {
+    "id": "decimal.Context.copy",
+    "name": "copy",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "copy()"
+    ],
+    "signature_hash": "b45a5136ddfb1399cb2c8c48e3831faf7e5751d1e2228e2a6f947e9fb396d413",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.copy",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a duplicate of the context.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a duplicate of the context.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913542",
+    "updatedDate": "2026-03-11T23:15:47.913543",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Decimal/copy_abs": {
+    "id": "decimal.Decimal.copy_abs",
+    "name": "copy_abs",
+    "type": "method",
+    "parent": "Decimal",
+    "signatures": [
+      "copy_abs()"
+    ],
+    "signature_hash": "d31db0c34a6efa760108bc6e4ecb602bb3050aa58e07d71cfbacc4042ef12f91",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Decimal.copy_abs",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the absolute value of the argument. This operation is unaffected by the context and is quiet: no flags are changed and no rounding is performed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the absolute value of the argument. This operation is unaffected by the context and is quiet: no flags are changed and no rounding is performed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.912545",
+    "updatedDate": "2026-03-11T23:15:47.912545",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/copy_abs": {
+    "id": "decimal.Context.copy_abs",
+    "name": "copy_abs",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "copy_abs(x, /)"
+    ],
+    "signature_hash": "c781e4a7568e15fe490051d45b45b3c86b9a66413704ed02a060c582ba4dae39",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.copy_abs",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a copy of x with the sign set to 0.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a copy of x with the sign set to 0.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913761",
+    "updatedDate": "2026-03-11T23:15:47.913762",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/copy_decimal": {
+    "id": "decimal.Context.copy_decimal",
+    "name": "copy_decimal",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "copy_decimal(num, /)"
+    ],
+    "signature_hash": "df0cba4a20f577078231e8364cd6e1621701f5f6bef6433897b02afed256d726",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.copy_decimal",
+    "parameters": [
+      {
+        "name": "num",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a copy of the Decimal instance num.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a copy of the Decimal instance num.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913558",
+    "updatedDate": "2026-03-11T23:15:47.913559",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Decimal/copy_negate": {
+    "id": "decimal.Decimal.copy_negate",
+    "name": "copy_negate",
+    "type": "method",
+    "parent": "Decimal",
+    "signatures": [
+      "copy_negate()"
+    ],
+    "signature_hash": "19b793a0a5f9a88c7341122efd4dd9c97d59bf56762a90abca7940b71be3b56e",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Decimal.copy_negate",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the negation of the argument. This operation is unaffected by the context and is quiet: no flags are changed and no rounding is performed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the negation of the argument. This operation is unaffected by the context and is quiet: no flags are changed and no rounding is performed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.912557",
+    "updatedDate": "2026-03-11T23:15:47.912557",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/copy_negate": {
+    "id": "decimal.Context.copy_negate",
+    "name": "copy_negate",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "copy_negate(x, /)"
+    ],
+    "signature_hash": "93fc5beff6eed7809acace0b900d6e697667f95e780b07d03adc7ab4c347f973",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.copy_negate",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a copy of x with the sign inverted.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a copy of x with the sign inverted.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913777",
+    "updatedDate": "2026-03-11T23:15:47.913778",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Decimal/copy_sign": {
+    "id": "decimal.Decimal.copy_sign",
+    "name": "copy_sign",
+    "type": "method",
+    "parent": "Decimal",
+    "signatures": [
+      "copy_sign(other, context=None)"
+    ],
+    "signature_hash": "b4597d92092e51885cd831a807a66db3b19a089409e90fc79d68f7bde8c7945e",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Decimal.copy_sign",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a copy of the first operand with the sign set to be the same as the sign of the second operand. For example: >>> Decimal('2.3').copy_sign(Decimal('-1.5')) Decimal('-2.3') This operation is unaffected by context and is quiet: no flags are changed and no rounding is performed. As an exception, the C version may raise InvalidOperation if the second operand cannot be converted exactly.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a copy of the first operand with the sign set to be the same as the sign of the second operand. For example: >>> Decimal('2.3').copy_sign(Decimal('-1.5')) Decimal('-2.3') This operation is unaf...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.912574",
+    "updatedDate": "2026-03-11T23:15:47.912575",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/copy_sign": {
+    "id": "decimal.Context.copy_sign",
+    "name": "copy_sign",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "copy_sign(x, y, /)"
+    ],
+    "signature_hash": "4bca103b4658b279ac8a184be16e040e9238f7e52985868a67e4f80e15a14b4f",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.copy_sign",
+    "parameters": [
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "y",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Copies the sign from y to x.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copies the sign from y to x.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913794",
+    "updatedDate": "2026-03-11T23:15:47.913795",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/create_decimal": {
+    "id": "decimal.Context.create_decimal",
+    "name": "create_decimal",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "create_decimal(num='0', /)"
+    ],
+    "signature_hash": "4613c9c61bdf0300d05226f0ef0f093ad422f4eeaa8fd9bacbb7315bfa645530",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.create_decimal",
+    "parameters": [
+      {
+        "name": "num",
+        "type": "",
+        "has_default": true,
+        "default_value": "'0'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Creates a new Decimal instance from num but using self as context. Unlike the Decimal constructor, the context precision, rounding method, flags, and traps are applied to the conversion. This is useful because constants are often given to a greater precision than is needed by the application. Another benefit is that rounding immediately eliminates unintended effects from digits beyond the current precision. In the following example, using unrounded inputs means that adding zero to a sum can c...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new Decimal instance from num but using self as context. Unlike the Decimal constructor, the context precision, rounding method, flags, and traps are applied to the conversion. This is usefu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913578",
+    "updatedDate": "2026-03-11T23:15:47.913579",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "decimal/Context/create_decimal_from_float": {
+    "id": "decimal.Context.create_decimal_from_float",
+    "name": "create_decimal_from_float",
+    "type": "method",
+    "parent": "Context",
+    "signatures": [
+      "create_decimal_from_float(f, /)"
+    ],
+    "signature_hash": "0b303ada428df69d47efbf9764a744913efce89e6df9322a30ac440e83240642",
+    "url": "https://docs.python.org/3/library/decimal.html#module-decimal#decimal.Context.create_decimal_from_float",
+    "parameters": [
+      {
+        "name": "f",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Creates a new Decimal instance from a float f but rounding using self as the context. Unlike the Decimal.from_float() class method, the context precision, rounding method, flags, and traps are applied to the conversion. >>> context = Context(prec=5, rounding=ROUND_DOWN) >>> context.create_decimal_from_float(math.pi) Decimal('3.1415') >>> context = Context(prec=5, traps=[Inexact]) >>> context.create_decimal_from_float(math.pi) Traceback (most recent call last): ... decimal.Inexact: None Added ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new Decimal instance from a float f but rounding using self as the context. Unlike the Decimal.from_float() class method, the context precision, rounding method, flags, and traps are applied...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.913598",
+    "updatedDate": "2026-03-11T23:15:47.913599",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

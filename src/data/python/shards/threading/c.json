@@ -1,0 +1,158 @@
+{
+  "threading/Condition": {
+    "id": "threading.Condition",
+    "name": "Condition",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class threading.Condition(lock=None)"
+    ],
+    "signature_hash": "c54f4ffa2878a4007b8535b030be94e24d135c583a442f4b0df63dfd516d94f8",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Condition",
+    "parameters": [
+      {
+        "name": "lock",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This class implements condition variable objects. A condition variable allows one or more threads to wait until they are notified by another thread. If the lock argument is given and not None, it must be a Lock or RLock object, and it is used as the underlying lock. Otherwise, a new RLock object is created and used as the underlying lock. Changed in version 3.3: changed from a factory function to a class. acquire(*args)¶ Acquire the underlying lock. This method calls the corresponding method ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class implements condition variable objects. A condition variable allows one or more threads to wait until they are notified by another thread. If the lock argument is given and not None, it must...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.088157",
+    "updatedDate": "2026-03-11T23:15:48.088158",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "acquire",
+      "locked",
+      "notify",
+      "notify_all",
+      "release",
+      "wait",
+      "wait_for"
+    ]
+  },
+  "threading/current_thread": {
+    "id": "threading.current_thread",
+    "name": "current_thread",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "threading.current_thread()"
+    ],
+    "signature_hash": "4b2c436d13dc966a97b2942362a85f44f4b218d819c7286c0ea2ae6832aadfb5",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.current_thread",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the current Thread object, corresponding to the caller’s thread of control. If the caller’s thread of control was not created through the threading module, a dummy thread object with limited functionality is returned. The function currentThread is a deprecated alias for this function.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the current Thread object, corresponding to the caller’s thread of control. If the caller’s thread of control was not created through the threading module, a dummy thread object with limited fu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.087551",
+    "updatedDate": "2026-03-11T23:15:48.087552",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Timer/cancel": {
+    "id": "threading.Timer.cancel",
+    "name": "cancel",
+    "type": "method",
+    "parent": "Timer",
+    "signatures": [
+      "cancel()"
+    ],
+    "signature_hash": "61d66248bc9c3b146f5031bc06c300dcc9641885365b22055d0eac723cef7fb6",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Timer.cancel",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Stop the timer, and cancel the execution of the timer’s action. This will only work if the timer is still in its waiting stage.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Stop the timer, and cancel the execution of the timer’s action. This will only work if the timer is still in its waiting stage.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.088480",
+    "updatedDate": "2026-03-11T23:15:48.088480",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Event/clear": {
+    "id": "threading.Event.clear",
+    "name": "clear",
+    "type": "method",
+    "parent": "Event",
+    "signatures": [
+      "clear()"
+    ],
+    "signature_hash": "1b1fa99b63a0026bf00cb30d7e6fbc1dbe7bc3fd25c038333ea6595a492fd7c7",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Event.clear",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Reset the internal flag to false. Subsequently, threads calling wait() will block until set() is called to set the internal flag to true again.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reset the internal flag to false. Subsequently, threads calling wait() will block until set() is called to set the internal flag to true again.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.088422",
+    "updatedDate": "2026-03-11T23:15:48.088423",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "http.cookiejar/LWPCookieJar": {
+    "id": "http.cookiejar.LWPCookieJar",
+    "name": "LWPCookieJar",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class http.cookiejar.LWPCookieJar(filename=None, delayload=None, policy=None)"
+    ],
+    "signature_hash": "a8decdbfd9a850bb3d69d79c4444abcfe7abb40b95e024e4b2ecf8c59ae101da",
+    "url": "https://docs.python.org/3/library/http.cookiejar.html#module-http.cookiejar#http.cookiejar.LWPCookieJar",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delayload",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "policy",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "A FileCookieJar that can load from and save cookies to disk in format compatible with the libwww-perl library’s Set-Cookie3 file format. This is convenient if you want to store cookies in a human-readable file. Changed in version 3.8: The filename parameter supports a path-like object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A FileCookieJar that can load from and save cookies to disk in format compatible with the libwww-perl library’s Set-Cookie3 file format. This is convenient if you want to store cookies in a human-read...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.589745",
+    "updatedDate": "2026-03-01T18:02:57.589746",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "http.cookiejar/LoadError": {
+    "id": "http.cookiejar.LoadError",
+    "name": "LoadError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception http.cookiejar.LoadError"
+    ],
+    "signature_hash": "710e6d662a8c4f65ed29e4dc705467b5db548ba9995fb63a9249d2347ce6d088",
+    "url": "https://docs.python.org/3/library/http.cookiejar.html#module-http.cookiejar#http.cookiejar.LoadError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "Instances of FileCookieJar raise this exception on failure to load cookies from a file. LoadError is a subclass of OSError. Changed in version 3.3: LoadError used to be a subtype of IOError, which is now an alias of OSError.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Instances of FileCookieJar raise this exception on failure to load cookies from a file. LoadError is a subclass of OSError. Changed in version 3.3: LoadError used to be a subtype of IOError, which is ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.589372",
+    "updatedDate": "2026-03-01T18:02:57.589373",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "http.cookiejar/FileCookieJar/load": {
+    "id": "http.cookiejar.FileCookieJar.load",
+    "name": "load",
+    "type": "method",
+    "parent": "FileCookieJar",
+    "signatures": [
+      "FileCookieJar.load(filename=None, ignore_discard=False, ignore_expires=False)"
+    ],
+    "signature_hash": "cfbafb91ab85d6c0fa9831a4681e3965a5c1dcc50baa6d22b958f2a51e4d4320",
+    "url": "https://docs.python.org/3/library/http.cookiejar.html#module-http.cookiejar#http.cookiejar.FileCookieJar.load",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ignore_discard",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ignore_expires",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "Load cookies from a file. Old cookies are kept unless overwritten by newly loaded ones. Arguments are as for save(). The named file must be in the format understood by the class, or LoadError will be raised. Also, OSError may be raised, for example if the file does not exist. Changed in version 3.3: IOError used to be raised, it is now an alias of OSError.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Load cookies from a file. Old cookies are kept unless overwritten by newly loaded ones. Arguments are as for save(). The named file must be in the format understood by the class, or LoadError will be ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.589665",
+    "updatedDate": "2026-03-01T18:02:57.589666",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

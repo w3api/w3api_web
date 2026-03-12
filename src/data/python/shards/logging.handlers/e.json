@@ -1,0 +1,744 @@
+{
+  "logging.handlers/StreamHandler/emit": {
+    "id": "logging.handlers.StreamHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "StreamHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.StreamHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "If a formatter is specified, it is used to format the record. The record is then written to the stream followed by terminator. If exception information is present, it is formatted using traceback.print_exception() and appended to the stream.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If a formatter is specified, it is used to format the record. The record is then written to the stream followed by terminator. If exception information is present, it is formatted using traceback.prin...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958759",
+    "updatedDate": "2026-03-11T23:15:47.958759",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/FileHandler/emit": {
+    "id": "logging.handlers.FileHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "FileHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.FileHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Outputs the record to the file. Note that if the file was closed due to logging shutdown at exit and the file mode is ‘w’, the record will not be emitted (see bpo-42378).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Outputs the record to the file. Note that if the file was closed due to logging shutdown at exit and the file mode is ‘w’, the record will not be emitted (see bpo-42378).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958854",
+    "updatedDate": "2026-03-11T23:15:47.958855",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/NullHandler/emit": {
+    "id": "logging.handlers.NullHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "NullHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.NullHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method does nothing.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method does nothing.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958881",
+    "updatedDate": "2026-03-11T23:15:47.958882",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/WatchedFileHandler/emit": {
+    "id": "logging.handlers.WatchedFileHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "WatchedFileHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.WatchedFileHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Outputs the record to the file, but first calls reopenIfNeeded() to reopen the file if it has changed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Outputs the record to the file, but first calls reopenIfNeeded() to reopen the file if it has changed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958962",
+    "updatedDate": "2026-03-11T23:15:47.958963",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/RotatingFileHandler/emit": {
+    "id": "logging.handlers.RotatingFileHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "RotatingFileHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.RotatingFileHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Outputs the record to the file, catering for rollover as described previously.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Outputs the record to the file, catering for rollover as described previously.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959164",
+    "updatedDate": "2026-03-11T23:15:47.959165",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/TimedRotatingFileHandler/emit": {
+    "id": "logging.handlers.TimedRotatingFileHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "TimedRotatingFileHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.TimedRotatingFileHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Outputs the record to the file, catering for rollover as described above.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Outputs the record to the file, catering for rollover as described above.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959243",
+    "updatedDate": "2026-03-11T23:15:47.959244",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/SocketHandler/emit": {
+    "id": "logging.handlers.SocketHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "SocketHandler",
+    "signatures": [
+      "emit()"
+    ],
+    "signature_hash": "1d15d2fe3b7e1c1eadb5678bbae6552ab561e98a657e8537345842c6649a6ead",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SocketHandler.emit",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Pickles the record’s attribute dictionary and writes it to the socket in binary format. If there is an error with the socket, silently drops the packet. If the connection was previously lost, re-establishes the connection. To unpickle the record at the receiving end into a LogRecord, use the makeLogRecord() function.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pickles the record’s attribute dictionary and writes it to the socket in binary format. If there is an error with the socket, silently drops the packet. If the connection was previously lost, re-estab...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959323",
+    "updatedDate": "2026-03-11T23:15:47.959324",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/DatagramHandler/emit": {
+    "id": "logging.handlers.DatagramHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "DatagramHandler",
+    "signatures": [
+      "emit()"
+    ],
+    "signature_hash": "1d15d2fe3b7e1c1eadb5678bbae6552ab561e98a657e8537345842c6649a6ead",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.DatagramHandler.emit",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Pickles the record’s attribute dictionary and writes it to the socket in binary format. If there is an error with the socket, silently drops the packet. To unpickle the record at the receiving end into a LogRecord, use the makeLogRecord() function.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pickles the record’s attribute dictionary and writes it to the socket in binary format. If there is an error with the socket, silently drops the packet. To unpickle the record at the receiving end int...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959448",
+    "updatedDate": "2026-03-11T23:15:47.959449",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/SysLogHandler/emit": {
+    "id": "logging.handlers.SysLogHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "SysLogHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SysLogHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The record is formatted, and then sent to the syslog server. If exception information is present, it is not sent to the server. Changed in version 3.2.1: (See: bpo-12168.) In earlier versions, the message sent to the syslog daemons was always terminated with a NUL byte, because early versions of these daemons expected a NUL terminated message - even though it’s not in the relevant specification (RFC 5424). More recent versions of these daemons don’t expect the NUL byte but strip it off if it’...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The record is formatted, and then sent to the syslog server. If exception information is present, it is not sent to the server. Changed in version 3.2.1: (See: bpo-12168.) In earlier versions, the mes...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959556",
+    "updatedDate": "2026-03-11T23:15:47.959557",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/NTEventLogHandler/emit": {
+    "id": "logging.handlers.NTEventLogHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "NTEventLogHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.NTEventLogHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Determines the message ID, event category and event type, and then logs the message in the NT event log.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines the message ID, event category and event type, and then logs the message in the NT event log.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959661",
+    "updatedDate": "2026-03-11T23:15:47.959662",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/SMTPHandler/emit": {
+    "id": "logging.handlers.SMTPHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "SMTPHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SMTPHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Formats the record and sends it to the specified addressees.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Formats the record and sends it to the specified addressees.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959760",
+    "updatedDate": "2026-03-11T23:15:47.959761",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/BufferingHandler/emit": {
+    "id": "logging.handlers.BufferingHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "BufferingHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.BufferingHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Append the record to the buffer. If shouldFlush() returns true, call flush() to process the buffer.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Append the record to the buffer. If shouldFlush() returns true, call flush() to process the buffer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959811",
+    "updatedDate": "2026-03-11T23:15:47.959812",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/HTTPHandler/emit": {
+    "id": "logging.handlers.HTTPHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "HTTPHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.HTTPHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Sends the record to the web server as a URL-encoded dictionary. The mapLogRecord() method is used to convert the record to the dictionary to be sent.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sends the record to the web server as a URL-encoded dictionary. The mapLogRecord() method is used to convert the record to the dictionary to be sent.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.960006",
+    "updatedDate": "2026-03-11T23:15:47.960007",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/QueueHandler/emit": {
+    "id": "logging.handlers.QueueHandler.emit",
+    "name": "emit",
+    "type": "method",
+    "parent": "QueueHandler",
+    "signatures": [
+      "emit(record)"
+    ],
+    "signature_hash": "559264b91469da9d386945d902d603526c6efa87001ed36a0629f33257a438ba",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.QueueHandler.emit",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Enqueues the result of preparing the LogRecord. Should an exception occur (e.g. because a bounded queue has filled up), the handleError() method is called to handle the error. This can result in the record silently being dropped (if logging.raiseExceptions is False) or a message printed to sys.stderr (if logging.raiseExceptions is True).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enqueues the result of preparing the LogRecord. Should an exception occur (e.g. because a bounded queue has filled up), the handleError() method is called to handle the error. This can result in the r...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.960043",
+    "updatedDate": "2026-03-11T23:15:47.960044",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/SysLogHandler/encodePriority": {
+    "id": "logging.handlers.SysLogHandler.encodePriority",
+    "name": "encodePriority",
+    "type": "method",
+    "parent": "SysLogHandler",
+    "signatures": [
+      "encodePriority(facility, priority)"
+    ],
+    "signature_hash": "ea3b898d0496d2120f2aa12a71a164ddd3a4f08eacbde80059e6b779b7ec9560",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SysLogHandler.encodePriority",
+    "parameters": [
+      {
+        "name": "facility",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "priority",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Encodes the facility and priority into an integer. You can pass in strings or integers - if strings are passed, internal mapping dictionaries are used to convert them to integers. The symbolic LOG_ values are defined in SysLogHandler and mirror the values defined in the sys/syslog.h header file. Priorities Name (string) Symbolic value alert LOG_ALERT crit or critical LOG_CRIT debug LOG_DEBUG emerg or panic LOG_EMERG err or error LOG_ERR info LOG_INFO notice LOG_NOTICE warn or warning LOG_WARN...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Encodes the facility and priority into an integer. You can pass in strings or integers - if strings are passed, internal mapping dictionaries are used to convert them to integers. The symbolic LOG_ va...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959576",
+    "updatedDate": "2026-03-11T23:15:47.959577",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/QueueHandler/enqueue": {
+    "id": "logging.handlers.QueueHandler.enqueue",
+    "name": "enqueue",
+    "type": "method",
+    "parent": "QueueHandler",
+    "signatures": [
+      "enqueue(record)"
+    ],
+    "signature_hash": "c85e61feb0130adb15c6fdcd66c351b1a6f244e3ba45d5921b56cfdff7d3a3e2",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.QueueHandler.enqueue",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Enqueues the record on the queue using put_nowait(); you may want to override this if you want to use blocking behaviour, or a timeout, or a customized queue implementation.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enqueues the record on the queue using put_nowait(); you may want to override this if you want to use blocking behaviour, or a timeout, or a customized queue implementation.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.960080",
+    "updatedDate": "2026-03-11T23:15:47.960081",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/QueueListener/enqueue_sentinel": {
+    "id": "logging.handlers.QueueListener.enqueue_sentinel",
+    "name": "enqueue_sentinel",
+    "type": "method",
+    "parent": "QueueListener",
+    "signatures": [
+      "enqueue_sentinel()"
+    ],
+    "signature_hash": "33d3a3eaa918db70c8273b15d731efbf3c34176ebcce067ad0265e839ba96be8",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.QueueListener.enqueue_sentinel",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Writes a sentinel to the queue to tell the listener to quit. This implementation uses put_nowait(). You may want to override this method if you want to use timeouts or work with custom queue implementations. Added in version 3.3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Writes a sentinel to the queue to tell the listener to quit. This implementation uses put_nowait(). You may want to override this method if you want to use timeouts or work with custom queue implement...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.960224",
+    "updatedDate": "2026-03-11T23:15:47.960225",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "warnings/warn": {
+    "id": "warnings.warn",
+    "name": "warn",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "warnings.warn(message, category=None, stacklevel=1, source=None, *, skip_file_prefixes=())"
+    ],
+    "signature_hash": "948e27d917d6505d3773bb4a5aac099bfa1d5c7a5e86c98dcc06794e2523b58e",
+    "url": "https://docs.python.org/3/library/warnings.html#module-warnings#warnings.warn",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "category",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "stacklevel",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "source",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "skip_file_prefixes",
+        "type": "",
+        "has_default": true,
+        "default_value": "()",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Issue a warning, or maybe ignore it or raise an exception. The category argument, if given, must be a warning category class; it defaults to UserWarning. Alternatively, message can be a Warning instance, in which case category will be ignored and message.__class__ will be used. In this case, the message text will be str(message). This function raises an exception if the particular warning issued is changed into an error by the warnings filter. The stacklevel argument can be used by wrapper fu...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Issue a warning, or maybe ignore it or raise an exception. The category argument, if given, must be a warning category class; it defaults to UserWarning. Alternatively, message can be a Warning instan...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.112473",
+    "updatedDate": "2026-03-11T23:15:48.112473",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "warnings/warn_explicit": {
+    "id": "warnings.warn_explicit",
+    "name": "warn_explicit",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "warnings.warn_explicit(message, category, filename, lineno, module=None, registry=None, module_globals=None, source=None)"
+    ],
+    "signature_hash": "f1610ff152f9e85ebfa69283b6198d313283a292e9980ee66fcd7c369b2b0f27",
+    "url": "https://docs.python.org/3/library/warnings.html#module-warnings#warnings.warn_explicit",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "category",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lineno",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "module",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "registry",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "module_globals",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "source",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This is a low-level interface to the functionality of warn(), passing in explicitly the message, category, filename and line number, and optionally other arguments. message must be a string and category a subclass of Warning or message may be a Warning instance, in which case category will be ignored. module, if supplied, should be the module name. If no module is passed, the filename with .py stripped is used. registry, if supplied, should be the __warningregistry__ dictionary of the module....",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This is a low-level interface to the functionality of warn(), passing in explicitly the message, category, filename and line number, and optionally other arguments. message must be a string and catego...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.112502",
+    "updatedDate": "2026-03-11T23:15:48.112503",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "warnings": {
+    "type": "module",
+    "name": "warnings",
+    "id": "warnings",
+    "description": "Module warnings",
+    "classes": [
+      "catch_warnings"
+    ],
+    "functions": [
+      "deprecated",
+      "filterwarnings",
+      "formatwarning",
+      "resetwarnings",
+      "showwarning",
+      "simplefilter",
+      "warn",
+      "warn_explicit"
+    ]
+  }
+}

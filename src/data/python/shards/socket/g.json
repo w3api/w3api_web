@@ -1,0 +1,794 @@
+{
+  "socket/gaierror": {
+    "id": "socket.gaierror",
+    "name": "gaierror",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception socket.gaierror"
+    ],
+    "signature_hash": "fb86a7d9a4fe6cb00fb37d24babe27f0179b7d24206c601ccf114e2ac508ab7f",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.gaierror",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A subclass of OSError, this exception is raised for address-related errors by getaddrinfo() and getnameinfo(). The accompanying value is a pair (error, string) representing an error returned by a library call. string represents the description of error, as returned by the gai_strerror() C function. The numeric error value will match one of the EAI_* constants defined in this module. Changed in version 3.3: This class was made a subclass of OSError.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of OSError, this exception is raised for address-related errors by getaddrinfo() and getnameinfo(). The accompanying value is a pair (error, string) representing an error returned by a libr...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.040445",
+    "updatedDate": "2026-03-11T23:15:48.040445",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/getaddrinfo": {
+    "id": "socket.getaddrinfo",
+    "name": "getaddrinfo",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.getaddrinfo(host, port, family=AF_UNSPEC, type=0, proto=0, flags=0)"
+    ],
+    "signature_hash": "3f39d267ebcc261705604c2a83bdeb52e68b4f29cfa15cbc8d944badc3867ec3",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.getaddrinfo",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "port",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "family",
+        "type": "",
+        "has_default": true,
+        "default_value": "AF_UNSPEC",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "proto",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "flags",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This function wraps the C function getaddrinfo of the underlying system. Translate the host/port argument into a sequence of 5-tuples that contain all the necessary arguments for creating a socket connected to that service. host is a domain name, a string representation of an IPv4/v6 address or None. port is a string service name such as 'http', a numeric port number or None. By passing None as the value of host and port, you can pass NULL to the underlying C API. The family, type and proto a...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This function wraps the C function getaddrinfo of the underlying system. Translate the host/port argument into a sequence of 5-tuples that contain all the necessary arguments for creating a socket con...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041057",
+    "updatedDate": "2026-03-11T23:15:48.041058",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/getdefaulttimeout": {
+    "id": "socket.getdefaulttimeout",
+    "name": "getdefaulttimeout",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.getdefaulttimeout()"
+    ],
+    "signature_hash": "1359da79a31d876876eae2446731d3891635e0202a7a820c4b01485aa3f7017a",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.getdefaulttimeout",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the default timeout in seconds (float) for new socket objects. A value of None indicates that new socket objects have no timeout. When the socket module is first imported, the default is None.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the default timeout in seconds (float) for new socket objects. A value of None indicates that new socket objects have no timeout. When the socket module is first imported, the default is None.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041411",
+    "updatedDate": "2026-03-11T23:15:48.041412",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/getfqdn": {
+    "id": "socket.getfqdn",
+    "name": "getfqdn",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.getfqdn([name])"
+    ],
+    "signature_hash": "82eef8876fb11ea903cef64a800ea2d9742406857262f38cf167126420787bea",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.getfqdn",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a fully qualified domain name for name. If name is omitted or empty, it is interpreted as the local host. To find the fully qualified name, the hostname returned by gethostbyaddr() is checked, followed by aliases for the host, if available. The first name which includes a period is selected. In case no fully qualified domain name is available and name was provided, it is returned unchanged. If name was empty or equal to '0.0.0.0', the hostname from gethostname() is returned.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a fully qualified domain name for name. If name is omitted or empty, it is interpreted as the local host. To find the fully qualified name, the hostname returned by gethostbyaddr() is checked, ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041075",
+    "updatedDate": "2026-03-11T23:15:48.041076",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/gethostbyaddr": {
+    "id": "socket.gethostbyaddr",
+    "name": "gethostbyaddr",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.gethostbyaddr(ip_address)"
+    ],
+    "signature_hash": "3814807b8fada4b7815b2d64b89dc5d038c788f927826fef8b9397d02bdde43b",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.gethostbyaddr",
+    "parameters": [
+      {
+        "name": "ip_address",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a 3-tuple (hostname, aliaslist, ipaddrlist) where hostname is the primary host name responding to the given ip_address, aliaslist is a (possibly empty) list of alternative host names for the same address, and ipaddrlist is a list of IPv4/v6 addresses for the same interface on the same host (most likely containing only a single address). To find the fully qualified domain name, use the function getfqdn(). gethostbyaddr() supports both IPv4 and IPv6. Raises an auditing event socket.getho...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a 3-tuple (hostname, aliaslist, ipaddrlist) where hostname is the primary host name responding to the given ip_address, aliaslist is a (possibly empty) list of alternative host names for the sa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041139",
+    "updatedDate": "2026-03-11T23:15:48.041140",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/gethostbyname": {
+    "id": "socket.gethostbyname",
+    "name": "gethostbyname",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.gethostbyname(hostname)"
+    ],
+    "signature_hash": "52e90d0e1a606fbdd756c152db5be16286c987f91a861488a9e4ec05733d1b26",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.gethostbyname",
+    "parameters": [
+      {
+        "name": "hostname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Translate a host name to IPv4 address format. The IPv4 address is returned as a string, such as '100.50.200.5'. If the host name is an IPv4 address itself it is returned unchanged. See gethostbyname_ex() for a more complete interface. gethostbyname() does not support IPv6 name resolution, and getaddrinfo() should be used instead for IPv4/v6 dual stack support. Raises an auditing event socket.gethostbyname with argument hostname. Availability: not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Translate a host name to IPv4 address format. The IPv4 address is returned as a string, such as '100.50.200.5'. If the host name is an IPv4 address itself it is returned unchanged. See gethostbyname_e...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041091",
+    "updatedDate": "2026-03-11T23:15:48.041092",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/gethostbyname_ex": {
+    "id": "socket.gethostbyname_ex",
+    "name": "gethostbyname_ex",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.gethostbyname_ex(hostname)"
+    ],
+    "signature_hash": "bc0a22ae05dce9f1d0ff1ba9fec6d99a7b79498e190c3379a0f5c8a9a5c35ca0",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.gethostbyname_ex",
+    "parameters": [
+      {
+        "name": "hostname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Translate a host name to IPv4 address format, extended interface. Return a 3-tuple (hostname, aliaslist, ipaddrlist) where hostname is the host’s primary host name, aliaslist is a (possibly empty) list of alternative host names for the same address, and ipaddrlist is a list of IPv4 addresses for the same interface on the same host (often but not always a single address). gethostbyname_ex() does not support IPv6 name resolution, and getaddrinfo() should be used instead for IPv4/v6 dual stack s...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Translate a host name to IPv4 address format, extended interface. Return a 3-tuple (hostname, aliaslist, ipaddrlist) where hostname is the host’s primary host name, aliaslist is a (possibly empty) lis...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041108",
+    "updatedDate": "2026-03-11T23:15:48.041109",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/gethostname": {
+    "id": "socket.gethostname",
+    "name": "gethostname",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.gethostname()"
+    ],
+    "signature_hash": "48152d3028a8efd6fb94b9426b281c8db52f77d6657555b17868ffd450c136cb",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.gethostname",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a string containing the hostname of the machine where the Python interpreter is currently executing. Raises an auditing event socket.gethostname with no arguments. Note: gethostname() doesn’t always return the fully qualified domain name; use getfqdn() for that. Availability: not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a string containing the hostname of the machine where the Python interpreter is currently executing. Raises an auditing event socket.gethostname with no arguments. Note: gethostname() doesn’t a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041121",
+    "updatedDate": "2026-03-11T23:15:48.041122",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/getnameinfo": {
+    "id": "socket.getnameinfo",
+    "name": "getnameinfo",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.getnameinfo(sockaddr, flags)"
+    ],
+    "signature_hash": "9e2720a34f8c2d0e6f7058ee1e307d566289f634a8b679b4d25888a3efebd2dd",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.getnameinfo",
+    "parameters": [
+      {
+        "name": "sockaddr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "flags",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Translate a socket address sockaddr into a 2-tuple (host, port). Depending on the settings of flags, the result can contain a fully qualified domain name or numeric address representation in host. Similarly, port can contain a string port name or a numeric port number. For IPv6 addresses, %scope_id is appended to the host part if sockaddr contains meaningful scope_id. Usually this happens for multicast addresses. For more information about flags you can consult getnameinfo(3). Raises an audit...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Translate a socket address sockaddr into a 2-tuple (host, port). Depending on the settings of flags, the result can contain a fully qualified domain name or numeric address representation in host. Sim...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041158",
+    "updatedDate": "2026-03-11T23:15:48.041159",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/getprotobyname": {
+    "id": "socket.getprotobyname",
+    "name": "getprotobyname",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.getprotobyname(protocolname)"
+    ],
+    "signature_hash": "3b8e6dbab36ce00f3151806e7a481ade486586e3a54a69ac5e871763af0a725a",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.getprotobyname",
+    "parameters": [
+      {
+        "name": "protocolname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Translate an internet protocol name (for example, 'icmp') to a constant suitable for passing as the (optional) third argument to the socket() function. This is usually only needed for sockets opened in “raw” mode (SOCK_RAW); for the normal socket modes, the correct protocol is chosen automatically if the protocol is omitted or zero. Availability: not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Translate an internet protocol name (for example, 'icmp') to a constant suitable for passing as the (optional) third argument to the socket() function. This is usually only needed for sockets opened i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041174",
+    "updatedDate": "2026-03-11T23:15:48.041175",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/getservbyname": {
+    "id": "socket.getservbyname",
+    "name": "getservbyname",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.getservbyname(servicename[, protocolname])"
+    ],
+    "signature_hash": "e6b1277299442996482b93373b0f3917cfe6540a350da2fbd6c2c36167a80e9e",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.getservbyname",
+    "parameters": [
+      {
+        "name": "servicename[, protocolname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Translate an internet service name and protocol name to a port number for that service. The optional protocol name, if given, should be 'tcp' or 'udp', otherwise any protocol will match. Raises an auditing event socket.getservbyname with arguments servicename, protocolname. Availability: not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Translate an internet service name and protocol name to a port number for that service. The optional protocol name, if given, should be 'tcp' or 'udp', otherwise any protocol will match. Raises an aud...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041199",
+    "updatedDate": "2026-03-11T23:15:48.041200",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/getservbyport": {
+    "id": "socket.getservbyport",
+    "name": "getservbyport",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "socket.getservbyport(port[, protocolname])"
+    ],
+    "signature_hash": "881ea06866371758ec39b56947ddbcb24bbc400167497b35b7a161254470b334",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.getservbyport",
+    "parameters": [
+      {
+        "name": "port[, protocolname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Translate an internet port number and protocol name to a service name for that service. The optional protocol name, if given, should be 'tcp' or 'udp', otherwise any protocol will match. Raises an auditing event socket.getservbyport with arguments port, protocolname. Availability: not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Translate an internet port number and protocol name to a service name for that service. The optional protocol name, if given, should be 'tcp' or 'udp', otherwise any protocol will match. Raises an aud...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041216",
+    "updatedDate": "2026-03-11T23:15:48.041217",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/get_inheritable": {
+    "id": "socket.socket.get_inheritable",
+    "name": "get_inheritable",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.get_inheritable()"
+    ],
+    "signature_hash": "bb2b626edcc869b395541614358a8b014f809953e164e6630e6db024de225671",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.get_inheritable",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get the inheritable flag of the socket’s file descriptor or socket’s handle: True if the socket can be inherited in child processes, False if it cannot. Added in version 3.4.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the inheritable flag of the socket’s file descriptor or socket’s handle: True if the socket can be inherited in child processes, False if it cannot. Added in version 3.4.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041693",
+    "updatedDate": "2026-03-11T23:15:48.041694",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/getblocking": {
+    "id": "socket.socket.getblocking",
+    "name": "getblocking",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.getblocking()"
+    ],
+    "signature_hash": "8f7f604d7f01426fc80c5395a315e4525998bc362d415f129a2d26b7cadc4b99",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.getblocking",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if socket is in blocking mode, False if in non-blocking. This is equivalent to checking socket.gettimeout() != 0. Added in version 3.7.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if socket is in blocking mode, False if in non-blocking. This is equivalent to checking socket.gettimeout() != 0. Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041763",
+    "updatedDate": "2026-03-11T23:15:48.041764",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/getpeername": {
+    "id": "socket.socket.getpeername",
+    "name": "getpeername",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.getpeername()"
+    ],
+    "signature_hash": "2b83c6acf3346c0c65ebdb855870b0321bdab6b7609aa00b74cede3d0ca82398",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.getpeername",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the remote address to which the socket is connected. This is useful to find out the port number of a remote IPv4/v6 socket, for instance. (The format of the address returned depends on the address family — see above.) On some systems this function is not supported.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the remote address to which the socket is connected. This is useful to find out the port number of a remote IPv4/v6 socket, for instance. (The format of the address returned depends on the addr...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041709",
+    "updatedDate": "2026-03-11T23:15:48.041710",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/getsockname": {
+    "id": "socket.socket.getsockname",
+    "name": "getsockname",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.getsockname()"
+    ],
+    "signature_hash": "84eadd081d0367b4393a561888fa97d312523d942ef1ed767a85301305d55e90",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.getsockname",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the socket’s own address. This is useful to find out the port number of an IPv4/v6 socket, for instance. (The format of the address returned depends on the address family — see above.)",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the socket’s own address. This is useful to find out the port number of an IPv4/v6 socket, for instance. (The format of the address returned depends on the address family — see above.)",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041724",
+    "updatedDate": "2026-03-11T23:15:48.041725",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/getsockopt": {
+    "id": "socket.socket.getsockopt",
+    "name": "getsockopt",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.getsockopt(level, optname[, buflen])"
+    ],
+    "signature_hash": "7c5fe3bbf90941b36d40b5f4170da6d5a19a9cdea6be248734ef5f0b87eded2c",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.getsockopt",
+    "parameters": [
+      {
+        "name": "level",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "optname[, buflen",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the value of the given socket option (see the Unix man page getsockopt(2)). The needed symbolic constants (SO_* etc.) are defined in this module. If buflen is absent, an integer option is assumed and its integer value is returned by the function. If buflen is present, it specifies the maximum length of the buffer used to receive the option in, and this buffer is returned as a bytes object. It is up to the caller to decode the contents of the buffer (see the optional built-in module str...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the given socket option (see the Unix man page getsockopt(2)). The needed symbolic constants (SO_* etc.) are defined in this module. If buflen is absent, an integer option is assum...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041748",
+    "updatedDate": "2026-03-11T23:15:48.041749",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socket/socket/gettimeout": {
+    "id": "socket.socket.gettimeout",
+    "name": "gettimeout",
+    "type": "method",
+    "parent": "socket",
+    "signatures": [
+      "socket.gettimeout()"
+    ],
+    "signature_hash": "a1772c037bed2272e9b0ca715a21e28859f0ba5fcbf9ba6b689640e70f881ecb",
+    "url": "https://docs.python.org/3/library/socket.html#module-socket#socket.socket.gettimeout",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the timeout in seconds (float) associated with socket operations, or None if no timeout is set. This reflects the last call to setblocking() or settimeout().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the timeout in seconds (float) associated with socket operations, or None if no timeout is set. This reflects the last call to setblocking() or settimeout().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.041778",
+    "updatedDate": "2026-03-11T23:15:48.041779",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

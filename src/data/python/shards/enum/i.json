@@ -1,0 +1,70 @@
+{
+  "enum/IntEnum": {
+    "id": "enum.IntEnum",
+    "name": "IntEnum",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class enum.IntEnum"
+    ],
+    "signature_hash": "885326295373a614bd183c39958537877e3e355d0f062a347563f7c53859d660",
+    "url": "https://docs.python.org/3/library/enum.html#module-enum#enum.IntEnum",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "IntEnum is the same as Enum, but its members are also integers and can be used anywhere that an integer can be used. If any integer operation is performed with an IntEnum member, the resulting value loses its enumeration status. >>> from enum import IntEnum >>> class Number(IntEnum): ... ONE = 1 ... TWO = 2 ... THREE = 3 ... >>> Number.THREE <Number.THREE: 3> >>> Number.ONE + Number.TWO 3 >>> Number.THREE + 5 8 >>> Number.THREE == 3 True Note Using auto with IntEnum results in integers of inc...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "IntEnum is the same as Enum, but its members are also integers and can be used anywhere that an integer can be used. If any integer operation is performed with an IntEnum member, the resulting value l...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.929279",
+    "updatedDate": "2026-03-11T23:15:47.929279",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "enum/IntFlag": {
+    "id": "enum.IntFlag",
+    "name": "IntFlag",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class enum.IntFlag"
+    ],
+    "signature_hash": "b307d99001428fad244bb4016db21ae185150ddc3a57a40cc98c51fb40575660",
+    "url": "https://docs.python.org/3/library/enum.html#module-enum#enum.IntFlag",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "IntFlag is the same as Flag, but its members are also integers and can be used anywhere that an integer can be used. >>> from enum import IntFlag, auto >>> class Color(IntFlag): ... RED = auto() ... GREEN = auto() ... BLUE = auto() ... >>> Color.RED & 2 <Color: 0> >>> Color.RED | 2 <Color.RED|GREEN: 3> If any integer operation is performed with an IntFlag member, the result is not an IntFlag: >>> Color.RED + 2 3 If a Flag operation is performed with an IntFlag member and: the result is a vali...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "IntFlag is the same as Flag, but its members are also integers and can be used anywhere that an integer can be used. >>> from enum import IntFlag, auto >>> class Color(IntFlag): ... RED = auto() ... G...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.929444",
+    "updatedDate": "2026-03-11T23:15:47.929445",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

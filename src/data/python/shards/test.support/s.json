@@ -1,0 +1,980 @@
+{
+  "test.support/SaveSignals": {
+    "id": "test.support.SaveSignals",
+    "name": "SaveSignals",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class test.support.SaveSignals"
+    ],
+    "signature_hash": "487d99604ef23e49a83e16b61460ae17d3c0e048fae99af7e51b8ae119675ba8",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.SaveSignals",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Class to save and restore signal handlers registered by the Python signal handler. save(self)¶ Save the signal handlers to a dictionary mapping signal numbers to the current signal handler. restore(self)¶ Set the signal numbers from the save() dictionary to the saved handler.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Class to save and restore signal handlers registered by the Python signal handler. save(self)¶ Save the signal handlers to a dictionary mapping signal numbers to the current signal handler. restore(se...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.063620",
+    "updatedDate": "2026-03-11T23:15:48.063621",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "restore",
+      "save"
+    ]
+  },
+  "test.support/SuppressCrashReport": {
+    "id": "test.support.SuppressCrashReport",
+    "name": "SuppressCrashReport",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class test.support.SuppressCrashReport"
+    ],
+    "signature_hash": "dc662cec87d190d0e0fcca7e889a541cd3fdc0ed721f2cad2ac6d5ead1fd80d6",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.SuppressCrashReport",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A context manager used to try to prevent crash dialog popups on tests that are expected to crash a subprocess. On Windows, it disables Windows Error Reporting dialogs using SetErrorMode. On UNIX, resource.setrlimit() is used to set resource.RLIMIT_CORE’s soft limit to 0 to prevent coredump file creation. On both platforms, the old value is restored by __exit__().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A context manager used to try to prevent crash dialog popups on tests that are expected to crash a subprocess. On Windows, it disables Windows Error Reporting dialogs using SetErrorMode. On UNIX, reso...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.063604",
+    "updatedDate": "2026-03-11T23:15:48.063605",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/os_helper/SAVEDCWD": {
+    "id": "test.support.os_helper.SAVEDCWD",
+    "name": "SAVEDCWD",
+    "type": "constant",
+    "parent": "os_helper",
+    "signatures": [
+      "test.support.os_helper.SAVEDCWD"
+    ],
+    "signature_hash": "b3170b8653b0fca861e2ac90e76f8eb175f0011c270de3024d4ef843e5588a2e",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.os_helper.SAVEDCWD",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set to os.getcwd().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set to os.getcwd().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.064340",
+    "updatedDate": "2026-03-11T23:15:48.064340",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/support/SHORT_TIMEOUT": {
+    "id": "test.support.support.SHORT_TIMEOUT",
+    "name": "SHORT_TIMEOUT",
+    "type": "constant",
+    "parent": "support",
+    "signatures": [
+      "test.support.SHORT_TIMEOUT"
+    ],
+    "signature_hash": "e64cfe3351cf8a47e5383b5955ee319ae7d5de8f9f7e1c16fb1974428f780722",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.SHORT_TIMEOUT",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Timeout in seconds to mark a test as failed if the test takes “too long”. The timeout value depends on the regrtest --timeout command line option. If a test using SHORT_TIMEOUT starts to fail randomly on slow buildbots, use LONG_TIMEOUT instead. Its default value is 30 seconds.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Timeout in seconds to mark a test as failed if the test takes “too long”. The timeout value depends on the regrtest --timeout command line option. If a test using SHORT_TIMEOUT starts to fail randomly...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062252",
+    "updatedDate": "2026-03-11T23:15:48.062252",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/support/SMALLEST": {
+    "id": "test.support.support.SMALLEST",
+    "name": "SMALLEST",
+    "type": "constant",
+    "parent": "support",
+    "signatures": [
+      "test.support.SMALLEST"
+    ],
+    "signature_hash": "70ff657712938c96096c6b05121aa076599448e64f5f43fccdf09885600c5f51",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.SMALLEST",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Object that is less than anything (except itself). Used to test mixed type comparison.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Object that is less than anything (except itself). Used to test mixed type comparison.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062456",
+    "updatedDate": "2026-03-11T23:15:48.062457",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/support/SOCK_MAX_SIZE": {
+    "id": "test.support.support.SOCK_MAX_SIZE",
+    "name": "SOCK_MAX_SIZE",
+    "type": "constant",
+    "parent": "support",
+    "signatures": [
+      "test.support.SOCK_MAX_SIZE"
+    ],
+    "signature_hash": "40e29910bd370f9ed0fe191a17c0277110aa462d79f42b432ab0a7f30510cb4e",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.SOCK_MAX_SIZE",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A constant that is likely larger than the underlying OS socket buffer size, to make writes blocking.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A constant that is likely larger than the underlying OS socket buffer size, to make writes blocking.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062309",
+    "updatedDate": "2026-03-11T23:15:48.062310",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/set_memlimit": {
+    "id": "test.support.set_memlimit",
+    "name": "set_memlimit",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.set_memlimit(limit)"
+    ],
+    "signature_hash": "e6a9af87afd88be44e83a1b60f011961f197d4aedc72932873ee4a91731d7ba0",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.set_memlimit",
+    "parameters": [
+      {
+        "name": "limit",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the values for max_memuse and real_max_memuse for big memory tests.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the values for max_memuse and real_max_memuse for big memory tests.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062668",
+    "updatedDate": "2026-03-11T23:15:48.062669",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/setswitchinterval": {
+    "id": "test.support.setswitchinterval",
+    "name": "setswitchinterval",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.setswitchinterval(interval)"
+    ],
+    "signature_hash": "07b29b55e0768213aa46de728fff0091a347fe6bd111832125e84108fa088745",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.setswitchinterval",
+    "parameters": [
+      {
+        "name": "interval",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the sys.setswitchinterval() to the given interval. Defines a minimum interval for Android systems to prevent the system from hanging.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the sys.setswitchinterval() to the given interval. Defines a minimum interval for Android systems to prevent the system from hanging.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062638",
+    "updatedDate": "2026-03-11T23:15:48.062639",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/skip_if_broken_multiprocessing_synchronize": {
+    "id": "test.support.skip_if_broken_multiprocessing_synchronize",
+    "name": "skip_if_broken_multiprocessing_synchronize",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.skip_if_broken_multiprocessing_synchronize()"
+    ],
+    "signature_hash": "10dcea32f963cb5d7d0b10a79c4f55126ac5023fba331ee0af677518c222317f",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.skip_if_broken_multiprocessing_synchronize",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Skip tests if the multiprocessing.synchronize module is missing, if there is no available semaphore implementation, or if creating a lock raises an OSError. Added in version 3.10.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Skip tests if the multiprocessing.synchronize module is missing, if there is no available semaphore implementation, or if creating a lock raises an OSError. Added in version 3.10.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.063546",
+    "updatedDate": "2026-03-11T23:15:48.063547",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/skip_unless_bind_unix_socket": {
+    "id": "test.support.skip_unless_bind_unix_socket",
+    "name": "skip_unless_bind_unix_socket",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@test.support.socket_helper.skip_unless_bind_unix_socket"
+    ],
+    "signature_hash": "a57b44daab3b442870b15231fe384c7db5b51b5895aba00ab496f8329220f996",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.socket_helper.skip_unless_bind_unix_socket",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A decorator for running tests that require a functional bind() for Unix sockets.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A decorator for running tests that require a functional bind() for Unix sockets.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.063808",
+    "updatedDate": "2026-03-11T23:15:48.063809",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/skip_unless_symlink": {
+    "id": "test.support.skip_unless_symlink",
+    "name": "skip_unless_symlink",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@test.support.os_helper.skip_unless_symlink"
+    ],
+    "signature_hash": "25c82f608ae4e33cc651ef874f3ccc4784b192565bb529f984f2b329e9f7a26b",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.os_helper.skip_unless_symlink",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A decorator for running tests that require support for symbolic links.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A decorator for running tests that require support for symbolic links.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.064682",
+    "updatedDate": "2026-03-11T23:15:48.064683",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/skip_unless_xattr": {
+    "id": "test.support.skip_unless_xattr",
+    "name": "skip_unless_xattr",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@test.support.os_helper.skip_unless_xattr"
+    ],
+    "signature_hash": "2b5745d72f743335bdf4eacdb5490027ed1480e550dc0e6f9f63f4959dd2bdd0",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.os_helper.skip_unless_xattr",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A decorator for running tests that require support for xattr.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A decorator for running tests that require support for xattr.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.064697",
+    "updatedDate": "2026-03-11T23:15:48.064698",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/sleeping_retry": {
+    "id": "test.support.sleeping_retry",
+    "name": "sleeping_retry",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.sleeping_retry(timeout, err_msg=None, /, *, init_delay=0.010, max_delay=1.0, error=True)"
+    ],
+    "signature_hash": "89d79c4ec89dc94710e2c3afe09dff4e4989281fc9618cb3ef8f56db8d96b4f3",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.sleeping_retry",
+    "parameters": [
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "err_msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "init_delay",
+        "type": "",
+        "has_default": true,
+        "default_value": "0.010",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "max_delay",
+        "type": "",
+        "has_default": true,
+        "default_value": "1.0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "error",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Wait strategy that applies exponential backoff. Run the loop body until break stops the loop. Sleep at each loop iteration, but not at the first iteration. The sleep delay is doubled at each iteration (up to max_delay seconds). See busy_retry() documentation for the parameters usage. Example raising an exception after SHORT_TIMEOUT seconds: for _ in support.sleeping_retry(support.SHORT_TIMEOUT): if check(): break Example of error=False usage: for _ in support.sleeping_retry(support.SHORT_TIME...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Wait strategy that applies exponential backoff. Run the loop body until break stops the loop. Sleep at each loop iteration, but not at the first iteration. The sleep delay is doubled at each iteration...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062506",
+    "updatedDate": "2026-03-11T23:15:48.062507",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/sortdict": {
+    "id": "test.support.sortdict",
+    "name": "sortdict",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.sortdict(dict)"
+    ],
+    "signature_hash": "dcc12b02e64e47891ac13e807f1daeaad41bbe0c251b91574f0aac50d40542d7",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.sortdict",
+    "parameters": [
+      {
+        "name": "dict",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a repr of dict with keys sorted.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a repr of dict with keys sorted.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062596",
+    "updatedDate": "2026-03-11T23:15:48.062597",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/spawn_python": {
+    "id": "test.support.spawn_python",
+    "name": "spawn_python",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.script_helper.spawn_python(*args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, **kw)"
+    ],
+    "signature_hash": "e41565248ad4eb0cdb23f483b85abf4580c2806b09cdddf606624fcfd3eb3574",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.script_helper.spawn_python",
+    "parameters": [
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "stdout",
+        "type": "",
+        "has_default": true,
+        "default_value": "subprocess.PIPE",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "stderr",
+        "type": "",
+        "has_default": true,
+        "default_value": "subprocess.STDOUT",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kw",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Run a Python subprocess with the given arguments. kw is extra keyword args to pass to subprocess.Popen(). Returns a subprocess.Popen object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Run a Python subprocess with the given arguments. kw is extra keyword args to pass to subprocess.Popen(). Returns a subprocess.Popen object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.063935",
+    "updatedDate": "2026-03-11T23:15:48.063936",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/start_threads": {
+    "id": "test.support.start_threads",
+    "name": "start_threads",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.threading_helper.start_threads(threads, unlock=None)"
+    ],
+    "signature_hash": "fe24982a4ff1952c4e0d47d97ff2166ca4db27044d14f832bcb82641eb88556b",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.threading_helper.start_threads",
+    "parameters": [
+      {
+        "name": "threads",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unlock",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Context manager to start threads, which is a sequence of threads. unlock is a function called after the threads are started, even if an exception was raised; an example would be threading.Event.set(). start_threads will attempt to join the started threads upon exit.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Context manager to start threads, which is a sequence of threads. unlock is a function called after the threads are started, even if an exception was raised; an example would be threading.Event.set()....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.064213",
+    "updatedDate": "2026-03-11T23:15:48.064214",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/swap_attr": {
+    "id": "test.support.swap_attr",
+    "name": "swap_attr",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.swap_attr(obj, attr, new_val)"
+    ],
+    "signature_hash": "69ecff03917d7b525727e984159e7a03ae21549a2accb000b9574385c4604cae",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.swap_attr",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "new_val",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Context manager to swap out an attribute with a new object. Usage: with swap_attr(obj, \"attr\", 5): ... This will set obj.attr to 5 for the duration of the with block, restoring the old value at the end of the block. If attr doesn’t exist on obj, it will be created and then deleted at the end of the block. The old value (or None if it doesn’t exist) will be assigned to the target of the “as” clause, if there is one.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Context manager to swap out an attribute with a new object. Usage: with swap_attr(obj, \"attr\", 5): ... This will set obj.attr to 5 for the duration of the with block, restoring the old value at the en...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062792",
+    "updatedDate": "2026-03-11T23:15:48.062793",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/swap_item": {
+    "id": "test.support.swap_item",
+    "name": "swap_item",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.swap_item(obj, attr, new_val)"
+    ],
+    "signature_hash": "d25dc225c487edbe7a94c871df37910a58fa943305ac362c7df78a3c9b0bd3cf",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.swap_item",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "new_val",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Context manager to swap out an item with a new object. Usage: with swap_item(obj, \"item\", 5): ... This will set obj[\"item\"] to 5 for the duration of the with block, restoring the old value at the end of the block. If item doesn’t exist on obj, it will be created and then deleted at the end of the block. The old value (or None if it doesn’t exist) will be assigned to the target of the “as” clause, if there is one.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Context manager to swap out an item with a new object. Usage: with swap_item(obj, \"item\", 5): ... This will set obj[\"item\"] to 5 for the duration of the with block, restoring the old value at the end ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062810",
+    "updatedDate": "2026-03-11T23:15:48.062811",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/system_must_validate_cert": {
+    "id": "test.support.system_must_validate_cert",
+    "name": "system_must_validate_cert",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.system_must_validate_cert(f)"
+    ],
+    "signature_hash": "423b9276f7b397085868cd01e12daab5f46385918520865be7e068d1148e9ca4",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.system_must_validate_cert",
+    "parameters": [
+      {
+        "name": "f",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A decorator that skips the decorated test on TLS certification validation failures.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A decorator that skips the decorated test on TLS certification validation failures.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.062961",
+    "updatedDate": "2026-03-11T23:15:48.062961",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/SaveSignals/save": {
+    "id": "test.support.SaveSignals.save",
+    "name": "save",
+    "type": "method",
+    "parent": "SaveSignals",
+    "signatures": [
+      "save(self)"
+    ],
+    "signature_hash": "c03d8514f03f5d7fe8635bf68646b21f316d9642a5fbeaedf3b3062fef9cd78b",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.SaveSignals.save",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Save the signal handlers to a dictionary mapping signal numbers to the current signal handler.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Save the signal handlers to a dictionary mapping signal numbers to the current signal handler.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.063635",
+    "updatedDate": "2026-03-11T23:15:48.063636",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support/EnvironmentVarGuard/set": {
+    "id": "test.support.EnvironmentVarGuard.set",
+    "name": "set",
+    "type": "method",
+    "parent": "EnvironmentVarGuard",
+    "signatures": [
+      "EnvironmentVarGuard.set(envvar, value)"
+    ],
+    "signature_hash": "0fdd919f65db04b193e24ea9e6b31c51cae1b64b649f5e81b2cbaa6cd6a9e669",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support#test.support.os_helper.EnvironmentVarGuard.set",
+    "parameters": [
+      {
+        "name": "envvar",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Temporarily set the environment variable envvar to the value of value.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Temporarily set the environment variable envvar to the value of value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.064482",
+    "updatedDate": "2026-03-11T23:15:48.064483",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

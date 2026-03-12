@@ -1,0 +1,420 @@
+{
+  "xmlrpc.server/SimpleXMLRPCRequestHandler": {
+    "id": "xmlrpc.server.SimpleXMLRPCRequestHandler",
+    "name": "SimpleXMLRPCRequestHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class xmlrpc.server.SimpleXMLRPCRequestHandler"
+    ],
+    "signature_hash": "24abfb2689a61cf3f21b0051b07ffee99e3ee5940116622f70a93da757d55aa0",
+    "url": "https://docs.python.org/3/library/xmlrpc.server.html#module-xmlrpc.server#xmlrpc.server.SimpleXMLRPCRequestHandler",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a new request handler instance. This request handler supports POST requests and modifies logging so that the logRequests parameter to the SimpleXMLRPCServer constructor parameter is honored.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a new request handler instance. This request handler supports POST requests and modifies logging so that the logRequests parameter to the SimpleXMLRPCServer constructor parameter is honored.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.142813",
+    "updatedDate": "2026-03-11T23:15:48.142814",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "rpc_paths"
+    ]
+  },
+  "xmlrpc.server/SimpleXMLRPCServer": {
+    "id": "xmlrpc.server.SimpleXMLRPCServer",
+    "name": "SimpleXMLRPCServer",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class xmlrpc.server.SimpleXMLRPCServer(addr, requestHandler=SimpleXMLRPCRequestHandler, logRequests=True, allow_none=False, encoding=None, bind_and_activate=True, use_builtin_types=False)"
+    ],
+    "signature_hash": "9ca3fbcbd9419d5b908c9a9ad23f4bb0646b379f4edf9f03d69d1206927b21cb",
+    "url": "https://docs.python.org/3/library/xmlrpc.server.html#module-xmlrpc.server#xmlrpc.server.SimpleXMLRPCServer",
+    "parameters": [
+      {
+        "name": "addr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "requestHandler",
+        "type": "",
+        "has_default": true,
+        "default_value": "SimpleXMLRPCRequestHandler",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "logRequests",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "allow_none",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "bind_and_activate",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "use_builtin_types",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a new server instance. This class provides methods for registration of functions that can be called by the XML-RPC protocol. The requestHandler parameter should be a factory for request handler instances; it defaults to SimpleXMLRPCRequestHandler. The addr and requestHandler parameters are passed to the socketserver.TCPServer constructor. If logRequests is true (the default), requests will be logged; setting this parameter to false will turn off logging. The allow_none and encoding par...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a new server instance. This class provides methods for registration of functions that can be called by the XML-RPC protocol. The requestHandler parameter should be a factory for request handler...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.142777",
+    "updatedDate": "2026-03-11T23:15:48.142778",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "register_function",
+      "register_instance",
+      "register_introspection_functions",
+      "register_multicall_functions"
+    ]
+  },
+  "xmlrpc.server/DocXMLRPCServer/set_server_documentation": {
+    "id": "xmlrpc.server.DocXMLRPCServer.set_server_documentation",
+    "name": "set_server_documentation",
+    "type": "method",
+    "parent": "DocXMLRPCServer",
+    "signatures": [
+      "DocXMLRPCServer.set_server_documentation(server_documentation)"
+    ],
+    "signature_hash": "1225fd03311a19c99a5d891b15ad2e8d25be553e443a48e1d3483caf7f666ba5",
+    "url": "https://docs.python.org/3/library/xmlrpc.server.html#module-xmlrpc.server#xmlrpc.server.DocXMLRPCServer.set_server_documentation",
+    "parameters": [
+      {
+        "name": "server_documentation",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the description used in the generated HTML documentation. This description will appear as a paragraph, below the server name, in the documentation.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the description used in the generated HTML documentation. This description will appear as a paragraph, below the server name, in the documentation.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.143080",
+    "updatedDate": "2026-03-11T23:15:48.143081",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xmlrpc.server/DocCGIXMLRPCRequestHandler/set_server_documentation": {
+    "id": "xmlrpc.server.DocCGIXMLRPCRequestHandler.set_server_documentation",
+    "name": "set_server_documentation",
+    "type": "method",
+    "parent": "DocCGIXMLRPCRequestHandler",
+    "signatures": [
+      "DocCGIXMLRPCRequestHandler.set_server_documentation(server_documentation)"
+    ],
+    "signature_hash": "2dda9ea47057855d658a7ce9d8de10e9e90e4a0e7749d83dead9e0372e2c64d3",
+    "url": "https://docs.python.org/3/library/xmlrpc.server.html#module-xmlrpc.server#xmlrpc.server.DocCGIXMLRPCRequestHandler.set_server_documentation",
+    "parameters": [
+      {
+        "name": "server_documentation",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the description used in the generated HTML documentation. This description will appear as a paragraph, below the server name, in the documentation.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the description used in the generated HTML documentation. This description will appear as a paragraph, below the server name, in the documentation.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.143128",
+    "updatedDate": "2026-03-11T23:15:48.143129",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xmlrpc.server/DocXMLRPCServer/set_server_name": {
+    "id": "xmlrpc.server.DocXMLRPCServer.set_server_name",
+    "name": "set_server_name",
+    "type": "method",
+    "parent": "DocXMLRPCServer",
+    "signatures": [
+      "DocXMLRPCServer.set_server_name(server_name)"
+    ],
+    "signature_hash": "14e257832119d6bfd2a61abb51b2e47894eed093af33e686a3f830e2cd7ebe38",
+    "url": "https://docs.python.org/3/library/xmlrpc.server.html#module-xmlrpc.server#xmlrpc.server.DocXMLRPCServer.set_server_name",
+    "parameters": [
+      {
+        "name": "server_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the name used in the generated HTML documentation. This name will appear at the top of the generated documentation inside a “h1” element.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the name used in the generated HTML documentation. This name will appear at the top of the generated documentation inside a “h1” element.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.143064",
+    "updatedDate": "2026-03-11T23:15:48.143065",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xmlrpc.server/DocCGIXMLRPCRequestHandler/set_server_name": {
+    "id": "xmlrpc.server.DocCGIXMLRPCRequestHandler.set_server_name",
+    "name": "set_server_name",
+    "type": "method",
+    "parent": "DocCGIXMLRPCRequestHandler",
+    "signatures": [
+      "DocCGIXMLRPCRequestHandler.set_server_name(server_name)"
+    ],
+    "signature_hash": "de4d63b54eb7675b1b816c0005ac1248fd9d0a1b0b93d1673f1b7d9fe785ea26",
+    "url": "https://docs.python.org/3/library/xmlrpc.server.html#module-xmlrpc.server#xmlrpc.server.DocCGIXMLRPCRequestHandler.set_server_name",
+    "parameters": [
+      {
+        "name": "server_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the name used in the generated HTML documentation. This name will appear at the top of the generated documentation inside a “h1” element.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the name used in the generated HTML documentation. This name will appear at the top of the generated documentation inside a “h1” element.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.143112",
+    "updatedDate": "2026-03-11T23:15:48.143112",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xmlrpc.server/DocXMLRPCServer/set_server_title": {
+    "id": "xmlrpc.server.DocXMLRPCServer.set_server_title",
+    "name": "set_server_title",
+    "type": "method",
+    "parent": "DocXMLRPCServer",
+    "signatures": [
+      "DocXMLRPCServer.set_server_title(server_title)"
+    ],
+    "signature_hash": "6c25dbbf64fe5024a563bfe36461f8b7d6e4f5ecc5a510e4faf700b13b40e556",
+    "url": "https://docs.python.org/3/library/xmlrpc.server.html#module-xmlrpc.server#xmlrpc.server.DocXMLRPCServer.set_server_title",
+    "parameters": [
+      {
+        "name": "server_title",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the title used in the generated HTML documentation. This title will be used inside the HTML “title” element.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the title used in the generated HTML documentation. This title will be used inside the HTML “title” element.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.143049",
+    "updatedDate": "2026-03-11T23:15:48.143050",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xmlrpc.server/DocCGIXMLRPCRequestHandler/set_server_title": {
+    "id": "xmlrpc.server.DocCGIXMLRPCRequestHandler.set_server_title",
+    "name": "set_server_title",
+    "type": "method",
+    "parent": "DocCGIXMLRPCRequestHandler",
+    "signatures": [
+      "DocCGIXMLRPCRequestHandler.set_server_title(server_title)"
+    ],
+    "signature_hash": "fb0219431592ce3dc81517f6051b96da32b9912866099bb5dca16d8309e2117a",
+    "url": "https://docs.python.org/3/library/xmlrpc.server.html#module-xmlrpc.server#xmlrpc.server.DocCGIXMLRPCRequestHandler.set_server_title",
+    "parameters": [
+      {
+        "name": "server_title",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the title used in the generated HTML documentation. This title will be used inside the HTML “title” element.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the title used in the generated HTML documentation. This title will be used inside the HTML “title” element.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.143095",
+    "updatedDate": "2026-03-11T23:15:48.143096",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "wsgiref.headers/guess_scheme": {
+    "id": "wsgiref.headers.guess_scheme",
+    "name": "guess_scheme",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "wsgiref.util.guess_scheme(environ)"
+    ],
+    "signature_hash": "01c0ef4973d94a93aacebc9032c62a42c99dc74592afa5a56b9255c967fca736",
+    "url": "https://docs.python.org/3/library/wsgiref.html#module-wsgiref.headers#wsgiref.util.guess_scheme",
+    "parameters": [
+      {
+        "name": "environ",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a guess for whether wsgi.url_scheme should be “http” or “https”, by checking for a HTTPS environment variable in the environ dictionary. The return value is a string. This function is useful when creating a gateway that wraps CGI or a CGI-like protocol such as FastCGI. Typically, servers providing such protocols will include a HTTPS variable with a value of “1”, “yes”, or “on” when a request is received via SSL. So, this function returns “https” if such a value is found, and “http” oth...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a guess for whether wsgi.url_scheme should be “http” or “https”, by checking for a HTTPS environment variable in the environ dictionary. The return value is a string. This function is useful wh...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.116555",
+    "updatedDate": "2026-03-11T23:15:48.116556",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "wsgiref.headers/Headers/get_all": {
+    "id": "wsgiref.headers.Headers.get_all",
+    "name": "get_all",
+    "type": "method",
+    "parent": "Headers",
+    "signatures": [
+      "get_all(name)"
+    ],
+    "signature_hash": "f9784274749b9b169f7537f59951a5775a95824df3bc3ea0817033faea7535b4",
+    "url": "https://docs.python.org/3/library/wsgiref.html#module-wsgiref.headers#wsgiref.headers.Headers.get_all",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a list of all the values for the named header. The returned list will be sorted in the order they appeared in the original header list or were added to this instance, and may contain duplicates. Any fields deleted and re-inserted are always appended to the header list. If no fields exist with the given name, returns an empty list.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list of all the values for the named header. The returned list will be sorted in the order they appeared in the original header list or were added to this instance, and may contain duplicates...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.127135",
+    "updatedDate": "2026-03-11T23:15:48.127136",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "wsgiref.headers/WSGIServer/get_app": {
+    "id": "wsgiref.headers.WSGIServer.get_app",
+    "name": "get_app",
+    "type": "method",
+    "parent": "WSGIServer",
+    "signatures": [
+      "get_app()"
+    ],
+    "signature_hash": "0519cb477444edbdfac88706c338dfb0fe9545a6f6923c3edbb41d8fe1e3ba59",
+    "url": "https://docs.python.org/3/library/wsgiref.html#module-wsgiref.headers#wsgiref.simple_server.WSGIServer.get_app",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns the currently set application callable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the currently set application callable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.127254",
+    "updatedDate": "2026-03-11T23:15:48.127255",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "wsgiref.headers/WSGIRequestHandler/get_environ": {
+    "id": "wsgiref.headers.WSGIRequestHandler.get_environ",
+    "name": "get_environ",
+    "type": "method",
+    "parent": "WSGIRequestHandler",
+    "signatures": [
+      "get_environ()"
+    ],
+    "signature_hash": "f16a9a1bb13c9336c3e538ded343a9ba7d8f750eff9256b05f3dd8d8592c60d8",
+    "url": "https://docs.python.org/3/library/wsgiref.html#module-wsgiref.headers#wsgiref.simple_server.WSGIRequestHandler.get_environ",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a WSGIEnvironment dictionary for a request. The default implementation copies the contents of the WSGIServer object’s base_environ dictionary attribute and then adds various headers derived from the HTTP request. Each call to this method should return a new dictionary containing all of the relevant CGI environment variables as specified in PEP 3333.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a WSGIEnvironment dictionary for a request. The default implementation copies the contents of the WSGIServer object’s base_environ dictionary attribute and then adds various headers derived fro...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.127310",
+    "updatedDate": "2026-03-11T23:15:48.127311",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "wsgiref.headers/BaseHandler/get_scheme": {
+    "id": "wsgiref.headers.BaseHandler.get_scheme",
+    "name": "get_scheme",
+    "type": "method",
+    "parent": "BaseHandler",
+    "signatures": [
+      "get_scheme()"
+    ],
+    "signature_hash": "6e6c9c8204725243ac077e1a3c76e4b6eecb0584a241bece4b9616f62b7d4443",
+    "url": "https://docs.python.org/3/library/wsgiref.html#module-wsgiref.headers#wsgiref.handlers.BaseHandler.get_scheme",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the URL scheme being used for the current request. The default implementation uses the guess_scheme() function from wsgiref.util to guess whether the scheme should be “http” or “https”, based on the current request’s environ variables.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the URL scheme being used for the current request. The default implementation uses the guess_scheme() function from wsgiref.util to guess whether the scheme should be “http” or “https”, based o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.127619",
+    "updatedDate": "2026-03-11T23:15:48.127620",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "wsgiref.headers/WSGIRequestHandler/get_stderr": {
+    "id": "wsgiref.headers.WSGIRequestHandler.get_stderr",
+    "name": "get_stderr",
+    "type": "method",
+    "parent": "WSGIRequestHandler",
+    "signatures": [
+      "get_stderr()"
+    ],
+    "signature_hash": "ac18027f0d2caf0cb6f8108381f881973f0fe4d9046c9d20fcb478a56af7947d",
+    "url": "https://docs.python.org/3/library/wsgiref.html#module-wsgiref.headers#wsgiref.simple_server.WSGIRequestHandler.get_stderr",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the object that should be used as the wsgi.errors stream. The default implementation just returns sys.stderr.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the object that should be used as the wsgi.errors stream. The default implementation just returns sys.stderr.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.127323",
+    "updatedDate": "2026-03-11T23:15:48.127323",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "wsgiref.headers/BaseHandler/get_stderr": {
+    "id": "wsgiref.headers.BaseHandler.get_stderr",
+    "name": "get_stderr",
+    "type": "method",
+    "parent": "BaseHandler",
+    "signatures": [
+      "get_stderr()"
+    ],
+    "signature_hash": "ac18027f0d2caf0cb6f8108381f881973f0fe4d9046c9d20fcb478a56af7947d",
+    "url": "https://docs.python.org/3/library/wsgiref.html#module-wsgiref.headers#wsgiref.handlers.BaseHandler.get_stderr",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return an object compatible with ErrorStream suitable for use as the wsgi.errors of the request currently being processed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return an object compatible with ErrorStream suitable for use as the wsgi.errors of the request currently being processed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.127516",
+    "updatedDate": "2026-03-11T23:15:48.127517",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "wsgiref.headers/BaseHandler/get_stdin": {
+    "id": "wsgiref.headers.BaseHandler.get_stdin",
+    "name": "get_stdin",
+    "type": "method",
+    "parent": "BaseHandler",
+    "signatures": [
+      "get_stdin()"
+    ],
+    "signature_hash": "f6c91bd4655ec9e8fd524790e65a08e4dc42c1ac9f9b2f4657142c35f271276f",
+    "url": "https://docs.python.org/3/library/wsgiref.html#module-wsgiref.headers#wsgiref.handlers.BaseHandler.get_stdin",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return an object compatible with InputStream suitable for use as the wsgi.input of the request currently being processed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return an object compatible with InputStream suitable for use as the wsgi.input of the request currently being processed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.127504",
+    "updatedDate": "2026-03-11T23:15:48.127505",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

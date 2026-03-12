@@ -1,0 +1,126 @@
+{
+  "gc/is_finalized": {
+    "id": "gc.is_finalized",
+    "name": "is_finalized",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.is_finalized(obj)"
+    ],
+    "signature_hash": "3e1c64d6da15ca969a5d314d52633bcbc8bbb293d56bfef234108bf567e27f2e",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.is_finalized",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns True if the given object has been finalized by the garbage collector, False otherwise. >>> x = None >>> class Lazarus: ... def __del__(self): ... global x ... x = self ... >>> lazarus = Lazarus() >>> gc.is_finalized(lazarus) False >>> del lazarus >>> gc.is_finalized(x) True Added in version 3.9.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns True if the given object has been finalized by the garbage collector, False otherwise. >>> x = None >>> class Lazarus: ... def __del__(self): ... global x ... x = self ... >>> lazarus = Lazaru...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.934181",
+    "updatedDate": "2026-03-11T23:15:47.934181",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.9.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/is_tracked": {
+    "id": "gc.is_tracked",
+    "name": "is_tracked",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.is_tracked(obj)"
+    ],
+    "signature_hash": "ee9c09424b49172c2ac355e515f2c655065861d366656724e535ce8db7548b1c",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.is_tracked",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns True if the object is currently tracked by the garbage collector, False otherwise. As a general rule, instances of atomic types aren’t tracked and instances of non-atomic types (containers, user-defined objects…) are. However, some type-specific optimizations can be present in order to suppress the garbage collector footprint of simple instances (e.g. dicts containing only atomic keys and values): >>> gc.is_tracked(0) False >>> gc.is_tracked(\"a\") False >>> gc.is_tracked([]) True >>> g...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns True if the object is currently tracked by the garbage collector, False otherwise. As a general rule, instances of atomic types aren’t tracked and instances of non-atomic types (containers, us...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.934167",
+    "updatedDate": "2026-03-11T23:15:47.934168",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/isenabled": {
+    "id": "gc.isenabled",
+    "name": "isenabled",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.isenabled()"
+    ],
+    "signature_hash": "003de39e1ceeff4cb93575853803390c31e577865ca4511c4d0b70b840478a81",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.isenabled",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if automatic collection is enabled.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if automatic collection is enabled.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.934017",
+    "updatedDate": "2026-03-11T23:15:47.934018",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

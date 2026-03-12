@@ -1,0 +1,136 @@
+{
+  "ast/UAdd": {
+    "id": "ast.UAdd",
+    "name": "UAdd",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.UAdd"
+    ],
+    "signature_hash": "371babc407f6d92e54df4843aede430c9c5c97f3e022958774b0254d69828fc1",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.UAdd",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Unary operator tokens. Not is the not keyword, Invert is the ~ operator. >>> print(ast.dump(ast.parse('not x', mode='eval'), indent=4)) Expression( body=UnaryOp( op=Not(), operand=Name(id='x', ctx=Load())))",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Unary operator tokens. Not is the not keyword, Invert is the ~ operator. >>> print(ast.dump(ast.parse('not x', mode='eval'), indent=4)) Expression( body=UnaryOp( op=Not(), operand=Name(id='x', ctx=Loa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878177",
+    "updatedDate": "2026-03-11T23:15:47.878178",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/UnaryOp": {
+    "id": "ast.UnaryOp",
+    "name": "UnaryOp",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.UnaryOp(op, operand)"
+    ],
+    "signature_hash": "08239cef4309fa8ffa06717de2d17b293e1f0aa847e76e5a703463168ae529a1",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.UnaryOp",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "operand",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A unary operation. op is the operator, and operand any expression node.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A unary operation. op is the operator, and operand any expression node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878165",
+    "updatedDate": "2026-03-11T23:15:47.878166",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/unparse": {
+    "id": "ast.unparse",
+    "name": "unparse",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ast.unparse(ast_obj)"
+    ],
+    "signature_hash": "8eedc5ea8e8e580dbc0883765d70cdd5f3e47c1cbfdb908ed773532b77765031",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.unparse",
+    "parameters": [
+      {
+        "name": "ast_obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Unparse an ast.AST object and generate a string with code that would produce an equivalent ast.AST object if parsed back with ast.parse(). Warning The produced code string will not necessarily be equal to the original code that generated the ast.AST object (without any compiler optimizations, such as constant tuples/frozensets). Warning Trying to unparse a highly complex expression would result with RecursionError. Added in version 3.9.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Unparse an ast.AST object and generate a string with code that would produce an equivalent ast.AST object if parsed back with ast.parse(). Warning The produced code string will not necessarily be equa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.879527",
+    "updatedDate": "2026-03-11T23:15:47.879528",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.9.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

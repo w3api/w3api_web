@@ -1,0 +1,349 @@
+{
+  "test.support.threading_helper/FakePath": {
+    "id": "test.support.threading_helper.FakePath",
+    "name": "FakePath",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class test.support.os_helper.FakePath(path)"
+    ],
+    "signature_hash": "47193f60f211b0bc6c214a7f64245242094dbad2699f69e7fbb30b5f2257d191",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.os_helper.FakePath",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Simple path-like object. It implements the __fspath__() method which just returns the path argument. If path is an exception, it will be raised in __fspath__().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Simple path-like object. It implements the __fspath__() method which just returns the path argument. If path is an exception, it will be raised in __fspath__().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.083130",
+    "updatedDate": "2026-03-11T23:15:48.083131",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/os_helper/FS_NONASCII": {
+    "id": "test.support.threading_helper.os_helper.FS_NONASCII",
+    "name": "FS_NONASCII",
+    "type": "constant",
+    "parent": "os_helper",
+    "signatures": [
+      "test.support.os_helper.FS_NONASCII"
+    ],
+    "signature_hash": "ab6a8b3a2085f427fd56303bc9c6dd4628f174aa6e7942c05c1b3d11c9cf1413",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.os_helper.FS_NONASCII",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A non-ASCII character encodable by os.fsencode().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A non-ASCII character encodable by os.fsencode().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.082980",
+    "updatedDate": "2026-03-11T23:15:48.082981",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/fd_count": {
+    "id": "test.support.threading_helper.fd_count",
+    "name": "fd_count",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.os_helper.fd_count()"
+    ],
+    "signature_hash": "7545dd5ecfb2f656a35f34e7bac185ecf658d87b200bf85693125201d455067e",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.os_helper.fd_count",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Count the number of open file descriptors.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Count the number of open file descriptors.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.083263",
+    "updatedDate": "2026-03-11T23:15:48.083264",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/find_unused_port": {
+    "id": "test.support.threading_helper.find_unused_port",
+    "name": "find_unused_port",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.socket_helper.find_unused_port(family=socket.AF_INET, socktype=socket.SOCK_STREAM)"
+    ],
+    "signature_hash": "8dd1ce8617883dc86a31bffcc8b9d81a2399596e7865824b3ad1bccbcf147897",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.socket_helper.find_unused_port",
+    "parameters": [
+      {
+        "name": "family",
+        "type": "",
+        "has_default": true,
+        "default_value": "socket.AF_INET",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "socktype",
+        "type": "",
+        "has_default": true,
+        "default_value": "socket.SOCK_STREAM",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns an unused port that should be suitable for binding. This is achieved by creating a temporary socket with the same family and type as the sock parameter (default is AF_INET, SOCK_STREAM), and binding it to the specified host address (defaults to 0.0.0.0) with the port set to 0, eliciting an unused ephemeral port from the OS. The temporary socket is then closed and deleted, and the ephemeral port is returned. Either this method or bind_port() should be used for any tests where a server ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an unused port that should be suitable for binding. This is achieved by creating a temporary socket with the same family and type as the sock parameter (default is AF_INET, SOCK_STREAM), and b...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.082404",
+    "updatedDate": "2026-03-11T23:15:48.082405",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/findfile": {
+    "id": "test.support.threading_helper.findfile",
+    "name": "findfile",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.findfile(filename, subdir=None)"
+    ],
+    "signature_hash": "414d46f971cef98bcff4bf7f47ad37959a07c4e576a72f1963cdd24627809de3",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.findfile",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "subdir",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the path to the file named filename. If no match is found filename is returned. This does not equal a failure since it could be the path to the file. Setting subdir indicates a relative path to use to find the file rather than looking directly in the path directories.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the path to the file named filename. If no match is found filename is returned. This does not equal a failure since it could be the path to the file. Setting subdir indicates a relative path to...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.081225",
+    "updatedDate": "2026-03-11T23:15:48.081226",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/flush_std_streams": {
+    "id": "test.support.threading_helper.flush_std_streams",
+    "name": "flush_std_streams",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.flush_std_streams()"
+    ],
+    "signature_hash": "41da94e0a332dab69cec25f75aeea792726dd7d033964bd3dfd658846d0c93b7",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.flush_std_streams",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Call the flush() method on sys.stdout and then on sys.stderr. It can be used to make sure that the logs order is consistent before writing into stderr. Added in version 3.11.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Call the flush() method on sys.stdout and then on sys.stderr. It can be used to make sure that the logs order is consistent before writing into stderr. Added in version 3.11.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.081451",
+    "updatedDate": "2026-03-11T23:15:48.081452",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/forget": {
+    "id": "test.support.threading_helper.forget",
+    "name": "forget",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.import_helper.forget(module_name)"
+    ],
+    "signature_hash": "d60d9f26022156da7d133bce50e761624dd1448a11c1302ffa1b99971ef2ac91",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.import_helper.forget",
+    "parameters": [
+      {
+        "name": "module_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Remove the module named module_name from sys.modules and delete any byte-compiled files of the module.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Remove the module named module_name from sys.modules and delete any byte-compiled files of the module.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.083748",
+    "updatedDate": "2026-03-11T23:15:48.083749",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/fs_is_case_insensitive": {
+    "id": "test.support.threading_helper.fs_is_case_insensitive",
+    "name": "fs_is_case_insensitive",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.os_helper.fs_is_case_insensitive(directory)"
+    ],
+    "signature_hash": "54212e552ed9f458749fd80b40425ea409ee6a346ced3a2bb539bb60e59fa585",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.os_helper.fs_is_case_insensitive",
+    "parameters": [
+      {
+        "name": "directory",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if the file system for directory is case-insensitive.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the file system for directory is case-insensitive.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.083281",
+    "updatedDate": "2026-03-11T23:15:48.083282",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

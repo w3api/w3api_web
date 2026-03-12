@@ -1,0 +1,245 @@
+{
+  "types/MappingProxyType": {
+    "id": "types.MappingProxyType",
+    "name": "MappingProxyType",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class types.MappingProxyType(mapping)"
+    ],
+    "signature_hash": "bdf638aa9649c20d12133263c2eecca18a3c92f79cd682dc0cd942d76ac75a0c",
+    "url": "https://docs.python.org/3/library/types.html#module-types#types.MappingProxyType",
+    "parameters": [
+      {
+        "name": "mapping",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Read-only proxy of a mapping. It provides a dynamic view on the mapping’s entries, which means that when the mapping changes, the view reflects these changes. Added in version 3.3. Changed in version 3.9: Updated to support the new union (|) operator from PEP 584, which simply delegates to the underlying mapping. key in proxy Return True if the underlying mapping has a key key, else False. proxy[key] Return the item of the underlying mapping with key key. Raises a KeyError if key is not in th...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read-only proxy of a mapping. It provides a dynamic view on the mapping’s entries, which means that when the mapping changes, the view reflects these changes. Added in version 3.3. Changed in version ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.101187",
+    "updatedDate": "2026-03-11T23:15:48.101188",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "copy",
+      "get",
+      "items",
+      "keys",
+      "values"
+    ]
+  },
+  "types/ModuleType": {
+    "id": "types.ModuleType",
+    "name": "ModuleType",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class types.ModuleType(name, doc=None)"
+    ],
+    "signature_hash": "f4069329ca1e8ae0dd95c25219bfcbf2a2fe38151cbd1aa06db52b618fe1e2ee",
+    "url": "https://docs.python.org/3/library/types.html#module-types#types.ModuleType",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "doc",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The type of modules. The constructor takes the name of the module to be created and optionally its docstring. See also Documentation on module objectsProvides details on the special attributes that can be found on instances of ModuleType. importlib.util.module_from_spec()Modules created using the ModuleType constructor are created with many of their special attributes unset or set to default values. module_from_spec() provides a more robust way of creating ModuleType instances which ensures t...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The type of modules. The constructor takes the name of the module to be created and optionally its docstring. See also Documentation on module objectsProvides details on the special attributes that ca...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.101076",
+    "updatedDate": "2026-03-11T23:15:48.101076",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "types/MemberDescriptorType": {
+    "id": "types.MemberDescriptorType",
+    "name": "MemberDescriptorType",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "types.MemberDescriptorType"
+    ],
+    "signature_hash": "ddf4889254cd303be71d6a5b685b25f56d2fe522955564e82e7c7ae7cf9f9f2f",
+    "url": "https://docs.python.org/3/library/types.html#module-types#types.MemberDescriptorType",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The type of objects defined in extension modules with PyMemberDef, such as datetime.timedelta.days. This type is used as descriptor for simple C data members which use standard conversion functions; it has the same purpose as the property type, but for classes defined in extension modules. In addition, when a class is defined with a __slots__ attribute, then for each slot, an instance of MemberDescriptorType will be added as an attribute on the class. This allows the slot to appear in the cla...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The type of objects defined in extension modules with PyMemberDef, such as datetime.timedelta.days. This type is used as descriptor for simple C data members which use standard conversion functions; i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.101170",
+    "updatedDate": "2026-03-11T23:15:48.101171",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "types/MethodDescriptorType": {
+    "id": "types.MethodDescriptorType",
+    "name": "MethodDescriptorType",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "types.MethodDescriptorType"
+    ],
+    "signature_hash": "a279fd2881308b8acd0c5e5757aef9ff01ff238bb599012e78b0737fd598cc1d",
+    "url": "https://docs.python.org/3/library/types.html#module-types#types.MethodDescriptorType",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The type of methods of some built-in data types such as str.join(). Added in version 3.7.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The type of methods of some built-in data types such as str.join(). Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.101036",
+    "updatedDate": "2026-03-11T23:15:48.101037",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "types/MethodType": {
+    "id": "types.MethodType",
+    "name": "MethodType",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "types.MethodType"
+    ],
+    "signature_hash": "df5b21dc3fe7e16e8e7ed29f3878d3ac8882be7f0ed3e69af4464e076ff710fe",
+    "url": "https://docs.python.org/3/library/types.html#module-types#types.MethodType",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The type of methods of user-defined class instances.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The type of methods of user-defined class instances.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.100987",
+    "updatedDate": "2026-03-11T23:15:48.100988",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "types/MethodWrapperType": {
+    "id": "types.MethodWrapperType",
+    "name": "MethodWrapperType",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "types.MethodWrapperType"
+    ],
+    "signature_hash": "a4f722373313b76a340d87708c63542d14f59e0c6c8001ad1116c91cff9f8af8",
+    "url": "https://docs.python.org/3/library/types.html#module-types#types.MethodWrapperType",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The type of bound methods of some built-in data types and base classes. For example it is the type of object().__str__. Added in version 3.7.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The type of bound methods of some built-in data types and base classes. For example it is the type of object().__str__. Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.101017",
+    "updatedDate": "2026-03-11T23:15:48.101018",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "bdb/Breakpoint/cond": {
+    "id": "bdb.Breakpoint.cond",
+    "name": "cond",
+    "type": "attribute",
+    "parent": "Breakpoint",
+    "signatures": [
+      "cond"
+    ],
+    "signature_hash": "0ab2dd2f64c9fd4e4310cfbb82556f0596060583dec1a7ab2d178603c3eb61d0",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Breakpoint.cond",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Condition for evaluating a Breakpoint at (file, line).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Condition for evaluating a Breakpoint at (file, line).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.880467",
+    "updatedDate": "2026-03-11T23:15:47.880468",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/checkfuncname": {
+    "id": "bdb.checkfuncname",
+    "name": "checkfuncname",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "bdb.checkfuncname(b, frame)"
+    ],
+    "signature_hash": "c564ee95c706395e4f87761cd33d90b1de6aa855d70f0974558f941897b061ad",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.checkfuncname",
+    "parameters": [
+      {
+        "name": "b",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "frame",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if we should break here, depending on the way the Breakpoint b was set. If it was set via line number, it checks if b.line is the same as the one in frame. If the breakpoint was set via function name, we have to check we are in the right frame (the right function) and if we are on its first executable line.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if we should break here, depending on the way the Breakpoint b was set. If it was set via line number, it checks if b.line is the same as the one in frame. If the breakpoint was set via fu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881607",
+    "updatedDate": "2026-03-11T23:15:47.881608",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Bdb/canonic": {
+    "id": "bdb.Bdb.canonic",
+    "name": "canonic",
+    "type": "method",
+    "parent": "Bdb",
+    "signatures": [
+      "canonic(filename)"
+    ],
+    "signature_hash": "ca8293c0cbc595620fc76cba047ca400dc32b6ad29e24c2df2228bf4d486c458",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Bdb.canonic",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return canonical form of filename. For real file names, the canonical form is an operating-system-dependent, case-normalized absolute path. A filename with angle brackets, such as \"<stdin>\" generated in interactive mode, is returned unchanged.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return canonical form of filename. For real file names, the canonical form is an operating-system-dependent, case-normalized absolute path. A filename with angle brackets, such as \"<stdin>\" generated ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.880564",
+    "updatedDate": "2026-03-11T23:15:47.880565",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Bdb/clear_all_breaks": {
+    "id": "bdb.Bdb.clear_all_breaks",
+    "name": "clear_all_breaks",
+    "type": "method",
+    "parent": "Bdb",
+    "signatures": [
+      "clear_all_breaks()"
+    ],
+    "signature_hash": "75741fbba02aad9d96533f2c21cd09e6bbe6aea592509205123591d6a9f41c23",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Bdb.clear_all_breaks",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Delete all existing breakpoints. If none were set, return an error message.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Delete all existing breakpoints. If none were set, return an error message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881028",
+    "updatedDate": "2026-03-11T23:15:47.881029",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Bdb/clear_all_file_breaks": {
+    "id": "bdb.Bdb.clear_all_file_breaks",
+    "name": "clear_all_file_breaks",
+    "type": "method",
+    "parent": "Bdb",
+    "signatures": [
+      "clear_all_file_breaks(filename)"
+    ],
+    "signature_hash": "4f2527bd75820aa796bfd31fbd288f44e04f2c3813ce771eac8e61a260aaacbc",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Bdb.clear_all_file_breaks",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Delete all breakpoints in filename. If none were set, return an error message.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Delete all breakpoints in filename. If none were set, return an error message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881015",
+    "updatedDate": "2026-03-11T23:15:47.881016",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Bdb/clear_bpbynumber": {
+    "id": "bdb.Bdb.clear_bpbynumber",
+    "name": "clear_bpbynumber",
+    "type": "method",
+    "parent": "Bdb",
+    "signatures": [
+      "clear_bpbynumber(arg)"
+    ],
+    "signature_hash": "6a44cb949b62d39efb61690872441b3c6818fa23e7b908e67e0381a552d471df",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Bdb.clear_bpbynumber",
+    "parameters": [
+      {
+        "name": "arg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Delete the breakpoint which has the index arg in the Breakpoint.bpbynumber. If arg is not numeric or out of range, return an error message.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Delete the breakpoint which has the index arg in the Breakpoint.bpbynumber. If arg is not numeric or out of range, return an error message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881000",
+    "updatedDate": "2026-03-11T23:15:47.881001",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Bdb/clear_break": {
+    "id": "bdb.Bdb.clear_break",
+    "name": "clear_break",
+    "type": "method",
+    "parent": "Bdb",
+    "signatures": [
+      "clear_break(filename, lineno)"
+    ],
+    "signature_hash": "760beed41623e1ddfda4844ac6eefb5fc0dac666c232e07480be9d42dde1283b",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Bdb.clear_break",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lineno",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Delete the breakpoints in filename and lineno. If none were set, return an error message.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Delete the breakpoints in filename and lineno. If none were set, return an error message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.880985",
+    "updatedDate": "2026-03-11T23:15:47.880986",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "multiprocessing.sharedctypes/Pool/imap": {
+    "id": "multiprocessing.sharedctypes.Pool.imap",
+    "name": "imap",
+    "type": "method",
+    "parent": "Pool",
+    "signatures": [
+      "imap(func, iterable[, chunksize])"
+    ],
+    "signature_hash": "31bc13ee438ef14aefbb5eb21bdb8fe0375ab6e6dd5cdc0268477083e9aea203",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.pool.Pool.imap",
+    "parameters": [
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "iterable[, chunksize",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A lazier version of map(). The chunksize argument is the same as the one used by the map() method. For very long iterables using a large value for chunksize can make the job complete much faster than using the default value of 1. Also if chunksize is 1 then the next() method of the iterator returned by the imap() method has an optional timeout parameter: next(timeout) will raise multiprocessing.TimeoutError if the result cannot be returned within timeout seconds.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A lazier version of map(). The chunksize argument is the same as the one used by the map() method. For very long iterables using a large value for chunksize can make the job complete much faster than ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.010515",
+    "updatedDate": "2026-03-11T23:15:48.010516",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.sharedctypes/Pool/imap_unordered": {
+    "id": "multiprocessing.sharedctypes.Pool.imap_unordered",
+    "name": "imap_unordered",
+    "type": "method",
+    "parent": "Pool",
+    "signatures": [
+      "imap_unordered(func, iterable[, chunksize])"
+    ],
+    "signature_hash": "01d552bbbf1ee9dd1f6cf4185b0cedced08faa2e3f4f633f570d5534850b11b1",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.pool.Pool.imap_unordered",
+    "parameters": [
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "iterable[, chunksize",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The same as imap() except that the ordering of the results from the returned iterator should be considered arbitrary. (Only when there is only one worker process is the order guaranteed to be “correct”.)",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The same as imap() except that the ordering of the results from the returned iterator should be considered arbitrary. (Only when there is only one worker process is the order guaranteed to be “correct...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.010538",
+    "updatedDate": "2026-03-11T23:15:48.010539",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.sharedctypes/Process/interrupt": {
+    "id": "multiprocessing.sharedctypes.Process.interrupt",
+    "name": "interrupt",
+    "type": "method",
+    "parent": "Process",
+    "signatures": [
+      "interrupt()"
+    ],
+    "signature_hash": "aa30ece1fab095f847d87e6732e743e90be0928b9b80a7571d545b68d8b74d50",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.Process.interrupt",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Terminate the process. Works on POSIX using the SIGINT signal. Behavior on Windows is undefined. By default, this terminates the child process by raising KeyboardInterrupt. This behavior can be altered by setting the respective signal handler in the child process signal.signal() for SIGINT. Note: if the child process catches and discards KeyboardInterrupt, the process will not be terminated. Note: the default behavior will also set exitcode to 1 as if an uncaught exception was raised in the c...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Terminate the process. Works on POSIX using the SIGINT signal. Behavior on Windows is undefined. By default, this terminates the child process by raising KeyboardInterrupt. This behavior can be altere...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.008574",
+    "updatedDate": "2026-03-11T23:15:48.008575",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.sharedctypes/Process/is_alive": {
+    "id": "multiprocessing.sharedctypes.Process.is_alive",
+    "name": "is_alive",
+    "type": "method",
+    "parent": "Process",
+    "signatures": [
+      "is_alive()"
+    ],
+    "signature_hash": "a0540fd57501bb848560b0ebbab97ef596657ce240e683614585f637e15fd241",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.Process.is_alive",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return whether the process is alive. Roughly, a process object is alive from the moment the start() method returns until the child process terminates.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return whether the process is alive. Roughly, a process object is alive from the moment the start() method returns until the child process terminates.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.008490",
+    "updatedDate": "2026-03-11T23:15:48.008491",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

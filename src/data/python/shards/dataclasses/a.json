@@ -1,0 +1,132 @@
+{
+  "dataclasses/asdict": {
+    "id": "dataclasses.asdict",
+    "name": "asdict",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "dataclasses.asdict(obj, *, dict_factory=dict)"
+    ],
+    "signature_hash": "cd8ef2c40c3ba7c861b561d7739fdfd0b9c8b93e8d05c232dbb7d9856d16637a",
+    "url": "https://docs.python.org/3/library/dataclasses.html#module-dataclasses#dataclasses.asdict",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dict_factory",
+        "type": "",
+        "has_default": true,
+        "default_value": "dict",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Converts the dataclass obj to a dict (by using the factory function dict_factory). Each dataclass is converted to a dict of its fields, as name: value pairs. dataclasses, dicts, lists, and tuples are recursed into. Other objects are copied with copy.deepcopy(). Example of using asdict() on nested dataclasses: @dataclass class Point: x: int y: int @dataclass class C: mylist: list[Point] p = Point(10, 20) assert asdict(p) == {'x': 10, 'y': 20} c = C([Point(0, 0), Point(10, 4)]) assert asdict(c)...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Converts the dataclass obj to a dict (by using the factory function dict_factory). Each dataclass is converted to a dict of its fields, as name: value pairs. dataclasses, dicts, lists, and tuples are ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.908810",
+    "updatedDate": "2026-03-11T23:15:47.908811",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "dataclasses/astuple": {
+    "id": "dataclasses.astuple",
+    "name": "astuple",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "dataclasses.astuple(obj, *, tuple_factory=tuple)"
+    ],
+    "signature_hash": "93d3e1a22053dfa03d5843966c639dce222d99c9de2c07cace0b9162cbe1e8f4",
+    "url": "https://docs.python.org/3/library/dataclasses.html#module-dataclasses#dataclasses.astuple",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "tuple_factory",
+        "type": "",
+        "has_default": true,
+        "default_value": "tuple",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Converts the dataclass obj to a tuple (by using the factory function tuple_factory). Each dataclass is converted to a tuple of its field values. dataclasses, dicts, lists, and tuples are recursed into. Other objects are copied with copy.deepcopy(). Continuing from the previous example: assert astuple(p) == (10, 20) assert astuple(c) == ([(0, 0), (10, 4)],) To create a shallow copy, the following workaround may be used: tuple(getattr(obj, field.name) for field in dataclasses.fields(obj)) astup...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Converts the dataclass obj to a tuple (by using the factory function tuple_factory). Each dataclass is converted to a tuple of its field values. dataclasses, dicts, lists, and tuples are recursed into...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.908830",
+    "updatedDate": "2026-03-11T23:15:47.908831",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

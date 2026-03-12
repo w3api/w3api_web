@@ -1,0 +1,596 @@
+{
+  "pprint/PrettyPrinter": {
+    "id": "pprint.PrettyPrinter",
+    "name": "PrettyPrinter",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pprint.PrettyPrinter(indent=1, width=80, depth=None, stream=None, *, compact=False, sort_dicts=True, underscore_numbers=False)"
+    ],
+    "signature_hash": "cf5d3ea20aacf9d7690ca5f7464445501072a48d47615daa470bf07680290595",
+    "url": "https://docs.python.org/3/library/pprint.html#module-pprint#pprint.PrettyPrinter",
+    "parameters": [
+      {
+        "name": "indent",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "width",
+        "type": "",
+        "has_default": true,
+        "default_value": "80",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "depth",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "stream",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "compact",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "sort_dicts",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "underscore_numbers",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Construct a PrettyPrinter instance. Arguments have the same meaning as for pp(). Note that they are in a different order, and that sort_dicts defaults to True. >>> import pprint >>> stuff = ['spam', 'eggs', 'lumberjack', 'knights', 'ni'] >>> stuff.insert(0, stuff[:]) >>> pp = pprint.PrettyPrinter(indent=4) >>> pp.pprint(stuff) [ ['spam', 'eggs', 'lumberjack', 'knights', 'ni'], 'spam', 'eggs', 'lumberjack', 'knights', 'ni'] >>> pp = pprint.PrettyPrinter(width=41, compact=True) >>> pp.pprint(st...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Construct a PrettyPrinter instance. Arguments have the same meaning as for pp(). Note that they are in a different order, and that sort_dicts defaults to True. >>> import pprint >>> stuff = ['spam', '...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.032457",
+    "updatedDate": "2026-03-11T23:15:48.032458",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "format",
+      "isreadable",
+      "isrecursive",
+      "pformat",
+      "pprint"
+    ]
+  },
+  "pprint/pformat": {
+    "id": "pprint.pformat",
+    "name": "pformat",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "pprint.pformat(object, indent=1, width=80, depth=None, *, compact=False, sort_dicts=True, underscore_numbers=False)"
+    ],
+    "signature_hash": "d98851f4ec4a666e3c2d23921e5da42f851c3bd0a0db044f65eb07c82fb73ead",
+    "url": "https://docs.python.org/3/library/pprint.html#module-pprint#pprint.pformat",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "indent",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "width",
+        "type": "",
+        "has_default": true,
+        "default_value": "80",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "depth",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "compact",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "sort_dicts",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "underscore_numbers",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the formatted representation of object as a string. indent, width, depth, compact, sort_dicts and underscore_numbers are passed to the PrettyPrinter constructor as formatting parameters and their meanings are as described in the documentation above.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the formatted representation of object as a string. indent, width, depth, compact, sort_dicts and underscore_numbers are passed to the PrettyPrinter constructor as formatting parameters and the...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.032386",
+    "updatedDate": "2026-03-11T23:15:48.032387",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pprint/pp": {
+    "id": "pprint.pp",
+    "name": "pp",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "pprint.pp(object, stream=None, indent=1, width=80, depth=None, *, compact=False, sort_dicts=False, underscore_numbers=False)"
+    ],
+    "signature_hash": "6119706baf9c39142836cc0aa5e30b71bcb3289d255f525e50c6150589407d50",
+    "url": "https://docs.python.org/3/library/pprint.html#module-pprint#pprint.pp",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "stream",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "indent",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "width",
+        "type": "",
+        "has_default": true,
+        "default_value": "80",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "depth",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "compact",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "sort_dicts",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "underscore_numbers",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Prints the formatted representation of object, followed by a newline. This function may be used in the interactive interpreter instead of the print() function for inspecting values. Tip: you can reassign print = pprint.pp for use within a scope. Parameters: object – The object to be printed. stream (file-like object | None) – A file-like object to which the output will be written by calling its write() method. If None (the default), sys.stdout is used. indent (int) – The amount of indentation...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prints the formatted representation of object, followed by a newline. This function may be used in the interactive interpreter instead of the print() function for inspecting values. Tip: you can reass...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.032330",
+    "updatedDate": "2026-03-11T23:15:48.032331",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pprint/pprint": {
+    "id": "pprint.pprint",
+    "name": "pprint",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "pprint.pprint(object, stream=None, indent=1, width=80, depth=None, *, compact=False, sort_dicts=True, underscore_numbers=False)"
+    ],
+    "signature_hash": "b2d8d9cdce1c14d88edf941c882128963148a96e953ff2fdfc56d0387705440f",
+    "url": "https://docs.python.org/3/library/pprint.html#module-pprint#pprint.pprint",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "stream",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "indent",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "width",
+        "type": "",
+        "has_default": true,
+        "default_value": "80",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "depth",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "compact",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "sort_dicts",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "underscore_numbers",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Alias for pp() with sort_dicts set to True by default, which would automatically sort the dictionaries’ keys, you might want to use pp() instead where it is False by default.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Alias for pp() with sort_dicts set to True by default, which would automatically sort the dictionaries’ keys, you might want to use pp() instead where it is False by default.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.032359",
+    "updatedDate": "2026-03-11T23:15:48.032360",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pprint/PrettyPrinter/pformat": {
+    "id": "pprint.PrettyPrinter.pformat",
+    "name": "pformat",
+    "type": "method",
+    "parent": "PrettyPrinter",
+    "signatures": [
+      "PrettyPrinter.pformat(object)"
+    ],
+    "signature_hash": "244f0fd5e9e2ad008b37bc1c3244e40079a3cb410b0cc5cebcef3ef263f7abac",
+    "url": "https://docs.python.org/3/library/pprint.html#module-pprint#pprint.PrettyPrinter.pformat",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the formatted representation of object. This takes into account the options passed to the PrettyPrinter constructor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the formatted representation of object. This takes into account the options passed to the PrettyPrinter constructor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.032471",
+    "updatedDate": "2026-03-11T23:15:48.032472",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pprint/PrettyPrinter/pprint": {
+    "id": "pprint.PrettyPrinter.pprint",
+    "name": "pprint",
+    "type": "method",
+    "parent": "PrettyPrinter",
+    "signatures": [
+      "PrettyPrinter.pprint(object)"
+    ],
+    "signature_hash": "034172dfa1f33c5b068193140618a84ee89140b15a27efdd4f001558ebf77da9",
+    "url": "https://docs.python.org/3/library/pprint.html#module-pprint#pprint.PrettyPrinter.pprint",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Print the formatted representation of object on the configured stream, followed by a newline.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Print the formatted representation of object on the configured stream, followed by a newline.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.032484",
+    "updatedDate": "2026-03-11T23:15:48.032485",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pprint": {
+    "type": "module",
+    "name": "pprint",
+    "id": "pprint",
+    "description": "Module pprint",
+    "classes": [
+      "PrettyPrinter"
+    ],
+    "functions": [
+      "isreadable",
+      "isrecursive",
+      "pformat",
+      "pp",
+      "pprint",
+      "saferepr"
+    ]
+  }
+}

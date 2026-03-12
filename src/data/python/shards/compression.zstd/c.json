@@ -1,0 +1,421 @@
+{
+  "compression.zstd/zstd/COMPRESSION_LEVEL_DEFAULT": {
+    "id": "compression.zstd.zstd.COMPRESSION_LEVEL_DEFAULT",
+    "name": "COMPRESSION_LEVEL_DEFAULT",
+    "type": "attribute",
+    "parent": "zstd",
+    "signatures": [
+      "compression.zstd.COMPRESSION_LEVEL_DEFAULT"
+    ],
+    "signature_hash": "6d9404dc6f5b578fd42f79ed0795a4ed90931c5d984c9728eec869265e7d8ebb",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.COMPRESSION_LEVEL_DEFAULT",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The default compression level for Zstandard: 3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The default compression level for Zstandard: 3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.887664",
+    "updatedDate": "2026-03-11T23:15:47.887665",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/ZstdCompressor/CONTINUE": {
+    "id": "compression.zstd.ZstdCompressor.CONTINUE",
+    "name": "CONTINUE",
+    "type": "attribute",
+    "parent": "ZstdCompressor",
+    "signatures": [
+      "CONTINUE"
+    ],
+    "signature_hash": "628db0c7598820b101769164f5228a5096e4f531ee71ee7e5e31d734dd38fe64",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.ZstdCompressor.CONTINUE",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Collect more data for compression, which may or may not generate output immediately. This mode optimizes the compression ratio by maximizing the amount of data per block and frame.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Collect more data for compression, which may or may not generate output immediately. This mode optimizes the compression ratio by maximizing the amount of data per block and frame.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.886867",
+    "updatedDate": "2026-03-11T23:15:47.886868",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/CompressionParameter/chain_log": {
+    "id": "compression.zstd.CompressionParameter.chain_log",
+    "name": "chain_log",
+    "type": "attribute",
+    "parent": "CompressionParameter",
+    "signatures": [
+      "chain_log"
+    ],
+    "signature_hash": "bf968332576f5a603c5b8636c52467a83fdafe036d605f02a11b375604758583",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.CompressionParameter.chain_log",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Size of the multi-probe search table, as a power of two. The resulting memory usage is 1 << (chain_log+2) bytes. Larger tables result in better and slower compression. This parameter has no effect for the fast strategy. It’s still useful when using dfast strategy, in which case it defines a secondary probe table. A value of zero causes the value to be selected automatically.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Size of the multi-probe search table, as a power of two. The resulting memory usage is 1 << (chain_log+2) bytes. Larger tables result in better and slower compression. This parameter has no effect for...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.887185",
+    "updatedDate": "2026-03-11T23:15:47.887185",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/CompressionParameter/checksum_flag": {
+    "id": "compression.zstd.CompressionParameter.checksum_flag",
+    "name": "checksum_flag",
+    "type": "attribute",
+    "parent": "CompressionParameter",
+    "signatures": [
+      "checksum_flag"
+    ],
+    "signature_hash": "dfa83be9d9d9ee0c3d83bed0396a901aae76160f9c652054361d287dbccf01ad",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.CompressionParameter.checksum_flag",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A four-byte checksum using XXHash64 of the uncompressed content is written at the end of each frame. Zstandard’s decompression code verifies the checksum. If there is a mismatch a ZstdError exception is raised. True or 1 enable checksum generation while False or 0 disable it.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A four-byte checksum using XXHash64 of the uncompressed content is written at the end of each frame. Zstandard’s decompression code verifies the checksum. If there is a mismatch a ZstdError exception ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.887346",
+    "updatedDate": "2026-03-11T23:15:47.887347",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/CompressionParameter/compression_level": {
+    "id": "compression.zstd.CompressionParameter.compression_level",
+    "name": "compression_level",
+    "type": "attribute",
+    "parent": "CompressionParameter",
+    "signatures": [
+      "compression_level"
+    ],
+    "signature_hash": "9c2d7dd7d906f5009762b006c707798948247163b3b6657a0a615979340b307e",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.CompressionParameter.compression_level",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A high-level means of setting other compression parameters that affect the speed and ratio of compressing data. Regular compression levels are greater than 0. Values greater than 20 are considered “ultra” compression and require more memory than other levels. Negative values can be used to trade off faster compression for worse compression ratios. Setting the level to zero uses COMPRESSION_LEVEL_DEFAULT.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A high-level means of setting other compression parameters that affect the speed and ratio of compressing data. Regular compression levels are greater than 0. Values greater than 20 are considered “ul...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.887143",
+    "updatedDate": "2026-03-11T23:15:47.887144",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/CompressionParameter/content_size_flag": {
+    "id": "compression.zstd.CompressionParameter.content_size_flag",
+    "name": "content_size_flag",
+    "type": "attribute",
+    "parent": "CompressionParameter",
+    "signatures": [
+      "content_size_flag"
+    ],
+    "signature_hash": "d32ba8f8a59b0e33364c1b468eb3fd963de5d4e1a5ca29540bc3bc4a284a2c5a",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.CompressionParameter.content_size_flag",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Write the size of the data to be compressed into the Zstandard frame header when known prior to compressing. This flag only takes effect under the following scenarios: Calling compress() for one-shot compression Providing all of the data to be compressed in the frame in a single ZstdCompressor.compress() call, with the ZstdCompressor.FLUSH_FRAME mode. Calling ZstdCompressor.set_pledged_input_size() with the exact amount of data that will be provided to the compressor prior to any calls to Zst...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Write the size of the data to be compressed into the Zstandard frame header when known prior to compressing. This flag only takes effect under the following scenarios: Calling compress() for one-shot ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.887332",
+    "updatedDate": "2026-03-11T23:15:47.887333",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/CompressionParameter": {
+    "id": "compression.zstd.CompressionParameter",
+    "name": "CompressionParameter",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class compression.zstd.CompressionParameter"
+    ],
+    "signature_hash": "b6320dad8c6c68c5524d1a4dbec07f49d9d8caa23cf215d675eaf6a2bf507a5c",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.CompressionParameter",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An IntEnum containing the advanced compression parameter keys that can be used when compressing data. The bounds() method can be used on any attribute to get the valid values for that parameter. Parameters are optional; any omitted parameter will have it’s value selected automatically. Example getting the lower and upper bound of compression_level: lower, upper = CompressionParameter.compression_level.bounds() Example setting the window_log to the maximum size: _lower, upper = CompressionPara...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An IntEnum containing the advanced compression parameter keys that can be used when compressing data. The bounds() method can be used on any attribute to get the valid values for that parameter. Param...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.887114",
+    "updatedDate": "2026-03-11T23:15:47.887115",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "chain_log",
+      "checksum_flag",
+      "compression_level",
+      "content_size_flag",
+      "dict_id_flag",
+      "enable_long_distance_matching",
+      "hash_log",
+      "job_size",
+      "ldm_bucket_size_log",
+      "ldm_hash_log",
+      "ldm_hash_rate_log",
+      "ldm_min_match",
+      "min_match",
+      "nb_workers",
+      "overlap_log",
+      "search_log",
+      "strategy",
+      "target_length",
+      "window_log"
+    ],
+    "methods": [
+      "bounds"
+    ]
+  },
+  "compression.zstd/compress": {
+    "id": "compression.zstd.compress",
+    "name": "compress",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "compression.zstd.compress(data, level=None, options=None, zstd_dict=None)"
+    ],
+    "signature_hash": "8de1ed50910a1bc7fa6309b1bfb55768c62b7277b8c7e4477b6c3298809eb870",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.compress",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "level",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "zstd_dict",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compress data (a bytes-like object), returning the compressed data as a bytes object. The level argument is an integer controlling the level of compression. level is an alternative to setting CompressionParameter.compression_level in options. Use bounds() on compression_level to get the values that can be passed for level. If advanced compression options are needed, the level argument must be omitted and in the options dictionary the CompressionParameter.compression_level parameter should be ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compress data (a bytes-like object), returning the compressed data as a bytes object. The level argument is an integer controlling the level of compression. level is an alternative to setting Compress...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.886759",
+    "updatedDate": "2026-03-11T23:15:47.886760",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/ZstdCompressor/compress": {
+    "id": "compression.zstd.ZstdCompressor.compress",
+    "name": "compress",
+    "type": "method",
+    "parent": "ZstdCompressor",
+    "signatures": [
+      "compress(data, mode=ZstdCompressor.CONTINUE)"
+    ],
+    "signature_hash": "9eef83a6818ae1dbb2f4d589927085a1a60d43595d7dff0b4a09faeb94ed8f9b",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.ZstdCompressor.compress",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "ZstdCompressor.CONTINUE",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compress data (a bytes-like object), returning a bytes object with compressed data if possible, or otherwise an empty bytes object. Some of data may be buffered internally, for use in later calls to compress() and flush(). The returned data should be concatenated with the output of any previous calls to compress(). The mode argument is a ZstdCompressor attribute, either CONTINUE, FLUSH_BLOCK, or FLUSH_FRAME. When all data has been provided to the compressor, call the flush() method to finish ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compress data (a bytes-like object), returning a bytes object with compressed data if possible, or otherwise an empty bytes object. Some of data may be buffered internally, for use in later calls to c...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.886821",
+    "updatedDate": "2026-03-11T23:15:47.886822",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd": {
+    "type": "module",
+    "name": "compression.zstd",
+    "id": "compression.zstd",
+    "description": "Module compression.zstd",
+    "classes": [
+      "CompressionParameter",
+      "DecompressionParameter",
+      "FrameInfo",
+      "Strategy",
+      "ZstdCompressor",
+      "ZstdDecompressor",
+      "ZstdDict",
+      "ZstdFile"
+    ],
+    "exceptions": [
+      "ZstdError"
+    ],
+    "functions": [
+      "compress",
+      "decompress",
+      "finalize_dict",
+      "get_frame_info",
+      "open",
+      "train_dict"
+    ]
+  }
+}

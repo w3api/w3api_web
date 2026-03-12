@@ -1,0 +1,185 @@
+{
+  "ast/Name": {
+    "id": "ast.Name",
+    "name": "Name",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Name(id, ctx)"
+    ],
+    "signature_hash": "d753aac00b587677705969ec309a328b10274a12ed433f65970d32832179e0e4",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Name",
+    "parameters": [
+      {
+        "name": "id",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ctx",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A variable name. id holds the name as a string, and ctx is one of the following types.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A variable name. id holds the name as a string, and ctx is one of the following types.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878106",
+    "updatedDate": "2026-03-11T23:15:47.878107",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/NamedExpr": {
+    "id": "ast.NamedExpr",
+    "name": "NamedExpr",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.NamedExpr(target, value)"
+    ],
+    "signature_hash": "00a1e718036b574682c60a281f8909485b53aab05c996ff6d0ae033f90fa7bff",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.NamedExpr",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A named expression. This AST node is produced by the assignment expressions operator (also known as the walrus operator). As opposed to the Assign node in which the first argument can be multiple nodes, in this case both target and value must be single nodes. >>> print(ast.dump(ast.parse('(x := 4)', mode='eval'), indent=4)) Expression( body=NamedExpr( target=Name(id='x', ctx=Store()), value=Constant(value=4))) Added in version 3.8.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A named expression. This AST node is produced by the assignment expressions operator (also known as the walrus operator). As opposed to the Assign node in which the first argument can be multiple node...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878357",
+    "updatedDate": "2026-03-11T23:15:47.878358",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/NodeTransformer": {
+    "id": "ast.NodeTransformer",
+    "name": "NodeTransformer",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.NodeTransformer"
+    ],
+    "signature_hash": "95ceb9fd7906c8e9abf218ddd49bc85c3250d974e76a1f038c597122422dac41",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.NodeTransformer",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A NodeVisitor subclass that walks the abstract syntax tree and allows modification of nodes. The NodeTransformer will walk the AST and use the return value of the visitor methods to replace or remove the old node. If the return value of the visitor method is None, the node will be removed from its location, otherwise it is replaced with the return value. The return value may be the original node in which case no replacement takes place. Here is an example transformer that rewrites all occurre...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A NodeVisitor subclass that walks the abstract syntax tree and allows modification of nodes. The NodeTransformer will walk the AST and use the return value of the visitor methods to replace or remove ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.879791",
+    "updatedDate": "2026-03-11T23:15:47.879792",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/NodeVisitor": {
+    "id": "ast.NodeVisitor",
+    "name": "NodeVisitor",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.NodeVisitor"
+    ],
+    "signature_hash": "11c25d6e4b8c617a7f6b6baf82debdd690b7b767bbee26c20b0df74afde57144",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.NodeVisitor",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A node visitor base class that walks the abstract syntax tree and calls a visitor function for every node found. This function may return a value which is forwarded by the visit() method. This class is meant to be subclassed, with the subclass adding visitor methods. visit(node)¶ Visit a node. The default implementation calls the method called self.visit_classname where classname is the name of the node class, or generic_visit() if that method doesn’t exist. generic_visit(node)¶ This visitor ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A node visitor base class that walks the abstract syntax tree and calls a visitor function for every node found. This function may return a value which is forwarded by the visit() method. This class i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.879709",
+    "updatedDate": "2026-03-11T23:15:47.879710",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.8",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "generic_visit",
+      "visit",
+      "visit_Constant"
+    ]
+  }
+}

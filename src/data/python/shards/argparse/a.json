@@ -1,0 +1,652 @@
+{
+  "argparse/Action": {
+    "id": "argparse.Action",
+    "name": "Action",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class argparse.Action(option_strings, dest, nargs=None, const=None, default=None, type=None, choices=None, required=False, help=None, metavar=None)"
+    ],
+    "signature_hash": "e65b470395c44cd07d3d5b9d8ca262ae0f4d3480475c23f1882f798850361791",
+    "url": "https://docs.python.org/3/library/argparse.html#module-argparse#argparse.Action",
+    "parameters": [
+      {
+        "name": "option_strings",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dest",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "nargs",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "const",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "default",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "choices",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "required",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "help",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "metavar",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Action objects are used by an ArgumentParser to represent the information needed to parse a single argument from one or more strings from the command line. The Action class must accept the two positional arguments plus any keyword arguments passed to ArgumentParser.add_argument() except for the action itself. Instances of Action (or return value of any callable to the action parameter) should have attributes dest, option_strings, default, type, required, help, etc. defined. The easiest way to...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Action objects are used by an ArgumentParser to represent the information needed to parse a single argument from one or more strings from the command line. The Action class must accept the two positio...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.876994",
+    "updatedDate": "2026-03-11T23:15:47.876995",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "__call__",
+      "format_usage"
+    ]
+  },
+  "argparse/ArgumentParser": {
+    "id": "argparse.ArgumentParser",
+    "name": "ArgumentParser",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class argparse.ArgumentParser(prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=argparse.HelpFormatter, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True, exit_on_error=True, *, suggest_on_error=False, color=True)"
+    ],
+    "signature_hash": "6a8508d18b08af54b32b881a4a6257dbbfe8ba86584fc4b04623ad7149345e36",
+    "url": "https://docs.python.org/3/library/argparse.html#module-argparse#argparse.ArgumentParser",
+    "parameters": [
+      {
+        "name": "prog",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "usage",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "description",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "epilog",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "parents",
+        "type": "",
+        "has_default": true,
+        "default_value": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "formatter_class",
+        "type": "",
+        "has_default": true,
+        "default_value": "argparse.HelpFormatter",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "prefix_chars",
+        "type": "",
+        "has_default": true,
+        "default_value": "'-'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fromfile_prefix_chars",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "argument_default",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "conflict_handler",
+        "type": "",
+        "has_default": true,
+        "default_value": "'error'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "add_help",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "allow_abbrev",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "exit_on_error",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "suggest_on_error",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "color",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a new ArgumentParser object. All parameters should be passed as keyword arguments. Each parameter has its own more detailed description below, but in short they are: prog - The name of the program (default: generated from the __main__ module attributes and sys.argv[0]) usage - The string describing the program usage (default: generated from arguments added to parser) description - Text to display before the argument help (by default, no text) epilog - Text to display after the argument...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a new ArgumentParser object. All parameters should be passed as keyword arguments. Each parameter has its own more detailed description below, but in short they are: prog - The name of the prog...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.876917",
+    "updatedDate": "2026-03-11T23:15:47.876918",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "add_argument",
+      "add_argument_group",
+      "add_mutually_exclusive_group",
+      "add_subparsers",
+      "convert_arg_line_to_args",
+      "error",
+      "exit",
+      "format_help",
+      "format_usage",
+      "get_default",
+      "parse_args",
+      "parse_intermixed_args",
+      "parse_known_args",
+      "parse_known_intermixed_args",
+      "print_help",
+      "print_usage",
+      "register",
+      "set_defaults"
+    ]
+  },
+  "argparse/ArgumentError": {
+    "id": "argparse.ArgumentError",
+    "name": "ArgumentError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception argparse.ArgumentError"
+    ],
+    "signature_hash": "9e185f4747a791cc34ca8839f046e8c87139b4be6bfcd54200508a6bb6ef2173",
+    "url": "https://docs.python.org/3/library/argparse.html#module-argparse#argparse.ArgumentError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An error from creating or using an argument (optional or positional). The string value of this exception is the message, augmented with information about the argument that caused it.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An error from creating or using an argument (optional or positional). The string value of this exception is the message, augmented with information about the argument that caused it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.877426",
+    "updatedDate": "2026-03-11T23:15:47.877427",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "argparse/ArgumentTypeError": {
+    "id": "argparse.ArgumentTypeError",
+    "name": "ArgumentTypeError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception argparse.ArgumentTypeError"
+    ],
+    "signature_hash": "59e6fcef802b29f3efb998285846849d6beb9fb9cecb36d1729787eb7eeb3550",
+    "url": "https://docs.python.org/3/library/argparse.html#module-argparse#argparse.ArgumentTypeError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Raised when something goes wrong converting a command line string to a type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Raised when something goes wrong converting a command line string to a type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.877437",
+    "updatedDate": "2026-03-11T23:15:47.877438",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "argparse/ArgumentParser/add_argument": {
+    "id": "argparse.ArgumentParser.add_argument",
+    "name": "add_argument",
+    "type": "method",
+    "parent": "ArgumentParser",
+    "signatures": [
+      "ArgumentParser.add_argument(name or flags..., *[, action][, nargs][, const][, default][, type][, choices][, required][, help][, metavar][, dest][, deprecated])"
+    ],
+    "signature_hash": "bc18361213aa498d30a7262f085b9a081a5189791dac8f5dd7ab043cd4e5b2ab",
+    "url": "https://docs.python.org/3/library/argparse.html#module-argparse#argparse.ArgumentParser.add_argument",
+    "parameters": [
+      {
+        "name": "name or flags...",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Define how a single command-line argument should be parsed. Each parameter has its own more detailed description below, but in short they are: name or flags - Either a name or a list of option strings, e.g. 'foo' or '-f', '--foo'. action - The basic type of action to be taken when this argument is encountered at the command line. nargs - The number of command-line arguments that should be consumed. const - A constant value required by some action and nargs selections. default - The value prod...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Define how a single command-line argument should be parsed. Each parameter has its own more detailed description below, but in short they are: name or flags - Either a name or a list of option strings...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.876959",
+    "updatedDate": "2026-03-11T23:15:47.876960",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "argparse/ArgumentParser/add_argument_group": {
+    "id": "argparse.ArgumentParser.add_argument_group",
+    "name": "add_argument_group",
+    "type": "method",
+    "parent": "ArgumentParser",
+    "signatures": [
+      "ArgumentParser.add_argument_group(title=None, description=None, *[, argument_default][, conflict_handler])"
+    ],
+    "signature_hash": "9757e38d0f7fc23aed0963efb22388f785e2955e42e0bea43e7ec1014f084375",
+    "url": "https://docs.python.org/3/library/argparse.html#module-argparse#argparse.ArgumentParser.add_argument_group",
+    "parameters": [
+      {
+        "name": "title",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "description",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "By default, ArgumentParser groups command-line arguments into “positional arguments” and “options” when displaying help messages. When there is a better conceptual grouping of arguments than this default one, appropriate groups can be created using the add_argument_group() method: >>> parser = argparse.ArgumentParser(prog='PROG', add_help=False) >>> group = parser.add_argument_group('group') >>> group.add_argument('--foo', help='foo help') >>> group.add_argument('bar', help='bar help') >>> pa...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "By default, ArgumentParser groups command-line arguments into “positional arguments” and “options” when displaying help messages. When there is a better conceptual grouping of arguments than this defa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.877162",
+    "updatedDate": "2026-03-11T23:15:47.877162",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.11",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "argparse/ArgumentParser/add_mutually_exclusive_group": {
+    "id": "argparse.ArgumentParser.add_mutually_exclusive_group",
+    "name": "add_mutually_exclusive_group",
+    "type": "method",
+    "parent": "ArgumentParser",
+    "signatures": [
+      "ArgumentParser.add_mutually_exclusive_group(required=False)"
+    ],
+    "signature_hash": "d6273d459d3ef8131bb164553c27f91529604874a202bd43a83c0c89b2aec8de",
+    "url": "https://docs.python.org/3/library/argparse.html#module-argparse#argparse.ArgumentParser.add_mutually_exclusive_group",
+    "parameters": [
+      {
+        "name": "required",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a mutually exclusive group. argparse will make sure that only one of the arguments in the mutually exclusive group was present on the command line: >>> parser = argparse.ArgumentParser(prog='PROG') >>> group = parser.add_mutually_exclusive_group() >>> group.add_argument('--foo', action='store_true') >>> group.add_argument('--bar', action='store_false') >>> parser.parse_args(['--foo']) Namespace(bar=True, foo=True) >>> parser.parse_args(['--bar']) Namespace(bar=False, foo=False) >>> par...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a mutually exclusive group. argparse will make sure that only one of the arguments in the mutually exclusive group was present on the command line: >>> parser = argparse.ArgumentParser(prog='PR...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.877180",
+    "updatedDate": "2026-03-11T23:15:47.877181",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.11",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "argparse/ArgumentParser/add_subparsers": {
+    "id": "argparse.ArgumentParser.add_subparsers",
+    "name": "add_subparsers",
+    "type": "method",
+    "parent": "ArgumentParser",
+    "signatures": [
+      "ArgumentParser.add_subparsers(*[, title][, description][, prog][, parser_class][, action][, dest][, required][, help][, metavar])"
+    ],
+    "signature_hash": "0b53f62ae7eaa75d7dc07bb9268095baa879d4f9080c5b1004c1cd5228ecf03c",
+    "url": "https://docs.python.org/3/library/argparse.html#module-argparse#argparse.ArgumentParser.add_subparsers",
+    "parameters": [
+      {
+        "name": "",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Many programs split up their functionality into a number of subcommands, for example, the svn program can invoke subcommands like svn checkout, svn update, and svn commit. Splitting up functionality this way can be a particularly good idea when a program performs several different functions which require different kinds of command-line arguments. ArgumentParser supports the creation of such subcommands with the add_subparsers() method. The add_subparsers() method is normally called with no ar...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Many programs split up their functionality into a number of subcommands, for example, the svn program can invoke subcommands like svn checkout, svn update, and svn commit. Splitting up functionality t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.877113",
+    "updatedDate": "2026-03-11T23:15:47.877114",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "argparse": {
+    "type": "module",
+    "name": "argparse",
+    "id": "argparse",
+    "description": "Module argparse",
+    "classes": [
+      "Action",
+      "ArgumentParser",
+      "BooleanOptionalAction",
+      "FileType",
+      "Namespace",
+      "RawDescriptionHelpFormatter"
+    ],
+    "exceptions": [
+      "ArgumentError",
+      "ArgumentTypeError"
+    ]
+  }
+}

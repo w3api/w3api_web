@@ -1,0 +1,202 @@
+{
+  "email.utils/parseaddr": {
+    "id": "email.utils.parseaddr",
+    "name": "parseaddr",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "email.utils.parseaddr(address, *, strict=True)"
+    ],
+    "signature_hash": "bf5c7e77a41636c0e89f16360e4a761c0c437f0a6d39771e72b8b13d815f5404",
+    "url": "https://docs.python.org/3/library/email.utils.html#module-email.utils#email.utils.parseaddr",
+    "parameters": [
+      {
+        "name": "address",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "strict",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Parse address – which should be the value of some address-containing field such as To or Cc – into its constituent realname and email address parts. Returns a tuple of that information, unless the parse fails, in which case a 2-tuple of ('', '') is returned. If strict is true, use a strict parser which rejects malformed inputs. Changed in version 3.13: Add strict optional parameter and reject malformed inputs by default.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parse address – which should be the value of some address-containing field such as To or Cc – into its constituent realname and email address parts. Returns a tuple of that information, unless the par...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923572",
+    "updatedDate": "2026-03-11T23:15:47.923573",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.utils/parsedate": {
+    "id": "email.utils.parsedate",
+    "name": "parsedate",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "email.utils.parsedate(date)"
+    ],
+    "signature_hash": "6d553e8082e73092e78e98dd21206e25a8fa9d4330dd2da7d686b8156e367f78",
+    "url": "https://docs.python.org/3/library/email.utils.html#module-email.utils#email.utils.parsedate",
+    "parameters": [
+      {
+        "name": "date",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Attempts to parse a date according to the rules in RFC 2822. however, some mailers don’t follow that format as specified, so parsedate() tries to guess correctly in such cases. date is a string containing an RFC 2822 date, such as \"Mon, 20 Nov 1995 19:12:08 -0500\". If it succeeds in parsing the date, parsedate() returns a 9-tuple that can be passed directly to time.mktime(); otherwise None will be returned. Note that indexes 6, 7, and 8 of the result tuple are not usable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Attempts to parse a date according to the rules in RFC 2822. however, some mailers don’t follow that format as specified, so parsedate() tries to guess correctly in such cases. date is a string contai...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923624",
+    "updatedDate": "2026-03-11T23:15:47.923625",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.utils/parsedate_to_datetime": {
+    "id": "email.utils.parsedate_to_datetime",
+    "name": "parsedate_to_datetime",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "email.utils.parsedate_to_datetime(date)"
+    ],
+    "signature_hash": "55ece3007c22491b557ca7b0598ca4caa7dc9719734155296721375f45c76f63",
+    "url": "https://docs.python.org/3/library/email.utils.html#module-email.utils#email.utils.parsedate_to_datetime",
+    "parameters": [
+      {
+        "name": "date",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The inverse of format_datetime(). Performs the same function as parsedate(), but on success returns a datetime; otherwise ValueError is raised if date contains an invalid value such as an hour greater than 23 or a timezone offset not between -24 and 24 hours. If the input date has a timezone of -0000, the datetime will be a naive datetime, and if the date is conforming to the RFCs it will represent a time in UTC but with no indication of the actual source timezone of the message the date come...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The inverse of format_datetime(). Performs the same function as parsedate(), but on success returns a datetime; otherwise ValueError is raised if date contains an invalid value such as an hour greater...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923654",
+    "updatedDate": "2026-03-11T23:15:47.923655",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.utils/parsedate_tz": {
+    "id": "email.utils.parsedate_tz",
+    "name": "parsedate_tz",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "email.utils.parsedate_tz(date)"
+    ],
+    "signature_hash": "02803b4d5601d0d5d85fde73420db29a823009ce6e1a807872780a4d5ffdd8a4",
+    "url": "https://docs.python.org/3/library/email.utils.html#module-email.utils#email.utils.parsedate_tz",
+    "parameters": [
+      {
+        "name": "date",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Performs the same function as parsedate(), but returns either None or a 10-tuple; the first 9 elements make up a tuple that can be passed directly to time.mktime(), and the tenth is the offset of the date’s timezone from UTC (which is the official term for Greenwich Mean Time) [1]. If the input string has no timezone, the last element of the tuple returned is 0, which represents UTC. Note that indexes 6, 7, and 8 of the result tuple are not usable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Performs the same function as parsedate(), but returns either None or a 10-tuple; the first 9 elements make up a tuple that can be passed directly to time.mktime(), and the tenth is the offset of the ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923639",
+    "updatedDate": "2026-03-11T23:15:47.923640",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

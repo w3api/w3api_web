@@ -1,9 +1,151 @@
 {
-  "javax.tools/DocumentationTool.DocumentationTask/call": {
-    "id": "javax.tools.DocumentationTool.DocumentationTask.call",
+  "javax.tools/Kind/CLASS": {
+    "id": "javax.tools.Kind.CLASS",
+    "name": "CLASS",
+    "type": "enum_constant",
+    "parent": "Kind",
+    "signatures": [
+      "CLASS"
+    ],
+    "signature_hash": "bb6a385e3cc6a9104c13498926037cd697e6dd2ca3982a4d4e5812573405151f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html",
+    "parameters": [],
+    "return_type": "Kind",
+    "exceptions": [],
+    "description": "Class files for the Java Virtual Machine.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Class files for the Java Virtual Machine.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.170594",
+    "updatedDate": "2026-03-11T23:15:42.170595",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.tools/StandardLocation/CLASS_OUTPUT": {
+    "id": "javax.tools.StandardLocation.CLASS_OUTPUT",
+    "name": "CLASS_OUTPUT",
+    "type": "enum_constant",
+    "parent": "StandardLocation",
+    "signatures": [
+      "CLASS_OUTPUT"
+    ],
+    "signature_hash": "0742dc1096b266775c30a23321bf56705f0b3dcd0a64409af77df854f4af820d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/tools/StandardLocation.html",
+    "parameters": [],
+    "return_type": "StandardLocation",
+    "exceptions": [],
+    "description": "Location of new class files.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Location of new class files.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.171765",
+    "updatedDate": "2026-03-11T23:15:42.171766",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.tools/StandardLocation/CLASS_PATH": {
+    "id": "javax.tools.StandardLocation.CLASS_PATH",
+    "name": "CLASS_PATH",
+    "type": "enum_constant",
+    "parent": "StandardLocation",
+    "signatures": [
+      "CLASS_PATH"
+    ],
+    "signature_hash": "e97324b6d86f532f9e502dfea6ac14156c98dd2bbe198e6a1ceef755b51bfc55",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/tools/StandardLocation.html",
+    "parameters": [],
+    "return_type": "StandardLocation",
+    "exceptions": [],
+    "description": "Location to search for user class files.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Location to search for user class files.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.171782",
+    "updatedDate": "2026-03-11T23:15:42.171783",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.tools/CompilationTask": {
+    "id": "javax.tools.CompilationTask",
+    "name": "CompilationTask",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface CompilationTask"
+    ],
+    "signature_hash": "ea0708dcaf89e107c8635535f811d35eeaf1ae6af8979e3298aca0d213f84e20",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.170401",
+    "updatedDate": "2026-03-11T23:15:42.170402",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "addModules",
+      "call",
+      "setLocale",
+      "setProcessors"
+    ]
+  },
+  "javax.tools/DocumentationTask/call": {
+    "id": "javax.tools.DocumentationTask.call",
     "name": "call",
     "type": "method",
-    "parent": "DocumentationTool.DocumentationTask",
+    "parent": "DocumentationTask",
     "signatures": [
       "public Boolean call()"
     ],
@@ -31,8 +173,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.354926",
-    "updatedDate": "2026-03-08T21:40:22.354927",
+    "createdDate": "2026-03-11T23:15:42.169144",
+    "updatedDate": "2026-03-11T23:15:42.169145",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -42,11 +184,11 @@
       "popularity_score": 0
     }
   },
-  "javax.tools/JavaCompiler.CompilationTask/call": {
-    "id": "javax.tools.JavaCompiler.CompilationTask.call",
+  "javax.tools/CompilationTask/call": {
+    "id": "javax.tools.CompilationTask.call",
     "name": "call",
     "type": "method",
-    "parent": "JavaCompiler.CompilationTask",
+    "parent": "CompilationTask",
     "signatures": [
       "public Boolean call()"
     ],
@@ -74,8 +216,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.356011",
-    "updatedDate": "2026-03-08T21:40:22.356012",
+    "createdDate": "2026-03-11T23:15:42.170441",
+    "updatedDate": "2026-03-11T23:15:42.170442",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -113,8 +255,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.353983",
-    "updatedDate": "2026-03-08T21:40:22.353984",
+    "createdDate": "2026-03-11T23:15:42.168038",
+    "updatedDate": "2026-03-11T23:15:42.168039",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -124,11 +266,11 @@
       "popularity_score": 0
     }
   },
-  "javax.tools/ForwardingJavaFileManager<M/close": {
-    "id": "javax.tools.ForwardingJavaFileManager<M.close",
+  "javax.tools/ForwardingJavaFileManager/close": {
+    "id": "javax.tools.ForwardingJavaFileManager.close",
     "name": "close",
     "type": "method",
-    "parent": "ForwardingJavaFileManager<M",
+    "parent": "ForwardingJavaFileManager",
     "signatures": [
       "public void close()"
     ],
@@ -152,8 +294,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.355369",
-    "updatedDate": "2026-03-08T21:40:22.355370",
+    "createdDate": "2026-03-11T23:15:42.169697",
+    "updatedDate": "2026-03-11T23:15:42.169698",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -216,8 +358,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.354002",
-    "updatedDate": "2026-03-08T21:40:22.354003",
+    "createdDate": "2026-03-11T23:15:42.168059",
+    "updatedDate": "2026-03-11T23:15:42.168060",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -227,11 +369,11 @@
       "popularity_score": 0
     }
   },
-  "javax.tools/ForwardingJavaFileManager<M/contains": {
-    "id": "javax.tools.ForwardingJavaFileManager<M.contains",
+  "javax.tools/ForwardingJavaFileManager/contains": {
+    "id": "javax.tools.ForwardingJavaFileManager.contains",
     "name": "contains",
     "type": "method",
-    "parent": "ForwardingJavaFileManager<M",
+    "parent": "ForwardingJavaFileManager",
     "signatures": [
       "public boolean contains(JavaFileManager.Location location, FileObject fo)"
     ],
@@ -276,8 +418,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.355392",
-    "updatedDate": "2026-03-08T21:40:22.355393",
+    "createdDate": "2026-03-11T23:15:42.169722",
+    "updatedDate": "2026-03-11T23:15:42.169723",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

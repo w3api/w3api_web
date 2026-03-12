@@ -1,0 +1,102 @@
+{
+  "ast/Raise": {
+    "id": "ast.Raise",
+    "name": "Raise",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Raise(exc, cause)"
+    ],
+    "signature_hash": "0f3fe136ee11660968581ecf922617d3c45dd76c8d4c07a291858c4a68c1b330",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Raise",
+    "parameters": [
+      {
+        "name": "exc",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cause",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A raise statement. exc is the exception object to be raised, normally a Call or Name, or None for a standalone raise. cause is the optional part for y in raise x from y. >>> print(ast.dump(ast.parse('raise x from y'), indent=4)) Module( body=[ Raise( exc=Name(id='x', ctx=Load()), cause=Name(id='y', ctx=Load()))])",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A raise statement. exc is the exception object to be raised, normally a Call or Name, or None for a standalone raise. cause is the optional part for y in raise x from y. >>> print(ast.dump(ast.parse('...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878535",
+    "updatedDate": "2026-03-11T23:15:47.878536",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Return": {
+    "id": "ast.Return",
+    "name": "Return",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Return(value)"
+    ],
+    "signature_hash": "a5f4e541b79ab153e8f2c38dc006ca15d98cf5e31b71a867996908db89e2830e",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Return",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A return statement. >>> print(ast.dump(ast.parse('return 4'), indent=4)) Module( body=[ Return( value=Constant(value=4))])",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A return statement. >>> print(ast.dump(ast.parse('return 4'), indent=4)) Module( body=[ Return( value=Constant(value=4))])",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.879347",
+    "updatedDate": "2026-03-11T23:15:47.879347",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

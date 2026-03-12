@@ -1,0 +1,341 @@
+{
+  "datetime/timezone/utc": {
+    "id": "datetime.timezone.utc",
+    "name": "utc",
+    "type": "attribute",
+    "parent": "timezone",
+    "signatures": [
+      "timezone.utc"
+    ],
+    "signature_hash": "195951a9af5162a766c0900c149db833a7eb99fdb7125763485fc46b03535391",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.timezone.utc",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The UTC time zone, timezone(timedelta(0)).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The UTC time zone, timezone(timedelta(0)).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.910887",
+    "updatedDate": "2026-03-11T23:15:47.910888",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "datetime/UTC": {
+    "id": "datetime.UTC",
+    "name": "UTC",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "datetime.UTC"
+    ],
+    "signature_hash": "f25f1b2f505267b9e385ed9bc5aec701e4d4bad9669e3552c342bda3d872de92",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.UTC",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Alias for the UTC time zone singleton datetime.timezone.utc. Added in version 3.11.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Alias for the UTC time zone singleton datetime.timezone.utc. Added in version 3.11.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.908996",
+    "updatedDate": "2026-03-11T23:15:47.908997",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "datetime/datetime/utcfromtimestamp": {
+    "id": "datetime.datetime.utcfromtimestamp",
+    "name": "utcfromtimestamp",
+    "type": "method",
+    "parent": "datetime",
+    "signatures": [
+      "classmethod datetime.utcfromtimestamp(timestamp)"
+    ],
+    "signature_hash": "6d78949945602edf4c7059e7f2914b9eeddeb3d2530eac66e3ad9952135b6ecf",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.datetime.utcfromtimestamp",
+    "parameters": [
+      {
+        "name": "timestamp",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the UTC datetime corresponding to the POSIX timestamp, with tzinfo None. (The resulting object is naive.) This may raise OverflowError, if the timestamp is out of the range of values supported by the platform C gmtime() function, and OSError on gmtime() failure. It’s common for this to be restricted to years in 1970 through 2038. To get an aware datetime object, call fromtimestamp(): datetime.fromtimestamp(timestamp, timezone.utc) On the POSIX compliant platforms, it is equivalent to t...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the UTC datetime corresponding to the POSIX timestamp, with tzinfo None. (The resulting object is naive.) This may raise OverflowError, if the timestamp is out of the range of values supported ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.909691",
+    "updatedDate": "2026-03-11T23:15:47.909692",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.12",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "datetime/datetime/utcnow": {
+    "id": "datetime.datetime.utcnow",
+    "name": "utcnow",
+    "type": "method",
+    "parent": "datetime",
+    "signatures": [
+      "classmethod datetime.utcnow()"
+    ],
+    "signature_hash": "173b3d56983914d76e03ab63ccc0a0207c0f9e83d3f989f6745ddb1836c9dc40",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.datetime.utcnow",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the current UTC date and time, with tzinfo None. This is like now(), but returns the current UTC date and time, as a naive datetime object. An aware current UTC datetime can be obtained by calling datetime.now(timezone.utc). See also now(). Warning Because naive datetime objects are treated by many datetime methods as local times, it is preferred to use aware datetimes to represent times in UTC. As such, the recommended way to create an object representing the current time in UTC is by...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the current UTC date and time, with tzinfo None. This is like now(), but returns the current UTC date and time, as a naive datetime object. An aware current UTC datetime can be obtained by call...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.909643",
+    "updatedDate": "2026-03-11T23:15:47.909644",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.12",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "datetime/datetime/utcoffset": {
+    "id": "datetime.datetime.utcoffset",
+    "name": "utcoffset",
+    "type": "method",
+    "parent": "datetime",
+    "signatures": [
+      "datetime.utcoffset()"
+    ],
+    "signature_hash": "79a957a8b3ce8d71312eaf77eea267a781b5297b9db32d623c3d9eec95fe8067",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.datetime.utcoffset",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "If tzinfo is None, returns None, else returns self.tzinfo.utcoffset(self), and raises an exception if the latter doesn’t return None or a timedelta object with magnitude less than one day. Changed in version 3.7: The UTC offset is not restricted to a whole number of minutes.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If tzinfo is None, returns None, else returns self.tzinfo.utcoffset(self), and raises an exception if the latter doesn’t return None or a timedelta object with magnitude less than one day. Changed in ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.910059",
+    "updatedDate": "2026-03-11T23:15:47.910060",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "datetime/time/utcoffset": {
+    "id": "datetime.time.utcoffset",
+    "name": "utcoffset",
+    "type": "method",
+    "parent": "time",
+    "signatures": [
+      "time.utcoffset()"
+    ],
+    "signature_hash": "c8e3859377a97b0af70a5761d2ff1cbc158227d45d046e4079c893bec4da69a4",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.time.utcoffset",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "If tzinfo is None, returns None, else returns self.tzinfo.utcoffset(None), and raises an exception if the latter doesn’t return None or a timedelta object with magnitude less than one day. Changed in version 3.7: The UTC offset is not restricted to a whole number of minutes.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If tzinfo is None, returns None, else returns self.tzinfo.utcoffset(None), and raises an exception if the latter doesn’t return None or a timedelta object with magnitude less than one day. Changed in ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.910640",
+    "updatedDate": "2026-03-11T23:15:47.910641",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "datetime/tzinfo/utcoffset": {
+    "id": "datetime.tzinfo.utcoffset",
+    "name": "utcoffset",
+    "type": "method",
+    "parent": "tzinfo",
+    "signatures": [
+      "tzinfo.utcoffset(dt)"
+    ],
+    "signature_hash": "05b40a429fbac429085e6006d9feb29661c34ab8c68ebc57d1e298792d1a4aad",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.tzinfo.utcoffset",
+    "parameters": [
+      {
+        "name": "dt",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return offset of local time from UTC, as a timedelta object that is positive east of UTC. If local time is west of UTC, this should be negative. This represents the total offset from UTC; for example, if a tzinfo object represents both time zone and DST adjustments, utcoffset() should return their sum. If the UTC offset isn’t known, return None. Else the value returned must be a timedelta object strictly between -timedelta(hours=24) and timedelta(hours=24) (the magnitude of the offset must be...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return offset of local time from UTC, as a timedelta object that is positive east of UTC. If local time is west of UTC, this should be negative. This represents the total offset from UTC; for example,...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.910710",
+    "updatedDate": "2026-03-11T23:15:47.910711",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "datetime/timezone/utcoffset": {
+    "id": "datetime.timezone.utcoffset",
+    "name": "utcoffset",
+    "type": "method",
+    "parent": "timezone",
+    "signatures": [
+      "timezone.utcoffset(dt)"
+    ],
+    "signature_hash": "531ee61ccfc2a59c4f6247303ecf961c602bd7c5babb6c62a082c45cfd5f5347",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.timezone.utcoffset",
+    "parameters": [
+      {
+        "name": "dt",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the fixed value specified when the timezone instance is constructed. The dt argument is ignored. The return value is a timedelta instance equal to the difference between the local time and UTC. Changed in version 3.7: The UTC offset is not restricted to a whole number of minutes.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the fixed value specified when the timezone instance is constructed. The dt argument is ignored. The return value is a timedelta instance equal to the difference between the local time and UTC....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.910820",
+    "updatedDate": "2026-03-11T23:15:47.910821",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "datetime/datetime/utctimetuple": {
+    "id": "datetime.datetime.utctimetuple",
+    "name": "utctimetuple",
+    "type": "method",
+    "parent": "datetime",
+    "signatures": [
+      "datetime.utctimetuple()"
+    ],
+    "signature_hash": "c3a0f15b218e6aa2b08dc692053863397675a1df4f5e37977735e1913dce56c5",
+    "url": "https://docs.python.org/3/library/datetime.html#module-datetime#datetime.datetime.utctimetuple",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "If datetime instance d is naive, this is the same as d.timetuple() except that tm_isdst is forced to 0 regardless of what d.dst() returns. DST is never in effect for a UTC time. If d is aware, d is normalized to UTC time, by subtracting d.utcoffset(), and a time.struct_time for the normalized time is returned. tm_isdst is forced to 0. Note that an OverflowError may be raised if d.year was MINYEAR or MAXYEAR and UTC adjustment spills over a year boundary. Warning Because naive datetime objects...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If datetime instance d is naive, this is the same as d.timetuple() except that tm_isdst is forced to 0 regardless of what d.dst() returns. DST is never in effect for a UTC time. If d is aware, d is no...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.910122",
+    "updatedDate": "2026-03-11T23:15:47.910123",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,654 @@
+{
+  "mailbox/MH": {
+    "id": "mailbox.MH",
+    "name": "MH",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.MH(path, factory=None, create=True)"
+    ],
+    "signature_hash": "0da445527ab586c046b941f0788a69da554edb23d34c71babf17a74ab4b4426e",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.MH",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "factory",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "create",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A subclass of Mailbox for mailboxes in MH format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custom representation. If factory is None, MHMessage is used as the default message representation. If create is True, the mailbox is created if it does not exist. MH is a directory-based mailbox format invented for the MH Message Handling System, a mail user agent. Each message in an MH mailbox resid...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of Mailbox for mailboxes in MH format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custo...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.961553",
+    "updatedDate": "2026-03-11T23:15:47.961554",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "add_folder",
+      "close",
+      "flush",
+      "get_file",
+      "get_folder",
+      "get_sequences",
+      "list_folders",
+      "lock",
+      "pack",
+      "remove",
+      "remove_folder",
+      "set_sequences"
+    ]
+  },
+  "mailbox/MHMessage": {
+    "id": "mailbox.MHMessage",
+    "name": "MHMessage",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.MHMessage(message=None)"
+    ],
+    "signature_hash": "2ed6621eefb1eee47eb341bdb05d2c0373f830ce19db2a5a2fa34cf1c60b43e2",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.MHMessage",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A message with MH-specific behaviors. Parameter message has the same meaning as with the Message constructor. MH messages do not support marks or flags in the traditional sense, but they do support sequences, which are logical groupings of arbitrary messages. Some mail reading programs (although not the standard mh and nmh) use sequences in much the same way flags are used with other formats, as follows: Sequence Explanation unseen Not read, but previously detected by MUA replied Replied to f...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A message with MH-specific behaviors. Parameter message has the same meaning as with the Message constructor. MH messages do not support marks or flags in the traditional sense, but they do support se...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.962385",
+    "updatedDate": "2026-03-11T23:15:47.962386",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "add_sequence",
+      "get_sequences",
+      "remove_sequence",
+      "set_sequences"
+    ]
+  },
+  "mailbox/MMDF": {
+    "id": "mailbox.MMDF",
+    "name": "MMDF",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.MMDF(path, factory=None, create=True)"
+    ],
+    "signature_hash": "be42f92df3c006163c154d69227f83a10aa52a734474dd51a0a0aa2c5423ccbd",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.MMDF",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "factory",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "create",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A subclass of Mailbox for mailboxes in MMDF format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custom representation. If factory is None, MMDFMessage is used as the default message representation. If create is True, the mailbox is created if it does not exist. MMDF is a single-file mailbox format invented for the Multichannel Memorandum Distribution Facility, a mail transfer agent. Each messa...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of Mailbox for mailboxes in MMDF format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a cus...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.961864",
+    "updatedDate": "2026-03-11T23:15:47.961865",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "get_bytes",
+      "get_file",
+      "lock"
+    ]
+  },
+  "mailbox/MMDFMessage": {
+    "id": "mailbox.MMDFMessage",
+    "name": "MMDFMessage",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.MMDFMessage(message=None)"
+    ],
+    "signature_hash": "cd77dceb60b47b7efaef55803bba8a1f5eb198d9c86e52494d3e2648bac56611",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.MMDFMessage",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A message with MMDF-specific behaviors. Parameter message has the same meaning as with the Message constructor. As with message in an mbox mailbox, MMDF messages are stored with the sender’s address and the delivery date in an initial line beginning with “From “. Likewise, flags that indicate the state of the message are typically stored in Status and X-Status headers. Conventional flags for MMDF messages are identical to those of mbox message and are as follows: Flag Meaning Explanation R Re...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A message with MMDF-specific behaviors. Parameter message has the same meaning as with the Message constructor. As with message in an mbox mailbox, MMDF messages are stored with the sender’s address a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.962620",
+    "updatedDate": "2026-03-11T23:15:47.962621",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "add_flag",
+      "get_flags",
+      "get_from",
+      "remove_flag",
+      "set_flags",
+      "set_from"
+    ]
+  },
+  "mailbox/Mailbox": {
+    "id": "mailbox.Mailbox",
+    "name": "Mailbox",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.Mailbox"
+    ],
+    "signature_hash": "4a699ec0cb61db18f08db246e6c62ee3542665be8d96e3f80474957c02a590ab",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.Mailbox",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A mailbox, which may be inspected and modified. The Mailbox class defines an interface and is not intended to be instantiated. Instead, format-specific subclasses should inherit from Mailbox and your code should instantiate a particular subclass. The Mailbox interface is dictionary-like, with small keys corresponding to messages. Keys are issued by the Mailbox instance with which they will be used and are only meaningful to that Mailbox instance. A key continues to identify a message even if ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A mailbox, which may be inspected and modified. The Mailbox class defines an interface and is not intended to be instantiated. Instead, format-specific subclasses should inherit from Mailbox and your ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.960600",
+    "updatedDate": "2026-03-11T23:15:47.960601",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "__contains__",
+      "__len__",
+      "__setitem__",
+      "add",
+      "clear",
+      "close",
+      "flush",
+      "get",
+      "get_bytes",
+      "get_file",
+      "get_message",
+      "get_string",
+      "items",
+      "iteritems",
+      "iterkeys",
+      "itervalues",
+      "keys",
+      "lock",
+      "pop",
+      "popitem",
+      "remove",
+      "unlock",
+      "update",
+      "values"
+    ]
+  },
+  "mailbox/Maildir": {
+    "id": "mailbox.Maildir",
+    "name": "Maildir",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.Maildir(dirname, factory=None, create=True)"
+    ],
+    "signature_hash": "89b621a373e05d240112d032688087fc10532f3333dce90e49173bbc7ba8054d",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.Maildir",
+    "parameters": [
+      {
+        "name": "dirname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "factory",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "create",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A subclass of Mailbox for mailboxes in Maildir format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custom representation. If factory is None, MaildirMessage is used as the default message representation. If create is True, the mailbox is created if it does not exist. If create is True and the dirname path exists, it will be treated as an existing maildir without attempting to verify its direct...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of Mailbox for mailboxes in Maildir format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.961051",
+    "updatedDate": "2026-03-11T23:15:47.961052",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "colon"
+    ],
+    "methods": [
+      "add",
+      "add_flag",
+      "add_folder",
+      "clean",
+      "close",
+      "flush",
+      "get_file",
+      "get_flags",
+      "get_folder",
+      "get_info",
+      "list_folders",
+      "lock",
+      "remove_flag",
+      "remove_folder",
+      "set_flags",
+      "set_info"
+    ]
+  },
+  "mailbox/MaildirMessage": {
+    "id": "mailbox.MaildirMessage",
+    "name": "MaildirMessage",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.MaildirMessage(message=None)"
+    ],
+    "signature_hash": "48c7615e5b67589f7fd955eba70bb808f5a124da778cf147262d38454dec394f",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.MaildirMessage",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A message with Maildir-specific behaviors. Parameter message has the same meaning as with the Message constructor. Typically, a mail user agent application moves all of the messages in the new subdirectory to the cur subdirectory after the first time the user opens and closes the mailbox, recording that the messages are old whether or not they’ve actually been read. Each message in cur has an “info” section added to its file name to store information about its state. (Some mail readers may al...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A message with Maildir-specific behaviors. Parameter message has the same meaning as with the Message constructor. Typically, a mail user agent application moves all of the messages in the new subdire...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.961995",
+    "updatedDate": "2026-03-11T23:15:47.961996",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "add_flag",
+      "get_date",
+      "get_flags",
+      "get_info",
+      "get_subdir",
+      "remove_flag",
+      "set_date",
+      "set_flags",
+      "set_info",
+      "set_subdir"
+    ]
+  },
+  "mailbox/Message": {
+    "id": "mailbox.Message",
+    "name": "Message",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.Message(message=None)"
+    ],
+    "signature_hash": "ba80c605c12d1a129fcdc5ab616ac3824a38b8b3e7e1e15328cf856588b61324",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.Message",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A subclass of the email.message module’s Message. Subclasses of mailbox.Message add mailbox-format-specific state and behavior. If message is omitted, the new instance is created in a default, empty state. If message is an email.message.Message instance, its contents are copied; furthermore, any format-specific information is converted insofar as possible if message is a Message instance. If message is a string, a byte string, or a file, it should contain an RFC 5322-compliant message, which ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of the email.message module’s Message. Subclasses of mailbox.Message add mailbox-format-specific state and behavior. If message is omitted, the new instance is created in a default, empty s...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.961972",
+    "updatedDate": "2026-03-11T23:15:47.961973",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "mailbox/mbox": {
+    "id": "mailbox.mbox",
+    "name": "mbox",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.mbox(path, factory=None, create=True)"
+    ],
+    "signature_hash": "b7c464b54db1d926e4270fd10f19917325c44084876c9e99771fcb7a6c97315a",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.mbox",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "factory",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "create",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A subclass of Mailbox for mailboxes in mbox format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custom representation. If factory is None, mboxMessage is used as the default message representation. If create is True, the mailbox is created if it does not exist. The mbox format is the classic format for storing mail on Unix systems. All messages in an mbox mailbox are stored in a single file wi...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of Mailbox for mailboxes in mbox format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a cus...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.961450",
+    "updatedDate": "2026-03-11T23:15:47.961451",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "get_bytes",
+      "get_file",
+      "get_string",
+      "lock"
+    ]
+  },
+  "mailbox/mboxMessage": {
+    "id": "mailbox.mboxMessage",
+    "name": "mboxMessage",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.mboxMessage(message=None)"
+    ],
+    "signature_hash": "5f7182d0a681ec656baf70907a53d9d8562aa6c6212c3e9cafdeec26c66aae20",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.mboxMessage",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A message with mbox-specific behaviors. Parameter message has the same meaning as with the Message constructor. Messages in an mbox mailbox are stored together in a single file. The sender’s envelope address and the time of delivery are typically stored in a line beginning with “From “ that is used to indicate the start of a message, though there is considerable variation in the exact format of this data among mbox implementations. Flags that indicate the state of the message, such as whether...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A message with mbox-specific behaviors. Parameter message has the same meaning as with the Message constructor. Messages in an mbox mailbox are stored together in a single file. The sender’s envelope ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.962183",
+    "updatedDate": "2026-03-11T23:15:47.962184",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "add_flag",
+      "get_flags",
+      "get_from",
+      "remove_flag",
+      "set_flags",
+      "set_from"
+    ]
+  },
+  "mailbox": {
+    "type": "module",
+    "name": "mailbox",
+    "id": "mailbox",
+    "description": "Module mailbox",
+    "classes": [
+      "Babyl",
+      "BabylMessage",
+      "MH",
+      "MHMessage",
+      "MMDF",
+      "MMDFMessage",
+      "Mailbox",
+      "Maildir",
+      "MaildirMessage",
+      "Message",
+      "mbox",
+      "mboxMessage"
+    ],
+    "exceptions": [
+      "Error",
+      "ExternalClashError",
+      "FormatError",
+      "NoSuchMailboxError",
+      "NotEmptyError"
+    ]
+  }
+}

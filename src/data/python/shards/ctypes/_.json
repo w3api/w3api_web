@@ -1,0 +1,639 @@
+{
+  "ctypes/_CData/__pointer_type__": {
+    "id": "ctypes._CData.__pointer_type__",
+    "name": "__pointer_type__",
+    "type": "attribute",
+    "parent": "_CData",
+    "signatures": [
+      "__pointer_type__"
+    ],
+    "signature_hash": "dcc0cace491cff0e709557fbc4c4320719ec557d59532b2cba09ef35d82c7054",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CData.__pointer_type__",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The pointer type that was created by calling POINTER() for corresponding ctypes data type. If a pointer type was not yet created, the attribute is missing. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The pointer type that was created by calling POINTER() for corresponding ctypes data type. If a pointer type was not yet created, the attribute is missing. Added in version 3.14.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892151",
+    "updatedDate": "2026-03-11T23:15:47.892152",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/Structure/_align_": {
+    "id": "ctypes.Structure._align_",
+    "name": "_align_",
+    "type": "attribute",
+    "parent": "Structure",
+    "signatures": [
+      "_align_"
+    ],
+    "signature_hash": "f213ef7f8fd613a67c0c8063b85bbcc135af3087232f71a525610feaca1fccd0",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.Structure._align_",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An optional small integer that allows increasing the alignment of the structure when being packed or unpacked to/from memory. The value must not be negative. The effect is equivalent to __attribute__((aligned(N))) on GCC or #pragma align(N) on MSVC, except ctypes may allow values that the compiler would reject. _align_ can only increase a structure’s alignment requirements. Setting it to 0 or 1 has no effect. Using values that are not powers of two is discouraged and may lead to surprising be...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An optional small integer that allows increasing the alignment of the structure when being packed or unpacked to/from memory. The value must not be negative. The effect is equivalent to __attribute__(...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892897",
+    "updatedDate": "2026-03-11T23:15:47.892898",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/Structure/_anonymous_": {
+    "id": "ctypes.Structure._anonymous_",
+    "name": "_anonymous_",
+    "type": "attribute",
+    "parent": "Structure",
+    "signatures": [
+      "_anonymous_"
+    ],
+    "signature_hash": "e8f88d4947e206d872695b7c2203d14ff7f981ac109931a1c28afb579cc884b9",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.Structure._anonymous_",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An optional sequence that lists the names of unnamed (anonymous) fields. _anonymous_ must be already defined when _fields_ is assigned, otherwise it will have no effect. The fields listed in this variable must be structure or union type fields. ctypes will create descriptors in the structure type that allows accessing the nested fields directly, without the need to create the structure or union field. Here is an example type (Windows): class _U(Union): _fields_ = [(\"lptdesc\", POINTER(TYPEDESC...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An optional sequence that lists the names of unnamed (anonymous) fields. _anonymous_ must be already defined when _fields_ is assigned, otherwise it will have no effect. The fields listed in this vari...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892933",
+    "updatedDate": "2026-03-11T23:15:47.892934",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/_CData/_b_base_": {
+    "id": "ctypes._CData._b_base_",
+    "name": "_b_base_",
+    "type": "attribute",
+    "parent": "_CData",
+    "signatures": [
+      "_b_base_"
+    ],
+    "signature_hash": "d9ebf99d340e8dc76937b162ccb44e4505f0a2f50e931a6a1d8696b3bc3f8b73",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CData._b_base_",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Sometimes ctypes data instances do not own the memory block they contain, instead they share part of the memory block of a base object. The _b_base_ read-only member is the root ctypes object that owns the memory block.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sometimes ctypes data instances do not own the memory block they contain, instead they share part of the memory block of a base object. The _b_base_ read-only member is the root ctypes object that own...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892165",
+    "updatedDate": "2026-03-11T23:15:47.892166",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/_CData/_b_needsfree_": {
+    "id": "ctypes._CData._b_needsfree_",
+    "name": "_b_needsfree_",
+    "type": "attribute",
+    "parent": "_CData",
+    "signatures": [
+      "_b_needsfree_"
+    ],
+    "signature_hash": "f75bb570f9df778f06b16151db481f79fd6861777f3d654ce213499b064f4725",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CData._b_needsfree_",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This read-only variable is true when the ctypes data instance has allocated the memory block itself, false otherwise.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This read-only variable is true when the ctypes data instance has allocated the memory block itself, false otherwise.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892178",
+    "updatedDate": "2026-03-11T23:15:47.892179",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/Structure/_fields_": {
+    "id": "ctypes.Structure._fields_",
+    "name": "_fields_",
+    "type": "attribute",
+    "parent": "Structure",
+    "signatures": [
+      "_fields_"
+    ],
+    "signature_hash": "2ceb656f38000e7b4704453f9d35cf71c0896077c449c46836a9b2ac9d8a808d",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.Structure._fields_",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A sequence defining the structure fields. The items must be 2-tuples or 3-tuples. The first item is the name of the field, the second item specifies the type of the field; it can be any ctypes data type. For integer type fields like c_int, a third optional item can be given. It must be a small positive integer defining the bit width of the field. Field names must be unique within one structure or union. This is not checked, only one field can be accessed when names are repeated. It is possibl...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A sequence defining the structure fields. The items must be 2-tuples or 3-tuples. The first item is the name of the field, the second item specifies the type of the field; it can be any ctypes data ty...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892861",
+    "updatedDate": "2026-03-11T23:15:47.892862",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/PyDLL/_handle": {
+    "id": "ctypes.PyDLL._handle",
+    "name": "_handle",
+    "type": "attribute",
+    "parent": "PyDLL",
+    "signatures": [
+      "PyDLL._handle"
+    ],
+    "signature_hash": "f0489784d92962d6df9d4381611398afc1ab73f3a0a2a0edcc54b7b7ecacb760",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.PyDLL._handle",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The system handle used to access the library.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The system handle used to access the library.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891276",
+    "updatedDate": "2026-03-11T23:15:47.891277",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/Structure/_layout_": {
+    "id": "ctypes.Structure._layout_",
+    "name": "_layout_",
+    "type": "attribute",
+    "parent": "Structure",
+    "signatures": [
+      "_layout_"
+    ],
+    "signature_hash": "f075d86b3a5ed4a01848f5178c89c5323f45b93f35699fbf006815cb808206be",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.Structure._layout_",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An optional string naming the struct/union layout. It can currently be set to: \"ms\": the layout used by the Microsoft compiler (MSVC). On GCC and Clang, this layout can be selected with __attribute__((ms_struct)). \"gcc-sysv\": the layout used by GCC with the System V or “SysV-like” data model, as used on Linux and macOS. With this layout, _pack_ must be unset or zero. If not set explicitly, ctypes will use a default that matches the platform conventions. This default may change in future Pytho...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An optional string naming the struct/union layout. It can currently be set to: \"ms\": the layout used by the Microsoft compiler (MSVC). On GCC and Clang, this layout can be selected with __attribute__(...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892915",
+    "updatedDate": "2026-03-11T23:15:47.892916",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/Array/_length_": {
+    "id": "ctypes.Array._length_",
+    "name": "_length_",
+    "type": "attribute",
+    "parent": "Array",
+    "signatures": [
+      "_length_"
+    ],
+    "signature_hash": "07a7d1c44b59572279e0a4597bff65bdc26d7a99c1f345a2321e370a84bfdc5d",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.Array._length_",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A positive integer specifying the number of elements in the array. Out-of-range subscripts result in an IndexError. Will be returned by len().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A positive integer specifying the number of elements in the array. Out-of-range subscripts result in an IndexError. Will be returned by len().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.893111",
+    "updatedDate": "2026-03-11T23:15:47.893112",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/PyDLL/_name": {
+    "id": "ctypes.PyDLL._name",
+    "name": "_name",
+    "type": "attribute",
+    "parent": "PyDLL",
+    "signatures": [
+      "PyDLL._name"
+    ],
+    "signature_hash": "8a2f408d2d11a7b9e7fb3497f38b623fe58cb558bd1e8bc5aef6807f1e274436",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.PyDLL._name",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The name of the library passed in the constructor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The name of the library passed in the constructor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891307",
+    "updatedDate": "2026-03-11T23:15:47.891308",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/_CData/_objects": {
+    "id": "ctypes._CData._objects",
+    "name": "_objects",
+    "type": "attribute",
+    "parent": "_CData",
+    "signatures": [
+      "_objects"
+    ],
+    "signature_hash": "3a20928c44bcf07356dbe0c285ed4638d47403f3c26813f4f545ece7d9891ae7",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CData._objects",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This member is either None or a dictionary containing Python objects that need to be kept alive so that the memory block contents is kept valid. This object is only exposed for debugging; never modify the contents of this dictionary.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This member is either None or a dictionary containing Python objects that need to be kept alive so that the memory block contents is kept valid. This object is only exposed for debugging; never modify...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892191",
+    "updatedDate": "2026-03-11T23:15:47.892192",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/Structure/_pack_": {
+    "id": "ctypes.Structure._pack_",
+    "name": "_pack_",
+    "type": "attribute",
+    "parent": "Structure",
+    "signatures": [
+      "_pack_"
+    ],
+    "signature_hash": "67da48095972b47915118bc9e5fdd8fc5a850aa995bb64485ccd9ec4815eb917",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.Structure._pack_",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "An optional small integer that allows overriding the alignment of structure fields in the instance. This is only implemented for the MSVC-compatible memory layout (see _layout_). Setting _pack_ to 0 is the same as not setting it at all. Otherwise, the value must be a positive power of two. The effect is equivalent to #pragma pack(N) in C, except ctypes may allow larger n than what the compiler accepts. _pack_ must already be defined when _fields_ is assigned, otherwise it will have no effect....",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An optional small integer that allows overriding the alignment of structure fields in the instance. This is only implemented for the MSVC-compatible memory layout (see _layout_). Setting _pack_ to 0 i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892879",
+    "updatedDate": "2026-03-11T23:15:47.892880",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.14",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/Array/_type_": {
+    "id": "ctypes.Array._type_",
+    "name": "_type_",
+    "type": "attribute",
+    "parent": "Array",
+    "signatures": [
+      "_type_"
+    ],
+    "signature_hash": "1a9737793115dc4b12fc443f92d4c686c8122c828df3be88b53805e8af4bc42e",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.Array._type_",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Specifies the type of each element in the array.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Specifies the type of each element in the array.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.893125",
+    "updatedDate": "2026-03-11T23:15:47.893126",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/_Pointer/_type_": {
+    "id": "ctypes._Pointer._type_",
+    "name": "_type_",
+    "type": "attribute",
+    "parent": "_Pointer",
+    "signatures": [
+      "_type_"
+    ],
+    "signature_hash": "1a9737793115dc4b12fc443f92d4c686c8122c828df3be88b53805e8af4bc42e",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._Pointer._type_",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Specifies the type pointed to.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Specifies the type pointed to.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.893177",
+    "updatedDate": "2026-03-11T23:15:47.893178",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/_CData": {
+    "id": "ctypes._CData",
+    "name": "_CData",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ctypes._CData"
+    ],
+    "signature_hash": "ad789ffceed8e901253853934eccbac9137d3a334f0bddb82764a812a88cc71f",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CData",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This non-public class is the common base class of all ctypes data types. Among other things, all ctypes type instances contain a memory block that hold C compatible data; the address of the memory block is returned by the addressof() helper function. Another instance variable is exposed as _objects; this contains other Python objects that need to be kept alive in case the memory block contains pointers. Common methods of ctypes data types, these are all class methods (to be exact, they are me...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This non-public class is the common base class of all ctypes data types. Among other things, all ctypes type instances contain a memory block that hold C compatible data; the address of the memory blo...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892050",
+    "updatedDate": "2026-03-11T23:15:47.892051",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "__pointer_type__",
+      "_b_base_",
+      "_b_needsfree_",
+      "_objects"
+    ],
+    "methods": [
+      "from_address",
+      "from_buffer",
+      "from_buffer_copy",
+      "from_param",
+      "in_dll"
+    ]
+  },
+  "ctypes/_CFuncPtr": {
+    "id": "ctypes._CFuncPtr",
+    "name": "_CFuncPtr",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ctypes._CFuncPtr"
+    ],
+    "signature_hash": "6dd0770e8b59d8f3674bc126af583c5dffd9114cf2fce107d20354fa6cb503db",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CFuncPtr",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Base class for C callable foreign functions. Instances of foreign functions are also C compatible data types; they represent C function pointers. This behavior can be customized by assigning to special attributes of the foreign function object. restype¶ Assign a ctypes type to specify the result type of the foreign function. Use None for void, a function not returning anything. It is possible to assign a callable Python object that is not a ctypes type, in this case the function is assumed to...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Base class for C callable foreign functions. Instances of foreign functions are also C compatible data types; they represent C function pointers. This behavior can be customized by assigning to specia...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891401",
+    "updatedDate": "2026-03-11T23:15:47.891402",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "argtypes",
+      "errcheck",
+      "restype"
+    ]
+  },
+  "ctypes/_Pointer": {
+    "id": "ctypes._Pointer",
+    "name": "_Pointer",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ctypes._Pointer"
+    ],
+    "signature_hash": "3b1a9c1743a20afa4a66bb145e9fdcfb8aa9ed539c88ffbce25fec1ee1e214f0",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._Pointer",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Private, abstract base class for pointers. Concrete pointer types are created by calling POINTER() with the type that will be pointed to; this is done automatically by pointer(). If a pointer points to an array, its elements can be read and written using standard subscript and slice accesses. Pointer objects have no size, so len() will raise TypeError. Negative subscripts will read from the memory before the pointer (as in C), and out-of-range subscripts will probably crash with an access vio...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Private, abstract base class for pointers. Concrete pointer types are created by calling POINTER() with the type that will be pointed to; this is done automatically by pointer(). If a pointer points t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.893162",
+    "updatedDate": "2026-03-11T23:15:47.893163",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "_type_",
+      "contents"
+    ]
+  },
+  "ctypes/_SimpleCData": {
+    "id": "ctypes._SimpleCData",
+    "name": "_SimpleCData",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ctypes._SimpleCData"
+    ],
+    "signature_hash": "7ddb4dbdc89210e966fad745cce01096fbc61760fd97e0b03ecc5c491cf697ef",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._SimpleCData",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This non-public class is the base class of all fundamental ctypes data types. It is mentioned here because it contains the common attributes of the fundamental ctypes data types. _SimpleCData is a subclass of _CData, so it inherits their methods and attributes. ctypes data types that are not and do not contain pointers can now be pickled. Instances have a single attribute: value¶ This attribute contains the actual value of the instance. For integer and pointer types, it is an integer, for cha...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This non-public class is the base class of all fundamental ctypes data types. It is mentioned here because it contains the common attributes of the fundamental ctypes data types. _SimpleCData is a sub...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892207",
+    "updatedDate": "2026-03-11T23:15:47.892208",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "value"
+    ]
+  }
+}

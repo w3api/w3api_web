@@ -4,8 +4,10 @@
     "name": "RowIdLifetime",
     "type": "enum",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "enum RowIdLifetime"
+    ],
+    "signature_hash": "48f195d4797b624d225e53f07161777928393b9b45598d198bc499da7093f700",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/RowIdLifetime.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +22,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.270189",
-    "updatedDate": "2026-03-08T21:40:21.270190",
+    "createdDate": "2026-03-11T23:15:40.642043",
+    "updatedDate": "2026-03-11T23:15:40.642044",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -30,10 +32,459 @@
       "difficulty": null,
       "popularity_score": 0
     },
+    "enum_constants": [
+      "ROWID_UNSUPPORTED",
+      "ROWID_VALID_FOREVER",
+      "ROWID_VALID_OTHER",
+      "ROWID_VALID_SESSION",
+      "ROWID_VALID_TRANSACTION"
+    ],
     "methods": [
       "valueOf",
       "values"
     ]
+  },
+  "java.sql/JDBCType/REAL": {
+    "id": "java.sql.JDBCType.REAL",
+    "name": "REAL",
+    "type": "enum_constant",
+    "parent": "JDBCType",
+    "signatures": [
+      "REAL"
+    ],
+    "signature_hash": "f147f077a3dd56afd40647d257ee1c6b7f089e071158a3a59fab5bbffb35de56",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/JDBCType.html",
+    "parameters": [],
+    "return_type": "JDBCType",
+    "exceptions": [],
+    "description": "Identifies the generic SQL typeREAL.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Identifies the generic SQL typeREAL.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.633179",
+    "updatedDate": "2026-03-11T23:15:40.633180",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ClientInfoStatus/REASON_UNKNOWN": {
+    "id": "java.sql.ClientInfoStatus.REASON_UNKNOWN",
+    "name": "REASON_UNKNOWN",
+    "type": "enum_constant",
+    "parent": "ClientInfoStatus",
+    "signatures": [
+      "REASON_UNKNOWN"
+    ],
+    "signature_hash": "bae6cc96b355443ed0e419bca230acf67932f7c090d146f5097c7ce1ecc47b82",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ClientInfoStatus.html",
+    "parameters": [],
+    "return_type": "ClientInfoStatus",
+    "exceptions": [],
+    "description": "The client info property could not be set for some unknown reason",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The client info property could not be set for some unknown reason",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.623478",
+    "updatedDate": "2026-03-11T23:15:40.623479",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ClientInfoStatus/REASON_UNKNOWN_PROPERTY": {
+    "id": "java.sql.ClientInfoStatus.REASON_UNKNOWN_PROPERTY",
+    "name": "REASON_UNKNOWN_PROPERTY",
+    "type": "enum_constant",
+    "parent": "ClientInfoStatus",
+    "signatures": [
+      "REASON_UNKNOWN_PROPERTY"
+    ],
+    "signature_hash": "cae2659c870eae5b85fc67a30b7bcb91f5f4098736c79e6ce449f9a0400e5a24",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ClientInfoStatus.html",
+    "parameters": [],
+    "return_type": "ClientInfoStatus",
+    "exceptions": [],
+    "description": "The client info property name specified was not a recognized property\nname.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The client info property name specified was not a recognized property\nname.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.623492",
+    "updatedDate": "2026-03-11T23:15:40.623493",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ClientInfoStatus/REASON_VALUE_INVALID": {
+    "id": "java.sql.ClientInfoStatus.REASON_VALUE_INVALID",
+    "name": "REASON_VALUE_INVALID",
+    "type": "enum_constant",
+    "parent": "ClientInfoStatus",
+    "signatures": [
+      "REASON_VALUE_INVALID"
+    ],
+    "signature_hash": "d762526fc2e599ec2822bfd3c66d4571c38aeff474398490787cccd020199bc2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ClientInfoStatus.html",
+    "parameters": [],
+    "return_type": "ClientInfoStatus",
+    "exceptions": [],
+    "description": "The value specified for the client info property was not valid.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The value specified for the client info property was not valid.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.623505",
+    "updatedDate": "2026-03-11T23:15:40.623506",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/ClientInfoStatus/REASON_VALUE_TRUNCATED": {
+    "id": "java.sql.ClientInfoStatus.REASON_VALUE_TRUNCATED",
+    "name": "REASON_VALUE_TRUNCATED",
+    "type": "enum_constant",
+    "parent": "ClientInfoStatus",
+    "signatures": [
+      "REASON_VALUE_TRUNCATED"
+    ],
+    "signature_hash": "b0d79256b98de6be7a991d06c42c93338976470e5ca2e9cb53fde590b53c009a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ClientInfoStatus.html",
+    "parameters": [],
+    "return_type": "ClientInfoStatus",
+    "exceptions": [],
+    "description": "The value specified for the client info property was too large.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The value specified for the client info property was too large.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.623520",
+    "updatedDate": "2026-03-11T23:15:40.623521",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/JDBCType/REF": {
+    "id": "java.sql.JDBCType.REF",
+    "name": "REF",
+    "type": "enum_constant",
+    "parent": "JDBCType",
+    "signatures": [
+      "REF"
+    ],
+    "signature_hash": "4943e8f40e898cf65a89387defce6ac48c7f3701870945d3d33757aee614ea2b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/JDBCType.html",
+    "parameters": [],
+    "return_type": "JDBCType",
+    "exceptions": [],
+    "description": "Identifies the generic SQL typeREF.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Identifies the generic SQL typeREF.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.633206",
+    "updatedDate": "2026-03-11T23:15:40.633207",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/JDBCType/REF_CURSOR": {
+    "id": "java.sql.JDBCType.REF_CURSOR",
+    "name": "REF_CURSOR",
+    "type": "enum_constant",
+    "parent": "JDBCType",
+    "signatures": [
+      "REF_CURSOR"
+    ],
+    "signature_hash": "a95efd51dc5261f4c0e8f1691981ec381ba482cd89d28a0f140d6cc10d10e322",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/JDBCType.html",
+    "parameters": [],
+    "return_type": "JDBCType",
+    "exceptions": [],
+    "description": "Identifies the generic SQL typeREF_CURSOR.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Identifies the generic SQL typeREF_CURSOR.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.633234",
+    "updatedDate": "2026-03-11T23:15:40.633234",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/JDBCType/ROWID": {
+    "id": "java.sql.JDBCType.ROWID",
+    "name": "ROWID",
+    "type": "enum_constant",
+    "parent": "JDBCType",
+    "signatures": [
+      "ROWID"
+    ],
+    "signature_hash": "ef2a45f76d9dcab7ce38de20fa41fccc19f95eedc8685c847fcf2b5b84856d97",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/JDBCType.html",
+    "parameters": [],
+    "return_type": "JDBCType",
+    "exceptions": [],
+    "description": "Identifies the SQL typeROWID.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Identifies the SQL typeROWID.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.633261",
+    "updatedDate": "2026-03-11T23:15:40.633262",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/RowIdLifetime/ROWID_UNSUPPORTED": {
+    "id": "java.sql.RowIdLifetime.ROWID_UNSUPPORTED",
+    "name": "ROWID_UNSUPPORTED",
+    "type": "enum_constant",
+    "parent": "RowIdLifetime",
+    "signatures": [
+      "ROWID_UNSUPPORTED"
+    ],
+    "signature_hash": "00ca3a4adf440a4b1e769ee2ef9709f2d2cb605fa526448003874bb533306d5f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/RowIdLifetime.html",
+    "parameters": [],
+    "return_type": "RowIdLifetime",
+    "exceptions": [],
+    "description": "Indicates that this data source does not support the ROWID type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates that this data source does not support the ROWID type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.642156",
+    "updatedDate": "2026-03-11T23:15:40.642157",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/RowIdLifetime/ROWID_VALID_FOREVER": {
+    "id": "java.sql.RowIdLifetime.ROWID_VALID_FOREVER",
+    "name": "ROWID_VALID_FOREVER",
+    "type": "enum_constant",
+    "parent": "RowIdLifetime",
+    "signatures": [
+      "ROWID_VALID_FOREVER"
+    ],
+    "signature_hash": "e329e5c70d9a1996ac68d4a7f8a538e54658eea18c2b2a747462733ee5cb0fb6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/RowIdLifetime.html",
+    "parameters": [],
+    "return_type": "RowIdLifetime",
+    "exceptions": [],
+    "description": "Indicates that the lifetime of a RowId from this data source is, effectively,\nunlimited.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates that the lifetime of a RowId from this data source is, effectively,\nunlimited.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.642191",
+    "updatedDate": "2026-03-11T23:15:40.642192",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/RowIdLifetime/ROWID_VALID_OTHER": {
+    "id": "java.sql.RowIdLifetime.ROWID_VALID_OTHER",
+    "name": "ROWID_VALID_OTHER",
+    "type": "enum_constant",
+    "parent": "RowIdLifetime",
+    "signatures": [
+      "ROWID_VALID_OTHER"
+    ],
+    "signature_hash": "f8b66852530e4e3be7353e5c440fc8263d94b4f93f2dab669a9efbdb420a1043",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/RowIdLifetime.html",
+    "parameters": [],
+    "return_type": "RowIdLifetime",
+    "exceptions": [],
+    "description": "Indicates that the lifetime of a RowId from this data source is indeterminate;\nbut not one of ROWID_VALID_TRANSACTION, ROWID_VALID_SESSION, or,\nROWID_VALID_FOREVER.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates that the lifetime of a RowId from this data source is indeterminate;\nbut not one of ROWID_VALID_TRANSACTION, ROWID_VALID_SESSION, or,\nROWID_VALID_FOREVER.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.642227",
+    "updatedDate": "2026-03-11T23:15:40.642228",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/RowIdLifetime/ROWID_VALID_SESSION": {
+    "id": "java.sql.RowIdLifetime.ROWID_VALID_SESSION",
+    "name": "ROWID_VALID_SESSION",
+    "type": "enum_constant",
+    "parent": "RowIdLifetime",
+    "signatures": [
+      "ROWID_VALID_SESSION"
+    ],
+    "signature_hash": "289ab5b374917d7bfd49d1b608bc5fce4e0fe3a7a8605e78e0a12abd9b18b0de",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/RowIdLifetime.html",
+    "parameters": [],
+    "return_type": "RowIdLifetime",
+    "exceptions": [],
+    "description": "Indicates that the lifetime of a RowId from this data source is at least the\ncontaining session.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates that the lifetime of a RowId from this data source is at least the\ncontaining session.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.642262",
+    "updatedDate": "2026-03-11T23:15:40.642262",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.sql/RowIdLifetime/ROWID_VALID_TRANSACTION": {
+    "id": "java.sql.RowIdLifetime.ROWID_VALID_TRANSACTION",
+    "name": "ROWID_VALID_TRANSACTION",
+    "type": "enum_constant",
+    "parent": "RowIdLifetime",
+    "signatures": [
+      "ROWID_VALID_TRANSACTION"
+    ],
+    "signature_hash": "37f4d457fb05e67b87a956b7e2d682322ed68d9fc5abb914ceb47aedb263aba7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/RowIdLifetime.html",
+    "parameters": [],
+    "return_type": "RowIdLifetime",
+    "exceptions": [],
+    "description": "Indicates that the lifetime of a RowId from this data source is at least the\ncontaining transaction.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates that the lifetime of a RowId from this data source is at least the\ncontaining transaction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.642297",
+    "updatedDate": "2026-03-11T23:15:40.642298",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
   },
   "java.sql/Types/REAL": {
     "id": "java.sql.Types.REAL",
@@ -58,8 +509,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.280874",
-    "updatedDate": "2026-03-08T21:40:21.280875",
+    "createdDate": "2026-03-11T23:15:40.652989",
+    "updatedDate": "2026-03-11T23:15:40.652989",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -92,8 +543,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.280916",
-    "updatedDate": "2026-03-08T21:40:21.280917",
+    "createdDate": "2026-03-11T23:15:40.653033",
+    "updatedDate": "2026-03-11T23:15:40.653034",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -126,8 +577,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.280960",
-    "updatedDate": "2026-03-08T21:40:21.280961",
+    "createdDate": "2026-03-11T23:15:40.653078",
+    "updatedDate": "2026-03-11T23:15:40.653079",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -160,8 +611,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.278084",
-    "updatedDate": "2026-03-08T21:40:21.278085",
+    "createdDate": "2026-03-11T23:15:40.650148",
+    "updatedDate": "2026-03-11T23:15:40.650148",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -194,8 +645,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.281002",
-    "updatedDate": "2026-03-08T21:40:21.281003",
+    "createdDate": "2026-03-11T23:15:40.653124",
+    "updatedDate": "2026-03-11T23:15:40.653125",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -228,8 +679,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.261897",
-    "updatedDate": "2026-03-08T21:40:21.261898",
+    "createdDate": "2026-03-11T23:15:40.632247",
+    "updatedDate": "2026-03-11T23:15:40.632248",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -244,8 +695,10 @@
     "name": "Ref",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface Ref"
+    ],
+    "signature_hash": "d121eb0a2e0b17e74323bd76386971162ee53cb2637724ad9c54ea5b7ad0d7e0",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Ref.html",
     "parameters": [],
     "return_type": "",
@@ -260,8 +713,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.264305",
-    "updatedDate": "2026-03-08T21:40:21.264306",
+    "createdDate": "2026-03-11T23:15:40.636009",
+    "updatedDate": "2026-03-11T23:15:40.636010",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -281,8 +734,10 @@
     "name": "ResultSet",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface ResultSet"
+    ],
+    "signature_hash": "8b13a1d826b192134db00ebb93348d981a74cff036d6009787537c3817a8fdd2",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html",
     "parameters": [],
     "return_type": "",
@@ -297,8 +752,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.264438",
-    "updatedDate": "2026-03-08T21:40:21.264439",
+    "createdDate": "2026-03-11T23:15:40.636145",
+    "updatedDate": "2026-03-11T23:15:40.636146",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -421,8 +876,10 @@
     "name": "ResultSetMetaData",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface ResultSetMetaData"
+    ],
+    "signature_hash": "43105d4353ea691b2b3e5d81de4b610ff2c2f3afbbd3f3a784a6c52a8f5491ad",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSetMetaData.html",
     "parameters": [],
     "return_type": "",
@@ -437,8 +894,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.269099",
-    "updatedDate": "2026-03-08T21:40:21.269100",
+    "createdDate": "2026-03-11T23:15:40.640890",
+    "updatedDate": "2026-03-11T23:15:40.640891",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -481,8 +938,10 @@
     "name": "RowId",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface RowId"
+    ],
+    "signature_hash": "8cc1d33e2ba9f87d478861b8b6c1b9de664b7ba4f63f731477aa90db9331ab4b",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/RowId.html",
     "parameters": [],
     "return_type": "",
@@ -497,8 +956,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.270017",
-    "updatedDate": "2026-03-08T21:40:21.270018",
+    "createdDate": "2026-03-11T23:15:40.641865",
+    "updatedDate": "2026-03-11T23:15:40.641866",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -546,8 +1005,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271231",
-    "updatedDate": "2026-03-08T21:40:21.271232",
+    "createdDate": "2026-03-11T23:15:40.643282",
+    "updatedDate": "2026-03-11T23:15:40.643283",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -589,8 +1048,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271267",
-    "updatedDate": "2026-03-08T21:40:21.271268",
+    "createdDate": "2026-03-11T23:15:40.643321",
+    "updatedDate": "2026-03-11T23:15:40.643321",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -632,8 +1091,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271304",
-    "updatedDate": "2026-03-08T21:40:21.271305",
+    "createdDate": "2026-03-11T23:15:40.643359",
+    "updatedDate": "2026-03-11T23:15:40.643360",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -675,8 +1134,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271341",
-    "updatedDate": "2026-03-08T21:40:21.271342",
+    "createdDate": "2026-03-11T23:15:40.643398",
+    "updatedDate": "2026-03-11T23:15:40.643398",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -718,8 +1177,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271377",
-    "updatedDate": "2026-03-08T21:40:21.271378",
+    "createdDate": "2026-03-11T23:15:40.643436",
+    "updatedDate": "2026-03-11T23:15:40.643436",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -761,8 +1220,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271413",
-    "updatedDate": "2026-03-08T21:40:21.271414",
+    "createdDate": "2026-03-11T23:15:40.643474",
+    "updatedDate": "2026-03-11T23:15:40.643475",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -804,8 +1263,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271458",
-    "updatedDate": "2026-03-08T21:40:21.271459",
+    "createdDate": "2026-03-11T23:15:40.643512",
+    "updatedDate": "2026-03-11T23:15:40.643513",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -847,8 +1306,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271495",
-    "updatedDate": "2026-03-08T21:40:21.271496",
+    "createdDate": "2026-03-11T23:15:40.643552",
+    "updatedDate": "2026-03-11T23:15:40.643553",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -890,8 +1349,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271532",
-    "updatedDate": "2026-03-08T21:40:21.271533",
+    "createdDate": "2026-03-11T23:15:40.643591",
+    "updatedDate": "2026-03-11T23:15:40.643592",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -933,8 +1392,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271568",
-    "updatedDate": "2026-03-08T21:40:21.271569",
+    "createdDate": "2026-03-11T23:15:40.643629",
+    "updatedDate": "2026-03-11T23:15:40.643630",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -976,8 +1435,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271605",
-    "updatedDate": "2026-03-08T21:40:21.271606",
+    "createdDate": "2026-03-11T23:15:40.643667",
+    "updatedDate": "2026-03-11T23:15:40.643668",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1019,8 +1478,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271642",
-    "updatedDate": "2026-03-08T21:40:21.271643",
+    "createdDate": "2026-03-11T23:15:40.643706",
+    "updatedDate": "2026-03-11T23:15:40.643707",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1062,8 +1521,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271682",
-    "updatedDate": "2026-03-08T21:40:21.271683",
+    "createdDate": "2026-03-11T23:15:40.643744",
+    "updatedDate": "2026-03-11T23:15:40.643745",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1105,8 +1564,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271720",
-    "updatedDate": "2026-03-08T21:40:21.271721",
+    "createdDate": "2026-03-11T23:15:40.643782",
+    "updatedDate": "2026-03-11T23:15:40.643783",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1148,8 +1607,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271757",
-    "updatedDate": "2026-03-08T21:40:21.271758",
+    "createdDate": "2026-03-11T23:15:40.643822",
+    "updatedDate": "2026-03-11T23:15:40.643823",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1191,8 +1650,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271793",
-    "updatedDate": "2026-03-08T21:40:21.271794",
+    "createdDate": "2026-03-11T23:15:40.643861",
+    "updatedDate": "2026-03-11T23:15:40.643862",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1234,8 +1693,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271830",
-    "updatedDate": "2026-03-08T21:40:21.271831",
+    "createdDate": "2026-03-11T23:15:40.643899",
+    "updatedDate": "2026-03-11T23:15:40.643900",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1289,8 +1748,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271874",
-    "updatedDate": "2026-03-08T21:40:21.271875",
+    "createdDate": "2026-03-11T23:15:40.643951",
+    "updatedDate": "2026-03-11T23:15:40.643952",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1332,8 +1791,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271910",
-    "updatedDate": "2026-03-08T21:40:21.271911",
+    "createdDate": "2026-03-11T23:15:40.643996",
+    "updatedDate": "2026-03-11T23:15:40.643997",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1375,8 +1834,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271947",
-    "updatedDate": "2026-03-08T21:40:21.271948",
+    "createdDate": "2026-03-11T23:15:40.644038",
+    "updatedDate": "2026-03-11T23:15:40.644039",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1439,8 +1898,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.270882",
-    "updatedDate": "2026-03-08T21:40:21.270883",
+    "createdDate": "2026-03-11T23:15:40.642911",
+    "updatedDate": "2026-03-11T23:15:40.642912",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1482,8 +1941,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.272023",
-    "updatedDate": "2026-03-08T21:40:21.272024",
+    "createdDate": "2026-03-11T23:15:40.644117",
+    "updatedDate": "2026-03-11T23:15:40.644118",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1525,8 +1984,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.271983",
-    "updatedDate": "2026-03-08T21:40:21.271984",
+    "createdDate": "2026-03-11T23:15:40.644077",
+    "updatedDate": "2026-03-11T23:15:40.644078",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1568,8 +2027,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.272060",
-    "updatedDate": "2026-03-08T21:40:21.272060",
+    "createdDate": "2026-03-11T23:15:40.644156",
+    "updatedDate": "2026-03-11T23:15:40.644157",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1611,8 +2070,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.272096",
-    "updatedDate": "2026-03-08T21:40:21.272097",
+    "createdDate": "2026-03-11T23:15:40.644195",
+    "updatedDate": "2026-03-11T23:15:40.644196",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1654,8 +2113,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.272137",
-    "updatedDate": "2026-03-08T21:40:21.272138",
+    "createdDate": "2026-03-11T23:15:40.644234",
+    "updatedDate": "2026-03-11T23:15:40.644234",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1697,8 +2156,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.272174",
-    "updatedDate": "2026-03-08T21:40:21.272175",
+    "createdDate": "2026-03-11T23:15:40.644272",
+    "updatedDate": "2026-03-11T23:15:40.644273",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1740,8 +2199,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.266884",
-    "updatedDate": "2026-03-08T21:40:21.266885",
+    "createdDate": "2026-03-11T23:15:40.638621",
+    "updatedDate": "2026-03-11T23:15:40.638622",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -1805,8 +2264,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.261641",
-    "updatedDate": "2026-03-08T21:40:21.261642",
+    "createdDate": "2026-03-11T23:15:40.631958",
+    "updatedDate": "2026-03-11T23:15:40.631959",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -1910,8 +2369,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.252771",
-    "updatedDate": "2026-03-08T21:40:21.252772",
+    "createdDate": "2026-03-11T23:15:40.622665",
+    "updatedDate": "2026-03-11T23:15:40.622666",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -1964,8 +2423,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.266919",
-    "updatedDate": "2026-03-08T21:40:21.266920",
+    "createdDate": "2026-03-11T23:15:40.638657",
+    "updatedDate": "2026-03-11T23:15:40.638658",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -2018,8 +2477,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.254376",
-    "updatedDate": "2026-03-08T21:40:21.254377",
+    "createdDate": "2026-03-11T23:15:40.624637",
+    "updatedDate": "2026-03-11T23:15:40.624638",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2069,8 +2528,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.254397",
-    "updatedDate": "2026-03-08T21:40:21.254398",
+    "createdDate": "2026-03-11T23:15:40.624659",
+    "updatedDate": "2026-03-11T23:15:40.624660",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2112,8 +2571,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.266952",
-    "updatedDate": "2026-03-08T21:40:21.266953",
+    "createdDate": "2026-03-11T23:15:40.638691",
+    "updatedDate": "2026-03-11T23:15:40.638692",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -2155,8 +2614,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.266986",
-    "updatedDate": "2026-03-08T21:40:21.266987",
+    "createdDate": "2026-03-11T23:15:40.638724",
+    "updatedDate": "2026-03-11T23:15:40.638725",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -2198,8 +2657,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.267019",
-    "updatedDate": "2026-03-08T21:40:21.267019",
+    "createdDate": "2026-03-11T23:15:40.638758",
+    "updatedDate": "2026-03-11T23:15:40.638759",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",

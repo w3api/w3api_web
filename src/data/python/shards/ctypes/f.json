@@ -1,0 +1,306 @@
+{
+  "ctypes/find_library": {
+    "id": "ctypes.find_library",
+    "name": "find_library",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ctypes.util.find_library(name)"
+    ],
+    "signature_hash": "01ec759bbbfb613e00e42f41af51cf35574694ee1495b7627b39d627863521df",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Try to find a library and return a pathname. name is the library name without any prefix like lib, suffix like .so, .dylib or version number (this is the form used for the posix linker option -l). If no library can be found, returns None.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Try to find a library and return a pathname. name is the library name without any prefix like lib, suffix like .so, .dylib or version number (this is the form used for the posix linker option -l). If ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891132",
+    "updatedDate": "2026-03-11T23:15:47.891133",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/FormatError": {
+    "id": "ctypes.FormatError",
+    "name": "FormatError",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ctypes.FormatError([code])"
+    ],
+    "signature_hash": "53c3e0196ffab37c6a7e0f3a9d1c3cf8d25dafd0d7e4c02aa95eb3cda332eb3f",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.FormatError",
+    "parameters": [
+      {
+        "name": "code",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a textual description of the error code code. If no error code is specified, the last error code is used by calling the Windows API function GetLastError(). Availability: Windows",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a textual description of the error code code. If no error code is specified, the last error code is used by calling the Windows API function GetLastError(). Availability: Windows",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891798",
+    "updatedDate": "2026-03-11T23:15:47.891799",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/find_msvcrt": {
+    "id": "ctypes.find_msvcrt",
+    "name": "find_msvcrt",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ctypes.util.find_msvcrt()"
+    ],
+    "signature_hash": "8f77daba13e1aa1b166d8f68a60d867469fb75c3ca2678694d91e3d3f1f08e92",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes.util.find_msvcrt",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns the filename of the VC runtime library used by Python, and by the extension modules. If the name of the library cannot be determined, None is returned. If you need to free memory, for example, allocated by an extension module with a call to the free(void *), it is important that you use the function in the same library that allocated the memory. Availability: Windows",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the filename of the VC runtime library used by Python, and by the extension modules. If the name of the library cannot be determined, None is returned. If you need to free memory, for example,...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.891770",
+    "updatedDate": "2026-03-11T23:15:47.891771",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/_CData/from_address": {
+    "id": "ctypes._CData.from_address",
+    "name": "from_address",
+    "type": "method",
+    "parent": "_CData",
+    "signatures": [
+      "from_address(address)"
+    ],
+    "signature_hash": "2e6d53c8064c78537284602880ba04ee0b40a973fccecbd0d7fee3522642734a",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CData.from_address",
+    "parameters": [
+      {
+        "name": "address",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method returns a ctypes type instance using the memory specified by address which must be an integer. This method, and others that indirectly call this method, raises an auditing event ctypes.cdata with argument address.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method returns a ctypes type instance using the memory specified by address which must be an integer. This method, and others that indirectly call this method, raises an auditing event ctypes.cda...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892103",
+    "updatedDate": "2026-03-11T23:15:47.892104",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/_CData/from_buffer": {
+    "id": "ctypes._CData.from_buffer",
+    "name": "from_buffer",
+    "type": "method",
+    "parent": "_CData",
+    "signatures": [
+      "from_buffer(source[, offset])"
+    ],
+    "signature_hash": "4d0b5f2759f4e7b6702aa35d1d8dabfca3fa81a5152fdb22f70a3c77a0e30486",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CData.from_buffer",
+    "parameters": [
+      {
+        "name": "source[, offset",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method returns a ctypes instance that shares the buffer of the source object. The source object must support the writeable buffer interface. The optional offset parameter specifies an offset into the source buffer in bytes; the default is zero. If the source buffer is not large enough a ValueError is raised. Raises an auditing event ctypes.cdata/buffer with arguments pointer, size, offset.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method returns a ctypes instance that shares the buffer of the source object. The source object must support the writeable buffer interface. The optional offset parameter specifies an offset into...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892069",
+    "updatedDate": "2026-03-11T23:15:47.892070",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/_CData/from_buffer_copy": {
+    "id": "ctypes._CData.from_buffer_copy",
+    "name": "from_buffer_copy",
+    "type": "method",
+    "parent": "_CData",
+    "signatures": [
+      "from_buffer_copy(source[, offset])"
+    ],
+    "signature_hash": "936940d9a66441884f96a253a0dbfa9406c3e0ed224798202026fef5c8593203",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CData.from_buffer_copy",
+    "parameters": [
+      {
+        "name": "source[, offset",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method creates a ctypes instance, copying the buffer from the source object buffer which must be readable. The optional offset parameter specifies an offset into the source buffer in bytes; the default is zero. If the source buffer is not large enough a ValueError is raised. Raises an auditing event ctypes.cdata/buffer with arguments pointer, size, offset.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method creates a ctypes instance, copying the buffer from the source object buffer which must be readable. The optional offset parameter specifies an offset into the source buffer in bytes; the d...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892087",
+    "updatedDate": "2026-03-11T23:15:47.892088",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ctypes/_CData/from_param": {
+    "id": "ctypes._CData.from_param",
+    "name": "from_param",
+    "type": "method",
+    "parent": "_CData",
+    "signatures": [
+      "from_param(obj)"
+    ],
+    "signature_hash": "c7dee87203eb3bb9d094a503e34b29bb4e6d675560c821e85ee18a11405dd7e9",
+    "url": "https://docs.python.org/3/library/ctypes.html#module-ctypes#ctypes._CData.from_param",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method adapts obj to a ctypes type. It is called with the actual object used in a foreign function call when the type is present in the foreign function’s argtypes tuple; it must return an object that can be used as a function call parameter. All ctypes data types have a default implementation of this classmethod that normally returns obj if that is an instance of the type. Some types accept other objects as well.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method adapts obj to a ctypes type. It is called with the actual object used in a foreign function call when the type is present in the foreign function’s argtypes tuple; it must return an object...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.892120",
+    "updatedDate": "2026-03-11T23:15:47.892121",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "test.support.threading_helper/BytecodeTestCase": {
+    "id": "test.support.threading_helper.BytecodeTestCase",
+    "name": "BytecodeTestCase",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class test.support.bytecode_helper.BytecodeTestCase(unittest.TestCase)"
+    ],
+    "signature_hash": "cd0cf9674b69a100e55ca59cf37f6af5db15ce3f30b00072aabefb938f141ae8",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.bytecode_helper.BytecodeTestCase",
+    "parameters": [
+      {
+        "name": "unittest.TestCase",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This class has custom assertion methods for inspecting bytecode.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class has custom assertion methods for inspecting bytecode.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.082739",
+    "updatedDate": "2026-03-11T23:15:48.082740",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "assertInBytecode",
+      "assertNotInBytecode",
+      "get_disassembly_as_string"
+    ]
+  },
+  "test.support.threading_helper/bigaddrspacetest": {
+    "id": "test.support.threading_helper.bigaddrspacetest",
+    "name": "bigaddrspacetest",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@test.support.bigaddrspacetest"
+    ],
+    "signature_hash": "f3bbe966b43d94897b6e66a1dcfae550ce94ee9d692f452afdc86f04bbb23269",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.bigaddrspacetest",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Decorator for tests that fill the address space.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decorator for tests that fill the address space.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.081895",
+    "updatedDate": "2026-03-11T23:15:48.081896",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/bigmemtest": {
+    "id": "test.support.threading_helper.bigmemtest",
+    "name": "bigmemtest",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@test.support.bigmemtest(size, memuse, dry_run=True)"
+    ],
+    "signature_hash": "bff74b2b56389e1d882594af12507abd147bffb41a88eebd8a08d190c14ff063",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.bigmemtest",
+    "parameters": [
+      {
+        "name": "size",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "memuse",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dry_run",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Decorator for bigmem tests. size is a requested size for the test (in arbitrary, test-interpreted units.) memuse is the number of bytes per unit for the test, or a good estimate of it. For example, a test that needs two byte buffers, of 4 GiB each, could be decorated with @bigmemtest(size=_4G, memuse=2). The size argument is normally passed to the decorated test method as an extra argument. If dry_run is True, the value passed to the test method may be less than the requested value. If dry_ru...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decorator for bigmem tests. size is a requested size for the test (in arbitrary, test-interpreted units.) memuse is the number of bytes per unit for the test, or a good estimate of it. For example, a ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.081863",
+    "updatedDate": "2026-03-11T23:15:48.081864",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/bind_port": {
+    "id": "test.support.threading_helper.bind_port",
+    "name": "bind_port",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.socket_helper.bind_port(sock, host=HOST)"
+    ],
+    "signature_hash": "1d3ba931507d7ebbc975d5079f474c2e4d4680e9d318fa8a2a99e161f56d0880",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.socket_helper.bind_port",
+    "parameters": [
+      {
+        "name": "sock",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "host",
+        "type": "",
+        "has_default": true,
+        "default_value": "HOST",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Bind the socket to a free port and return the port number. Relies on ephemeral ports in order to ensure we are using an unbound port. This is important as many tests may be running simultaneously, especially in a buildbot environment. This method raises an exception if the sock.family is AF_INET and sock.type is SOCK_STREAM, and the socket has SO_REUSEADDR or SO_REUSEPORT set on it. Tests should never set these socket options for TCP/IP sockets. The only case for setting these options is test...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Bind the socket to a free port and return the port number. Relies on ephemeral ports in order to ensure we are using an unbound port. This is important as many tests may be running simultaneously, esp...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.082426",
+    "updatedDate": "2026-03-11T23:15:48.082427",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/bind_unix_socket": {
+    "id": "test.support.threading_helper.bind_unix_socket",
+    "name": "bind_unix_socket",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.socket_helper.bind_unix_socket(sock, addr)"
+    ],
+    "signature_hash": "101daed65a95eaaca8d80b35ef207de013e9af98ceae8d059e89d11938f9b7e2",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.socket_helper.bind_unix_socket",
+    "parameters": [
+      {
+        "name": "sock",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "addr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Bind a Unix socket, raising unittest.SkipTest if PermissionError is raised.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Bind a Unix socket, raising unittest.SkipTest if PermissionError is raised.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.082446",
+    "updatedDate": "2026-03-11T23:15:48.082446",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/busy_retry": {
+    "id": "test.support.threading_helper.busy_retry",
+    "name": "busy_retry",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.busy_retry(timeout, err_msg=None, /, *, error=True)"
+    ],
+    "signature_hash": "d0a9a70630a5c308b6088de54ff690987751c201c68ba0d3f63ab33935787ecd",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.busy_retry",
+    "parameters": [
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "err_msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "error",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Run the loop body until break stops the loop. After timeout seconds, raise an AssertionError if error is true, or just stop the loop if error is false. Example: for _ in support.busy_retry(support.SHORT_TIMEOUT): if check(): break Example of error=False usage: for _ in support.busy_retry(support.SHORT_TIMEOUT, error=False): if check(): break else: raise RuntimeError('my custom error')",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Run the loop body until break stops the loop. After timeout seconds, raise an AssertionError if error is true, or just stop the loop if error is false. Example: for _ in support.busy_retry(support.SHO...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.081098",
+    "updatedDate": "2026-03-11T23:15:48.081099",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

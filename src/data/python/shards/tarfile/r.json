@@ -1,0 +1,195 @@
+{
+  "tarfile/REGTYPE": {
+    "id": "tarfile.REGTYPE",
+    "name": "REGTYPE",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "tarfile.REGTYPE"
+    ],
+    "signature_hash": "5538089c3c04629a10ccc0cf7dd432f66ce7d51210699032d5fe38e4c3a1ddfb",
+    "url": "https://docs.python.org/3/library/tarfile.html#module-tarfile#tarfile.REGTYPE",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A regular file type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A regular file type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.054593",
+    "updatedDate": "2026-03-11T23:15:48.054594",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tarfile/ReadError": {
+    "id": "tarfile.ReadError",
+    "name": "ReadError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception tarfile.ReadError"
+    ],
+    "signature_hash": "ae73942db67a8dd1732546b1bb06de80a95e0ab6137477693119f8e447235ad8",
+    "url": "https://docs.python.org/3/library/tarfile.html#module-tarfile#tarfile.ReadError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Is raised when a tar archive is opened, that either cannot be handled by the tarfile module or is somehow invalid.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Is raised when a tar archive is opened, that either cannot be handled by the tarfile module or is somehow invalid.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.054349",
+    "updatedDate": "2026-03-11T23:15:48.054350",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tarfile/TarInfo/replace": {
+    "id": "tarfile.TarInfo.replace",
+    "name": "replace",
+    "type": "method",
+    "parent": "TarInfo",
+    "signatures": [
+      "TarInfo.replace(name=..., mtime=..., mode=..., linkname=..., uid=..., gid=..., uname=..., gname=..., deep=True)"
+    ],
+    "signature_hash": "850b0bca4f559039b26649a9a41c2e80884a3ef16668972c77dc4825a3905a65",
+    "url": "https://docs.python.org/3/library/tarfile.html#module-tarfile#tarfile.TarInfo.replace",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": true,
+        "default_value": "...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "mtime",
+        "type": "",
+        "has_default": true,
+        "default_value": "...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "linkname",
+        "type": "",
+        "has_default": true,
+        "default_value": "...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "uid",
+        "type": "",
+        "has_default": true,
+        "default_value": "...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "gid",
+        "type": "",
+        "has_default": true,
+        "default_value": "...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "uname",
+        "type": "",
+        "has_default": true,
+        "default_value": "...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "gname",
+        "type": "",
+        "has_default": true,
+        "default_value": "...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "deep",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Added in version 3.12. Return a new copy of the TarInfo object with the given attributes changed. For example, to return a TarInfo with the group name set to 'staff', use: new_tarinfo = old_tarinfo.replace(gname='staff') By default, a deep copy is made. If deep is false, the copy is shallow, i.e. pax_headers and any custom attributes are shared with the original TarInfo object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Added in version 3.12. Return a new copy of the TarInfo object with the given attributes changed. For example, to return a TarInfo with the group name set to 'staff', use: new_tarinfo = old_tarinfo.re...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.055438",
+    "updatedDate": "2026-03-11T23:15:48.055439",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

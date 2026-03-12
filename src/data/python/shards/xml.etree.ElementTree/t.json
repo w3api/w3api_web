@@ -1,0 +1,386 @@
+{
+  "xml.etree.ElementTree/Element/tag": {
+    "id": "xml.etree.ElementTree.Element.tag",
+    "name": "tag",
+    "type": "attribute",
+    "parent": "Element",
+    "signatures": [
+      "tag"
+    ],
+    "signature_hash": "2a1073a6e67f0e5f09a5957c659503c690efe7272be8313df872556a9a684d8c",
+    "url": "https://docs.python.org/3/library/xml.etree.elementtree.html#module-xml.etree.ElementTree#xml.etree.ElementTree.Element.tag",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A string identifying what kind of data this element represents (the element type, in other words).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A string identifying what kind of data this element represents (the element type, in other words).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.134642",
+    "updatedDate": "2026-03-11T23:15:48.134642",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xml.etree.ElementTree/Element/text": {
+    "id": "xml.etree.ElementTree.Element.text",
+    "name": "text",
+    "type": "attribute",
+    "parent": "Element",
+    "signatures": [
+      "text"
+    ],
+    "signature_hash": "982d9e3eb996f559e633f4d194def3761d909f5a3b647d1a851fead67c32c9d1",
+    "url": "https://docs.python.org/3/library/xml.etree.elementtree.html#module-xml.etree.ElementTree#xml.etree.ElementTree.Element.text",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "These attributes can be used to hold additional data associated with the element. Their values are usually strings but may be any application-specific object. If the element is created from an XML file, the text attribute holds either the text between the element’s start tag and its first child or end tag, or None, and the tail attribute holds either the text between the element’s end tag and the next tag, or None. For the XML data <a><b>1<c>2<d/>3</c></b>4</a> the a element has None for both...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "These attributes can be used to hold additional data associated with the element. Their values are usually strings but may be any application-specific object. If the element is created from an XML fil...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.134656",
+    "updatedDate": "2026-03-11T23:15:48.134657",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xml.etree.ElementTree/TreeBuilder": {
+    "id": "xml.etree.ElementTree.TreeBuilder",
+    "name": "TreeBuilder",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class xml.etree.ElementTree.TreeBuilder(element_factory=None, *, comment_factory=None, pi_factory=None, insert_comments=False, insert_pis=False)"
+    ],
+    "signature_hash": "92e66350228c87f2653b9d92af582debed25cc9f86119830f81a0261452cfc42",
+    "url": "https://docs.python.org/3/library/xml.etree.elementtree.html#module-xml.etree.ElementTree#xml.etree.ElementTree.TreeBuilder",
+    "parameters": [
+      {
+        "name": "element_factory",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "comment_factory",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pi_factory",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "insert_comments",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "insert_pis",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Generic element structure builder. This builder converts a sequence of start, data, end, comment and pi method calls to a well-formed element structure. You can use this class to build an element structure using a custom XML parser, or a parser for some other XML-like format. element_factory, when given, must be a callable accepting two positional arguments: a tag and a dict of attributes. It is expected to return a new element instance. The comment_factory and pi_factory functions, when give...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Generic element structure builder. This builder converts a sequence of start, data, end, comment and pi method calls to a well-formed element structure. You can use this class to build an element stru...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.135159",
+    "updatedDate": "2026-03-11T23:15:48.135159",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "close",
+      "comment",
+      "data",
+      "doctype",
+      "end",
+      "end_ns",
+      "pi",
+      "start",
+      "start_ns"
+    ]
+  },
+  "xml.etree.ElementTree/tostring": {
+    "id": "xml.etree.ElementTree.tostring",
+    "name": "tostring",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "xml.etree.ElementTree.tostring(element, encoding='us-ascii', method='xml', *, xml_declaration=None, default_namespace=None, short_empty_elements=True)"
+    ],
+    "signature_hash": "4e83199a5fb48f08248077f2a5584538e6c0dc0461001a9d049be2ff385b32fc",
+    "url": "https://docs.python.org/3/library/xml.etree.elementtree.html#module-xml.etree.ElementTree#xml.etree.ElementTree.tostring",
+    "parameters": [
+      {
+        "name": "element",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "'us-ascii'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "method",
+        "type": "",
+        "has_default": true,
+        "default_value": "'xml'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "xml_declaration",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "default_namespace",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "short_empty_elements",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Generates a string representation of an XML element, including all subelements. element is an Element instance. encoding [1] is the output encoding (default is US-ASCII). Use encoding=\"unicode\" to generate a Unicode string (otherwise, a bytestring is generated). method is either \"xml\", \"html\" or \"text\" (default is \"xml\"). xml_declaration, default_namespace and short_empty_elements has the same meaning as in ElementTree.write(). Returns an (optionally) encoded string containing the XML data. C...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Generates a string representation of an XML element, including all subelements. element is an Element instance. encoding [1] is the output encoding (default is US-ASCII). Use encoding=\"unicode\" to gen...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.134480",
+    "updatedDate": "2026-03-11T23:15:48.134480",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xml.etree.ElementTree/tostringlist": {
+    "id": "xml.etree.ElementTree.tostringlist",
+    "name": "tostringlist",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "xml.etree.ElementTree.tostringlist(element, encoding='us-ascii', method='xml', *, xml_declaration=None, default_namespace=None, short_empty_elements=True)"
+    ],
+    "signature_hash": "6ad35e30b625050fed6f5ebc11d145e2ae6b6fe2efed8161013852411d1996fa",
+    "url": "https://docs.python.org/3/library/xml.etree.elementtree.html#module-xml.etree.ElementTree#xml.etree.ElementTree.tostringlist",
+    "parameters": [
+      {
+        "name": "element",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "'us-ascii'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "method",
+        "type": "",
+        "has_default": true,
+        "default_value": "'xml'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "xml_declaration",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "default_namespace",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "short_empty_elements",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Generates a string representation of an XML element, including all subelements. element is an Element instance. encoding [1] is the output encoding (default is US-ASCII). Use encoding=\"unicode\" to generate a Unicode string (otherwise, a bytestring is generated). method is either \"xml\", \"html\" or \"text\" (default is \"xml\"). xml_declaration, default_namespace and short_empty_elements has the same meaning as in ElementTree.write(). Returns a list of (optionally) encoded strings containing the XML...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Generates a string representation of an XML element, including all subelements. element is an Element instance. encoding [1] is the output encoding (default is US-ASCII). Use encoding=\"unicode\" to gen...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.134511",
+    "updatedDate": "2026-03-11T23:15:48.134512",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

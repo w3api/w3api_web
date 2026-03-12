@@ -1,9 +1,330 @@
 {
-  "java.net.http/HttpResponse<T>/body": {
-    "id": "java.net.http.HttpResponse<T>.body",
+  "java.net.http/BodyHandlers": {
+    "id": "java.net.http.BodyHandlers",
+    "name": "BodyHandlers",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class BodyHandlers"
+    ],
+    "signature_hash": "e1275797a4fb344282c891184403da5c32dfce57474f71c643cb171e2bacf883",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.565537",
+    "updatedDate": "2026-03-11T23:15:40.565538",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "buffering",
+      "discarding",
+      "fromLineSubscriber",
+      "fromSubscriber",
+      "limiting",
+      "ofByteArray",
+      "ofByteArrayConsumer",
+      "ofFile",
+      "ofFileDownload",
+      "ofInputStream",
+      "ofLines",
+      "ofPublisher",
+      "ofString",
+      "replacing"
+    ]
+  },
+  "java.net.http/BodyPublishers": {
+    "id": "java.net.http.BodyPublishers",
+    "name": "BodyPublishers",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class BodyPublishers"
+    ],
+    "signature_hash": "90f8e263e79a4904cc514ba5272f527b28493d318f6e8cb73e7c60958cd17f24",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.565024",
+    "updatedDate": "2026-03-11T23:15:40.565025",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "concat",
+      "fromPublisher",
+      "noBody",
+      "ofByteArray",
+      "ofByteArrays",
+      "ofFile",
+      "ofInputStream",
+      "ofString"
+    ]
+  },
+  "java.net.http/BodySubscribers": {
+    "id": "java.net.http.BodySubscribers",
+    "name": "BodySubscribers",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class BodySubscribers"
+    ],
+    "signature_hash": "4c38fb706eb8a6c38bc9f027d558215ea0579750dea33a0fdd999aaef8c81d53",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.565919",
+    "updatedDate": "2026-03-11T23:15:40.565919",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "buffering",
+      "discarding",
+      "fromLineSubscriber",
+      "fromSubscriber",
+      "limiting",
+      "mapping",
+      "ofByteArray",
+      "ofByteArrayConsumer",
+      "ofFile",
+      "ofInputStream",
+      "ofLines",
+      "ofPublisher",
+      "ofString",
+      "replacing"
+    ]
+  },
+  "java.net.http/BodyHandler": {
+    "id": "java.net.http.BodyHandler",
+    "name": "BodyHandler",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface BodyHandler<T>"
+    ],
+    "signature_hash": "12a2674b637ce8ca9337731cba9ae4f4fe65261dc4940ad522344b1eea8e80b9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.565503",
+    "updatedDate": "2026-03-11T23:15:40.565504",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "apply"
+    ]
+  },
+  "java.net.http/BodyPublisher": {
+    "id": "java.net.http.BodyPublisher",
+    "name": "BodyPublisher",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface BodyPublisher"
+    ],
+    "signature_hash": "93bed6504bcc045856f72b6e86d7af638eaeb1866b2e5aa25369fd827eb1f1f1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.564997",
+    "updatedDate": "2026-03-11T23:15:40.564997",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "contentLength"
+    ]
+  },
+  "java.net.http/BodySubscriber": {
+    "id": "java.net.http.BodySubscriber",
+    "name": "BodySubscriber",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface BodySubscriber<T>"
+    ],
+    "signature_hash": "6f98bfd89c6846772544655e194dc08f1d0a1256f5bf0c07f030e1b79b44cfb9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscriber.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.565888",
+    "updatedDate": "2026-03-11T23:15:40.565889",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getBody"
+    ]
+  },
+  "java.net.http/Builder": {
+    "id": "java.net.http.Builder",
+    "name": "Builder",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Builder"
+    ],
+    "signature_hash": "f41e8da253010bed4f62b6af4460ed5bca68fd03502169804a80ae44f2220653",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.Builder.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.564409",
+    "updatedDate": "2026-03-11T23:15:40.564410",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "NO_PROXY"
+    ],
+    "methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "POST",
+      "PUT",
+      "authenticator",
+      "build",
+      "buildAsync",
+      "connectTimeout",
+      "cookieHandler",
+      "copy",
+      "executor",
+      "expectContinue",
+      "followRedirects",
+      "header",
+      "headers",
+      "localAddress",
+      "method",
+      "priority",
+      "proxy",
+      "setHeader",
+      "sslContext",
+      "sslParameters",
+      "subprotocols",
+      "timeout",
+      "uri",
+      "version"
+    ]
+  },
+  "java.net.http/HttpResponse/body": {
+    "id": "java.net.http.HttpResponse.body",
     "name": "body",
     "type": "method",
-    "parent": "HttpResponse<T>",
+    "parent": "HttpResponse",
     "signatures": [
       "public T body()"
     ],
@@ -22,8 +343,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.195278",
-    "updatedDate": "2026-03-08T21:40:21.195279",
+    "createdDate": "2026-03-11T23:15:40.564103",
+    "updatedDate": "2026-03-11T23:15:40.564104",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -56,8 +377,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.195124",
-    "updatedDate": "2026-03-08T21:40:21.195125",
+    "createdDate": "2026-03-11T23:15:40.563940",
+    "updatedDate": "2026-03-11T23:15:40.563941",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -67,11 +388,11 @@
       "popularity_score": 0
     }
   },
-  "java.net.http/HttpResponse.BodyHandlers/buffering": {
-    "id": "java.net.http.HttpResponse.BodyHandlers.buffering",
+  "java.net.http/BodyHandlers/buffering": {
+    "id": "java.net.http.BodyHandlers.buffering",
     "name": "buffering",
     "type": "method",
-    "parent": "HttpResponse.BodyHandlers",
+    "parent": "BodyHandlers",
     "signatures": [
       "public static<T> HttpResponse.BodyHandler<T> buffering(HttpResponse.BodyHandler<T> downstreamHandler, int bufferSize)"
     ],
@@ -116,8 +437,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.196799",
-    "updatedDate": "2026-03-08T21:40:21.196800",
+    "createdDate": "2026-03-11T23:15:40.565561",
+    "updatedDate": "2026-03-11T23:15:40.565562",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -127,11 +448,11 @@
       "popularity_score": 0
     }
   },
-  "java.net.http/HttpResponse.BodySubscribers/buffering": {
-    "id": "java.net.http.HttpResponse.BodySubscribers.buffering",
+  "java.net.http/BodySubscribers/buffering": {
+    "id": "java.net.http.BodySubscribers.buffering",
     "name": "buffering",
     "type": "method",
-    "parent": "HttpResponse.BodySubscribers",
+    "parent": "BodySubscribers",
     "signatures": [
       "public static<T> HttpResponse.BodySubscriber<T> buffering(HttpResponse.BodySubscriber<T> downstream, int bufferSize)"
     ],
@@ -176,8 +497,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.197195",
-    "updatedDate": "2026-03-08T21:40:21.197196",
+    "createdDate": "2026-03-11T23:15:40.565943",
+    "updatedDate": "2026-03-11T23:15:40.565944",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -187,11 +508,11 @@
       "popularity_score": 0
     }
   },
-  "java.net.http/HttpClient.Builder/build": {
-    "id": "java.net.http.HttpClient.Builder.build",
+  "java.net.http/Builder/build": {
+    "id": "java.net.http.Builder.build",
     "name": "build",
     "type": "method",
-    "parent": "HttpClient.Builder",
+    "parent": "Builder",
     "signatures": [
       "public HttpClient build()"
     ],
@@ -215,8 +536,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.195615",
-    "updatedDate": "2026-03-08T21:40:21.195616",
+    "createdDate": "2026-03-11T23:15:40.564442",
+    "updatedDate": "2026-03-11T23:15:40.564442",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -226,50 +547,11 @@
       "popularity_score": 0
     }
   },
-  "java.net.http/HttpRequest.Builder/build": {
-    "id": "java.net.http.HttpRequest.Builder.build",
-    "name": "build",
-    "type": "method",
-    "parent": "HttpRequest.Builder",
-    "signatures": [
-      "public HttpRequest build()"
-    ],
-    "signature_hash": "009950bec4649917a5f4caaea05c195e9b6e12d327f1538ffa542548aebede7b",
-    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html",
-    "parameters": [],
-    "return_type": "HttpRequest",
-    "exceptions": [
-      {
-        "name": "IllegalStateException",
-        "package": "java.lang"
-      }
-    ],
-    "description": "Builds and returns anHttpRequest.",
-    "example": "",
-    "articles": [],
-    "info": {
-      "status": "empty",
-      "excerpt": "Builds and returns anHttpRequest.",
-      "keyword": "",
-      "seo_position": 0,
-      "visits": 0
-    },
-    "createdDate": "2026-03-08T21:40:21.196445",
-    "updatedDate": "2026-03-08T21:40:21.196446",
-    "metadata": {
-      "deprecated": false,
-      "deprecated_version": null,
-      "added_version": "11",
-      "tags": [],
-      "difficulty": null,
-      "popularity_score": 0
-    }
-  },
-  "java.net.http/WebSocket.Builder/buildAsync": {
-    "id": "java.net.http.WebSocket.Builder.buildAsync",
+  "java.net.http/Builder/buildAsync": {
+    "id": "java.net.http.Builder.buildAsync",
     "name": "buildAsync",
     "type": "method",
-    "parent": "WebSocket.Builder",
+    "parent": "Builder",
     "signatures": [
       "public CompletableFuture<WebSocket> buildAsync(URI uri, WebSocket.Listener listener)"
     ],
@@ -309,8 +591,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.197780",
-    "updatedDate": "2026-03-08T21:40:21.197780",
+    "createdDate": "2026-03-11T23:15:40.566481",
+    "updatedDate": "2026-03-11T23:15:40.566482",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

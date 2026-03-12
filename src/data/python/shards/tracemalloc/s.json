@@ -1,0 +1,397 @@
+{
+  "tracemalloc/Statistic/size": {
+    "id": "tracemalloc.Statistic.size",
+    "name": "size",
+    "type": "attribute",
+    "parent": "Statistic",
+    "signatures": [
+      "size"
+    ],
+    "signature_hash": "ccdcbe846f3da4eb044fbdf64bf6b57902388ab72fb0c852ba72280f8d478b40",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Statistic.size",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Total size of memory blocks in bytes (int).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Total size of memory blocks in bytes (int).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096763",
+    "updatedDate": "2026-03-11T23:15:48.096764",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tracemalloc/StatisticDiff/size": {
+    "id": "tracemalloc.StatisticDiff.size",
+    "name": "size",
+    "type": "attribute",
+    "parent": "StatisticDiff",
+    "signatures": [
+      "size"
+    ],
+    "signature_hash": "ccdcbe846f3da4eb044fbdf64bf6b57902388ab72fb0c852ba72280f8d478b40",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.StatisticDiff.size",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Total size of memory blocks in bytes in the new snapshot (int): 0 if the memory blocks have been released in the new snapshot.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Total size of memory blocks in bytes in the new snapshot (int): 0 if the memory blocks have been released in the new snapshot.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096836",
+    "updatedDate": "2026-03-11T23:15:48.096837",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tracemalloc/Trace/size": {
+    "id": "tracemalloc.Trace.size",
+    "name": "size",
+    "type": "attribute",
+    "parent": "Trace",
+    "signatures": [
+      "size"
+    ],
+    "signature_hash": "ccdcbe846f3da4eb044fbdf64bf6b57902388ab72fb0c852ba72280f8d478b40",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Trace.size",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Size of the memory block in bytes (int).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Size of the memory block in bytes (int).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096898",
+    "updatedDate": "2026-03-11T23:15:48.096899",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tracemalloc/StatisticDiff/size_diff": {
+    "id": "tracemalloc.StatisticDiff.size_diff",
+    "name": "size_diff",
+    "type": "attribute",
+    "parent": "StatisticDiff",
+    "signatures": [
+      "size_diff"
+    ],
+    "signature_hash": "4d6895d87a0350192fe42d249695db16161ddd37df41a4a37af0f0c34157d310",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.StatisticDiff.size_diff",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Difference of total size of memory blocks in bytes between the old and the new snapshots (int): 0 if the memory blocks have been allocated in the new snapshot.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Difference of total size of memory blocks in bytes between the old and the new snapshots (int): 0 if the memory blocks have been allocated in the new snapshot.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096849",
+    "updatedDate": "2026-03-11T23:15:48.096849",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tracemalloc/Snapshot": {
+    "id": "tracemalloc.Snapshot",
+    "name": "Snapshot",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class tracemalloc.Snapshot"
+    ],
+    "signature_hash": "83036c54d6d5b4e5671a5725e110d00ee200429f1ac7047d1a61e9b280979b77",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Snapshot",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Snapshot of traces of memory blocks allocated by Python. The take_snapshot() function creates a snapshot instance. compare_to(old_snapshot: Snapshot, key_type: str, cumulative: bool = False)¶ Compute the differences with an old snapshot. Get statistics as a sorted list of StatisticDiff instances grouped by key_type. See the Snapshot.statistics() method for key_type and cumulative parameters. The result is sorted from the biggest to the smallest by: absolute value of StatisticDiff.size_diff, S...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Snapshot of traces of memory blocks allocated by Python. The take_snapshot() function creates a snapshot instance. compare_to(old_snapshot: Snapshot, key_type: str, cumulative: bool = False)¶ Compute ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096615",
+    "updatedDate": "2026-03-11T23:15:48.096616",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "traceback_limit",
+      "traces"
+    ],
+    "methods": [
+      "compare_to",
+      "dump",
+      "filter_traces",
+      "load",
+      "statistics"
+    ]
+  },
+  "tracemalloc/Statistic": {
+    "id": "tracemalloc.Statistic",
+    "name": "Statistic",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class tracemalloc.Statistic"
+    ],
+    "signature_hash": "3ee302ec1116e4ae75a854159f345af73020513c0b73736b4651eb3a52eceb59",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Statistic",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Statistic on memory allocations. Snapshot.statistics() returns a list of Statistic instances. See also the StatisticDiff class. count¶ Number of memory blocks (int). size¶ Total size of memory blocks in bytes (int). traceback¶ Traceback where the memory block was allocated, Traceback instance.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Statistic on memory allocations. Snapshot.statistics() returns a list of Statistic instances. See also the StatisticDiff class. count¶ Number of memory blocks (int). size¶ Total size of memory blocks ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096740",
+    "updatedDate": "2026-03-11T23:15:48.096741",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "count",
+      "size",
+      "traceback"
+    ]
+  },
+  "tracemalloc/StatisticDiff": {
+    "id": "tracemalloc.StatisticDiff",
+    "name": "StatisticDiff",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class tracemalloc.StatisticDiff"
+    ],
+    "signature_hash": "e45e0e422e13fde85563a432ac10428f7dd5d135e549bc727a720b451e76f6e1",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.StatisticDiff",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Statistic difference on memory allocations between an old and a new Snapshot instance. Snapshot.compare_to() returns a list of StatisticDiff instances. See also the Statistic class. count¶ Number of memory blocks in the new snapshot (int): 0 if the memory blocks have been released in the new snapshot. count_diff¶ Difference of number of memory blocks between the old and the new snapshots (int): 0 if the memory blocks have been allocated in the new snapshot. size¶ Total size of memory blocks i...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Statistic difference on memory allocations between an old and a new Snapshot instance. Snapshot.compare_to() returns a list of StatisticDiff instances. See also the Statistic class. count¶ Number of m...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096790",
+    "updatedDate": "2026-03-11T23:15:48.096791",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "count",
+      "count_diff",
+      "size",
+      "size_diff",
+      "traceback"
+    ]
+  },
+  "tracemalloc/start": {
+    "id": "tracemalloc.start",
+    "name": "start",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "tracemalloc.start(nframe: int = 1)"
+    ],
+    "signature_hash": "cedcf96271dcaaa59e1ce169b5d1e4ae7637e5b354139a198125184d04dfda6b",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.start",
+    "parameters": [
+      {
+        "name": "nframe: int",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Start tracing Python memory allocations: install hooks on Python memory allocators. Collected tracebacks of traces will be limited to nframe frames. By default, a trace of a memory block only stores the most recent frame: the limit is 1. nframe must be greater or equal to 1. You can still read the original number of total frames that composed the traceback by looking at the Traceback.total_nframe attribute. Storing more than 1 frame is only useful to compute statistics grouped by 'traceback' ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Start tracing Python memory allocations: install hooks on Python memory allocators. Collected tracebacks of traces will be limited to nframe frames. By default, a trace of a memory block only stores t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096407",
+    "updatedDate": "2026-03-11T23:15:48.096407",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tracemalloc/stop": {
+    "id": "tracemalloc.stop",
+    "name": "stop",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "tracemalloc.stop()"
+    ],
+    "signature_hash": "5667ae850284aa0b4dd4f3f64ecaa49e33bda7e4f5b57c6f105e1302efea8dbd",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.stop",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Stop tracing Python memory allocations: uninstall hooks on Python memory allocators. Also clears all previously collected traces of memory blocks allocated by Python. Call take_snapshot() function to take a snapshot of traces before clearing them. See also start(), is_tracing() and clear_traces() functions.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Stop tracing Python memory allocations: uninstall hooks on Python memory allocators. Also clears all previously collected traces of memory blocks allocated by Python. Call take_snapshot() function to ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096418",
+    "updatedDate": "2026-03-11T23:15:48.096419",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tracemalloc/Snapshot/statistics": {
+    "id": "tracemalloc.Snapshot.statistics",
+    "name": "statistics",
+    "type": "method",
+    "parent": "Snapshot",
+    "signatures": [
+      "statistics(key_type: str, cumulative: bool = False)"
+    ],
+    "signature_hash": "d97834cdbef5f7d4312c3f677a2df85666f0e819c81b9237be21f91b656edd2a",
+    "url": "https://docs.python.org/3/library/tracemalloc.html#module-tracemalloc#tracemalloc.Snapshot.statistics",
+    "parameters": [
+      {
+        "name": "key_type: str",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cumulative: bool",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get statistics as a sorted list of Statistic instances grouped by key_type: key_type description 'filename' filename 'lineno' filename and line number 'traceback' traceback If cumulative is True, cumulate size and count of memory blocks of all frames of the traceback of a trace, not only the most recent frame. The cumulative mode can only be used with key_type equal to 'filename' and 'lineno'. The result is sorted from the biggest to the smallest by: Statistic.size, Statistic.count and then b...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get statistics as a sorted list of Statistic instances grouped by key_type: key_type description 'filename' filename 'lineno' filename and line number 'traceback' traceback If cumulative is True, cumu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.096704",
+    "updatedDate": "2026-03-11T23:15:48.096705",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

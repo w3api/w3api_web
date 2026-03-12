@@ -1,9 +1,9 @@
 {
-  "jdk.jshell.execution/JdiDefaultExecutionControl.JdiStarter.TargetDescription/TargetDescription": {
-    "id": "jdk.jshell.execution.JdiDefaultExecutionControl.JdiStarter.TargetDescription.TargetDescription",
+  "jdk.jshell.execution/TargetDescription/TargetDescription": {
+    "id": "jdk.jshell.execution.TargetDescription.TargetDescription",
     "name": "TargetDescription",
     "type": "constructor",
-    "parent": "JdiDefaultExecutionControl.JdiStarter.TargetDescription",
+    "parent": "TargetDescription",
     "signatures": [
       "public TargetDescription(VirtualMachine vm, Process process)"
     ],
@@ -43,8 +43,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.411061",
-    "updatedDate": "2026-03-08T21:40:22.411062",
+    "createdDate": "2026-03-11T23:15:42.240480",
+    "updatedDate": "2026-03-11T23:15:42.240481",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -79,12 +79,10 @@
     "return_type": "protected String",
     "exceptions": [
       {
-        "name": "ExecutionControl.RunException",
-        "package": "jdk.jshell.spi"
+        "name": "ExecutionControl.RunException"
       },
       {
-        "name": "ExecutionControl.InternalException",
-        "package": "jdk.jshell.spi"
+        "name": "ExecutionControl.InternalException"
       }
     ],
     "description": "Converts incoming exceptions in user code into instances of subtypes ofExecutionControl.ExecutionControlExceptionand throws the\nconverted exception.",
@@ -97,8 +95,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.410791",
-    "updatedDate": "2026-03-08T21:40:22.410792",
+    "createdDate": "2026-03-11T23:15:42.239941",
+    "updatedDate": "2026-03-11T23:15:42.239942",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -133,12 +131,10 @@
     "return_type": "protected String",
     "exceptions": [
       {
-        "name": "ExecutionControl.RunException",
-        "package": "jdk.jshell.spi"
+        "name": "ExecutionControl.RunException"
       },
       {
-        "name": "ExecutionControl.InternalException",
-        "package": "jdk.jshell.spi"
+        "name": "ExecutionControl.InternalException"
       }
     ],
     "description": "Converts incoming exceptions in agent code into instances of subtypes ofExecutionControl.ExecutionControlExceptionand throws the\nconverted exception.",
@@ -151,8 +147,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.410807",
-    "updatedDate": "2026-03-08T21:40:22.410807",
+    "createdDate": "2026-03-11T23:15:42.239968",
+    "updatedDate": "2026-03-11T23:15:42.239969",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -162,11 +158,11 @@
       "popularity_score": 0
     }
   },
-  "jdk.jshell.execution/JdiDefaultExecutionControl.JdiStarter.TargetDescription/toString": {
-    "id": "jdk.jshell.execution.JdiDefaultExecutionControl.JdiStarter.TargetDescription.toString",
+  "jdk.jshell.execution/TargetDescription/toString": {
+    "id": "jdk.jshell.execution.TargetDescription.toString",
     "name": "toString",
     "type": "method",
-    "parent": "JdiDefaultExecutionControl.JdiStarter.TargetDescription",
+    "parent": "TargetDescription",
     "signatures": [
       "public final String toString()"
     ],
@@ -185,8 +181,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.411113",
-    "updatedDate": "2026-03-08T21:40:22.411114",
+    "createdDate": "2026-03-11T23:15:42.240538",
+    "updatedDate": "2026-03-11T23:15:42.240539",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -195,5 +191,49 @@
       "difficulty": null,
       "popularity_score": 0
     }
+  },
+  "jdk.jshell.execution/TargetDescription": {
+    "id": "jdk.jshell.execution.TargetDescription",
+    "name": "TargetDescription",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "record TargetDescription"
+    ],
+    "signature_hash": "5f2e609cce36ff1d8a9d697535ad0090d4f7753c913c3be2278359d6a665f9dc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/execution/JdiDefaultExecutionControl.JdiStarter.TargetDescription.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.240455",
+    "updatedDate": "2026-03-11T23:15:42.240457",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "TargetDescription"
+    ],
+    "methods": [
+      "equals",
+      "hashCode",
+      "process",
+      "toString",
+      "vm"
+    ]
   }
 }

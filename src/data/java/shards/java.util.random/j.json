@@ -1,9 +1,52 @@
 {
-  "java.util.random/RandomGenerator.JumpableGenerator/jump": {
-    "id": "java.util.random.RandomGenerator.JumpableGenerator.jump",
+  "java.util.random/JumpableGenerator": {
+    "id": "java.util.random.JumpableGenerator",
+    "name": "JumpableGenerator",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface JumpableGenerator"
+    ],
+    "signature_hash": "9684b56ec53981970180b2110254539c121dd0feea86aa93ef75b45673d6995f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.JumpableGenerator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.883188",
+    "updatedDate": "2026-03-11T23:15:40.883189",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "copy",
+      "copyAndJump",
+      "jump",
+      "jumpDistance",
+      "jumps",
+      "of",
+      "rngs"
+    ]
+  },
+  "java.util.random/JumpableGenerator/jump": {
+    "id": "java.util.random.JumpableGenerator.jump",
     "name": "jump",
     "type": "method",
-    "parent": "RandomGenerator.JumpableGenerator",
+    "parent": "JumpableGenerator",
     "signatures": [
       "public void jump()"
     ],
@@ -22,8 +65,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.487269",
-    "updatedDate": "2026-03-08T21:40:21.487270",
+    "createdDate": "2026-03-11T23:15:40.883232",
+    "updatedDate": "2026-03-11T23:15:40.883233",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -33,11 +76,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.random/RandomGenerator.ArbitrarilyJumpableGenerator/jump": {
-    "id": "java.util.random.RandomGenerator.ArbitrarilyJumpableGenerator.jump",
+  "java.util.random/ArbitrarilyJumpableGenerator/jump": {
+    "id": "java.util.random.ArbitrarilyJumpableGenerator.jump",
     "name": "jump",
     "type": "method",
-    "parent": "RandomGenerator.ArbitrarilyJumpableGenerator",
+    "parent": "ArbitrarilyJumpableGenerator",
     "signatures": [
       "public default void jump()",
       "public void jump(double distance)"
@@ -73,8 +116,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.487503",
-    "updatedDate": "2026-03-08T21:40:21.487504",
+    "createdDate": "2026-03-11T23:15:40.883539",
+    "updatedDate": "2026-03-11T23:15:40.883540",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -84,11 +127,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.random/RandomGenerator.JumpableGenerator/jumpDistance": {
-    "id": "java.util.random.RandomGenerator.JumpableGenerator.jumpDistance",
+  "java.util.random/JumpableGenerator/jumpDistance": {
+    "id": "java.util.random.JumpableGenerator.jumpDistance",
     "name": "jumpDistance",
     "type": "method",
-    "parent": "RandomGenerator.JumpableGenerator",
+    "parent": "JumpableGenerator",
     "signatures": [
       "public double jumpDistance()"
     ],
@@ -107,8 +150,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.487282",
-    "updatedDate": "2026-03-08T21:40:21.487283",
+    "createdDate": "2026-03-11T23:15:40.883246",
+    "updatedDate": "2026-03-11T23:15:40.883247",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -118,11 +161,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.random/RandomGenerator.ArbitrarilyJumpableGenerator/jumpPowerOfTwo": {
-    "id": "java.util.random.RandomGenerator.ArbitrarilyJumpableGenerator.jumpPowerOfTwo",
+  "java.util.random/ArbitrarilyJumpableGenerator/jumpPowerOfTwo": {
+    "id": "java.util.random.ArbitrarilyJumpableGenerator.jumpPowerOfTwo",
     "name": "jumpPowerOfTwo",
     "type": "method",
-    "parent": "RandomGenerator.ArbitrarilyJumpableGenerator",
+    "parent": "ArbitrarilyJumpableGenerator",
     "signatures": [
       "public void jumpPowerOfTwo(int logDistance)"
     ],
@@ -157,8 +200,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.489015",
-    "updatedDate": "2026-03-08T21:40:21.489016",
+    "createdDate": "2026-03-11T23:15:40.883558",
+    "updatedDate": "2026-03-11T23:15:40.883559",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -168,11 +211,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.random/RandomGenerator.JumpableGenerator/jumps": {
-    "id": "java.util.random.RandomGenerator.JumpableGenerator.jumps",
+  "java.util.random/JumpableGenerator/jumps": {
+    "id": "java.util.random.JumpableGenerator.jumps",
     "name": "jumps",
     "type": "method",
-    "parent": "RandomGenerator.JumpableGenerator",
+    "parent": "JumpableGenerator",
     "signatures": [
       "public default Stream<RandomGenerator> jumps()",
       "public default Stream<RandomGenerator> jumps(long streamSize)"
@@ -203,8 +246,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.487301",
-    "updatedDate": "2026-03-08T21:40:21.487302",
+    "createdDate": "2026-03-11T23:15:40.883277",
+    "updatedDate": "2026-03-11T23:15:40.883278",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -214,11 +257,11 @@
       "popularity_score": 0
     }
   },
-  "java.util.random/RandomGenerator.ArbitrarilyJumpableGenerator/jumps": {
-    "id": "java.util.random.RandomGenerator.ArbitrarilyJumpableGenerator.jumps",
+  "java.util.random/ArbitrarilyJumpableGenerator/jumps": {
+    "id": "java.util.random.ArbitrarilyJumpableGenerator.jumps",
     "name": "jumps",
     "type": "method",
-    "parent": "RandomGenerator.ArbitrarilyJumpableGenerator",
+    "parent": "ArbitrarilyJumpableGenerator",
     "signatures": [
       "public default Stream<RandomGenerator.ArbitrarilyJumpableGenerator> jumps(double distance)",
       "public default Stream<RandomGenerator.ArbitrarilyJumpableGenerator> jumps(long streamSize, double distance)"
@@ -264,8 +307,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.489046",
-    "updatedDate": "2026-03-08T21:40:21.489047",
+    "createdDate": "2026-03-11T23:15:40.883588",
+    "updatedDate": "2026-03-11T23:15:40.883589",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -281,15 +324,15 @@
     "id": "java.util.random",
     "description": "Module java.util.random",
     "classes": [
-      "RandomGeneratorFactory<T"
+      "RandomGeneratorFactory"
     ],
     "interfaces": [
+      "ArbitrarilyJumpableGenerator",
+      "JumpableGenerator",
+      "LeapableGenerator",
       "RandomGenerator",
-      "RandomGenerator.ArbitrarilyJumpableGenerator",
-      "RandomGenerator.JumpableGenerator",
-      "RandomGenerator.LeapableGenerator",
-      "RandomGenerator.SplittableGenerator",
-      "RandomGenerator.StreamableGenerator"
+      "SplittableGenerator",
+      "StreamableGenerator"
     ]
   }
 }

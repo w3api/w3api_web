@@ -4,8 +4,10 @@
     "name": "TypeKind",
     "type": "enum",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "enum TypeKind"
+    ],
+    "signature_hash": "a2205e06d49294d37b609002843953e756134cab1c83e7c769c92200e3dda39e",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeKind.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +22,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.551661",
-    "updatedDate": "2026-03-08T21:40:21.551662",
+    "createdDate": "2026-03-11T23:15:40.977404",
+    "updatedDate": "2026-03-11T23:15:40.977405",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -30,19 +32,79 @@
       "difficulty": null,
       "popularity_score": 0
     },
+    "enum_constants": [
+      "ARRAY",
+      "BOOLEAN",
+      "BYTE",
+      "CHAR",
+      "DECLARED",
+      "DOUBLE",
+      "ERROR",
+      "EXECUTABLE",
+      "FLOAT",
+      "INT",
+      "INTERSECTION",
+      "LONG",
+      "MODULE",
+      "NONE",
+      "NULL",
+      "OTHER",
+      "PACKAGE",
+      "SHORT",
+      "TYPEVAR",
+      "UNION",
+      "VOID",
+      "WILDCARD"
+    ],
     "methods": [
       "isPrimitive",
       "valueOf",
       "values"
     ]
   },
+  "javax.lang.model.type/TypeKind/TYPEVAR": {
+    "id": "javax.lang.model.type.TypeKind.TYPEVAR",
+    "name": "TYPEVAR",
+    "type": "enum_constant",
+    "parent": "TypeKind",
+    "signatures": [
+      "TYPEVAR"
+    ],
+    "signature_hash": "c3d401d3feac9f4416c6acd54b3db00898931811110c8347c7e7c73cdf3064c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeKind.html",
+    "parameters": [],
+    "return_type": "TypeKind",
+    "exceptions": [],
+    "description": "A type variable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A type variable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:40.977955",
+    "updatedDate": "2026-03-11T23:15:40.977955",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
   "javax.lang.model.type/TypeMirror": {
     "id": "javax.lang.model.type.TypeMirror",
     "name": "TypeMirror",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface TypeMirror"
+    ],
+    "signature_hash": "c67263652d0629a2ae693e05d298ee27478c1ea672b9d76623ad368e656c9e21",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html",
     "parameters": [],
     "return_type": "",
@@ -57,8 +119,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.551459",
-    "updatedDate": "2026-03-08T21:40:21.551460",
+    "createdDate": "2026-03-11T23:15:40.976923",
+    "updatedDate": "2026-03-11T23:15:40.976924",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -83,8 +145,10 @@
     "name": "TypeVariable",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface TypeVariable"
+    ],
+    "signature_hash": "3f0c128c1b6f8321273133af5456ec936d106b50a86015516c4e2508a0b6a411",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html",
     "parameters": [],
     "return_type": "",
@@ -99,8 +163,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.551713",
-    "updatedDate": "2026-03-08T21:40:21.551713",
+    "createdDate": "2026-03-11T23:15:40.978160",
+    "updatedDate": "2026-03-11T23:15:40.978189",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -115,13 +179,15 @@
       "getUpperBound"
     ]
   },
-  "javax.lang.model.type/TypeVisitor<R,P>": {
-    "id": "javax.lang.model.type.TypeVisitor<R,P>",
-    "name": "TypeVisitor<R,P>",
+  "javax.lang.model.type/TypeVisitor": {
+    "id": "javax.lang.model.type.TypeVisitor",
+    "name": "TypeVisitor",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface TypeVisitor<R,P>"
+    ],
+    "signature_hash": "a7ea766f268ecd1a97d720a1ed3b00feb07624f98895d5989f6cb1e3fb1f8b1f",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
     "parameters": [],
     "return_type": "",
@@ -136,8 +202,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.551759",
-    "updatedDate": "2026-03-08T21:40:21.551760",
+    "createdDate": "2026-03-11T23:15:40.978269",
+    "updatedDate": "2026-03-11T23:15:40.978270",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -185,8 +251,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.551577",
-    "updatedDate": "2026-03-08T21:40:21.551578",
+    "createdDate": "2026-03-11T23:15:40.977184",
+    "updatedDate": "2026-03-11T23:15:40.977192",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

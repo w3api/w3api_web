@@ -1,0 +1,224 @@
+{
+  "statistics/NormalDist/stdev": {
+    "id": "statistics.NormalDist.stdev",
+    "name": "stdev",
+    "type": "attribute",
+    "parent": "NormalDist",
+    "signatures": [
+      "stdev"
+    ],
+    "signature_hash": "721a5737c73cd63b0a4a465d5cb3ce2b72b2e4c82fd309f72ffccafc685a2006",
+    "url": "https://docs.python.org/3/library/statistics.html#module-statistics#statistics.NormalDist.stdev",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A read-only property for the standard deviation of a normal distribution.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A read-only property for the standard deviation of a normal distribution.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.048181",
+    "updatedDate": "2026-03-11T23:15:48.048181",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "statistics/StatisticsError": {
+    "id": "statistics.StatisticsError",
+    "name": "StatisticsError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception statistics.StatisticsError"
+    ],
+    "signature_hash": "3f9bbbbdc847ed25d43584b479623e1360c4866c21ead9062b45e6e8d0e307ca",
+    "url": "https://docs.python.org/3/library/statistics.html#module-statistics#statistics.StatisticsError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Subclass of ValueError for statistics-related exceptions.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Subclass of ValueError for statistics-related exceptions.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.048107",
+    "updatedDate": "2026-03-11T23:15:48.048107",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "statistics/stdev": {
+    "id": "statistics.stdev",
+    "name": "stdev",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "statistics.stdev(data, xbar=None)"
+    ],
+    "signature_hash": "121cb7b1648ab26a3eea5c5c1bced8004daca7e7a55672c82abca757185052f6",
+    "url": "https://docs.python.org/3/library/statistics.html#module-statistics#statistics.stdev",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "xbar",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the sample standard deviation (the square root of the sample variance). See variance() for arguments and other details. >>> stdev([1.5, 2.5, 2.5, 2.75, 3.25, 4.75]) 1.0810874155219827",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the sample standard deviation (the square root of the sample variance). See variance() for arguments and other details. >>> stdev([1.5, 2.5, 2.5, 2.75, 3.25, 4.75]) 1.0810874155219827",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.047998",
+    "updatedDate": "2026-03-11T23:15:48.047998",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "statistics/NormalDist/samples": {
+    "id": "statistics.NormalDist.samples",
+    "name": "samples",
+    "type": "method",
+    "parent": "NormalDist",
+    "signatures": [
+      "samples(n, *, seed=None)"
+    ],
+    "signature_hash": "153b8deaf5c69e0fbf71f18c6201aa7c33fb0c8c03e118776c0c5ef99659b188",
+    "url": "https://docs.python.org/3/library/statistics.html#module-statistics#statistics.NormalDist.samples",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "seed",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Generates n random samples for a given mean and standard deviation. Returns a list of float values. If seed is given, creates a new instance of the underlying random number generator. This is useful for creating reproducible results, even in a multi-threading context. Changed in version 3.13. Switched to a faster algorithm. To reproduce samples from previous versions, use random.seed() and random.gauss().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Generates n random samples for a given mean and standard deviation. Returns a list of float values. If seed is given, creates a new instance of the underlying random number generator. This is useful f...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.048228",
+    "updatedDate": "2026-03-11T23:15:48.048229",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "statistics": {
+    "type": "module",
+    "name": "statistics",
+    "id": "statistics",
+    "description": "Module statistics",
+    "classes": [
+      "NormalDist"
+    ],
+    "exceptions": [
+      "StatisticsError"
+    ],
+    "functions": [
+      "correlation",
+      "covariance",
+      "fmean",
+      "geometric_mean",
+      "harmonic_mean",
+      "kde",
+      "kde_random",
+      "linear_regression",
+      "mean",
+      "median",
+      "median_grouped",
+      "median_high",
+      "median_low",
+      "mode",
+      "multimode",
+      "pstdev",
+      "pvariance",
+      "quantiles",
+      "stdev",
+      "variance"
+    ]
+  }
+}

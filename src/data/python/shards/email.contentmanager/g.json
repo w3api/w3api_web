@@ -1,0 +1,122 @@
+{
+  "email.contentmanager/ContentManager/get_content": {
+    "id": "email.contentmanager.ContentManager.get_content",
+    "name": "get_content",
+    "type": "method",
+    "parent": "ContentManager",
+    "signatures": [
+      "get_content(msg, *args, **kw)"
+    ],
+    "signature_hash": "06ec7a021d82ad0436614100a4a753507e9ceff5910b2fd35c2193a291e3ed58",
+    "url": "https://docs.python.org/3/library/email.contentmanager.html#module-email.contentmanager#email.contentmanager.ContentManager.get_content",
+    "parameters": [
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kw",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Look up a handler function based on the mimetype of msg (see next paragraph), call it, passing through all arguments, and return the result of the call. The expectation is that the handler will extract the payload from msg and return an object that encodes information about the extracted data. To find the handler, look for the following keys in the registry, stopping with the first one found: the string representing the full MIME type (maintype/subtype) the string representing the maintype th...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Look up a handler function based on the mimetype of msg (see next paragraph), call it, passing through all arguments, and return the result of the call. The expectation is that the handler will extrac...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.918216",
+    "updatedDate": "2026-03-11T23:15:47.918217",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.contentmanager/contentmanager/get_content": {
+    "id": "email.contentmanager.contentmanager.get_content",
+    "name": "get_content",
+    "type": "method",
+    "parent": "contentmanager",
+    "signatures": [
+      "email.contentmanager.get_content(msg, errors='replace')"
+    ],
+    "signature_hash": "44df80296af39f69fa4935f66b4791c060bc535173594bd91f75a202b12708b6",
+    "url": "https://docs.python.org/3/library/email.contentmanager.html#module-email.contentmanager#email.contentmanager.get_content",
+    "parameters": [
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "'replace'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the payload of the part as either a string (for text parts), an EmailMessage object (for message/rfc822 parts), or a bytes object (for all other non-multipart types). Raise a KeyError if called on a multipart. If the part is a text part and errors is specified, use it as the error handler when decoding the payload to unicode. The default error handler is replace.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the payload of the part as either a string (for text parts), an EmailMessage object (for message/rfc822 parts), or a bytes object (for all other non-multipart types). Raise a KeyError if called...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.918312",
+    "updatedDate": "2026-03-11T23:15:47.918313",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

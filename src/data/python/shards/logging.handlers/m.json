@@ -1,0 +1,286 @@
+{
+  "logging.handlers/MemoryHandler": {
+    "id": "logging.handlers.MemoryHandler",
+    "name": "MemoryHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None, flushOnClose=True)"
+    ],
+    "signature_hash": "c6f3d5f5ba87a123dc571edeafa46cf5dab45ccb578d4f63ec2e46499e1fea0f",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.MemoryHandler",
+    "parameters": [
+      {
+        "name": "capacity",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "flushLevel",
+        "type": "",
+        "has_default": true,
+        "default_value": "ERROR",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "target",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "flushOnClose",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a new instance of the MemoryHandler class. The instance is initialized with a buffer size of capacity (number of records buffered). If flushLevel is not specified, ERROR is used. If no target is specified, the target will need to be set using setTarget() before this handler does anything useful. If flushOnClose is specified as False, then the buffer is not flushed when the handler is closed. If not specified or specified as True, the previous behaviour of flushing the buffer will occu...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the MemoryHandler class. The instance is initialized with a buffer size of capacity (number of records buffered). If flushLevel is not specified, ERROR is used. If no target ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959869",
+    "updatedDate": "2026-03-11T23:15:47.959870",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "close",
+      "flush",
+      "setTarget",
+      "shouldFlush"
+    ]
+  },
+  "logging.handlers/SocketHandler/makePickle": {
+    "id": "logging.handlers.SocketHandler.makePickle",
+    "name": "makePickle",
+    "type": "method",
+    "parent": "SocketHandler",
+    "signatures": [
+      "makePickle(record)"
+    ],
+    "signature_hash": "953cef6f5921b3be10e7f06c5cdb419f97a23ad95a5799b58a50b5736d209f06",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SocketHandler.makePickle",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Pickles the record’s attribute dictionary in binary format with a length prefix, and returns it ready for transmission across the socket. The details of this operation are equivalent to: data = pickle.dumps(record_attr_dict, 1) datalen = struct.pack('>L', len(data)) return datalen + data Note that pickles aren’t completely secure. If you are concerned about security, you may want to override this method to implement a more secure mechanism. For example, you can sign pickles using HMAC and the...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pickles the record’s attribute dictionary in binary format with a length prefix, and returns it ready for transmission across the socket. The details of this operation are equivalent to: data = pickle...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959379",
+    "updatedDate": "2026-03-11T23:15:47.959380",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/SocketHandler/makeSocket": {
+    "id": "logging.handlers.SocketHandler.makeSocket",
+    "name": "makeSocket",
+    "type": "method",
+    "parent": "SocketHandler",
+    "signatures": [
+      "makeSocket()"
+    ],
+    "signature_hash": "86f44a594e9813dc7dcbd61ea3fb143339159849e110a7468646fe182972cd3b",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SocketHandler.makeSocket",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This is a factory method which allows subclasses to define the precise type of socket they want. The default implementation creates a TCP socket (socket.SOCK_STREAM).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This is a factory method which allows subclasses to define the precise type of socket they want. The default implementation creates a TCP socket (socket.SOCK_STREAM).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959361",
+    "updatedDate": "2026-03-11T23:15:47.959362",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/DatagramHandler/makeSocket": {
+    "id": "logging.handlers.DatagramHandler.makeSocket",
+    "name": "makeSocket",
+    "type": "method",
+    "parent": "DatagramHandler",
+    "signatures": [
+      "makeSocket()"
+    ],
+    "signature_hash": "86f44a594e9813dc7dcbd61ea3fb143339159849e110a7468646fe182972cd3b",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.DatagramHandler.makeSocket",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The factory method of SocketHandler is here overridden to create a UDP socket (socket.SOCK_DGRAM).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The factory method of SocketHandler is here overridden to create a UDP socket (socket.SOCK_DGRAM).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959461",
+    "updatedDate": "2026-03-11T23:15:47.959463",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/HTTPHandler/mapLogRecord": {
+    "id": "logging.handlers.HTTPHandler.mapLogRecord",
+    "name": "mapLogRecord",
+    "type": "method",
+    "parent": "HTTPHandler",
+    "signatures": [
+      "mapLogRecord(record)"
+    ],
+    "signature_hash": "2cc808fc1a338ed781ee2473500f3d52bec658c5790ec538d551fd47f2da8866",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.HTTPHandler.mapLogRecord",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Provides a dictionary, based on record, which is to be URL-encoded and sent to the web server. The default implementation just returns record.__dict__. This method can be overridden if e.g. only a subset of LogRecord is to be sent to the web server, or if more specific customization of what’s sent to the server is required.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Provides a dictionary, based on record, which is to be URL-encoded and sent to the web server. The default implementation just returns record.__dict__. This method can be overridden if e.g. only a sub...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959988",
+    "updatedDate": "2026-03-11T23:15:47.959989",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/SysLogHandler/mapPriority": {
+    "id": "logging.handlers.SysLogHandler.mapPriority",
+    "name": "mapPriority",
+    "type": "method",
+    "parent": "SysLogHandler",
+    "signatures": [
+      "mapPriority(levelname)"
+    ],
+    "signature_hash": "c5d2133edb3cfeb969710c2b4efbf6a4cfd13bcf4806d2b49987c0ed7d8141bb",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.SysLogHandler.mapPriority",
+    "parameters": [
+      {
+        "name": "levelname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Maps a logging level name to a syslog priority name. You may need to override this if you are using custom levels, or if the default algorithm is not suitable for your needs. The default algorithm maps DEBUG, INFO, WARNING, ERROR and CRITICAL to the equivalent syslog names, and all other level names to ‘warning’.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Maps a logging level name to a syslog priority name. You may need to override this if you are using custom levels, or if the default algorithm is not suitable for your needs. The default algorithm map...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959594",
+    "updatedDate": "2026-03-11T23:15:47.959595",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

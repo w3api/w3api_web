@@ -1,0 +1,167 @@
+{
+  "logging.handlers/StreamHandler/terminator": {
+    "id": "logging.handlers.StreamHandler.terminator",
+    "name": "terminator",
+    "type": "attribute",
+    "parent": "StreamHandler",
+    "signatures": [
+      "terminator"
+    ],
+    "signature_hash": "aa802f654e3ae7aaa1b73f8724056a05e2691accea8dd90057916080f84d7e93",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.StreamHandler.terminator",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "String used as the terminator when writing a formatted record to a stream. Default value is '\\n'. If you don’t want a newline termination, you can set the handler instance’s terminator attribute to the empty string. In earlier versions, the terminator was hardcoded as '\\n'. Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "String used as the terminator when writing a formatted record to a stream. Default value is '\\n'. If you don’t want a newline termination, you can set the handler instance’s terminator attribute to th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958801",
+    "updatedDate": "2026-03-11T23:15:47.958802",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/TimedRotatingFileHandler": {
+    "id": "logging.handlers.TimedRotatingFileHandler",
+    "name": "TimedRotatingFileHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.handlers.TimedRotatingFileHandler(filename, when='h', interval=1, backupCount=0, encoding=None, delay=False, utc=False, atTime=None, errors=None)"
+    ],
+    "signature_hash": "1ec6dbf37acde2bb399b9b0fcd68e1f37b3bea127a8a7b9cf338aa41ab8d2594",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.TimedRotatingFileHandler",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "when",
+        "type": "",
+        "has_default": true,
+        "default_value": "'h'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "interval",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "backupCount",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delay",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "utc",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "atTime",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a new instance of the TimedRotatingFileHandler class. The specified file is opened and used as the stream for logging. On rotating it also sets the filename suffix. Rotating happens based on the product of when and interval. You can use the when to specify the type of interval. The list of possible values is below. Note that they are not case sensitive. Value Type of interval If/how atTime is used 'S' Seconds Ignored 'M' Minutes Ignored 'H' Hours Ignored 'D' Days Ignored 'W0'-'W6' Wee...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the TimedRotatingFileHandler class. The specified file is opened and used as the stream for logging. On rotating it also sets the filename suffix. Rotating happens based on t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.959215",
+    "updatedDate": "2026-03-11T23:15:47.959216",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "doRollover",
+      "emit",
+      "getFilesToDelete",
+      "shouldRollover"
+    ]
+  }
+}

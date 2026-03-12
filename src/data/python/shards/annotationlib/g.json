@@ -1,0 +1,142 @@
+{
+  "annotationlib/get_annotate_from_class_namespace": {
+    "id": "annotationlib.get_annotate_from_class_namespace",
+    "name": "get_annotate_from_class_namespace",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "annotationlib.get_annotate_from_class_namespace(namespace)"
+    ],
+    "signature_hash": "f739ae86fc0f10d98165c2919a113a81f05bcba3046c4e40d8af8aa5569716a7",
+    "url": "https://docs.python.org/3/library/annotationlib.html#module-annotationlib#annotationlib.get_annotate_from_class_namespace",
+    "parameters": [
+      {
+        "name": "namespace",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Retrieve the annotate function from a class namespace dictionary namespace. Return None if the namespace does not contain an annotate function. This is primarily useful before the class has been fully created (e.g., in a metaclass); after the class exists, the annotate function can be retrieved with cls.__annotate__. See below for an example using this function in a metaclass. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieve the annotate function from a class namespace dictionary namespace. Return None if the namespace does not contain an annotate function. This is primarily useful before the class has been fully...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.876814",
+    "updatedDate": "2026-03-11T23:15:47.876815",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "annotationlib/get_annotations": {
+    "id": "annotationlib.get_annotations",
+    "name": "get_annotations",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "annotationlib.get_annotations(obj, *, globals=None, locals=None, eval_str=False, format=Format.VALUE)"
+    ],
+    "signature_hash": "a14ef03be2829e81512f70abeb92b21ee7997879f79f4df7d40457f3ec8a7718",
+    "url": "https://docs.python.org/3/library/annotationlib.html#module-annotationlib#annotationlib.get_annotations",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "globals",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "locals",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "eval_str",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "format",
+        "type": "",
+        "has_default": true,
+        "default_value": "Format.VALUE",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compute the annotations dict for an object. obj may be a callable, class, module, or other object with __annotate__ or __annotations__ attributes. Passing any other object raises TypeError. The format parameter controls the format in which annotations are returned, and must be a member of the Format enum or its integer equivalent. The different formats work as follows: VALUE: object.__annotations__ is tried first; if that does not exist, the object.__annotate__ function is called if it exists...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compute the annotations dict for an object. obj may be a callable, class, module, or other object with __annotate__ or __annotations__ attributes. Passing any other object raises TypeError. The format...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.876841",
+    "updatedDate": "2026-03-11T23:15:47.876842",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

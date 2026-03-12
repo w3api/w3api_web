@@ -1,0 +1,142 @@
+{
+  "fileinput/hook_compressed": {
+    "id": "fileinput.hook_compressed",
+    "name": "hook_compressed",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "fileinput.hook_compressed(filename, mode, *, encoding=None, errors=None)"
+    ],
+    "signature_hash": "e7b3b99ef24c2e0e98c67fae4baf5e8afe244c2d9e1e878d66047a812eecc174",
+    "url": "https://docs.python.org/3/library/fileinput.html#module-fileinput#fileinput.hook_compressed",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Transparently opens files compressed with gzip and bzip2 (recognized by the extensions '.gz' and '.bz2') using the gzip and bz2 modules. If the filename extension is not '.gz' or '.bz2', the file is opened normally (ie, using open() without any decompression). The encoding and errors values are passed to io.TextIOWrapper for compressed files and open for normal files. Usage example: fi = fileinput.FileInput(openhook=fileinput.hook_compressed, encoding=\"utf-8\") Changed in version 3.10: The key...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Transparently opens files compressed with gzip and bzip2 (recognized by the extensions '.gz' and '.bz2') using the gzip and bz2 modules. If the filename extension is not '.gz' or '.bz2', the file is o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.932781",
+    "updatedDate": "2026-03-11T23:15:47.932782",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "fileinput/hook_encoded": {
+    "id": "fileinput.hook_encoded",
+    "name": "hook_encoded",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "fileinput.hook_encoded(encoding, errors=None)"
+    ],
+    "signature_hash": "9e294fc859824e0d1597001b8d4df665f6048396b3f872529e1c283d44f91969",
+    "url": "https://docs.python.org/3/library/fileinput.html#module-fileinput#fileinput.hook_encoded",
+    "parameters": [
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a hook which opens each file with open(), using the given encoding and errors to read the file. Usage example: fi = fileinput.FileInput(openhook=fileinput.hook_encoded(\"utf-8\", \"surrogateescape\")) Changed in version 3.6: Added the optional errors parameter. Deprecated since version 3.10: This function is deprecated since fileinput.input() and FileInput now have encoding and errors parameters.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a hook which opens each file with open(), using the given encoding and errors to read the file. Usage example: fi = fileinput.FileInput(openhook=fileinput.hook_encoded(\"utf-8\", \"surrogateescap...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.932799",
+    "updatedDate": "2026-03-11T23:15:47.932800",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.10",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

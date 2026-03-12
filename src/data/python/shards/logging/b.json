@@ -1,0 +1,97 @@
+{
+  "logging/BufferingFormatter": {
+    "id": "logging.BufferingFormatter",
+    "name": "BufferingFormatter",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.BufferingFormatter(linefmt=None)"
+    ],
+    "signature_hash": "238e002db556c13ee8d12babcbc4d43b4cef093049afd64ab2ae549c4028fedd",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.BufferingFormatter",
+    "parameters": [
+      {
+        "name": "linefmt",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A base formatter class suitable for subclassing when you want to format a number of records. You can pass a Formatter instance which you want to use to format each line (that corresponds to a single record). If not specified, the default formatter (which just outputs the event message) is used as the line formatter. formatHeader(records)¶ Return a header for a list of records. The base implementation just returns the empty string. You will need to override this method if you want specific beh...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A base formatter class suitable for subclassing when you want to format a number of records. You can pass a Formatter instance which you want to use to format each line (that corresponds to a single r...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957909",
+    "updatedDate": "2026-03-11T23:15:47.957910",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "format",
+      "formatFooter",
+      "formatHeader"
+    ]
+  },
+  "logging/basicConfig": {
+    "id": "logging.basicConfig",
+    "name": "basicConfig",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "logging.basicConfig(**kwargs)"
+    ],
+    "signature_hash": "c7c65d307f62eb5d7fa0edfd5923a7fe30486cb386056b15d0adc3ef51c0630f",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.basicConfig",
+    "parameters": [
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Does basic configuration for the logging system by creating a StreamHandler with a default Formatter and adding it to the root logger. The functions debug(), info(), warning(), error() and critical() will call basicConfig() automatically if no handlers are defined for the root logger. This function does nothing if the root logger already has handlers configured, unless the keyword argument force is set to True. Note This function should be called from the main thread before other threads are ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Does basic configuration for the logging system by creating a StreamHandler with a default Formatter and adding it to the root logger. The functions debug(), info(), warning(), error() and critical() ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958514",
+    "updatedDate": "2026-03-11T23:15:47.958515",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

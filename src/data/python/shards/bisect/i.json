@@ -1,0 +1,192 @@
+{
+  "bisect/insort_left": {
+    "id": "bisect.insort_left",
+    "name": "insort_left",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "bisect.insort_left(a, x, lo=0, hi=len(a), *, key=None)"
+    ],
+    "signature_hash": "82aef4cfb3e8400c6832fb29ea0a8ee94f4dcea6d87bfcf538f0bca436318291",
+    "url": "https://docs.python.org/3/library/bisect.html#module-bisect#bisect.insort_left",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lo",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "hi",
+        "type": "",
+        "has_default": true,
+        "default_value": "len(a)",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "key",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Insert x in a in sorted order. This function first runs bisect_left() to locate an insertion point. Next, it runs the insert() method on a to insert x at the appropriate position to maintain sort order. To support inserting records in a table, the key function (if any) is applied to x for the search step but not for the insertion step. Keep in mind that the O(log n) search is dominated by the slow O(n) insertion step. Changed in version 3.10: Added the key parameter.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Insert x in a in sorted order. This function first runs bisect_left() to locate an insertion point. Next, it runs the insert() method on a to insert x at the appropriate position to maintain sort orde...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881942",
+    "updatedDate": "2026-03-11T23:15:47.881943",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bisect/insort_right": {
+    "id": "bisect.insort_right",
+    "name": "insort_right",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "bisect.insort_right(a, x, lo=0, hi=len(a), *, key=None)"
+    ],
+    "signature_hash": "4316b8453ab28cc960274dec151523becd6e0383079a15af646ac6462ed711b3",
+    "url": "https://docs.python.org/3/library/bisect.html#module-bisect#bisect.insort_right",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lo",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "hi",
+        "type": "",
+        "has_default": true,
+        "default_value": "len(a)",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "key",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Similar to insort_left(), but inserting x in a after any existing entries of x. This function first runs bisect_right() to locate an insertion point. Next, it runs the insert() method on a to insert x at the appropriate position to maintain sort order. To support inserting records in a table, the key function (if any) is applied to x for the search step but not for the insertion step. Keep in mind that the O(log n) search is dominated by the slow O(n) insertion step. Changed in version 3.10: ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to insort_left(), but inserting x in a after any existing entries of x. This function first runs bisect_right() to locate an insertion point. Next, it runs the insert() method on a to insert x...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881964",
+    "updatedDate": "2026-03-11T23:15:47.881965",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

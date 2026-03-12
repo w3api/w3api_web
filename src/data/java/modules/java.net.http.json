@@ -4,6 +4,18 @@
     "shard": "java/shards/java.net.http/j.json"
   },
   {
+    "slug": "java.net.http/BodyHandlers",
+    "shard": "java/shards/java.net.http/b.json"
+  },
+  {
+    "slug": "java.net.http/BodyPublishers",
+    "shard": "java/shards/java.net.http/b.json"
+  },
+  {
+    "slug": "java.net.http/BodySubscribers",
+    "shard": "java/shards/java.net.http/b.json"
+  },
+  {
     "slug": "java.net.http/HttpClient",
     "shard": "java/shards/java.net.http/h.json"
   },
@@ -13,18 +25,6 @@
   },
   {
     "slug": "java.net.http/HttpRequest",
-    "shard": "java/shards/java.net.http/h.json"
-  },
-  {
-    "slug": "java.net.http/HttpRequest.BodyPublishers",
-    "shard": "java/shards/java.net.http/h.json"
-  },
-  {
-    "slug": "java.net.http/HttpResponse.BodyHandlers",
-    "shard": "java/shards/java.net.http/h.json"
-  },
-  {
-    "slug": "java.net.http/HttpResponse.BodySubscribers",
     "shard": "java/shards/java.net.http/h.json"
   },
   {
@@ -48,12 +48,32 @@
     "shard": "java/shards/java.net.http/w.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Redirect",
+    "slug": "java.net.http/Redirect",
+    "shard": "java/shards/java.net.http/r.json"
+  },
+  {
+    "slug": "java.net.http/Version",
+    "shard": "java/shards/java.net.http/v.json"
+  },
+  {
+    "slug": "java.net.http/Redirect/ALWAYS",
+    "shard": "java/shards/java.net.http/a.json"
+  },
+  {
+    "slug": "java.net.http/Version/HTTP_1_1",
     "shard": "java/shards/java.net.http/h.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Version",
+    "slug": "java.net.http/Version/HTTP_2",
     "shard": "java/shards/java.net.http/h.json"
+  },
+  {
+    "slug": "java.net.http/Redirect/NEVER",
+    "shard": "java/shards/java.net.http/n.json"
+  },
+  {
+    "slug": "java.net.http/Redirect/NORMAL",
+    "shard": "java/shards/java.net.http/n.json"
   },
   {
     "slug": "java.net.http/HttpConnectTimeoutException",
@@ -72,71 +92,63 @@
     "shard": "java/shards/java.net.http/n.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/NO_PROXY",
+    "slug": "java.net.http/Builder/NO_PROXY",
     "shard": "java/shards/java.net.http/n.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder",
+    "slug": "java.net.http/BodyHandler",
+    "shard": "java/shards/java.net.http/b.json"
+  },
+  {
+    "slug": "java.net.http/BodyPublisher",
+    "shard": "java/shards/java.net.http/b.json"
+  },
+  {
+    "slug": "java.net.http/BodySubscriber",
+    "shard": "java/shards/java.net.http/b.json"
+  },
+  {
+    "slug": "java.net.http/Builder",
+    "shard": "java/shards/java.net.http/b.json"
+  },
+  {
+    "slug": "java.net.http/HttpResponse",
     "shard": "java/shards/java.net.http/h.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.BodyPublisher",
-    "shard": "java/shards/java.net.http/h.json"
+    "slug": "java.net.http/Listener",
+    "shard": "java/shards/java.net.http/l.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder",
-    "shard": "java/shards/java.net.http/h.json"
+    "slug": "java.net.http/PushPromiseHandler",
+    "shard": "java/shards/java.net.http/p.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandler<T>",
-    "shard": "java/shards/java.net.http/h.json"
-  },
-  {
-    "slug": "java.net.http/HttpResponse.BodySubscriber<T>",
-    "shard": "java/shards/java.net.http/h.json"
-  },
-  {
-    "slug": "java.net.http/HttpResponse.PushPromiseHandler<T>",
-    "shard": "java/shards/java.net.http/h.json"
-  },
-  {
-    "slug": "java.net.http/HttpResponse.ResponseInfo",
-    "shard": "java/shards/java.net.http/h.json"
-  },
-  {
-    "slug": "java.net.http/HttpResponse<T>",
-    "shard": "java/shards/java.net.http/h.json"
+    "slug": "java.net.http/ResponseInfo",
+    "shard": "java/shards/java.net.http/r.json"
   },
   {
     "slug": "java.net.http/WebSocket",
     "shard": "java/shards/java.net.http/w.json"
   },
   {
-    "slug": "java.net.http/WebSocket.Builder",
-    "shard": "java/shards/java.net.http/w.json"
-  },
-  {
-    "slug": "java.net.http/WebSocket.Listener",
-    "shard": "java/shards/java.net.http/w.json"
-  },
-  {
-    "slug": "java.net.http/HttpRequest.Builder/DELETE",
+    "slug": "java.net.http/Builder/DELETE",
     "shard": "java/shards/java.net.http/d.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/GET",
+    "slug": "java.net.http/Builder/GET",
     "shard": "java/shards/java.net.http/g.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/HEAD",
+    "slug": "java.net.http/Builder/HEAD",
     "shard": "java/shards/java.net.http/h.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/POST",
+    "slug": "java.net.http/Builder/POST",
     "shard": "java/shards/java.net.http/p.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/PUT",
+    "slug": "java.net.http/Builder/PUT",
     "shard": "java/shards/java.net.http/p.json"
   },
   {
@@ -148,11 +160,11 @@
     "shard": "java/shards/java.net.http/a.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandler<T>/apply",
+    "slug": "java.net.http/BodyHandler/apply",
     "shard": "java/shards/java.net.http/a.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.PushPromiseHandler<T>/applyPushPromise",
+    "slug": "java.net.http/PushPromiseHandler/applyPushPromise",
     "shard": "java/shards/java.net.http/a.json"
   },
   {
@@ -160,7 +172,7 @@
     "shard": "java/shards/java.net.http/a.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/authenticator",
+    "slug": "java.net.http/Builder/authenticator",
     "shard": "java/shards/java.net.http/a.json"
   },
   {
@@ -168,7 +180,7 @@
     "shard": "java/shards/java.net.http/a.json"
   },
   {
-    "slug": "java.net.http/HttpResponse<T>/body",
+    "slug": "java.net.http/HttpResponse/body",
     "shard": "java/shards/java.net.http/b.json"
   },
   {
@@ -176,23 +188,19 @@
     "shard": "java/shards/java.net.http/b.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/buffering",
+    "slug": "java.net.http/BodyHandlers/buffering",
     "shard": "java/shards/java.net.http/b.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/buffering",
+    "slug": "java.net.http/BodySubscribers/buffering",
     "shard": "java/shards/java.net.http/b.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/build",
+    "slug": "java.net.http/Builder/build",
     "shard": "java/shards/java.net.http/b.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/build",
-    "shard": "java/shards/java.net.http/b.json"
-  },
-  {
-    "slug": "java.net.http/WebSocket.Builder/buildAsync",
+    "slug": "java.net.http/Builder/buildAsync",
     "shard": "java/shards/java.net.http/b.json"
   },
   {
@@ -200,7 +208,7 @@
     "shard": "java/shards/java.net.http/c.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.BodyPublishers/concat",
+    "slug": "java.net.http/BodyPublishers/concat",
     "shard": "java/shards/java.net.http/c.json"
   },
   {
@@ -208,19 +216,15 @@
     "shard": "java/shards/java.net.http/c.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/connectTimeout",
+    "slug": "java.net.http/Builder/connectTimeout",
     "shard": "java/shards/java.net.http/c.json"
   },
   {
-    "slug": "java.net.http/WebSocket.Builder/connectTimeout",
+    "slug": "java.net.http/HttpResponse/connectionLabel",
     "shard": "java/shards/java.net.http/c.json"
   },
   {
-    "slug": "java.net.http/HttpResponse<T>/connectionLabel",
-    "shard": "java/shards/java.net.http/c.json"
-  },
-  {
-    "slug": "java.net.http/HttpRequest.BodyPublisher/contentLength",
+    "slug": "java.net.http/BodyPublisher/contentLength",
     "shard": "java/shards/java.net.http/c.json"
   },
   {
@@ -228,19 +232,19 @@
     "shard": "java/shards/java.net.http/c.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/cookieHandler",
+    "slug": "java.net.http/Builder/cookieHandler",
     "shard": "java/shards/java.net.http/c.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/copy",
+    "slug": "java.net.http/Builder/copy",
     "shard": "java/shards/java.net.http/c.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/discarding",
+    "slug": "java.net.http/BodyHandlers/discarding",
     "shard": "java/shards/java.net.http/d.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/discarding",
+    "slug": "java.net.http/BodySubscribers/discarding",
     "shard": "java/shards/java.net.http/d.json"
   },
   {
@@ -256,7 +260,7 @@
     "shard": "java/shards/java.net.http/e.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/executor",
+    "slug": "java.net.http/Builder/executor",
     "shard": "java/shards/java.net.http/e.json"
   },
   {
@@ -264,7 +268,7 @@
     "shard": "java/shards/java.net.http/e.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/expectContinue",
+    "slug": "java.net.http/Builder/expectContinue",
     "shard": "java/shards/java.net.http/e.json"
   },
   {
@@ -280,31 +284,31 @@
     "shard": "java/shards/java.net.http/f.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/followRedirects",
+    "slug": "java.net.http/Builder/followRedirects",
     "shard": "java/shards/java.net.http/f.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/fromLineSubscriber",
+    "slug": "java.net.http/BodyHandlers/fromLineSubscriber",
     "shard": "java/shards/java.net.http/f.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/fromLineSubscriber",
+    "slug": "java.net.http/BodySubscribers/fromLineSubscriber",
     "shard": "java/shards/java.net.http/f.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.BodyPublishers/fromPublisher",
+    "slug": "java.net.http/BodyPublishers/fromPublisher",
     "shard": "java/shards/java.net.http/f.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/fromSubscriber",
+    "slug": "java.net.http/BodyHandlers/fromSubscriber",
     "shard": "java/shards/java.net.http/f.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/fromSubscriber",
+    "slug": "java.net.http/BodySubscribers/fromSubscriber",
     "shard": "java/shards/java.net.http/f.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscriber<T>/getBody",
+    "slug": "java.net.http/BodySubscriber/getBody",
     "shard": "java/shards/java.net.http/g.json"
   },
   {
@@ -324,11 +328,7 @@
     "shard": "java/shards/java.net.http/h.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/header",
-    "shard": "java/shards/java.net.http/h.json"
-  },
-  {
-    "slug": "java.net.http/WebSocket.Builder/header",
+    "slug": "java.net.http/Builder/header",
     "shard": "java/shards/java.net.http/h.json"
   },
   {
@@ -336,15 +336,15 @@
     "shard": "java/shards/java.net.http/h.json"
   },
   {
-    "slug": "java.net.http/HttpResponse<T>/headers",
+    "slug": "java.net.http/HttpResponse/headers",
     "shard": "java/shards/java.net.http/h.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/headers",
+    "slug": "java.net.http/Builder/headers",
     "shard": "java/shards/java.net.http/h.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.ResponseInfo/headers",
+    "slug": "java.net.http/ResponseInfo/headers",
     "shard": "java/shards/java.net.http/h.json"
   },
   {
@@ -364,15 +364,15 @@
     "shard": "java/shards/java.net.http/i.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/limiting",
+    "slug": "java.net.http/BodyHandlers/limiting",
     "shard": "java/shards/java.net.http/l.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/limiting",
+    "slug": "java.net.http/BodySubscribers/limiting",
     "shard": "java/shards/java.net.http/l.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/localAddress",
+    "slug": "java.net.http/Builder/localAddress",
     "shard": "java/shards/java.net.http/l.json"
   },
   {
@@ -380,7 +380,7 @@
     "shard": "java/shards/java.net.http/m.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/mapping",
+    "slug": "java.net.http/BodySubscribers/mapping",
     "shard": "java/shards/java.net.http/m.json"
   },
   {
@@ -388,7 +388,7 @@
     "shard": "java/shards/java.net.http/m.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/method",
+    "slug": "java.net.http/Builder/method",
     "shard": "java/shards/java.net.http/m.json"
   },
   {
@@ -408,7 +408,7 @@
     "shard": "java/shards/java.net.http/n.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.BodyPublishers/noBody",
+    "slug": "java.net.http/BodyPublishers/noBody",
     "shard": "java/shards/java.net.http/n.json"
   },
   {
@@ -416,123 +416,123 @@
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.PushPromiseHandler<T>/of",
+    "slug": "java.net.http/PushPromiseHandler/of",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.BodyPublishers/ofByteArray",
+    "slug": "java.net.http/BodyPublishers/ofByteArray",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/ofByteArray",
+    "slug": "java.net.http/BodyHandlers/ofByteArray",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/ofByteArray",
+    "slug": "java.net.http/BodySubscribers/ofByteArray",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/ofByteArrayConsumer",
+    "slug": "java.net.http/BodyHandlers/ofByteArrayConsumer",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/ofByteArrayConsumer",
+    "slug": "java.net.http/BodySubscribers/ofByteArrayConsumer",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.BodyPublishers/ofByteArrays",
+    "slug": "java.net.http/BodyPublishers/ofByteArrays",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.BodyPublishers/ofFile",
+    "slug": "java.net.http/BodyPublishers/ofFile",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/ofFile",
+    "slug": "java.net.http/BodyHandlers/ofFile",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/ofFile",
+    "slug": "java.net.http/BodySubscribers/ofFile",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/ofFileDownload",
+    "slug": "java.net.http/BodyHandlers/ofFileDownload",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.BodyPublishers/ofInputStream",
+    "slug": "java.net.http/BodyPublishers/ofInputStream",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/ofInputStream",
+    "slug": "java.net.http/BodyHandlers/ofInputStream",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/ofInputStream",
+    "slug": "java.net.http/BodySubscribers/ofInputStream",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/ofLines",
+    "slug": "java.net.http/BodyHandlers/ofLines",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/ofLines",
+    "slug": "java.net.http/BodySubscribers/ofLines",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/ofPublisher",
+    "slug": "java.net.http/BodyHandlers/ofPublisher",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/ofPublisher",
+    "slug": "java.net.http/BodySubscribers/ofPublisher",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.BodyPublishers/ofString",
+    "slug": "java.net.http/BodyPublishers/ofString",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/ofString",
+    "slug": "java.net.http/BodyHandlers/ofString",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/ofString",
+    "slug": "java.net.http/BodySubscribers/ofString",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/WebSocket.Listener/onBinary",
+    "slug": "java.net.http/Listener/onBinary",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/WebSocket.Listener/onClose",
+    "slug": "java.net.http/Listener/onClose",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/WebSocket.Listener/onError",
+    "slug": "java.net.http/Listener/onError",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/WebSocket.Listener/onOpen",
+    "slug": "java.net.http/Listener/onOpen",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/WebSocket.Listener/onPing",
+    "slug": "java.net.http/Listener/onPing",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/WebSocket.Listener/onPong",
+    "slug": "java.net.http/Listener/onPong",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/WebSocket.Listener/onText",
+    "slug": "java.net.http/Listener/onText",
     "shard": "java/shards/java.net.http/o.json"
   },
   {
-    "slug": "java.net.http/HttpResponse<T>/previousResponse",
+    "slug": "java.net.http/HttpResponse/previousResponse",
     "shard": "java/shards/java.net.http/p.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/priority",
+    "slug": "java.net.http/Builder/priority",
     "shard": "java/shards/java.net.http/p.json"
   },
   {
@@ -540,19 +540,19 @@
     "shard": "java/shards/java.net.http/p.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/proxy",
+    "slug": "java.net.http/Builder/proxy",
     "shard": "java/shards/java.net.http/p.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodyHandlers/replacing",
+    "slug": "java.net.http/BodyHandlers/replacing",
     "shard": "java/shards/java.net.http/r.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.BodySubscribers/replacing",
+    "slug": "java.net.http/BodySubscribers/replacing",
     "shard": "java/shards/java.net.http/r.json"
   },
   {
-    "slug": "java.net.http/HttpResponse<T>/request",
+    "slug": "java.net.http/HttpResponse/request",
     "shard": "java/shards/java.net.http/r.json"
   },
   {
@@ -588,7 +588,7 @@
     "shard": "java/shards/java.net.http/s.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/setHeader",
+    "slug": "java.net.http/Builder/setHeader",
     "shard": "java/shards/java.net.http/s.json"
   },
   {
@@ -604,7 +604,7 @@
     "shard": "java/shards/java.net.http/s.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/sslContext",
+    "slug": "java.net.http/Builder/sslContext",
     "shard": "java/shards/java.net.http/s.json"
   },
   {
@@ -612,23 +612,23 @@
     "shard": "java/shards/java.net.http/s.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/sslParameters",
+    "slug": "java.net.http/Builder/sslParameters",
     "shard": "java/shards/java.net.http/s.json"
   },
   {
-    "slug": "java.net.http/HttpResponse<T>/sslSession",
+    "slug": "java.net.http/HttpResponse/sslSession",
     "shard": "java/shards/java.net.http/s.json"
   },
   {
-    "slug": "java.net.http/HttpResponse<T>/statusCode",
+    "slug": "java.net.http/HttpResponse/statusCode",
     "shard": "java/shards/java.net.http/s.json"
   },
   {
-    "slug": "java.net.http/HttpResponse.ResponseInfo/statusCode",
+    "slug": "java.net.http/ResponseInfo/statusCode",
     "shard": "java/shards/java.net.http/s.json"
   },
   {
-    "slug": "java.net.http/WebSocket.Builder/subprotocols",
+    "slug": "java.net.http/Builder/subprotocols",
     "shard": "java/shards/java.net.http/s.json"
   },
   {
@@ -636,7 +636,7 @@
     "shard": "java/shards/java.net.http/t.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/timeout",
+    "slug": "java.net.http/Builder/timeout",
     "shard": "java/shards/java.net.http/t.json"
   },
   {
@@ -648,27 +648,27 @@
     "shard": "java/shards/java.net.http/u.json"
   },
   {
-    "slug": "java.net.http/HttpResponse<T>/uri",
+    "slug": "java.net.http/HttpResponse/uri",
     "shard": "java/shards/java.net.http/u.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/uri",
+    "slug": "java.net.http/Builder/uri",
     "shard": "java/shards/java.net.http/u.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Redirect/valueOf",
+    "slug": "java.net.http/Redirect/valueOf",
     "shard": "java/shards/java.net.http/v.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Version/valueOf",
+    "slug": "java.net.http/Version/valueOf",
     "shard": "java/shards/java.net.http/v.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Redirect/values",
+    "slug": "java.net.http/Redirect/values",
     "shard": "java/shards/java.net.http/v.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Version/values",
+    "slug": "java.net.http/Version/values",
     "shard": "java/shards/java.net.http/v.json"
   },
   {
@@ -680,19 +680,15 @@
     "shard": "java/shards/java.net.http/v.json"
   },
   {
-    "slug": "java.net.http/HttpResponse<T>/version",
+    "slug": "java.net.http/HttpResponse/version",
     "shard": "java/shards/java.net.http/v.json"
   },
   {
-    "slug": "java.net.http/HttpClient.Builder/version",
+    "slug": "java.net.http/Builder/version",
     "shard": "java/shards/java.net.http/v.json"
   },
   {
-    "slug": "java.net.http/HttpRequest.Builder/version",
-    "shard": "java/shards/java.net.http/v.json"
-  },
-  {
-    "slug": "java.net.http/HttpResponse.ResponseInfo/version",
+    "slug": "java.net.http/ResponseInfo/version",
     "shard": "java/shards/java.net.http/v.json"
   }
 ]

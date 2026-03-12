@@ -4,8 +4,10 @@
     "name": "GSSManager",
     "type": "class",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "class GSSManager"
+    ],
+    "signature_hash": "5abe05a966e35d7f812fa90e24ee9989f46b5dbc0fd9b077dacf6aef2e3ecd16",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +22,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416013",
-    "updatedDate": "2026-03-08T21:40:22.416014",
+    "createdDate": "2026-03-11T23:15:42.247027",
+    "updatedDate": "2026-03-11T23:15:42.247028",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -100,8 +102,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415650",
-    "updatedDate": "2026-03-08T21:40:22.415651",
+    "createdDate": "2026-03-11T23:15:42.246596",
+    "updatedDate": "2026-03-11T23:15:42.246597",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -134,8 +136,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416025",
-    "updatedDate": "2026-03-08T21:40:22.416027",
+    "createdDate": "2026-03-11T23:15:42.247043",
+    "updatedDate": "2026-03-11T23:15:42.247044",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -150,8 +152,10 @@
     "name": "GSSException",
     "type": "exception",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "class GSSException"
+    ],
+    "signature_hash": "732dbe38b171eb3a3b408fbe6d8ac1108dce8d5f93c823cbc64d058776129cc9",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSException.html",
     "parameters": [],
     "return_type": "",
@@ -166,8 +170,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415626",
-    "updatedDate": "2026-03-08T21:40:22.415627",
+    "createdDate": "2026-03-11T23:15:42.246568",
+    "updatedDate": "2026-03-11T23:15:42.246568",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -236,8 +240,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415920",
-    "updatedDate": "2026-03-08T21:40:22.415920",
+    "createdDate": "2026-03-11T23:15:42.246912",
+    "updatedDate": "2026-03-11T23:15:42.246913",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -247,13 +251,89 @@
       "popularity_score": 0
     }
   },
+  "org.ietf.jgss/GSSContext": {
+    "id": "org.ietf.jgss.GSSContext",
+    "name": "GSSContext",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface GSSContext"
+    ],
+    "signature_hash": "a1f4423a26ecda65bb4f3b82582b43f5fdb7812fbc5f0466e85769cca1368a87",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245573",
+    "updatedDate": "2026-03-11T23:15:42.245574",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "DEFAULT_LIFETIME",
+      "INDEFINITE_LIFETIME"
+    ],
+    "methods": [
+      "acceptSecContext",
+      "dispose",
+      "export",
+      "getAnonymityState",
+      "getConfState",
+      "getCredDelegState",
+      "getDelegCred",
+      "getIntegState",
+      "getLifetime",
+      "getMIC",
+      "getMech",
+      "getMutualAuthState",
+      "getReplayDetState",
+      "getSequenceDetState",
+      "getSrcName",
+      "getTargName",
+      "getWrapSizeLimit",
+      "initSecContext",
+      "isEstablished",
+      "isInitiator",
+      "isProtReady",
+      "isTransferable",
+      "requestAnonymity",
+      "requestConf",
+      "requestCredDeleg",
+      "requestInteg",
+      "requestLifetime",
+      "requestMutualAuth",
+      "requestReplayDet",
+      "requestSequenceDet",
+      "setChannelBinding",
+      "unwrap",
+      "verifyMIC",
+      "wrap"
+    ]
+  },
   "org.ietf.jgss/GSSCredential": {
     "id": "org.ietf.jgss.GSSCredential",
     "name": "GSSCredential",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface GSSCredential"
+    ],
+    "signature_hash": "a16d0a70e0e1a91c8d4c2a96bafabfc35625058c12e419934c91c52fd77ce574",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html",
     "parameters": [],
     "return_type": "",
@@ -268,8 +348,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415409",
-    "updatedDate": "2026-03-08T21:40:22.415410",
+    "createdDate": "2026-03-11T23:15:42.246282",
+    "updatedDate": "2026-03-11T23:15:42.246283",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -303,8 +383,10 @@
     "name": "GSSName",
     "type": "interface",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "interface GSSName"
+    ],
+    "signature_hash": "f04971c414c42fca650c4e08ab89a17961f717283e470da0dc227ac2a6a04a1f",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html",
     "parameters": [],
     "return_type": "",
@@ -319,8 +401,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416264",
-    "updatedDate": "2026-03-08T21:40:22.416265",
+    "createdDate": "2026-03-11T23:15:42.247332",
+    "updatedDate": "2026-03-11T23:15:42.247332",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -371,11 +453,45 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415365",
-    "updatedDate": "2026-03-08T21:40:22.415365",
+    "createdDate": "2026-03-11T23:15:42.245526",
+    "updatedDate": "2026-03-11T23:15:42.245527",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getAnonymityState": {
+    "id": "org.ietf.jgss.GSSContext.getAnonymityState",
+    "name": "getAnonymityState",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public boolean getAnonymityState()"
+    ],
+    "signature_hash": "6c105c3b1572b70cfb7219dfc98a66ef373ba395d6f463aba2117bfe36d6a5ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines if the context initiator is\nanonymously authenticated to the context acceptor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines if the context initiator is\nanonymously authenticated to the context acceptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245651",
+    "updatedDate": "2026-03-11T23:15:42.245652",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
       "added_version": "1.4",
       "tags": [],
       "difficulty": null,
@@ -405,11 +521,79 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415376",
-    "updatedDate": "2026-03-08T21:40:22.415377",
+    "createdDate": "2026-03-11T23:15:42.245538",
+    "updatedDate": "2026-03-11T23:15:42.245539",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getConfState": {
+    "id": "org.ietf.jgss.GSSContext.getConfState",
+    "name": "getConfState",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public boolean getConfState()"
+    ],
+    "signature_hash": "f817951c7a5cbe9fb1587b7a27b31119dbace9775f01f933163496b46a9edd18",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines if data confidentiality is available\nover the context.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines if data confidentiality is available\nover the context.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245664",
+    "updatedDate": "2026-03-11T23:15:42.245664",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getCredDelegState": {
+    "id": "org.ietf.jgss.GSSContext.getCredDelegState",
+    "name": "getCredDelegState",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public boolean getCredDelegState()"
+    ],
+    "signature_hash": "0580ea1f1ec1090f596df456041b186ee0b66100fb14e5da755ec5242bd5f530",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines if credential delegation is enabled on\nthis context.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines if credential delegation is enabled on\nthis context.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245676",
+    "updatedDate": "2026-03-11T23:15:42.245676",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
       "added_version": "1.4",
       "tags": [],
       "difficulty": null,
@@ -444,11 +628,53 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416784",
-    "updatedDate": "2026-03-08T21:40:22.416785",
+    "createdDate": "2026-03-11T23:15:42.247948",
+    "updatedDate": "2026-03-11T23:15:42.247949",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getDelegCred": {
+    "id": "org.ietf.jgss.GSSContext.getDelegCred",
+    "name": "getDelegCred",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public GSSCredential getDelegCred()"
+    ],
+    "signature_hash": "9f6da2c48faaa865595d7f4461b88ca47857b4f5423b9949e483e290b029a8ff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "GSSCredential",
+    "exceptions": [
+      {
+        "name": "GSSException",
+        "package": "org.ietf.jgss"
+      },
+      {
+        "name": "GSSException.FAILURE"
+      }
+    ],
+    "description": "Obtains the credentials delegated by the context\ninitiator to the context acceptor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the credentials delegated by the context\ninitiator to the context acceptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245689",
+    "updatedDate": "2026-03-11T23:15:42.245690",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
       "added_version": "1.4",
       "tags": [],
       "difficulty": null,
@@ -478,8 +704,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415390",
-    "updatedDate": "2026-03-08T21:40:22.415391",
+    "createdDate": "2026-03-11T23:15:42.245550",
+    "updatedDate": "2026-03-11T23:15:42.245551",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -512,11 +738,189 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416209",
-    "updatedDate": "2026-03-08T21:40:22.416210",
+    "createdDate": "2026-03-11T23:15:42.247253",
+    "updatedDate": "2026-03-11T23:15:42.247254",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getIntegState": {
+    "id": "org.ietf.jgss.GSSContext.getIntegState",
+    "name": "getIntegState",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public boolean getIntegState()"
+    ],
+    "signature_hash": "3ff7d8477eb89a8a622b188e99c3d1b8280c9fedf70beb3cb99199e18405aca1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines if data integrity is available\nover the context.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines if data integrity is available\nover the context.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245701",
+    "updatedDate": "2026-03-11T23:15:42.245702",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getLifetime": {
+    "id": "org.ietf.jgss.GSSContext.getLifetime",
+    "name": "getLifetime",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public int getLifetime()"
+    ],
+    "signature_hash": "a1e5fb6d9e7fbc4827f0ae326e62b998ba3d2a40e4d08fb68e1a3e4d121cd591",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": "Determines what the remaining lifetime for this\ncontext is.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines what the remaining lifetime for this\ncontext is.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245713",
+    "updatedDate": "2026-03-11T23:15:42.245714",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getMIC": {
+    "id": "org.ietf.jgss.GSSContext.getMIC",
+    "name": "getMIC",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public byte[] getMIC(byte[]inMsg, int offset, int len, MessageProp msgProp)",
+      "public void getMIC(InputStream inStream, OutputStream outStream, MessageProp msgProp)"
+    ],
+    "signature_hash": "d23d5b04a0304a72d9947bf526162b11644c0ce805355ea0c8a2a7a77054290d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [
+      {
+        "name": "byte[]inMsg",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "offset",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "len",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msgProp",
+        "has_default": false,
+        "default_value": null,
+        "type": "MessageProp",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "inStream",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "outStream",
+        "has_default": false,
+        "default_value": null,
+        "type": "OutputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "byte[]",
+    "exceptions": [
+      {
+        "name": "GSSException",
+        "package": "org.ietf.jgss"
+      },
+      {
+        "name": "GSSException.CONTEXT_EXPIRED"
+      },
+      {
+        "name": "GSSException.BAD_QOP"
+      },
+      {
+        "name": "GSSException.FAILURE"
+      }
+    ],
+    "description": "Returns a token containing a cryptographic Message Integrity Code\n(MIC) for the supplied message,  for transfer to the peer\napplication.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a token containing a cryptographic Message Integrity Code\n(MIC) for the supplied message,  for transfer to the peer\napplication.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245769",
+    "updatedDate": "2026-03-11T23:15:42.245770",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
       "added_version": "1.4",
       "tags": [],
       "difficulty": null,
@@ -546,8 +950,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415662",
-    "updatedDate": "2026-03-08T21:40:22.415663",
+    "createdDate": "2026-03-11T23:15:42.246610",
+    "updatedDate": "2026-03-11T23:15:42.246611",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -580,11 +984,53 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415674",
-    "updatedDate": "2026-03-08T21:40:22.415674",
+    "createdDate": "2026-03-11T23:15:42.246624",
+    "updatedDate": "2026-03-11T23:15:42.246625",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getMech": {
+    "id": "org.ietf.jgss.GSSContext.getMech",
+    "name": "getMech",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public Oid getMech()"
+    ],
+    "signature_hash": "eb90f5592a8af1c490e12926c31bf9581119d9a4619eab590d33c271912a4729",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "Oid",
+    "exceptions": [
+      {
+        "name": "GSSException",
+        "package": "org.ietf.jgss"
+      },
+      {
+        "name": "GSSException.FAILURE"
+      }
+    ],
+    "description": "Determines what mechanism is being used for this\ncontext.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines what mechanism is being used for this\ncontext.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245726",
+    "updatedDate": "2026-03-11T23:15:42.245727",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
       "added_version": "1.4",
       "tags": [],
       "difficulty": null,
@@ -622,8 +1068,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415469",
-    "updatedDate": "2026-03-08T21:40:22.415470",
+    "createdDate": "2026-03-11T23:15:42.246385",
+    "updatedDate": "2026-03-11T23:15:42.246386",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -656,8 +1102,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416223",
-    "updatedDate": "2026-03-08T21:40:22.416223",
+    "createdDate": "2026-03-11T23:15:42.247270",
+    "updatedDate": "2026-03-11T23:15:42.247271",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -701,8 +1147,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416238",
-    "updatedDate": "2026-03-08T21:40:22.416238",
+    "createdDate": "2026-03-11T23:15:42.247290",
+    "updatedDate": "2026-03-11T23:15:42.247291",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -735,8 +1181,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415685",
-    "updatedDate": "2026-03-08T21:40:22.415686",
+    "createdDate": "2026-03-11T23:15:42.246639",
+    "updatedDate": "2026-03-11T23:15:42.246639",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -769,8 +1215,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415696",
-    "updatedDate": "2026-03-08T21:40:22.415697",
+    "createdDate": "2026-03-11T23:15:42.246653",
+    "updatedDate": "2026-03-11T23:15:42.246654",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -803,8 +1249,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416522",
-    "updatedDate": "2026-03-08T21:40:22.416522",
+    "createdDate": "2026-03-11T23:15:42.247627",
+    "updatedDate": "2026-03-11T23:15:42.247628",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -837,8 +1283,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415707",
-    "updatedDate": "2026-03-08T21:40:22.415708",
+    "createdDate": "2026-03-11T23:15:42.246667",
+    "updatedDate": "2026-03-11T23:15:42.246668",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -871,11 +1317,45 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416535",
-    "updatedDate": "2026-03-08T21:40:22.416536",
+    "createdDate": "2026-03-11T23:15:42.247645",
+    "updatedDate": "2026-03-11T23:15:42.247646",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getMutualAuthState": {
+    "id": "org.ietf.jgss.GSSContext.getMutualAuthState",
+    "name": "getMutualAuthState",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public boolean getMutualAuthState()"
+    ],
+    "signature_hash": "f291cf7abc4f363d9829eb192f34b06e5a1adc0ccf4d181302ff94539401dc0c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines if mutual authentication is enabled on\nthis context.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines if mutual authentication is enabled on\nthis context.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245782",
+    "updatedDate": "2026-03-11T23:15:42.245783",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
       "added_version": "1.4",
       "tags": [],
       "difficulty": null,
@@ -925,8 +1405,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415485",
-    "updatedDate": "2026-03-08T21:40:22.415486",
+    "createdDate": "2026-03-11T23:15:42.246404",
+    "updatedDate": "2026-03-11T23:15:42.246405",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -981,8 +1461,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416253",
-    "updatedDate": "2026-03-08T21:40:22.416254",
+    "createdDate": "2026-03-11T23:15:42.247317",
+    "updatedDate": "2026-03-11T23:15:42.247318",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1015,8 +1495,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416549",
-    "updatedDate": "2026-03-08T21:40:22.416550",
+    "createdDate": "2026-03-11T23:15:42.247661",
+    "updatedDate": "2026-03-11T23:15:42.247662",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1049,8 +1529,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416562",
-    "updatedDate": "2026-03-08T21:40:22.416563",
+    "createdDate": "2026-03-11T23:15:42.247677",
+    "updatedDate": "2026-03-11T23:15:42.247678",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1105,8 +1585,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415499",
-    "updatedDate": "2026-03-08T21:40:22.415500",
+    "createdDate": "2026-03-11T23:15:42.246423",
+    "updatedDate": "2026-03-11T23:15:42.246424",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1161,8 +1641,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415514",
-    "updatedDate": "2026-03-08T21:40:22.415514",
+    "createdDate": "2026-03-11T23:15:42.246441",
+    "updatedDate": "2026-03-11T23:15:42.246442",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1203,11 +1683,121 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415527",
-    "updatedDate": "2026-03-08T21:40:22.415527",
+    "createdDate": "2026-03-11T23:15:42.246455",
+    "updatedDate": "2026-03-11T23:15:42.246456",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getReplayDetState": {
+    "id": "org.ietf.jgss.GSSContext.getReplayDetState",
+    "name": "getReplayDetState",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public boolean getReplayDetState()"
+    ],
+    "signature_hash": "4d9b3a36de31b2574763ed4ed01a8cbc663c4a54b7bf0708a10fc379cad3a128",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines if replay detection is enabled for the\nper-message security services from this context.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines if replay detection is enabled for the\nper-message security services from this context.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245795",
+    "updatedDate": "2026-03-11T23:15:42.245796",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getSequenceDetState": {
+    "id": "org.ietf.jgss.GSSContext.getSequenceDetState",
+    "name": "getSequenceDetState",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public boolean getSequenceDetState()"
+    ],
+    "signature_hash": "d719448a2b5fc2d76e2eb5bb09bc0030df58bfca20d171aeff44b13e40af23ae",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": "Determines if sequence checking is enabled for the\nper-message security services from this context.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines if sequence checking is enabled for the\nper-message security services from this context.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245808",
+    "updatedDate": "2026-03-11T23:15:42.245809",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getSrcName": {
+    "id": "org.ietf.jgss.GSSContext.getSrcName",
+    "name": "getSrcName",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public GSSName getSrcName()"
+    ],
+    "signature_hash": "3352b2146eca73c3d454a70eadcaeceadfc3fd662c79fa52e8842265d305169b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "GSSName",
+    "exceptions": [
+      {
+        "name": "GSSException",
+        "package": "org.ietf.jgss"
+      },
+      {
+        "name": "GSSException.FAILURE"
+      }
+    ],
+    "description": "Returns the name of the context initiator.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the name of the context initiator.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245822",
+    "updatedDate": "2026-03-11T23:15:42.245823",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
       "added_version": "1.4",
       "tags": [],
       "difficulty": null,
@@ -1245,11 +1835,53 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.416332",
-    "updatedDate": "2026-03-08T21:40:22.416333",
+    "createdDate": "2026-03-11T23:15:42.247410",
+    "updatedDate": "2026-03-11T23:15:42.247411",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getTargName": {
+    "id": "org.ietf.jgss.GSSContext.getTargName",
+    "name": "getTargName",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public GSSName getTargName()"
+    ],
+    "signature_hash": "b670e2ad05ab22ecfd202a801d1d3e405179be30e72e7530998748d8f441e1e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [],
+    "return_type": "GSSName",
+    "exceptions": [
+      {
+        "name": "GSSException",
+        "package": "org.ietf.jgss"
+      },
+      {
+        "name": "GSSException.FAILURE"
+      }
+    ],
+    "description": "Returns the name of the context acceptor.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the name of the context acceptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245842",
+    "updatedDate": "2026-03-11T23:15:42.245843",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
       "added_version": "1.4",
       "tags": [],
       "difficulty": null,
@@ -1299,11 +1931,90 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.415542",
-    "updatedDate": "2026-03-08T21:40:22.415543",
+    "createdDate": "2026-03-11T23:15:42.246474",
+    "updatedDate": "2026-03-11T23:15:42.246475",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.ietf.jgss/GSSContext/getWrapSizeLimit": {
+    "id": "org.ietf.jgss.GSSContext.getWrapSizeLimit",
+    "name": "getWrapSizeLimit",
+    "type": "method",
+    "parent": "GSSContext",
+    "signatures": [
+      "public int getWrapSizeLimit(int qop, boolean confReq, int maxTokenSize)"
+    ],
+    "signature_hash": "760ec9d60ea29999540a3e7c1bb93e7b9af021aa3b91e1b4964544b709f4a2bc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+    "parameters": [
+      {
+        "name": "qop",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "confReq",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "maxTokenSize",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "GSSException",
+        "package": "org.ietf.jgss"
+      },
+      {
+        "name": "GSSException.CONTEXT_EXPIRED"
+      },
+      {
+        "name": "GSSException.BAD_QOP"
+      },
+      {
+        "name": "GSSException.FAILURE"
+      }
+    ],
+    "description": "Used to determine limits on the size of the message\nthat can be passed towrap.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Used to determine limits on the size of the message\nthat can be passed towrap.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.245865",
+    "updatedDate": "2026-03-11T23:15:42.245865",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
       "added_version": "1.4",
       "tags": [],
       "difficulty": null,

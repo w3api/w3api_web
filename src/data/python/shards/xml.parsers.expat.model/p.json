@@ -1,0 +1,202 @@
+{
+  "xml.parsers.expat.model/ParserCreate": {
+    "id": "xml.parsers.expat.model.ParserCreate",
+    "name": "ParserCreate",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "xml.parsers.expat.ParserCreate(encoding=None, namespace_separator=None)"
+    ],
+    "signature_hash": "b7e4f127e2f0f83c38f6792a2feb986b5a106b6bfc25c2b02638219a35dae872",
+    "url": "https://docs.python.org/3/library/pyexpat.html#module-xml.parsers.expat.model#xml.parsers.expat.ParserCreate",
+    "parameters": [
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "namespace_separator",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Creates and returns a new xmlparser object. encoding, if specified, must be a string naming the encoding used by the XML data. Expat doesn’t support as many encodings as Python does, and its repertoire of encodings can’t be extended; it supports UTF-8, UTF-16, ISO-8859-1 (Latin1), and ASCII. If encoding [1] is given it will override the implicit or explicit encoding of the document. Parsers created through ParserCreate() are called “root” parsers, in the sense that they do not have any parent...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates and returns a new xmlparser object. encoding, if specified, must be a string naming the encoding used by the XML data. Expat doesn’t support as many encodings as Python does, and its repertoir...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.139011",
+    "updatedDate": "2026-03-11T23:15:48.139012",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xml.parsers.expat.model/xmlparser/Parse": {
+    "id": "xml.parsers.expat.model.xmlparser.Parse",
+    "name": "Parse",
+    "type": "method",
+    "parent": "xmlparser",
+    "signatures": [
+      "xmlparser.Parse(data[, isfinal])"
+    ],
+    "signature_hash": "865b64ae8bdb35958eaedb6d4f228498a5bafc70478421b3e4f2af3c2ccf5bd4",
+    "url": "https://docs.python.org/3/library/pyexpat.html#module-xml.parsers.expat.model#xml.parsers.expat.xmlparser.Parse",
+    "parameters": [
+      {
+        "name": "data[, isfinal",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Parses the contents of the string data, calling the appropriate handler functions to process the parsed data. isfinal must be true on the final call to this method; it allows the parsing of a single file in fragments, not the submission of multiple files. data can be the empty string at any time.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parses the contents of the string data, calling the appropriate handler functions to process the parsed data. isfinal must be true on the final call to this method; it allows the parsing of a single f...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.139027",
+    "updatedDate": "2026-03-11T23:15:48.139028",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xml.parsers.expat.model/xmlparser/ParseFile": {
+    "id": "xml.parsers.expat.model.xmlparser.ParseFile",
+    "name": "ParseFile",
+    "type": "method",
+    "parent": "xmlparser",
+    "signatures": [
+      "xmlparser.ParseFile(file)"
+    ],
+    "signature_hash": "bad1108ab888a505b1d085e270ea7b0d90a491823908aa17900079ad30482979",
+    "url": "https://docs.python.org/3/library/pyexpat.html#module-xml.parsers.expat.model#xml.parsers.expat.xmlparser.ParseFile",
+    "parameters": [
+      {
+        "name": "file",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Parse XML data reading from the object file. file only needs to provide the read(nbytes) method, returning the empty string when there’s no more data.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parse XML data reading from the object file. file only needs to provide the read(nbytes) method, returning the empty string when there’s no more data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.139041",
+    "updatedDate": "2026-03-11T23:15:48.139042",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xml.parsers.expat.model/xmlparser/ProcessingInstructionHandler": {
+    "id": "xml.parsers.expat.model.xmlparser.ProcessingInstructionHandler",
+    "name": "ProcessingInstructionHandler",
+    "type": "method",
+    "parent": "xmlparser",
+    "signatures": [
+      "xmlparser.ProcessingInstructionHandler(target, data)"
+    ],
+    "signature_hash": "d0b82e22d79ccc84af7d96b8ffa2477d2274fae2f4836a47a51bafa6e1fb3844",
+    "url": "https://docs.python.org/3/library/pyexpat.html#module-xml.parsers.expat.model#xml.parsers.expat.xmlparser.ProcessingInstructionHandler",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Called for every processing instruction.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called for every processing instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.139505",
+    "updatedDate": "2026-03-11T23:15:48.139506",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

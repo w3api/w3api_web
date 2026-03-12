@@ -1,0 +1,204 @@
+{
+  "bisect/bisect_left": {
+    "id": "bisect.bisect_left",
+    "name": "bisect_left",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "bisect.bisect_left(a, x, lo=0, hi=len(a), *, key=None)"
+    ],
+    "signature_hash": "b0c3ec793042feeb09df49e1ea5137cc1326e2d233be9baf59465d8a9eacde04",
+    "url": "https://docs.python.org/3/library/bisect.html#module-bisect#bisect.bisect_left",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lo",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "hi",
+        "type": "",
+        "has_default": true,
+        "default_value": "len(a)",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "key",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Locate the insertion point for x in a to maintain sorted order. The parameters lo and hi may be used to specify a subset of the list which should be considered; by default the entire list is used. If x is already present in a, the insertion point will be before (to the left of) any existing entries. The return value is suitable for use as the first parameter to list.insert() assuming that a is already sorted. The returned insertion point ip partitions the array a into two slices such that all...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Locate the insertion point for x in a to maintain sorted order. The parameters lo and hi may be used to specify a subset of the list which should be considered; by default the entire list is used. If ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881900",
+    "updatedDate": "2026-03-11T23:15:47.881900",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bisect/bisect_right": {
+    "id": "bisect.bisect_right",
+    "name": "bisect_right",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "bisect.bisect_right(a, x, lo=0, hi=len(a), *, key=None)"
+    ],
+    "signature_hash": "7f439012300f85be7992ba294ded0bd0c6b5e51162b930cb10586bb55b124503",
+    "url": "https://docs.python.org/3/library/bisect.html#module-bisect#bisect.bisect_right",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "x",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lo",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "hi",
+        "type": "",
+        "has_default": true,
+        "default_value": "len(a)",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "key",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Similar to bisect_left(), but returns an insertion point which comes after (to the right of) any existing entries of x in a. The returned insertion point ip partitions the array a into two slices such that all(elem <= x for elem in a[lo : ip]) is true for the left slice and all(elem > x for elem in a[ip : hi]) is true for the right slice. Changed in version 3.10: Added the key parameter.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to bisect_left(), but returns an insertion point which comes after (to the right of) any existing entries of x in a. The returned insertion point ip partitions the array a into two slices such...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.881921",
+    "updatedDate": "2026-03-11T23:15:47.881922",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bisect": {
+    "type": "module",
+    "name": "bisect",
+    "id": "bisect",
+    "description": "Module bisect",
+    "functions": [
+      "bisect_left",
+      "bisect_right",
+      "insort_left",
+      "insort_right"
+    ]
+  }
+}

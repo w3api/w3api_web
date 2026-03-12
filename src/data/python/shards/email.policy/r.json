@@ -1,0 +1,125 @@
+{
+  "email.policy/Policy/raise_on_defect": {
+    "id": "email.policy.Policy.raise_on_defect",
+    "name": "raise_on_defect",
+    "type": "attribute",
+    "parent": "Policy",
+    "signatures": [
+      "raise_on_defect"
+    ],
+    "signature_hash": "d17236714eb33c706f9ac584a1d441973e0d22de210ee486e41d5e6d6fff60e1",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.Policy.raise_on_defect",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "If True, any defects encountered will be raised as errors. If False (the default), defects will be passed to the register_defect() method.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If True, any defects encountered will be raised as errors. If False (the default), defects will be passed to the register_defect() method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.922918",
+    "updatedDate": "2026-03-11T23:15:47.922919",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/EmailPolicy/refold_source": {
+    "id": "email.policy.EmailPolicy.refold_source",
+    "name": "refold_source",
+    "type": "attribute",
+    "parent": "EmailPolicy",
+    "signatures": [
+      "refold_source"
+    ],
+    "signature_hash": "254844399d720f929b8b5b76f0ad3d3bec0a31fbc250979279aa22a20e98b19b",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.EmailPolicy.refold_source",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "If the value for a header in the Message object originated from a parser (as opposed to being set by a program), this attribute indicates whether or not a generator should refold that value when transforming the message back into serialized form. The possible values are: none all source values use original folding long source values that have any line that is longer than max_line_length will be refolded all all values are refolded. The default is long.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the value for a header in the Message object originated from a parser (as opposed to being set by a program), this attribute indicates whether or not a generator should refold that value when trans...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923160",
+    "updatedDate": "2026-03-11T23:15:47.923161",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.policy/Policy/register_defect": {
+    "id": "email.policy.Policy.register_defect",
+    "name": "register_defect",
+    "type": "method",
+    "parent": "Policy",
+    "signatures": [
+      "register_defect(obj, defect)"
+    ],
+    "signature_hash": "8a77b30fc651da8652cb00fe9798d463bc52064f0f7573a7b015ffd144083354",
+    "url": "https://docs.python.org/3/library/email.policy.html#module-email.policy#email.policy.Policy.register_defect",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "defect",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Register a defect on obj. In the email package, defect will always be a subclass of MessageDefect. The default implementation calls the append method of the defects attribute of obj. When the email package calls handle_defect, obj will normally have a defects attribute that has an append method. Custom object types used with the email package (for example, custom Message objects) should also provide such an attribute, otherwise defects in parsed messages will raise unexpected errors.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Register a defect on obj. In the email package, defect will always be a subclass of MessageDefect. The default implementation calls the append method of the defects attribute of obj. When the email pa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.923014",
+    "updatedDate": "2026-03-11T23:15:47.923015",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

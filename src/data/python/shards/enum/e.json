@@ -1,0 +1,128 @@
+{
+  "enum/FlagBoundary/EJECT": {
+    "id": "enum.FlagBoundary.EJECT",
+    "name": "EJECT",
+    "type": "attribute",
+    "parent": "FlagBoundary",
+    "signatures": [
+      "EJECT"
+    ],
+    "signature_hash": "12cde6811a9dc68d696e95abae36ca41803a3a704f7c3d75093c19421f590731",
+    "url": "https://docs.python.org/3/library/enum.html#module-enum#enum.FlagBoundary.EJECT",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Out-of-range values lose their Flag membership and revert to int. >>> from enum import Flag, EJECT, auto >>> class EjectFlag(Flag, boundary=EJECT): ... RED = auto() ... GREEN = auto() ... BLUE = auto() ... >>> EjectFlag(2**2 + 2**4) 20",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Out-of-range values lose their Flag membership and revert to int. >>> from enum import Flag, EJECT, auto >>> class EjectFlag(Flag, boundary=EJECT): ... RED = auto() ... GREEN = auto() ... BLUE = auto(...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.929599",
+    "updatedDate": "2026-03-11T23:15:47.929600",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "enum/Enum": {
+    "id": "enum.Enum",
+    "name": "Enum",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class enum.Enum"
+    ],
+    "signature_hash": "5240ec5f0b1a8a044622bc48383f8068e7b06456c45c9d57a368b151cb679253",
+    "url": "https://docs.python.org/3/library/enum.html#module-enum#enum.Enum",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Enum is the base class for all enum enumerations. name¶ The name used to define the Enum member: >>> Color.BLUE.name 'BLUE' value¶ The value given to the Enum member: >>> Color.RED.value 1 Value of the member, can be set in __new__(). Note Enum member values Member values can be anything: int, str, etc. If the exact value is unimportant you may use auto instances and an appropriate value will be chosen for you. See auto for the details. While mutable/unhashable values, such as dict, list or a...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enum is the base class for all enum enumerations. name¶ The name used to define the Enum member: >>> Color.BLUE.name 'BLUE' value¶ The value given to the Enum member: >>> Color.RED.value 1 Value of th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.929004",
+    "updatedDate": "2026-03-11T23:15:47.929005",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "_ignore_",
+      "_name_",
+      "_order_",
+      "_value_",
+      "name",
+      "value"
+    ],
+    "constructors": [
+      "__init__"
+    ],
+    "methods": [
+      "__dir__",
+      "__format__",
+      "__init_subclass__",
+      "__new__",
+      "__repr__",
+      "__str__",
+      "_add_alias_",
+      "_add_value_alias_",
+      "_generate_next_value_",
+      "_missing_"
+    ]
+  },
+  "enum": {
+    "type": "module",
+    "name": "enum",
+    "id": "enum",
+    "description": "Module enum",
+    "classes": [
+      "Check",
+      "Dict",
+      "Enum",
+      "Flag",
+      "FlagBoundary",
+      "IntEnum",
+      "IntFlag",
+      "ReprEnum",
+      "StrEnum",
+      "Type",
+      "auto"
+    ],
+    "functions": [
+      "bin",
+      "global_enum",
+      "member",
+      "nonmember",
+      "property",
+      "show_flag_values",
+      "unique",
+      "verify"
+    ],
+    "methods": [
+      "__bool__(self):",
+      "__invert__(self):",
+      "__iter__(self):",
+      "__len__(self):"
+    ]
+  }
+}

@@ -1,0 +1,221 @@
+---
+import StarlightLayout from '../../layouts/StarlightLayout.astro';
+import { sidebar } from '../../config/svg_sidebar';
+import rutas from '../../data/svg/routes.json'
+
+// Importar todos los shards de SVG
+const shardModules = import.meta.glob('../../data/svg/shards/**/*.json', { eager: true })
+
+// Procesar rutas para obtener información de elementos
+const packages: any[] = []
+
+const routeSlugs = rutas || []
+routeSlugs.forEach((slug: string) => {
+  const parts = slug.split('/')
+  const elementName = parts[0]
+  
+  // Buscar si ya existe este elemento
+  let pkg = packages.find(p => p.name === elementName)
+  
+  if (!pkg) {
+    pkg = {
+      name: elementName,
+      slug: elementName,
+      totalElements: 0,
+      elements: 0,
+      attributes: 0,
+      functions: 0
+    }
+    packages.push(pkg)
+  }
+  
+  pkg.totalElements++
+})
+
+// Ordenar alfabéticamente
+packages.sort((a, b) => a.name.localeCompare(b.name))
+
+// Obtener detalles de cada elemento desde los shards
+packages.forEach((pkg: any) => {
+  Object.values(shardModules).forEach((shardModule: any) => {
+    const shard = shardModule.default || shardModule
+    // Buscar por la estructura de slugs
+    Object.keys(shard).forEach(key => {
+      if (key.startsWith(pkg.name)) {
+        const item = shard[key]
+        if (item.type === 'element') {
+          pkg.elements++
+        } else if (item.type === 'attribute') {
+          pkg.attributes++
+        } else if (item.type === 'function') {
+          pkg.functions++
+        }
+      }
+    })
+  })
+})
+
+const headings = [
+  { level: 2, title: 'Elements', id: 'elements' }
+]
+
+const tableOfContents = headings.map(h => ({
+  depth: h.level,
+  text: h.title,
+  slug: h.id
+}))
+---
+
+<StarlightLayout
+  title="SVG"
+  description="Listado completo de elementos SVG disponibles"
+  siteTitle="W3Api"
+  sidebar={sidebar}
+  tableOfContents={tableOfContents}
+  currentLanguage="svg"  
+  logoSrc='/logo.webp'
+  filterLabel="Elementos"
+>
+
+<main>
+  <article>
+    <header class="sl-content-header">
+      <h1>SVG</h1>
+    </header>
+
+    <hr class="header-divider" />
+
+    <section id="elements">
+      <h2>Elementos</h2>
+      
+      <div class="packages-table-container">
+        <table class="packages-table">
+          <thead>
+            <tr>
+              <th>Element Name</th>
+              <th class="text-right">Elementos</th>
+              <th class="text-right">Atributos</th>
+              <th class="text-right">Funciones</th>
+              <th class="text-right">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            {packages.map((pkg: any) => (
+              <tr>
+                <td>
+                  <a href={`/svg/${pkg.slug}/`} class="package-link">
+                    {pkg.name}
+                  </a>
+                </td>
+                <td class="text-right">{pkg.elements || 0}</td>
+                <td class="text-right">{pkg.attributes || 0}</td>
+                <td class="text-right">{pkg.functions || 0}</td>
+                <td class="text-right total">{pkg.totalElements}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="packages-summary">
+        <p>Total de elementos: <strong>{packages.length}</strong></p>
+        <p>Total de componentes: <strong>{packages.reduce((sum: number, pkg: any) => sum + pkg.totalElements, 0)}</strong></p>
+      </div>
+    </section>
+  </article>
+</main>
+
+<style>
+  .header-divider {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 1rem 0;
+  }
+
+  .sl-content-header h1 {
+    margin: 0;
+  }
+
+  .packages-table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: var(--sl-border-radius);
+  }
+
+  .packages-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  .packages-table thead {
+    background-color: var(--sl-color-bg-nav);
+    border-bottom: 2px solid var(--sl-color-hairline);
+  }
+
+  .packages-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--sl-color-text);
+    border-right: 1px solid var(--sl-color-hairline);
+  }
+
+  .packages-table th:last-child {
+    border-right: none;
+  }
+
+  .packages-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--sl-color-hairline);
+    border-right: 1px solid var(--sl-color-hairline);
+  }
+
+  .packages-table td:last-child {
+    border-right: none;
+  }
+
+  .packages-table tbody tr:hover {
+    background-color: var(--sl-color-accent-low);
+  }
+
+  .package-link {
+    color: var(--sl-color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s;
+  }
+
+  .package-link:hover {
+    color: var(--sl-color-accent-high);
+    text-decoration: underline;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .total {
+    font-weight: 600;
+    color: var(--sl-color-accent);
+  }
+
+  .packages-summary {
+    background-color: var(--sl-color-accent-low);
+    padding: 1rem;
+    border-radius: var(--sl-border-radius);
+    margin-top: 2rem;
+  }
+
+  .packages-summary p {
+    margin: 0.5rem 0;
+    color: var(--sl-color-text);
+  }
+
+  .packages-summary strong {
+    color: var(--sl-color-accent);
+  }
+</style>
+
+</StarlightLayout>

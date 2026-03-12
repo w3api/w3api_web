@@ -1,0 +1,294 @@
+{
+  "contextlib/ContextDecorator": {
+    "id": "contextlib.ContextDecorator",
+    "name": "ContextDecorator",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class contextlib.ContextDecorator"
+    ],
+    "signature_hash": "717c884174da0e68bbf1bf1d2fed006789958ace098830bdb72f06e9b0d6ef82",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.ContextDecorator",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A base class that enables a context manager to also be used as a decorator. Context managers inheriting from ContextDecorator have to implement __enter__ and __exit__ as normal. __exit__ retains its optional exception handling even when used as a decorator. ContextDecorator is used by contextmanager(), so you get this functionality automatically. Example of ContextDecorator: from contextlib import ContextDecorator class mycontext(ContextDecorator): def __enter__(self): print('Starting') retur...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A base class that enables a context manager to also be used as a decorator. Context managers inheriting from ContextDecorator have to implement __enter__ and __exit__ as normal. __exit__ retains its o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889640",
+    "updatedDate": "2026-03-11T23:15:47.889641",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/chdir": {
+    "id": "contextlib.chdir",
+    "name": "chdir",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "contextlib.chdir(path)"
+    ],
+    "signature_hash": "c2dc8908b0a9c848c331cb18b34576fb5175bb356b1aa17c4f4656687a3698ed",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.chdir",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Non parallel-safe context manager to change the current working directory. As this changes a global state, the working directory, it is not suitable for use in most threaded or async contexts. It is also not suitable for most non-linear code execution, like generators, where the program execution is temporarily relinquished – unless explicitly desired, you should not yield when this context manager is active. This is a simple wrapper around chdir(), it changes the current working directory up...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Non parallel-safe context manager to change the current working directory. As this changes a global state, the working directory, it is not suitable for use in most threaded or async contexts. It is a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889626",
+    "updatedDate": "2026-03-11T23:15:47.889627",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/closing": {
+    "id": "contextlib.closing",
+    "name": "closing",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "contextlib.closing(thing)"
+    ],
+    "signature_hash": "77a2c3de1c9618e4d95fcd6eaeec0f4224488417e495496f7200da4fe7ce6b27",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.closing",
+    "parameters": [
+      {
+        "name": "thing",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a context manager that closes thing upon completion of the block. This is basically equivalent to: from contextlib import contextmanager @contextmanager def closing(thing): try: yield thing finally: thing.close() And lets you write code like this: from contextlib import closing from urllib.request import urlopen with closing(urlopen('https://www.python.org')) as page: for line in page: print(line) without needing to explicitly close page. Even if an error occurs, page.close() will be c...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a context manager that closes thing upon completion of the block. This is basically equivalent to: from contextlib import contextmanager @contextmanager def closing(thing): try: yield thing fin...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889526",
+    "updatedDate": "2026-03-11T23:15:47.889527",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/contextmanager": {
+    "id": "contextlib.contextmanager",
+    "name": "contextmanager",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@contextlib.contextmanager"
+    ],
+    "signature_hash": "0459f2e78e430e550f03ef74d11314ecc7462110473d5f293661d92e44928499",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.contextmanager",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This function is a decorator that can be used to define a factory function for with statement context managers, without needing to create a class or separate __enter__() and __exit__() methods. While many objects natively support use in with statements, sometimes a resource needs to be managed that isn’t a context manager in its own right, and doesn’t implement a close() method for use with contextlib.closing. An abstract example would be the following to ensure correct resource management: f...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This function is a decorator that can be used to define a factory function for with statement context managers, without needing to create a class or separate __enter__() and __exit__() methods. While ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889499",
+    "updatedDate": "2026-03-11T23:15:47.889499",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/ExitStack/callback": {
+    "id": "contextlib.ExitStack.callback",
+    "name": "callback",
+    "type": "method",
+    "parent": "ExitStack",
+    "signatures": [
+      "callback(callback, /, *args, **kwds)"
+    ],
+    "signature_hash": "4ed61ed22b6099d8286861f109e030bd87519271a78f265e7ff7e1069f07344d",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.ExitStack.callback",
+    "parameters": [
+      {
+        "name": "callback",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "kwds",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Accepts an arbitrary callback function and arguments and adds it to the callback stack. Unlike the other methods, callbacks added this way cannot suppress exceptions (as they are never passed the exception details). The passed in callback is returned from the function, allowing this method to be used as a function decorator.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Accepts an arbitrary callback function and arguments and adds it to the callback stack. Unlike the other methods, callbacks added this way cannot suppress exceptions (as they are never passed the exce...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889721",
+    "updatedDate": "2026-03-11T23:15:47.889721",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/ExitStack/close": {
+    "id": "contextlib.ExitStack.close",
+    "name": "close",
+    "type": "method",
+    "parent": "ExitStack",
+    "signatures": [
+      "close()"
+    ],
+    "signature_hash": "18576eb38b4883818d5f4956364907fef31c348975346eeaed3591ab0d87d1b3",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.ExitStack.close",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Immediately unwinds the callback stack, invoking callbacks in the reverse order of registration. For any context managers and exit callbacks registered, the arguments passed in will indicate that no exception occurred.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Immediately unwinds the callback stack, invoking callbacks in the reverse order of registration. For any context managers and exit callbacks registered, the arguments passed in will indicate that no e...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.889748",
+    "updatedDate": "2026-03-11T23:15:47.889749",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib": {
+    "type": "module",
+    "name": "contextlib",
+    "id": "contextlib",
+    "description": "Module contextlib",
+    "classes": [
+      "AbstractAsyncContextManager",
+      "AbstractContextManager",
+      "AsyncContextDecorator",
+      "AsyncExitStack",
+      "ContextDecorator",
+      "ExitStack"
+    ],
+    "functions": [
+      "aclosing",
+      "asynccontextmanager",
+      "chdir",
+      "closing",
+      "contextmanager",
+      "nullcontext",
+      "redirect_stderr",
+      "redirect_stdout",
+      "suppress"
+    ]
+  }
+}

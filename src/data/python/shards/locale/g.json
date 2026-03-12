@@ -1,0 +1,216 @@
+{
+  "locale/getdefaultlocale": {
+    "id": "locale.getdefaultlocale",
+    "name": "getdefaultlocale",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "locale.getdefaultlocale([envvars])"
+    ],
+    "signature_hash": "03d09f4748de8c87d6b2736d7f4680ffbb13c3d575bc32b3069c76cd4a9e6203",
+    "url": "https://docs.python.org/3/library/locale.html#module-locale#locale.getdefaultlocale",
+    "parameters": [
+      {
+        "name": "envvars",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Tries to determine the default locale settings and returns them as a tuple of the form (language code, encoding). According to POSIX, a program which has not called setlocale(LC_ALL, '') runs using the portable 'C' locale. Calling setlocale(LC_ALL, '') lets it use the default locale as defined by the LANG variable. Since we do not want to interfere with the current locale setting we thus emulate the behavior in the way described above. To maintain compatibility with other platforms, not only ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tries to determine the default locale settings and returns them as a tuple of the form (language code, encoding). According to POSIX, a program which has not called setlocale(LC_ALL, '') runs using th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.956477",
+    "updatedDate": "2026-03-11T23:15:47.956478",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.11",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "locale/getencoding": {
+    "id": "locale.getencoding",
+    "name": "getencoding",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "locale.getencoding()"
+    ],
+    "signature_hash": "e9e161dfead3add7b6161b9ebc6097fb24b20821a33451a3eaa573c195003269",
+    "url": "https://docs.python.org/3/library/locale.html#module-locale#locale.getencoding",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get the current locale encoding: On Android and VxWorks, return \"utf-8\". On Unix, return the encoding of the current LC_CTYPE locale. Return \"utf-8\" if nl_langinfo(CODESET) returns an empty string: for example, if the current LC_CTYPE locale is not supported. On Windows, return the ANSI code page. The Python preinitialization configures the LC_CTYPE locale. See also the filesystem encoding and error handler. This function is similar to getpreferredencoding(False) except this function ignores ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the current locale encoding: On Android and VxWorks, return \"utf-8\". On Unix, return the encoding of the current LC_CTYPE locale. Return \"utf-8\" if nl_langinfo(CODESET) returns an empty string: fo...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.956529",
+    "updatedDate": "2026-03-11T23:15:47.956530",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "locale/getlocale": {
+    "id": "locale.getlocale",
+    "name": "getlocale",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "locale.getlocale(category=LC_CTYPE)"
+    ],
+    "signature_hash": "8fcb113f532cf9a287c6368682ae2b3781abbb72b294b6d6ab67a7ad1f6400d0",
+    "url": "https://docs.python.org/3/library/locale.html#module-locale#locale.getlocale",
+    "parameters": [
+      {
+        "name": "category",
+        "type": "",
+        "has_default": true,
+        "default_value": "LC_CTYPE",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns the current setting for the given locale category as a tuple containing the language code and encoding. category may be one of the LC_* values except LC_ALL. It defaults to LC_CTYPE. The language code has the same format as a locale name, but without encoding and @-modifier. The language code and encoding may be None if their values cannot be determined. The “C” locale is represented as (None, None).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the current setting for the given locale category as a tuple containing the language code and encoding. category may be one of the LC_* values except LC_ALL. It defaults to LC_CTYPE. The langu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.956495",
+    "updatedDate": "2026-03-11T23:15:47.956496",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "locale/getpreferredencoding": {
+    "id": "locale.getpreferredencoding",
+    "name": "getpreferredencoding",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "locale.getpreferredencoding(do_setlocale=True)"
+    ],
+    "signature_hash": "e3f5cb01821cd5d3badb85c12771734f58f487d33100175ea568f5213b9480d1",
+    "url": "https://docs.python.org/3/library/locale.html#module-locale#locale.getpreferredencoding",
+    "parameters": [
+      {
+        "name": "do_setlocale",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the locale encoding used for text data, according to user preferences. User preferences are expressed differently on different systems, and might not be available programmatically on some systems, so this function only returns a guess. On some systems, it is necessary to invoke setlocale() to obtain the user preferences, so this function is not thread-safe. If invoking setlocale is not necessary or desired, do_setlocale should be set to False. On Android or if the Python UTF-8 Mode is ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the locale encoding used for text data, according to user preferences. User preferences are expressed differently on different systems, and might not be available programmatically on some syste...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.956513",
+    "updatedDate": "2026-03-11T23:15:47.956514",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "locale/gettext": {
+    "id": "locale.gettext",
+    "name": "gettext",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "locale.gettext(msg)"
+    ],
+    "signature_hash": "91bf0b830cafc972a7df6cbcaa9ffb6e5506a774f5e35d10a49cabae215036ba",
+    "url": "https://docs.python.org/3/library/locale.html#module-locale#locale.gettext",
+    "parameters": [
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.956842",
+    "updatedDate": "2026-03-11T23:15:47.956843",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

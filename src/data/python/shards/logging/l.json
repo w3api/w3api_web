@@ -1,0 +1,534 @@
+{
+  "logging/Logger/level": {
+    "id": "logging.Logger.level",
+    "name": "level",
+    "type": "attribute",
+    "parent": "Logger",
+    "signatures": [
+      "level"
+    ],
+    "signature_hash": "0081779c287d567d9ca622f4c0cc2ede819b0cc7f286a5f01d8c3c0178191ad6",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Logger.level",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The threshold of this logger, as set by the setLevel() method. Note Do not set this attribute directly - always use setLevel(), which has checks for the level passed to it.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The threshold of this logger, as set by the setLevel() method. Note Do not set this attribute directly - always use setLevel(), which has checks for the level passed to it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957001",
+    "updatedDate": "2026-03-11T23:15:47.957001",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/LogRecord": {
+    "id": "logging.LogRecord",
+    "name": "LogRecord",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.LogRecord(name, level, pathname, lineno, msg, args, exc_info, func=None, sinfo=None)"
+    ],
+    "signature_hash": "04e8951b980aa454daaf202348bd2eaed0053e10d089e5844de0d991e1499441",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.LogRecord",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "level",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pathname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "lineno",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "exc_info",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "func",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "sinfo",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Contains all the information pertinent to the event being logged. The primary information is passed in msg and args, which are combined using msg % args to create the message attribute of the record. Parameters: name (str) – The name of the logger used to log the event represented by this LogRecord. Note that the logger name in the LogRecord will always have this value, even though it may be emitted by a handler attached to a different (ancestor) logger. level (int) – The numeric level of the...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Contains all the information pertinent to the event being logged. The primary information is passed in msg and args, which are combined using msg % args to create the message attribute of the record. ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958055",
+    "updatedDate": "2026-03-11T23:15:47.958057",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getMessage"
+    ]
+  },
+  "logging/Logger": {
+    "id": "logging.Logger",
+    "name": "Logger",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.Logger"
+    ],
+    "signature_hash": "afc027cb2d85f9b6e83756bdf864bdab5b0f0c3a43c95e5a0f1f06f66f8f4d30",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Logger",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "name¶ This is the logger’s name, and is the value that was passed to getLogger() to obtain the logger. Note This attribute should be treated as read-only. level¶ The threshold of this logger, as set by the setLevel() method. Note Do not set this attribute directly - always use setLevel(), which has checks for the level passed to it. parent¶ The parent logger of this logger. It may change based on later instantiation of loggers which are higher up in the namespace hierarchy. Note This value sh...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "name¶ This is the logger’s name, and is the value that was passed to getLogger() to obtain the logger. Note This attribute should be treated as read-only. level¶ The threshold of this logger, as set b...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.956974",
+    "updatedDate": "2026-03-11T23:15:47.956975",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "disabled",
+      "handlers",
+      "level",
+      "name",
+      "parent",
+      "propagate"
+    ],
+    "methods": [
+      "addFilter",
+      "addHandler",
+      "critical",
+      "debug",
+      "error",
+      "exception",
+      "filter",
+      "findCaller",
+      "getChild",
+      "getChildren",
+      "getEffectiveLevel",
+      "handle",
+      "hasHandlers",
+      "info",
+      "isEnabledFor",
+      "log",
+      "makeRecord",
+      "removeFilter",
+      "removeHandler",
+      "setLevel",
+      "warning"
+    ]
+  },
+  "logging/LoggerAdapter": {
+    "id": "logging.LoggerAdapter",
+    "name": "LoggerAdapter",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.LoggerAdapter(logger, extra=None, merge_extra=False)"
+    ],
+    "signature_hash": "7ee56f70b50d69161737c23e105ac27ba0ff8ecfe25e847df3d38dcdd534e288",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.LoggerAdapter",
+    "parameters": [
+      {
+        "name": "logger",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "extra",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "merge_extra",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns an instance of LoggerAdapter initialized with an underlying Logger instance, an optional dict-like object (extra), and an optional boolean (merge_extra) indicating whether or not the extra argument of individual log calls should be merged with the LoggerAdapter extra. The default behavior is to ignore the extra argument of individual log calls and only use the one of the LoggerAdapter instance process(msg, kwargs)¶ Modifies the message and/or keyword arguments passed to a logging call...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an instance of LoggerAdapter initialized with an underlying Logger instance, an optional dict-like object (extra), and an optional boolean (merge_extra) indicating whether or not the extra arg...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958101",
+    "updatedDate": "2026-03-11T23:15:47.958102",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "_log",
+      "manager"
+    ],
+    "methods": [
+      "process"
+    ]
+  },
+  "logging/lastResort": {
+    "id": "logging.lastResort",
+    "name": "lastResort",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "logging.lastResort"
+    ],
+    "signature_hash": "d105b2add2781541cb9c12540477cc5fe7e3fb4d1271f1ea9cf8ccc2e17de9fd",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.lastResort",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A “handler of last resort” is available through this attribute. This is a StreamHandler writing to sys.stderr with a level of WARNING, and is used to handle logging events in the absence of any logging configuration. The end result is to just print the message to sys.stderr. This replaces the earlier error message saying that “no handlers could be found for logger XYZ”. If you need the earlier behaviour for some reason, lastResort can be set to None. Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A “handler of last resort” is available through this attribute. This is a StreamHandler writing to sys.stderr with a level of WARNING, and is used to handle logging events in the absence of any loggin...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958586",
+    "updatedDate": "2026-03-11T23:15:47.958587",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/log": {
+    "id": "logging.log",
+    "name": "log",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "logging.log(level, msg, *args, **kwargs)"
+    ],
+    "signature_hash": "050c6e53c9766bd245a16e4e2ab58ab11cf891eab16292cbda8207eb1ac4a208",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.log",
+    "parameters": [
+      {
+        "name": "level",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Logs a message with level level on the root logger. The arguments and behavior are otherwise the same as for debug().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Logs a message with level level on the root logger. The arguments and behavior are otherwise the same as for debug().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.958334",
+    "updatedDate": "2026-03-11T23:15:47.958335",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Logger/log": {
+    "id": "logging.Logger.log",
+    "name": "log",
+    "type": "method",
+    "parent": "Logger",
+    "signatures": [
+      "log(level, msg, *args, **kwargs)"
+    ],
+    "signature_hash": "b85efae12502a393b8316fcb706b5dc441235abeaad7731b19c1d64379772b43",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Logger.log",
+    "parameters": [
+      {
+        "name": "level",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Logs a message with integer level level on this logger. The other arguments are interpreted as for debug().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Logs a message with integer level level on this logger. The other arguments are interpreted as for debug().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.957259",
+    "updatedDate": "2026-03-11T23:15:47.957260",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging": {
+    "type": "module",
+    "name": "logging",
+    "id": "logging",
+    "description": "Module logging",
+    "classes": [
+      "BufferingFormatter",
+      "Filter",
+      "Formatter",
+      "Handler",
+      "LogRecord",
+      "Logger",
+      "LoggerAdapter"
+    ],
+    "constants": [
+      "CRITICAL",
+      "DEBUG",
+      "ERROR",
+      "INFO",
+      "NOTSET",
+      "WARNING",
+      "lastResort",
+      "raiseExceptions"
+    ],
+    "functions": [
+      "addLevelName",
+      "basicConfig",
+      "captureWarnings",
+      "critical",
+      "debug",
+      "disable",
+      "error",
+      "exception",
+      "getHandlerByName",
+      "getHandlerNames",
+      "getLevelName",
+      "getLevelNamesMapping",
+      "getLogRecordFactory",
+      "getLogger",
+      "getLoggerClass",
+      "info",
+      "log",
+      "makeLogRecord",
+      "setLogRecordFactory",
+      "setLoggerClass",
+      "shutdown",
+      "warning"
+    ]
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "cmd/Cmd/prompt": {
+    "id": "cmd.Cmd.prompt",
+    "name": "prompt",
+    "type": "attribute",
+    "parent": "Cmd",
+    "signatures": [
+      "Cmd.prompt"
+    ],
+    "signature_hash": "f0bba4b250c0c7d72a9be0e596dbbe97274ff366a01ab4d27c46f23796c0cc4e",
+    "url": "https://docs.python.org/3/library/cmd.html#module-cmd#cmd.Cmd.prompt",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The prompt issued to solicit input.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The prompt issued to solicit input.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.883924",
+    "updatedDate": "2026-03-11T23:15:47.883924",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "cmd/Cmd/postcmd": {
+    "id": "cmd.Cmd.postcmd",
+    "name": "postcmd",
+    "type": "method",
+    "parent": "Cmd",
+    "signatures": [
+      "Cmd.postcmd(stop, line)"
+    ],
+    "signature_hash": "040984bbd0c16db915fa2b8d8f4cb750b4a20352be94df2658299da13353e0e8",
+    "url": "https://docs.python.org/3/library/cmd.html#module-cmd#cmd.Cmd.postcmd",
+    "parameters": [
+      {
+        "name": "stop",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "line",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Hook method executed just after a command dispatch is finished. This method is a stub in Cmd; it exists to be overridden by subclasses. line is the command line which was executed, and stop is a flag which indicates whether execution will be terminated after the call to postcmd(); this will be the return value of the onecmd() method. The return value of this method will be used as the new value for the internal flag which corresponds to stop; returning false will cause interpretation to conti...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Hook method executed just after a command dispatch is finished. This method is a stub in Cmd; it exists to be overridden by subclasses. line is the command line which was executed, and stop is a flag ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.883873",
+    "updatedDate": "2026-03-11T23:15:47.883874",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "cmd/Cmd/postloop": {
+    "id": "cmd.Cmd.postloop",
+    "name": "postloop",
+    "type": "method",
+    "parent": "Cmd",
+    "signatures": [
+      "Cmd.postloop()"
+    ],
+    "signature_hash": "e304098f238be542f26add16ba446109d0e700195542e067aeb4591a4149996d",
+    "url": "https://docs.python.org/3/library/cmd.html#module-cmd#cmd.Cmd.postloop",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Hook method executed once when cmdloop() is about to return. This method is a stub in Cmd; it exists to be overridden by subclasses.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Hook method executed once when cmdloop() is about to return. This method is a stub in Cmd; it exists to be overridden by subclasses.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.883896",
+    "updatedDate": "2026-03-11T23:15:47.883897",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "cmd/Cmd/precmd": {
+    "id": "cmd.Cmd.precmd",
+    "name": "precmd",
+    "type": "method",
+    "parent": "Cmd",
+    "signatures": [
+      "Cmd.precmd(line)"
+    ],
+    "signature_hash": "75aee83a5157cc604207e14590272973fbe4e3c1df0a7d1c15c852079521b82d",
+    "url": "https://docs.python.org/3/library/cmd.html#module-cmd#cmd.Cmd.precmd",
+    "parameters": [
+      {
+        "name": "line",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Hook method executed just before the command line line is interpreted, but after the input prompt is generated and issued. This method is a stub in Cmd; it exists to be overridden by subclasses. The return value is used as the command which will be executed by the onecmd() method; the precmd() implementation may re-write the command or simply return line unchanged.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Hook method executed just before the command line line is interpreted, but after the input prompt is generated and issued. This method is a stub in Cmd; it exists to be overridden by subclasses. The r...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.883855",
+    "updatedDate": "2026-03-11T23:15:47.883856",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "cmd/Cmd/preloop": {
+    "id": "cmd.Cmd.preloop",
+    "name": "preloop",
+    "type": "method",
+    "parent": "Cmd",
+    "signatures": [
+      "Cmd.preloop()"
+    ],
+    "signature_hash": "5d5aa26a83d4e6dfb7892eee9a92db0ff723b232a0a9722eb4200753c9abb2c1",
+    "url": "https://docs.python.org/3/library/cmd.html#module-cmd#cmd.Cmd.preloop",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Hook method executed once when cmdloop() is called. This method is a stub in Cmd; it exists to be overridden by subclasses.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Hook method executed once when cmdloop() is called. This method is a stub in Cmd; it exists to be overridden by subclasses.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.883885",
+    "updatedDate": "2026-03-11T23:15:47.883886",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

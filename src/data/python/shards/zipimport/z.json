@@ -1,0 +1,109 @@
+{
+  "zipimport/zipimporter": {
+    "id": "zipimport.zipimporter",
+    "name": "zipimporter",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class zipimport.zipimporter(archivepath)"
+    ],
+    "signature_hash": "8358a41550cb3a6e827f25814ade329bdb9e50c1b6561c5a83911563c555127e",
+    "url": "https://docs.python.org/3/library/zipimport.html#module-zipimport#zipimport.zipimporter",
+    "parameters": [
+      {
+        "name": "archivepath",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a new zipimporter instance. archivepath must be a path to a ZIP file, or to a specific path within a ZIP file. For example, an archivepath of foo/bar.zip/lib will look for modules in the lib directory inside the ZIP file foo/bar.zip (provided that it exists). ZipImportError is raised if archivepath doesn’t point to a valid ZIP archive. Changed in version 3.12: Methods find_loader() and find_module(), deprecated in 3.10 are now removed. Use find_spec() instead. create_module(spec)¶ Impl...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a new zipimporter instance. archivepath must be a path to a ZIP file, or to a specific path within a ZIP file. For example, an archivepath of foo/bar.zip/lib will look for modules in the lib di...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.144216",
+    "updatedDate": "2026-03-11T23:15:48.144217",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.10",
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "archive",
+      "prefix"
+    ],
+    "methods": [
+      "create_module",
+      "exec_module",
+      "find_spec",
+      "get_code",
+      "get_data",
+      "get_filename",
+      "get_source",
+      "invalidate_caches",
+      "is_package",
+      "load_module"
+    ]
+  },
+  "zipimport/ZipImportError": {
+    "id": "zipimport.ZipImportError",
+    "name": "ZipImportError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception zipimport.ZipImportError"
+    ],
+    "signature_hash": "c23f490006a02b2b88eae90561cf5d0ea4d473385ddb4241fc1707495cbc7f00",
+    "url": "https://docs.python.org/3/library/zipimport.html#module-zipimport#zipimport.ZipImportError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Exception raised by zipimporter objects. It’s a subclass of ImportError, so it can be caught as ImportError, too.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Exception raised by zipimporter objects. It’s a subclass of ImportError, so it can be caught as ImportError, too.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.144199",
+    "updatedDate": "2026-03-11T23:15:48.144200",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "zipimport": {
+    "type": "module",
+    "name": "zipimport",
+    "id": "zipimport",
+    "description": "Module zipimport",
+    "classes": [
+      "zipimporter"
+    ],
+    "exceptions": [
+      "ZipImportError"
+    ]
+  }
+}

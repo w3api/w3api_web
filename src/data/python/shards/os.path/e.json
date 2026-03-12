@@ -1,0 +1,137 @@
+{
+  "os.path/exists": {
+    "id": "os.path.exists",
+    "name": "exists",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.path.exists(path)"
+    ],
+    "signature_hash": "8b032456a79d85360c2c6eee69d8c726c818d7ce4f70c0cd49472a4b4a4f5659",
+    "url": "https://docs.python.org/3/library/os.path.html#module-os.path#os.path.exists",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return True if path refers to an existing path or an open file descriptor. Returns False for broken symbolic links. On some platforms, this function may return False if permission is not granted to execute os.stat() on the requested file, even if the path physically exists. Changed in version 3.3: path can now be an integer: True is returned if it is an open file descriptor, False otherwise. Changed in version 3.6: Accepts a path-like object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if path refers to an existing path or an open file descriptor. Returns False for broken symbolic links. On some platforms, this function may return False if permission is not granted to ex...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.027146",
+    "updatedDate": "2026-03-11T23:15:48.027147",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os.path/expanduser": {
+    "id": "os.path.expanduser",
+    "name": "expanduser",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.path.expanduser(path)"
+    ],
+    "signature_hash": "e86dc55beb63569830b8b83e12a8a6c87cfd3e7626a16595fae58e90752ef5fe",
+    "url": "https://docs.python.org/3/library/os.path.html#module-os.path#os.path.expanduser",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "On Unix and Windows, return the argument with an initial component of ~ or ~user replaced by that user’s home directory. On Unix, an initial ~ is replaced by the environment variable HOME if it is set; otherwise the current user’s home directory is looked up in the password directory through the built-in module pwd. An initial ~user is looked up directly in the password directory. On Windows, USERPROFILE will be used if set, otherwise a combination of HOMEPATH and HOMEDRIVE will be used. An i...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "On Unix and Windows, return the argument with an initial component of ~ or ~user replaced by that user’s home directory. On Unix, an initial ~ is replaced by the environment variable HOME if it is set...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.027173",
+    "updatedDate": "2026-03-11T23:15:48.027173",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os.path/expandvars": {
+    "id": "os.path.expandvars",
+    "name": "expandvars",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.path.expandvars(path)"
+    ],
+    "signature_hash": "c775f4d587128f9d3fd15f80d656cb1837071ed19804e3b0d250bdaff43884c8",
+    "url": "https://docs.python.org/3/library/os.path.html#module-os.path#os.path.expandvars",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the argument with environment variables expanded. Substrings of the form $name or ${name} are replaced by the value of environment variable name. Malformed variable names and references to non-existing variables are left unchanged. On Windows, %name% expansions are supported in addition to $name and ${name}. Changed in version 3.6: Accepts a path-like object.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the argument with environment variables expanded. Substrings of the form $name or ${name} are replaced by the value of environment variable name. Malformed variable names and references to non-...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.027186",
+    "updatedDate": "2026-03-11T23:15:48.027187",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

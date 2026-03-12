@@ -1,0 +1,377 @@
+{
+  "multiprocessing/Listener/last_accepted": {
+    "id": "multiprocessing.Listener.last_accepted",
+    "name": "last_accepted",
+    "type": "attribute",
+    "parent": "Listener",
+    "signatures": [
+      "last_accepted"
+    ],
+    "signature_hash": "c86a2a7db683ce71c8e7b1c3623ee34c5f83ec8a23abe19c565df440c81c4aad",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.connection.Listener.last_accepted",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The address from which the last accepted connection came. If this is unavailable then it is None.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The address from which the last accepted connection came. If this is unavailable then it is None.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.967995",
+    "updatedDate": "2026-03-11T23:15:47.967996",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing/Listener": {
+    "id": "multiprocessing.Listener",
+    "name": "Listener",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.connection.Listener([address[, family[, backlog[, authkey]]]])"
+    ],
+    "signature_hash": "821c544e4f7471beeaab11aef56c0acc323051370ce83f3febe83ddd4297d398",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.connection.Listener",
+    "parameters": [
+      {
+        "name": "address[, family[, backlog[, authkey",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A wrapper for a bound socket or Windows named pipe which is ‘listening’ for connections. address is the address to be used by the bound socket or named pipe of the listener object. Note If an address of ‘0.0.0.0’ is used, the address will not be a connectable end point on Windows. If you require a connectable end-point, you should use ‘127.0.0.1’. family is the type of socket (or named pipe) to use. This can be one of the strings 'AF_INET' (for a TCP socket), 'AF_UNIX' (for a Unix domain sock...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A wrapper for a bound socket or Windows named pipe which is ‘listening’ for connections. address is the address to be used by the bound socket or named pipe of the listener object. Note If an address ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.967930",
+    "updatedDate": "2026-03-11T23:15:47.967931",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "address",
+      "last_accepted"
+    ],
+    "methods": [
+      "accept",
+      "close"
+    ]
+  },
+  "multiprocessing/Lock": {
+    "id": "multiprocessing.Lock",
+    "name": "Lock",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.Lock"
+    ],
+    "signature_hash": "e3db38d505f46cad185d9545bb86eb9731b890744053d6447f70cf7e1d4a96ae",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.Lock",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A non-recursive lock object: a close analog of threading.Lock. Once a process or thread has acquired a lock, subsequent attempts to acquire it from any process or thread will block until it is released; any process or thread may release it. The concepts and behaviors of threading.Lock as it applies to threads are replicated here in multiprocessing.Lock as it applies to either processes or threads, except as noted. Note that Lock is actually a factory function which returns an instance of mult...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A non-recursive lock object: a close analog of threading.Lock. Once a process or thread has acquired a lock, subsequent attempts to acquire it from any process or thread will block until it is release...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.966579",
+    "updatedDate": "2026-03-11T23:15:47.966580",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "acquire",
+      "locked",
+      "release"
+    ]
+  },
+  "multiprocessing/log_to_stderr": {
+    "id": "multiprocessing.log_to_stderr",
+    "name": "log_to_stderr",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "multiprocessing.log_to_stderr(level=None)"
+    ],
+    "signature_hash": "20e2738cc66058405aa9c0322b9ba777fd92affea4891d96a5c6473448cb5ebc",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.log_to_stderr",
+    "parameters": [
+      {
+        "name": "level",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This function performs a call to get_logger() but in addition to returning the logger created by get_logger, it adds a handler which sends output to sys.stderr using format '[%(levelname)s/%(processName)s] %(message)s'. You can modify levelname of the logger by passing a level argument.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This function performs a call to get_logger() but in addition to returning the logger created by get_logger, it adds a handler which sends output to sys.stderr using format '[%(levelname)s/%(processNa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.968057",
+    "updatedDate": "2026-03-11T23:15:47.968058",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing/SyncManager/Lock": {
+    "id": "multiprocessing.SyncManager.Lock",
+    "name": "Lock",
+    "type": "method",
+    "parent": "SyncManager",
+    "signatures": [
+      "Lock()"
+    ],
+    "signature_hash": "7ddd2db03a0c4534c21d5b78d85f4dfb8b7a9e3ef1d89e2ac0e9120b366a840e",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.managers.SyncManager.Lock",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a shared threading.Lock object and return a proxy for it.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a shared threading.Lock object and return a proxy for it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.967204",
+    "updatedDate": "2026-03-11T23:15:47.967205",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing/SyncManager/list": {
+    "id": "multiprocessing.SyncManager.list",
+    "name": "list",
+    "type": "method",
+    "parent": "SyncManager",
+    "signatures": [
+      "list()"
+    ],
+    "signature_hash": "b0d45f68e2cd72bd9f13975c3930d3db7f826e16df81c495b32f3e3b5178aa73",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.managers.SyncManager.list",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Create a shared list object and return a proxy for it.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a shared list object and return a proxy for it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.967334",
+    "updatedDate": "2026-03-11T23:15:47.967335",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing/BoundedSemaphore/locked": {
+    "id": "multiprocessing.BoundedSemaphore.locked",
+    "name": "locked",
+    "type": "method",
+    "parent": "BoundedSemaphore",
+    "signatures": [
+      "locked()"
+    ],
+    "signature_hash": "3e8d1253e946f779f3ab68bfafc568af87bc04450516a91d17cbf75b88bd95e2",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.BoundedSemaphore.locked",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a boolean indicating whether this object is locked right now. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a boolean indicating whether this object is locked right now. Added in version 3.14.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.966533",
+    "updatedDate": "2026-03-11T23:15:47.966534",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing/Lock/locked": {
+    "id": "multiprocessing.Lock.locked",
+    "name": "locked",
+    "type": "method",
+    "parent": "Lock",
+    "signatures": [
+      "locked()"
+    ],
+    "signature_hash": "3e8d1253e946f779f3ab68bfafc568af87bc04450516a91d17cbf75b88bd95e2",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.Lock.locked",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a boolean indicating whether this object is locked right now. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a boolean indicating whether this object is locked right now. Added in version 3.14.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.966629",
+    "updatedDate": "2026-03-11T23:15:47.966629",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing/RLock/locked": {
+    "id": "multiprocessing.RLock.locked",
+    "name": "locked",
+    "type": "method",
+    "parent": "RLock",
+    "signatures": [
+      "locked()"
+    ],
+    "signature_hash": "3e8d1253e946f779f3ab68bfafc568af87bc04450516a91d17cbf75b88bd95e2",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.RLock.locked",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a boolean indicating whether this object is locked right now. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a boolean indicating whether this object is locked right now. Added in version 3.14.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.966705",
+    "updatedDate": "2026-03-11T23:15:47.966706",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing/Semaphore/locked": {
+    "id": "multiprocessing.Semaphore.locked",
+    "name": "locked",
+    "type": "method",
+    "parent": "Semaphore",
+    "signatures": [
+      "locked()"
+    ],
+    "signature_hash": "3e8d1253e946f779f3ab68bfafc568af87bc04450516a91d17cbf75b88bd95e2",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.Semaphore.locked",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a boolean indicating whether this object is locked right now. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a boolean indicating whether this object is locked right now. Added in version 3.14.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.966753",
+    "updatedDate": "2026-03-11T23:15:47.966754",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

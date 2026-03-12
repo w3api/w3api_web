@@ -1,9 +1,70 @@
 {
-  "javax.sound.sampled/DataLine.Info/Info": {
-    "id": "javax.sound.sampled.DataLine.Info.Info",
+  "javax.sound.sampled/Info": {
+    "id": "javax.sound.sampled.Info",
+    "name": "Info",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class Info"
+    ],
+    "signature_hash": "bb68605e743f7601556d9cacf0da1930ce28b74c139adadc89f25dd6535f8fcb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:41.198049",
+    "updatedDate": "2026-03-11T23:15:41.198050",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "Info"
+    ],
+    "attributes": [
+      "COMPACT_DISC",
+      "HEADPHONE",
+      "LINE_IN",
+      "LINE_OUT",
+      "MICROPHONE",
+      "SPEAKER"
+    ],
+    "methods": [
+      "equals",
+      "getDescription",
+      "getFormats",
+      "getLineClass",
+      "getMaxBufferSize",
+      "getMinBufferSize",
+      "getName",
+      "getVendor",
+      "getVersion",
+      "hashCode",
+      "isFormatSupported",
+      "isSource",
+      "matches",
+      "toString"
+    ]
+  },
+  "javax.sound.sampled/Info/Info": {
+    "id": "javax.sound.sampled.Info.Info",
     "name": "Info",
     "type": "constructor",
-    "parent": "DataLine.Info",
+    "parent": "Info",
     "signatures": [
       "public Info(Class<?> lineClass, AudioFormat format)",
       "public Info(Class<?> lineClass, AudioFormat[]formats, int minBufferSize, int maxBufferSize)",
@@ -85,193 +146,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.690489",
-    "updatedDate": "2026-03-08T21:40:21.690490",
-    "metadata": {
-      "deprecated": false,
-      "deprecated_version": null,
-      "added_version": "1.3",
-      "tags": [],
-      "difficulty": null,
-      "popularity_score": 0
-    }
-  },
-  "javax.sound.sampled/Line.Info/Info": {
-    "id": "javax.sound.sampled.Line.Info.Info",
-    "name": "Info",
-    "type": "constructor",
-    "parent": "Line.Info",
-    "signatures": [
-      "public Info(Class<?> lineClass)"
-    ],
-    "signature_hash": "9449ef86a94860bea5d15e6d139e0d104f077a78da5880c6c4b5abb5aee0d5bd",
-    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Line.Info.html",
-    "parameters": [
-      {
-        "name": "lineClass",
-        "type": "Class<?>",
-        "has_default": false,
-        "default_value": null,
-        "is_keyword_only": false,
-        "is_var_args": false,
-        "is_var_kwargs": false,
-        "description": ""
-      }
-    ],
-    "return_type": "",
-    "exceptions": [],
-    "description": "Constructs an info object that describes a line of the specified\nclass.",
-    "example": "",
-    "articles": [],
-    "info": {
-      "status": "empty",
-      "excerpt": "Constructs an info object that describes a line of the specified\nclass.",
-      "keyword": "",
-      "seo_position": 0,
-      "visits": 0
-    },
-    "createdDate": "2026-03-08T21:40:21.691376",
-    "updatedDate": "2026-03-08T21:40:21.691377",
-    "metadata": {
-      "deprecated": false,
-      "deprecated_version": null,
-      "added_version": "1.3",
-      "tags": [],
-      "difficulty": null,
-      "popularity_score": 0
-    }
-  },
-  "javax.sound.sampled/Mixer.Info/Info": {
-    "id": "javax.sound.sampled.Mixer.Info.Info",
-    "name": "Info",
-    "type": "constructor",
-    "parent": "Mixer.Info",
-    "signatures": [
-      "public Info(String name, String vendor, String description, String version)"
-    ],
-    "signature_hash": "3fdfa1089af59481eae83c04b4c6b910d968611cd7b999d75594659a5a0913f3",
-    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html",
-    "parameters": [
-      {
-        "name": "name",
-        "type": "String",
-        "has_default": false,
-        "default_value": null,
-        "is_keyword_only": false,
-        "is_var_args": false,
-        "is_var_kwargs": false,
-        "description": ""
-      },
-      {
-        "name": "vendor",
-        "type": "String",
-        "has_default": false,
-        "default_value": null,
-        "is_keyword_only": false,
-        "is_var_args": false,
-        "is_var_kwargs": false,
-        "description": ""
-      },
-      {
-        "name": "description",
-        "type": "String",
-        "has_default": false,
-        "default_value": null,
-        "is_keyword_only": false,
-        "is_var_args": false,
-        "is_var_kwargs": false,
-        "description": ""
-      },
-      {
-        "name": "version",
-        "type": "String",
-        "has_default": false,
-        "default_value": null,
-        "is_keyword_only": false,
-        "is_var_args": false,
-        "is_var_kwargs": false,
-        "description": ""
-      }
-    ],
-    "return_type": "",
-    "exceptions": [],
-    "description": "Constructs a mixer's info object, passing it the given textual\ninformation.",
-    "example": "",
-    "articles": [],
-    "info": {
-      "status": "empty",
-      "excerpt": "Constructs a mixer's info object, passing it the given textual\ninformation.",
-      "keyword": "",
-      "seo_position": 0,
-      "visits": 0
-    },
-    "createdDate": "2026-03-08T21:40:21.692142",
-    "updatedDate": "2026-03-08T21:40:21.692143",
-    "metadata": {
-      "deprecated": false,
-      "deprecated_version": null,
-      "added_version": "1.3",
-      "tags": [],
-      "difficulty": null,
-      "popularity_score": 0
-    }
-  },
-  "javax.sound.sampled/Port.Info/Info": {
-    "id": "javax.sound.sampled.Port.Info.Info",
-    "name": "Info",
-    "type": "constructor",
-    "parent": "Port.Info",
-    "signatures": [
-      "public Info(Class<?> lineClass, String name, boolean isSource)"
-    ],
-    "signature_hash": "36fcbe40e46dd1fd9fac78f51d1f37b9a0ee88fc1645503db627ab1f6f540e56",
-    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Port.Info.html",
-    "parameters": [
-      {
-        "name": "lineClass",
-        "type": "Class<?>",
-        "has_default": false,
-        "default_value": null,
-        "is_keyword_only": false,
-        "is_var_args": false,
-        "is_var_kwargs": false,
-        "description": ""
-      },
-      {
-        "name": "name",
-        "type": "String",
-        "has_default": false,
-        "default_value": null,
-        "is_keyword_only": false,
-        "is_var_args": false,
-        "is_var_kwargs": false,
-        "description": ""
-      },
-      {
-        "name": "isSource",
-        "type": "boolean",
-        "has_default": false,
-        "default_value": null,
-        "is_keyword_only": false,
-        "is_var_args": false,
-        "is_var_kwargs": false,
-        "description": ""
-      }
-    ],
-    "return_type": "",
-    "exceptions": [],
-    "description": "Constructs a port's info object from the information given.",
-    "example": "",
-    "articles": [],
-    "info": {
-      "status": "empty",
-      "excerpt": "Constructs a port's info object from the information given.",
-      "keyword": "",
-      "seo_position": 0,
-      "visits": 0
-    },
-    "createdDate": "2026-03-08T21:40:21.692359",
-    "updatedDate": "2026-03-08T21:40:21.692360",
+    "createdDate": "2026-03-11T23:15:41.198106",
+    "updatedDate": "2026-03-11T23:15:41.198107",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -304,8 +180,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.690380",
-    "updatedDate": "2026-03-08T21:40:21.690381",
+    "createdDate": "2026-03-11T23:15:41.197968",
+    "updatedDate": "2026-03-11T23:15:41.197969",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -338,8 +214,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.688461",
-    "updatedDate": "2026-03-08T21:40:21.688461",
+    "createdDate": "2026-03-11T23:15:41.195790",
+    "updatedDate": "2026-03-11T23:15:41.195791",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -383,8 +259,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.690069",
-    "updatedDate": "2026-03-08T21:40:21.690069",
+    "createdDate": "2026-03-11T23:15:41.197680",
+    "updatedDate": "2026-03-11T23:15:41.197681",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -454,8 +330,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.689330",
-    "updatedDate": "2026-03-08T21:40:21.689331",
+    "createdDate": "2026-03-11T23:15:41.196819",
+    "updatedDate": "2026-03-11T23:15:41.196820",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -515,8 +391,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.689358",
-    "updatedDate": "2026-03-08T21:40:21.689359",
+    "createdDate": "2026-03-11T23:15:41.196852",
+    "updatedDate": "2026-03-11T23:15:41.196853",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -526,11 +402,11 @@
       "popularity_score": 0
     }
   },
-  "javax.sound.sampled/DataLine.Info/isFormatSupported": {
-    "id": "javax.sound.sampled.DataLine.Info.isFormatSupported",
+  "javax.sound.sampled/Info/isFormatSupported": {
+    "id": "javax.sound.sampled.Info.isFormatSupported",
     "name": "isFormatSupported",
     "type": "method",
-    "parent": "DataLine.Info",
+    "parent": "Info",
     "signatures": [
       "public boolean isFormatSupported(AudioFormat format)"
     ],
@@ -560,8 +436,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.690559",
-    "updatedDate": "2026-03-08T21:40:21.690560",
+    "createdDate": "2026-03-11T23:15:41.198185",
+    "updatedDate": "2026-03-11T23:15:41.198186",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -605,8 +481,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.689376",
-    "updatedDate": "2026-03-08T21:40:21.689377",
+    "createdDate": "2026-03-11T23:15:41.196872",
+    "updatedDate": "2026-03-11T23:15:41.196873",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -650,8 +526,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.692022",
-    "updatedDate": "2026-03-08T21:40:21.692023",
+    "createdDate": "2026-03-11T23:15:41.199508",
+    "updatedDate": "2026-03-11T23:15:41.199510",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -684,8 +560,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.690085",
-    "updatedDate": "2026-03-08T21:40:21.690085",
+    "createdDate": "2026-03-11T23:15:41.197698",
+    "updatedDate": "2026-03-11T23:15:41.197699",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -718,8 +594,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.690396",
-    "updatedDate": "2026-03-08T21:40:21.690397",
+    "createdDate": "2026-03-11T23:15:41.197994",
+    "updatedDate": "2026-03-11T23:15:41.197996",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -729,11 +605,11 @@
       "popularity_score": 0
     }
   },
-  "javax.sound.sampled/Port.Info/isSource": {
-    "id": "javax.sound.sampled.Port.Info.isSource",
+  "javax.sound.sampled/Info/isSource": {
+    "id": "javax.sound.sampled.Info.isSource",
     "name": "isSource",
     "type": "method",
-    "parent": "Port.Info",
+    "parent": "Info",
     "signatures": [
       "public boolean isSource()"
     ],
@@ -752,8 +628,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.692439",
-    "updatedDate": "2026-03-08T21:40:21.692440",
+    "createdDate": "2026-03-11T23:15:41.199909",
+    "updatedDate": "2026-03-11T23:15:41.199909",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -807,8 +683,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:21.692049",
-    "updatedDate": "2026-03-08T21:40:21.692049",
+    "createdDate": "2026-03-11T23:15:41.199538",
+    "updatedDate": "2026-03-11T23:15:41.199539",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

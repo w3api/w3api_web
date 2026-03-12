@@ -1,0 +1,70 @@
+{
+  "unittest/TestSuite/__iter__": {
+    "id": "unittest.TestSuite.__iter__",
+    "name": "__iter__",
+    "type": "method",
+    "parent": "TestSuite",
+    "signatures": [
+      "__iter__()"
+    ],
+    "signature_hash": "d51da5d4f553f7536fba36be4d289658f3f3eb36e773502dcc914fb35fe1e962",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestSuite.__iter__",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Tests grouped by a TestSuite are always accessed by iteration. Subclasses can lazily provide tests by overriding __iter__(). Note that this method may be called several times on a single suite (for example when counting tests or comparing for equality) so the tests returned by repeated iterations before TestSuite.run() must be the same for each call iteration. After TestSuite.run(), callers should not rely on the tests returned by this method unless the caller uses a subclass that overrides T...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tests grouped by a TestSuite are always accessed by iteration. Subclasses can lazily provide tests by overriding __iter__(). Note that this method may be called several times on a single suite (for ex...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105312",
+    "updatedDate": "2026-03-11T23:15:48.105313",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TextTestRunner/_makeResult": {
+    "id": "unittest.TextTestRunner._makeResult",
+    "name": "_makeResult",
+    "type": "method",
+    "parent": "TextTestRunner",
+    "signatures": [
+      "_makeResult()"
+    ],
+    "signature_hash": "72b0f8ef4f7c2e0a6fb43d0f28d3309b361b197452e601c159de146f0aa87ea7",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TextTestRunner._makeResult",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method returns the instance of TestResult used by run(). It is not intended to be called directly, but can be overridden in subclasses to provide a custom TestResult. _makeResult() instantiates the class or callable passed in the TextTestRunner constructor as the resultclass argument. It defaults to TextTestResult if no resultclass is provided. The result class is instantiated with the following arguments: stream, descriptions, verbosity",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method returns the instance of TestResult used by run(). It is not intended to be called directly, but can be overridden in subclasses to provide a custom TestResult. _makeResult() instantiates t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.106101",
+    "updatedDate": "2026-03-11T23:15:48.106102",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

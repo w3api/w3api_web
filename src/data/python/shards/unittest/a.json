@@ -1,0 +1,2880 @@
+{
+  "unittest/addModuleCleanup": {
+    "id": "unittest.addModuleCleanup",
+    "name": "addModuleCleanup",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "unittest.addModuleCleanup(function, /, *args, **kwargs)"
+    ],
+    "signature_hash": "3a5f5cee3ec845e0d75b773983021755debbf8dbeb4773a67adb940e57edbe38",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.addModuleCleanup",
+    "parameters": [
+      {
+        "name": "function",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Add a function to be called after tearDownModule() to cleanup resources used during the test class. Functions will be called in reverse order to the order they are added (LIFO). They are called with any arguments and keyword arguments passed into addModuleCleanup() when they are added. If setUpModule() fails, meaning that tearDownModule() is not called, then any cleanup functions added will still be called. Added in version 3.8.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Add a function to be called after tearDownModule() to cleanup resources used during the test class. Functions will be called in reverse order to the order they are added (LIFO). They are called with a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.106188",
+    "updatedDate": "2026-03-11T23:15:48.106189",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/IsolatedAsyncioTestCase/addAsyncCleanup": {
+    "id": "unittest.IsolatedAsyncioTestCase.addAsyncCleanup",
+    "name": "addAsyncCleanup",
+    "type": "method",
+    "parent": "IsolatedAsyncioTestCase",
+    "signatures": [
+      "addAsyncCleanup(function, /, *args, **kwargs)"
+    ],
+    "signature_hash": "d7bdc322c85c7f68f8e80afcd21b46f67d5ea73d62e3248774b158b30599c31c",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.IsolatedAsyncioTestCase.addAsyncCleanup",
+    "parameters": [
+      {
+        "name": "function",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This method accepts a coroutine that can be used as a cleanup function.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method accepts a coroutine that can be used as a cleanup function.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105136",
+    "updatedDate": "2026-03-11T23:15:48.105137",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/addClassCleanup": {
+    "id": "unittest.TestCase.addClassCleanup",
+    "name": "addClassCleanup",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "classmethod addClassCleanup(function, /, *args, **kwargs)"
+    ],
+    "signature_hash": "f6b5b99baf82744abb3cb52047561ee947473a6806a8b26e1eec1bce96d148b4",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.addClassCleanup",
+    "parameters": [
+      {
+        "name": "function",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Add a function to be called after tearDownClass() to cleanup resources used during the test class. Functions will be called in reverse order to the order they are added (LIFO). They are called with any arguments and keyword arguments passed into addClassCleanup() when they are added. If setUpClass() fails, meaning that tearDownClass() is not called, then any cleanup functions added will still be called. Added in version 3.8.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Add a function to be called after tearDownClass() to cleanup resources used during the test class. Functions will be called in reverse order to the order they are added (LIFO). They are called with an...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105018",
+    "updatedDate": "2026-03-11T23:15:48.105018",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/addCleanup": {
+    "id": "unittest.TestCase.addCleanup",
+    "name": "addCleanup",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "addCleanup(function, /, *args, **kwargs)"
+    ],
+    "signature_hash": "85b31b46c24131e4604cd8b224ea5e7b060d8ccc762cb5541611441b9b7122f6",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.addCleanup",
+    "parameters": [
+      {
+        "name": "function",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Add a function to be called after tearDown() to cleanup resources used during the test. Functions will be called in reverse order to the order they are added (LIFO). They are called with any arguments and keyword arguments passed into addCleanup() when they are added. If setUp() fails, meaning that tearDown() is not called, then any cleanup functions added will still be called. Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Add a function to be called after tearDown() to cleanup resources used during the test. Functions will be called in reverse order to the order they are added (LIFO). They are called with any arguments...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104966",
+    "updatedDate": "2026-03-11T23:15:48.104967",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestResult/addDuration": {
+    "id": "unittest.TestResult.addDuration",
+    "name": "addDuration",
+    "type": "method",
+    "parent": "TestResult",
+    "signatures": [
+      "addDuration(test, elapsed)"
+    ],
+    "signature_hash": "b5285b3ffcad2f61fbac1e43cafa485bda982c11753c986560c7853146d5735c",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestResult.addDuration",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "elapsed",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Called when the test case finishes. elapsed is the time represented in seconds, and it includes the execution of cleanup functions. Added in version 3.12.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called when the test case finishes. elapsed is the time represented in seconds, and it includes the execution of cleanup functions. Added in version 3.12.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105999",
+    "updatedDate": "2026-03-11T23:15:48.105999",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestResult/addError": {
+    "id": "unittest.TestResult.addError",
+    "name": "addError",
+    "type": "method",
+    "parent": "TestResult",
+    "signatures": [
+      "addError(test, err)"
+    ],
+    "signature_hash": "b4c33ed687b3c3b624ac03e675a15aa624284202344567e4b502a9376221a23f",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestResult.addError",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "err",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Called when the test case test raises an unexpected exception. err is a tuple of the form returned by sys.exc_info(): (type, value, traceback). The default implementation appends a tuple (test, formatted_err) to the instance’s errors attribute, where formatted_err is a formatted traceback derived from err.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called when the test case test raises an unexpected exception. err is a tuple of the form returned by sys.exc_info(): (type, value, traceback). The default implementation appends a tuple (test, format...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105853",
+    "updatedDate": "2026-03-11T23:15:48.105854",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestResult/addExpectedFailure": {
+    "id": "unittest.TestResult.addExpectedFailure",
+    "name": "addExpectedFailure",
+    "type": "method",
+    "parent": "TestResult",
+    "signatures": [
+      "addExpectedFailure(test, err)"
+    ],
+    "signature_hash": "e59c36bc9937278de434f1cfaf565f2c825e0dfec47ba676914ad73298c892b7",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestResult.addExpectedFailure",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "err",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Called when the test case test fails or errors, but was marked with the expectedFailure() decorator. The default implementation appends a tuple (test, formatted_err) to the instance’s expectedFailures attribute, where formatted_err is a formatted traceback derived from err.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called when the test case test fails or errors, but was marked with the expectedFailure() decorator. The default implementation appends a tuple (test, formatted_err) to the instance’s expectedFailures...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105939",
+    "updatedDate": "2026-03-11T23:15:48.105940",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestResult/addFailure": {
+    "id": "unittest.TestResult.addFailure",
+    "name": "addFailure",
+    "type": "method",
+    "parent": "TestResult",
+    "signatures": [
+      "addFailure(test, err)"
+    ],
+    "signature_hash": "161f891ab24b2e93bce9405316296c24640996fe237e151be012aa1a23660d90",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestResult.addFailure",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "err",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Called when the test case test signals a failure. err is a tuple of the form returned by sys.exc_info(): (type, value, traceback). The default implementation appends a tuple (test, formatted_err) to the instance’s failures attribute, where formatted_err is a formatted traceback derived from err.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called when the test case test signals a failure. err is a tuple of the form returned by sys.exc_info(): (type, value, traceback). The default implementation appends a tuple (test, formatted_err) to t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105883",
+    "updatedDate": "2026-03-11T23:15:48.105884",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestResult/addSkip": {
+    "id": "unittest.TestResult.addSkip",
+    "name": "addSkip",
+    "type": "method",
+    "parent": "TestResult",
+    "signatures": [
+      "addSkip(test, reason)"
+    ],
+    "signature_hash": "5061fa7651034f8ca95a28990c6b878b5d0290b24624d62a9d44c384e4c259c6",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestResult.addSkip",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "reason",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Called when the test case test is skipped. reason is the reason the test gave for skipping. The default implementation appends a tuple (test, reason) to the instance’s skipped attribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called when the test case test is skipped. reason is the reason the test gave for skipping. The default implementation appends a tuple (test, reason) to the instance’s skipped attribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105920",
+    "updatedDate": "2026-03-11T23:15:48.105920",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestResult/addSubTest": {
+    "id": "unittest.TestResult.addSubTest",
+    "name": "addSubTest",
+    "type": "method",
+    "parent": "TestResult",
+    "signatures": [
+      "addSubTest(test, subtest, outcome)"
+    ],
+    "signature_hash": "1d916c3991bfd9804da15c54dbaf039d0e8d981cc94213f05e961185176d1847",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestResult.addSubTest",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "subtest",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "outcome",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Called when a subtest finishes. test is the test case corresponding to the test method. subtest is a custom TestCase instance describing the subtest. If outcome is None, the subtest succeeded. Otherwise, it failed with an exception where outcome is a tuple of the form returned by sys.exc_info(): (type, value, traceback). The default implementation does nothing when the outcome is a success, and records subtest failures as normal failures. Added in version 3.4.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called when a subtest finishes. test is the test case corresponding to the test method. subtest is a custom TestCase instance describing the subtest. If outcome is None, the subtest succeeded. Otherwi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105980",
+    "updatedDate": "2026-03-11T23:15:48.105980",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestResult/addSuccess": {
+    "id": "unittest.TestResult.addSuccess",
+    "name": "addSuccess",
+    "type": "method",
+    "parent": "TestResult",
+    "signatures": [
+      "addSuccess(test)"
+    ],
+    "signature_hash": "fcc06e55dd2b52c83a7ac49ba5602cde7d56b76e9c69e1e5b4517b64b6a1baca",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestResult.addSuccess",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Called when the test case test succeeds. The default implementation does nothing.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called when the test case test succeeds. The default implementation does nothing.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105901",
+    "updatedDate": "2026-03-11T23:15:48.105901",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestSuite/addTest": {
+    "id": "unittest.TestSuite.addTest",
+    "name": "addTest",
+    "type": "method",
+    "parent": "TestSuite",
+    "signatures": [
+      "addTest(test)"
+    ],
+    "signature_hash": "bc1c15f4eb35d1b3bb7ba2782c8a9bff40fa3334048da7f5f1e778e1cd80dd4f",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestSuite.addTest",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Add a TestCase or TestSuite to the suite.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Add a TestCase or TestSuite to the suite.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105237",
+    "updatedDate": "2026-03-11T23:15:48.105238",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestSuite/addTests": {
+    "id": "unittest.TestSuite.addTests",
+    "name": "addTests",
+    "type": "method",
+    "parent": "TestSuite",
+    "signatures": [
+      "addTests(tests)"
+    ],
+    "signature_hash": "8f7b48af4231f9e18cc126cb0d0fb813d8601632099381c2bb9ea00e0516c5d3",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestSuite.addTests",
+    "parameters": [
+      {
+        "name": "tests",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Add all the tests from an iterable of TestCase and TestSuite instances to this test suite. This is equivalent to iterating over tests, calling addTest() for each element.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Add all the tests from an iterable of TestCase and TestSuite instances to this test suite. This is equivalent to iterating over tests, calling addTest() for each element.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105253",
+    "updatedDate": "2026-03-11T23:15:48.105253",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/addTypeEqualityFunc": {
+    "id": "unittest.TestCase.addTypeEqualityFunc",
+    "name": "addTypeEqualityFunc",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "addTypeEqualityFunc(typeobj, function)"
+    ],
+    "signature_hash": "edf26bf4847510c6b0f2d0467e410394e871517b4795f39ef8659c826e811e8b",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.addTypeEqualityFunc",
+    "parameters": [
+      {
+        "name": "typeobj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "function",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Registers a type-specific method called by assertEqual() to check if two objects of exactly the same typeobj (not subclasses) compare equal. function must take two positional arguments and a third msg=None keyword argument just as assertEqual() does. It must raise self.failureException(msg) when inequality between the first two parameters is detected – possibly providing useful information and explaining the inequalities in details in the error message. Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Registers a type-specific method called by assertEqual() to check if two objects of exactly the same typeobj (not subclasses) compare equal. function must take two positional arguments and a third msg...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104718",
+    "updatedDate": "2026-03-11T23:15:48.104719",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestResult/addUnexpectedSuccess": {
+    "id": "unittest.TestResult.addUnexpectedSuccess",
+    "name": "addUnexpectedSuccess",
+    "type": "method",
+    "parent": "TestResult",
+    "signatures": [
+      "addUnexpectedSuccess(test)"
+    ],
+    "signature_hash": "539f71d71fde733b6436ac6e3ede0d824b04583fef61cf79d57f6ff7d130df62",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestResult.addUnexpectedSuccess",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Called when the test case test was marked with the expectedFailure() decorator, but succeeded. The default implementation appends the test to the instance’s unexpectedSuccesses attribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called when the test case test was marked with the expectedFailure() decorator, but succeeded. The default implementation appends the test to the instance’s unexpectedSuccesses attribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105957",
+    "updatedDate": "2026-03-11T23:15:48.105958",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertAlmostEqual": {
+    "id": "unittest.TestCase.assertAlmostEqual",
+    "name": "assertAlmostEqual",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertAlmostEqual(first, second, places=7, msg=None, delta=None)"
+    ],
+    "signature_hash": "2ffb9c10dfbed6f2f20e075f704af7644b5bd3f6424a79265b372d8a7927b2e6",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertAlmostEqual",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "places",
+        "type": "",
+        "has_default": true,
+        "default_value": "7",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "delta",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that first and second are approximately (or not approximately) equal by computing the difference, rounding to the given number of decimal places (default 7), and comparing to zero. Note that these methods round the values to the given number of decimal places (i.e. like the round() function) and not significant digits. If delta is supplied instead of places then the difference between first and second must be less or equal to (or greater than) delta. Supplying both delta and places raise...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that first and second are approximately (or not approximately) equal by computing the difference, rounding to the given number of decimal places (default 7), and comparing to zero. Note that thes...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104495",
+    "updatedDate": "2026-03-11T23:15:48.104496",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertCountEqual": {
+    "id": "unittest.TestCase.assertCountEqual",
+    "name": "assertCountEqual",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertCountEqual(first, second, msg=None)"
+    ],
+    "signature_hash": "51cafa3c3df357e9b376bf44d50d931c4c89fe049ac8ab8b40277820a101ea5b",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertCountEqual",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that sequence first contains the same elements as second, regardless of their order. When they don’t, an error message listing the differences between the sequences will be generated. Duplicate elements are not ignored when comparing first and second. It verifies whether each element has the same count in both sequences. Equivalent to: assertEqual(Counter(list(first)), Counter(list(second))) but works with sequences of unhashable objects as well. Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that sequence first contains the same elements as second, regardless of their order. When they don’t, an error message listing the differences between the sequences will be generated. Duplicate e...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104562",
+    "updatedDate": "2026-03-11T23:15:48.104563",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertDictEqual": {
+    "id": "unittest.TestCase.assertDictEqual",
+    "name": "assertDictEqual",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertDictEqual(first, second, msg=None)"
+    ],
+    "signature_hash": "1879d65ac63857f519db8001745ef2b74b107e7d58cdabd820fe413731536c2a",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertDictEqual",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that two dictionaries are equal. If not, an error message is constructed that shows the differences in the dictionaries. This method will be used by default to compare dictionaries in calls to assertEqual(). Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that two dictionaries are equal. If not, an error message is constructed that shows the differences in the dictionaries. This method will be used by default to compare dictionaries in calls to as...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104818",
+    "updatedDate": "2026-03-11T23:15:48.104819",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertEndsWith": {
+    "id": "unittest.TestCase.assertEndsWith",
+    "name": "assertEndsWith",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertEndsWith(s, suffix, msg=None)"
+    ],
+    "signature_hash": "0f8d503de0c0128876e5dd55b395c44fa810e212b1150635f42eab225dcc829e",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertEndsWith",
+    "parameters": [
+      {
+        "name": "s",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "suffix",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104642",
+    "updatedDate": "2026-03-11T23:15:48.104643",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertEqual": {
+    "id": "unittest.TestCase.assertEqual",
+    "name": "assertEqual",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertEqual(first, second, msg=None)"
+    ],
+    "signature_hash": "604e964f04fb0a94513ebe0ad50fff09e2d4d49bd8ed0ed8cf54dbaac3443833",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertEqual",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that first and second are equal. If the values do not compare equal, the test will fail. In addition, if first and second are the exact same type and one of list, tuple, dict, set, frozenset or str or any type that a subclass registers with addTypeEqualityFunc() the type-specific equality function will be called in order to generate a more useful default error message (see also the list of type-specific methods). Changed in version 3.1: Added the automatic calling of type-specific equali...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that first and second are equal. If the values do not compare equal, the test will fail. In addition, if first and second are the exact same type and one of list, tuple, dict, set, frozenset or s...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104130",
+    "updatedDate": "2026-03-11T23:15:48.104131",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertGreater": {
+    "id": "unittest.TestCase.assertGreater",
+    "name": "assertGreater",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertGreater(first, second, msg=None)"
+    ],
+    "signature_hash": "01ae03e68a178d7067824659ac909563c74faf041764db3c75f2ebec252ae8c8",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertGreater",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that first is respectively >, >=, < or <= than second depending on the method name. If not, the test will fail: >>> self.assertGreaterEqual(3, 4) AssertionError: \"3\" unexpectedly not greater than or equal to \"4\" Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that first is respectively >, >=, < or <= than second depending on the method name. If not, the test will fail: >>> self.assertGreaterEqual(3, 4) AssertionError: \"3\" unexpectedly not greater than...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104517",
+    "updatedDate": "2026-03-11T23:15:48.104518",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertHasAttr": {
+    "id": "unittest.TestCase.assertHasAttr",
+    "name": "assertHasAttr",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertHasAttr(obj, name, msg=None)"
+    ],
+    "signature_hash": "43bcd57e1d377f14bb2e96fb3f83645bb0e58769d5f35c549c66c667826ac69b",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertHasAttr",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104679",
+    "updatedDate": "2026-03-11T23:15:48.104680",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertIn": {
+    "id": "unittest.TestCase.assertIn",
+    "name": "assertIn",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertIn(member, container, msg=None)"
+    ],
+    "signature_hash": "ca8c6340c95bf03137aaf298ef37897d1a19f183e36f816bf9e86a509aff1c91",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertIn",
+    "parameters": [
+      {
+        "name": "member",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "container",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that member is (or is not) in container. Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that member is (or is not) in container. Added in version 3.1.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104212",
+    "updatedDate": "2026-03-11T23:15:48.104213",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertIs": {
+    "id": "unittest.TestCase.assertIs",
+    "name": "assertIs",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertIs(first, second, msg=None)"
+    ],
+    "signature_hash": "8c9876b38a611173b1c4dd81907f7e2e4a4ea04c7d38daa6921128be7807c0a4",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertIs",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that first and second are (or are not) the same object. Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that first and second are (or are not) the same object. Added in version 3.1.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104179",
+    "updatedDate": "2026-03-11T23:15:48.104180",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertIsInstance": {
+    "id": "unittest.TestCase.assertIsInstance",
+    "name": "assertIsInstance",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertIsInstance(obj, cls, msg=None)"
+    ],
+    "signature_hash": "cf2e6002e66387ac64ce412b94708e8f0d9b9b3d2f7cdc6eba16ab4bb7646f3c",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertIsInstance",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "cls",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that obj is (or is not) an instance of cls (which can be a class or a tuple of classes, as supported by isinstance()). To check for the exact type, use assertIs(type(obj), cls). Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that obj is (or is not) an instance of cls (which can be a class or a tuple of classes, as supported by isinstance()). To check for the exact type, use assertIs(type(obj), cls). Added in version ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104230",
+    "updatedDate": "2026-03-11T23:15:48.104231",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertIsNone": {
+    "id": "unittest.TestCase.assertIsNone",
+    "name": "assertIsNone",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertIsNone(expr, msg=None)"
+    ],
+    "signature_hash": "9da4bb6f8e8f6817f95a9f747a3266f825e94adf71f89e012b261bff5d7a1c30",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertIsNone",
+    "parameters": [
+      {
+        "name": "expr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that expr is (or is not) None. Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that expr is (or is not) None. Added in version 3.1.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104195",
+    "updatedDate": "2026-03-11T23:15:48.104196",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertIsSubclass": {
+    "id": "unittest.TestCase.assertIsSubclass",
+    "name": "assertIsSubclass",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertIsSubclass(cls, superclass, msg=None)"
+    ],
+    "signature_hash": "5ab9cc41d271dec9f0a283de5bbb31493d860462ed3971f8af5d468563885046",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertIsSubclass",
+    "parameters": [
+      {
+        "name": "cls",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "superclass",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that cls is (or is not) a subclass of superclass (which can be a class or a tuple of classes, as supported by issubclass()). To check for the exact type, use assertIs(cls, superclass). Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that cls is (or is not) a subclass of superclass (which can be a class or a tuple of classes, as supported by issubclass()). To check for the exact type, use assertIs(cls, superclass). Added in v...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104249",
+    "updatedDate": "2026-03-11T23:15:48.104250",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertListEqual": {
+    "id": "unittest.TestCase.assertListEqual",
+    "name": "assertListEqual",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertListEqual(first, second, msg=None)"
+    ],
+    "signature_hash": "9ec75eca7fc697e50d199ceab48d275a357adc4f3bfcf8429ccd75457343613b",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertListEqual",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Tests that two lists or tuples are equal. If not, an error message is constructed that shows only the differences between the two. An error is also raised if either of the parameters are of the wrong type. These methods are used by default when comparing lists or tuples with assertEqual(). Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tests that two lists or tuples are equal. If not, an error message is constructed that shows only the differences between the two. An error is also raised if either of the parameters are of the wrong ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104781",
+    "updatedDate": "2026-03-11T23:15:48.104782",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertLogs": {
+    "id": "unittest.TestCase.assertLogs",
+    "name": "assertLogs",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertLogs(logger=None, level=None)"
+    ],
+    "signature_hash": "170c2be11af6fd956febb2712ad775b9ac9bd113a5ca5b9035903355f648561f",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertLogs",
+    "parameters": [
+      {
+        "name": "logger",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "level",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A context manager to test that at least one message is logged on the logger or one of its children, with at least the given level. If given, logger should be a logging.Logger object or a str giving the name of a logger. The default is the root logger, which will catch all messages that were not blocked by a non-propagating descendent logger. If given, level should be either a numeric logging level or its string equivalent (for example either \"ERROR\" or logging.ERROR). The default is logging.I...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A context manager to test that at least one message is logged on the logger or one of its children, with at least the given level. If given, logger should be a logging.Logger object or a str giving th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104362",
+    "updatedDate": "2026-03-11T23:15:48.104363",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertMultiLineEqual": {
+    "id": "unittest.TestCase.assertMultiLineEqual",
+    "name": "assertMultiLineEqual",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertMultiLineEqual(first, second, msg=None)"
+    ],
+    "signature_hash": "23ae6db4e42609bb112e7e9cc262a1e8b30b58ee54435765c822ec2fddddd79f",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertMultiLineEqual",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that the multiline string first is equal to the string second. When not equal a diff of the two strings highlighting the differences will be included in the error message. This method is used by default when comparing strings with assertEqual(). Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that the multiline string first is equal to the string second. When not equal a diff of the two strings highlighting the differences will be included in the error message. This method is used by ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104739",
+    "updatedDate": "2026-03-11T23:15:48.104740",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertNoLogs": {
+    "id": "unittest.TestCase.assertNoLogs",
+    "name": "assertNoLogs",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertNoLogs(logger=None, level=None)"
+    ],
+    "signature_hash": "0b6ab56b10e4b1999b5bcd763aa35e297ab6545da20bbfdfaca82ae5d10ae91e",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertNoLogs",
+    "parameters": [
+      {
+        "name": "logger",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "level",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A context manager to test that no messages are logged on the logger or one of its children, with at least the given level. If given, logger should be a logging.Logger object or a str giving the name of a logger. The default is the root logger, which will catch all messages. If given, level should be either a numeric logging level or its string equivalent (for example either \"ERROR\" or logging.ERROR). The default is logging.INFO. Unlike assertLogs(), nothing will be returned by the context man...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A context manager to test that no messages are logged on the logger or one of its children, with at least the given level. If given, logger should be a logging.Logger object or a str giving the name o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104444",
+    "updatedDate": "2026-03-11T23:15:48.104446",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertNotEndsWith": {
+    "id": "unittest.TestCase.assertNotEndsWith",
+    "name": "assertNotEndsWith",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertNotEndsWith(s, suffix, msg=None)"
+    ],
+    "signature_hash": "820ca314b058607861cd9bd2d6120db7724d868d0e2c8441d2b891c63f7901b6",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertNotEndsWith",
+    "parameters": [
+      {
+        "name": "s",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "suffix",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that the Unicode or byte string s ends (or does not end) with a suffix. suffix can also be a tuple of strings to try. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that the Unicode or byte string s ends (or does not end) with a suffix. suffix can also be a tuple of strings to try. Added in version 3.14.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104663",
+    "updatedDate": "2026-03-11T23:15:48.104664",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertNotEqual": {
+    "id": "unittest.TestCase.assertNotEqual",
+    "name": "assertNotEqual",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertNotEqual(first, second, msg=None)"
+    ],
+    "signature_hash": "be46bdd6b2f63310dc6f0eb14caad05788380b4241093e1cc9c7f0717c44a0be",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertNotEqual",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that first and second are not equal. If the values do compare equal, the test will fail.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that first and second are not equal. If the values do compare equal, the test will fail.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104146",
+    "updatedDate": "2026-03-11T23:15:48.104147",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertNotHasAttr": {
+    "id": "unittest.TestCase.assertNotHasAttr",
+    "name": "assertNotHasAttr",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertNotHasAttr(obj, name, msg=None)"
+    ],
+    "signature_hash": "3678362f3e3b86f8efb4c38f19fb4ad83d3f9aede0c5983612b768ac314de7e2",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertNotHasAttr",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that the object obj has (or has not) an attribute name. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that the object obj has (or has not) an attribute name. Added in version 3.14.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104699",
+    "updatedDate": "2026-03-11T23:15:48.104700",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertNotStartsWith": {
+    "id": "unittest.TestCase.assertNotStartsWith",
+    "name": "assertNotStartsWith",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertNotStartsWith(s, prefix, msg=None)"
+    ],
+    "signature_hash": "4b854747e828af453ab8856222ebc5cb01aebb0f981d2e1cc69849e2af89048b",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertNotStartsWith",
+    "parameters": [
+      {
+        "name": "s",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "prefix",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that the Unicode or byte string s starts (or does not start) with a prefix. prefix can also be a tuple of strings to try. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that the Unicode or byte string s starts (or does not start) with a prefix. prefix can also be a tuple of strings to try. Added in version 3.14.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104623",
+    "updatedDate": "2026-03-11T23:15:48.104625",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertRaises": {
+    "id": "unittest.TestCase.assertRaises",
+    "name": "assertRaises",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertRaises(exception, callable, *args, **kwds)"
+    ],
+    "signature_hash": "bc8b95c0fff1b34e876cbff4075cb94f73746598f0c86d1af3e12deec8096b58",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertRaises",
+    "parameters": [
+      {
+        "name": "exception",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "callable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "kwds",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that an exception is raised when callable is called with any positional or keyword arguments that are also passed to assertRaises(). The test passes if exception is raised, is an error if another exception is raised, or fails if no exception is raised. To catch any of a group of exceptions, a tuple containing the exception classes may be passed as exception. If only the exception and possibly the msg arguments are given, return a context manager so that the code under test can be written...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that an exception is raised when callable is called with any positional or keyword arguments that are also passed to assertRaises(). The test passes if exception is raised, is an error if another...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104271",
+    "updatedDate": "2026-03-11T23:15:48.104272",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertRaisesRegex": {
+    "id": "unittest.TestCase.assertRaisesRegex",
+    "name": "assertRaisesRegex",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertRaisesRegex(exception, regex, callable, *args, **kwds)"
+    ],
+    "signature_hash": "bccb12540fac92d9f9d8a88bb9204122d098981a0ce06143702db682de42fad2",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertRaisesRegex",
+    "parameters": [
+      {
+        "name": "exception",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "regex",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "callable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "kwds",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Like assertRaises() but also tests that regex matches on the string representation of the raised exception. regex may be a regular expression object or a string containing a regular expression suitable for use by re.search(). Examples: self.assertRaisesRegex(ValueError, \"invalid literal for.*XYZ'$\", int, 'XYZ') or: with self.assertRaisesRegex(ValueError, 'literal'): int('XYZ') Added in version 3.1: Added under the name assertRaisesRegexp. Changed in version 3.2: Renamed to assertRaisesRegex()...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Like assertRaises() but also tests that regex matches on the string representation of the raised exception. regex may be a regular expression object or a string containing a regular expression suitabl...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104295",
+    "updatedDate": "2026-03-11T23:15:48.104296",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertRegex": {
+    "id": "unittest.TestCase.assertRegex",
+    "name": "assertRegex",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertRegex(text, regex, msg=None)"
+    ],
+    "signature_hash": "70d3e022be06dce1ec72981bb3bfc80bcacdf033b8a604c36ecffdfdf1b9b373",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertRegex",
+    "parameters": [
+      {
+        "name": "text",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "regex",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that a regex search matches (or does not match) text. In case of failure, the error message will include the pattern and the text (or the pattern and the part of text that unexpectedly matched). regex may be a regular expression object or a string containing a regular expression suitable for use by re.search(). Added in version 3.1: Added under the name assertRegexpMatches. Changed in version 3.2: The method assertRegexpMatches() has been renamed to assertRegex(). Added in version 3.2: a...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that a regex search matches (or does not match) text. In case of failure, the error message will include the pattern and the text (or the pattern and the part of text that unexpectedly matched). ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104539",
+    "updatedDate": "2026-03-11T23:15:48.104540",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertSequenceEqual": {
+    "id": "unittest.TestCase.assertSequenceEqual",
+    "name": "assertSequenceEqual",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertSequenceEqual(first, second, msg=None, seq_type=None)"
+    ],
+    "signature_hash": "253670238a4a9d2345178075793d3369961b1c79795c97de50bc296463930de6",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertSequenceEqual",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "seq_type",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Tests that two sequences are equal. If a seq_type is supplied, both first and second must be instances of seq_type or a failure will be raised. If the sequences are different an error message is constructed that shows the difference between the two. This method is not called directly by assertEqual(), but it’s used to implement assertListEqual() and assertTupleEqual(). Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tests that two sequences are equal. If a seq_type is supplied, both first and second must be instances of seq_type or a failure will be raised. If the sequences are different an error message is const...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104762",
+    "updatedDate": "2026-03-11T23:15:48.104762",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertSetEqual": {
+    "id": "unittest.TestCase.assertSetEqual",
+    "name": "assertSetEqual",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertSetEqual(first, second, msg=None)"
+    ],
+    "signature_hash": "344622004862153b4ce2a1cadd88c1f022b5b7aa19deb1acc31ac72c2d887317",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertSetEqual",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "second",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Tests that two sets are equal. If not, an error message is constructed that lists the differences between the sets. This method is used by default when comparing sets or frozensets with assertEqual(). Fails if either of first or second does not have a difference() method. Added in version 3.1.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tests that two sets are equal. If not, an error message is constructed that lists the differences between the sets. This method is used by default when comparing sets or frozensets with assertEqual()....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104800",
+    "updatedDate": "2026-03-11T23:15:48.104801",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertStartsWith": {
+    "id": "unittest.TestCase.assertStartsWith",
+    "name": "assertStartsWith",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertStartsWith(s, prefix, msg=None)"
+    ],
+    "signature_hash": "5f00ad66a224f738e40ac4981c4a7ca9b6de2ba5d79abd8bf8f799f75e52fe30",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertStartsWith",
+    "parameters": [
+      {
+        "name": "s",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "prefix",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104581",
+    "updatedDate": "2026-03-11T23:15:48.104582",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertTrue": {
+    "id": "unittest.TestCase.assertTrue",
+    "name": "assertTrue",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertTrue(expr, msg=None)"
+    ],
+    "signature_hash": "9e25f41db2abeb447cf4aa46b76c2ab75b274ee58753e48c296d07369b920978",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertTrue",
+    "parameters": [
+      {
+        "name": "expr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that expr is true (or false). Note that this is equivalent to bool(expr) is True and not to expr is True (use assertIs(expr, True) for the latter). This method should also be avoided when more specific methods are available (e.g. assertEqual(a, b) instead of assertTrue(a == b)), because they provide a better error message in case of failure.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that expr is true (or false). Note that this is equivalent to bool(expr) is True and not to expr is True (use assertIs(expr, True) for the latter). This method should also be avoided when more sp...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104163",
+    "updatedDate": "2026-03-11T23:15:48.104164",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertWarns": {
+    "id": "unittest.TestCase.assertWarns",
+    "name": "assertWarns",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertWarns(warning, callable, *args, **kwds)"
+    ],
+    "signature_hash": "b3c1da61e395047a92cd37743b1c8ea35075f2a4d431d7f95bb709b950ac6f49",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertWarns",
+    "parameters": [
+      {
+        "name": "warning",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "callable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "kwds",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Test that a warning is triggered when callable is called with any positional or keyword arguments that are also passed to assertWarns(). The test passes if warning is triggered and fails if it isn’t. Any exception is an error. To catch any of a group of warnings, a tuple containing the warning classes may be passed as warnings. If only the warning and possibly the msg arguments are given, return a context manager so that the code under test can be written inline rather than as a function: wit...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Test that a warning is triggered when callable is called with any positional or keyword arguments that are also passed to assertWarns(). The test passes if warning is triggered and fails if it isn’t. ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104316",
+    "updatedDate": "2026-03-11T23:15:48.104317",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/TestCase/assertWarnsRegex": {
+    "id": "unittest.TestCase.assertWarnsRegex",
+    "name": "assertWarnsRegex",
+    "type": "method",
+    "parent": "TestCase",
+    "signatures": [
+      "assertWarnsRegex(warning, regex, callable, *args, **kwds)"
+    ],
+    "signature_hash": "f0dbb4c687bf94adf27785b74a4a8765a4a6c16feac14ee7e06abfe3c9d3e2f2",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.TestCase.assertWarnsRegex",
+    "parameters": [
+      {
+        "name": "warning",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "regex",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "callable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "kwds",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Like assertWarns() but also tests that regex matches on the message of the triggered warning. regex may be a regular expression object or a string containing a regular expression suitable for use by re.search(). Example: self.assertWarnsRegex(DeprecationWarning, r'legacy_function\\(\\) is deprecated', legacy_function, 'XYZ') or: with self.assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'): frobnicate('/etc/passwd') Added in version 3.2. Changed in version 3.3: Added the msg keyword argumen...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Like assertWarns() but also tests that regex matches on the message of the triggered warning. regex may be a regular expression object or a string containing a regular expression suitable for use by r...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.104340",
+    "updatedDate": "2026-03-11T23:15:48.104341",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/IsolatedAsyncioTestCase/asyncSetUp": {
+    "id": "unittest.IsolatedAsyncioTestCase.asyncSetUp",
+    "name": "asyncSetUp",
+    "type": "method",
+    "parent": "IsolatedAsyncioTestCase",
+    "signatures": [
+      "async asyncSetUp()"
+    ],
+    "signature_hash": "8b9211bc6a692adf94eeea4f211fe73c2b84dabd78eb57098828b818e78e642c",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.IsolatedAsyncioTestCase.asyncSetUp",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Method called to prepare the test fixture. This is called after TestCase.setUp(). This is called immediately before calling the test method; other than AssertionError or SkipTest, any exception raised by this method will be considered an error rather than a test failure. The default implementation does nothing.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Method called to prepare the test fixture. This is called after TestCase.setUp(). This is called immediately before calling the test method; other than AssertionError or SkipTest, any exception raised...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105100",
+    "updatedDate": "2026-03-11T23:15:48.105101",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest/IsolatedAsyncioTestCase/asyncTearDown": {
+    "id": "unittest.IsolatedAsyncioTestCase.asyncTearDown",
+    "name": "asyncTearDown",
+    "type": "method",
+    "parent": "IsolatedAsyncioTestCase",
+    "signatures": [
+      "async asyncTearDown()"
+    ],
+    "signature_hash": "39556298a1e411d7c5f5e1e0b95b6d97514d3b4e968d1492bf68bae68f32be36",
+    "url": "https://docs.python.org/3/library/unittest.html#module-unittest#unittest.IsolatedAsyncioTestCase.asyncTearDown",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Method called immediately after the test method has been called and the result recorded. This is called before tearDown(). This is called even if the test method raised an exception, so the implementation in subclasses may need to be particularly careful about checking internal state. Any exception, other than AssertionError or SkipTest, raised by this method will be considered an additional error rather than a test failure (thus increasing the total number of reported errors). This method wi...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Method called immediately after the test method has been called and the result recorded. This is called before tearDown(). This is called even if the test method raised an exception, so the implementa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.105117",
+    "updatedDate": "2026-03-11T23:15:48.105118",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

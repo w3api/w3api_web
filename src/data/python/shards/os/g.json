@@ -1,0 +1,1326 @@
+{
+  "os/GRND_NONBLOCK": {
+    "id": "os.GRND_NONBLOCK",
+    "name": "GRND_NONBLOCK",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "os.GRND_NONBLOCK"
+    ],
+    "signature_hash": "a289dba978d5bb757810d306eae8b8f23ba82200bbe05a63db4bedc185a58c90",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.GRND_NONBLOCK",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "By default, when reading from /dev/random, getrandom() blocks if no random bytes are available, and when reading from /dev/urandom, it blocks if the entropy pool has not yet been initialized. If the GRND_NONBLOCK flag is set, then getrandom() does not block in these cases, but instead immediately raises BlockingIOError. Added in version 3.6.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "By default, when reading from /dev/random, getrandom() blocks if no random bytes are available, and when reading from /dev/urandom, it blocks if the entropy pool has not yet been initialized. If the G...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.027015",
+    "updatedDate": "2026-03-11T23:15:48.027016",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.6.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/GRND_RANDOM": {
+    "id": "os.GRND_RANDOM",
+    "name": "GRND_RANDOM",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "os.GRND_RANDOM"
+    ],
+    "signature_hash": "99a87bf0b34cb339babb407c0ad98debfa45e67c2218d4b7647706f3df5a64e1",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.GRND_RANDOM",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "If this bit is set, then random bytes are drawn from the /dev/random pool instead of the /dev/urandom pool. Added in version 3.6.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If this bit is set, then random bytes are drawn from the /dev/random pool instead of the /dev/urandom pool. Added in version 3.6.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.027038",
+    "updatedDate": "2026-03-11T23:15:48.027039",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.6.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/get_blocking": {
+    "id": "os.get_blocking",
+    "name": "get_blocking",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.get_blocking(fd, /)"
+    ],
+    "signature_hash": "fc561d1baf842b799b1d3e45938b48cea116208c358c4dc2f924e30edd404f1b",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.get_blocking",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get the blocking mode of the file descriptor: False if the O_NONBLOCK flag is set, True if the flag is cleared. See also set_blocking() and socket.socket.setblocking(). Availability: Unix, Windows. The function is limited on WASI, see WebAssembly platforms for more information. On Windows, this function is limited to pipes. Added in version 3.5. Changed in version 3.12: Added support for pipes on Windows.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the blocking mode of the file descriptor: False if the O_NONBLOCK flag is set, True if the flag is cleared. See also set_blocking() and socket.socket.setblocking(). Availability: Unix, Windows. Th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018315",
+    "updatedDate": "2026-03-11T23:15:48.018319",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/get_exec_path": {
+    "id": "os.get_exec_path",
+    "name": "get_exec_path",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.get_exec_path(env=None)"
+    ],
+    "signature_hash": "aa2d01d31c6d246c269d468e56115575adea317f528f2f77f11da6ef58b70198",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.get_exec_path",
+    "parameters": [
+      {
+        "name": "env",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns the list of directories that will be searched for a named executable, similar to a shell, when launching a process. env, when specified, should be an environment variable dictionary to lookup the PATH in. By default, when env is None, environ is used. Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the list of directories that will be searched for a named executable, similar to a shell, when launching a process. env, when specified, should be an environment variable dictionary to lookup ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013370",
+    "updatedDate": "2026-03-11T23:15:48.013371",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/get_handle_inheritable": {
+    "id": "os.get_handle_inheritable",
+    "name": "get_handle_inheritable",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.get_handle_inheritable(handle, /)"
+    ],
+    "signature_hash": "0d851c42bd9d4b012dd334773396fd63cec7240514ecba8bcbb2ce287a00a171",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.get_handle_inheritable",
+    "parameters": [
+      {
+        "name": "handle",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get the “inheritable” flag of the specified handle (a boolean). Availability: Windows.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the “inheritable” flag of the specified handle (a boolean). Availability: Windows.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021627",
+    "updatedDate": "2026-03-11T23:15:48.021628",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/get_inheritable": {
+    "id": "os.get_inheritable",
+    "name": "get_inheritable",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.get_inheritable(fd, /)"
+    ],
+    "signature_hash": "bb3f394cf0312d918bc70f537bc2b7aea71ee2bccda6e0b25c58d8c0e0b4b862",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.get_inheritable",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get the “inheritable” flag of the specified file descriptor (a boolean).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the “inheritable” flag of the specified file descriptor (a boolean).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021588",
+    "updatedDate": "2026-03-11T23:15:48.021589",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/get_terminal_size": {
+    "id": "os.get_terminal_size",
+    "name": "get_terminal_size",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.get_terminal_size(fd=STDOUT_FILENO, /)"
+    ],
+    "signature_hash": "8af955f5eae4590c63fa2f79440d9f1e3def3fd181fbd467812ed5fae725c0a3",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.get_terminal_size",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": true,
+        "default_value": "STDOUT_FILENO",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the size of the terminal window as (columns, lines), tuple of type terminal_size. The optional argument fd (default STDOUT_FILENO, or standard output) specifies which file descriptor should be queried. If the file descriptor is not connected to a terminal, an OSError is raised. shutil.get_terminal_size() is the high-level function which should normally be used, os.get_terminal_size is the low-level implementation. Availability: Unix, Windows.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the size of the terminal window as (columns, lines), tuple of type terminal_size. The optional argument fd (default STDOUT_FILENO, or standard output) specifies which file descriptor should be ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021520",
+    "updatedDate": "2026-03-11T23:15:48.021521",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getcwd": {
+    "id": "os.getcwd",
+    "name": "getcwd",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getcwd()"
+    ],
+    "signature_hash": "c6df53656b0c7511d9b6685350fb9258b86154b9b53e1e071c59720905961253",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getcwd",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a string representing the current working directory.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a string representing the current working directory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021870",
+    "updatedDate": "2026-03-11T23:15:48.021871",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getcwdb": {
+    "id": "os.getcwdb",
+    "name": "getcwdb",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getcwdb()"
+    ],
+    "signature_hash": "9ce5520cf05733ab6adf5af18f23af050973c9eaa6cf8cd6a1dec00e57d5f338",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getcwdb",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a bytestring representing the current working directory. Changed in version 3.8: The function now uses the UTF-8 encoding on Windows, rather than the ANSI code page: see PEP 529 for the rationale. The function is no longer deprecated on Windows.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a bytestring representing the current working directory. Changed in version 3.8: The function now uses the UTF-8 encoding on Windows, rather than the ANSI code page: see PEP 529 for the rationa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.021887",
+    "updatedDate": "2026-03-11T23:15:48.021888",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getegid": {
+    "id": "os.getegid",
+    "name": "getegid",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getegid()"
+    ],
+    "signature_hash": "ee983772491503b948cd3414e19fc65c6e4ea1859c186f5148972e8d225c47fb",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getegid",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the effective group id of the current process. This corresponds to the “set id” bit on the file being executed in the current process. Availability: Unix, not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the effective group id of the current process. This corresponds to the “set id” bit on the file being executed in the current process. Availability: Unix, not WASI.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013383",
+    "updatedDate": "2026-03-11T23:15:48.013383",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getenv": {
+    "id": "os.getenv",
+    "name": "getenv",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getenv(key, default=None)"
+    ],
+    "signature_hash": "373a7e88f6df061c761864d26b287ad50d35908718b3e3f3add65d94cd60218f",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getenv",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "default",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the value of the environment variable key as a string if it exists, or default if it doesn’t. key is a string. Note that since getenv() uses os.environ, the mapping of getenv() is similarly also captured on import, and the function may not reflect future environment changes. On Unix, keys and values are decoded with sys.getfilesystemencoding() and 'surrogateescape' error handler. Use os.getenvb() if you would like to use a different encoding. Availability: Unix, Windows.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the environment variable key as a string if it exists, or default if it doesn’t. key is a string. Note that since getenv() uses os.environ, the mapping of getenv() is similarly als...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013335",
+    "updatedDate": "2026-03-11T23:15:48.013336",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getenvb": {
+    "id": "os.getenvb",
+    "name": "getenvb",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getenvb(key, default=None)"
+    ],
+    "signature_hash": "04c42624b25aea2095b1fb89941e10c2cda78bd61626290e8e7619eccc72a6e5",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getenvb",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "default",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the value of the environment variable key as bytes if it exists, or default if it doesn’t. key must be bytes. Note that since getenvb() uses os.environb, the mapping of getenvb() is similarly also captured on import, and the function may not reflect future environment changes. getenvb() is only available if supports_bytes_environ is True. Availability: Unix. Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the environment variable key as bytes if it exists, or default if it doesn’t. key must be bytes. Note that since getenvb() uses os.environb, the mapping of getenvb() is similarly a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013354",
+    "updatedDate": "2026-03-11T23:15:48.013355",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/geteuid": {
+    "id": "os.geteuid",
+    "name": "geteuid",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.geteuid()"
+    ],
+    "signature_hash": "3bc631ad225dd15f153ba084bd66466e84cec509629e7d5507ce6e43eedadbea",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.geteuid",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the current process’s effective user id. Availability: Unix, not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the current process’s effective user id. Availability: Unix, not WASI.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013394",
+    "updatedDate": "2026-03-11T23:15:48.013395",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getgid": {
+    "id": "os.getgid",
+    "name": "getgid",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getgid()"
+    ],
+    "signature_hash": "85ee4387671951e505743240ed6cc57c61502a2f55d377facda3d42e09d1b6ce",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getgid",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the real group id of the current process. Availability: Unix. The function is a stub on WASI, see WebAssembly platforms for more information.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the real group id of the current process. Availability: Unix. The function is a stub on WASI, see WebAssembly platforms for more information.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013405",
+    "updatedDate": "2026-03-11T23:15:48.013406",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getgrouplist": {
+    "id": "os.getgrouplist",
+    "name": "getgrouplist",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getgrouplist(user, group, /)"
+    ],
+    "signature_hash": "a6c87db252e4aefa04a8011c0ea1cf0425a2be11f8bb481a2a2163699002841d",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getgrouplist",
+    "parameters": [
+      {
+        "name": "user",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "group",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return list of group ids that user belongs to. If group is not in the list, it is included; typically, group is specified as the group ID field from the password record for user, because that group ID will otherwise be potentially omitted. Availability: Unix, not WASI. Added in version 3.3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return list of group ids that user belongs to. If group is not in the list, it is included; typically, group is specified as the group ID field from the password record for user, because that group ID...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013424",
+    "updatedDate": "2026-03-11T23:15:48.013425",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getgroups": {
+    "id": "os.getgroups",
+    "name": "getgroups",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getgroups()"
+    ],
+    "signature_hash": "7f44f7ab2e45c3c374ed1d54d366df4072056b7d53531b78d27583e5a825fee5",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getgroups",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return list of supplemental group ids associated with the current process. Availability: Unix, not WASI. Note On macOS, getgroups() behavior differs somewhat from other Unix platforms. If the Python interpreter was built with a deployment target of 10.5 or earlier, getgroups() returns the list of effective group ids associated with the current user process; this list is limited to a system-defined number of entries, typically 16, and may be modified by calls to setgroups() if suitably privile...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return list of supplemental group ids associated with the current process. Availability: Unix, not WASI. Note On macOS, getgroups() behavior differs somewhat from other Unix platforms. If the Python i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013439",
+    "updatedDate": "2026-03-11T23:15:48.013440",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getloadavg": {
+    "id": "os.getloadavg",
+    "name": "getloadavg",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getloadavg()"
+    ],
+    "signature_hash": "29303f5c5f25f8028726a80df50d07cd756f43598965a2897327f457cf611c68",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getloadavg",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the number of processes in the system run queue averaged over the last 1, 5, and 15 minutes or raises OSError if the load average was unobtainable. Availability: Unix.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the number of processes in the system run queue averaged over the last 1, 5, and 15 minutes or raises OSError if the load average was unobtainable. Availability: Unix.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.026558",
+    "updatedDate": "2026-03-11T23:15:48.026559",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getlogin": {
+    "id": "os.getlogin",
+    "name": "getlogin",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getlogin()"
+    ],
+    "signature_hash": "123d614ae5db408302d60fe97e5ca0c68091a6ea86d4926ab8977520a78a16a8",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getlogin",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the name of the user logged in on the controlling terminal of the process. For most purposes, it is more useful to use getpass.getuser() since the latter checks the environment variables LOGNAME or USERNAME to find out who the user is, and falls back to pwd.getpwuid(os.getuid())[0] to get the login name of the current real user id. Availability: Unix, Windows, not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the name of the user logged in on the controlling terminal of the process. For most purposes, it is more useful to use getpass.getuser() since the latter checks the environment variables LOGNAM...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013454",
+    "updatedDate": "2026-03-11T23:15:48.013454",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getpgid": {
+    "id": "os.getpgid",
+    "name": "getpgid",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getpgid(pid)"
+    ],
+    "signature_hash": "fd612aafad92b261b586b453835b93e3bb902867836206029c1d109257fffcb7",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getpgid",
+    "parameters": [
+      {
+        "name": "pid",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the process group id of the process with process id pid. If pid is 0, the process group id of the current process is returned. Availability: Unix, not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the process group id of the process with process id pid. If pid is 0, the process group id of the current process is returned. Availability: Unix, not WASI.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013468",
+    "updatedDate": "2026-03-11T23:15:48.013469",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getpgrp": {
+    "id": "os.getpgrp",
+    "name": "getpgrp",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getpgrp()"
+    ],
+    "signature_hash": "242ce185d57e8c7d2b7766eaa4ac3f66823653e5b8635bcbba1b8d73d8f6944a",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getpgrp",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the id of the current process group. Availability: Unix, not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the id of the current process group. Availability: Unix, not WASI.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013480",
+    "updatedDate": "2026-03-11T23:15:48.013481",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getpid": {
+    "id": "os.getpid",
+    "name": "getpid",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getpid()"
+    ],
+    "signature_hash": "5bfe88c7353dcbefcd16ce0e73a7e2bc05ae57af99f4f8181b711d104b11b97a",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getpid",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the current process id. The function is a stub on WASI, see WebAssembly platforms for more information.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the current process id. The function is a stub on WASI, see WebAssembly platforms for more information.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013491",
+    "updatedDate": "2026-03-11T23:15:48.013492",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getppid": {
+    "id": "os.getppid",
+    "name": "getppid",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getppid()"
+    ],
+    "signature_hash": "a280eaf32e68e65d66df5f8f61e88b2cad9f2e96758d63e87ff381afbbdb6558",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getppid",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the parent’s process id. When the parent process has exited, on Unix the id returned is the one of the init process (1), on Windows it is still the same id, which may be already reused by another process. Availability: Unix, Windows, not WASI. Changed in version 3.2: Added support for Windows.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the parent’s process id. When the parent process has exited, on Unix the id returned is the one of the init process (1), on Windows it is still the same id, which may be already reused by anoth...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013504",
+    "updatedDate": "2026-03-11T23:15:48.013505",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getpriority": {
+    "id": "os.getpriority",
+    "name": "getpriority",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getpriority(which, who)"
+    ],
+    "signature_hash": "f67fe109e1fe0b08d49e2effe321db4078b97f0afd2ce6c76c09760ae44a29db",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getpriority",
+    "parameters": [
+      {
+        "name": "which",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "who",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get program scheduling priority. The value which is one of PRIO_PROCESS, PRIO_PGRP, or PRIO_USER, and who is interpreted relative to which (a process identifier for PRIO_PROCESS, process group identifier for PRIO_PGRP, and a user ID for PRIO_USER). A zero value for who denotes (respectively) the calling process, the process group of the calling process, or the real user ID of the calling process. Availability: Unix, not WASI. Added in version 3.3.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get program scheduling priority. The value which is one of PRIO_PROCESS, PRIO_PGRP, or PRIO_USER, and who is interpreted relative to which (a process identifier for PRIO_PROCESS, process group identif...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013522",
+    "updatedDate": "2026-03-11T23:15:48.013523",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getrandom": {
+    "id": "os.getrandom",
+    "name": "getrandom",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getrandom(size, flags=0)"
+    ],
+    "signature_hash": "29ed638bd01b63618265138b0f9b842eab4963a2ca704eb0383ce8591a04c5a9",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getrandom",
+    "parameters": [
+      {
+        "name": "size",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "flags",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get up to size random bytes. The function can return less bytes than requested. These bytes can be used to seed user-space random number generators or for cryptographic purposes. getrandom() relies on entropy gathered from device drivers and other sources of environmental noise. Unnecessarily reading large quantities of data will have a negative impact on other users of the /dev/random and /dev/urandom devices. The flags argument is a bit mask that can contain zero or more of the following va...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get up to size random bytes. The function can return less bytes than requested. These bytes can be used to seed user-space random number generators or for cryptographic purposes. getrandom() relies on...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.026960",
+    "updatedDate": "2026-03-11T23:15:48.026961",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.6.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getresgid": {
+    "id": "os.getresgid",
+    "name": "getresgid",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getresgid()"
+    ],
+    "signature_hash": "6982a995e2bcba5e814245e7e0f8519c6de916a282617fe5bab4a56166e11c29",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getresgid",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a tuple (rgid, egid, sgid) denoting the current process’s real, effective, and saved group ids. Availability: Unix, not WASI. Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a tuple (rgid, egid, sgid) denoting the current process’s real, effective, and saved group ids. Availability: Unix, not WASI. Added in version 3.2.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013716",
+    "updatedDate": "2026-03-11T23:15:48.013720",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getresuid": {
+    "id": "os.getresuid",
+    "name": "getresuid",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getresuid()"
+    ],
+    "signature_hash": "06be033bf54db1d3fa3cc5cf550a8c7d8408a0717a4673174b60a3bd6825d978",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getresuid",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a tuple (ruid, euid, suid) denoting the current process’s real, effective, and saved user ids. Availability: Unix, not WASI. Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a tuple (ruid, euid, suid) denoting the current process’s real, effective, and saved user ids. Availability: Unix, not WASI. Added in version 3.2.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013581",
+    "updatedDate": "2026-03-11T23:15:48.013605",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getsid": {
+    "id": "os.getsid",
+    "name": "getsid",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getsid(pid, /)"
+    ],
+    "signature_hash": "93c4d60022f59e71008efabafb245a5d956d9605a5323a41c34be12b40d7afab",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getsid",
+    "parameters": [
+      {
+        "name": "pid",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Call the system call getsid(). See the Unix manual for the semantics. Availability: Unix, not WASI.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Call the system call getsid(). See the Unix manual for the semantics. Availability: Unix, not WASI.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.016548",
+    "updatedDate": "2026-03-11T23:15:48.016552",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getuid": {
+    "id": "os.getuid",
+    "name": "getuid",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getuid()"
+    ],
+    "signature_hash": "ce0272a4b6a1344b38c7f0293bd78136b70c147c9ff5b254ad59535b25f0724e",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getuid",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the current process’s real user id. Availability: Unix. The function is a stub on WASI, see WebAssembly platforms for more information.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the current process’s real user id. Availability: Unix. The function is a stub on WASI, see WebAssembly platforms for more information.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.013761",
+    "updatedDate": "2026-03-11T23:15:48.013764",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/getxattr": {
+    "id": "os.getxattr",
+    "name": "getxattr",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.getxattr(path, attribute, *, follow_symlinks=True)"
+    ],
+    "signature_hash": "ca9bf2af9eee81b20c092aff9d378204deaf7d45e62f5230426f175e4e964dce",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.getxattr",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attribute",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the value of the extended filesystem attribute attribute for path. attribute can be bytes or str (directly or indirectly through the PathLike interface). If it is str, it is encoded with the filesystem encoding. This function can support specifying a file descriptor and not following symlinks. Raises an auditing event os.getxattr with arguments path, attribute. Changed in version 3.6: Accepts a path-like object for path and attribute.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the extended filesystem attribute attribute for path. attribute can be bytes or str (directly or indirectly through the PathLike interface). If it is str, it is encoded with the fi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.024107",
+    "updatedDate": "2026-03-11T23:15:48.024108",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/grantpt": {
+    "id": "os.grantpt",
+    "name": "grantpt",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.grantpt(fd, /)"
+    ],
+    "signature_hash": "583b82b7f09e9a1f56166954cf5844bab0cfe352dd17eaf613a89a7a76d01c7b",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.grantpt",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Grant access to the slave pseudo-terminal device associated with the master pseudo-terminal device to which the file descriptor fd refers. The file descriptor fd is not closed upon failure. Calls the C standard library function grantpt(). Availability: Unix, not WASI. Added in version 3.13.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Grant access to the slave pseudo-terminal device associated with the master pseudo-terminal device to which the file descriptor fd refers. The file descriptor fd is not closed upon failure. Calls the ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.018457",
+    "updatedDate": "2026-03-11T23:15:48.018463",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

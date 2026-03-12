@@ -1,0 +1,217 @@
+{
+  "shutil/register_archive_format": {
+    "id": "shutil.register_archive_format",
+    "name": "register_archive_format",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.register_archive_format(name, function[, extra_args[, description]])"
+    ],
+    "signature_hash": "9cd9d03417fd325bca5e860667b3591c391a131a95ba2fb49f2293e41336df6a",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.register_archive_format",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "function[, extra_args[, description",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Register an archiver for the format name. function is the callable that will be used to unpack archives. The callable will receive the base_name of the file to create, followed by the base_dir (which defaults to os.curdir) to start archiving from. Further arguments are passed as keyword arguments: owner, group, dry_run and logger (as passed in make_archive()). If function has the custom attribute function.supports_root_dir set to True, the root_dir argument is passed as a keyword argument. Ot...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Register an archiver for the format name. function is the callable that will be used to unpack archives. The callable will receive the base_name of the file to create, followed by the base_dir (which ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038713",
+    "updatedDate": "2026-03-11T23:15:48.038714",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shutil/register_unpack_format": {
+    "id": "shutil.register_unpack_format",
+    "name": "register_unpack_format",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.register_unpack_format(name, extensions, function[, extra_args[, description]])"
+    ],
+    "signature_hash": "13e637045a349264e823e68095d4e24236d706374d1c4328346ad58d1d3460fd",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.register_unpack_format",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "extensions",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "function[, extra_args[, description",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Registers an unpack format. name is the name of the format and extensions is a list of extensions corresponding to the format, like .zip for Zip files. function is the callable that will be used to unpack archives. The callable will receive: the path of the archive, as a positional argument; the directory the archive must be extracted to, as a positional argument; possibly a filter keyword argument, if it was given to unpack_archive(); additional keyword arguments, specified by extra_args as ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Registers an unpack format. name is the name of the format and extensions is a list of extensions corresponding to the format, like .zip for Zip files. function is the callable that will be used to un...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038776",
+    "updatedDate": "2026-03-11T23:15:48.038777",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shutil/rmtree": {
+    "id": "shutil.rmtree",
+    "name": "rmtree",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shutil.rmtree(path, ignore_errors=False, onerror=None, *, onexc=None, dir_fd=None)"
+    ],
+    "signature_hash": "b512aa27a8639f88e6fbae2af9c40001daa2b10c1215d34fd07f00a86d2a4359",
+    "url": "https://docs.python.org/3/library/shutil.html#module-shutil#shutil.rmtree",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ignore_errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "onerror",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "onexc",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "dir_fd",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Delete an entire directory tree; path must point to a directory (but not a symbolic link to a directory). If ignore_errors is true, errors resulting from failed removals will be ignored; if false or omitted, such errors are handled by calling a handler specified by onexc or onerror or, if both are omitted, exceptions are propagated to the caller. This function can support paths relative to directory descriptors. Note On platforms that support the necessary fd-based functions a symlink attack ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Delete an entire directory tree; path must point to a directory (but not a symbolic link to a directory). If ignore_errors is true, errors resulting from failed removals will be ignored; if false or o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.038556",
+    "updatedDate": "2026-03-11T23:15:48.038556",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

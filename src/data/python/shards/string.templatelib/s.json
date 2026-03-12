@@ -1,0 +1,49 @@
+{
+  "string.templatelib/Template/strings": {
+    "id": "string.templatelib.Template.strings",
+    "name": "strings",
+    "type": "attribute",
+    "parent": "Template",
+    "signatures": [
+      "strings: tuple[str, ...]"
+    ],
+    "signature_hash": "3863c30124f58bb9efca96cb51f8aac7ea8d86eb82ce84b679b0f7a4c3ffdd6b",
+    "url": "https://docs.python.org/3/library/string.templatelib.html#module-string.templatelib#string.templatelib.Template.strings",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A tuple of the static strings in the template. >>> cheese = 'Camembert' >>> template = t'Ah! We do have {cheese}.' >>> template.strings ('Ah! We do have ', '.') Empty strings are included in the tuple: >>> response = 'We do have ' >>> cheese = 'Camembert' >>> template = t'Ah! {response}{cheese}.' >>> template.strings ('Ah! ', '', '.') The strings tuple is never empty, and always contains one more string than the interpolations and values tuples: >>> t''.strings ('',) >>> t''.values () >>> t'{...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A tuple of the static strings in the template. >>> cheese = 'Camembert' >>> template = t'Ah! We do have {cheese}.' >>> template.strings ('Ah! We do have ', '.') Empty strings are included in the tuple...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.048718",
+    "updatedDate": "2026-03-11T23:15:48.048719",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "string.templatelib": {
+    "type": "module",
+    "name": "string.templatelib",
+    "id": "string.templatelib",
+    "description": "Module string.templatelib",
+    "classes": [
+      "Interpolation",
+      "Template"
+    ],
+    "functions": [
+      "convert"
+    ]
+  }
+}

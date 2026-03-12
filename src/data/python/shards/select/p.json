@@ -1,0 +1,215 @@
+{
+  "select/PIPE_BUF": {
+    "id": "select.PIPE_BUF",
+    "name": "PIPE_BUF",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "select.PIPE_BUF"
+    ],
+    "signature_hash": "48ad0270e22c5d54da2dad5246bc78d979aeb920d4f5d46162a21804e0508b55",
+    "url": "https://docs.python.org/3/library/select.html#module-select#select.PIPE_BUF",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The minimum number of bytes which can be written without blocking to a pipe when the pipe has been reported as ready for writing by select(), poll() or another interface in this module. This doesn’t apply to other kinds of file-like objects such as sockets. This value is guaranteed by POSIX to be at least 512. Availability: Unix Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The minimum number of bytes which can be written without blocking to a pipe when the pipe has been reported as ready for writing by select(), poll() or another interface in this module. This doesn’t a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.037006",
+    "updatedDate": "2026-03-11T23:15:48.037007",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "select/poll": {
+    "id": "select.poll",
+    "name": "poll",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "select.poll()"
+    ],
+    "signature_hash": "0f4e506dd668eb6d740eceda983b232656a83abc29b8d3281d26a52aef2a882a",
+    "url": "https://docs.python.org/3/library/select.html#module-select#select.poll",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "(Not supported by all operating systems.) Returns a polling object, which supports registering and unregistering file descriptors, and then polling them for I/O events; see section Polling Objects below for the methods supported by polling objects.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "(Not supported by all operating systems.) Returns a polling object, which supports registering and unregistering file descriptors, and then polling them for I/O events; see section Polling Objects bel...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.036940",
+    "updatedDate": "2026-03-11T23:15:48.036941",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "select/devpoll/poll": {
+    "id": "select.devpoll.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "devpoll",
+    "signatures": [
+      "devpoll.poll([timeout])"
+    ],
+    "signature_hash": "7d259eb2c562da6aa4bf15e53e0004b925330e4c219701721b2170fa3241c4be",
+    "url": "https://docs.python.org/3/library/select.html#module-select#select.devpoll.poll",
+    "parameters": [
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Polls the set of registered file descriptors, and returns a possibly empty list containing (fd, event) 2-tuples for the descriptors that have events or errors to report. fd is the file descriptor, and event is a bitmask with bits set for the reported events for that descriptor — POLLIN for waiting input, POLLOUT to indicate that the descriptor can be written to, and so forth. An empty list indicates that the call timed out and no file descriptors had any events to report. If timeout is given,...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Polls the set of registered file descriptors, and returns a possibly empty list containing (fd, event) 2-tuples for the descriptors that have events or errors to report. fd is the file descriptor, and...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.037101",
+    "updatedDate": "2026-03-11T23:15:48.037102",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "select/epoll/poll": {
+    "id": "select.epoll.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "epoll",
+    "signatures": [
+      "epoll.poll(timeout=None, maxevents=-1)"
+    ],
+    "signature_hash": "fe7bdb5773f6558b2d7010ba5ce66618090f44a3848ec0b0ea875cc313006bd8",
+    "url": "https://docs.python.org/3/library/select.html#module-select#select.epoll.poll",
+    "parameters": [
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "maxevents",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Wait for events. timeout in seconds (float) Changed in version 3.5: The function is now retried with a recomputed timeout when interrupted by a signal, except if the signal handler raises an exception (see PEP 475 for the rationale), instead of raising InterruptedError.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Wait for events. timeout in seconds (float) Changed in version 3.5: The function is now retried with a recomputed timeout when interrupted by a signal, except if the signal handler raises an exception...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.037216",
+    "updatedDate": "2026-03-11T23:15:48.037217",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "select/poll/poll": {
+    "id": "select.poll.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "poll",
+    "signatures": [
+      "poll.poll([timeout])"
+    ],
+    "signature_hash": "95f7fbd1d5d51885fee0e881d0878a57cb551ab903d158ecf77938ea66ff5289",
+    "url": "https://docs.python.org/3/library/select.html#module-select#select.poll.poll",
+    "parameters": [
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Polls the set of registered file descriptors, and returns a possibly empty list containing (fd, event) 2-tuples for the descriptors that have events or errors to report. fd is the file descriptor, and event is a bitmask with bits set for the reported events for that descriptor — POLLIN for waiting input, POLLOUT to indicate that the descriptor can be written to, and so forth. An empty list indicates that the call timed out and no file descriptors had any events to report. If timeout is given,...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Polls the set of registered file descriptors, and returns a possibly empty list containing (fd, event) 2-tuples for the descriptors that have events or errors to report. fd is the file descriptor, and...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.037281",
+    "updatedDate": "2026-03-11T23:15:48.037281",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

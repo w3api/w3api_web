@@ -1,0 +1,102 @@
+{
+  "string.templatelib/Interpolation/conversion": {
+    "id": "string.templatelib.Interpolation.conversion",
+    "name": "conversion",
+    "type": "attribute",
+    "parent": "Interpolation",
+    "signatures": [
+      "conversion: Literal['a', 'r', 's']",
+      "None"
+    ],
+    "signature_hash": "347fc67287c25d977b0e97bbb8853d4542c1c1db4d05d971ac57c6476a587166",
+    "url": "https://docs.python.org/3/library/string.templatelib.html#module-string.templatelib#string.templatelib.Interpolation.conversion",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The conversion to apply to the value, or None. The conversion is the optional conversion to apply to the value: >>> t'{1 + 2!a}'.interpolations[0].conversion 'a' Note Unlike f-strings, where conversions are applied automatically, the expected behavior with t-strings is that code that processes the Template will decide how to interpret and whether to apply the conversion. For convenience, the convert() function can be used to mimic f-string conversion semantics.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The conversion to apply to the value, or None. The conversion is the optional conversion to apply to the value: >>> t'{1 + 2!a}'.interpolations[0].conversion 'a' Note Unlike f-strings, where conversio...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.048827",
+    "updatedDate": "2026-03-11T23:15:48.048828",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "string.templatelib/convert": {
+    "id": "string.templatelib.convert",
+    "name": "convert",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "string.templatelib.convert(obj, /, conversion)"
+    ],
+    "signature_hash": "23f99f52a71c0f831fc109104d959528494cc2d111ef627fb85e713dbe5d72eb",
+    "url": "https://docs.python.org/3/library/string.templatelib.html#module-string.templatelib#string.templatelib.convert",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "conversion",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Applies formatted string literal conversion semantics to the given object obj. This is frequently useful for custom template string processing logic. Three conversion flags are currently supported: 's' which calls str() on the value (like !s), 'r' which calls repr() (like !r), and 'a' which calls ascii() (like !a). If the conversion flag is None, obj is returned unchanged.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Applies formatted string literal conversion semantics to the given object obj. This is frequently useful for custom template string processing logic. Three conversion flags are currently supported: 's...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.048897",
+    "updatedDate": "2026-03-11T23:15:48.048898",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

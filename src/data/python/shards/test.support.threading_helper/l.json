@@ -1,0 +1,213 @@
+{
+  "test.support.threading_helper/support/LARGEST": {
+    "id": "test.support.threading_helper.support.LARGEST",
+    "name": "LARGEST",
+    "type": "constant",
+    "parent": "support",
+    "signatures": [
+      "test.support.LARGEST"
+    ],
+    "signature_hash": "2eb12ab11babfb9f98b52b2b36c7fcf9b49b001521886cede0f96f8d7d3fde20",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.LARGEST",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Object that is greater than anything (except itself). Used to test mixed type comparison.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Object that is greater than anything (except itself). Used to test mixed type comparison.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.081063",
+    "updatedDate": "2026-03-11T23:15:48.081063",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/support/LONG_TIMEOUT": {
+    "id": "test.support.threading_helper.support.LONG_TIMEOUT",
+    "name": "LONG_TIMEOUT",
+    "type": "constant",
+    "parent": "support",
+    "signatures": [
+      "test.support.LONG_TIMEOUT"
+    ],
+    "signature_hash": "0213c30af349dfd2aac3a0b14819585671d8205ea5bfca202e1619a06824dca6",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.LONG_TIMEOUT",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Timeout in seconds to detect when a test hangs. It is long enough to reduce the risk of test failure on the slowest Python buildbots. It should not be used to mark a test as failed if the test takes “too long”. The timeout value depends on the regrtest --timeout command line option. Its default value is 5 minutes. See also LOOPBACK_TIMEOUT, INTERNET_TIMEOUT and SHORT_TIMEOUT.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Timeout in seconds to detect when a test hangs. It is long enough to reduce the risk of test failure on the slowest Python buildbots. It should not be used to mark a test as failed if the test takes “...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.080868",
+    "updatedDate": "2026-03-11T23:15:48.080869",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/support/LOOPBACK_TIMEOUT": {
+    "id": "test.support.threading_helper.support.LOOPBACK_TIMEOUT",
+    "name": "LOOPBACK_TIMEOUT",
+    "type": "constant",
+    "parent": "support",
+    "signatures": [
+      "test.support.LOOPBACK_TIMEOUT"
+    ],
+    "signature_hash": "939887f341afcc516f3dba1695007bece73e0f0726401469d5c41719dd90a37a",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.LOOPBACK_TIMEOUT",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Timeout in seconds for tests using a network server listening on the network local loopback interface like 127.0.0.1. The timeout is long enough to prevent test failure: it takes into account that the client and the server can run in different threads or even different processes. The timeout should be long enough for connect(), recv() and send() methods of socket.socket. Its default value is 5 seconds. See also INTERNET_TIMEOUT.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Timeout in seconds for tests using a network server listening on the network local loopback interface like 127.0.0.1. The timeout is long enough to prevent test failure: it takes into account that the...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.080829",
+    "updatedDate": "2026-03-11T23:15:48.080830",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/linked_to_musl": {
+    "id": "test.support.threading_helper.linked_to_musl",
+    "name": "linked_to_musl",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.linked_to_musl()"
+    ],
+    "signature_hash": "47c9185316588b7071f4621f5dd85e70e6dc4fb4285b9b08da59bcf8242e3b1e",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.linked_to_musl",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return False if there is no evidence the interpreter was compiled with musl, otherwise return a version triple, either (0, 0, 0) if the version is unknown, or the actual version if it is known. Intended for use in skip decorators. emscripten and wasi are assumed to be compiled with musl; otherwise platform.libc_ver is checked.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return False if there is no evidence the interpreter was compiled with musl, otherwise return a version triple, either (0, 0, 0) if the version is unknown, or the actual version if it is known. Intend...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.081912",
+    "updatedDate": "2026-03-11T23:15:48.081913",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "test.support.threading_helper/load_package_tests": {
+    "id": "test.support.threading_helper.load_package_tests",
+    "name": "load_package_tests",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "test.support.load_package_tests(pkg_dir, loader, standard_tests, pattern)"
+    ],
+    "signature_hash": "a2db86c40dfcf1e1f8f0a1ccba7ebc3ae4f4151398b014626cee5e1cf595c530",
+    "url": "https://docs.python.org/3/library/test.html#module-test.support.threading_helper#test.support.load_package_tests",
+    "parameters": [
+      {
+        "name": "pkg_dir",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "loader",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "standard_tests",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "pattern",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Generic implementation of the unittest load_tests protocol for use in test packages. pkg_dir is the root directory of the package; loader, standard_tests, and pattern are the arguments expected by load_tests. In simple cases, the test package’s __init__.py can be the following: import os from test.support import load_package_tests def load_tests(*args): return load_package_tests(os.path.dirname(__file__), *args)",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Generic implementation of the unittest load_tests protocol for use in test packages. pkg_dir is the root directory of the package; loader, standard_tests, and pattern are the arguments expected by loa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.082042",
+    "updatedDate": "2026-03-11T23:15:48.082042",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

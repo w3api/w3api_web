@@ -4,6 +4,10 @@
     "shard": "java/shards/jdk.jshell/j.json"
   },
   {
+    "slug": "jdk.jshell/Builder",
+    "shard": "java/shards/jdk.jshell/b.json"
+  },
+  {
     "slug": "jdk.jshell/DeclarationSnippet",
     "shard": "java/shards/jdk.jshell/d.json"
   },
@@ -28,16 +32,16 @@
     "shard": "java/shards/jdk.jshell/j.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder",
-    "shard": "java/shards/jdk.jshell/j.json"
-  },
-  {
     "slug": "jdk.jshell/MethodSnippet",
     "shard": "java/shards/jdk.jshell/m.json"
   },
   {
     "slug": "jdk.jshell/PersistentSnippet",
     "shard": "java/shards/jdk.jshell/p.json"
+  },
+  {
+    "slug": "jdk.jshell/QualifiedNames",
+    "shard": "java/shards/jdk.jshell/q.json"
   },
   {
     "slug": "jdk.jshell/Snippet",
@@ -49,10 +53,6 @@
   },
   {
     "slug": "jdk.jshell/SourceCodeAnalysis",
-    "shard": "java/shards/jdk.jshell/s.json"
-  },
-  {
-    "slug": "jdk.jshell/SourceCodeAnalysis.QualifiedNames",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
@@ -68,28 +68,196 @@
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Highlight/Highlight",
+    "slug": "jdk.jshell/Highlight/Highlight",
     "shard": "java/shards/jdk.jshell/h.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.Kind",
+    "slug": "jdk.jshell/Attribute",
+    "shard": "java/shards/jdk.jshell/a.json"
+  },
+  {
+    "slug": "jdk.jshell/Completeness",
+    "shard": "java/shards/jdk.jshell/c.json"
+  },
+  {
+    "slug": "jdk.jshell/Kind",
+    "shard": "java/shards/jdk.jshell/k.json"
+  },
+  {
+    "slug": "jdk.jshell/Status",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.Status",
+    "slug": "jdk.jshell/SubKind",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.SubKind",
+    "slug": "jdk.jshell/SubKind/ANNOTATION_TYPE_SUBKIND",
+    "shard": "java/shards/jdk.jshell/a.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/ASSIGNMENT_SUBKIND",
+    "shard": "java/shards/jdk.jshell/a.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/CLASS_SUBKIND",
+    "shard": "java/shards/jdk.jshell/c.json"
+  },
+  {
+    "slug": "jdk.jshell/Completeness/COMPLETE",
+    "shard": "java/shards/jdk.jshell/c.json"
+  },
+  {
+    "slug": "jdk.jshell/Completeness/COMPLETE_WITH_SEMI",
+    "shard": "java/shards/jdk.jshell/c.json"
+  },
+  {
+    "slug": "jdk.jshell/Completeness/CONSIDERED_INCOMPLETE",
+    "shard": "java/shards/jdk.jshell/c.json"
+  },
+  {
+    "slug": "jdk.jshell/Attribute/DECLARATION",
+    "shard": "java/shards/jdk.jshell/d.json"
+  },
+  {
+    "slug": "jdk.jshell/Completeness/DEFINITELY_INCOMPLETE",
+    "shard": "java/shards/jdk.jshell/d.json"
+  },
+  {
+    "slug": "jdk.jshell/Attribute/DEPRECATED",
+    "shard": "java/shards/jdk.jshell/d.json"
+  },
+  {
+    "slug": "jdk.jshell/Status/DROPPED",
+    "shard": "java/shards/jdk.jshell/d.json"
+  },
+  {
+    "slug": "jdk.jshell/Completeness/EMPTY",
+    "shard": "java/shards/jdk.jshell/e.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/ENUM_SUBKIND",
+    "shard": "java/shards/jdk.jshell/e.json"
+  },
+  {
+    "slug": "jdk.jshell/Kind/ERRONEOUS",
+    "shard": "java/shards/jdk.jshell/e.json"
+  },
+  {
+    "slug": "jdk.jshell/Kind/EXPRESSION",
+    "shard": "java/shards/jdk.jshell/e.json"
+  },
+  {
+    "slug": "jdk.jshell/Kind/IMPORT",
+    "shard": "java/shards/jdk.jshell/i.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/INTERFACE_SUBKIND",
+    "shard": "java/shards/jdk.jshell/i.json"
+  },
+  {
+    "slug": "jdk.jshell/Attribute/KEYWORD",
+    "shard": "java/shards/jdk.jshell/k.json"
+  },
+  {
+    "slug": "jdk.jshell/Kind/METHOD",
+    "shard": "java/shards/jdk.jshell/m.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/METHOD_SUBKIND",
+    "shard": "java/shards/jdk.jshell/m.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/MODULE_IMPORT_SUBKIND",
+    "shard": "java/shards/jdk.jshell/m.json"
+  },
+  {
+    "slug": "jdk.jshell/Status/NONEXISTENT",
+    "shard": "java/shards/jdk.jshell/n.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/OTHER_EXPRESSION_SUBKIND",
+    "shard": "java/shards/jdk.jshell/o.json"
+  },
+  {
+    "slug": "jdk.jshell/Status/OVERWRITTEN",
+    "shard": "java/shards/jdk.jshell/o.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/RECORD_SUBKIND",
+    "shard": "java/shards/jdk.jshell/r.json"
+  },
+  {
+    "slug": "jdk.jshell/Status/RECOVERABLE_DEFINED",
+    "shard": "java/shards/jdk.jshell/r.json"
+  },
+  {
+    "slug": "jdk.jshell/Status/RECOVERABLE_NOT_DEFINED",
+    "shard": "java/shards/jdk.jshell/r.json"
+  },
+  {
+    "slug": "jdk.jshell/Status/REJECTED",
+    "shard": "java/shards/jdk.jshell/r.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/SINGLE_STATIC_IMPORT_SUBKIND",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Attribute",
+    "slug": "jdk.jshell/SubKind/SINGLE_TYPE_IMPORT_SUBKIND",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Completeness",
+    "slug": "jdk.jshell/Kind/STATEMENT",
     "shard": "java/shards/jdk.jshell/s.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/STATEMENT_SUBKIND",
+    "shard": "java/shards/jdk.jshell/s.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/STATIC_IMPORT_ON_DEMAND_SUBKIND",
+    "shard": "java/shards/jdk.jshell/s.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/TEMP_VAR_EXPRESSION_SUBKIND",
+    "shard": "java/shards/jdk.jshell/t.json"
+  },
+  {
+    "slug": "jdk.jshell/Kind/TYPE_DECL",
+    "shard": "java/shards/jdk.jshell/t.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/TYPE_IMPORT_ON_DEMAND_SUBKIND",
+    "shard": "java/shards/jdk.jshell/t.json"
+  },
+  {
+    "slug": "jdk.jshell/Completeness/UNKNOWN",
+    "shard": "java/shards/jdk.jshell/u.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/UNKNOWN_SUBKIND",
+    "shard": "java/shards/jdk.jshell/u.json"
+  },
+  {
+    "slug": "jdk.jshell/Status/VALID",
+    "shard": "java/shards/jdk.jshell/v.json"
+  },
+  {
+    "slug": "jdk.jshell/Kind/VAR",
+    "shard": "java/shards/jdk.jshell/v.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/VAR_DECLARATION_SUBKIND",
+    "shard": "java/shards/jdk.jshell/v.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/VAR_DECLARATION_WITH_INITIALIZER_SUBKIND",
+    "shard": "java/shards/jdk.jshell/v.json"
+  },
+  {
+    "slug": "jdk.jshell/SubKind/VAR_VALUE_SUBKIND",
+    "shard": "java/shards/jdk.jshell/v.json"
   },
   {
     "slug": "jdk.jshell/EvalException",
@@ -108,23 +276,23 @@
     "shard": "java/shards/jdk.jshell/n.json"
   },
   {
+    "slug": "jdk.jshell/CompletionInfo",
+    "shard": "java/shards/jdk.jshell/c.json"
+  },
+  {
+    "slug": "jdk.jshell/Documentation",
+    "shard": "java/shards/jdk.jshell/d.json"
+  },
+  {
     "slug": "jdk.jshell/JShellConsole",
     "shard": "java/shards/jdk.jshell/j.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.CompletionInfo",
+    "slug": "jdk.jshell/SnippetWrapper",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Documentation",
-    "shard": "java/shards/jdk.jshell/s.json"
-  },
-  {
-    "slug": "jdk.jshell/SourceCodeAnalysis.SnippetWrapper",
-    "shard": "java/shards/jdk.jshell/s.json"
-  },
-  {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Suggestion",
+    "slug": "jdk.jshell/Suggestion",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
@@ -140,11 +308,11 @@
     "shard": "java/shards/jdk.jshell/a.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Highlight/attributes",
+    "slug": "jdk.jshell/Highlight/attributes",
     "shard": "java/shards/jdk.jshell/a.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/build",
+    "slug": "jdk.jshell/Builder/build",
     "shard": "java/shards/jdk.jshell/b.json"
   },
   {
@@ -164,11 +332,11 @@
     "shard": "java/shards/jdk.jshell/c.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/compilerOptions",
+    "slug": "jdk.jshell/Builder/compilerOptions",
     "shard": "java/shards/jdk.jshell/c.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.CompletionInfo/completeness",
+    "slug": "jdk.jshell/CompletionInfo/completeness",
     "shard": "java/shards/jdk.jshell/c.json"
   },
   {
@@ -176,11 +344,11 @@
     "shard": "java/shards/jdk.jshell/c.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/console",
+    "slug": "jdk.jshell/Builder/console",
     "shard": "java/shards/jdk.jshell/c.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Suggestion/continuation",
+    "slug": "jdk.jshell/Suggestion/continuation",
     "shard": "java/shards/jdk.jshell/c.json"
   },
   {
@@ -204,15 +372,15 @@
     "shard": "java/shards/jdk.jshell/d.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Highlight/end",
+    "slug": "jdk.jshell/Highlight/end",
     "shard": "java/shards/jdk.jshell/e.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Highlight/equals",
+    "slug": "jdk.jshell/Highlight/equals",
     "shard": "java/shards/jdk.jshell/e.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/err",
+    "slug": "jdk.jshell/Builder/err",
     "shard": "java/shards/jdk.jshell/e.json"
   },
   {
@@ -224,11 +392,11 @@
     "shard": "java/shards/jdk.jshell/e.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/executionEngine",
+    "slug": "jdk.jshell/Builder/executionEngine",
     "shard": "java/shards/jdk.jshell/e.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/fileManager",
+    "slug": "jdk.jshell/Builder/fileManager",
     "shard": "java/shards/jdk.jshell/f.json"
   },
   {
@@ -236,7 +404,7 @@
     "shard": "java/shards/jdk.jshell/f.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.SnippetWrapper/fullClassName",
+    "slug": "jdk.jshell/SnippetWrapper/fullClassName",
     "shard": "java/shards/jdk.jshell/f.json"
   },
   {
@@ -264,7 +432,7 @@
     "shard": "java/shards/jdk.jshell/g.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.QualifiedNames/getNames",
+    "slug": "jdk.jshell/QualifiedNames/getNames",
     "shard": "java/shards/jdk.jshell/g.json"
   },
   {
@@ -272,7 +440,7 @@
     "shard": "java/shards/jdk.jshell/g.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.QualifiedNames/getSimpleNameLength",
+    "slug": "jdk.jshell/QualifiedNames/getSimpleNameLength",
     "shard": "java/shards/jdk.jshell/g.json"
   },
   {
@@ -284,11 +452,11 @@
     "shard": "java/shards/jdk.jshell/g.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.SubKind/hasValue",
+    "slug": "jdk.jshell/SubKind/hasValue",
     "shard": "java/shards/jdk.jshell/h.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Highlight/hashCode",
+    "slug": "jdk.jshell/Highlight/hashCode",
     "shard": "java/shards/jdk.jshell/h.json"
   },
   {
@@ -300,7 +468,7 @@
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/idGenerator",
+    "slug": "jdk.jshell/Builder/idGenerator",
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
@@ -308,19 +476,19 @@
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/in",
+    "slug": "jdk.jshell/Builder/in",
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.Status/isActive",
+    "slug": "jdk.jshell/Status/isActive",
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Completeness/isComplete",
+    "slug": "jdk.jshell/Completeness/isComplete",
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.Status/isDefined",
+    "slug": "jdk.jshell/Status/isDefined",
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
@@ -328,15 +496,15 @@
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.SubKind/isExecutable",
+    "slug": "jdk.jshell/SubKind/isExecutable",
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.Kind/isPersistent",
+    "slug": "jdk.jshell/Kind/isPersistent",
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.QualifiedNames/isResolvable",
+    "slug": "jdk.jshell/QualifiedNames/isResolvable",
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
@@ -348,11 +516,11 @@
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.QualifiedNames/isUpToDate",
+    "slug": "jdk.jshell/QualifiedNames/isUpToDate",
     "shard": "java/shards/jdk.jshell/i.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Documentation/javadoc",
+    "slug": "jdk.jshell/Documentation/javadoc",
     "shard": "java/shards/jdk.jshell/j.json"
   },
   {
@@ -360,11 +528,11 @@
     "shard": "java/shards/jdk.jshell/k.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.SubKind/kind",
+    "slug": "jdk.jshell/SubKind/kind",
     "shard": "java/shards/jdk.jshell/k.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.SnippetWrapper/kind",
+    "slug": "jdk.jshell/SnippetWrapper/kind",
     "shard": "java/shards/jdk.jshell/k.json"
   },
   {
@@ -372,7 +540,7 @@
     "shard": "java/shards/jdk.jshell/l.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Suggestion/matchesType",
+    "slug": "jdk.jshell/Suggestion/matchesType",
     "shard": "java/shards/jdk.jshell/m.json"
   },
   {
@@ -400,7 +568,7 @@
     "shard": "java/shards/jdk.jshell/o.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/out",
+    "slug": "jdk.jshell/Builder/out",
     "shard": "java/shards/jdk.jshell/o.json"
   },
   {
@@ -428,11 +596,11 @@
     "shard": "java/shards/jdk.jshell/r.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.CompletionInfo/remaining",
+    "slug": "jdk.jshell/CompletionInfo/remaining",
     "shard": "java/shards/jdk.jshell/r.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/remoteVMOptions",
+    "slug": "jdk.jshell/Builder/remoteVMOptions",
     "shard": "java/shards/jdk.jshell/r.json"
   },
   {
@@ -440,7 +608,7 @@
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Documentation/signature",
+    "slug": "jdk.jshell/Documentation/signature",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
@@ -456,11 +624,11 @@
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.CompletionInfo/source",
+    "slug": "jdk.jshell/CompletionInfo/source",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.SnippetWrapper/source",
+    "slug": "jdk.jshell/SnippetWrapper/source",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
@@ -472,11 +640,11 @@
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.SnippetWrapper/sourceToWrappedPosition",
+    "slug": "jdk.jshell/SnippetWrapper/sourceToWrappedPosition",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Highlight/start",
+    "slug": "jdk.jshell/Highlight/start",
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
@@ -496,7 +664,7 @@
     "shard": "java/shards/jdk.jshell/s.json"
   },
   {
-    "slug": "jdk.jshell/JShell.Builder/tempVariableNameGenerator",
+    "slug": "jdk.jshell/Builder/tempVariableNameGenerator",
     "shard": "java/shards/jdk.jshell/t.json"
   },
   {
@@ -504,7 +672,7 @@
     "shard": "java/shards/jdk.jshell/t.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Highlight/toString",
+    "slug": "jdk.jshell/Highlight/toString",
     "shard": "java/shards/jdk.jshell/t.json"
   },
   {
@@ -532,43 +700,43 @@
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.Kind/valueOf",
+    "slug": "jdk.jshell/Kind/valueOf",
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.Status/valueOf",
+    "slug": "jdk.jshell/Status/valueOf",
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.SubKind/valueOf",
+    "slug": "jdk.jshell/SubKind/valueOf",
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Attribute/valueOf",
+    "slug": "jdk.jshell/Attribute/valueOf",
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Completeness/valueOf",
+    "slug": "jdk.jshell/Completeness/valueOf",
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.Kind/values",
+    "slug": "jdk.jshell/Kind/values",
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.Status/values",
+    "slug": "jdk.jshell/Status/values",
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/Snippet.SubKind/values",
+    "slug": "jdk.jshell/SubKind/values",
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Attribute/values",
+    "slug": "jdk.jshell/Attribute/values",
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Completeness/values",
+    "slug": "jdk.jshell/Completeness/values",
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
@@ -580,11 +748,11 @@
     "shard": "java/shards/jdk.jshell/v.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.SnippetWrapper/wrapped",
+    "slug": "jdk.jshell/SnippetWrapper/wrapped",
     "shard": "java/shards/jdk.jshell/w.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.SnippetWrapper/wrappedToSourcePosition",
+    "slug": "jdk.jshell/SnippetWrapper/wrappedToSourcePosition",
     "shard": "java/shards/jdk.jshell/w.json"
   },
   {
@@ -600,7 +768,7 @@
     "shard": "java/shards/jdk.jshell/w.json"
   },
   {
-    "slug": "jdk.jshell/SourceCodeAnalysis.Highlight",
-    "shard": "java/shards/jdk.jshell/s.json"
+    "slug": "jdk.jshell/Highlight",
+    "shard": "java/shards/jdk.jshell/h.json"
   }
 ]

@@ -1,0 +1,392 @@
+{
+  "ast/Call": {
+    "id": "ast.Call",
+    "name": "Call",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Call(func, args, keywords)"
+    ],
+    "signature_hash": "6263275cb899792cf80c34d4eb42e966b155cf370498468cb00d3cd3a05948c7",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Call",
+    "parameters": [
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "keywords",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A function call. func is the function, which will often be a Name or Attribute object. Of the arguments: args holds a list of the arguments passed by position. keywords holds a list of keyword objects representing arguments passed by keyword. The args and keywords arguments are optional and default to empty lists. >>> print(ast.dump(ast.parse('func(a, b=c, *d, **e)', mode='eval'), indent=4)) Expression( body=Call( func=Name(id='func', ctx=Load()), args=[ Name(id='a', ctx=Load()), Starred( val...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A function call. func is the function, which will often be a Name or Attribute object. Of the arguments: args holds a list of the arguments passed by position. keywords holds a list of keyword objects...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878285",
+    "updatedDate": "2026-03-11T23:15:47.878286",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Compare": {
+    "id": "ast.Compare",
+    "name": "Compare",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Compare(left, ops, comparators)"
+    ],
+    "signature_hash": "633430ab43c344a269aa641d36f81bb7c43b3ba6a221219741f4ff9265113ac9",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Compare",
+    "parameters": [
+      {
+        "name": "left",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ops",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "comparators",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A comparison of two or more values. left is the first value in the comparison, ops the list of operators, and comparators the list of values after the first element in the comparison. >>> print(ast.dump(ast.parse('1 <= a < 10', mode='eval'), indent=4)) Expression( body=Compare( left=Constant(value=1), ops=[ LtE(), Lt()], comparators=[ Name(id='a', ctx=Load()), Constant(value=10)]))",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A comparison of two or more values. left is the first value in the comparison, ops the list of operators, and comparators the list of values after the first element in the comparison. >>> print(ast.du...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878252",
+    "updatedDate": "2026-03-11T23:15:47.878253",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Constant": {
+    "id": "ast.Constant",
+    "name": "Constant",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Constant(value)"
+    ],
+    "signature_hash": "479d88f7925e8850774cb62c81ff0b511adc884ad04232274b5367f9feb52f19",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Constant",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A constant value. The value attribute of the Constant literal contains the Python object it represents. The values represented can be instances of str, bytes, int, float, complex, and bool, and the constants None and Ellipsis. >>> print(ast.dump(ast.parse('123', mode='eval'), indent=4)) Expression( body=Constant(value=123))",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A constant value. The value attribute of the Constant literal contains the Python object it represents. The values represented can be instances of str, bytes, int, float, complex, and bool, and the co...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.877948",
+    "updatedDate": "2026-03-11T23:15:47.877949",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/comprehension": {
+    "id": "ast.comprehension",
+    "name": "comprehension",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.comprehension(target, iter, ifs, is_async)"
+    ],
+    "signature_hash": "26f8cafceaad6eb79edd54a727fc288519a00877698298c0b0e9108aa10ac9eb",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.comprehension",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "iter",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "ifs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "is_async",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "One for clause in a comprehension. target is the reference to use for each element - typically a Name or Tuple node. iter is the object to iterate over. ifs is a list of test expressions: each for clause can have multiple ifs. is_async indicates a comprehension is asynchronous (using an async for instead of for). The value is an integer (0 or 1). >>> print(ast.dump(ast.parse('[ord(c) for line in file for c in line]', mode='eval'), ... indent=4)) # Multiple comprehensions in one. Expression( b...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "One for clause in a comprehension. target is the reference to use for each element - typically a Name or Tuple node. iter is the object to iterate over. ifs is a list of test expressions: each for cla...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.878446",
+    "updatedDate": "2026-03-11T23:15:47.878447",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/compare": {
+    "id": "ast.compare",
+    "name": "compare",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ast.compare(a, b, /, *, compare_attributes=False)"
+    ],
+    "signature_hash": "ffbc8d5277ac8dfe2ef0efd9e246645f2ad6ba11e2bd80d47cf0979b156eaf65",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.compare",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "b",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "compare_attributes",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Recursively compares two ASTs. compare_attributes affects whether AST attributes are considered in the comparison. If compare_attributes is False (default), then attributes are ignored. Otherwise they must all be equal. This option is useful to check whether the ASTs are structurally equal but differ in whitespace or similar details. Attributes include line numbers and column offsets. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Recursively compares two ASTs. compare_attributes affects whether AST attributes are considered in the comparison. If compare_attributes is False (default), then attributes are ignored. Otherwise they...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.879904",
+    "updatedDate": "2026-03-11T23:15:47.879905",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/copy_location": {
+    "id": "ast.copy_location",
+    "name": "copy_location",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ast.copy_location(new_node, old_node)"
+    ],
+    "signature_hash": "aa3bebac8cca84d41bb35492ce6d5012395e8b378484f2c07acf87d60008f5ef",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.copy_location",
+    "parameters": [
+      {
+        "name": "new_node",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "old_node",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Copy source location (lineno, col_offset, end_lineno, and end_col_offset) from old_node to new_node if possible, and return new_node.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copy source location (lineno, col_offset, end_lineno, and end_col_offset) from old_node to new_node if possible, and return new_node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.879643",
+    "updatedDate": "2026-03-11T23:15:47.879644",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,1357 @@
+{
+  "inspect/get_annotations": {
+    "id": "inspect.get_annotations",
+    "name": "get_annotations",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.get_annotations(obj, *, globals=None, locals=None, eval_str=False, format=annotationlib.Format.VALUE)"
+    ],
+    "signature_hash": "968e9a4c9d1cd1a90f32d4625af83edf8a83b0fcfa561c52f63605bb11eacd45",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.get_annotations",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "globals",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "locals",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "eval_str",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "format",
+        "type": "",
+        "has_default": true,
+        "default_value": "annotationlib.Format.VALUE",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Compute the annotations dict for an object. This is an alias for annotationlib.get_annotations(); see the documentation of that function for more information. Caution This function may execute arbitrary code contained in annotations. See Security implications of introspecting annotations for more information. Added in version 3.10. Changed in version 3.14: This function is now an alias for annotationlib.get_annotations(). Calling it as inspect.get_annotations will continue to work.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compute the annotations dict for an object. This is an alias for annotationlib.get_annotations(); see the documentation of that function for more information. Caution This function may execute arbitra...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948926",
+    "updatedDate": "2026-03-11T23:15:47.948927",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getargvalues": {
+    "id": "inspect.getargvalues",
+    "name": "getargvalues",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getargvalues(frame)"
+    ],
+    "signature_hash": "5091cff707be65a0b6fdbdef8d7a0cca34d3461d87c40e1a53299e7296deb5da",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getargvalues",
+    "parameters": [
+      {
+        "name": "frame",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get information about arguments passed into a particular frame. A named tuple ArgInfo(args, varargs, keywords, locals) is returned. args is a list of the argument names. varargs and keywords are the names of the * and ** arguments or None. locals is the locals dictionary of the given frame. Note This function was inadvertently marked as deprecated in Python 3.5.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get information about arguments passed into a particular frame. A named tuple ArgInfo(args, varargs, keywords, locals) is returned. args is a list of the argument names. varargs and keywords are the n...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948793",
+    "updatedDate": "2026-03-11T23:15:47.948794",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getasyncgenlocals": {
+    "id": "inspect.getasyncgenlocals",
+    "name": "getasyncgenlocals",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getasyncgenlocals(agen)"
+    ],
+    "signature_hash": "59c6b155e31bc7a62767500c1b67e9f12d3e04ed9499d34d51d811839ae02a01",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getasyncgenlocals",
+    "parameters": [
+      {
+        "name": "agen",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This function is analogous to getgeneratorlocals(), but works for asynchronous generator objects created by async def functions which use the yield statement. Added in version 3.12.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This function is analogous to getgeneratorlocals(), but works for asynchronous generator objects created by async def functions which use the yield statement. Added in version 3.12.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.949487",
+    "updatedDate": "2026-03-11T23:15:47.949488",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getasyncgenstate": {
+    "id": "inspect.getasyncgenstate",
+    "name": "getasyncgenstate",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getasyncgenstate(agen)"
+    ],
+    "signature_hash": "bcd7b20e5d82e3201c925b73d8bd845502b445b29585880a9bd85b6a0d2a340c",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getasyncgenstate",
+    "parameters": [
+      {
+        "name": "agen",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get current state of an asynchronous generator object. The function is intended to be used with asynchronous iterator objects created by async def functions which use the yield statement, but will accept any asynchronous generator-like object that has ag_running and ag_frame attributes. Possible states are: AGEN_CREATED: Waiting to start execution. AGEN_RUNNING: Currently being executed by the interpreter. AGEN_SUSPENDED: Currently suspended at a yield expression. AGEN_CLOSED: Execution has c...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get current state of an asynchronous generator object. The function is intended to be used with asynchronous iterator objects created by async def functions which use the yield statement, but will acc...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.949405",
+    "updatedDate": "2026-03-11T23:15:47.949408",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getattr_static": {
+    "id": "inspect.getattr_static",
+    "name": "getattr_static",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getattr_static(obj, attr, default=None)"
+    ],
+    "signature_hash": "fa2f4ee39c9cc7be033beaae810e7dedd99444f3e055412b309f13d508e379ef",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getattr_static",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "default",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Retrieve attributes without triggering dynamic lookup via the descriptor protocol, __getattr__() or __getattribute__(). Note: this function may not be able to retrieve all attributes that getattr can fetch (like dynamically created attributes) and may find attributes that getattr can’t (like descriptors that raise AttributeError). It can also return descriptors objects instead of instance members. If the instance __dict__ is shadowed by another member (for example a property) then this functi...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieve attributes without triggering dynamic lookup via the descriptor protocol, __getattr__() or __getattribute__(). Note: this function may not be able to retrieve all attributes that getattr can ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.949316",
+    "updatedDate": "2026-03-11T23:15:47.949317",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getcallargs": {
+    "id": "inspect.getcallargs",
+    "name": "getcallargs",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getcallargs(func, /, *args, **kwds)"
+    ],
+    "signature_hash": "ee691d4731c7e66b5bf598f738747d9ee24810801b50a85a50fe988aae4a01fc",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getcallargs",
+    "parameters": [
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "kwds",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Bind the args and kwds to the argument names of the Python function or method func, as if it was called with them. For bound methods, bind also the first argument (typically named self) to the associated instance. A dict is returned, mapping the argument names (including the names of the * and ** arguments, if any) to their values from args and kwds. In case of invoking func incorrectly, i.e. whenever func(*args, **kwds) would raise an exception because of incompatible signature, an exception...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Bind the args and kwds to the argument names of the Python function or method func, as if it was called with them. For bound methods, bind also the first argument (typically named self) to the associa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948856",
+    "updatedDate": "2026-03-11T23:15:47.948857",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.5",
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getclasstree": {
+    "id": "inspect.getclasstree",
+    "name": "getclasstree",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getclasstree(classes, unique=False)"
+    ],
+    "signature_hash": "0aafe1a9800e56fc754755e65cc12be02d7274454f34a5e33f4ae879dbfd8e02",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getclasstree",
+    "parameters": [
+      {
+        "name": "classes",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "unique",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Arrange the given list of classes into a hierarchy of nested lists. Where a nested list appears, it contains classes derived from the class whose entry immediately precedes the list. Each entry is a 2-tuple containing a class and a tuple of its base classes. If the unique argument is true, exactly one entry appears in the returned structure for each class in the given list. Otherwise, classes using multiple inheritance and their descendants will appear multiple times.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Arrange the given list of classes into a hierarchy of nested lists. Where a nested list appears, it contains classes derived from the class whose entry immediately precedes the list. Each entry is a 2...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948758",
+    "updatedDate": "2026-03-11T23:15:47.948759",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getclosurevars": {
+    "id": "inspect.getclosurevars",
+    "name": "getclosurevars",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getclosurevars(func)"
+    ],
+    "signature_hash": "ff7c7b3cd73669384fdf1fc35133561a5739d3529ba5a7c6cd6e144c5dc6f186",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getclosurevars",
+    "parameters": [
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get the mapping of external name references in a Python function or method func to their current values. A named tuple ClosureVars(nonlocals, globals, builtins, unbound) is returned. nonlocals maps referenced names to lexical closure variables, globals to the function’s module globals and builtins to the builtins visible from the function body. unbound is the set of names referenced in the function that could not be resolved at all given the current module globals and builtins. TypeError is r...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the mapping of external name references in a Python function or method func to their current values. A named tuple ClosureVars(nonlocals, globals, builtins, unbound) is returned. nonlocals maps re...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948874",
+    "updatedDate": "2026-03-11T23:15:47.948875",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getcomments": {
+    "id": "inspect.getcomments",
+    "name": "getcomments",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getcomments(object)"
+    ],
+    "signature_hash": "bab14c3654a6ffb87c61222d14eddf31f4ab66052a632fd9de10515c35e85766",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getcomments",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return in a single string any lines of comments immediately preceding the object’s source code (for a class, function, or method), or at the top of the Python source file (if the object is a module). If the object’s source code is unavailable, return None. This could happen if the object has been defined in C or the interactive shell.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return in a single string any lines of comments immediately preceding the object’s source code (for a class, function, or method), or at the top of the Python source file (if the object is a module). ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948185",
+    "updatedDate": "2026-03-11T23:15:47.948186",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getcoroutinelocals": {
+    "id": "inspect.getcoroutinelocals",
+    "name": "getcoroutinelocals",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getcoroutinelocals(coroutine)"
+    ],
+    "signature_hash": "c6431609d9216567cdb39d162464906ab799dc31d360cc665d1dea114c8f89fb",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getcoroutinelocals",
+    "parameters": [
+      {
+        "name": "coroutine",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This function is analogous to getgeneratorlocals(), but works for coroutine objects created by async def functions. Added in version 3.5.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This function is analogous to getgeneratorlocals(), but works for coroutine objects created by async def functions. Added in version 3.5.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.949466",
+    "updatedDate": "2026-03-11T23:15:47.949467",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getcoroutinestate": {
+    "id": "inspect.getcoroutinestate",
+    "name": "getcoroutinestate",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getcoroutinestate(coroutine)"
+    ],
+    "signature_hash": "22146b21de25d33fb9ad7c766c40d01afd90726acbb3c9e30632401b5f6dd66b",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getcoroutinestate",
+    "parameters": [
+      {
+        "name": "coroutine",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get current state of a coroutine object. The function is intended to be used with coroutine objects created by async def functions, but will accept any coroutine-like object that has cr_running and cr_frame attributes. Possible states are: CORO_CREATED: Waiting to start execution. CORO_RUNNING: Currently being executed by the interpreter. CORO_SUSPENDED: Currently suspended at an await expression. CORO_CLOSED: Execution has completed. Added in version 3.5.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get current state of a coroutine object. The function is intended to be used with coroutine objects created by async def functions, but will accept any coroutine-like object that has cr_running and cr...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.949365",
+    "updatedDate": "2026-03-11T23:15:47.949366",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getdoc": {
+    "id": "inspect.getdoc",
+    "name": "getdoc",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getdoc(object)"
+    ],
+    "signature_hash": "09bf4fe08eb238c5f72317201b23cb1635d0d3486c1142da14a5fb5e017f52f3",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getdoc",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get the documentation string for an object, cleaned up with cleandoc(). If the documentation string for an object is not provided and the object is a class, a method, a property or a descriptor, retrieve the documentation string from the inheritance hierarchy. Return None if the documentation string is invalid or missing. Changed in version 3.5: Documentation strings are now inherited if not overridden.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the documentation string for an object, cleaned up with cleandoc(). If the documentation string for an object is not provided and the object is a class, a method, a property or a descriptor, retri...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948170",
+    "updatedDate": "2026-03-11T23:15:47.948170",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getfile": {
+    "id": "inspect.getfile",
+    "name": "getfile",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getfile(object)"
+    ],
+    "signature_hash": "e312b41b4b06455f2383a53857151a0804113915a006d8a4980bf73e110d40e2",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getfile",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the name of the (text or binary) file in which an object was defined. This will fail with a TypeError if the object is a built-in module, class, or function.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the name of the (text or binary) file in which an object was defined. This will fail with a TypeError if the object is a built-in module, class, or function.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948199",
+    "updatedDate": "2026-03-11T23:15:47.948200",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getframeinfo": {
+    "id": "inspect.getframeinfo",
+    "name": "getframeinfo",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getframeinfo(frame, context=1)"
+    ],
+    "signature_hash": "6939912ee0f1e1edbe77e9f21f33f31ca91c8f4671bae286334ef16fd70aae9e",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getframeinfo",
+    "parameters": [
+      {
+        "name": "frame",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get information about a frame or traceback object. A Traceback object is returned. Changed in version 3.11: A Traceback object is returned instead of a named tuple.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get information about a frame or traceback object. A Traceback object is returned. Changed in version 3.11: A Traceback object is returned instead of a named tuple.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.949174",
+    "updatedDate": "2026-03-11T23:15:47.949175",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getfullargspec": {
+    "id": "inspect.getfullargspec",
+    "name": "getfullargspec",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getfullargspec(func)"
+    ],
+    "signature_hash": "4f5362c29f93bcb52bb59afdf27c471ceda1063976297d60e94627559abd9e60",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getfullargspec",
+    "parameters": [
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get the names and default values of a Python function’s parameters. A named tuple is returned: FullArgSpec(args, varargs, varkw, defaults, kwonlyargs, kwonlydefaults, annotations) args is a list of the positional parameter names. varargs is the name of the * parameter or None if arbitrary positional arguments are not accepted. varkw is the name of the ** parameter or None if arbitrary keyword arguments are not accepted. defaults is an n-tuple of default argument values corresponding to the la...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the names and default values of a Python function’s parameters. A named tuple is returned: FullArgSpec(args, varargs, varkw, defaults, kwonlyargs, kwonlydefaults, annotations) args is a list of th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948776",
+    "updatedDate": "2026-03-11T23:15:47.948777",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getgeneratorlocals": {
+    "id": "inspect.getgeneratorlocals",
+    "name": "getgeneratorlocals",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getgeneratorlocals(generator)"
+    ],
+    "signature_hash": "860f1b25e8c042e8c78f0856a946d63647f45a8c657efdaed1db54ed2832fa72",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getgeneratorlocals",
+    "parameters": [
+      {
+        "name": "generator",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get the mapping of live local variables in generator to their current values. A dictionary is returned that maps from variable names to values. This is the equivalent of calling locals() in the body of the generator, and all the same caveats apply. If generator is a generator with no currently associated frame, then an empty dictionary is returned. TypeError is raised if generator is not a Python generator object. CPython implementation detail: This function relies on the generator exposing a...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the mapping of live local variables in generator to their current values. A dictionary is returned that maps from variable names to values. This is the equivalent of calling locals() in the body o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.949443",
+    "updatedDate": "2026-03-11T23:15:47.949444",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getgeneratorstate": {
+    "id": "inspect.getgeneratorstate",
+    "name": "getgeneratorstate",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getgeneratorstate(generator)"
+    ],
+    "signature_hash": "49cd5ce2f3f6aff7ec19b074befa57a8a0e86e24e6c5243d4cf06a8e05b8db6b",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getgeneratorstate",
+    "parameters": [
+      {
+        "name": "generator",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get current state of a generator-iterator. Possible states are: GEN_CREATED: Waiting to start execution. GEN_RUNNING: Currently being executed by the interpreter. GEN_SUSPENDED: Currently suspended at a yield expression. GEN_CLOSED: Execution has completed. Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get current state of a generator-iterator. Possible states are: GEN_CREATED: Waiting to start execution. GEN_RUNNING: Currently being executed by the interpreter. GEN_SUSPENDED: Currently suspended at...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.949345",
+    "updatedDate": "2026-03-11T23:15:47.949346",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getinnerframes": {
+    "id": "inspect.getinnerframes",
+    "name": "getinnerframes",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getinnerframes(traceback, context=1)"
+    ],
+    "signature_hash": "4c23275aa77977c1232739b0071dda8ed6f24a00429209309e6f14fa67fd201b",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getinnerframes",
+    "parameters": [
+      {
+        "name": "traceback",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get a list of FrameInfo objects for a traceback’s frame and all inner frames. These frames represent calls made as a consequence of frame. The first entry in the list represents traceback; the last entry represents where the exception was raised. Changed in version 3.5: A list of named tuples FrameInfo(frame, filename, lineno, function, code_context, index) is returned. Changed in version 3.11: A list of FrameInfo objects is returned.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get a list of FrameInfo objects for a traceback’s frame and all inner frames. These frames represent calls made as a consequence of frame. The first entry in the list represents traceback; the last en...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.949216",
+    "updatedDate": "2026-03-11T23:15:47.949217",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getmembers": {
+    "id": "inspect.getmembers",
+    "name": "getmembers",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getmembers(object[, predicate])"
+    ],
+    "signature_hash": "33901081d57fb9cc7f9fd3e1ede769652d7e1ed964c0bcfdc03bc21c64559260",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getmembers",
+    "parameters": [
+      {
+        "name": "object[, predicate",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return all the members of an object in a list of (name, value) pairs sorted by name. If the optional predicate argument—which will be called with the value object of each member—is supplied, only members for which the predicate returns a true value are included. Note getmembers() will only return class attributes defined in the metaclass when the argument is a class and those attributes have been listed in the metaclass’ custom __dir__().",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return all the members of an object in a list of (name, value) pairs sorted by name. If the optional predicate argument—which will be called with the value object of each member—is supplied, only memb...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.947210",
+    "updatedDate": "2026-03-11T23:15:47.947211",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getmembers_static": {
+    "id": "inspect.getmembers_static",
+    "name": "getmembers_static",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getmembers_static(object[, predicate])"
+    ],
+    "signature_hash": "f90e0bfca7881fed26020f9308a1bc6951c89b06467693a3d031824e92b13619",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getmembers_static",
+    "parameters": [
+      {
+        "name": "object[, predicate",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return all the members of an object in a list of (name, value) pairs sorted by name without triggering dynamic lookup via the descriptor protocol, __getattr__ or __getattribute__. Optionally, only return members that satisfy a given predicate. Note getmembers_static() may not be able to retrieve all members that getmembers can fetch (like dynamically created attributes) and may find members that getmembers can’t (like descriptors that raise AttributeError). It can also return descriptor objec...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return all the members of an object in a list of (name, value) pairs sorted by name without triggering dynamic lookup via the descriptor protocol, __getattr__ or __getattribute__. Optionally, only ret...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.947227",
+    "updatedDate": "2026-03-11T23:15:47.947228",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getmodule": {
+    "id": "inspect.getmodule",
+    "name": "getmodule",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getmodule(object)"
+    ],
+    "signature_hash": "30f94fee8f2f89eb5b03e0713d02b8de898a8c4366f1f1dae7ce1018532aa87d",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getmodule",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Try to guess which module an object was defined in. Return None if the module cannot be determined.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Try to guess which module an object was defined in. Return None if the module cannot be determined.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948213",
+    "updatedDate": "2026-03-11T23:15:47.948213",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getmodulename": {
+    "id": "inspect.getmodulename",
+    "name": "getmodulename",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getmodulename(path)"
+    ],
+    "signature_hash": "20fdf7774d82fe87213f6aae1675ff638e6128ffd9e4738ff7bee47e9619ab9e",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getmodulename",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the name of the module named by the file path, without including the names of enclosing packages. The file extension is checked against all of the entries in importlib.machinery.all_suffixes(). If it matches, the final path component is returned with the extension removed. Otherwise, None is returned. Note that this function only returns a meaningful name for actual Python modules - paths that potentially refer to Python packages will still return None. Changed in version 3.3: The func...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the name of the module named by the file path, without including the names of enclosing packages. The file extension is checked against all of the entries in importlib.machinery.all_suffixes()....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.947243",
+    "updatedDate": "2026-03-11T23:15:47.947244",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getmro": {
+    "id": "inspect.getmro",
+    "name": "getmro",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getmro(cls)"
+    ],
+    "signature_hash": "5ff44382863075e5215d094750aab721f0e4a5302e4dab079c97965260972918",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getmro",
+    "parameters": [
+      {
+        "name": "cls",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a tuple of class cls’s base classes, including cls, in method resolution order. No class appears more than once in this tuple. Note that the method resolution order depends on cls’s type. Unless a very peculiar user-defined metatype is in use, cls will be the first element of the tuple.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a tuple of class cls’s base classes, including cls, in method resolution order. No class appears more than once in this tuple. Note that the method resolution order depends on cls’s type. Unles...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948833",
+    "updatedDate": "2026-03-11T23:15:47.948834",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getouterframes": {
+    "id": "inspect.getouterframes",
+    "name": "getouterframes",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getouterframes(frame, context=1)"
+    ],
+    "signature_hash": "24ba8a4ab811cddf04a5943a80cc8edcd991028e1624df234cfb9982978c9f4c",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getouterframes",
+    "parameters": [
+      {
+        "name": "frame",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Get a list of FrameInfo objects for a frame and all outer frames. These frames represent the calls that lead to the creation of frame. The first entry in the returned list represents frame; the last entry represents the outermost call on frame’s stack. Changed in version 3.5: A list of named tuples FrameInfo(frame, filename, lineno, function, code_context, index) is returned. Changed in version 3.11: A list of FrameInfo objects is returned.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get a list of FrameInfo objects for a frame and all outer frames. These frames represent the calls that lead to the creation of frame. The first entry in the returned list represents frame; the last e...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.949195",
+    "updatedDate": "2026-03-11T23:15:47.949196",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getsource": {
+    "id": "inspect.getsource",
+    "name": "getsource",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getsource(object)"
+    ],
+    "signature_hash": "e1276f867c4981a35f59dd60f41cb94f014fcbfb154beeddfdfc719f3381046d",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getsource",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the text of the source code for an object. The argument may be a module, class, method, function, traceback, frame, or code object. The source code is returned as a single string. An OSError is raised if the source code cannot be retrieved. A TypeError is raised if the object is a built-in module, class, or function. Changed in version 3.3: OSError is raised instead of IOError, now an alias of the former.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the text of the source code for an object. The argument may be a module, class, method, function, traceback, frame, or code object. The source code is returned as a single string. An OSError is...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948261",
+    "updatedDate": "2026-03-11T23:15:47.948261",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getsourcefile": {
+    "id": "inspect.getsourcefile",
+    "name": "getsourcefile",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getsourcefile(object)"
+    ],
+    "signature_hash": "e0ce85fe8698fe330273029609a36d2bb82a98876a13b114a93422ab1d51ece1",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getsourcefile",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return the name of the Python source file in which an object was defined or None if no way can be identified to get the source. This will fail with a TypeError if the object is a built-in module, class, or function.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the name of the Python source file in which an object was defined or None if no way can be identified to get the source. This will fail with a TypeError if the object is a built-in module, clas...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948228",
+    "updatedDate": "2026-03-11T23:15:47.948228",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "inspect/getsourcelines": {
+    "id": "inspect.getsourcelines",
+    "name": "getsourcelines",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "inspect.getsourcelines(object)"
+    ],
+    "signature_hash": "c2ad33ac7b69c478c973d05cf73370fed6a3da645f33023e08421389184b05d2",
+    "url": "https://docs.python.org/3/library/inspect.html#module-inspect#inspect.getsourcelines",
+    "parameters": [
+      {
+        "name": "object",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Return a list of source lines and starting line number for an object. The argument may be a module, class, method, function, traceback, frame, or code object. The source code is returned as a list of the lines corresponding to the object and the line number indicates where in the original source file the first line of code was found. An OSError is raised if the source code cannot be retrieved. A TypeError is raised if the object is a built-in module, class, or function. Changed in version 3.3...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list of source lines and starting line number for an object. The argument may be a module, class, method, function, traceback, frame, or code object. The source code is returned as a list of ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.948244",
+    "updatedDate": "2026-03-11T23:15:47.948245",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

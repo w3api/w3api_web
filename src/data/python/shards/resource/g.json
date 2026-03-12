@@ -1,0 +1,126 @@
+{
+  "resource/getpagesize": {
+    "id": "resource.getpagesize",
+    "name": "getpagesize",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "resource.getpagesize()"
+    ],
+    "signature_hash": "b108cb123fabbd7439c044d6016ae1489bb249c6de3f556415e16197bc47df4c",
+    "url": "https://docs.python.org/3/library/resource.html#module-resource#resource.getpagesize",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns the number of bytes in a system page. (This need not be the same as the hardware page size.)",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the number of bytes in a system page. (This need not be the same as the hardware page size.)",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.036231",
+    "updatedDate": "2026-03-11T23:15:48.036232",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "resource/getrlimit": {
+    "id": "resource.getrlimit",
+    "name": "getrlimit",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "resource.getrlimit(resource)"
+    ],
+    "signature_hash": "522d66597e839f5c52288db0115216f07e0d510640fa5b358cd05f4cb9b5c705",
+    "url": "https://docs.python.org/3/library/resource.html#module-resource#resource.getrlimit",
+    "parameters": [
+      {
+        "name": "resource",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns a tuple (soft, hard) with the current soft and hard limits of resource. Raises ValueError if an invalid resource is specified, or error if the underlying system call fails unexpectedly.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a tuple (soft, hard) with the current soft and hard limits of resource. Raises ValueError if an invalid resource is specified, or error if the underlying system call fails unexpectedly.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.035951",
+    "updatedDate": "2026-03-11T23:15:48.035952",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "resource/getrusage": {
+    "id": "resource.getrusage",
+    "name": "getrusage",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "resource.getrusage(who)"
+    ],
+    "signature_hash": "1915f1427391e4bf9f41f33c923e7277c372243e6d5793d999f22e107473e1f3",
+    "url": "https://docs.python.org/3/library/resource.html#module-resource#resource.getrusage",
+    "parameters": [
+      {
+        "name": "who",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This function returns an object that describes the resources consumed by either the current process or its children, as specified by the who parameter. The who parameter should be specified using one of the RUSAGE_* constants described below. A simple example: from resource import * import time # a non CPU-bound task time.sleep(3) print(getrusage(RUSAGE_SELF)) # a CPU-bound task for i in range(10 ** 8): _ = 1 + 1 print(getrusage(RUSAGE_SELF)) The fields of the return value each describe how a...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This function returns an object that describes the resources consumed by either the current process or its children, as specified by the who parameter. The who parameter should be specified using one ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.036220",
+    "updatedDate": "2026-03-11T23:15:48.036221",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

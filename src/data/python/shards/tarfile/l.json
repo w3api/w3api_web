@@ -1,0 +1,203 @@
+{
+  "tarfile/TarInfo/linkname": {
+    "id": "tarfile.TarInfo.linkname",
+    "name": "linkname",
+    "type": "attribute",
+    "parent": "TarInfo",
+    "signatures": [
+      "TarInfo.linkname: str"
+    ],
+    "signature_hash": "b7e74515b1c9bde2bf6e73e2aebb534168640f88a1abfd6eb33270059eb53e97",
+    "url": "https://docs.python.org/3/library/tarfile.html#module-tarfile#tarfile.TarInfo.linkname",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Name of the target file name, which is only present in TarInfo objects of type LNKTYPE and SYMTYPE. For symbolic links (SYMTYPE), the linkname is relative to the directory that contains the link. For hard links (LNKTYPE), the linkname is relative to the root of the archive.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Name of the target file name, which is only present in TarInfo objects of type LNKTYPE and SYMTYPE. For symbolic links (SYMTYPE), the linkname is relative to the directory that contains the link. For ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.055263",
+    "updatedDate": "2026-03-11T23:15:48.055264",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tarfile/LNKTYPE": {
+    "id": "tarfile.LNKTYPE",
+    "name": "LNKTYPE",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "tarfile.LNKTYPE"
+    ],
+    "signature_hash": "3f6e2efa713af446c7d635993d70394d4f3b5cbba7c48dabe835f131f7578df0",
+    "url": "https://docs.python.org/3/library/tarfile.html#module-tarfile#tarfile.LNKTYPE",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A link (inside tarfile) type.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A link (inside tarfile) type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.054603",
+    "updatedDate": "2026-03-11T23:15:48.054603",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tarfile/LinkFallbackError": {
+    "id": "tarfile.LinkFallbackError",
+    "name": "LinkFallbackError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception tarfile.LinkFallbackError"
+    ],
+    "signature_hash": "5e276dde70cb0c312e62c75204a42927350378a2042e8ccc491cb62ed40cae7b",
+    "url": "https://docs.python.org/3/library/tarfile.html#module-tarfile#tarfile.LinkFallbackError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Raised to refuse emulating a link (hard or symbolic) by extracting another archive member, when that member would be rejected by the filter location. The exception that was raised to reject the replacement member is available as BaseException.__context__. Added in version 3.14.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Raised to refuse emulating a link (hard or symbolic) by extracting another archive member, when that member would be rejected by the filter location. The exception that was raised to reject the replac...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.054574",
+    "updatedDate": "2026-03-11T23:15:48.054574",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tarfile/LinkOutsideDestinationError": {
+    "id": "tarfile.LinkOutsideDestinationError",
+    "name": "LinkOutsideDestinationError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception tarfile.LinkOutsideDestinationError"
+    ],
+    "signature_hash": "348ff9029f14a669068b8d08a8d3c663a13b7115258c127c71abf15e37bbf1b8",
+    "url": "https://docs.python.org/3/library/tarfile.html#module-tarfile#tarfile.LinkOutsideDestinationError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Raised to refuse extracting a symbolic link pointing outside the destination directory.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Raised to refuse extracting a symbolic link pointing outside the destination directory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.054562",
+    "updatedDate": "2026-03-11T23:15:48.054563",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tarfile/TarFile/list": {
+    "id": "tarfile.TarFile.list",
+    "name": "list",
+    "type": "method",
+    "parent": "TarFile",
+    "signatures": [
+      "TarFile.list(verbose=True, *, members=None)"
+    ],
+    "signature_hash": "4ad9727a7e3255402605e91149ee585a3f4f5411cb5c569d83ee41aac29f4ae9",
+    "url": "https://docs.python.org/3/library/tarfile.html#module-tarfile#tarfile.TarFile.list",
+    "parameters": [
+      {
+        "name": "verbose",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "members",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Print a table of contents to sys.stdout. If verbose is False, only the names of the members are printed. If it is True, output similar to that of ls -l is produced. If optional members is given, it must be a subset of the list returned by getmembers(). Changed in version 3.5: Added the members parameter.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Print a table of contents to sys.stdout. If verbose is False, only the names of the members are printed. If it is True, output similar to that of ls -l is produced. If optional members is given, it mu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.054865",
+    "updatedDate": "2026-03-11T23:15:48.054866",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

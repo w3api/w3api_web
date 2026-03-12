@@ -1,0 +1,338 @@
+{
+  "pickle/PickleBuffer": {
+    "id": "pickle.PickleBuffer",
+    "name": "PickleBuffer",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pickle.PickleBuffer(buffer)"
+    ],
+    "signature_hash": "b7d66af99db4125c1ea43899552898874405622030b3180b478597e7a6dd752c",
+    "url": "https://docs.python.org/3/library/pickle.html#module-pickle#pickle.PickleBuffer",
+    "parameters": [
+      {
+        "name": "buffer",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "A wrapper for a buffer representing picklable data. buffer must be a buffer-providing object, such as a bytes-like object or a N-dimensional array. PickleBuffer is itself a buffer provider, therefore it is possible to pass it to other APIs expecting a buffer-providing object, such as memoryview. PickleBuffer objects can only be serialized using pickle protocol 5 or higher. They are eligible for out-of-band serialization. Added in version 3.8. raw()¶ Return a memoryview of the memory area unde...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A wrapper for a buffer representing picklable data. buffer must be a buffer-providing object, such as a bytes-like object or a N-dimensional array. PickleBuffer is itself a buffer provider, therefore ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.031072",
+    "updatedDate": "2026-03-11T23:15:48.031073",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "raw",
+      "release"
+    ]
+  },
+  "pickle/Pickler": {
+    "id": "pickle.Pickler",
+    "name": "Pickler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pickle.Pickler(file, protocol=None, *, fix_imports=True, buffer_callback=None)"
+    ],
+    "signature_hash": "c74ec7b2c06b17fce33cf66a587076d5820e8271e0380b108654de60f096c61b",
+    "url": "https://docs.python.org/3/library/pickle.html#module-pickle#pickle.Pickler",
+    "parameters": [
+      {
+        "name": "file",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "protocol",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "fix_imports",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "buffer_callback",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "This takes a binary file for writing a pickle data stream. The optional protocol argument, an integer, tells the pickler to use the given protocol; supported protocols are 0 to HIGHEST_PROTOCOL. If not specified, the default is DEFAULT_PROTOCOL. If a negative number is specified, HIGHEST_PROTOCOL is selected. The file argument must have a write() method that accepts a single bytes argument. It can thus be an on-disk file opened for binary writing, an io.BytesIO instance, or any other custom o...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This takes a binary file for writing a pickle data stream. The optional protocol argument, an integer, tells the pickler to use the given protocol; supported protocols are 0 to HIGHEST_PROTOCOL. If no...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.030899",
+    "updatedDate": "2026-03-11T23:15:48.030899",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "dispatch_table",
+      "fast"
+    ],
+    "methods": [
+      "clear_memo",
+      "dump",
+      "persistent_id",
+      "reducer_override"
+    ]
+  },
+  "pickle/PickleError": {
+    "id": "pickle.PickleError",
+    "name": "PickleError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception pickle.PickleError"
+    ],
+    "signature_hash": "459b294546a9432d1907390ae03cef5162966b48de1b3bf60ef5b2680098190f",
+    "url": "https://docs.python.org/3/library/pickle.html#module-pickle#pickle.PickleError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Common base class for the other pickling exceptions. It inherits from Exception.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Common base class for the other pickling exceptions. It inherits from Exception.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.030842",
+    "updatedDate": "2026-03-11T23:15:48.030843",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pickle/PicklingError": {
+    "id": "pickle.PicklingError",
+    "name": "PicklingError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception pickle.PicklingError"
+    ],
+    "signature_hash": "eb808beba59f0d59e626bce6dccde277cfcfa3c5306e02f188f1ebbe4cddc1fd",
+    "url": "https://docs.python.org/3/library/pickle.html#module-pickle#pickle.PicklingError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Error raised when an unpicklable object is encountered by Pickler. It inherits from PickleError. Refer to What can be pickled and unpickled? to learn what kinds of objects can be pickled.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Error raised when an unpicklable object is encountered by Pickler. It inherits from PickleError. Refer to What can be pickled and unpickled? to learn what kinds of objects can be pickled.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.030862",
+    "updatedDate": "2026-03-11T23:15:48.030863",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pickle/Pickler/persistent_id": {
+    "id": "pickle.Pickler.persistent_id",
+    "name": "persistent_id",
+    "type": "method",
+    "parent": "Pickler",
+    "signatures": [
+      "persistent_id(obj)"
+    ],
+    "signature_hash": "fcd1588dbbc6397e3ee93eae00a54596324be1ed49cab6ae5357e03704a3ee04",
+    "url": "https://docs.python.org/3/library/pickle.html#module-pickle#pickle.Pickler.persistent_id",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Do nothing by default. This exists so a subclass can override it. If persistent_id() returns None, obj is pickled as usual. Any other value causes Pickler to emit the returned value as a persistent ID for obj. The meaning of this persistent ID should be defined by Unpickler.persistent_load(). Note that the value returned by persistent_id() cannot itself have a persistent ID. See Persistence of External Objects for details and examples of uses. Changed in version 3.13: Add the default implemen...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Do nothing by default. This exists so a subclass can override it. If persistent_id() returns None, obj is pickled as usual. Any other value causes Pickler to emit the returned value as a persistent ID...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.030928",
+    "updatedDate": "2026-03-11T23:15:48.030929",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pickle/Unpickler/persistent_load": {
+    "id": "pickle.Unpickler.persistent_load",
+    "name": "persistent_load",
+    "type": "method",
+    "parent": "Unpickler",
+    "signatures": [
+      "persistent_load(pid)"
+    ],
+    "signature_hash": "2baa0b6862a5575f8eae89140f3d3666c737ec881f0cdc274b54b8b221baceb0",
+    "url": "https://docs.python.org/3/library/pickle.html#module-pickle#pickle.Unpickler.persistent_load",
+    "parameters": [
+      {
+        "name": "pid",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Raise an UnpicklingError by default. If defined, persistent_load() should return the object specified by the persistent ID pid. If an invalid persistent ID is encountered, an UnpicklingError should be raised. See Persistence of External Objects for details and examples of uses. Changed in version 3.13: Add the default implementation of this method in the C implementation of Unpickler.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Raise an UnpicklingError by default. If defined, persistent_load() should return the object specified by the persistent ID pid. If an invalid persistent ID is encountered, an UnpicklingError should be...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:48.031039",
+    "updatedDate": "2026-03-11T23:15:48.031040",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pickle": {
+    "type": "module",
+    "name": "pickle",
+    "id": "pickle",
+    "description": "Module pickle",
+    "classes": [
+      "PickleBuffer",
+      "Pickler",
+      "Unpickler"
+    ],
+    "constants": [
+      "DEFAULT_PROTOCOL",
+      "HIGHEST_PROTOCOL"
+    ],
+    "exceptions": [
+      "PickleError",
+      "PicklingError",
+      "UnpicklingError"
+    ],
+    "functions": [
+      "dump",
+      "dumps",
+      "load",
+      "loads"
+    ],
+    "methods": [
+      "__getnewargs__",
+      "__getnewargs_ex__",
+      "__getstate__",
+      "__reduce__",
+      "__reduce_ex__",
+      "__setstate__"
+    ]
+  }
+}

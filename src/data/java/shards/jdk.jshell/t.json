@@ -4,8 +4,10 @@
     "name": "TypeDeclSnippet",
     "type": "class",
     "parent": null,
-    "signatures": [],
-    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures": [
+      "class TypeDeclSnippet"
+    ],
+    "signature_hash": "7dfc52f02d92539b8999e8579c46ce0d1f1061ec19b5eccbf89461f62afc9e49",
     "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/TypeDeclSnippet.html",
     "parameters": [],
     "return_type": "",
@@ -20,8 +22,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.409058",
-    "updatedDate": "2026-03-08T21:40:22.409060",
+    "createdDate": "2026-03-11T23:15:42.236990",
+    "updatedDate": "2026-03-11T23:15:42.236991",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -31,11 +33,113 @@
       "popularity_score": 0
     }
   },
-  "jdk.jshell/JShell.Builder/tempVariableNameGenerator": {
-    "id": "jdk.jshell.JShell.Builder.tempVariableNameGenerator",
+  "jdk.jshell/SubKind/TEMP_VAR_EXPRESSION_SUBKIND": {
+    "id": "jdk.jshell.SubKind.TEMP_VAR_EXPRESSION_SUBKIND",
+    "name": "TEMP_VAR_EXPRESSION_SUBKIND",
+    "type": "enum_constant",
+    "parent": "SubKind",
+    "signatures": [
+      "TEMP_VAR_EXPRESSION_SUBKIND"
+    ],
+    "signature_hash": "03856b46c8ac90f6c36bbc02b49e8bf2b6aaef9ad869f260b22631dcfb14b3ff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/Snippet.SubKind.html",
+    "parameters": [],
+    "return_type": "SubKind",
+    "exceptions": [],
+    "description": "An expression whose value has been stored in a temporary variable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An expression whose value has been stored in a temporary variable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.238569",
+    "updatedDate": "2026-03-11T23:15:42.238570",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell/Kind/TYPE_DECL": {
+    "id": "jdk.jshell.Kind.TYPE_DECL",
+    "name": "TYPE_DECL",
+    "type": "enum_constant",
+    "parent": "Kind",
+    "signatures": [
+      "TYPE_DECL"
+    ],
+    "signature_hash": "13f6e6aafbc539a5fd1c75bffb9f18b4c04e478d5f2924ce036759c8631de5c4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/Snippet.Kind.html",
+    "parameters": [],
+    "return_type": "Kind",
+    "exceptions": [],
+    "description": "A type declaration.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A type declaration.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.237968",
+    "updatedDate": "2026-03-11T23:15:42.237969",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell/SubKind/TYPE_IMPORT_ON_DEMAND_SUBKIND": {
+    "id": "jdk.jshell.SubKind.TYPE_IMPORT_ON_DEMAND_SUBKIND",
+    "name": "TYPE_IMPORT_ON_DEMAND_SUBKIND",
+    "type": "enum_constant",
+    "parent": "SubKind",
+    "signatures": [
+      "TYPE_IMPORT_ON_DEMAND_SUBKIND"
+    ],
+    "signature_hash": "74a96bc16c3ad33674fd39e35a5f9307ffec8a0c5dd363059b1ed23ee3c5a27e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/Snippet.SubKind.html",
+    "parameters": [],
+    "return_type": "SubKind",
+    "exceptions": [],
+    "description": "Type-Import-on-Demand Declaration.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Type-Import-on-Demand Declaration.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:42.238585",
+    "updatedDate": "2026-03-11T23:15:42.238586",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell/Builder/tempVariableNameGenerator": {
+    "id": "jdk.jshell.Builder.tempVariableNameGenerator",
     "name": "tempVariableNameGenerator",
     "type": "method",
-    "parent": "JShell.Builder",
+    "parent": "Builder",
     "signatures": [
       "public JShell.Builder tempVariableNameGenerator(Supplier<String> generator)"
     ],
@@ -65,8 +169,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.409533",
-    "updatedDate": "2026-03-08T21:40:22.409534",
+    "createdDate": "2026-03-11T23:15:42.237558",
+    "updatedDate": "2026-03-11T23:15:42.237559",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -99,8 +203,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.408825",
-    "updatedDate": "2026-03-08T21:40:22.408825",
+    "createdDate": "2026-03-11T23:15:42.236714",
+    "updatedDate": "2026-03-11T23:15:42.236715",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -110,11 +214,11 @@
       "popularity_score": 0
     }
   },
-  "jdk.jshell/SourceCodeAnalysis.Highlight/toString": {
-    "id": "jdk.jshell.SourceCodeAnalysis.Highlight.toString",
+  "jdk.jshell/Highlight/toString": {
+    "id": "jdk.jshell.Highlight.toString",
     "name": "toString",
     "type": "method",
-    "parent": "SourceCodeAnalysis.Highlight",
+    "parent": "Highlight",
     "signatures": [
       "public final String toString()"
     ],
@@ -133,8 +237,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.410282",
-    "updatedDate": "2026-03-08T21:40:22.410283",
+    "createdDate": "2026-03-11T23:15:42.239261",
+    "updatedDate": "2026-03-11T23:15:42.239262",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -167,8 +271,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.408858",
-    "updatedDate": "2026-03-08T21:40:22.408859",
+    "createdDate": "2026-03-11T23:15:42.236750",
+    "updatedDate": "2026-03-11T23:15:42.236751",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -201,8 +305,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.409261",
-    "updatedDate": "2026-03-08T21:40:22.409262",
+    "createdDate": "2026-03-11T23:15:42.237237",
+    "updatedDate": "2026-03-11T23:15:42.237238",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -235,8 +339,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-08T21:40:22.408575",
-    "updatedDate": "2026-03-08T21:40:22.408576",
+    "createdDate": "2026-03-11T23:15:42.236422",
+    "updatedDate": "2026-03-11T23:15:42.236423",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

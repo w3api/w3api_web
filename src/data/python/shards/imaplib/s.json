@@ -1,0 +1,685 @@
+{
+  "imaplib/IMAP4/search": {
+    "id": "imaplib.IMAP4.search",
+    "name": "search",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.search(charset, criterion[, ...])"
+    ],
+    "signature_hash": "cddb822838f8d20960fe000b44e957518a8cb4cc1646df35701388dcf814465b",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.search",
+    "parameters": [
+      {
+        "name": "charset",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "criterion[, ...",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Search mailbox for matching messages. charset may be None, in which case no CHARSET will be specified in the request to the server. The IMAP protocol requires that at least one criterion be specified; an exception will be raised when the server returns an error. charset must be None if the UTF8=ACCEPT capability was enabled using the enable() command. Example: # M is a connected IMAP4 instance... typ, msgnums = M.search(None, 'FROM', '\"LDJ\"') # or: typ, msgnums = M.search(None, '(FROM \"LDJ\")')",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Search mailbox for matching messages. charset may be None, in which case no CHARSET will be specified in the request to the server. The IMAP protocol requires that at least one criterion be specified;...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938379",
+    "updatedDate": "2026-03-11T23:15:47.938380",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/select": {
+    "id": "imaplib.IMAP4.select",
+    "name": "select",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.select(mailbox='INBOX', readonly=False)"
+    ],
+    "signature_hash": "acc4d64ba848fe785edb288b3b623a093df96f8e5a47b464aa45a7bfe6a4379b",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.select",
+    "parameters": [
+      {
+        "name": "mailbox",
+        "type": "",
+        "has_default": true,
+        "default_value": "'INBOX'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "readonly",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Select a mailbox. Returned data is the count of messages in mailbox (EXISTS response). The default mailbox is 'INBOX'. If the readonly flag is set, modifications to the mailbox are not allowed.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Select a mailbox. Returned data is the count of messages in mailbox (EXISTS response). The default mailbox is 'INBOX'. If the readonly flag is set, modifications to the mailbox are not allowed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938397",
+    "updatedDate": "2026-03-11T23:15:47.938398",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/send": {
+    "id": "imaplib.IMAP4.send",
+    "name": "send",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.send(data)"
+    ],
+    "signature_hash": "6ee9d4d109d20497caf38691d31c928e8b1f20c2e6f8402029ad691dea1211be",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.send",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Sends data to the remote server. You may override this method. Raises an auditing event imaplib.send with arguments self, data.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sends data to the remote server. You may override this method. Raises an auditing event imaplib.send with arguments self, data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938412",
+    "updatedDate": "2026-03-11T23:15:47.938413",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/setacl": {
+    "id": "imaplib.IMAP4.setacl",
+    "name": "setacl",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.setacl(mailbox, who, what)"
+    ],
+    "signature_hash": "756eda40b1863c9ac3b2fe65fedc1eb616b4d36d21cabc0b0ec3b4a80f6c8d1c",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.setacl",
+    "parameters": [
+      {
+        "name": "mailbox",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "who",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "what",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set an ACL for mailbox. The method is non-standard, but is supported by the Cyrus server.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set an ACL for mailbox. The method is non-standard, but is supported by the Cyrus server.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938438",
+    "updatedDate": "2026-03-11T23:15:47.938439",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/setannotation": {
+    "id": "imaplib.IMAP4.setannotation",
+    "name": "setannotation",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.setannotation(mailbox, entry, attribute[, ...])"
+    ],
+    "signature_hash": "28e5c57c8543e5bfe156b7bb670f5a862a8e50a0c01995e66f28c2bc204e63f3",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.setannotation",
+    "parameters": [
+      {
+        "name": "mailbox",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "entry",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "attribute[, ...",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set ANNOTATIONs for mailbox. The method is non-standard, but is supported by the Cyrus server.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set ANNOTATIONs for mailbox. The method is non-standard, but is supported by the Cyrus server.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938458",
+    "updatedDate": "2026-03-11T23:15:47.938458",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/setquota": {
+    "id": "imaplib.IMAP4.setquota",
+    "name": "setquota",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.setquota(root, limits)"
+    ],
+    "signature_hash": "ade836a48404b7c5bf46e0784d305ab67f8755869ce5c0a1ac77c39d54d7bb3b",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.setquota",
+    "parameters": [
+      {
+        "name": "root",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "limits",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Set the quota root’s resource limits. This method is part of the IMAP4 QUOTA extension defined in rfc2087.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the quota root’s resource limits. This method is part of the IMAP4 QUOTA extension defined in rfc2087.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938474",
+    "updatedDate": "2026-03-11T23:15:47.938474",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/shutdown": {
+    "id": "imaplib.IMAP4.shutdown",
+    "name": "shutdown",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.shutdown()"
+    ],
+    "signature_hash": "5130f98b72c345ac26b50fd26270436bf092198d21ed1fe50c371dd52083b1d9",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.shutdown",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Close connection established in open. This method is implicitly called by IMAP4.logout(). You may override this method.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Close connection established in open. This method is implicitly called by IMAP4.logout(). You may override this method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938487",
+    "updatedDate": "2026-03-11T23:15:47.938488",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/socket": {
+    "id": "imaplib.IMAP4.socket",
+    "name": "socket",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.socket()"
+    ],
+    "signature_hash": "f0df611a4e55a85103a06bf0f6bddb33f4892290b03e01af4d545b97b8913bee",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.socket",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Returns socket instance used to connect to server.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns socket instance used to connect to server.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938499",
+    "updatedDate": "2026-03-11T23:15:47.938500",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/sort": {
+    "id": "imaplib.IMAP4.sort",
+    "name": "sort",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.sort(sort_criteria, charset, search_criterion[, ...])"
+    ],
+    "signature_hash": "54648e84ee4b66daaad15f6efd37f4be3ccb8d4efd980e90b6d0f8a596d8b680",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.sort",
+    "parameters": [
+      {
+        "name": "sort_criteria",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "charset",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "search_criterion[, ...",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "The sort command is a variant of search with sorting semantics for the results. Returned data contains a space separated list of matching message numbers. Sort has two arguments before the search_criterion argument(s); a parenthesized list of sort_criteria, and the searching charset. Note that unlike search, the searching charset argument is mandatory. There is also a uid sort command which corresponds to sort the way that uid search corresponds to search. The sort command first searches the ...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The sort command is a variant of search with sorting semantics for the results. Returned data contains a space separated list of matching message numbers. Sort has two arguments before the search_crit...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938522",
+    "updatedDate": "2026-03-11T23:15:47.938523",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/starttls": {
+    "id": "imaplib.IMAP4.starttls",
+    "name": "starttls",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.starttls(ssl_context=None)"
+    ],
+    "signature_hash": "0ba2b3f2b9322b233ab9fe16a6f8896c09d2b7274e3d351fc6f728411cd3f553",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.starttls",
+    "parameters": [
+      {
+        "name": "ssl_context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Send a STARTTLS command. The ssl_context argument is optional and should be a ssl.SSLContext object. This will enable encryption on the IMAP connection. Please read Security considerations for best practices. Added in version 3.2. Changed in version 3.4: The method now supports hostname check with ssl.SSLContext.check_hostname and Server Name Indication (see ssl.HAS_SNI).",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Send a STARTTLS command. The ssl_context argument is optional and should be a ssl.SSLContext object. This will enable encryption on the IMAP connection. Please read Security considerations for best pr...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938540",
+    "updatedDate": "2026-03-11T23:15:47.938541",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/status": {
+    "id": "imaplib.IMAP4.status",
+    "name": "status",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.status(mailbox, names)"
+    ],
+    "signature_hash": "a095895883fdecd5e53c54f45176fbc9e1c0908b2ea4120f8c3ac1715feda77d",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.status",
+    "parameters": [
+      {
+        "name": "mailbox",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "names",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Request named status conditions for mailbox.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Request named status conditions for mailbox.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938556",
+    "updatedDate": "2026-03-11T23:15:47.938557",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/store": {
+    "id": "imaplib.IMAP4.store",
+    "name": "store",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.store(message_set, command, flag_list)"
+    ],
+    "signature_hash": "e9983d5001dd7a8800052aa649bea475fcac6f9b609a8556db28d109796d96b8",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.store",
+    "parameters": [
+      {
+        "name": "message_set",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "command",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "flag_list",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Alters flag dispositions for messages in mailbox. command is specified by section 6.4.6 of RFC 2060 as being one of “FLAGS”, “+FLAGS”, or “-FLAGS”, optionally with a suffix of “.SILENT”. For example, to set the delete flag on all messages: typ, data = M.search(None, 'ALL') for num in data[0].split(): M.store(num, '+FLAGS', '\\\\Deleted') M.expunge() Note Creating flags containing ‘]’ (for example: “[test]”) violates RFC 3501 (the IMAP protocol). However, imaplib has historically allowed creatio...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Alters flag dispositions for messages in mailbox. command is specified by section 6.4.6 of RFC 2060 as being one of “FLAGS”, “+FLAGS”, or “-FLAGS”, optionally with a suffix of “.SILENT”. For example, ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938578",
+    "updatedDate": "2026-03-11T23:15:47.938579",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/subscribe": {
+    "id": "imaplib.IMAP4.subscribe",
+    "name": "subscribe",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.subscribe(mailbox)"
+    ],
+    "signature_hash": "e3270e550925134e7dcdb61a9d605f9bbfac26974127369dc24f9ecc45594cc0",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.subscribe",
+    "parameters": [
+      {
+        "name": "mailbox",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Subscribe to new mailbox.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Subscribe to new mailbox.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.938593",
+    "updatedDate": "2026-03-11T23:15:47.938593",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

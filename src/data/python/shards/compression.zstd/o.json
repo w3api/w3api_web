@@ -1,0 +1,171 @@
+{
+  "compression.zstd/CompressionParameter/overlap_log": {
+    "id": "compression.zstd.CompressionParameter.overlap_log",
+    "name": "overlap_log",
+    "type": "attribute",
+    "parent": "CompressionParameter",
+    "signatures": [
+      "overlap_log"
+    ],
+    "signature_hash": "ba2b416b6e3962864843749057115e88629db54fa2952c8e268e5fdfe60210ee",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.CompressionParameter.overlap_log",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Sets how much data is reloaded from previous jobs (threads) for new jobs to be used by the look behind window during compression. This value is only used when nb_workers >= 1. Acceptable values vary from 0 to 9. 0 means dynamically set the overlap amount 1 means no overlap 9 means use a full window size from the previous job Each increment halves/doubles the overlap size. “8” means an overlap of window_size/2, “7” means an overlap of window_size/4, etc.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets how much data is reloaded from previous jobs (threads) for new jobs to be used by the look behind window during compression. This value is only used when nb_workers >= 1. Acceptable values vary f...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.887401",
+    "updatedDate": "2026-03-11T23:15:47.887402",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/open": {
+    "id": "compression.zstd.open",
+    "name": "open",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "compression.zstd.open(file, /, mode='rb', *, level=None, options=None, zstd_dict=None, encoding=None, errors=None, newline=None)"
+    ],
+    "signature_hash": "f068804ea13036825a544e447b3b28f1c7826245b7dc573db72774af930cb86f",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.open",
+    "parameters": [
+      {
+        "name": "file",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "'rb'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "level",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "options",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "zstd_dict",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "newline",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": "Open a Zstandard-compressed file in binary or text mode, returning a file object. The file argument can be either a file name (given as a str, bytes or path-like object), in which case the named file is opened, or it can be an existing file object to read from or write to. The mode argument can be either 'rb' for reading (default), 'wb' for overwriting, 'ab' for appending, or 'xb' for exclusive creation. These can equivalently be given as 'r', 'w', 'a', and 'x' respectively. You may also open...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Open a Zstandard-compressed file in binary or text mode, returning a file object. The file argument can be either a file name (given as a str, bytes or path-like object), in which case the named file ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-11T23:15:47.886662",
+    "updatedDate": "2026-03-11T23:15:47.886663",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}
