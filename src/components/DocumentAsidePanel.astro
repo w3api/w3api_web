@@ -1,0 +1,113 @@
+---
+interface Props {
+  doc: any;
+  isPackagePage: boolean;
+  language: string;
+  languageName: string;
+}
+
+const { doc, isPackagePage, language, languageName } = Astro.props;
+---
+
+<aside>
+  {!isPackagePage && doc.articles && doc.articles.length > 0 && (
+    <section id="related-articles">
+      <h3>Artículos Relacionados</h3>      
+      <ul>
+        {doc.articles.map((article: any) => (
+          <li>
+            <a href={`/${language}/${article.url}/`}>
+              {article.title}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-icon">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {!isPackagePage && (
+    <section id="original-documentation">
+      <h2>Documentación Original</h2>
+      <div class="members-category">
+        <p>
+          <a href={doc.url} target="_blank" rel="noopener noreferrer">
+            Ver en la documentación de {languageName}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-icon">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </section>
+  )}
+</aside>
+
+<style>
+  aside {
+    width: 100%;
+  }
+
+  aside section {
+    margin-bottom: 2rem;
+  }
+
+  aside h2,
+  aside h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--sl-color-text);
+  }
+
+  aside h3 {
+    border-bottom: 1px solid var(--sl-color-hairline);
+    padding-bottom: 0.5rem;
+  }
+
+  aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  aside li {
+    padding: 0.1rem 0;
+  }
+
+  aside a {
+    color: var(--sl-color-accent);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  aside a:hover {
+    color: var(--sl-color-accent-high);
+    text-decoration: underline;
+  }
+
+  aside .members-category {
+    padding: 0;
+  }
+
+  aside .members-category p {
+    margin: 0;
+  }
+
+  aside a .external-icon {
+    display: inline;
+    margin-left: 0.4rem;
+    vertical-align: -0.125em;
+    transition: transform 0.15s;
+  }
+
+  aside a:hover .external-icon {
+    transform: translate(0.2rem, -0.2rem);
+  }
+</style>

@@ -1,487 +1,61 @@
 ---
-import StarlightLayout from '../../layouts/StarlightLayout.astro';
-import { sidebar } from '../../config/xml_sidebar';
-import { Code } from "astro-expressive-code/components";
-import rutas from '../../data/xml/routes.json'
-import { Breadcrumbs } from "astro-breadcrumbs";
-import "astro-breadcrumbs/breadcrumbs.css";
+import DocumentLayout from '../../layouts/DocumentLayout.astro';
+import rutas from '../../data/xml/routes.json';
+import { loadDocument, loadPackage, generateTableOfContents } from '../../utils/loadDocumentation';
+import { LANGUAGES } from '../../config/languages';
 
+const LANGUAGE_KEY = 'xml';
 
-// Importar todos los archivos de distribución de shards
-const distributionModules = import.meta.glob('../../data/xml/modules/*.json', { eager: true })
-
-// Importar todos los shards
-const shardModules = import.meta.glob('../../data/xml/shards/**/*.json', { eager: true })
-
+const sidebarModules = import.meta.glob('../../config/sidebars/*_sidebar.ts', { eager: true });
+const distributionModules = import.meta.glob('../../data/xml/modules/*.json', { eager: true });
+const shardModules = import.meta.glob('../../data/xml/shards/**/*.json', { eager: true });
 
 export async function getStaticPaths() {
-  const paths: any[] = []
-  
-  // Rutas simple: array de slugs
-  const routeSlugs = rutas || [];
-  
-  routeSlugs.forEach((slug: string) => {    
-    paths.push({
-      params: { slug },
-      props: { language: 'XML', languageName: 'XML' }
-    })
-  })
-    
-  return paths
+  return (rutas || []).map((slug: string) => ({
+    params: { slug },
+    props: LANGUAGES['xml'],
+  }));
 }
 
 interface Props {
-  language: string
-  languageName: string
+  language: string;
+  languageName: string;
+  codeLanguage: string;
+  filterLabel: string;
 }
 
+const { language, languageName, codeLanguage, filterLabel } = Astro.props;
+const slug = Astro.params.slug as string;
+const sidebarModule = sidebarModules[`../../config/sidebars/${language}_sidebar.ts`] as any;
+const sidebar = sidebarModule?.default || sidebarModule?.sidebar || [];
 
-const { language, languageName } = Astro.props
-const slug = Astro.params.slug
+const packageName = slug.split('/')[0];
+const moduleKey = `../../data/${language}/modules/${packageName}.json`;
+const distributionModule = distributionModules[moduleKey] as any;
+const distributionFile = distributionModule.default || distributionModule;
 
-// Obtener el nombre del paquete (primera parte del slug)
-const [packageName] = slug.split('/').slice(0, 1)
-const distributionPath = packageName + ".json"
-
-if (!distributionPath) throw new Error("Distribution File not found")
-
-// Acceder al módulo de distribución que ya fue importado por glob
-const moduleKey = `../../data/xml/modules/${distributionPath}` 
-const distributionModule = distributionModules[moduleKey] as any
-const distributionFile = distributionModule.default || distributionModule
-
-// Detectar si es una ruta de solo paquete (sin elemento específico)
-const isPackageOnly = slug === packageName
-
-let doc: any
-let isPackagePage = false
+const isPackageOnly = slug === packageName;
+let doc: any;
 
 if (isPackageOnly) {
-  // Es una ruta de solo paquete
-  isPackagePage = true
-  
-  // Obtener el shard del paquete
-  const routeMeta = distributionFile.find((r: any) => r.slug === packageName)
-  
-  if (!routeMeta) throw new Error("Package not found")
-  
-  const shardPath = `../../data/${routeMeta.shard}`
-  const shardModule = shardModules[shardPath] as any
-  const shard = shardModule.default || shardModule
-  
-  // El documento del paquete ya contiene sus miembros agrupados por tipo
-  doc = shard[packageName]
-  
-  if (doc) {
-    // Agrupar elementos por tipo (classes, interfaces, exceptions, enums, annotations)
-    const membersByType: any = {}
-    
-    // Propiedades que contienen listas de miembros
-    if (doc.classes && Array.isArray(doc.classes)) {
-      membersByType.class = doc.classes.map((name: string) => ({
-        name: name,
-        slug: `${packageName}/${name}`,
-        type: 'class'
-      }))
-    }
-    
-    if (doc.interfaces && Array.isArray(doc.interfaces)) {
-      membersByType.interface = doc.interfaces.map((name: string) => ({
-        name: name,
-        slug: `${packageName}/${name}`,
-        type: 'interface'
-      }))
-    }
-    
-    if (doc.exceptions && Array.isArray(doc.exceptions)) {
-      membersByType.exception = doc.exceptions.map((exception: any) => ({
-        name: exception.name,
-        slug: `${packageName}/${exception.name}`,
-        type: 'exception'
-      }))
-    }
-    
-    if (doc.enums && Array.isArray(doc.enums)) {
-      membersByType.enum = doc.enums.map((name: string) => ({
-        name: name,
-        slug: `${packageName}/${name}`,
-        type: 'enum'
-      }))
-    }
-    
-    if (doc.annotations && Array.isArray(doc.annotations)) {
-      membersByType.annotation = doc.annotations.map((name: string) => ({
-        name: name,
-        slug: `${packageName}/${name}`,
-        type: 'annotation'
-      }))
-    }
-    
-    doc.membersByType = membersByType
-  } else {
-    doc = {
-      name: packageName,
-      type: 'Package',
-      description: `Paquete XML: ${packageName}`,
-      membersByType: {}
-    }
-  }
+  doc = loadPackage(packageName, distributionFile, shardModules, language);
 } else {
-  // Es una ruta de elemento específico
-  // Buscar la ruta en el índice de distribución
-  const routeMeta = distributionFile.find((r: any) => r.slug === slug)
-  
-  console.log(slug)
-  if (!routeMeta) throw new Error("Not found")
-  
-  // Acceder al módulo del shard que ya fue importado por glob
-  const shardPath = `../../data/${routeMeta.shard}`
-  const shardModule = shardModules[shardPath] as any
-  const shard = shardModule.default || shardModule
-  doc = shard[slug]
+  doc = loadDocument(slug, distributionFile, shardModules, packageName, language);
 }
 
-
-const headings = isPackagePage 
-  ? [
-      { level: 2, title: 'Description', id: 'description' },
-      { level: 2, title: 'Members', id: 'members' }
-    ]
-  : [
-      { level: 2, title: 'Description', id: 'description' },
-      ...(doc.constructors?.length > 0 ? [{ level: 2, title: 'Constructors', id: 'constructors' }] : []),
-      ...(doc.methods?.length > 0 ? [{ level: 2, title: 'Methods', id: 'methods' }] : []),
-      ...(doc.attributes?.length > 0 ? [{ level: 2, title: 'Atributos', id: 'attributes' }] : []),
-      ...(doc.example?.length > 0 ? [{ level: 2, title: 'Example', id: 'example' }] : []),
-      { level: 2, title: 'Original Documentation', id: 'original-documentation' }
-    ]
-
-// Generar tabla de contenidos dinámicamente
-const tableOfContents = headings.map(h => ({
-  depth: h.level,
-  text: h.title,
-  slug: h.id
-}))
+const tableOfContents = generateTableOfContents(doc, isPackageOnly);
 ---
 
 
-<StarlightLayout
-  title={doc.name}
-  description={`${languageName} ${doc.type} ${doc.name}`}
-  siteTitle="W3Api"
-  sidebar={sidebar}
-  tableOfContents={tableOfContents}
-  currentLanguage="xml"  
-  logoSrc='/logo.webp'
-  filterLabel="Módulos"
->
-
-<main>
-
-  <article>
-    <header class="sl-content-header">
-    
-      <h1>{doc.name}</h1>
-
-      <Breadcrumbs excludeCurrentPage indexText="Inicio"  separatorAriaHidden={false} >
-      <svg
-        slot="separator"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        ><polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
-      <svg
-        slot="index"
-        aria-label="Página Principal"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        ><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"> </path><polyline
-          points="9 22 9 12 15 12 15 22"></polyline>
-      </svg>
-    </Breadcrumbs>
-
-    </header>
-
-    <hr class="header-divider" />
-
-  <section id="metadata">
-    <div class="metadata-badges">
-      <span class="sl-badge sl-badge-tip">{isPackagePage ? 'package' : doc.type}</span>
-      
-      {doc.metadata?.added_version && (
-        <span class="sl-badge sl-badge-success">
-          Added in {doc.metadata.added_version}
-        </span>
-      )}
-      
-      {doc.metadata?.deprecated && doc.metadata?.deprecated_version && doc.metadata.deprecated_version !== "unknown" && (
-        <span class="sl-badge sl-badge-caution">
-          Deprecated in {doc.metadata.deprecated_version}
-        </span>
-      )}
-      
-      {doc.metadata?.deprecated && (!doc.metadata?.deprecated_version || doc.metadata.deprecated_version === "unknown") && (
-        <span class="sl-badge sl-badge-caution">
-          Deprecated
-        </span>
-      )}
-    </div>
-  </section>
-
-  <section id="description">
-    <h2>Description</h2>
-    <p>{doc.description || "No description available."}</p>
-  </section>
-
-  {isPackagePage && doc.membersByType && Object.keys(doc.membersByType).length > 0 && (
-    <section id="members">
-      <h2>Members</h2>
-      {Object.entries(doc.membersByType).map(([type, members]: any) => {
-        const typeLabel = type.charAt(0).toUpperCase() + type.slice(1)
-        return (
-          <div class="members-category">
-            <h3>{typeLabel}</h3>
-            <ul>
-              {(members as any[]).map((member: any) => (
-                <li>
-                  <a href={`/xml/${member.slug}/`}>
-                    {member.name || member.slug.split('/')[1]}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )
-      })}
-    </section>
-  )}
-
-  {!isPackagePage && doc.signatures && doc.signatures.length > 0 && (
-    <section id="sintaxis">
-      <h2>Sintaxis</h2>
-      <Code
-        code={doc.signatures.join('\n')}
-        lang="xml"
-      />      
-    </section>
-  )}  
-
-  {!isPackagePage && doc.parameters && doc.parameters.length > 0 && (
-    <section id="parameters">
-      <h2>Parameters</h2>
-      <ul>
-        {doc.parameters.map((param: any) => (
-          <li>
-            <strong>{param.type} {param.name}</strong> - {param.description}
-          </li>
-        ))}
-      </ul>
-    </section>
-  )}
-
-  {!isPackagePage && doc.constructors && doc.constructors.length > 0 && (
-    <section id="constructors">
-      <h2>Constructors</h2>
-      <div class="members-category">
-      <ul>
-        {doc.constructors.map((constructor: string) => (
-          <li>
-            <a href={`/xml/${slug}/${constructor}/`}>
-              {constructor}
-            </a>
-          </li>
-        ))}
-      </ul>
-      </div>
-    </section>
-  )}
-
-  {!isPackagePage && doc.methods && doc.methods.length > 0 && (
-    <section id="methods">
-      <h2>Methods</h2>
-        <div class="members-category">
-        <ul>
-          {doc.methods.map((method: string) => (
-            <li>
-              <a href={`/xml/${slug}/${method}/`}>
-                {method}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
-  )}
-
-  {!isPackagePage && doc.attributes && doc.attributes.length > 0 && (
-    <section id="attributes">
-      <h2>Atributos</h2>
-      <div class="members-category">
-      <ul>
-        {doc.attributes.map((attribute: string) => (
-          <li>
-            <a href={`/xml/${slug}/${attribute}/`}>
-              {attribute}
-            </a>
-          </li>
-        ))}
-      </ul>
-      </div>
-    </section>
-  )}
-
-  {!isPackagePage && doc.exceptions && doc.exceptions.length > 0 && (
-    <section id="exceptions">
-      <h2>Excepciones</h2>
-      <div class="members-category">
-      <ul>
-        {doc.exceptions.map((exception: any) => (
-          <li>
-            <a href={`/xml/${exception.package}/${exception.name}/`}>
-              {exception.name}
-            </a>
-          </li>
-        ))}
-      </ul>
-      </div>
-    </section>
-  )}
-
-  {!isPackagePage && doc.example && doc.example.length > 0 && (
-    <section id="example">
-      <h2>Ejemplo</h2>
-            <Code
-              code={doc.example}
-              lang="xml"
-            />   
-    </section>
-  )}
-
-  </article>
-  <aside>
-
-    {!isPackagePage && doc.relatedArticles && doc.relatedArticles.length > 0 && (
-      <section id="related-articles">
-        <h3>Artículos Relacionados</h3>
-        <ul>
-          {doc.relatedArticles.map((article: string) => (
-            <li>
-              <a href={`/xml/${article}/`}>
-                {article}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
-    )}
-
-    {!isPackagePage && (
-      <section id="original-documentation">
-        <h2>Original Documentation</h2>
-        <div class="members-category">
-        <p>
-          <a href={doc.url} target="_blank" rel="noopener noreferrer">
-            View on Oracle Documentation →
-          </a>
-        </p>
-      </div>
-      </section>
-    )}
-  </aside>
-
-</main>
-
-<style>
-  .header-divider {
-    border: none;
-    border-top: 1px solid #e8e8e8;
-    margin: 1rem 0;
-  }
-
-  .sl-content-header h1 {
-    margin: 0;
-  }
-
-  #metadata {
-    margin: 1.5rem 0;
-  }
-
-  .metadata-badges {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .metadata-badges .sl-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.35rem 0.75rem;
-    font-size: 0.875rem;
-    font-weight: 600;
-    border-radius: 0.375rem;
-    white-space: nowrap;
-  }
-
-  .sl-badge-tip {
-    background-color: var(--sl-color-accent-low);
-    color: var(--sl-color-accent);
-  }
-
-  .sl-badge-success {
-    background-color: #dcfce7;
-    color: #166534;
-  }
-
-  .sl-badge-caution {
-    background-color: #fef3c7;
-    color: #b45309;
-  }
-
-  .members-category h3 {
-    margin: 1.5rem 0 0.75rem 0;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--sl-color-text);
-    border-bottom: 1px solid var(--sl-color-hairline);
-    padding-bottom: 0.5rem;
-  }
-
-  .members-category ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1rem 0;
-  }
-
-  .members-category li {
-    padding: 0.1rem 0;
-  }
-
-  .members-category a {
-    color: var(--sl-color-accent);
-    text-decoration: none;
-    transition: color 0.15s;
-  }
-
-  .members-category a:hover {
-    color: var(--sl-color-accent-high);
-    text-decoration: underline;
-  }
-  
-</style>
-
-</StarlightLayout>
+<DocumentLayout
+  {doc}
+  {slug}
+  {sidebar}
+  {language}
+  {languageName}
+  currentLanguage={language}
+  {filterLabel}
+  {codeLanguage}
+  isPackagePage={isPackageOnly}
+  {tableOfContents}
+/>

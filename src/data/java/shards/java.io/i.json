@@ -23,7 +23,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.340031",
-    "updatedDate": "2026-03-11T23:15:40.340032",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -60,7 +60,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.339198",
-    "updatedDate": "2026-03-11T23:15:40.339199",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -111,7 +111,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.339560",
-    "updatedDate": "2026-03-11T23:15:40.339561",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -165,7 +165,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.340058",
-    "updatedDate": "2026-03-11T23:15:40.340059",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -197,7 +197,7 @@
         "is_keyword_only": false,
         "is_var_args": false,
         "is_var_kwargs": false,
-        "description": ""
+        "description": "Mensaje que se quiere asociar a la IOException."
       },
       {
         "name": "cause",
@@ -207,12 +207,12 @@
         "is_keyword_only": false,
         "is_var_args": false,
         "is_var_kwargs": false,
-        "description": ""
+        "description": "Elemento que permite asociar cualquier excepción ya que Throwable es la superclase de todas las excepciones."
       }
     ],
     "return_type": "",
     "exceptions": [],
-    "description": "Constructs anIOExceptionwithnullas its error detail message.",
+    "description": "Constructor que nos permite crear una excepción IOException.",
     "example": "",
     "articles": [],
     "info": {
@@ -223,7 +223,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.340119",
-    "updatedDate": "2026-03-11T23:15:40.340120",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -257,7 +257,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.339219",
-    "updatedDate": "2026-03-11T23:15:40.339220",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -340,7 +340,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.339610",
-    "updatedDate": "2026-03-11T23:15:40.339611",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -386,7 +386,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.339803",
-    "updatedDate": "2026-03-11T23:15:40.339804",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -454,7 +454,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.339901",
-    "updatedDate": "2026-03-11T23:15:40.339902",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -510,7 +510,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.340008",
-    "updatedDate": "2026-03-11T23:15:40.340009",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -533,9 +533,18 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "",
-    "example": "",
-    "articles": [],
+    "description": "Cuando se produce una excepción IOException significa que se ha producido un error en la entrada/salida. Por ejemplo, cuando estamos leyendo de la consola, un fichero,… etc.\n\nEs obligatorio tratar la excepción, ya sea en la cabeza del método mediante una sentencia throws o con un bloque try-catch.\n\nLa clase IOException es una excepción verificada (checked exception), lo que significa que el compilador obliga a manejarla explícitamente. Esta excepción es la clase base para excepciones producidas por operaciones fallidas de E/S, como FileNotFoundException o SocketException.",
+    "example": "BufferedReader br;\nbr = new BufferedReader(new InputStreamReader(System.in));\nString texto;\n\ntry{ \n br.readLine());\n} catch (IOException ioe){ \n ioe.printStackTrace();\n}",
+    "articles": [
+      {
+        "title": "Crear un fichero en Java",
+        "url": "https://lineadecodigo.com/java/crear-un-fichero-en-java/"
+      },
+      {
+        "title": "Copiar un fichero con Java",
+        "url": "http://lineadecodigo.com/Java/copiar-un-fichero-con-java/"
+      }
+    ],
     "info": {
       "status": "empty",
       "excerpt": "",
@@ -544,7 +553,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.340080",
-    "updatedDate": "2026-03-11T23:15:40.340080",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -581,7 +590,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.339773",
-    "updatedDate": "2026-03-11T23:15:40.339774",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -621,7 +630,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.339851",
-    "updatedDate": "2026-03-11T23:15:40.339852",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -664,7 +673,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.339972",
-    "updatedDate": "2026-03-11T23:15:40.339973",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -701,7 +710,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.337400",
-    "updatedDate": "2026-03-11T23:15:40.337401",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -735,7 +744,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.338595",
-    "updatedDate": "2026-03-11T23:15:40.338596",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -769,7 +778,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.338983",
-    "updatedDate": "2026-03-11T23:15:40.338983",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -803,7 +812,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.346905",
-    "updatedDate": "2026-03-11T23:15:40.346906",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -848,7 +857,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.338157",
-    "updatedDate": "2026-03-11T23:15:40.338158",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -882,7 +891,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.333687",
-    "updatedDate": "2026-03-11T23:15:40.333688",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -916,7 +925,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.333698",
-    "updatedDate": "2026-03-11T23:15:40.333699",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -950,7 +959,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.333710",
-    "updatedDate": "2026-03-11T23:15:40.333711",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -984,7 +993,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.333722",
-    "updatedDate": "2026-03-11T23:15:40.333722",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "unknown",
@@ -1018,7 +1027,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.345966",
-    "updatedDate": "2026-03-11T23:15:40.345967",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1052,7 +1061,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.335762",
-    "updatedDate": "2026-03-11T23:15:40.335762",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1086,7 +1095,7 @@
       "visits": 0
     },
     "createdDate": "2026-03-11T23:15:40.345997",
-    "updatedDate": "2026-03-11T23:15:40.345998",
+    "updatedDate": "2026-03-14T15:02:47.525Z",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

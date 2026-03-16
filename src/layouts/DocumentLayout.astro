@@ -1,0 +1,251 @@
+---
+import StarlightLayout from './StarlightLayout.astro';
+import { Code } from "astro-expressive-code/components";
+import { Breadcrumbs } from "astro-breadcrumbs";
+import "astro-breadcrumbs/breadcrumbs.css";
+import DocumentAsidePanel from '../components/DocumentAsidePanel.astro';
+import { marked } from 'marked';
+
+interface SidebarItem {
+  label: string;
+  link?: string;
+  items?: SidebarItem[];
+  badge?: { text: string; variant?: 'default' | 'note' | 'tip' | 'caution' | 'danger' | 'success' };
+  collapsed?: boolean;
+}
+
+interface TocItem {
+  depth: number;
+  text: string;
+  slug: string;
+}
+
+interface Props {
+  doc: any;
+  slug: string;
+  sidebar: SidebarItem[];
+  language: string;
+  languageName: string;
+  currentLanguage: string;
+  filterLabel: string;
+  codeLanguage: string;
+  isPackagePage: boolean;
+  tableOfContents: TocItem[];
+}
+
+const {
+  doc,
+  slug,
+  sidebar,
+  language,
+  languageName,
+  currentLanguage,
+  filterLabel,
+  codeLanguage,
+  isPackagePage,
+  tableOfContents
+} = Astro.props;
+---
+
+<StarlightLayout
+  title={doc.name}
+  description={`${languageName} ${doc.type} ${doc.name}`}
+  siteTitle="W3Api"
+  sidebar={sidebar}
+  tableOfContents={tableOfContents}
+  currentLanguage={currentLanguage}
+  logoSrc='/logo.webp'
+  filterLabel={filterLabel}
+>
+  <main>
+    <article>
+      <header class="sl-content-header">
+        <h1>{doc.name}</h1>
+
+        <Breadcrumbs excludeCurrentPage indexText="Inicio" separatorAriaHidden={false}>
+          <svg
+            slot="separator"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+          <svg
+            slot="index"
+            aria-label="Página Principal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </Breadcrumbs>
+      </header>
+
+      <hr class="header-divider" />
+
+      <section id="metadata">
+        <div class="metadata-badges">
+          <span class="sl-badge sl-badge-tip">{doc.type}</span>
+
+          {doc.metadata?.added_version && (
+            <span class="sl-badge sl-badge-success">
+              Added in {doc.metadata.added_version}
+            </span>
+          )}
+
+          {doc.metadata?.deprecated && doc.metadata?.deprecated_version && doc.metadata.deprecated_version !== "unknown" && (
+            <span class="sl-badge sl-badge-caution">
+              Deprecated in {doc.metadata.deprecated_version}
+            </span>
+          )}
+
+          {doc.metadata?.deprecated && (!doc.metadata?.deprecated_version || doc.metadata.deprecated_version === "unknown") && (
+            <span class="sl-badge sl-badge-caution">
+              Deprecated
+            </span>
+          )}
+        </div>
+      </section>
+
+      <section id="description">
+        <h2>Description</h2>
+        <div set:html={marked(doc.description || "No description available.")} />
+      </section>
+
+      {isPackagePage && doc.membersByType && Object.keys(doc.membersByType).length > 0 && (
+        <section id="members">
+          <h2>Members</h2>
+          {Object.entries(doc.membersByType).map(([type, members]: any) => {
+            const typeLabel = type.charAt(0).toUpperCase() + type.slice(1)
+            return (
+              <div class="members-category">
+                <h3>{typeLabel}</h3>
+                <ul>
+                  {(members as any[]).map((member: any) => (
+                    <li>
+                      <a href={`/${language}/${member.slug}/`}>
+                        {member.name || member.slug.split('/')[1]}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          })}
+        </section>
+      )}
+
+      {!isPackagePage && doc.signatures && doc.signatures.length > 0 && (
+        <section id="sintaxis">
+          <h2>Sintaxis</h2>
+          <Code code={doc.signatures.join('\n')} lang={codeLanguage} />
+        </section>
+      )}
+
+      {!isPackagePage && doc.parameters && doc.parameters.length > 0 && (
+        <section id="parameters">
+          <h2>Parameters</h2>
+          <ul>
+            {doc.parameters.map((param: any) => (
+              <li>
+                <strong>{param.type} {param.name}</strong> - {param.description}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {!isPackagePage && doc.constructors && doc.constructors.length > 0 && (
+        <section id="constructors">
+          <h2>Constructors</h2>
+          <div class="members-category">
+            <ul>
+              {doc.constructors.map((constructor: string) => (
+                <li>
+                  <a href={`/${language}/${slug}/${constructor}/`}>
+                    {constructor}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {!isPackagePage && doc.methods && doc.methods.length > 0 && (
+        <section id="methods">
+          <h2>Methods</h2>
+          <div class="members-category">
+            <ul>
+              {doc.methods.map((method: string) => (
+                <li>
+                  <a href={`/${language}/${slug}/${method}/`}>
+                    {method}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {!isPackagePage && doc.attributes && doc.attributes.length > 0 && (
+        <section id="attributes">
+          <h2>Atributos</h2>
+          <div class="members-category">
+            <ul>
+              {doc.attributes.map((attribute: string) => (
+                <li>
+                  <a href={`/${language}/${slug}/${attribute}/`}>
+                    {attribute}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {!isPackagePage && doc.exceptions && doc.exceptions.length > 0 && (
+        <section id="exceptions">
+          <h2>Excepciones</h2>
+          <div class="members-category">
+            <ul>
+              {doc.exceptions.map((exception: any) => (
+                <li>
+                  <a href={`/${language}/${exception.package}/${exception.name}/`}>
+                    {exception.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {!isPackagePage && doc.example && doc.example.length > 0 && (
+        <section id="example">
+          <h2>Ejemplo</h2>
+          <Code code={doc.example} lang={codeLanguage} />
+        </section>
+      )}
+    </article>
+
+    <DocumentAsidePanel {doc} {isPackagePage} language={language} languageName={languageName} />
+  </main>
+</StarlightLayout>
