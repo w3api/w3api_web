@@ -43,12 +43,14 @@ const {
   filterLabel,
   codeLanguage,
   isPackagePage,
-  tableOfContents
+  tableOfContents,
 } = Astro.props;
+
+const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageName}`;
 ---
 
 <StarlightLayout
-  title={doc.name}
+  title={title}
   description={`${languageName} ${doc.type} ${doc.name}`}
   siteTitle="W3Api"
   sidebar={sidebar}
@@ -60,7 +62,7 @@ const {
   <main>
     <article>
       <header class="sl-content-header">
-        <h1>{doc.name}</h1>
+        <h1>{title}</h1>
 
         <Breadcrumbs excludeCurrentPage indexText="Inicio" separatorAriaHidden={false}>
           <svg

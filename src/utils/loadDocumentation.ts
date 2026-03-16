@@ -119,6 +119,19 @@ export function loadPackage(
       type: 'Package',
       description: `Package: ${packageName}`,
       membersByType: {},
+      signatures: [],
+      parameters: [],
+      constructors: [],
+      methods: [],
+      attributes: [],
+      exceptions: [],
+      classes: [],
+      interfaces: [],
+      enums: [],
+      annotations: [],
+      functions: [],
+      constants: [],
+      elements: [],
     };
   }
 
