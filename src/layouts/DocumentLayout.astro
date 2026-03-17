@@ -311,13 +311,34 @@ const breadcrumbTrail = buildBreadcrumbTrail();
   }
 
   .header-container h1 {
-    margin: 0;
+    margin: 0 0 0.5rem 0;
     flex: 1;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  @media (min-width: 50rem) {
+    .header-container h1 {
+      font-size: 1.8rem;      
+      line-height: 1.3;
+    }
   }
 
   .language-logo {
-    font-size: 3rem;
+    font-size: 2.5rem;
     opacity: 0.8;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  @media (min-width: 50rem) {
+    .language-logo {
+      font-size: 4rem;
+    }
   }
 </style>

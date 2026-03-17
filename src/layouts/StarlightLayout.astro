@@ -373,10 +373,17 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
         align-items: center;
         gap: 1rem;
         font-weight: 700;
-        font-size: var(--sl-text-2xl);
+        font-size: var(--sl-text-lg);
         color: var(--sl-color-text);
         white-space: nowrap;
         text-decoration: none;
+        height: var(--sl-header-height);
+      }
+
+      @media (min-width: 50rem) {
+        .sl-site-title {
+          font-size: var(--sl-text-2xl);
+        }
       }
       .sl-site-title:hover { color: var(--sl-color-accent); }
 
@@ -493,7 +500,15 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
       [data-theme="dark"] .sl-content :is(h1, h2, h3, h4, h5, h6) {
         color: #f4f4f5;
       }
-      .sl-content h1 { font-size: var(--sl-text-4xl);  }
+      .sl-content h1 {
+        font-size: var(--sl-text-2xl);
+      }
+
+      @media (min-width: 50rem) {
+        .sl-content h1 {
+          font-size: var(--sl-text-4xl);
+        }
+      }
       .sl-content h2 { font-size: var(--sl-text-2xl); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--sl-color-hairline); }
       .sl-content h3 { font-size: var(--sl-text-xl);  margin: 1.5rem 0 0.5rem; }
       .sl-content h4 { font-size: var(--sl-text-lg);  margin: 1.25rem 0 0.5rem; }
