@@ -21,6 +21,13 @@ interface Props {
 }
 
 const { items, currentPath, languageCode = 'en', currentTechnology = 'java', hasLanguagePrefix = true, hasSidebar, technologyFilter } = Astro.props;
+
+const buildUrl = (link: string) => {
+  if (hasLanguagePrefix) {
+    return `/${languageCode}/${link}`;
+  }
+  return `/${link}`;
+};
 ---
 
 {hasSidebar && (
@@ -66,7 +73,7 @@ const { items, currentPath, languageCode = 'en', currentTechnology = 'java', has
                     return (
                     <li>
                       <a
-                        href={`/${item.link}`}
+                        href={buildUrl(item.link)}
                         class:list={['sl-sidebar-link', { 'sl-active': isActive }]}
                         aria-current={isActive ? 'page' : undefined}
                       >
@@ -85,7 +92,7 @@ const { items, currentPath, languageCode = 'en', currentTechnology = 'java', has
             </>
           ) : (
             <a
-              href={group.link}
+              href={buildUrl(group.link)}
               class:list={['sl-sidebar-link sl-sidebar-link-top', { 'sl-active': group.link === currentPath || (currentPath.startsWith('/') ? currentPath.slice(1) : currentPath).startsWith(group.link) }]}
               aria-current={group.link === currentPath || (currentPath.startsWith('/') ? currentPath.slice(1) : currentPath).startsWith(group.link) ? 'page' : undefined}
             >
