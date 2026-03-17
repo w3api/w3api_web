@@ -1,5 +1,6 @@
 ---
 import LanguageSelector from './LanguageSelector.astro';
+import type { Language } from '../i18n';
 
 interface SidebarItem {
   label: string;
@@ -12,20 +13,22 @@ interface SidebarItem {
 interface Props {
   items: SidebarItem[];
   currentPath: string;
-  currentLanguage?: string;
+  languageCode?: Language;
+  currentTechnology?: string;
+  hasLanguagePrefix?: boolean;
   hasSidebar: boolean;
-  filterLabel?: string;
+  technologyFilter?: string;
 }
 
-const { items, currentPath, currentLanguage = 'java', hasSidebar, filterLabel } = Astro.props;
+const { items, currentPath, languageCode = 'en', currentTechnology = 'java', hasLanguagePrefix = true, hasSidebar, technologyFilter } = Astro.props;
 ---
 
 {hasSidebar && (
   <nav id="sidebar" class="sl-sidebar" aria-label="Navegación principal">          
     <div class="sl-sidebar-inner">
-      <LanguageSelector currentLanguage={currentLanguage} />
+      <LanguageSelector currentLanguage={currentTechnology} languageCode={languageCode} hasLanguagePrefix={hasLanguagePrefix} />
       <div class="sl-search-filter">
-        {filterLabel && <label class="sl-search-label">{filterLabel}</label>}
+        {technologyFilter && <label class="sl-search-label">{technologyFilter}</label>}
         <input 
           id="sidebar-search" 
           type="text" 

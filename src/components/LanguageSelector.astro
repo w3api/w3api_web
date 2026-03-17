@@ -1,24 +1,31 @@
 ---
+import { t, type Language } from '../i18n';
+
 interface Props {
   currentLanguage?: string;
+  languageCode?: Language;
+  hasLanguagePrefix?: boolean;
 }
 
-const { currentLanguage = 'java' } = Astro.props;
+const { currentLanguage = 'java', languageCode = 'es', hasLanguagePrefix = true } = Astro.props;
 
 const languages = [
-  { id: 'java', name: 'Java', href: '/java/', icon: 'devicon-java-plain' },
-  { id: 'jquery', name: 'jQuery', href: '/jquery/', icon: 'devicon-jquery-plain' },
-  { id: 'html', name: 'HTML', href: '/html/', icon: 'devicon-html5-plain' },
-  { id: 'python', name: 'Python', href: '/python/', icon: 'devicon-python-plain' },
-  { id: 'xml', name: 'XML', href: '/xml/', icon: 'devicon-xml-plain' },
-  { id: 'svg', name: 'SVG', href: '/svg/', icon: 'devicon-html5-plain colored"' },
-];
+  { id: 'java', name: 'Java', icon: 'devicon-java-plain' },
+  { id: 'jquery', name: 'jQuery', icon: 'devicon-jquery-plain' },
+  { id: 'html', name: 'HTML', icon: 'devicon-html5-plain' },
+  { id: 'python', name: 'Python', icon: 'devicon-python-plain' },
+  { id: 'xml', name: 'XML', icon: 'devicon-xml-plain' },
+  { id: 'svg', name: 'SVG', icon: 'devicon-html5-plain colored"' },
+].map((lang) => ({
+  ...lang,
+  href: hasLanguagePrefix ? `/${languageCode}/${lang.id}/` : `/${lang.id}/`,
+}));
 
 const currentLang = languages.find((lang) => lang.id === currentLanguage);
 ---
 
 <div class="language-selector">
-  <label class="lang-label">Tecnología</label>
+  <label class="lang-label">{t('technology', languageCode)}</label>
   <div class="lang-dropdown">
     <button class="lang-button" id="lang-button">
       {currentLang && (

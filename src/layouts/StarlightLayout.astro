@@ -1,6 +1,9 @@
 ---
 import SidebarNav from '../components/SidebarNav.astro';
 import Search from '../components/Search.astro';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import { t } from '../i18n';
+import type { Language } from '../i18n';
 
 /**
  * StarlightLayout.astro
@@ -42,8 +45,8 @@ interface Props {
   hasToc?: boolean;
   siteTitle?: string;
   logoSrc?: string;
-  currentLanguage?: string;
-  filterLabel?: string;
+  uiLanguage?: Language;
+  technologyFilter?: string;
 }
 
 const {
@@ -55,11 +58,16 @@ const {
   hasToc = true,
   siteTitle = 'W3Api',
   logoSrc,
-  currentLanguage = 'java',
-  filterLabel,
+  uiLanguage = 'en',
+  technologyFilter,
 } = Astro.props;
 
 const currentPath = Astro.url.pathname;
+
+// Determinar si el path tiene idioma: /en/java/... o /es/java/... vs /java/...
+const pathSegments = currentPath.split('/').filter(Boolean);
+const hasLanguagePrefix = pathSegments[0] === 'en' || pathSegments[0] === 'es';
+const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pathSegments[0] || 'java');
 ---
 
 <!doctype html>
@@ -118,6 +126,13 @@ const currentPath = Astro.url.pathname;
         </div>
 
         <div class="sl-header-end">
+          <!-- Language Switcher -->
+          <LanguageSwitcher 
+            currentLanguage={uiLanguage} 
+            currentTechnology={currentTechnology}
+            hasLanguagePrefix={hasLanguagePrefix}
+          />
+          
           <!-- Theme toggle -->
           <button id="theme-toggle" class="sl-icon-btn" aria-label="Cambiar tema">
             <svg class="sl-icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -139,7 +154,7 @@ const currentPath = Astro.url.pathname;
     <div class="sl-page-frame">
 
       <!-- SIDEBAR -->
-      <SidebarNav items={sidebar} currentPath={currentPath} currentLanguage={currentLanguage} hasSidebar={hasSidebar} filterLabel={filterLabel} />
+      <SidebarNav items={sidebar} currentPath={currentPath} languageCode={uiLanguage} currentTechnology={currentTechnology} hasLanguagePrefix={hasLanguagePrefix} hasSidebar={hasSidebar} technologyFilter={technologyFilter} />
 
       <!-- MAIN CONTENT + TOC -->
       <div class:list={['sl-content-panel', { 'sl-no-sidebar': !hasSidebar }]}>
@@ -155,11 +170,11 @@ const currentPath = Astro.url.pathname;
         {hasToc && tableOfContents.length > 0 && (
           <aside class="sl-toc" aria-label="Tabla de contenidos">
             <div class="sl-toc-inner">
-              <h2 class="sl-toc-title">En esta página</h2>
+              <h2 class="sl-toc-title">{t('onThisPage', uiLanguage)}</h2>
               <ul class="sl-toc-list">
                 {tableOfContents.map((item) => (
                   <li class={`sl-toc-item sl-toc-depth-${item.depth}`}>
-                    <a href={`#${item.slug}`} class="sl-toc-link">{item.text}</a>
+                    <a href={`#${item.slug}`} class="sl-toc-link">{t(item.text as any, uiLanguage)}</a>
                   </li>
                 ))}
               </ul>

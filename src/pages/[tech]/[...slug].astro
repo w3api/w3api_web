@@ -1,0 +1,122 @@
+---
+import DocumentLayout from '../../layouts/DocumentLayout.astro';
+import { buildMembersByType, generateTableOfContents } from '../../utils/loadDocumentation';
+import { LANGUAGES } from '../../config/languages';
+import type { Language } from '../../i18n';
+
+export async function getStaticPaths() {
+  const TECHS = ['java', 'jquery', 'python', 'xml', 'html', 'svg'];
+  
+  const routes: any[] = [];
+  
+  for (const tech of TECHS) {
+    try {
+      const rutasModule = await import(`../../data/${tech}/routes.json`);
+      const rutas = rutasModule.default || rutasModule;
+      
+      for (const slug of rutas || []) {
+        routes.push({
+          params: { tech, slug },
+          props: LANGUAGES[tech as keyof typeof LANGUAGES],
+        });
+      }
+    } catch (e) {
+      console.warn(`No routes found for ${tech}`);
+    }
+  }
+  
+  return routes;
+}
+
+interface Props {
+  technology: string;
+  technologyName: string;
+  technologyCode: string;
+  technologyFilter: string;
+}
+
+const { technology, technologyName, technologyCode, technologyFilter } = Astro.props;
+const { tech, slug } = Astro.params;
+const uiLanguage: Language = 'en';
+
+// Importar sidebars
+const sidebarsModules = import.meta.glob<any>('../../config/sidebars/*_sidebar.ts', { eager: true });
+const sidebarKey = Object.keys(sidebarsModules).find((key) =>
+  key.includes(`/${technology}_sidebar.ts`)
+);
+const sidebarModule = sidebarKey ? sidebarsModules[sidebarKey] : null;
+const sidebar = sidebarModule?.default || sidebarModule?.sidebar || [];
+
+// Importar módulos y shards
+const modulesPattern = import.meta.glob<any>('../../data/*/modules/*.json', { eager: true });
+const shardsGlob = import.meta.glob<any>('../../data/*/shards/**/*.json', { eager: true });
+
+const packageName = slug!.split('/')[0];
+
+// Filtrar módulos para este tech
+const distributionModules = Object.entries(modulesPattern || {})
+  .filter(([path]) => path.includes(`/data/${tech}/modules/`))
+  .map(([_, module]) => module.default || module);
+
+// Buscar el array que contiene este packageName
+const distributionFile = distributionModules.find((data: any) => {
+  if (Array.isArray(data)) {
+    return data.some((item: any) => item.slug === packageName);
+  }
+  return false;
+}) || [];
+
+// Encontrar la ruta metadata
+const routeMeta = distributionFile.find((r: any) => r.slug === slug);
+
+if (!routeMeta) {
+  throw new Error(`Route not found: ${slug} in ${tech}`);
+}
+
+// Cargar shard
+const shardKey = Object.keys(shardsGlob || {}).find((key) =>
+  key.includes(routeMeta.shard)
+);
+const shardModule = shardKey ? shardsGlob[shardKey] : null;
+const shard = shardModule ? (shardModule.default || shardModule) : {};
+
+const isPackageOnly = slug === packageName;
+let doc = shard[slug] || shard[packageName] || {};
+
+// Asegurar que doc tiene la estructura necesaria
+doc = {
+  name: doc.name || slug,
+  type: doc.type || (isPackageOnly ? 'Package' : 'Document'),
+  description: doc.description || `${isPackageOnly ? 'Package' : 'Document'}: ${slug}`,
+  membersByType: buildMembersByType(doc, packageName, technology as any),
+  signatures: Array.isArray(doc.signatures) ? doc.signatures : [],
+  parameters: Array.isArray(doc.parameters) ? doc.parameters : [],
+  constructors: Array.isArray(doc.constructors) ? doc.constructors : [],
+  methods: Array.isArray(doc.methods) ? doc.methods : [],
+  attributes: Array.isArray(doc.attributes) ? doc.attributes : [],
+  exceptions: Array.isArray(doc.exceptions) ? doc.exceptions : [],
+  classes: Array.isArray(doc.classes) ? doc.classes : [],
+  interfaces: Array.isArray(doc.interfaces) ? doc.interfaces : [],
+  enums: Array.isArray(doc.enums) ? doc.enums : [],
+  annotations: Array.isArray(doc.annotations) ? doc.annotations : [],
+  functions: Array.isArray(doc.functions) ? doc.functions : [],
+  constants: Array.isArray(doc.constants) ? doc.constants : [],
+  elements: Array.isArray(doc.elements) ? doc.elements : [],
+  ...doc,
+};
+
+const tableOfContents = generateTableOfContents(doc, isPackageOnly);
+---
+
+<DocumentLayout
+  {doc}
+  {slug}
+  {sidebar}
+  technology={technology}
+  technologyName={technologyName}
+  uiLanguage={uiLanguage}
+  technologyCode={technologyCode}
+  technologyFilter={technologyFilter}
+  isPackagePage={isPackageOnly}
+  {tableOfContents}
+/>

@@ -47,6 +47,10 @@ export function buildMembersByType(
   const membersByType: any = {};
   const config = LANGUAGE_MEMBER_CONFIGS[languageKey];
 
+  if (!config) {
+    return membersByType;
+  }
+
   Object.entries(config).forEach(([docProp, typeKey]) => {
     if (doc[docProp] && Array.isArray(doc[docProp])) {
       membersByType[typeKey] = doc[docProp].map((item: any) => {
@@ -172,33 +176,46 @@ export function loadPackage(
 
 /**
  * Genera la tabla de contenidos basada en el documento y si es una página de paquete
+ * Retorna claves de traducción que deben resolverse usando la función t() del módulo i18n
  */
-export function generateTableOfContents(doc: any, isPackagePage: boolean) {
+export function generateTableOfContents(
+  doc: any,
+  isPackagePage: boolean
+) {
   const headings = isPackagePage
     ? [
-        { level: 2, title: 'Description', id: 'description' },
-        { level: 2, title: 'Members', id: 'members' },
+        { level: 2, i18nKey: 'description', id: 'description' },
+        { level: 2, i18nKey: 'members', id: 'members' },
       ]
     : [
-        { level: 2, title: 'Description', id: 'description' },
+        { level: 2, i18nKey: 'description', id: 'description' },
+        ...(doc.signatures?.length > 0
+          ? [{ level: 2, i18nKey: 'syntax', id: 'sintaxis' }]
+          : []),
+        ...(doc.parameters?.length > 0
+          ? [{ level: 2, i18nKey: 'parameters', id: 'parameters' }]
+          : []),
         ...(doc.constructors?.length > 0
-          ? [{ level: 2, title: 'Constructors', id: 'constructors' }]
+          ? [{ level: 2, i18nKey: 'constructors', id: 'constructors' }]
           : []),
         ...(doc.methods?.length > 0
-          ? [{ level: 2, title: 'Methods', id: 'methods' }]
+          ? [{ level: 2, i18nKey: 'methods', id: 'methods' }]
           : []),
         ...(doc.attributes?.length > 0
-          ? [{ level: 2, title: 'Atributos', id: 'attributes' }]
+          ? [{ level: 2, i18nKey: 'attributes', id: 'attributes' }]
+          : []),
+        ...(doc.exceptions?.length > 0
+          ? [{ level: 2, i18nKey: 'exceptions', id: 'exceptions' }]
           : []),
         ...(doc.example?.length > 0
-          ? [{ level: 2, title: 'Example', id: 'example' }]
+          ? [{ level: 2, i18nKey: 'example', id: 'example' }]
           : []),
-        { level: 2, title: 'Original Documentation', id: 'original-documentation' },
+        { level: 2, i18nKey: 'originalDocumentation', id: 'original-documentation' },
       ];
 
   return headings.map((h) => ({
     depth: h.level,
-    text: h.title,
+    text: h.i18nKey,
     slug: h.id,
   }));
 }

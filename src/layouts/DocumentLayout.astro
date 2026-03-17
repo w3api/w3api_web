@@ -5,6 +5,8 @@ import { Breadcrumbs } from "astro-breadcrumbs";
 import "astro-breadcrumbs/breadcrumbs.css";
 import DocumentAsidePanel from '../components/DocumentAsidePanel.astro';
 import { marked } from 'marked';
+import { t } from '../i18n';
+import type { Language } from '../i18n';
 
 interface SidebarItem {
   label: string;
@@ -24,26 +26,28 @@ interface Props {
   doc: any;
   slug: string;
   sidebar: SidebarItem[];
-  language: string;
-  languageName: string;
-  currentLanguage: string;
-  filterLabel: string;
-  codeLanguage: string;
+  technology: string;
+  technologyName: string;
+  uiLanguage: Language;
+  technologyFilter: string;
+  technologyCode: string;
   isPackagePage: boolean;
   tableOfContents: TocItem[];
+  hasLanguagePrefix?: boolean;
 }
 
 const {
   doc,
   slug,
   sidebar,
-  language,
-  languageName,
-  currentLanguage,
-  filterLabel,
-  codeLanguage,
+  technology,
+  technologyName,
+  uiLanguage,
+  technologyFilter,
+  technologyCode,
   isPackagePage,
   tableOfContents,
+  hasLanguagePrefix = true,
 } = Astro.props;
 
 const languageIcons: Record<string, string> = {
@@ -55,19 +59,50 @@ const languageIcons: Record<string, string> = {
   svg: 'devicon-html5-plain',
 };
 
-const languageIcon = languageIcons[language] || '';
-const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageName}`;
+const buildUrl = (slug: string) => {
+  if (hasLanguagePrefix) {
+    return `/${uiLanguage}/${technology}/${slug}/`;
+  } else {
+    return `/${technology}/${slug}/`;
+  }
+};
+
+const languageIcon = languageIcons[technology] || '';
+const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} ${t('in', uiLanguage)} ${technologyName}`;
+
+// Generar breadcrumb trail sin el idioma
+const buildBreadcrumbTrail = () => {
+  const breadcrumbs: Array<{ label: string; url: string }> = [
+    { label: t('home', uiLanguage), url: '/' },
+    { label: technology.toUpperCase(), url: buildUrl(technology) }
+  ];
+
+  const slugParts = slug.split('/').filter(Boolean);
+  let currentPath = `${technology}`;
+  
+  for (let i = 0; i < slugParts.length; i++) {
+    currentPath += `/${slugParts[i]}`;
+    breadcrumbs.push({
+      label: slugParts[i],
+      url: buildUrl(currentPath)
+    });
+  }
+  
+  return breadcrumbs;
+};
+
+const breadcrumbTrail = buildBreadcrumbTrail();
 ---
 
 <StarlightLayout
   title={title}
-  description={`${languageName} ${doc.type} ${doc.name}`}
+  description={`${technologyName} ${doc.type} ${doc.name}`}
   siteTitle="W3Api"
   sidebar={sidebar}
   tableOfContents={tableOfContents}
-  currentLanguage={currentLanguage}
+  uiLanguage={uiLanguage}
   logoSrc='/logo.webp'
-  filterLabel={filterLabel}
+  technologyFilter={technologyFilter}
 >
   <main>
     <article>
@@ -77,9 +112,9 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
           {languageIcon && (
             <i class={`devicon ${languageIcon} language-logo`}></i>
           )}
-        </div>
+        </div>        
 
-        <Breadcrumbs excludeCurrentPage indexText="Inicio" separatorAriaHidden={false}>
+        <Breadcrumbs excludeCurrentPage customizeLinks={breadcrumbTrail} indexText={t('inicio', uiLanguage)} separatorAriaHidden={false}>
           <svg
             slot="separator"
             xmlns="http://www.w3.org/2000/svg"
@@ -121,32 +156,32 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
 
           {doc.metadata?.added_version && (
             <span class="sl-badge sl-badge-success">
-              Added in {doc.metadata.added_version}
+              {t('addedIn', uiLanguage)} {doc.metadata.added_version}
             </span>
           )}
 
           {doc.metadata?.deprecated && doc.metadata?.deprecated_version && doc.metadata.deprecated_version !== "unknown" && (
             <span class="sl-badge sl-badge-caution">
-              Deprecated in {doc.metadata.deprecated_version}
+              {t('deprecatedIn', uiLanguage)} {doc.metadata.deprecated_version}
             </span>
           )}
 
           {doc.metadata?.deprecated && (!doc.metadata?.deprecated_version || doc.metadata.deprecated_version === "unknown") && (
             <span class="sl-badge sl-badge-caution">
-              Deprecated
+              {t('deprecated', uiLanguage)}
             </span>
           )}
         </div>
       </section>
 
       <section id="description">
-        <h2>Description</h2>
-        <div set:html={marked(doc.description || "No description available.")} />
+        <h2>{t('description', uiLanguage)}</h2>
+        <div set:html={marked(doc.description || t('noDescription', uiLanguage))} />
       </section>
 
       {isPackagePage && doc.membersByType && Object.keys(doc.membersByType).length > 0 && (
         <section id="members">
-          <h2>Members</h2>
+          <h2>{t('members', uiLanguage)}</h2>
           {Object.entries(doc.membersByType).map(([type, members]: any) => {
             const typeLabel = type.charAt(0).toUpperCase() + type.slice(1)
             return (
@@ -155,7 +190,7 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
                 <ul>
                   {(members as any[]).map((member: any) => (
                     <li>
-                      <a href={`/${language}/${member.slug}/`}>
+                      <a href={buildUrl(member.slug)}>
                         {member.name || member.slug.split('/')[1]}
                       </a>
                     </li>
@@ -169,14 +204,14 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
 
       {!isPackagePage && doc.signatures && doc.signatures.length > 0 && (
         <section id="sintaxis">
-          <h2>Sintaxis</h2>
-          <Code code={doc.signatures.join('\n')} lang={codeLanguage} />
+          <h2>{t('syntax', uiLanguage)}</h2>
+          <Code code={doc.signatures.join('\n')} lang={technologyCode} />
         </section>
       )}
 
       {!isPackagePage && doc.parameters && doc.parameters.length > 0 && (
         <section id="parameters">
-          <h2>Parameters</h2>
+          <h2>{t('parameters', uiLanguage)}</h2>
           <ul>
             {doc.parameters.map((param: any) => (
               <li>
@@ -189,12 +224,12 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
 
       {!isPackagePage && doc.constructors && doc.constructors.length > 0 && (
         <section id="constructors">
-          <h2>Constructors</h2>
+          <h2>{t('constructors', uiLanguage)}</h2>
           <div class="members-category">
             <ul>
               {doc.constructors.map((constructor: string) => (
                 <li>
-                  <a href={`/${language}/${slug}/${constructor}/`}>
+                  <a href={buildUrl(`${slug}/${constructor}`)}>
                     {constructor}
                   </a>
                 </li>
@@ -206,12 +241,12 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
 
       {!isPackagePage && doc.methods && doc.methods.length > 0 && (
         <section id="methods">
-          <h2>Methods</h2>
+          <h2>{t('methods', uiLanguage)}</h2>
           <div class="members-category">
             <ul>
               {doc.methods.map((method: string) => (
                 <li>
-                  <a href={`/${language}/${slug}/${method}/`}>
+                  <a href={buildUrl(`${slug}/${method}`)}>
                     {method}
                   </a>
                 </li>
@@ -223,12 +258,12 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
 
       {!isPackagePage && doc.attributes && doc.attributes.length > 0 && (
         <section id="attributes">
-          <h2>Atributos</h2>
+          <h2>{t('attributes', uiLanguage)}</h2>
           <div class="members-category">
             <ul>
               {doc.attributes.map((attribute: string) => (
                 <li>
-                  <a href={`/${language}/${slug}/${attribute}/`}>
+                  <a href={buildUrl(`${slug}/${attribute}`)}>
                     {attribute}
                   </a>
                 </li>
@@ -240,12 +275,12 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
 
       {!isPackagePage && doc.exceptions && doc.exceptions.length > 0 && (
         <section id="exceptions">
-          <h2>Excepciones</h2>
+          <h2>{t('exceptions', uiLanguage)}</h2>
           <div class="members-category">
             <ul>
               {doc.exceptions.map((exception: any) => (
                 <li>
-                  <a href={`/${language}/${exception.package}/${exception.name}/`}>
+                  <a href={buildUrl(`${exception.package}/${exception.name}`)}>
                     {exception.name}
                   </a>
                 </li>
@@ -257,13 +292,13 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
 
       {!isPackagePage && doc.example && doc.example.length > 0 && (
         <section id="example">
-          <h2>Ejemplo</h2>
-          <Code code={doc.example} lang={codeLanguage} />
+          <h2>{t('example', uiLanguage)}</h2>
+          <Code code={doc.example} lang={technologyCode} />
         </section>
       )}
     </article>
 
-    <DocumentAsidePanel {doc} {isPackagePage} language={language} languageName={languageName} />
+    <DocumentAsidePanel {doc} {isPackagePage} {technology} {technologyName} {uiLanguage} {hasLanguagePrefix} />
   </main>
 </StarlightLayout>
 

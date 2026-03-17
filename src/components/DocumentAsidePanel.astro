@@ -1,22 +1,26 @@
 ---
+import { t } from '../i18n';
+import type { Language } from '../i18n';
+
 interface Props {
   doc: any;
   isPackagePage: boolean;
-  language: string;
-  languageName: string;
+  technology: string;
+  technologyName: string;
+  uiLanguage: Language;
 }
 
-const { doc, isPackagePage, language, languageName } = Astro.props;
+const { doc, isPackagePage, technology, technologyName, uiLanguage } = Astro.props;
 ---
 
 <aside>
   {!isPackagePage && doc.articles && doc.articles.length > 0 && (
     <section id="related-articles">
-      <h3>Artículos Relacionados</h3>      
+      <h3>{t('relatedArticles', uiLanguage)}</h3>      
       <ul>
         {doc.articles.map((article: any) => (
           <li>
-            <a href={`/${language}/${article.url}/`}>
+            <a href={`/${technology}/${article.url}/`}>
               {article.title}
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-icon">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -32,11 +36,11 @@ const { doc, isPackagePage, language, languageName } = Astro.props;
 
   {!isPackagePage && (
     <section id="original-documentation">
-      <h2>Documentación Original</h2>
+      <h2>{t('originalDocumentation', uiLanguage)}</h2>
       <div class="members-category">
         <p>
           <a href={doc.url} target="_blank" rel="noopener noreferrer">
-            Ver en la documentación de {languageName}
+            {t('viewIn', uiLanguage).replace('{name}', technologyName)}
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-icon">
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
               <polyline points="15 3 21 3 21 9"></polyline>

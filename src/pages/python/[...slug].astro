@@ -3,18 +3,20 @@ import DocumentLayout from '../../layouts/DocumentLayout.astro';
 import rutas from '../../data/python/routes.json';
 import { loadDocument, loadPackage, generateTableOfContents } from '../../utils/loadDocumentation';
 import { LANGUAGES } from '../../config/languages';
-
-const LANGUAGE_KEY = 'python';
+import type { Language } from '../../i18n';
 
 const sidebarModules = import.meta.glob('../../config/sidebars/*_sidebar.ts', { eager: true });
 const distributionModules = import.meta.glob('../../data/python/modules/*.json', { eager: true });
 const shardModules = import.meta.glob('../../data/python/shards/**/*.json', { eager: true });
 
 export async function getStaticPaths() {
-  return (rutas || []).map((slug: string) => ({
-    params: { slug },
-    props: LANGUAGES['python'],
-  }));
+  const UI_LANGUAGES: Language[] = ['en', 'es'];
+  return (rutas || []).flatMap((slug: string) =>
+    UI_LANGUAGES.map((uiLang) => ({
+      params: { slug: `${uiLang}/${slug}` },
+      props: LANGUAGES['python'],
+    }))
+  );
 }
 
 interface Props {
@@ -25,7 +27,10 @@ interface Props {
 }
 
 const { language, languageName, codeLanguage, filterLabel } = Astro.props;
-const slug = Astro.params.slug as string;
+const fullSlug = Astro.params.slug as string;
+const slugParts = fullSlug.split('/');
+const uiLanguage = slugParts[0] as Language;
+const slug = slugParts.slice(1).join('/');
 const sidebarModule = sidebarModules[`../../config/sidebars/${language}_sidebar.ts`] as any;
 const sidebar = sidebarModule?.default || sidebarModule?.sidebar || [];
 
@@ -53,8 +58,7 @@ const tableOfContents = generateTableOfContents(doc, isPackageOnly);
   {sidebar}
   language="python"
   {languageName}
-  currentLanguage={language}
-  {filterLabel}
+  currentLanguage={language}  languageCode={uiLanguage}  {filterLabel}
   {codeLanguage}
   isPackagePage={isPackageOnly}
   {tableOfContents}
