@@ -89,7 +89,23 @@ export function loadDocument(
     throw new Error(`Document not found: ${slug}`);
   }
 
-  return doc;
+  // Asegurar que los campos son arrays si no existen
+  return {
+    ...doc,
+    signatures: Array.isArray(doc.signatures) ? doc.signatures : [],
+    parameters: Array.isArray(doc.parameters) ? doc.parameters : [],
+    constructors: Array.isArray(doc.constructors) ? doc.constructors : [],
+    methods: Array.isArray(doc.methods) ? doc.methods : [],
+    attributes: Array.isArray(doc.attributes) ? doc.attributes : [],
+    exceptions: Array.isArray(doc.exceptions) ? doc.exceptions : [],
+    classes: Array.isArray(doc.classes) ? doc.classes : [],
+    interfaces: Array.isArray(doc.interfaces) ? doc.interfaces : [],
+    enums: Array.isArray(doc.enums) ? doc.enums : [],
+    annotations: Array.isArray(doc.annotations) ? doc.annotations : [],
+    functions: Array.isArray(doc.functions) ? doc.functions : [],
+    constants: Array.isArray(doc.constants) ? doc.constants : [],
+    elements: Array.isArray(doc.elements) ? doc.elements : [],
+  };
 }
 
 /**
@@ -138,6 +154,19 @@ export function loadPackage(
   return {
     ...doc,
     membersByType: buildMembersByType(doc, packageName, languageKey),
+    signatures: Array.isArray(doc.signatures) ? doc.signatures : [],
+    parameters: Array.isArray(doc.parameters) ? doc.parameters : [],
+    constructors: Array.isArray(doc.constructors) ? doc.constructors : [],
+    methods: Array.isArray(doc.methods) ? doc.methods : [],
+    attributes: Array.isArray(doc.attributes) ? doc.attributes : [],
+    exceptions: Array.isArray(doc.exceptions) ? doc.exceptions : [],
+    classes: Array.isArray(doc.classes) ? doc.classes : [],
+    interfaces: Array.isArray(doc.interfaces) ? doc.interfaces : [],
+    enums: Array.isArray(doc.enums) ? doc.enums : [],
+    annotations: Array.isArray(doc.annotations) ? doc.annotations : [],
+    functions: Array.isArray(doc.functions) ? doc.functions : [],
+    constants: Array.isArray(doc.constants) ? doc.constants : [],
+    elements: Array.isArray(doc.elements) ? doc.elements : [],
   };
 }
 
