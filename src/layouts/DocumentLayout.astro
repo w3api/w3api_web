@@ -46,6 +46,16 @@ const {
   tableOfContents,
 } = Astro.props;
 
+const languageIcons: Record<string, string> = {
+  java: 'devicon-java-plain',
+  jquery: 'devicon-jquery-plain',
+  html: 'devicon-html5-plain',
+  python: 'devicon-python-plain',
+  xml: 'devicon-xml-plain',
+  svg: 'devicon-html5-plain',
+};
+
+const languageIcon = languageIcons[language] || '';
 const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageName}`;
 ---
 
@@ -62,7 +72,12 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
   <main>
     <article>
       <header class="sl-content-header">
-        <h1>{title}</h1>
+        <div class="header-container">
+          <h1>{title}</h1>
+          {languageIcon && (
+            <i class={`devicon ${languageIcon} language-logo`}></i>
+          )}
+        </div>
 
         <Breadcrumbs excludeCurrentPage indexText="Inicio" separatorAriaHidden={false}>
           <svg
@@ -251,3 +266,23 @@ const title = `${doc.parent ? `${doc.parent}.` : ''}${doc.name} en ${languageNam
     <DocumentAsidePanel {doc} {isPackagePage} language={language} languageName={languageName} />
   </main>
 </StarlightLayout>
+
+<style>
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .header-container h1 {
+    margin: 0;
+    flex: 1;
+  }
+
+  .language-logo {
+    font-size: 3rem;
+    opacity: 0.8;
+    flex-shrink: 0;
+  }
+</style>
