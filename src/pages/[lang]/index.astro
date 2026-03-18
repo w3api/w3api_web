@@ -1,13 +1,21 @@
 ---
 /**
- * src/pages/index.astro
- * Página Home por defecto (inglés)
+ * src/pages/[lang]/index.astro
+ * Página Home con soporte multiidioma (en, es)
+ * Rutas: /en/ y /es/
  */
-import { t, getTranslations } from '../i18n';
-import type { Language } from '../i18n';
-import StarlightLayout from '../layouts/StarlightLayout.astro';
+import StarlightLayout from '../../layouts/StarlightLayout.astro';
+import { t, getTranslations } from '../../i18n';
+import type { Language } from '../../i18n';
 
-const lang: Language = 'en';
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+  ];
+}
+
+const lang = (Astro.params.lang || 'es') as Language;
 const translations = getTranslations(lang);
 ---
 
@@ -29,8 +37,8 @@ const translations = getTranslations(lang);
           <p class="tagline">{t('tagline', lang)}</p>
           
           <div class="hero-actions">
-            <a href="/en/java/" class="btn btn-primary">{t('exploreDocumentation', lang)}</a>
-            <a href="/en/blog" class="btn btn-secondary">{t('viewApis', lang)}</a>
+            <a href={`/${lang === 'es' ? 'es/' : 'en/'}java/`} class="btn btn-primary">{t('exploreDocumentation', lang)}</a>
+            <a href={`/${lang === 'es' ? 'es/' : 'en/'}blog`} class="btn btn-secondary">{t('viewApis', lang)}</a>
           </div>
         </div>
         
@@ -165,7 +173,7 @@ const translations = getTranslations(lang);
     }
   }
 
-  .bq-quote {
+    .bq-quote {
         position: relative;
         padding: 40px 36px 36px;
         background: var(--surface);
@@ -200,8 +208,7 @@ const translations = getTranslations(lang);
         color: var(--sl-color-accent-teal);
         font-style: normal;
     }
+
 </style>
-
-
 
 </StarlightLayout>
