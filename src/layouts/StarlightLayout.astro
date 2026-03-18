@@ -2,6 +2,7 @@
 import SidebarNav from '../components/SidebarNav.astro';
 import Search from '../components/Search.astro';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import { SEO } from 'astro-seo';
 import { t } from '../i18n';
 import type { Language } from '../i18n';
 
@@ -73,9 +74,32 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
 <!doctype html>
 <html lang="es" dir="ltr">
   <head>
+    <SEO
+      title={title}
+      description={description}
+      openGraph={{
+        basic: {
+          title: title,
+          type: 'website',
+          image: '/banner.webp',
+          url: Astro.url.href,
+        },
+        optional: {
+          description: description,
+          siteName: siteTitle,
+        },
+        image: {
+          alt: 'All languages and frameworks. One standard.',
+        },
+      }}
+      twitter={{
+        creator: '@w3api',
+        image: '/banner.webp',
+        imageAlt: 'All languages and frameworks. One standard.',
+      }}
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title} | {siteTitle}</title>
     {description && <meta name="description" content={description} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
