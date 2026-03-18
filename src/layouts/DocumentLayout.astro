@@ -176,7 +176,11 @@ const breadcrumbTrail = buildBreadcrumbTrail();
 
       <section id="description">
         <h2>{t('description', uiLanguage)}</h2>
-        <div set:html={marked(doc.description || t('noDescription', uiLanguage))} />
+        <div set:html={marked(
+          typeof doc.description === 'object' 
+            ? (doc.description[uiLanguage] || doc.description.en || t('noDescription', uiLanguage))
+            : (doc.description || t('noDescription', uiLanguage))
+        )} />
       </section>
 
       {isPackagePage && doc.membersByType && Object.keys(doc.membersByType).length > 0 && (
@@ -215,7 +219,11 @@ const breadcrumbTrail = buildBreadcrumbTrail();
           <ul>
             {doc.parameters.map((param: any) => (
               <li>
-                <strong>{param.type} {param.name}</strong> - {param.description}
+                <strong>{param.type} {param.name}</strong> - {
+                  typeof param.description === 'object' 
+                    ? (param.description[uiLanguage] || param.description.en || '')
+                    : (param.description || '')
+                }
               </li>
             ))}
           </ul>
