@@ -230,7 +230,7 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
         --sl-sidebar-width: 18rem;
         --sl-toc-width: 14rem;
         --sl-content-width: 65rem;
-        --sl-content-pad-x: 1.5rem;
+        --sl-content-pad-x: 2rem;
         --sl-header-height: 4rem;
         --sl-mobile-toc-height: 3rem;
 
@@ -392,6 +392,12 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
         width: auto;
       }
 
+      @media (min-width: 50rem) {
+        .sl-logo {
+          height: 3.5rem;
+        }
+      }
+
       /* ============================
          ICON BUTTONS
          ============================ */
@@ -460,7 +466,13 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
         }
         .sl-content-panel.sl-no-sidebar {
           margin-inline-start: 0;
+          justify-content: center;
         }
+      }
+
+      .sl-content-panel.sl-no-sidebar {
+        margin-inline-start: 0;
+        justify-content: center;
       }
 
       /* ============================
@@ -471,13 +483,19 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
         min-width: 0;
         display: flex;
         flex-direction: column;
+        width: 100%;
+      }
+
+      .sl-content-panel.sl-no-sidebar .sl-main {
+        max-width: var(--sl-content-width);
+        margin: 0 auto;
       }
 
       .sl-content {
         flex: 1;
         max-width: var(--sl-content-width);
         width: 100%;
-        padding: 2rem var(--sl-content-pad-x) 4rem;
+        padding: 1rem var(--sl-content-pad-x) 4rem;
         margin: 0 auto;
       }
 

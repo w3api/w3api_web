@@ -1,11 +1,192 @@
 ---
-import Welcome from '../components/Welcome.astro';
+/**
+ * src/pages/index.astro
+ * Página Home con Hero al estilo Starlight.
+ * Usa StarlightLayout con hasSidebar=false y hasToc=false.
+ */
 import StarlightLayout from '../layouts/StarlightLayout.astro';
+import { t } from '../i18n';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const lang = 'es';
 ---
 
-<StarlightLayout title="W3Api">
-	<Welcome />
+<StarlightLayout
+  title="W3Api - Unified API Reference"
+  description="Unified API Reference. Todos los lenguajes y frameworks. Un estándar."
+  siteTitle="W3Api"
+  logoSrc='/logo.webp'
+  hasSidebar={false}
+  hasToc={false}
+>
+
+<main>
+    <article>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Unified API Reference</h1>
+          <p class="tagline">{t('tagline', lang)}</p>
+          
+          <div class="hero-actions">
+            <a href="/java/" class="btn btn-primary">{t('exploreDocumentation', lang)}</a>
+            <a href="/blog" class="btn btn-secondary">{t('viewApis', lang)}</a>
+          </div>
+        </div>
+        
+        <img src="/logo.webp" alt="W3Api" class="hero-logo" />
+      </section>
+
+      <blockquote class="quote">
+        Deja de saltar entre documentaciones diferentes y empieza a desarrollar más rápido con una única fuente clara y estructurada.
+      </blockquote>
+
+    </article>
+  </main>
+
+<style>
+  :global(.sl-content-panel.sl-no-sidebar) {
+    margin: 0 auto !important;
+    max-width: min(95vw, 1400px);
+  }
+
+  :global(.sl-content) {
+    width: 100%;
+    max-width: none;
+  }
+
+  :global(.sl-main) {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    max-width: none;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0;
+  }
+
+  .hero-logo {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .hero-content {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .hero-content h1 {
+    margin: 0 0 1rem 0;
+    font-size: clamp(1.8rem, 7vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    font-weight: 350;
+    line-height: 1.8;    
+    margin: 0 0 2rem 0;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--sl-border-radius);
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid;
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary {
+    background-color: var(--sl-color-accent);
+    color: var(--sl-color-white);
+    border-color: var(--sl-color-accent);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--sl-color-accent-high);
+    border-color: var(--sl-color-accent-high);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--sl-color-accent);
+    border-color: var(--sl-color-accent);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--sl-color-accent-low);
+    border-color: var(--sl-color-accent-high);
+    color: var(--sl-color-accent-high);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column-reverse;
+      text-align: center;
+      gap: 0rem;
+    }
+
+    .hero-logo {
+      width: 250px;
+      height: 250px;
+    }
+
+    .hero-actions {
+      justify-content: center;
+    }
+  }
+
+  /* Quote Section */
+  .quote {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    max-width: 700px;
+    background: linear-gradient(135deg, var(--sl-color-accent-low) 0%, transparent 100%);
+    border-top: 2px solid var(--sl-color-accent);
+    border-bottom: 2px solid var(--sl-color-accent);
+    border-left: none;
+    border-right: none;
+    color: var(--sl-color-text);
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+
+  @media (max-width: 768px) {
+    .quote {
+      font-size: 1.1rem;
+      padding: 1.5rem 1.5rem;
+      margin: 2rem auto;
+    }
+  }
+</style>
+
+
+
 </StarlightLayout>
