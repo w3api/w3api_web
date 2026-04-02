@@ -1,0 +1,257 @@
+{
+  "importlib/MetaPathFinder": {
+    "id": "importlib.MetaPathFinder",
+    "name": "MetaPathFinder",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.abc.MetaPathFinder"
+    ],
+    "signature_hash": "8d5422948189d760c9b401630edbead634439684c09fc781f674d02d0d28b7de",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.abc.MetaPathFinder",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An abstract base class representing a meta path finder. Added in version 3.3. Changed in version 3.10: No longer a subclass of Finder. find_spec(fullname, path, target=None)¶ An abstract method for finding a spec for the specified module. If this is a top-level import, path will be None. Otherwise, this is a search for a subpackage or module and path will be the value of __path__ from the parent package. If a spec cannot be found, None is returned. When passed in, target is a module object th..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract base class representing a meta path finder. Added in version 3.3. Changed in version 3.10: No longer a subclass of Finder. find_spec(fullname, path, target=None)¶ An abstract method for fi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.224535",
+    "updatedDate": "2026-03-24T10:48:12.224536",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "find_spec",
+      "invalidate_caches"
+    ]
+  },
+  "importlib/ModuleSpec": {
+    "id": "importlib.ModuleSpec",
+    "name": "ModuleSpec",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.machinery.ModuleSpec(name, loader, *, origin=None, loader_state=None, is_package=None)"
+    ],
+    "signature_hash": "0d80d9a6edb21aa917ecda89d32a8380b8e0d6f7a7d33f96cdc5f4ef48c1b739",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.machinery.ModuleSpec",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "loader",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "origin",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "loader_state",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "is_package",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A specification for a module’s import-system-related state. This is typically exposed as the module’s __spec__ attribute. Many of these attributes are also available directly on a module: for example, module.__spec__.origin == module.__file__. Note, however, that while the values are usually equivalent, they can differ since there is no synchronization between the two objects. For example, it is possible to update the module’s __file__ at runtime and this will not be automatically reflected i..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A specification for a module’s import-system-related state. This is typically exposed as the module’s __spec__ attribute. Many of these attributes are also available directly on a module: for example,...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.225959",
+    "updatedDate": "2026-03-24T10:48:12.225960",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "cached",
+      "has_location",
+      "loader",
+      "loader_state",
+      "name",
+      "origin",
+      "parent",
+      "submodule_search_locations"
+    ]
+  },
+  "importlib/util/MAGIC_NUMBER": {
+    "id": "importlib.util.MAGIC_NUMBER",
+    "name": "MAGIC_NUMBER",
+    "type": "constant",
+    "parent": "util",
+    "signatures": [
+      "importlib.util.MAGIC_NUMBER"
+    ],
+    "signature_hash": "7200620cf0df3c1d248e84f241d24925568623025b59e247c2aa0a65a0bac32e",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.util.MAGIC_NUMBER",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The bytes which represent the bytecode version number. If you need help with loading/writing bytecode then consider importlib.abc.SourceLoader. Added in version 3.4."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The bytes which represent the bytecode version number. If you need help with loading/writing bytecode then consider importlib.abc.SourceLoader. Added in version 3.4.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.226148",
+    "updatedDate": "2026-03-24T10:48:12.226149",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib/module_from_spec": {
+    "id": "importlib.module_from_spec",
+    "name": "module_from_spec",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "importlib.util.module_from_spec(spec)"
+    ],
+    "signature_hash": "c502a7b02bd27b43cb79ab33e54cc138547762fa7c445cba2a1a4970d6c921cc",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib#importlib.util.module_from_spec",
+    "parameters": [
+      {
+        "name": "spec",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a new module based on spec and spec.loader.create_module. If spec.loader.create_module does not return None, then any pre-existing attributes will not be reset. Also, no AttributeError will be raised if triggered while accessing spec or setting an attribute on the module. This function is preferred over using types.ModuleType to create a new module as spec is used to set as many import-controlled attributes on the module as possible. Added in version 3.5."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a new module based on spec and spec.loader.create_module. If spec.loader.create_module does not return None, then any pre-existing attributes will not be reset. Also, no AttributeError will be ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.226288",
+    "updatedDate": "2026-03-24T10:48:12.226289",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

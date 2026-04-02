@@ -1,0 +1,1603 @@
+{
+  "com.sun.net.httpserver/Headers/get": {
+    "id": "com.sun.net.httpserver.Headers.get",
+    "name": "get",
+    "type": "method",
+    "parent": "Headers",
+    "signatures": [
+      "public List<String> get(Object key)"
+    ],
+    "signature_hash": "c513f800c66b4590dd2be2ec274ca32e12744a07a58f9561d67a8442e5afa535",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Headers.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "List<String>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the value to which the specified key is mapped, ornullif this map contains no mapping for the key."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the value to which the specified key is mapped, ornullif this map contains no mapping for the key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353788",
+    "updatedDate": "2026-03-24T10:48:13.353789",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpServer/getAddress": {
+    "id": "com.sun.net.httpserver.HttpServer.getAddress",
+    "name": "getAddress",
+    "type": "method",
+    "parent": "HttpServer",
+    "signatures": [
+      "public abstract InetSocketAddress getAddress()"
+    ],
+    "signature_hash": "3d848f1526760b5349334c79361d216b8c0bcf7e1c2c746a51bf5baddc686d93",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpServer.html",
+    "parameters": [],
+    "return_type": "abstract InetSocketAddress",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the address this server is listening on"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the address this server is listening on",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352745",
+    "updatedDate": "2026-03-24T10:48:13.352746",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getAttribute": {
+    "id": "com.sun.net.httpserver.HttpExchange.getAttribute",
+    "name": "getAttribute",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract Object getAttribute(String name)"
+    ],
+    "signature_hash": "42a41d54e07c42cf86363b584b44024b21222cc40bb952538c5c60ec69f106df",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract Object",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Filtermodules may store arbitrary objects withHttpExchangeinstances as an out-of-band communication mechanism."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Filtermodules may store arbitrary objects withHttpExchangeinstances as an out-of-band communication mechanism.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352165",
+    "updatedDate": "2026-03-24T10:48:13.352166",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpContext/getAttributes": {
+    "id": "com.sun.net.httpserver.HttpContext.getAttributes",
+    "name": "getAttributes",
+    "type": "method",
+    "parent": "HttpContext",
+    "signatures": [
+      "public abstract Map<String, Object> getAttributes()"
+    ],
+    "signature_hash": "24314af4f3296212b6138d8c3359e1a91a232f55f068fb966a7092b1fe8506ca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpContext.html",
+    "parameters": [],
+    "return_type": "abstract Map<String, Object>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a mutableMap, which can be used to pass configuration and other data toFiltermodules and to the context's exchange handler."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a mutableMap, which can be used to pass configuration and other data toFiltermodules and to the context's exchange handler.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352499",
+    "updatedDate": "2026-03-24T10:48:13.352500",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpContext/getAuthenticator": {
+    "id": "com.sun.net.httpserver.HttpContext.getAuthenticator",
+    "name": "getAuthenticator",
+    "type": "method",
+    "parent": "HttpContext",
+    "signatures": [
+      "public abstract Authenticator getAuthenticator()"
+    ],
+    "signature_hash": "c69afa1839a440ddad5bae1505a48f59241724b1bf7c68325151c213dc3fdfb4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpContext.html",
+    "parameters": [],
+    "return_type": "abstract Authenticator",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the currently setAuthenticatorfor this context if one exists."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the currently setAuthenticatorfor this context if one exists.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352513",
+    "updatedDate": "2026-03-24T10:48:13.352513",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsParameters/getCipherSuites": {
+    "id": "com.sun.net.httpserver.HttpsParameters.getCipherSuites",
+    "name": "getCipherSuites",
+    "type": "method",
+    "parent": "HttpsParameters",
+    "signatures": [
+      "public String[] getCipherSuites()"
+    ],
+    "signature_hash": "a64f7d0421292c045d4a0cb35bc7212dd689e5f721d540d8ce1aba696ef4dbd5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsParameters.html",
+    "parameters": [],
+    "return_type": "String[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated.It is recommended that the SSL parameters be configured and read through the use ofSSLParameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.It is recommended that the SSL parameters be configured and read through the use ofSSLParameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354246",
+    "updatedDate": "2026-03-24T10:48:13.354247",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsParameters/getClientAddress": {
+    "id": "com.sun.net.httpserver.HttpsParameters.getClientAddress",
+    "name": "getClientAddress",
+    "type": "method",
+    "parent": "HttpsParameters",
+    "signatures": [
+      "public abstract InetSocketAddress getClientAddress()"
+    ],
+    "signature_hash": "fb13b49fa4346eac184b41b91af5119407cbca29296ee2d4038a2d1b65142b8f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsParameters.html",
+    "parameters": [],
+    "return_type": "abstract InetSocketAddress",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the address of the remote client initiating the connection."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the address of the remote client initiating the connection.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354264",
+    "updatedDate": "2026-03-24T10:48:13.354265",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpServer/getExecutor": {
+    "id": "com.sun.net.httpserver.HttpServer.getExecutor",
+    "name": "getExecutor",
+    "type": "method",
+    "parent": "HttpServer",
+    "signatures": [
+      "public abstract Executor getExecutor()"
+    ],
+    "signature_hash": "eeca0a6a8ea0b9af186952ace99c6af8850dd3c499c1e96955a9051e6f9bd681",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpServer.html",
+    "parameters": [],
+    "return_type": "abstract Executor",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns this server'sExecutorobject if one was specified withsetExecutor(Executor), ornullif none was specified."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns this server'sExecutorobject if one was specified withsetExecutor(Executor), ornullif none was specified.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352759",
+    "updatedDate": "2026-03-24T10:48:13.352760",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpContext/getFilters": {
+    "id": "com.sun.net.httpserver.HttpContext.getFilters",
+    "name": "getFilters",
+    "type": "method",
+    "parent": "HttpContext",
+    "signatures": [
+      "public abstract List<Filter> getFilters()"
+    ],
+    "signature_hash": "796672391a0935d075b673468e0ff584b557bc63d4d1ef6de2b4f3e06d841424",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpContext.html",
+    "parameters": [],
+    "return_type": "abstract List<Filter>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns this context'sListoffilters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns this context'sListoffilters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352526",
+    "updatedDate": "2026-03-24T10:48:13.352527",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Headers/getFirst": {
+    "id": "com.sun.net.httpserver.Headers.getFirst",
+    "name": "getFirst",
+    "type": "method",
+    "parent": "Headers",
+    "signatures": [
+      "public String getFirst(String key)"
+    ],
+    "signature_hash": "2b614a5c52a43ed463f129fda336a1dbd5da1263ecc7858c489630fbf830d3c6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Headers.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the first value from theListofStringvalues for the givenkey, ornullif no mapping for thekeyexists."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the first value from theListofStringvalues for the givenkey, ornullif no mapping for thekeyexists.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353807",
+    "updatedDate": "2026-03-24T10:48:13.353808",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpContext/getHandler": {
+    "id": "com.sun.net.httpserver.HttpContext.getHandler",
+    "name": "getHandler",
+    "type": "method",
+    "parent": "HttpContext",
+    "signatures": [
+      "public abstract HttpHandler getHandler()"
+    ],
+    "signature_hash": "06b48f296d7f4dca72614a63598df675fb80cbbc9ed3ed1f33ddbe0524a5addd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpContext.html",
+    "parameters": [],
+    "return_type": "abstract HttpHandler",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the handler for this context."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the handler for this context.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352546",
+    "updatedDate": "2026-03-24T10:48:13.352550",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getHttpContext": {
+    "id": "com.sun.net.httpserver.HttpExchange.getHttpContext",
+    "name": "getHttpContext",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract HttpContext getHttpContext()"
+    ],
+    "signature_hash": "7800883a2350464d59a8a11ad276151a9300ed96e65dfd46e0d5ff19ed63e9ce",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract HttpContext",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns theHttpContextfor this exchange."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns theHttpContextfor this exchange.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352177",
+    "updatedDate": "2026-03-24T10:48:13.352178",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsServer/getHttpsConfigurator": {
+    "id": "com.sun.net.httpserver.HttpsServer.getHttpsConfigurator",
+    "name": "getHttpsConfigurator",
+    "type": "method",
+    "parent": "HttpsServer",
+    "signatures": [
+      "public abstract HttpsConfigurator getHttpsConfigurator()"
+    ],
+    "signature_hash": "f5f971e80f81a3abc0228cd5b0db6bf8eadc7568b6b0b0ccbf11c0e4b379a784",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsServer.html",
+    "parameters": [],
+    "return_type": "abstract HttpsConfigurator",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Gets this server'sHttpsConfiguratorobject, if it has been set."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Gets this server'sHttpsConfiguratorobject, if it has been set.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353131",
+    "updatedDate": "2026-03-24T10:48:13.353132",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsParameters/getHttpsConfigurator": {
+    "id": "com.sun.net.httpserver.HttpsParameters.getHttpsConfigurator",
+    "name": "getHttpsConfigurator",
+    "type": "method",
+    "parent": "HttpsParameters",
+    "signatures": [
+      "public abstract HttpsConfigurator getHttpsConfigurator()"
+    ],
+    "signature_hash": "f5f971e80f81a3abc0228cd5b0db6bf8eadc7568b6b0b0ccbf11c0e4b379a784",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsParameters.html",
+    "parameters": [],
+    "return_type": "abstract HttpsConfigurator",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns theHttpsConfiguratorfor thisHttpsParameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns theHttpsConfiguratorfor thisHttpsParameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354282",
+    "updatedDate": "2026-03-24T10:48:13.354283",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getLocalAddress": {
+    "id": "com.sun.net.httpserver.HttpExchange.getLocalAddress",
+    "name": "getLocalAddress",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract InetSocketAddress getLocalAddress()"
+    ],
+    "signature_hash": "e7c9db079726de160d9a03a8276e0023ef4043ee61eed215cbc55c5373dd2704",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract InetSocketAddress",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the local address on which the request was received."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the local address on which the request was received.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352190",
+    "updatedDate": "2026-03-24T10:48:13.352191",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpPrincipal/getName": {
+    "id": "com.sun.net.httpserver.HttpPrincipal.getName",
+    "name": "getName",
+    "type": "method",
+    "parent": "HttpPrincipal",
+    "signatures": [
+      "public String getName()"
+    ],
+    "signature_hash": "239fbe3eb64d679cbac1161825b07d6a8436ead3c6c3d140d9caec2275827023",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpPrincipal.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the contents of this principal in the formrealm:username."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the contents of this principal in the formrealm:username.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354075",
+    "updatedDate": "2026-03-24T10:48:13.354076",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsParameters/getNeedClientAuth": {
+    "id": "com.sun.net.httpserver.HttpsParameters.getNeedClientAuth",
+    "name": "getNeedClientAuth",
+    "type": "method",
+    "parent": "HttpsParameters",
+    "signatures": [
+      "public boolean getNeedClientAuth()"
+    ],
+    "signature_hash": "54cd1e8a177ebc7eb3f4179b792b48df4f4cd7602b948520fc655724c8d8cc0f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsParameters.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated.It is recommended that the SSL parameters be configured and read through the use ofSSLParameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.It is recommended that the SSL parameters be configured and read through the use ofSSLParameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354300",
+    "updatedDate": "2026-03-24T10:48:13.354301",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpContext/getPath": {
+    "id": "com.sun.net.httpserver.HttpContext.getPath",
+    "name": "getPath",
+    "type": "method",
+    "parent": "HttpContext",
+    "signatures": [
+      "public abstract String getPath()"
+    ],
+    "signature_hash": "72e595ea0b304e2d6e264704ee09e15dba5ce833f68f468b0be94878cfe96782",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpContext.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the path this context was created with."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the path this context was created with.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352563",
+    "updatedDate": "2026-03-24T10:48:13.352564",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getPrincipal": {
+    "id": "com.sun.net.httpserver.HttpExchange.getPrincipal",
+    "name": "getPrincipal",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract HttpPrincipal getPrincipal()"
+    ],
+    "signature_hash": "2e97e288230870f0d32dd7239f27c590df1b6cc796b4e67105d4f7013fbb1a8a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract HttpPrincipal",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "If an authenticator is set on theHttpContextthat owns this exchange, then this method will return theHttpPrincipalthat represents the authenticated user for thisHttpExchange."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If an authenticator is set on theHttpContextthat owns this exchange, then this method will return theHttpPrincipalthat represents the authenticated user for thisHttpExchange.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352204",
+    "updatedDate": "2026-03-24T10:48:13.352205",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Success/getPrincipal": {
+    "id": "com.sun.net.httpserver.Success.getPrincipal",
+    "name": "getPrincipal",
+    "type": "method",
+    "parent": "Success",
+    "signatures": [
+      "public HttpPrincipal getPrincipal()"
+    ],
+    "signature_hash": "c52af9e4cbf289216997bf3a369534da5535324bb07553aeb7ff2eace0d7b04c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Authenticator.Success.html",
+    "parameters": [],
+    "return_type": "HttpPrincipal",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the authenticated userPrincipal."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the authenticated userPrincipal.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353442",
+    "updatedDate": "2026-03-24T10:48:13.353443",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getProtocol": {
+    "id": "com.sun.net.httpserver.HttpExchange.getProtocol",
+    "name": "getProtocol",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract String getProtocol()"
+    ],
+    "signature_hash": "37dac83118e2629b4c07aca8851a2f3cba73629f23f3f7295f59629c08303ee4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the protocol string from the request in the formprotocol/majorVersion.minorVersion."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the protocol string from the request in the formprotocol/majorVersion.minorVersion.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352216",
+    "updatedDate": "2026-03-24T10:48:13.352217",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsParameters/getProtocols": {
+    "id": "com.sun.net.httpserver.HttpsParameters.getProtocols",
+    "name": "getProtocols",
+    "type": "method",
+    "parent": "HttpsParameters",
+    "signatures": [
+      "public String[] getProtocols()"
+    ],
+    "signature_hash": "f65a6bbbf95ce8968fcf5b29b852f2f8d0ec86f10430ff2f90bcc7b90d1c7392",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsParameters.html",
+    "parameters": [],
+    "return_type": "String[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated.It is recommended that the SSL parameters be configured and read through the use ofSSLParameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.It is recommended that the SSL parameters be configured and read through the use ofSSLParameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354319",
+    "updatedDate": "2026-03-24T10:48:13.354320",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/BasicAuthenticator/getRealm": {
+    "id": "com.sun.net.httpserver.BasicAuthenticator.getRealm",
+    "name": "getRealm",
+    "type": "method",
+    "parent": "BasicAuthenticator",
+    "signatures": [
+      "public String getRealm()"
+    ],
+    "signature_hash": "f1c45a4c4f150639a8cd469fed7c91e49bb2bc490a1fc61a7036b915aae5e0b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/BasicAuthenticator.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the realm thisBasicAuthenticatorwas created with."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the realm thisBasicAuthenticatorwas created with.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353542",
+    "updatedDate": "2026-03-24T10:48:13.353543",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpPrincipal/getRealm": {
+    "id": "com.sun.net.httpserver.HttpPrincipal.getRealm",
+    "name": "getRealm",
+    "type": "method",
+    "parent": "HttpPrincipal",
+    "signatures": [
+      "public String getRealm()"
+    ],
+    "signature_hash": "f1c45a4c4f150639a8cd469fed7c91e49bb2bc490a1fc61a7036b915aae5e0b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpPrincipal.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns therealmthis object was created with."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns therealmthis object was created with.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354092",
+    "updatedDate": "2026-03-24T10:48:13.354093",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getRemoteAddress": {
+    "id": "com.sun.net.httpserver.HttpExchange.getRemoteAddress",
+    "name": "getRemoteAddress",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract InetSocketAddress getRemoteAddress()"
+    ],
+    "signature_hash": "6a3578c122f759f2bc5fd5d7f36de3129224e764422361e7e7ebb85c24d6b811",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract InetSocketAddress",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the address of the remote entity invoking this request."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the address of the remote entity invoking this request.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352229",
+    "updatedDate": "2026-03-24T10:48:13.352230",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getRequestBody": {
+    "id": "com.sun.net.httpserver.HttpExchange.getRequestBody",
+    "name": "getRequestBody",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract InputStream getRequestBody()"
+    ],
+    "signature_hash": "b5df725355f82d1720b2bfb21d25327b90515596e5c734ac77172a503d57b86f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract InputStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a stream from which the request body can be read."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream from which the request body can be read.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352241",
+    "updatedDate": "2026-03-24T10:48:13.352242",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getRequestHeaders": {
+    "id": "com.sun.net.httpserver.HttpExchange.getRequestHeaders",
+    "name": "getRequestHeaders",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract Headers getRequestHeaders()"
+    ],
+    "signature_hash": "3a3fb06b5198864eb89971aa387333361de843d7d165326d504b6a0ec96f37cc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract Headers",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an immutableHeaderscontaining the HTTP headers that were included with this request."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an immutableHeaderscontaining the HTTP headers that were included with this request.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352254",
+    "updatedDate": "2026-03-24T10:48:13.352255",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Request/getRequestHeaders": {
+    "id": "com.sun.net.httpserver.Request.getRequestHeaders",
+    "name": "getRequestHeaders",
+    "type": "method",
+    "parent": "Request",
+    "signatures": [
+      "public Headers getRequestHeaders()"
+    ],
+    "signature_hash": "c9cb44aaa6b44dc936f2be5d5b4bb4befd2fc1a5a191407a8eecd5570d6933f6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Request.html",
+    "parameters": [],
+    "return_type": "Headers",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an immutableHeaderscontaining the HTTP headers that were included with this request."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an immutableHeaderscontaining the HTTP headers that were included with this request.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354479",
+    "updatedDate": "2026-03-24T10:48:13.354480",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getRequestMethod": {
+    "id": "com.sun.net.httpserver.HttpExchange.getRequestMethod",
+    "name": "getRequestMethod",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract String getRequestMethod()"
+    ],
+    "signature_hash": "ee4448a98095b6d204c7f685bc49ba06f446a8bfa5d41a128b9aec4221291825",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the request method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the request method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352266",
+    "updatedDate": "2026-03-24T10:48:13.352267",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Request/getRequestMethod": {
+    "id": "com.sun.net.httpserver.Request.getRequestMethod",
+    "name": "getRequestMethod",
+    "type": "method",
+    "parent": "Request",
+    "signatures": [
+      "public String getRequestMethod()"
+    ],
+    "signature_hash": "580e8dc9fd3f020b794267b4c3153ce7c29816fdb057d2ef9b2b68c6dd6b251f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Request.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the request method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the request method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354496",
+    "updatedDate": "2026-03-24T10:48:13.354497",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getRequestURI": {
+    "id": "com.sun.net.httpserver.HttpExchange.getRequestURI",
+    "name": "getRequestURI",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract URI getRequestURI()"
+    ],
+    "signature_hash": "34e7b58e48ebe789bb724829765b2a01f92ea3a87c711195390419631751ae3f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract URI",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the requestURI."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the requestURI.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352278",
+    "updatedDate": "2026-03-24T10:48:13.352279",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Request/getRequestURI": {
+    "id": "com.sun.net.httpserver.Request.getRequestURI",
+    "name": "getRequestURI",
+    "type": "method",
+    "parent": "Request",
+    "signatures": [
+      "public URI getRequestURI()"
+    ],
+    "signature_hash": "3b2424d2535818093621d34884eaf10d10effc82be254d5c81030163295b8147",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Request.html",
+    "parameters": [],
+    "return_type": "URI",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the requestURI."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the requestURI.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354512",
+    "updatedDate": "2026-03-24T10:48:13.354513",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getResponseBody": {
+    "id": "com.sun.net.httpserver.HttpExchange.getResponseBody",
+    "name": "getResponseBody",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract OutputStream getResponseBody()"
+    ],
+    "signature_hash": "30471c093f75d1917d17046f81e7914e04ce6db2b415dbb9246a2c32bb4ad69b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract OutputStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a stream to which the response body must be written."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream to which the response body must be written.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352291",
+    "updatedDate": "2026-03-24T10:48:13.352292",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getResponseCode": {
+    "id": "com.sun.net.httpserver.HttpExchange.getResponseCode",
+    "name": "getResponseCode",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract int getResponseCode()"
+    ],
+    "signature_hash": "6be38dcca39c753786d9561a6e40fcdbd04763c4edf0f50c140ef090d8368a20",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the response code, if it has already been set."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the response code, if it has already been set.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352303",
+    "updatedDate": "2026-03-24T10:48:13.352304",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Failure/getResponseCode": {
+    "id": "com.sun.net.httpserver.Failure.getResponseCode",
+    "name": "getResponseCode",
+    "type": "method",
+    "parent": "Failure",
+    "signatures": [
+      "public int getResponseCode()"
+    ],
+    "signature_hash": "d89fdc3bf576ae4f08f3ab529d7d465eed31954cd3e85e6a039b6bfad886470a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Authenticator.Failure.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the response code to send to the client."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the response code to send to the client.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353324",
+    "updatedDate": "2026-03-24T10:48:13.353325",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Retry/getResponseCode": {
+    "id": "com.sun.net.httpserver.Retry.getResponseCode",
+    "name": "getResponseCode",
+    "type": "method",
+    "parent": "Retry",
+    "signatures": [
+      "public int getResponseCode()"
+    ],
+    "signature_hash": "d89fdc3bf576ae4f08f3ab529d7d465eed31954cd3e85e6a039b6bfad886470a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Authenticator.Retry.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the response code to send to the client."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the response code to send to the client.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353395",
+    "updatedDate": "2026-03-24T10:48:13.353396",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/getResponseHeaders": {
+    "id": "com.sun.net.httpserver.HttpExchange.getResponseHeaders",
+    "name": "getResponseHeaders",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract Headers getResponseHeaders()"
+    ],
+    "signature_hash": "e028616e7af771a6526dab4c53739c4765435db824220607736e14645c3e7d88",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract Headers",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a mutableHeadersinto which the HTTP response headers can be stored and which will be transmitted as part of this response."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a mutableHeadersinto which the HTTP response headers can be stored and which will be transmitted as part of this response.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352316",
+    "updatedDate": "2026-03-24T10:48:13.352317",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsConfigurator/getSSLContext": {
+    "id": "com.sun.net.httpserver.HttpsConfigurator.getSSLContext",
+    "name": "getSSLContext",
+    "type": "method",
+    "parent": "HttpsConfigurator",
+    "signatures": [
+      "public SSLContext getSSLContext()"
+    ],
+    "signature_hash": "93de5d34c7e93ec42c787b61bb740e9c869aa5f840ab25f841eb8f6a9f583c23",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsConfigurator.html",
+    "parameters": [],
+    "return_type": "SSLContext",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns theSSLContextfor thisHttpsConfigurator."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns theSSLContextfor thisHttpsConfigurator.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353213",
+    "updatedDate": "2026-03-24T10:48:13.353214",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsExchange/getSSLSession": {
+    "id": "com.sun.net.httpserver.HttpsExchange.getSSLSession",
+    "name": "getSSLSession",
+    "type": "method",
+    "parent": "HttpsExchange",
+    "signatures": [
+      "public abstract SSLSession getSSLSession()"
+    ],
+    "signature_hash": "09b56fa38338d3da3c745428947b25301ab87c81a21889a8af50538d52e8e08f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsExchange.html",
+    "parameters": [],
+    "return_type": "abstract SSLSession",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Get theSSLSessionfor this exchange."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get theSSLSessionfor this exchange.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354196",
+    "updatedDate": "2026-03-24T10:48:13.354197",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpContext/getServer": {
+    "id": "com.sun.net.httpserver.HttpContext.getServer",
+    "name": "getServer",
+    "type": "method",
+    "parent": "HttpContext",
+    "signatures": [
+      "public abstract HttpServer getServer()"
+    ],
+    "signature_hash": "3fc874fe15ed91200b6e46065807bb85e3f0ea5e673225cdf717be709ef0f11a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpContext.html",
+    "parameters": [],
+    "return_type": "abstract HttpServer",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the server this context was created with."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the server this context was created with.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352576",
+    "updatedDate": "2026-03-24T10:48:13.352577",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpPrincipal/getUsername": {
+    "id": "com.sun.net.httpserver.HttpPrincipal.getUsername",
+    "name": "getUsername",
+    "type": "method",
+    "parent": "HttpPrincipal",
+    "signatures": [
+      "public String getUsername()"
+    ],
+    "signature_hash": "6a70299d74b1ed8da0ff8fec5a1c89ba0dff9b5b133bb2544a0bc6abb19bcee7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpPrincipal.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns theusernamethis object was created with."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns theusernamethis object was created with.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354108",
+    "updatedDate": "2026-03-24T10:48:13.354109",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsParameters/getWantClientAuth": {
+    "id": "com.sun.net.httpserver.HttpsParameters.getWantClientAuth",
+    "name": "getWantClientAuth",
+    "type": "method",
+    "parent": "HttpsParameters",
+    "signatures": [
+      "public boolean getWantClientAuth()"
+    ],
+    "signature_hash": "c6900be25573d0552174424e7d8153f4ff4643aef0b93c59c0b79874bd50cd9a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsParameters.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated.It is recommended that the SSL parameters be configured and read through the use ofSSLParameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.It is recommended that the SSL parameters be configured and read through the use ofSSLParameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354337",
+    "updatedDate": "2026-03-24T10:48:13.354338",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "syslog/setlogmask": {
+    "id": "syslog.setlogmask",
+    "name": "setlogmask",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "syslog.setlogmask(maskpri)"
+    ],
+    "signature_hash": "814e539809638aefa7b85c8318aa5a5b696a4aa430fef5fc28e5b1293551d4e2",
+    "url": "https://docs.python.org/3/library/syslog.html#module-syslog#syslog.setlogmask",
+    "parameters": [
+      {
+        "name": "maskpri",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Set the priority mask to maskpri and return the previous mask value. Calls to syslog() with a priority level not set in maskpri are ignored. The default is to log all priorities. The function LOG_MASK(pri) calculates the mask for the individual priority pri. The function LOG_UPTO(pri) calculates the mask for all priorities up to and including pri. Raises an auditing event syslog.setlogmask with argument maskpri."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the priority mask to maskpri and return the previous mask value. Calls to syslog() with a priority level not set in maskpri are ignored. The default is to log all priorities. The function LOG_MASK...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.351912",
+    "updatedDate": "2026-03-24T10:48:12.351913",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "syslog/syslog": {
+    "id": "syslog.syslog",
+    "name": "syslog",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "syslog.syslog(message)"
+    ],
+    "signature_hash": "5c4195d3961d00b514432b055a8e535acade3e4f33220761bdf3fe3ad327d901",
+    "url": "https://docs.python.org/3/library/syslog.html#module-syslog#syslog.syslog",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Send the string message to the system logger. A trailing newline is added if necessary. Each message is tagged with a priority composed of a facility and a level. The optional priority argument, which defaults to LOG_INFO, determines the message priority. If the facility is not encoded in priority using logical-or (LOG_INFO | LOG_USER), the value given in the openlog() call is used. If openlog() has not been called prior to the call to syslog(), openlog() will be called with no arguments. Rai..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Send the string message to the system logger. A trailing newline is added if necessary. Each message is tagged with a priority composed of a facility and a level. The optional priority argument, which...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.351858",
+    "updatedDate": "2026-03-24T10:48:12.351859",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "syslog": {
+    "type": "module",
+    "name": "syslog",
+    "id": "syslog",
+    "description": "Module syslog",
+    "constants": [
+      "LOG_AUTH",
+      "LOG_EMERG",
+      "LOG_PID"
+    ],
+    "functions": [
+      "closelog",
+      "openlog",
+      "setlogmask",
+      "syslog"
+    ]
+  }
+}

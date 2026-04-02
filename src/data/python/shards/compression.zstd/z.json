@@ -1,0 +1,468 @@
+{
+  "compression.zstd/zstd/zstd_version_info": {
+    "id": "compression.zstd.zstd.zstd_version_info",
+    "name": "zstd_version_info",
+    "type": "attribute",
+    "parent": "zstd",
+    "signatures": [
+      "compression.zstd.zstd_version_info"
+    ],
+    "signature_hash": "33d17b5f96b367e012d144f9ed201cfafa74ecacbcffe20a1bbc48da1a901d98",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.zstd_version_info",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Version number of the runtime zstd library as a tuple of integers (major, minor, release)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Version number of the runtime zstd library as a tuple of integers (major, minor, release).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.175167",
+    "updatedDate": "2026-03-24T10:48:12.175168",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/ZstdCompressor": {
+    "id": "compression.zstd.ZstdCompressor",
+    "name": "ZstdCompressor",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class compression.zstd.ZstdCompressor(level=None, options=None, zstd_dict=None)"
+    ],
+    "signature_hash": "8d3ee10db963162a60ea1be53b78179d1a9e8e33aaa54027343fbbb6f8f3df13",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.ZstdCompressor",
+    "parameters": [
+      {
+        "name": "level",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "options",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "zstd_dict",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a compressor object, which can be used to compress data incrementally. For a more convenient way of compressing a single chunk of data, see the module-level function compress(). The level argument is an integer controlling the level of compression. level is an alternative to setting CompressionParameter.compression_level in options. Use bounds() on compression_level to get the values that can be passed for level. If advanced compression options are needed, the level argument must be om..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a compressor object, which can be used to compress data incrementally. For a more convenient way of compressing a single chunk of data, see the module-level function compress(). The level argum...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174200",
+    "updatedDate": "2026-03-24T10:48:12.174201",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "CONTINUE",
+      "FLUSH_BLOCK",
+      "FLUSH_FRAME",
+      "last_mode"
+    ],
+    "methods": [
+      "compress",
+      "flush",
+      "set_pledged_input_size"
+    ]
+  },
+  "compression.zstd/ZstdDecompressor": {
+    "id": "compression.zstd.ZstdDecompressor",
+    "name": "ZstdDecompressor",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class compression.zstd.ZstdDecompressor(zstd_dict=None, options=None)"
+    ],
+    "signature_hash": "3eca92fd369802fad0d0087b137286aa9397951cd1f31ebf9778eb8583b8b064",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.ZstdDecompressor",
+    "parameters": [
+      {
+        "name": "zstd_dict",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "options",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a decompressor object, which can be used to decompress data incrementally. For a more convenient way of decompressing an entire compressed stream at once, see the module-level function decompress(). The options argument is a Python dictionary containing advanced decompression parameters. The valid keys and values for compression parameters are documented as part of the DecompressionParameter documentation. The zstd_dict argument is an instance of ZstdDict containing trained data used d..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a decompressor object, which can be used to decompress data incrementally. For a more convenient way of decompressing an entire compressed stream at once, see the module-level function decompre...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174327",
+    "updatedDate": "2026-03-24T10:48:12.174328",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "eof",
+      "needs_input",
+      "unused_data"
+    ],
+    "methods": [
+      "decompress"
+    ]
+  },
+  "compression.zstd/ZstdDict": {
+    "id": "compression.zstd.ZstdDict",
+    "name": "ZstdDict",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class compression.zstd.ZstdDict(dict_content, /, *, is_raw=False)"
+    ],
+    "signature_hash": "036694d152c9fd815c789765c1dcf3ef19ec2020ca39268b84aa4d5352feb5fe",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.ZstdDict",
+    "parameters": [
+      {
+        "name": "dict_content",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "is_raw",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A wrapper around Zstandard dictionaries. Dictionaries can be used to improve the compression of many small chunks of data. Use train_dict() if you need to train a new dictionary from sample data. The dict_content argument (a bytes-like object), is the already trained dictionary information. The is_raw argument, a boolean, is an advanced parameter controlling the meaning of dict_content. True means dict_content is a “raw content” dictionary, without any format restrictions. False means dict_co..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A wrapper around Zstandard dictionaries. Dictionaries can be used to improve the compression of many small chunks of data. Use train_dict() if you need to train a new dictionary from sample data. The ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174462",
+    "updatedDate": "2026-03-24T10:48:12.174462",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "as_digested_dict",
+      "as_undigested_dict",
+      "dict_content",
+      "dict_id"
+    ]
+  },
+  "compression.zstd/ZstdFile": {
+    "id": "compression.zstd.ZstdFile",
+    "name": "ZstdFile",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class compression.zstd.ZstdFile(file, /, mode='rb', *, level=None, options=None, zstd_dict=None)"
+    ],
+    "signature_hash": "6e67973ad5b9d64c0898a77b1bd12585a9a3525554f66c8319cfeb4d1bde2b24",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.ZstdFile",
+    "parameters": [
+      {
+        "name": "file",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "'rb'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "level",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "options",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "zstd_dict",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Open a Zstandard-compressed file in binary mode. A ZstdFile can wrap an already-open file object, or operate directly on a named file. The file argument specifies either the file object to wrap, or the name of the file to open (as a str, bytes or path-like object). If wrapping an existing file object, the wrapped file will not be closed when the ZstdFile is closed. The mode argument can be either 'rb' for reading (default), 'wb' for overwriting, 'xb' for exclusive creation, or 'ab' for append..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Open a Zstandard-compressed file in binary mode. A ZstdFile can wrap an already-open file object, or operate directly on a named file. The file argument specifies either the file object to wrap, or th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174084",
+    "updatedDate": "2026-03-24T10:48:12.174085",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "mode",
+      "name"
+    ],
+    "methods": [
+      "peek"
+    ]
+  },
+  "compression.zstd/ZstdError": {
+    "id": "compression.zstd.ZstdError",
+    "name": "ZstdError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception compression.zstd.ZstdError"
+    ],
+    "signature_hash": "47f1f841be9dd369402f31c29898f6398cacf7da408533a99ac7bd0c531cb4b3",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.ZstdError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This exception is raised when an error occurs during compression or decompression, or while initializing the (de)compressor state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This exception is raised when an error occurs during compression or decompression, or while initializing the (de)compressor state.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174023",
+    "updatedDate": "2026-03-24T10:48:12.174024",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

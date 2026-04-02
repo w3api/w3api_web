@@ -1,0 +1,486 @@
+{
+  "com.sun.jdi/ReferenceType": {
+    "id": "com.sun.jdi.ReferenceType",
+    "name": "ReferenceType",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface ReferenceType"
+    ],
+    "signature_hash": "e58779aae6a4c1ab8170065eaff2e45a10ddb325d7d16908bd1b24d1e5a85a54",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/ReferenceType.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.338679",
+    "updatedDate": "2026-03-24T10:48:13.338680",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "allFields",
+      "allLineLocations",
+      "allMethods",
+      "availableStrata",
+      "classLoader",
+      "classObject",
+      "constantPool",
+      "constantPoolCount",
+      "defaultStratum",
+      "equals",
+      "failedToInitialize",
+      "fieldByName",
+      "fields",
+      "genericSignature",
+      "getValue",
+      "getValues",
+      "hashCode",
+      "instances",
+      "isAbstract",
+      "isFinal",
+      "isInitialized",
+      "isPrepared",
+      "isStatic",
+      "isVerified",
+      "locationsOfLine",
+      "majorVersion",
+      "methods",
+      "methodsByName",
+      "minorVersion",
+      "module",
+      "name",
+      "nestedTypes",
+      "sourceDebugExtension",
+      "sourceName",
+      "sourceNames",
+      "sourcePaths",
+      "visibleFields",
+      "visibleMethods"
+    ]
+  },
+  "com.sun.jdi/VirtualMachine/redefineClasses": {
+    "id": "com.sun.jdi.VirtualMachine.redefineClasses",
+    "name": "redefineClasses",
+    "type": "method",
+    "parent": "VirtualMachine",
+    "signatures": [
+      "public void redefineClasses(Map<? extends ReferenceType, byte[]> classToBytes)"
+    ],
+    "signature_hash": "b3f419b22e29d9ba5aa2272d058bedf968e8419c50905adcdf959c3ef8ed0314",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/VirtualMachine.html",
+    "parameters": [
+      {
+        "name": "ReferenceType",
+        "type": "Map<? extends",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "classToBytes",
+        "type": "byte[]>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "VMCannotBeModifiedException",
+        "package": "com.sun.jdi"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "All classes given are redefined according to the definitions supplied."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "All classes given are redefined according to the definitions supplied.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.333916",
+    "updatedDate": "2026-03-24T10:48:13.333917",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi/ObjectReference/referenceType": {
+    "id": "com.sun.jdi.ObjectReference.referenceType",
+    "name": "referenceType",
+    "type": "method",
+    "parent": "ObjectReference",
+    "signatures": [
+      "public ReferenceType referenceType()"
+    ],
+    "signature_hash": "a1f8e024107c8e1d7602d68adef0d2e2bc970af22f70e5f2653b91cd24407dfe",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/ObjectReference.html",
+    "parameters": [],
+    "return_type": "ReferenceType",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Gets theReferenceTypethat mirrors the type of this object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Gets theReferenceTypethat mirrors the type of this object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.338114",
+    "updatedDate": "2026-03-24T10:48:13.338115",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi/ObjectReference/referringObjects": {
+    "id": "com.sun.jdi.ObjectReference.referringObjects",
+    "name": "referringObjects",
+    "type": "method",
+    "parent": "ObjectReference",
+    "signatures": [
+      "public List<ObjectReference> referringObjects(long maxReferrers)"
+    ],
+    "signature_hash": "49a9b6043390b6082e9d40c5b694787bf08fc8c54f65b10bbd88fde6db15da5d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/ObjectReference.html",
+    "parameters": [
+      {
+        "name": "maxReferrers",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "List<ObjectReference>",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns objects that directly reference this object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns objects that directly reference this object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.338141",
+    "updatedDate": "2026-03-24T10:48:13.338142",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi/ObjectReference/reflectedType": {
+    "id": "com.sun.jdi.ObjectReference.reflectedType",
+    "name": "reflectedType",
+    "type": "method",
+    "parent": "ObjectReference",
+    "signatures": [
+      "public ReferenceType reflectedType()"
+    ],
+    "signature_hash": "8403750d4155da4a0ed660cd29bf328b45c0c552ee991f2f14d9824b4476e97d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/ClassObjectReference.html",
+    "parameters": [],
+    "return_type": "ReferenceType",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns theReferenceTypecorresponding to this class object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns theReferenceTypecorresponding to this class object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.335043",
+    "updatedDate": "2026-03-24T10:48:13.335044",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi/VirtualMachine/resume": {
+    "id": "com.sun.jdi.VirtualMachine.resume",
+    "name": "resume",
+    "type": "method",
+    "parent": "VirtualMachine",
+    "signatures": [
+      "public void resume()"
+    ],
+    "signature_hash": "6b70c138e9ce52f19f43e21132cbd43a827bf3583155afa2e669e78eb055734d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/VirtualMachine.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "VMCannotBeModifiedException",
+        "package": "com.sun.jdi"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Continues the execution of the application running in this virtual machine."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Continues the execution of the application running in this virtual machine.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.333930",
+    "updatedDate": "2026-03-24T10:48:13.333931",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi/ThreadGroupReference/resume": {
+    "id": "com.sun.jdi.ThreadGroupReference.resume",
+    "name": "resume",
+    "type": "method",
+    "parent": "ThreadGroupReference",
+    "signatures": [
+      "public void resume()"
+    ],
+    "signature_hash": "6b70c138e9ce52f19f43e21132cbd43a827bf3583155afa2e669e78eb055734d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/ThreadGroupReference.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "VMCannotBeModifiedException",
+        "package": "com.sun.jdi"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Resumes all threads in this thread group."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Resumes all threads in this thread group.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.340174",
+    "updatedDate": "2026-03-24T10:48:13.340175",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi/ThreadReference/resume": {
+    "id": "com.sun.jdi.ThreadReference.resume",
+    "name": "resume",
+    "type": "method",
+    "parent": "ThreadReference",
+    "signatures": [
+      "public void resume()"
+    ],
+    "signature_hash": "6b70c138e9ce52f19f43e21132cbd43a827bf3583155afa2e669e78eb055734d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/ThreadReference.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "VMCannotBeModifiedException",
+        "package": "com.sun.jdi"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Resumes this thread."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Resumes this thread.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.340714",
+    "updatedDate": "2026-03-24T10:48:13.340715",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi/Method/returnType": {
+    "id": "com.sun.jdi.Method.returnType",
+    "name": "returnType",
+    "type": "method",
+    "parent": "Method",
+    "signatures": [
+      "public Type returnType()"
+    ],
+    "signature_hash": "4685f61b8c4a38a32b33696c9e385d429ee58f735f896d6976c89ac017c5b9dc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/Method.html",
+    "parameters": [],
+    "return_type": "Type",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the return type, as specified in the declaration of this method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the return type, as specified in the declaration of this method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.337473",
+    "updatedDate": "2026-03-24T10:48:13.337474",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi/Method/returnTypeName": {
+    "id": "com.sun.jdi.Method.returnTypeName",
+    "name": "returnTypeName",
+    "type": "method",
+    "parent": "Method",
+    "signatures": [
+      "public String returnTypeName()"
+    ],
+    "signature_hash": "9114d2ea08095465ceb04b9fb5012f21cafd4f4298527d75dd40bd24efca664c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/Method.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a text representation of the return type, as specified in the declaration of this method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a text representation of the return type, as specified in the declaration of this method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.337493",
+    "updatedDate": "2026-03-24T10:48:13.337494",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

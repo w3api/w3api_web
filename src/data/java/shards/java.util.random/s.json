@@ -1,0 +1,242 @@
+{
+  "java.util.random/SplittableGenerator": {
+    "id": "java.util.random.SplittableGenerator",
+    "name": "SplittableGenerator",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface SplittableGenerator"
+    ],
+    "signature_hash": "81a13dfe2b881d3d6bad28576fe6c10d6df585fd286b2339a8ec940b1809b655",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.SplittableGenerator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195301",
+    "updatedDate": "2026-03-24T10:48:14.195302",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "of",
+      "rngs",
+      "split",
+      "splits"
+    ]
+  },
+  "java.util.random/StreamableGenerator": {
+    "id": "java.util.random.StreamableGenerator",
+    "name": "StreamableGenerator",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface StreamableGenerator"
+    ],
+    "signature_hash": "df464aed5efa04cf50a75367dd1b64af0c4b0c321c844a2208f5dc4d8507a5ba",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.StreamableGenerator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195245",
+    "updatedDate": "2026-03-24T10:48:14.195246",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "of",
+      "rngs"
+    ]
+  },
+  "java.util.random/SplittableGenerator/split": {
+    "id": "java.util.random.SplittableGenerator.split",
+    "name": "split",
+    "type": "method",
+    "parent": "SplittableGenerator",
+    "signatures": [
+      "public RandomGenerator.SplittableGenerator split()",
+      "public RandomGenerator.SplittableGenerator split(RandomGenerator.SplittableGenerator source)"
+    ],
+    "signature_hash": "247cf33faa8eb4dee2360d8b5753b727123a0394dbcb2b8c7b2a219f4dc60197",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.SplittableGenerator.html",
+    "parameters": [
+      {
+        "name": "source",
+        "has_default": false,
+        "default_value": null,
+        "type": "RandomGenerator.SplittableGenerator",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "RandomGenerator.SplittableGenerator",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a new pseudorandom number generator, split off from this one, that implements theRandomGeneratorandRandomGenerator.SplittableGeneratorinterfaces."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new pseudorandom number generator, split off from this one, that implements theRandomGeneratorandRandomGenerator.SplittableGeneratorinterfaces.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195362",
+    "updatedDate": "2026-03-24T10:48:14.195363",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.random/SplittableGenerator/splits": {
+    "id": "java.util.random.SplittableGenerator.splits",
+    "name": "splits",
+    "type": "method",
+    "parent": "SplittableGenerator",
+    "signatures": [
+      "public default Stream<RandomGenerator.SplittableGenerator> splits()",
+      "public Stream<RandomGenerator.SplittableGenerator> splits(long streamSize)",
+      "public Stream<RandomGenerator.SplittableGenerator> splits(long streamSize, RandomGenerator.SplittableGenerator source)",
+      "public Stream<RandomGenerator.SplittableGenerator> splits(RandomGenerator.SplittableGenerator source)"
+    ],
+    "signature_hash": "469ecc7664cdf39b30b0fe4def8229a45893dac2869850a3c895718f0a8cafcc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.SplittableGenerator.html",
+    "parameters": [
+      {
+        "name": "streamSize",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "source",
+        "has_default": false,
+        "default_value": null,
+        "type": "RandomGenerator.SplittableGenerator",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default Stream<RandomGenerator.SplittableGenerator>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an effectively unlimited stream of new pseudorandom number generators, each of which implements theRandomGenerator.SplittableGeneratorinterface."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an effectively unlimited stream of new pseudorandom number generators, each of which implements theRandomGenerator.SplittableGeneratorinterface.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195398",
+    "updatedDate": "2026-03-24T10:48:14.195399",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.random/RandomGeneratorFactory/stateBits": {
+    "id": "java.util.random.RandomGeneratorFactory.stateBits",
+    "name": "stateBits",
+    "type": "method",
+    "parent": "RandomGeneratorFactory",
+    "signatures": [
+      "public int stateBits()"
+    ],
+    "signature_hash": "5aab25eadf83f280f41c3861b78d05b8db5553e2775cab541214bb41c63121e6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGeneratorFactory.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns number of bits used by thealgorithmto maintain state of seed."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns number of bits used by thealgorithmto maintain state of seed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195234",
+    "updatedDate": "2026-03-24T10:48:14.195235",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

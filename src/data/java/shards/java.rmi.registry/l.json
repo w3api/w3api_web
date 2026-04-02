@@ -1,0 +1,165 @@
+{
+  "java.rmi.registry/LocateRegistry": {
+    "id": "java.rmi.registry.LocateRegistry",
+    "name": "LocateRegistry",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class LocateRegistry"
+    ],
+    "signature_hash": "d560e86dd0c9f1c86ccb72e835c02ab38791b7f80e8ad65299d530487a7b5415",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.909953",
+    "updatedDate": "2026-03-24T10:48:13.909953",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "createRegistry",
+      "getRegistry"
+    ]
+  },
+  "java.rmi.registry/Registry/list": {
+    "id": "java.rmi.registry.Registry.list",
+    "name": "list",
+    "type": "method",
+    "parent": "Registry",
+    "signatures": [
+      "public String[] list()"
+    ],
+    "signature_hash": "46692bfe3c863c232f6a8d0b2582f0a2457df217e932bb832594b7289021ce3e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/registry/Registry.html",
+    "parameters": [],
+    "return_type": "String[]",
+    "exceptions": [
+      {
+        "name": "RemoteException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "ServerException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "AccessException",
+        "package": "java.rmi"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an array of the names bound in this registry."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an array of the names bound in this registry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.910071",
+    "updatedDate": "2026-03-24T10:48:13.910072",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.registry/Registry/lookup": {
+    "id": "java.rmi.registry.Registry.lookup",
+    "name": "lookup",
+    "type": "method",
+    "parent": "Registry",
+    "signatures": [
+      "public Remote lookup(String name)"
+    ],
+    "signature_hash": "6eb3c8201d881c6ed8bc15280c734f15dc8aa99cba2976057b3cf71e3634aaba",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/registry/Registry.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Remote",
+    "exceptions": [
+      {
+        "name": "NotBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "RemoteException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "ServerException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "AccessException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns the remote reference bound to the specifiednamein this registry."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the remote reference bound to the specifiednamein this registry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.910088",
+    "updatedDate": "2026-03-24T10:48:13.910089",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

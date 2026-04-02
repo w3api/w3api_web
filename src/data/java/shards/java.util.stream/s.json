@@ -1,0 +1,1338 @@
+{
+  "java.util.stream/StreamSupport": {
+    "id": "java.util.stream.StreamSupport",
+    "name": "StreamSupport",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class StreamSupport"
+    ],
+    "signature_hash": "677b39283b4c51234dd67f503d4f1c14d69c476b7a0c743c1811ddd2589ef918",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/StreamSupport.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.202536",
+    "updatedDate": "2026-03-24T10:48:14.202537",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "doubleStream",
+      "intStream",
+      "longStream",
+      "stream"
+    ]
+  },
+  "java.util.stream/Stream": {
+    "id": "java.util.stream.Stream",
+    "name": "Stream",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Stream<T>"
+    ],
+    "signature_hash": "90597d55a9afff308de102fff30735d64748067963b3f29533b71ed5714aabc9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.197591",
+    "updatedDate": "2026-03-24T10:48:14.197592",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "allMatch",
+      "anyMatch",
+      "builder",
+      "collect",
+      "concat",
+      "count",
+      "distinct",
+      "dropWhile",
+      "empty",
+      "filter",
+      "findAny",
+      "findFirst",
+      "flatMap",
+      "flatMapToDouble",
+      "flatMapToInt",
+      "flatMapToLong",
+      "forEach",
+      "forEachOrdered",
+      "gather",
+      "generate",
+      "iterate",
+      "limit",
+      "map",
+      "mapMulti",
+      "mapMultiToDouble",
+      "mapMultiToInt",
+      "mapMultiToLong",
+      "mapToDouble",
+      "mapToInt",
+      "mapToLong",
+      "max",
+      "min",
+      "noneMatch",
+      "of",
+      "ofNullable",
+      "peek",
+      "reduce",
+      "skip",
+      "sorted",
+      "takeWhile",
+      "toArray",
+      "toList"
+    ]
+  },
+  "java.util.stream/Gatherers/scan": {
+    "id": "java.util.stream.Gatherers.scan",
+    "name": "scan",
+    "type": "method",
+    "parent": "Gatherers",
+    "signatures": [
+      "public static<T, R> Gatherer<T, ?, R> scan(Supplier<R> initial, BiFunction<? super R, ? super T, ? extends R> scanner)"
+    ],
+    "signature_hash": "25bedaee825df0b8fcc6a5cd886bc2462ae8fe8de7572373e1b95c7d54e314e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Gatherers.html",
+    "parameters": [
+      {
+        "name": "initial",
+        "type": "Supplier<R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "R",
+        "type": "BiFunction<? super",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "T",
+        "type": "? super",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "scanner",
+        "type": "? extends R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T, R> Gatherer<T, ?, R>",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a Gatherer that performs a Prefix Scan -- an incremental accumulation -- using the provided functions."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a Gatherer that performs a Prefix Scan -- an incremental accumulation -- using the provided functions.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.202468",
+    "updatedDate": "2026-03-24T10:48:14.202469",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/BaseStream<T,S>>/sequential": {
+    "id": "java.util.stream.BaseStream<T,S>>.sequential",
+    "name": "sequential",
+    "type": "method",
+    "parent": "BaseStream<T,S>>",
+    "signatures": [
+      "public S sequential()"
+    ],
+    "signature_hash": "18c541f16cd16099b93af0cc91a217a2864bc8b6d6d49a908aeaf013f8e2f4df",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/BaseStream.html",
+    "parameters": [],
+    "return_type": "S",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an equivalent stream that is sequential."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an equivalent stream that is sequential.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.203111",
+    "updatedDate": "2026-03-24T10:48:14.203112",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Stream/skip": {
+    "id": "java.util.stream.Stream.skip",
+    "name": "skip",
+    "type": "method",
+    "parent": "Stream",
+    "signatures": [
+      "public Stream<T> skip(long n)"
+    ],
+    "signature_hash": "8712c9d50a7078c6740b7ad4902591f6730f77424356852f27f756d620ca382b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Stream<T>",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the remaining elements of this stream after discarding the firstnelements of the stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the remaining elements of this stream after discarding the firstnelements of the stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.198312",
+    "updatedDate": "2026-03-24T10:48:14.198313",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/IntStream/skip": {
+    "id": "java.util.stream.IntStream.skip",
+    "name": "skip",
+    "type": "method",
+    "parent": "IntStream",
+    "signatures": [
+      "public IntStream skip(long n)"
+    ],
+    "signature_hash": "0cc77bc8645186dc3905422a04ba5a8fb6d044b70fdc740838505046183b84fa",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "IntStream",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the remaining elements of this stream after discarding the firstnelements of the stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the remaining elements of this stream after discarding the firstnelements of the stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199059",
+    "updatedDate": "2026-03-24T10:48:14.199060",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/LongStream/skip": {
+    "id": "java.util.stream.LongStream.skip",
+    "name": "skip",
+    "type": "method",
+    "parent": "LongStream",
+    "signatures": [
+      "public LongStream skip(long n)"
+    ],
+    "signature_hash": "99da1be7f996a4bdbfe0d90c1abd3920ab5333478697f6e69f3437c68d9d29c5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/LongStream.html",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "LongStream",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the remaining elements of this stream after discarding the firstnelements of the stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the remaining elements of this stream after discarding the firstnelements of the stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199854",
+    "updatedDate": "2026-03-24T10:48:14.199855",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/DoubleStream/skip": {
+    "id": "java.util.stream.DoubleStream.skip",
+    "name": "skip",
+    "type": "method",
+    "parent": "DoubleStream",
+    "signatures": [
+      "public DoubleStream skip(long n)"
+    ],
+    "signature_hash": "e087a1ef36aa5c228eb1ac6c934a75aec364a3d90552e7ee6daad7c83c745d29",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.html",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "DoubleStream",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the remaining elements of this stream after discarding the firstnelements of the stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the remaining elements of this stream after discarding the firstnelements of the stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200625",
+    "updatedDate": "2026-03-24T10:48:14.200626",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Stream/sorted": {
+    "id": "java.util.stream.Stream.sorted",
+    "name": "sorted",
+    "type": "method",
+    "parent": "Stream",
+    "signatures": [
+      "public Stream<T> sorted()",
+      "public Stream<T> sorted(Comparator<? super T> comparator)"
+    ],
+    "signature_hash": "5331ef47f63717791138f1953829a41aa3551107177cf09ac589027b176e23cb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html",
+    "parameters": [
+      {
+        "name": "comparator",
+        "has_default": false,
+        "default_value": null,
+        "type": "Comparator<? super T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Stream<T>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the elements of this stream, sorted according to natural order."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the elements of this stream, sorted according to natural order.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.198332",
+    "updatedDate": "2026-03-24T10:48:14.198333",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/IntStream/sorted": {
+    "id": "java.util.stream.IntStream.sorted",
+    "name": "sorted",
+    "type": "method",
+    "parent": "IntStream",
+    "signatures": [
+      "public IntStream sorted()"
+    ],
+    "signature_hash": "3620fa72f85ba03a8f4fa369a17b7e98a38723068852c69fff32b841c9bcee2a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html",
+    "parameters": [],
+    "return_type": "IntStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the elements of this stream in sorted order."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the elements of this stream in sorted order.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199074",
+    "updatedDate": "2026-03-24T10:48:14.199075",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/LongStream/sorted": {
+    "id": "java.util.stream.LongStream.sorted",
+    "name": "sorted",
+    "type": "method",
+    "parent": "LongStream",
+    "signatures": [
+      "public LongStream sorted()"
+    ],
+    "signature_hash": "7e49003f90c47ced51dce8687f86cc2f36cac8bbae1931de29c79008be6ab48b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/LongStream.html",
+    "parameters": [],
+    "return_type": "LongStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the elements of this stream in sorted order."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the elements of this stream in sorted order.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199877",
+    "updatedDate": "2026-03-24T10:48:14.199878",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/DoubleStream/sorted": {
+    "id": "java.util.stream.DoubleStream.sorted",
+    "name": "sorted",
+    "type": "method",
+    "parent": "DoubleStream",
+    "signatures": [
+      "public DoubleStream sorted()"
+    ],
+    "signature_hash": "774a99b05c16a8c4cb16ac17d9440b00e03a685ab0818873f604b97b78325409",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.html",
+    "parameters": [],
+    "return_type": "DoubleStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the elements of this stream in sorted order."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the elements of this stream in sorted order.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200642",
+    "updatedDate": "2026-03-24T10:48:14.200643",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/BaseStream<T,S>>/spliterator": {
+    "id": "java.util.stream.BaseStream<T,S>>.spliterator",
+    "name": "spliterator",
+    "type": "method",
+    "parent": "BaseStream<T,S>>",
+    "signatures": [
+      "public Spliterator<T> spliterator()"
+    ],
+    "signature_hash": "1d98cd133193b3ca1b0ff644bec20c8cc610e79a15334283c39f97234614a59b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/BaseStream.html",
+    "parameters": [],
+    "return_type": "Spliterator<T>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a spliterator for the elements of this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a spliterator for the elements of this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.203132",
+    "updatedDate": "2026-03-24T10:48:14.203133",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/StreamSupport/stream": {
+    "id": "java.util.stream.StreamSupport.stream",
+    "name": "stream",
+    "type": "method",
+    "parent": "StreamSupport",
+    "signatures": [
+      "public static<T> Stream<T> stream(Supplier<? extends Spliterator<T>> supplier, int characteristics, boolean parallel)",
+      "public static<T> Stream<T> stream(Spliterator<T> spliterator, boolean parallel)"
+    ],
+    "signature_hash": "1d2ae4ea191d4654734fbab7bd5e856e1efe3109c419566b514941a033153aa1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/StreamSupport.html",
+    "parameters": [
+      {
+        "name": "supplier",
+        "has_default": false,
+        "default_value": null,
+        "type": "Supplier<? extends Spliterator<T>>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "characteristics",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "parallel",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "spliterator",
+        "has_default": false,
+        "default_value": null,
+        "type": "Spliterator<T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> Stream<T>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates a new sequential or parallelStreamfrom aSupplierofSpliterator."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new sequential or parallelStreamfrom aSupplierofSpliterator.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.202962",
+    "updatedDate": "2026-03-24T10:48:14.202963",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/IntStream/sum": {
+    "id": "java.util.stream.IntStream.sum",
+    "name": "sum",
+    "type": "method",
+    "parent": "IntStream",
+    "signatures": [
+      "public int sum()"
+    ],
+    "signature_hash": "867b1fc96d33627dd41c1f169557c74e25a5dcf90aa1f30cd372beab06630bf8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the sum of elements in this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the sum of elements in this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199088",
+    "updatedDate": "2026-03-24T10:48:14.199089",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/LongStream/sum": {
+    "id": "java.util.stream.LongStream.sum",
+    "name": "sum",
+    "type": "method",
+    "parent": "LongStream",
+    "signatures": [
+      "public long sum()"
+    ],
+    "signature_hash": "6e5f84465197bb76d0bdbf61fc9845963dff5829a3fd66b1723acb3e45926f9c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/LongStream.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the sum of elements in this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the sum of elements in this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199893",
+    "updatedDate": "2026-03-24T10:48:14.199893",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/DoubleStream/sum": {
+    "id": "java.util.stream.DoubleStream.sum",
+    "name": "sum",
+    "type": "method",
+    "parent": "DoubleStream",
+    "signatures": [
+      "public double sum()"
+    ],
+    "signature_hash": "d1b697ca5350e07abc187bddb52b390d2dfceec23f7f0ab03f75aaff63115a27",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.html",
+    "parameters": [],
+    "return_type": "double",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the sum of elements in this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the sum of elements in this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200659",
+    "updatedDate": "2026-03-24T10:48:14.200660",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collectors/summarizingDouble": {
+    "id": "java.util.stream.Collectors.summarizingDouble",
+    "name": "summarizingDouble",
+    "type": "method",
+    "parent": "Collectors",
+    "signatures": [
+      "public static<T> Collector<T, ?, DoubleSummaryStatistics> summarizingDouble(ToDoubleFunction<? super T> mapper)"
+    ],
+    "signature_hash": "f54e8c14fe99f88b62c6b8d30252894ed658f55a5c8b143bc7e6011137fd1617",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [
+      {
+        "name": "mapper",
+        "type": "ToDoubleFunction<? super T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> Collector<T, ?, DoubleSummaryStatistics>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aCollectorwhich applies andouble-producing mapping function to each input element, and returns summary statistics for the resulting values."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aCollectorwhich applies andouble-producing mapping function to each input element, and returns summary statistics for the resulting values.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.201489",
+    "updatedDate": "2026-03-24T10:48:14.201490",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collectors/summarizingInt": {
+    "id": "java.util.stream.Collectors.summarizingInt",
+    "name": "summarizingInt",
+    "type": "method",
+    "parent": "Collectors",
+    "signatures": [
+      "public static<T> Collector<T, ?, IntSummaryStatistics> summarizingInt(ToIntFunction<? super T> mapper)"
+    ],
+    "signature_hash": "d89a72cab232e42a9e7f19083c24e182cfa200e2a789d6121b73ed509c45a0ea",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [
+      {
+        "name": "mapper",
+        "type": "ToIntFunction<? super T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> Collector<T, ?, IntSummaryStatistics>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aCollectorwhich applies anint-producing mapping function to each input element, and returns summary statistics for the resulting values."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aCollectorwhich applies anint-producing mapping function to each input element, and returns summary statistics for the resulting values.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.201512",
+    "updatedDate": "2026-03-24T10:48:14.201513",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collectors/summarizingLong": {
+    "id": "java.util.stream.Collectors.summarizingLong",
+    "name": "summarizingLong",
+    "type": "method",
+    "parent": "Collectors",
+    "signatures": [
+      "public static<T> Collector<T, ?, LongSummaryStatistics> summarizingLong(ToLongFunction<? super T> mapper)"
+    ],
+    "signature_hash": "8553857f080a06b516c9cc8dfc8a04bb36ab142cdb9e219d21a2d8854f494414",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [
+      {
+        "name": "mapper",
+        "type": "ToLongFunction<? super T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> Collector<T, ?, LongSummaryStatistics>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aCollectorwhich applies anlong-producing mapping function to each input element, and returns summary statistics for the resulting values."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aCollectorwhich applies anlong-producing mapping function to each input element, and returns summary statistics for the resulting values.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.201544",
+    "updatedDate": "2026-03-24T10:48:14.201545",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/IntStream/summaryStatistics": {
+    "id": "java.util.stream.IntStream.summaryStatistics",
+    "name": "summaryStatistics",
+    "type": "method",
+    "parent": "IntStream",
+    "signatures": [
+      "public IntSummaryStatistics summaryStatistics()"
+    ],
+    "signature_hash": "eed84700ae201f47e5afcbc34ec557e5f8f9f7b33fe1186404b891513fb558a3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html",
+    "parameters": [],
+    "return_type": "IntSummaryStatistics",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns anIntSummaryStatisticsdescribing various summary data about the elements of this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns anIntSummaryStatisticsdescribing various summary data about the elements of this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199105",
+    "updatedDate": "2026-03-24T10:48:14.199106",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/LongStream/summaryStatistics": {
+    "id": "java.util.stream.LongStream.summaryStatistics",
+    "name": "summaryStatistics",
+    "type": "method",
+    "parent": "LongStream",
+    "signatures": [
+      "public LongSummaryStatistics summaryStatistics()"
+    ],
+    "signature_hash": "71ce87ee322f8ff83a59d73d39ed7fbba1db6e7e07d5847c92e7c49067051a67",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/LongStream.html",
+    "parameters": [],
+    "return_type": "LongSummaryStatistics",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aLongSummaryStatisticsdescribing various summary data about the elements of this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aLongSummaryStatisticsdescribing various summary data about the elements of this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199909",
+    "updatedDate": "2026-03-24T10:48:14.199910",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/DoubleStream/summaryStatistics": {
+    "id": "java.util.stream.DoubleStream.summaryStatistics",
+    "name": "summaryStatistics",
+    "type": "method",
+    "parent": "DoubleStream",
+    "signatures": [
+      "public DoubleSummaryStatistics summaryStatistics()"
+    ],
+    "signature_hash": "ba1250ff84888bd7722c7d3234db1919413dddba71b657ba910f6652100d03a0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.html",
+    "parameters": [],
+    "return_type": "DoubleSummaryStatistics",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aDoubleSummaryStatisticsdescribing various summary data about the elements of this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aDoubleSummaryStatisticsdescribing various summary data about the elements of this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200677",
+    "updatedDate": "2026-03-24T10:48:14.200677",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collectors/summingDouble": {
+    "id": "java.util.stream.Collectors.summingDouble",
+    "name": "summingDouble",
+    "type": "method",
+    "parent": "Collectors",
+    "signatures": [
+      "public static<T> Collector<T, ?, Double> summingDouble(ToDoubleFunction<? super T> mapper)"
+    ],
+    "signature_hash": "dc233f7a5d4aacdb8ce9dbe3ae09d8cfa2b5e6cab567bb36ce83a82bf23a4df5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [
+      {
+        "name": "mapper",
+        "type": "ToDoubleFunction<? super T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> Collector<T, ?, Double>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aCollectorthat produces the sum of a double-valued function applied to the input elements."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aCollectorthat produces the sum of a double-valued function applied to the input elements.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.201568",
+    "updatedDate": "2026-03-24T10:48:14.201569",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collectors/summingInt": {
+    "id": "java.util.stream.Collectors.summingInt",
+    "name": "summingInt",
+    "type": "method",
+    "parent": "Collectors",
+    "signatures": [
+      "public static<T> Collector<T, ?, Integer> summingInt(ToIntFunction<? super T> mapper)"
+    ],
+    "signature_hash": "6e6f70cae34ac35e630aa23cd5a2209f97b5da168e7bae2811cdfdb0fc6579f5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [
+      {
+        "name": "mapper",
+        "type": "ToIntFunction<? super T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> Collector<T, ?, Integer>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aCollectorthat produces the sum of an integer-valued function applied to the input elements."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aCollectorthat produces the sum of an integer-valued function applied to the input elements.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.201591",
+    "updatedDate": "2026-03-24T10:48:14.201592",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collectors/summingLong": {
+    "id": "java.util.stream.Collectors.summingLong",
+    "name": "summingLong",
+    "type": "method",
+    "parent": "Collectors",
+    "signatures": [
+      "public static<T> Collector<T, ?, Long> summingLong(ToLongFunction<? super T> mapper)"
+    ],
+    "signature_hash": "2a46fe3586371dcae1f844b8b85e990aff9fe3f08181dd3d5c306fc71f034cee",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [
+      {
+        "name": "mapper",
+        "type": "ToLongFunction<? super T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> Collector<T, ?, Long>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aCollectorthat produces the sum of a long-valued function applied to the input elements."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aCollectorthat produces the sum of a long-valued function applied to the input elements.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.201614",
+    "updatedDate": "2026-03-24T10:48:14.201615",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collector/supplier": {
+    "id": "java.util.stream.Collector.supplier",
+    "name": "supplier",
+    "type": "method",
+    "parent": "Collector",
+    "signatures": [
+      "public Supplier<A> supplier()"
+    ],
+    "signature_hash": "2bec543fdd91917c8a7fb44fead739684d18b3bbd3a9c96fdb808ff7b2d639b1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html",
+    "parameters": [],
+    "return_type": "Supplier<A>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A function that creates and returns a new mutable result container."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A function that creates and returns a new mutable result container.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200911",
+    "updatedDate": "2026-03-24T10:48:14.200912",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

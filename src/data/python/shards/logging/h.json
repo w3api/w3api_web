@@ -1,0 +1,285 @@
+{
+  "logging/Logger/handlers": {
+    "id": "logging.Logger.handlers",
+    "name": "handlers",
+    "type": "attribute",
+    "parent": "Logger",
+    "signatures": [
+      "handlers"
+    ],
+    "signature_hash": "f885d41a92fec84c62123b2436235048c00e45f441c7c19e0423b76d333eefea",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Logger.handlers",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The list of handlers directly attached to this logger instance. Note This attribute should be treated as read-only; it is normally changed via the addHandler() and removeHandler() methods, which use locks to ensure thread-safe operation."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The list of handlers directly attached to this logger instance. Note This attribute should be treated as read-only; it is normally changed via the addHandler() and removeHandler() methods, which use l...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.240001",
+    "updatedDate": "2026-03-24T10:48:12.240002",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Handler": {
+    "id": "logging.Handler",
+    "name": "Handler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.Handler"
+    ],
+    "signature_hash": "5b26164cd9726efac68659ed4fa2f6a1f08baa24d1ead6373302d4b7552b7f49",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Handler",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "__init__(level=NOTSET)¶ Initializes the Handler instance by setting its level, setting the list of filters to the empty list and creating a lock (using createLock()) for serializing access to an I/O mechanism. createLock()¶ Initializes a thread lock which can be used to serialize access to underlying I/O functionality which may not be threadsafe. acquire()¶ Acquires the thread lock created with createLock(). release()¶ Releases the thread lock acquired with acquire(). setLevel(level)¶ Sets th..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "__init__(level=NOTSET)¶ Initializes the Handler instance by setting its level, setting the list of filters to the empty list and creating a lock (using createLock()) for serializing access to an I/O m...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.240440",
+    "updatedDate": "2026-03-24T10:48:12.240440",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "__init__"
+    ],
+    "methods": [
+      "acquire",
+      "addFilter",
+      "close",
+      "createLock",
+      "emit",
+      "filter",
+      "flush",
+      "format",
+      "handle",
+      "handleError",
+      "release",
+      "removeFilter",
+      "setFormatter",
+      "setLevel"
+    ]
+  },
+  "logging/Logger/handle": {
+    "id": "logging.Logger.handle",
+    "name": "handle",
+    "type": "method",
+    "parent": "Logger",
+    "signatures": [
+      "handle(record)"
+    ],
+    "signature_hash": "35d16fa8afa21737fa4cf8b0b313bebe7e8936280b31d0a0d6a435f1197a6208",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Logger.handle",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Handles a record by passing it to all handlers associated with this logger and its ancestors (until a false value of propagate is found). This method is used for unpickled records received from a socket, as well as those created locally. Logger-level filtering is applied using filter()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Handles a record by passing it to all handlers associated with this logger and its ancestors (until a false value of propagate is found). This method is used for unpickled records received from a sock...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.240323",
+    "updatedDate": "2026-03-24T10:48:12.240324",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Handler/handle": {
+    "id": "logging.Handler.handle",
+    "name": "handle",
+    "type": "method",
+    "parent": "Handler",
+    "signatures": [
+      "handle(record)"
+    ],
+    "signature_hash": "35d16fa8afa21737fa4cf8b0b313bebe7e8936280b31d0a0d6a435f1197a6208",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Handler.handle",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Conditionally emits the specified logging record, depending on filters which may have been added to the handler. Wraps the actual emission of the record with acquisition/release of the I/O thread lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Conditionally emits the specified logging record, depending on filters which may have been added to the handler. Wraps the actual emission of the record with acquisition/release of the I/O thread lock...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.240621",
+    "updatedDate": "2026-03-24T10:48:12.240621",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Handler/handleError": {
+    "id": "logging.Handler.handleError",
+    "name": "handleError",
+    "type": "method",
+    "parent": "Handler",
+    "signatures": [
+      "handleError(record)"
+    ],
+    "signature_hash": "7a283b1769e03f5911a4bb9684cd51eea8ab917d2708f77a95c15e4051649fa9",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Handler.handleError",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This method should be called from handlers when an exception is encountered during an emit() call. If the module-level attribute raiseExceptions is False, exceptions get silently ignored. This is what is mostly wanted for a logging system - most users will not care about errors in the logging system, they are more interested in application errors. You could, however, replace this with a custom handler if you wish. The specified record is the one which was being processed when the exception oc..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method should be called from handlers when an exception is encountered during an emit() call. If the module-level attribute raiseExceptions is False, exceptions get silently ignored. This is what...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.240639",
+    "updatedDate": "2026-03-24T10:48:12.240640",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging/Logger/hasHandlers": {
+    "id": "logging.Logger.hasHandlers",
+    "name": "hasHandlers",
+    "type": "method",
+    "parent": "Logger",
+    "signatures": [
+      "hasHandlers()"
+    ],
+    "signature_hash": "01a7a7202f43510b0463bfb16b3b668fb8bcefec0ec9eff8386ece6319c77329",
+    "url": "https://docs.python.org/3/library/logging.html#module-logging#logging.Logger.hasHandlers",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks to see if this logger has any handlers configured. This is done by looking for handlers in this logger and its parents in the logger hierarchy. Returns True if a handler was found, else False. The method stops searching up the hierarchy whenever a logger with the ‘propagate’ attribute set to false is found - that will be the last logger which is checked for the existence of handlers. Added in version 3.2."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks to see if this logger has any handlers configured. This is done by looking for handlers in this logger and its parents in the logger hierarchy. Returns True if a handler was found, else False. ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.240368",
+    "updatedDate": "2026-03-24T10:48:12.240369",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

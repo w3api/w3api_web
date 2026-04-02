@@ -1,0 +1,330 @@
+{
+  "javax.security.auth/DestroyFailedException/DestroyFailedException": {
+    "id": "javax.security.auth.DestroyFailedException.DestroyFailedException",
+    "name": "DestroyFailedException",
+    "type": "constructor",
+    "parent": "DestroyFailedException",
+    "signatures": [
+      "public DestroyFailedException()",
+      "public DestroyFailedException(String msg)"
+    ],
+    "signature_hash": "c7fb9ae7b91da5db3f3948405f04535e661aa6fd6d8fb9283aaa046c5cbc70e4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/security/auth/DestroyFailedException.html",
+    "parameters": [
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructs a DestroyFailedException with no detail message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a DestroyFailedException with no detail message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.385506",
+    "updatedDate": "2026-03-24T10:48:14.385507",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.security.auth/DestroyFailedException": {
+    "id": "javax.security.auth.DestroyFailedException",
+    "name": "DestroyFailedException",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "class DestroyFailedException"
+    ],
+    "signature_hash": "bdf7d111442284e24c23af2e3e1bf82809a664763a478a0a0d6c223525335024",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/security/auth/DestroyFailedException.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.385490",
+    "updatedDate": "2026-03-24T10:48:14.385491",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "DestroyFailedException"
+    ]
+  },
+  "javax.security.auth/Destroyable": {
+    "id": "javax.security.auth.Destroyable",
+    "name": "Destroyable",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Destroyable"
+    ],
+    "signature_hash": "eddc2f8f226ea580f58da1dd6feb902b4ffc847e73b9e7cc4a1b0a4119e89879",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/security/auth/Destroyable.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.385456",
+    "updatedDate": "2026-03-24T10:48:14.385456",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "destroy",
+      "isDestroyed"
+    ]
+  },
+  "javax.security.auth/Destroyable/destroy": {
+    "id": "javax.security.auth.Destroyable.destroy",
+    "name": "destroy",
+    "type": "method",
+    "parent": "Destroyable",
+    "signatures": [
+      "public default void destroy()"
+    ],
+    "signature_hash": "85aefc523e22acb7242dfea9b5d4560ccdef1a6a1104dfa5bceb451a7274a2ec",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/security/auth/Destroyable.html",
+    "parameters": [],
+    "return_type": "default void",
+    "exceptions": [
+      {
+        "name": "DestroyFailedException",
+        "package": "javax.security.auth"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Destroy thisObject."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Destroy thisObject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.385467",
+    "updatedDate": "2026-03-24T10:48:14.385468",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.security.auth/Subject/doAs": {
+    "id": "javax.security.auth.Subject.doAs",
+    "name": "doAs",
+    "type": "method",
+    "parent": "Subject",
+    "signatures": [
+      "public static<T> T doAs(Subject subject, PrivilegedAction<T> action)",
+      "public static<T> T doAs(Subject subject, PrivilegedExceptionAction<T> action)"
+    ],
+    "signature_hash": "73b0718dc3bd7df3a5134b742aad113dedbc65ce7bdb40b133c1dae13fa62a32",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/security/auth/Subject.html",
+    "parameters": [
+      {
+        "name": "subject",
+        "has_default": false,
+        "default_value": null,
+        "type": "Subject",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "action",
+        "has_default": false,
+        "default_value": null,
+        "type": "PrivilegedAction<T>|PrivilegedExceptionAction<T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> T",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Deprecated, for removal: This API element is subject to removal in a future version.This method originally performed the specifiedPrivilegedActionwith privileges enabled."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated, for removal: This API element is subject to removal in a future version.This method originally performed the specifiedPrivilegedActionwith privileges enabled.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.385815",
+    "updatedDate": "2026-03-24T10:48:14.385816",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.security.auth/Subject/doAsPrivileged": {
+    "id": "javax.security.auth.Subject.doAsPrivileged",
+    "name": "doAsPrivileged",
+    "type": "method",
+    "parent": "Subject",
+    "signatures": [
+      "public static<T> T doAsPrivileged(Subject subject, PrivilegedAction<T> action, AccessControlContext acc)",
+      "public static<T> T doAsPrivileged(Subject subject, PrivilegedExceptionAction<T> action, AccessControlContext acc)"
+    ],
+    "signature_hash": "300ad466868fea923a9946deb636e90604a1f34051cb07fc9384af4fa3e9abde",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/security/auth/Subject.html",
+    "parameters": [
+      {
+        "name": "subject",
+        "has_default": false,
+        "default_value": null,
+        "type": "Subject",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "action",
+        "has_default": false,
+        "default_value": null,
+        "type": "PrivilegedAction<T>|PrivilegedExceptionAction<T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "acc",
+        "has_default": false,
+        "default_value": null,
+        "type": "AccessControlContext",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> T",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Deprecated, for removal: This API element is subject to removal in a future version.This method originally performed the specifiedPrivilegedActionwith privileges enabled and restricted by the specifiedAccessControlContext."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated, for removal: This API element is subject to removal in a future version.This method originally performed the specifiedPrivilegedActionwith privileges enabled and restricted by the specifie...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.385854",
+    "updatedDate": "2026-03-24T10:48:14.385854",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

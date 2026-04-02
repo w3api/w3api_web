@@ -1,0 +1,244 @@
+{
+  "java.nio.channels/MulticastChannel/join": {
+    "id": "java.nio.channels.MulticastChannel.join",
+    "name": "join",
+    "type": "method",
+    "parent": "MulticastChannel",
+    "signatures": [
+      "public MembershipKey join(InetAddress group, NetworkInterface interf)",
+      "public MembershipKey join(InetAddress group, NetworkInterface interf, InetAddress source)"
+    ],
+    "signature_hash": "095ef49b92e0c4d76a04de37117d6122bb3c9eae823f60c7c1212f3b1c467704",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/MulticastChannel.html",
+    "parameters": [
+      {
+        "name": "group",
+        "has_default": false,
+        "default_value": null,
+        "type": "InetAddress",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "interf",
+        "has_default": false,
+        "default_value": null,
+        "type": "NetworkInterface",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "source",
+        "has_default": false,
+        "default_value": null,
+        "type": "InetAddress",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "MembershipKey",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Joins a multicast group to begin receiving all datagrams sent to the group, returning a membership key."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Joins a multicast group to begin receiving all datagrams sent to the group, returning a membership key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.893009",
+    "updatedDate": "2026-03-24T10:48:13.893010",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels": {
+    "type": "package",
+    "name": "java.nio.channels",
+    "id": "java.nio.channels",
+    "description": "Module java.nio.channels",
+    "classes": [
+      "AsynchronousChannelGroup",
+      "AsynchronousFileChannel",
+      "AsynchronousServerSocketChannel",
+      "AsynchronousSocketChannel",
+      "Channels",
+      "DatagramChannel",
+      "FileChannel",
+      "FileLock",
+      "MapMode",
+      "MembershipKey",
+      "Pipe",
+      "SelectableChannel",
+      "SelectionKey",
+      "Selector",
+      "ServerSocketChannel",
+      "SinkChannel",
+      "SocketChannel",
+      "SourceChannel"
+    ],
+    "exceptions": [
+      {
+        "name": "AcceptPendingException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "AlreadyConnectedException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AsynchronousCloseException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "CancelledKeyException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ClosedByInterruptException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ClosedSelectorException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ConnectionPendingException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "FileLockInterruptionException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IllegalBlockingModeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IllegalChannelGroupException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IllegalSelectorException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "InterruptedByTimeoutException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NoConnectionPendingException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NonReadableChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NonWritableChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NotYetBoundException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NotYetConnectedException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "OverlappingFileLockException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ReadPendingException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ShutdownChannelGroupException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "UnresolvedAddressException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "UnsupportedAddressTypeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "WritePendingException",
+        "package": "java.nio.channels"
+      }
+    ],
+    "interfaces": [
+      "AsynchronousByteChannel",
+      "AsynchronousChannel",
+      "ByteChannel",
+      "Channel",
+      "CompletionHandler",
+      "GatheringByteChannel",
+      "InterruptibleChannel",
+      "MulticastChannel",
+      "NetworkChannel",
+      "ReadableByteChannel",
+      "ScatteringByteChannel",
+      "SeekableByteChannel",
+      "WritableByteChannel"
+    ]
+  }
+}

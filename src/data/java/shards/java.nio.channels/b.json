@@ -1,0 +1,588 @@
+{
+  "java.nio.channels/ByteChannel": {
+    "id": "java.nio.channels.ByteChannel",
+    "name": "ByteChannel",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface ByteChannel"
+    ],
+    "signature_hash": "fa165b0878666ff8f3fac0e20d81f5bee073d6ad61792e10488de053b0a1f9c1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/ByteChannel.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.892639",
+    "updatedDate": "2026-03-24T10:48:13.892640",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels/NetworkChannel/bind": {
+    "id": "java.nio.channels.NetworkChannel.bind",
+    "name": "bind",
+    "type": "method",
+    "parent": "NetworkChannel",
+    "signatures": [
+      "public NetworkChannel bind(SocketAddress local)"
+    ],
+    "signature_hash": "740d16f66a055b763447f843be67d676023f4bf5c56b840e5b83a6cdf28b2a22",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/NetworkChannel.html",
+    "parameters": [
+      {
+        "name": "local",
+        "type": "SocketAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "NetworkChannel",
+    "exceptions": [
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "UnsupportedAddressTypeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Binds the channel's socket to a local address."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Binds the channel's socket to a local address.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.892867",
+    "updatedDate": "2026-03-24T10:48:13.892868",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels/DatagramChannel/bind": {
+    "id": "java.nio.channels.DatagramChannel.bind",
+    "name": "bind",
+    "type": "method",
+    "parent": "DatagramChannel",
+    "signatures": [
+      "public abstract DatagramChannel bind(SocketAddress local)"
+    ],
+    "signature_hash": "83cff322d8db37d02f99240d29a68a3f6926f10f6b0c6641a75224c1c00f05cc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/DatagramChannel.html",
+    "parameters": [
+      {
+        "name": "local",
+        "type": "SocketAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract DatagramChannel",
+    "exceptions": [
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "UnsupportedAddressTypeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Binds the channel's socket to a local address."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Binds the channel's socket to a local address.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.893938",
+    "updatedDate": "2026-03-24T10:48:13.893939",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels/ServerSocketChannel/bind": {
+    "id": "java.nio.channels.ServerSocketChannel.bind",
+    "name": "bind",
+    "type": "method",
+    "parent": "ServerSocketChannel",
+    "signatures": [
+      "public final ServerSocketChannel bind(SocketAddress local)",
+      "public abstract ServerSocketChannel bind(SocketAddress local, int backlog)"
+    ],
+    "signature_hash": "36ad0e9017b45bd07cd3796b6653164a6602fcb941d9bcffd42533ae9b33d111",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/ServerSocketChannel.html",
+    "parameters": [
+      {
+        "name": "local",
+        "has_default": false,
+        "default_value": null,
+        "type": "SocketAddress",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "backlog",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final ServerSocketChannel",
+    "exceptions": [
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "UnsupportedAddressTypeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Binds the channel's socket to a local address and configures the socket to listen for connections."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Binds the channel's socket to a local address and configures the socket to listen for connections.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.894415",
+    "updatedDate": "2026-03-24T10:48:13.894415",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels/SocketChannel/bind": {
+    "id": "java.nio.channels.SocketChannel.bind",
+    "name": "bind",
+    "type": "method",
+    "parent": "SocketChannel",
+    "signatures": [
+      "public abstract SocketChannel bind(SocketAddress local)"
+    ],
+    "signature_hash": "6d1398cc91302374169e3fc8c38dbad291cb01d94f9b2bdc74e6f52d21f9266f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/SocketChannel.html",
+    "parameters": [
+      {
+        "name": "local",
+        "type": "SocketAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract SocketChannel",
+    "exceptions": [
+      {
+        "name": "ConnectionPendingException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "UnsupportedAddressTypeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Binds the channel's socket to a local address."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Binds the channel's socket to a local address.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.894565",
+    "updatedDate": "2026-03-24T10:48:13.894566",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels/AsynchronousSocketChannel/bind": {
+    "id": "java.nio.channels.AsynchronousSocketChannel.bind",
+    "name": "bind",
+    "type": "method",
+    "parent": "AsynchronousSocketChannel",
+    "signatures": [
+      "public abstract AsynchronousSocketChannel bind(SocketAddress local)"
+    ],
+    "signature_hash": "c6b5826aa9f88f18d52cddd5d9d3e81022e6c32e9168de9e3614475a4ed18f4c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html",
+    "parameters": [
+      {
+        "name": "local",
+        "type": "SocketAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract AsynchronousSocketChannel",
+    "exceptions": [
+      {
+        "name": "ConnectionPendingException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "UnsupportedAddressTypeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Binds the channel's socket to a local address."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Binds the channel's socket to a local address.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.895951",
+    "updatedDate": "2026-03-24T10:48:13.895952",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels/AsynchronousServerSocketChannel/bind": {
+    "id": "java.nio.channels.AsynchronousServerSocketChannel.bind",
+    "name": "bind",
+    "type": "method",
+    "parent": "AsynchronousServerSocketChannel",
+    "signatures": [
+      "public final AsynchronousServerSocketChannel bind(SocketAddress local)",
+      "public abstract AsynchronousServerSocketChannel bind(SocketAddress local, int backlog)"
+    ],
+    "signature_hash": "553fb90981e8d618f75b2ed5f28b4352c59d0acf775aa28be901c56a6f4d3f22",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html",
+    "parameters": [
+      {
+        "name": "local",
+        "has_default": false,
+        "default_value": null,
+        "type": "SocketAddress",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "backlog",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final AsynchronousServerSocketChannel",
+    "exceptions": [
+      {
+        "name": "AlreadyBoundException",
+        "package": "java.rmi"
+      },
+      {
+        "name": "UnsupportedAddressTypeException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Binds the channel's socket to a local address and configures the socket to listen for connections."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Binds the channel's socket to a local address and configures the socket to listen for connections.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.896421",
+    "updatedDate": "2026-03-24T10:48:13.896422",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels/MembershipKey/block": {
+    "id": "java.nio.channels.MembershipKey.block",
+    "name": "block",
+    "type": "method",
+    "parent": "MembershipKey",
+    "signatures": [
+      "public abstract MembershipKey block(InetAddress source)"
+    ],
+    "signature_hash": "f629b7643a232eda579252a2f221d19fea16d22489ba9eaba4c2411a7c59fbc7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/MembershipKey.html",
+    "parameters": [
+      {
+        "name": "source",
+        "type": "InetAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract MembershipKey",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Block multicast datagrams from the given source address."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Block multicast datagrams from the given source address.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.897556",
+    "updatedDate": "2026-03-24T10:48:13.897557",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels/SelectableChannel/blockingLock": {
+    "id": "java.nio.channels.SelectableChannel.blockingLock",
+    "name": "blockingLock",
+    "type": "method",
+    "parent": "SelectableChannel",
+    "signatures": [
+      "public abstract Object blockingLock()"
+    ],
+    "signature_hash": "fccad69618d5a926f6585edf0af6abf3c696999cbde81ce18c0c6f977103b7f5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/SelectableChannel.html",
+    "parameters": [],
+    "return_type": "abstract Object",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Retrieves the object upon which theconfigureBlockingandregistermethods synchronize."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves the object upon which theconfigureBlockingandregistermethods synchronize.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.893766",
+    "updatedDate": "2026-03-24T10:48:13.893767",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

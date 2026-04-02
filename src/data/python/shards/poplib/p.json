@@ -1,0 +1,253 @@
+{
+  "poplib/POP3": {
+    "id": "poplib.POP3",
+    "name": "POP3",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class poplib.POP3(host, port=POP3_PORT[, timeout])"
+    ],
+    "signature_hash": "37aab668f8fe0d5acacb4d4f0d2514fa325528f8e45f45df52c78c5b6552b9c9",
+    "url": "https://docs.python.org/3/library/poplib.html#module-poplib#poplib.POP3",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "port",
+        "type": "",
+        "has_default": true,
+        "default_value": "POP3_PORT[, timeout",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This class implements the actual POP3 protocol. The connection is created when the instance is initialized. If port is omitted, the standard POP3 port (110) is used. The optional timeout parameter specifies a timeout in seconds for the connection attempt (if not specified, the global default timeout setting will be used). Raises an auditing event poplib.connect with arguments self, host, port. All commands will raise an auditing event poplib.putline with arguments self and line, where line is..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class implements the actual POP3 protocol. The connection is created when the instance is initialized. If port is omitted, the standard POP3 port (110) is used. The optional timeout parameter spe...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.308293",
+    "updatedDate": "2026-03-24T10:48:12.308294",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "apop",
+      "capa",
+      "dele",
+      "getwelcome",
+      "list",
+      "noop",
+      "pass_",
+      "quit",
+      "retr",
+      "rpop",
+      "rset",
+      "set_debuglevel",
+      "stat",
+      "stls",
+      "top",
+      "uidl",
+      "user",
+      "utf8"
+    ]
+  },
+  "poplib/POP3_SSL": {
+    "id": "poplib.POP3_SSL",
+    "name": "POP3_SSL",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class poplib.POP3_SSL(host, port=POP3_SSL_PORT, *, timeout=None, context=None)"
+    ],
+    "signature_hash": "cd5f2ca3cec2d885ecf427c9388ae360a43a0c368fe26fa6dd03a2ce122a8a43",
+    "url": "https://docs.python.org/3/library/poplib.html#module-poplib#poplib.POP3_SSL",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "port",
+        "type": "",
+        "has_default": true,
+        "default_value": "POP3_SSL_PORT",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This is a subclass of POP3 that connects to the server over an SSL encrypted socket. If port is not specified, 995, the standard POP3-over-SSL port is used. timeout works as in the POP3 constructor. context is an optional ssl.SSLContext object which allows bundling SSL configuration options, certificates and private keys into a single (potentially long-lived) structure. Please read Security considerations for best practices. Raises an auditing event poplib.connect with arguments self, host, p..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This is a subclass of POP3 that connects to the server over an SSL encrypted socket. If port is not specified, 995, the standard POP3-over-SSL port is used. timeout works as in the POP3 constructor. c...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.308321",
+    "updatedDate": "2026-03-24T10:48:12.308322",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "poplib/POP3/pass_": {
+    "id": "poplib.POP3.pass_",
+    "name": "pass_",
+    "type": "method",
+    "parent": "POP3",
+    "signatures": [
+      "POP3.pass_(password)"
+    ],
+    "signature_hash": "77ace43963239f0ce33e379de84c3fa672de0584da04104b357efda046b43e0c",
+    "url": "https://docs.python.org/3/library/poplib.html#module-poplib#poplib.POP3.pass_",
+    "parameters": [
+      {
+        "name": "password",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Send password, response includes message count and mailbox size. Note: the mailbox on the server is locked until quit() is called."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Send password, response includes message count and mailbox size. Note: the mailbox on the server is locked until quit() is called.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.308407",
+    "updatedDate": "2026-03-24T10:48:12.308408",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "poplib": {
+    "type": "module",
+    "name": "poplib",
+    "id": "poplib",
+    "description": "Module poplib",
+    "classes": [
+      "POP3",
+      "POP3_SSL"
+    ],
+    "exceptions": [
+      "error_proto"
+    ]
+  }
+}

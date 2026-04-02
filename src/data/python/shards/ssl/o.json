@@ -1,0 +1,816 @@
+{
+  "ssl/SSLContext/options": {
+    "id": "ssl.SSLContext.options",
+    "name": "options",
+    "type": "attribute",
+    "parent": "SSLContext",
+    "signatures": [
+      "SSLContext.options"
+    ],
+    "signature_hash": "07059105b5d5c51edd93238b0911ee46995f69f2f10bc2588d32f0aad1b304c7",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLContext.options",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An integer representing the set of SSL options enabled on this context. The default value is OP_ALL, but you can specify other options such as OP_NO_SSLv2 by ORing them together. Changed in version 3.6: SSLContext.options returns Options flags: >>> ssl.create_default_context().options <Options.OP_ALL|OP_NO_SSLv3|OP_NO_SSLv2|OP_NO_COMPRESSION: 2197947391> Deprecated since version 3.7: All OP_NO_SSL* and OP_NO_TLS* options have been deprecated since Python 3.7. Use SSLContext.minimum_version an..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An integer representing the set of SSL options enabled on this context. The default value is OP_ALL, but you can specify other options such as OP_NO_SSLv2 by ORing them together. Changed in version 3....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.343507",
+    "updatedDate": "2026-03-24T10:48:12.343508",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.7",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/Options": {
+    "id": "ssl.Options",
+    "name": "Options",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ssl.Options"
+    ],
+    "signature_hash": "6666b279212b86e84f44b860c4253568b99344affa4e67956164d85f6781fcc9",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.Options",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "enum.IntFlag collection of OP_* constants."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "enum.IntFlag collection of OP_* constants.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341875",
+    "updatedDate": "2026-03-24T10:48:12.341876",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OPENSSL_VERSION": {
+    "id": "ssl.OPENSSL_VERSION",
+    "name": "OPENSSL_VERSION",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OPENSSL_VERSION"
+    ],
+    "signature_hash": "ee8907515de33fb877ebe16d516f17a2a0dd9e501fd93a845048110baa92846e",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OPENSSL_VERSION",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The version string of the OpenSSL library loaded by the interpreter: >>> ssl.OPENSSL_VERSION 'OpenSSL 1.0.2k 26 Jan 2017' Added in version 3.2."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The version string of the OpenSSL library loaded by the interpreter: >>> ssl.OPENSSL_VERSION 'OpenSSL 1.0.2k 26 Jan 2017' Added in version 3.2.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342164",
+    "updatedDate": "2026-03-24T10:48:12.342164",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OPENSSL_VERSION_INFO": {
+    "id": "ssl.OPENSSL_VERSION_INFO",
+    "name": "OPENSSL_VERSION_INFO",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OPENSSL_VERSION_INFO"
+    ],
+    "signature_hash": "fbc7ebbeed28ece77015178bf582fdd464316f2644259f8647de452a89835882",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OPENSSL_VERSION_INFO",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A tuple of five integers representing version information about the OpenSSL library: >>> ssl.OPENSSL_VERSION_INFO (1, 0, 2, 11, 15) Added in version 3.2."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A tuple of five integers representing version information about the OpenSSL library: >>> ssl.OPENSSL_VERSION_INFO (1, 0, 2, 11, 15) Added in version 3.2.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342179",
+    "updatedDate": "2026-03-24T10:48:12.342180",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OPENSSL_VERSION_NUMBER": {
+    "id": "ssl.OPENSSL_VERSION_NUMBER",
+    "name": "OPENSSL_VERSION_NUMBER",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OPENSSL_VERSION_NUMBER"
+    ],
+    "signature_hash": "bb542c5b0edc1913ad2a796c60c3423bb801c167c77ffc7a338790179801db31",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OPENSSL_VERSION_NUMBER",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The raw version number of the OpenSSL library, as a single integer: >>> ssl.OPENSSL_VERSION_NUMBER 268443839 >>> hex(ssl.OPENSSL_VERSION_NUMBER) '0x100020bf' Added in version 3.2."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The raw version number of the OpenSSL library, as a single integer: >>> ssl.OPENSSL_VERSION_NUMBER 268443839 >>> hex(ssl.OPENSSL_VERSION_NUMBER) '0x100020bf' Added in version 3.2.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342194",
+    "updatedDate": "2026-03-24T10:48:12.342195",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_ALL": {
+    "id": "ssl.OP_ALL",
+    "name": "OP_ALL",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_ALL"
+    ],
+    "signature_hash": "c6f4212fe38e533b4e4caaa018d1782c74763a601f443918b4b57afef4acfa7c",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_ALL",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Enables workarounds for various bugs present in other SSL implementations. This option is set by default. It does not necessarily set the same flags as OpenSSL’s SSL_OP_ALL constant. Added in version 3.2."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enables workarounds for various bugs present in other SSL implementations. This option is set by default. It does not necessarily set the same flags as OpenSSL’s SSL_OP_ALL constant. Added in version ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341684",
+    "updatedDate": "2026-03-24T10:48:12.341684",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_CIPHER_SERVER_PREFERENCE": {
+    "id": "ssl.OP_CIPHER_SERVER_PREFERENCE",
+    "name": "OP_CIPHER_SERVER_PREFERENCE",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_CIPHER_SERVER_PREFERENCE"
+    ],
+    "signature_hash": "c4cd230939fc04bb3ae61d9f1834904868de74afbfde33e921af0509c8623854",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_CIPHER_SERVER_PREFERENCE",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Use the server’s cipher ordering preference, rather than the client’s. This option has no effect on client sockets and SSLv2 server sockets. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Use the server’s cipher ordering preference, rather than the client’s. This option has no effect on client sockets and SSLv2 server sockets. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341813",
+    "updatedDate": "2026-03-24T10:48:12.341814",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_ENABLE_KTLS": {
+    "id": "ssl.OP_ENABLE_KTLS",
+    "name": "OP_ENABLE_KTLS",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_ENABLE_KTLS"
+    ],
+    "signature_hash": "91b5496c5ecfc8157938874ae18252c0ba41a0b2a226eec11cc3bd3ce9427206",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_ENABLE_KTLS",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Enable the use of the kernel TLS. To benefit from the feature, OpenSSL must have been compiled with support for it, and the negotiated cipher suites and extensions must be supported by it (a list of supported ones may vary by platform and kernel version). Note that with enabled kernel TLS some cryptographic operations are performed by the kernel directly and not via any available OpenSSL Providers. This might be undesirable if, for example, the application requires all cryptographic operation..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enable the use of the kernel TLS. To benefit from the feature, OpenSSL must have been compiled with support for it, and the negotiated cipher suites and extensions must be supported by it (a list of s...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341916",
+    "updatedDate": "2026-03-24T10:48:12.341916",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_ENABLE_MIDDLEBOX_COMPAT": {
+    "id": "ssl.OP_ENABLE_MIDDLEBOX_COMPAT",
+    "name": "OP_ENABLE_MIDDLEBOX_COMPAT",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_ENABLE_MIDDLEBOX_COMPAT"
+    ],
+    "signature_hash": "3de3b5a469a2f293878b243712fbe06835cb952e0d0d648518dda5ac8ca5126b",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_ENABLE_MIDDLEBOX_COMPAT",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Send dummy Change Cipher Spec (CCS) messages in TLS 1.3 handshake to make a TLS 1.3 connection look more like a TLS 1.2 connection. This option is only available with OpenSSL 1.1.1 and later. Added in version 3.8."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Send dummy Change Cipher Spec (CCS) messages in TLS 1.3 handshake to make a TLS 1.3 connection look more like a TLS 1.2 connection. This option is only available with OpenSSL 1.1.1 and later. Added in...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341850",
+    "updatedDate": "2026-03-24T10:48:12.341851",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_IGNORE_UNEXPECTED_EOF": {
+    "id": "ssl.OP_IGNORE_UNEXPECTED_EOF",
+    "name": "OP_IGNORE_UNEXPECTED_EOF",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_IGNORE_UNEXPECTED_EOF"
+    ],
+    "signature_hash": "c3a54afb8c5a56fb5d913bd2452f0529090d8ba9c0b25d6ec09cbe52af066cdc",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_IGNORE_UNEXPECTED_EOF",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Ignore unexpected shutdown of TLS connections. This option is only available with OpenSSL 3.0.0 and later. Added in version 3.10."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Ignore unexpected shutdown of TLS connections. This option is only available with OpenSSL 3.0.0 and later. Added in version 3.10.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341900",
+    "updatedDate": "2026-03-24T10:48:12.341901",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_LEGACY_SERVER_CONNECT": {
+    "id": "ssl.OP_LEGACY_SERVER_CONNECT",
+    "name": "OP_LEGACY_SERVER_CONNECT",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_LEGACY_SERVER_CONNECT"
+    ],
+    "signature_hash": "88f8ed3a79d7e71371e5fae4f2d80bdb86a3b5738922de3d06798ce981d456c0",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_LEGACY_SERVER_CONNECT",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Allow legacy insecure renegotiation between OpenSSL and unpatched servers only. Added in version 3.12."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Allow legacy insecure renegotiation between OpenSSL and unpatched servers only. Added in version 3.12.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341928",
+    "updatedDate": "2026-03-24T10:48:12.341928",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_NO_COMPRESSION": {
+    "id": "ssl.OP_NO_COMPRESSION",
+    "name": "OP_NO_COMPRESSION",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_NO_COMPRESSION"
+    ],
+    "signature_hash": "b6b993ef2053f30ade3ee25b9d6a246aa860a4db737485c714009028ec262306",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_NO_COMPRESSION",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Disable compression on the SSL channel. This is useful if the application protocol supports its own compression scheme. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Disable compression on the SSL channel. This is useful if the application protocol supports its own compression scheme. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341862",
+    "updatedDate": "2026-03-24T10:48:12.341863",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_NO_RENEGOTIATION": {
+    "id": "ssl.OP_NO_RENEGOTIATION",
+    "name": "OP_NO_RENEGOTIATION",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_NO_RENEGOTIATION"
+    ],
+    "signature_hash": "0901928d902025108b5e47a1a5ad43485f1d895558520343c7f6e1ab71e37fd2",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_NO_RENEGOTIATION",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Disable all renegotiation in TLSv1.2 and earlier. Do not send HelloRequest messages, and ignore renegotiation requests via ClientHello. This option is only available with OpenSSL 1.1.0h and later. Added in version 3.7."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Disable all renegotiation in TLSv1.2 and earlier. Do not send HelloRequest messages, and ignore renegotiation requests via ClientHello. This option is only available with OpenSSL 1.1.0h and later. Add...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341800",
+    "updatedDate": "2026-03-24T10:48:12.341800",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_NO_SSLv2": {
+    "id": "ssl.OP_NO_SSLv2",
+    "name": "OP_NO_SSLv2",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_NO_SSLv2"
+    ],
+    "signature_hash": "049f2bf37ad1abc132f24802105bf7e0e2cf7508c485047ed65abf78e0e9651f",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_NO_SSLv2",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prevents an SSLv2 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing SSLv2 as the protocol version. Added in version 3.2. Deprecated since version 3.6: SSLv2 is deprecated"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prevents an SSLv2 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing SSLv2 as the protocol version. Added in version 3.2. Deprecated since...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341715",
+    "updatedDate": "2026-03-24T10:48:12.341716",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.6",
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_NO_SSLv3": {
+    "id": "ssl.OP_NO_SSLv3",
+    "name": "OP_NO_SSLv3",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_NO_SSLv3"
+    ],
+    "signature_hash": "7a1f20e804bed6169c5106cb2b4b41fb7e7382c5ee9f3be74b9bfa776f3ffddb",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_NO_SSLv3",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prevents an SSLv3 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing SSLv3 as the protocol version. Added in version 3.2. Deprecated since version 3.6: SSLv3 is deprecated"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prevents an SSLv3 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing SSLv3 as the protocol version. Added in version 3.2. Deprecated since...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341728",
+    "updatedDate": "2026-03-24T10:48:12.341729",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.6",
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_NO_TICKET": {
+    "id": "ssl.OP_NO_TICKET",
+    "name": "OP_NO_TICKET",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_NO_TICKET"
+    ],
+    "signature_hash": "c2e039c18a40829b919c7f467867454c4ae426e155e68d0486b758dd3a95b3a4",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_NO_TICKET",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prevent client side from requesting a session ticket. Added in version 3.6."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prevent client side from requesting a session ticket. Added in version 3.6.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341888",
+    "updatedDate": "2026-03-24T10:48:12.341889",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.6.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_NO_TLSv1": {
+    "id": "ssl.OP_NO_TLSv1",
+    "name": "OP_NO_TLSv1",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_NO_TLSv1"
+    ],
+    "signature_hash": "2d7f5e1540e6d015d9f0c1b42d60f5844253db70bb644616652044ecb639e42b",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_NO_TLSv1",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prevents a TLSv1 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing TLSv1 as the protocol version. Added in version 3.2. Deprecated since version 3.7: The option is deprecated since OpenSSL 1.1.0, use the new SSLContext.minimum_version and SSLContext.maximum_version instead."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prevents a TLSv1 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing TLSv1 as the protocol version. Added in version 3.2. Deprecated since ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341746",
+    "updatedDate": "2026-03-24T10:48:12.341747",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.7",
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_NO_TLSv1_1": {
+    "id": "ssl.OP_NO_TLSv1_1",
+    "name": "OP_NO_TLSv1_1",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_NO_TLSv1_1"
+    ],
+    "signature_hash": "310c398498f1aa7e29daa6b30121af8ad33f93a00b05b96768d1bac70520ce37",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_NO_TLSv1_1",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prevents a TLSv1.1 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing TLSv1.1 as the protocol version. Available only with openssl version 1.0.1+. Added in version 3.4. Deprecated since version 3.7: The option is deprecated since OpenSSL 1.1.0."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prevents a TLSv1.1 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing TLSv1.1 as the protocol version. Available only with openssl version...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341760",
+    "updatedDate": "2026-03-24T10:48:12.341760",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.7",
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_NO_TLSv1_2": {
+    "id": "ssl.OP_NO_TLSv1_2",
+    "name": "OP_NO_TLSv1_2",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_NO_TLSv1_2"
+    ],
+    "signature_hash": "16fc70faf92548c7f8bcd7b0f5fe897072d8b739b5e96f92fdd1a3048792ec4c",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_NO_TLSv1_2",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prevents a TLSv1.2 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing TLSv1.2 as the protocol version. Available only with openssl version 1.0.1+. Added in version 3.4. Deprecated since version 3.7: The option is deprecated since OpenSSL 1.1.0."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prevents a TLSv1.2 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing TLSv1.2 as the protocol version. Available only with openssl version...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341773",
+    "updatedDate": "2026-03-24T10:48:12.341773",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.7",
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_NO_TLSv1_3": {
+    "id": "ssl.OP_NO_TLSv1_3",
+    "name": "OP_NO_TLSv1_3",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_NO_TLSv1_3"
+    ],
+    "signature_hash": "09ea15797cbe28e53c35fdc3d86b298b83ee7af7a1bf4864af3fa9f09c011888",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_NO_TLSv1_3",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prevents a TLSv1.3 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing TLSv1.3 as the protocol version. TLS 1.3 is available with OpenSSL 1.1.1 or later. When Python has been compiled against an older version of OpenSSL, the flag defaults to 0. Added in version 3.6.3. Deprecated since version 3.7: The option is deprecated since OpenSSL 1.1.0. It was added to 2.7.15 and 3.6.3 for backwards compatibility with OpenSSL 1.0.2."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prevents a TLSv1.3 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing TLSv1.3 as the protocol version. TLS 1.3 is available with OpenSSL 1...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341787",
+    "updatedDate": "2026-03-24T10:48:12.341788",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.7",
+      "added_version": "3.6.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_SINGLE_DH_USE": {
+    "id": "ssl.OP_SINGLE_DH_USE",
+    "name": "OP_SINGLE_DH_USE",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_SINGLE_DH_USE"
+    ],
+    "signature_hash": "ae1aacc4fd4f15a75e329e8244ff00956efcc8f6ec956ac7ad0028fa0fe7ad15",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_SINGLE_DH_USE",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prevents reuse of the same DH key for distinct SSL sessions. This improves forward secrecy but requires more computational resources. This option only applies to server sockets. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prevents reuse of the same DH key for distinct SSL sessions. This improves forward secrecy but requires more computational resources. This option only applies to server sockets. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341825",
+    "updatedDate": "2026-03-24T10:48:12.341826",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/OP_SINGLE_ECDH_USE": {
+    "id": "ssl.OP_SINGLE_ECDH_USE",
+    "name": "OP_SINGLE_ECDH_USE",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.OP_SINGLE_ECDH_USE"
+    ],
+    "signature_hash": "32f504da7b52705155943cc9c94a24b91926af5021afeeeb5e3be1c337d4cdb2",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.OP_SINGLE_ECDH_USE",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prevents reuse of the same ECDH key for distinct SSL sessions. This improves forward secrecy but requires more computational resources. This option only applies to server sockets. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prevents reuse of the same ECDH key for distinct SSL sessions. This improves forward secrecy but requires more computational resources. This option only applies to server sockets. Added in version 3.3...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.341838",
+    "updatedDate": "2026-03-24T10:48:12.341838",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

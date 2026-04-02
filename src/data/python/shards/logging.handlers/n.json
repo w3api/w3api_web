@@ -1,0 +1,165 @@
+{
+  "logging.handlers/BaseRotatingHandler/namer": {
+    "id": "logging.handlers.BaseRotatingHandler.namer",
+    "name": "namer",
+    "type": "attribute",
+    "parent": "BaseRotatingHandler",
+    "signatures": [
+      "namer"
+    ],
+    "signature_hash": "a13f7e320db64dac727bb97129a9eb918c6253a3fffd5bfcf9f550cdd3020fc1",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.BaseRotatingHandler.namer",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "If this attribute is set to a callable, the rotation_filename() method delegates to this callable. The parameters passed to the callable are those passed to rotation_filename(). Note The namer function is called quite a few times during rollover, so it should be as simple and as fast as possible. It should also return the same output every time for a given input, otherwise the rollover behaviour may not work as expected. It’s also worth noting that care should be taken when using a namer to p..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If this attribute is set to a callable, the rotation_filename() method delegates to this callable. The parameters passed to the callable are those passed to rotation_filename(). Note The namer functio...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.241946",
+    "updatedDate": "2026-03-24T10:48:12.241947",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/NTEventLogHandler": {
+    "id": "logging.handlers.NTEventLogHandler",
+    "name": "NTEventLogHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.handlers.NTEventLogHandler(appname, dllname=None, logtype='Application')"
+    ],
+    "signature_hash": "4867cfdd1a6fe907b4ca434768d8a2937a6565b4ef35d3bafc13690a9897b15f",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.NTEventLogHandler",
+    "parameters": [
+      {
+        "name": "appname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "dllname",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "logtype",
+        "type": "",
+        "has_default": true,
+        "default_value": "'Application'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a new instance of the NTEventLogHandler class. The appname is used to define the application name as it appears in the event log. An appropriate registry entry is created using this name. The dllname should give the fully qualified pathname of a .dll or .exe which contains message definitions to hold in the log (if not specified, 'win32service.pyd' is used - this is installed with the Win32 extensions and contains some basic placeholder message definitions. Note that use of these plac..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the NTEventLogHandler class. The appname is used to define the application name as it appears in the event log. An appropriate registry entry is created using this name. The ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.242701",
+    "updatedDate": "2026-03-24T10:48:12.242702",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "close",
+      "emit",
+      "getEventCategory",
+      "getEventType",
+      "getMessageID"
+    ]
+  },
+  "logging.handlers/NullHandler": {
+    "id": "logging.handlers.NullHandler",
+    "name": "NullHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.NullHandler"
+    ],
+    "signature_hash": "4d1da2cd87d29ef872cbc8b24afabd562c924a880321923aecb8bb0523c18c23",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.NullHandler",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a new instance of the NullHandler class. emit(record)¶ This method does nothing. handle(record)¶ This method does nothing. createLock()¶ This method returns None for the lock, since there is no underlying I/O to which access needs to be serialized."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the NullHandler class. emit(record)¶ This method does nothing. handle(record)¶ This method does nothing. createLock()¶ This method returns None for the lock, since there is n...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.241796",
+    "updatedDate": "2026-03-24T10:48:12.241797",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "createLock",
+      "emit",
+      "handle"
+    ]
+  }
+}

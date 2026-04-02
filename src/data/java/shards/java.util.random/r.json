@@ -1,0 +1,269 @@
+{
+  "java.util.random/RandomGeneratorFactory": {
+    "id": "java.util.random.RandomGeneratorFactory",
+    "name": "RandomGeneratorFactory",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class RandomGeneratorFactory<T extendsRandomGenerator>"
+    ],
+    "signature_hash": "17278e0266b0b00e91b99cd369502ec6b3a80259a16e597da8870e54d44b0981",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGeneratorFactory.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194968",
+    "updatedDate": "2026-03-24T10:48:14.194969",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "all",
+      "create",
+      "equidistribution",
+      "getDefault",
+      "group",
+      "isArbitrarilyJumpable",
+      "isDeprecated",
+      "isHardware",
+      "isJumpable",
+      "isLeapable",
+      "isSplittable",
+      "isStatistical",
+      "isStochastic",
+      "isStreamable",
+      "name",
+      "of",
+      "period",
+      "stateBits"
+    ]
+  },
+  "java.util.random/RandomGenerator": {
+    "id": "java.util.random.RandomGenerator",
+    "name": "RandomGenerator",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface RandomGenerator"
+    ],
+    "signature_hash": "42265a774cbbfb94b54050bebc3dddbc01f6515f123f951fd1b7344d0078ce81",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194604",
+    "updatedDate": "2026-03-24T10:48:14.194605",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "doubles",
+      "equiDoubles",
+      "getDefault",
+      "ints",
+      "isDeprecated",
+      "longs",
+      "nextBoolean",
+      "nextBytes",
+      "nextDouble",
+      "nextExponential",
+      "nextFloat",
+      "nextGaussian",
+      "nextInt",
+      "nextLong",
+      "of"
+    ]
+  },
+  "java.util.random/StreamableGenerator/rngs": {
+    "id": "java.util.random.StreamableGenerator.rngs",
+    "name": "rngs",
+    "type": "method",
+    "parent": "StreamableGenerator",
+    "signatures": [
+      "public Stream<RandomGenerator> rngs()",
+      "public default Stream<RandomGenerator> rngs(long streamSize)"
+    ],
+    "signature_hash": "6b115f19840a2872e9684be46716015ce3bebf6202dbb182aaeae0a8ce757dee",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.StreamableGenerator.html",
+    "parameters": [
+      {
+        "name": "streamSize",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Stream<RandomGenerator>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an effectively unlimited stream of objects, each of which implements theRandomGeneratorinterface."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an effectively unlimited stream of objects, each of which implements theRandomGeneratorinterface.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195289",
+    "updatedDate": "2026-03-24T10:48:14.195290",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.random/SplittableGenerator/rngs": {
+    "id": "java.util.random.SplittableGenerator.rngs",
+    "name": "rngs",
+    "type": "method",
+    "parent": "SplittableGenerator",
+    "signatures": [
+      "public default Stream<RandomGenerator> rngs()",
+      "public default Stream<RandomGenerator> rngs(long streamSize)"
+    ],
+    "signature_hash": "3377db6df0d9746b0a99f015a36135146024258761c9eb4287d8a5635683313e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.SplittableGenerator.html",
+    "parameters": [
+      {
+        "name": "streamSize",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default Stream<RandomGenerator>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an effectively unlimited stream of new pseudorandom number generators, each of which implements theRandomGeneratorinterface."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an effectively unlimited stream of new pseudorandom number generators, each of which implements theRandomGeneratorinterface.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195338",
+    "updatedDate": "2026-03-24T10:48:14.195339",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.random/JumpableGenerator/rngs": {
+    "id": "java.util.random.JumpableGenerator.rngs",
+    "name": "rngs",
+    "type": "method",
+    "parent": "JumpableGenerator",
+    "signatures": [
+      "public default Stream<RandomGenerator> rngs()",
+      "public default Stream<RandomGenerator> rngs(long streamSize)"
+    ],
+    "signature_hash": "3377db6df0d9746b0a99f015a36135146024258761c9eb4287d8a5635683313e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.JumpableGenerator.html",
+    "parameters": [
+      {
+        "name": "streamSize",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default Stream<RandomGenerator>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an effectively unlimited stream of new pseudorandom number generators, each of which implements theRandomGeneratorinterface."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an effectively unlimited stream of new pseudorandom number generators, each of which implements theRandomGeneratorinterface.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195524",
+    "updatedDate": "2026-03-24T10:48:14.195525",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,597 @@
+{
+  "javax.annotation.processing/AbstractProcessor/processingEnv": {
+    "id": "javax.annotation.processing.AbstractProcessor.processingEnv",
+    "name": "processingEnv",
+    "type": "field",
+    "parent": "AbstractProcessor",
+    "signatures": [
+      "protected ProcessingEnvironment processingEnv"
+    ],
+    "signature_hash": "d0f2084eae5b84f445f4f72dddb9a0c7fd5a92626123a073d04d80c790593d41",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html",
+    "parameters": [],
+    "return_type": "protected ProcessingEnvironment",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Processing environment providing by the tool framework."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Processing environment providing by the tool framework.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.219013",
+    "updatedDate": "2026-03-24T10:48:14.219014",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.annotation.processing/ProcessingEnvironment": {
+    "id": "javax.annotation.processing.ProcessingEnvironment",
+    "name": "ProcessingEnvironment",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface ProcessingEnvironment"
+    ],
+    "signature_hash": "8f336fb268bc70f35ad0f1335ee8b4403e7d1fc51a3b6f6252f1989b060626cf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.219405",
+    "updatedDate": "2026-03-24T10:48:14.219406",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getElementUtils",
+      "getFiler",
+      "getLocale",
+      "getMessager",
+      "getOptions",
+      "getSourceVersion",
+      "getTypeUtils",
+      "isPreviewEnabled"
+    ]
+  },
+  "javax.annotation.processing/Processor": {
+    "id": "javax.annotation.processing.Processor",
+    "name": "Processor",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Processor"
+    ],
+    "signature_hash": "f06c418a0c1bcfcdd90fce21a08d4024d945b60c04d41203f80fea3b13039107",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/annotation/processing/Processor.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.219520",
+    "updatedDate": "2026-03-24T10:48:14.219521",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getCompletions",
+      "getSupportedAnnotationTypes",
+      "getSupportedOptions",
+      "getSupportedSourceVersion",
+      "init",
+      "process"
+    ]
+  },
+  "javax.annotation.processing/Messager/printError": {
+    "id": "javax.annotation.processing.Messager.printError",
+    "name": "printError",
+    "type": "method",
+    "parent": "Messager",
+    "signatures": [
+      "public default void printError(CharSequence msg)",
+      "public default void printError(CharSequence msg, Element e)"
+    ],
+    "signature_hash": "394e8a78bf2b91288d48cfe6feb70b11a2bc0eef2f30c80818b88883b2eeda9b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/annotation/processing/Messager.html",
+    "parameters": [
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharSequence",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "e",
+        "has_default": false,
+        "default_value": null,
+        "type": "Element",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prints an error."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prints an error.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.219281",
+    "updatedDate": "2026-03-24T10:48:14.219282",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.annotation.processing/Messager/printMessage": {
+    "id": "javax.annotation.processing.Messager.printMessage",
+    "name": "printMessage",
+    "type": "method",
+    "parent": "Messager",
+    "signatures": [
+      "public void printMessage(Diagnostic.Kind kind, CharSequence msg)",
+      "public void printMessage(Diagnostic.Kind kind, CharSequence msg, Element e)",
+      "public void printMessage(Diagnostic.Kind kind, CharSequence msg, Element e, AnnotationMirror a)",
+      "public void printMessage(Diagnostic.Kind kind, CharSequence msg, Element e, AnnotationMirror a, AnnotationValue v)"
+    ],
+    "signature_hash": "ea3cd1d47f44ec5f24ce07b3864499ffd5c6d240d3e5dd14602d9bba27080a53",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/annotation/processing/Messager.html",
+    "parameters": [
+      {
+        "name": "kind",
+        "has_default": false,
+        "default_value": null,
+        "type": "Diagnostic.Kind",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharSequence",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "e",
+        "has_default": false,
+        "default_value": null,
+        "type": "Element",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "a",
+        "has_default": false,
+        "default_value": null,
+        "type": "AnnotationMirror",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "v",
+        "has_default": false,
+        "default_value": null,
+        "type": "AnnotationValue",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prints a message of the specified kind."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prints a message of the specified kind.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.219347",
+    "updatedDate": "2026-03-24T10:48:14.219348",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.annotation.processing/Messager/printNote": {
+    "id": "javax.annotation.processing.Messager.printNote",
+    "name": "printNote",
+    "type": "method",
+    "parent": "Messager",
+    "signatures": [
+      "public default void printNote(CharSequence msg)",
+      "public default void printNote(CharSequence msg, Element e)"
+    ],
+    "signature_hash": "3bdf4fb2b8671eef4744b0fbc42200abba0964b3510ca6c0a20ab097b26f16c4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/annotation/processing/Messager.html",
+    "parameters": [
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharSequence",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "e",
+        "has_default": false,
+        "default_value": null,
+        "type": "Element",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prints a note."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prints a note.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.219370",
+    "updatedDate": "2026-03-24T10:48:14.219371",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.annotation.processing/Messager/printWarning": {
+    "id": "javax.annotation.processing.Messager.printWarning",
+    "name": "printWarning",
+    "type": "method",
+    "parent": "Messager",
+    "signatures": [
+      "public default void printWarning(CharSequence msg)",
+      "public default void printWarning(CharSequence msg, Element e)"
+    ],
+    "signature_hash": "623df659b6c85f67b504013d195658c8e0239ecd4f3c8e2209576c528637ab66",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/annotation/processing/Messager.html",
+    "parameters": [
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharSequence",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "e",
+        "has_default": false,
+        "default_value": null,
+        "type": "Element",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prints a warning."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prints a warning.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.219393",
+    "updatedDate": "2026-03-24T10:48:14.219394",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.annotation.processing/AbstractProcessor/process": {
+    "id": "javax.annotation.processing.AbstractProcessor.process",
+    "name": "process",
+    "type": "method",
+    "parent": "AbstractProcessor",
+    "signatures": [
+      "public abstract boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv)"
+    ],
+    "signature_hash": "319ac5f1ff20ab2f7b5ed6139c7f05df2feb6782c7bbbbfb9cf13fa3cf0ed06f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html",
+    "parameters": [
+      {
+        "name": "annotations",
+        "type": "Set<? extends TypeElement>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "roundEnv",
+        "type": "RoundEnvironment",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Processes a set of annotation interfaces onroot elementsoriginating from the prior round and returns whether or not these annotation interfaces are claimed by this processor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Processes a set of annotation interfaces onroot elementsoriginating from the prior round and returns whether or not these annotation interfaces are claimed by this processor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.219001",
+    "updatedDate": "2026-03-24T10:48:14.219002",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.annotation.processing/Processor/process": {
+    "id": "javax.annotation.processing.Processor.process",
+    "name": "process",
+    "type": "method",
+    "parent": "Processor",
+    "signatures": [
+      "public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv)"
+    ],
+    "signature_hash": "bd927235286ad1bea9f7d4889658fc540bf622d1797e96c97b9114424fca5522",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/annotation/processing/Processor.html",
+    "parameters": [
+      {
+        "name": "annotations",
+        "type": "Set<? extends TypeElement>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "roundEnv",
+        "type": "RoundEnvironment",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Processes a set of annotation interfaces onroot elementsoriginating from the prior round and returns whether or not these annotation interfaces are claimed by this processor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Processes a set of annotation interfaces onroot elementsoriginating from the prior round and returns whether or not these annotation interfaces are claimed by this processor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.219635",
+    "updatedDate": "2026-03-24T10:48:14.219636",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.annotation.processing/RoundEnvironment/processingOver": {
+    "id": "javax.annotation.processing.RoundEnvironment.processingOver",
+    "name": "processingOver",
+    "type": "method",
+    "parent": "RoundEnvironment",
+    "signatures": [
+      "public boolean processingOver()"
+    ],
+    "signature_hash": "404349dcb0e8d8be664585ebb14a6257be07ec851f406d9110c099ab3d7fd0b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returnstrueif types generated by this round will not be subject to a subsequent round of annotation processing; returnsfalseotherwise."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif types generated by this round will not be subject to a subsequent round of annotation processing; returnsfalseotherwise.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.219742",
+    "updatedDate": "2026-03-24T10:48:14.219743",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

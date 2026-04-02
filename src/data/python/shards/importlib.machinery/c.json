@@ -1,0 +1,231 @@
+{
+  "importlib.machinery/ModuleSpec/cached": {
+    "id": "importlib.machinery.ModuleSpec.cached",
+    "name": "cached",
+    "type": "attribute",
+    "parent": "ModuleSpec",
+    "signatures": [
+      "cached"
+    ],
+    "signature_hash": "3673014e72b67383be302485694555a57ad393afdebaed6ded110a775bd0556d",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.machinery.ModuleSpec.cached",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The filename of a compiled version of the module’s code (see module.__cached__). The finder should always set this attribute but it may be None for modules that do not need compiled code stored."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The filename of a compiled version of the module’s code (see module.__cached__). The finder should always set this attribute but it may be None for modules that do not need compiled code stored.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.229745",
+    "updatedDate": "2026-03-24T10:48:12.229746",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.machinery/cache_from_source": {
+    "id": "importlib.machinery.cache_from_source",
+    "name": "cache_from_source",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "importlib.util.cache_from_source(path, debug_override=None, *, optimization=None)"
+    ],
+    "signature_hash": "0fd85af809e4752715513befce025d66c7757a8d006f435dbadb06f39f4b4df6",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.util.cache_from_source",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "debug_override",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "optimization",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the PEP 3147/PEP 488 path to the byte-compiled file associated with the source path. For example, if path is /foo/bar/baz.py the return value would be /foo/bar/__pycache__/baz.cpython-32.pyc for Python 3.2. The cpython-32 string comes from the current magic tag (see get_tag(); if sys.implementation.cache_tag is not defined then NotImplementedError will be raised). The optimization parameter is used to specify the optimization level of the bytecode file. An empty string represents no op..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the PEP 3147/PEP 488 path to the byte-compiled file associated with the source path. For example, if path is /foo/bar/baz.py the return value would be /foo/bar/__pycache__/baz.cpython-32.pyc fo...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.229875",
+    "updatedDate": "2026-03-24T10:48:12.229876",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.machinery/Loader/create_module": {
+    "id": "importlib.machinery.Loader.create_module",
+    "name": "create_module",
+    "type": "method",
+    "parent": "Loader",
+    "signatures": [
+      "create_module(spec)"
+    ],
+    "signature_hash": "22a00b1d2856c13ea00310dffbdd2fbe9353663f2fc32790c96330a70749f6ed",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.abc.Loader.create_module",
+    "parameters": [
+      {
+        "name": "spec",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A method that returns the module object to use when importing a module. This method may return None, indicating that default module creation semantics should take place. Added in version 3.4. Changed in version 3.6: This method is no longer optional when exec_module() is defined."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A method that returns the module object to use when importing a module. This method may return None, indicating that default module creation semantics should take place. Added in version 3.4. Changed ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.228490",
+    "updatedDate": "2026-03-24T10:48:12.228490",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.machinery/ExtensionFileLoader/create_module": {
+    "id": "importlib.machinery.ExtensionFileLoader.create_module",
+    "name": "create_module",
+    "type": "method",
+    "parent": "ExtensionFileLoader",
+    "signatures": [
+      "create_module(spec)"
+    ],
+    "signature_hash": "22a00b1d2856c13ea00310dffbdd2fbe9353663f2fc32790c96330a70749f6ed",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.machinery.ExtensionFileLoader.create_module",
+    "parameters": [
+      {
+        "name": "spec",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates the module object from the given specification in accordance with PEP 489. Added in version 3.5."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates the module object from the given specification in accordance with PEP 489. Added in version 3.5.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.229519",
+    "updatedDate": "2026-03-24T10:48:12.229520",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

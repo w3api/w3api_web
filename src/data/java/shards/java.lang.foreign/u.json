@@ -1,0 +1,252 @@
+{
+  "java.lang.foreign/UnionLayout": {
+    "id": "java.lang.foreign.UnionLayout",
+    "name": "UnionLayout",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface UnionLayout"
+    ],
+    "signature_hash": "8373fa1645aafb1e8aaae30bc153896f2c4574ab30d9d3d26e27b4ffa39c6880",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/UnionLayout.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.824265",
+    "updatedDate": "2026-03-24T10:48:13.824266",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "withByteAlignment",
+      "withName",
+      "withoutName"
+    ]
+  },
+  "java.lang.foreign/MemoryLayout/unionLayout": {
+    "id": "java.lang.foreign.MemoryLayout.unionLayout",
+    "name": "unionLayout",
+    "type": "method",
+    "parent": "MemoryLayout",
+    "signatures": [
+      "public static UnionLayout unionLayout(MemoryLayout... elements)"
+    ],
+    "signature_hash": "c3f08b8cf46f07bd9c3f5eea7aac056038198608fd75abcfe8e183c8264ee7b5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemoryLayout.html",
+    "parameters": [
+      {
+        "name": "elements",
+        "type": "MemoryLayout...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static UnionLayout",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates a union layout with the given member layouts."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a union layout with the given member layouts.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.823420",
+    "updatedDate": "2026-03-24T10:48:13.823421",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/unload": {
+    "id": "java.lang.foreign.MemorySegment.unload",
+    "name": "unload",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public void unload()"
+    ],
+    "signature_hash": "de087bbbf3aba062679bce0285c839ad7e9396ab60a3afb36df523b9f882d23b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongThreadException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Unloads the contents of this mapped segment from physical memory."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Unloads the contents of this mapped segment from physical memory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822080",
+    "updatedDate": "2026-03-24T10:48:13.822081",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/Linker/upcallStub": {
+    "id": "java.lang.foreign.Linker.upcallStub",
+    "name": "upcallStub",
+    "type": "method",
+    "parent": "Linker",
+    "signatures": [
+      "public MemorySegment upcallStub(MethodHandle target, FunctionDescriptor function, Arena arena, Linker.Option... options)"
+    ],
+    "signature_hash": "687884c8e1d2b728ecd8b3f0eb7e996fca6f35fc056551350755a84e8ae3a60f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/Linker.html",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "MethodHandle",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "function",
+        "type": "FunctionDescriptor",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "arena",
+        "type": "Arena",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "options",
+        "type": "Linker.Option...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "MemorySegment",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongThreadException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalCallerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Restricted.Creates an upcall stub which can be passed to other foreign functions as a function pointer, associated with the given arena."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Restricted.Creates an upcall stub which can be passed to other foreign functions as a function pointer, associated with the given arena.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822801",
+    "updatedDate": "2026-03-24T10:48:13.822802",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

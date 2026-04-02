@@ -1,0 +1,175 @@
+{
+  "compression.zstd/CompressionParameter/search_log": {
+    "id": "compression.zstd.CompressionParameter.search_log",
+    "name": "search_log",
+    "type": "attribute",
+    "parent": "CompressionParameter",
+    "signatures": [
+      "search_log"
+    ],
+    "signature_hash": "e5d5e1591cb19b88fad956644314078c2a9da410462ee193f6aa2167646f474a",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.CompressionParameter.search_log",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Number of search attempts, as a power of two. More attempts result in better and slower compression. This parameter is useless for fast and dfast strategies. A value of zero causes the value to be selected automatically."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Number of search attempts, as a power of two. More attempts result in better and slower compression. This parameter is useless for fast and dfast strategies. A value of zero causes the value to be sel...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174610",
+    "updatedDate": "2026-03-24T10:48:12.174611",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/CompressionParameter/strategy": {
+    "id": "compression.zstd.CompressionParameter.strategy",
+    "name": "strategy",
+    "type": "attribute",
+    "parent": "CompressionParameter",
+    "signatures": [
+      "strategy"
+    ],
+    "signature_hash": "73dff70e25ad51ca765a584eef93a1cd909527e2ef4860e0b12f0a7e7ae1979a",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.CompressionParameter.strategy",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The higher the value of selected strategy, the more complex the compression technique used by zstd, resulting in higher compression ratios but slower compression. See also Strategy"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The higher the value of selected strategy, the more complex the compression technique used by zstd, resulting in higher compression ratios but slower compression. See also Strategy",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174662",
+    "updatedDate": "2026-03-24T10:48:12.174663",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/Strategy": {
+    "id": "compression.zstd.Strategy",
+    "name": "Strategy",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class compression.zstd.Strategy"
+    ],
+    "signature_hash": "f1b001080ec859a5c197fb1f2940aeff0c876a9cef255dd51c32c44ca54d5722",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.Strategy",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An IntEnum containing strategies for compression. Higher-numbered strategies correspond to more complex and slower compression. Note The values of attributes of Strategy are not necessarily stable across zstd versions. Only the ordering of the attributes may be relied upon. The attributes are listed below in order. The following strategies are available: fast¶ dfast¶ greedy¶ lazy¶ lazy2¶ btlazy2¶ btopt¶ btultra¶ btultra2¶"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An IntEnum containing strategies for compression. Higher-numbered strategies correspond to more complex and slower compression. Note The values of attributes of Strategy are not necessarily stable acr...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174938",
+    "updatedDate": "2026-03-24T10:48:12.174939",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "btlazy2",
+      "btopt",
+      "btultra",
+      "btultra2",
+      "dfast",
+      "fast",
+      "greedy",
+      "lazy",
+      "lazy2"
+    ]
+  },
+  "compression.zstd/ZstdCompressor/set_pledged_input_size": {
+    "id": "compression.zstd.ZstdCompressor.set_pledged_input_size",
+    "name": "set_pledged_input_size",
+    "type": "method",
+    "parent": "ZstdCompressor",
+    "signatures": [
+      "set_pledged_input_size(size)"
+    ],
+    "signature_hash": "70caa4053595b5caab216eb4978074b3ece2824062884f7aabeb92c99e3a53a1",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.ZstdCompressor.set_pledged_input_size",
+    "parameters": [
+      {
+        "name": "size",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Specify the amount of uncompressed data size that will be provided for the next frame. size will be written into the frame header of the next frame unless CompressionParameter.content_size_flag is False or 0. A size of 0 means that the frame is empty. If size is None, the frame header will omit the frame size. Frames that include the uncompressed data size require less memory to decompress, especially at higher compression levels. If last_mode is not FLUSH_FRAME, a ValueError is raised as the..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Specify the amount of uncompressed data size that will be provided for the next frame. size will be written into the frame header of the next frame unless CompressionParameter.content_size_flag is Fal...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174257",
+    "updatedDate": "2026-03-24T10:48:12.174258",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

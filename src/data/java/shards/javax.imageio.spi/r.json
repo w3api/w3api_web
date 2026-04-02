@@ -1,0 +1,247 @@
+{
+  "javax.imageio.spi/ImageWriterSpi/readerSpiNames": {
+    "id": "javax.imageio.spi.ImageWriterSpi.readerSpiNames",
+    "name": "readerSpiNames",
+    "type": "field",
+    "parent": "ImageWriterSpi",
+    "signatures": [
+      "protected String[] readerSpiNames"
+    ],
+    "signature_hash": "ac63fcb6dad2e032a24af181fd328e35a13fd4f9efba802f2395e9de62ad9860",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html",
+    "parameters": [],
+    "return_type": "protected String[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An array of strings to be returned fromgetImageReaderSpiNames, initiallynull."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An array of strings to be returned fromgetImageReaderSpiNames, initiallynull.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.250694",
+    "updatedDate": "2026-03-24T10:48:14.250695",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/RegisterableService": {
+    "id": "javax.imageio.spi.RegisterableService",
+    "name": "RegisterableService",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface RegisterableService"
+    ],
+    "signature_hash": "2dad7a11eb66cb6d47f4ddf2b2b0d73e55bb730407b876ec2d523a35918aed05",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/RegisterableService.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.250726",
+    "updatedDate": "2026-03-24T10:48:14.250727",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "onDeregistration",
+      "onRegistration"
+    ]
+  },
+  "javax.imageio.spi/IIORegistry/registerApplicationClasspathSpis": {
+    "id": "javax.imageio.spi.IIORegistry.registerApplicationClasspathSpis",
+    "name": "registerApplicationClasspathSpis",
+    "type": "method",
+    "parent": "IIORegistry",
+    "signatures": [
+      "public void registerApplicationClasspathSpis()"
+    ],
+    "signature_hash": "3e9e69507d41bf54689f59fc3b6bd570ab0f63d2c0bc3255063dfe3d2d69569a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/IIORegistry.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Registers all available service providers found on the application class path, using the defaultClassLoader."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Registers all available service providers found on the application class path, using the defaultClassLoader.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.249029",
+    "updatedDate": "2026-03-24T10:48:14.249030",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ServiceRegistry/registerServiceProvider": {
+    "id": "javax.imageio.spi.ServiceRegistry.registerServiceProvider",
+    "name": "registerServiceProvider",
+    "type": "method",
+    "parent": "ServiceRegistry",
+    "signatures": [
+      "public void registerServiceProvider(Object provider)",
+      "public <T> boolean registerServiceProvider(T provider, Class<T> category)"
+    ],
+    "signature_hash": "416eb8cfafcc1d20fcdf88fe838535076d9a2ce0e3921b9c5f2f3b08769145c1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html",
+    "parameters": [
+      {
+        "name": "provider",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object|T",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "category",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Adds a service provider object to the registry."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds a service provider object to the registry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.251024",
+    "updatedDate": "2026-03-24T10:48:14.251025",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio.spi/ServiceRegistry/registerServiceProviders": {
+    "id": "javax.imageio.spi.ServiceRegistry.registerServiceProviders",
+    "name": "registerServiceProviders",
+    "type": "method",
+    "parent": "ServiceRegistry",
+    "signatures": [
+      "public void registerServiceProviders(Iterator<?> providers)"
+    ],
+    "signature_hash": "fe1b53a5497eda024f86f2f88f6fd184bbab9cd6ce8f34cd32a441ed075eb556",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html",
+    "parameters": [
+      {
+        "name": "providers",
+        "type": "Iterator<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Adds a set of service provider objects, taken from anIteratorto the registry."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds a set of service provider objects, taken from anIteratorto the registry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.251043",
+    "updatedDate": "2026-03-24T10:48:14.251044",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

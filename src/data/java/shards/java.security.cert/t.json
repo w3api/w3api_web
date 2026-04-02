@@ -1,0 +1,719 @@
+{
+  "java.security.cert/TrustAnchor": {
+    "id": "java.security.cert.TrustAnchor",
+    "name": "TrustAnchor",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class TrustAnchor"
+    ],
+    "signature_hash": "800ecf7af149fe16f08c42b2f0087af5cfff5239cacd79999d0904f32fb63fc3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/TrustAnchor.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.934753",
+    "updatedDate": "2026-03-24T10:48:13.934754",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "TrustAnchor"
+    ],
+    "methods": [
+      "getCA",
+      "getCAName",
+      "getCAPublicKey",
+      "getNameConstraints",
+      "getTrustedCert",
+      "toString"
+    ]
+  },
+  "java.security.cert/TrustAnchor/TrustAnchor": {
+    "id": "java.security.cert.TrustAnchor.TrustAnchor",
+    "name": "TrustAnchor",
+    "type": "constructor",
+    "parent": "TrustAnchor",
+    "signatures": [
+      "public TrustAnchor(String caName, PublicKey pubKey, byte[]nameConstraints)",
+      "public TrustAnchor(X509Certificate trustedCert, byte[]nameConstraints)",
+      "public TrustAnchor(X500Principal caPrincipal, PublicKey pubKey, byte[]nameConstraints)"
+    ],
+    "signature_hash": "d6c34c9ae25e9096a63451e944d4de2eda7cfa3941e5b8c714de29c4293f6b32",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/TrustAnchor.html",
+    "parameters": [
+      {
+        "name": "caName",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "pubKey",
+        "has_default": false,
+        "default_value": null,
+        "type": "PublicKey",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "byte[]nameConstraints",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "trustedCert",
+        "has_default": false,
+        "default_value": null,
+        "type": "X509Certificate",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "caPrincipal",
+        "has_default": false,
+        "default_value": null,
+        "type": "X500Principal",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates an instance ofTrustAnchorwhere the most-trusted CA is specified as a distinguished name and public key."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates an instance ofTrustAnchorwhere the most-trusted CA is specified as a distinguished name and public key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.934813",
+    "updatedDate": "2026-03-24T10:48:13.934814",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/Certificate/toString": {
+    "id": "java.security.cert.Certificate.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "Certificate",
+    "signatures": [
+      "public abstract String toString()"
+    ],
+    "signature_hash": "1baa0a1db60f68b956038d36398b038f30c4706fb8a9c0588f2ea25301673f98",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/Certificate.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a string representation of this certificate."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a string representation of this certificate.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.929498",
+    "updatedDate": "2026-03-24T10:48:13.929498",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/CertPath/toString": {
+    "id": "java.security.cert.CertPath.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "CertPath",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/CertPath.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a string representation of this certification path."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a string representation of this certification path.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.930413",
+    "updatedDate": "2026-03-24T10:48:13.930413",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/CollectionCertStoreParameters/toString": {
+    "id": "java.security.cert.CollectionCertStoreParameters.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "CollectionCertStoreParameters",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/CollectionCertStoreParameters.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a formatted string describing the parameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a formatted string describing the parameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.931995",
+    "updatedDate": "2026-03-24T10:48:13.931996",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/CRL/toString": {
+    "id": "java.security.cert.CRL.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "CRL",
+    "signatures": [
+      "public abstract String toString()"
+    ],
+    "signature_hash": "1baa0a1db60f68b956038d36398b038f30c4706fb8a9c0588f2ea25301673f98",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/CRL.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a string representation of this CRL."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a string representation of this CRL.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.932083",
+    "updatedDate": "2026-03-24T10:48:13.932084",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/LDAPCertStoreParameters/toString": {
+    "id": "java.security.cert.LDAPCertStoreParameters.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "LDAPCertStoreParameters",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/LDAPCertStoreParameters.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a formatted string describing the parameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a formatted string describing the parameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.932647",
+    "updatedDate": "2026-03-24T10:48:13.932647",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/PKIXBuilderParameters/toString": {
+    "id": "java.security.cert.PKIXBuilderParameters.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "PKIXBuilderParameters",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a formatted string describing the parameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a formatted string describing the parameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.932758",
+    "updatedDate": "2026-03-24T10:48:13.932759",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/PKIXCertPathBuilderResult/toString": {
+    "id": "java.security.cert.PKIXCertPathBuilderResult.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "PKIXCertPathBuilderResult",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/PKIXCertPathBuilderResult.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a printable representation of thisPKIXCertPathBuilderResult."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a printable representation of thisPKIXCertPathBuilderResult.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.932839",
+    "updatedDate": "2026-03-24T10:48:13.932840",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/PKIXCertPathValidatorResult/toString": {
+    "id": "java.security.cert.PKIXCertPathValidatorResult.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "PKIXCertPathValidatorResult",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a printable representation of thisPKIXCertPathValidatorResult."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a printable representation of thisPKIXCertPathValidatorResult.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.933127",
+    "updatedDate": "2026-03-24T10:48:13.933128",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/PKIXParameters/toString": {
+    "id": "java.security.cert.PKIXParameters.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "PKIXParameters",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/PKIXParameters.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a formatted string describing the parameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a formatted string describing the parameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.933754",
+    "updatedDate": "2026-03-24T10:48:13.933755",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/PolicyQualifierInfo/toString": {
+    "id": "java.security.cert.PolicyQualifierInfo.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "PolicyQualifierInfo",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a printable representation of thisPolicyQualifierInfo."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a printable representation of thisPolicyQualifierInfo.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.934733",
+    "updatedDate": "2026-03-24T10:48:13.934734",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/TrustAnchor/toString": {
+    "id": "java.security.cert.TrustAnchor.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "TrustAnchor",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/TrustAnchor.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a formatted string describing theTrustAnchor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a formatted string describing theTrustAnchor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.934939",
+    "updatedDate": "2026-03-24T10:48:13.934940",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/URICertStoreParameters/toString": {
+    "id": "java.security.cert.URICertStoreParameters.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "URICertStoreParameters",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/URICertStoreParameters.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a formatted string describing the parameters including the URI used to construct this object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a formatted string describing the parameters including the URI used to construct this object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.935093",
+    "updatedDate": "2026-03-24T10:48:13.935094",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/X509CertSelector/toString": {
+    "id": "java.security.cert.X509CertSelector.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "X509CertSelector",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/X509CertSelector.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a printable representation of theCertSelector."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a printable representation of theCertSelector.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.937048",
+    "updatedDate": "2026-03-24T10:48:13.937049",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/X509CRLEntry/toString": {
+    "id": "java.security.cert.X509CRLEntry.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "X509CRLEntry",
+    "signatures": [
+      "public abstract String toString()"
+    ],
+    "signature_hash": "1baa0a1db60f68b956038d36398b038f30c4706fb8a9c0588f2ea25301673f98",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/X509CRLEntry.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a string representation of this CRL entry."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a string representation of this CRL entry.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.937870",
+    "updatedDate": "2026-03-24T10:48:13.937871",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.2",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.security.cert/X509CRLSelector/toString": {
+    "id": "java.security.cert.X509CRLSelector.toString",
+    "name": "toString",
+    "type": "method",
+    "parent": "X509CRLSelector",
+    "signatures": [
+      "public String toString()"
+    ],
+    "signature_hash": "210eee3d731623cb7c6189497cc462f9c459d9c81b6e0fe12b4b36ce53a197b7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/cert/X509CRLSelector.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a printable representation of theX509CRLSelector."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a printable representation of theX509CRLSelector.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.938407",
+    "updatedDate": "2026-03-24T10:48:13.938408",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

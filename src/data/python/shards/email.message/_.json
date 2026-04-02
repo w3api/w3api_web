@@ -1,0 +1,330 @@
+{
+  "email.message/EmailMessage/__bytes__": {
+    "id": "email.message.EmailMessage.__bytes__",
+    "name": "__bytes__",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "__bytes__()"
+    ],
+    "signature_hash": "cd58a842d1bf7e511c27863fc6fe08ae9473cdf4b17f76901af222d1785d0782",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.__bytes__",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Equivalent to as_bytes(). Allows bytes(msg) to produce a bytes object containing the serialized message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Equivalent to as_bytes(). Allows bytes(msg) to produce a bytes object containing the serialized message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206690",
+    "updatedDate": "2026-03-24T10:48:12.206691",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/__contains__": {
+    "id": "email.message.EmailMessage.__contains__",
+    "name": "__contains__",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "__contains__(name)"
+    ],
+    "signature_hash": "3f976881194a7d7fd40ec49743077b2aa80216bbff50cac419db7d3282e441ea",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.__contains__",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the message object has a field named name. Matching is done without regard to case and name does not include the trailing colon. Used for the in operator. For example: if 'message-id' in myMessage: print('Message-ID:', myMessage['message-id'])"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the message object has a field named name. Matching is done without regard to case and name does not include the trailing colon. Used for the in operator. For example: if 'message-id' i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206756",
+    "updatedDate": "2026-03-24T10:48:12.206757",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/__delitem__": {
+    "id": "email.message.EmailMessage.__delitem__",
+    "name": "__delitem__",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "__delitem__(name)"
+    ],
+    "signature_hash": "3372d41c1ba36b6a2c19b5d93cc33c1d1435a857d58a890997d2ec2a7f48a966",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.__delitem__",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Delete all occurrences of the field with name name from the message’s headers. No exception is raised if the named field isn’t present in the headers."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Delete all occurrences of the field with name name from the message’s headers. No exception is raised if the named field isn’t present in the headers.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206801",
+    "updatedDate": "2026-03-24T10:48:12.206802",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/__getitem__": {
+    "id": "email.message.EmailMessage.__getitem__",
+    "name": "__getitem__",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "__getitem__(name)"
+    ],
+    "signature_hash": "91318aacd4be9caf318a9e33f7fcc4de513a972e836d205376a7d2047465c8bb",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.__getitem__",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the value of the named header field. name does not include the colon field separator. If the header is missing, None is returned; a KeyError is never raised. Note that if the named field appears more than once in the message’s headers, exactly which of those field values will be returned is undefined. Use the get_all() method to get the values of all the extant headers named name. Using the standard (non-compat32) policies, the returned value is an instance of a subclass of email.heade..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the named header field. name does not include the colon field separator. If the header is missing, None is returned; a KeyError is never raised. Note that if the named field appear...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206771",
+    "updatedDate": "2026-03-24T10:48:12.206772",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/__len__": {
+    "id": "email.message.EmailMessage.__len__",
+    "name": "__len__",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "__len__()"
+    ],
+    "signature_hash": "e3e8f29316e28455fa601c29f30153c31f171dfcce62b9e0b0e68583b1cfa9a2",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.__len__",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the total number of headers, including duplicates."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the total number of headers, including duplicates.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206741",
+    "updatedDate": "2026-03-24T10:48:12.206742",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/__setitem__": {
+    "id": "email.message.EmailMessage.__setitem__",
+    "name": "__setitem__",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "__setitem__(name, val)"
+    ],
+    "signature_hash": "d1aa7b565d96b6396b65a9c219339254759e3c87dbc97b5caecbdff409220008",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.__setitem__",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "val",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Add a header to the message with field name name and value val. The field is appended to the end of the message’s existing headers. Note that this does not overwrite or delete any existing header with the same name. If you want to ensure that the new header is the only one present in the message with field name name, delete the field first, e.g.: del msg['subject'] msg['subject'] = 'Python roolz!' If the policy defines certain headers to be unique (as the standard policies do), this method ma..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Add a header to the message with field name name and value val. The field is appended to the end of the message’s existing headers. Note that this does not overwrite or delete any existing header with...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206788",
+    "updatedDate": "2026-03-24T10:48:12.206789",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/__str__": {
+    "id": "email.message.EmailMessage.__str__",
+    "name": "__str__",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "__str__()"
+    ],
+    "signature_hash": "269b80e5d96f7493b21a0cb23564852850421657d75803a1b446aa980321bee2",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.__str__",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Equivalent to as_string(policy=self.policy.clone(utf8=True)). Allows str(msg) to produce a string containing the serialized message in a readable format. Changed in version 3.4: the method was changed to use utf8=True, thus producing an RFC 6531-like message representation, instead of being a direct alias for as_string()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Equivalent to as_string(policy=self.policy.clone(utf8=True)). Allows str(msg) to produce a string containing the serialized message in a readable format. Changed in version 3.4: the method was changed...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206660",
+    "updatedDate": "2026-03-24T10:48:12.206661",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

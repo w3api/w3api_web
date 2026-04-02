@@ -1,0 +1,1025 @@
+{
+  "smtplib/SMTPResponseException/smtp_code": {
+    "id": "smtplib.SMTPResponseException.smtp_code",
+    "name": "smtp_code",
+    "type": "attribute",
+    "parent": "SMTPResponseException",
+    "signatures": [
+      "smtp_code"
+    ],
+    "signature_hash": "01baed1deee940e31f1fe0a95c376b929c0304dd38428cd9d5fbb99c0ee8dcb0",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPResponseException.smtp_code",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The error code."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The error code.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317584",
+    "updatedDate": "2026-03-24T10:48:12.317585",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTPResponseException/smtp_error": {
+    "id": "smtplib.SMTPResponseException.smtp_error",
+    "name": "smtp_error",
+    "type": "attribute",
+    "parent": "SMTPResponseException",
+    "signatures": [
+      "smtp_error"
+    ],
+    "signature_hash": "6ac6bd50244d0b8afd9f4cf72b7b5a1774c326167bc73713b6ae7b9da093c529",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPResponseException.smtp_error",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The error message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The error message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317595",
+    "updatedDate": "2026-03-24T10:48:12.317596",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTP": {
+    "id": "smtplib.SMTP",
+    "name": "SMTP",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class smtplib.SMTP(host='', port=0, local_hostname=None, [timeout, ]source_address=None)"
+    ],
+    "signature_hash": "64e958c794fac54bc8a47db521d67749c949229c94843d6fed6155dc9aa45364",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTP",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "port",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "local_hostname",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "timeout, ]source_address",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An SMTP instance encapsulates an SMTP connection. It has methods that support a full repertoire of SMTP and ESMTP operations. If the optional host and port parameters are given, the SMTP connect() method is called with those parameters during initialization. If specified, local_hostname is used as the FQDN of the local host in the HELO/EHLO command. Otherwise, the local hostname is found using socket.getfqdn(). If the connect() call returns anything other than a success code, an SMTPConnectEr..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An SMTP instance encapsulates an SMTP connection. It has methods that support a full repertoire of SMTP and ESMTP operations. If the optional host and port parameters are given, the SMTP connect() met...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317478",
+    "updatedDate": "2026-03-24T10:48:12.317479",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "does_esmtp",
+      "ehlo_resp",
+      "esmtp_features",
+      "helo_resp"
+    ],
+    "methods": [
+      "auth",
+      "connect",
+      "docmd",
+      "ehlo",
+      "ehlo_or_helo_if_needed",
+      "has_extn",
+      "helo",
+      "login",
+      "quit",
+      "send_message",
+      "sendmail",
+      "set_debuglevel",
+      "starttls",
+      "verify"
+    ]
+  },
+  "smtplib/SMTP_SSL": {
+    "id": "smtplib.SMTP_SSL",
+    "name": "SMTP_SSL",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class smtplib.SMTP_SSL(host='', port=0, local_hostname=None, *, [timeout, ]context=None, source_address=None)"
+    ],
+    "signature_hash": "cefeb7e2573b9195f2ad47e20666db5ffb5dc6f940099da006bf62d33cca1063",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTP_SSL",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "port",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "local_hostname",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "timeout, ]context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "source_address",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An SMTP_SSL instance behaves exactly the same as instances of SMTP. SMTP_SSL should be used for situations where SSL is required from the beginning of the connection and using starttls() is not appropriate. If host is not specified, the local host is used. If port is zero, the standard SMTP-over-SSL port (465) is used. The optional arguments local_hostname, timeout and source_address have the same meaning as they do in the SMTP class. context, also optional, can contain a SSLContext and allow..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An SMTP_SSL instance behaves exactly the same as instances of SMTP. SMTP_SSL should be used for situations where SSL is required from the beginning of the connection and using starttls() is not approp...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317510",
+    "updatedDate": "2026-03-24T10:48:12.317511",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTPAuthenticationError": {
+    "id": "smtplib.SMTPAuthenticationError",
+    "name": "SMTPAuthenticationError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception smtplib.SMTPAuthenticationError"
+    ],
+    "signature_hash": "938706f06448b5faac2b20ba458f93568e4df79eee1c4a9e383100df06906001",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPAuthenticationError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "SMTP authentication went wrong. Most probably the server didn’t accept the username/password combination provided."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "SMTP authentication went wrong. Most probably the server didn’t accept the username/password combination provided.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317701",
+    "updatedDate": "2026-03-24T10:48:12.317702",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTPConnectError": {
+    "id": "smtplib.SMTPConnectError",
+    "name": "SMTPConnectError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception smtplib.SMTPConnectError"
+    ],
+    "signature_hash": "081f97864bd273bd2dd10d0ebab92080812f0b12dd6437697d308bd836118322",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPConnectError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Error occurred during establishment of a connection with the server."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Error occurred during establishment of a connection with the server.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317669",
+    "updatedDate": "2026-03-24T10:48:12.317670",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTPDataError": {
+    "id": "smtplib.SMTPDataError",
+    "name": "SMTPDataError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception smtplib.SMTPDataError"
+    ],
+    "signature_hash": "1e299808e149f1ad110e6189db59d5add3642bf796f950f718eaac81c3be72c6",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPDataError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The SMTP server refused to accept the message data."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The SMTP server refused to accept the message data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317657",
+    "updatedDate": "2026-03-24T10:48:12.317657",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTPException": {
+    "id": "smtplib.SMTPException",
+    "name": "SMTPException",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception smtplib.SMTPException"
+    ],
+    "signature_hash": "939a4a8d0ce4578d2cb9f3a6303057612eabb26c54af8a6a97ee722346851b33",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPException",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Subclass of OSError that is the base exception class for all the other exceptions provided by this module. Changed in version 3.4: SMTPException became subclass of OSError"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Subclass of OSError that is the base exception class for all the other exceptions provided by this module. Changed in version 3.4: SMTPException became subclass of OSError",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317549",
+    "updatedDate": "2026-03-24T10:48:12.317550",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTPHeloError": {
+    "id": "smtplib.SMTPHeloError",
+    "name": "SMTPHeloError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception smtplib.SMTPHeloError"
+    ],
+    "signature_hash": "2829ca52a6d1fc0d08d08fb480f49762f25cd6eb0f4f407975426e4fff6993f7",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPHeloError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The server refused our HELO message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The server refused our HELO message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317679",
+    "updatedDate": "2026-03-24T10:48:12.317680",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTPNotSupportedError": {
+    "id": "smtplib.SMTPNotSupportedError",
+    "name": "SMTPNotSupportedError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception smtplib.SMTPNotSupportedError"
+    ],
+    "signature_hash": "d7bbf021a9d60052aa4e9422bca317d6797a3423bd5afa0058caf63c693172f2",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPNotSupportedError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The command or option attempted is not supported by the server. Added in version 3.5."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The command or option attempted is not supported by the server. Added in version 3.5.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317690",
+    "updatedDate": "2026-03-24T10:48:12.317690",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTPRecipientsRefused": {
+    "id": "smtplib.SMTPRecipientsRefused",
+    "name": "SMTPRecipientsRefused",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception smtplib.SMTPRecipientsRefused"
+    ],
+    "signature_hash": "3f9668eef18007b630b83901b8e26d7718ce0eb58ed0cd1bb8a652d9522c00c4",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPRecipientsRefused",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "All recipient addresses refused. recipients¶ A dictionary of exactly the same sort as returned by SMTP.sendmail() containing the errors for each recipient."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "All recipient addresses refused. recipients¶ A dictionary of exactly the same sort as returned by SMTP.sendmail() containing the errors for each recipient.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317634",
+    "updatedDate": "2026-03-24T10:48:12.317635",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "recipients"
+    ]
+  },
+  "smtplib/SMTPResponseException": {
+    "id": "smtplib.SMTPResponseException",
+    "name": "SMTPResponseException",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception smtplib.SMTPResponseException"
+    ],
+    "signature_hash": "e7002fe7b6f02793b9bdb4594550f9a3df46feb375683404144b3cf3e6bc554c",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPResponseException",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Base class for all exceptions that include an SMTP error code. These exceptions are generated in some instances when the SMTP server returns an error code. smtp_code¶ The error code. smtp_error¶ The error message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Base class for all exceptions that include an SMTP error code. These exceptions are generated in some instances when the SMTP server returns an error code. smtp_code¶ The error code. smtp_error¶ The e...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317573",
+    "updatedDate": "2026-03-24T10:48:12.317574",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "smtp_code",
+      "smtp_error"
+    ]
+  },
+  "smtplib/SMTPSenderRefused": {
+    "id": "smtplib.SMTPSenderRefused",
+    "name": "SMTPSenderRefused",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception smtplib.SMTPSenderRefused"
+    ],
+    "signature_hash": "3b399a98e139785b63cc5ef836f46fb1e512cf08982919fa9d0049f811fa36d2",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPSenderRefused",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Sender address refused. In addition to the attributes set by on all SMTPResponseException exceptions, this sets ‘sender’ to the string that the SMTP server refused."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sender address refused. In addition to the attributes set by on all SMTPResponseException exceptions, this sets ‘sender’ to the string that the SMTP server refused.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317620",
+    "updatedDate": "2026-03-24T10:48:12.317622",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTPServerDisconnected": {
+    "id": "smtplib.SMTPServerDisconnected",
+    "name": "SMTPServerDisconnected",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception smtplib.SMTPServerDisconnected"
+    ],
+    "signature_hash": "21f67e67776b55d29ce26c5d5c0fe939db3f5918b524f253ba7f9adf81699466",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTPServerDisconnected",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This exception is raised when the server unexpectedly disconnects, or when an attempt is made to use the SMTP instance before connecting it to a server."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This exception is raised when the server unexpectedly disconnects, or when an attempt is made to use the SMTP instance before connecting it to a server.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317561",
+    "updatedDate": "2026-03-24T10:48:12.317561",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTP/send_message": {
+    "id": "smtplib.SMTP.send_message",
+    "name": "send_message",
+    "type": "method",
+    "parent": "SMTP",
+    "signatures": [
+      "SMTP.send_message(msg, from_addr=None, to_addrs=None, mail_options=(), rcpt_options=())"
+    ],
+    "signature_hash": "389c8718d576b77cd397abb86b0b2d625344cf3e0a0ffb21a3b29794c96cc8ab",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTP.send_message",
+    "parameters": [
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "from_addr",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "to_addrs",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "mail_options",
+        "type": "",
+        "has_default": true,
+        "default_value": "()",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "rcpt_options",
+        "type": "",
+        "has_default": true,
+        "default_value": "()",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This is a convenience method for calling sendmail() with the message represented by an email.message.Message object. The arguments have the same meaning as for sendmail(), except that msg is a Message object. If from_addr is None or to_addrs is None, send_message fills those arguments with addresses extracted from the headers of msg as specified in RFC 5322: from_addr is set to the Sender field if it is present, and otherwise to the From field. to_addrs combines the values (if any) of the To,..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This is a convenience method for calling sendmail() with the message represented by an email.message.Message object. The arguments have the same meaning as for sendmail(), except that msg is a Message...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.318002",
+    "updatedDate": "2026-03-24T10:48:12.318003",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTP/sendmail": {
+    "id": "smtplib.SMTP.sendmail",
+    "name": "sendmail",
+    "type": "method",
+    "parent": "SMTP",
+    "signatures": [
+      "SMTP.sendmail(from_addr, to_addrs, msg, mail_options=(), rcpt_options=())"
+    ],
+    "signature_hash": "7d00f7edd670c5b5bccaf2fda6e660cf74f58b43159100c46d6d53efaa3820dd",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTP.sendmail",
+    "parameters": [
+      {
+        "name": "from_addr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "to_addrs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "mail_options",
+        "type": "",
+        "has_default": true,
+        "default_value": "()",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "rcpt_options",
+        "type": "",
+        "has_default": true,
+        "default_value": "()",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Send mail. The required arguments are an RFC 822 from-address string, a list of RFC 822 to-address strings (a bare string will be treated as a list with 1 address), and a message string. The caller may pass a list of ESMTP options (such as \"8bitmime\") to be used in MAIL FROM commands as mail_options. ESMTP options (such as DSN commands) that should be used with all RCPT commands can be passed as rcpt_options. Each option should be passed as a string containing the full text of the option, inc..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Send mail. The required arguments are an RFC 822 from-address string, a list of RFC 822 to-address strings (a bare string will be treated as a list with 1 address), and a message string. The caller ma...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317972",
+    "updatedDate": "2026-03-24T10:48:12.317973",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTP/set_debuglevel": {
+    "id": "smtplib.SMTP.set_debuglevel",
+    "name": "set_debuglevel",
+    "type": "method",
+    "parent": "SMTP",
+    "signatures": [
+      "SMTP.set_debuglevel(level)"
+    ],
+    "signature_hash": "162db7ce6aef4cabef70dc6e3e2347db968e559dcab978e81caaed06fae268cf",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTP.set_debuglevel",
+    "parameters": [
+      {
+        "name": "level",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Set the debug output level. A value of 1 or True for level results in debug messages for connection and for all messages sent to and received from the server. A value of 2 for level results in these messages being timestamped. Changed in version 3.5: Added debuglevel 2."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the debug output level. A value of 1 or True for level results in debug messages for connection and for all messages sent to and received from the server. A value of 2 for level results in these m...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317717",
+    "updatedDate": "2026-03-24T10:48:12.317718",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib/SMTP/starttls": {
+    "id": "smtplib.SMTP.starttls",
+    "name": "starttls",
+    "type": "method",
+    "parent": "SMTP",
+    "signatures": [
+      "SMTP.starttls(*, context=None)"
+    ],
+    "signature_hash": "daf5d804b6991a89e12308bd32ae655a405472776eb628582b3dfa746d3eb531",
+    "url": "https://docs.python.org/3/library/smtplib.html#module-smtplib#smtplib.SMTP.starttls",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Put the SMTP connection in TLS (Transport Layer Security) mode. All SMTP commands that follow will be encrypted. You should then call ehlo() again. If keyfile and certfile are provided, they are used to create an ssl.SSLContext. Optional context parameter is an ssl.SSLContext object; This is an alternative to using a keyfile and a certfile and if specified both keyfile and certfile should be None. If there has been no previous EHLO or HELO command this session, this method tries ESMTP EHLO fi..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Put the SMTP connection in TLS (Transport Layer Security) mode. All SMTP commands that follow will be encrypted. You should then call ehlo() again. If keyfile and certfile are provided, they are used ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.317933",
+    "updatedDate": "2026-03-24T10:48:12.317934",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "smtplib": {
+    "type": "module",
+    "name": "smtplib",
+    "id": "smtplib",
+    "description": "Module smtplib",
+    "classes": [
+      "LMTP",
+      "SMTP",
+      "SMTP_SSL"
+    ],
+    "exceptions": [
+      "SMTPAuthenticationError",
+      "SMTPConnectError",
+      "SMTPDataError",
+      "SMTPException",
+      "SMTPHeloError",
+      "SMTPNotSupportedError",
+      "SMTPRecipientsRefused",
+      "SMTPResponseException",
+      "SMTPSenderRefused",
+      "SMTPServerDisconnected"
+    ]
+  }
+}

@@ -1,0 +1,684 @@
+{
+  "email.message/EmailMessage/get": {
+    "id": "email.message.EmailMessage.get",
+    "name": "get",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get(name, failobj=None)"
+    ],
+    "signature_hash": "610e9249a5f67b87ad5cefaaf25ab10b77ba93ff8b9041c2629c9ba6f08cc275",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "failobj",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the value of the named header field. This is identical to __getitem__() except that optional failobj is returned if the named header is missing (failobj defaults to None)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the named header field. This is identical to __getitem__() except that optional failobj is returned if the named header is missing (failobj defaults to None).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206852",
+    "updatedDate": "2026-03-24T10:48:12.206853",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_all": {
+    "id": "email.message.EmailMessage.get_all",
+    "name": "get_all",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_all(name, failobj=None)"
+    ],
+    "signature_hash": "a4dfeceef469758709ed035d0f97575c64275d05c53960ea5511a8de255e3ad1",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_all",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "failobj",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a list of all the values for the field named name. If there are no such named headers in the message, failobj is returned (defaults to None)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list of all the values for the field named name. If there are no such named headers in the message, failobj is returned (defaults to None).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206868",
+    "updatedDate": "2026-03-24T10:48:12.206870",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_body": {
+    "id": "email.message.EmailMessage.get_body",
+    "name": "get_body",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_body(preferencelist=('related', 'html', 'plain'))"
+    ],
+    "signature_hash": "ce903a9bf739550e2d1c85e899ff836e868ed391bde5461a40c45f23d32b231f",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_body",
+    "parameters": [
+      {
+        "name": "preferencelist",
+        "type": "",
+        "has_default": true,
+        "default_value": "('related', 'html', 'plain')",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the MIME part that is the best candidate to be the “body” of the message. preferencelist must be a sequence of strings from the set related, html, and plain, and indicates the order of preference for the content type of the part returned. Start looking for candidate matches with the object on which the get_body method is called. If related is not included in preferencelist, consider the root part (or subpart of the root part) of any related encountered as a candidate if the (sub-)part ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the MIME part that is the best candidate to be the “body” of the message. preferencelist must be a sequence of strings from the set related, html, and plain, and indicates the order of preferen...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.207200",
+    "updatedDate": "2026-03-24T10:48:12.207201",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_boundary": {
+    "id": "email.message.EmailMessage.get_boundary",
+    "name": "get_boundary",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_boundary(failobj=None)"
+    ],
+    "signature_hash": "db813e43a0715f7fccfb035919c2442d8804c456e06bea9bc5afe215d4a24819",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_boundary",
+    "parameters": [
+      {
+        "name": "failobj",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the value of the boundary parameter of the Content-Type header of the message, or failobj if either the header is missing, or has no boundary parameter. The returned string will always be unquoted as per email.utils.unquote()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the boundary parameter of the Content-Type header of the message, or failobj if either the header is missing, or has no boundary parameter. The returned string will always be unquo...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.207068",
+    "updatedDate": "2026-03-24T10:48:12.207069",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_charsets": {
+    "id": "email.message.EmailMessage.get_charsets",
+    "name": "get_charsets",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_charsets(failobj=None)"
+    ],
+    "signature_hash": "3a0b22c81e3a58efc4191c72e1de7a3c5b4cdd54255a8f204bc1dc9f8e5a10e7",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_charsets",
+    "parameters": [
+      {
+        "name": "failobj",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a list containing the character set names in the message. If the message is a multipart, then the list will contain one element for each subpart in the payload, otherwise, it will be a list of length 1. Each item in the list will be a string which is the value of the charset parameter in the Content-Type header for the represented subpart. If the subpart has no Content-Type header, no charset parameter, or is not of the text main MIME type, then that item in the returned list will be f..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list containing the character set names in the message. If the message is a multipart, then the list will contain one element for each subpart in the payload, otherwise, it will be a list of ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.207121",
+    "updatedDate": "2026-03-24T10:48:12.207122",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_content": {
+    "id": "email.message.EmailMessage.get_content",
+    "name": "get_content",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_content(*args, content_manager=None, **kw)"
+    ],
+    "signature_hash": "f6e535d727587659d5f3dbd5db282fbe4b940d46f0227d9af4316c259c9af412",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_content",
+    "parameters": [
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "content_manager",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "**kw",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Call the get_content() method of the content_manager, passing self as the message object, and passing along any other arguments or keywords as additional arguments. If content_manager is not specified, use the content_manager specified by the current policy."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Call the get_content() method of the content_manager, passing self as the message object, and passing along any other arguments or keywords as additional arguments. If content_manager is not specified...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.207248",
+    "updatedDate": "2026-03-24T10:48:12.207249",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_content_charset": {
+    "id": "email.message.EmailMessage.get_content_charset",
+    "name": "get_content_charset",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_content_charset(failobj=None)"
+    ],
+    "signature_hash": "f11f76784deb65646f0fadf494905de7e6b53a7fd7dd0af2ccf3addeec0ef387",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_content_charset",
+    "parameters": [
+      {
+        "name": "failobj",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the charset parameter of the Content-Type header, coerced to lower case. If there is no Content-Type header, or if that header has no charset parameter, failobj is returned."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the charset parameter of the Content-Type header, coerced to lower case. If there is no Content-Type header, or if that header has no charset parameter, failobj is returned.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.207101",
+    "updatedDate": "2026-03-24T10:48:12.207102",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_content_disposition": {
+    "id": "email.message.EmailMessage.get_content_disposition",
+    "name": "get_content_disposition",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_content_disposition()"
+    ],
+    "signature_hash": "67a8e0d4b457d9c1930038ad3b8fe8311674928fdb7877f01e930ec810041c69",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_content_disposition",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the lowercased value (without parameters) of the message’s Content-Disposition header if it has one, or None. The possible values for this method are inline, attachment or None if the message follows RFC 2183. Added in version 3.5."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the lowercased value (without parameters) of the message’s Content-Disposition header if it has one, or None. The possible values for this method are inline, attachment or None if the message f...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.207150",
+    "updatedDate": "2026-03-24T10:48:12.207151",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_content_maintype": {
+    "id": "email.message.EmailMessage.get_content_maintype",
+    "name": "get_content_maintype",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_content_maintype()"
+    ],
+    "signature_hash": "26e43dd23f61f4b18e6a3749025aa06c3acc3f847ba105c9d4403b580236b6e3",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_content_maintype",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the message’s main content type. This is the maintype part of the string returned by get_content_type()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the message’s main content type. This is the maintype part of the string returned by get_content_type().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206940",
+    "updatedDate": "2026-03-24T10:48:12.206941",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_content_subtype": {
+    "id": "email.message.EmailMessage.get_content_subtype",
+    "name": "get_content_subtype",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_content_subtype()"
+    ],
+    "signature_hash": "051bd3aaa3138238e9ee40790e40cfa50e29fe6e1cb698840306f75ebee90010",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_content_subtype",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the message’s sub-content type. This is the subtype part of the string returned by get_content_type()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the message’s sub-content type. This is the subtype part of the string returned by get_content_type().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206952",
+    "updatedDate": "2026-03-24T10:48:12.206953",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_content_type": {
+    "id": "email.message.EmailMessage.get_content_type",
+    "name": "get_content_type",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_content_type()"
+    ],
+    "signature_hash": "28edf7576291b420242dbe6592d987a8aec2f9cb06af835a8dfdc938178ad103",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_content_type",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the message’s content type, coerced to lower case of the form maintype/subtype. If there is no Content-Type header in the message return the value returned by get_default_type(). If the Content-Type header is invalid, return text/plain. (According to RFC 2045, messages always have a default type, get_content_type() will always return a value. RFC 2045 defines a message’s default type to be text/plain unless it appears inside a multipart/digest container, in which case it would be messa..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the message’s content type, coerced to lower case of the form maintype/subtype. If there is no Content-Type header in the message return the value returned by get_default_type(). If the Content...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206927",
+    "updatedDate": "2026-03-24T10:48:12.206928",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_default_type": {
+    "id": "email.message.EmailMessage.get_default_type",
+    "name": "get_default_type",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_default_type()"
+    ],
+    "signature_hash": "baf9ae43e2d6aba3492927be3967652ea739729c430630486faf2534fff26888",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_default_type",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the default content type. Most messages have a default content type of text/plain, except for messages that are subparts of multipart/digest containers. Such subparts have a default content type of message/rfc822."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the default content type. Most messages have a default content type of text/plain, except for messages that are subparts of multipart/digest containers. Such subparts have a default content typ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206967",
+    "updatedDate": "2026-03-24T10:48:12.206969",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_filename": {
+    "id": "email.message.EmailMessage.get_filename",
+    "name": "get_filename",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_filename(failobj=None)"
+    ],
+    "signature_hash": "36d2757b2e3ef142f606e063f68017cc0adc6a03a03332747e910131aa28f4d9",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_filename",
+    "parameters": [
+      {
+        "name": "failobj",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the value of the filename parameter of the Content-Disposition header of the message. If the header does not have a filename parameter, this method falls back to looking for the name parameter on the Content-Type header. If neither is found, or the header is missing, then failobj is returned. The returned string will always be unquoted as per email.utils.unquote()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the filename parameter of the Content-Disposition header of the message. If the header does not have a filename parameter, this method falls back to looking for the name parameter ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.207050",
+    "updatedDate": "2026-03-24T10:48:12.207051",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.message/EmailMessage/get_unixfrom": {
+    "id": "email.message.EmailMessage.get_unixfrom",
+    "name": "get_unixfrom",
+    "type": "method",
+    "parent": "EmailMessage",
+    "signatures": [
+      "get_unixfrom()"
+    ],
+    "signature_hash": "672b4f9993c91592e7882e81fc3d5d95b96ecf86c942c71b2fd85161ae5ae786",
+    "url": "https://docs.python.org/3/library/email.message.html#module-email.message#email.message.EmailMessage.get_unixfrom",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the message’s envelope header. Defaults to None if the envelope header was never set."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the message’s envelope header. Defaults to None if the envelope header was never set.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206729",
+    "updatedDate": "2026-03-24T10:48:12.206730",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

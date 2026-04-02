@@ -1,0 +1,1582 @@
+{
+  "javax.imageio/IIOImage/raster": {
+    "id": "javax.imageio.IIOImage.raster",
+    "name": "raster",
+    "type": "field",
+    "parent": "IIOImage",
+    "signatures": [
+      "protected Raster raster"
+    ],
+    "signature_hash": "ba69ab9800ff6fda82efb642973e1e3330aa632a5e7519a33bc7d4764a9439a3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/IIOImage.html",
+    "parameters": [],
+    "return_type": "protected Raster",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "TheRasterbeing referenced."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "TheRasterbeing referenced.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.226808",
+    "updatedDate": "2026-03-24T10:48:14.226809",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageIO/read": {
+    "id": "javax.imageio.ImageIO.read",
+    "name": "read",
+    "type": "method",
+    "parent": "ImageIO",
+    "signatures": [
+      "public static BufferedImage read(File input)",
+      "public static BufferedImage read(InputStream input)",
+      "public static BufferedImage read(URL input)",
+      "public static BufferedImage read(ImageInputStream stream)"
+    ],
+    "signature_hash": "791bce3986941af739a28e7b2a9a54fcfa1bfd8e0ef89171a591eef962c9001e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageIO.html",
+    "parameters": [
+      {
+        "name": "input",
+        "has_default": false,
+        "default_value": null,
+        "type": "File|InputStream|URL",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "stream",
+        "has_default": false,
+        "default_value": null,
+        "type": "ImageInputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static BufferedImage",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns aBufferedImageas the result of decoding a suppliedFilewith anImageReaderchosen automatically from among those currently registered."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBufferedImageas the result of decoding a suppliedFilewith anImageReaderchosen automatically from among those currently registered.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.227695",
+    "updatedDate": "2026-03-24T10:48:14.227696",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/read": {
+    "id": "javax.imageio.ImageReader.read",
+    "name": "read",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public BufferedImage read(int imageIndex)",
+      "public abstract BufferedImage read(int imageIndex, ImageReadParam param)"
+    ],
+    "signature_hash": "e949d343d43d3cd1a48fcf372e1218f3f7a28a6a6ab47ad8eb6e449d1604144e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [
+      {
+        "name": "imageIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "param",
+        "has_default": false,
+        "default_value": null,
+        "type": "ImageReadParam",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "BufferedImage",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Reads the image indexed byimageIndexand returns it as a completeBufferedImage, using a defaultImageReadParam."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads the image indexed byimageIndexand returns it as a completeBufferedImage, using a defaultImageReadParam.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229048",
+    "updatedDate": "2026-03-24T10:48:14.229049",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/readAll": {
+    "id": "javax.imageio.ImageReader.readAll",
+    "name": "readAll",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public IIOImage readAll(int imageIndex, ImageReadParam param)",
+      "public Iterator<IIOImage> readAll(Iterator<? extends ImageReadParam> params)"
+    ],
+    "signature_hash": "ef54fdb74cc76c9a8b7d0cf130df527baeb50a2ebd2f504c59570557bab5edd8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [
+      {
+        "name": "imageIndex",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "param",
+        "has_default": false,
+        "default_value": null,
+        "type": "ImageReadParam",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "params",
+        "has_default": false,
+        "default_value": null,
+        "type": "Iterator<? extends ImageReadParam>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "IIOImage",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Reads the image indexed byimageIndexand returns anIIOImagecontaining the image, thumbnails, and associated image metadata, using a suppliedImageReadParam."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads the image indexed byimageIndexand returns anIIOImagecontaining the image, thumbnails, and associated image metadata, using a suppliedImageReadParam.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229080",
+    "updatedDate": "2026-03-24T10:48:14.229081",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/readAsRenderedImage": {
+    "id": "javax.imageio.ImageReader.readAsRenderedImage",
+    "name": "readAsRenderedImage",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public RenderedImage readAsRenderedImage(int imageIndex, ImageReadParam param)"
+    ],
+    "signature_hash": "7ce950e7801c802e86231507518da05105b437b393b8149fbd3b3b14e570187e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [
+      {
+        "name": "imageIndex",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "param",
+        "type": "ImageReadParam",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "RenderedImage",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns aRenderedImageobject that contains the contents of the image indexed byimageIndex."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aRenderedImageobject that contains the contents of the image indexed byimageIndex.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229106",
+    "updatedDate": "2026-03-24T10:48:14.229107",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/readRaster": {
+    "id": "javax.imageio.ImageReader.readRaster",
+    "name": "readRaster",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public Raster readRaster(int imageIndex, ImageReadParam param)"
+    ],
+    "signature_hash": "5915eda4764f96ffad737e9d2dc0aadd22166c79029cedeaa0c9925874a1510f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [
+      {
+        "name": "imageIndex",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "param",
+        "type": "ImageReadParam",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Raster",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a newRasterobject containing the raw pixel data from the image stream, without any color conversion applied."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a newRasterobject containing the raw pixel data from the image stream, without any color conversion applied.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229147",
+    "updatedDate": "2026-03-24T10:48:14.229148",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/readThumbnail": {
+    "id": "javax.imageio.ImageReader.readThumbnail",
+    "name": "readThumbnail",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public BufferedImage readThumbnail(int imageIndex, int thumbnailIndex)"
+    ],
+    "signature_hash": "bac8d6f9ef360958b1c6b7a468ab9732e1adb55ac0dd53e2e14c6e89c4b735fd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [
+      {
+        "name": "imageIndex",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "thumbnailIndex",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "BufferedImage",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns the thumbnail preview image indexed bythumbnailIndex, associated with the image indexed byImageIndexas aBufferedImage."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the thumbnail preview image indexed bythumbnailIndex, associated with the image indexed byImageIndexas aBufferedImage.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229170",
+    "updatedDate": "2026-03-24T10:48:14.229171",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/readTile": {
+    "id": "javax.imageio.ImageReader.readTile",
+    "name": "readTile",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public BufferedImage readTile(int imageIndex, int tileX, int tileY)"
+    ],
+    "signature_hash": "19771a6d1a87235b60188d7ddb737f6d354de9d96a86da4a6c808d37ca71f72c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [
+      {
+        "name": "imageIndex",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "tileX",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "tileY",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "BufferedImage",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Reads the tile indicated by thetileXandtileYarguments, returning it as aBufferedImage."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads the tile indicated by thetileXandtileYarguments, returning it as aBufferedImage.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229195",
+    "updatedDate": "2026-03-24T10:48:14.229196",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/readTileRaster": {
+    "id": "javax.imageio.ImageReader.readTileRaster",
+    "name": "readTileRaster",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public Raster readTileRaster(int imageIndex, int tileX, int tileY)"
+    ],
+    "signature_hash": "bd364326b308e3ff8db01a6cc330ab7ec92d63fb4cc3ce155ea7b1889ae0e077",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [
+      {
+        "name": "imageIndex",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "tileX",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "tileY",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Raster",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a newRasterobject containing the raw pixel data from the tile, without any color conversion applied."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a newRasterobject containing the raw pixel data from the tile, without any color conversion applied.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229220",
+    "updatedDate": "2026-03-24T10:48:14.229220",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/readerSupportsThumbnails": {
+    "id": "javax.imageio.ImageReader.readerSupportsThumbnails",
+    "name": "readerSupportsThumbnails",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public boolean readerSupportsThumbnails()"
+    ],
+    "signature_hash": "2c22e7dd00125bb78d0b71b79d8f69d582014b41a51b1e0a41e0439e0505eb3e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returnstrueif the image format understood by this reader supports thumbnail preview images associated with it."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif the image format understood by this reader supports thumbnail preview images associated with it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229122",
+    "updatedDate": "2026-03-24T10:48:14.229123",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/removeAllIIOReadProgressListeners": {
+    "id": "javax.imageio.ImageReader.removeAllIIOReadProgressListeners",
+    "name": "removeAllIIOReadProgressListeners",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public void removeAllIIOReadProgressListeners()"
+    ],
+    "signature_hash": "497d77a10f59772cbaf45b26c1759a9f3668b2821eb1e2d7e6b86a3697df4fb0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes all currently registeredIIOReadProgressListenerobjects."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes all currently registeredIIOReadProgressListenerobjects.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229238",
+    "updatedDate": "2026-03-24T10:48:14.229239",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/removeAllIIOReadUpdateListeners": {
+    "id": "javax.imageio.ImageReader.removeAllIIOReadUpdateListeners",
+    "name": "removeAllIIOReadUpdateListeners",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public void removeAllIIOReadUpdateListeners()"
+    ],
+    "signature_hash": "f8428c2d4fcc20f7be68d7669e2aab86d66fe46198112c4796831f6a078e6c43",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes all currently registeredIIOReadUpdateListenerobjects."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes all currently registeredIIOReadUpdateListenerobjects.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229254",
+    "updatedDate": "2026-03-24T10:48:14.229255",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/removeAllIIOReadWarningListeners": {
+    "id": "javax.imageio.ImageReader.removeAllIIOReadWarningListeners",
+    "name": "removeAllIIOReadWarningListeners",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public void removeAllIIOReadWarningListeners()"
+    ],
+    "signature_hash": "76404cba863219a166a0fc256f83bccd5f34cce4a8916eedf316d1296e5b4278",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes all currently registeredIIOReadWarningListenerobjects."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes all currently registeredIIOReadWarningListenerobjects.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229271",
+    "updatedDate": "2026-03-24T10:48:14.229272",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageWriter/removeAllIIOWriteProgressListeners": {
+    "id": "javax.imageio.ImageWriter.removeAllIIOWriteProgressListeners",
+    "name": "removeAllIIOWriteProgressListeners",
+    "type": "method",
+    "parent": "ImageWriter",
+    "signatures": [
+      "public void removeAllIIOWriteProgressListeners()"
+    ],
+    "signature_hash": "ddf9b0eea7b6f71a9c93f9c70229b2f2c226070c9ad3abf793a52ef946c1f5a5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageWriter.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes all currently registeredIIOWriteProgressListenerobjects."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes all currently registeredIIOWriteProgressListenerobjects.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.232802",
+    "updatedDate": "2026-03-24T10:48:14.232803",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageWriter/removeAllIIOWriteWarningListeners": {
+    "id": "javax.imageio.ImageWriter.removeAllIIOWriteWarningListeners",
+    "name": "removeAllIIOWriteWarningListeners",
+    "type": "method",
+    "parent": "ImageWriter",
+    "signatures": [
+      "public void removeAllIIOWriteWarningListeners()"
+    ],
+    "signature_hash": "a84d1188825cb67cafa084a3f9c32404f6ed7574207d2e486412d466d1fbadf2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageWriter.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes all currently registeredIIOWriteWarningListenerobjects."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes all currently registeredIIOWriteWarningListenerobjects.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.232824",
+    "updatedDate": "2026-03-24T10:48:14.232826",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/removeIIOReadProgressListener": {
+    "id": "javax.imageio.ImageReader.removeIIOReadProgressListener",
+    "name": "removeIIOReadProgressListener",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public void removeIIOReadProgressListener(IIOReadProgressListener listener)"
+    ],
+    "signature_hash": "b84f0b8eafbc8ca61874c7ce6778a394e64427f60a6790d0b9943d7660855458",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [
+      {
+        "name": "listener",
+        "type": "IIOReadProgressListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes anIIOReadProgressListenerfrom the list of registered progress listeners."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes anIIOReadProgressListenerfrom the list of registered progress listeners.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229292",
+    "updatedDate": "2026-03-24T10:48:14.229293",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/removeIIOReadUpdateListener": {
+    "id": "javax.imageio.ImageReader.removeIIOReadUpdateListener",
+    "name": "removeIIOReadUpdateListener",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public void removeIIOReadUpdateListener(IIOReadUpdateListener listener)"
+    ],
+    "signature_hash": "236a8c646895cab2170914ca525f48b8530e8991fde2c711af7d13019054e924",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [
+      {
+        "name": "listener",
+        "type": "IIOReadUpdateListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes anIIOReadUpdateListenerfrom the list of registered update listeners."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes anIIOReadUpdateListenerfrom the list of registered update listeners.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229312",
+    "updatedDate": "2026-03-24T10:48:14.229313",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/removeIIOReadWarningListener": {
+    "id": "javax.imageio.ImageReader.removeIIOReadWarningListener",
+    "name": "removeIIOReadWarningListener",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public void removeIIOReadWarningListener(IIOReadWarningListener listener)"
+    ],
+    "signature_hash": "aeecff94689a99cc4cb34b25761313b7107b2bad379d6ddcfa2e3e7585b75b10",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [
+      {
+        "name": "listener",
+        "type": "IIOReadWarningListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes anIIOReadWarningListenerfrom the list of registered error listeners."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes anIIOReadWarningListenerfrom the list of registered error listeners.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229334",
+    "updatedDate": "2026-03-24T10:48:14.229335",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageWriter/removeIIOWriteProgressListener": {
+    "id": "javax.imageio.ImageWriter.removeIIOWriteProgressListener",
+    "name": "removeIIOWriteProgressListener",
+    "type": "method",
+    "parent": "ImageWriter",
+    "signatures": [
+      "public void removeIIOWriteProgressListener(IIOWriteProgressListener listener)"
+    ],
+    "signature_hash": "59089787c73a0bac53de1b81c9d7a1e6903b77c60d5db9ccae14b84bc739be6f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageWriter.html",
+    "parameters": [
+      {
+        "name": "listener",
+        "type": "IIOWriteProgressListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes anIIOWriteProgressListenerfrom the list of registered progress listeners."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes anIIOWriteProgressListenerfrom the list of registered progress listeners.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.232852",
+    "updatedDate": "2026-03-24T10:48:14.232853",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageWriter/removeIIOWriteWarningListener": {
+    "id": "javax.imageio.ImageWriter.removeIIOWriteWarningListener",
+    "name": "removeIIOWriteWarningListener",
+    "type": "method",
+    "parent": "ImageWriter",
+    "signatures": [
+      "public void removeIIOWriteWarningListener(IIOWriteWarningListener listener)"
+    ],
+    "signature_hash": "31ae0b75a0a888a1c2ceb92c79c89c517e42f337b9890787a2c3ac47c5507f26",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageWriter.html",
+    "parameters": [
+      {
+        "name": "listener",
+        "type": "IIOWriteWarningListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes anIIOWriteWarningListenerfrom the list of registered warning listeners."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes anIIOWriteWarningListenerfrom the list of registered warning listeners.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.232878",
+    "updatedDate": "2026-03-24T10:48:14.232879",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageWriter/removeImage": {
+    "id": "javax.imageio.ImageWriter.removeImage",
+    "name": "removeImage",
+    "type": "method",
+    "parent": "ImageWriter",
+    "signatures": [
+      "public void removeImage(int imageIndex)"
+    ],
+    "signature_hash": "eebad7e8975ffa6125ef2bd46b0322f9617126b6af623f9d2fc3edab6c55f6a0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageWriter.html",
+    "parameters": [
+      {
+        "name": "imageIndex",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Removes an image from the stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes an image from the stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.232903",
+    "updatedDate": "2026-03-24T10:48:14.232904",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageWriter/replaceImageMetadata": {
+    "id": "javax.imageio.ImageWriter.replaceImageMetadata",
+    "name": "replaceImageMetadata",
+    "type": "method",
+    "parent": "ImageWriter",
+    "signatures": [
+      "public void replaceImageMetadata(int imageIndex, IIOMetadata imageMetadata)"
+    ],
+    "signature_hash": "0f83a7ca4803e89e34ce7af13f047f4c01f09e242e20ec85052fbde11ad2864a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageWriter.html",
+    "parameters": [
+      {
+        "name": "imageIndex",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "imageMetadata",
+        "type": "IIOMetadata",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Replaces the image metadata associated with an existing image."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Replaces the image metadata associated with an existing image.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.232932",
+    "updatedDate": "2026-03-24T10:48:14.232933",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageWriter/replacePixels": {
+    "id": "javax.imageio.ImageWriter.replacePixels",
+    "name": "replacePixels",
+    "type": "method",
+    "parent": "ImageWriter",
+    "signatures": [
+      "public void replacePixels(Raster raster, ImageWriteParam param)",
+      "public void replacePixels(RenderedImage image, ImageWriteParam param)"
+    ],
+    "signature_hash": "16e45e3c0aaa8ebc5f22d75db4954aa4eeb1823a33d515b9dba76983255e3d6c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageWriter.html",
+    "parameters": [
+      {
+        "name": "raster",
+        "has_default": false,
+        "default_value": null,
+        "type": "Raster",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "param",
+        "has_default": false,
+        "default_value": null,
+        "type": "ImageWriteParam",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "image",
+        "has_default": false,
+        "default_value": null,
+        "type": "RenderedImage",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Replaces a portion of an image already present in the output with a portion of the givenRaster."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Replaces a portion of an image already present in the output with a portion of the givenRaster.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.232973",
+    "updatedDate": "2026-03-24T10:48:14.232974",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageWriter/replaceStreamMetadata": {
+    "id": "javax.imageio.ImageWriter.replaceStreamMetadata",
+    "name": "replaceStreamMetadata",
+    "type": "method",
+    "parent": "ImageWriter",
+    "signatures": [
+      "public void replaceStreamMetadata(IIOMetadata streamMetadata)"
+    ],
+    "signature_hash": "ed821fe72046b6d7f468f0a072032220b5d4fe1428423c1e8f95a70b396e2805",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageWriter.html",
+    "parameters": [
+      {
+        "name": "streamMetadata",
+        "type": "IIOMetadata",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Replaces the stream metadata in the output with new information."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Replaces the stream metadata in the output with new information.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.233000",
+    "updatedDate": "2026-03-24T10:48:14.233001",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageReader/reset": {
+    "id": "javax.imageio.ImageReader.reset",
+    "name": "reset",
+    "type": "method",
+    "parent": "ImageReader",
+    "signatures": [
+      "public void reset()"
+    ],
+    "signature_hash": "97d2d353f08aa5a1da8b18b0800b6e778df65f48d34726e5f17800df7e0d88e2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageReader.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Restores theImageReaderto its initial state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Restores theImageReaderto its initial state.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.229357",
+    "updatedDate": "2026-03-24T10:48:14.229358",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.imageio/ImageWriter/reset": {
+    "id": "javax.imageio.ImageWriter.reset",
+    "name": "reset",
+    "type": "method",
+    "parent": "ImageWriter",
+    "signatures": [
+      "public void reset()"
+    ],
+    "signature_hash": "97d2d353f08aa5a1da8b18b0800b6e778df65f48d34726e5f17800df7e0d88e2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/imageio/ImageWriter.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Restores theImageWriterto its initial state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Restores theImageWriterto its initial state.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.233022",
+    "updatedDate": "2026-03-24T10:48:14.233023",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

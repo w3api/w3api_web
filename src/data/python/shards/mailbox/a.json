@@ -1,0 +1,525 @@
+{
+  "mailbox/Mailbox/add": {
+    "id": "mailbox.Mailbox.add",
+    "name": "add",
+    "type": "method",
+    "parent": "Mailbox",
+    "signatures": [
+      "add(message)"
+    ],
+    "signature_hash": "94825afe807916ac5533747f85dc6d6c7f69625f1ffd41f7cb00ab5f4847f3d0",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.Mailbox.add",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Add message to the mailbox and return the key that has been assigned to it. Parameter message may be a Message instance, an email.message.Message instance, a string, a byte string, or a file-like object (which should be open in binary mode). If message is an instance of the appropriate format-specific Message subclass (e.g., if it’s an mboxMessage instance and this is an mbox instance), its format-specific information is used. Otherwise, reasonable defaults for format-specific information are..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Add message to the mailbox and return the key that has been assigned to it. Parameter message may be a Message instance, an email.message.Message instance, a string, a byte string, or a file-like obje...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.243679",
+    "updatedDate": "2026-03-24T10:48:12.243680",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "mailbox/Maildir/add": {
+    "id": "mailbox.Maildir.add",
+    "name": "add",
+    "type": "method",
+    "parent": "Maildir",
+    "signatures": [
+      "add(message)"
+    ],
+    "signature_hash": "94825afe807916ac5533747f85dc6d6c7f69625f1ffd41f7cb00ab5f4847f3d0",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.Maildir.add",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Warning These methods generate unique file names based upon the current process ID. When using multiple threads, undetected name clashes may occur and cause corruption of the mailbox unless threads are coordinated to avoid using these methods to manipulate the same mailbox simultaneously."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Warning These methods generate unique file names based upon the current process ID. When using multiple threads, undetected name clashes may occur and cause corruption of the mailbox unless threads ar...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.244241",
+    "updatedDate": "2026-03-24T10:48:12.244242",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "mailbox/Maildir/add_flag": {
+    "id": "mailbox.Maildir.add_flag",
+    "name": "add_flag",
+    "type": "method",
+    "parent": "Maildir",
+    "signatures": [
+      "add_flag(key, flag)"
+    ],
+    "signature_hash": "cbf5be8ffd05397827f93d24bd70c12c2573e7729d4cd6cb9ca2414cea4d7e8a",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.Maildir.add_flag",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "flag",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "On the message corresponding to key, set the flags specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character. Considerations for using this method versus the message object’s add_flag() method are similar to those for set_flags(); see the discussion there. Added in version 3.13."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "On the message corresponding to key, set the flags specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character. Considerations ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.244173",
+    "updatedDate": "2026-03-24T10:48:12.244173",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "mailbox/MaildirMessage/add_flag": {
+    "id": "mailbox.MaildirMessage.add_flag",
+    "name": "add_flag",
+    "type": "method",
+    "parent": "MaildirMessage",
+    "signatures": [
+      "add_flag(flag)"
+    ],
+    "signature_hash": "83e429595e2b8a61c587461909cb22f561bbbcb5b1421c5dc3cd3ba1801a12be",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.MaildirMessage.add_flag",
+    "parameters": [
+      {
+        "name": "flag",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Set the flag(s) specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character. The current “info” is overwritten whether or not it contains experimental information rather than flags."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the flag(s) specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character. The current “info” is overwritten whether or not i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.244892",
+    "updatedDate": "2026-03-24T10:48:12.244893",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "mailbox/mboxMessage/add_flag": {
+    "id": "mailbox.mboxMessage.add_flag",
+    "name": "add_flag",
+    "type": "method",
+    "parent": "mboxMessage",
+    "signatures": [
+      "add_flag(flag)"
+    ],
+    "signature_hash": "83e429595e2b8a61c587461909cb22f561bbbcb5b1421c5dc3cd3ba1801a12be",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.mboxMessage.add_flag",
+    "parameters": [
+      {
+        "name": "flag",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Set the flag(s) specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the flag(s) specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.245096",
+    "updatedDate": "2026-03-24T10:48:12.245097",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "mailbox/MMDFMessage/add_flag": {
+    "id": "mailbox.MMDFMessage.add_flag",
+    "name": "add_flag",
+    "type": "method",
+    "parent": "MMDFMessage",
+    "signatures": [
+      "add_flag(flag)"
+    ],
+    "signature_hash": "83e429595e2b8a61c587461909cb22f561bbbcb5b1421c5dc3cd3ba1801a12be",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.MMDFMessage.add_flag",
+    "parameters": [
+      {
+        "name": "flag",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Set the flag(s) specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the flag(s) specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.245463",
+    "updatedDate": "2026-03-24T10:48:12.245464",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "mailbox/Maildir/add_folder": {
+    "id": "mailbox.Maildir.add_folder",
+    "name": "add_folder",
+    "type": "method",
+    "parent": "Maildir",
+    "signatures": [
+      "add_folder(folder)"
+    ],
+    "signature_hash": "6e165340e20c13777bf8a5650c0b99be8a736d0bee58702576646117ca597a2d",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.Maildir.add_folder",
+    "parameters": [
+      {
+        "name": "folder",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a folder whose name is folder and return a Maildir instance representing it."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a folder whose name is folder and return a Maildir instance representing it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.244089",
+    "updatedDate": "2026-03-24T10:48:12.244090",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "mailbox/MH/add_folder": {
+    "id": "mailbox.MH.add_folder",
+    "name": "add_folder",
+    "type": "method",
+    "parent": "MH",
+    "signatures": [
+      "add_folder(folder)"
+    ],
+    "signature_hash": "6e165340e20c13777bf8a5650c0b99be8a736d0bee58702576646117ca597a2d",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.MH.add_folder",
+    "parameters": [
+      {
+        "name": "folder",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a folder whose name is folder and return an MH instance representing it."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a folder whose name is folder and return an MH instance representing it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.244478",
+    "updatedDate": "2026-03-24T10:48:12.244479",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "mailbox/BabylMessage/add_label": {
+    "id": "mailbox.BabylMessage.add_label",
+    "name": "add_label",
+    "type": "method",
+    "parent": "BabylMessage",
+    "signatures": [
+      "add_label(label)"
+    ],
+    "signature_hash": "048771c4254512a3c3e6648aa6caf590420edb8e51615221187c5576ced994b1",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.BabylMessage.add_label",
+    "parameters": [
+      {
+        "name": "label",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Add label to the list of labels on the message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Add label to the list of labels on the message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.245267",
+    "updatedDate": "2026-03-24T10:48:12.245267",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "mailbox/MHMessage/add_sequence": {
+    "id": "mailbox.MHMessage.add_sequence",
+    "name": "add_sequence",
+    "type": "method",
+    "parent": "MHMessage",
+    "signatures": [
+      "add_sequence(sequence)"
+    ],
+    "signature_hash": "803c1e60e1dc41b6da769e157562ce51f9e6decde8fc3db42555ff5454e0d703",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.MHMessage.add_sequence",
+    "parameters": [
+      {
+        "name": "sequence",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Add sequence to the list of sequences that include this message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Add sequence to the list of sequences that include this message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.245182",
+    "updatedDate": "2026-03-24T10:48:12.245183",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

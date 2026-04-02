@@ -1,0 +1,544 @@
+{
+  "pathlib/PurePath/parent": {
+    "id": "pathlib.PurePath.parent",
+    "name": "parent",
+    "type": "attribute",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.parent"
+    ],
+    "signature_hash": "73a18e9961eac30cfc5ae24f22b8a042f70a4a1befca689b7a03a7561b542701",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.parent",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The logical parent of the path: >>> p = PurePosixPath('/a/b/c/d') >>> p.parent PurePosixPath('/a/b/c') You cannot go past an anchor, or empty path: >>> p = PurePosixPath('/') >>> p.parent PurePosixPath('/') >>> p = PurePosixPath('.') >>> p.parent PurePosixPath('.') Note This is a purely lexical operation, hence the following behaviour: >>> p = PurePosixPath('foo/..') >>> p.parent PurePosixPath('foo') If you want to walk an arbitrary filesystem path upwards, it is recommended to first call Pat..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The logical parent of the path: >>> p = PurePosixPath('/a/b/c/d') >>> p.parent PurePosixPath('/a/b/c') You cannot go past an anchor, or empty path: >>> p = PurePosixPath('/') >>> p.parent PurePosixPat...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.301088",
+    "updatedDate": "2026-03-24T10:48:12.301091",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PurePath/parents": {
+    "id": "pathlib.PurePath.parents",
+    "name": "parents",
+    "type": "attribute",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.parents"
+    ],
+    "signature_hash": "3a562c9a53e72eb7ca006fd7242c04713aeb64919253942fa59d81b8590141d8",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.parents",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An immutable sequence providing access to the logical ancestors of the path: >>> p = PureWindowsPath('c:/foo/bar/setup.py') >>> p.parents[0] PureWindowsPath('c:/foo/bar') >>> p.parents[1] PureWindowsPath('c:/foo') >>> p.parents[2] PureWindowsPath('c:/') Changed in version 3.10: The parents sequence now supports slices and negative index values."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An immutable sequence providing access to the logical ancestors of the path: >>> p = PureWindowsPath('c:/foo/bar/setup.py') >>> p.parents[0] PureWindowsPath('c:/foo/bar') >>> p.parents[1] PureWindowsP...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.301044",
+    "updatedDate": "2026-03-24T10:48:12.301048",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PurePath/parser": {
+    "id": "pathlib.PurePath.parser",
+    "name": "parser",
+    "type": "attribute",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.parser"
+    ],
+    "signature_hash": "3dc966beacb623e5196660ba0f143dd1aa28d351ece5aaa3e5dbf1752ca20b6e",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.parser",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The implementation of the os.path module used for low-level path parsing and joining: either posixpath or ntpath. Added in version 3.13."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The implementation of the os.path module used for low-level path parsing and joining: either posixpath or ntpath. Added in version 3.13.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.300769",
+    "updatedDate": "2026-03-24T10:48:12.300781",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PurePath/parts": {
+    "id": "pathlib.PurePath.parts",
+    "name": "parts",
+    "type": "attribute",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.parts"
+    ],
+    "signature_hash": "b02bf211be239e46e26d755fc0226ca6d6180de1d852bc38ba4bbddb4b731672",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.parts",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A tuple giving access to the path’s various components: >>> p = PurePath('/usr/bin/python3') >>> p.parts ('/', 'usr', 'bin', 'python3') >>> p = PureWindowsPath('c:/Program Files/PSF') >>> p.parts ('c:\\\\', 'Program Files', 'PSF') (note how the drive and local root are regrouped in a single part)"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A tuple giving access to the path’s various components: >>> p = PurePath('/usr/bin/python3') >>> p.parts ('/', 'usr', 'bin', 'python3') >>> p = PureWindowsPath('c:/Program Files/PSF') >>> p.parts ('c:...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.300692",
+    "updatedDate": "2026-03-24T10:48:12.300693",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path": {
+    "id": "pathlib.Path",
+    "name": "Path",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pathlib.Path(*pathsegments)"
+    ],
+    "signature_hash": "5a61e233905e347bd70297061f9f0b7aa44b2734ce21aeca389b34bd71dcbc88",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path",
+    "parameters": [
+      {
+        "name": "pathsegments",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A subclass of PurePath, this class represents concrete paths of the system’s path flavour (instantiating it creates either a PosixPath or a WindowsPath): >>> Path('setup.py') PosixPath('setup.py') pathsegments is specified similarly to PurePath."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of PurePath, this class represents concrete paths of the system’s path flavour (instantiating it creates either a PosixPath or a WindowsPath): >>> Path('setup.py') PosixPath('setup.py') pat...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302477",
+    "updatedDate": "2026-03-24T10:48:12.302478",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "info"
+    ],
+    "methods": [
+      "absolute",
+      "as_uri",
+      "chmod",
+      "copy",
+      "copy_into",
+      "cwd",
+      "exists",
+      "expanduser",
+      "from_uri",
+      "glob",
+      "group",
+      "hardlink_to",
+      "home",
+      "is_block_device",
+      "is_char_device",
+      "is_dir",
+      "is_fifo",
+      "is_file",
+      "is_junction",
+      "is_mount",
+      "is_socket",
+      "is_symlink",
+      "iterdir",
+      "lchmod",
+      "lstat",
+      "mkdir",
+      "move",
+      "move_into",
+      "open",
+      "owner",
+      "read_bytes",
+      "read_text",
+      "readlink",
+      "rename",
+      "replace",
+      "resolve",
+      "rglob",
+      "rmdir",
+      "samefile",
+      "stat",
+      "symlink_to",
+      "touch",
+      "unlink",
+      "walk",
+      "write_bytes",
+      "write_text"
+    ]
+  },
+  "pathlib/PathInfo": {
+    "id": "pathlib.PathInfo",
+    "name": "PathInfo",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pathlib.types.PathInfo"
+    ],
+    "signature_hash": "c98a57940248d22fc278ecfb0d2c20db8b2800c9357c184cff14174c5fa1ed0f",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.types.PathInfo",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A typing.Protocol describing the Path.info attribute. Implementations may return cached results from their methods. exists(*, follow_symlinks=True)¶ Return True if the path is an existing file or directory, or any other kind of file; return False if the path doesn’t exist. If follow_symlinks is False, return True for symlinks without checking if their targets exist. is_dir(*, follow_symlinks=True)¶ Return True if the path is a directory, or a symbolic link pointing to a directory; return Fals..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A typing.Protocol describing the Path.info attribute. Implementations may return cached results from their methods. exists(*, follow_symlinks=True)¶ Return True if the path is an existing file or dire...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.303991",
+    "updatedDate": "2026-03-24T10:48:12.303992",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "exists",
+      "is_dir",
+      "is_file",
+      "is_symlink"
+    ]
+  },
+  "pathlib/PosixPath": {
+    "id": "pathlib.PosixPath",
+    "name": "PosixPath",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pathlib.PosixPath(*pathsegments)"
+    ],
+    "signature_hash": "64bf7ea56c40bc8707e0e02a8c80bc989212dd82e0d2138b3ced28668de15a8e",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PosixPath",
+    "parameters": [
+      {
+        "name": "pathsegments",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A subclass of Path and PurePosixPath, this class represents concrete non-Windows filesystem paths: >>> PosixPath('/etc/hosts') PosixPath('/etc/hosts') pathsegments is specified similarly to PurePath. Changed in version 3.13: Raises UnsupportedOperation on Windows. In previous versions, NotImplementedError was raised instead."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of Path and PurePosixPath, this class represents concrete non-Windows filesystem paths: >>> PosixPath('/etc/hosts') PosixPath('/etc/hosts') pathsegments is specified similarly to PurePath. ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302498",
+    "updatedDate": "2026-03-24T10:48:12.302499",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PurePath": {
+    "id": "pathlib.PurePath",
+    "name": "PurePath",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pathlib.PurePath(*pathsegments)"
+    ],
+    "signature_hash": "d096253a407f22b2938e75f33930baef4622420e18914ccf9fcca854fb7c048a",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath",
+    "parameters": [
+      {
+        "name": "pathsegments",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A generic class that represents the system’s path flavour (instantiating it creates either a PurePosixPath or a PureWindowsPath): >>> PurePath('setup.py') # Running on a Unix machine PurePosixPath('setup.py') Each element of pathsegments can be either a string representing a path segment, or an object implementing the os.PathLike interface where the __fspath__() method returns a string, such as another path object: >>> PurePath('foo', 'some/path', 'bar') PurePosixPath('foo/some/path/bar') >>>..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A generic class that represents the system’s path flavour (instantiating it creates either a PurePosixPath or a PureWindowsPath): >>> PurePath('setup.py') # Running on a Unix machine PurePosixPath('se...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.300478",
+    "updatedDate": "2026-03-24T10:48:12.300479",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "anchor",
+      "drive",
+      "name",
+      "parent",
+      "parents",
+      "parser",
+      "parts",
+      "root",
+      "stem",
+      "suffix",
+      "suffixes"
+    ],
+    "methods": [
+      "as_posix",
+      "full_match",
+      "is_absolute",
+      "is_relative_to",
+      "is_reserved",
+      "joinpath",
+      "match",
+      "relative_to",
+      "with_name",
+      "with_segments",
+      "with_stem",
+      "with_suffix"
+    ]
+  },
+  "pathlib/PurePosixPath": {
+    "id": "pathlib.PurePosixPath",
+    "name": "PurePosixPath",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pathlib.PurePosixPath(*pathsegments)"
+    ],
+    "signature_hash": "0eb4e9b2da018ea090d4ab9476b95c5ea627a9eb34357e7f55b342ecaa24eac9",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePosixPath",
+    "parameters": [
+      {
+        "name": "pathsegments",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A subclass of PurePath, this path flavour represents non-Windows filesystem paths: >>> PurePosixPath('/etc/hosts') PurePosixPath('/etc/hosts') pathsegments is specified similarly to PurePath."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of PurePath, this path flavour represents non-Windows filesystem paths: >>> PurePosixPath('/etc/hosts') PurePosixPath('/etc/hosts') pathsegments is specified similarly to PurePath.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.300631",
+    "updatedDate": "2026-03-24T10:48:12.300634",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PureWindowsPath": {
+    "id": "pathlib.PureWindowsPath",
+    "name": "PureWindowsPath",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pathlib.PureWindowsPath(*pathsegments)"
+    ],
+    "signature_hash": "28280791890c314d74fe56380183addbf874af14e74f81ed2ddfbacee75f53f3",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PureWindowsPath",
+    "parameters": [
+      {
+        "name": "pathsegments",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A subclass of PurePath, this path flavour represents Windows filesystem paths, including UNC paths: >>> PureWindowsPath('c:/', 'Users', 'Ximénez') PureWindowsPath('c:/Users/Ximénez') >>> PureWindowsPath('//server/share/file') PureWindowsPath('//server/share/file') pathsegments is specified similarly to PurePath."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of PurePath, this path flavour represents Windows filesystem paths, including UNC paths: >>> PureWindowsPath('c:/', 'Users', 'Ximénez') PureWindowsPath('c:/Users/Ximénez') >>> PureWindowsPa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.300670",
+    "updatedDate": "2026-03-24T10:48:12.300671",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib": {
+    "type": "module",
+    "name": "pathlib",
+    "id": "pathlib",
+    "description": "Module pathlib",
+    "classes": [
+      "Path",
+      "PathInfo",
+      "PosixPath",
+      "PurePath",
+      "PurePosixPath",
+      "PureWindowsPath",
+      "WindowsPath"
+    ],
+    "exceptions": [
+      "UnsupportedOperation"
+    ]
+  }
+}

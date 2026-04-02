@@ -1,0 +1,2597 @@
+{
+  "java.lang.classfile.instruction/OperatorInstruction": {
+    "id": "java.lang.classfile.instruction.OperatorInstruction",
+    "name": "OperatorInstruction",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface OperatorInstruction"
+    ],
+    "signature_hash": "703b2ad1463e6d09c09d12a23d5d390e74bb5e5957ee893a864bd7e24920b06e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/OperatorInstruction.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817416",
+    "updatedDate": "2026-03-24T10:48:13.817417",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "of",
+      "typeKind"
+    ]
+  },
+  "java.lang.classfile.instruction/TypeCheckInstruction/of": {
+    "id": "java.lang.classfile.instruction.TypeCheckInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "TypeCheckInstruction",
+    "signatures": [
+      "public static TypeCheckInstruction of(Opcode op, ClassEntry type)",
+      "public static TypeCheckInstruction of(Opcode op, ClassDesc type)"
+    ],
+    "signature_hash": "89cc1f4a839ed66077a12280ed19d2e6033397846021a00e6d4b7013ab83cc2b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/TypeCheckInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "Opcode",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type",
+        "has_default": false,
+        "default_value": null,
+        "type": "ClassEntry|ClassDesc",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static TypeCheckInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a type check instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a type check instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.814866",
+    "updatedDate": "2026-03-24T10:48:13.814867",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/BranchInstruction/of": {
+    "id": "java.lang.classfile.instruction.BranchInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "BranchInstruction",
+    "signatures": [
+      "public static BranchInstruction of(Opcode op, Label target)"
+    ],
+    "signature_hash": "d925df2f0afafea63af0f01d26e445480625c95a45f46e23d0aa61a5865ae6ca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/BranchInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "Opcode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "target",
+        "type": "Label",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static BranchInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a branch instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a branch instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.814905",
+    "updatedDate": "2026-03-24T10:48:13.814905",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/ArrayLoadInstruction/of": {
+    "id": "java.lang.classfile.instruction.ArrayLoadInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "ArrayLoadInstruction",
+    "signatures": [
+      "public static ArrayLoadInstruction of(Opcode op)"
+    ],
+    "signature_hash": "d83ae13f32465912d7d2a21f70670ac135af98950f951851bbc89ac1f4df3719",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/ArrayLoadInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "Opcode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static ArrayLoadInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an array load instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an array load instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.814942",
+    "updatedDate": "2026-03-24T10:48:13.814943",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/ArrayStoreInstruction/of": {
+    "id": "java.lang.classfile.instruction.ArrayStoreInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "ArrayStoreInstruction",
+    "signatures": [
+      "public static ArrayStoreInstruction of(Opcode op)"
+    ],
+    "signature_hash": "62b8a5da4d7f306c38750c12a150af4bf3fd75ebf2a5de481b0d6c491f85d9fc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/ArrayStoreInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "Opcode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static ArrayStoreInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an array store instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an array store instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.814982",
+    "updatedDate": "2026-03-24T10:48:13.814983",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/CharacterRange/of": {
+    "id": "java.lang.classfile.instruction.CharacterRange.of",
+    "name": "of",
+    "type": "method",
+    "parent": "CharacterRange",
+    "signatures": [
+      "public static CharacterRange of(Label startScope, Label endScope, int characterRangeStart, int characterRangeEnd, int flags)"
+    ],
+    "signature_hash": "d57d3d34dcff7a4b3f21fdc77c1dd1b9a5581c1527085769bf566993dc8ca776",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html",
+    "parameters": [
+      {
+        "name": "startScope",
+        "type": "Label",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "endScope",
+        "type": "Label",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "characterRangeStart",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "characterRangeEnd",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "flags",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static CharacterRange",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a character range pseudo-instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a character range pseudo-instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815077",
+    "updatedDate": "2026-03-24T10:48:13.815078",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/ConvertInstruction/of": {
+    "id": "java.lang.classfile.instruction.ConvertInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "ConvertInstruction",
+    "signatures": [
+      "public static ConvertInstruction of(Opcode op)",
+      "public static ConvertInstruction of(TypeKind fromType, TypeKind toType)"
+    ],
+    "signature_hash": "7f05137388ebcf65eaa6ef62885005ce9ec6f90002e648f52e476fef7579a9f3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/ConvertInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "Opcode",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "fromType",
+        "has_default": false,
+        "default_value": null,
+        "type": "TypeKind",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "toType",
+        "has_default": false,
+        "default_value": null,
+        "type": "TypeKind",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static ConvertInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a conversion instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a conversion instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815473",
+    "updatedDate": "2026-03-24T10:48:13.815474",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/JsrInstruction/of": {
+    "id": "java.lang.classfile.instruction.JsrInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "JsrInstruction",
+    "signatures": [
+      "public static DiscontinuedInstruction.JsrInstruction of(Label target)",
+      "public static DiscontinuedInstruction.JsrInstruction of(Opcode op, Label target)"
+    ],
+    "signature_hash": "6b70a30c591d11bf2fe3c892cfd0a7dfba4238383d8176e8c01b66bd9e0d62c0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/DiscontinuedInstruction.JsrInstruction.html",
+    "parameters": [
+      {
+        "name": "target",
+        "has_default": false,
+        "default_value": null,
+        "type": "Label",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "Opcode",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static DiscontinuedInstruction.JsrInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a jump subroutine instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a jump subroutine instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815536",
+    "updatedDate": "2026-03-24T10:48:13.815537",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/RetInstruction/of": {
+    "id": "java.lang.classfile.instruction.RetInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "RetInstruction",
+    "signatures": [
+      "public static DiscontinuedInstruction.RetInstruction of(int slot)",
+      "public static DiscontinuedInstruction.RetInstruction of(Opcode op, int slot)"
+    ],
+    "signature_hash": "f0e66724ddea178e4b76134d47fa27bdcfa5d66bb316319b3d0ed02db6e405df",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/DiscontinuedInstruction.RetInstruction.html",
+    "parameters": [
+      {
+        "name": "slot",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "Opcode",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static DiscontinuedInstruction.RetInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a return from subroutine instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a return from subroutine instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815594",
+    "updatedDate": "2026-03-24T10:48:13.815595",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/ExceptionCatch/of": {
+    "id": "java.lang.classfile.instruction.ExceptionCatch.of",
+    "name": "of",
+    "type": "method",
+    "parent": "ExceptionCatch",
+    "signatures": [
+      "public static ExceptionCatch of(Label handler, Label tryStart, Label tryEnd)",
+      "public static ExceptionCatch of(Label handler, Label tryStart, Label tryEnd, Optional<ClassEntry> catchTypeEntry)"
+    ],
+    "signature_hash": "7adbae23ed1729dbf4dc7f173a40ac33bb14f9fac3dfc4fe0344f384eaa003fa",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/ExceptionCatch.html",
+    "parameters": [
+      {
+        "name": "handler",
+        "has_default": false,
+        "default_value": null,
+        "type": "Label",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "tryStart",
+        "has_default": false,
+        "default_value": null,
+        "type": "Label",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "tryEnd",
+        "has_default": false,
+        "default_value": null,
+        "type": "Label",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "catchTypeEntry",
+        "has_default": false,
+        "default_value": null,
+        "type": "Optional<ClassEntry>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static ExceptionCatch",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an exception table pseudo-instruction to catch everything."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an exception table pseudo-instruction to catch everything.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815685",
+    "updatedDate": "2026-03-24T10:48:13.815686",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/FieldInstruction/of": {
+    "id": "java.lang.classfile.instruction.FieldInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "FieldInstruction",
+    "signatures": [
+      "public static FieldInstruction of(Opcode op, ClassEntry owner, NameAndTypeEntry nameAndType)",
+      "public static FieldInstruction of(Opcode op, ClassEntry owner, Utf8Entry name, Utf8Entry type)",
+      "public static FieldInstruction of(Opcode op, FieldRefEntry field)"
+    ],
+    "signature_hash": "aa3ade4cd2caaa3104f78e8dd67260e54396060e71170b7ae2ef8826aa15c2d8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/FieldInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "Opcode",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "owner",
+        "has_default": false,
+        "default_value": null,
+        "type": "ClassEntry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "nameAndType",
+        "has_default": false,
+        "default_value": null,
+        "type": "NameAndTypeEntry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "Utf8Entry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type",
+        "has_default": false,
+        "default_value": null,
+        "type": "Utf8Entry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "field",
+        "has_default": false,
+        "default_value": null,
+        "type": "FieldRefEntry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static FieldInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a field access instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a field access instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815801",
+    "updatedDate": "2026-03-24T10:48:13.815802",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/IncrementInstruction/of": {
+    "id": "java.lang.classfile.instruction.IncrementInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "IncrementInstruction",
+    "signatures": [
+      "public static IncrementInstruction of(int slot, int constant)"
+    ],
+    "signature_hash": "9a5c9d18360df2d1ecbc99785ad3c8ac4d6fc5ecb0f2abfb780f4b668d5584c9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/IncrementInstruction.html",
+    "parameters": [
+      {
+        "name": "slot",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "constant",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static IncrementInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an increment instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an increment instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815891",
+    "updatedDate": "2026-03-24T10:48:13.815892",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/InvokeDynamicInstruction/of": {
+    "id": "java.lang.classfile.instruction.InvokeDynamicInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "InvokeDynamicInstruction",
+    "signatures": [
+      "public static InvokeDynamicInstruction of(InvokeDynamicEntry invokedynamic)"
+    ],
+    "signature_hash": "58f13626cd2ffe6262f8b9b0d214b12a9c997dfd8d960abb8c1bb4318e78ff91",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/InvokeDynamicInstruction.html",
+    "parameters": [
+      {
+        "name": "invokedynamic",
+        "type": "InvokeDynamicEntry",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static InvokeDynamicInstruction",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an invokedynamic instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an invokedynamic instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815996",
+    "updatedDate": "2026-03-24T10:48:13.815997",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/InvokeInstruction/of": {
+    "id": "java.lang.classfile.instruction.InvokeInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "InvokeInstruction",
+    "signatures": [
+      "public static InvokeInstruction of(Opcode op, ClassEntry owner, NameAndTypeEntry nameAndType, boolean isInterface)",
+      "public static InvokeInstruction of(Opcode op, ClassEntry owner, Utf8Entry name, Utf8Entry type, boolean isInterface)",
+      "public static InvokeInstruction of(Opcode op, MemberRefEntry method)"
+    ],
+    "signature_hash": "1688ad85bf40bb7726853e486a64d4766658a26286203a7980ac4e662b19cfc6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/InvokeInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "Opcode",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "owner",
+        "has_default": false,
+        "default_value": null,
+        "type": "ClassEntry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "nameAndType",
+        "has_default": false,
+        "default_value": null,
+        "type": "NameAndTypeEntry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "isInterface",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "Utf8Entry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type",
+        "has_default": false,
+        "default_value": null,
+        "type": "Utf8Entry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "method",
+        "has_default": false,
+        "default_value": null,
+        "type": "MemberRefEntry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static InvokeInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an invocation instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an invocation instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.816162",
+    "updatedDate": "2026-03-24T10:48:13.816163",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/LineNumber/of": {
+    "id": "java.lang.classfile.instruction.LineNumber.of",
+    "name": "of",
+    "type": "method",
+    "parent": "LineNumber",
+    "signatures": [
+      "public static LineNumber of(int line)"
+    ],
+    "signature_hash": "4669725c90b6c0157f67d5ab5df34cf2ca83f4b118367b95932a40cf1a074582",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/LineNumber.html",
+    "parameters": [
+      {
+        "name": "line",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static LineNumber",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a line number pseudo-instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a line number pseudo-instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.816281",
+    "updatedDate": "2026-03-24T10:48:13.816282",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/LoadInstruction/of": {
+    "id": "java.lang.classfile.instruction.LoadInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "LoadInstruction",
+    "signatures": [
+      "public static LoadInstruction of(Opcode op, int slot)",
+      "public static LoadInstruction of(TypeKind kind, int slot)"
+    ],
+    "signature_hash": "6c8baeb392307d4467414529ad5ef72072ab17e4b354eb5d87f920feb1adcc86",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/LoadInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "Opcode",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "slot",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "kind",
+        "has_default": false,
+        "default_value": null,
+        "type": "TypeKind",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static LoadInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a local variable load instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a local variable load instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.816326",
+    "updatedDate": "2026-03-24T10:48:13.816327",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/LocalVariable/of": {
+    "id": "java.lang.classfile.instruction.LocalVariable.of",
+    "name": "of",
+    "type": "method",
+    "parent": "LocalVariable",
+    "signatures": [
+      "public static LocalVariable of(int slot, Utf8Entry nameEntry, Utf8Entry descriptorEntry, Label startScope, Label endScope)",
+      "public static LocalVariable of(int slot, String name, ClassDesc descriptor, Label startScope, Label endScope)"
+    ],
+    "signature_hash": "009f5411cfc2a50d798fbf47bdb1b3590faa8fae5433b2ba0ea5c8e4196840e2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/LocalVariable.html",
+    "parameters": [
+      {
+        "name": "slot",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "nameEntry",
+        "has_default": false,
+        "default_value": null,
+        "type": "Utf8Entry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "descriptorEntry",
+        "has_default": false,
+        "default_value": null,
+        "type": "Utf8Entry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "startScope",
+        "has_default": false,
+        "default_value": null,
+        "type": "Label",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "endScope",
+        "has_default": false,
+        "default_value": null,
+        "type": "Label",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "descriptor",
+        "has_default": false,
+        "default_value": null,
+        "type": "ClassDesc",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static LocalVariable",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a local variable pseudo-instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a local variable pseudo-instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.816451",
+    "updatedDate": "2026-03-24T10:48:13.816452",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/LocalVariableType/of": {
+    "id": "java.lang.classfile.instruction.LocalVariableType.of",
+    "name": "of",
+    "type": "method",
+    "parent": "LocalVariableType",
+    "signatures": [
+      "public static LocalVariableType of(int slot, Utf8Entry nameEntry, Utf8Entry signatureEntry, Label startScope, Label endScope)",
+      "public static LocalVariableType of(int slot, String name, Signature signature, Label startScope, Label endScope)"
+    ],
+    "signature_hash": "32c3631c2d57eaaf3528af87bdd5a57bbd38e8993e784e0cadd7ce71f5c1c1ea",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/LocalVariableType.html",
+    "parameters": [
+      {
+        "name": "slot",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "nameEntry",
+        "has_default": false,
+        "default_value": null,
+        "type": "Utf8Entry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "signatureEntry",
+        "has_default": false,
+        "default_value": null,
+        "type": "Utf8Entry",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "startScope",
+        "has_default": false,
+        "default_value": null,
+        "type": "Label",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "endScope",
+        "has_default": false,
+        "default_value": null,
+        "type": "Label",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "signature",
+        "has_default": false,
+        "default_value": null,
+        "type": "Signature",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static LocalVariableType",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a local variable type pseudo-instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a local variable type pseudo-instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.816616",
+    "updatedDate": "2026-03-24T10:48:13.816616",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/LookupSwitchInstruction/of": {
+    "id": "java.lang.classfile.instruction.LookupSwitchInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "LookupSwitchInstruction",
+    "signatures": [
+      "public static LookupSwitchInstruction of(Label defaultTarget, List<SwitchCase> cases)"
+    ],
+    "signature_hash": "39c9ddd6e33fd4ad002a904855b2b58e4be309c2c64a7da3d757555053e3c7fc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/LookupSwitchInstruction.html",
+    "parameters": [
+      {
+        "name": "defaultTarget",
+        "type": "Label",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "cases",
+        "type": "List<SwitchCase>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static LookupSwitchInstruction",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a lookup switch instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a lookup switch instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817096",
+    "updatedDate": "2026-03-24T10:48:13.817097",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/MonitorInstruction/of": {
+    "id": "java.lang.classfile.instruction.MonitorInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "MonitorInstruction",
+    "signatures": [
+      "public static MonitorInstruction of(Opcode op)"
+    ],
+    "signature_hash": "df55eca2b8f6b99812ff479895d3187f2e6c82b9f3de328d441270a4e8370f75",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/MonitorInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "Opcode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static MonitorInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a monitor instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a monitor instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817130",
+    "updatedDate": "2026-03-24T10:48:13.817131",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/NewMultiArrayInstruction/of": {
+    "id": "java.lang.classfile.instruction.NewMultiArrayInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "NewMultiArrayInstruction",
+    "signatures": [
+      "public static NewMultiArrayInstruction of(ClassEntry arrayTypeEntry, int dimensions)"
+    ],
+    "signature_hash": "81695ae5d8443e6666c5ddc6c67448eb1cd1c56fe8d1cb848938244d2c44e6ea",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/NewMultiArrayInstruction.html",
+    "parameters": [
+      {
+        "name": "arrayTypeEntry",
+        "type": "ClassEntry",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "dimensions",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static NewMultiArrayInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a new multi-dimensional array instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new multi-dimensional array instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817202",
+    "updatedDate": "2026-03-24T10:48:13.817203",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/NewObjectInstruction/of": {
+    "id": "java.lang.classfile.instruction.NewObjectInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "NewObjectInstruction",
+    "signatures": [
+      "public static NewObjectInstruction of(ClassEntry className)"
+    ],
+    "signature_hash": "d5b77e36f12e8e3a0cd4f922a56a79ab53473d6d1889640e1c45c59f2e77e58c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/NewObjectInstruction.html",
+    "parameters": [
+      {
+        "name": "className",
+        "type": "ClassEntry",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static NewObjectInstruction",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a new object instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new object instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817256",
+    "updatedDate": "2026-03-24T10:48:13.817257",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/NewPrimitiveArrayInstruction/of": {
+    "id": "java.lang.classfile.instruction.NewPrimitiveArrayInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "NewPrimitiveArrayInstruction",
+    "signatures": [
+      "public static NewPrimitiveArrayInstruction of(TypeKind typeKind)"
+    ],
+    "signature_hash": "24eaff99d649f0ee228f79530b416e629c8bfdc038a5bfac02587cf385909ef8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/NewPrimitiveArrayInstruction.html",
+    "parameters": [
+      {
+        "name": "typeKind",
+        "type": "TypeKind",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static NewPrimitiveArrayInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a new primitive array instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new primitive array instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817293",
+    "updatedDate": "2026-03-24T10:48:13.817294",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/NewReferenceArrayInstruction/of": {
+    "id": "java.lang.classfile.instruction.NewReferenceArrayInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "NewReferenceArrayInstruction",
+    "signatures": [
+      "public static NewReferenceArrayInstruction of(ClassEntry componentType)"
+    ],
+    "signature_hash": "aec4b16ac51adbadfaf2efdbdce365c7ad00f55ca9f4d707fedf5261f3198ee3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/NewReferenceArrayInstruction.html",
+    "parameters": [
+      {
+        "name": "componentType",
+        "type": "ClassEntry",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static NewReferenceArrayInstruction",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a new reference array instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new reference array instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817368",
+    "updatedDate": "2026-03-24T10:48:13.817369",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/NopInstruction/of": {
+    "id": "java.lang.classfile.instruction.NopInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "NopInstruction",
+    "signatures": [
+      "public static NopInstruction of()"
+    ],
+    "signature_hash": "1fb86121f64f81e6f5fac700d25ab2573b1d4467571b567d050f7544153df01b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/NopInstruction.html",
+    "parameters": [],
+    "return_type": "static NopInstruction",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a no-op instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a no-op instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817400",
+    "updatedDate": "2026-03-24T10:48:13.817401",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/OperatorInstruction/of": {
+    "id": "java.lang.classfile.instruction.OperatorInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "OperatorInstruction",
+    "signatures": [
+      "public static OperatorInstruction of(Opcode op)"
+    ],
+    "signature_hash": "956f4e84f66fc1527e28597b8b3483195ea9d9279ee8ba5c298374fc37fbd632",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/OperatorInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "Opcode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static OperatorInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an operator instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an operator instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817444",
+    "updatedDate": "2026-03-24T10:48:13.817445",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/ReturnInstruction/of": {
+    "id": "java.lang.classfile.instruction.ReturnInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "ReturnInstruction",
+    "signatures": [
+      "public static ReturnInstruction of(Opcode op)",
+      "public static ReturnInstruction of(TypeKind typeKind)"
+    ],
+    "signature_hash": "b04dc4b9099f4092c406eb5b4e66ee44e68cc2b66a94b075deb40a9ea1e86355",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/ReturnInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "Opcode",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "typeKind",
+        "has_default": false,
+        "default_value": null,
+        "type": "TypeKind",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static ReturnInstruction",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a return instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a return instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817505",
+    "updatedDate": "2026-03-24T10:48:13.817506",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/StackInstruction/of": {
+    "id": "java.lang.classfile.instruction.StackInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "StackInstruction",
+    "signatures": [
+      "public static StackInstruction of(Opcode op)"
+    ],
+    "signature_hash": "99995204d3fec4e6da5d270679ce87bc6f14b0f66ad828c3b6f33bb05d06ea94",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/StackInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "Opcode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static StackInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a stack manipulation instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stack manipulation instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817559",
+    "updatedDate": "2026-03-24T10:48:13.817560",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/StoreInstruction/of": {
+    "id": "java.lang.classfile.instruction.StoreInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "StoreInstruction",
+    "signatures": [
+      "public static StoreInstruction of(Opcode op, int slot)",
+      "public static StoreInstruction of(TypeKind kind, int slot)"
+    ],
+    "signature_hash": "fff115591cc614b1267cd444e67cbbbeb89e71c3e5275257da9743ef5359058a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/StoreInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "Opcode",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "slot",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "kind",
+        "has_default": false,
+        "default_value": null,
+        "type": "TypeKind",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static StoreInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a local variable store instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a local variable store instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817608",
+    "updatedDate": "2026-03-24T10:48:13.817609",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/SwitchCase/of": {
+    "id": "java.lang.classfile.instruction.SwitchCase.of",
+    "name": "of",
+    "type": "method",
+    "parent": "SwitchCase",
+    "signatures": [
+      "public static SwitchCase of(int caseValue, Label target)"
+    ],
+    "signature_hash": "6d4f90f589f5aa560a948c67abce7fc469b2dcc8727823c0142f6e419c6c15cd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/SwitchCase.html",
+    "parameters": [
+      {
+        "name": "caseValue",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "target",
+        "type": "Label",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static SwitchCase",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a new switch case."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new switch case.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817699",
+    "updatedDate": "2026-03-24T10:48:13.817700",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/TableSwitchInstruction/of": {
+    "id": "java.lang.classfile.instruction.TableSwitchInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "TableSwitchInstruction",
+    "signatures": [
+      "public static TableSwitchInstruction of(int lowValue, int highValue, Label defaultTarget, List<SwitchCase> cases)"
+    ],
+    "signature_hash": "9d276b699a7896e83bcf02ef5ec58b2632909f10b73df1335bbed774452db351",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/TableSwitchInstruction.html",
+    "parameters": [
+      {
+        "name": "lowValue",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "highValue",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "defaultTarget",
+        "type": "Label",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "cases",
+        "type": "List<SwitchCase>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static TableSwitchInstruction",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a table switch instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a table switch instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817837",
+    "updatedDate": "2026-03-24T10:48:13.817838",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/ThrowInstruction/of": {
+    "id": "java.lang.classfile.instruction.ThrowInstruction.of",
+    "name": "of",
+    "type": "method",
+    "parent": "ThrowInstruction",
+    "signatures": [
+      "public static ThrowInstruction of()"
+    ],
+    "signature_hash": "fe7f2d3e536bb5e55265f8f61d0b4e8149fec83739595be0f64e3800b1362043",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/ThrowInstruction.html",
+    "parameters": [],
+    "return_type": "static ThrowInstruction",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a throw instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a throw instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.817943",
+    "updatedDate": "2026-03-24T10:48:13.817944",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/ConstantInstruction/ofArgument": {
+    "id": "java.lang.classfile.instruction.ConstantInstruction.ofArgument",
+    "name": "ofArgument",
+    "type": "method",
+    "parent": "ConstantInstruction",
+    "signatures": [
+      "public static ConstantInstruction.ArgumentConstantInstruction ofArgument(Opcode op, int value)"
+    ],
+    "signature_hash": "bcc4f68779a4643ced40ba1db62651a5de7b72b9a552ae235861b712db866804",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/ConstantInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "Opcode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static ConstantInstruction.ArgumentConstantInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an argument constant instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an argument constant instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815246",
+    "updatedDate": "2026-03-24T10:48:13.815247",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/ConstantInstruction/ofIntrinsic": {
+    "id": "java.lang.classfile.instruction.ConstantInstruction.ofIntrinsic",
+    "name": "ofIntrinsic",
+    "type": "method",
+    "parent": "ConstantInstruction",
+    "signatures": [
+      "public static ConstantInstruction.IntrinsicConstantInstruction ofIntrinsic(Opcode op)"
+    ],
+    "signature_hash": "ad6abda53e328fb19ef6dd0e5b7b1d142774a1e7a5950e94851b4b81debd4509",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/ConstantInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "Opcode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static ConstantInstruction.IntrinsicConstantInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an intrinsic constant instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an intrinsic constant instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815262",
+    "updatedDate": "2026-03-24T10:48:13.815263",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/ConstantInstruction/ofLoad": {
+    "id": "java.lang.classfile.instruction.ConstantInstruction.ofLoad",
+    "name": "ofLoad",
+    "type": "method",
+    "parent": "ConstantInstruction",
+    "signatures": [
+      "public static ConstantInstruction.LoadConstantInstruction ofLoad(Opcode op, LoadableConstantEntry constant)"
+    ],
+    "signature_hash": "90d60cd00c8b5ecefee401c6c4a2729a94792d7096898af971ae804b89387c4c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/ConstantInstruction.html",
+    "parameters": [
+      {
+        "name": "op",
+        "type": "Opcode",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "constant",
+        "type": "LoadableConstantEntry",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static ConstantInstruction.LoadConstantInstruction",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a load constant instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a load constant instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815282",
+    "updatedDate": "2026-03-24T10:48:13.815283",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/FieldInstruction/owner": {
+    "id": "java.lang.classfile.instruction.FieldInstruction.owner",
+    "name": "owner",
+    "type": "method",
+    "parent": "FieldInstruction",
+    "signatures": [
+      "public default ClassEntry owner()"
+    ],
+    "signature_hash": "316087f2573ab91da2b0048fd1f1ff12a0caba1d96015d5f4c222c7b94e56b2a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/FieldInstruction.html",
+    "parameters": [],
+    "return_type": "default ClassEntry",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the class holding the field."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the class holding the field.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.815815",
+    "updatedDate": "2026-03-24T10:48:13.815816",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.classfile.instruction/InvokeInstruction/owner": {
+    "id": "java.lang.classfile.instruction.InvokeInstruction.owner",
+    "name": "owner",
+    "type": "method",
+    "parent": "InvokeInstruction",
+    "signatures": [
+      "public default ClassEntry owner()"
+    ],
+    "signature_hash": "316087f2573ab91da2b0048fd1f1ff12a0caba1d96015d5f4c222c7b94e56b2a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/classfile/instruction/InvokeInstruction.html",
+    "parameters": [],
+    "return_type": "default ClassEntry",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the class or interface holding the method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the class or interface holding the method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.816177",
+    "updatedDate": "2026-03-24T10:48:13.816178",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

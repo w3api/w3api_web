@@ -1,0 +1,290 @@
+{
+  "email.headerregistry/Address/addr_spec": {
+    "id": "email.headerregistry.Address.addr_spec",
+    "name": "addr_spec",
+    "type": "attribute",
+    "parent": "Address",
+    "signatures": [
+      "addr_spec"
+    ],
+    "signature_hash": "b09ad2dad19d203ccb2bdfed733cf1579d7996d645aff9d305465ffdc68ee468",
+    "url": "https://docs.python.org/3/library/email.headerregistry.html#module-email.headerregistry#email.headerregistry.Address.addr_spec",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The username@domain portion of the address, correctly quoted for use as a bare address (the second form shown above). This attribute is not mutable."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The username@domain portion of the address, correctly quoted for use as a bare address (the second form shown above). This attribute is not mutable.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206448",
+    "updatedDate": "2026-03-24T10:48:12.206449",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.headerregistry/SingleAddressHeader/address": {
+    "id": "email.headerregistry.SingleAddressHeader.address",
+    "name": "address",
+    "type": "attribute",
+    "parent": "SingleAddressHeader",
+    "signatures": [
+      "address"
+    ],
+    "signature_hash": "d80c9bf910f144738ef983724bc04bd6bd3f17c5c83ed57bedee1b1b9278e811",
+    "url": "https://docs.python.org/3/library/email.headerregistry.html#module-email.headerregistry#email.headerregistry.SingleAddressHeader.address",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The single address encoded by the header value. If the header value actually contains more than one address (which would be a violation of the RFC under the default policy), accessing this attribute will result in a ValueError."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The single address encoded by the header value. If the header value actually contains more than one address (which would be a violation of the RFC under the default policy), accessing this attribute w...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206107",
+    "updatedDate": "2026-03-24T10:48:12.206108",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.headerregistry/AddressHeader/addresses": {
+    "id": "email.headerregistry.AddressHeader.addresses",
+    "name": "addresses",
+    "type": "attribute",
+    "parent": "AddressHeader",
+    "signatures": [
+      "addresses"
+    ],
+    "signature_hash": "fe79d7d4f7252c53a8109c3c9e10527b2712be7b23f8e0ad46b48ffa3f61bb80",
+    "url": "https://docs.python.org/3/library/email.headerregistry.html#module-email.headerregistry#email.headerregistry.AddressHeader.addresses",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A tuple of Address objects encoding all of the individual addresses from the header value. If the header value contains any groups, the individual addresses from the group are included in the list at the point where the group occurs in the value (that is, the list of addresses is “flattened” into a one dimensional list)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A tuple of Address objects encoding all of the individual addresses from the header value. If the header value contains any groups, the individual addresses from the group are included in the list at ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206081",
+    "updatedDate": "2026-03-24T10:48:12.206082",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.headerregistry/Group/addresses": {
+    "id": "email.headerregistry.Group.addresses",
+    "name": "addresses",
+    "type": "attribute",
+    "parent": "Group",
+    "signatures": [
+      "addresses"
+    ],
+    "signature_hash": "fe79d7d4f7252c53a8109c3c9e10527b2712be7b23f8e0ad46b48ffa3f61bb80",
+    "url": "https://docs.python.org/3/library/email.headerregistry.html#module-email.headerregistry#email.headerregistry.Group.addresses",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A possibly empty tuple of Address objects representing the addresses in the group."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A possibly empty tuple of Address objects representing the addresses in the group.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206509",
+    "updatedDate": "2026-03-24T10:48:12.206510",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.headerregistry/Address": {
+    "id": "email.headerregistry.Address",
+    "name": "Address",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class email.headerregistry.Address(display_name='', username='', domain='', addr_spec=None)"
+    ],
+    "signature_hash": "4e134eabcb57f010e963b21cf791c5ef3c75dc35e8840c067243d7faaf6c3070",
+    "url": "https://docs.python.org/3/library/email.headerregistry.html#module-email.headerregistry#email.headerregistry.Address",
+    "parameters": [
+      {
+        "name": "display_name",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "username",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "domain",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "addr_spec",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The class used to represent an email address. The general form of an address is: [display_name] <username@domain> or: username@domain where each part must conform to specific syntax rules spelled out in RFC 5322. As a convenience addr_spec can be specified instead of username and domain, in which case username and domain will be parsed from the addr_spec. An addr_spec must be a properly RFC quoted string; if it is not Address will raise an error. Unicode characters are allowed and will be pro..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The class used to represent an email address. The general form of an address is: [display_name] <username@domain> or: username@domain where each part must conform to specific syntax rules spelled out ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206383",
+    "updatedDate": "2026-03-24T10:48:12.206384",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "addr_spec",
+      "display_name",
+      "domain",
+      "username"
+    ],
+    "methods": [
+      "__str__"
+    ]
+  },
+  "email.headerregistry/AddressHeader": {
+    "id": "email.headerregistry.AddressHeader",
+    "name": "AddressHeader",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class email.headerregistry.AddressHeader"
+    ],
+    "signature_hash": "113331bf72cabd258fcb5e05cbef45e5d3c9a1288c64f90349e659df2a4db4cc",
+    "url": "https://docs.python.org/3/library/email.headerregistry.html#module-email.headerregistry#email.headerregistry.AddressHeader",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Address headers are one of the most complex structured header types. The AddressHeader class provides a generic interface to any address header. This header type provides the following additional attributes: groups¶ A tuple of Group objects encoding the addresses and groups found in the header value. Addresses that are not part of a group are represented in this list as single-address Groups whose display_name is None. addresses¶ A tuple of Address objects encoding all of the individual addre..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Address headers are one of the most complex structured header types. The AddressHeader class provides a generic interface to any address header. This header type provides the following additional attr...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.206056",
+    "updatedDate": "2026-03-24T10:48:12.206057",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "addresses",
+      "groups"
+    ]
+  }
+}

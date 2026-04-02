@@ -1,0 +1,397 @@
+{
+  "typing/Generator": {
+    "id": "typing.Generator",
+    "name": "Generator",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.Generator(Iterator[YieldType], Generic[YieldType, SendType, ReturnType])"
+    ],
+    "signature_hash": "6e4f7eab1dbada846ea6322adf1a722e2114ea2df6a0c0d0975ecf837cf208e0",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.Generator",
+    "parameters": [
+      {
+        "name": "Iterator[YieldType",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "Generic[YieldType, SendType, ReturnType",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated alias to collections.abc.Generator. See Annotating generators and coroutines for details on using collections.abc.Generator and typing.Generator in type annotations. Deprecated since version 3.9: collections.abc.Generator now supports subscripting ([]). See PEP 585 and Generic Alias Type. Changed in version 3.13: Default values for the send and return types were added."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated alias to collections.abc.Generator. See Annotating generators and coroutines for details on using collections.abc.Generator and typing.Generator in type annotations. Deprecated since versio...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410994",
+    "updatedDate": "2026-03-24T10:48:12.410995",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.9",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/Generic": {
+    "id": "typing.Generic",
+    "name": "Generic",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.Generic"
+    ],
+    "signature_hash": "b845fbd66ea5c147978bfaeb7dab55ec99b9d5c6e8312cb210d81eed1f682586",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.Generic",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Abstract base class for generic types. A generic type is typically declared by adding a list of type parameters after the class name: class Mapping[KT, VT]: def __getitem__(self, key: KT) -> VT: ... # Etc. Such a class implicitly inherits from Generic. The runtime semantics of this syntax are discussed in the Language Reference. This class can then be used as follows: def lookup_name[X, Y](mapping: Mapping[X, Y], key: X, default: Y) -> Y: try: return mapping[key] except KeyError: return defau..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Abstract base class for generic types. A generic type is typically declared by adding a list of type parameters after the class name: class Mapping[KT, VT]: def __getitem__(self, key: KT) -> VT: ... #...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.408923",
+    "updatedDate": "2026-03-24T10:48:12.408924",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/get_args": {
+    "id": "typing.get_args",
+    "name": "get_args",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "typing.get_args(tp)"
+    ],
+    "signature_hash": "272747f556f316673a280b74d159417af22195c8fb3b8534491733b0e359691a",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.get_args",
+    "parameters": [
+      {
+        "name": "tp",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Get type arguments with all substitutions performed: for a typing object of the form X[Y, Z, ...] return (Y, Z, ...). If X is a union or Literal contained in another generic type, the order of (Y, Z, ...) may be different from the order of the original arguments [Y, Z, ...] due to type caching. Return () for unsupported objects. Examples: assert get_args(int) == () assert get_args(Dict[int, str]) == (int, str) assert get_args(Union[int, str]) == (int, str) Added in version 3.8."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get type arguments with all substitutions performed: for a typing object of the form X[Y, Z, ...] return (Y, Z, ...). If X is a union or Literal contained in another generic type, the order of (Y, Z, ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410087",
+    "updatedDate": "2026-03-24T10:48:12.410088",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/get_origin": {
+    "id": "typing.get_origin",
+    "name": "get_origin",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "typing.get_origin(tp)"
+    ],
+    "signature_hash": "f93a56524624431d274bbbc8f0270db7320bcca1c9f484164e65cc22fc823c42",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.get_origin",
+    "parameters": [
+      {
+        "name": "tp",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Get the unsubscripted version of a type: for a typing object of the form X[Y, Z, ...] return X. If X is a typing-module alias for a builtin or collections class, it will be normalized to the original class. If X is an instance of ParamSpecArgs or ParamSpecKwargs, return the underlying ParamSpec. Return None for unsupported objects. Examples: assert get_origin(str) is None assert get_origin(Dict[str, int]) is dict assert get_origin(Union[int, str]) is Union assert get_origin(Annotated[str, \"me..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get the unsubscripted version of a type: for a typing object of the form X[Y, Z, ...] return X. If X is a typing-module alias for a builtin or collections class, it will be normalized to the original ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410067",
+    "updatedDate": "2026-03-24T10:48:12.410068",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/get_overloads": {
+    "id": "typing.get_overloads",
+    "name": "get_overloads",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "typing.get_overloads(func)"
+    ],
+    "signature_hash": "a568a40ac3a218df962233112162440995781fa1d973c50353a4ce7133a47aa8",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.get_overloads",
+    "parameters": [
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a sequence of @overload-decorated definitions for func. func is the function object for the implementation of the overloaded function. For example, given the definition of process in the documentation for @overload, get_overloads(process) will return a sequence of three function objects for the three defined overloads. If called on a function with no overloads, get_overloads() returns an empty sequence. get_overloads() can be used for introspecting an overloaded function at runtime. Ad..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a sequence of @overload-decorated definitions for func. func is the function object for the implementation of the overloaded function. For example, given the definition of process in the docume...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.409914",
+    "updatedDate": "2026-03-24T10:48:12.409915",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/get_protocol_members": {
+    "id": "typing.get_protocol_members",
+    "name": "get_protocol_members",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "typing.get_protocol_members(tp)"
+    ],
+    "signature_hash": "af0a40fa5b32367d03436b2d82f274b99d6beaf79ac333da752446b3ccb228a3",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.get_protocol_members",
+    "parameters": [
+      {
+        "name": "tp",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the set of members defined in a Protocol. >>> from typing import Protocol, get_protocol_members >>> class P(Protocol): ... def a(self) -> str: ... ... b: int >>> get_protocol_members(P) == frozenset({'a', 'b'}) True Raise TypeError for arguments that are not Protocols. Added in version 3.13."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the set of members defined in a Protocol. >>> from typing import Protocol, get_protocol_members >>> class P(Protocol): ... def a(self) -> str: ... ... b: int >>> get_protocol_members(P) == froz...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410104",
+    "updatedDate": "2026-03-24T10:48:12.410105",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/get_type_hints": {
+    "id": "typing.get_type_hints",
+    "name": "get_type_hints",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "typing.get_type_hints(obj, globalns=None, localns=None, include_extras=False)"
+    ],
+    "signature_hash": "3e7ccaaae724b551c56c6e9a866e4f615b019e3f0c8e6ad5a7d58fadacc0f4c6",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.get_type_hints",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "globalns",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "localns",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "include_extras",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a dictionary containing type hints for a function, method, module, class object, or other callable object. This is often the same as obj.__annotations__, but this function makes the following changes to the annotations dictionary: Forward references encoded as string literals or ForwardRef objects are handled by evaluating them in globalns, localns, and (where applicable) obj’s type parameter namespace. If globalns or localns is not given, appropriate namespace dictionaries are inferre..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a dictionary containing type hints for a function, method, module, class object, or other callable object. This is often the same as obj.__annotations__, but this function makes the following c...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410047",
+    "updatedDate": "2026-03-24T10:48:12.410048",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

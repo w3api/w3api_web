@@ -1,0 +1,360 @@
+{
+  "com.sun.source.util/Kind/PARSE": {
+    "id": "com.sun.source.util.Kind.PARSE",
+    "name": "PARSE",
+    "type": "enum_constant",
+    "parent": "Kind",
+    "signatures": [
+      "PARSE"
+    ],
+    "signature_hash": "31e31354a91acca341bfdd05867541944a1cd69f1d851862973297f1a5738efe",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/util/TaskEvent.Kind.html",
+    "parameters": [],
+    "return_type": "Kind",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "For events related to the parsing of a file."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "For events related to the parsing of a file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.380062",
+    "updatedDate": "2026-03-24T10:48:13.380063",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.source.util/ParameterNameProvider": {
+    "id": "com.sun.source.util.ParameterNameProvider",
+    "name": "ParameterNameProvider",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface ParameterNameProvider"
+    ],
+    "signature_hash": "2ac951a80e7b8e5d8c3fd4a49b13022f3373c7dc65ee15284e12ee6835b343ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/util/ParameterNameProvider.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.376716",
+    "updatedDate": "2026-03-24T10:48:13.376717",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "13",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getParameterName"
+    ]
+  },
+  "com.sun.source.util/Plugin": {
+    "id": "com.sun.source.util.Plugin",
+    "name": "Plugin",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Plugin"
+    ],
+    "signature_hash": "4208a425de530af00206898525f53e9ead2155c305c630301cc0f0e0ba86cb46",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/util/Plugin.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.376751",
+    "updatedDate": "2026-03-24T10:48:13.376752",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "autoStart",
+      "getName",
+      "init"
+    ]
+  },
+  "com.sun.source.util/JavacTask/parse": {
+    "id": "com.sun.source.util.JavacTask.parse",
+    "name": "parse",
+    "type": "method",
+    "parent": "JavacTask",
+    "signatures": [
+      "public abstract Iterable<? extends CompilationUnitTree> parse()"
+    ],
+    "signature_hash": "23265c2f275d0125e23f8844ab060250257d80275f6e1124d56f6decd6345d5d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/util/JavacTask.html",
+    "parameters": [],
+    "return_type": "abstract Iterable<? extends CompilationUnitTree>",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Parses the specified files returning a list of abstract syntax trees."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parses the specified files returning a list of abstract syntax trees.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.376636",
+    "updatedDate": "2026-03-24T10:48:13.376637",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.source.util/DocTrees/printMessage": {
+    "id": "com.sun.source.util.DocTrees.printMessage",
+    "name": "printMessage",
+    "type": "method",
+    "parent": "DocTrees",
+    "signatures": [
+      "public abstract void printMessage(Diagnostic.Kind kind, CharSequence msg, DocTree t, DocCommentTree c, CompilationUnitTree root)"
+    ],
+    "signature_hash": "22a2f301441a8994f4534532a13923abec6bf3ec35af21bf79889ff54b846155",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/util/DocTrees.html",
+    "parameters": [
+      {
+        "name": "kind",
+        "type": "Diagnostic.Kind",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "msg",
+        "type": "CharSequence",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "t",
+        "type": "DocTree",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "c",
+        "type": "DocCommentTree",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "root",
+        "type": "CompilationUnitTree",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prints a message of the specified kind at the location of the tree within the provided compilation unit."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prints a message of the specified kind at the location of the tree within the provided compilation unit.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.375015",
+    "updatedDate": "2026-03-24T10:48:13.375016",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.source.util/Trees/printMessage": {
+    "id": "com.sun.source.util.Trees.printMessage",
+    "name": "printMessage",
+    "type": "method",
+    "parent": "Trees",
+    "signatures": [
+      "public abstract void printMessage(Diagnostic.Kind kind, CharSequence msg, Tree t, CompilationUnitTree root)"
+    ],
+    "signature_hash": "8168d9b7c96d4a1d48735b98a4854e59cda5d0a76105f8c6fec5f5f3bea879f9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.compiler/com/sun/source/util/Trees.html",
+    "parameters": [
+      {
+        "name": "kind",
+        "type": "Diagnostic.Kind",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "msg",
+        "type": "CharSequence",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "t",
+        "type": "Tree",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "root",
+        "type": "CompilationUnitTree",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prints a message of the specified kind at the location of the tree within the provided compilation unit"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prints a message of the specified kind at the location of the tree within the provided compilation unit",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.380869",
+    "updatedDate": "2026-03-24T10:48:13.380870",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

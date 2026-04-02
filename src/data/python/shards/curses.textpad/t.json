@@ -1,0 +1,542 @@
+{
+  "curses.textpad/Textbox": {
+    "id": "curses.textpad.Textbox",
+    "name": "Textbox",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class curses.textpad.Textbox(win)"
+    ],
+    "signature_hash": "1738d40374a6ded43c97b51fdf505a6bd8af6a665f248611d890db65a299bb88",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.textpad.Textbox",
+    "parameters": [
+      {
+        "name": "win",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a textbox widget object. The win argument should be a curses window object in which the textbox is to be contained. The edit cursor of the textbox is initially located at the upper left hand corner of the containing window, with coordinates (0, 0). The instance’s stripspaces flag is initially on. Textbox objects have the following methods: edit([validator])¶ This is the entry point you will normally use. It accepts editing keystrokes until one of the termination keystrokes is entered. ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a textbox widget object. The win argument should be a curses window object in which the textbox is to be contained. The edit cursor of the textbox is initially located at the upper left hand co...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.195731",
+    "updatedDate": "2026-03-24T10:48:12.195732",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "stripspaces"
+    ],
+    "methods": [
+      "do_command",
+      "edit",
+      "gather"
+    ]
+  },
+  "curses.textpad/termattrs": {
+    "id": "curses.textpad.termattrs",
+    "name": "termattrs",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "curses.termattrs()"
+    ],
+    "signature_hash": "2c52b9623f6cbbfe46275437dd4eca5327d906208384a5b85df9e98106b33fbd",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.termattrs",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a logical OR of all video attributes supported by the terminal. This information is useful when a curses program needs complete control over the appearance of the screen."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a logical OR of all video attributes supported by the terminal. This information is useful when a curses program needs complete control over the appearance of the screen.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.189637",
+    "updatedDate": "2026-03-24T10:48:12.189638",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "curses.textpad/termname": {
+    "id": "curses.textpad.termname",
+    "name": "termname",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "curses.termname()"
+    ],
+    "signature_hash": "b87d5f2034da141178c68c01b0e410522ec59f84f3bd8bfad893d698c0641f77",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.termname",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the value of the environment variable TERM, as a bytes object, truncated to 14 characters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the environment variable TERM, as a bytes object, truncated to 14 characters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.189650",
+    "updatedDate": "2026-03-24T10:48:12.189650",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "curses.textpad/tigetflag": {
+    "id": "curses.textpad.tigetflag",
+    "name": "tigetflag",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "curses.tigetflag(capname)"
+    ],
+    "signature_hash": "f90416b4d18c05c47f3f6cdbfc3f6f8e99c11fc2bd6c06b4090f3619ab62e761",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.tigetflag",
+    "parameters": [
+      {
+        "name": "capname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the value of the Boolean capability corresponding to the terminfo capability name capname as an integer. Return the value -1 if capname is not a Boolean capability, or 0 if it is canceled or absent from the terminal description."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the Boolean capability corresponding to the terminfo capability name capname as an integer. Return the value -1 if capname is not a Boolean capability, or 0 if it is canceled or ab...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.189665",
+    "updatedDate": "2026-03-24T10:48:12.189666",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "curses.textpad/tigetnum": {
+    "id": "curses.textpad.tigetnum",
+    "name": "tigetnum",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "curses.tigetnum(capname)"
+    ],
+    "signature_hash": "54677a9565d51a34065be3b89a43b9b1b6558e55089df8a899e37c3de1c80fb4",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.tigetnum",
+    "parameters": [
+      {
+        "name": "capname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the value of the numeric capability corresponding to the terminfo capability name capname as an integer. Return the value -2 if capname is not a numeric capability, or -1 if it is canceled or absent from the terminal description."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the numeric capability corresponding to the terminfo capability name capname as an integer. Return the value -2 if capname is not a numeric capability, or -1 if it is canceled or a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.189680",
+    "updatedDate": "2026-03-24T10:48:12.189681",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "curses.textpad/tigetstr": {
+    "id": "curses.textpad.tigetstr",
+    "name": "tigetstr",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "curses.tigetstr(capname)"
+    ],
+    "signature_hash": "1ecd68a5051b5edfa0673385869fca1826bc2e8dd1648724f3209e466e694f9b",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.tigetstr",
+    "parameters": [
+      {
+        "name": "capname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the value of the string capability corresponding to the terminfo capability name capname as a bytes object. Return None if capname is not a terminfo “string capability”, or is canceled or absent from the terminal description."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the value of the string capability corresponding to the terminfo capability name capname as a bytes object. Return None if capname is not a terminfo “string capability”, or is canceled or absen...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.189695",
+    "updatedDate": "2026-03-24T10:48:12.189696",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "curses.textpad/tparm": {
+    "id": "curses.textpad.tparm",
+    "name": "tparm",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "curses.tparm(str[, ...])"
+    ],
+    "signature_hash": "d0f72eae3e94525f7ee11035c1f6a853db66eb4cb0d51df25a9a0f40455d7811",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.tparm",
+    "parameters": [
+      {
+        "name": "str[, ...",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Instantiate the bytes object str with the supplied parameters, where str should be a parameterized string obtained from the terminfo database. E.g. tparm(tigetstr(\"cup\"), 5, 3) could result in b'\\033[6;4H', the exact result depending on terminal type."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Instantiate the bytes object str with the supplied parameters, where str should be a parameterized string obtained from the terminfo database. E.g. tparm(tigetstr(\"cup\"), 5, 3) could result in b'\\033[...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.189713",
+    "updatedDate": "2026-03-24T10:48:12.189714",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "curses.textpad/typeahead": {
+    "id": "curses.textpad.typeahead",
+    "name": "typeahead",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "curses.typeahead(fd)"
+    ],
+    "signature_hash": "85d72f8a780838f663c8bfe64cb432987f5b77bc797e75e481075feff6a3f56e",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.typeahead",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Specify that the file descriptor fd be used for typeahead checking. If fd is -1, then no typeahead checking is done. The curses library does “line-breakout optimization” by looking for typeahead periodically while updating the screen. If input is found, and it is coming from a tty, the current update is postponed until refresh or doupdate is called again, allowing faster response to commands typed in advance. This function allows specifying a different file descriptor for typeahead checking."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Specify that the file descriptor fd be used for typeahead checking. If fd is -1, then no typeahead checking is done. The curses library does “line-breakout optimization” by looking for typeahead perio...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.189729",
+    "updatedDate": "2026-03-24T10:48:12.189730",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "curses.textpad/window/timeout": {
+    "id": "curses.textpad.window.timeout",
+    "name": "timeout",
+    "type": "method",
+    "parent": "window",
+    "signatures": [
+      "window.timeout(delay)"
+    ],
+    "signature_hash": "63eeae7ac5a1f89494e214b463bb053fc3f47c317d678ec0fb08b80c5067f1a7",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.window.timeout",
+    "parameters": [
+      {
+        "name": "delay",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Set blocking or non-blocking read behavior for the window. If delay is negative, blocking read is used (which will wait indefinitely for input). If delay is zero, then non-blocking read is used, and getch() will return -1 if no input is waiting. If delay is positive, then getch() will block for delay milliseconds, and return -1 if there is still no input at the end of that time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set blocking or non-blocking read behavior for the window. If delay is negative, blocking read is used (which will wait indefinitely for input). If delay is zero, then non-blocking read is used, and g...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.191227",
+    "updatedDate": "2026-03-24T10:48:12.191228",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "curses.textpad/window/touchline": {
+    "id": "curses.textpad.window.touchline",
+    "name": "touchline",
+    "type": "method",
+    "parent": "window",
+    "signatures": [
+      "window.touchline(start, count[, changed])"
+    ],
+    "signature_hash": "3ed3294508c319cda32c57ee51393e61a57858da3cf68b7533783a65a8514cb9",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.window.touchline",
+    "parameters": [
+      {
+        "name": "start",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "count[, changed",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Pretend count lines have been changed, starting with line start. If changed is supplied, it specifies whether the affected lines are marked as having been changed (changed=True) or unchanged (changed=False)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pretend count lines have been changed, starting with line start. If changed is supplied, it specifies whether the affected lines are marked as having been changed (changed=True) or unchanged (changed=...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.191251",
+    "updatedDate": "2026-03-24T10:48:12.191252",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "curses.textpad/window/touchwin": {
+    "id": "curses.textpad.window.touchwin",
+    "name": "touchwin",
+    "type": "method",
+    "parent": "window",
+    "signatures": [
+      "window.touchwin()"
+    ],
+    "signature_hash": "fe6a46d753146f71edb7189d50d2c4e31c7d721a6a5218424a817c497b02112e",
+    "url": "https://docs.python.org/3/library/curses.html#module-curses.textpad#curses.window.touchwin",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Pretend the whole window has been changed, for purposes of drawing optimizations."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pretend the whole window has been changed, for purposes of drawing optimizations.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.191267",
+    "updatedDate": "2026-03-24T10:48:12.191268",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

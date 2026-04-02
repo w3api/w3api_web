@@ -1,0 +1,320 @@
+{
+  "javax.naming.directory/ModificationItem": {
+    "id": "javax.naming.directory.ModificationItem",
+    "name": "ModificationItem",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ModificationItem"
+    ],
+    "signature_hash": "0990eb741e2f5f75a42bea0edc6dc09ced5bc8e7b213efb99234d0be0c888294",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/directory/ModificationItem.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.306629",
+    "updatedDate": "2026-03-24T10:48:14.306630",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "ModificationItem"
+    ],
+    "methods": [
+      "getAttribute",
+      "getModificationOp",
+      "toString"
+    ]
+  },
+  "javax.naming.directory/ModificationItem/ModificationItem": {
+    "id": "javax.naming.directory.ModificationItem.ModificationItem",
+    "name": "ModificationItem",
+    "type": "constructor",
+    "parent": "ModificationItem",
+    "signatures": [
+      "public ModificationItem(int mod_op, Attribute attr)"
+    ],
+    "signature_hash": "ac1d0ea489c2d534a79ef25606c581b99cfeb50389933d79fb9a39e91703147e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/directory/ModificationItem.html",
+    "parameters": [
+      {
+        "name": "mod_op",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "attr",
+        "type": "Attribute",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates a new instance of ModificationItem."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new instance of ModificationItem.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.306652",
+    "updatedDate": "2026-03-24T10:48:14.306653",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.naming.directory/DirContext/modifyAttributes": {
+    "id": "javax.naming.directory.DirContext.modifyAttributes",
+    "name": "modifyAttributes",
+    "type": "method",
+    "parent": "DirContext",
+    "signatures": [
+      "public void modifyAttributes(String name, int mod_op, Attributes attrs)",
+      "public void modifyAttributes(String name, ModificationItem[]mods)",
+      "public void modifyAttributes(Name name, int mod_op, Attributes attrs)",
+      "public void modifyAttributes(Name name, ModificationItem[]mods)"
+    ],
+    "signature_hash": "0ddf2a1f50109c4ec064071440ee77d8ab1fa555bcd0c1374034fed1772c70f0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/directory/DirContext.html",
+    "parameters": [
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "String|Name",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "mod_op",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "attrs",
+        "has_default": false,
+        "default_value": null,
+        "type": "Attributes",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "ModificationItem[]mods",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "AttributeModificationException",
+        "package": "javax.naming.directory"
+      },
+      {
+        "name": "NamingException",
+        "package": "javax.naming"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Modifies the attributes associated with a named object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Modifies the attributes associated with a named object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.305846",
+    "updatedDate": "2026-03-24T10:48:14.305847",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.naming.directory/InitialDirContext/modifyAttributes": {
+    "id": "javax.naming.directory.InitialDirContext.modifyAttributes",
+    "name": "modifyAttributes",
+    "type": "method",
+    "parent": "InitialDirContext",
+    "signatures": [
+      "public void modifyAttributes(String name, int mod_op, Attributes attrs)",
+      "public void modifyAttributes(String name, ModificationItem[]mods)",
+      "public void modifyAttributes(Name name, int mod_op, Attributes attrs)",
+      "public void modifyAttributes(Name name, ModificationItem[]mods)"
+    ],
+    "signature_hash": "0ddf2a1f50109c4ec064071440ee77d8ab1fa555bcd0c1374034fed1772c70f0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/directory/InitialDirContext.html",
+    "parameters": [
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "String|Name",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "mod_op",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "attrs",
+        "has_default": false,
+        "default_value": null,
+        "type": "Attributes",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "ModificationItem[]mods",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "AttributeModificationException",
+        "package": "javax.naming.directory"
+      },
+      {
+        "name": "NamingException",
+        "package": "javax.naming"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Modifies the attributes associated with a named object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Modifies the attributes associated with a named object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.306279",
+    "updatedDate": "2026-03-24T10:48:14.306280",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "concurrent.futures/Executor/map": {
+    "id": "concurrent.futures.Executor.map",
+    "name": "map",
+    "type": "method",
+    "parent": "Executor",
+    "signatures": [
+      "map(fn, *iterables, timeout=None, chunksize=1, buffersize=None)"
+    ],
+    "signature_hash": "f320c3fdaeadcf35cad16dea1075852af3f3d6e6b18c119240acbf887ba1cc67",
+    "url": "https://docs.python.org/3/library/concurrent.futures.html#module-concurrent.futures#concurrent.futures.Executor.map",
+    "parameters": [
+      {
+        "name": "fn",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "iterables",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "chunksize",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "buffersize",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to map(fn, *iterables) except: The iterables are collected immediately rather than lazily, unless a buffersize is specified to limit the number of submitted tasks whose results have not yet been yielded. If the buffer is full, iteration over the iterables pauses until a result is yielded from the buffer. fn is executed asynchronously and several calls to fn may be made concurrently. The returned iterator raises a TimeoutError if __next__() is called and the result isn’t available afte..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to map(fn, *iterables) except: The iterables are collected immediately rather than lazily, unless a buffersize is specified to limit the number of submitted tasks whose results have not yet be...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.175243",
+    "updatedDate": "2026-03-24T10:48:12.175244",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

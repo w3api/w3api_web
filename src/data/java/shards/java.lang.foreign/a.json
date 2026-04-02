@@ -1,0 +1,950 @@
+{
+  "java.lang.foreign/ValueLayout/ADDRESS": {
+    "id": "java.lang.foreign.ValueLayout.ADDRESS",
+    "name": "ADDRESS",
+    "type": "field",
+    "parent": "ValueLayout",
+    "signatures": [
+      "static final AddressLayout ADDRESS"
+    ],
+    "signature_hash": "1086ec0abc07813b254bcbb4fc9fe338ac3863399649b42981e693cf414bdf1d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/ValueLayout.html",
+    "parameters": [],
+    "return_type": "static final AddressLayout",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An address layout constant whose size is the same as that of a machine address (size_t), byte alignment set tosizeof(size_t), byte order set toByteOrder.nativeOrder()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An address layout constant whose size is the same as that of a machine address (size_t), byte alignment set tosizeof(size_t), byte order set toByteOrder.nativeOrder().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.824484",
+    "updatedDate": "2026-03-24T10:48:13.824485",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/ValueLayout/ADDRESS_UNALIGNED": {
+    "id": "java.lang.foreign.ValueLayout.ADDRESS_UNALIGNED",
+    "name": "ADDRESS_UNALIGNED",
+    "type": "field",
+    "parent": "ValueLayout",
+    "signatures": [
+      "static final AddressLayout ADDRESS_UNALIGNED"
+    ],
+    "signature_hash": "1b6b9953ed23f349bde8f60ce374c99620dbed3549b7d270c27157f3dccbcfdb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/ValueLayout.html",
+    "parameters": [],
+    "return_type": "static final AddressLayout",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An unaligned address layout constant whose size is the same as that of a machine address (size_t), and byte order set toByteOrder.nativeOrder()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An unaligned address layout constant whose size is the same as that of a machine address (size_t), and byte order set toByteOrder.nativeOrder().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.824501",
+    "updatedDate": "2026-03-24T10:48:13.824502",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/AddressLayout": {
+    "id": "java.lang.foreign.AddressLayout",
+    "name": "AddressLayout",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface AddressLayout"
+    ],
+    "signature_hash": "9eeda04893accb79b320702c0d44bcb72b8c3e8bed37d452430d23b458c92496",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/AddressLayout.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822813",
+    "updatedDate": "2026-03-24T10:48:13.822814",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "targetLayout",
+      "withByteAlignment",
+      "withName",
+      "withOrder",
+      "withTargetLayout",
+      "withoutName",
+      "withoutTargetLayout"
+    ]
+  },
+  "java.lang.foreign/Arena": {
+    "id": "java.lang.foreign.Arena",
+    "name": "Arena",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Arena"
+    ],
+    "signature_hash": "cfd3c509dd385c15366ba1902620b33f999d37d8be32ad52f7e3fcf4ac65d0bc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/Arena.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822103",
+    "updatedDate": "2026-03-24T10:48:13.822104",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "allocate",
+      "close",
+      "global",
+      "ofAuto",
+      "ofConfined",
+      "ofShared",
+      "scope"
+    ]
+  },
+  "java.lang.foreign/MemorySegment/address": {
+    "id": "java.lang.foreign.MemorySegment.address",
+    "name": "address",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public long address()"
+    ],
+    "signature_hash": "b73db475d47b5927123387c3b604fc9403c27f6428f0f5443a56a38919628f87",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the address of this memory segment."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the address of this memory segment.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.820977",
+    "updatedDate": "2026-03-24T10:48:13.820978",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/Arena/allocate": {
+    "id": "java.lang.foreign.Arena.allocate",
+    "name": "allocate",
+    "type": "method",
+    "parent": "Arena",
+    "signatures": [
+      "public MemorySegment allocate(long byteSize, long byteAlignment)"
+    ],
+    "signature_hash": "59b88e099277c665493ed260e5f8f4febe7dc33823ae42e989ff1c0d9f6e556a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/Arena.html",
+    "parameters": [
+      {
+        "name": "byteSize",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "byteAlignment",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "MemorySegment",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongThreadException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a native memory segment with the given size (in bytes) and alignment constraint (in bytes)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a native memory segment with the given size (in bytes) and alignment constraint (in bytes).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822122",
+    "updatedDate": "2026-03-24T10:48:13.822123",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/SegmentAllocator/allocate": {
+    "id": "java.lang.foreign.SegmentAllocator.allocate",
+    "name": "allocate",
+    "type": "method",
+    "parent": "SegmentAllocator",
+    "signatures": [
+      "public default MemorySegment allocate(long byteSize)",
+      "public MemorySegment allocate(long byteSize, long byteAlignment)",
+      "public default MemorySegment allocate(MemoryLayout layout)",
+      "public default MemorySegment allocate(MemoryLayout elementLayout, long count)"
+    ],
+    "signature_hash": "057e74a83b70058f1a0fdcd284363ebc6c2b2e31ae620245774210092d0f5629",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/SegmentAllocator.html",
+    "parameters": [
+      {
+        "name": "byteSize",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "byteAlignment",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "layout",
+        "has_default": false,
+        "default_value": null,
+        "type": "MemoryLayout",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "elementLayout",
+        "has_default": false,
+        "default_value": null,
+        "type": "MemoryLayout",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "count",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default MemorySegment",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a new memory segment with the givenbyteSize."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new memory segment with the givenbyteSize.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.823796",
+    "updatedDate": "2026-03-24T10:48:13.823797",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/SegmentAllocator/allocateFrom": {
+    "id": "java.lang.foreign.SegmentAllocator.allocateFrom",
+    "name": "allocateFrom",
+    "type": "method",
+    "parent": "SegmentAllocator",
+    "signatures": [
+      "public default MemorySegment allocateFrom(AddressLayout layout, MemorySegment value)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfByte layout, byte value)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfByte elementLayout, byte... elements)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfChar layout, char value)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfChar elementLayout, char... elements)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfDouble layout, double value)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfDouble elementLayout, double... elements)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfFloat layout, float value)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfFloat elementLayout, float... elements)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfInt layout, int value)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfInt elementLayout, int... elements)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfLong layout, long value)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfLong elementLayout, long... elements)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfShort layout, short value)",
+      "public default MemorySegment allocateFrom(ValueLayout.OfShort elementLayout, short... elements)",
+      "public default MemorySegment allocateFrom(ValueLayout elementLayout, MemorySegment source, ValueLayout sourceElementLayout, long sourceOffset, long elementCount)",
+      "public default MemorySegment allocateFrom(String str)",
+      "public default MemorySegment allocateFrom(String str, Charset charset)"
+    ],
+    "signature_hash": "5e531ab522a9911dcc9ffa26697ba0617ca8bdd331ae5481349fcd63439f4578",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/SegmentAllocator.html",
+    "parameters": [
+      {
+        "name": "layout",
+        "has_default": false,
+        "default_value": null,
+        "type": "AddressLayout|ValueLayout.OfByte|ValueLayout.OfChar|ValueLayout.OfDouble|ValueLayout.OfFloat|ValueLayout.OfInt|ValueLayout.OfLong|ValueLayout.OfShort",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "has_default": false,
+        "default_value": null,
+        "type": "MemorySegment|byte|char|double|float|int|long|short",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "elementLayout",
+        "has_default": false,
+        "default_value": null,
+        "type": "ValueLayout.OfByte|ValueLayout.OfChar|ValueLayout.OfDouble|ValueLayout.OfFloat|ValueLayout.OfInt|ValueLayout.OfLong|ValueLayout.OfShort",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "elements",
+        "has_default": false,
+        "default_value": null,
+        "type": "byte...|char...|double...|float...|int...|long...|short...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "source",
+        "has_default": false,
+        "default_value": null,
+        "type": "MemorySegment",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "sourceElementLayout",
+        "has_default": false,
+        "default_value": null,
+        "type": "ValueLayout",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "sourceOffset",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "elementCount",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "str",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "charset",
+        "has_default": false,
+        "default_value": null,
+        "type": "Charset",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default MemorySegment",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a new memory segment initialized with theaddressof the provided memory segment."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new memory segment initialized with theaddressof the provided memory segment.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.823980",
+    "updatedDate": "2026-03-24T10:48:13.823981",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/FunctionDescriptor/appendArgumentLayouts": {
+    "id": "java.lang.foreign.FunctionDescriptor.appendArgumentLayouts",
+    "name": "appendArgumentLayouts",
+    "type": "method",
+    "parent": "FunctionDescriptor",
+    "signatures": [
+      "public FunctionDescriptor appendArgumentLayouts(MemoryLayout... addedLayouts)"
+    ],
+    "signature_hash": "cec83c8daa746996c080630b4b2fb47feb379a32f5d9ec37d0f3a2d43178a848",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html",
+    "parameters": [
+      {
+        "name": "addedLayouts",
+        "type": "MemoryLayout...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "FunctionDescriptor",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a function descriptor with the given argument layouts appended to the argument layouts of this function descriptor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a function descriptor with the given argument layouts appended to the argument layouts of this function descriptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822335",
+    "updatedDate": "2026-03-24T10:48:13.822335",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/FunctionDescriptor/argumentLayouts": {
+    "id": "java.lang.foreign.FunctionDescriptor.argumentLayouts",
+    "name": "argumentLayouts",
+    "type": "method",
+    "parent": "FunctionDescriptor",
+    "signatures": [
+      "public List<MemoryLayout> argumentLayouts()"
+    ],
+    "signature_hash": "766e15172a8090d4e1fef12ce2c115341ae6d48c1010eb89bb58581854f7dc37",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html",
+    "parameters": [],
+    "return_type": "List<MemoryLayout>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the argument layouts of this function descriptor (as an unmodifiable list)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the argument layouts of this function descriptor (as an unmodifiable list).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822353",
+    "updatedDate": "2026-03-24T10:48:13.822354",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemoryLayout/arrayElementVarHandle": {
+    "id": "java.lang.foreign.MemoryLayout.arrayElementVarHandle",
+    "name": "arrayElementVarHandle",
+    "type": "method",
+    "parent": "MemoryLayout",
+    "signatures": [
+      "public VarHandle arrayElementVarHandle(MemoryLayout.PathElement... elements)"
+    ],
+    "signature_hash": "d631ce8b150c739bf98e5b7624ac53b2a7d35908fe7368246446aafb86b3d0d9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemoryLayout.html",
+    "parameters": [
+      {
+        "name": "elements",
+        "type": "MemoryLayout.PathElement...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "VarHandle",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates a var handle that accesses adjacent elements in a memory segment at offsets selected by the given layout path, where the accessed elements have this layout, and where the initial layout in the path is this layout."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a var handle that accesses adjacent elements in a memory segment at offsets selected by the given layout path, where the accessed elements have this layout, and where the initial layout in the...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.823133",
+    "updatedDate": "2026-03-24T10:48:13.823134",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/asByteBuffer": {
+    "id": "java.lang.foreign.MemorySegment.asByteBuffer",
+    "name": "asByteBuffer",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public ByteBuffer asByteBuffer()"
+    ],
+    "signature_hash": "3d6dce9daf5bed83730260ea5c3c83676f2bb9e868907844d8516a8f00004f42",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [],
+    "return_type": "ByteBuffer",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Wraps this segment in aByteBuffer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Wraps this segment in aByteBuffer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.820989",
+    "updatedDate": "2026-03-24T10:48:13.820990",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/asOverlappingSlice": {
+    "id": "java.lang.foreign.MemorySegment.asOverlappingSlice",
+    "name": "asOverlappingSlice",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public Optional<MemorySegment> asOverlappingSlice(MemorySegment other)"
+    ],
+    "signature_hash": "3c24d1a09a08954a34d70d0fae1785ff5c0062e18a965fb5e89e6cf1775a2887",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "MemorySegment",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Optional<MemorySegment>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a slice of this segment that is the overlap between this and the provided segment."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a slice of this segment that is the overlap between this and the provided segment.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821004",
+    "updatedDate": "2026-03-24T10:48:13.821005",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/asReadOnly": {
+    "id": "java.lang.foreign.MemorySegment.asReadOnly",
+    "name": "asReadOnly",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public MemorySegment asReadOnly()"
+    ],
+    "signature_hash": "20056782bc1336fdd2dfc59ec080699adb832913cc2df4ed5661cf1b38d81016",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [],
+    "return_type": "MemorySegment",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a read-only view of this segment."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a read-only view of this segment.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821017",
+    "updatedDate": "2026-03-24T10:48:13.821018",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/asSlice": {
+    "id": "java.lang.foreign.MemorySegment.asSlice",
+    "name": "asSlice",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public MemorySegment asSlice(long offset)",
+      "public MemorySegment asSlice(long offset, long newSize)",
+      "public MemorySegment asSlice(long offset, long newSize, long byteAlignment)",
+      "public MemorySegment asSlice(long offset, MemoryLayout layout)"
+    ],
+    "signature_hash": "f16993f30c5e392c40ef048458eedaaa26524189d6256fba4d3159235bd1ba14",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "newSize",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "byteAlignment",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "layout",
+        "has_default": false,
+        "default_value": null,
+        "type": "MemoryLayout",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "MemorySegment",
+    "exceptions": [
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a slice of this memory segment, at the given offset."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a slice of this memory segment, at the given offset.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821061",
+    "updatedDate": "2026-03-24T10:48:13.821062",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

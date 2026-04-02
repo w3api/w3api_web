@@ -1,0 +1,184 @@
+{
+  "importlib.resources.abc/ResourceReader": {
+    "id": "importlib.resources.abc.ResourceReader",
+    "name": "ResourceReader",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.resources.abc.ResourceReader"
+    ],
+    "signature_hash": "029ceec28a87f86f0feee82bea4b307288a6d995c0c3b975f2ff975d166fb1ec",
+    "url": "https://docs.python.org/3/library/importlib.resources.abc.html#module-importlib.resources.abc#importlib.resources.abc.ResourceReader",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Superseded by TraversableResources An abstract base class to provide the ability to read resources. From the perspective of this ABC, a resource is a binary artifact that is shipped within a package. Typically this is something like a data file that lives next to the __init__.py file of the package. The purpose of this class is to help abstract out the accessing of such data files so that it does not matter if the package and its data file(s) are stored e.g. in a zip file versus on the file s..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Superseded by TraversableResources An abstract base class to provide the ability to read resources. From the perspective of this ABC, a resource is a binary artifact that is shipped within a package. ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.230527",
+    "updatedDate": "2026-03-24T10:48:12.230528",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.12",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "contents",
+      "is_resource",
+      "open_resource",
+      "resource_path"
+    ]
+  },
+  "importlib.resources.abc/Traversable/read_bytes": {
+    "id": "importlib.resources.abc.Traversable.read_bytes",
+    "name": "read_bytes",
+    "type": "method",
+    "parent": "Traversable",
+    "signatures": [
+      "read_bytes()"
+    ],
+    "signature_hash": "c9792ce551e0112edcff19f143cb79cc63cf4ae1fcea547dd86a249132e23d0b",
+    "url": "https://docs.python.org/3/library/importlib.resources.abc.html#module-importlib.resources.abc#importlib.resources.abc.Traversable.read_bytes",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Read contents of self as bytes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read contents of self as bytes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.230722",
+    "updatedDate": "2026-03-24T10:48:12.230722",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.resources.abc/Traversable/read_text": {
+    "id": "importlib.resources.abc.Traversable.read_text",
+    "name": "read_text",
+    "type": "method",
+    "parent": "Traversable",
+    "signatures": [
+      "read_text(encoding=None)"
+    ],
+    "signature_hash": "e162d78c6b672f1e6770806dfa0b9259e327034f8c230b4c7d34b40bad303aec",
+    "url": "https://docs.python.org/3/library/importlib.resources.abc.html#module-importlib.resources.abc#importlib.resources.abc.Traversable.read_text",
+    "parameters": [
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Read contents of self as text."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read contents of self as text.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.230735",
+    "updatedDate": "2026-03-24T10:48:12.230736",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.resources.abc/ResourceReader/resource_path": {
+    "id": "importlib.resources.abc.ResourceReader.resource_path",
+    "name": "resource_path",
+    "type": "method",
+    "parent": "ResourceReader",
+    "signatures": [
+      "abstractmethod resource_path(resource)"
+    ],
+    "signature_hash": "ff486d83eceb1ec451d6322cb28f97e117126759de55eec245c25616a6c513bb",
+    "url": "https://docs.python.org/3/library/importlib.resources.abc.html#module-importlib.resources.abc#importlib.resources.abc.ResourceReader.resource_path",
+    "parameters": [
+      {
+        "name": "resource",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the file system path to the resource. If the resource does not concretely exist on the file system, raise FileNotFoundError."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the file system path to the resource. If the resource does not concretely exist on the file system, raise FileNotFoundError.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.230556",
+    "updatedDate": "2026-03-24T10:48:12.230557",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

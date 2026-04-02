@@ -1,0 +1,280 @@
+{
+  "threading/RLock": {
+    "id": "threading.RLock",
+    "name": "RLock",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class threading.RLock"
+    ],
+    "signature_hash": "4a307e0a95644b02eca57e44bfa7a64b14d55071b98f525d02a3ccc65de8eea6",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.RLock",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This class implements reentrant lock objects. A reentrant lock must be released by the thread that acquired it. Once a thread has acquired a reentrant lock, the same thread may acquire it again without blocking; the thread must release it once for each time it has acquired it. Note that RLock is actually a factory function which returns an instance of the most efficient version of the concrete RLock class that is supported by the platform. acquire(blocking=True, timeout=-1)¶ Acquire a lock, b..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class implements reentrant lock objects. A reentrant lock must be released by the thread that acquired it. Once a thread has acquired a reentrant lock, the same thread may acquire it again withou...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396352",
+    "updatedDate": "2026-03-24T10:48:12.396353",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "acquire",
+      "locked",
+      "release"
+    ]
+  },
+  "threading/Lock/release": {
+    "id": "threading.Lock.release",
+    "name": "release",
+    "type": "method",
+    "parent": "Lock",
+    "signatures": [
+      "release()"
+    ],
+    "signature_hash": "ca66fa8af6bc13ab069e7e52f812601b39c11a046f55c2d3d02b6a7668091d3c",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Lock.release",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Release a lock. This can be called from any thread, not only the thread which has acquired the lock. When the lock is locked, reset it to unlocked, and return. If any other threads are blocked waiting for the lock to become unlocked, allow exactly one of them to proceed. When invoked on an unlocked lock, a RuntimeError is raised. There is no return value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Release a lock. This can be called from any thread, not only the thread which has acquired the lock. When the lock is locked, reset it to unlocked, and return. If any other threads are blocked waiting...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396325",
+    "updatedDate": "2026-03-24T10:48:12.396326",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/RLock/release": {
+    "id": "threading.RLock.release",
+    "name": "release",
+    "type": "method",
+    "parent": "RLock",
+    "signatures": [
+      "release()"
+    ],
+    "signature_hash": "ca66fa8af6bc13ab069e7e52f812601b39c11a046f55c2d3d02b6a7668091d3c",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.RLock.release",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Release a lock, decrementing the recursion level. If after the decrement it is zero, reset the lock to unlocked (not owned by any thread), and if any other threads are blocked waiting for the lock to become unlocked, allow exactly one of them to proceed. If after the decrement the recursion level is still nonzero, the lock remains locked and owned by the calling thread. Only call this method when the calling thread owns the lock. A RuntimeError is raised if this method is called when the lock..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Release a lock, decrementing the recursion level. If after the decrement it is zero, reset the lock to unlocked (not owned by any thread), and if any other threads are blocked waiting for the lock to ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396387",
+    "updatedDate": "2026-03-24T10:48:12.396388",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Condition/release": {
+    "id": "threading.Condition.release",
+    "name": "release",
+    "type": "method",
+    "parent": "Condition",
+    "signatures": [
+      "release()"
+    ],
+    "signature_hash": "ca66fa8af6bc13ab069e7e52f812601b39c11a046f55c2d3d02b6a7668091d3c",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Condition.release",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Release the underlying lock. This method calls the corresponding method on the underlying lock; there is no return value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Release the underlying lock. This method calls the corresponding method on the underlying lock; there is no return value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396448",
+    "updatedDate": "2026-03-24T10:48:12.396449",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Semaphore/release": {
+    "id": "threading.Semaphore.release",
+    "name": "release",
+    "type": "method",
+    "parent": "Semaphore",
+    "signatures": [
+      "release(n=1)"
+    ],
+    "signature_hash": "fe1d99f4831b9242560a1491ee851fe600aeeef17e911e296384411f4e01ca6a",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Semaphore.release",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Release a semaphore, incrementing the internal counter by n. When it was zero on entry and other threads are waiting for it to become larger than zero again, wake up n of those threads. Changed in version 3.9: Added the n parameter to release multiple waiting threads at once."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Release a semaphore, incrementing the internal counter by n. When it was zero on entry and other threads are waiting for it to become larger than zero again, wake up n of those threads. Changed in ver...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396605",
+    "updatedDate": "2026-03-24T10:48:12.396605",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Barrier/reset": {
+    "id": "threading.Barrier.reset",
+    "name": "reset",
+    "type": "method",
+    "parent": "Barrier",
+    "signatures": [
+      "reset()"
+    ],
+    "signature_hash": "d493d79b4208be26507376249494e727beff3f2325f2fcec0d7ac55a12fe2413",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Barrier.reset",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the barrier to the default, empty state. Any threads waiting on it will receive the BrokenBarrierError exception. Note that using this function may require some external synchronization if there are other threads whose state is unknown. If a barrier is broken it may be better to just leave it and create a new one."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the barrier to the default, empty state. Any threads waiting on it will receive the BrokenBarrierError exception. Note that using this function may require some external synchronization if ther...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396810",
+    "updatedDate": "2026-03-24T10:48:12.396811",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Thread/run": {
+    "id": "threading.Thread.run",
+    "name": "run",
+    "type": "method",
+    "parent": "Thread",
+    "signatures": [
+      "run()"
+    ],
+    "signature_hash": "02fcae88bd120f599563734dc51f95daea3e96193a44c16bcad5a646de82ac94",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Thread.run",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Method representing the thread’s activity. You may override this method in a subclass. The standard run() method invokes the callable object passed to the object’s constructor as the target argument, if any, with positional and keyword arguments taken from the args and kwargs arguments, respectively. Using list or tuple as the args argument which passed to the Thread could achieve the same effect. Example: >>> from threading import Thread >>> t = Thread(target=print, args=[1]) >>> t.run() 1 >..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Method representing the thread’s activity. You may override this method in a subclass. The standard run() method invokes the callable object passed to the object’s constructor as the target argument, ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396145",
+    "updatedDate": "2026-03-24T10:48:12.396146",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

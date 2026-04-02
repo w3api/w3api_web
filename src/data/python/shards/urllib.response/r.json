@@ -1,0 +1,306 @@
+{
+  "urllib.response/Request": {
+    "id": "urllib.response.Request",
+    "name": "Request",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class urllib.request.Request(url, data=None, headers={}, origin_req_host=None, unverifiable=False, method=None)"
+    ],
+    "signature_hash": "b37452d90f7e74096a3b331c7e87755d41d0bd1cc32b23b8412921424f9ef3ed",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.Request",
+    "parameters": [
+      {
+        "name": "url",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "data",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "headers",
+        "type": "",
+        "has_default": true,
+        "default_value": "{}",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "origin_req_host",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "unverifiable",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "method",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This class is an abstraction of a URL request. url should be a string containing a valid, properly encoded URL. data must be an object specifying additional data to send to the server, or None if no such data is needed. Currently HTTP requests are the only ones that use data. The supported object types include bytes, file-like objects, and iterables of bytes-like objects. If no Content-Length nor Transfer-Encoding header field has been provided, HTTPHandler will set these headers according to..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class is an abstraction of a URL request. url should be a string containing a valid, properly encoded URL. data must be an object specifying additional data to send to the server, or None if no s...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.417986",
+    "updatedDate": "2026-03-24T10:48:12.417987",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "data",
+      "full_url",
+      "host",
+      "method",
+      "origin_req_host",
+      "selector",
+      "type",
+      "unverifiable"
+    ],
+    "methods": [
+      "add_header",
+      "add_unredirected_header",
+      "get_full_url",
+      "get_header",
+      "get_method",
+      "has_header",
+      "header_items",
+      "remove_header",
+      "set_proxy"
+    ]
+  },
+  "urllib.response/HTTPRedirectHandler/redirect_request": {
+    "id": "urllib.response.HTTPRedirectHandler.redirect_request",
+    "name": "redirect_request",
+    "type": "method",
+    "parent": "HTTPRedirectHandler",
+    "signatures": [
+      "HTTPRedirectHandler.redirect_request(req, fp, code, msg, hdrs, newurl)"
+    ],
+    "signature_hash": "8ce94e33ac450b314c8ccedd70568f87404af654ed780aa26c9b5ff05d0d956f",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.HTTPRedirectHandler.redirect_request",
+    "parameters": [
+      {
+        "name": "req",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "fp",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "code",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "msg",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "hdrs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "newurl",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a Request or None in response to a redirect. This is called by the default implementations of the http_error_30*() methods when a redirection is received from the server. If a redirection should take place, return a new Request to allow http_error_30*() to perform the redirect to newurl. Otherwise, raise HTTPError if no other handler should try to handle this URL, or return None if you can’t but another handler might. Note The default implementation of this method does not strictly fol..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a Request or None in response to a redirect. This is called by the default implementations of the http_error_30*() methods when a redirection is received from the server. If a redirection shoul...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.418836",
+    "updatedDate": "2026-03-24T10:48:12.418837",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "urllib.response/Request/remove_header": {
+    "id": "urllib.response.Request.remove_header",
+    "name": "remove_header",
+    "type": "method",
+    "parent": "Request",
+    "signatures": [
+      "Request.remove_header(header)"
+    ],
+    "signature_hash": "4d3345a7cd82780155859f32fb31a1a190ff02101a9d687d911a2bfce1ada53b",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.Request.remove_header",
+    "parameters": [
+      {
+        "name": "header",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Remove named header from the request instance (both from regular and unredirected headers). Added in version 3.4."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Remove named header from the request instance (both from regular and unredirected headers). Added in version 3.4.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.418495",
+    "updatedDate": "2026-03-24T10:48:12.418496",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

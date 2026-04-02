@@ -1,0 +1,297 @@
+{
+  "shlex/shlex/source": {
+    "id": "shlex.shlex.source",
+    "name": "source",
+    "type": "attribute",
+    "parent": "shlex",
+    "signatures": [
+      "shlex.source"
+    ],
+    "signature_hash": "8a04368c8cdc6cc8dec2bae593b6e2b79800b9de16fc61acd13d63a9bfadc441",
+    "url": "https://docs.python.org/3/library/shlex.html#module-shlex#shlex.shlex.source",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This attribute is None by default. If you assign a string to it, that string will be recognized as a lexical-level inclusion request similar to the source keyword in various shells. That is, the immediately following token will be opened as a filename and input will be taken from that stream until EOF, at which point the close() method of that stream will be called and the input source will again become the original input stream. Source requests may be stacked any number of levels deep."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This attribute is None by default. If you assign a string to it, that string will be recognized as a lexical-level inclusion request similar to the source keyword in various shells. That is, the immed...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.315774",
+    "updatedDate": "2026-03-24T10:48:12.315775",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shlex/shlex": {
+    "id": "shlex.shlex",
+    "name": "shlex",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class shlex.shlex(instream=None, infile=None, posix=False, punctuation_chars=False)"
+    ],
+    "signature_hash": "ce6dcefd1df327a6fda04066a262bc4eb24cf551bc5c83a52402a0539d16ccdb",
+    "url": "https://docs.python.org/3/library/shlex.html#module-shlex#shlex.shlex",
+    "parameters": [
+      {
+        "name": "instream",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "infile",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "posix",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "punctuation_chars",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A shlex instance or subclass instance is a lexical analyzer object. The initialization argument, if present, specifies where to read characters from. It must be a file-/stream-like object with read() and readline() methods, or a string. If no argument is given, input will be taken from sys.stdin. The second optional argument is a filename string, which sets the initial value of the infile attribute. If the instream argument is omitted or equal to sys.stdin, this second argument defaults to “s..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A shlex instance or subclass instance is a lexical analyzer object. The initialization argument, if present, specifies where to read characters from. It must be a file-/stream-like object with read() ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.315487",
+    "updatedDate": "2026-03-24T10:48:12.315488",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "commenters",
+      "debug",
+      "eof",
+      "escape",
+      "escapedquotes",
+      "infile",
+      "instream",
+      "lineno",
+      "punctuation_chars",
+      "quotes",
+      "source",
+      "token",
+      "whitespace",
+      "whitespace_split",
+      "wordchars"
+    ],
+    "methods": [
+      "error_leader",
+      "get_token",
+      "pop_source",
+      "push_source",
+      "push_token",
+      "read_token",
+      "sourcehook"
+    ]
+  },
+  "shlex/split": {
+    "id": "shlex.split",
+    "name": "split",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "shlex.split(s, comments=False, posix=True)"
+    ],
+    "signature_hash": "82d285b002df65172d2a77b7bd00bf0af30f5748373a80dff730294d947521ed",
+    "url": "https://docs.python.org/3/library/shlex.html#module-shlex#shlex.split",
+    "parameters": [
+      {
+        "name": "s",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "comments",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "posix",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Split the string s using shell-like syntax. If comments is False (the default), the parsing of comments in the given string will be disabled (setting the commenters attribute of the shlex instance to the empty string). This function operates in POSIX mode by default, but uses non-POSIX mode if the posix argument is false. Changed in version 3.12: Passing None for s argument now raises an exception, rather than reading sys.stdin."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Split the string s using shell-like syntax. If comments is False (the default), the parsing of comments in the given string will be disabled (setting the commenters attribute of the shlex instance to ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.315429",
+    "updatedDate": "2026-03-24T10:48:12.315430",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shlex/shlex/sourcehook": {
+    "id": "shlex.shlex.sourcehook",
+    "name": "sourcehook",
+    "type": "method",
+    "parent": "shlex",
+    "signatures": [
+      "shlex.sourcehook(filename)"
+    ],
+    "signature_hash": "463aaddc6225a3d845ac3fdfcd6c9ebac841eafd5450212c5d0f3d936a18e923",
+    "url": "https://docs.python.org/3/library/shlex.html#module-shlex#shlex.shlex.sourcehook",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "When shlex detects a source request (see source below) this method is given the following token as argument, and expected to return a tuple consisting of a filename and an open file-like object. Normally, this method first strips any quotes off the argument. If the result is an absolute pathname, or there was no previous source request in effect, or the previous source was a stream (such as sys.stdin), the result is left alone. Otherwise, if the result is a relative pathname, the directory pa..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "When shlex detects a source request (see source below) this method is given the following token as argument, and expected to return a tuple consisting of a filename and an open file-like object. Norma...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.315552",
+    "updatedDate": "2026-03-24T10:48:12.315553",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "shlex": {
+    "type": "module",
+    "name": "shlex",
+    "id": "shlex",
+    "description": "Module shlex",
+    "classes": [
+      "shlex"
+    ],
+    "functions": [
+      "join",
+      "quote",
+      "split"
+    ]
+  }
+}

@@ -46,12 +46,18 @@ const buildUrl = (link: string) => {
       </div>
       {items.map((group) => {
         // Detectar si algún item dentro del grupo está activo
-        // Normalizar currentPath para comparar sin el slash inicial
-        const normalizedPath = currentPath.startsWith('/') ? currentPath.slice(1) : currentPath;
+        // Normalizar currentPath: quitar idioma si existe
+        const pathSegments = currentPath.split('/').filter(Boolean);
+        let normalizedPath = pathSegments;
+        // Si el primer segmento es idioma, quitarlo
+        if (hasLanguagePrefix && (pathSegments[0] === 'en' || pathSegments[0] === 'es')) {
+          normalizedPath = pathSegments.slice(1);
+        }
+        const normalizedPathStr = normalizedPath.join('/') + '/';
         
         const hasActiveItem = group.items?.some((item) => {
           // Comparar exacto o si el currentPath es un descendiente del item
-          return item.link === normalizedPath || normalizedPath.startsWith(item.link);
+          return item.link === normalizedPathStr || normalizedPathStr.startsWith(item.link);
         });
         
         return (
@@ -67,9 +73,15 @@ const buildUrl = (link: string) => {
                 </summary>
                 <ul class="sl-sidebar-list">
                   {group.items.map((item) => {
-                    const normalizedPath = currentPath.startsWith('/') ? currentPath.slice(1) : currentPath;
+                    // Normalizar currentPath: quitar idioma si existe
+                    const pathSegments = currentPath.split('/').filter(Boolean);
+                    let normalizedSegments = pathSegments;
+                    if (hasLanguagePrefix && (pathSegments[0] === 'en' || pathSegments[0] === 'es')) {
+                      normalizedSegments = pathSegments.slice(1);
+                    }
+                    const normalizedPathStr = normalizedSegments.join('/') + '/';
                     // Marcar como activo si coincide exacto o si normalizedPath es descendiente del item
-                    const isActive = item.link === normalizedPath || normalizedPath.startsWith(item.link);
+                    const isActive = item.link === normalizedPathStr || normalizedPathStr.startsWith(item.link);
                     return (
                     <li>
                       <a
@@ -93,8 +105,24 @@ const buildUrl = (link: string) => {
           ) : (
             <a
               href={buildUrl(group.link)}
-              class:list={['sl-sidebar-link sl-sidebar-link-top', { 'sl-active': group.link === currentPath || (currentPath.startsWith('/') ? currentPath.slice(1) : currentPath).startsWith(group.link) }]}
-              aria-current={group.link === currentPath || (currentPath.startsWith('/') ? currentPath.slice(1) : currentPath).startsWith(group.link) ? 'page' : undefined}
+              class:list={['sl-sidebar-link sl-sidebar-link-top', { 'sl-active': (() => {
+                const pathSegments = currentPath.split('/').filter(Boolean);
+                let normalizedSegments = pathSegments;
+                if (hasLanguagePrefix && (pathSegments[0] === 'en' || pathSegments[0] === 'es')) {
+                  normalizedSegments = pathSegments.slice(1);
+                }
+                const normalizedPathStr = normalizedSegments.join('/') + '/';
+                return group.link === normalizedPathStr || normalizedPathStr.startsWith(group.link);
+              })() }]}
+              aria-current={(() => {
+                const pathSegments = currentPath.split('/').filter(Boolean);
+                let normalizedSegments = pathSegments;
+                if (hasLanguagePrefix && (pathSegments[0] === 'en' || pathSegments[0] === 'es')) {
+                  normalizedSegments = pathSegments.slice(1);
+                }
+                const normalizedPathStr = normalizedSegments.join('/') + '/';
+                return group.link === normalizedPathStr || normalizedPathStr.startsWith(group.link) ? 'page' : undefined;
+              })()}
             >
               {group.label}
             </a>

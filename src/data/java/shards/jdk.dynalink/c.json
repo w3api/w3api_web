@@ -1,0 +1,552 @@
+{
+  "jdk.dynalink/CallSiteDescriptor": {
+    "id": "jdk.dynalink.CallSiteDescriptor",
+    "name": "CallSiteDescriptor",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class CallSiteDescriptor"
+    ],
+    "signature_hash": "685e20b0ae3df21ce067607d9eb9be8171cbf1d811a2c74f3c77a68ec8ef7eca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/CallSiteDescriptor.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.256980",
+    "updatedDate": "2026-03-24T10:48:15.256981",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "CallSiteDescriptor"
+    ],
+    "methods": [
+      "changeMethodType",
+      "changeMethodTypeInternal",
+      "changeOperation",
+      "changeOperationInternal",
+      "equals",
+      "getMethodType",
+      "getOperation",
+      "hashCode",
+      "toString"
+    ]
+  },
+  "jdk.dynalink/CallSiteDescriptor/CallSiteDescriptor": {
+    "id": "jdk.dynalink.CallSiteDescriptor.CallSiteDescriptor",
+    "name": "CallSiteDescriptor",
+    "type": "constructor",
+    "parent": "CallSiteDescriptor",
+    "signatures": [
+      "public CallSiteDescriptor(MethodHandles.Lookup lookup, Operation operation, MethodType methodType)"
+    ],
+    "signature_hash": "e7ad63852ca9af819713bb1c42946713cb75a912a759d3d9dc05d1db765a7ad3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/CallSiteDescriptor.html",
+    "parameters": [
+      {
+        "name": "lookup",
+        "type": "MethodHandles.Lookup",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "operation",
+        "type": "Operation",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "methodType",
+        "type": "MethodType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates a new call site descriptor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new call site descriptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.257001",
+    "updatedDate": "2026-03-24T10:48:15.257002",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/StandardOperation/CALL": {
+    "id": "jdk.dynalink.StandardOperation.CALL",
+    "name": "CALL",
+    "type": "enum_constant",
+    "parent": "StandardOperation",
+    "signatures": [
+      "CALL"
+    ],
+    "signature_hash": "86c4446cd3075629866a40da8d2bc1a3a318f97bed230660e94f9e9806728b69",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/StandardOperation.html",
+    "parameters": [],
+    "return_type": "StandardOperation",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Call a callable object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Call a callable object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.258233",
+    "updatedDate": "2026-03-24T10:48:15.258234",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/CallSiteDescriptor/changeMethodType": {
+    "id": "jdk.dynalink.CallSiteDescriptor.changeMethodType",
+    "name": "changeMethodType",
+    "type": "method",
+    "parent": "CallSiteDescriptor",
+    "signatures": [
+      "public final CallSiteDescriptor changeMethodType(MethodType newMethodType)"
+    ],
+    "signature_hash": "d72ff23d6b9d2e6a62b7a55467b8e352ca968493dec3d33c8d9d7c2dfb2be819",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/CallSiteDescriptor.html",
+    "parameters": [
+      {
+        "name": "newMethodType",
+        "type": "MethodType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final CallSiteDescriptor",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Finds or creates a call site descriptor that only differs in its method type from this descriptor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Finds or creates a call site descriptor that only differs in its method type from this descriptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.257017",
+    "updatedDate": "2026-03-24T10:48:15.257018",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/CallSiteDescriptor/changeMethodTypeInternal": {
+    "id": "jdk.dynalink.CallSiteDescriptor.changeMethodTypeInternal",
+    "name": "changeMethodTypeInternal",
+    "type": "method",
+    "parent": "CallSiteDescriptor",
+    "signatures": [
+      "public protected CallSiteDescriptor changeMethodTypeInternal(MethodType newMethodType)"
+    ],
+    "signature_hash": "015d0fae29d961c588792435165f7211b32779c6b90f14470d26c44dd60c4546",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/CallSiteDescriptor.html",
+    "parameters": [
+      {
+        "name": "newMethodType",
+        "type": "MethodType",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected CallSiteDescriptor",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Finds or creates a call site descriptor that only differs in its method type from this descriptor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Finds or creates a call site descriptor that only differs in its method type from this descriptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.257033",
+    "updatedDate": "2026-03-24T10:48:15.257034",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/NamedOperation/changeName": {
+    "id": "jdk.dynalink.NamedOperation.changeName",
+    "name": "changeName",
+    "type": "method",
+    "parent": "NamedOperation",
+    "signatures": [
+      "public final NamedOperation changeName(String newName)"
+    ],
+    "signature_hash": "68fa5fd9efea27a17b4752ea2c6333dca3625ae8e14bccddf85230a94269814c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/NamedOperation.html",
+    "parameters": [
+      {
+        "name": "newName",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final NamedOperation",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Finds or creates a named operation that differs from this one only in the name."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Finds or creates a named operation that differs from this one only in the name.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.257553",
+    "updatedDate": "2026-03-24T10:48:15.257554",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/CallSiteDescriptor/changeOperation": {
+    "id": "jdk.dynalink.CallSiteDescriptor.changeOperation",
+    "name": "changeOperation",
+    "type": "method",
+    "parent": "CallSiteDescriptor",
+    "signatures": [
+      "public final CallSiteDescriptor changeOperation(Operation newOperation)"
+    ],
+    "signature_hash": "df68edd7b4ee186bdcdf07a78ba94db441bf6508042197eed3032187f6b6fe91",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/CallSiteDescriptor.html",
+    "parameters": [
+      {
+        "name": "newOperation",
+        "type": "Operation",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final CallSiteDescriptor",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Finds or creates a call site descriptor that only differs in its operation from this descriptor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Finds or creates a call site descriptor that only differs in its operation from this descriptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.257050",
+    "updatedDate": "2026-03-24T10:48:15.257051",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/CallSiteDescriptor/changeOperationInternal": {
+    "id": "jdk.dynalink.CallSiteDescriptor.changeOperationInternal",
+    "name": "changeOperationInternal",
+    "type": "method",
+    "parent": "CallSiteDescriptor",
+    "signatures": [
+      "public protected CallSiteDescriptor changeOperationInternal(Operation newOperation)"
+    ],
+    "signature_hash": "5b27552a4a2b447f3a0e955fd97eede553f682f06e6407aae7f53c94955d78ce",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/CallSiteDescriptor.html",
+    "parameters": [
+      {
+        "name": "newOperation",
+        "type": "Operation",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected CallSiteDescriptor",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Finds or creates a call site descriptor that only differs in its operation from this descriptor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Finds or creates a call site descriptor that only differs in its operation from this descriptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.257065",
+    "updatedDate": "2026-03-24T10:48:15.257066",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/NamespaceOperation/contains": {
+    "id": "jdk.dynalink.NamespaceOperation.contains",
+    "name": "contains",
+    "type": "method",
+    "parent": "NamespaceOperation",
+    "signatures": [
+      "public boolean contains(Namespace namespace)",
+      "public static boolean contains(Operation op, Operation baseOperation, Namespace namespace)"
+    ],
+    "signature_hash": "ec510e8e22edaef2452c1d5553f43607e608469e504eef70a3d1d09228deedb8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/NamespaceOperation.html",
+    "parameters": [
+      {
+        "name": "namespace",
+        "has_default": false,
+        "default_value": null,
+        "type": "Namespace",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "op",
+        "has_default": false,
+        "default_value": null,
+        "type": "Operation",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "baseOperation",
+        "has_default": false,
+        "default_value": null,
+        "type": "Operation",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns true if this namespace operation contains a namespace equal to the specified namespace."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns true if this namespace operation contains a namespace equal to the specified namespace.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.257701",
+    "updatedDate": "2026-03-24T10:48:15.257702",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.dynalink/DynamicLinkerFactory/createLinker": {
+    "id": "jdk.dynalink.DynamicLinkerFactory.createLinker",
+    "name": "createLinker",
+    "type": "method",
+    "parent": "DynamicLinkerFactory",
+    "signatures": [
+      "public DynamicLinker createLinker()"
+    ],
+    "signature_hash": "5d1e8e256d4c70b0067a249a7e024a885390ae9443ec40c814b85aed683f49b4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.dynalink/jdk/dynalink/DynamicLinkerFactory.html",
+    "parameters": [],
+    "return_type": "DynamicLinker",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates a new dynamic linker based on the current configuration."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a new dynamic linker based on the current configuration.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.257293",
+    "updatedDate": "2026-03-24T10:48:15.257294",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

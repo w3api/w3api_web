@@ -1,0 +1,360 @@
+{
+  "itertools/chain": {
+    "id": "itertools.chain",
+    "name": "chain",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.chain(*iterables)"
+    ],
+    "signature_hash": "050cd385978cde84856fa61d8f39443f50989efec7a5584117ff7821affda390",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.chain",
+    "parameters": [
+      {
+        "name": "iterables",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Make an iterator that returns elements from the first iterable until it is exhausted, then proceeds to the next iterable, until all of the iterables are exhausted. This combines multiple data sources into a single iterator. Roughly equivalent to: def chain(*iterables): # chain('ABC', 'DEF') → A B C D E F for iterable in iterables: yield from iterable"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Make an iterator that returns elements from the first iterable until it is exhausted, then proceeds to the next iterable, until all of the iterables are exhausted. This combines multiple data sources ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238042",
+    "updatedDate": "2026-03-24T10:48:12.238043",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "itertools/combinations": {
+    "id": "itertools.combinations",
+    "name": "combinations",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.combinations(iterable, r)"
+    ],
+    "signature_hash": "197503c6450080ab84254778f5711c5d8f0e7b31950d8b7d3a9e7c1b91b53818",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.combinations",
+    "parameters": [
+      {
+        "name": "iterable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "r",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return r length subsequences of elements from the input iterable. The output is a subsequence of product() keeping only entries that are subsequences of the iterable. The length of the output is given by math.comb() which computes n! / r! / (n - r)! when 0 ≤ r ≤ n or zero when r > n. The combination tuples are emitted in lexicographic order according to the order of the input iterable. If the input iterable is sorted, the output tuples will be produced in sorted order. Elements are treated as..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return r length subsequences of elements from the input iterable. The output is a subsequence of product() keeping only entries that are subsequences of the iterable. The length of the output is given...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238073",
+    "updatedDate": "2026-03-24T10:48:12.238074",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "itertools/combinations_with_replacement": {
+    "id": "itertools.combinations_with_replacement",
+    "name": "combinations_with_replacement",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.combinations_with_replacement(iterable, r)"
+    ],
+    "signature_hash": "b6794b247d50a6abe3a41d9352f69348e371cdf54574fbf225fc5557abee4dd4",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.combinations_with_replacement",
+    "parameters": [
+      {
+        "name": "iterable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "r",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return r length subsequences of elements from the input iterable allowing individual elements to be repeated more than once. The output is a subsequence of product() that keeps only entries that are subsequences (with possible repeated elements) of the iterable. The number of subsequence returned is (n + r - 1)! / r! / (n - 1)! when n > 0. The combination tuples are emitted in lexicographic order according to the order of the input iterable. if the input iterable is sorted, the output tuples ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return r length subsequences of elements from the input iterable allowing individual elements to be repeated more than once. The output is a subsequence of product() that keeps only entries that are s...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238090",
+    "updatedDate": "2026-03-24T10:48:12.238091",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "itertools/compress": {
+    "id": "itertools.compress",
+    "name": "compress",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.compress(data, selectors)"
+    ],
+    "signature_hash": "5d0c0f36b692744f71ebac0a97982689a84d328926ea9e84671f470371f60758",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.compress",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "selectors",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Make an iterator that returns elements from data where the corresponding element in selectors is true. Stops when either the data or selectors iterables have been exhausted. Roughly equivalent to: def compress(data, selectors): # compress('ABCDEF', [1,0,1,0,1,1]) → A C E F return (datum for datum, selector in zip(data, selectors) if selector) Added in version 3.1."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Make an iterator that returns elements from data where the corresponding element in selectors is true. Stops when either the data or selectors iterables have been exhausted. Roughly equivalent to: def...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238108",
+    "updatedDate": "2026-03-24T10:48:12.238109",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "itertools/count": {
+    "id": "itertools.count",
+    "name": "count",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.count(start=0, step=1)"
+    ],
+    "signature_hash": "e6c8f5b29ced331c9e7ba19e484eec93f4d0ab985fa2b402541524af4a09eb7a",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.count",
+    "parameters": [
+      {
+        "name": "start",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "step",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Make an iterator that returns evenly spaced values beginning with start. Can be used with map() to generate consecutive data points or with zip() to add sequence numbers. Roughly equivalent to: def count(start=0, step=1): # count(10) → 10 11 12 13 14 ... # count(2.5, 0.5) → 2.5 3.0 3.5 ... n = start while True: yield n n += step When counting with floating-point numbers, better accuracy can sometimes be achieved by substituting multiplicative code such as: (start + step * i for i in count())...."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Make an iterator that returns evenly spaced values beginning with start. Can be used with map() to generate consecutive data points or with zip() to add sequence numbers. Roughly equivalent to: def co...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238125",
+    "updatedDate": "2026-03-24T10:48:12.238126",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "itertools/cycle": {
+    "id": "itertools.cycle",
+    "name": "cycle",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.cycle(iterable)"
+    ],
+    "signature_hash": "bad3b97150c530caabb5f762b6ba5bf6cd60df24b64a327362d82509f1241c99",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.cycle",
+    "parameters": [
+      {
+        "name": "iterable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Make an iterator returning elements from the iterable and saving a copy of each. When the iterable is exhausted, return elements from the saved copy. Repeats indefinitely. Roughly equivalent to: def cycle(iterable): # cycle('ABCD') → A B C D A B C D A B C D ... saved = [] for element in iterable: yield element saved.append(element) while saved: for element in saved: yield element This itertool may require significant auxiliary storage (depending on the length of the iterable)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Make an iterator returning elements from the iterable and saving a copy of each. When the iterable is exhausted, return elements from the saved copy. Repeats indefinitely. Roughly equivalent to: def c...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238148",
+    "updatedDate": "2026-03-24T10:48:12.238149",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

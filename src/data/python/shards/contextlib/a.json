@@ -1,0 +1,281 @@
+{
+  "contextlib/AbstractAsyncContextManager": {
+    "id": "contextlib.AbstractAsyncContextManager",
+    "name": "AbstractAsyncContextManager",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class contextlib.AbstractAsyncContextManager"
+    ],
+    "signature_hash": "a367c94cdf00de3dd38b80465f9ed46c2fa49ee71139c84ceed3788f257e50e9",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.AbstractAsyncContextManager",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An abstract base class for classes that implement __aenter__() and __aexit__(). A default implementation for __aenter__() is provided which returns self while __aexit__() is an abstract method which by default returns None. See also the definition of Asynchronous Context Managers. Added in version 3.7."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract base class for classes that implement __aenter__() and __aexit__(). A default implementation for __aenter__() is provided which returns self while __aexit__() is an abstract method which b...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.177073",
+    "updatedDate": "2026-03-24T10:48:12.177074",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/AbstractContextManager": {
+    "id": "contextlib.AbstractContextManager",
+    "name": "AbstractContextManager",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class contextlib.AbstractContextManager"
+    ],
+    "signature_hash": "a5450e9b30b9253e7d2b69cb522e4b9c9aa53ad055175f80fc6247e9c0d5427d",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.AbstractContextManager",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An abstract base class for classes that implement __enter__() and __exit__(). A default implementation for __enter__() is provided which returns self while __exit__() is an abstract method which by default returns None. See also the definition of Context Manager Types. Added in version 3.6."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract base class for classes that implement __enter__() and __exit__(). A default implementation for __enter__() is provided which returns self while __exit__() is an abstract method which by de...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.177058",
+    "updatedDate": "2026-03-24T10:48:12.177059",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.6.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/AsyncContextDecorator": {
+    "id": "contextlib.AsyncContextDecorator",
+    "name": "AsyncContextDecorator",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class contextlib.AsyncContextDecorator"
+    ],
+    "signature_hash": "68d84b54875500b0c852f08d9d685914cb71eb615762dda6d77fca6b87e8250e",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.AsyncContextDecorator",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to ContextDecorator but only for asynchronous functions. Example of AsyncContextDecorator: from asyncio import run from contextlib import AsyncContextDecorator class mycontext(AsyncContextDecorator): async def __aenter__(self): print('Starting') return self async def __aexit__(self, *exc): print('Finishing') return False The class can then be used like this: >>> @mycontext() ... async def function(): ... print('The bit in the middle') ... >>> run(function()) Starting The bit in the mi..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to ContextDecorator but only for asynchronous functions. Example of AsyncContextDecorator: from asyncio import run from contextlib import AsyncContextDecorator class mycontext(AsyncContextDeco...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.177255",
+    "updatedDate": "2026-03-24T10:48:12.177256",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/AsyncExitStack": {
+    "id": "contextlib.AsyncExitStack",
+    "name": "AsyncExitStack",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class contextlib.AsyncExitStack"
+    ],
+    "signature_hash": "469fd2270ee1404893fdcb96556538f16d9fee486676dc1b22cacbd10884b331",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.AsyncExitStack",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An asynchronous context manager, similar to ExitStack, that supports combining both synchronous and asynchronous context managers, as well as having coroutines for cleanup logic. The close() method is not implemented; aclose() must be used instead. async enter_async_context(cm)¶ Similar to ExitStack.enter_context() but expects an asynchronous context manager. Changed in version 3.11: Raises TypeError instead of AttributeError if cm is not an asynchronous context manager. push_async_exit(exit)..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An asynchronous context manager, similar to ExitStack, that supports combining both synchronous and asynchronous context managers, as well as having coroutines for cleanup logic. The close() method is...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.177393",
+    "updatedDate": "2026-03-24T10:48:12.177394",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "aclose",
+      "enter_async_context",
+      "push_async_callback",
+      "push_async_exit"
+    ]
+  },
+  "contextlib/aclosing": {
+    "id": "contextlib.aclosing",
+    "name": "aclosing",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "contextlib.aclosing(thing)"
+    ],
+    "signature_hash": "0f97cd9781fccc55112540be4322186f0da29535fd528d15321031c45c63e34a",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.aclosing",
+    "parameters": [
+      {
+        "name": "thing",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return an async context manager that calls the aclose() method of thing upon completion of the block. This is basically equivalent to: from contextlib import asynccontextmanager @asynccontextmanager async def aclosing(thing): try: yield thing finally: await thing.aclose() Significantly, aclosing() supports deterministic cleanup of async generators when they happen to exit early by break or an exception. For example: from contextlib import aclosing async with aclosing(my_generator()) as values..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return an async context manager that calls the aclose() method of thing upon completion of the block. This is basically equivalent to: from contextlib import asynccontextmanager @asynccontextmanager a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.177133",
+    "updatedDate": "2026-03-24T10:48:12.177134",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/asynccontextmanager": {
+    "id": "contextlib.asynccontextmanager",
+    "name": "asynccontextmanager",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@contextlib.asynccontextmanager"
+    ],
+    "signature_hash": "a76e9db725f4f41cc39930a16a149a3a9823883a61758ca85cadc519e5eb1247",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.asynccontextmanager",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to contextmanager(), but creates an asynchronous context manager. This function is a decorator that can be used to define a factory function for async with statement asynchronous context managers, without needing to create a class or separate __aenter__() and __aexit__() methods. It must be applied to an asynchronous generator function. A simple example: from contextlib import asynccontextmanager @asynccontextmanager async def get_connection(): conn = await acquire_db_connection() try..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to contextmanager(), but creates an asynchronous context manager. This function is a decorator that can be used to define a factory function for async with statement asynchronous context manag...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.177101",
+    "updatedDate": "2026-03-24T10:48:12.177102",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/AsyncExitStack/aclose": {
+    "id": "contextlib.AsyncExitStack.aclose",
+    "name": "aclose",
+    "type": "method",
+    "parent": "AsyncExitStack",
+    "signatures": [
+      "async aclose()"
+    ],
+    "signature_hash": "bbaebafccac4012a64f18f2445657a6b94f08dc0a2864fb9a151f5009cffa76a",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.AsyncExitStack.aclose",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to ExitStack.close() but properly handles awaitables."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to ExitStack.close() but properly handles awaitables.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.177452",
+    "updatedDate": "2026-03-24T10:48:12.177453",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

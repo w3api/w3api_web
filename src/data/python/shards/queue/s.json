@@ -1,0 +1,135 @@
+{
+  "queue/SimpleQueue": {
+    "id": "queue.SimpleQueue",
+    "name": "SimpleQueue",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class queue.SimpleQueue"
+    ],
+    "signature_hash": "027ac1b128bfe99aaefab486ca9e6b77f9d8b07a097bbf45c3c124e283c85c78",
+    "url": "https://docs.python.org/3/library/queue.html#module-queue#queue.SimpleQueue",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructor for an unbounded FIFO queue. Simple queues lack advanced functionality such as task tracking. Added in version 3.7."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructor for an unbounded FIFO queue. Simple queues lack advanced functionality such as task tracking. Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.310923",
+    "updatedDate": "2026-03-24T10:48:12.310924",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "empty",
+      "get",
+      "get_nowait",
+      "put",
+      "put_nowait",
+      "qsize"
+    ]
+  },
+  "queue/ShutDown": {
+    "id": "queue.ShutDown",
+    "name": "ShutDown",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception queue.ShutDown"
+    ],
+    "signature_hash": "96b6ebc24b012d7be30d1b2299669201482c58d193d40fefdae36725674c70c2",
+    "url": "https://docs.python.org/3/library/queue.html#module-queue#queue.ShutDown",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Exception raised when put() or get() is called on a Queue object which has been shut down. Added in version 3.13."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Exception raised when put() or get() is called on a Queue object which has been shut down. Added in version 3.13.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.310956",
+    "updatedDate": "2026-03-24T10:48:12.310957",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "queue/Queue/shutdown": {
+    "id": "queue.Queue.shutdown",
+    "name": "shutdown",
+    "type": "method",
+    "parent": "Queue",
+    "signatures": [
+      "Queue.shutdown(immediate=False)"
+    ],
+    "signature_hash": "4277ffb9705910789207b19a2821395808426933f0d43ee0eb64f95555079940",
+    "url": "https://docs.python.org/3/library/queue.html#module-queue#queue.Queue.shutdown",
+    "parameters": [
+      {
+        "name": "immediate",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Put a Queue instance into a shutdown mode. The queue can no longer grow. Future calls to put() raise ShutDown. Currently blocked callers of put() will be unblocked and will raise ShutDown in the formerly blocked thread. If immediate is false (the default), the queue can be wound down normally with get() calls to extract tasks that have already been loaded. And if task_done() is called for each remaining task, a pending join() will be unblocked normally. Once the queue is empty, future calls t..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Put a Queue instance into a shutdown mode. The queue can no longer grow. Future calls to put() raise ShutDown. Currently blocked callers of put() will be unblocked and will raise ShutDown in the forme...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.311130",
+    "updatedDate": "2026-03-24T10:48:12.311131",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

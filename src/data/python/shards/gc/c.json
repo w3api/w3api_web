@@ -1,0 +1,90 @@
+{
+  "gc/callbacks": {
+    "id": "gc.callbacks",
+    "name": "callbacks",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "gc.callbacks"
+    ],
+    "signature_hash": "b06532e615d6674c1e39e4ac233001a5ff09945f8fd9d9fdb7afc28ac3883715",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.callbacks",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A list of callbacks that will be invoked by the garbage collector before and after collection. The callbacks will be called with two arguments, phase and info. phase can be one of two values: “start”: The garbage collection is about to start. “stop”: The garbage collection has finished. info is a dict providing more information for the callback. The following keys are currently defined: “generation”: The oldest generation being collected. “collected”: When phase is “stop”, the number of objec..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A list of callbacks that will be invoked by the garbage collector before and after collection. The callbacks will be called with two arguments, phase and info. phase can be one of two values: “start”:...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.221002",
+    "updatedDate": "2026-03-24T10:48:12.221003",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/collect": {
+    "id": "gc.collect",
+    "name": "collect",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.collect(generation=2)"
+    ],
+    "signature_hash": "f65868fc48379fcbaa2a8f7354af6234aaffbde52918eafbf0e443d2e821e7b6",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.collect",
+    "parameters": [
+      {
+        "name": "generation",
+        "type": "",
+        "has_default": true,
+        "default_value": "2",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Perform a collection. The optional argument generation may be an integer specifying which generation to collect (from 0 to 2). A ValueError is raised if the generation number is invalid. The sum of collected objects and uncollectable objects is returned. Calling gc.collect(0) will perform a GC collection on the young generation. Calling gc.collect(1) will perform a GC collection on the young generation and an increment of the old generation. Calling gc.collect(2) or gc.collect() performs a fu..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Perform a collection. The optional argument generation may be an integer specifying which generation to collect (from 0 to 2). A ValueError is raised if the generation number is invalid. The sum of co...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220502",
+    "updatedDate": "2026-03-24T10:48:12.220503",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

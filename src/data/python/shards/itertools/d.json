@@ -1,0 +1,66 @@
+{
+  "itertools/dropwhile": {
+    "id": "itertools.dropwhile",
+    "name": "dropwhile",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.dropwhile(predicate, iterable)"
+    ],
+    "signature_hash": "1a1e804ed9a144d0020167e9c63edfff6d3c3b099306e184b5fec64b9fe9f021",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.dropwhile",
+    "parameters": [
+      {
+        "name": "predicate",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "iterable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Make an iterator that drops elements from the iterable while the predicate is true and afterwards returns every element. Roughly equivalent to: def dropwhile(predicate, iterable): # dropwhile(lambda x: x<5, [1,4,6,3,8]) → 6 3 8 iterator = iter(iterable) for x in iterator: if not predicate(x): yield x break for x in iterator: yield x Note this does not produce any output until the predicate first becomes false, so this itertool may have a lengthy start-up time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Make an iterator that drops elements from the iterable while the predicate is true and afterwards returns every element. Roughly equivalent to: def dropwhile(predicate, iterable): # dropwhile(lambda x...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238165",
+    "updatedDate": "2026-03-24T10:48:12.238166",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

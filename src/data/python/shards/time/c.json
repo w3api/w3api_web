@@ -1,0 +1,787 @@
+{
+  "time/CLOCK_BOOTTIME": {
+    "id": "time.CLOCK_BOOTTIME",
+    "name": "CLOCK_BOOTTIME",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_BOOTTIME"
+    ],
+    "signature_hash": "7baeb3ea4b5ec0da9d0c0820b14ecb7bbe0075bb8469f4f3ca59f5b2dee6509f",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_BOOTTIME",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Identical to CLOCK_MONOTONIC, except it also includes any time that the system is suspended. This allows applications to get a suspend-aware monotonic clock without having to deal with the complications of CLOCK_REALTIME, which may have discontinuities if the time is changed using settimeofday() or similar. Availability: Linux >= 2.6.39. Added in version 3.7."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Identical to CLOCK_MONOTONIC, except it also includes any time that the system is suspended. This allows applications to get a suspend-aware monotonic clock without having to deal with the complicatio...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397477",
+    "updatedDate": "2026-03-24T10:48:12.397478",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_HIGHRES": {
+    "id": "time.CLOCK_HIGHRES",
+    "name": "CLOCK_HIGHRES",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_HIGHRES"
+    ],
+    "signature_hash": "c23cb6b1a38586d38928d01cc09fd717fd25dd9b3f18e7636c739e437448e65e",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_HIGHRES",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The Solaris OS has a CLOCK_HIGHRES timer that attempts to use an optimal hardware source, and may give close to nanosecond resolution. CLOCK_HIGHRES is the nonadjustable, high-resolution clock. Availability: Solaris. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The Solaris OS has a CLOCK_HIGHRES timer that attempts to use an optimal hardware source, and may give close to nanosecond resolution. CLOCK_HIGHRES is the nonadjustable, high-resolution clock. Availa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397490",
+    "updatedDate": "2026-03-24T10:48:12.397491",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_MONOTONIC": {
+    "id": "time.CLOCK_MONOTONIC",
+    "name": "CLOCK_MONOTONIC",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_MONOTONIC"
+    ],
+    "signature_hash": "89452b7bfcb8006f0b9dd45e81aff19ff50db5635ff7cd52f925b0d5a834e681",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_MONOTONIC",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Clock that cannot be set and represents monotonic time since some unspecified starting point. Availability: Unix. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Clock that cannot be set and represents monotonic time since some unspecified starting point. Availability: Unix. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397501",
+    "updatedDate": "2026-03-24T10:48:12.397502",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_MONOTONIC_RAW": {
+    "id": "time.CLOCK_MONOTONIC_RAW",
+    "name": "CLOCK_MONOTONIC_RAW",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_MONOTONIC_RAW"
+    ],
+    "signature_hash": "7245bb29a94484b07b6459ef4df091aa8137735e9d3de9d685ff5d8f3587b091",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_MONOTONIC_RAW",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to CLOCK_MONOTONIC, but provides access to a raw hardware-based time that is not subject to NTP adjustments. Availability: Linux >= 2.6.28, macOS >= 10.12. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to CLOCK_MONOTONIC, but provides access to a raw hardware-based time that is not subject to NTP adjustments. Availability: Linux >= 2.6.28, macOS >= 10.12. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397514",
+    "updatedDate": "2026-03-24T10:48:12.397515",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_MONOTONIC_RAW_APPROX": {
+    "id": "time.CLOCK_MONOTONIC_RAW_APPROX",
+    "name": "CLOCK_MONOTONIC_RAW_APPROX",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_MONOTONIC_RAW_APPROX"
+    ],
+    "signature_hash": "d2b1ac39c1fbb3afb38a5ccb62ea3c9edd547ef2c80fa4437e2551dc8e954cff",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_MONOTONIC_RAW_APPROX",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to CLOCK_MONOTONIC_RAW, but reads a value cached by the system at context switch and hence has less accuracy. Availability: macOS >= 10.12. Added in version 3.13."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to CLOCK_MONOTONIC_RAW, but reads a value cached by the system at context switch and hence has less accuracy. Availability: macOS >= 10.12. Added in version 3.13.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397526",
+    "updatedDate": "2026-03-24T10:48:12.397527",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_PROCESS_CPUTIME_ID": {
+    "id": "time.CLOCK_PROCESS_CPUTIME_ID",
+    "name": "CLOCK_PROCESS_CPUTIME_ID",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_PROCESS_CPUTIME_ID"
+    ],
+    "signature_hash": "c8e2aca0577cd1865cfac214661ab3860df718ca86a8b1f1e68bed8cd1801f3a",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_PROCESS_CPUTIME_ID",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "High-resolution per-process timer from the CPU. Availability: Unix. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "High-resolution per-process timer from the CPU. Availability: Unix. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397537",
+    "updatedDate": "2026-03-24T10:48:12.397538",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_PROF": {
+    "id": "time.CLOCK_PROF",
+    "name": "CLOCK_PROF",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_PROF"
+    ],
+    "signature_hash": "18af052f34062cf4c037121768ad102ecfd921662888cc8c4be70e71d0b82fc6",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_PROF",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "High-resolution per-process timer from the CPU. Availability: FreeBSD, NetBSD >= 7, OpenBSD. Added in version 3.7."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "High-resolution per-process timer from the CPU. Availability: FreeBSD, NetBSD >= 7, OpenBSD. Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397549",
+    "updatedDate": "2026-03-24T10:48:12.397550",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_REALTIME": {
+    "id": "time.CLOCK_REALTIME",
+    "name": "CLOCK_REALTIME",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_REALTIME"
+    ],
+    "signature_hash": "8ceeeda836e18deb0b2033dafbf17e496eabae76c273ce827a0458ae330c1d36",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_REALTIME",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Real-time clock. Setting this clock requires appropriate privileges. The clock is the same for all processes. Availability: Unix. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Real-time clock. Setting this clock requires appropriate privileges. The clock is the same for all processes. Availability: Unix. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397623",
+    "updatedDate": "2026-03-24T10:48:12.397624",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_TAI": {
+    "id": "time.CLOCK_TAI",
+    "name": "CLOCK_TAI",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_TAI"
+    ],
+    "signature_hash": "52171c13a4313495b34da6f520d557e14c6f01a1e93f25e193c76e80ca2cc363",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_TAI",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "International Atomic Time The system must have a current leap second table in order for this to give the correct answer. PTP or NTP software can maintain a leap second table. Availability: Linux. Added in version 3.9."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "International Atomic Time The system must have a current leap second table in order for this to give the correct answer. PTP or NTP software can maintain a leap second table. Availability: Linux. Adde...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397566",
+    "updatedDate": "2026-03-24T10:48:12.397567",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.9.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_THREAD_CPUTIME_ID": {
+    "id": "time.CLOCK_THREAD_CPUTIME_ID",
+    "name": "CLOCK_THREAD_CPUTIME_ID",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_THREAD_CPUTIME_ID"
+    ],
+    "signature_hash": "2fd1e74994abf1d535ded77812db9c691483c56f6f956ecbd3e203fc5f919153",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_THREAD_CPUTIME_ID",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Thread-specific CPU-time clock. Availability: Unix. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Thread-specific CPU-time clock. Availability: Unix. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397577",
+    "updatedDate": "2026-03-24T10:48:12.397578",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_UPTIME": {
+    "id": "time.CLOCK_UPTIME",
+    "name": "CLOCK_UPTIME",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_UPTIME"
+    ],
+    "signature_hash": "091e4f6e1201a42eaa103baf3c5fcbe0152c83dc98522d5ba688ade2273426d3",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_UPTIME",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Time whose absolute value is the time the system has been running and not suspended, providing accurate uptime measurement, both absolute and interval. Availability: FreeBSD, OpenBSD >= 5.5. Added in version 3.7."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Time whose absolute value is the time the system has been running and not suspended, providing accurate uptime measurement, both absolute and interval. Availability: FreeBSD, OpenBSD >= 5.5. Added in ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397589",
+    "updatedDate": "2026-03-24T10:48:12.397590",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_UPTIME_RAW": {
+    "id": "time.CLOCK_UPTIME_RAW",
+    "name": "CLOCK_UPTIME_RAW",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_UPTIME_RAW"
+    ],
+    "signature_hash": "82cba939079cc9b982ec5688ac84fc4f1a7285461c147a4954f94e0c489c6a2a",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_UPTIME_RAW",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Clock that increments monotonically, tracking the time since an arbitrary point, unaffected by frequency or time adjustments and not incremented while the system is asleep. Availability: macOS >= 10.12. Added in version 3.8."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Clock that increments monotonically, tracking the time since an arbitrary point, unaffected by frequency or time adjustments and not incremented while the system is asleep. Availability: macOS >= 10.1...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397601",
+    "updatedDate": "2026-03-24T10:48:12.397601",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/CLOCK_UPTIME_RAW_APPROX": {
+    "id": "time.CLOCK_UPTIME_RAW_APPROX",
+    "name": "CLOCK_UPTIME_RAW_APPROX",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "time.CLOCK_UPTIME_RAW_APPROX"
+    ],
+    "signature_hash": "c9164b48eec48e11b20f096e0830613ac69a0aab17f26f2312fcfc279a1e8e54",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.CLOCK_UPTIME_RAW_APPROX",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Like CLOCK_UPTIME_RAW, but the value is cached by the system at context switches and therefore has less accuracy. Availability: macOS >= 10.12. Added in version 3.13."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Like CLOCK_UPTIME_RAW, but the value is cached by the system at context switches and therefore has less accuracy. Availability: macOS >= 10.12. Added in version 3.13.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397612",
+    "updatedDate": "2026-03-24T10:48:12.397613",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/clock_getres": {
+    "id": "time.clock_getres",
+    "name": "clock_getres",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "time.clock_getres(clk_id)"
+    ],
+    "signature_hash": "59206bb8e49738c5b51b23d0414c40bca23410f5a41c9873166505864f0d6974",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.clock_getres",
+    "parameters": [
+      {
+        "name": "clk_id",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the resolution (precision) of the specified clock clk_id. Refer to Clock ID Constants for a list of accepted values for clk_id. Availability: Unix. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the resolution (precision) of the specified clock clk_id. Refer to Clock ID Constants for a list of accepted values for clk_id. Availability: Unix. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396931",
+    "updatedDate": "2026-03-24T10:48:12.396932",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/clock_gettime": {
+    "id": "time.clock_gettime",
+    "name": "clock_gettime",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "time.clock_gettime(clk_id) → float"
+    ],
+    "signature_hash": "6f189ae6dcf46e9574b6aea957f913546c0e8a760e6a722e5cecb9d00f8d7217",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.clock_gettime",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the time of the specified clock clk_id. Refer to Clock ID Constants for a list of accepted values for clk_id. Use clock_gettime_ns() to avoid the precision loss caused by the float type. Availability: Unix. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the time of the specified clock clk_id. Refer to Clock ID Constants for a list of accepted values for clk_id. Use clock_gettime_ns() to avoid the precision loss caused by the float type. Availa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396951",
+    "updatedDate": "2026-03-24T10:48:12.396952",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/clock_gettime_ns": {
+    "id": "time.clock_gettime_ns",
+    "name": "clock_gettime_ns",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "time.clock_gettime_ns(clk_id) → int"
+    ],
+    "signature_hash": "a08bfff4d2517e181d6036040138d51937681c5966e874d22f36212b182c4e69",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.clock_gettime_ns",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to clock_gettime() but return time as nanoseconds. Availability: Unix. Added in version 3.7."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to clock_gettime() but return time as nanoseconds. Availability: Unix. Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396964",
+    "updatedDate": "2026-03-24T10:48:12.396964",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/clock_settime": {
+    "id": "time.clock_settime",
+    "name": "clock_settime",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "time.clock_settime(clk_id, time: float)"
+    ],
+    "signature_hash": "ca735395c984c260050aa7d174ca3588302b769714eacdfdb104df656cdf5076",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.clock_settime",
+    "parameters": [
+      {
+        "name": "clk_id",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "time: float",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Set the time of the specified clock clk_id. Currently, CLOCK_REALTIME is the only accepted value for clk_id. Use clock_settime_ns() to avoid the precision loss caused by the float type. Availability: Unix, not Android, not iOS. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Set the time of the specified clock clk_id. Currently, CLOCK_REALTIME is the only accepted value for clk_id. Use clock_settime_ns() to avoid the precision loss caused by the float type. Availability: ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396980",
+    "updatedDate": "2026-03-24T10:48:12.396981",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/clock_settime_ns": {
+    "id": "time.clock_settime_ns",
+    "name": "clock_settime_ns",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "time.clock_settime_ns(clk_id, time: int)"
+    ],
+    "signature_hash": "efb26cde0c66b27efe1ba0028a7fab90944c39df956f9e50455ad60457b9b80c",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.clock_settime_ns",
+    "parameters": [
+      {
+        "name": "clk_id",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "time: int",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to clock_settime() but set time with nanoseconds. Availability: Unix, not Android, not iOS. Added in version 3.7."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to clock_settime() but set time with nanoseconds. Availability: Unix, not Android, not iOS. Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396995",
+    "updatedDate": "2026-03-24T10:48:12.396996",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "time/ctime": {
+    "id": "time.ctime",
+    "name": "ctime",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "time.ctime([secs])"
+    ],
+    "signature_hash": "6c0c70d180b987db4d238f4a910fa577b09dc1efac12b3fc111bcc8dd31884fb",
+    "url": "https://docs.python.org/3/library/time.html#module-time#time.ctime",
+    "parameters": [
+      {
+        "name": "secs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Convert a time expressed in seconds since the epoch to a string of a form: 'Sun Jun 20 23:21:05 1993' representing local time. The day field is two characters long and is space padded if the day is a single digit, e.g.: 'Wed Jun 9 04:26:40 1993'. If secs is not provided or None, the current time as returned by time() is used. ctime(secs) is equivalent to asctime(localtime(secs)). Locale information is not used by ctime()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convert a time expressed in seconds since the epoch to a string of a form: 'Sun Jun 20 23:21:05 1993' representing local time. The day field is two characters long and is space padded if the day is a ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.397010",
+    "updatedDate": "2026-03-24T10:48:12.397010",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

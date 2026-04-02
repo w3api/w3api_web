@@ -1,0 +1,201 @@
+{
+  "threading/Barrier/n_waiting": {
+    "id": "threading.Barrier.n_waiting",
+    "name": "n_waiting",
+    "type": "attribute",
+    "parent": "Barrier",
+    "signatures": [
+      "n_waiting"
+    ],
+    "signature_hash": "a02fbf024154b3605eda2bab31460e839a724dda6b055e6cea14414037107ac5",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Barrier.n_waiting",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The number of threads currently waiting in the barrier."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The number of threads currently waiting in the barrier.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396853",
+    "updatedDate": "2026-03-24T10:48:12.396854",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Thread/name": {
+    "id": "threading.Thread.name",
+    "name": "name",
+    "type": "attribute",
+    "parent": "Thread",
+    "signatures": [
+      "name"
+    ],
+    "signature_hash": "82a3537ff0dbce7eec35d69edc3a189ee6f17d82f353a553f9aa96cb0be3ce89",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Thread.name",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A string used for identification purposes only. It has no semantics. Multiple threads may be given the same name. The initial name is set by the constructor. On some platforms, the thread name is set at the operating system level when the thread starts, so that it is visible in task managers. This name may be truncated to fit in a system-specific limit (for example, 15 bytes on Linux or 63 bytes on macOS). Changes to name are only reflected at the OS level when the currently running thread is..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A string used for identification purposes only. It has no semantics. Multiple threads may be given the same name. The initial name is set by the constructor. On some platforms, the thread name is set ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396178",
+    "updatedDate": "2026-03-24T10:48:12.396179",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Thread/native_id": {
+    "id": "threading.Thread.native_id",
+    "name": "native_id",
+    "type": "attribute",
+    "parent": "Thread",
+    "signatures": [
+      "native_id"
+    ],
+    "signature_hash": "57eabd3c374a7dce0cca559459668a8bac6a106c544db42abc54f89526f07945",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Thread.native_id",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The Thread ID (TID) of this thread, as assigned by the OS (kernel). This is a non-negative integer, or None if the thread has not been started. See the get_native_id() function. This value may be used to uniquely identify this particular thread system-wide (until the thread terminates, after which the value may be recycled by the OS). Note Similar to Process IDs, Thread IDs are only valid (guaranteed unique system-wide) from the time the thread is created until the thread has been terminated...."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The Thread ID (TID) of this thread, as assigned by the OS (kernel). This is a non-negative integer, or None if the thread has not been started. See the get_native_id() function. This value may be used...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396230",
+    "updatedDate": "2026-03-24T10:48:12.396231",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Condition/notify": {
+    "id": "threading.Condition.notify",
+    "name": "notify",
+    "type": "method",
+    "parent": "Condition",
+    "signatures": [
+      "notify(n=1)"
+    ],
+    "signature_hash": "4d44863dd3d429c097d51390169d9fcfbbc9b91efd67a6adc2fe87e49aea6ab6",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Condition.notify",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "",
+        "has_default": true,
+        "default_value": "1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "By default, wake up one thread waiting on this condition, if any. If the calling thread has not acquired the lock when this method is called, a RuntimeError is raised. This method wakes up at most n of the threads waiting for the condition variable; it is a no-op if no threads are waiting. The current implementation wakes up exactly n threads, if at least n threads are waiting. However, it’s not safe to rely on this behavior. A future, optimized implementation may occasionally wake up more th..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "By default, wake up one thread waiting on this condition, if any. If the calling thread has not acquired the lock when this method is called, a RuntimeError is raised. This method wakes up at most n o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396529",
+    "updatedDate": "2026-03-24T10:48:12.396530",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Condition/notify_all": {
+    "id": "threading.Condition.notify_all",
+    "name": "notify_all",
+    "type": "method",
+    "parent": "Condition",
+    "signatures": [
+      "notify_all()"
+    ],
+    "signature_hash": "8e88a79d76d701142aee4dc19b8caeff67d05d22b65f21cbcbda2c05a08c8129",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Condition.notify_all",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Wake up all threads waiting on this condition. This method acts like notify(), but wakes up all waiting threads instead of one. If the calling thread has not acquired the lock when this method is called, a RuntimeError is raised. The method notifyAll is a deprecated alias for this method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Wake up all threads waiting on this condition. This method acts like notify(), but wakes up all waiting threads instead of one. If the calling thread has not acquired the lock when this method is call...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396544",
+    "updatedDate": "2026-03-24T10:48:12.396545",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

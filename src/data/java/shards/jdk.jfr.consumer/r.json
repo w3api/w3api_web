@@ -1,0 +1,879 @@
+{
+  "jdk.jfr.consumer/RecordingFile/RecordingFile": {
+    "id": "jdk.jfr.consumer.RecordingFile.RecordingFile",
+    "name": "RecordingFile",
+    "type": "constructor",
+    "parent": "RecordingFile",
+    "signatures": [
+      "public RecordingFile(Path file)"
+    ],
+    "signature_hash": "037c83fda88f8ebc67d61137454e0ac500cd0914cb812b80ea081e1ec71f79cc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordingFile.html",
+    "parameters": [
+      {
+        "name": "file",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "NoSuchFileException",
+        "package": "java.nio.file"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates a recording file."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a recording file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291248",
+    "updatedDate": "2026-03-24T10:48:15.291249",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jfr.consumer/RecordingStream/RecordingStream": {
+    "id": "jdk.jfr.consumer.RecordingStream.RecordingStream",
+    "name": "RecordingStream",
+    "type": "constructor",
+    "parent": "RecordingStream",
+    "signatures": [
+      "public RecordingStream()",
+      "public RecordingStream(Configuration configuration)"
+    ],
+    "signature_hash": "d6c374406b5cd2aeb17473ccb58a6819f3ddd89b932c18e2b7e4fe26f1d6030a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordingStream.html",
+    "parameters": [
+      {
+        "name": "configuration",
+        "has_default": false,
+        "default_value": null,
+        "type": "Configuration",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates an event stream for the current JVM (Java Virtual Machine)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates an event stream for the current JVM (Java Virtual Machine).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291385",
+    "updatedDate": "2026-03-24T10:48:15.291386",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "14",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jfr.consumer/RecordingFile/readAllEvents": {
+    "id": "jdk.jfr.consumer.RecordingFile.readAllEvents",
+    "name": "readAllEvents",
+    "type": "method",
+    "parent": "RecordingFile",
+    "signatures": [
+      "public static List<RecordedEvent> readAllEvents(Path path)"
+    ],
+    "signature_hash": "346b9fff831ab3b2ddc80e776b549675fb9667b1ee2fcd663f8f41f566ece498",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordingFile.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static List<RecordedEvent>",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a list of all events in a file."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a list of all events in a file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291296",
+    "updatedDate": "2026-03-24T10:48:15.291296",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jfr.consumer/RecordingFile/readEvent": {
+    "id": "jdk.jfr.consumer.RecordingFile.readEvent",
+    "name": "readEvent",
+    "type": "method",
+    "parent": "RecordingFile",
+    "signatures": [
+      "public RecordedEvent readEvent()"
+    ],
+    "signature_hash": "71eab60aa7bbd739f0a514329482a27dfef874a23e72913ca4b9432841d9bbb8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordingFile.html",
+    "parameters": [],
+    "return_type": "RecordedEvent",
+    "exceptions": [
+      {
+        "name": "EOFException",
+        "package": "java.io"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Reads the next event in the recording."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads the next event in the recording.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291311",
+    "updatedDate": "2026-03-24T10:48:15.291312",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jfr.consumer/RecordingFile/readEventTypes": {
+    "id": "jdk.jfr.consumer.RecordingFile.readEventTypes",
+    "name": "readEventTypes",
+    "type": "method",
+    "parent": "RecordingFile",
+    "signatures": [
+      "public List<EventType> readEventTypes()"
+    ],
+    "signature_hash": "87192a1e12d2a14b505ee72a6c3a63c6436c7201569440bf7a1a4950a453e355",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordingFile.html",
+    "parameters": [],
+    "return_type": "List<EventType>",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a list of all event types in this recording."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a list of all event types in this recording.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291326",
+    "updatedDate": "2026-03-24T10:48:15.291327",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jfr.consumer/EventStream/remove": {
+    "id": "jdk.jfr.consumer.EventStream.remove",
+    "name": "remove",
+    "type": "method",
+    "parent": "EventStream",
+    "signatures": [
+      "public boolean remove(Object action)"
+    ],
+    "signature_hash": "185efc26dbe7a9b3cf10f1a78b61280ee47766c619a9f3920e1c0503d114b169",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/EventStream.html",
+    "parameters": [
+      {
+        "name": "action",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Unregisters an action."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Unregisters an action.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.290186",
+    "updatedDate": "2026-03-24T10:48:15.290187",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "14",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jfr.consumer/RecordingStream/remove": {
+    "id": "jdk.jfr.consumer.RecordingStream.remove",
+    "name": "remove",
+    "type": "method",
+    "parent": "RecordingStream",
+    "signatures": [
+      "public boolean remove(Object action)"
+    ],
+    "signature_hash": "185efc26dbe7a9b3cf10f1a78b61280ee47766c619a9f3920e1c0503d114b169",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordingStream.html",
+    "parameters": [
+      {
+        "name": "action",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Unregisters an action."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Unregisters an action.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291683",
+    "updatedDate": "2026-03-24T10:48:15.291684",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "14",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jfr.consumer/RecordedClass": {
+    "id": "jdk.jfr.consumer.RecordedClass",
+    "name": "RecordedClass",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordedClass"
+    ],
+    "signature_hash": "cdd9cd52effb54669488f25be549800dd28a9b74a4b7084bfe781f99ba7c334e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordedClass.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.290341",
+    "updatedDate": "2026-03-24T10:48:15.290342",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getClassLoader",
+      "getId",
+      "getModifiers",
+      "getName"
+    ]
+  },
+  "jdk.jfr.consumer/RecordedClassLoader": {
+    "id": "jdk.jfr.consumer.RecordedClassLoader",
+    "name": "RecordedClassLoader",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordedClassLoader"
+    ],
+    "signature_hash": "05c832bd2f305a66b39b129bcf305c441a3390006effbeb7dc51d254de21ca05",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordedClassLoader.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.290399",
+    "updatedDate": "2026-03-24T10:48:15.290400",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getId",
+      "getName",
+      "getType"
+    ]
+  },
+  "jdk.jfr.consumer/RecordedEvent": {
+    "id": "jdk.jfr.consumer.RecordedEvent",
+    "name": "RecordedEvent",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordedEvent"
+    ],
+    "signature_hash": "acbfe1ae477861172da69e04c10bed811182822f49684031be421cda6699a430",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordedEvent.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.290445",
+    "updatedDate": "2026-03-24T10:48:15.290445",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getDuration",
+      "getEndTime",
+      "getEventType",
+      "getFields",
+      "getStackTrace",
+      "getStartTime",
+      "getThread"
+    ]
+  },
+  "jdk.jfr.consumer/RecordedFrame": {
+    "id": "jdk.jfr.consumer.RecordedFrame",
+    "name": "RecordedFrame",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordedFrame"
+    ],
+    "signature_hash": "be33ed946509136e95441005b7464a7809af68b1ed692c8759c3d1420762d2ab",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordedFrame.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.290548",
+    "updatedDate": "2026-03-24T10:48:15.290549",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getBytecodeIndex",
+      "getLineNumber",
+      "getMethod",
+      "getType",
+      "isJavaFrame"
+    ]
+  },
+  "jdk.jfr.consumer/RecordedMethod": {
+    "id": "jdk.jfr.consumer.RecordedMethod",
+    "name": "RecordedMethod",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordedMethod"
+    ],
+    "signature_hash": "1346408d2a7bdd000db84ba13a7fb3c7c6da54667af830f9661c59ca00c02d28",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordedMethod.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.290631",
+    "updatedDate": "2026-03-24T10:48:15.290632",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getDescriptor",
+      "getModifiers",
+      "getName",
+      "getType",
+      "isHidden"
+    ]
+  },
+  "jdk.jfr.consumer/RecordedObject": {
+    "id": "jdk.jfr.consumer.RecordedObject",
+    "name": "RecordedObject",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordedObject"
+    ],
+    "signature_hash": "412c1845252ad0ffe9bfa494d752cd443e61fdb1eb4c3fcdb596f04f563b94e7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordedObject.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.290705",
+    "updatedDate": "2026-03-24T10:48:15.290706",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getBoolean",
+      "getByte",
+      "getChar",
+      "getClass",
+      "getDouble",
+      "getDuration",
+      "getFields",
+      "getFloat",
+      "getInstant",
+      "getInt",
+      "getLong",
+      "getShort",
+      "getString",
+      "getThread",
+      "getValue",
+      "hasField",
+      "toString"
+    ]
+  },
+  "jdk.jfr.consumer/RecordedStackTrace": {
+    "id": "jdk.jfr.consumer.RecordedStackTrace",
+    "name": "RecordedStackTrace",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordedStackTrace"
+    ],
+    "signature_hash": "7a05effd0e2e110feff4df1bdaf4ba6f996a1cad7670f92989a7f4d25f584bef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordedStackTrace.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291006",
+    "updatedDate": "2026-03-24T10:48:15.291007",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getFrames",
+      "isTruncated"
+    ]
+  },
+  "jdk.jfr.consumer/RecordedThread": {
+    "id": "jdk.jfr.consumer.RecordedThread",
+    "name": "RecordedThread",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordedThread"
+    ],
+    "signature_hash": "4010a3d87beea138627a6fedcccc8c7a759c6b9ce6359515208c1b581372fb56",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordedThread.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291055",
+    "updatedDate": "2026-03-24T10:48:15.291056",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getId",
+      "getJavaName",
+      "getJavaThreadId",
+      "getOSName",
+      "getOSThreadId",
+      "getThreadGroup",
+      "isVirtual"
+    ]
+  },
+  "jdk.jfr.consumer/RecordedThreadGroup": {
+    "id": "jdk.jfr.consumer.RecordedThreadGroup",
+    "name": "RecordedThreadGroup",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordedThreadGroup"
+    ],
+    "signature_hash": "de711fec1a2ca54542fe8527609c8ba85d710096cb0f765e53bc5e71c4b95f19",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordedThreadGroup.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291168",
+    "updatedDate": "2026-03-24T10:48:15.291169",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getName",
+      "getParent"
+    ]
+  },
+  "jdk.jfr.consumer/RecordingFile": {
+    "id": "jdk.jfr.consumer.RecordingFile",
+    "name": "RecordingFile",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordingFile"
+    ],
+    "signature_hash": "704be36bee33130d5e0024f3c8406ac350f711d01a90f7c5bc3ff62e1825d284",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordingFile.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291230",
+    "updatedDate": "2026-03-24T10:48:15.291231",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "RecordingFile"
+    ],
+    "methods": [
+      "close",
+      "hasMoreEvents",
+      "readAllEvents",
+      "readEvent",
+      "readEventTypes",
+      "write"
+    ]
+  },
+  "jdk.jfr.consumer/RecordingStream": {
+    "id": "jdk.jfr.consumer.RecordingStream",
+    "name": "RecordingStream",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordingStream"
+    ],
+    "signature_hash": "2aca39ab878f882c6461f8cb7733c6d2375424a7578de317fc0bb28acaf5afe6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/consumer/RecordingStream.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.291363",
+    "updatedDate": "2026-03-24T10:48:15.291364",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "14",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "RecordingStream"
+    ],
+    "methods": [
+      "awaitTermination",
+      "close",
+      "disable",
+      "dump",
+      "enable",
+      "onClose",
+      "onError",
+      "onEvent",
+      "onFlush",
+      "onMetadata",
+      "remove",
+      "setEndTime",
+      "setMaxAge",
+      "setMaxSize",
+      "setOrdered",
+      "setReuse",
+      "setSettings",
+      "setStartTime",
+      "start",
+      "startAsync",
+      "stop"
+    ]
+  }
+}

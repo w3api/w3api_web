@@ -1,0 +1,208 @@
+{
+  "warnings/showwarning": {
+    "id": "warnings.showwarning",
+    "name": "showwarning",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "warnings.showwarning(message, category, filename, lineno, file=None, line=None)"
+    ],
+    "signature_hash": "3b6b0a7027043644604d826f16881e473ddb43615b209971b3966018b0dbac78",
+    "url": "https://docs.python.org/3/library/warnings.html#module-warnings#warnings.showwarning",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "category",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "lineno",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "file",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "line",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Write a warning to a file. The default implementation calls formatwarning(message, category, filename, lineno, line) and writes the resulting string to file, which defaults to sys.stderr. You may replace this function with any callable by assigning to warnings.showwarning. line is a line of source code to be included in the warning message; if line is not supplied, showwarning() will try to read the line specified by filename and lineno."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Write a warning to a file. The default implementation calls formatwarning(message, category, filename, lineno, line) and writes the resulting string to file, which defaults to sys.stderr. You may repl...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.420733",
+    "updatedDate": "2026-03-24T10:48:12.420734",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "warnings/simplefilter": {
+    "id": "warnings.simplefilter",
+    "name": "simplefilter",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "warnings.simplefilter(action, category=Warning, lineno=0, append=False)"
+    ],
+    "signature_hash": "1d9d57aea7d121d6ffe90dacf01d5e2dd5d0506fddb5b2423eb0d67f68ae7a72",
+    "url": "https://docs.python.org/3/library/warnings.html#module-warnings#warnings.simplefilter",
+    "parameters": [
+      {
+        "name": "action",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "category",
+        "type": "",
+        "has_default": true,
+        "default_value": "Warning",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "lineno",
+        "type": "",
+        "has_default": true,
+        "default_value": "0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "append",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Insert a simple entry into the list of warnings filter specifications. The meaning of the function parameters is as for filterwarnings(), but regular expressions are not needed as the filter inserted always matches any message in any module as long as the category and line number match."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Insert a simple entry into the list of warnings filter specifications. The meaning of the function parameters is as for filterwarnings(), but regular expressions are not needed as the filter inserted ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.420799",
+    "updatedDate": "2026-03-24T10:48:12.420800",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

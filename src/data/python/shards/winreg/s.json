@@ -1,0 +1,259 @@
+{
+  "winreg/SaveKey": {
+    "id": "winreg.SaveKey",
+    "name": "SaveKey",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "winreg.SaveKey(key, file_name)"
+    ],
+    "signature_hash": "06101c0a91afd87a4ff0ea87541c82e0a41558b3765d05d89620e761a4a2a381",
+    "url": "https://docs.python.org/3/library/winreg.html#module-winreg#winreg.SaveKey",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "file_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Saves the specified key, and all its subkeys to the specified file. key is an already open key, or one of the predefined HKEY_* constants. file_name is the name of the file to save registry data to. This file cannot already exist. If this filename includes an extension, it cannot be used on file allocation table (FAT) file systems by the LoadKey() method. If key represents a key on a remote computer, the path described by file_name is relative to the remote computer. The caller of this method..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Saves the specified key, and all its subkeys to the specified file. key is an already open key, or one of the predefined HKEY_* constants. file_name is the name of the file to save registry data to. T...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.422089",
+    "updatedDate": "2026-03-24T10:48:12.422090",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "winreg/SetValue": {
+    "id": "winreg.SetValue",
+    "name": "SetValue",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "winreg.SetValue(key, sub_key, type, value)"
+    ],
+    "signature_hash": "013b79436fe62b99e55959837ee3d28ac0b26ba03eab89fcd4c690b772af7bb6",
+    "url": "https://docs.python.org/3/library/winreg.html#module-winreg#winreg.SetValue",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "sub_key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Associates a value with a specified key. key is an already open key, or one of the predefined HKEY_* constants. sub_key is a string that names the subkey with which the value is associated. type is an integer that specifies the type of the data. Currently this must be REG_SZ, meaning only strings are supported. Use the SetValueEx() function for support for other data types. value is a string that specifies the new value. If the key specified by the sub_key parameter does not exist, the SetVal..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates a value with a specified key. key is an already open key, or one of the predefined HKEY_* constants. sub_key is a string that names the subkey with which the value is associated. type is an...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.422108",
+    "updatedDate": "2026-03-24T10:48:12.422109",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "winreg/SetValueEx": {
+    "id": "winreg.SetValueEx",
+    "name": "SetValueEx",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "winreg.SetValueEx(key, value_name, reserved, type, value)"
+    ],
+    "signature_hash": "ffe7a8aecbe1d6ce9186c039c739031b2f076cc1c18aa0f66f6619f3c80eb61c",
+    "url": "https://docs.python.org/3/library/winreg.html#module-winreg#winreg.SetValueEx",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "reserved",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Stores data in the value field of an open registry key. key is an already open key, or one of the predefined HKEY_* constants. value_name is a string that names the subkey with which the value is associated. reserved can be anything – zero is always passed to the API. type is an integer that specifies the type of the data. See Value Types for the available types. value is a string that specifies the new value. This method can also set additional value and type information for the specified ke..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Stores data in the value field of an open registry key. key is an already open key, or one of the predefined HKEY_* constants. value_name is a string that names the subkey with which the value is asso...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.422130",
+    "updatedDate": "2026-03-24T10:48:12.422131",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

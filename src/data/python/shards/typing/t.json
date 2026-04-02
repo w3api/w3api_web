@@ -1,0 +1,811 @@
+{
+  "typing/Text": {
+    "id": "typing.Text",
+    "name": "Text",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.Text"
+    ],
+    "signature_hash": "766b8e63dca7b9b4fc2aff3532fdbc1a91e7403b9b5cdf1b76aa8bdcb07e3ac5",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.Text",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated alias for str. Text is provided to supply a forward compatible path for Python 2 code: in Python 2, Text is an alias for unicode. Use Text to indicate that a value must contain a unicode string in a manner that is compatible with both Python 2 and Python 3: def add_unicode_checkmark(text: Text) -> Text: return text + u' \\u2713' Added in version 3.5.2. Deprecated since version 3.11: Python 2 is no longer supported, and most type checkers also no longer support type checking Python 2..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated alias for str. Text is provided to supply a forward compatible path for Python 2 code: in Python 2, Text is an alias for unicode. Use Text to indicate that a value must contain a unicode st...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410504",
+    "updatedDate": "2026-03-24T10:48:12.410504",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.11",
+      "added_version": "3.5.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/Type": {
+    "id": "typing.Type",
+    "name": "Type",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.Type(Generic[CT_co])"
+    ],
+    "signature_hash": "39bc8465b61e171a785bbf1c550718741de95e8e957bb1cee46948ece8152824",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.Type",
+    "parameters": [
+      {
+        "name": "Generic[CT_co",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated alias to type. See The type of class objects for details on using type or typing.Type in type annotations. Added in version 3.5.2. Deprecated since version 3.9: builtins.type now supports subscripting ([]). See PEP 585 and Generic Alias Type."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated alias to type. See The type of class objects for details on using type or typing.Type in type annotations. Added in version 3.5.2. Deprecated since version 3.9: builtins.type now supports s...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410352",
+    "updatedDate": "2026-03-24T10:48:12.410353",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.9",
+      "added_version": "3.5.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/TypeAliasType": {
+    "id": "typing.TypeAliasType",
+    "name": "TypeAliasType",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.TypeAliasType(name, value, *, type_params=())"
+    ],
+    "signature_hash": "706dfb388ad15fb5407ef847b93ba00e50e983326864ee80ff12d0314d563d2e",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.TypeAliasType",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type_params",
+        "type": "",
+        "has_default": true,
+        "default_value": "()",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The type of type aliases created through the type statement. Example: >>> type Alias = int >>> type(Alias) <class 'typing.TypeAliasType'> Added in version 3.12. __name__¶ The name of the type alias: >>> type Alias = int >>> Alias.__name__ 'Alias' __module__¶ The name of the module in which the type alias was defined: >>> type Alias = int >>> Alias.__module__ '__main__' __type_params__¶ The type parameters of the type alias, or an empty tuple if the alias is not generic: >>> type ListOrSet[T] ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The type of type aliases created through the type statement. Example: >>> type Alias = int >>> type(Alias) <class 'typing.TypeAliasType'> Added in version 3.12. __name__¶ The name of the type alias: >...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.409352",
+    "updatedDate": "2026-03-24T10:48:12.409352",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "__module__",
+      "__name__",
+      "__type_params__",
+      "__value__"
+    ],
+    "methods": [
+      "evaluate_value"
+    ]
+  },
+  "typing/TypeVar": {
+    "id": "typing.TypeVar",
+    "name": "TypeVar",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.TypeVar(name, *constraints, bound=None, covariant=False, contravariant=False, infer_variance=False, default=typing.NoDefault)"
+    ],
+    "signature_hash": "bb040d2c330c71dcc8ed50d7ea6348b6cde5a58b79564f7eee65ff9c181783a3",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.TypeVar",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "constraints",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "bound",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "covariant",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "contravariant",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "infer_variance",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "default",
+        "type": "",
+        "has_default": true,
+        "default_value": "typing.NoDefault",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Type variable. The preferred way to construct a type variable is via the dedicated syntax for generic functions, generic classes, and generic type aliases: class Sequence[T]: # T is a TypeVar ... This syntax can also be used to create bounded and constrained type variables: class StrSequence[S: str]: # S is a TypeVar with a `str` upper bound; ... # we can say that S is \"bounded by `str`\" class StrOrBytesSequence[A: (str, bytes)]: # A is a TypeVar constrained to str or bytes ... However, if de..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Type variable. The preferred way to construct a type variable is via the dedicated syntax for generic functions, generic classes, and generic type aliases: class Sequence[T]: # T is a TypeVar ... This...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.408957",
+    "updatedDate": "2026-03-24T10:48:12.408958",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "__bound__",
+      "__constraints__",
+      "__contravariant__",
+      "__covariant__",
+      "__default__",
+      "__infer_variance__",
+      "__name__"
+    ],
+    "methods": [
+      "evaluate_bound",
+      "evaluate_constraints",
+      "evaluate_default",
+      "has_default"
+    ]
+  },
+  "typing/TypeVarTuple": {
+    "id": "typing.TypeVarTuple",
+    "name": "TypeVarTuple",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.TypeVarTuple(name, *, default=typing.NoDefault)"
+    ],
+    "signature_hash": "ddc813f369e37f30b7107c9ea12ec42d167b7acbb3f3ef1fa3ee57d55254ff6d",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.TypeVarTuple",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "default",
+        "type": "",
+        "has_default": true,
+        "default_value": "typing.NoDefault",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Type variable tuple. A specialized form of type variable that enables variadic generics. Type variable tuples can be declared in type parameter lists using a single asterisk (*) before the name: def move_first_element_to_last[T, *Ts](tup: tuple[T, *Ts]) -> tuple[*Ts, T]: return (*tup[1:], tup[0]) Or by explicitly invoking the TypeVarTuple constructor: T = TypeVar(\"T\") Ts = TypeVarTuple(\"Ts\") def move_first_element_to_last(tup: tuple[T, *Ts]) -> tuple[*Ts, T]: return (*tup[1:], tup[0]) A norma..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Type variable tuple. A specialized form of type variable that enables variadic generics. Type variable tuples can be declared in type parameter lists using a single asterisk (*) before the name: def m...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.409145",
+    "updatedDate": "2026-03-24T10:48:12.409146",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "__default__",
+      "__name__"
+    ],
+    "methods": [
+      "evaluate_default",
+      "has_default"
+    ]
+  },
+  "typing/TypedDict": {
+    "id": "typing.TypedDict",
+    "name": "TypedDict",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.TypedDict(dict)"
+    ],
+    "signature_hash": "3c7f20545195a4678e6e98d795b86bb3628e58801539f109e0c971f1242e169d",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.TypedDict",
+    "parameters": [
+      {
+        "name": "dict",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Special construct to add type hints to a dictionary. At runtime “TypedDict instances” are simply dicts. TypedDict declares a dictionary type that expects all of its instances to have a certain set of keys, where each key is associated with a value of a consistent type. This expectation is not checked at runtime but is only enforced by type checkers. Usage: class Point2D(TypedDict): x: int y: int label: str a: Point2D = {'x': 1, 'y': 2, 'label': 'good'} # OK b: Point2D = {'z': 3, 'label': 'bad..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Special construct to add type hints to a dictionary. At runtime “TypedDict instances” are simply dicts. TypedDict declares a dictionary type that expects all of its instances to have a certain set of ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.409579",
+    "updatedDate": "2026-03-24T10:48:12.409580",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.13",
+      "added_version": "3.9.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "__mutable_keys__",
+      "__optional_keys__",
+      "__readonly_keys__",
+      "__required_keys__",
+      "__total__"
+    ]
+  },
+  "typing/TYPE_CHECKING": {
+    "id": "typing.TYPE_CHECKING",
+    "name": "TYPE_CHECKING",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "typing.TYPE_CHECKING"
+    ],
+    "signature_hash": "81887321f742f0a6bfd6fd4d9298008ab9d35bc361e74b64e82aa941257181bf",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.TYPE_CHECKING",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A special constant that is assumed to be True by 3rd party static type checkers. It’s False at runtime. A module which is expensive to import, and which only contain types used for typing annotations, can be safely imported inside an if TYPE_CHECKING: block. This prevents the module from actually being imported at runtime; annotations aren’t eagerly evaluated (see PEP 649) so using undefined symbols in annotations is harmless–as long as you don’t later examine them. Your static type analysis ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A special constant that is assumed to be True by 3rd party static type checkers. It’s False at runtime. A module which is expensive to import, and which only contain types used for typing annotations,...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410231",
+    "updatedDate": "2026-03-24T10:48:12.410232",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/Tuple": {
+    "id": "typing.Tuple",
+    "name": "Tuple",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "typing.Tuple"
+    ],
+    "signature_hash": "4874b1af0de60d0f3d240f9a1122a84e67372afce03e9feb2a1263e932be859c",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.Tuple",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated alias for tuple. tuple and Tuple are special-cased in the type system; see Annotating tuples for more details. Deprecated since version 3.9: builtins.tuple now supports subscripting ([]). See PEP 585 and Generic Alias Type."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated alias for tuple. tuple and Tuple are special-cased in the type system; see Annotating tuples for more details. Deprecated since version 3.9: builtins.tuple now supports subscripting ([]). S...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410333",
+    "updatedDate": "2026-03-24T10:48:12.410334",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.9",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/TypeAlias": {
+    "id": "typing.TypeAlias",
+    "name": "TypeAlias",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "typing.TypeAlias"
+    ],
+    "signature_hash": "d54746550277d0eb68365e5faec1769ba5e74468896c8a81e72e12a80aba82a1",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.TypeAlias",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Special annotation for explicitly declaring a type alias. For example: from typing import TypeAlias Factors: TypeAlias = list[int] TypeAlias is particularly useful on older Python versions for annotating aliases that make use of forward references, as it can be hard for type checkers to distinguish these from normal variable assignments: from typing import Generic, TypeAlias, TypeVar T = TypeVar(\"T\") # \"Box\" does not exist yet, # so we have to use quotes for the forward reference on Python <3..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Special annotation for explicitly declaring a type alias. For example: from typing import TypeAlias Factors: TypeAlias = list[int] TypeAlias is particularly useful on older Python versions for annotat...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.408723",
+    "updatedDate": "2026-03-24T10:48:12.408724",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.12",
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/TypeGuard": {
+    "id": "typing.TypeGuard",
+    "name": "TypeGuard",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "typing.TypeGuard"
+    ],
+    "signature_hash": "0fab6ba489657f913dfe12008234f2d76650499a48a30168e02671601e846811",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.TypeGuard",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Special typing construct for marking user-defined type predicate functions. Type predicate functions are user-defined functions that return whether their argument is an instance of a particular type. TypeGuard works similarly to TypeIs, but has subtly different effects on type checking behavior (see below). Using -> TypeGuard tells the static type checker that for a given function: The return value is a boolean. If the return value is True, the type of its argument is the type inside TypeGuar..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Special typing construct for marking user-defined type predicate functions. Type predicate functions are user-defined functions that return whether their argument is an instance of a particular type. ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.408895",
+    "updatedDate": "2026-03-24T10:48:12.408895",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/TypeIs": {
+    "id": "typing.TypeIs",
+    "name": "TypeIs",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "typing.TypeIs"
+    ],
+    "signature_hash": "50b82ad802973642c39070d7d90d0dd9c316139212d6ecb802af7c65d1b47d31",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.TypeIs",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Special typing construct for marking user-defined type predicate functions. TypeIs can be used to annotate the return type of a user-defined type predicate function. TypeIs only accepts a single type argument. At runtime, functions marked this way should return a boolean and take at least one positional argument. TypeIs aims to benefit type narrowing – a technique used by static type checkers to determine a more precise type of an expression within a program’s code flow. Usually type narrowin..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Special typing construct for marking user-defined type predicate functions. TypeIs can be used to annotate the return type of a user-defined type predicate function. TypeIs only accepts a single type ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.408882",
+    "updatedDate": "2026-03-24T10:48:12.408882",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/type_check_only": {
+    "id": "typing.type_check_only",
+    "name": "type_check_only",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@typing.type_check_only"
+    ],
+    "signature_hash": "eac6643d17a1e7dd5f397351a14dc4b5c49e898507b756ff01526d2dc7f5192b",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.type_check_only",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Decorator to mark a class or function as unavailable at runtime. This decorator is itself not available at runtime. It is mainly intended to mark classes that are defined in type stub files if an implementation returns an instance of a private class: @type_check_only class Response: # private or not available at runtime code: int def get_header(self, name: str) -> str: ... def fetch_response() -> Response: ... Note that returning instances of private classes is not recommended. It is usually ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decorator to mark a class or function as unavailable at runtime. This decorator is itself not available at runtime. It is mainly intended to mark classes that are defined in type stub files if an impl...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410010",
+    "updatedDate": "2026-03-24T10:48:12.410011",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing": {
+    "type": "module",
+    "name": "typing",
+    "id": "typing",
+    "description": "Module typing",
+    "classes": [
+      "AbstractSet",
+      "AsyncContextManager",
+      "AsyncGenerator",
+      "AsyncIterable",
+      "AsyncIterator",
+      "Awaitable",
+      "ByteString",
+      "ChainMap",
+      "Collection",
+      "Container",
+      "ContextManager",
+      "Coroutine",
+      "Counter",
+      "DefaultDict",
+      "Deque",
+      "Dict",
+      "ForwardRef",
+      "FrozenSet",
+      "Generator",
+      "Generic",
+      "Hashable",
+      "IO",
+      "ItemsView",
+      "Iterable",
+      "Iterator",
+      "KeysView",
+      "List",
+      "Mapping",
+      "MappingView",
+      "MutableMapping",
+      "MutableSequence",
+      "MutableSet",
+      "NamedTuple",
+      "NewType",
+      "OrderedDict",
+      "ParamSpec",
+      "Pattern",
+      "Protocol",
+      "Reversible",
+      "Sequence",
+      "Set",
+      "Sized",
+      "SupportsAbs",
+      "SupportsBytes",
+      "SupportsComplex",
+      "SupportsFloat",
+      "SupportsIndex",
+      "SupportsInt",
+      "SupportsRound",
+      "Text",
+      "Type",
+      "TypeAliasType",
+      "TypeVar",
+      "TypeVarTuple",
+      "TypedDict",
+      "Union",
+      "ValuesView"
+    ],
+    "constants": [
+      "Annotated",
+      "Any",
+      "AnyStr",
+      "Callable",
+      "ClassVar",
+      "Concatenate",
+      "Final",
+      "Literal",
+      "LiteralString",
+      "Never",
+      "NoDefault",
+      "NotRequired",
+      "Optional",
+      "ParamSpecArgs",
+      "ReadOnly",
+      "Required",
+      "Self",
+      "TYPE_CHECKING",
+      "Tuple",
+      "TypeAlias",
+      "TypeGuard",
+      "TypeIs",
+      "Unpack"
+    ],
+    "functions": [
+      "assert_never",
+      "assert_type",
+      "cast",
+      "clear_overloads",
+      "dataclass_transform",
+      "evaluate_forward_ref",
+      "final",
+      "get_args",
+      "get_origin",
+      "get_overloads",
+      "get_protocol_members",
+      "get_type_hints",
+      "is_protocol",
+      "is_typeddict",
+      "no_type_check",
+      "no_type_check_decorator",
+      "overload",
+      "override",
+      "reveal_type",
+      "runtime_checkable",
+      "type_check_only"
+    ]
+  }
+}

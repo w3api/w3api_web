@@ -1,0 +1,565 @@
+{
+  "bdb/Breakpoint/bpbynumber": {
+    "id": "bdb.Breakpoint.bpbynumber",
+    "name": "bpbynumber",
+    "type": "attribute",
+    "parent": "Breakpoint",
+    "signatures": [
+      "bpbynumber"
+    ],
+    "signature_hash": "9a3b543f550ca753074d885819e3a828a1933edf7f1a526831f3a227db2da15e",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Breakpoint.bpbynumber",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Numeric index for a single instance of a Breakpoint."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Numeric index for a single instance of a Breakpoint.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.167361",
+    "updatedDate": "2026-03-24T10:48:12.167362",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Breakpoint/bplist": {
+    "id": "bdb.Breakpoint.bplist",
+    "name": "bplist",
+    "type": "attribute",
+    "parent": "Breakpoint",
+    "signatures": [
+      "bplist"
+    ],
+    "signature_hash": "365d172b1c658cfd67c2d1e3e3fa8f712a41ad7112335051d77a064cacc36e1f",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Breakpoint.bplist",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Dictionary of Breakpoint instances indexed by (file, line) tuples."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Dictionary of Breakpoint instances indexed by (file, line) tuples.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.167372",
+    "updatedDate": "2026-03-24T10:48:12.167372",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Bdb": {
+    "id": "bdb.Bdb",
+    "name": "Bdb",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class bdb.Bdb(skip=None, backend='settrace')"
+    ],
+    "signature_hash": "373cb6254a7676ee7bedb8ed2202fafb9ceeaeb29dba8bee3211cabb00c084e9",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Bdb",
+    "parameters": [
+      {
+        "name": "skip",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "backend",
+        "type": "",
+        "has_default": true,
+        "default_value": "'settrace'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The Bdb class acts as a generic Python debugger base class. This class takes care of the details of the trace facility; a derived class should implement user interaction. The standard debugger class (pdb.Pdb) is an example. The skip argument, if given, must be an iterable of glob-style module name patterns. The debugger will not step into frames that originate in a module that matches one of these patterns. Whether a frame is considered to originate in a certain module is determined by the __..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The Bdb class acts as a generic Python debugger base class. This class takes care of the details of the trace facility; a derived class should implement user interaction. The standard debugger class (...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.167433",
+    "updatedDate": "2026-03-24T10:48:12.167434",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "break_anywhere",
+      "break_here",
+      "canonic",
+      "clear_all_breaks",
+      "clear_all_file_breaks",
+      "clear_bpbynumber",
+      "clear_break",
+      "disable_current_event",
+      "dispatch_call",
+      "dispatch_exception",
+      "dispatch_line",
+      "dispatch_return",
+      "do_clear",
+      "format_stack_entry",
+      "get_all_breaks",
+      "get_bpbynumber",
+      "get_break",
+      "get_breaks",
+      "get_file_breaks",
+      "get_stack",
+      "is_skipped_module",
+      "reset",
+      "restart_events",
+      "run",
+      "runcall",
+      "runctx",
+      "runeval",
+      "set_break",
+      "set_continue",
+      "set_next",
+      "set_quit",
+      "set_return",
+      "set_step",
+      "set_trace",
+      "set_until",
+      "start_trace",
+      "stop_here",
+      "stop_trace",
+      "trace_dispatch",
+      "user_call",
+      "user_exception",
+      "user_line",
+      "user_return"
+    ]
+  },
+  "bdb/Breakpoint": {
+    "id": "bdb.Breakpoint",
+    "name": "Breakpoint",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class bdb.Breakpoint(self, file, line, temporary=False, cond=None, funcname=None)"
+    ],
+    "signature_hash": "bae9a9f1fc71b612aa9640dfa657540a684ed7686ada845a257bba652dfe7754",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Breakpoint",
+    "parameters": [
+      {
+        "name": "self",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "file",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "line",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "temporary",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "cond",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "funcname",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This class implements temporary breakpoints, ignore counts, disabling and (re-)enabling, and conditionals. Breakpoints are indexed by number through a list called bpbynumber and by (file, line) pairs through bplist. The former points to a single instance of class Breakpoint. The latter points to a list of such instances since there may be more than one breakpoint per line. When creating a breakpoint, its associated file name should be in canonical form. If a funcname is defined, a breakpoint ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class implements temporary breakpoints, ignore counts, disabling and (re-)enabling, and conditionals. Breakpoints are indexed by number through a list called bpbynumber and by (file, line) pairs ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.167205",
+    "updatedDate": "2026-03-24T10:48:12.167206",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "bpbynumber",
+      "bplist",
+      "cond",
+      "enabled",
+      "file",
+      "funcname",
+      "hits",
+      "ignore",
+      "line",
+      "temporary"
+    ],
+    "methods": [
+      "bpformat",
+      "bpprint",
+      "deleteMe",
+      "disable",
+      "enable"
+    ]
+  },
+  "bdb/BdbQuit": {
+    "id": "bdb.BdbQuit",
+    "name": "BdbQuit",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception bdb.BdbQuit"
+    ],
+    "signature_hash": "b0a591ffc61136aebee724f1e183bf215dddb656c14d2762031ddc0dd4e1a164",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.BdbQuit",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Exception raised by the Bdb class for quitting the debugger."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Exception raised by the Bdb class for quitting the debugger.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.167179",
+    "updatedDate": "2026-03-24T10:48:12.167180",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Breakpoint/bpformat": {
+    "id": "bdb.Breakpoint.bpformat",
+    "name": "bpformat",
+    "type": "method",
+    "parent": "Breakpoint",
+    "signatures": [
+      "bpformat()"
+    ],
+    "signature_hash": "7071629e5dd6459027c3b33f6a6b2de82136695a87ef9f6bcc60366d407d1262",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Breakpoint.bpformat",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a string with all the information about the breakpoint, nicely formatted: Breakpoint number. Temporary status (del or keep). File/line position. Break condition. Number of times to ignore. Number of times hit. Added in version 3.2."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a string with all the information about the breakpoint, nicely formatted: Breakpoint number. Temporary status (del or keep). File/line position. Break condition. Number of times to ignore. Numb...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.167255",
+    "updatedDate": "2026-03-24T10:48:12.167256",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Breakpoint/bpprint": {
+    "id": "bdb.Breakpoint.bpprint",
+    "name": "bpprint",
+    "type": "method",
+    "parent": "Breakpoint",
+    "signatures": [
+      "bpprint(out=None)"
+    ],
+    "signature_hash": "039ef03079c22f7f3861d04b7802aff21d07282e905d0359a5284c4f824743ab",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Breakpoint.bpprint",
+    "parameters": [
+      {
+        "name": "out",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Print the output of bpformat() to the file out, or if it is None, to standard output."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Print the output of bpformat() to the file out, or if it is None, to standard output.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.167269",
+    "updatedDate": "2026-03-24T10:48:12.167270",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Bdb/break_anywhere": {
+    "id": "bdb.Bdb.break_anywhere",
+    "name": "break_anywhere",
+    "type": "method",
+    "parent": "Bdb",
+    "signatures": [
+      "break_anywhere(frame)"
+    ],
+    "signature_hash": "0a9b074c28ba55470640a4e9f5c0e8516d27dda933fd55acf9de39dff9dd024b",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Bdb.break_anywhere",
+    "parameters": [
+      {
+        "name": "frame",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if any breakpoint exists for frame’s filename."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if any breakpoint exists for frame’s filename.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.167805",
+    "updatedDate": "2026-03-24T10:48:12.167807",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb/Bdb/break_here": {
+    "id": "bdb.Bdb.break_here",
+    "name": "break_here",
+    "type": "method",
+    "parent": "Bdb",
+    "signatures": [
+      "break_here(frame)"
+    ],
+    "signature_hash": "d136f0bb7c9c067baadf82e01e92d4bbbc7d96085ada696cd261812f60cb76cc",
+    "url": "https://docs.python.org/3/library/bdb.html#module-bdb#bdb.Bdb.break_here",
+    "parameters": [
+      {
+        "name": "frame",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if there is an effective breakpoint for this line. Check whether a line or function breakpoint exists and is in effect. Delete temporary breakpoints based on information from effective()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if there is an effective breakpoint for this line. Check whether a line or function breakpoint exists and is in effect. Delete temporary breakpoints based on information from effective().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.167765",
+    "updatedDate": "2026-03-24T10:48:12.167769",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "bdb": {
+    "type": "module",
+    "name": "bdb",
+    "id": "bdb",
+    "description": "Module bdb",
+    "classes": [
+      "Bdb",
+      "Breakpoint"
+    ],
+    "exceptions": [
+      "BdbQuit"
+    ],
+    "functions": [
+      "checkfuncname",
+      "effective",
+      "set_trace"
+    ]
+  }
+}

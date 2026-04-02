@@ -1,0 +1,165 @@
+{
+  "pstats/Stats": {
+    "id": "pstats.Stats",
+    "name": "Stats",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pstats.Stats(*filenames or profile, stream=sys.stdout)"
+    ],
+    "signature_hash": "e1b8f1cd0d20ab9baaad9a680bc14dd8698b77f4626cc5fa21e743e2e5bcd180",
+    "url": "https://docs.python.org/3/library/profile.html#module-pstats#pstats.Stats",
+    "parameters": [
+      {
+        "name": "filenames or profile",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "stream",
+        "type": "",
+        "has_default": true,
+        "default_value": "sys.stdout",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This class constructor creates an instance of a “statistics object” from a filename (or list of filenames) or from a Profile instance. Output will be printed to the stream specified by stream. The file selected by the above constructor must have been created by the corresponding version of profile or cProfile. To be specific, there is no file compatibility guaranteed with future versions of this profiler, and there is no compatibility with files produced by other profilers, or the same profil..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class constructor creates an instance of a “statistics object” from a filename (or list of filenames) or from a Profile instance. Output will be printed to the stream specified by stream. The fil...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.310063",
+    "updatedDate": "2026-03-24T10:48:12.310064",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "add",
+      "dump_stats",
+      "get_stats_profile",
+      "print_callees",
+      "print_callers",
+      "print_stats",
+      "reverse_order",
+      "sort_stats",
+      "strip_dirs"
+    ]
+  },
+  "pstats/Stats/sort_stats": {
+    "id": "pstats.Stats.sort_stats",
+    "name": "sort_stats",
+    "type": "method",
+    "parent": "Stats",
+    "signatures": [
+      "sort_stats(*keys)"
+    ],
+    "signature_hash": "c2114c749faf2da8389d7bdf160e935b22543e243208099392992b3847814150",
+    "url": "https://docs.python.org/3/library/profile.html#module-pstats#pstats.Stats.sort_stats",
+    "parameters": [
+      {
+        "name": "keys",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This method modifies the Stats object by sorting it according to the supplied criteria. The argument can be either a string or a SortKey enum identifying the basis of a sort (example: 'time', 'name', SortKey.TIME or SortKey.NAME). The SortKey enums argument have advantage over the string argument in that it is more robust and less error prone. When more than one key is provided, then additional keys are used as secondary criteria when there is equality in all keys selected before them. For ex..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method modifies the Stats object by sorting it according to the supplied criteria. The argument can be either a string or a SortKey enum identifying the basis of a sort (example: 'time', 'name', ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.310254",
+    "updatedDate": "2026-03-24T10:48:12.310255",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pstats/Stats/strip_dirs": {
+    "id": "pstats.Stats.strip_dirs",
+    "name": "strip_dirs",
+    "type": "method",
+    "parent": "Stats",
+    "signatures": [
+      "strip_dirs()"
+    ],
+    "signature_hash": "bb6d9f2745bb5d4452463154554659df7032113bd0644f2ffdb2e211ea9dbd5a",
+    "url": "https://docs.python.org/3/library/profile.html#module-pstats#pstats.Stats.strip_dirs",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This method for the Stats class removes all leading path information from file names. It is very useful in reducing the size of the printout to fit within (close to) 80 columns. This method modifies the object, and the stripped information is lost. After performing a strip operation, the object is considered to have its entries in a “random” order, as it was just after object initialization and loading. If strip_dirs() causes two function names to be indistinguishable (they are on the same li..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method for the Stats class removes all leading path information from file names. It is very useful in reducing the size of the printout to fit within (close to) 80 columns. This method modifies t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.310079",
+    "updatedDate": "2026-03-24T10:48:12.310080",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

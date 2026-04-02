@@ -1,0 +1,581 @@
+{
+  "importlib.abc/FileFinder": {
+    "id": "importlib.abc.FileFinder",
+    "name": "FileFinder",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.machinery.FileFinder(path, *loader_details)"
+    ],
+    "signature_hash": "066625139dd7606caa7c55816c1205916b312c0acb72330b2a4ba24bf8ad19ba",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.machinery.FileFinder",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "loader_details",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A concrete implementation of importlib.abc.PathEntryFinder which caches results from the file system. The path argument is the directory for which the finder is in charge of searching. The loader_details argument is a variable number of 2-item tuples each containing a loader and a sequence of file suffixes the loader recognizes. The loaders are expected to be callables which accept two arguments of the module’s name and the path to the file found. The finder will cache the directory contents ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A concrete implementation of importlib.abc.PathEntryFinder which caches results from the file system. The path argument is the directory for which the finder is in charge of searching. The loader_deta...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.227330",
+    "updatedDate": "2026-03-24T10:48:12.227331",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "path"
+    ],
+    "methods": [
+      "find_spec",
+      "invalidate_caches",
+      "path_hook"
+    ]
+  },
+  "importlib.abc/FileLoader": {
+    "id": "importlib.abc.FileLoader",
+    "name": "FileLoader",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.abc.FileLoader(fullname, path)"
+    ],
+    "signature_hash": "b3fec01ea735b97ea6f448f7e87cc48ba102826937a90c81d7b5f82f0512bbb6",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.abc.FileLoader",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An abstract base class which inherits from ResourceLoader and ExecutionLoader, providing concrete implementations of ResourceLoader.get_data() and ExecutionLoader.get_filename(). The fullname argument is a fully resolved name of the module the loader is to handle. The path argument is the path to the file for the module. Added in version 3.3. name¶ The name of the module the loader can handle. path¶ Path to the file of the module. load_module(fullname)¶ Calls super’s load_module(). Deprecated..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract base class which inherits from ResourceLoader and ExecutionLoader, providing concrete implementations of ResourceLoader.get_data() and ExecutionLoader.get_filename(). The fullname argument...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.226894",
+    "updatedDate": "2026-03-24T10:48:12.226895",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.4",
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "name",
+      "path"
+    ],
+    "methods": [
+      "get_data",
+      "get_filename",
+      "load_module"
+    ]
+  },
+  "importlib.abc/FrozenImporter": {
+    "id": "importlib.abc.FrozenImporter",
+    "name": "FrozenImporter",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.machinery.FrozenImporter"
+    ],
+    "signature_hash": "8b8cfb9a9126327e32024f30c8ea077accd072520a1f3978eabb0a02d67433df",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.machinery.FrozenImporter",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An importer for frozen modules. This class implements the importlib.abc.MetaPathFinder and importlib.abc.InspectLoader ABCs. Only class methods are defined by this class to alleviate the need for instantiation. Changed in version 3.4: Gained create_module() and exec_module() methods."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An importer for frozen modules. This class implements the importlib.abc.MetaPathFinder and importlib.abc.InspectLoader ABCs. Only class methods are defined by this class to alleviate the need for inst...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.227235",
+    "updatedDate": "2026-03-24T10:48:12.227236",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/find_spec": {
+    "id": "importlib.abc.find_spec",
+    "name": "find_spec",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "importlib.util.find_spec(name, package=None)"
+    ],
+    "signature_hash": "3ec82b8f873f662013746ca6469a29d3a7315853a773273ff17c2ddf8113940a",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.util.find_spec",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "package",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Find the spec for a module, optionally relative to the specified package name. If the module is in sys.modules, then sys.modules[name].__spec__ is returned (unless the spec would be None or is not set, in which case ValueError is raised). Otherwise a search using sys.meta_path is done. None is returned if no spec is found. If name is for a submodule (contains a dot), the parent module is automatically imported. name and package work the same as for import_module(). Added in version 3.4. Chang..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Find the spec for a module, optionally relative to the specified package name. If the module is in sys.modules, then sys.modules[name].__spec__ is returned (unless the spec would be None or is not set...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.228132",
+    "updatedDate": "2026-03-24T10:48:12.228133",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/LazyLoader/factory": {
+    "id": "importlib.abc.LazyLoader.factory",
+    "name": "factory",
+    "type": "method",
+    "parent": "LazyLoader",
+    "signatures": [
+      "classmethod factory(loader)"
+    ],
+    "signature_hash": "304e95db3b140a725924651a272260688cb62ae866e65f768c21ba0f319c2019",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.util.LazyLoader.factory",
+    "parameters": [
+      {
+        "name": "loader",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A class method which returns a callable that creates a lazy loader. This is meant to be used in situations where the loader is passed by class instead of by instance. suffixes = importlib.machinery.SOURCE_SUFFIXES loader = importlib.machinery.SourceFileLoader lazy_loader = importlib.util.LazyLoader.factory(loader) finder = importlib.machinery.FileFinder(path, (lazy_loader, suffixes))"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A class method which returns a callable that creates a lazy loader. This is meant to be used in situations where the loader is passed by class instead of by instance. suffixes = importlib.machinery.SO...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.228283",
+    "updatedDate": "2026-03-24T10:48:12.228284",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/MetaPathFinder/find_spec": {
+    "id": "importlib.abc.MetaPathFinder.find_spec",
+    "name": "find_spec",
+    "type": "method",
+    "parent": "MetaPathFinder",
+    "signatures": [
+      "find_spec(fullname, path, target=None)"
+    ],
+    "signature_hash": "fd4acd6cb6bdb9550536b272bb618931a1ac18f2a6c2d2a63cee0b62ea0ef7ec",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.abc.MetaPathFinder.find_spec",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "target",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An abstract method for finding a spec for the specified module. If this is a top-level import, path will be None. Otherwise, this is a search for a subpackage or module and path will be the value of __path__ from the parent package. If a spec cannot be found, None is returned. When passed in, target is a module object that the finder may use to make a more educated guess about what spec to return. importlib.util.spec_from_loader() may be useful for implementing concrete MetaPathFinders. Added..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract method for finding a spec for the specified module. If this is a top-level import, path will be None. Otherwise, this is a search for a subpackage or module and path will be the value of _...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.226556",
+    "updatedDate": "2026-03-24T10:48:12.226557",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/PathEntryFinder/find_spec": {
+    "id": "importlib.abc.PathEntryFinder.find_spec",
+    "name": "find_spec",
+    "type": "method",
+    "parent": "PathEntryFinder",
+    "signatures": [
+      "find_spec(fullname, target=None)"
+    ],
+    "signature_hash": "26da2074905cff23694e8bdf844f4d0d79b3fd6b3eb9a7ff1ad549fb2fe975cb",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.abc.PathEntryFinder.find_spec",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "target",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An abstract method for finding a spec for the specified module. The finder will search for the module only within the path entry to which it is assigned. If a spec cannot be found, None is returned. When passed in, target is a module object that the finder may use to make a more educated guess about what spec to return. importlib.util.spec_from_loader() may be useful for implementing concrete PathEntryFinders. Added in version 3.4."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract method for finding a spec for the specified module. The finder will search for the module only within the path entry to which it is assigned. If a spec cannot be found, None is returned. W...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.226606",
+    "updatedDate": "2026-03-24T10:48:12.226607",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/PathFinder/find_spec": {
+    "id": "importlib.abc.PathFinder.find_spec",
+    "name": "find_spec",
+    "type": "method",
+    "parent": "PathFinder",
+    "signatures": [
+      "classmethod find_spec(fullname, path=None, target=None)"
+    ],
+    "signature_hash": "21b3e27391f068914a0e9a0a9da1aceb102fa887531b2de865b420c8decee8db",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.machinery.PathFinder.find_spec",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "path",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "target",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Class method that attempts to find a spec for the module specified by fullname on sys.path or, if defined, on path. For each path entry that is searched, sys.path_importer_cache is checked. If a non-false object is found then it is used as the path entry finder to look for the module being searched for. If no entry is found in sys.path_importer_cache, then sys.path_hooks is searched for a finder for the path entry and, if found, is stored in sys.path_importer_cache along with being queried ab..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Class method that attempts to find a spec for the module specified by fullname on sys.path or, if defined, on path. For each path entry that is searched, sys.path_importer_cache is checked. If a non-f...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.227287",
+    "updatedDate": "2026-03-24T10:48:12.227287",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.abc/FileFinder/find_spec": {
+    "id": "importlib.abc.FileFinder.find_spec",
+    "name": "find_spec",
+    "type": "method",
+    "parent": "FileFinder",
+    "signatures": [
+      "find_spec(fullname, target=None)"
+    ],
+    "signature_hash": "26da2074905cff23694e8bdf844f4d0d79b3fd6b3eb9a7ff1ad549fb2fe975cb",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.abc#importlib.machinery.FileFinder.find_spec",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "target",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Attempt to find the spec to handle fullname within path. Added in version 3.4."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Attempt to find the spec to handle fullname within path. Added in version 3.4.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.227360",
+    "updatedDate": "2026-03-24T10:48:12.227361",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

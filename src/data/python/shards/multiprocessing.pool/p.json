@@ -1,0 +1,579 @@
+{
+  "multiprocessing.pool/Process/pid": {
+    "id": "multiprocessing.pool.Process.pid",
+    "name": "pid",
+    "type": "attribute",
+    "parent": "Process",
+    "signatures": [
+      "pid"
+    ],
+    "signature_hash": "ce71df4dc560de1e3e3d08a85db646710b493e3106c7af94ae10372d61f9eda8",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.Process.pid",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the process ID. Before the process is spawned, this will be None."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the process ID. Before the process is spawned, this will be None.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.274105",
+    "updatedDate": "2026-03-24T10:48:12.274106",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.pool/Pool": {
+    "id": "multiprocessing.pool.Pool",
+    "name": "Pool",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.pool.Pool([processes[, initializer[, initargs[, maxtasksperchild[, context]]]]])"
+    ],
+    "signature_hash": "f6595778bfdb5a65a5089161eb22ababc1c434bc83a94941b811e3880c00a3fe",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.pool.Pool",
+    "parameters": [
+      {
+        "name": "processes[, initializer[, initargs[, maxtasksperchild[, context",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A process pool object which controls a pool of worker processes to which jobs can be submitted. It supports asynchronous results with timeouts and callbacks and has a parallel map implementation. processes is the number of worker processes to use. If processes is None then the number returned by os.process_cpu_count() is used. If initializer is not None then each worker process will call initializer(*initargs) when it starts. maxtasksperchild is the number of tasks a worker process can comple..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A process pool object which controls a pool of worker processes to which jobs can be submitted. It supports asynchronous results with timeouts and callbacks and has a parallel map implementation. proc...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.278919",
+    "updatedDate": "2026-03-24T10:48:12.278920",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "apply",
+      "apply_async",
+      "close",
+      "imap",
+      "imap_unordered",
+      "join",
+      "map",
+      "map_async",
+      "starmap",
+      "starmap_async",
+      "terminate"
+    ]
+  },
+  "multiprocessing.pool/Process": {
+    "id": "multiprocessing.pool.Process",
+    "name": "Process",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.Process(group=None, target=None, name=None, args=(), kwargs={}, *, daemon=None)"
+    ],
+    "signature_hash": "1c2ebc9855032627014d8b0b7bb0cbd8e4dfed3d481fe5d4c5d6ef0e75b1aeb7",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.Process",
+    "parameters": [
+      {
+        "name": "group",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "target",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": true,
+        "default_value": "()",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "kwargs",
+        "type": "",
+        "has_default": true,
+        "default_value": "{}",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "daemon",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Process objects represent activity that is run in a separate process. The Process class has equivalents of all the methods of threading.Thread. The constructor should always be called with keyword arguments. group should always be None; it exists solely for compatibility with threading.Thread. target is the callable object to be invoked by the run() method. It defaults to None, meaning nothing is called. name is the process name (see name for more details). args is the argument tuple for the ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Process objects represent activity that is run in a separate process. The Process class has equivalents of all the methods of threading.Thread. The constructor should always be called with keyword arg...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.273998",
+    "updatedDate": "2026-03-24T10:48:12.273999",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "authkey",
+      "daemon",
+      "exitcode",
+      "name",
+      "pid",
+      "sentinel"
+    ],
+    "methods": [
+      "close",
+      "interrupt",
+      "is_alive",
+      "join",
+      "kill",
+      "run",
+      "start",
+      "terminate"
+    ]
+  },
+  "multiprocessing.pool/ProcessError": {
+    "id": "multiprocessing.pool.ProcessError",
+    "name": "ProcessError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception multiprocessing.ProcessError"
+    ],
+    "signature_hash": "6844063b1b4e0a9203be3a7da2b9dd272355d983450a6800b17a26e115c57df8",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.ProcessError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The base class of all multiprocessing exceptions."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The base class of all multiprocessing exceptions.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.274265",
+    "updatedDate": "2026-03-24T10:48:12.274266",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.pool/Pipe": {
+    "id": "multiprocessing.pool.Pipe",
+    "name": "Pipe",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "multiprocessing.Pipe(duplex=True)"
+    ],
+    "signature_hash": "2c398c82566a9c6921213f13fe51d039b5fc6550f8a7e70523e2017d45db091e",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.Pipe",
+    "parameters": [
+      {
+        "name": "duplex",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a pair (conn1, conn2) of Connection objects representing the ends of a pipe. If duplex is True (the default) then the pipe is bidirectional. If duplex is False then the pipe is unidirectional: conn1 can only be used for receiving messages and conn2 can only be used for sending messages. The send() method serializes the object using pickle and the recv() re-creates the object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a pair (conn1, conn2) of Connection objects representing the ends of a pipe. If duplex is True (the default) then the pipe is bidirectional. If duplex is False then the pipe is unidirectional:...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.274366",
+    "updatedDate": "2026-03-24T10:48:12.274367",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.pool/parent_process": {
+    "id": "multiprocessing.pool.parent_process",
+    "name": "parent_process",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "multiprocessing.parent_process()"
+    ],
+    "signature_hash": "d86de0669a43e577cae28656b969b782526e1fb91f7858010d58b5a439ab2a8b",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.parent_process",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the Process object corresponding to the parent process of the current_process(). For the main process, parent_process will be None. Added in version 3.8."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the Process object corresponding to the parent process of the current_process(). For the main process, parent_process will be None. Added in version 3.8.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.274836",
+    "updatedDate": "2026-03-24T10:48:12.274837",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.pool/Connection/poll": {
+    "id": "multiprocessing.pool.Connection.poll",
+    "name": "poll",
+    "type": "method",
+    "parent": "Connection",
+    "signatures": [
+      "poll([timeout])"
+    ],
+    "signature_hash": "83130e17d0640b4113cbd0faef62cf240b26b35edb37c9901fe7746c953bcd44",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.connection.Connection.poll",
+    "parameters": [
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return whether there is any data available to be read. If timeout is not specified then it will return immediately. If timeout is a number then this specifies the maximum time in seconds to block. If timeout is None then an infinite timeout is used. Note that multiple connection objects may be polled at once by using multiprocessing.connection.wait()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return whether there is any data available to be read. If timeout is not specified then it will return immediately. If timeout is a number then this specifies the maximum time in seconds to block. If ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.275532",
+    "updatedDate": "2026-03-24T10:48:12.275534",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.pool/Queue/put": {
+    "id": "multiprocessing.pool.Queue.put",
+    "name": "put",
+    "type": "method",
+    "parent": "Queue",
+    "signatures": [
+      "put(obj[, block[, timeout]])"
+    ],
+    "signature_hash": "f3aa1a8417905625f9a007742b2b9b5c7a64c48ea59d0447428508d9d4518ca1",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.Queue.put",
+    "parameters": [
+      {
+        "name": "obj[, block[, timeout",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Put obj into the queue. If the optional argument block is True (the default) and timeout is None (the default), block if necessary until a free slot is available. If timeout is a positive number, it blocks at most timeout seconds and raises the queue.Full exception if no free slot was available within that time. Otherwise (block is False), put an item on the queue if a free slot is immediately available, else raise the queue.Full exception (timeout is ignored in that case). Changed in version..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Put obj into the queue. If the optional argument block is True (the default) and timeout is None (the default), block if necessary until a free slot is available. If timeout is a positive number, it b...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.274468",
+    "updatedDate": "2026-03-24T10:48:12.274469",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.pool/SimpleQueue/put": {
+    "id": "multiprocessing.pool.SimpleQueue.put",
+    "name": "put",
+    "type": "method",
+    "parent": "SimpleQueue",
+    "signatures": [
+      "put(item)"
+    ],
+    "signature_hash": "5cfd9c8a4a8c08549c429e928e856605d9ddec2e69d98dddb79d448209abcf7c",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.SimpleQueue.put",
+    "parameters": [
+      {
+        "name": "item",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Put item into the queue."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Put item into the queue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.274721",
+    "updatedDate": "2026-03-24T10:48:12.274722",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.pool/Queue/put_nowait": {
+    "id": "multiprocessing.pool.Queue.put_nowait",
+    "name": "put_nowait",
+    "type": "method",
+    "parent": "Queue",
+    "signatures": [
+      "put_nowait(obj)"
+    ],
+    "signature_hash": "4114c7c3dbf071695fbe9f74a61d0069a8d881c838415a601c458b69d4f63184",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.Queue.put_nowait",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Equivalent to put(obj, False)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Equivalent to put(obj, False).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.274484",
+    "updatedDate": "2026-03-24T10:48:12.274485",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "multiprocessing.pool/Queue": {
+    "id": "multiprocessing.pool.Queue",
+    "name": "Queue",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.Queue([maxsize])"
+    ],
+    "signature_hash": "2449ec3dd148cd4716731a74c4e5eeeb2e240ceaa33a5735d97e7b7f3c4eaa02",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.Queue",
+    "parameters": [
+      {
+        "name": "maxsize",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a process shared queue implemented using a pipe and a few locks/semaphores. When a process first puts an item on the queue a feeder thread is started which transfers objects from a buffer into the pipe. Instantiating this class may set the global start method. See Global start method for more details. The usual queue.Empty and queue.Full exceptions from the standard library’s queue module are raised to signal timeouts. Queue implements all the methods of queue.Queue except for task_do..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a process shared queue implemented using a pipe and a few locks/semaphores. When a process first puts an item on the queue a feeder thread is started which transfers objects from a buffer into...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.274386",
+    "updatedDate": "2026-03-24T10:48:12.274387",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "cancel_join_thread",
+      "close",
+      "empty",
+      "full",
+      "get",
+      "get_nowait",
+      "join_thread",
+      "put",
+      "put_nowait",
+      "qsize"
+    ]
+  },
+  "multiprocessing.pool/SyncManager/Queue": {
+    "id": "multiprocessing.pool.SyncManager.Queue",
+    "name": "Queue",
+    "type": "method",
+    "parent": "SyncManager",
+    "signatures": [
+      "Queue([maxsize])"
+    ],
+    "signature_hash": "93ff0f1b66b91379429679fded87635c342cb6de974fb9022881677624b38ad7",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.managers.SyncManager.Queue",
+    "parameters": [
+      {
+        "name": "maxsize",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a shared queue.Queue object and return a proxy for it."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a shared queue.Queue object and return a proxy for it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.278397",
+    "updatedDate": "2026-03-24T10:48:12.278398",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.pool/Queue/qsize": {
+    "id": "multiprocessing.pool.Queue.qsize",
+    "name": "qsize",
+    "type": "method",
+    "parent": "Queue",
+    "signatures": [
+      "qsize()"
+    ],
+    "signature_hash": "5c5d3c2fc6ddbae2ff5dcde9ead1466fbffac3c7deb6931b09789f430024978b",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool#multiprocessing.Queue.qsize",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the approximate size of the queue. Because of multithreading/multiprocessing semantics, this number is not reliable. Note that this may raise NotImplementedError on platforms like macOS where sem_getvalue() is not implemented."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the approximate size of the queue. Because of multithreading/multiprocessing semantics, this number is not reliable. Note that this may raise NotImplementedError on platforms like macOS where s...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.274404",
+    "updatedDate": "2026-03-24T10:48:12.274405",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

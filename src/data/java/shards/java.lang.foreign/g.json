@@ -1,0 +1,407 @@
+{
+  "java.lang.foreign/GroupLayout": {
+    "id": "java.lang.foreign.GroupLayout",
+    "name": "GroupLayout",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface GroupLayout"
+    ],
+    "signature_hash": "7b84e70fd76da532508163cfe189e832b2bc36f844f9dad6058ac496f50d73fc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/GroupLayout.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822936",
+    "updatedDate": "2026-03-24T10:48:13.822937",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "memberLayouts",
+      "withByteAlignment",
+      "withName",
+      "withoutName"
+    ]
+  },
+  "java.lang.foreign/MemorySegment/get": {
+    "id": "java.lang.foreign.MemorySegment.get",
+    "name": "get",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public MemorySegment get(AddressLayout layout, long offset)",
+      "public boolean get(ValueLayout.OfBoolean layout, long offset)",
+      "public byte get(ValueLayout.OfByte layout, long offset)",
+      "public char get(ValueLayout.OfChar layout, long offset)",
+      "public double get(ValueLayout.OfDouble layout, long offset)",
+      "public float get(ValueLayout.OfFloat layout, long offset)",
+      "public int get(ValueLayout.OfInt layout, long offset)",
+      "public long get(ValueLayout.OfLong layout, long offset)",
+      "public short get(ValueLayout.OfShort layout, long offset)"
+    ],
+    "signature_hash": "7c206f41c723311e4e42576f89bf7e6c9650cd531f6579d6497fe1d43e9094ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [
+      {
+        "name": "layout",
+        "has_default": false,
+        "default_value": null,
+        "type": "AddressLayout|ValueLayout.OfBoolean|ValueLayout.OfByte|ValueLayout.OfChar|ValueLayout.OfDouble|ValueLayout.OfFloat|ValueLayout.OfInt|ValueLayout.OfLong|ValueLayout.OfShort",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "offset",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "MemorySegment",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongThreadException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Reads an address from this segment at the given offset, with the given layout."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads an address from this segment at the given offset, with the given layout.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821328",
+    "updatedDate": "2026-03-24T10:48:13.821329",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/getAtIndex": {
+    "id": "java.lang.foreign.MemorySegment.getAtIndex",
+    "name": "getAtIndex",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public MemorySegment getAtIndex(AddressLayout layout, long index)",
+      "public boolean getAtIndex(ValueLayout.OfBoolean layout, long index)",
+      "public byte getAtIndex(ValueLayout.OfByte layout, long index)",
+      "public char getAtIndex(ValueLayout.OfChar layout, long index)",
+      "public double getAtIndex(ValueLayout.OfDouble layout, long index)",
+      "public float getAtIndex(ValueLayout.OfFloat layout, long index)",
+      "public int getAtIndex(ValueLayout.OfInt layout, long index)",
+      "public long getAtIndex(ValueLayout.OfLong layout, long index)",
+      "public short getAtIndex(ValueLayout.OfShort layout, long index)"
+    ],
+    "signature_hash": "3a19d824aa45dcb3f4b76f8bf17df1aab5c81652a9840e7637ed59557fc500c0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [
+      {
+        "name": "layout",
+        "has_default": false,
+        "default_value": null,
+        "type": "AddressLayout|ValueLayout.OfBoolean|ValueLayout.OfByte|ValueLayout.OfChar|ValueLayout.OfDouble|ValueLayout.OfFloat|ValueLayout.OfInt|ValueLayout.OfLong|ValueLayout.OfShort",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "index",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "MemorySegment",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongThreadException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Reads an address from this segment at the given at the given index, scaled by the given layout size."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads an address from this segment at the given at the given index, scaled by the given layout size.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821409",
+    "updatedDate": "2026-03-24T10:48:13.821410",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/getString": {
+    "id": "java.lang.foreign.MemorySegment.getString",
+    "name": "getString",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public String getString(long offset)",
+      "public String getString(long offset, Charset charset)"
+    ],
+    "signature_hash": "9541c5ad91df5fe10eb37ae5b666829cf89d344df7219df9b2f76f576d266114",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [
+      {
+        "name": "offset",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "charset",
+        "has_default": false,
+        "default_value": null,
+        "type": "Charset",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IndexOutOfBoundsException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongThreadException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Reads a null-terminated string from this segment at the given offset, using theUTF-8charset."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads a null-terminated string from this segment at the given offset, using theUTF-8charset.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821436",
+    "updatedDate": "2026-03-24T10:48:13.821437",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/Arena/global": {
+    "id": "java.lang.foreign.Arena.global",
+    "name": "global",
+    "type": "method",
+    "parent": "Arena",
+    "signatures": [
+      "public static Arena global()"
+    ],
+    "signature_hash": "16cc7bc9a8af6ea6b34c1e326c33fdb29bcb44397b8227748e21c3b47428ae7f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/Arena.html",
+    "parameters": [],
+    "return_type": "static Arena",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the global arena."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the global arena.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822148",
+    "updatedDate": "2026-03-24T10:48:13.822149",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/PathElement/groupElement": {
+    "id": "java.lang.foreign.PathElement.groupElement",
+    "name": "groupElement",
+    "type": "method",
+    "parent": "PathElement",
+    "signatures": [
+      "public static MemoryLayout.PathElement groupElement(long index)",
+      "public static MemoryLayout.PathElement groupElement(String name)"
+    ],
+    "signature_hash": "1228af18bd692dda5aeacf31575faafdedd9a110caff782fa613d9106a929b15",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemoryLayout.PathElement.html",
+    "parameters": [
+      {
+        "name": "index",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static MemoryLayout.PathElement",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a path element that selects a member layout with the given index in a group layout."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a path element that selects a member layout with the given index in a group layout.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.823548",
+    "updatedDate": "2026-03-24T10:48:13.823549",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

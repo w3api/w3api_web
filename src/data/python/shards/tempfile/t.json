@@ -1,0 +1,340 @@
+{
+  "tempfile/TemporaryDirectory": {
+    "id": "tempfile.TemporaryDirectory",
+    "name": "TemporaryDirectory",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class tempfile.TemporaryDirectory(suffix=None, prefix=None, dir=None, ignore_cleanup_errors=False, *, delete=True)"
+    ],
+    "signature_hash": "4cbe2684691ec9beb295cfa23a34aadfa347d5c41b2ea4286a15b5a4fcfcc666",
+    "url": "https://docs.python.org/3/library/tempfile.html#module-tempfile#tempfile.TemporaryDirectory",
+    "parameters": [
+      {
+        "name": "suffix",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "prefix",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "dir",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "ignore_cleanup_errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "delete",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This class securely creates a temporary directory using the same rules as mkdtemp(). The resulting object can be used as a context manager (see Examples). On completion of the context or destruction of the temporary directory object, the newly created temporary directory and all its contents are removed from the filesystem. name¶ The directory name can be retrieved from the name attribute of the returned object. When the returned object is used as a context manager, the name will be assigned ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class securely creates a temporary directory using the same rules as mkdtemp(). The resulting object can be used as a context manager (see Examples). On completion of the context or destruction o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.354066",
+    "updatedDate": "2026-03-24T10:48:12.354067",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "name"
+    ],
+    "methods": [
+      "cleanup"
+    ]
+  },
+  "tempfile/tempdir": {
+    "id": "tempfile.tempdir",
+    "name": "tempdir",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "tempfile.tempdir"
+    ],
+    "signature_hash": "ca070be757103a8050074e817a666c8e0dab3450f7583fedd9c7856445002f45",
+    "url": "https://docs.python.org/3/library/tempfile.html#module-tempfile#tempfile.tempdir",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "When set to a value other than None, this variable defines the default value for the dir argument to the functions defined in this module, including its type, bytes or str. It cannot be a path-like object. If tempdir is None (the default) at any call to any of the above functions except gettempprefix() it is initialized following the algorithm described in gettempdir(). Note Beware that if you set tempdir to a bytes value, there is a nasty side effect: The global default return type of mkstem..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "When set to a value other than None, this variable defines the default value for the dir argument to the functions defined in this module, including its type, bytes or str. It cannot be a path-like ob...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.354225",
+    "updatedDate": "2026-03-24T10:48:12.354226",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tempfile/TemporaryFile": {
+    "id": "tempfile.TemporaryFile",
+    "name": "TemporaryFile",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "tempfile.TemporaryFile(mode='w+b', buffering=-1, encoding=None, newline=None, suffix=None, prefix=None, dir=None, *, errors=None)"
+    ],
+    "signature_hash": "6b07ce5d539ffeeffc5ed821a441e9000bec568e81d36bb7a15c59cca9b9aa56",
+    "url": "https://docs.python.org/3/library/tempfile.html#module-tempfile#tempfile.TemporaryFile",
+    "parameters": [
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "'w+b'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "buffering",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "newline",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "suffix",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "prefix",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "dir",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a file-like object that can be used as a temporary storage area. The file is created securely, using the same rules as mkstemp(). It will be destroyed as soon as it is closed (including an implicit close when the object is garbage collected). Under Unix, the directory entry for the file is either not created at all or is removed immediately after the file is created. Other platforms do not support this; your code should not rely on a temporary file created using this function having or..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a file-like object that can be used as a temporary storage area. The file is created securely, using the same rules as mkstemp(). It will be destroyed as soon as it is closed (including an impl...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.353941",
+    "updatedDate": "2026-03-24T10:48:12.353942",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "tempfile": {
+    "type": "module",
+    "name": "tempfile",
+    "id": "tempfile",
+    "description": "Module tempfile",
+    "classes": [
+      "SpooledTemporaryFile",
+      "TemporaryDirectory"
+    ],
+    "constants": [
+      "tempdir"
+    ],
+    "functions": [
+      "NamedTemporaryFile",
+      "TemporaryFile",
+      "gettempdir",
+      "gettempdirb",
+      "gettempprefix",
+      "gettempprefixb",
+      "mkdtemp",
+      "mkstemp",
+      "mktemp"
+    ]
+  }
+}

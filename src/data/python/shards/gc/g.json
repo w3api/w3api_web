@@ -1,0 +1,412 @@
+{
+  "gc/garbage": {
+    "id": "gc.garbage",
+    "name": "garbage",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "gc.garbage"
+    ],
+    "signature_hash": "40a1c6884a1b494154ac0fea5d9dbed6187ce49dc5ea0661a3767a3e3377f0a9",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.garbage",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A list of objects which the collector found to be unreachable but could not be freed (uncollectable objects). Starting with Python 3.4, this list should be empty most of the time, except when using instances of C extension types with a non-NULL tp_del slot. If DEBUG_SAVEALL is set, then all unreachable objects will be added to this list rather than freed. Changed in version 3.2: If this list is non-empty at interpreter shutdown, a ResourceWarning is emitted, which is silent by default. If DEB..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A list of objects which the collector found to be unreachable but could not be freed (uncollectable objects). Starting with Python 3.4, this list should be empty most of the time, except when using in...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220975",
+    "updatedDate": "2026-03-24T10:48:12.220976",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/get_count": {
+    "id": "gc.get_count",
+    "name": "get_count",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.get_count()"
+    ],
+    "signature_hash": "20f5fbb1cefa745ed6e9fbb03c27925007ccd3434e5b280611a902f052228fc2",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.get_count",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the current collection counts as a tuple of (count0, count1, count2)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the current collection counts as a tuple of (count0, count1, count2).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220580",
+    "updatedDate": "2026-03-24T10:48:12.220581",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/get_debug": {
+    "id": "gc.get_debug",
+    "name": "get_debug",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.get_debug()"
+    ],
+    "signature_hash": "7f9d60d398bb2c450212ecc7bba8f3e96ddd92e86597e1486f4fadca09e41b7a",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.get_debug",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the debugging flags currently set."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the debugging flags currently set.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220523",
+    "updatedDate": "2026-03-24T10:48:12.220524",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/get_freeze_count": {
+    "id": "gc.get_freeze_count",
+    "name": "get_freeze_count",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.get_freeze_count()"
+    ],
+    "signature_hash": "9b8987b46669168b538f1b6ab7692dbee34cbc3bbd3662cf6d16d4c9a23aeb96",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.get_freeze_count",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the number of objects in the permanent generation. Added in version 3.7."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the number of objects in the permanent generation. Added in version 3.7.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220962",
+    "updatedDate": "2026-03-24T10:48:12.220963",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/get_objects": {
+    "id": "gc.get_objects",
+    "name": "get_objects",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.get_objects(generation=None)"
+    ],
+    "signature_hash": "371fe7dd7868fb5317123c0ee683017360d4a87f4e945c5c4fcad58780e0fdee",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.get_objects",
+    "parameters": [
+      {
+        "name": "generation",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a list of all objects tracked by the collector, excluding the list returned. If generation is not None, return only the objects as follows: 0: All objects in the young generation 1: No objects, as there is no generation 1 (as of Python 3.14) 2: All objects in the old generation Changed in version 3.8: New generation parameter. Changed in version 3.14: Generation 1 is removed Raises an auditing event gc.get_objects with argument generation."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a list of all objects tracked by the collector, excluding the list returned. If generation is not None, return only the objects as follows: 0: All objects in the young generation 1: No objects...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220540",
+    "updatedDate": "2026-03-24T10:48:12.220540",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/get_referents": {
+    "id": "gc.get_referents",
+    "name": "get_referents",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.get_referents(*objs)"
+    ],
+    "signature_hash": "7fae9b217f277ea21e3a24abd770f83792a9e7ea8b0a34285ce842ef2ab17259",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.get_referents",
+    "parameters": [
+      {
+        "name": "objs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a list of objects directly referred to by any of the arguments. The referents returned are those objects visited by the arguments’ C-level tp_traverse methods (if any), and may not be all objects actually directly reachable. tp_traverse methods are supported only by objects that support garbage collection, and are only required to visit objects that may be involved in a cycle. So, for example, if an integer is directly reachable from an argument, that integer object may or may not appe..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list of objects directly referred to by any of the arguments. The referents returned are those objects visited by the arguments’ C-level tp_traverse methods (if any), and may not be all objec...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220895",
+    "updatedDate": "2026-03-24T10:48:12.220896",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/get_referrers": {
+    "id": "gc.get_referrers",
+    "name": "get_referrers",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.get_referrers(*objs)"
+    ],
+    "signature_hash": "e0d5d4ef6247f908dae176957839e2796af78fd4d06190a010da7f1eb77f559c",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.get_referrers",
+    "parameters": [
+      {
+        "name": "objs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the list of objects that directly refer to any of objs. This function will only locate those containers which support garbage collection; extension types which do refer to other objects but do not support garbage collection will not be found. Note that objects which have already been dereferenced, but which live in cycles and have not yet been collected by the garbage collector can be listed among the resulting referrers. To get only currently live objects, call collect() before callin..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the list of objects that directly refer to any of objs. This function will only locate those containers which support garbage collection; extension types which do refer to other objects but do ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220879",
+    "updatedDate": "2026-03-24T10:48:12.220880",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/get_stats": {
+    "id": "gc.get_stats",
+    "name": "get_stats",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.get_stats()"
+    ],
+    "signature_hash": "bf66ccf6c07e8c0cf88e89c4c8390454b83ee2ccdff0e2ffd6a692a79adf899b",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.get_stats",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a list of three per-generation dictionaries containing collection statistics since interpreter start. The number of keys may change in the future, but currently each dictionary will contain the following items: collections is the number of times this generation was collected; collected is the total number of objects collected inside this generation; uncollectable is the total number of objects which were found to be uncollectable (and were therefore moved to the garbage list) inside th..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a list of three per-generation dictionaries containing collection statistics since interpreter start. The number of keys may change in the future, but currently each dictionary will contain the...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220553",
+    "updatedDate": "2026-03-24T10:48:12.220554",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc/get_threshold": {
+    "id": "gc.get_threshold",
+    "name": "get_threshold",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "gc.get_threshold()"
+    ],
+    "signature_hash": "c6523998537a0cfd85a9ad732f34ca310d560d82b37a81882f468e15c93f57eb",
+    "url": "https://docs.python.org/3/library/gc.html#module-gc#gc.get_threshold",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the current collection thresholds as a tuple of (threshold0, threshold1, threshold2)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the current collection thresholds as a tuple of (threshold0, threshold1, threshold2).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220590",
+    "updatedDate": "2026-03-24T10:48:12.220591",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "gc": {
+    "type": "module",
+    "name": "gc",
+    "id": "gc",
+    "description": "Module gc",
+    "constants": [
+      "DEBUG_COLLECTABLE",
+      "DEBUG_LEAK",
+      "DEBUG_SAVEALL",
+      "DEBUG_STATS",
+      "DEBUG_UNCOLLECTABLE",
+      "callbacks",
+      "garbage"
+    ],
+    "functions": [
+      "collect",
+      "disable",
+      "enable",
+      "freeze",
+      "get_count",
+      "get_debug",
+      "get_freeze_count",
+      "get_objects",
+      "get_referents",
+      "get_referrers",
+      "get_stats",
+      "get_threshold",
+      "is_finalized",
+      "is_tracked",
+      "isenabled",
+      "set_debug",
+      "set_threshold",
+      "unfreeze"
+    ]
+  }
+}

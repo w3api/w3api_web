@@ -1,0 +1,232 @@
+{
+  "winreg/QueryInfoKey": {
+    "id": "winreg.QueryInfoKey",
+    "name": "QueryInfoKey",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "winreg.QueryInfoKey(key)"
+    ],
+    "signature_hash": "c6ba8f3ccf4c9eab4c61e07b53eb0972ff2945bd95d0e286513d096a438675e7",
+    "url": "https://docs.python.org/3/library/winreg.html#module-winreg#winreg.QueryInfoKey",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns information about a key, as a tuple. key is an already open key, or one of the predefined HKEY_* constants. The result is a tuple of 3 items: Index Meaning 0 An integer giving the number of sub keys this key has. 1 An integer giving the number of values this key has. 2 An integer giving when the key was last modified (if available) as 100’s of nanoseconds since Jan 1, 1601. Raises an auditing event winreg.QueryInfoKey with argument key."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns information about a key, as a tuple. key is an already open key, or one of the predefined HKEY_* constants. The result is a tuple of 3 items: Index Meaning 0 An integer giving the number of su...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.422038",
+    "updatedDate": "2026-03-24T10:48:12.422039",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "winreg/QueryReflectionKey": {
+    "id": "winreg.QueryReflectionKey",
+    "name": "QueryReflectionKey",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "winreg.QueryReflectionKey(key)"
+    ],
+    "signature_hash": "f1e4d907a8fbb84c77d636e9675ef2f508ee652cdfdc37ac70ce65b8778ef13c",
+    "url": "https://docs.python.org/3/library/winreg.html#module-winreg#winreg.QueryReflectionKey",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Determines the reflection state for the specified key. key is an already open key, or one of the predefined HKEY_* constants. Returns True if reflection is disabled. Will generally raise NotImplementedError if executed on a 32-bit operating system. Raises an auditing event winreg.QueryReflectionKey with argument key."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines the reflection state for the specified key. key is an already open key, or one of the predefined HKEY_* constants. Returns True if reflection is disabled. Will generally raise NotImplemente...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.422174",
+    "updatedDate": "2026-03-24T10:48:12.422175",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "winreg/QueryValue": {
+    "id": "winreg.QueryValue",
+    "name": "QueryValue",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "winreg.QueryValue(key, sub_key)"
+    ],
+    "signature_hash": "024f0306eed9990ba7b47960690d2737f3b84ce5aeab324b62bac732757a6304",
+    "url": "https://docs.python.org/3/library/winreg.html#module-winreg#winreg.QueryValue",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "sub_key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Retrieves the unnamed value for a key, as a string. key is an already open key, or one of the predefined HKEY_* constants. sub_key is a string that holds the name of the subkey with which the value is associated. If this parameter is None or empty, the function retrieves the value set by the SetValue() method for the key identified by key. Values in the registry have name, type, and data components. This method retrieves the data for a key’s first value that has a NULL name. But the underlyin..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves the unnamed value for a key, as a string. key is an already open key, or one of the predefined HKEY_* constants. sub_key is a string that holds the name of the subkey with which the value is...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.422056",
+    "updatedDate": "2026-03-24T10:48:12.422057",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "winreg/QueryValueEx": {
+    "id": "winreg.QueryValueEx",
+    "name": "QueryValueEx",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "winreg.QueryValueEx(key, value_name)"
+    ],
+    "signature_hash": "ac5b31ac209886bdadd208e86ebd063c10fbbab57de7853b3822217ad2f52d9a",
+    "url": "https://docs.python.org/3/library/winreg.html#module-winreg#winreg.QueryValueEx",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Retrieves the type and data for a specified value name associated with an open registry key. key is an already open key, or one of the predefined HKEY_* constants. value_name is a string indicating the value to query. The result is a tuple of 2 items: Index Meaning 0 The value of the registry item. 1 An integer giving the registry type for this value (see table in docs for SetValueEx()) Raises an auditing event winreg.QueryValue with arguments key, sub_key, value_name."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieves the type and data for a specified value name associated with an open registry key. key is an already open key, or one of the predefined HKEY_* constants. value_name is a string indicating th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.422072",
+    "updatedDate": "2026-03-24T10:48:12.422073",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

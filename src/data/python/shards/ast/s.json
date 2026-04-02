@@ -1,0 +1,271 @@
+{
+  "ast/Set": {
+    "id": "ast.Set",
+    "name": "Set",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Set(elts)"
+    ],
+    "signature_hash": "a998ffcd1ed2d0d8b46a6ec289202a7a84cefe12c869e8da3e3c9606f6d1d720",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Set",
+    "parameters": [
+      {
+        "name": "elts",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A set. elts holds a list of nodes representing the set’s elements. >>> print(ast.dump(ast.parse('{1, 2, 3}', mode='eval'), indent=4)) Expression( body=Set( elts=[ Constant(value=1), Constant(value=2), Constant(value=3)]))"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A set. elts holds a list of nodes representing the set’s elements. >>> print(ast.dump(ast.parse('{1, 2, 3}', mode='eval'), indent=4)) Expression( body=Set( elts=[ Constant(value=1), Constant(value=2),...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.164383",
+    "updatedDate": "2026-03-24T10:48:12.164384",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Slice": {
+    "id": "ast.Slice",
+    "name": "Slice",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Slice(lower, upper, step)"
+    ],
+    "signature_hash": "80df38df5bbf69e45a6444752fbec57661e071b23078d4ea19dc7fbb75306c0f",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Slice",
+    "parameters": [
+      {
+        "name": "lower",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "upper",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "step",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Regular slicing (on the form lower:upper or lower:upper:step). Can occur only inside the slice field of Subscript, either directly or as an element of Tuple. >>> print(ast.dump(ast.parse('l[1:2]', mode='eval'), indent=4)) Expression( body=Subscript( value=Name(id='l', ctx=Load()), slice=Slice( lower=Constant(value=1), upper=Constant(value=2)), ctx=Load()))"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Regular slicing (on the form lower:upper or lower:upper:step). Can occur only inside the slice field of Subscript, either directly or as an element of Tuple. >>> print(ast.dump(ast.parse('l[1:2]', mod...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.164734",
+    "updatedDate": "2026-03-24T10:48:12.164735",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Starred": {
+    "id": "ast.Starred",
+    "name": "Starred",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Starred(value, ctx)"
+    ],
+    "signature_hash": "b1f271757e450eb33cfb7211d72e80cb17d01e51932133a464491ac5e0b039dd",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Starred",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "ctx",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A *var variable reference. value holds the variable, typically a Name node. This type must be used when building a Call node with *args. >>> print(ast.dump(ast.parse('a, *b = it'), indent=4)) Module( body=[ Assign( targets=[ Tuple( elts=[ Name(id='a', ctx=Store()), Starred( value=Name(id='b', ctx=Store()), ctx=Store())], ctx=Store())], value=Name(id='it', ctx=Load()))])"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A *var variable reference. value holds the variable, typically a Name node. This type must be used when building a Call node with *args. >>> print(ast.dump(ast.parse('a, *b = it'), indent=4)) Module( ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.164450",
+    "updatedDate": "2026-03-24T10:48:12.164451",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Subscript": {
+    "id": "ast.Subscript",
+    "name": "Subscript",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Subscript(value, slice, ctx)"
+    ],
+    "signature_hash": "da7ceabcf657c6b9215e5736d330b48a8b39c760881ebc4581b122f0a92cc5ca",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Subscript",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "slice",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "ctx",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A subscript, such as l[1]. value is the subscripted object (usually sequence or mapping). slice is an index, slice or key. It can be a Tuple and contain a Slice. ctx is Load, Store or Del according to the action performed with the subscript. >>> print(ast.dump(ast.parse('l[1:2, 3]', mode='eval'), indent=4)) Expression( body=Subscript( value=Name(id='l', ctx=Load()), slice=Tuple( elts=[ Slice( lower=Constant(value=1), upper=Constant(value=2)), Constant(value=3)], ctx=Load()), ctx=Load()))"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subscript, such as l[1]. value is the subscripted object (usually sequence or mapping). slice is an index, slice or key. It can be a Tuple and contain a Slice. ctx is Load, Store or Del according to...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.164715",
+    "updatedDate": "2026-03-24T10:48:12.164716",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

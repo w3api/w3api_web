@@ -1,0 +1,968 @@
+{
+  "java.util.logging/FileHandler": {
+    "id": "java.util.logging.FileHandler",
+    "name": "FileHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class FileHandler"
+    ],
+    "signature_hash": "60fef28800b1898aa1278f9b2dc25674ad84b41023be706192cc629a6a104543",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/FileHandler.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189310",
+    "updatedDate": "2026-03-24T10:48:14.189311",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "FileHandler"
+    ],
+    "methods": [
+      "close",
+      "publish"
+    ]
+  },
+  "java.util.logging/Formatter": {
+    "id": "java.util.logging.Formatter",
+    "name": "Formatter",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class Formatter"
+    ],
+    "signature_hash": "6e4b33289dbcb02016b22de75fa49659e29a0fd372fb3d234e2eb1dbe10ebd11",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Formatter.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189431",
+    "updatedDate": "2026-03-24T10:48:14.189432",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "Formatter"
+    ],
+    "methods": [
+      "format",
+      "formatMessage",
+      "getHead",
+      "getTail"
+    ]
+  },
+  "java.util.logging/FileHandler/FileHandler": {
+    "id": "java.util.logging.FileHandler.FileHandler",
+    "name": "FileHandler",
+    "type": "constructor",
+    "parent": "FileHandler",
+    "signatures": [
+      "public FileHandler()",
+      "public FileHandler(String pattern)",
+      "public FileHandler(String pattern, boolean append)",
+      "public FileHandler(String pattern, int limit, int count)",
+      "public FileHandler(String pattern, int limit, int count, boolean append)",
+      "public FileHandler(String pattern, long limit, int count, boolean append)"
+    ],
+    "signature_hash": "6c1607f48ecf780b5d783ba22128e007dae989b9a9df590f0888dcecfcd5e8af",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/FileHandler.html",
+    "parameters": [
+      {
+        "name": "pattern",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "append",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "limit",
+        "has_default": false,
+        "default_value": null,
+        "type": "int|long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "count",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Construct a defaultFileHandler."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Construct a defaultFileHandler.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189369",
+    "updatedDate": "2026-03-24T10:48:14.189370",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/Formatter/Formatter": {
+    "id": "java.util.logging.Formatter.Formatter",
+    "name": "Formatter",
+    "type": "constructor",
+    "parent": "Formatter",
+    "signatures": [
+      "public Formatter()"
+    ],
+    "signature_hash": "03677d4560516e00e719b46ef4e52eefa68303fcabcfce34649fc0c7c79c0c64",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Formatter.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Construct a new formatter."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Construct a new formatter.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189442",
+    "updatedDate": "2026-03-24T10:48:14.189443",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/Level/FINE": {
+    "id": "java.util.logging.Level.FINE",
+    "name": "FINE",
+    "type": "field",
+    "parent": "Level",
+    "signatures": [
+      "static final Level FINE"
+    ],
+    "signature_hash": "41a6f7d8ab937172198eca46be700d7b446c14721394ba00ee2fdfe6531e8b95",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Level.html",
+    "parameters": [],
+    "return_type": "static final Level",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "FINE is a message level providing tracing information."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "FINE is a message level providing tracing information.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189932",
+    "updatedDate": "2026-03-24T10:48:14.189933",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/Level/FINER": {
+    "id": "java.util.logging.Level.FINER",
+    "name": "FINER",
+    "type": "field",
+    "parent": "Level",
+    "signatures": [
+      "static final Level FINER"
+    ],
+    "signature_hash": "598f39197f7a843add3beddea756e10f98c1fd7ccf1c5f8ffa68d572a3e2c90b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Level.html",
+    "parameters": [],
+    "return_type": "static final Level",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "FINER indicates a fairly detailed tracing message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "FINER indicates a fairly detailed tracing message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189945",
+    "updatedDate": "2026-03-24T10:48:14.189946",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/Level/FINEST": {
+    "id": "java.util.logging.Level.FINEST",
+    "name": "FINEST",
+    "type": "field",
+    "parent": "Level",
+    "signatures": [
+      "static final Level FINEST"
+    ],
+    "signature_hash": "c81ec170bfe1c676237e8837366e6b25ac92c9f53f52ead084bb3d96571c4192",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Level.html",
+    "parameters": [],
+    "return_type": "static final Level",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "FINEST indicates a highly detailed tracing message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "FINEST indicates a highly detailed tracing message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189957",
+    "updatedDate": "2026-03-24T10:48:14.189958",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/ErrorManager/FLUSH_FAILURE": {
+    "id": "java.util.logging.ErrorManager.FLUSH_FAILURE",
+    "name": "FLUSH_FAILURE",
+    "type": "field",
+    "parent": "ErrorManager",
+    "signatures": [
+      "static final int FLUSH_FAILURE"
+    ],
+    "signature_hash": "80703807a80df14b91ba609ebde9ddc820c8067d6a36e73be978d01e1065a682",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/ErrorManager.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "FLUSH_FAILURE is used when a flush to an output stream fails."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "FLUSH_FAILURE is used when a flush to an output stream fails.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189256",
+    "updatedDate": "2026-03-24T10:48:14.189256",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/ErrorManager/FORMAT_FAILURE": {
+    "id": "java.util.logging.ErrorManager.FORMAT_FAILURE",
+    "name": "FORMAT_FAILURE",
+    "type": "field",
+    "parent": "ErrorManager",
+    "signatures": [
+      "static final int FORMAT_FAILURE"
+    ],
+    "signature_hash": "21d6ae0ee85e0ebf31021fd888e1dd0cf48e51794fed44a972e6e69f215823c6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/ErrorManager.html",
+    "parameters": [],
+    "return_type": "static final int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "FORMAT_FAILURE is used when formatting fails for any reason."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "FORMAT_FAILURE is used when formatting fails for any reason.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189266",
+    "updatedDate": "2026-03-24T10:48:14.189267",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/Filter": {
+    "id": "java.util.logging.Filter",
+    "name": "Filter",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Filter"
+    ],
+    "signature_hash": "1f1362227d719170df98bcc359d3e6e5ab86a9728fcde33d4c3588b8261e7661",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Filter.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189406",
+    "updatedDate": "2026-03-24T10:48:14.189407",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "isLoggable"
+    ]
+  },
+  "java.util.logging/Logger/fine": {
+    "id": "java.util.logging.Logger.fine",
+    "name": "fine",
+    "type": "method",
+    "parent": "Logger",
+    "signatures": [
+      "public void fine(String msg)",
+      "public void fine(Supplier<String> msgSupplier)"
+    ],
+    "signature_hash": "08952b64408629e2aaf093fbd9b77c66322dfa74ac81092249b1690d9cee865d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Logger.html",
+    "parameters": [
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "msgSupplier",
+        "has_default": false,
+        "default_value": null,
+        "type": "Supplier<String>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Log a FINE message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Log a FINE message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.190205",
+    "updatedDate": "2026-03-24T10:48:14.190206",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/Logger/finer": {
+    "id": "java.util.logging.Logger.finer",
+    "name": "finer",
+    "type": "method",
+    "parent": "Logger",
+    "signatures": [
+      "public void finer(String msg)",
+      "public void finer(Supplier<String> msgSupplier)"
+    ],
+    "signature_hash": "42a2c015fcc2e93ee8dad70c6da3eb0f22edb360e1841e1ef0313b3d006cc770",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Logger.html",
+    "parameters": [
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "msgSupplier",
+        "has_default": false,
+        "default_value": null,
+        "type": "Supplier<String>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Log a FINER message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Log a FINER message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.190227",
+    "updatedDate": "2026-03-24T10:48:14.190228",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/Logger/finest": {
+    "id": "java.util.logging.Logger.finest",
+    "name": "finest",
+    "type": "method",
+    "parent": "Logger",
+    "signatures": [
+      "public void finest(String msg)",
+      "public void finest(Supplier<String> msgSupplier)"
+    ],
+    "signature_hash": "e6b6c378c92a380f3859b3be8a5a53205166ccc4ce28dcaa42eb2a669cd811d5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Logger.html",
+    "parameters": [
+      {
+        "name": "msg",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "msgSupplier",
+        "has_default": false,
+        "default_value": null,
+        "type": "Supplier<String>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Log a FINEST message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Log a FINEST message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.190250",
+    "updatedDate": "2026-03-24T10:48:14.190251",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/Handler/flush": {
+    "id": "java.util.logging.Handler.flush",
+    "name": "flush",
+    "type": "method",
+    "parent": "Handler",
+    "signatures": [
+      "public abstract void flush()"
+    ],
+    "signature_hash": "dadab47982c5f7cc8ba5a64e69b8cb5dde636cbea2ad36321e7b87df95676398",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Handler.html",
+    "parameters": [],
+    "return_type": "abstract void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Flush any buffered output."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Flush any buffered output.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189552",
+    "updatedDate": "2026-03-24T10:48:14.189553",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/MemoryHandler/flush": {
+    "id": "java.util.logging.MemoryHandler.flush",
+    "name": "flush",
+    "type": "method",
+    "parent": "MemoryHandler",
+    "signatures": [
+      "public void flush()"
+    ],
+    "signature_hash": "ea956eca0ceec4b07db63def8a0f238be4f058fb174f02b053447578581df262",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/MemoryHandler.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Causes a flush on the targetHandler."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Causes a flush on the targetHandler.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.192090",
+    "updatedDate": "2026-03-24T10:48:14.192091",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/StreamHandler/flush": {
+    "id": "java.util.logging.StreamHandler.flush",
+    "name": "flush",
+    "type": "method",
+    "parent": "StreamHandler",
+    "signatures": [
+      "public void flush()"
+    ],
+    "signature_hash": "ea956eca0ceec4b07db63def8a0f238be4f058fb174f02b053447578581df262",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/StreamHandler.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Flush any buffered messages."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Flush any buffered messages.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.192388",
+    "updatedDate": "2026-03-24T10:48:14.192389",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/Formatter/format": {
+    "id": "java.util.logging.Formatter.format",
+    "name": "format",
+    "type": "method",
+    "parent": "Formatter",
+    "signatures": [
+      "public abstract String format(LogRecord record)"
+    ],
+    "signature_hash": "c8ae5d57e7d934c631702a26f206df541a47d969d95f5ba1ab407310a3e1cf99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Formatter.html",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "LogRecord",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Format the given log record and return the formatted string."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Format the given log record and return the formatted string.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189457",
+    "updatedDate": "2026-03-24T10:48:14.189458",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/SimpleFormatter/format": {
+    "id": "java.util.logging.SimpleFormatter.format",
+    "name": "format",
+    "type": "method",
+    "parent": "SimpleFormatter",
+    "signatures": [
+      "public String format(LogRecord record)"
+    ],
+    "signature_hash": "a6d5ad5597bd4cad1fdccc6f59cefee164bef5e4a165d2b3ed932f6063f51fa5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/SimpleFormatter.html",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "LogRecord",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Format the given LogRecord."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Format the given LogRecord.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.192235",
+    "updatedDate": "2026-03-24T10:48:14.192235",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/XMLFormatter/format": {
+    "id": "java.util.logging.XMLFormatter.format",
+    "name": "format",
+    "type": "method",
+    "parent": "XMLFormatter",
+    "signatures": [
+      "public String format(LogRecord record)"
+    ],
+    "signature_hash": "a6d5ad5597bd4cad1fdccc6f59cefee164bef5e4a165d2b3ed932f6063f51fa5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/XMLFormatter.html",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "LogRecord",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Format the given message to XML."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Format the given message to XML.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.192522",
+    "updatedDate": "2026-03-24T10:48:14.192523",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.logging/Formatter/formatMessage": {
+    "id": "java.util.logging.Formatter.formatMessage",
+    "name": "formatMessage",
+    "type": "method",
+    "parent": "Formatter",
+    "signatures": [
+      "public String formatMessage(LogRecord record)"
+    ],
+    "signature_hash": "000d41fd6f715a3052b152d42e093060fd76b109498cabac8c6b975872826e8a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.logging/java/util/logging/Formatter.html",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "LogRecord",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Localize and format the message string from a log record."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Localize and format the message string from a log record.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.189472",
+    "updatedDate": "2026-03-24T10:48:14.189473",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

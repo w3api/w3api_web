@@ -1,0 +1,193 @@
+{
+  "string/Formatter/get_field": {
+    "id": "string.Formatter.get_field",
+    "name": "get_field",
+    "type": "method",
+    "parent": "Formatter",
+    "signatures": [
+      "get_field(field_name, args, kwargs)"
+    ],
+    "signature_hash": "c53b3878182713a0f8f99bc0cfd36d3b618aefd79eb922143d78bfb5d552d1b8",
+    "url": "https://docs.python.org/3/library/string.html#module-string#string.Formatter.get_field",
+    "parameters": [
+      {
+        "name": "field_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Given field_name, convert it to an object to be formatted. Auto-numbering of field_name returned from parse() is done by vformat() before calling this method. Returns a tuple (obj, used_key). The default version takes strings of the form defined in PEP 3101, such as “0[name]” or “label.title”. args and kwargs are as passed in to vformat(). The return value used_key has the same meaning as the key parameter to get_value()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Given field_name, convert it to an object to be formatted. Auto-numbering of field_name returned from parse() is done by vformat() before calling this method. Returns a tuple (obj, used_key). The defa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.345821",
+    "updatedDate": "2026-03-24T10:48:12.345822",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "string/Template/get_identifiers": {
+    "id": "string.Template.get_identifiers",
+    "name": "get_identifiers",
+    "type": "method",
+    "parent": "Template",
+    "signatures": [
+      "get_identifiers()"
+    ],
+    "signature_hash": "38b63bb6f27cce4d2453b4e9ae6b2aefd980b267d95bed5635190f68a83b4ca4",
+    "url": "https://docs.python.org/3/library/string.html#module-string#string.Template.get_identifiers",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a list of the valid identifiers in the template, in the order they first appear, ignoring any invalid identifiers. Added in version 3.11."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a list of the valid identifiers in the template, in the order they first appear, ignoring any invalid identifiers. Added in version 3.11.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.345989",
+    "updatedDate": "2026-03-24T10:48:12.345990",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "string/Formatter/get_value": {
+    "id": "string.Formatter.get_value",
+    "name": "get_value",
+    "type": "method",
+    "parent": "Formatter",
+    "signatures": [
+      "get_value(key, args, kwargs)"
+    ],
+    "signature_hash": "4cc6ba0242ee6118e833dd4d52954ac200a5ff5dc6b23af6076f8801ec9199f0",
+    "url": "https://docs.python.org/3/library/string.html#module-string#string.Formatter.get_value",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Retrieve a given field value. The key argument will be either an integer or a string. If it is an integer, it represents the index of the positional argument in args; if it is a string, then it represents a named argument in kwargs. The args parameter is set to the list of positional arguments to vformat(), and the kwargs parameter is set to the dictionary of keyword arguments. For compound field names, these functions are only called for the first component of the field name; subsequent comp..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Retrieve a given field value. The key argument will be either an integer or a string. If it is an integer, it represents the index of the positional argument in args; if it is a string, then it repres...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.345842",
+    "updatedDate": "2026-03-24T10:48:12.345843",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

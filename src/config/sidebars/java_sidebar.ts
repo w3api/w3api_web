@@ -4106,12 +4106,12 @@ export const sidebar = [
                     link: 'java/java.lang/ConstantNotPresentException/'
                 },
                 {
-                    label: 'Enum.EnumDesc<E',
-                    link: 'java/java.lang/Enum.EnumDesc<E/'
+                    label: 'E',
+                    link: 'java/java.lang/E/'
                 },
                 {
-                    label: 'Enum<E>>',
-                    link: 'java/java.lang/Enum<E>>/'
+                    label: 'Enum.EnumDescE',
+                    link: 'java/java.lang/Enum.EnumDescE/'
                 },
                 {
                     label: 'Level',
@@ -4522,8 +4522,8 @@ export const sidebar = [
                     link: 'java/java.lang.classfile/Attributes/'
                 },
                 {
-                    label: 'CustomAttribute<T>>',
-                    link: 'java/java.lang.classfile/CustomAttribute<T>>/'
+                    label: 'CustomAttributeT',
+                    link: 'java/java.lang.classfile/CustomAttributeT/'
                 },
                 {
                     label: 'AttributeStability',
@@ -4586,12 +4586,12 @@ export const sidebar = [
                     link: 'java/java.lang.classfile/ArrayTypeSig/'
                 },
                 {
-                    label: 'Attribute<A>>',
-                    link: 'java/java.lang.classfile/Attribute<A>>/'
+                    label: 'AttributeA',
+                    link: 'java/java.lang.classfile/AttributeA/'
                 },
                 {
-                    label: 'AttributeMapper<A',
-                    link: 'java/java.lang.classfile/AttributeMapper<A/'
+                    label: 'AttributeMapperA',
+                    link: 'java/java.lang.classfile/AttributeMapperA/'
                 },
                 {
                     label: 'AttributeMapperOption',
@@ -4678,8 +4678,8 @@ export const sidebar = [
                     link: 'java/java.lang.classfile/File/'
                 },
                 {
-                    label: 'FileBuilder<E,B>>',
-                    link: 'java/java.lang.classfile/FileBuilder<E,B>>/'
+                    label: 'FileBuilderE,B',
+                    link: 'java/java.lang.classfile/FileBuilderE,B/'
                 },
                 {
                     label: 'FileElement',
@@ -5560,12 +5560,12 @@ export const sidebar = [
                     link: 'java/java.lang.invoke/TypeDescriptor/'
                 },
                 {
-                    label: 'TypeDescriptor.OfField<F>>',
-                    link: 'java/java.lang.invoke/TypeDescriptor.OfField<F>>/'
+                    label: 'TypeDescriptor.OfFieldF',
+                    link: 'java/java.lang.invoke/TypeDescriptor.OfFieldF/'
                 },
                 {
-                    label: 'TypeDescriptor.OfMethod<F,M>>',
-                    link: 'java/java.lang.invoke/TypeDescriptor.OfMethod<F,M>>/'
+                    label: 'TypeDescriptor.OfMethodF,M',
+                    link: 'java/java.lang.invoke/TypeDescriptor.OfMethodF,M/'
                 }
             ]
         },
@@ -9120,12 +9120,12 @@ export const sidebar = [
                     link: 'java/java.util/IsoCountryCode/'
                 },
                 {
-                    label: 'Set<E',
-                    link: 'java/java.util/Set<E/'
+                    label: 'SetE',
+                    link: 'java/java.util/SetE/'
                 },
                 {
-                    label: 'V>',
-                    link: 'java/java.util/V>/'
+                    label: 'V',
+                    link: 'java/java.util/V/'
                 },
                 {
                     label: 'ConcurrentModificationException',
@@ -9324,8 +9324,8 @@ export const sidebar = [
                     link: 'java/java.util/Spliterator/'
                 },
                 {
-                    label: 'Spliterator.OfPrimitive<T,T_CONS,T_SPLITR>>',
-                    link: 'java/java.util/Spliterator.OfPrimitive<T,T_CONS,T_SPLITR>>/'
+                    label: 'Spliterator.OfPrimitiveT,T_CONS,T_SPLITR',
+                    link: 'java/java.util/Spliterator.OfPrimitiveT,T_CONS,T_SPLITR/'
                 }
             ]
         },
@@ -10230,8 +10230,8 @@ export const sidebar = [
                     link: 'java/java.util.stream/Characteristics/'
                 },
                 {
-                    label: 'BaseStream<T,S>>',
-                    link: 'java/java.util.stream/BaseStream<T,S>>/'
+                    label: 'BaseStreamT,S',
+                    link: 'java/java.util.stream/BaseStreamT,S/'
                 },
                 {
                     label: 'Builder',
@@ -12364,6 +12364,10 @@ export const sidebar = [
                 {
                     label: 'InitialContext',
                     link: 'java/javax.naming/InitialContext/'
+                },
+                {
+                    label: 'LinkRef',
+                    link: 'java/javax.naming/LinkRef/'
                 },
                 {
                     label: 'NameClassPair',

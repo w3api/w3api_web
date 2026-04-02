@@ -1,0 +1,177 @@
+{
+  "http.client/parse_headers": {
+    "id": "http.client.parse_headers",
+    "name": "parse_headers",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "http.client.parse_headers(fp)"
+    ],
+    "signature_hash": "e888a09471510745fe5be8cd9fb4a972d1a645cc029978782e643954d07c904c",
+    "url": "https://docs.python.org/3/library/http.client.html#module-http.client#http.client.parse_headers",
+    "parameters": [
+      {
+        "name": "fp",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "Parse the headers from a file pointer fp representing a HTTP request/response. The file has to be a BufferedIOBase reader (i.e. not text) and must provide a valid RFC 5322 style header. This function returns an instance of http.client.HTTPMessage that holds the header fields, but no payload (the same as HTTPResponse.msg and http.server.BaseHTTPRequestHandler.headers). After returning, the file pointer fp is ready to read the HTTP body. Note parse_headers() does not parse the start-line of a H...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parse the headers from a file pointer fp representing a HTTP request/response. The file has to be a BufferedIOBase reader (i.e. not text) and must provide a valid RFC 5322 style header. This function ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.588789",
+    "updatedDate": "2026-03-01T18:02:57.588790",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "http.client/HTTPConnection/putheader": {
+    "id": "http.client.HTTPConnection.putheader",
+    "name": "putheader",
+    "type": "method",
+    "parent": "HTTPConnection",
+    "signatures": [
+      "HTTPConnection.putheader(header, argument[, ...])"
+    ],
+    "signature_hash": "32d0bb6fce239e475b8049689bac128294eaeaeacb1520dc7e258ec77fa7dfae",
+    "url": "https://docs.python.org/3/library/http.client.html#module-http.client#http.client.HTTPConnection.putheader",
+    "parameters": [
+      {
+        "name": "header",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "argument[, ...",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "Send an RFC 822-style header to the server. It sends a line to the server consisting of the header, a colon and a space, and the first argument. If more arguments are given, continuation lines are sent, each consisting of a tab and an argument.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Send an RFC 822-style header to the server. It sends a line to the server consisting of the header, a colon and a space, and the first argument. If more arguments are given, continuation lines are sen...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.589132",
+    "updatedDate": "2026-03-01T18:02:57.589133",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "http.client/HTTPConnection/putrequest": {
+    "id": "http.client.HTTPConnection.putrequest",
+    "name": "putrequest",
+    "type": "method",
+    "parent": "HTTPConnection",
+    "signatures": [
+      "HTTPConnection.putrequest(method, url, skip_host=False, skip_accept_encoding=False)"
+    ],
+    "signature_hash": "e4ed3e834f679bfc6738b3ab63944220545bdb0943aedcc4c3bf08f6198a3e8b",
+    "url": "https://docs.python.org/3/library/http.client.html#module-http.client#http.client.HTTPConnection.putrequest",
+    "parameters": [
+      {
+        "name": "method",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "url",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "skip_host",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "skip_accept_encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "This should be the first call after the connection to the server has been made. It sends a line to the server consisting of the method string, the url string, and the HTTP version (HTTP/1.1). To disable automatic sending of Host: or Accept-Encoding: headers (for example to accept additional content encodings), specify skip_host or skip_accept_encoding with non-False values.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This should be the first call after the connection to the server has been made. It sends a line to the server consisting of the method string, the url string, and the HTTP version (HTTP/1.1). To disab...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.589116",
+    "updatedDate": "2026-03-01T18:02:57.589117",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

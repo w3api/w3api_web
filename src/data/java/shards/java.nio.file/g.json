@@ -1,0 +1,1840 @@
+{
+  "java.nio.file/Paths/get": {
+    "id": "java.nio.file.Paths.get",
+    "name": "get",
+    "type": "method",
+    "parent": "Paths",
+    "signatures": [
+      "public static Path get(String first, String... more)",
+      "public static Path get(URI uri)"
+    ],
+    "signature_hash": "da5e17e5d4268688f955c1b28ed6dc790ea885dda895865fdbc4a5b3b5d70e44",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Paths.html",
+    "parameters": [
+      {
+        "name": "first",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "more",
+        "has_default": false,
+        "default_value": null,
+        "type": "String...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "uri",
+        "has_default": false,
+        "default_value": null,
+        "type": "URI",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Path",
+    "exceptions": [
+      {
+        "name": "InvalidPathException",
+        "package": "java.nio.file"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Converts a path string, or a sequence of strings that when joined form a path string, to aPath."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Converts a path string, or a sequence of strings that when joined form a path string, to aPath.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.904573",
+    "updatedDate": "2026-03-24T10:48:13.904574",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Files/getAttribute": {
+    "id": "java.nio.file.Files.getAttribute",
+    "name": "getAttribute",
+    "type": "method",
+    "parent": "Files",
+    "signatures": [
+      "public static Object getAttribute(Path path, String attribute, LinkOption... options)"
+    ],
+    "signature_hash": "e707e3b70d8aed4480d27b7076d11b1d66da725d6bc99076687e2301275f7257",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "attribute",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "options",
+        "type": "LinkOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Object",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Reads the value of a file attribute."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads the value of a file attribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.902181",
+    "updatedDate": "2026-03-24T10:48:13.902182",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileStore/getAttribute": {
+    "id": "java.nio.file.FileStore.getAttribute",
+    "name": "getAttribute",
+    "type": "method",
+    "parent": "FileStore",
+    "signatures": [
+      "public abstract Object getAttribute(String attribute)"
+    ],
+    "signature_hash": "11ed2cf7e273407001ff9c42089ad4db4352743c39c7c0fb71b65d186f0cc366",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileStore.html",
+    "parameters": [
+      {
+        "name": "attribute",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract Object",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Reads the value of a file store attribute."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads the value of a file store attribute.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903281",
+    "updatedDate": "2026-03-24T10:48:13.903282",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileStore/getBlockSize": {
+    "id": "java.nio.file.FileStore.getBlockSize",
+    "name": "getBlockSize",
+    "type": "method",
+    "parent": "FileStore",
+    "signatures": [
+      "public long getBlockSize()"
+    ],
+    "signature_hash": "d4c9f4338b18f336c215c62cf6a930a54cd1bb17e39f6ae821829146d7b8866a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileStore.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns the number of bytes per block in this file store."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the number of bytes per block in this file store.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903298",
+    "updatedDate": "2026-03-24T10:48:13.903299",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/DirectoryIteratorException/getCause": {
+    "id": "java.nio.file.DirectoryIteratorException.getCause",
+    "name": "getCause",
+    "type": "method",
+    "parent": "DirectoryIteratorException",
+    "signatures": [
+      "public IOException getCause()"
+    ],
+    "signature_hash": "9c6d245b15d27e5c13b1e56e0d91ba14b1d5b18161d9825d9f8e39f5dccbc49e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/DirectoryIteratorException.html",
+    "parameters": [],
+    "return_type": "IOException",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the cause of this exception."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the cause of this exception.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.901679",
+    "updatedDate": "2026-03-24T10:48:13.901680",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystems/getDefault": {
+    "id": "java.nio.file.FileSystems.getDefault",
+    "name": "getDefault",
+    "type": "method",
+    "parent": "FileSystems",
+    "signatures": [
+      "public static FileSystem getDefault()"
+    ],
+    "signature_hash": "15ccc5ba2e9311c247d4163bdbde42bc1e170df2ff3f3b08ff7bd1d3e724e2e7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystems.html",
+    "parameters": [],
+    "return_type": "static FileSystem",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the defaultFileSystem."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the defaultFileSystem.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903702",
+    "updatedDate": "2026-03-24T10:48:13.903703",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystemException/getFile": {
+    "id": "java.nio.file.FileSystemException.getFile",
+    "name": "getFile",
+    "type": "method",
+    "parent": "FileSystemException",
+    "signatures": [
+      "public String getFile()"
+    ],
+    "signature_hash": "92a6ab87664e4a7e0434e20cf1b027d326dfeb4fa2c812de70c20d919017967a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystemException.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the file used to create this exception."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the file used to create this exception.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903550",
+    "updatedDate": "2026-03-24T10:48:13.903551",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Files/getFileAttributeView": {
+    "id": "java.nio.file.Files.getFileAttributeView",
+    "name": "getFileAttributeView",
+    "type": "method",
+    "parent": "Files",
+    "signatures": [
+      "public static<V extends FileAttributeView>V getFileAttributeView(Path path, Class<V> type, LinkOption... options)"
+    ],
+    "signature_hash": "22caad8ba7baab3c2050cb07224f93673e3abc5bf21efa2835f5492823a73331",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type",
+        "type": "Class<V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "options",
+        "type": "LinkOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<V extends FileAttributeView>V",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a file attribute view of a given type."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a file attribute view of a given type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.902205",
+    "updatedDate": "2026-03-24T10:48:13.902206",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/SecureDirectoryStream/getFileAttributeView": {
+    "id": "java.nio.file.SecureDirectoryStream.getFileAttributeView",
+    "name": "getFileAttributeView",
+    "type": "method",
+    "parent": "SecureDirectoryStream",
+    "signatures": [
+      "public <V extends FileAttributeView>V getFileAttributeView(Class<V> type)",
+      "public <V extends FileAttributeView>V getFileAttributeView(T path, Class<V> type, LinkOption... options)"
+    ],
+    "signature_hash": "cbf122ab7f4200339dd4b629c73bf341d1d0137d4c0b92aed242a314cfb03d60",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/SecureDirectoryStream.html",
+    "parameters": [
+      {
+        "name": "type",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<V>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "path",
+        "has_default": false,
+        "default_value": null,
+        "type": "T",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "options",
+        "has_default": false,
+        "default_value": null,
+        "type": "LinkOption...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "<V extends FileAttributeView>V",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a new file attribute view to access the file attributes of this directory."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new file attribute view to access the file attributes of this directory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.904730",
+    "updatedDate": "2026-03-24T10:48:13.904731",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Path/getFileName": {
+    "id": "java.nio.file.Path.getFileName",
+    "name": "getFileName",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "public Path getFileName()"
+    ],
+    "signature_hash": "c57675c43382aaecf0f26173efcf6fc1f29a0e59c6a5e567e57bd5b391429140",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Path.html",
+    "parameters": [],
+    "return_type": "Path",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the name of the file or directory denoted by this path as aPathobject."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the name of the file or directory denoted by this path as aPathobject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.900808",
+    "updatedDate": "2026-03-24T10:48:13.900808",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Files/getFileStore": {
+    "id": "java.nio.file.Files.getFileStore",
+    "name": "getFileStore",
+    "type": "method",
+    "parent": "Files",
+    "signatures": [
+      "public static FileStore getFileStore(Path path)"
+    ],
+    "signature_hash": "5239ffcf7e34dce25f5c657b6d84208389c26f4cd3d262b6c5c344d624eee9e7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static FileStore",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns theFileStorerepresenting the file store where a file is located."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns theFileStorerepresenting the file store where a file is located.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.902223",
+    "updatedDate": "2026-03-24T10:48:13.902224",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileStore/getFileStoreAttributeView": {
+    "id": "java.nio.file.FileStore.getFileStoreAttributeView",
+    "name": "getFileStoreAttributeView",
+    "type": "method",
+    "parent": "FileStore",
+    "signatures": [
+      "public abstract<V extends FileStoreAttributeView>V getFileStoreAttributeView(Class<V> type)"
+    ],
+    "signature_hash": "83e28eeda90f8640f2dad2d48f4c979c3f9b38b72e543e6382770e739f1ada91",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileStore.html",
+    "parameters": [
+      {
+        "name": "type",
+        "type": "Class<V>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract<V extends FileStoreAttributeView>V",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aFileStoreAttributeViewof the given type."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aFileStoreAttributeViewof the given type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903318",
+    "updatedDate": "2026-03-24T10:48:13.903318",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystem/getFileStores": {
+    "id": "java.nio.file.FileSystem.getFileStores",
+    "name": "getFileStores",
+    "type": "method",
+    "parent": "FileSystem",
+    "signatures": [
+      "public abstract Iterable<FileStore> getFileStores()"
+    ],
+    "signature_hash": "e18a597b4f488241d042aa31cf76323fda28b9744d501733223132acba3ef98f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystem.html",
+    "parameters": [],
+    "return_type": "abstract Iterable<FileStore>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an object to iterate over the underlying file stores."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an object to iterate over the underlying file stores.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.901225",
+    "updatedDate": "2026-03-24T10:48:13.901226",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Path/getFileSystem": {
+    "id": "java.nio.file.Path.getFileSystem",
+    "name": "getFileSystem",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "public FileSystem getFileSystem()"
+    ],
+    "signature_hash": "005888c3d3db99d143d764e597263f6aeb89e0a3689eee5db34601e278323238",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Path.html",
+    "parameters": [],
+    "return_type": "FileSystem",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the file system that created this object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the file system that created this object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.900819",
+    "updatedDate": "2026-03-24T10:48:13.900820",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystems/getFileSystem": {
+    "id": "java.nio.file.FileSystems.getFileSystem",
+    "name": "getFileSystem",
+    "type": "method",
+    "parent": "FileSystems",
+    "signatures": [
+      "public static FileSystem getFileSystem(URI uri)"
+    ],
+    "signature_hash": "98b3e70bfe0e63111ec613f61802f85925c5c6f0a547fe2cdbcab853a6e4e932",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystems.html",
+    "parameters": [
+      {
+        "name": "uri",
+        "type": "URI",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static FileSystem",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "FileSystemNotFoundException",
+        "package": "java.nio.file"
+      },
+      {
+        "name": "ProviderNotFoundException",
+        "package": "java.nio.file"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a reference to an existingFileSystem."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a reference to an existingFileSystem.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903722",
+    "updatedDate": "2026-03-24T10:48:13.903722",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/InvalidPathException/getIndex": {
+    "id": "java.nio.file.InvalidPathException.getIndex",
+    "name": "getIndex",
+    "type": "method",
+    "parent": "InvalidPathException",
+    "signatures": [
+      "public int getIndex()"
+    ],
+    "signature_hash": "d4663f435afd6a88c00a18d16d8d8e2fe6c896dd995d5906395fd4ddbb8b7760",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/InvalidPathException.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an index into the input string of the position at which the error occurred, or-1if this position is not known."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an index into the input string of the position at which the error occurred, or-1if this position is not known.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.904168",
+    "updatedDate": "2026-03-24T10:48:13.904168",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/InvalidPathException/getInput": {
+    "id": "java.nio.file.InvalidPathException.getInput",
+    "name": "getInput",
+    "type": "method",
+    "parent": "InvalidPathException",
+    "signatures": [
+      "public String getInput()"
+    ],
+    "signature_hash": "afdb023ef2ffff2ec0f33ea227618727a4bf2ffc58bb00c993ac80fd157ea98d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/InvalidPathException.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the input string."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the input string.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.904185",
+    "updatedDate": "2026-03-24T10:48:13.904186",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Files/getLastModifiedTime": {
+    "id": "java.nio.file.Files.getLastModifiedTime",
+    "name": "getLastModifiedTime",
+    "type": "method",
+    "parent": "Files",
+    "signatures": [
+      "public static FileTime getLastModifiedTime(Path path, LinkOption... options)"
+    ],
+    "signature_hash": "296e9b07f1246549d1c6dc9e1c965b5709dfd3dd83a08c008ee13e67f9486414",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "options",
+        "type": "LinkOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static FileTime",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a file's last modified time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a file's last modified time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.902243",
+    "updatedDate": "2026-03-24T10:48:13.902244",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystemException/getMessage": {
+    "id": "java.nio.file.FileSystemException.getMessage",
+    "name": "getMessage",
+    "type": "method",
+    "parent": "FileSystemException",
+    "signatures": [
+      "public String getMessage()"
+    ],
+    "signature_hash": "b46153cc21231cb60e014b6b3c49b437699575e4012681cb08026e5238c66751",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystemException.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the detail message string."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the detail message string.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903566",
+    "updatedDate": "2026-03-24T10:48:13.903567",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/InvalidPathException/getMessage": {
+    "id": "java.nio.file.InvalidPathException.getMessage",
+    "name": "getMessage",
+    "type": "method",
+    "parent": "InvalidPathException",
+    "signatures": [
+      "public String getMessage()"
+    ],
+    "signature_hash": "b46153cc21231cb60e014b6b3c49b437699575e4012681cb08026e5238c66751",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/InvalidPathException.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a string describing the error."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a string describing the error.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.904202",
+    "updatedDate": "2026-03-24T10:48:13.904203",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Path/getName": {
+    "id": "java.nio.file.Path.getName",
+    "name": "getName",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "public Path getName(int index)"
+    ],
+    "signature_hash": "e06f2308b423f15fd86e3194eb89d41f79b51f9e67d665046e3a3cac8150610a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Path.html",
+    "parameters": [
+      {
+        "name": "index",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Path",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a name element of this path as aPathobject."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a name element of this path as aPathobject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.900833",
+    "updatedDate": "2026-03-24T10:48:13.900834",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Path/getNameCount": {
+    "id": "java.nio.file.Path.getNameCount",
+    "name": "getNameCount",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "public int getNameCount()"
+    ],
+    "signature_hash": "858e631bcf7ac543753c7a39371d14ee97228d17c4cd59e2a09ab86ac8d15dfd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Path.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the number of name elements in the path."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the number of name elements in the path.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.900846",
+    "updatedDate": "2026-03-24T10:48:13.900847",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystemException/getOtherFile": {
+    "id": "java.nio.file.FileSystemException.getOtherFile",
+    "name": "getOtherFile",
+    "type": "method",
+    "parent": "FileSystemException",
+    "signatures": [
+      "public String getOtherFile()"
+    ],
+    "signature_hash": "8a92c6ecfb5c0ab3c29b0b671f14c1da75d0323801866e7c7037419ad3b1d65f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystemException.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the other file used to create this exception."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the other file used to create this exception.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903582",
+    "updatedDate": "2026-03-24T10:48:13.903583",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Files/getOwner": {
+    "id": "java.nio.file.Files.getOwner",
+    "name": "getOwner",
+    "type": "method",
+    "parent": "Files",
+    "signatures": [
+      "public static UserPrincipal getOwner(Path path, LinkOption... options)"
+    ],
+    "signature_hash": "2c7554db68265275279a896ec466ef635a67b547ea8b9abf46a5aef38e6ff3c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "options",
+        "type": "LinkOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static UserPrincipal",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns the owner of a file."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the owner of a file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.902263",
+    "updatedDate": "2026-03-24T10:48:13.902264",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Path/getParent": {
+    "id": "java.nio.file.Path.getParent",
+    "name": "getParent",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "public Path getParent()"
+    ],
+    "signature_hash": "3c3f036aeb9e0328133e9612a3053b17f998ed2b51130fb43353fedf0aaa32fe",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Path.html",
+    "parameters": [],
+    "return_type": "Path",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns theparent path, ornullif this path does not have a parent."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns theparent path, ornullif this path does not have a parent.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.900857",
+    "updatedDate": "2026-03-24T10:48:13.900858",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystem/getPath": {
+    "id": "java.nio.file.FileSystem.getPath",
+    "name": "getPath",
+    "type": "method",
+    "parent": "FileSystem",
+    "signatures": [
+      "public abstract Path getPath(String first, String... more)"
+    ],
+    "signature_hash": "8f6581cee4a5880329d5e9c1ae0da4ffe91e09328f73d393998e5b8599c373d4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystem.html",
+    "parameters": [
+      {
+        "name": "first",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "more",
+        "type": "String...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract Path",
+    "exceptions": [
+      {
+        "name": "InvalidPathException",
+        "package": "java.nio.file"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Converts a path string, or a sequence of strings that when joined form a path string, to aPath."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Converts a path string, or a sequence of strings that when joined form a path string, to aPath.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.901243",
+    "updatedDate": "2026-03-24T10:48:13.901244",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystem/getPathMatcher": {
+    "id": "java.nio.file.FileSystem.getPathMatcher",
+    "name": "getPathMatcher",
+    "type": "method",
+    "parent": "FileSystem",
+    "signatures": [
+      "public abstract PathMatcher getPathMatcher(String syntaxAndPattern)"
+    ],
+    "signature_hash": "7b1bb3a3f71330aa704a04f186dc2859fc90cb8bbb03ccb306cafbd5ee3343a5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystem.html",
+    "parameters": [
+      {
+        "name": "syntaxAndPattern",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract PathMatcher",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "PatternSyntaxException",
+        "package": "java.util.regex"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns aPathMatcherthat performs match operations on theStringrepresentation ofPathobjects by interpreting a given pattern."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aPathMatcherthat performs match operations on theStringrepresentation ofPathobjects by interpreting a given pattern.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.901261",
+    "updatedDate": "2026-03-24T10:48:13.901262",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Files/getPosixFilePermissions": {
+    "id": "java.nio.file.Files.getPosixFilePermissions",
+    "name": "getPosixFilePermissions",
+    "type": "method",
+    "parent": "Files",
+    "signatures": [
+      "public static Set<PosixFilePermission> getPosixFilePermissions(Path path, LinkOption... options)"
+    ],
+    "signature_hash": "5f531bb817c76de8a317bc737508a07aab5b536d14c48e8ccff9c4c2c3d40d8a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "options",
+        "type": "LinkOption...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Set<PosixFilePermission>",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a file's POSIX file permissions."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a file's POSIX file permissions.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.902287",
+    "updatedDate": "2026-03-24T10:48:13.902288",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystemException/getReason": {
+    "id": "java.nio.file.FileSystemException.getReason",
+    "name": "getReason",
+    "type": "method",
+    "parent": "FileSystemException",
+    "signatures": [
+      "public String getReason()"
+    ],
+    "signature_hash": "24784af313ea25997e05b24b6176d99eb9f4ff362715115fcd1ad17ec0026d9d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystemException.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the string explaining why the file system operation failed."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the string explaining why the file system operation failed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903599",
+    "updatedDate": "2026-03-24T10:48:13.903599",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/InvalidPathException/getReason": {
+    "id": "java.nio.file.InvalidPathException.getReason",
+    "name": "getReason",
+    "type": "method",
+    "parent": "InvalidPathException",
+    "signatures": [
+      "public String getReason()"
+    ],
+    "signature_hash": "24784af313ea25997e05b24b6176d99eb9f4ff362715115fcd1ad17ec0026d9d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/InvalidPathException.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a string explaining why the input string was rejected."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a string explaining why the input string was rejected.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.904220",
+    "updatedDate": "2026-03-24T10:48:13.904221",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/Path/getRoot": {
+    "id": "java.nio.file.Path.getRoot",
+    "name": "getRoot",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "public Path getRoot()"
+    ],
+    "signature_hash": "016cde7a29c6640e307421559626a1a87c4e98f1072e6094c165aae6371f2771",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Path.html",
+    "parameters": [],
+    "return_type": "Path",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the root component of this path as aPathobject, ornullif this path does not have a root component."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the root component of this path as aPathobject, ornullif this path does not have a root component.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.900868",
+    "updatedDate": "2026-03-24T10:48:13.900869",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystem/getRootDirectories": {
+    "id": "java.nio.file.FileSystem.getRootDirectories",
+    "name": "getRootDirectories",
+    "type": "method",
+    "parent": "FileSystem",
+    "signatures": [
+      "public abstract Iterable<Path> getRootDirectories()"
+    ],
+    "signature_hash": "7863e8bfaaa7f200aa1e94e12fd63f785694372ce0486f1d15cbfdcd5b7602f2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystem.html",
+    "parameters": [],
+    "return_type": "abstract Iterable<Path>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an object to iterate over the paths of the root directories."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an object to iterate over the paths of the root directories.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.901274",
+    "updatedDate": "2026-03-24T10:48:13.901274",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystem/getSeparator": {
+    "id": "java.nio.file.FileSystem.getSeparator",
+    "name": "getSeparator",
+    "type": "method",
+    "parent": "FileSystem",
+    "signatures": [
+      "public abstract String getSeparator()"
+    ],
+    "signature_hash": "88bc9739d72af0010797e7615aac203071d8a492388eeca9cc793679405a9884",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystem.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the name separator, represented as a string."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the name separator, represented as a string.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.901288",
+    "updatedDate": "2026-03-24T10:48:13.901289",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileStore/getTotalSpace": {
+    "id": "java.nio.file.FileStore.getTotalSpace",
+    "name": "getTotalSpace",
+    "type": "method",
+    "parent": "FileStore",
+    "signatures": [
+      "public abstract long getTotalSpace()"
+    ],
+    "signature_hash": "d9a1881bd488a643ff5e102038eb47db5e6eba9f1a66f53f568ed5f8d531af8f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileStore.html",
+    "parameters": [],
+    "return_type": "abstract long",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns the size, in bytes, of the file store."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the size, in bytes, of the file store.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903334",
+    "updatedDate": "2026-03-24T10:48:13.903335",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileStore/getUnallocatedSpace": {
+    "id": "java.nio.file.FileStore.getUnallocatedSpace",
+    "name": "getUnallocatedSpace",
+    "type": "method",
+    "parent": "FileStore",
+    "signatures": [
+      "public abstract long getUnallocatedSpace()"
+    ],
+    "signature_hash": "3cc703ec27fc673b2db2d584286cb18204ff468220d6a01c90c03342ae562057",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileStore.html",
+    "parameters": [],
+    "return_type": "abstract long",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns the number of unallocated bytes in the file store."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the number of unallocated bytes in the file store.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903351",
+    "updatedDate": "2026-03-24T10:48:13.903352",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileStore/getUsableSpace": {
+    "id": "java.nio.file.FileStore.getUsableSpace",
+    "name": "getUsableSpace",
+    "type": "method",
+    "parent": "FileStore",
+    "signatures": [
+      "public abstract long getUsableSpace()"
+    ],
+    "signature_hash": "08b7b06ab445e137eb4c341ab39a5619a8e9ecb2ecf183479d306cbe2398327b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileStore.html",
+    "parameters": [],
+    "return_type": "abstract long",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns the number of bytes available to this Java virtual machine on the file store."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the number of bytes available to this Java virtual machine on the file store.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.903368",
+    "updatedDate": "2026-03-24T10:48:13.903369",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.file/FileSystem/getUserPrincipalLookupService": {
+    "id": "java.nio.file.FileSystem.getUserPrincipalLookupService",
+    "name": "getUserPrincipalLookupService",
+    "type": "method",
+    "parent": "FileSystem",
+    "signatures": [
+      "public abstract UserPrincipalLookupService getUserPrincipalLookupService()"
+    ],
+    "signature_hash": "24aad2d2541f1266572c3fd6cbbd2456f333b7110b788c5c9fd366398e0cc58e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/FileSystem.html",
+    "parameters": [],
+    "return_type": "abstract UserPrincipalLookupService",
+    "exceptions": [
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns theUserPrincipalLookupServicefor this file system(optional operation)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns theUserPrincipalLookupServicefor this file system(optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.901303",
+    "updatedDate": "2026-03-24T10:48:13.901304",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

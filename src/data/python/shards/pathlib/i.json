@@ -1,0 +1,753 @@
+{
+  "pathlib/Path/info": {
+    "id": "pathlib.Path.info",
+    "name": "info",
+    "type": "attribute",
+    "parent": "Path",
+    "signatures": [
+      "Path.info"
+    ],
+    "signature_hash": "46854d21b88c99ece54093e960cb952f045078b2e8c7f4c5b1b98cb66567837d",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.info",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A PathInfo object that supports querying file type information. The object exposes methods that cache their results, which can help reduce the number of system calls needed when switching on file type. For example: >>> p = Path('src') >>> if p.info.is_symlink(): ... print('symlink') ... elif p.info.is_dir(): ... print('directory') ... elif p.info.exists(): ... print('something else') ... else: ... print('not found') ... directory If the path was generated from Path.iterdir() then this attribu..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A PathInfo object that supports querying file type information. The object exposes methods that cache their results, which can help reduce the number of system calls needed when switching on file type...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302956",
+    "updatedDate": "2026-03-24T10:48:12.302957",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PurePath/is_absolute": {
+    "id": "pathlib.PurePath.is_absolute",
+    "name": "is_absolute",
+    "type": "method",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.is_absolute()"
+    ],
+    "signature_hash": "4c7780dd07513e1849d211df50cd516108c7465ed5a1bf27f28b9f7278461467",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.is_absolute",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return whether the path is absolute or not. A path is considered absolute if it has both a root and (if the flavour allows) a drive: >>> PurePosixPath('/a/b').is_absolute() True >>> PurePosixPath('a/b').is_absolute() False >>> PureWindowsPath('c:/a/b').is_absolute() True >>> PureWindowsPath('/a/b').is_absolute() False >>> PureWindowsPath('c:').is_absolute() False >>> PureWindowsPath('//some/share').is_absolute() True"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return whether the path is absolute or not. A path is considered absolute if it has both a root and (if the flavour allows) a drive: >>> PurePosixPath('/a/b').is_absolute() True >>> PurePosixPath('a/b...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.301409",
+    "updatedDate": "2026-03-24T10:48:12.301412",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/is_block_device": {
+    "id": "pathlib.Path.is_block_device",
+    "name": "is_block_device",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.is_block_device()"
+    ],
+    "signature_hash": "8192a1b617235d458a1136af3e23a95030e2120837e763d4b96cd2d6bbefabf6",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.is_block_device",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path points to a block device. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a block device. Use Path.stat() to distinguish between these cases."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path points to a block device. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a block device. Use Path.stat() to dis...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302903",
+    "updatedDate": "2026-03-24T10:48:12.302904",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/is_char_device": {
+    "id": "pathlib.Path.is_char_device",
+    "name": "is_char_device",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.is_char_device()"
+    ],
+    "signature_hash": "e3d6b657df05068a35885123debc8ffea0b0605fdf5506b88e7287f1344f3b26",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.is_char_device",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path points to a character device. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a character device. Use Path.stat() to distinguish between these cases."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path points to a character device. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a character device. Use Path.stat(...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302918",
+    "updatedDate": "2026-03-24T10:48:12.302919",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/is_dir": {
+    "id": "pathlib.Path.is_dir",
+    "name": "is_dir",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.is_dir(*, follow_symlinks=True)"
+    ],
+    "signature_hash": "01fcec2e29e74f919f24e46bf0edfe3ba44b387cb4b402c1515be6f3b90b0abc",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.is_dir",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path points to a directory. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a directory. Use Path.stat() to distinguish between these cases. This method normally follows symlinks; to exclude symlinks to directories, add the argument follow_symlinks=False. Changed in version 3.13: The follow_symlinks parameter was added."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path points to a directory. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a directory. Use Path.stat() to distingui...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302773",
+    "updatedDate": "2026-03-24T10:48:12.302774",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PathInfo/is_dir": {
+    "id": "pathlib.PathInfo.is_dir",
+    "name": "is_dir",
+    "type": "method",
+    "parent": "PathInfo",
+    "signatures": [
+      "is_dir(*, follow_symlinks=True)"
+    ],
+    "signature_hash": "64ca2f779d6cf02718728d467ded4c0f5e67a4b2bd81a23e321a4238c122c1e2",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.types.PathInfo.is_dir",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path is a directory, or a symbolic link pointing to a directory; return False if the path is (or points to) any other kind of file, or if it doesn’t exist. If follow_symlinks is False, return True only if the path is a directory (without following symlinks); return False if the path is any other kind of file, or if it doesn’t exist."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path is a directory, or a symbolic link pointing to a directory; return False if the path is (or points to) any other kind of file, or if it doesn’t exist. If follow_symlinks is Fal...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.304038",
+    "updatedDate": "2026-03-24T10:48:12.304039",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/is_fifo": {
+    "id": "pathlib.Path.is_fifo",
+    "name": "is_fifo",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.is_fifo()"
+    ],
+    "signature_hash": "347bbaaa4dfdfc2c1faed3aa27e5c43eecf18a85a2fe717f4e1e4ca1abd18550",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.is_fifo",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path points to a FIFO. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a FIFO. Use Path.stat() to distinguish between these cases."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path points to a FIFO. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a FIFO. Use Path.stat() to distinguish between...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302888",
+    "updatedDate": "2026-03-24T10:48:12.302889",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/is_file": {
+    "id": "pathlib.Path.is_file",
+    "name": "is_file",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.is_file(*, follow_symlinks=True)"
+    ],
+    "signature_hash": "e9025304dedfd32f4f84600196db677bdb0c8c2d3ff6709e3403b105f17821ab",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.is_file",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path points to a regular file. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a regular file. Use Path.stat() to distinguish between these cases. This method normally follows symlinks; to exclude symlinks, add the argument follow_symlinks=False. Changed in version 3.13: The follow_symlinks parameter was added."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path points to a regular file. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a regular file. Use Path.stat() to dis...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302753",
+    "updatedDate": "2026-03-24T10:48:12.302754",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PathInfo/is_file": {
+    "id": "pathlib.PathInfo.is_file",
+    "name": "is_file",
+    "type": "method",
+    "parent": "PathInfo",
+    "signatures": [
+      "is_file(*, follow_symlinks=True)"
+    ],
+    "signature_hash": "0a9a476976fb2d413433d2afb2a6f43f2d674d417cb936ec3876359dd6a32956",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.types.PathInfo.is_file",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path is a file, or a symbolic link pointing to a file; return False if the path is (or points to) a directory or other non-file, or if it doesn’t exist. If follow_symlinks is False, return True only if the path is a file (without following symlinks); return False if the path is a directory or other non-file, or if it doesn’t exist."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path is a file, or a symbolic link pointing to a file; return False if the path is (or points to) a directory or other non-file, or if it doesn’t exist. If follow_symlinks is False,...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.304060",
+    "updatedDate": "2026-03-24T10:48:12.304061",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/is_junction": {
+    "id": "pathlib.Path.is_junction",
+    "name": "is_junction",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.is_junction()"
+    ],
+    "signature_hash": "55f6c6341ffcde39ebd682b53b7156cccccdad90462500b45e43b8c2c5e0b57c",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.is_junction",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path points to a junction, and False for any other type of file. Currently only Windows supports junctions. Added in version 3.12."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path points to a junction, and False for any other type of file. Currently only Windows supports junctions. Added in version 3.12.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302835",
+    "updatedDate": "2026-03-24T10:48:12.302836",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/is_mount": {
+    "id": "pathlib.Path.is_mount",
+    "name": "is_mount",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.is_mount()"
+    ],
+    "signature_hash": "2326c6fbf43e3ea307e7ac772b0a3f26fa918e242ca015f5c9f2024f0a581b5e",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.is_mount",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path is a mount point: a point in a file system where a different file system has been mounted. On POSIX, the function checks whether path’s parent, path/.., is on a different device than path, or whether path/.. and path point to the same i-node on the same device — this should detect mount points for all Unix and POSIX variants. On Windows, a mount point is considered to be a drive letter root (e.g. c:\\), a UNC share (e.g. \\\\server\\share), or a mounted filesystem director..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path is a mount point: a point in a file system where a different file system has been mounted. On POSIX, the function checks whether path’s parent, path/.., is on a different devic...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302856",
+    "updatedDate": "2026-03-24T10:48:12.302857",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PurePath/is_relative_to": {
+    "id": "pathlib.PurePath.is_relative_to",
+    "name": "is_relative_to",
+    "type": "method",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.is_relative_to(other)"
+    ],
+    "signature_hash": "aae07dcd5ab1de410d142188d3714197f4866f0bab312893e21cbe526951cfa0",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.is_relative_to",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return whether or not this path is relative to the other path. >>> p = PurePath('/etc/passwd') >>> p.is_relative_to('/etc') True >>> p.is_relative_to('/usr') False This method is string-based; it neither accesses the filesystem nor treats “..” segments specially. The following code is equivalent: >>> u = PurePath('/usr') >>> u == p or u in p.parents False Added in version 3.9. Deprecated since version 3.12, removed in version 3.14: Passing additional arguments is deprecated; if supplied, they..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return whether or not this path is relative to the other path. >>> p = PurePath('/etc/passwd') >>> p.is_relative_to('/etc') True >>> p.is_relative_to('/usr') False This method is string-based; it neit...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.301469",
+    "updatedDate": "2026-03-24T10:48:12.301472",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.12",
+      "added_version": "3.9.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PurePath/is_reserved": {
+    "id": "pathlib.PurePath.is_reserved",
+    "name": "is_reserved",
+    "type": "method",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.is_reserved()"
+    ],
+    "signature_hash": "77fc9323174790f81ca082b38ef90429125b7c306f49fba3fb815d69f6ebd9ab",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.is_reserved",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "With PureWindowsPath, return True if the path is considered reserved under Windows, False otherwise. With PurePosixPath, False is always returned. Changed in version 3.13: Windows path names that contain a colon, or end with a dot or a space, are considered reserved. UNC paths may be reserved. Deprecated since version 3.13, will be removed in version 3.15: This method is deprecated; use os.path.isreserved() to detect reserved paths on Windows."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "With PureWindowsPath, return True if the path is considered reserved under Windows, False otherwise. With PurePosixPath, False is always returned. Changed in version 3.13: Windows path names that cont...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.301632",
+    "updatedDate": "2026-03-24T10:48:12.301637",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.13",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/is_socket": {
+    "id": "pathlib.Path.is_socket",
+    "name": "is_socket",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.is_socket()"
+    ],
+    "signature_hash": "cf32f23c18203722bedf79fbbdabfc67bb5eead2bfbc0a6c4999aff239574a50",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.is_socket",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path points to a Unix socket. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a Unix socket. Use Path.stat() to distinguish between these cases."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path points to a Unix socket. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a Unix socket. Use Path.stat() to disti...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302872",
+    "updatedDate": "2026-03-24T10:48:12.302873",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/is_symlink": {
+    "id": "pathlib.Path.is_symlink",
+    "name": "is_symlink",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.is_symlink()"
+    ],
+    "signature_hash": "16da92e3c1e296edcc271409593d939bc88720a1bd7e166f51b7c60af19e5658",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.is_symlink",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path points to a symbolic link, even if that symlink is broken. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a symbolic link. Use Path.stat() to distinguish between these cases."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path points to a symbolic link, even if that symlink is broken. False will be returned if the path is invalid, inaccessible or missing, or if it points to something other than a sym...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302790",
+    "updatedDate": "2026-03-24T10:48:12.302791",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PathInfo/is_symlink": {
+    "id": "pathlib.PathInfo.is_symlink",
+    "name": "is_symlink",
+    "type": "method",
+    "parent": "PathInfo",
+    "signatures": [
+      "is_symlink()"
+    ],
+    "signature_hash": "88dd240b21be7ba3a0584a857010c449b653d3350f75eb09d850ed12a866e66a",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.types.PathInfo.is_symlink",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path is a symbolic link (even if broken); return False if the path is a directory or any kind of file, or if it doesn’t exist."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path is a symbolic link (even if broken); return False if the path is a directory or any kind of file, or if it doesn’t exist.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.304078",
+    "updatedDate": "2026-03-24T10:48:12.304079",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/iterdir": {
+    "id": "pathlib.Path.iterdir",
+    "name": "iterdir",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.iterdir()"
+    ],
+    "signature_hash": "f477d2ca15d5a296eef8cdb8a5ad74f188528d82c08650e836e9f8c2534b9a3f",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.iterdir",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "When the path points to a directory, yield path objects of the directory contents: >>> p = Path('docs') >>> for child in p.iterdir(): child ... PosixPath('docs/conf.py') PosixPath('docs/_templates') PosixPath('docs/make.bat') PosixPath('docs/index.rst') PosixPath('docs/_build') PosixPath('docs/_static') PosixPath('docs/Makefile') The children are yielded in arbitrary order, and the special entries '.' and '..' are not included. If a file is removed from or added to the directory after creatin..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "When the path points to a directory, yield path objects of the directory contents: >>> p = Path('docs') >>> for child in p.iterdir(): child ... PosixPath('docs/conf.py') PosixPath('docs/_templates') P...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.303372",
+    "updatedDate": "2026-03-24T10:48:12.303375",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

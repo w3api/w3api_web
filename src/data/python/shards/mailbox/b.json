@@ -1,0 +1,144 @@
+{
+  "mailbox/Babyl": {
+    "id": "mailbox.Babyl",
+    "name": "Babyl",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.Babyl(path, factory=None, create=True)"
+    ],
+    "signature_hash": "b077cc47fb8103c8537d4ba80c80525f9f6b4eb6298b716b3b3265fea2309dc8",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.Babyl",
+    "parameters": [
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "factory",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "create",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A subclass of Mailbox for mailboxes in Babyl format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custom representation. If factory is None, BabylMessage is used as the default message representation. If create is True, the mailbox is created if it does not exist. Babyl is a single-file mailbox format used by the Rmail mail user agent included with Emacs. The beginning of a message is indicated..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of Mailbox for mailboxes in Babyl format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a cu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.244630",
+    "updatedDate": "2026-03-24T10:48:12.244631",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "get_file",
+      "get_labels",
+      "lock"
+    ]
+  },
+  "mailbox/BabylMessage": {
+    "id": "mailbox.BabylMessage",
+    "name": "BabylMessage",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class mailbox.BabylMessage(message=None)"
+    ],
+    "signature_hash": "db1d135b285d3cd5e95cfb979c8147bf8d51dd321c989ea84a40bc133dbbd3a5",
+    "url": "https://docs.python.org/3/library/mailbox.html#module-mailbox#mailbox.BabylMessage",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A message with Babyl-specific behaviors. Parameter message has the same meaning as with the Message constructor. Certain message labels, called attributes, are defined by convention to have special meanings. The attributes are as follows: Label Explanation unseen Not read, but previously detected by MUA deleted Marked for subsequent deletion filed Copied to another file or mailbox answered Replied to forwarded Forwarded edited Modified by the user resent Resent By default, Rmail displays only..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A message with Babyl-specific behaviors. Parameter message has the same meaning as with the Message constructor. Certain message labels, called attributes, are defined by convention to have special me...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.245219",
+    "updatedDate": "2026-03-24T10:48:12.245220",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "add_label",
+      "get_labels",
+      "get_visible",
+      "remove_label",
+      "set_labels",
+      "set_visible",
+      "update_visible"
+    ]
+  }
+}

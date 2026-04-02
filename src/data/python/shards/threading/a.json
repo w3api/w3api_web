@@ -1,0 +1,319 @@
+{
+  "threading/active_count": {
+    "id": "threading.active_count",
+    "name": "active_count",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "threading.active_count()"
+    ],
+    "signature_hash": "4ab74a073fd1fa18b808023c1150f4526e79a69215ae9fae8449513ec9db75db",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.active_count",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the number of Thread objects currently alive. The returned count is equal to the length of the list returned by enumerate(). The function activeCount is a deprecated alias for this function."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the number of Thread objects currently alive. The returned count is equal to the length of the list returned by enumerate(). The function activeCount is a deprecated alias for this function.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.395832",
+    "updatedDate": "2026-03-24T10:48:12.395833",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Barrier/abort": {
+    "id": "threading.Barrier.abort",
+    "name": "abort",
+    "type": "method",
+    "parent": "Barrier",
+    "signatures": [
+      "abort()"
+    ],
+    "signature_hash": "666d7b06e400dfc34cbc8ac3a1e9d91b421d85a4f99876a602e75ac906ad3c77",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Barrier.abort",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Put the barrier into a broken state. This causes any active or future calls to wait() to fail with the BrokenBarrierError. Use this for example if one of the threads needs to abort, to avoid deadlocking the application. It may be preferable to simply create the barrier with a sensible timeout value to automatically guard against one of the threads going awry."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Put the barrier into a broken state. This causes any active or future calls to wait() to fail with the BrokenBarrierError. Use this for example if one of the threads needs to abort, to avoid deadlocki...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396828",
+    "updatedDate": "2026-03-24T10:48:12.396829",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Lock/acquire": {
+    "id": "threading.Lock.acquire",
+    "name": "acquire",
+    "type": "method",
+    "parent": "Lock",
+    "signatures": [
+      "acquire(blocking=True, timeout=-1)"
+    ],
+    "signature_hash": "c94acd7d364010e88ddbf6025ad567301d5dd1842ee5413643cab9ca386485f5",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Lock.acquire",
+    "parameters": [
+      {
+        "name": "blocking",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Acquire a lock, blocking or non-blocking. When invoked with the blocking argument set to True (the default), block until the lock is unlocked, then set it to locked and return True. When invoked with the blocking argument set to False, do not block. If a call with blocking set to True would block, return False immediately; otherwise, set the lock to locked and return True. When invoked with the floating-point timeout argument set to a positive value, block for at most the number of seconds sp..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Acquire a lock, blocking or non-blocking. When invoked with the blocking argument set to True (the default), block until the lock is unlocked, then set it to locked and return True. When invoked with ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396310",
+    "updatedDate": "2026-03-24T10:48:12.396311",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/RLock/acquire": {
+    "id": "threading.RLock.acquire",
+    "name": "acquire",
+    "type": "method",
+    "parent": "RLock",
+    "signatures": [
+      "acquire(blocking=True, timeout=-1)"
+    ],
+    "signature_hash": "c94acd7d364010e88ddbf6025ad567301d5dd1842ee5413643cab9ca386485f5",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.RLock.acquire",
+    "parameters": [
+      {
+        "name": "blocking",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Acquire a lock, blocking or non-blocking. See also Using RLock as a context managerRecommended over manual acquire() and release() calls whenever practical. When invoked with the blocking argument set to True (the default): If no thread owns the lock, acquire the lock and return immediately. If another thread owns the lock, block until we are able to acquire lock, or timeout, if set to a positive float value. If the same thread owns the lock, acquire the lock again, and return immediately. Th..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Acquire a lock, blocking or non-blocking. See also Using RLock as a context managerRecommended over manual acquire() and release() calls whenever practical. When invoked with the blocking argument set...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396372",
+    "updatedDate": "2026-03-24T10:48:12.396373",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Condition/acquire": {
+    "id": "threading.Condition.acquire",
+    "name": "acquire",
+    "type": "method",
+    "parent": "Condition",
+    "signatures": [
+      "acquire(*args)"
+    ],
+    "signature_hash": "749006ffe799c5cebc23f2df1947aaba5e20933aa1c18ee63823ec1a34bbf959",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Condition.acquire",
+    "parameters": [
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Acquire the underlying lock. This method calls the corresponding method on the underlying lock; the return value is whatever that method returns."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Acquire the underlying lock. This method calls the corresponding method on the underlying lock; the return value is whatever that method returns.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396435",
+    "updatedDate": "2026-03-24T10:48:12.396436",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "threading/Semaphore/acquire": {
+    "id": "threading.Semaphore.acquire",
+    "name": "acquire",
+    "type": "method",
+    "parent": "Semaphore",
+    "signatures": [
+      "acquire(blocking=True, timeout=None)"
+    ],
+    "signature_hash": "e8caee48abceabcaf10a23003df27a8754f447896b9e19543bf893de5a62f164",
+    "url": "https://docs.python.org/3/library/threading.html#module-threading#threading.Semaphore.acquire",
+    "parameters": [
+      {
+        "name": "blocking",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Acquire a semaphore. When invoked without arguments: If the internal counter is larger than zero on entry, decrement it by one and return True immediately. If the internal counter is zero on entry, block until awoken by a call to release(). Once awoken (and the counter is greater than 0), decrement the counter by 1 and return True. Exactly one thread will be awoken by each call to release(). The order in which threads are awoken should not be relied on. When invoked with blocking set to False..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Acquire a semaphore. When invoked without arguments: If the internal counter is larger than zero on entry, decrement it by one and return True immediately. If the internal counter is zero on entry, bl...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.396586",
+    "updatedDate": "2026-03-24T10:48:12.396587",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

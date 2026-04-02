@@ -1,0 +1,339 @@
+{
+  "email.parser/Parser": {
+    "id": "email.parser.Parser",
+    "name": "Parser",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class email.parser.Parser(_class=None, *, policy=policy.compat32)"
+    ],
+    "signature_hash": "8752ae824cc717e854aa4eeb5e57a59888f48787ad26d01e08e0f35e3d94b217",
+    "url": "https://docs.python.org/3/library/email.parser.html#module-email.parser#email.parser.Parser",
+    "parameters": [
+      {
+        "name": "_class",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "policy",
+        "type": "",
+        "has_default": true,
+        "default_value": "policy.compat32",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This class is parallel to BytesParser, but handles string input. Changed in version 3.3: Removed the strict argument. Added the policy keyword. Changed in version 3.6: _class defaults to the policy message_factory. parse(fp, headersonly=False)¶ Read all the data from the text-mode file-like object fp, parse the resulting text, and return the root message object. fp must support both the readline() and the read() methods on file-like objects. Other than the text mode requirement, this method o..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class is parallel to BytesParser, but handles string input. Changed in version 3.3: Removed the strict argument. Added the policy keyword. Changed in version 3.6: _class defaults to the policy me...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.210099",
+    "updatedDate": "2026-03-24T10:48:12.210100",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "parse",
+      "parsestr"
+    ]
+  },
+  "email.parser/BytesParser/parse": {
+    "id": "email.parser.BytesParser.parse",
+    "name": "parse",
+    "type": "method",
+    "parent": "BytesParser",
+    "signatures": [
+      "parse(fp, headersonly=False)"
+    ],
+    "signature_hash": "dcfb2569fbbe2a4d2bb2786e1479717cdd6f1faaab2257575a0ea8ae462f3670",
+    "url": "https://docs.python.org/3/library/email.parser.html#module-email.parser#email.parser.BytesParser.parse",
+    "parameters": [
+      {
+        "name": "fp",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "headersonly",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Read all the data from the binary file-like object fp, parse the resulting bytes, and return the message object. fp must support both the readline() and the read() methods. The bytes contained in fp must be formatted as a block of RFC 5322 (or, if utf8 is True, RFC 6532) style headers and header continuation lines, optionally preceded by an envelope header. The header block is terminated either by the end of the data or by a blank line. Following the header block is the body of the message (w..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read all the data from the binary file-like object fp, parse the resulting bytes, and return the message object. fp must support both the readline() and the read() methods. The bytes contained in fp m...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.210032",
+    "updatedDate": "2026-03-24T10:48:12.210033",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.parser/Parser/parse": {
+    "id": "email.parser.Parser.parse",
+    "name": "parse",
+    "type": "method",
+    "parent": "Parser",
+    "signatures": [
+      "parse(fp, headersonly=False)"
+    ],
+    "signature_hash": "dcfb2569fbbe2a4d2bb2786e1479717cdd6f1faaab2257575a0ea8ae462f3670",
+    "url": "https://docs.python.org/3/library/email.parser.html#module-email.parser#email.parser.Parser.parse",
+    "parameters": [
+      {
+        "name": "fp",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "headersonly",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Read all the data from the text-mode file-like object fp, parse the resulting text, and return the root message object. fp must support both the readline() and the read() methods on file-like objects. Other than the text mode requirement, this method operates like BytesParser.parse()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read all the data from the text-mode file-like object fp, parse the resulting text, and return the root message object. fp must support both the readline() and the read() methods on file-like objects....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.210116",
+    "updatedDate": "2026-03-24T10:48:12.210116",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.parser/BytesParser/parsebytes": {
+    "id": "email.parser.BytesParser.parsebytes",
+    "name": "parsebytes",
+    "type": "method",
+    "parent": "BytesParser",
+    "signatures": [
+      "parsebytes(bytes, headersonly=False)"
+    ],
+    "signature_hash": "07eee0fbec2dc3a212fb04ae36264bcfc748e719c5f767eb3474f881da798f16",
+    "url": "https://docs.python.org/3/library/email.parser.html#module-email.parser#email.parser.BytesParser.parsebytes",
+    "parameters": [
+      {
+        "name": "bytes",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "headersonly",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to the parse() method, except it takes a bytes-like object instead of a file-like object. Calling this method on a bytes-like object is equivalent to wrapping bytes in a BytesIO instance first and calling parse(). Optional headersonly is as with the parse() method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to the parse() method, except it takes a bytes-like object instead of a file-like object. Calling this method on a bytes-like object is equivalent to wrapping bytes in a BytesIO instance first...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.210050",
+    "updatedDate": "2026-03-24T10:48:12.210051",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "email.parser/Parser/parsestr": {
+    "id": "email.parser.Parser.parsestr",
+    "name": "parsestr",
+    "type": "method",
+    "parent": "Parser",
+    "signatures": [
+      "parsestr(text, headersonly=False)"
+    ],
+    "signature_hash": "047e95fe63acb91b4f9571f482ad5709f0c349fbc6d82e9f08fb2a1299058ff5",
+    "url": "https://docs.python.org/3/library/email.parser.html#module-email.parser#email.parser.Parser.parsestr",
+    "parameters": [
+      {
+        "name": "text",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "headersonly",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to the parse() method, except it takes a string object instead of a file-like object. Calling this method on a string is equivalent to wrapping text in a StringIO instance first and calling parse(). Optional headersonly is as with the parse() method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to the parse() method, except it takes a string object instead of a file-like object. Calling this method on a string is equivalent to wrapping text in a StringIO instance first and calling pa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.210134",
+    "updatedDate": "2026-03-24T10:48:12.210135",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

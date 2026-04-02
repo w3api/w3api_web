@@ -1,0 +1,274 @@
+{
+  "ast/While": {
+    "id": "ast.While",
+    "name": "While",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.While(test, body, orelse)"
+    ],
+    "signature_hash": "6dc321d1a9f39a018ff4b13b462a7e1ca5e03a1a5a48b0439744014ac1180683",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.While",
+    "parameters": [
+      {
+        "name": "test",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "body",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "orelse",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A while loop. test holds the condition, such as a Compare node. >>> print(ast.dump(ast.parse(\"\"\" ... while x: ... ... ... else: ... ... ... \"\"\"), indent=4)) Module( body=[ While( test=Name(id='x', ctx=Load()), body=[ Expr( value=Constant(value=Ellipsis))], orelse=[ Expr( value=Constant(value=Ellipsis))])])"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A while loop. test holds the condition, such as a Compare node. >>> print(ast.dump(ast.parse(\"\"\" ... while x: ... ... ... else: ... ... ... \"\"\"), indent=4)) Module( body=[ While( test=Name(id='x', ctx...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165095",
+    "updatedDate": "2026-03-24T10:48:12.165096",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/With": {
+    "id": "ast.With",
+    "name": "With",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.With(items, body, type_comment)"
+    ],
+    "signature_hash": "2d023418a56059fcf9b696a6b090b6445b1c6566c70953ad6ee5b927dc98a667",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.With",
+    "parameters": [
+      {
+        "name": "items",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "body",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type_comment",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A with block. items is a list of withitem nodes representing the context managers, and body is the indented block inside the context. type_comment¶ type_comment is an optional string with the type annotation as a comment."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A with block. items is a list of withitem nodes representing the context managers, and body is the indented block inside the context. type_comment¶ type_comment is an optional string with the type ann...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165198",
+    "updatedDate": "2026-03-24T10:48:12.165199",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "type_comment"
+    ]
+  },
+  "ast/withitem": {
+    "id": "ast.withitem",
+    "name": "withitem",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.withitem(context_expr, optional_vars)"
+    ],
+    "signature_hash": "8ec6becda707fdf3e551f5bf4c775a9606f206e8f9707e5cfd2260d24d642b55",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.withitem",
+    "parameters": [
+      {
+        "name": "context_expr",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "optional_vars",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A single context manager in a with block. context_expr is the context manager, often a Call node. optional_vars is a Name, Tuple or List for the as foo part, or None if that isn’t used. >>> print(ast.dump(ast.parse(\"\"\"\\ ... with a as b, c as d: ... something(b, d) ... \"\"\"), indent=4)) Module( body=[ With( items=[ withitem( context_expr=Name(id='a', ctx=Load()), optional_vars=Name(id='b', ctx=Store())), withitem( context_expr=Name(id='c', ctx=Load()), optional_vars=Name(id='d', ctx=Store()))],..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A single context manager in a with block. context_expr is the context manager, often a Call node. optional_vars is a Name, Tuple or List for the as foo part, or None if that isn’t used. >>> print(ast....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165232",
+    "updatedDate": "2026-03-24T10:48:12.165233",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/walk": {
+    "id": "ast.walk",
+    "name": "walk",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ast.walk(node)"
+    ],
+    "signature_hash": "db613e4f4f802efb1da204a9c57bd15c2d40dd195973e58c40a57ec54aea2dd9",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.walk",
+    "parameters": [
+      {
+        "name": "node",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Recursively yield all descendant nodes in the tree starting at node (including node itself), in no specified order. This is useful if you only want to modify nodes in place and don’t care about the context."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Recursively yield all descendant nodes in the tree starting at node (including node itself), in no specified order. This is useful if you only want to modify nodes in place and don’t care about the co...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.166548",
+    "updatedDate": "2026-03-24T10:48:12.166549",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

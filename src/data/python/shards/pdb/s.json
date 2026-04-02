@@ -1,0 +1,207 @@
+{
+  "pdb/set_default_backend": {
+    "id": "pdb.set_default_backend",
+    "name": "set_default_backend",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "pdb.set_default_backend(backend)"
+    ],
+    "signature_hash": "42a3319df6c27868b0af93d848ebd436b0e5b56e19a63796d9222e940d7e2dcc",
+    "url": "https://docs.python.org/3/library/pdb.html#module-pdb#pdb.set_default_backend",
+    "parameters": [
+      {
+        "name": "backend",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "There are two supported backends for pdb: 'settrace' and 'monitoring'. See bdb.Bdb for details. The user can set the default backend to use if none is specified when instantiating Pdb. If no backend is specified, the default is 'settrace'. Note breakpoint() and set_trace() will not be affected by this function. They always use 'monitoring' backend. Added in version 3.14."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "There are two supported backends for pdb: 'settrace' and 'monitoring'. See bdb.Bdb for details. The user can set the default backend to use if none is specified when instantiating Pdb. If no backend i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.306468",
+    "updatedDate": "2026-03-24T10:48:12.306469",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pdb/set_trace": {
+    "id": "pdb.set_trace",
+    "name": "set_trace",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "pdb.set_trace(*, header=None, commands=None)"
+    ],
+    "signature_hash": "befbaf53f5dcbc0464997f10533e8c445414fb183a0659f915b29d9d8488b1e9",
+    "url": "https://docs.python.org/3/library/pdb.html#module-pdb#pdb.set_trace",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "header",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "commands",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Enter the debugger at the calling stack frame. This is useful to hard-code a breakpoint at a given point in a program, even if the code is not otherwise being debugged (e.g. when an assertion fails). If given, header is printed to the console just before debugging begins. The commands argument, if given, is a list of commands to execute when the debugger starts. Changed in version 3.7: The keyword-only argument header. Changed in version 3.13: set_trace() will enter the debugger immediately, ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enter the debugger at the calling stack frame. This is useful to hard-code a breakpoint at a given point in a program, even if the code is not otherwise being debugged (e.g. when an assertion fails). ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.306402",
+    "updatedDate": "2026-03-24T10:48:12.306403",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pdb/set_trace_async": {
+    "id": "pdb.set_trace_async",
+    "name": "set_trace_async",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "awaitable pdb.set_trace_async(*, header=None, commands=None)"
+    ],
+    "signature_hash": "16d9cdcd4b6ba0eebd8082c731d6a630ef9d80e0dc68d4f35b68f091c93466c1",
+    "url": "https://docs.python.org/3/library/pdb.html#module-pdb#pdb.set_trace_async",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "header",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "commands",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "async version of set_trace(). This function should be used inside an async function with await. async def f(): await pdb.set_trace_async() await statements are supported if the debugger is invoked by this function. Added in version 3.14."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "async version of set_trace(). This function should be used inside an async function with await. async def f(): await pdb.set_trace_async() await statements are supported if the debugger is invoked by ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.306421",
+    "updatedDate": "2026-03-24T10:48:12.306422",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

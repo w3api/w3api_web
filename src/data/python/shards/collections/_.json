@@ -1,0 +1,266 @@
+{
+  "collections/somenamedtuple/_field_defaults": {
+    "id": "collections.somenamedtuple._field_defaults",
+    "name": "_field_defaults",
+    "type": "attribute",
+    "parent": "somenamedtuple",
+    "signatures": [
+      "somenamedtuple._field_defaults"
+    ],
+    "signature_hash": "f1d01a6db695bc70d9ff0d59d065b094a26981f6cf120e49fc8c8a846671fb45",
+    "url": "https://docs.python.org/3/library/collections.html#module-collections#collections.somenamedtuple._field_defaults",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Dictionary mapping field names to default values. >>> Account = namedtuple('Account', ['type', 'balance'], defaults=[0]) >>> Account._field_defaults {'balance': 0} >>> Account('premium') Account(type='premium', balance=0)"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Dictionary mapping field names to default values. >>> Account = namedtuple('Account', ['type', 'balance'], defaults=[0]) >>> Account._field_defaults {'balance': 0} >>> Account('premium') Account(type=...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.173318",
+    "updatedDate": "2026-03-24T10:48:12.173318",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "collections/somenamedtuple/_fields": {
+    "id": "collections.somenamedtuple._fields",
+    "name": "_fields",
+    "type": "attribute",
+    "parent": "somenamedtuple",
+    "signatures": [
+      "somenamedtuple._fields"
+    ],
+    "signature_hash": "c24627c25ffd05a447958bd9a49dda7f3cb349e1a92e3ff86fbd45cde094ef46",
+    "url": "https://docs.python.org/3/library/collections.html#module-collections#collections.somenamedtuple._fields",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Tuple of strings listing the field names. Useful for introspection and for creating new named tuple types from existing named tuples. >>> p._fields # view the field names ('x', 'y') >>> Color = namedtuple('Color', 'red green blue') >>> Pixel = namedtuple('Pixel', Point._fields + Color._fields) >>> Pixel(11, 22, 128, 255, 0) Pixel(x=11, y=22, red=128, green=255, blue=0)"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tuple of strings listing the field names. Useful for introspection and for creating new named tuple types from existing named tuples. >>> p._fields # view the field names ('x', 'y') >>> Color = namedt...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.173303",
+    "updatedDate": "2026-03-24T10:48:12.173304",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "collections/defaultdict/__missing__": {
+    "id": "collections.defaultdict.__missing__",
+    "name": "__missing__",
+    "type": "method",
+    "parent": "defaultdict",
+    "signatures": [
+      "__missing__(key)"
+    ],
+    "signature_hash": "0f10d02590fe59bef83ce1354788d470f2a9c4453ded05c198efd002a7670254",
+    "url": "https://docs.python.org/3/library/collections.html#module-collections#collections.defaultdict.__missing__",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "If the default_factory attribute is None, this raises a KeyError exception with the key as argument. If default_factory is not None, it is called without arguments to provide a default value for the given key, this value is inserted in the dictionary for the key, and returned. If calling default_factory raises an exception this exception is propagated unchanged. This method is called by the __getitem__() method of the dict class when the requested key is not found; whatever it returns or rais..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the default_factory attribute is None, this raises a KeyError exception with the key as argument. If default_factory is not None, it is called without arguments to provide a default value for the g...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.173205",
+    "updatedDate": "2026-03-24T10:48:12.173206",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "collections/somenamedtuple/_asdict": {
+    "id": "collections.somenamedtuple._asdict",
+    "name": "_asdict",
+    "type": "method",
+    "parent": "somenamedtuple",
+    "signatures": [
+      "somenamedtuple._asdict()"
+    ],
+    "signature_hash": "7e7473acfb2b1e124cc2b8296432391f01835ab4fba7401329bd89d0b9f27329",
+    "url": "https://docs.python.org/3/library/collections.html#module-collections#collections.somenamedtuple._asdict",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a new dict which maps field names to their corresponding values: >>> p = Point(x=11, y=22) >>> p._asdict() {'x': 11, 'y': 22} Changed in version 3.1: Returns an OrderedDict instead of a regular dict. Changed in version 3.8: Returns a regular dict instead of an OrderedDict. As of Python 3.7, regular dicts are guaranteed to be ordered. If the extra features of OrderedDict are required, the suggested remediation is to cast the result to the desired type: OrderedDict(nt._asdict())."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a new dict which maps field names to their corresponding values: >>> p = Point(x=11, y=22) >>> p._asdict() {'x': 11, 'y': 22} Changed in version 3.1: Returns an OrderedDict instead of a regular...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.173274",
+    "updatedDate": "2026-03-24T10:48:12.173274",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "collections/somenamedtuple/_make": {
+    "id": "collections.somenamedtuple._make",
+    "name": "_make",
+    "type": "method",
+    "parent": "somenamedtuple",
+    "signatures": [
+      "classmethod somenamedtuple._make(iterable)"
+    ],
+    "signature_hash": "63fdbf34c3bb2caa8fa4ab5aa889fa518e78aea0f49d06af5a9dbaf7a04f8121",
+    "url": "https://docs.python.org/3/library/collections.html#module-collections#collections.somenamedtuple._make",
+    "parameters": [
+      {
+        "name": "iterable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Class method that makes a new instance from an existing sequence or iterable. >>> t = [11, 22] >>> Point._make(t) Point(x=11, y=22)"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Class method that makes a new instance from an existing sequence or iterable. >>> t = [11, 22] >>> Point._make(t) Point(x=11, y=22)",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.173258",
+    "updatedDate": "2026-03-24T10:48:12.173259",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "collections/somenamedtuple/_replace": {
+    "id": "collections.somenamedtuple._replace",
+    "name": "_replace",
+    "type": "method",
+    "parent": "somenamedtuple",
+    "signatures": [
+      "somenamedtuple._replace(**kwargs)"
+    ],
+    "signature_hash": "bad794f4e380c9d5d3efe984ddd4f91ea48b503d37403db0f42d7ef61e675982",
+    "url": "https://docs.python.org/3/library/collections.html#module-collections#collections.somenamedtuple._replace",
+    "parameters": [
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a new instance of the named tuple replacing specified fields with new values: >>> p = Point(x=11, y=22) >>> p._replace(x=33) Point(x=33, y=22) >>> for partnum, record in inventory.items(): ... inventory[partnum] = record._replace(price=newprices[partnum], timestamp=time.now()) Named tuples are also supported by generic function copy.replace(). Changed in version 3.13: Raise TypeError instead of ValueError for invalid keyword arguments."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a new instance of the named tuple replacing specified fields with new values: >>> p = Point(x=11, y=22) >>> p._replace(x=33) Point(x=33, y=22) >>> for partnum, record in inventory.items(): ... ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.173290",
+    "updatedDate": "2026-03-24T10:48:12.173291",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

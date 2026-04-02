@@ -1,0 +1,299 @@
+{
+  "jdk.management.jfr/RemoteRecordingStream/RemoteRecordingStream": {
+    "id": "jdk.management.jfr.RemoteRecordingStream.RemoteRecordingStream",
+    "name": "RemoteRecordingStream",
+    "type": "constructor",
+    "parent": "RemoteRecordingStream",
+    "signatures": [
+      "public RemoteRecordingStream(MBeanServerConnection connection)",
+      "public RemoteRecordingStream(MBeanServerConnection connection, Path directory)"
+    ],
+    "signature_hash": "3e75a7be0856ce3442a0007f5cc9971957edc2e830b9184517158ee0c104e743",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.management.jfr/jdk/management/jfr/RemoteRecordingStream.html",
+    "parameters": [
+      {
+        "name": "connection",
+        "has_default": false,
+        "default_value": null,
+        "type": "MBeanServerConnection",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "directory",
+        "has_default": false,
+        "default_value": null,
+        "type": "Path",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates an event stream that operates against aMBeanServerConnectionthat has a registeredFlightRecorderMXBean."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates an event stream that operates against aMBeanServerConnectionthat has a registeredFlightRecorderMXBean.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.298623",
+    "updatedDate": "2026-03-24T10:48:15.298624",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "16",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.management.jfr/FlightRecorderMXBean/readStream": {
+    "id": "jdk.management.jfr.FlightRecorderMXBean.readStream",
+    "name": "readStream",
+    "type": "method",
+    "parent": "FlightRecorderMXBean",
+    "signatures": [
+      "public byte[] readStream(long streamId)"
+    ],
+    "signature_hash": "06b3bfd54ddbbe1af5a776c0d03748fee3ef57e763415e05a2c244cdb01ad956",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.management.jfr/jdk/management/jfr/FlightRecorderMXBean.html",
+    "parameters": [
+      {
+        "name": "streamId",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "byte[]",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Reads a portion of data from the stream with the specified ID, or returnsnullif no more data is available."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reads a portion of data from the stream with the specified ID, or returnsnullif no more data is available.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.298213",
+    "updatedDate": "2026-03-24T10:48:15.298214",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.management.jfr/RemoteRecordingStream/remove": {
+    "id": "jdk.management.jfr.RemoteRecordingStream.remove",
+    "name": "remove",
+    "type": "method",
+    "parent": "RemoteRecordingStream",
+    "signatures": [
+      "public boolean remove(Object action)"
+    ],
+    "signature_hash": "185efc26dbe7a9b3cf10f1a78b61280ee47766c619a9f3920e1c0503d114b169",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.management.jfr/jdk/management/jfr/RemoteRecordingStream.html",
+    "parameters": [
+      {
+        "name": "action",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Unregisters an action."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Unregisters an action.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.298808",
+    "updatedDate": "2026-03-24T10:48:15.298809",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "16",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.management.jfr/RecordingInfo": {
+    "id": "jdk.management.jfr.RecordingInfo",
+    "name": "RecordingInfo",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RecordingInfo"
+    ],
+    "signature_hash": "0dce9b398c4b9ddec8c2e750f4f6bf427252e517e949cc785e8ac87eca9b51ab",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.management.jfr/jdk/management/jfr/RecordingInfo.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.298367",
+    "updatedDate": "2026-03-24T10:48:15.298368",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "from",
+      "getDestination",
+      "getDumpOnExit",
+      "getDuration",
+      "getId",
+      "getMaxAge",
+      "getMaxSize",
+      "getName",
+      "getSettings",
+      "getSize",
+      "getStartTime",
+      "getState",
+      "getStopTime",
+      "isToDisk",
+      "toString"
+    ]
+  },
+  "jdk.management.jfr/RemoteRecordingStream": {
+    "id": "jdk.management.jfr.RemoteRecordingStream",
+    "name": "RemoteRecordingStream",
+    "type": "record",
+    "parent": null,
+    "signatures": [
+      "class RemoteRecordingStream"
+    ],
+    "signature_hash": "42933f55b09d329e57d4c13109b18969448d2680fe4b2912e86fac0a790736b1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.management.jfr/jdk/management/jfr/RemoteRecordingStream.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.298593",
+    "updatedDate": "2026-03-24T10:48:15.298594",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "16",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "RemoteRecordingStream"
+    ],
+    "methods": [
+      "awaitTermination",
+      "close",
+      "disable",
+      "dump",
+      "enable",
+      "onClose",
+      "onError",
+      "onEvent",
+      "onFlush",
+      "remove",
+      "setEndTime",
+      "setMaxAge",
+      "setMaxSize",
+      "setOrdered",
+      "setReuse",
+      "setSettings",
+      "setStartTime",
+      "start",
+      "startAsync",
+      "stop"
+    ]
+  }
+}

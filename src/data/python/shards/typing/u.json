@@ -1,0 +1,76 @@
+{
+  "typing/Union": {
+    "id": "typing.Union",
+    "name": "Union",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.Union"
+    ],
+    "signature_hash": "cbcfdb0d9537f8666fce8a9ba1148f4fded57040faf31651f5d8f59118f8d345",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.Union",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Union type; Union[X, Y] is equivalent to X | Y and means either X or Y. To define a union, use e.g. Union[int, str] or the shorthand int | str. Using that shorthand is recommended. Details: The arguments must be types and there must be at least one. Unions of unions are flattened, e.g.: Union[Union[int, str], float] == Union[int, str, float] However, this does not apply to unions referenced through a type alias, to avoid forcing evaluation of the underlying TypeAliasType: type A = Union[int, ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Union type; Union[X, Y] is equivalent to X | Y and means either X or Y. To define a union, use e.g. Union[int, str] or the shorthand int | str. Using that shorthand is recommended. Details: The argume...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.408737",
+    "updatedDate": "2026-03-24T10:48:12.408738",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/Unpack": {
+    "id": "typing.Unpack",
+    "name": "Unpack",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "typing.Unpack"
+    ],
+    "signature_hash": "173e6b23ec32bcc050767111d5d94bcccc4e2dc0617c83c8fea241c86daa7315",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.Unpack",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Typing operator to conceptually mark an object as having been unpacked. For example, using the unpack operator * on a type variable tuple is equivalent to using Unpack to mark the type variable tuple as having been unpacked: Ts = TypeVarTuple('Ts') tup: tuple[*Ts] # Effectively does: tup: tuple[Unpack[Ts]] In fact, Unpack can be used interchangeably with * in the context of typing.TypeVarTuple and builtins.tuple types. You might see Unpack being used explicitly in older versions of Python, wh..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Typing operator to conceptually mark an object as having been unpacked. For example, using the unpack operator * on a type variable tuple is equivalent to using Unpack to mark the type variable tuple ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.408907",
+    "updatedDate": "2026-03-24T10:48:12.408908",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

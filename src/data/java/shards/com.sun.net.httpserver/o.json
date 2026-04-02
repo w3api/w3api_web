@@ -1,0 +1,208 @@
+{
+  "com.sun.net.httpserver/OutputLevel": {
+    "id": "com.sun.net.httpserver.OutputLevel",
+    "name": "OutputLevel",
+    "type": "enum",
+    "parent": null,
+    "signatures": [
+      "enum OutputLevel"
+    ],
+    "signature_hash": "dd95895a68a685b60da52a31c5cd2a6b07da355d6703d97c300bd294c8921f3b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/SimpleFileServer.OutputLevel.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.354553",
+    "updatedDate": "2026-03-24T10:48:13.354554",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "enum_constants": [
+      "INFO",
+      "NONE",
+      "VERBOSE"
+    ],
+    "methods": [
+      "valueOf",
+      "values"
+    ]
+  },
+  "com.sun.net.httpserver/HttpHandlers/of": {
+    "id": "com.sun.net.httpserver.HttpHandlers.of",
+    "name": "of",
+    "type": "method",
+    "parent": "HttpHandlers",
+    "signatures": [
+      "public static HttpHandler of(int statusCode, Headers headers, String body)"
+    ],
+    "signature_hash": "4ff5fb86cc429ef22984bdc04f6868487d5ac46ef25a91dd31220bb403c0fa7e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpHandlers.html",
+    "parameters": [
+      {
+        "name": "statusCode",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "headers",
+        "type": "Headers",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "body",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static HttpHandler",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns anHttpHandlerthat sends a response comprising the givenstatusCode,headers, andbody."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns anHttpHandlerthat sends a response comprising the givenstatusCode,headers, andbody.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352461",
+    "updatedDate": "2026-03-24T10:48:13.352462",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Headers/of": {
+    "id": "com.sun.net.httpserver.Headers.of",
+    "name": "of",
+    "type": "method",
+    "parent": "Headers",
+    "signatures": [
+      "public static Headers of(String... headers)",
+      "public static Headers of(Map<String, List<String>> headers)"
+    ],
+    "signature_hash": "5f0630c3d396c9a5e34e9834363aafbe07cdfce40b7802f817711faebd46baaf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Headers.html",
+    "parameters": [
+      {
+        "name": "headers",
+        "has_default": false,
+        "default_value": null,
+        "type": "String...|List<String>>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "Map<String",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Headers",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an immutableHeaderswith the given name value pairs as its set of headers."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an immutableHeaderswith the given name value pairs as its set of headers.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353886",
+    "updatedDate": "2026-03-24T10:48:13.353886",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

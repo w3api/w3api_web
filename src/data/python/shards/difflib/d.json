@@ -1,0 +1,218 @@
+{
+  "difflib/Differ": {
+    "id": "difflib.Differ",
+    "name": "Differ",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class difflib.Differ"
+    ],
+    "signature_hash": "aff22ccbad3dadb84f1cabad4ae3d436f1e47f7b59f7df7226e705d3a5d53044",
+    "url": "https://docs.python.org/3/library/difflib.html#module-difflib#difflib.Differ",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This is a class for comparing sequences of lines of text, and producing human-readable differences or deltas. Differ uses SequenceMatcher both to compare sequences of lines, and to compare sequences of characters within similar (near-matching) lines. Each line of a Differ delta begins with a two-letter code: Code Meaning '- ' line unique to sequence 1 '+ ' line unique to sequence 2 ' ' line common to both sequences '? ' line not present in either input sequence Lines beginning with ‘?’ attemp..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This is a class for comparing sequences of lines of text, and producing human-readable differences or deltas. Differ uses SequenceMatcher both to compare sequences of lines, and to compare sequences o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.202349",
+    "updatedDate": "2026-03-24T10:48:12.202349",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "compare"
+    ]
+  },
+  "difflib/diff_bytes": {
+    "id": "difflib.diff_bytes",
+    "name": "diff_bytes",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "difflib.diff_bytes(dfunc, a, b, fromfile=b'', tofile=b'', fromfiledate=b'', tofiledate=b'', n=3, lineterm=b'\\n')"
+    ],
+    "signature_hash": "471498431c6965ebd309418fd7fd70d239527d9e0309af7d30cba07101dab102",
+    "url": "https://docs.python.org/3/library/difflib.html#module-difflib#difflib.diff_bytes",
+    "parameters": [
+      {
+        "name": "dfunc",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "a",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "b",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "fromfile",
+        "type": "",
+        "has_default": true,
+        "default_value": "b''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "tofile",
+        "type": "",
+        "has_default": true,
+        "default_value": "b''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "fromfiledate",
+        "type": "",
+        "has_default": true,
+        "default_value": "b''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "tofiledate",
+        "type": "",
+        "has_default": true,
+        "default_value": "b''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "n",
+        "type": "",
+        "has_default": true,
+        "default_value": "3",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "lineterm",
+        "type": "",
+        "has_default": true,
+        "default_value": "b'\\n'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Compare a and b (lists of bytes objects) using dfunc; yield a sequence of delta lines (also bytes) in the format returned by dfunc. dfunc must be a callable, typically either unified_diff() or context_diff(). Allows you to compare data with unknown or inconsistent encoding. All inputs except n must be bytes objects, not str. Works by losslessly converting all inputs (except n) to str, and calling dfunc(a, b, fromfile, tofile, fromfiledate, tofiledate, n, lineterm). The output of dfunc is then..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compare a and b (lists of bytes objects) using dfunc; yield a sequence of delta lines (also bytes) in the format returned by dfunc. dfunc must be a callable, typically either unified_diff() or context...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.202608",
+    "updatedDate": "2026-03-24T10:48:12.202608",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "difflib": {
+    "type": "module",
+    "name": "difflib",
+    "id": "difflib",
+    "description": "Module difflib",
+    "classes": [
+      "Differ",
+      "HtmlDiff",
+      "SequenceMatcher"
+    ],
+    "functions": [
+      "IS_CHARACTER_JUNK",
+      "IS_LINE_JUNK",
+      "context_diff",
+      "diff_bytes",
+      "get_close_matches",
+      "ndiff",
+      "restore",
+      "unified_diff"
+    ]
+  }
+}

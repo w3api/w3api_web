@@ -1,0 +1,285 @@
+{
+  "xmlrpc.client/Binary/data": {
+    "id": "xmlrpc.client.Binary.data",
+    "name": "data",
+    "type": "attribute",
+    "parent": "Binary",
+    "signatures": [
+      "data"
+    ],
+    "signature_hash": "3a6eb0790f39ac87c94f3856b2dd2c5d110e6811602261a9a923d3bb23adc8b7",
+    "url": "https://docs.python.org/3/library/xmlrpc.client.html#module-xmlrpc.client#xmlrpc.client.Binary.data",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The binary data encapsulated by the Binary instance. The data is provided as a bytes object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The binary data encapsulated by the Binary instance. The data is provided as a bytes object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.441147",
+    "updatedDate": "2026-03-24T10:48:12.441148",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xmlrpc.client/DateTime": {
+    "id": "xmlrpc.client.DateTime",
+    "name": "DateTime",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class xmlrpc.client.DateTime"
+    ],
+    "signature_hash": "e38c92735acd8e6a6dbc8aca76b1b8fe3907d539badcfe86e67a10f0d21ceb22",
+    "url": "https://docs.python.org/3/library/xmlrpc.client.html#module-xmlrpc.client#xmlrpc.client.DateTime",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This class may be initialized with seconds since the epoch, a time tuple, an ISO 8601 time/date string, or a datetime.datetime instance. It has the following methods, supported mainly for internal use by the marshalling/unmarshalling code: decode(string)¶ Accept a string as the instance’s new time value. encode(out)¶ Write the XML-RPC encoding of this DateTime item to the out stream object. It also supports certain of Python’s built-in operators through rich comparison and __repr__() methods."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class may be initialized with seconds since the epoch, a time tuple, an ISO 8601 time/date string, or a datetime.datetime instance. It has the following methods, supported mainly for internal use...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.440804",
+    "updatedDate": "2026-03-24T10:48:12.440805",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "decode",
+      "encode"
+    ]
+  },
+  "xmlrpc.client/dumps": {
+    "id": "xmlrpc.client.dumps",
+    "name": "dumps",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "xmlrpc.client.dumps(params, methodname=None, methodresponse=None, encoding=None, allow_none=False)"
+    ],
+    "signature_hash": "bfd6399ff31c6b6aa2ca66c51a1a662eab1b1e0396921f0affae3b1b52d1efc3",
+    "url": "https://docs.python.org/3/library/xmlrpc.client.html#module-xmlrpc.client#xmlrpc.client.dumps",
+    "parameters": [
+      {
+        "name": "params",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "methodname",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "methodresponse",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "allow_none",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Convert params into an XML-RPC request, or into a response if methodresponse is true. params can be either a tuple of arguments or an instance of the Fault exception class. If methodresponse is true, only a single value can be returned, meaning that params must be of length 1. encoding, if supplied, is the encoding to use in the generated XML; the default is UTF-8. Python’s None value cannot be used in standard XML-RPC; to allow using it via an extension, provide a true value for allow_none."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convert params into an XML-RPC request, or into a response if methodresponse is true. params can be either a tuple of arguments or an instance of the Fault exception class. If methodresponse is true, ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.441332",
+    "updatedDate": "2026-03-24T10:48:12.441333",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xmlrpc.client/DateTime/decode": {
+    "id": "xmlrpc.client.DateTime.decode",
+    "name": "decode",
+    "type": "method",
+    "parent": "DateTime",
+    "signatures": [
+      "decode(string)"
+    ],
+    "signature_hash": "d6d4ae7817b7a4da1507e919ee25b54fe354362b354964c23a7eaebf753b1234",
+    "url": "https://docs.python.org/3/library/xmlrpc.client.html#module-xmlrpc.client#xmlrpc.client.DateTime.decode",
+    "parameters": [
+      {
+        "name": "string",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Accept a string as the instance’s new time value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Accept a string as the instance’s new time value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.441108",
+    "updatedDate": "2026-03-24T10:48:12.441109",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "xmlrpc.client/Binary/decode": {
+    "id": "xmlrpc.client.Binary.decode",
+    "name": "decode",
+    "type": "method",
+    "parent": "Binary",
+    "signatures": [
+      "decode(bytes)"
+    ],
+    "signature_hash": "6cfb94ae6503ee61e1f3d24f608a0b67ab260858879bf57cc48e7c7accb5737e",
+    "url": "https://docs.python.org/3/library/xmlrpc.client.html#module-xmlrpc.client#xmlrpc.client.Binary.decode",
+    "parameters": [
+      {
+        "name": "bytes",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Accept a base64 bytes object and decode it as the instance’s new data."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Accept a base64 bytes object and decode it as the instance’s new data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.441161",
+    "updatedDate": "2026-03-24T10:48:12.441162",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

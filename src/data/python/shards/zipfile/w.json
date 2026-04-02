@@ -1,0 +1,259 @@
+{
+  "zipfile/ZipFile/write": {
+    "id": "zipfile.ZipFile.write",
+    "name": "write",
+    "type": "method",
+    "parent": "ZipFile",
+    "signatures": [
+      "ZipFile.write(filename, arcname=None, compress_type=None, compresslevel=None)"
+    ],
+    "signature_hash": "595211616f084952f17b0d0f1c1de87bdef4c6dc09127213acdea3b779bb8d14",
+    "url": "https://docs.python.org/3/library/zipfile.html#module-zipfile#zipfile.ZipFile.write",
+    "parameters": [
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "arcname",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "compress_type",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "compresslevel",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Write the file named filename to the archive, giving it the archive name arcname (by default, this will be the same as filename, but without a drive letter and with leading path separators removed). If given, compress_type overrides the value given for the compression parameter to the constructor for the new entry. Similarly, compresslevel will override the constructor if given. The archive must be open with mode 'w', 'x' or 'a'. Note The ZIP file standard historically did not specify a metad..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Write the file named filename to the archive, giving it the archive name arcname (by default, this will be the same as filename, but without a drive letter and with leading path separators removed). I...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.442276",
+    "updatedDate": "2026-03-24T10:48:12.442277",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "zipfile/PyZipFile/writepy": {
+    "id": "zipfile.PyZipFile.writepy",
+    "name": "writepy",
+    "type": "method",
+    "parent": "PyZipFile",
+    "signatures": [
+      "writepy(pathname, basename='', filterfunc=None)"
+    ],
+    "signature_hash": "538b30bc192c6228a1ce9e783bd08c3b96bce57f9f7bfe8c52f69239053d0505",
+    "url": "https://docs.python.org/3/library/zipfile.html#module-zipfile#zipfile.PyZipFile.writepy",
+    "parameters": [
+      {
+        "name": "pathname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "basename",
+        "type": "",
+        "has_default": true,
+        "default_value": "''",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "filterfunc",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Search for files *.py and add the corresponding file to the archive. If the optimize parameter to PyZipFile was not given or -1, the corresponding file is a *.pyc file, compiling if necessary. If the optimize parameter to PyZipFile was 0, 1 or 2, only files with that optimization level (see compile()) are added to the archive, compiling if necessary. If pathname is a file, the filename must end with .py, and just the (corresponding *.pyc) file is added at the top level (no path information). ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Search for files *.py and add the corresponding file to the archive. If the optimize parameter to PyZipFile was not given or -1, the corresponding file is a *.pyc file, compiling if necessary. If the ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.442620",
+    "updatedDate": "2026-03-24T10:48:12.442620",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "zipfile/ZipFile/writestr": {
+    "id": "zipfile.ZipFile.writestr",
+    "name": "writestr",
+    "type": "method",
+    "parent": "ZipFile",
+    "signatures": [
+      "ZipFile.writestr(zinfo_or_arcname, data, compress_type=None, compresslevel=None)"
+    ],
+    "signature_hash": "0c56cb1cb95ee52323aedd3585da2aa362e2ee5f03d2e2362c3cb2d74595781f",
+    "url": "https://docs.python.org/3/library/zipfile.html#module-zipfile#zipfile.ZipFile.writestr",
+    "parameters": [
+      {
+        "name": "zinfo_or_arcname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "compress_type",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "compresslevel",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Write a file into the archive. The contents is data, which may be either a str or a bytes instance; if it is a str, it is encoded as UTF-8 first. zinfo_or_arcname is either the file name it will be given in the archive, or a ZipInfo instance. If it’s an instance, at least the filename, date, and time must be given. If it’s a name, the date and time is set to the current date and time. The archive must be opened with mode 'w', 'x' or 'a'. If given, compress_type overrides the value given for t..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Write a file into the archive. The contents is data, which may be either a str or a bytes instance; if it is a str, it is encoded as UTF-8 first. zinfo_or_arcname is either the file name it will be gi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.442303",
+    "updatedDate": "2026-03-24T10:48:12.442304",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

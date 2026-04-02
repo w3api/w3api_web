@@ -1,0 +1,415 @@
+{
+  "multiprocessing.sharedctypes/Barrier": {
+    "id": "multiprocessing.sharedctypes.Barrier",
+    "name": "Barrier",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.Barrier(parties[, action[, timeout]])"
+    ],
+    "signature_hash": "52dd8c4644181890fed2f700e7a63966b83a0e197d34f7630777fc20b9a9d2c4",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.Barrier",
+    "parameters": [
+      {
+        "name": "parties[, action[, timeout",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A barrier object: a clone of threading.Barrier. Instantiating this class may set the global start method. See Global start method for more details. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A barrier object: a clone of threading.Barrier. Instantiating this class may set the global start method. See Global start method for more details. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.285164",
+    "updatedDate": "2026-03-24T10:48:12.285165",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.sharedctypes/BaseManager": {
+    "id": "multiprocessing.sharedctypes.BaseManager",
+    "name": "BaseManager",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.managers.BaseManager(address=None, authkey=None, serializer='pickle', ctx=None, *, shutdown_timeout=1.0)"
+    ],
+    "signature_hash": "9d0bf4ebae4e1bd5b5e0c1a9b1b3949ce5816491265b0fc63244c55b3e976de8",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.managers.BaseManager",
+    "parameters": [
+      {
+        "name": "address",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "authkey",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "serializer",
+        "type": "",
+        "has_default": true,
+        "default_value": "'pickle'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "ctx",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "shutdown_timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "1.0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a BaseManager object. Once created one should call start() or get_server().serve_forever() to ensure that the manager object refers to a started manager process. address is the address on which the manager process listens for new connections. If address is None then an arbitrary one is chosen. authkey is the authentication key which will be used to check the validity of incoming connections to the server process. If authkey is None then current_process().authkey is used. Otherwise auth..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a BaseManager object. Once created one should call start() or get_server().serve_forever() to ensure that the manager object refers to a started manager process. address is the address on which...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.285948",
+    "updatedDate": "2026-03-24T10:48:12.285958",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "address"
+    ],
+    "methods": [
+      "connect",
+      "get_server",
+      "register",
+      "shutdown",
+      "start"
+    ]
+  },
+  "multiprocessing.sharedctypes/BaseProxy": {
+    "id": "multiprocessing.sharedctypes.BaseProxy",
+    "name": "BaseProxy",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.managers.BaseProxy"
+    ],
+    "signature_hash": "fbca0fa9459dffda2ec9261669bd1598a2a813e61d1b2fc16be85cc8953b20e3",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.managers.BaseProxy",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Proxy objects are instances of subclasses of BaseProxy. _callmethod(methodname[, args[, kwds]])¶ Call and return the result of a method of the proxy’s referent. If proxy is a proxy whose referent is obj then the expression proxy._callmethod(methodname, args, kwds) will evaluate the expression getattr(obj, methodname)(*args, **kwds) in the manager’s process. The returned value will be a copy of the result of the call or a proxy to a new shared object – see documentation for the method_to_typei..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Proxy objects are instances of subclasses of BaseProxy. _callmethod(methodname[, args[, kwds]])¶ Call and return the result of a method of the proxy’s referent. If proxy is a proxy whose referent is o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.286849",
+    "updatedDate": "2026-03-24T10:48:12.286850",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "__repr__",
+      "__str__",
+      "_callmethod",
+      "_getvalue"
+    ]
+  },
+  "multiprocessing.sharedctypes/BoundedSemaphore": {
+    "id": "multiprocessing.sharedctypes.BoundedSemaphore",
+    "name": "BoundedSemaphore",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.BoundedSemaphore([value])"
+    ],
+    "signature_hash": "e0a3d02145ae523c2cf6603c87216314c1ed163ce4e3a0137dc34bb95462a80d",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.BoundedSemaphore",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A bounded semaphore object: a close analog of threading.BoundedSemaphore. Instantiating this class may set the global start method. See Global start method for more details. A solitary difference from its close analog exists: its acquire method’s first argument is named block, as is consistent with Lock.acquire(). locked()¶ Return a boolean indicating whether this object is locked right now. Added in version 3.14. Note On macOS, this is indistinguishable from Semaphore because sem_getvalue() ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A bounded semaphore object: a close analog of threading.BoundedSemaphore. Instantiating this class may set the global start method. See Global start method for more details. A solitary difference from...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.285220",
+    "updatedDate": "2026-03-24T10:48:12.285221",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "locked"
+    ]
+  },
+  "multiprocessing.sharedctypes/BufferTooShort": {
+    "id": "multiprocessing.sharedctypes.BufferTooShort",
+    "name": "BufferTooShort",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception multiprocessing.BufferTooShort"
+    ],
+    "signature_hash": "d4243702e243a6241dd3ab4c7bfb23088c3b3d1e2d54008cf6548c3aa1142c5f",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.BufferTooShort",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Exception raised by Connection.recv_bytes_into() when the supplied buffer object is too small for the message read. If e is an instance of BufferTooShort then e.args[0] will give the message as a byte string."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Exception raised by Connection.recv_bytes_into() when the supplied buffer object is too small for the message read. If e is an instance of BufferTooShort then e.args[0] will give the message as a byte...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.282599",
+    "updatedDate": "2026-03-24T10:48:12.282600",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.sharedctypes/SyncManager/Barrier": {
+    "id": "multiprocessing.sharedctypes.SyncManager.Barrier",
+    "name": "Barrier",
+    "type": "method",
+    "parent": "SyncManager",
+    "signatures": [
+      "Barrier(parties[, action[, timeout]])"
+    ],
+    "signature_hash": "7d070e71ac9023b94685353d41605bdaebe8d985dc455ba1dbce828e62b9855c",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.managers.SyncManager.Barrier",
+    "parameters": [
+      {
+        "name": "parties[, action[, timeout",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a shared threading.Barrier object and return a proxy for it. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a shared threading.Barrier object and return a proxy for it. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.286224",
+    "updatedDate": "2026-03-24T10:48:12.286225",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.sharedctypes/SyncManager/BoundedSemaphore": {
+    "id": "multiprocessing.sharedctypes.SyncManager.BoundedSemaphore",
+    "name": "BoundedSemaphore",
+    "type": "method",
+    "parent": "SyncManager",
+    "signatures": [
+      "BoundedSemaphore([value])"
+    ],
+    "signature_hash": "d9702c7ae8f5f63918f1c14caf0fd135a9a6a4ca413f4d6b7671959c41065f3a",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.managers.SyncManager.BoundedSemaphore",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a shared threading.BoundedSemaphore object and return a proxy for it."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a shared threading.BoundedSemaphore object and return a proxy for it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.286325",
+    "updatedDate": "2026-03-24T10:48:12.286327",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

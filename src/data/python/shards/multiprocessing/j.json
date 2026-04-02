@@ -1,0 +1,219 @@
+{
+  "multiprocessing/JoinableQueue": {
+    "id": "multiprocessing.JoinableQueue",
+    "name": "JoinableQueue",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.JoinableQueue([maxsize])"
+    ],
+    "signature_hash": "6ad1c8c04019dac9fbeb04d4a3e1750e6fe0304652c74bccdee698034931671c",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.JoinableQueue",
+    "parameters": [
+      {
+        "name": "maxsize",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "JoinableQueue, a Queue subclass, is a queue which additionally has task_done() and join() methods. Instantiating this class may set the global start method. See Global start method for more details. task_done()¶ Indicate that a formerly enqueued task is complete. Used by queue consumers. For each get() used to fetch a task, a subsequent call to task_done() tells the queue that the processing on the task is complete. If a join() is currently blocking, it will resume when all items have been pr..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "JoinableQueue, a Queue subclass, is a queue which additionally has task_done() and join() methods. Instantiating this class may set the global start method. See Global start method for more details. t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.250031",
+    "updatedDate": "2026-03-24T10:48:12.250032",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "join",
+      "task_done"
+    ]
+  },
+  "multiprocessing/Process/join": {
+    "id": "multiprocessing.Process.join",
+    "name": "join",
+    "type": "method",
+    "parent": "Process",
+    "signatures": [
+      "join([timeout])"
+    ],
+    "signature_hash": "76d8e000d0fe1c61c1592f170bf697fafbbb9734a58eecb11c083e1fe65936b6",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.Process.join",
+    "parameters": [
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "If the optional argument timeout is None (the default), the method blocks until the process whose join() method is called terminates. If timeout is a positive number, it blocks at most timeout seconds. Note that the method returns None if its process terminates or if the method times out. Check the process’s exitcode to determine if it terminated. A process can be joined many times. A process cannot join itself because this would cause a deadlock. It is an error to attempt to join a process b..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If the optional argument timeout is None (the default), the method blocks until the process whose join() method is called terminates. If timeout is a positive number, it blocks at most timeout seconds...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.249207",
+    "updatedDate": "2026-03-24T10:48:12.249208",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing/JoinableQueue/join": {
+    "id": "multiprocessing.JoinableQueue.join",
+    "name": "join",
+    "type": "method",
+    "parent": "JoinableQueue",
+    "signatures": [
+      "join()"
+    ],
+    "signature_hash": "6c026ed2f44682ea014b8accb050aa67bd90b520bf706813e2c7f5ab3f50831d",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.JoinableQueue.join",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Block until all items in the queue have been gotten and processed. The count of unfinished tasks goes up whenever an item is added to the queue. The count goes down whenever a consumer calls task_done() to indicate that the item was retrieved and all work on it is complete. When the count of unfinished tasks drops to zero, join() unblocks."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Block until all items in the queue have been gotten and processed. The count of unfinished tasks goes up whenever an item is added to the queue. The count goes down whenever a consumer calls task_done...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.250084",
+    "updatedDate": "2026-03-24T10:48:12.250085",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing/Pool/join": {
+    "id": "multiprocessing.Pool.join",
+    "name": "join",
+    "type": "method",
+    "parent": "Pool",
+    "signatures": [
+      "join()"
+    ],
+    "signature_hash": "6c026ed2f44682ea014b8accb050aa67bd90b520bf706813e2c7f5ab3f50831d",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.pool.Pool.join",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Wait for the worker processes to exit. One must call close() or terminate() before using join()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Wait for the worker processes to exit. One must call close() or terminate() before using join().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.251962",
+    "updatedDate": "2026-03-24T10:48:12.251963",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing/Queue/join_thread": {
+    "id": "multiprocessing.Queue.join_thread",
+    "name": "join_thread",
+    "type": "method",
+    "parent": "Queue",
+    "signatures": [
+      "join_thread()"
+    ],
+    "signature_hash": "96f1ef233600907026e75de4709f699a955e193604995c678a2020fa00e6caa3",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing#multiprocessing.Queue.join_thread",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Join the background thread. This can only be used after close() has been called. It blocks until the background thread exits, ensuring that all data in the buffer has been flushed to the pipe. By default if a process is not the creator of the queue then on exit it will attempt to join the queue’s background thread. The process can call cancel_join_thread() to make join_thread() do nothing."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Join the background thread. This can only be used after close() has been called. It blocks until the background thread exits, ensuring that all data in the buffer has been flushed to the pipe. By defa...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.249865",
+    "updatedDate": "2026-03-24T10:48:12.249866",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

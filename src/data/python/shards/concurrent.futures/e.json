@@ -1,0 +1,95 @@
+{
+  "concurrent.futures/Executor": {
+    "id": "concurrent.futures.Executor",
+    "name": "Executor",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class concurrent.futures.Executor"
+    ],
+    "signature_hash": "c47a41a5b40175c63759870ac66c120c3911dccf6ccd2477485bfd675bb26353",
+    "url": "https://docs.python.org/3/library/concurrent.futures.html#module-concurrent.futures#concurrent.futures.Executor",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An abstract class that provides methods to execute calls asynchronously. It should not be used directly, but through its concrete subclasses. submit(fn, /, *args, **kwargs)¶ Schedules the callable, fn, to be executed as fn(*args, **kwargs) and returns a Future object representing the execution of the callable. with ThreadPoolExecutor(max_workers=1) as executor: future = executor.submit(pow, 323, 1235) print(future.result()) map(fn, *iterables, timeout=None, chunksize=1, buffersize=None)¶ Simi..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract class that provides methods to execute calls asynchronously. It should not be used directly, but through its concrete subclasses. submit(fn, /, *args, **kwargs)¶ Schedules the callable, fn...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.175187",
+    "updatedDate": "2026-03-24T10:48:12.175188",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "map",
+      "shutdown",
+      "submit"
+    ]
+  },
+  "concurrent.futures/Future/exception": {
+    "id": "concurrent.futures.Future.exception",
+    "name": "exception",
+    "type": "method",
+    "parent": "Future",
+    "signatures": [
+      "exception(timeout=None)"
+    ],
+    "signature_hash": "6485abd5200cefe5215608e7c24d4bb557f5bb1216f7f96b52f232368b8f0b41",
+    "url": "https://docs.python.org/3/library/concurrent.futures.html#module-concurrent.futures#concurrent.futures.Future.exception",
+    "parameters": [
+      {
+        "name": "timeout",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the exception raised by the call. If the call hasn’t yet completed then this method will wait up to timeout seconds. If the call hasn’t completed in timeout seconds, then a TimeoutError will be raised. timeout can be an int or float. If timeout is not specified or None, there is no limit to the wait time. If the future is cancelled before completing then CancelledError will be raised. If the call completed without raising, None is returned."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the exception raised by the call. If the call hasn’t yet completed then this method will wait up to timeout seconds. If the call hasn’t completed in timeout seconds, then a TimeoutError will be...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.175501",
+    "updatedDate": "2026-03-24T10:48:12.175502",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

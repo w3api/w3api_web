@@ -1,0 +1,345 @@
+{
+  "ssl/SSLError/reason": {
+    "id": "ssl.SSLError.reason",
+    "name": "reason",
+    "type": "attribute",
+    "parent": "SSLError",
+    "signatures": [
+      "reason"
+    ],
+    "signature_hash": "8fcfccf675b1f0bfd39dcbb13015052fe82bc51c003c165a410945c913dbb2be",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLError.reason",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A string mnemonic designating the reason this error occurred, for example CERTIFICATE_VERIFY_FAILED. The range of possible values depends on the OpenSSL version. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A string mnemonic designating the reason this error occurred, for example CERTIFICATE_VERIFY_FAILED. The range of possible values depends on the OpenSSL version. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340411",
+    "updatedDate": "2026-03-24T10:48:12.340411",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/RAND_add": {
+    "id": "ssl.RAND_add",
+    "name": "RAND_add",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ssl.RAND_add(bytes, entropy, /)"
+    ],
+    "signature_hash": "504b4d228ce333264d836cc648366618dd8bc98aeb87d07a477f761302924eb0",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.RAND_add",
+    "parameters": [
+      {
+        "name": "bytes",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "entropy",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Mix the given bytes into the SSL pseudo-random number generator. The parameter entropy (a float) is a lower bound on the entropy contained in string (so you can always use 0.0). See RFC 1750 for more information on sources of entropy. Changed in version 3.5: Writable bytes-like object is now accepted."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Mix the given bytes into the SSL pseudo-random number generator. The parameter entropy (a float) is a lower bound on the entropy contained in string (so you can always use 0.0). See RFC 1750 for more ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340631",
+    "updatedDate": "2026-03-24T10:48:12.340631",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/RAND_bytes": {
+    "id": "ssl.RAND_bytes",
+    "name": "RAND_bytes",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ssl.RAND_bytes(num, /)"
+    ],
+    "signature_hash": "ce39c8f2276d9b54815a991be16b70b00301a0b07bbfbfbc827597173c9fd250",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.RAND_bytes",
+    "parameters": [
+      {
+        "name": "num",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return num cryptographically strong pseudo-random bytes. Raises an SSLError if the PRNG has not been seeded with enough data or if the operation is not supported by the current RAND method. RAND_status() can be used to check the status of the PRNG and RAND_add() can be used to seed the PRNG. For almost all applications os.urandom() is preferable. Read the Wikipedia article, Cryptographically secure pseudorandom number generator (CSPRNG), to get the requirements of a cryptographically strong g..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return num cryptographically strong pseudo-random bytes. Raises an SSLError if the PRNG has not been seeded with enough data or if the operation is not supported by the current RAND method. RAND_statu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340597",
+    "updatedDate": "2026-03-24T10:48:12.340598",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/RAND_status": {
+    "id": "ssl.RAND_status",
+    "name": "RAND_status",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ssl.RAND_status()"
+    ],
+    "signature_hash": "38a421c24a733b0c397f02bf0e21bc6f224500825b915f0cd74bb27c9d548bc1",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.RAND_status",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the SSL pseudo-random number generator has been seeded with ‘enough’ randomness, and False otherwise. You can use ssl.RAND_egd() and ssl.RAND_add() to increase the randomness of the pseudo-random number generator."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the SSL pseudo-random number generator has been seeded with ‘enough’ randomness, and False otherwise. You can use ssl.RAND_egd() and ssl.RAND_add() to increase the randomness of the pse...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340612",
+    "updatedDate": "2026-03-24T10:48:12.340613",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/SSLSocket/read": {
+    "id": "ssl.SSLSocket.read",
+    "name": "read",
+    "type": "method",
+    "parent": "SSLSocket",
+    "signatures": [
+      "SSLSocket.read(len=1024, buffer=None)"
+    ],
+    "signature_hash": "702d377c357c885b01b846565b34070bc622fe65bf6e48b803cde42cb705ed25",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLSocket.read",
+    "parameters": [
+      {
+        "name": "len",
+        "type": "",
+        "has_default": true,
+        "default_value": "1024",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "buffer",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Read up to len bytes of data from the SSL socket and return the result as a bytes instance. If buffer is specified, then read into the buffer instead, and return the number of bytes read. Raise SSLWantReadError or SSLWantWriteError if the socket is non-blocking and the read would block. As at any time a re-negotiation is possible, a call to read() can also cause write operations. Changed in version 3.5: The socket timeout is no longer reset each time bytes are received or sent. The socket tim..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read up to len bytes of data from the SSL socket and return the result as a bytes instance. If buffer is specified, then read into the buffer instead, and return the number of bytes read. Raise SSLWan...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342495",
+    "updatedDate": "2026-03-24T10:48:12.342496",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.6",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/MemoryBIO/read": {
+    "id": "ssl.MemoryBIO.read",
+    "name": "read",
+    "type": "method",
+    "parent": "MemoryBIO",
+    "signatures": [
+      "read(n=-1, /)"
+    ],
+    "signature_hash": "386a8cff7dce9f1007163be492747a485b25a3c050b46f0c550d2d24278589cc",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.MemoryBIO.read",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Read up to n bytes from the memory buffer. If n is not specified or negative, all bytes are returned."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read up to n bytes from the memory buffer. If n is not specified or negative, all bytes are returned.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.343799",
+    "updatedDate": "2026-03-24T10:48:12.343800",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

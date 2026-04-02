@@ -1,0 +1,430 @@
+{
+  "io/TextIOBase": {
+    "id": "io.TextIOBase",
+    "name": "TextIOBase",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class io.TextIOBase"
+    ],
+    "signature_hash": "5a407d09f56ece39c618fa0b6e0f011a46e418b390937c1e1d508f338a9adaf0",
+    "url": "https://docs.python.org/3/library/io.html#module-io#io.TextIOBase",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Base class for text streams. This class provides a character and line based interface to stream I/O. It inherits from IOBase. TextIOBase provides or overrides these data attributes and methods in addition to those from IOBase: encoding¶ The name of the encoding used to decode the stream’s bytes into strings, and to encode strings into bytes. errors¶ The error setting of the decoder or encoder. newlines¶ A string, a tuple of strings, or None, indicating the newlines translated so far. Dependin..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Base class for text streams. This class provides a character and line based interface to stream I/O. It inherits from IOBase. TextIOBase provides or overrides these data attributes and methods in addi...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.235832",
+    "updatedDate": "2026-03-24T10:48:12.235833",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.1.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "buffer",
+      "encoding",
+      "errors",
+      "newlines"
+    ],
+    "methods": [
+      "detach",
+      "read",
+      "readline",
+      "seek",
+      "tell",
+      "write"
+    ]
+  },
+  "io/TextIOWrapper": {
+    "id": "io.TextIOWrapper",
+    "name": "TextIOWrapper",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class io.TextIOWrapper(buffer, encoding=None, errors=None, newline=None, line_buffering=False, write_through=False)"
+    ],
+    "signature_hash": "5406183a5433a056e249998ef37f96ae40908db908b5e1839f34a9e8384f0c79",
+    "url": "https://docs.python.org/3/library/io.html#module-io#io.TextIOWrapper",
+    "parameters": [
+      {
+        "name": "buffer",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "newline",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "line_buffering",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "write_through",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A buffered text stream providing higher-level access to a BufferedIOBase buffered binary stream. It inherits from TextIOBase. encoding gives the name of the encoding that the stream will be decoded or encoded with. In UTF-8 Mode, this defaults to UTF-8. Otherwise, it defaults to locale.getencoding(). encoding=\"locale\" can be used to specify the current locale’s encoding explicitly. See Text Encoding for more information. errors is an optional string that specifies how encoding and decoding er..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A buffered text stream providing higher-level access to a BufferedIOBase buffered binary stream. It inherits from TextIOBase. encoding gives the name of the encoding that the stream will be decoded or...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.236043",
+    "updatedDate": "2026-03-24T10:48:12.236044",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "line_buffering",
+      "write_through"
+    ],
+    "methods": [
+      "reconfigure",
+      "seek",
+      "tell"
+    ]
+  },
+  "io/text_encoding": {
+    "id": "io.text_encoding",
+    "name": "text_encoding",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "io.text_encoding(encoding, stacklevel=2, /)"
+    ],
+    "signature_hash": "46fbf8bdff6f9e0c8543452ffd415789e1bd702dd2253e140d0d3456a7b3a7b8",
+    "url": "https://docs.python.org/3/library/io.html#module-io#io.text_encoding",
+    "parameters": [
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "stacklevel",
+        "type": "",
+        "has_default": true,
+        "default_value": "2",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This is a helper function for callables that use open() or TextIOWrapper and have an encoding=None parameter. This function returns encoding if it is not None. Otherwise, it returns \"locale\" or \"utf-8\" depending on UTF-8 Mode. This function emits an EncodingWarning if sys.flags.warn_default_encoding is true and encoding is None. stacklevel specifies where the warning is emitted. For example: def read_text(path, encoding=None): encoding = io.text_encoding(encoding) # stacklevel=2 with open(pat..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This is a helper function for callables that use open() or TextIOWrapper and have an encoding=None parameter. This function returns encoding if it is not None. Otherwise, it returns \"locale\" or \"utf-8...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.235050",
+    "updatedDate": "2026-03-24T10:48:12.235051",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "io/IOBase/tell": {
+    "id": "io.IOBase.tell",
+    "name": "tell",
+    "type": "method",
+    "parent": "IOBase",
+    "signatures": [
+      "tell()"
+    ],
+    "signature_hash": "a3180da73752b08113b38c6773434fd03b9bb230423a4de6dcabcbcec5eda071",
+    "url": "https://docs.python.org/3/library/io.html#module-io#io.IOBase.tell",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the current stream position."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the current stream position.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.235247",
+    "updatedDate": "2026-03-24T10:48:12.235248",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "io/TextIOBase/tell": {
+    "id": "io.TextIOBase.tell",
+    "name": "tell",
+    "type": "method",
+    "parent": "TextIOBase",
+    "signatures": [
+      "tell()"
+    ],
+    "signature_hash": "a3180da73752b08113b38c6773434fd03b9bb230423a4de6dcabcbcec5eda071",
+    "url": "https://docs.python.org/3/library/io.html#module-io#io.TextIOBase.tell",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the current stream position as an opaque number. The number does not usually represent a number of bytes in the underlying binary storage."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the current stream position as an opaque number. The number does not usually represent a number of bytes in the underlying binary storage.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.235995",
+    "updatedDate": "2026-03-24T10:48:12.235996",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "io/TextIOWrapper/tell": {
+    "id": "io.TextIOWrapper.tell",
+    "name": "tell",
+    "type": "method",
+    "parent": "TextIOWrapper",
+    "signatures": [
+      "tell()"
+    ],
+    "signature_hash": "a3180da73752b08113b38c6773434fd03b9bb230423a4de6dcabcbcec5eda071",
+    "url": "https://docs.python.org/3/library/io.html#module-io#io.TextIOWrapper.tell",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the stream position as an opaque number. The return value of tell() can be given as input to seek(), to restore a previous stream position."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the stream position as an opaque number. The return value of tell() can be given as input to seek(), to restore a previous stream position.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.236177",
+    "updatedDate": "2026-03-24T10:48:12.236178",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "io/IOBase/truncate": {
+    "id": "io.IOBase.truncate",
+    "name": "truncate",
+    "type": "method",
+    "parent": "IOBase",
+    "signatures": [
+      "truncate(size=None, /)"
+    ],
+    "signature_hash": "c5792556a7540a59aff07a674a2d7bf105729d0371212985474dacdbbeb46421",
+    "url": "https://docs.python.org/3/library/io.html#module-io#io.IOBase.truncate",
+    "parameters": [
+      {
+        "name": "size",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Resize the stream to the given size in bytes (or the current position if size is not specified). The current stream position isn’t changed. This resizing can extend or reduce the current file size. In case of extension, the contents of the new file area depend on the platform (on most systems, additional bytes are zero-filled). The new file size is returned. Changed in version 3.5: Windows will now zero-fill files when extending."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Resize the stream to the given size in bytes (or the current position if size is not specified). The current stream position isn’t changed. This resizing can extend or reduce the current file size. In...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.235264",
+    "updatedDate": "2026-03-24T10:48:12.235265",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

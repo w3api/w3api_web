@@ -1,0 +1,384 @@
+{
+  "encodings.mbcs/CodecInfo/incrementalencoder": {
+    "id": "encodings.mbcs.CodecInfo.incrementalencoder",
+    "name": "incrementalencoder",
+    "type": "attribute",
+    "parent": "CodecInfo",
+    "signatures": [
+      "incrementalencoder"
+    ],
+    "signature_hash": "29a731d5e25be571609649cd86bdc4471fe9821fe51b26c50200cd474117c78a",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.CodecInfo.incrementalencoder",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Incremental encoder and decoder classes or factory functions. These have to provide the interface defined by the base classes IncrementalEncoder and IncrementalDecoder, respectively. Incremental codecs can maintain state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Incremental encoder and decoder classes or factory functions. These have to provide the interface defined by the base classes IncrementalEncoder and IncrementalDecoder, respectively. Incremental codec...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.213578",
+    "updatedDate": "2026-03-24T10:48:12.213579",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings.mbcs/IncrementalDecoder": {
+    "id": "encodings.mbcs.IncrementalDecoder",
+    "name": "IncrementalDecoder",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class codecs.IncrementalDecoder(errors='strict')"
+    ],
+    "signature_hash": "a78828fdfb78a0ce24648de5cac43dede39778376888dabd48c2e51a23c4eb7f",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.IncrementalDecoder",
+    "parameters": [
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "'strict'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructor for an IncrementalDecoder instance. All incremental decoders must provide this constructor interface. They are free to add additional keyword arguments, but only the ones defined here are used by the Python codec registry. The IncrementalDecoder may implement different error handling schemes by providing the errors keyword argument. See Error Handlers for possible values. The errors argument will be assigned to an attribute of the same name. Assigning to this attribute makes it po..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructor for an IncrementalDecoder instance. All incremental decoders must provide this constructor interface. They are free to add additional keyword arguments, but only the ones defined here are ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.214125",
+    "updatedDate": "2026-03-24T10:48:12.214126",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "decode",
+      "getstate",
+      "reset",
+      "setstate"
+    ]
+  },
+  "encodings.mbcs/IncrementalEncoder": {
+    "id": "encodings.mbcs.IncrementalEncoder",
+    "name": "IncrementalEncoder",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class codecs.IncrementalEncoder(errors='strict')"
+    ],
+    "signature_hash": "9846526ebb39dbb179a069b1c7c8cc3a6e208df744107181de71c42fdfa27eea",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.IncrementalEncoder",
+    "parameters": [
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "'strict'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructor for an IncrementalEncoder instance. All incremental encoders must provide this constructor interface. They are free to add additional keyword arguments, but only the ones defined here are used by the Python codec registry. The IncrementalEncoder may implement different error handling schemes by providing the errors keyword argument. See Error Handlers for possible values. The errors argument will be assigned to an attribute of the same name. Assigning to this attribute makes it po..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructor for an IncrementalEncoder instance. All incremental encoders must provide this constructor interface. They are free to add additional keyword arguments, but only the ones defined here are ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.214048",
+    "updatedDate": "2026-03-24T10:48:12.214049",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "encode",
+      "getstate",
+      "reset",
+      "setstate"
+    ]
+  },
+  "encodings.mbcs/ignore_errors": {
+    "id": "encodings.mbcs.ignore_errors",
+    "name": "ignore_errors",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.ignore_errors(exception)"
+    ],
+    "signature_hash": "18cbbb2115b8521aaf4345488f83be1f80f5030c4bf528a9c3acfa0cd23b37a9",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.ignore_errors",
+    "parameters": [
+      {
+        "name": "exception",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Implements the 'ignore' error handling. Malformed data is ignored; encoding or decoding is continued without further notice."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements the 'ignore' error handling. Malformed data is ignored; encoding or decoding is continued without further notice.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.213909",
+    "updatedDate": "2026-03-24T10:48:12.213910",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings.mbcs/iterdecode": {
+    "id": "encodings.mbcs.iterdecode",
+    "name": "iterdecode",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.iterdecode(iterator, encoding, errors='strict', **kwargs)"
+    ],
+    "signature_hash": "69fa8afc079ba9697ad72d7ccccd1b220f8d4ccc1077c6f20dffc64faa402b38",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.iterdecode",
+    "parameters": [
+      {
+        "name": "iterator",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "'strict'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Uses an incremental decoder to iteratively decode the input provided by iterator. iterator must yield bytes objects. This function is a generator. The errors argument (as well as any other keyword argument) is passed through to the incremental decoder. This function requires that the codec accept bytes objects to decode. Therefore it does not support text-to-text encoders such as rot_13, although rot_13 may be used equivalently with iterencode()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Uses an incremental decoder to iteratively decode the input provided by iterator. iterator must yield bytes objects. This function is a generator. The errors argument (as well as any other keyword arg...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.213797",
+    "updatedDate": "2026-03-24T10:48:12.213798",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings.mbcs/iterencode": {
+    "id": "encodings.mbcs.iterencode",
+    "name": "iterencode",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.iterencode(iterator, encoding, errors='strict', **kwargs)"
+    ],
+    "signature_hash": "2a3de8a09c9bc8df74a947b0169fdedcc3dbd5cd07df6ee555c58fa86570de76",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings.mbcs#codecs.iterencode",
+    "parameters": [
+      {
+        "name": "iterator",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "'strict'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Uses an incremental encoder to iteratively encode the input provided by iterator. iterator must yield str objects. This function is a generator. The errors argument (as well as any other keyword argument) is passed through to the incremental encoder. This function requires that the codec accept text str objects to encode. Therefore it does not support bytes-to-bytes encoders such as base64_codec."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Uses an incremental encoder to iteratively encode the input provided by iterator. iterator must yield str objects. This function is a generator. The errors argument (as well as any other keyword argum...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.213776",
+    "updatedDate": "2026-03-24T10:48:12.213777",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

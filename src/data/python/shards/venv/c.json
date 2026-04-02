@@ -1,0 +1,310 @@
+{
+  "venv/create": {
+    "id": "venv.create",
+    "name": "create",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "venv.create(env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None, upgrade_deps=False, *, scm_ignore_files=frozenset())"
+    ],
+    "signature_hash": "78c26d8339cd76aa0cdac72eb99e1e3e7a256287abf10b41d8bfd0acb6397cfd",
+    "url": "https://docs.python.org/3/library/venv.html#module-venv#venv.create",
+    "parameters": [
+      {
+        "name": "env_dir",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "system_site_packages",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "clear",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "with_pip",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "prompt",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "upgrade_deps",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "scm_ignore_files",
+        "type": "",
+        "has_default": true,
+        "default_value": "frozenset()",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create an EnvBuilder with the given keyword arguments, and call its create() method with the env_dir argument. Added in version 3.3. Changed in version 3.4: Added the with_pip parameter Changed in version 3.6: Added the prompt parameter Changed in version 3.9: Added the upgrade_deps parameter Changed in version 3.13: Added the scm_ignore_files parameter"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create an EnvBuilder with the given keyword arguments, and call its create() method with the env_dir argument. Added in version 3.3. Changed in version 3.4: Added the with_pip parameter Changed in ver...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.420633",
+    "updatedDate": "2026-03-24T10:48:12.420634",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "venv/EnvBuilder/create": {
+    "id": "venv.EnvBuilder.create",
+    "name": "create",
+    "type": "method",
+    "parent": "EnvBuilder",
+    "signatures": [
+      "create(env_dir)"
+    ],
+    "signature_hash": "67ec49cf9d52be7829fb47e8e7919d2dd1b0876f145ba7e54c356218f9fa6f31",
+    "url": "https://docs.python.org/3/library/venv.html#module-venv#venv.EnvBuilder.create",
+    "parameters": [
+      {
+        "name": "env_dir",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a virtual environment by specifying the target directory (absolute or relative to the current directory) which is to contain the virtual environment. The create method will either create the environment in the specified directory, or raise an appropriate exception. The create method of the EnvBuilder class illustrates the hooks available for subclass customization: def create(self, env_dir): \"\"\" Create a virtualized Python environment in a directory. env_dir is the target directory to ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a virtual environment by specifying the target directory (absolute or relative to the current directory) which is to contain the virtual environment. The create method will either create the en...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.420471",
+    "updatedDate": "2026-03-24T10:48:12.420472",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "venv/EnvBuilder/create_configuration": {
+    "id": "venv.EnvBuilder.create_configuration",
+    "name": "create_configuration",
+    "type": "method",
+    "parent": "EnvBuilder",
+    "signatures": [
+      "create_configuration(context)"
+    ],
+    "signature_hash": "fb187b49915955224a2af453b7d2618f9f9b8df389ff0189cef13e19bbc1fb3c",
+    "url": "https://docs.python.org/3/library/venv.html#module-venv#venv.EnvBuilder.create_configuration",
+    "parameters": [
+      {
+        "name": "context",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates the pyvenv.cfg configuration file in the environment."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates the pyvenv.cfg configuration file in the environment.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.420500",
+    "updatedDate": "2026-03-24T10:48:12.420501",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "venv/EnvBuilder/create_git_ignore_file": {
+    "id": "venv.EnvBuilder.create_git_ignore_file",
+    "name": "create_git_ignore_file",
+    "type": "method",
+    "parent": "EnvBuilder",
+    "signatures": [
+      "create_git_ignore_file(context)"
+    ],
+    "signature_hash": "d7d94d0239e6fb671851dde06d125484b60cb5295c1d5938346207e2b4e8dfca",
+    "url": "https://docs.python.org/3/library/venv.html#module-venv#venv.EnvBuilder.create_git_ignore_file",
+    "parameters": [
+      {
+        "name": "context",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates a .gitignore file within the virtual environment that causes the entire directory to be ignored by the Git source control manager. Added in version 3.13."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a .gitignore file within the virtual environment that causes the entire directory to be ignored by the Git source control manager. Added in version 3.13.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.420598",
+    "updatedDate": "2026-03-24T10:48:12.420599",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

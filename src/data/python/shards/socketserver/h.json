@@ -1,0 +1,177 @@
+{
+  "socketserver/BaseRequestHandler/handle": {
+    "id": "socketserver.BaseRequestHandler.handle",
+    "name": "handle",
+    "type": "method",
+    "parent": "BaseRequestHandler",
+    "signatures": [
+      "handle()"
+    ],
+    "signature_hash": "e22adcb3f6a632f74daa6c7246da9e5c9a0e1e336d06ffa01384748728988ce9",
+    "url": "https://docs.python.org/3/library/socketserver.html#module-socketserver#socketserver.BaseRequestHandler.handle",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This function must do all the work required to service a request. The default implementation does nothing. Several instance attributes are available to it; the request is available as request; the client address as client_address; and the server instance as server, in case it needs access to per-server information. The type of request is different for datagram or stream services. For stream services, request is a socket object; for datagram services, request is a pair of string and socket."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This function must do all the work required to service a request. The default implementation does nothing. Several instance attributes are available to it; the request is available as request; the cli...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338669",
+    "updatedDate": "2026-03-24T10:48:12.338670",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socketserver/BaseServer/handle_error": {
+    "id": "socketserver.BaseServer.handle_error",
+    "name": "handle_error",
+    "type": "method",
+    "parent": "BaseServer",
+    "signatures": [
+      "handle_error(request, client_address)"
+    ],
+    "signature_hash": "e240abe1f8cdd343f17b36b444cd9f4da224772ceba9ef281353e4e0fbaecc8e",
+    "url": "https://docs.python.org/3/library/socketserver.html#module-socketserver#socketserver.BaseServer.handle_error",
+    "parameters": [
+      {
+        "name": "request",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "client_address",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This function is called if the handle() method of a RequestHandlerClass instance raises an exception. The default action is to print the traceback to standard error and continue handling further requests. Changed in version 3.6: Now only called for exceptions derived from the Exception class."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This function is called if the handle() method of a RequestHandlerClass instance raises an exception. The default action is to print the traceback to standard error and continue handling further reque...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338539",
+    "updatedDate": "2026-03-24T10:48:12.338540",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socketserver/BaseServer/handle_request": {
+    "id": "socketserver.BaseServer.handle_request",
+    "name": "handle_request",
+    "type": "method",
+    "parent": "BaseServer",
+    "signatures": [
+      "handle_request()"
+    ],
+    "signature_hash": "a857f93cd0fddc024181bbc09ce48523f3f7ea9d3c15b12c42592bfe3028001a",
+    "url": "https://docs.python.org/3/library/socketserver.html#module-socketserver#socketserver.BaseServer.handle_request",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Process a single request. This function calls the following methods in order: get_request(), verify_request(), and process_request(). If the user-provided handle() method of the handler class raises an exception, the server’s handle_error() method will be called. If no request is received within timeout seconds, handle_timeout() will be called and handle_request() will return."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Process a single request. This function calls the following methods in order: get_request(), verify_request(), and process_request(). If the user-provided handle() method of the handler class raises a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338308",
+    "updatedDate": "2026-03-24T10:48:12.338309",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socketserver/BaseServer/handle_timeout": {
+    "id": "socketserver.BaseServer.handle_timeout",
+    "name": "handle_timeout",
+    "type": "method",
+    "parent": "BaseServer",
+    "signatures": [
+      "handle_timeout()"
+    ],
+    "signature_hash": "b59bbcd1d557b9a5199dc231f03b732c86b755b3095a34fab5a3105ec07f3848",
+    "url": "https://docs.python.org/3/library/socketserver.html#module-socketserver#socketserver.BaseServer.handle_timeout",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This function is called when the timeout attribute has been set to a value other than None and the timeout period has passed with no requests being received. The default action for forking servers is to collect the status of any child processes that have exited, while in threading servers this method does nothing."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This function is called when the timeout attribute has been set to a value other than None and the timeout period has passed with no requests being received. The default action for forking servers is ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338555",
+    "updatedDate": "2026-03-24T10:48:12.338556",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

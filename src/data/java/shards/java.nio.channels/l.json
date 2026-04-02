@@ -1,0 +1,249 @@
+{
+  "java.nio.channels/FileChannel/lock": {
+    "id": "java.nio.channels.FileChannel.lock",
+    "name": "lock",
+    "type": "method",
+    "parent": "FileChannel",
+    "signatures": [
+      "public final FileLock lock()",
+      "public abstract FileLock lock(long position, long size, boolean shared)"
+    ],
+    "signature_hash": "705d7b57f69179ae7ff4e03310699b3af0272a6746d6b77aab9c0ae99bd68d2a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/FileChannel.html",
+    "parameters": [
+      {
+        "name": "position",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "size",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "shared",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final FileLock",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClosedChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "AsynchronousCloseException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "FileLockInterruptionException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "OverlappingFileLockException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NonReadableChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NonWritableChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Acquires an exclusive lock on this channel's file."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Acquires an exclusive lock on this channel's file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.893244",
+    "updatedDate": "2026-03-24T10:48:13.893245",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.channels/AsynchronousFileChannel/lock": {
+    "id": "java.nio.channels.AsynchronousFileChannel.lock",
+    "name": "lock",
+    "type": "method",
+    "parent": "AsynchronousFileChannel",
+    "signatures": [
+      "public final Future<FileLock> lock()",
+      "public abstract Future<FileLock> lock(long position, long size, boolean shared)",
+      "public abstract<A> void lock(long position, long size, boolean shared, A attachment, CompletionHandler<FileLock, ? super A> handler)",
+      "public final<A> void lock(A attachment, CompletionHandler<FileLock, ? super A> handler)"
+    ],
+    "signature_hash": "26a1bd6fcc46055daa27edd0a816925298a7cbb939ce309846de20c98725d35f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html",
+    "parameters": [
+      {
+        "name": "position",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "size",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "shared",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "attachment",
+        "has_default": false,
+        "default_value": null,
+        "type": "A",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "CompletionHandler<FileLock",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "handler",
+        "has_default": false,
+        "default_value": null,
+        "type": "? super A>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final Future<FileLock>",
+    "exceptions": [
+      {
+        "name": "OverlappingFileLockException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NonReadableChannelException",
+        "package": "java.nio.channels"
+      },
+      {
+        "name": "NonWritableChannelException",
+        "package": "java.nio.channels"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Acquires an exclusive lock on this channel's file."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Acquires an exclusive lock on this channel's file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.895647",
+    "updatedDate": "2026-03-24T10:48:13.895648",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.7",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

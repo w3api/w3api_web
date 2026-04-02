@@ -1,0 +1,229 @@
+{
+  "re/Pattern/groupindex": {
+    "id": "re.Pattern.groupindex",
+    "name": "groupindex",
+    "type": "attribute",
+    "parent": "Pattern",
+    "signatures": [
+      "Pattern.groupindex"
+    ],
+    "signature_hash": "76dd83a24e26ab03a309b1bd5302e3bef0f6cdcd4b83413b5002cfc767941c61",
+    "url": "https://docs.python.org/3/library/re.html#module-re#re.Pattern.groupindex",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A dictionary mapping any symbolic group names defined by (?P<id>) to group numbers. The dictionary is empty if no symbolic groups were used in the pattern."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A dictionary mapping any symbolic group names defined by (?P<id>) to group numbers. The dictionary is empty if no symbolic groups were used in the pattern.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.312589",
+    "updatedDate": "2026-03-24T10:48:12.312590",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "re/Pattern/groups": {
+    "id": "re.Pattern.groups",
+    "name": "groups",
+    "type": "attribute",
+    "parent": "Pattern",
+    "signatures": [
+      "Pattern.groups"
+    ],
+    "signature_hash": "86ba46630dc7a427f4b9eac7766d955e2d800c60460c1ed4e0a25683ee2afd90",
+    "url": "https://docs.python.org/3/library/re.html#module-re#re.Pattern.groups",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The number of capturing groups in the pattern."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The number of capturing groups in the pattern.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.312575",
+    "updatedDate": "2026-03-24T10:48:12.312576",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "re/Match/group": {
+    "id": "re.Match.group",
+    "name": "group",
+    "type": "method",
+    "parent": "Match",
+    "signatures": [
+      "Match.group([group1, ...])"
+    ],
+    "signature_hash": "f8c94cc9b0bf820af08c61fa8720192562ad097ebb2da73b85fc08708f69a208",
+    "url": "https://docs.python.org/3/library/re.html#module-re#re.Match.group",
+    "parameters": [
+      {
+        "name": "group1, ...",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns one or more subgroups of the match. If there is a single argument, the result is a single string; if there are multiple arguments, the result is a tuple with one item per argument. Without arguments, group1 defaults to zero (the whole match is returned). If a groupN argument is zero, the corresponding return value is the entire matching string; if it is a positive integer, it is the string matching the corresponding parenthesized group. If a group number is negative or larger than the..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns one or more subgroups of the match. If there is a single argument, the result is a single string; if there are multiple arguments, the result is a tuple with one item per argument. Without arg...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.312652",
+    "updatedDate": "2026-03-24T10:48:12.312653",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "re/Match/groupdict": {
+    "id": "re.Match.groupdict",
+    "name": "groupdict",
+    "type": "method",
+    "parent": "Match",
+    "signatures": [
+      "Match.groupdict(default=None)"
+    ],
+    "signature_hash": "fc3f7c14107eb6dba47bd03ab6b9a697f99838ed924c6230f20b2bb3c69e7075",
+    "url": "https://docs.python.org/3/library/re.html#module-re#re.Match.groupdict",
+    "parameters": [
+      {
+        "name": "default",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a dictionary containing all the named subgroups of the match, keyed by the subgroup name. The default argument is used for groups that did not participate in the match; it defaults to None. For example: >>> m = re.match(r\"(?P<first_name>\\w+) (?P<last_name>\\w+)\", \"Malcolm Reynolds\") >>> m.groupdict() {'first_name': 'Malcolm', 'last_name': 'Reynolds'}"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a dictionary containing all the named subgroups of the match, keyed by the subgroup name. The default argument is used for groups that did not participate in the match; it defaults to None. For...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.312708",
+    "updatedDate": "2026-03-24T10:48:12.312709",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "re/Match/groups": {
+    "id": "re.Match.groups",
+    "name": "groups",
+    "type": "method",
+    "parent": "Match",
+    "signatures": [
+      "Match.groups(default=None)"
+    ],
+    "signature_hash": "b9d773f8da9bcf4b9f4cbc7c3fb42727e85efd3bce7186bcc7e4be523affef48",
+    "url": "https://docs.python.org/3/library/re.html#module-re#re.Match.groups",
+    "parameters": [
+      {
+        "name": "default",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a tuple containing all the subgroups of the match, from 1 up to however many groups are in the pattern. The default argument is used for groups that did not participate in the match; it defaults to None. For example: >>> m = re.match(r\"(\\d+)\\.(\\d+)\", \"24.1632\") >>> m.groups() ('24', '1632') If we make the decimal place and everything after it optional, not all groups might participate in the match. These groups will default to None unless the default argument is given: >>> m = re.match..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a tuple containing all the subgroups of the match, from 1 up to however many groups are in the pattern. The default argument is used for groups that did not participate in the match; it default...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.312690",
+    "updatedDate": "2026-03-24T10:48:12.312691",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,563 @@
+{
+  "ssl/SSLContext/check_hostname": {
+    "id": "ssl.SSLContext.check_hostname",
+    "name": "check_hostname",
+    "type": "attribute",
+    "parent": "SSLContext",
+    "signatures": [
+      "SSLContext.check_hostname"
+    ],
+    "signature_hash": "d2dfac9a480ffe769faf9ac6125a12575d65de04a52344ce34f0e70683594134",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLContext.check_hostname",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Whether to match the peer cert’s hostname in SSLSocket.do_handshake(). The context’s verify_mode must be set to CERT_OPTIONAL or CERT_REQUIRED, and you must pass server_hostname to wrap_socket() in order to match the hostname. Enabling hostname checking automatically sets verify_mode from CERT_NONE to CERT_REQUIRED. It cannot be set back to CERT_NONE as long as hostname checking is enabled. The PROTOCOL_TLS_CLIENT protocol enables hostname checking by default. With other protocols, hostname c..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Whether to match the peer cert’s hostname in SSLSocket.do_handshake(). The context’s verify_mode must be set to CERT_OPTIONAL or CERT_REQUIRED, and you must pass server_hostname to wrap_socket() in or...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.343412",
+    "updatedDate": "2026-03-24T10:48:12.343413",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/SSLSocket/context": {
+    "id": "ssl.SSLSocket.context",
+    "name": "context",
+    "type": "attribute",
+    "parent": "SSLSocket",
+    "signatures": [
+      "SSLSocket.context"
+    ],
+    "signature_hash": "1301b232d638106e58976441c0bc5fc8172e951724b364daddc9f735e1aaa930",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLSocket.context",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The SSLContext object this SSL socket is tied to. Added in version 3.2."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The SSLContext object this SSL socket is tied to. Added in version 3.2.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342823",
+    "updatedDate": "2026-03-24T10:48:12.342824",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/CERT_NONE": {
+    "id": "ssl.CERT_NONE",
+    "name": "CERT_NONE",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.CERT_NONE"
+    ],
+    "signature_hash": "35a9b131d1bb0c190e7f2cf6c52f1f244ec88eb1d46da94822c054ec538296e7",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.CERT_NONE",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Possible value for SSLContext.verify_mode. Except for PROTOCOL_TLS_CLIENT, it is the default mode. With client-side sockets, just about any cert is accepted. Validation errors, such as untrusted or expired cert, are ignored and do not abort the TLS/SSL handshake. In server mode, no certificate is requested from the client, so the client does not send any for client cert authentication. See the discussion of Security considerations below."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Possible value for SSLContext.verify_mode. Except for PROTOCOL_TLS_CLIENT, it is the default mode. With client-side sockets, just about any cert is accepted. Validation errors, such as untrusted or ex...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340791",
+    "updatedDate": "2026-03-24T10:48:12.340792",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/CERT_OPTIONAL": {
+    "id": "ssl.CERT_OPTIONAL",
+    "name": "CERT_OPTIONAL",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.CERT_OPTIONAL"
+    ],
+    "signature_hash": "fd69f836a9daadfdc356d3abf783d7c55498a6e52ca0940479591cc3891a04bb",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.CERT_OPTIONAL",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Possible value for SSLContext.verify_mode. In client mode, CERT_OPTIONAL has the same meaning as CERT_REQUIRED. It is recommended to use CERT_REQUIRED for client-side sockets instead. In server mode, a client certificate request is sent to the client. The client may either ignore the request or send a certificate in order perform TLS client cert authentication. If the client chooses to send a certificate, it is verified. Any verification error immediately aborts the TLS handshake. Use of this..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Possible value for SSLContext.verify_mode. In client mode, CERT_OPTIONAL has the same meaning as CERT_REQUIRED. It is recommended to use CERT_REQUIRED for client-side sockets instead. In server mode, ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340806",
+    "updatedDate": "2026-03-24T10:48:12.340807",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/CERT_REQUIRED": {
+    "id": "ssl.CERT_REQUIRED",
+    "name": "CERT_REQUIRED",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.CERT_REQUIRED"
+    ],
+    "signature_hash": "595675fc0a7961a6d1623e3790585ed560cd496e09d76029057c76abc0e2ac66",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.CERT_REQUIRED",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Possible value for SSLContext.verify_mode. In this mode, certificates are required from the other side of the socket connection; an SSLError will be raised if no certificate is provided, or if its validation fails. This mode is not sufficient to verify a certificate in client mode as it does not match hostnames. check_hostname must be enabled as well to verify the authenticity of a cert. PROTOCOL_TLS_CLIENT uses CERT_REQUIRED and enables check_hostname by default. With server socket, this mod..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Possible value for SSLContext.verify_mode. In this mode, certificates are required from the other side of the socket connection; an SSLError will be raised if no certificate is provided, or if its val...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340820",
+    "updatedDate": "2026-03-24T10:48:12.340821",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/CHANNEL_BINDING_TYPES": {
+    "id": "ssl.CHANNEL_BINDING_TYPES",
+    "name": "CHANNEL_BINDING_TYPES",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ssl.CHANNEL_BINDING_TYPES"
+    ],
+    "signature_hash": "5bafd8462cad7126053ff1d383fee36339935c13c87cc63aa4c2eef09ffd3f68",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.CHANNEL_BINDING_TYPES",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "List of supported TLS channel binding types. Strings in this list can be used as arguments to SSLSocket.get_channel_binding(). Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "List of supported TLS channel binding types. Strings in this list can be used as arguments to SSLSocket.get_channel_binding(). Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342150",
+    "updatedDate": "2026-03-24T10:48:12.342151",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/Purpose/CLIENT_AUTH": {
+    "id": "ssl.Purpose.CLIENT_AUTH",
+    "name": "CLIENT_AUTH",
+    "type": "constant",
+    "parent": "Purpose",
+    "signatures": [
+      "Purpose.CLIENT_AUTH"
+    ],
+    "signature_hash": "954ba9e5400a215656e77959f6831ca2172073a3bd05522e0e7d8d7ac4adbbfb",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.Purpose.CLIENT_AUTH",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Option for create_default_context() and SSLContext.load_default_certs(). This value indicates that the context may be used to authenticate web clients (therefore, it will be used to create server-side sockets). Added in version 3.4."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Option for create_default_context() and SSLContext.load_default_certs(). This value indicates that the context may be used to authenticate web clients (therefore, it will be used to create server-side...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342309",
+    "updatedDate": "2026-03-24T10:48:12.342310",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/CertificateError": {
+    "id": "ssl.CertificateError",
+    "name": "CertificateError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception ssl.CertificateError"
+    ],
+    "signature_hash": "41a2ce2830f3ac28c8a48a601c0ecef58bcd9862ba1c0771bc6a7a5a95e12aa9",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.CertificateError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An alias for SSLCertVerificationError. Changed in version 3.7: The exception is now an alias for SSLCertVerificationError."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An alias for SSLCertVerificationError. Changed in version 3.7: The exception is now an alias for SSLCertVerificationError.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340531",
+    "updatedDate": "2026-03-24T10:48:12.340532",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/cert_time_to_seconds": {
+    "id": "ssl.cert_time_to_seconds",
+    "name": "cert_time_to_seconds",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ssl.cert_time_to_seconds(cert_time)"
+    ],
+    "signature_hash": "bbd0dadaa2fdbf5b727a2d545bbd64d1b6c8ee432f14e8edc09b3a6c5d7309b3",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.cert_time_to_seconds",
+    "parameters": [
+      {
+        "name": "cert_time",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the time in seconds since the Epoch, given the cert_time string representing the “notBefore” or “notAfter” date from a certificate in \"%b %d %H:%M:%S %Y %Z\" strptime format (C locale). Here’s an example: >>> import ssl >>> timestamp = ssl.cert_time_to_seconds(\"Jan 5 09:34:43 2018 GMT\") >>> timestamp 1515144883 >>> from datetime import datetime >>> print(datetime.utcfromtimestamp(timestamp)) 2018-01-05 09:34:43 “notBefore” or “notAfter” dates must use GMT (RFC 5280). Changed in version ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the time in seconds since the Epoch, given the cert_time string representing the “notBefore” or “notAfter” date from a certificate in \"%b %d %H:%M:%S %Y %Z\" strptime format (C locale). Here’s a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340650",
+    "updatedDate": "2026-03-24T10:48:12.340651",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/create_default_context": {
+    "id": "ssl.create_default_context",
+    "name": "create_default_context",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ssl.create_default_context(purpose=Purpose.SERVER_AUTH, *, cafile=None, capath=None, cadata=None)"
+    ],
+    "signature_hash": "121f6950ba7647f7379e897e3a6f203da0859d7cd44f4e6c48aa1e2e60d6bd2f",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.create_default_context",
+    "parameters": [
+      {
+        "name": "purpose",
+        "type": "",
+        "has_default": true,
+        "default_value": "Purpose.SERVER_AUTH",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "cafile",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "capath",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "cadata",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a new SSLContext object with default settings for the given purpose. The settings are chosen by the ssl module, and usually represent a higher security level than when calling the SSLContext constructor directly. cafile, capath, cadata represent optional CA certificates to trust for certificate verification, as in SSLContext.load_verify_locations(). If all three are None, this function can choose to trust the system’s default CA certificates instead. The settings are: PROTOCOL_TLS_CLIE..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a new SSLContext object with default settings for the given purpose. The settings are chosen by the ssl module, and usually represent a higher security level than when calling the SSLContext co...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340370",
+    "updatedDate": "2026-03-24T10:48:12.340371",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/SSLContext/cert_store_stats": {
+    "id": "ssl.SSLContext.cert_store_stats",
+    "name": "cert_store_stats",
+    "type": "method",
+    "parent": "SSLContext",
+    "signatures": [
+      "SSLContext.cert_store_stats()"
+    ],
+    "signature_hash": "d3a9df57270e509af3c6621b29239e85f5343594b251f66192e278651642bbe9",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLContext.cert_store_stats",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Get statistics about quantities of loaded X.509 certificates, count of X.509 certificates flagged as CA certificates and certificate revocation lists as dictionary. Example for a context with one CA cert and one other cert: >>> context.cert_store_stats() {'crl': 0, 'x509_ca': 1, 'x509': 2} Added in version 3.4."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get statistics about quantities of loaded X.509 certificates, count of X.509 certificates flagged as CA certificates and certificate revocation lists as dictionary. Example for a context with one CA c...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342946",
+    "updatedDate": "2026-03-24T10:48:12.342947",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/SSLSocket/cipher": {
+    "id": "ssl.SSLSocket.cipher",
+    "name": "cipher",
+    "type": "method",
+    "parent": "SSLSocket",
+    "signatures": [
+      "SSLSocket.cipher()"
+    ],
+    "signature_hash": "0d24078c73ceb24f51d8a70cdf1adc499586d62b4f507c1b6e7f5f808bd8c9f7",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLSocket.cipher",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a three-value tuple containing the name of the cipher being used, the version of the SSL protocol that defines its use, and the number of secret bits being used. If no connection has been established, returns None."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a three-value tuple containing the name of the cipher being used, the version of the SSL protocol that defines its use, and the number of secret bits being used. If no connection has been esta...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342634",
+    "updatedDate": "2026-03-24T10:48:12.342635",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/SSLSocket/compression": {
+    "id": "ssl.SSLSocket.compression",
+    "name": "compression",
+    "type": "method",
+    "parent": "SSLSocket",
+    "signatures": [
+      "SSLSocket.compression()"
+    ],
+    "signature_hash": "54de352d639247ba3da9d5416783cdfd50a2b32b926c3b978bd9251df29279d2",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLSocket.compression",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the compression algorithm being used as a string, or None if the connection isn’t compressed. If the higher-level protocol supports its own compression mechanism, you can use OP_NO_COMPRESSION to disable SSL-level compression. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the compression algorithm being used as a string, or None if the connection isn’t compressed. If the higher-level protocol supports its own compression mechanism, you can use OP_NO_COMPRESSION ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342670",
+    "updatedDate": "2026-03-24T10:48:12.342671",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

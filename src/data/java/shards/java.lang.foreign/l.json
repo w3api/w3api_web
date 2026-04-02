@@ -1,0 +1,228 @@
+{
+  "java.lang.foreign/Linker": {
+    "id": "java.lang.foreign.Linker",
+    "name": "Linker",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Linker"
+    ],
+    "signature_hash": "3b4785249fd7cffe94224b6baf4d1f054b2315508f9f03831d69927828ea082e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/Linker.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822510",
+    "updatedDate": "2026-03-24T10:48:13.822511",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "canonicalLayouts",
+      "defaultLookup",
+      "downcallHandle",
+      "nativeLinker",
+      "upcallStub"
+    ]
+  },
+  "java.lang.foreign/SymbolLookup/libraryLookup": {
+    "id": "java.lang.foreign.SymbolLookup.libraryLookup",
+    "name": "libraryLookup",
+    "type": "method",
+    "parent": "SymbolLookup",
+    "signatures": [
+      "public static SymbolLookup libraryLookup(String name, Arena arena)",
+      "public static SymbolLookup libraryLookup(Path path, Arena arena)"
+    ],
+    "signature_hash": "276ee47a24bbb65853c0f3d633dc82bab8534e5795f569e009e28a1c5d6f1a74",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/SymbolLookup.html",
+    "parameters": [
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "arena",
+        "has_default": false,
+        "default_value": null,
+        "type": "Arena",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "path",
+        "has_default": false,
+        "default_value": null,
+        "type": "Path",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static SymbolLookup",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongThreadException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalCallerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Restricted.Loads a library with the given name (if not already loaded) and creates a symbol lookup for symbols in that library."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Restricted.Loads a library with the given name (if not already loaded) and creates a symbol lookup for symbols in that library.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822274",
+    "updatedDate": "2026-03-24T10:48:13.822275",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/load": {
+    "id": "java.lang.foreign.MemorySegment.load",
+    "name": "load",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public void load()"
+    ],
+    "signature_hash": "89ca8f67d6f447962f3bcc2e6a5b2d5cc0c437247b45e91190a5b97c356ae4c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongThreadException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Loads the contents of this mapped segment into physical memory."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Loads the contents of this mapped segment into physical memory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821553",
+    "updatedDate": "2026-03-24T10:48:13.821554",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/SymbolLookup/loaderLookup": {
+    "id": "java.lang.foreign.SymbolLookup.loaderLookup",
+    "name": "loaderLookup",
+    "type": "method",
+    "parent": "SymbolLookup",
+    "signatures": [
+      "public static SymbolLookup loaderLookup()"
+    ],
+    "signature_hash": "ad6336eef309163b3672d53ede565b70e0e584932f4a66f0ca87599deb54dbf9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/SymbolLookup.html",
+    "parameters": [],
+    "return_type": "static SymbolLookup",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a symbol lookup for symbols in the libraries associated with the caller's class loader."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a symbol lookup for symbols in the libraries associated with the caller's class loader.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822288",
+    "updatedDate": "2026-03-24T10:48:13.822289",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,529 @@
+{
+  "javax.management.remote/JMXConnectionNotification/CLOSED": {
+    "id": "javax.management.remote.JMXConnectionNotification.CLOSED",
+    "name": "CLOSED",
+    "type": "field",
+    "parent": "JMXConnectionNotification",
+    "signatures": [
+      "static final String CLOSED"
+    ],
+    "signature_hash": "c2cb3aa55ed1abe163951a3b33f238a8d6cc4e389d77c3435f26b7bc4c2f3f38",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html",
+    "parameters": [],
+    "return_type": "static final String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Notification type string for a connection-closed notification."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Notification type string for a connection-closed notification.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.293537",
+    "updatedDate": "2026-03-24T10:48:14.293538",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote/JMXConnector/CREDENTIALS": {
+    "id": "javax.management.remote.JMXConnector.CREDENTIALS",
+    "name": "CREDENTIALS",
+    "type": "field",
+    "parent": "JMXConnector",
+    "signatures": [
+      "static final String CREDENTIALS"
+    ],
+    "signature_hash": "e852e0c861856271fa53bc0a328fc55bbdd0074ffd3f7d95c97f67c822f239b1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/remote/JMXConnector.html",
+    "parameters": [],
+    "return_type": "static final String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Name of the attribute that specifies the credentials to send to the connector server during connection."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Name of the attribute that specifies the credentials to send to the connector server during connection.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.293468",
+    "updatedDate": "2026-03-24T10:48:14.293469",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote/JMXConnector/close": {
+    "id": "javax.management.remote.JMXConnector.close",
+    "name": "close",
+    "type": "method",
+    "parent": "JMXConnector",
+    "signatures": [
+      "public void close()"
+    ],
+    "signature_hash": "5df6118bc0e745d8b18e0a6a99b2e3f2ddba8140cbeb1423ce2df50a9f140574",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/remote/JMXConnector.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Closes the client connection to its server."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Closes the client connection to its server.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.293356",
+    "updatedDate": "2026-03-24T10:48:14.293357",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote/JMXConnectorFactory/connect": {
+    "id": "javax.management.remote.JMXConnectorFactory.connect",
+    "name": "connect",
+    "type": "method",
+    "parent": "JMXConnectorFactory",
+    "signatures": [
+      "public static JMXConnector connect(JMXServiceURL serviceURL)",
+      "public static JMXConnector connect(JMXServiceURL serviceURL, Map<String, ?> environment)"
+    ],
+    "signature_hash": "0b40b7368d15340034af2c7a099b2c1ec784ebe59def38a82b15830d07020199",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html",
+    "parameters": [
+      {
+        "name": "serviceURL",
+        "has_default": false,
+        "default_value": null,
+        "type": "JMXServiceURL",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "Map<String",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "environment",
+        "has_default": false,
+        "default_value": null,
+        "type": "?>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static JMXConnector",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "SecurityException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates a connection to the connector server at the given address."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a connection to the connector server at the given address.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.292850",
+    "updatedDate": "2026-03-24T10:48:14.292851",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote/JMXConnector/connect": {
+    "id": "javax.management.remote.JMXConnector.connect",
+    "name": "connect",
+    "type": "method",
+    "parent": "JMXConnector",
+    "signatures": [
+      "public void connect()",
+      "public void connect(Map<String, ?> env)"
+    ],
+    "signature_hash": "049042340eee0078a8d155d9f3e2178c42844687a851b32fdd85ed95836e110a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/remote/JMXConnector.html",
+    "parameters": [
+      {
+        "name": "Map<String",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "env",
+        "has_default": false,
+        "default_value": null,
+        "type": "?>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "SecurityException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Establishes the connection to the connector server."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Establishes the connection to the connector server.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.293379",
+    "updatedDate": "2026-03-24T10:48:14.293380",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote/JMXConnectorServer/connectionClosed": {
+    "id": "javax.management.remote.JMXConnectorServer.connectionClosed",
+    "name": "connectionClosed",
+    "type": "method",
+    "parent": "JMXConnectorServer",
+    "signatures": [
+      "public protected void connectionClosed(String connectionId, String message, Object userData)"
+    ],
+    "signature_hash": "55b037a50c51e2e417bed9543a60af884b60c35a6e860b67ba9903febdbf316e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/remote/JMXConnectorServer.html",
+    "parameters": [
+      {
+        "name": "connectionId",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "userData",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Called by a subclass when a client connection is closed normally."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called by a subclass when a client connection is closed normally.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.293113",
+    "updatedDate": "2026-03-24T10:48:14.293114",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote/JMXConnectorServer/connectionFailed": {
+    "id": "javax.management.remote.JMXConnectorServer.connectionFailed",
+    "name": "connectionFailed",
+    "type": "method",
+    "parent": "JMXConnectorServer",
+    "signatures": [
+      "public protected void connectionFailed(String connectionId, String message, Object userData)"
+    ],
+    "signature_hash": "3ac1d51c43d39bf0afd80010b7e8f8e0f8e29eb2ea1d90e3698824ddb38af2f2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/remote/JMXConnectorServer.html",
+    "parameters": [
+      {
+        "name": "connectionId",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "userData",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Called by a subclass when a client connection fails."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called by a subclass when a client connection fails.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.293134",
+    "updatedDate": "2026-03-24T10:48:14.293135",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.remote/JMXConnectorServer/connectionOpened": {
+    "id": "javax.management.remote.JMXConnectorServer.connectionOpened",
+    "name": "connectionOpened",
+    "type": "method",
+    "parent": "JMXConnectorServer",
+    "signatures": [
+      "public protected void connectionOpened(String connectionId, String message, Object userData)"
+    ],
+    "signature_hash": "34dc609f54930e73d8a54e11ccfb1b93264001231cacdc0b6a5a0d0d7bb33e01",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/remote/JMXConnectorServer.html",
+    "parameters": [
+      {
+        "name": "connectionId",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "userData",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Called by a subclass when a new client connection is opened."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called by a subclass when a new client connection is opened.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.293158",
+    "updatedDate": "2026-03-24T10:48:14.293159",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

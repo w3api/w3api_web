@@ -1,0 +1,201 @@
+{
+  "multiprocessing.sharedctypes/ThreadPool": {
+    "id": "multiprocessing.sharedctypes.ThreadPool",
+    "name": "ThreadPool",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class multiprocessing.pool.ThreadPool([processes[, initializer[, initargs]]])"
+    ],
+    "signature_hash": "80bfa021f96f7fcc832316adad060da8b2e72eb0c10ee3a245543c65d0e1450b",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.pool.ThreadPool",
+    "parameters": [
+      {
+        "name": "processes[, initializer[, initargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A thread pool object which controls a pool of worker threads to which jobs can be submitted. ThreadPool instances are fully interface compatible with Pool instances, and their resources must also be properly managed, either by using the pool as a context manager or by calling close() and terminate() manually. processes is the number of worker threads to use. If processes is None then the number returned by os.process_cpu_count() is used. If initializer is not None then each worker process wil..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A thread pool object which controls a pool of worker threads to which jobs can be submitted. ThreadPool instances are fully interface compatible with Pool instances, and their resources must also be p...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.287971",
+    "updatedDate": "2026-03-24T10:48:12.287972",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.sharedctypes/TimeoutError": {
+    "id": "multiprocessing.sharedctypes.TimeoutError",
+    "name": "TimeoutError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception multiprocessing.TimeoutError"
+    ],
+    "signature_hash": "4d35e1c65d8369a91a7b04aaa08cafbe78b954dfffd4ffc180985e5d703a6a3f",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.TimeoutError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Raised by methods with a timeout when the timeout expires."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Raised by methods with a timeout when the timeout expires.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.282622",
+    "updatedDate": "2026-03-24T10:48:12.282623",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.sharedctypes/JoinableQueue/task_done": {
+    "id": "multiprocessing.sharedctypes.JoinableQueue.task_done",
+    "name": "task_done",
+    "type": "method",
+    "parent": "JoinableQueue",
+    "signatures": [
+      "task_done()"
+    ],
+    "signature_hash": "ecc9ecd3a4821f96d8d19b6ee5bf0857d193f2cd263873dcceee66a1af295332",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.JoinableQueue.task_done",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Indicate that a formerly enqueued task is complete. Used by queue consumers. For each get() used to fetch a task, a subsequent call to task_done() tells the queue that the processing on the task is complete. If a join() is currently blocking, it will resume when all items have been processed (meaning that a task_done() call was received for every item that had been put() into the queue). Raises a ValueError if called more times than there were items placed in the queue."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicate that a formerly enqueued task is complete. Used by queue consumers. For each get() used to fetch a task, a subsequent call to task_done() tells the queue that the processing on the task is co...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.284064",
+    "updatedDate": "2026-03-24T10:48:12.284065",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.sharedctypes/Process/terminate": {
+    "id": "multiprocessing.sharedctypes.Process.terminate",
+    "name": "terminate",
+    "type": "method",
+    "parent": "Process",
+    "signatures": [
+      "terminate()"
+    ],
+    "signature_hash": "8bde93adf6babb1e9ccf109793e73ccfe54aa64ecc25fd217e359e50232d9ed7",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.Process.terminate",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Terminate the process. On POSIX this is done using the SIGTERM signal; on Windows TerminateProcess() is used. Note that exit handlers and finally clauses, etc., will not be executed. Note that descendant processes of the process will not be terminated – they will simply become orphaned. Warning If this method is used when the associated process is using a pipe or queue then the pipe or queue is liable to become corrupted and may become unusable by other process. Similarly, if the process has ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Terminate the process. On POSIX this is done using the SIGTERM signal; on Windows TerminateProcess() is used. Note that exit handlers and finally clauses, etc., will not be executed. Note that descend...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.282543",
+    "updatedDate": "2026-03-24T10:48:12.282544",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.sharedctypes/Pool/terminate": {
+    "id": "multiprocessing.sharedctypes.Pool.terminate",
+    "name": "terminate",
+    "type": "method",
+    "parent": "Pool",
+    "signatures": [
+      "terminate()"
+    ],
+    "signature_hash": "8bde93adf6babb1e9ccf109793e73ccfe54aa64ecc25fd217e359e50232d9ed7",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.sharedctypes#multiprocessing.pool.Pool.terminate",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Stops the worker processes immediately without completing outstanding work. When the pool object is garbage collected terminate() will be called immediately."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Stops the worker processes immediately without completing outstanding work. When the pool object is garbage collected terminate() will be called immediately.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.287490",
+    "updatedDate": "2026-03-24T10:48:12.287491",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

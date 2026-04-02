@@ -1,0 +1,265 @@
+{
+  "java.nio.charset/Charset/encode": {
+    "id": "java.nio.charset.Charset.encode",
+    "name": "encode",
+    "type": "method",
+    "parent": "Charset",
+    "signatures": [
+      "public final ByteBuffer encode(String str)",
+      "public final ByteBuffer encode(CharBuffer cb)"
+    ],
+    "signature_hash": "e5894fec5ceef82f31f929cc2d73d2f81061db45c86072e148332ec59660e413",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/Charset.html",
+    "parameters": [
+      {
+        "name": "str",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "cb",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharBuffer",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final ByteBuffer",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Convenience method that encodes a string into bytes in this charset."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convenience method that encodes a string into bytes in this charset.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.899063",
+    "updatedDate": "2026-03-24T10:48:13.899063",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.charset/CharsetEncoder/encode": {
+    "id": "java.nio.charset.CharsetEncoder.encode",
+    "name": "encode",
+    "type": "method",
+    "parent": "CharsetEncoder",
+    "signatures": [
+      "public final ByteBuffer encode(CharBuffer in)",
+      "public final CoderResult encode(CharBuffer in, ByteBuffer out, boolean endOfInput)"
+    ],
+    "signature_hash": "3e1ac17396ceb29e4d01989f6ff672e7c49009b9a6ced52e734580bd881c1823",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CharsetEncoder.html",
+    "parameters": [
+      {
+        "name": "in",
+        "has_default": false,
+        "default_value": null,
+        "type": "CharBuffer",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "out",
+        "has_default": false,
+        "default_value": null,
+        "type": "ByteBuffer",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "endOfInput",
+        "has_default": false,
+        "default_value": null,
+        "type": "boolean",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final ByteBuffer",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Convenience method that encodes the remaining content of a single input character buffer into a newly-allocated byte buffer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convenience method that encodes the remaining content of a single input character buffer into a newly-allocated byte buffer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.899708",
+    "updatedDate": "2026-03-24T10:48:13.899709",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.charset/CharsetEncoder/encodeLoop": {
+    "id": "java.nio.charset.CharsetEncoder.encodeLoop",
+    "name": "encodeLoop",
+    "type": "method",
+    "parent": "CharsetEncoder",
+    "signatures": [
+      "public protected abstract CoderResult encodeLoop(CharBuffer in, ByteBuffer out)"
+    ],
+    "signature_hash": "bc678ed8cf8e1d3da0ebb421d8a8a7724f8571ff38dda9050d9e31be46f15587",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CharsetEncoder.html",
+    "parameters": [
+      {
+        "name": "in",
+        "type": "CharBuffer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "out",
+        "type": "ByteBuffer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected abstract CoderResult",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Encodes one or more characters into one or more bytes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Encodes one or more characters into one or more bytes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.899726",
+    "updatedDate": "2026-03-24T10:48:13.899727",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.charset/Charset/equals": {
+    "id": "java.nio.charset.Charset.equals",
+    "name": "equals",
+    "type": "method",
+    "parent": "Charset",
+    "signatures": [
+      "public final boolean equals(Object ob)"
+    ],
+    "signature_hash": "a77dc3e4f5d117b55b7e0b3c2d9bc076213313f3799736f32172764cdced5cbe",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/Charset.html",
+    "parameters": [
+      {
+        "name": "ob",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Tells whether or not this object is equal to another."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tells whether or not this object is equal to another.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.899076",
+    "updatedDate": "2026-03-24T10:48:13.899077",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

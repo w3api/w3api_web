@@ -12,7 +12,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "A short, abbreviated description of the header cell's content provided as an alternative label to use for the header cell when referencing the cell in other contexts. Some user-agents, such as screen",
+    "description": {
+      "es": "El atributo `abbr` para el elemento `[th](/es/html/elements/th/)` se utilizaba para proporcionar una forma abreviada del contenido de la celda, lo cual podía ser útil para lectores de pantalla y otros agentes de usuario no visuales. Cuando estaba presente en un elemento `[th](/es/html/elements/th/)` (encabezado de tabla), ofrecía una alternativa más corta y concisa al texto completo del encabezado. Esto permitía a las tecnologías de asistencia anunciar una versión breve del encabezado, mejorando la experiencia del usuario al reducir la verbosidad, especialmente en tablas de datos complejas.\n\nSin embargo, el atributo `abbr` para `[th](/es/html/elements/th/)` ahora está obsoleto en `[html](/es/html/)`. Su funcionalidad ha sido en gran medida reemplazada por el atributo `[scope](/es/html/elements/th/#attr-scope)`, que define si la celda de encabezado se aplica a una fila, columna, grupo de filas o grupo de columnas. Aunque los navegadores antiguos aún podrían reconocer `abbr`, las prácticas modernas de desarrollo web recomiendan encarecidamente no usarlo. Para las tablas `[html](/es/html/)` actuales, céntrese en una estructura de tabla clara y el uso apropiado de los atributos `[scope](/es/html/elements/th/#attr-scope)` y `[headers](/es/html/attributes/headers/)` para garantizar una accesibilidad óptima. El uso de atributos obsoletos puede llevar a un comportamiento impredecible y a una compatibilidad reducida con futuras versiones de navegadores y tecnologías de asistencia.",
+      "en": "The `abbr` attribute for the `[th](/html/elements/th/)` element was used to provide an abbreviated form of the cell's content, which could be useful for screen readers and other non-visual user agents. When present on a `[th](/html/elements/th/)` (table header) element, it offered a shorter, more concise alternative to the full header text. This allowed assistive technologies to announce a brief version of the header, improving the user experience by reducing verbosity, especially in complex data tables.\n\nHowever, the `abbr` attribute for `[th](/html/elements/th/)` is now deprecated in `[html](/html/)`. Its functionality has largely been superseded by the `[scope](/html/elements/th/#attr-scope)` attribute, which defines whether the header cell applies to a row, column, or row group, or column group. While older browsers might still recognize `abbr`, modern web development practices strongly recommend against its use. For current `[html](/html/)` tables, focus on clear table structure and the appropriate use of `[scope](/html/elements/th/#attr-scope)` and `[headers](/html/attributes/headers/)` attributes to ensure optimal accessibility. Using deprecated attributes can lead to unpredictable behavior and reduced compatibility with future browser versions and assistive technologies."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -22,8 +25,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.646084",
-    "updatedDate": "2026-03-16T12:14:32.646085",
+    "createdDate": "2026-03-24T10:48:18.320341",
+    "updatedDate": "2026-03-24T10:48:18.320342",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -46,7 +49,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Comma-separatedcontent typesthe server accepts.Note:This attribute has been deprecated and should not be used.Instead, use theacceptattribute on<input type=file>elements.",
+    "description": {
+      "es": "El atributo `accept` en [`HTML`](/es/html/) se utiliza con elementos [`input`](/es/html/elements/input/) , específicamente cuando `type=\\",
+      "en": "The `accept` attribute in `[html](/html/)` is used with `[input](/html/elements/input/)` elements, specifically when `type=\"file\"`. Its primary purpose is to define a filter for the types of files that the user can pick from the file input dialog. This helps guide users to select appropriate files for upload, improving the user experience within `[form](/html/elements/form/)` submissions.\n\nFunctionally, the `accept` attribute takes a comma-separated list of unique file type specifiers. These can be file extensions (e.g., `.pdf`, `.doc`), a MIME type (e.g., `image/png`, `audio/mpeg`), or a generic type such as `image/*`, `audio/*`, or `video/*`. When the user clicks the file input, the operating system's file picker dialog will typically filter out files that do not match the specified types, making it easier for the user to find the correct files.\n\nWhile `accept` provides a client-side convenience and improves accessibility by indicating expected file types to screen readers and users, it is crucial to understand that it offers no security guarantees. Server-side validation of file types and content is absolutely essential to prevent malicious uploads and ensure data integrity. Browser support for `accept` is generally good, but the exact behavior of the file picker can vary slightly across different browsers and operating systems. Best practice dictates using `accept` for user experience while always implementing robust server-side checks."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -56,8 +62,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.647211",
-    "updatedDate": "2026-03-16T12:14:32.647212",
+    "createdDate": "2026-03-24T10:48:18.321620",
+    "updatedDate": "2026-03-24T10:48:18.321622",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -80,7 +86,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Valid for thefileinput type only, theacceptattribute defines which file types are selectable in afileupload control. See thefileinput type.",
+    "description": {
+      "es": "",
+      "en": "Valid for thefileinput type only, theacceptattribute defines which file types are selectable in afileupload control. See thefileinput type."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -90,8 +99,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.647400",
-    "updatedDate": "2026-03-16T12:14:32.647400",
+    "createdDate": "2026-03-24T10:48:18.321838",
+    "updatedDate": "2026-03-24T10:48:18.321839",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -114,18 +123,21 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Thecharacter encodingaccepted by the server.\nThe specification allows a single case-insensitive value of\"UTF-8\", reflecting the ubiquity of this encoding (historically multiple character encodings cou",
+    "description": {
+      "es": "",
+      "en": "Thecharacter encodingaccepted by the server. The specification allows a single case-insensitive value of\"UTF-8\", reflecting the ubiquity of this encoding (historically multiple character encodings cou"
+    },
     "example": "",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Thecharacter encodingaccepted by the server.\nThe specification allows a single case-insensitive value of\"UTF-8\", reflecting the ubiquity of this encoding (historically multiple character encodings cou",
+      "excerpt": "Thecharacter encodingaccepted by the server. The specification allows a single case-insensitive value of\"UTF-8\", reflecting the ubiquity of this encoding (historically multiple character encodings cou",
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.647239",
-    "updatedDate": "2026-03-16T12:14:32.647240",
+    "createdDate": "2026-03-24T10:48:18.321652",
+    "updatedDate": "2026-03-24T10:48:18.321653",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -148,7 +160,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Sets the alignment of the rule on the page. If no value is specified, the default value isleft.",
+    "description": {
+      "es": "",
+      "en": "Sets the alignment of the rule on the page. If no value is specified, the default value isleft."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -158,8 +173,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.639602",
-    "updatedDate": "2026-03-16T12:14:32.639603",
+    "createdDate": "2026-03-24T10:48:18.313279",
+    "updatedDate": "2026-03-24T10:48:18.313280",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -182,7 +197,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies on which side of the table the caption should be displayed. The possibleenumeratedvalues areleft,top,right, orbottom. Use thecaption-sideandtext-alignCSS properties instead, as this attribut",
+    "description": {
+      "es": "",
+      "en": "Specifies on which side of the table the caption should be displayed. The possibleenumeratedvalues areleft,top,right, orbottom. Use thecaption-sideandtext-alignCSS properties instead, as this attribut"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -192,8 +210,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.645192",
-    "updatedDate": "2026-03-16T12:14:32.645193",
+    "createdDate": "2026-03-24T10:48:18.319391",
+    "updatedDate": "2026-03-24T10:48:18.319392",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -216,7 +234,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies the horizontal alignment of the table within its parent element. The possibleenumeratedvalues areleft,center, andright. Use themargin-inline-startandmargin-inline-endCSS properties instead,",
+    "description": {
+      "es": "",
+      "en": "Specifies the horizontal alignment of the table within its parent element. The possibleenumeratedvalues areleft,center, andright. Use themargin-inline-startandmargin-inline-endCSS properties instead,"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -226,8 +247,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.645352",
-    "updatedDate": "2026-03-16T12:14:32.645353",
+    "createdDate": "2026-03-24T10:48:18.319554",
+    "updatedDate": "2026-03-24T10:48:18.319555",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -250,7 +271,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies the horizontal alignment of each body cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin",
+    "description": {
+      "es": "",
+      "en": "Specifies the horizontal alignment of each body cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -260,8 +284,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.645652",
-    "updatedDate": "2026-03-16T12:14:32.645653",
+    "createdDate": "2026-03-24T10:48:18.319867",
+    "updatedDate": "2026-03-24T10:48:18.319869",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -284,7 +308,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies the horizontal alignment of each foot cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin",
+    "description": {
+      "es": "",
+      "en": "Specifies the horizontal alignment of each foot cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -294,8 +321,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.645921",
-    "updatedDate": "2026-03-16T12:14:32.645923",
+    "createdDate": "2026-03-24T10:48:18.320166",
+    "updatedDate": "2026-03-24T10:48:18.320167",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -318,7 +345,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies the horizontal alignment of each head cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin",
+    "description": {
+      "es": "",
+      "en": "Specifies the horizontal alignment of each head cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -328,8 +358,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.646246",
-    "updatedDate": "2026-03-16T12:14:32.646247",
+    "createdDate": "2026-03-24T10:48:18.320511",
+    "updatedDate": "2026-03-24T10:48:18.320512",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -352,7 +382,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies the horizontal alignment of each row cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character define",
+    "description": {
+      "es": "",
+      "en": "Specifies the horizontal alignment of each row cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character define"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -362,8 +395,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.646423",
-    "updatedDate": "2026-03-16T12:14:32.646424",
+    "createdDate": "2026-03-24T10:48:18.320697",
+    "updatedDate": "2026-03-24T10:48:18.320698",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -386,7 +419,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies aPermissions Policyfor the<fencedframe>, which defines what features are available to the<fencedframe>based on the origin of the request. SeePermissions policies available to fenced framesfo",
+    "description": {
+      "es": "",
+      "en": "Specifies aPermissions Policyfor the<fencedframe>, which defines what features are available to the<fencedframe>based on the origin of the request. SeePermissions policies available to fenced framesfo"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -396,8 +432,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642225",
-    "updatedDate": "2026-03-16T12:14:32.642226",
+    "createdDate": "2026-03-24T10:48:18.316266",
+    "updatedDate": "2026-03-24T10:48:18.316267",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -420,7 +456,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies aPermissions Policyfor the<iframe>. The policy defines what features are available to the<iframe>(for example, access to the microphone, camera, battery, web-share, etc.) based on the origin",
+    "description": {
+      "es": "",
+      "en": "Specifies aPermissions Policyfor the<iframe>. The policy defines what features are available to the<iframe>(for example, access to the microphone, camera, battery, web-share, etc.) based on the origin"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -430,8 +469,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642344",
-    "updatedDate": "2026-03-16T12:14:32.642345",
+    "createdDate": "2026-03-24T10:48:18.316346",
+    "updatedDate": "2026-03-24T10:48:18.316347",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -454,7 +493,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Allows downloading files through an<a>or<area>element with thedownloadattribute, as well as through the navigation that leads to a download of a file. This works regardless of whether the user clicked",
+    "description": {
+      "es": "",
+      "en": "Allows downloading files through an<a>or<area>element with thedownloadattribute, as well as through the navigation that leads to a download of a file. This works regardless of whether the user clicked"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -464,8 +506,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642779",
-    "updatedDate": "2026-03-16T12:14:32.642780",
+    "createdDate": "2026-03-24T10:48:18.316897",
+    "updatedDate": "2026-03-24T10:48:18.316898",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -488,7 +530,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Allows the page to submit forms. If this keyword is not used, a form will be displayed as normal, but submitting it will not trigger input validation, send data to a web server, or close a dialog.",
+    "description": {
+      "es": "",
+      "en": "Allows the page to submit forms. If this keyword is not used, a form will be displayed as normal, but submitting it will not trigger input validation, send data to a web server, or close a dialog."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -498,8 +543,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642799",
-    "updatedDate": "2026-03-16T12:14:32.642800",
+    "createdDate": "2026-03-24T10:48:18.316919",
+    "updatedDate": "2026-03-24T10:48:18.316920",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -522,7 +567,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Allows the page to open modal windows byWindow.alert(),Window.confirm(),Window.print()andWindow.prompt(), while opening a<dialog>is allowed regardless of this keyword. It also allows the page to recei",
+    "description": {
+      "es": "",
+      "en": "Allows the page to open modal windows byWindow.alert(),Window.confirm(),Window.print()andWindow.prompt(), while opening a<dialog>is allowed regardless of this keyword. It also allows the page to recei"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -532,8 +580,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642820",
-    "updatedDate": "2026-03-16T12:14:32.642821",
+    "createdDate": "2026-03-24T10:48:18.316941",
+    "updatedDate": "2026-03-24T10:48:18.316942",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -556,7 +604,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Lets the resourcelock the screen orientation.",
+    "description": {
+      "es": "",
+      "en": "Lets the resourcelock the screen orientation."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -566,8 +617,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642841",
-    "updatedDate": "2026-03-16T12:14:32.642844",
+    "createdDate": "2026-03-24T10:48:18.317091",
+    "updatedDate": "2026-03-24T10:48:18.317092",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -590,7 +641,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Allows the page to use thePointer Lock API.",
+    "description": {
+      "es": "",
+      "en": "Allows the page to use thePointer Lock API."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -600,8 +654,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642862",
-    "updatedDate": "2026-03-16T12:14:32.642863",
+    "createdDate": "2026-03-24T10:48:18.317115",
+    "updatedDate": "2026-03-24T10:48:18.317116",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -624,7 +678,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Allows popups (created, for example, byWindow.open()ortarget=\"_blank\"). If this keyword is not used, such functionality will silently fail.",
+    "description": {
+      "es": "",
+      "en": "Allows popups (created, for example, byWindow.open()ortarget=\"_blank\"). If this keyword is not used, such functionality will silently fail."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -634,8 +691,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642882",
-    "updatedDate": "2026-03-16T12:14:32.642883",
+    "createdDate": "2026-03-24T10:48:18.317137",
+    "updatedDate": "2026-03-24T10:48:18.317138",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -658,7 +715,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Allows a sandboxed document to open a new browsing context without forcing the sandboxing flags upon it. This will allow, for example, a third-party advertisement to be safely sandboxed without forcin",
+    "description": {
+      "es": "",
+      "en": "Allows a sandboxed document to open a new browsing context without forcing the sandboxing flags upon it. This will allow, for example, a third-party advertisement to be safely sandboxed without forcin"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -668,8 +728,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642924",
-    "updatedDate": "2026-03-16T12:14:32.642925",
+    "createdDate": "2026-03-24T10:48:18.317171",
+    "updatedDate": "2026-03-24T10:48:18.317180",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -692,7 +752,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Allows embedders to have control over whether an iframe can start apresentation session.",
+    "description": {
+      "es": "",
+      "en": "Allows embedders to have control over whether an iframe can start apresentation session."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -702,8 +765,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642944",
-    "updatedDate": "2026-03-16T12:14:32.642945",
+    "createdDate": "2026-03-24T10:48:18.317216",
+    "updatedDate": "2026-03-24T10:48:18.317217",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -726,7 +789,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "If this token is not used, the resource is treated as being from a special origin that always fails thesame-origin policy(potentially preventing access todata storage/cookiesand some JavaScript APIs).",
+    "description": {
+      "es": "",
+      "en": "If this token is not used, the resource is treated as being from a special origin that always fails thesame-origin policy(potentially preventing access todata storage/cookiesand some JavaScript APIs)."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -736,8 +802,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642965",
-    "updatedDate": "2026-03-16T12:14:32.642966",
+    "createdDate": "2026-03-24T10:48:18.317239",
+    "updatedDate": "2026-03-24T10:48:18.317240",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -760,7 +826,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Allows the page to run scripts (but not create pop-up windows). If this keyword is not used, this operation is not allowed.",
+    "description": {
+      "es": "",
+      "en": "Allows the page to run scripts (but not create pop-up windows). If this keyword is not used, this operation is not allowed."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -770,8 +839,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642985",
-    "updatedDate": "2026-03-16T12:14:32.642986",
+    "createdDate": "2026-03-24T10:48:18.317299",
+    "updatedDate": "2026-03-24T10:48:18.317300",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -794,7 +863,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Allows a document loaded in the<iframe>to use theStorage Access APIto request access to unpartitioned cookies.",
+    "description": {
+      "es": "",
+      "en": "Allows a document loaded in the<iframe>to use theStorage Access APIto request access to unpartitioned cookies."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -804,8 +876,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.643006",
-    "updatedDate": "2026-03-16T12:14:32.643007",
+    "createdDate": "2026-03-24T10:48:18.317325",
+    "updatedDate": "2026-03-24T10:48:18.317326",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -828,7 +900,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Lets the resource navigate the top-level browsing context (the one named_top).",
+    "description": {
+      "es": "",
+      "en": "Lets the resource navigate the top-level browsing context (the one named_top)."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -838,8 +913,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.643026",
-    "updatedDate": "2026-03-16T12:14:32.643026",
+    "createdDate": "2026-03-24T10:48:18.317347",
+    "updatedDate": "2026-03-24T10:48:18.317348",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -862,7 +937,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Lets the resource navigate the top-level browsing context, but only if initiated by a user gesture.",
+    "description": {
+      "es": "",
+      "en": "Lets the resource navigate the top-level browsing context, but only if initiated by a user gesture."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -872,8 +950,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.643046",
-    "updatedDate": "2026-03-16T12:14:32.643047",
+    "createdDate": "2026-03-24T10:48:18.317369",
+    "updatedDate": "2026-03-24T10:48:18.317370",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -896,7 +974,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Allows navigations to non-httpprotocols built into browser orregistered by a website. This feature is also activated byallow-popupsorallow-top-navigationkeyword.",
+    "description": {
+      "es": "",
+      "en": "Allows navigations to non-httpprotocols built into browser orregistered by a website. This feature is also activated byallow-popupsorallow-top-navigationkeyword."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -906,8 +987,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.643067",
-    "updatedDate": "2026-03-16T12:14:32.643068",
+    "createdDate": "2026-03-24T10:48:18.317393",
+    "updatedDate": "2026-03-24T10:48:18.317394",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -930,7 +1011,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Set totrueif the<iframe>can activate fullscreen mode by calling therequestFullscreen()method.Note:This attribute is considered a legacy attribute and redefined asallow=\"fullscreen *\".",
+    "description": {
+      "es": "",
+      "en": "Set totrueif the<iframe>can activate fullscreen mode by calling therequestFullscreen()method.Note:This attribute is considered a legacy attribute and redefined asallow=\"fullscreen *\"."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -940,8 +1024,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642364",
-    "updatedDate": "2026-03-16T12:14:32.642365",
+    "createdDate": "2026-03-24T10:48:18.316383",
+    "updatedDate": "2026-03-24T10:48:18.316384",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -964,7 +1048,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Set totrueif a cross-origin<iframe>should be allowed to invoke thePayment Request API.Note:This attribute is considered a legacy attribute and redefined asallow=\"payment *\".",
+    "description": {
+      "es": "",
+      "en": "Set totrueif a cross-origin<iframe>should be allowed to invoke thePayment Request API.Note:This attribute is considered a legacy attribute and redefined asallow=\"payment *\"."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -974,8 +1061,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.642383",
-    "updatedDate": "2026-03-16T12:14:32.642384",
+    "createdDate": "2026-03-24T10:48:18.316405",
+    "updatedDate": "2026-03-24T10:48:18.316406",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -998,7 +1085,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Valid for thecolorinput type only, thealphaattribute provides the end user with the ability to set the opacity of the color being selected.",
+    "description": {
+      "es": "",
+      "en": "Valid for thecolorinput type only, thealphaattribute provides the end user with the ability to set the opacity of the color being selected."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1008,8 +1098,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.647426",
-    "updatedDate": "2026-03-16T12:14:32.647427",
+    "createdDate": "2026-03-24T10:48:18.321866",
+    "updatedDate": "2026-03-24T10:48:18.321867",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1032,18 +1122,21 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "A text string alternative to display on browsers that do not display images.\nThe text should be phrased so that it presents the user with the same kind of choice as the image would offer when displaye",
+    "description": {
+      "es": "",
+      "en": "A text string alternative to display on browsers that do not display images. The text should be phrased so that it presents the user with the same kind of choice as the image would offer when displaye"
+    },
     "example": "",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A text string alternative to display on browsers that do not display images.\nThe text should be phrased so that it presents the user with the same kind of choice as the image would offer when displaye",
+      "excerpt": "A text string alternative to display on browsers that do not display images. The text should be phrased so that it presents the user with the same kind of choice as the image would offer when displaye",
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.640652",
-    "updatedDate": "2026-03-16T12:14:32.640653",
+    "createdDate": "2026-03-24T10:48:18.314551",
+    "updatedDate": "2026-03-24T10:48:18.314552",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1066,7 +1159,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Defines text that can replace the image in the page.Note:Browsers do not always display images. There are a number of situations in which a browser might not display images, such as:Non-visual browser",
+    "description": {
+      "es": "",
+      "en": "Defines text that can replace the image in the page.Note:Browsers do not always display images. There are a number of situations in which a browser might not display images, such as:Non-visual browser"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1076,8 +1172,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.641075",
-    "updatedDate": "2026-03-16T12:14:32.641076",
+    "createdDate": "2026-03-24T10:48:18.315025",
+    "updatedDate": "2026-03-24T10:48:18.315026",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1100,7 +1196,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Valid for theimagebutton only, thealtattribute provides alternative text for the image, displaying the value of the attribute if the imagesrcis missing or otherwise fails to load. See theimageinput ty",
+    "description": {
+      "es": "",
+      "en": "Valid for theimagebutton only, thealtattribute provides alternative text for the image, displaying the value of the attribute if the imagesrcis missing or otherwise fails to load. See theimageinput ty"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1110,8 +1209,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.647453",
-    "updatedDate": "2026-03-16T12:14:32.647454",
+    "createdDate": "2026-03-24T10:48:18.321896",
+    "updatedDate": "2026-03-24T10:48:18.321897",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1134,18 +1233,21 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "A cross-origin request (i.e., with anOriginHTTP header) is performed, but no credential is sent (i.e., no cookie, X.509 certificate, or HTTP Basic authentication).\nIf the server does not give credenti",
+    "description": {
+      "es": "",
+      "en": "A cross-origin request (i.e., with anOriginHTTP header) is performed, but no credential is sent (i.e., no cookie, X.509 certificate, or HTTP Basic authentication). If the server does not give credenti"
+    },
     "example": "",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A cross-origin request (i.e., with anOriginHTTP header) is performed, but no credential is sent (i.e., no cookie, X.509 certificate, or HTTP Basic authentication).\nIf the server does not give credenti",
+      "excerpt": "A cross-origin request (i.e., with anOriginHTTP header) is performed, but no credential is sent (i.e., no cookie, X.509 certificate, or HTTP Basic authentication). If the server does not give credenti",
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.638065",
-    "updatedDate": "2026-03-16T12:14:32.638066",
+    "createdDate": "2026-03-24T10:48:18.311511",
+    "updatedDate": "2026-03-24T10:48:18.311512",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1168,7 +1270,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Sends a cross-origin request without a credential. In other words, it sends theOrigin:HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not g",
+    "description": {
+      "es": "",
+      "en": "Sends a cross-origin request without a credential. In other words, it sends theOrigin:HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not g"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1178,8 +1283,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.640937",
-    "updatedDate": "2026-03-16T12:14:32.640938",
+    "createdDate": "2026-03-24T10:48:18.314859",
+    "updatedDate": "2026-03-24T10:48:18.314860",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1202,7 +1307,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "A CORS request is sent with credentials omitted (that is, nocookies,X.509 certificates, orAuthorizationrequest header).",
+    "description": {
+      "es": "",
+      "en": "A CORS request is sent with credentials omitted (that is, nocookies,X.509 certificates, orAuthorizationrequest header)."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1212,8 +1320,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.641131",
-    "updatedDate": "2026-03-16T12:14:32.641131",
+    "createdDate": "2026-03-24T10:48:18.315079",
+    "updatedDate": "2026-03-24T10:48:18.315080",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1236,7 +1344,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Sends a cross-origin request without a credential. In other words, it sends theOrigin:HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not g",
+    "description": {
+      "es": "",
+      "en": "Sends a cross-origin request without a credential. In other words, it sends theOrigin:HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not g"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1246,8 +1357,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.641883",
-    "updatedDate": "2026-03-16T12:14:32.641883",
+    "createdDate": "2026-03-24T10:48:18.315899",
+    "updatedDate": "2026-03-24T10:48:18.315900",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1270,7 +1381,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "The dialog can be dismissed using any of the three methods.",
+    "description": {
+      "es": "",
+      "en": "The dialog can be dismissed using any of the three methods."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1280,8 +1394,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.650461",
-    "updatedDate": "2026-03-16T12:14:32.650463",
+    "createdDate": "2026-03-24T10:48:18.325657",
+    "updatedDate": "2026-03-24T10:48:18.325658",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1304,7 +1418,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "A space-separated list of URIs for archives of resources for the object.",
+    "description": {
+      "es": "",
+      "en": "A space-separated list of URIs for archives of resources for the object."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1314,8 +1431,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.643170",
-    "updatedDate": "2026-03-16T12:14:32.643170",
+    "createdDate": "2026-03-24T10:48:18.317518",
+    "updatedDate": "2026-03-24T10:48:18.317519",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1338,18 +1455,21 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This attribute is required whenrel=\"preload\"has been set on the<link>element, optional whenrel=\"modulepreload\"has been set, and otherwise should not be used.\nIt specifies the type of content being loa",
+    "description": {
+      "es": "",
+      "en": "This attribute is required whenrel=\"preload\"has been set on the<link>element, optional whenrel=\"modulepreload\"has been set, and otherwise should not be used. It specifies the type of content being loa"
+    },
     "example": "",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This attribute is required whenrel=\"preload\"has been set on the<link>element, optional whenrel=\"modulepreload\"has been set, and otherwise should not be used.\nIt specifies the type of content being loa",
+      "excerpt": "This attribute is required whenrel=\"preload\"has been set on the<link>element, optional whenrel=\"modulepreload\"has been set, and otherwise should not be used. It specifies the type of content being loa",
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.638029",
-    "updatedDate": "2026-03-16T12:14:32.638030",
+    "createdDate": "2026-03-24T10:48:18.311475",
+    "updatedDate": "2026-03-24T10:48:18.311476",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1372,7 +1492,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Decode the image asynchronously, after rendering and presenting the other DOM content.",
+    "description": {
+      "es": "",
+      "en": "Decode the image asynchronously, after rendering and presenting the other DOM content."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1382,8 +1505,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.641221",
-    "updatedDate": "2026-03-16T12:14:32.641222",
+    "createdDate": "2026-03-24T10:48:18.315162",
+    "updatedDate": "2026-03-24T10:48:18.315163",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1406,7 +1529,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "For classic scripts, if theasyncattribute is present, then the classic script will be fetched in parallel to parsing and evaluated as soon as it is available.Formodule scripts, if theasyncattribute is",
+    "description": {
+      "es": "",
+      "en": "For classic scripts, if theasyncattribute is present, then the classic script will be fetched in parallel to parsing and evaluated as soon as it is available.Formodule scripts, if theasyncattribute is"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1416,8 +1542,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.644070",
-    "updatedDate": "2026-03-16T12:14:32.644076",
+    "createdDate": "2026-03-24T10:48:18.318507",
+    "updatedDate": "2026-03-24T10:48:18.318508",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1440,7 +1566,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader. On the server-side this is used to trigger sending anAttribution-Reporting-Register-Sourceheader in the response, to",
+    "description": {
+      "es": "",
+      "en": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader. On the server-side this is used to trigger sending anAttribution-Reporting-Register-Sourceheader in the response, to"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1450,8 +1579,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.639960",
-    "updatedDate": "2026-03-16T12:14:32.639961",
+    "createdDate": "2026-03-24T10:48:18.313757",
+    "updatedDate": "2026-03-24T10:48:18.313758",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1474,7 +1603,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader along with the image request.On the server-side this is used to trigger sending anAttribution-Reporting-Register-Sour",
+    "description": {
+      "es": "",
+      "en": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader along with the image request.On the server-side this is used to trigger sending anAttribution-Reporting-Register-Sour"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1484,8 +1616,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.641092",
-    "updatedDate": "2026-03-16T12:14:32.641093",
+    "createdDate": "2026-03-24T10:48:18.315043",
+    "updatedDate": "2026-03-24T10:48:18.315044",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1508,7 +1640,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader along with the script resource request. On the server-side this is used to trigger sending anAttribution-Reporting-Re",
+    "description": {
+      "es": "",
+      "en": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader along with the script resource request. On the server-side this is used to trigger sending anAttribution-Reporting-Re"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1518,8 +1653,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.644417",
-    "updatedDate": "2026-03-16T12:14:32.644419",
+    "createdDate": "2026-03-24T10:48:18.318534",
+    "updatedDate": "2026-03-24T10:48:18.318535",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1542,18 +1677,21 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Don't set a preference for the fetch priority.\nThis is the default.\nIt is used if no value or an invalid value is set.",
+    "description": {
+      "es": "",
+      "en": "Don't set a preference for the fetch priority. This is the default. It is used if no value or an invalid value is set."
+    },
     "example": "",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Don't set a preference for the fetch priority.\nThis is the default.\nIt is used if no value or an invalid value is set.",
+      "excerpt": "Don't set a preference for the fetch priority. This is the default. It is used if no value or an invalid value is set.",
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.638132",
-    "updatedDate": "2026-03-16T12:14:32.638133",
+    "createdDate": "2026-03-24T10:48:18.311599",
+    "updatedDate": "2026-03-24T10:48:18.311600",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1576,7 +1714,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "No preference for the decoding mode; the browser decides what is best for the user. This is the default value.",
+    "description": {
+      "es": "",
+      "en": "No preference for the decoding mode; the browser decides what is best for the user. This is the default value."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1586,8 +1727,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.641237",
-    "updatedDate": "2026-03-16T12:14:32.641238",
+    "createdDate": "2026-03-24T10:48:18.315180",
+    "updatedDate": "2026-03-24T10:48:18.315180",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1610,18 +1751,21 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Don't set a preference for the fetch priority.\nThis is the default.\nIt is used if no value or an invalid value is set.",
+    "description": {
+      "es": "",
+      "en": "Don't set a preference for the fetch priority. This is the default. It is used if no value or an invalid value is set."
+    },
     "example": "",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Don't set a preference for the fetch priority.\nThis is the default.\nIt is used if no value or an invalid value is set.",
+      "excerpt": "Don't set a preference for the fetch priority. This is the default. It is used if no value or an invalid value is set.",
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.644706",
-    "updatedDate": "2026-03-16T12:14:32.644707",
+    "createdDate": "2026-03-24T10:48:18.318730",
+    "updatedDate": "2026-03-24T10:48:18.318731",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1644,7 +1788,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Controls whether inputted text is automatically capitalized and, if so, in what manner. See theautocapitalizeglobal attribute page for more information.",
+    "description": {
+      "es": "",
+      "en": "Controls whether inputted text is automatically capitalized and, if so, in what manner. See theautocapitalizeglobal attribute page for more information."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1654,8 +1801,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.647265",
-    "updatedDate": "2026-03-16T12:14:32.647266",
+    "createdDate": "2026-03-24T10:48:18.321682",
+    "updatedDate": "2026-03-24T10:48:18.321683",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1678,7 +1825,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Controls whether inputted text is automatically capitalized and, if so, in what manner. See theautocapitalizeglobal attribute page for more information.",
+    "description": {
+      "es": "",
+      "en": "Controls whether inputted text is automatically capitalized and, if so, in what manner. See theautocapitalizeglobal attribute page for more information."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1688,8 +1838,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.647480",
-    "updatedDate": "2026-03-16T12:14:32.647481",
+    "createdDate": "2026-03-24T10:48:18.321925",
+    "updatedDate": "2026-03-24T10:48:18.321926",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1712,7 +1862,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Controls whether inputted text is automatically capitalized and, if so, in what manner.",
+    "description": {
+      "es": "",
+      "en": "Controls whether inputted text is automatically capitalized and, if so, in what manner."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1722,8 +1875,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.649678",
-    "updatedDate": "2026-03-16T12:14:32.649679",
+    "createdDate": "2026-03-24T10:48:18.324394",
+    "updatedDate": "2026-03-24T10:48:18.324395",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1746,7 +1899,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Indicates whether input elements can by default have their values automatically completed by the browser.autocompleteattributes on form elements override it on<form>. Possible values:off: The browser",
+    "description": {
+      "es": "",
+      "en": "Indicates whether input elements can by default have their values automatically completed by the browser.autocompleteattributes on form elements override it on<form>. Possible values:off: The browser"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1756,8 +1912,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.647292",
-    "updatedDate": "2026-03-16T12:14:32.647293",
+    "createdDate": "2026-03-24T10:48:18.321716",
+    "updatedDate": "2026-03-24T10:48:18.321717",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1780,7 +1936,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "(Nota Boolean attribute!) Theautocompleteattribute takes as its value a space-separated string that describes what, if any, type of autocomplete functionality the input should provide. A typical imple",
+    "description": {
+      "es": "",
+      "en": "(Nota Boolean attribute!) Theautocompleteattribute takes as its value a space-separated string that describes what, if any, type of autocomplete functionality the input should provide. A typical imple"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1790,8 +1949,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.647507",
-    "updatedDate": "2026-03-16T12:14:32.647508",
+    "createdDate": "2026-03-24T10:48:18.321955",
+    "updatedDate": "2026-03-24T10:48:18.321956",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1814,7 +1973,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "A string providing a hint for auser agent'sautocomplete feature. SeeThe HTML autocomplete attributefor a complete list of values and details on how to use autocomplete.",
+    "description": {
+      "es": "",
+      "en": "A string providing a hint for auser agent'sautocomplete feature. SeeThe HTML autocomplete attributefor a complete list of values and details on how to use autocomplete."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1824,8 +1986,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.649386",
-    "updatedDate": "2026-03-16T12:14:32.649387",
+    "createdDate": "2026-03-24T10:48:18.324084",
+    "updatedDate": "2026-03-24T10:48:18.324085",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1848,7 +2010,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Controls whether entered text can be automatically completed by the browser. Possible values are:off: The user must explicitly enter a value into this field for every use, or the document provides its",
+    "description": {
+      "es": "",
+      "en": "Controls whether entered text can be automatically completed by the browser. Possible values are:off: The user must explicitly enter a value into this field for every use, or the document provides its"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1858,8 +2023,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.649735",
-    "updatedDate": "2026-03-16T12:14:32.649736",
+    "createdDate": "2026-03-24T10:48:18.324427",
+    "updatedDate": "2026-03-24T10:48:18.324428",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1882,18 +2047,21 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Controls whether automatic spelling correction and processing of text is enabled while the user is editing thistextarea.\nPermitted values are:onEnable automatic spelling correction and text substituti",
+    "description": {
+      "es": "",
+      "en": "Controls whether automatic spelling correction and processing of text is enabled while the user is editing thistextarea. Permitted values are:onEnable automatic spelling correction and text substituti"
+    },
     "example": "",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Controls whether automatic spelling correction and processing of text is enabled while the user is editing thistextarea.\nPermitted values are:onEnable automatic spelling correction and text substituti",
+      "excerpt": "Controls whether automatic spelling correction and processing of text is enabled while the user is editing thistextarea. Permitted values are:onEnable automatic spelling correction and text substituti",
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.649765",
-    "updatedDate": "2026-03-16T12:14:32.649766",
+    "createdDate": "2026-03-24T10:48:18.324459",
+    "updatedDate": "2026-03-24T10:48:18.324460",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1916,7 +2084,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This Boolean attribute specifies that the button should have inputfocuswhen the page loads.Only one element in a document can have this attribute.",
+    "description": {
+      "es": "",
+      "en": "This Boolean attribute specifies that the button should have inputfocuswhen the page loads.Only one element in a document can have this attribute."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1926,8 +2097,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.646578",
-    "updatedDate": "2026-03-16T12:14:32.646579",
+    "createdDate": "2026-03-24T10:48:18.320865",
+    "updatedDate": "2026-03-24T10:48:18.320866",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1950,7 +2121,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "A Boolean attribute which, if present, indicates that the input should automatically have focus when the page has finished loading (or when the<dialog>containing the element has been displayed).Note:A",
+    "description": {
+      "es": "",
+      "en": "A Boolean attribute which, if present, indicates that the input should automatically have focus when the page has finished loading (or when the<dialog>containing the element has been displayed).Note:A"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1960,8 +2134,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.647534",
-    "updatedDate": "2026-03-16T12:14:32.647535",
+    "createdDate": "2026-03-24T10:48:18.321985",
+    "updatedDate": "2026-03-24T10:48:18.321986",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -1984,7 +2158,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form element in a document can have theautofocusattribute.",
+    "description": {
+      "es": "",
+      "en": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form element in a document can have theautofocusattribute."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -1994,8 +2171,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.649417",
-    "updatedDate": "2026-03-16T12:14:32.649418",
+    "createdDate": "2026-03-24T10:48:18.324116",
+    "updatedDate": "2026-03-24T10:48:18.324117",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2018,7 +2195,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form-associated element in a document can have this attribute specified.",
+    "description": {
+      "es": "",
+      "en": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form-associated element in a document can have this attribute specified."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2028,8 +2208,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.649851",
-    "updatedDate": "2026-03-16T12:14:32.649851",
+    "createdDate": "2026-03-24T10:48:18.324553",
+    "updatedDate": "2026-03-24T10:48:18.324554",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2052,7 +2232,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "A boolean attribute that, when set totrue, specifies that the browser should immediately retrieve location data when the<geolocation>element is rendered, provided permission was previously granted. If",
+    "description": {
+      "es": "",
+      "en": "A boolean attribute that, when set totrue, specifies that the browser should immediately retrieve location data when the<geolocation>element is rendered, provided permission was previously granted. If"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2062,8 +2245,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.650739",
-    "updatedDate": "2026-03-16T12:14:32.650740",
+    "createdDate": "2026-03-24T10:48:18.325819",
+    "updatedDate": "2026-03-24T10:48:18.325820",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2086,7 +2269,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "A Boolean attribute: if specified, the audio will automatically begin playback as soon as it can do so, without waiting for the entire audio file to finish downloading.Note:Sites that automatically pl",
+    "description": {
+      "es": "",
+      "en": "A Boolean attribute: if specified, the audio will automatically begin playback as soon as it can do so, without waiting for the entire audio file to finish downloading.Note:Sites that automatically pl"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2096,8 +2282,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.640869",
-    "updatedDate": "2026-03-16T12:14:32.640869",
+    "createdDate": "2026-03-24T10:48:18.314789",
+    "updatedDate": "2026-03-24T10:48:18.314789",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2120,7 +2306,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "A Boolean attribute; if specified, the video automatically begins to play back as soon as it can without stopping to finish loading the data.Note:Modern browsers block audio (or videos with an unmuted",
+    "description": {
+      "es": "",
+      "en": "A Boolean attribute; if specified, the video automatically begins to play back as soon as it can without stopping to finish loading the data.Note:Modern browsers block audio (or videos with an unmuted"
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2130,8 +2319,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.641807",
-    "updatedDate": "2026-03-16T12:14:32.641808",
+    "createdDate": "2026-03-24T10:48:18.315821",
+    "updatedDate": "2026-03-24T10:48:18.315822",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2154,7 +2343,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+    "description": {
+      "es": "",
+      "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2164,8 +2356,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.640106",
-    "updatedDate": "2026-03-16T12:14:32.640107",
+    "createdDate": "2026-03-24T10:48:18.313927",
+    "updatedDate": "2026-03-24T10:48:18.313928",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2200,7 +2392,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+    "description": {
+      "es": "",
+      "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2210,8 +2405,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.640120",
-    "updatedDate": "2026-03-16T12:14:32.640121",
+    "createdDate": "2026-03-24T10:48:18.313942",
+    "updatedDate": "2026-03-24T10:48:18.313943",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2234,7 +2429,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "Deprecated:This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see thecompatibility tableat the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.",
+    "description": {
+      "es": "",
+      "en": "Deprecated:This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see thecompatibility tableat the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2244,8 +2442,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.651251",
-    "updatedDate": "2026-03-16T12:14:32.651252",
+    "createdDate": "2026-03-24T10:48:18.327257",
+    "updatedDate": "2026-03-24T10:48:18.327258",
     "metadata": {
       "deprecated": true,
       "deprecated_version": "true",
@@ -2268,7 +2466,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+    "description": {
+      "es": "",
+      "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2278,8 +2479,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.639354",
-    "updatedDate": "2026-03-16T12:14:32.639355",
+    "createdDate": "2026-03-24T10:48:18.312957",
+    "updatedDate": "2026-03-24T10:48:18.312958",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2302,7 +2503,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+    "description": {
+      "es": "",
+      "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2312,8 +2516,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.640852",
-    "updatedDate": "2026-03-16T12:14:32.640852",
+    "createdDate": "2026-03-24T10:48:18.314771",
+    "updatedDate": "2026-03-24T10:48:18.314772",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2348,7 +2552,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+    "description": {
+      "es": "",
+      "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2358,8 +2565,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.639365",
-    "updatedDate": "2026-03-16T12:14:32.639366",
+    "createdDate": "2026-03-24T10:48:18.312969",
+    "updatedDate": "2026-03-24T10:48:18.312970",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2382,7 +2589,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+    "description": {
+      "es": "",
+      "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2392,8 +2602,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.639377",
-    "updatedDate": "2026-03-16T12:14:32.639378",
+    "createdDate": "2026-03-24T10:48:18.312981",
+    "updatedDate": "2026-03-24T10:48:18.312982",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,
@@ -2416,7 +2626,10 @@
     "parameters": [],
     "return_type": "",
     "exceptions": [],
-    "description": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+    "description": {
+      "es": "",
+      "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+    },
     "example": "",
     "articles": [],
     "info": {
@@ -2426,8 +2639,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-16T12:14:32.641058",
-    "updatedDate": "2026-03-16T12:14:32.641059",
+    "createdDate": "2026-03-24T10:48:18.315007",
+    "updatedDate": "2026-03-24T10:48:18.315008",
     "metadata": {
       "deprecated": false,
       "deprecated_version": null,

@@ -1,0 +1,148 @@
+{
+  "contextlib/ExitStack": {
+    "id": "contextlib.ExitStack",
+    "name": "ExitStack",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class contextlib.ExitStack"
+    ],
+    "signature_hash": "9f2e43ee789ef258ae5bd5a6a5f03766f7198f8d36f286983973e859c9bb9a19",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.ExitStack",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A context manager that is designed to make it easy to programmatically combine other context managers and cleanup functions, especially those that are optional or otherwise driven by input data. For example, a set of files may easily be handled in a single with statement as follows: with ExitStack() as stack: files = [stack.enter_context(open(fname)) for fname in filenames] # All opened files will automatically be closed at the end of # the with statement, even if attempts to open files later..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A context manager that is designed to make it easy to programmatically combine other context managers and cleanup functions, especially those that are optional or otherwise driven by input data. For e...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.177270",
+    "updatedDate": "2026-03-24T10:48:12.177271",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "callback",
+      "close",
+      "enter_context",
+      "pop_all",
+      "push"
+    ]
+  },
+  "contextlib/AsyncExitStack/enter_async_context": {
+    "id": "contextlib.AsyncExitStack.enter_async_context",
+    "name": "enter_async_context",
+    "type": "method",
+    "parent": "AsyncExitStack",
+    "signatures": [
+      "async enter_async_context(cm)"
+    ],
+    "signature_hash": "038ed9d0660d6bc1d7a85f1170463bdb51538981fde0b7f16cc2a6887622cf21",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.AsyncExitStack.enter_async_context",
+    "parameters": [
+      {
+        "name": "cm",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Similar to ExitStack.enter_context() but expects an asynchronous context manager. Changed in version 3.11: Raises TypeError instead of AttributeError if cm is not an asynchronous context manager."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Similar to ExitStack.enter_context() but expects an asynchronous context manager. Changed in version 3.11: Raises TypeError instead of AttributeError if cm is not an asynchronous context manager.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.177408",
+    "updatedDate": "2026-03-24T10:48:12.177409",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "contextlib/ExitStack/enter_context": {
+    "id": "contextlib.ExitStack.enter_context",
+    "name": "enter_context",
+    "type": "method",
+    "parent": "ExitStack",
+    "signatures": [
+      "enter_context(cm)"
+    ],
+    "signature_hash": "2c32829ca1711c5c1bbc926c1d1bc4f392a2bd13b8a1d30063a829ad71840a9f",
+    "url": "https://docs.python.org/3/library/contextlib.html#module-contextlib#contextlib.ExitStack.enter_context",
+    "parameters": [
+      {
+        "name": "cm",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Enters a new context manager and adds its __exit__() method to the callback stack. The return value is the result of the context manager’s own __enter__() method. These context managers may suppress exceptions just as they normally would if used directly as part of a with statement. Changed in version 3.11: Raises TypeError instead of AttributeError if cm is not a context manager."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enters a new context manager and adds its __exit__() method to the callback stack. The return value is the result of the context manager’s own __enter__() method. These context managers may suppress e...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.177286",
+    "updatedDate": "2026-03-24T10:48:12.177287",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

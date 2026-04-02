@@ -1,0 +1,223 @@
+{
+  "jdk.jfr/Element/AnnotationElement": {
+    "id": "jdk.jfr.Element.AnnotationElement",
+    "name": "AnnotationElement",
+    "type": "constructor",
+    "parent": "Element",
+    "signatures": [
+      "public AnnotationElement(Class<? extends Annotation> annotationType)",
+      "public AnnotationElement(Class<? extends Annotation> annotationType, Object value)",
+      "public AnnotationElement(Class<? extends Annotation> annotationType, Map<String, Object> values)"
+    ],
+    "signature_hash": "17c62ef5d4b7cdffdb281bcc2d0f15470c31ae09b3c740d05a50082414d24989",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/AnnotationElement.html",
+    "parameters": [
+      {
+        "name": "annotationType",
+        "has_default": false,
+        "default_value": null,
+        "type": "Class<? extends Annotation>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "Map<String",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "values",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates an annotation element to use for dynamically defined events."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates an annotation element to use for dynamically defined events.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.287555",
+    "updatedDate": "2026-03-24T10:48:15.287556",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jfr/FlightRecorder/addListener": {
+    "id": "jdk.jfr.FlightRecorder.addListener",
+    "name": "addListener",
+    "type": "method",
+    "parent": "FlightRecorder",
+    "signatures": [
+      "public static void addListener(FlightRecorderListener changeListener)"
+    ],
+    "signature_hash": "e9905a47e02a385b4b8ffdbb0e5bc10afad4fe49860001dacd3b3976cbec2a41",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/FlightRecorder.html",
+    "parameters": [
+      {
+        "name": "changeListener",
+        "type": "FlightRecorderListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Adds a recorder listener."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds a recorder listener.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.288861",
+    "updatedDate": "2026-03-24T10:48:15.288862",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jfr/FlightRecorder/addPeriodicEvent": {
+    "id": "jdk.jfr.FlightRecorder.addPeriodicEvent",
+    "name": "addPeriodicEvent",
+    "type": "method",
+    "parent": "FlightRecorder",
+    "signatures": [
+      "public static void addPeriodicEvent(Class<? extends Event> eventClass, Runnable hook)"
+    ],
+    "signature_hash": "c4851a123c0549bfb2a27694733239221675dd2e27966d058998ec91bfe5f55c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/FlightRecorder.html",
+    "parameters": [
+      {
+        "name": "eventClass",
+        "type": "Class<? extends Event>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "hook",
+        "type": "Runnable",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Adds a hook for a periodic event."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds a hook for a periodic event.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.288885",
+    "updatedDate": "2026-03-24T10:48:15.288885",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

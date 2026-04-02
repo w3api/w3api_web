@@ -1,0 +1,182 @@
+{
+  "javax.management.openmbean/SimpleType/readResolve": {
+    "id": "javax.management.openmbean.SimpleType.readResolve",
+    "name": "readResolve",
+    "type": "method",
+    "parent": "SimpleType",
+    "signatures": [
+      "public Object readResolve()"
+    ],
+    "signature_hash": "b90f54ced314b785ff3144afc9603e05575579bb466f6a6cdd559f5199a9ea39",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/openmbean/SimpleType.html",
+    "parameters": [],
+    "return_type": "Object",
+    "exceptions": [
+      {
+        "name": "ObjectStreamException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Replace an object read from anObjectInputStreamwith the unique instance for that value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Replace an object read from anObjectInputStreamwith the unique instance for that value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.286554",
+    "updatedDate": "2026-03-24T10:48:14.286555",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.openmbean/TabularData/remove": {
+    "id": "javax.management.openmbean.TabularData.remove",
+    "name": "remove",
+    "type": "method",
+    "parent": "TabularData",
+    "signatures": [
+      "public CompositeData remove(Object[]key)"
+    ],
+    "signature_hash": "1d1a61a9bf996602f2b41ae3c259eccb79945fbcdbf8477c6a66536ca4fd70b2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/openmbean/TabularData.html",
+    "parameters": [
+      {
+        "name": "Object[]key",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "CompositeData",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "InvalidKeyException",
+        "package": "javax.management.openmbean"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Removes theCompositeDatavalue whose index iskeyfrom thisTabularDatainstance, and returns the removed value, or returnsnullif there is no value whose index iskey."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes theCompositeDatavalue whose index iskeyfrom thisTabularDatainstance, and returns the removed value, or returnsnullif there is no value whose index iskey.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.287105",
+    "updatedDate": "2026-03-24T10:48:14.287105",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.management.openmbean/TabularDataSupport/remove": {
+    "id": "javax.management.openmbean.TabularDataSupport.remove",
+    "name": "remove",
+    "type": "method",
+    "parent": "TabularDataSupport",
+    "signatures": [
+      "public Object remove(Object key)",
+      "public CompositeData remove(Object[]key)"
+    ],
+    "signature_hash": "5e294e8d18fedb24516cd6e0793759f7ae64679fea0674829d90f082d965c9d2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html",
+    "parameters": [
+      {
+        "name": "key",
+        "has_default": false,
+        "default_value": null,
+        "type": "Object",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "Object[]key",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Object",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "ClassCastException",
+        "package": "java.lang"
+      },
+      {
+        "name": "InvalidKeyException",
+        "package": "javax.management.openmbean"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "This method simply callsremove((Object[]) key)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method simply callsremove((Object[]) key).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.287846",
+    "updatedDate": "2026-03-24T10:48:14.287847",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

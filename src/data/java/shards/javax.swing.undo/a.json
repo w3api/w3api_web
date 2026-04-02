@@ -1,0 +1,352 @@
+{
+  "javax.swing.undo/AbstractUndoableEdit": {
+    "id": "javax.swing.undo.AbstractUndoableEdit",
+    "name": "AbstractUndoableEdit",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class AbstractUndoableEdit"
+    ],
+    "signature_hash": "b43fdbc3be28c569ef8448a7eea723b66a99569aa3d7bd88b0328f286a9b1b42",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.231359",
+    "updatedDate": "2026-03-24T10:48:15.231360",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "AbstractUndoableEdit"
+    ],
+    "attributes": [
+      "RedoName",
+      "UndoName"
+    ],
+    "methods": [
+      "addEdit",
+      "canRedo",
+      "canUndo",
+      "die",
+      "getPresentationName",
+      "getRedoPresentationName",
+      "getUndoPresentationName",
+      "isSignificant",
+      "redo",
+      "replaceEdit",
+      "toString",
+      "undo"
+    ]
+  },
+  "javax.swing.undo/AbstractUndoableEdit/AbstractUndoableEdit": {
+    "id": "javax.swing.undo.AbstractUndoableEdit.AbstractUndoableEdit",
+    "name": "AbstractUndoableEdit",
+    "type": "constructor",
+    "parent": "AbstractUndoableEdit",
+    "signatures": [
+      "public AbstractUndoableEdit()"
+    ],
+    "signature_hash": "88d08474f3c0d56f21c3744b844b7504ef390d02dd841c6d061ede34e00929c3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates anAbstractUndoableEditwhich defaultshasBeenDoneandalivetotrue."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates anAbstractUndoableEditwhich defaultshasBeenDoneandalivetotrue.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.231373",
+    "updatedDate": "2026-03-24T10:48:15.231373",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.swing.undo/AbstractUndoableEdit/addEdit": {
+    "id": "javax.swing.undo.AbstractUndoableEdit.addEdit",
+    "name": "addEdit",
+    "type": "method",
+    "parent": "AbstractUndoableEdit",
+    "signatures": [
+      "public boolean addEdit(UndoableEdit anEdit)"
+    ],
+    "signature_hash": "27811dca57229a77ad35f818d6eaeef443f42e9ffc755218b1ed5b2fd7a14842",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html",
+    "parameters": [
+      {
+        "name": "anEdit",
+        "type": "UndoableEdit",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This default implementation returns false."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This default implementation returns false.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.231386",
+    "updatedDate": "2026-03-24T10:48:15.231387",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.swing.undo/CompoundEdit/addEdit": {
+    "id": "javax.swing.undo.CompoundEdit.addEdit",
+    "name": "addEdit",
+    "type": "method",
+    "parent": "CompoundEdit",
+    "signatures": [
+      "public boolean addEdit(UndoableEdit anEdit)"
+    ],
+    "signature_hash": "27811dca57229a77ad35f818d6eaeef443f42e9ffc755218b1ed5b2fd7a14842",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html",
+    "parameters": [
+      {
+        "name": "anEdit",
+        "type": "UndoableEdit",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "If this edit isinProgress, acceptsanEditand returns true."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "If this edit isinProgress, acceptsanEditand returns true.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.231644",
+    "updatedDate": "2026-03-24T10:48:15.231645",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.swing.undo/UndoableEdit/addEdit": {
+    "id": "javax.swing.undo.UndoableEdit.addEdit",
+    "name": "addEdit",
+    "type": "method",
+    "parent": "UndoableEdit",
+    "signatures": [
+      "public boolean addEdit(UndoableEdit anEdit)"
+    ],
+    "signature_hash": "27811dca57229a77ad35f818d6eaeef443f42e9ffc755218b1ed5b2fd7a14842",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html",
+    "parameters": [
+      {
+        "name": "anEdit",
+        "type": "UndoableEdit",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Adds anUndoableEditto thisUndoableEdit."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds anUndoableEditto thisUndoableEdit.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.232091",
+    "updatedDate": "2026-03-24T10:48:15.232092",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.swing.undo/UndoManager/addEdit": {
+    "id": "javax.swing.undo.UndoManager.addEdit",
+    "name": "addEdit",
+    "type": "method",
+    "parent": "UndoManager",
+    "signatures": [
+      "public boolean addEdit(UndoableEdit anEdit)"
+    ],
+    "signature_hash": "27811dca57229a77ad35f818d6eaeef443f42e9ffc755218b1ed5b2fd7a14842",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/swing/undo/UndoManager.html",
+    "parameters": [
+      {
+        "name": "anEdit",
+        "type": "UndoableEdit",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Adds anUndoableEditto thisUndoManager, if it's possible."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adds anUndoableEditto thisUndoManager, if it's possible.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.232512",
+    "updatedDate": "2026-03-24T10:48:15.232513",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.swing.undo/UndoableEditSupport/addUndoableEditListener": {
+    "id": "javax.swing.undo.UndoableEditSupport.addUndoableEditListener",
+    "name": "addUndoableEditListener",
+    "type": "method",
+    "parent": "UndoableEditSupport",
+    "signatures": [
+      "public void addUndoableEditListener(UndoableEditListener l)"
+    ],
+    "signature_hash": "e3d518c49fa0166416c1d01dab5849634ae0f8e0b4f791d206f6f2f21eba003b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html",
+    "parameters": [
+      {
+        "name": "l",
+        "type": "UndoableEditListener",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Registers anUndoableEditListener."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Registers anUndoableEditListener.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.232288",
+    "updatedDate": "2026-03-24T10:48:15.232289",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

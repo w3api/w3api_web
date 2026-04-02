@@ -1,0 +1,172 @@
+{
+  "com.sun.net.httpserver/Filter/description": {
+    "id": "com.sun.net.httpserver.Filter.description",
+    "name": "description",
+    "type": "method",
+    "parent": "Filter",
+    "signatures": [
+      "public abstract String description()"
+    ],
+    "signature_hash": "dc5b16497a45f5ba9a874bdca38dc45b41c2b5de280999a6ae621258706b345f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Filter.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a short description of thisFilter."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a short description of thisFilter.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352935",
+    "updatedDate": "2026-03-24T10:48:13.352936",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Filter/doFilter": {
+    "id": "com.sun.net.httpserver.Filter.doFilter",
+    "name": "doFilter",
+    "type": "method",
+    "parent": "Filter",
+    "signatures": [
+      "public abstract void doFilter(HttpExchange exchange, Filter.Chain chain)"
+    ],
+    "signature_hash": "f9fcd09133786b62146bc3d8eb54b1de5b99bd75524b396382bf9b23084a48e3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Filter.html",
+    "parameters": [
+      {
+        "name": "exchange",
+        "type": "HttpExchange",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "chain",
+        "type": "Filter.Chain",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Asks this filter to pre/post-process the given exchange."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Asks this filter to pre/post-process the given exchange.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352956",
+    "updatedDate": "2026-03-24T10:48:13.352957",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Chain/doFilter": {
+    "id": "com.sun.net.httpserver.Chain.doFilter",
+    "name": "doFilter",
+    "type": "method",
+    "parent": "Chain",
+    "signatures": [
+      "public void doFilter(HttpExchange exchange)"
+    ],
+    "signature_hash": "09fd4e2a074f973b12af467262792d3393e622c8c01eca903323000a05584dbb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Filter.Chain.html",
+    "parameters": [
+      {
+        "name": "exchange",
+        "type": "HttpExchange",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Calls the next filter in the chain, or else the users exchange handler, if this is the final filter in the chain."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Calls the next filter in the chain, or else the users exchange handler, if this is the final filter in the chain.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353621",
+    "updatedDate": "2026-03-24T10:48:13.353622",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

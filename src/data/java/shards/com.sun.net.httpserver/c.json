@@ -1,0 +1,951 @@
+{
+  "com.sun.net.httpserver/Chain": {
+    "id": "com.sun.net.httpserver.Chain",
+    "name": "Chain",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class Chain"
+    ],
+    "signature_hash": "cb68b0549a29eb62b0022954247efebe2a684c6800493bbccb4ad40febccd97d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Filter.Chain.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353571",
+    "updatedDate": "2026-03-24T10:48:13.353572",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "Chain"
+    ],
+    "methods": [
+      "doFilter"
+    ]
+  },
+  "com.sun.net.httpserver/Chain/Chain": {
+    "id": "com.sun.net.httpserver.Chain.Chain",
+    "name": "Chain",
+    "type": "constructor",
+    "parent": "Chain",
+    "signatures": [
+      "public Chain(List<Filter> filters, HttpHandler handler)"
+    ],
+    "signature_hash": "447f154033c00a74df022a035c1a3a76e4e1c3fb2b644a4fd72bb57038fcca30",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Filter.Chain.html",
+    "parameters": [
+      {
+        "name": "filters",
+        "type": "List<Filter>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "handler",
+        "type": "HttpHandler",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates aChaininstance with given filters and handler."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates aChaininstance with given filters and handler.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353600",
+    "updatedDate": "2026-03-24T10:48:13.353601",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/BasicAuthenticator/checkCredentials": {
+    "id": "com.sun.net.httpserver.BasicAuthenticator.checkCredentials",
+    "name": "checkCredentials",
+    "type": "method",
+    "parent": "BasicAuthenticator",
+    "signatures": [
+      "public abstract boolean checkCredentials(String username, String password)"
+    ],
+    "signature_hash": "f34591e4e4606f0dedba51a02d12740935c068e0a1cb238f28f0cb6c1e79ea87",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/BasicAuthenticator.html",
+    "parameters": [
+      {
+        "name": "username",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "password",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Called for each incoming request to verify the given name and password in the context of this authenticator's realm."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called for each incoming request to verify the given name and password in the context of this authenticator's realm.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353527",
+    "updatedDate": "2026-03-24T10:48:13.353528",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Headers/clear": {
+    "id": "com.sun.net.httpserver.Headers.clear",
+    "name": "clear",
+    "type": "method",
+    "parent": "Headers",
+    "signatures": [
+      "public void clear()"
+    ],
+    "signature_hash": "21ac40bb9a99614b6ac18fa4043acb6173fccff96066fdfab963dba597923aa8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Headers.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Removes all of the mappings from this map (optional operation)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Removes all of the mappings from this map (optional operation).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353698",
+    "updatedDate": "2026-03-24T10:48:13.353699",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpExchange/close": {
+    "id": "com.sun.net.httpserver.HttpExchange.close",
+    "name": "close",
+    "type": "method",
+    "parent": "HttpExchange",
+    "signatures": [
+      "public abstract void close()"
+    ],
+    "signature_hash": "7ef7b04ce6dd1ef5ab6ebbb4a238ba44f88550ed7b482a167338316cb010d6fa",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpExchange.html",
+    "parameters": [],
+    "return_type": "abstract void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Ends this exchange by doing the following in sequence: close the requestInputStream, if not already closed."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Ends this exchange by doing the following in sequence: close the requestInputStream, if not already closed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352120",
+    "updatedDate": "2026-03-24T10:48:13.352120",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsConfigurator/configure": {
+    "id": "com.sun.net.httpserver.HttpsConfigurator.configure",
+    "name": "configure",
+    "type": "method",
+    "parent": "HttpsConfigurator",
+    "signatures": [
+      "public void configure(HttpsParameters params)"
+    ],
+    "signature_hash": "10f40372c7f78e3e3300eaf50aeca131f2a83328a180a5c9ef2b6cc04a27e6ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsConfigurator.html",
+    "parameters": [
+      {
+        "name": "params",
+        "type": "HttpsParameters",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Called by theHttpsServerto configure the parameters for a https connection currently being established."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called by theHttpsServerto configure the parameters for a https connection currently being established.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353199",
+    "updatedDate": "2026-03-24T10:48:13.353199",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Headers/containsKey": {
+    "id": "com.sun.net.httpserver.Headers.containsKey",
+    "name": "containsKey",
+    "type": "method",
+    "parent": "Headers",
+    "signatures": [
+      "public boolean containsKey(Object key)"
+    ],
+    "signature_hash": "10251f6cf636f49b599299432df558beac5bc221e8b028def33778ce8ebe248a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Headers.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returnstrueif this map contains a mapping for the specified key."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif this map contains a mapping for the specified key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353716",
+    "updatedDate": "2026-03-24T10:48:13.353717",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/Headers/containsValue": {
+    "id": "com.sun.net.httpserver.Headers.containsValue",
+    "name": "containsValue",
+    "type": "method",
+    "parent": "Headers",
+    "signatures": [
+      "public boolean containsValue(Object value)"
+    ],
+    "signature_hash": "c628f36c081e450f86a9e82a881e3e7747dea6b3d315f9d7efd8f5266497cb73",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/Headers.html",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returnstrueif this map maps one or more keys to the specified value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif this map maps one or more keys to the specified value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353735",
+    "updatedDate": "2026-03-24T10:48:13.353736",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpServer/create": {
+    "id": "com.sun.net.httpserver.HttpServer.create",
+    "name": "create",
+    "type": "method",
+    "parent": "HttpServer",
+    "signatures": [
+      "public static HttpServer create()",
+      "public static HttpServer create(InetSocketAddress addr, int backlog)",
+      "public static HttpServer create(InetSocketAddress addr, int backlog, String path, HttpHandler handler, Filter... filters)"
+    ],
+    "signature_hash": "705e539d14e5eba4307918da3814ab2bc3f9b6298c748a73184e6bf03aba8ff0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpServer.html",
+    "parameters": [
+      {
+        "name": "addr",
+        "has_default": false,
+        "default_value": null,
+        "type": "InetSocketAddress",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "backlog",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "path",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "handler",
+        "has_default": false,
+        "default_value": null,
+        "type": "HttpHandler",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "filters",
+        "has_default": false,
+        "default_value": null,
+        "type": "Filter...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static HttpServer",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates aHttpServerinstance which is initially not bound to any local address/port."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates aHttpServerinstance which is initially not bound to any local address/port.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352701",
+    "updatedDate": "2026-03-24T10:48:13.352702",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpsServer/create": {
+    "id": "com.sun.net.httpserver.HttpsServer.create",
+    "name": "create",
+    "type": "method",
+    "parent": "HttpsServer",
+    "signatures": [
+      "public static HttpsServer create()",
+      "public static HttpsServer create(InetSocketAddress addr, int backlog)",
+      "public static HttpsServer create(InetSocketAddress addr, int backlog, String path, HttpHandler handler, Filter... filters)"
+    ],
+    "signature_hash": "338fd37a8e6155dbbc9a536cdec23d242ba083a218de972ed6b615ea0874ed55",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpsServer.html",
+    "parameters": [
+      {
+        "name": "addr",
+        "has_default": false,
+        "default_value": null,
+        "type": "InetSocketAddress",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "backlog",
+        "has_default": false,
+        "default_value": null,
+        "type": "int",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "path",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "handler",
+        "has_default": false,
+        "default_value": null,
+        "type": "HttpHandler",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "filters",
+        "has_default": false,
+        "default_value": null,
+        "type": "Filter...",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static HttpsServer",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates aHttpsServerinstance which is initially not bound to any local address/port."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates aHttpsServerinstance which is initially not bound to any local address/port.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353116",
+    "updatedDate": "2026-03-24T10:48:13.353117",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/HttpServer/createContext": {
+    "id": "com.sun.net.httpserver.HttpServer.createContext",
+    "name": "createContext",
+    "type": "method",
+    "parent": "HttpServer",
+    "signatures": [
+      "public abstract HttpContext createContext(String path)",
+      "public abstract HttpContext createContext(String path, HttpHandler handler)"
+    ],
+    "signature_hash": "0483337bb27364c673b74b314ad991b2d16e9b7840ba25a437ac83850858096e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpServer.html",
+    "parameters": [
+      {
+        "name": "path",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "handler",
+        "has_default": false,
+        "default_value": null,
+        "type": "HttpHandler",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract HttpContext",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates a HttpContext without initially specifying a handler."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a HttpContext without initially specifying a handler.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352728",
+    "updatedDate": "2026-03-24T10:48:13.352729",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/SimpleFileServer/createFileHandler": {
+    "id": "com.sun.net.httpserver.SimpleFileServer.createFileHandler",
+    "name": "createFileHandler",
+    "type": "method",
+    "parent": "SimpleFileServer",
+    "signatures": [
+      "public static HttpHandler createFileHandler(Path rootDirectory)"
+    ],
+    "signature_hash": "4e82944b5f26853d097e4576e443cba08edacd80e8fd0a798ee4a9eae35ffc18",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/SimpleFileServer.html",
+    "parameters": [
+      {
+        "name": "rootDirectory",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static HttpHandler",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates afile handlerthat serves files from a given directory path (and its subdirectories)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates afile handlerthat serves files from a given directory path (and its subdirectories).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.352987",
+    "updatedDate": "2026-03-24T10:48:13.352988",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/SimpleFileServer/createFileServer": {
+    "id": "com.sun.net.httpserver.SimpleFileServer.createFileServer",
+    "name": "createFileServer",
+    "type": "method",
+    "parent": "SimpleFileServer",
+    "signatures": [
+      "public static HttpServer createFileServer(InetSocketAddress addr, Path rootDirectory, SimpleFileServer.OutputLevel outputLevel)"
+    ],
+    "signature_hash": "fb0d2bd18fb2c5af80778911cacd61c7d562def8cdd1025feb4edff2981091c6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/SimpleFileServer.html",
+    "parameters": [
+      {
+        "name": "addr",
+        "type": "InetSocketAddress",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "rootDirectory",
+        "type": "Path",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "outputLevel",
+        "type": "SimpleFileServer.OutputLevel",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static HttpServer",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UncheckedIOException",
+        "package": "java.io"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates afile serverthat serves files from a given path."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates afile serverthat serves files from a given path.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353015",
+    "updatedDate": "2026-03-24T10:48:13.353016",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver/SimpleFileServer/createOutputFilter": {
+    "id": "com.sun.net.httpserver.SimpleFileServer.createOutputFilter",
+    "name": "createOutputFilter",
+    "type": "method",
+    "parent": "SimpleFileServer",
+    "signatures": [
+      "public static Filter createOutputFilter(OutputStream out, SimpleFileServer.OutputLevel outputLevel)"
+    ],
+    "signature_hash": "fe5b84e94be5e180f3d275859c87fd07e40ace96b05341298cbf6b7d93892bf2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/SimpleFileServer.html",
+    "parameters": [
+      {
+        "name": "out",
+        "type": "OutputStream",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "outputLevel",
+        "type": "SimpleFileServer.OutputLevel",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Filter",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates apost-processing Filterthat prints log messages aboutexchanges."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates apost-processing Filterthat prints log messages aboutexchanges.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.353046",
+    "updatedDate": "2026-03-24T10:48:13.353047",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "18",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.net.httpserver": {
+    "type": "package",
+    "name": "com.sun.net.httpserver",
+    "id": "com.sun.net.httpserver",
+    "description": "Module com.sun.net.httpserver",
+    "classes": [
+      "Authenticator",
+      "BasicAuthenticator",
+      "Chain",
+      "Failure",
+      "Filter",
+      "Headers",
+      "HttpContext",
+      "HttpExchange",
+      "HttpHandlers",
+      "HttpPrincipal",
+      "HttpServer",
+      "HttpsConfigurator",
+      "HttpsExchange",
+      "HttpsParameters",
+      "HttpsServer",
+      "Result",
+      "Retry",
+      "SimpleFileServer",
+      "Success"
+    ],
+    "enums": [
+      "OutputLevel"
+    ],
+    "interfaces": [
+      "HttpHandler",
+      "Request"
+    ]
+  }
+}

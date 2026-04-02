@@ -1,0 +1,156 @@
+{
+  "lzma/decompress": {
+    "id": "lzma.decompress",
+    "name": "decompress",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "lzma.decompress(data, format=FORMAT_AUTO, memlimit=None, filters=None)"
+    ],
+    "signature_hash": "f4bd50721925161523ced5dbdc792fa6d5f6f6ffb97751f0c4af74d544be8180",
+    "url": "https://docs.python.org/3/library/lzma.html#module-lzma#lzma.decompress",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "format",
+        "type": "",
+        "has_default": true,
+        "default_value": "FORMAT_AUTO",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "memlimit",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "filters",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Decompress data (a bytes object), returning the uncompressed data as a bytes object. If data is the concatenation of multiple distinct compressed streams, decompress all of these streams, and return the concatenation of the results. See LZMADecompressor above for a description of the format, memlimit and filters arguments."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decompress data (a bytes object), returning the uncompressed data as a bytes object. If data is the concatenation of multiple distinct compressed streams, decompress all of these streams, and return t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.243622",
+    "updatedDate": "2026-03-24T10:48:12.243623",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "lzma/LZMADecompressor/decompress": {
+    "id": "lzma.LZMADecompressor.decompress",
+    "name": "decompress",
+    "type": "method",
+    "parent": "LZMADecompressor",
+    "signatures": [
+      "decompress(data, max_length=-1)"
+    ],
+    "signature_hash": "98022a334fc295b269d431c498f35fcaafb1e61858a063aaee47795cbfec8847",
+    "url": "https://docs.python.org/3/library/lzma.html#module-lzma#lzma.LZMADecompressor.decompress",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "max_length",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Decompress data (a bytes-like object), returning uncompressed data as bytes. Some of data may be buffered internally, for use in later calls to decompress(). The returned data should be concatenated with the output of any previous calls to decompress(). If max_length is nonnegative, returns at most max_length bytes of decompressed data. If this limit is reached and further output can be produced, the needs_input attribute will be set to False. In this case, the next call to decompress() may p..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decompress data (a bytes-like object), returning uncompressed data as bytes. Some of data may be buffered internally, for use in later calls to decompress(). The returned data should be concatenated w...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.243528",
+    "updatedDate": "2026-03-24T10:48:12.243535",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

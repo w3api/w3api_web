@@ -1,0 +1,534 @@
+{
+  "pathlib/PurePath/root": {
+    "id": "pathlib.PurePath.root",
+    "name": "root",
+    "type": "attribute",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.root"
+    ],
+    "signature_hash": "df72202fc971d46e72c30d9f050442aa397dbb39303ff0f688c00b0f14849cbf",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.root",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A string representing the (local or global) root, if any: >>> PureWindowsPath('c:/Program Files/').root '\\\\' >>> PureWindowsPath('c:Program Files/').root '' >>> PurePosixPath('/etc').root '/' UNC shares always have a root: >>> PureWindowsPath('//host/share').root '\\\\' If the path starts with more than two successive slashes, PurePosixPath collapses them: >>> PurePosixPath('//etc').root '//' >>> PurePosixPath('///etc').root '/' >>> PurePosixPath('////etc').root '/' Note This behavior conforms ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A string representing the (local or global) root, if any: >>> PureWindowsPath('c:/Program Files/').root '\\\\' >>> PureWindowsPath('c:Program Files/').root '' >>> PurePosixPath('/etc').root '/' UNC shar...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.300961",
+    "updatedDate": "2026-03-24T10:48:12.300965",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/read_bytes": {
+    "id": "pathlib.Path.read_bytes",
+    "name": "read_bytes",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.read_bytes()"
+    ],
+    "signature_hash": "7ed53ad6fed5896daccfaa3c7502102322587201d95b454b05677a0220fc0e8f",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.read_bytes",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the binary contents of the pointed-to file as a bytes object: >>> p = Path('my_binary_file') >>> p.write_bytes(b'Binary file contents') 20 >>> p.read_bytes() b'Binary file contents' Added in version 3.5."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the binary contents of the pointed-to file as a bytes object: >>> p = Path('my_binary_file') >>> p.write_bytes(b'Binary file contents') 20 >>> p.read_bytes() b'Binary file contents' Added in ve...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.303039",
+    "updatedDate": "2026-03-24T10:48:12.303040",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/read_text": {
+    "id": "pathlib.Path.read_text",
+    "name": "read_text",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.read_text(encoding=None, errors=None, newline=None)"
+    ],
+    "signature_hash": "8ef855136e314bbf9996ac8d76b1091d94412c8b34b7ef3b366a1fe6bf9a6aec",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.read_text",
+    "parameters": [
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "newline",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the decoded contents of the pointed-to file as a string: >>> p = Path('my_text_file') >>> p.write_text('Text file contents') 18 >>> p.read_text() 'Text file contents' The file is opened and then closed. The optional parameters have the same meaning as in open(). Added in version 3.5. Changed in version 3.13: The newline parameter was added."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the decoded contents of the pointed-to file as a string: >>> p = Path('my_text_file') >>> p.write_text('Text file contents') 18 >>> p.read_text() 'Text file contents' The file is opened and the...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.303023",
+    "updatedDate": "2026-03-24T10:48:12.303025",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/readlink": {
+    "id": "pathlib.Path.readlink",
+    "name": "readlink",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.readlink()"
+    ],
+    "signature_hash": "a0737613d208bfd2b274d4a73c3f45428a787039c84f1ae1080bcc3efd7743be",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.readlink",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the path to which the symbolic link points (as returned by os.readlink()): >>> p = Path('mylink') >>> p.symlink_to('setup.py') >>> p.readlink() PosixPath('setup.py') Added in version 3.9. Changed in version 3.13: Raises UnsupportedOperation if os.readlink() is not available. In previous versions, NotImplementedError was raised."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the path to which the symbolic link points (as returned by os.readlink()): >>> p = Path('mylink') >>> p.symlink_to('setup.py') >>> p.readlink() PosixPath('setup.py') Added in version 3.9. Chang...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302674",
+    "updatedDate": "2026-03-24T10:48:12.302675",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.9.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PurePath/relative_to": {
+    "id": "pathlib.PurePath.relative_to",
+    "name": "relative_to",
+    "type": "method",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.relative_to(other, walk_up=False)"
+    ],
+    "signature_hash": "b9daf0001d75201f8419f1afa7644da6e8433d7b669b969c9709db35cf6ef521",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.PurePath.relative_to",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "walk_up",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Compute a version of this path relative to the path represented by other. If it’s impossible, ValueError is raised: >>> p = PurePosixPath('/etc/passwd') >>> p.relative_to('/') PurePosixPath('etc/passwd') >>> p.relative_to('/etc') PurePosixPath('passwd') >>> p.relative_to('/usr') Traceback (most recent call last): File \"<stdin>\", line 1, in <module> File \"pathlib.py\", line 941, in relative_to raise ValueError(error_message.format(str(self), str(formatted))) ValueError: '/etc/passwd' is not in ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Compute a version of this path relative to the path represented by other. If it’s impossible, ValueError is raised: >>> p = PurePosixPath('/etc/passwd') >>> p.relative_to('/') PurePosixPath('etc/passw...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302073",
+    "updatedDate": "2026-03-24T10:48:12.302077",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.12",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/rename": {
+    "id": "pathlib.Path.rename",
+    "name": "rename",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.rename(target)"
+    ],
+    "signature_hash": "ee69ce6b4b382379d0e60c25168b4eb09b1caae1bdb08e846b17b7ef68180c38",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.rename",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Rename this file or directory to the given target, and return a new Path instance pointing to target. On Unix, if target exists and is a file, it will be replaced silently if the user has permission. On Windows, if target exists, FileExistsError will be raised. target can be either a string or another path object: >>> p = Path('foo') >>> p.open('w').write('some text') 9 >>> target = Path('bar') >>> p.rename(target) PosixPath('bar') >>> target.open().read() 'some text' The target path may be a..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Rename this file or directory to the given target, and return a new Path instance pointing to target. On Unix, if target exists and is a file, it will be replaced silently if the user has permission. ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.303795",
+    "updatedDate": "2026-03-24T10:48:12.303797",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/replace": {
+    "id": "pathlib.Path.replace",
+    "name": "replace",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.replace(target)"
+    ],
+    "signature_hash": "f210bbc16bfea1b24309eed88f3a70fa1b06e8a4185abe80096573a4d355fda5",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.replace",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Rename this file or directory to the given target, and return a new Path instance pointing to target. If target points to an existing file or empty directory, it will be unconditionally replaced. The target path may be absolute or relative. Relative paths are interpreted relative to the current working directory, not the directory of the Path object. Changed in version 3.8: Added return value, return the new Path instance."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Rename this file or directory to the given target, and return a new Path instance pointing to target. If target points to an existing file or empty directory, it will be unconditionally replaced. The ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.303815",
+    "updatedDate": "2026-03-24T10:48:12.303816",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/resolve": {
+    "id": "pathlib.Path.resolve",
+    "name": "resolve",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.resolve(strict=False)"
+    ],
+    "signature_hash": "3ab1358e073f5488f65af8235fb215a37fd4048ebaa7e13988d2f6387c9dc228",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.resolve",
+    "parameters": [
+      {
+        "name": "strict",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Make the path absolute, resolving any symlinks. A new path object is returned: >>> p = Path() >>> p PosixPath('.') >>> p.resolve() PosixPath('/home/antoine/pathlib') “..” components are also eliminated (this is the only method to do so): >>> p = Path('docs/../setup.py') >>> p.resolve() PosixPath('/home/antoine/pathlib/setup.py') If a path doesn’t exist or a symlink loop is encountered, and strict is True, OSError is raised. If strict is False, the path is resolved as far as possible and any r..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Make the path absolute, resolving any symlinks. A new path object is returned: >>> p = Path() >>> p PosixPath('.') >>> p.resolve() PosixPath('/home/antoine/pathlib') “..” components are also eliminate...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302655",
+    "updatedDate": "2026-03-24T10:48:12.302656",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/rglob": {
+    "id": "pathlib.Path.rglob",
+    "name": "rglob",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.rglob(pattern, *, case_sensitive=None, recurse_symlinks=False)"
+    ],
+    "signature_hash": "cd2a84ba4ad8a984b22b8ffd40b2ee5829577967be162f006072e1794b7fb417",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.rglob",
+    "parameters": [
+      {
+        "name": "pattern",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "case_sensitive",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "recurse_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Glob the given relative pattern recursively. This is like calling Path.glob() with “**/” added in front of the pattern. Note The paths are returned in no particular order. If you need a specific order, sort the results. See also Pattern language and Path.glob() documentation. Raises an auditing event pathlib.Path.rglob with arguments self, pattern. Changed in version 3.12: The case_sensitive parameter was added. Changed in version 3.13: The recurse_symlinks parameter was added. Changed in ver..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Glob the given relative pattern recursively. This is like calling Path.glob() with “**/” added in front of the pattern. Note The paths are returned in no particular order. If you need a specific order...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.303559",
+    "updatedDate": "2026-03-24T10:48:12.303562",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/rmdir": {
+    "id": "pathlib.Path.rmdir",
+    "name": "rmdir",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.rmdir()"
+    ],
+    "signature_hash": "ac628072c5054a9f6a0e9d408091e37455afe52438b4545422e2a404f6b82db0",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.rmdir",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Remove this directory. The directory must be empty."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Remove this directory. The directory must be empty.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.303889",
+    "updatedDate": "2026-03-24T10:48:12.303890",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "logging.handlers/QueueHandler/prepare": {
+    "id": "logging.handlers.QueueHandler.prepare",
+    "name": "prepare",
+    "type": "method",
+    "parent": "QueueHandler",
+    "signatures": [
+      "prepare(record)"
+    ],
+    "signature_hash": "ce4da06098e71a0a8ed1e3786c968ff07d6f2c20e3cba10d3b53b56d8f2238bb",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.QueueHandler.prepare",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prepares a record for queuing. The object returned by this method is enqueued. The base implementation formats the record to merge the message, arguments, exception and stack information, if present. It also removes unpickleable items from the record in-place. Specifically, it overwrites the record’s msg and message attributes with the merged message (obtained by calling the handler’s format() method), and sets the args, exc_info and exc_text attributes to None. You might want to override thi..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prepares a record for queuing. The object returned by this method is enqueued. The base implementation formats the record to merge the message, arguments, exception and stack information, if present. ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.243127",
+    "updatedDate": "2026-03-24T10:48:12.243129",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/QueueListener/prepare": {
+    "id": "logging.handlers.QueueListener.prepare",
+    "name": "prepare",
+    "type": "method",
+    "parent": "QueueListener",
+    "signatures": [
+      "prepare(record)"
+    ],
+    "signature_hash": "ce4da06098e71a0a8ed1e3786c968ff07d6f2c20e3cba10d3b53b56d8f2238bb",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.QueueListener.prepare",
+    "parameters": [
+      {
+        "name": "record",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Prepare a record for handling. This implementation just returns the passed-in record. You may want to override this method if you need to do any custom marshalling or manipulation of the record before passing it to the handlers."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Prepare a record for handling. This implementation just returns the passed-in record. You may want to override this method if you need to do any custom marshalling or manipulation of the record before...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.243216",
+    "updatedDate": "2026-03-24T10:48:12.243217",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

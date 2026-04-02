@@ -1,0 +1,374 @@
+{
+  "java.util.random/JumpableGenerator": {
+    "id": "java.util.random.JumpableGenerator",
+    "name": "JumpableGenerator",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface JumpableGenerator"
+    ],
+    "signature_hash": "9684b56ec53981970180b2110254539c121dd0feea86aa93ef75b45673d6995f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.JumpableGenerator.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195410",
+    "updatedDate": "2026-03-24T10:48:14.195411",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "copy",
+      "copyAndJump",
+      "jump",
+      "jumpDistance",
+      "jumps",
+      "of",
+      "rngs"
+    ]
+  },
+  "java.util.random/JumpableGenerator/jump": {
+    "id": "java.util.random.JumpableGenerator.jump",
+    "name": "jump",
+    "type": "method",
+    "parent": "JumpableGenerator",
+    "signatures": [
+      "public void jump()"
+    ],
+    "signature_hash": "a8ccc92329371768212e71f7ecbf4a38376bf12c643a1df5841789d0196008e2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.JumpableGenerator.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Alter the state of this pseudorandom number generator so as to jump forward a large, fixed distance (typically 264or more) within its state cycle."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Alter the state of this pseudorandom number generator so as to jump forward a large, fixed distance (typically 264or more) within its state cycle.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195452",
+    "updatedDate": "2026-03-24T10:48:14.195453",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.random/ArbitrarilyJumpableGenerator/jump": {
+    "id": "java.util.random.ArbitrarilyJumpableGenerator.jump",
+    "name": "jump",
+    "type": "method",
+    "parent": "ArbitrarilyJumpableGenerator",
+    "signatures": [
+      "public default void jump()",
+      "public void jump(double distance)"
+    ],
+    "signature_hash": "4de506ca93fcad7ee8b3a03325013aca4606c2c63501cca290da8f1435c09ca0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.ArbitrarilyJumpableGenerator.html",
+    "parameters": [
+      {
+        "name": "distance",
+        "has_default": false,
+        "default_value": null,
+        "type": "double",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Alter the state of this pseudorandom number generator so as to jump forward a large, fixed distance (typically 264or more) within its state cycle."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Alter the state of this pseudorandom number generator so as to jump forward a large, fixed distance (typically 264or more) within its state cycle.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195703",
+    "updatedDate": "2026-03-24T10:48:14.195704",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.random/JumpableGenerator/jumpDistance": {
+    "id": "java.util.random.JumpableGenerator.jumpDistance",
+    "name": "jumpDistance",
+    "type": "method",
+    "parent": "JumpableGenerator",
+    "signatures": [
+      "public double jumpDistance()"
+    ],
+    "signature_hash": "6fdf103c829e8c09d402a1286978e470e728d8608e889f5ff44ae64ac55995d7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.JumpableGenerator.html",
+    "parameters": [],
+    "return_type": "double",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the distance by which thejump() method will jump forward within the state cycle of this generator object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the distance by which thejump() method will jump forward within the state cycle of this generator object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195466",
+    "updatedDate": "2026-03-24T10:48:14.195467",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.random/ArbitrarilyJumpableGenerator/jumpPowerOfTwo": {
+    "id": "java.util.random.ArbitrarilyJumpableGenerator.jumpPowerOfTwo",
+    "name": "jumpPowerOfTwo",
+    "type": "method",
+    "parent": "ArbitrarilyJumpableGenerator",
+    "signatures": [
+      "public void jumpPowerOfTwo(int logDistance)"
+    ],
+    "signature_hash": "fcc510f5b1ac9303b891bce80b7fed59d728c031d1fbd6f3a3da72e35fe2d2bc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.ArbitrarilyJumpableGenerator.html",
+    "parameters": [
+      {
+        "name": "logDistance",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Alter the state of this pseudorandom number generator so as to jump forward a distance equal to 2logDistancewithin its state cycle."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Alter the state of this pseudorandom number generator so as to jump forward a distance equal to 2logDistancewithin its state cycle.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195721",
+    "updatedDate": "2026-03-24T10:48:14.195722",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.random/JumpableGenerator/jumps": {
+    "id": "java.util.random.JumpableGenerator.jumps",
+    "name": "jumps",
+    "type": "method",
+    "parent": "JumpableGenerator",
+    "signatures": [
+      "public default Stream<RandomGenerator> jumps()",
+      "public default Stream<RandomGenerator> jumps(long streamSize)"
+    ],
+    "signature_hash": "c2b3e0e521358847c0cb6f33da5895c1934c270376054fe199bf11a6fc18a9c3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.JumpableGenerator.html",
+    "parameters": [
+      {
+        "name": "streamSize",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default Stream<RandomGenerator>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an effectively unlimited stream of new pseudorandom number generators, each of which implements theRandomGeneratorinterface."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an effectively unlimited stream of new pseudorandom number generators, each of which implements theRandomGeneratorinterface.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195486",
+    "updatedDate": "2026-03-24T10:48:14.195487",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.random/ArbitrarilyJumpableGenerator/jumps": {
+    "id": "java.util.random.ArbitrarilyJumpableGenerator.jumps",
+    "name": "jumps",
+    "type": "method",
+    "parent": "ArbitrarilyJumpableGenerator",
+    "signatures": [
+      "public default Stream<RandomGenerator.ArbitrarilyJumpableGenerator> jumps(double distance)",
+      "public default Stream<RandomGenerator.ArbitrarilyJumpableGenerator> jumps(long streamSize, double distance)"
+    ],
+    "signature_hash": "6689f9af03583c8969f17d0e66611d77e94dbc5ceb04c99ce4d2206f5c31f707",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/random/RandomGenerator.ArbitrarilyJumpableGenerator.html",
+    "parameters": [
+      {
+        "name": "distance",
+        "has_default": false,
+        "default_value": null,
+        "type": "double",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "streamSize",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "default Stream<RandomGenerator.ArbitrarilyJumpableGenerator>",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an effectively unlimited stream of new pseudorandom number generators, each of which implements theRandomGenerator.ArbitrarilyJumpableGeneratorinterface, produced by jumping copies of this generator by different integer multiples of the specified jump distance."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an effectively unlimited stream of new pseudorandom number generators, each of which implements theRandomGenerator.ArbitrarilyJumpableGeneratorinterface, produced by jumping copies of this gen...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.195751",
+    "updatedDate": "2026-03-24T10:48:14.195752",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.random": {
+    "type": "package",
+    "name": "java.util.random",
+    "id": "java.util.random",
+    "description": "Module java.util.random",
+    "classes": [
+      "RandomGeneratorFactory"
+    ],
+    "interfaces": [
+      "ArbitrarilyJumpableGenerator",
+      "JumpableGenerator",
+      "LeapableGenerator",
+      "RandomGenerator",
+      "SplittableGenerator",
+      "StreamableGenerator"
+    ]
+  }
+}

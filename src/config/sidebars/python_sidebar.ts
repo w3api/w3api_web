@@ -6860,20 +6860,20 @@ export const sidebar = [
                     link: 'python/enum/verify/'
                 },
                 {
-                    label: '__bool__(self):',
-                    link: 'python/enum/__bool__(self):/'
+                    label: '__bool__self:',
+                    link: 'python/enum/__bool__self:/'
                 },
                 {
-                    label: '__invert__(self):',
-                    link: 'python/enum/__invert__(self):/'
+                    label: '__invert__self:',
+                    link: 'python/enum/__invert__self:/'
                 },
                 {
-                    label: '__iter__(self):',
-                    link: 'python/enum/__iter__(self):/'
+                    label: '__iter__self:',
+                    link: 'python/enum/__iter__self:/'
                 },
                 {
-                    label: '__len__(self):',
-                    link: 'python/enum/__len__(self):/'
+                    label: '__len__self:',
+                    link: 'python/enum/__len__self:/'
                 }
             ]
         },
@@ -26154,24 +26154,24 @@ export const sidebar = [
                     link: 'python/urllib.request/urlretrieve/'
                 },
                 {
-                    label: 'BaseHandler.<protocol>_open(req)',
-                    link: 'python/urllib.request/BaseHandler.<protocol>_open(req)/'
+                    label: 'BaseHandler.http_error_nnnreq,fp,code,msg,hdrs',
+                    link: 'python/urllib.request/BaseHandler.http_error_nnnreq,fp,code,msg,hdrs/'
                 },
                 {
-                    label: 'BaseHandler.<protocol>_request(req)',
-                    link: 'python/urllib.request/BaseHandler.<protocol>_request(req)/'
+                    label: 'BaseHandler.protocol_openreq',
+                    link: 'python/urllib.request/BaseHandler.protocol_openreq/'
                 },
                 {
-                    label: 'BaseHandler.<protocol>_response(req,response)',
-                    link: 'python/urllib.request/BaseHandler.<protocol>_response(req,response)/'
+                    label: 'BaseHandler.protocol_requestreq',
+                    link: 'python/urllib.request/BaseHandler.protocol_requestreq/'
                 },
                 {
-                    label: 'BaseHandler.http_error_<nnn>(req,fp,code,msg,hdrs)',
-                    link: 'python/urllib.request/BaseHandler.http_error_<nnn>(req,fp,code,msg,hdrs)/'
+                    label: 'BaseHandler.protocol_responsereq,response',
+                    link: 'python/urllib.request/BaseHandler.protocol_responsereq,response/'
                 },
                 {
-                    label: 'ProxyHandler.<protocol>_open(request)',
-                    link: 'python/urllib.request/ProxyHandler.<protocol>_open(request)/'
+                    label: 'ProxyHandler.protocol_openrequest',
+                    link: 'python/urllib.request/ProxyHandler.protocol_openrequest/'
                 }
             ]
         },
@@ -26312,24 +26312,24 @@ export const sidebar = [
                     link: 'python/urllib.response/urlretrieve/'
                 },
                 {
-                    label: 'BaseHandler.<protocol>_open(req)',
-                    link: 'python/urllib.response/BaseHandler.<protocol>_open(req)/'
+                    label: 'BaseHandler.http_error_nnnreq,fp,code,msg,hdrs',
+                    link: 'python/urllib.response/BaseHandler.http_error_nnnreq,fp,code,msg,hdrs/'
                 },
                 {
-                    label: 'BaseHandler.<protocol>_request(req)',
-                    link: 'python/urllib.response/BaseHandler.<protocol>_request(req)/'
+                    label: 'BaseHandler.protocol_openreq',
+                    link: 'python/urllib.response/BaseHandler.protocol_openreq/'
                 },
                 {
-                    label: 'BaseHandler.<protocol>_response(req,response)',
-                    link: 'python/urllib.response/BaseHandler.<protocol>_response(req,response)/'
+                    label: 'BaseHandler.protocol_requestreq',
+                    link: 'python/urllib.response/BaseHandler.protocol_requestreq/'
                 },
                 {
-                    label: 'BaseHandler.http_error_<nnn>(req,fp,code,msg,hdrs)',
-                    link: 'python/urllib.response/BaseHandler.http_error_<nnn>(req,fp,code,msg,hdrs)/'
+                    label: 'BaseHandler.protocol_responsereq,response',
+                    link: 'python/urllib.response/BaseHandler.protocol_responsereq,response/'
                 },
                 {
-                    label: 'ProxyHandler.<protocol>_open(request)',
-                    link: 'python/urllib.response/ProxyHandler.<protocol>_open(request)/'
+                    label: 'ProxyHandler.protocol_openrequest',
+                    link: 'python/urllib.response/ProxyHandler.protocol_openrequest/'
                 }
             ]
         },

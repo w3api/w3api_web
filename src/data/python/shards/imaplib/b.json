@@ -1,0 +1,53 @@
+{
+  "imaplib/Idler/burst": {
+    "id": "imaplib.Idler.burst",
+    "name": "burst",
+    "type": "method",
+    "parent": "Idler",
+    "signatures": [
+      "Idler.burst(interval=0.1)"
+    ],
+    "signature_hash": "2ad80f02067a19b833ea6606316aa0bbff47fb33d664a560d7cd287694edc116",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.Idler.burst",
+    "parameters": [
+      {
+        "name": "interval",
+        "type": "",
+        "has_default": true,
+        "default_value": "0.1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Yield a burst of responses no more than interval seconds apart (expressed as an int or float). This generator is an alternative to iterating one response at a time, intended to aid in efficient batch processing. It retrieves the next response along with any immediately available subsequent responses. (For example, a rapid series of EXPUNGE responses after a bulk delete.) Requires a socket connection; does not work on IMAP4_stream connections. >>> with M.idle() as idler: ... # get a response a..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Yield a burst of responses no more than interval seconds apart (expressed as an int or float). This generator is an alternative to iterating one response at a time, intended to aid in efficient batch ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.223814",
+    "updatedDate": "2026-03-24T10:48:12.223815",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

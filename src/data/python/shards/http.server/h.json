@@ -1,0 +1,323 @@
+{
+  "http.server/BaseHTTPRequestHandler/headers": {
+    "id": "http.server.BaseHTTPRequestHandler.headers",
+    "name": "headers",
+    "type": "attribute",
+    "parent": "BaseHTTPRequestHandler",
+    "signatures": [
+      "headers"
+    ],
+    "signature_hash": "378f37b1fb33fa4dafba6519a48e06447ecaa58af290729cc3d357bcadd9926c",
+    "url": "https://docs.python.org/3/library/http.server.html#module-http.server#http.server.BaseHTTPRequestHandler.headers",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "Holds an instance of the class specified by the MessageClass class variable. This instance parses and manages the headers in the HTTP request. The parse_headers() function from http.client is used to parse the headers and it requires that the HTTP request provide a valid RFC 5322 style header.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Holds an instance of the class specified by the MessageClass class variable. This instance parses and manages the headers in the HTTP request. The parse_headers() function from http.client is used to ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.590788",
+    "updatedDate": "2026-03-01T18:02:57.590789",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "http.server/HTTPSServer": {
+    "id": "http.server.HTTPSServer",
+    "name": "HTTPSServer",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class http.server.HTTPSServer(server_address, RequestHandlerClass, bind_and_activate=True, *, certfile, keyfile=None, password=None, alpn_protocols=None)"
+    ],
+    "signature_hash": "82a0564ceadd9ffc5eed37250b0dd521a6c28dadaf5865d24d560c703a4a2b45",
+    "url": "https://docs.python.org/3/library/http.server.html#module-http.server#http.server.HTTPSServer",
+    "parameters": [
+      {
+        "name": "server_address",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "RequestHandlerClass",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "bind_and_activate",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "certfile",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "keyfile",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "password",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "alpn_protocols",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "Subclass of HTTPServer with a wrapped socket using the ssl module. If the ssl module is not available, instantiating a HTTPSServer object fails with a RuntimeError. The certfile argument is the path to the SSL certificate chain file, and the keyfile is the path to file containing the private key. A password can be specified for files protected and wrapped with PKCS#8, but beware that this could possibly expose hardcoded passwords in clear. See also See ssl.SSLContext.load_cert_chain() for add...",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Subclass of HTTPServer with a wrapped socket using the ssl module. If the ssl module is not available, instantiating a HTTPSServer object fails with a RuntimeError. The certfile argument is the path t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.590635",
+    "updatedDate": "2026-03-01T18:02:57.590636",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "http.server/HTTPServer": {
+    "id": "http.server.HTTPServer",
+    "name": "HTTPServer",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class http.server.HTTPServer(server_address, RequestHandlerClass)"
+    ],
+    "signature_hash": "ea211f2637fa3a9d7e519e03e0adc80b7a394afd81bc9bef11bfa1995f78d673",
+    "url": "https://docs.python.org/3/library/http.server.html#module-http.server#http.server.HTTPServer",
+    "parameters": [
+      {
+        "name": "server_address",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      },
+      {
+        "name": "RequestHandlerClass",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": ""
+      }
+    ],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "This class builds on the TCPServer class by storing the server address as instance variables named server_name and server_port. The server is accessible by the handler, typically through the handler’s server instance variable.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class builds on the TCPServer class by storing the server address as instance variables named server_name and server_port. The server is accessible by the handler, typically through the handler’s...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.590588",
+    "updatedDate": "2026-03-01T18:02:57.590589",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "http.server/BaseHTTPRequestHandler/handle": {
+    "id": "http.server.BaseHTTPRequestHandler.handle",
+    "name": "handle",
+    "type": "method",
+    "parent": "BaseHTTPRequestHandler",
+    "signatures": [
+      "handle()"
+    ],
+    "signature_hash": "e22adcb3f6a632f74daa6c7246da9e5c9a0e1e336d06ffa01384748728988ce9",
+    "url": "https://docs.python.org/3/library/http.server.html#module-http.server#http.server.BaseHTTPRequestHandler.handle",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "Calls handle_one_request() once (or, if persistent connections are enabled, multiple times) to handle incoming HTTP requests. You should never need to override it; instead, implement appropriate do_*() methods.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Calls handle_one_request() once (or, if persistent connections are enabled, multiple times) to handle incoming HTTP requests. You should never need to override it; instead, implement appropriate do_*(...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.590898",
+    "updatedDate": "2026-03-01T18:02:57.590899",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "http.server/BaseHTTPRequestHandler/handle_expect_100": {
+    "id": "http.server.BaseHTTPRequestHandler.handle_expect_100",
+    "name": "handle_expect_100",
+    "type": "method",
+    "parent": "BaseHTTPRequestHandler",
+    "signatures": [
+      "handle_expect_100()"
+    ],
+    "signature_hash": "f0310b572fdc2bb22d3cd41ed933093ac7810e315c752963410c8ab77eac395c",
+    "url": "https://docs.python.org/3/library/http.server.html#module-http.server#http.server.BaseHTTPRequestHandler.handle_expect_100",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "When an HTTP/1.1 conformant server receives an Expect: 100-continue request header it responds back with a 100 Continue followed by 200 OK headers. This method can be overridden to raise an error if the server does not want the client to continue. For e.g. server can choose to send 417 Expectation Failed as a response header and return False. Added in version 3.2.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "When an HTTP/1.1 conformant server receives an Expect: 100-continue request header it responds back with a 100 Continue followed by 200 OK headers. This method can be overridden to raise an error if t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.590921",
+    "updatedDate": "2026-03-01T18:02:57.590922",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "http.server/BaseHTTPRequestHandler/handle_one_request": {
+    "id": "http.server.BaseHTTPRequestHandler.handle_one_request",
+    "name": "handle_one_request",
+    "type": "method",
+    "parent": "BaseHTTPRequestHandler",
+    "signatures": [
+      "handle_one_request()"
+    ],
+    "signature_hash": "abae54d8bd20e554da9c7d2231b3012c255cbaa5c3a8729059938a30be3351c8",
+    "url": "https://docs.python.org/3/library/http.server.html#module-http.server#http.server.BaseHTTPRequestHandler.handle_one_request",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": "[]",
+    "description": "This method will parse and dispatch the request to the appropriate do_*() method. You should never need to override it.",
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method will parse and dispatch the request to the appropriate do_*() method. You should never need to override it.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-01T18:02:57.590908",
+    "updatedDate": "2026-03-01T18:02:57.590909",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "http.server": {
+    "type": "module",
+    "name": "http.server",
+    "id": "http.server",
+    "description": "Module http.server",
+    "classes": [
+      "BaseHTTPRequestHandler",
+      "CGIHTTPRequestHandler",
+      "HTTPSServer",
+      "HTTPServer",
+      "SimpleHTTPRequestHandler",
+      "ThreadingHTTPSServer",
+      "ThreadingHTTPServer"
+    ]
+  }
+}

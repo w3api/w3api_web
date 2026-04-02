@@ -1,0 +1,125 @@
+{
+  "annotationlib/Format/FORWARDREF": {
+    "id": "annotationlib.Format.FORWARDREF",
+    "name": "FORWARDREF",
+    "type": "attribute",
+    "parent": "Format",
+    "signatures": [
+      "FORWARDREF = 3"
+    ],
+    "signature_hash": "c422a50406bd4799e30eda6aa39ce33f5921eb1c36790b6c9c667d256aeb675a",
+    "url": "https://docs.python.org/3/library/annotationlib.html#module-annotationlib#annotationlib.Format.FORWARDREF",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Values are real annotation values (as per Format.VALUE format) for defined values, and ForwardRef proxies for undefined values. Real objects may contain references to ForwardRef proxy objects."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Values are real annotation values (as per Format.VALUE format) for defined values, and ForwardRef proxies for undefined values. Real objects may contain references to ForwardRef proxy objects.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.162889",
+    "updatedDate": "2026-03-24T10:48:12.162890",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "annotationlib/Format": {
+    "id": "annotationlib.Format",
+    "name": "Format",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class annotationlib.Format"
+    ],
+    "signature_hash": "951bc664b063add509d466f7d733459b0805ecbd9ba465474cdbc9069fe1bf0b",
+    "url": "https://docs.python.org/3/library/annotationlib.html#module-annotationlib#annotationlib.Format",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An IntEnum describing the formats in which annotations can be returned. Members of the enum, or their equivalent integer values, can be passed to get_annotations() and other functions in this module, as well as to __annotate__ functions. VALUE = 1¶ Values are the result of evaluating the annotation expressions. VALUE_WITH_FAKE_GLOBALS = 2¶ Special value used to signal that an annotate function is being evaluated in a special environment with fake globals. When passed this value, annotate func..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An IntEnum describing the formats in which annotations can be returned. Members of the enum, or their equivalent integer values, can be passed to get_annotations() and other functions in this module, ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.162845",
+    "updatedDate": "2026-03-24T10:48:12.162846",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "FORWARDREF",
+      "STRING",
+      "VALUE",
+      "VALUE_WITH_FAKE_GLOBALS"
+    ]
+  },
+  "annotationlib/ForwardRef": {
+    "id": "annotationlib.ForwardRef",
+    "name": "ForwardRef",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class annotationlib.ForwardRef"
+    ],
+    "signature_hash": "67341188a82e7143c99e8a7ee21cbcbc8e6a956d1ad95f2dfcb71c65e24f5e04",
+    "url": "https://docs.python.org/3/library/annotationlib.html#module-annotationlib#annotationlib.ForwardRef",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A proxy object for forward references in annotations. Instances of this class are returned when the FORWARDREF format is used and annotations contain a name that cannot be resolved. This can happen when a forward reference is used in an annotation, such as when a class is referenced before it is defined. __forward_arg__¶ A string containing the code that was evaluated to produce the ForwardRef. The string may not be exactly equivalent to the original source. evaluate(*, owner=None, globals=No..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A proxy object for forward references in annotations. Instances of this class are returned when the FORWARDREF format is used and annotations contain a name that cannot be resolved. This can happen wh...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.162918",
+    "updatedDate": "2026-03-24T10:48:12.162918",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.14.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "__forward_arg__"
+    ],
+    "methods": [
+      "evaluate"
+    ]
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "ssl/SSLError/library": {
+    "id": "ssl.SSLError.library",
+    "name": "library",
+    "type": "attribute",
+    "parent": "SSLError",
+    "signatures": [
+      "library"
+    ],
+    "signature_hash": "b718f1354f7247312eca086d9a024afe5fa717ddea5adeddd6f12bcf945b2e8c",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLError.library",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A string mnemonic designating the OpenSSL submodule in which the error occurred, such as SSL, PEM or X509. The range of possible values depends on the OpenSSL version. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A string mnemonic designating the OpenSSL submodule in which the error occurred, such as SSL, PEM or X509. The range of possible values depends on the OpenSSL version. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340399",
+    "updatedDate": "2026-03-24T10:48:12.340400",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/SSLContext/load_cert_chain": {
+    "id": "ssl.SSLContext.load_cert_chain",
+    "name": "load_cert_chain",
+    "type": "method",
+    "parent": "SSLContext",
+    "signatures": [
+      "SSLContext.load_cert_chain(certfile, keyfile=None, password=None)"
+    ],
+    "signature_hash": "b4b3e138675afe5db96155d26c7b812b159484715fe094825cb95d4cb408a3f1",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLContext.load_cert_chain",
+    "parameters": [
+      {
+        "name": "certfile",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "keyfile",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "password",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Load a private key and the corresponding certificate. The certfile string must be the path to a single file in PEM format containing the certificate as well as any number of CA certificates needed to establish the certificate’s authenticity. The keyfile string, if present, must point to a file containing the private key. Otherwise the private key will be taken from certfile as well. See the discussion of Certificates for more information on how the certificate is stored in the certfile. The p..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Load a private key and the corresponding certificate. The certfile string must be the path to a single file in PEM format containing the certificate as well as any number of CA certificates needed to ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342974",
+    "updatedDate": "2026-03-24T10:48:12.342975",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/SSLContext/load_default_certs": {
+    "id": "ssl.SSLContext.load_default_certs",
+    "name": "load_default_certs",
+    "type": "method",
+    "parent": "SSLContext",
+    "signatures": [
+      "SSLContext.load_default_certs(purpose=Purpose.SERVER_AUTH)"
+    ],
+    "signature_hash": "0fc6407349b86c5b1e7f60e69a06f32fa4752476837f2f613419e500c0c1c110",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLContext.load_default_certs",
+    "parameters": [
+      {
+        "name": "purpose",
+        "type": "",
+        "has_default": true,
+        "default_value": "Purpose.SERVER_AUTH",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Load a set of default “certification authority” (CA) certificates from default locations. On Windows it loads CA certs from the CA and ROOT system stores. On all systems it calls SSLContext.set_default_verify_paths(). In the future the method may load CA certificates from other locations, too. The purpose flag specifies what kind of CA certificates are loaded. The default settings Purpose.SERVER_AUTH loads certificates, that are flagged and trusted for TLS web server authentication (client si..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Load a set of default “certification authority” (CA) certificates from default locations. On Windows it loads CA certs from the CA and ROOT system stores. On all systems it calls SSLContext.set_defaul...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.342999",
+    "updatedDate": "2026-03-24T10:48:12.343000",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/SSLContext/load_dh_params": {
+    "id": "ssl.SSLContext.load_dh_params",
+    "name": "load_dh_params",
+    "type": "method",
+    "parent": "SSLContext",
+    "signatures": [
+      "SSLContext.load_dh_params(dhfile, /)"
+    ],
+    "signature_hash": "4447be7e637e6a9d043d2feb437e495c5601e1054c7f12c698081edc3f00aa95",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLContext.load_dh_params",
+    "parameters": [
+      {
+        "name": "dhfile",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Load the key generation parameters for Diffie-Hellman (DH) key exchange. Using DH key exchange improves forward secrecy at the expense of computational resources (both on the server and on the client). The dhfile parameter should be the path to a file containing DH parameters in PEM format. This setting doesn’t apply to client sockets. You can also use the OP_SINGLE_DH_USE option to further improve security. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Load the key generation parameters for Diffie-Hellman (DH) key exchange. Using DH key exchange improves forward secrecy at the expense of computational resources (both on the server and on the client)...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.343237",
+    "updatedDate": "2026-03-24T10:48:12.343238",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ssl/SSLContext/load_verify_locations": {
+    "id": "ssl.SSLContext.load_verify_locations",
+    "name": "load_verify_locations",
+    "type": "method",
+    "parent": "SSLContext",
+    "signatures": [
+      "SSLContext.load_verify_locations(cafile=None, capath=None, cadata=None)"
+    ],
+    "signature_hash": "eb6374fbf4c9b58a5428fb69f93cfac06e951a1332cd281814fe2f204157a3f8",
+    "url": "https://docs.python.org/3/library/ssl.html#module-ssl#ssl.SSLContext.load_verify_locations",
+    "parameters": [
+      {
+        "name": "cafile",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "capath",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "cadata",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Load a set of “certification authority” (CA) certificates used to validate other peers’ certificates when verify_mode is other than CERT_NONE. At least one of cafile or capath must be specified. This method can also load certification revocation lists (CRLs) in PEM or DER format. In order to make use of CRLs, SSLContext.verify_flags must be configured properly. The cafile string, if present, is the path to a file of concatenated CA certificates in PEM format. See the discussion of Certificate..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Load a set of “certification authority” (CA) certificates used to validate other peers’ certificates when verify_mode is other than CERT_NONE. At least one of cafile or capath must be specified. This ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.343026",
+    "updatedDate": "2026-03-24T10:48:12.343027",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

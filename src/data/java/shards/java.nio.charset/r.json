@@ -1,0 +1,336 @@
+{
+  "java.nio.charset/CodingErrorAction/REPLACE": {
+    "id": "java.nio.charset.CodingErrorAction.REPLACE",
+    "name": "REPLACE",
+    "type": "field",
+    "parent": "CodingErrorAction",
+    "signatures": [
+      "static final CodingErrorAction REPLACE"
+    ],
+    "signature_hash": "ed578297758943f4d4c701281059250cd8268731b308d287c1acaff192ad0c20",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CodingErrorAction.html",
+    "parameters": [],
+    "return_type": "static final CodingErrorAction",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Action indicating that a coding error is to be handled by dropping the erroneous input, appending the coder's replacement value to the output buffer, and resuming the coding operation."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Action indicating that a coding error is to be handled by dropping the erroneous input, appending the coder's replacement value to the output buffer, and resuming the coding operation.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.900214",
+    "updatedDate": "2026-03-24T10:48:13.900215",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.charset/CodingErrorAction/REPORT": {
+    "id": "java.nio.charset.CodingErrorAction.REPORT",
+    "name": "REPORT",
+    "type": "field",
+    "parent": "CodingErrorAction",
+    "signatures": [
+      "static final CodingErrorAction REPORT"
+    ],
+    "signature_hash": "935ab6b865a24d54fcfc8e6e966d7a5f29180bf1f5d7e04a71624a8428a023ee",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CodingErrorAction.html",
+    "parameters": [],
+    "return_type": "static final CodingErrorAction",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Action indicating that a coding error is to be reported, either by returning aCoderResultobject or by throwing aCharacterCodingException, whichever is appropriate for the method implementing the coding process."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Action indicating that a coding error is to be reported, either by returning aCoderResultobject or by throwing aCharacterCodingException, whichever is appropriate for the method implementing the codin...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.900229",
+    "updatedDate": "2026-03-24T10:48:13.900230",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.charset/CharsetDecoder/replaceWith": {
+    "id": "java.nio.charset.CharsetDecoder.replaceWith",
+    "name": "replaceWith",
+    "type": "method",
+    "parent": "CharsetDecoder",
+    "signatures": [
+      "public final CharsetDecoder replaceWith(String newReplacement)"
+    ],
+    "signature_hash": "f37545b9201faa1dec7dd91146bf650139f48957550dfd6a8db5c3c155153b4f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CharsetDecoder.html",
+    "parameters": [
+      {
+        "name": "newReplacement",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final CharsetDecoder",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Changes this decoder's replacement value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Changes this decoder's replacement value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.899525",
+    "updatedDate": "2026-03-24T10:48:13.899525",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.charset/CharsetEncoder/replaceWith": {
+    "id": "java.nio.charset.CharsetEncoder.replaceWith",
+    "name": "replaceWith",
+    "type": "method",
+    "parent": "CharsetEncoder",
+    "signatures": [
+      "public final CharsetEncoder replaceWith(byte[]newReplacement)"
+    ],
+    "signature_hash": "22596fbfb4f2ea7a1a22a4100075d50096e401ea10bf4ad6957a7f887d0a6caf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CharsetEncoder.html",
+    "parameters": [
+      {
+        "name": "byte[]newReplacement",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final CharsetEncoder",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Changes this encoder's replacement value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Changes this encoder's replacement value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.899934",
+    "updatedDate": "2026-03-24T10:48:13.899935",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.charset/CharsetDecoder/replacement": {
+    "id": "java.nio.charset.CharsetDecoder.replacement",
+    "name": "replacement",
+    "type": "method",
+    "parent": "CharsetDecoder",
+    "signatures": [
+      "public final String replacement()"
+    ],
+    "signature_hash": "79b12adcd01143150f2362744384a9b2ce24ae716d59cb69b50ca06e549c53a7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CharsetDecoder.html",
+    "parameters": [],
+    "return_type": "final String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns this decoder's replacement value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns this decoder's replacement value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.899509",
+    "updatedDate": "2026-03-24T10:48:13.899509",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.charset/CharsetEncoder/replacement": {
+    "id": "java.nio.charset.CharsetEncoder.replacement",
+    "name": "replacement",
+    "type": "method",
+    "parent": "CharsetEncoder",
+    "signatures": [
+      "public final byte[] replacement()"
+    ],
+    "signature_hash": "ed3ed7de86034c061ad376adc87028ef5b4d49b06a284f4c86f1826b9542cd13",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CharsetEncoder.html",
+    "parameters": [],
+    "return_type": "final byte[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns this encoder's replacement value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns this encoder's replacement value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.899916",
+    "updatedDate": "2026-03-24T10:48:13.899917",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.charset/CharsetDecoder/reset": {
+    "id": "java.nio.charset.CharsetDecoder.reset",
+    "name": "reset",
+    "type": "method",
+    "parent": "CharsetDecoder",
+    "signatures": [
+      "public final CharsetDecoder reset()"
+    ],
+    "signature_hash": "fd13f83dc528995012aed54c5573adefe10ec3532a5550227b2e5bc7778a6456",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CharsetDecoder.html",
+    "parameters": [],
+    "return_type": "final CharsetDecoder",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Resets this decoder, clearing any internal state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Resets this decoder, clearing any internal state.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.899537",
+    "updatedDate": "2026-03-24T10:48:13.899538",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.nio.charset/CharsetEncoder/reset": {
+    "id": "java.nio.charset.CharsetEncoder.reset",
+    "name": "reset",
+    "type": "method",
+    "parent": "CharsetEncoder",
+    "signatures": [
+      "public final CharsetEncoder reset()"
+    ],
+    "signature_hash": "6a3ba4388a92ba02c308783036557471c994a033a5309e60e9fbf28466f3360b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/charset/CharsetEncoder.html",
+    "parameters": [],
+    "return_type": "final CharsetEncoder",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Resets this encoder, clearing any internal state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Resets this encoder, clearing any internal state.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.899948",
+    "updatedDate": "2026-03-24T10:48:13.899949",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "sqlite3/PrepareProtocol": {
+    "id": "sqlite3.PrepareProtocol",
+    "name": "PrepareProtocol",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class sqlite3.PrepareProtocol"
+    ],
+    "signature_hash": "e6a19826c3f8a794805c0747a2261793a9ab6c026e10832b42a0441668a69fda",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.PrepareProtocol",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The PrepareProtocol type’s single purpose is to act as a PEP 246 style adaption protocol for objects that can adapt themselves to native SQLite types."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The PrepareProtocol type’s single purpose is to act as a PEP 246 style adaption protocol for objects that can adapt themselves to native SQLite types.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340136",
+    "updatedDate": "2026-03-24T10:48:12.340137",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/PARSE_COLNAMES": {
+    "id": "sqlite3.PARSE_COLNAMES",
+    "name": "PARSE_COLNAMES",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "sqlite3.PARSE_COLNAMES"
+    ],
+    "signature_hash": "ee9d046a01fbe7b2662cef96c47a4854ccb08b8746e71f5be2451c07cbfb462c",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.PARSE_COLNAMES",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Pass this flag value to the detect_types parameter of connect() to look up a converter function by using the type name, parsed from the query column name, as the converter dictionary key. The query column name must be wrapped in double quotes (\") and the type name must be wrapped in square brackets ([]). SELECT MAX(p) as \"p [point]\" FROM test; ! will look up converter \"point\" This flag may be combined with PARSE_DECLTYPES using the | (bitwise or) operator."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pass this flag value to the detect_types parameter of connect() to look up a converter function by using the type name, parsed from the query column name, as the converter dictionary key. The query co...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338945",
+    "updatedDate": "2026-03-24T10:48:12.338946",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/PARSE_DECLTYPES": {
+    "id": "sqlite3.PARSE_DECLTYPES",
+    "name": "PARSE_DECLTYPES",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "sqlite3.PARSE_DECLTYPES"
+    ],
+    "signature_hash": "600b97304f2dc423d4f03944c2550dab5d760fcef7030a5775c16dc8317a6bff",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.PARSE_DECLTYPES",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Pass this flag value to the detect_types parameter of connect() to look up a converter function using the declared types for each column. The types are declared when the database table is created. sqlite3 will look up a converter function using the first word of the declared type as the converter dictionary key. For example: CREATE TABLE test( i integer primary key, ! will look up a converter named \"integer\" p point, ! will look up a converter named \"point\" n number(10) ! will look up a conve..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pass this flag value to the detect_types parameter of connect() to look up a converter function using the declared types for each column. The types are declared when the database table is created. sql...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338931",
+    "updatedDate": "2026-03-24T10:48:12.338932",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/paramstyle": {
+    "id": "sqlite3.paramstyle",
+    "name": "paramstyle",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "sqlite3.paramstyle"
+    ],
+    "signature_hash": "af187819912bf8780c8113e397b198e64bacdb89d5ec5294f1fa451c107c8d1b",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.paramstyle",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "String constant stating the type of parameter marker formatting expected by the sqlite3 module. Required by the DB-API. Hard-coded to \"qmark\". Note The named DB-API parameter style is also supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "String constant stating the type of parameter marker formatting expected by the sqlite3 module. Required by the DB-API. Hard-coded to \"qmark\". Note The named DB-API parameter style is also supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338979",
+    "updatedDate": "2026-03-24T10:48:12.338980",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/ProgrammingError": {
+    "id": "sqlite3.ProgrammingError",
+    "name": "ProgrammingError",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception sqlite3.ProgrammingError"
+    ],
+    "signature_hash": "4a6db3f9681c3fa96c425bc5309ba552d377ee2a99198ecc31aa0c5bbc97b4a2",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.ProgrammingError",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Exception raised for sqlite3 API programming errors, for example supplying the wrong number of bindings to a query, or trying to operate on a closed Connection. ProgrammingError is a subclass of DatabaseError."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Exception raised for sqlite3 API programming errors, for example supplying the wrong number of bindings to a query, or trying to operate on a closed Connection. ProgrammingError is a subclass of Datab...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340319",
+    "updatedDate": "2026-03-24T10:48:12.340320",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

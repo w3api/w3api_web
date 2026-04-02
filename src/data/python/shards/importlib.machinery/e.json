@@ -1,0 +1,359 @@
+{
+  "importlib.machinery/ExecutionLoader": {
+    "id": "importlib.machinery.ExecutionLoader",
+    "name": "ExecutionLoader",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.abc.ExecutionLoader"
+    ],
+    "signature_hash": "5afb3434ea253f55444a73b91002399661dc63a8e7f752e1f525ed9687dd2b9e",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.abc.ExecutionLoader",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An abstract base class which inherits from InspectLoader that, when implemented, helps a module to be executed as a script. The ABC represents an optional PEP 302 protocol. abstractmethod get_filename(fullname)¶ An abstract method that is to return the value of __file__ for the specified module. If no path is available, ImportError is raised. If source code is available, then the method should return the path to the source file, regardless of whether a bytecode was used to load the module. Ch..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract base class which inherits from InspectLoader that, when implemented, helps a module to be executed as a script. The ABC represents an optional PEP 302 protocol. abstractmethod get_filename...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.228686",
+    "updatedDate": "2026-03-24T10:48:12.228687",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "get_filename"
+    ]
+  },
+  "importlib.machinery/ExtensionFileLoader": {
+    "id": "importlib.machinery.ExtensionFileLoader",
+    "name": "ExtensionFileLoader",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class importlib.machinery.ExtensionFileLoader(fullname, path)"
+    ],
+    "signature_hash": "117a010890c47ee77e738307ed04f30d5df469c9635141b80f72c957ee7ed133",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.machinery.ExtensionFileLoader",
+    "parameters": [
+      {
+        "name": "fullname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "path",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A concrete implementation of importlib.abc.ExecutionLoader for extension modules. The fullname argument specifies the name of the module the loader is to support. The path argument is the path to the extension module’s file. Note that, by default, importing an extension module will fail in subinterpreters if it doesn’t implement multi-phase init (see PEP 489), even if it would otherwise import successfully. Added in version 3.3. Changed in version 3.12: Multi-phase init is now required for us..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A concrete implementation of importlib.abc.ExecutionLoader for extension modules. The fullname argument specifies the name of the module the loader is to support. The path argument is the path to the ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.229468",
+    "updatedDate": "2026-03-24T10:48:12.229469",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "name",
+      "path"
+    ],
+    "methods": [
+      "create_module",
+      "exec_module",
+      "get_code",
+      "get_filename",
+      "get_source",
+      "is_package"
+    ]
+  },
+  "importlib.machinery/machinery/EXTENSION_SUFFIXES": {
+    "id": "importlib.machinery.machinery.EXTENSION_SUFFIXES",
+    "name": "EXTENSION_SUFFIXES",
+    "type": "constant",
+    "parent": "machinery",
+    "signatures": [
+      "importlib.machinery.EXTENSION_SUFFIXES"
+    ],
+    "signature_hash": "f7a0acbf7a947b465023fde5d9340f1502566e4b3d059ba58c5b5776590307d5",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.machinery.EXTENSION_SUFFIXES",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A list of strings representing the recognized file suffixes for extension modules. Added in version 3.3."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A list of strings representing the recognized file suffixes for extension modules. Added in version 3.3.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.229004",
+    "updatedDate": "2026-03-24T10:48:12.229005",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.3.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.machinery/Loader/exec_module": {
+    "id": "importlib.machinery.Loader.exec_module",
+    "name": "exec_module",
+    "type": "method",
+    "parent": "Loader",
+    "signatures": [
+      "exec_module(module)"
+    ],
+    "signature_hash": "8566b849a08d1dccd3b4b5161e37438b9316b0949a1a486d57556de70888464e",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.abc.Loader.exec_module",
+    "parameters": [
+      {
+        "name": "module",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An abstract method that executes the module in its own namespace when a module is imported or reloaded. The module should already be initialized when exec_module() is called. When this method exists, create_module() must be defined. Added in version 3.4. Changed in version 3.6: create_module() must also be defined."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "An abstract method that executes the module in its own namespace when a module is imported or reloaded. The module should already be initialized when exec_module() is called. When this method exists, ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.228504",
+    "updatedDate": "2026-03-24T10:48:12.228505",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.machinery/InspectLoader/exec_module": {
+    "id": "importlib.machinery.InspectLoader.exec_module",
+    "name": "exec_module",
+    "type": "method",
+    "parent": "InspectLoader",
+    "signatures": [
+      "exec_module(module)"
+    ],
+    "signature_hash": "8566b849a08d1dccd3b4b5161e37438b9316b0949a1a486d57556de70888464e",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.abc.InspectLoader.exec_module",
+    "parameters": [
+      {
+        "name": "module",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Implementation of Loader.exec_module(). Added in version 3.4."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implementation of Loader.exec_module(). Added in version 3.4.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.228657",
+    "updatedDate": "2026-03-24T10:48:12.228658",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.machinery/SourceLoader/exec_module": {
+    "id": "importlib.machinery.SourceLoader.exec_module",
+    "name": "exec_module",
+    "type": "method",
+    "parent": "SourceLoader",
+    "signatures": [
+      "exec_module(module)"
+    ],
+    "signature_hash": "8566b849a08d1dccd3b4b5161e37438b9316b0949a1a486d57556de70888464e",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.abc.SourceLoader.exec_module",
+    "parameters": [
+      {
+        "name": "module",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Concrete implementation of Loader.exec_module(). Added in version 3.4."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Concrete implementation of Loader.exec_module(). Added in version 3.4.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.228894",
+    "updatedDate": "2026-03-24T10:48:12.228895",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "importlib.machinery/ExtensionFileLoader/exec_module": {
+    "id": "importlib.machinery.ExtensionFileLoader.exec_module",
+    "name": "exec_module",
+    "type": "method",
+    "parent": "ExtensionFileLoader",
+    "signatures": [
+      "exec_module(module)"
+    ],
+    "signature_hash": "8566b849a08d1dccd3b4b5161e37438b9316b0949a1a486d57556de70888464e",
+    "url": "https://docs.python.org/3/library/importlib.html#module-importlib.machinery#importlib.machinery.ExtensionFileLoader.exec_module",
+    "parameters": [
+      {
+        "name": "module",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Initializes the given module object in accordance with PEP 489. Added in version 3.5."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Initializes the given module object in accordance with PEP 489. Added in version 3.5.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.229534",
+    "updatedDate": "2026-03-24T10:48:12.229535",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

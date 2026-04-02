@@ -1,0 +1,693 @@
+{
+  "ast/Match": {
+    "id": "ast.Match",
+    "name": "Match",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Match(subject, cases)"
+    ],
+    "signature_hash": "c9a1e3f1ce675e6dd8773f921ec102d5cf0e8497bfbb3fe31b698efda47196bb",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Match",
+    "parameters": [
+      {
+        "name": "subject",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "cases",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A match statement. subject holds the subject of the match (the object that is being matched against the cases) and cases contains an iterable of match_case nodes with the different cases. Added in version 3.10."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A match statement. subject holds the subject of the match (the object that is being matched against the cases) and cases contains an iterable of match_case nodes with the different cases. Added in ver...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165250",
+    "updatedDate": "2026-03-24T10:48:12.165251",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/MatchAs": {
+    "id": "ast.MatchAs",
+    "name": "MatchAs",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.MatchAs(pattern, name)"
+    ],
+    "signature_hash": "f47368f6d12a8dcdcae13ad47ffaf3c5ab24c005e30b8cf4f97e349ca88f3cbf",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.MatchAs",
+    "parameters": [
+      {
+        "name": "pattern",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A match “as-pattern”, capture pattern or wildcard pattern. pattern contains the match pattern that the subject will be matched against. If the pattern is None, the node represents a capture pattern (i.e a bare name) and will always succeed. The name attribute contains the name that will be bound if the pattern is successful. If name is None, pattern must also be None and the node represents the wildcard pattern. >>> print(ast.dump(ast.parse(\"\"\" ... match x: ... case [x] as y: ... ... ... case..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A match “as-pattern”, capture pattern or wildcard pattern. pattern contains the match pattern that the subject will be matched against. If the pattern is None, the node represents a capture pattern (i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165451",
+    "updatedDate": "2026-03-24T10:48:12.165454",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/MatchClass": {
+    "id": "ast.MatchClass",
+    "name": "MatchClass",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.MatchClass(cls, patterns, kwd_attrs, kwd_patterns)"
+    ],
+    "signature_hash": "9ff97c9bc99512d9f82cba2d6264b3d7c46eb25b2b6169eef283f09380787c82",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.MatchClass",
+    "parameters": [
+      {
+        "name": "cls",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "patterns",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "kwd_attrs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "kwd_patterns",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A match class pattern. cls is an expression giving the nominal class to be matched. patterns is a sequence of pattern nodes to be matched against the class defined sequence of pattern matching attributes. kwd_attrs is a sequence of additional attributes to be matched (specified as keyword arguments in the class pattern), kwd_patterns are the corresponding patterns (specified as keyword values in the class pattern). This pattern succeeds if the subject is an instance of the nominated class, al..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A match class pattern. cls is an expression giving the nominal class to be matched. patterns is a sequence of pattern nodes to be matched against the class defined sequence of pattern matching attribu...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165409",
+    "updatedDate": "2026-03-24T10:48:12.165410",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/MatchMapping": {
+    "id": "ast.MatchMapping",
+    "name": "MatchMapping",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.MatchMapping(keys, patterns, rest)"
+    ],
+    "signature_hash": "f0a1b694025020c6898a95638e39b15cfbfb4e944db2f88ca6ea1611e591c188",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.MatchMapping",
+    "parameters": [
+      {
+        "name": "keys",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "patterns",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "rest",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A match mapping pattern. keys is a sequence of expression nodes. patterns is a corresponding sequence of pattern nodes. rest is an optional name that can be specified to capture the remaining mapping elements. Permitted key expressions are restricted as described in the match statement documentation. This pattern succeeds if the subject is a mapping, all evaluated key expressions are present in the mapping, and the value corresponding to each key matches the corresponding subpattern. If rest ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A match mapping pattern. keys is a sequence of expression nodes. patterns is a corresponding sequence of pattern nodes. rest is an optional name that can be specified to capture the remaining mapping ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165384",
+    "updatedDate": "2026-03-24T10:48:12.165385",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/MatchOr": {
+    "id": "ast.MatchOr",
+    "name": "MatchOr",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.MatchOr(patterns)"
+    ],
+    "signature_hash": "c284d022b2c205252e24bcdabb78d20a5a2fd4e9f8d9cd876f666d026e8a1eb2",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.MatchOr",
+    "parameters": [
+      {
+        "name": "patterns",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A match “or-pattern”. An or-pattern matches each of its subpatterns in turn to the subject, until one succeeds. The or-pattern is then deemed to succeed. If none of the subpatterns succeed the or-pattern fails. The patterns attribute contains a list of match pattern nodes that will be matched against the subject. >>> print(ast.dump(ast.parse(\"\"\" ... match x: ... case [x] | (y): ... ... ... \"\"\"), indent=4)) Module( body=[ Match( subject=Name(id='x', ctx=Load()), cases=[ match_case( pattern=Mat..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A match “or-pattern”. An or-pattern matches each of its subpatterns in turn to the subject, until one succeeds. The or-pattern is then deemed to succeed. If none of the subpatterns succeed the or-patt...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165477",
+    "updatedDate": "2026-03-24T10:48:12.165478",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/MatchSequence": {
+    "id": "ast.MatchSequence",
+    "name": "MatchSequence",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.MatchSequence(patterns)"
+    ],
+    "signature_hash": "78c7e7cbaee0f686a612c8cf89d9d922a37b9196f7adf604c23e314b3e7af84d",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.MatchSequence",
+    "parameters": [
+      {
+        "name": "patterns",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A match sequence pattern. patterns contains the patterns to be matched against the subject elements if the subject is a sequence. Matches a variable length sequence if one of the subpatterns is a MatchStar node, otherwise matches a fixed length sequence. >>> print(ast.dump(ast.parse(\"\"\" ... match x: ... case [1, 2]: ... ... ... \"\"\"), indent=4)) Module( body=[ Match( subject=Name(id='x', ctx=Load()), cases=[ match_case( pattern=MatchSequence( patterns=[ MatchValue( value=Constant(value=1)), Ma..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A match sequence pattern. patterns contains the patterns to be matched against the subject elements if the subject is a sequence. Matches a variable length sequence if one of the subpatterns is a Matc...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165331",
+    "updatedDate": "2026-03-24T10:48:12.165332",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/MatchSingleton": {
+    "id": "ast.MatchSingleton",
+    "name": "MatchSingleton",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.MatchSingleton(value)"
+    ],
+    "signature_hash": "0ff48983912aac55e94c4ddd7266e3b478e51fae882f7dcb0b1d4463f851f53b",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.MatchSingleton",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A match literal pattern that compares by identity. value is the singleton to be compared against: None, True, or False. This pattern succeeds if the match subject is the given constant. >>> print(ast.dump(ast.parse(\"\"\" ... match x: ... case None: ... ... ... \"\"\"), indent=4)) Module( body=[ Match( subject=Name(id='x', ctx=Load()), cases=[ match_case( pattern=MatchSingleton(value=None), body=[ Expr( value=Constant(value=Ellipsis))])])]) Added in version 3.10."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A match literal pattern that compares by identity. value is the singleton to be compared against: None, True, or False. This pattern succeeds if the match subject is the given constant. >>> print(ast....",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165310",
+    "updatedDate": "2026-03-24T10:48:12.165311",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/MatchStar": {
+    "id": "ast.MatchStar",
+    "name": "MatchStar",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.MatchStar(name)"
+    ],
+    "signature_hash": "03e41574571c9b7880073051d9d5be88a0084145024641145f8088e9e641270f",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.MatchStar",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Matches the rest of the sequence in a variable length match sequence pattern. If name is not None, a list containing the remaining sequence elements is bound to that name if the overall sequence pattern is successful. >>> print(ast.dump(ast.parse(\"\"\" ... match x: ... case [1, 2, *rest]: ... ... ... case [*_]: ... ... ... \"\"\"), indent=4)) Module( body=[ Match( subject=Name(id='x', ctx=Load()), cases=[ match_case( pattern=MatchSequence( patterns=[ MatchValue( value=Constant(value=1)), MatchValu..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Matches the rest of the sequence in a variable length match sequence pattern. If name is not None, a list containing the remaining sequence elements is bound to that name if the overall sequence patte...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165349",
+    "updatedDate": "2026-03-24T10:48:12.165350",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/MatchValue": {
+    "id": "ast.MatchValue",
+    "name": "MatchValue",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.MatchValue(value)"
+    ],
+    "signature_hash": "6cfc61b8b484a4c457ca1d47dcdbac6e3f2540be833b5d3b92e6eddc712e62eb",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.MatchValue",
+    "parameters": [
+      {
+        "name": "value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A match literal or value pattern that compares by equality. value is an expression node. Permitted value nodes are restricted as described in the match statement documentation. This pattern succeeds if the match subject is equal to the evaluated value. >>> print(ast.dump(ast.parse(\"\"\" ... match x: ... case \"Relevant\": ... ... ... \"\"\"), indent=4)) Module( body=[ Match( subject=Name(id='x', ctx=Load()), cases=[ match_case( pattern=MatchValue( value=Constant(value='Relevant')), body=[ Expr( valu..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A match literal or value pattern that compares by equality. value is an expression node. Permitted value nodes are restricted as described in the match statement documentation. This pattern succeeds i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165292",
+    "updatedDate": "2026-03-24T10:48:12.165293",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Module": {
+    "id": "ast.Module",
+    "name": "Module",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Module(body, type_ignores)"
+    ],
+    "signature_hash": "1229566e4642d48457f3efe4470bd3dab84c830c41fae8f47e4f64732607b320",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Module",
+    "parameters": [
+      {
+        "name": "body",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type_ignores",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A Python module, as with file input. Node type generated by ast.parse() in the default \"exec\" mode. body is a list of the module’s Statements. type_ignores is a list of the module’s type ignore comments; see ast.parse() for more details. >>> print(ast.dump(ast.parse('x = 1'), indent=4)) Module( body=[ Assign( targets=[ Name(id='x', ctx=Store())], value=Constant(value=1))])"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A Python module, as with file input. Node type generated by ast.parse() in the default \"exec\" mode. body is a list of the module’s Statements. type_ignores is a list of the module’s type ignore commen...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.164185",
+    "updatedDate": "2026-03-24T10:48:12.164186",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/match_case": {
+    "id": "ast.match_case",
+    "name": "match_case",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.match_case(pattern, guard, body)"
+    ],
+    "signature_hash": "d45870a18c9216c88c7b0a963d3397b2b23b8d57c320f94371830382bd3db1fa",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.match_case",
+    "parameters": [
+      {
+        "name": "pattern",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "guard",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "body",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A single case pattern in a match statement. pattern contains the match pattern that the subject will be matched against. Note that the AST nodes produced for patterns differ from those produced for expressions, even when they share the same syntax. The guard attribute contains an expression that will be evaluated if the pattern matches the subject. body contains a list of nodes to execute if the pattern matches and the result of evaluating the guard expression is true. >>> print(ast.dump(ast...."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A single case pattern in a match statement. pattern contains the match pattern that the subject will be matched against. Note that the AST nodes produced for patterns differ from those produced for ex...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165273",
+    "updatedDate": "2026-03-24T10:48:12.165274",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.10.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

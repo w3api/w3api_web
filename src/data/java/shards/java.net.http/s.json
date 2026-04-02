@@ -1,0 +1,950 @@
+{
+  "java.net.http/HttpClient/send": {
+    "id": "java.net.http.HttpClient.send",
+    "name": "send",
+    "type": "method",
+    "parent": "HttpClient",
+    "signatures": [
+      "public abstract<T> HttpResponse<T> send(HttpRequest request, HttpResponse.BodyHandler<T> responseBodyHandler)"
+    ],
+    "signature_hash": "6b69548b40397609e0bb30678cdd52037fc2bc711c2b092a29fe70aaf8e11425",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.html",
+    "parameters": [
+      {
+        "name": "request",
+        "type": "HttpRequest",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "responseBodyHandler",
+        "type": "HttpResponse.BodyHandler<T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract<T> HttpResponse<T>",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "InterruptedException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Sends the given request using this client, blocking if necessary to get the response."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sends the given request using this client, blocking if necessary to get the response.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883295",
+    "updatedDate": "2026-03-24T10:48:13.883296",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpClient/sendAsync": {
+    "id": "java.net.http.HttpClient.sendAsync",
+    "name": "sendAsync",
+    "type": "method",
+    "parent": "HttpClient",
+    "signatures": [
+      "public abstract<T> CompletableFuture<HttpResponse<T>> sendAsync(HttpRequest request, HttpResponse.BodyHandler<T> responseBodyHandler)",
+      "public abstract<T> CompletableFuture<HttpResponse<T>> sendAsync(HttpRequest request, HttpResponse.BodyHandler<T> responseBodyHandler, HttpResponse.PushPromiseHandler<T> pushPromiseHandler)"
+    ],
+    "signature_hash": "6efb466f14dd76bcf7b7e12fe2f6ca1ab3d1f25106b21bf107fdc2c0c75e2fdf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.html",
+    "parameters": [
+      {
+        "name": "request",
+        "has_default": false,
+        "default_value": null,
+        "type": "HttpRequest",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "responseBodyHandler",
+        "has_default": false,
+        "default_value": null,
+        "type": "HttpResponse.BodyHandler<T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "pushPromiseHandler",
+        "has_default": false,
+        "default_value": null,
+        "type": "HttpResponse.PushPromiseHandler<T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract<T> CompletableFuture<HttpResponse<T>>",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Sends the given request asynchronously using this client with the given response body handler."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sends the given request asynchronously using this client with the given response body handler.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883338",
+    "updatedDate": "2026-03-24T10:48:13.883339",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket/sendBinary": {
+    "id": "java.net.http.WebSocket.sendBinary",
+    "name": "sendBinary",
+    "type": "method",
+    "parent": "WebSocket",
+    "signatures": [
+      "public CompletableFuture<WebSocket> sendBinary(ByteBuffer data, boolean last)"
+    ],
+    "signature_hash": "1c04801796a9eca8481bbe3b5e6920561d568e465ef337344af792bd24149e47",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.html",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "ByteBuffer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "last",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "CompletableFuture<WebSocket>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Sends binary data with bytes from the given buffer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sends binary data with bytes from the given buffer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883796",
+    "updatedDate": "2026-03-24T10:48:13.883797",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket/sendClose": {
+    "id": "java.net.http.WebSocket.sendClose",
+    "name": "sendClose",
+    "type": "method",
+    "parent": "WebSocket",
+    "signatures": [
+      "public CompletableFuture<WebSocket> sendClose(int statusCode, String reason)"
+    ],
+    "signature_hash": "ae3658ea6fe3117e0d81685ce4d8278f8f4bf90550d601653428a3cbf314a65b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.html",
+    "parameters": [
+      {
+        "name": "statusCode",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "reason",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "CompletableFuture<WebSocket>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Initiates an orderly closure of this WebSocket's output by sending a Close message with the given status code and the reason."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Initiates an orderly closure of this WebSocket's output by sending a Close message with the given status code and the reason.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883814",
+    "updatedDate": "2026-03-24T10:48:13.883815",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket/sendPing": {
+    "id": "java.net.http.WebSocket.sendPing",
+    "name": "sendPing",
+    "type": "method",
+    "parent": "WebSocket",
+    "signatures": [
+      "public CompletableFuture<WebSocket> sendPing(ByteBuffer message)"
+    ],
+    "signature_hash": "2d27762795609e377e1b54033556244773924d03ee93604cc1154920cd815b9e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.html",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "ByteBuffer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "CompletableFuture<WebSocket>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Sends a Ping message with bytes from the given buffer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sends a Ping message with bytes from the given buffer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883831",
+    "updatedDate": "2026-03-24T10:48:13.883832",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket/sendPong": {
+    "id": "java.net.http.WebSocket.sendPong",
+    "name": "sendPong",
+    "type": "method",
+    "parent": "WebSocket",
+    "signatures": [
+      "public CompletableFuture<WebSocket> sendPong(ByteBuffer message)"
+    ],
+    "signature_hash": "cdc08711cdd30a9a8fda0eb0e989696eb09f5990007b0c5492c0cb8a431c7c55",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.html",
+    "parameters": [
+      {
+        "name": "message",
+        "type": "ByteBuffer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "CompletableFuture<WebSocket>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Sends a Pong message with bytes from the given buffer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sends a Pong message with bytes from the given buffer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883847",
+    "updatedDate": "2026-03-24T10:48:13.883847",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/WebSocket/sendText": {
+    "id": "java.net.http.WebSocket.sendText",
+    "name": "sendText",
+    "type": "method",
+    "parent": "WebSocket",
+    "signatures": [
+      "public CompletableFuture<WebSocket> sendText(CharSequence data, boolean last)"
+    ],
+    "signature_hash": "3205442ddb946d465d0173a052f537919d773395a82635e8a3fcb60ef4ba336a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.html",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "CharSequence",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "last",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "CompletableFuture<WebSocket>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Sends textual data with characters from the given character sequence."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sends textual data with characters from the given character sequence.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883866",
+    "updatedDate": "2026-03-24T10:48:13.883867",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/Builder/setHeader": {
+    "id": "java.net.http.Builder.setHeader",
+    "name": "setHeader",
+    "type": "method",
+    "parent": "Builder",
+    "signatures": [
+      "public HttpRequest.Builder setHeader(String name, String value)"
+    ],
+    "signature_hash": "5fcbdcc624f7037b84119359b8d2ab1459594a7ffab8b22b85b2936a631a4308",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "HttpRequest.Builder",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Sets the given name value pair to the set of headers for this request."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets the given name value pair to the set of headers for this request.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.884948",
+    "updatedDate": "2026-03-24T10:48:13.884949",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpClient/shutdown": {
+    "id": "java.net.http.HttpClient.shutdown",
+    "name": "shutdown",
+    "type": "method",
+    "parent": "HttpClient",
+    "signatures": [
+      "public void shutdown()"
+    ],
+    "signature_hash": "df491dc8b9ff7b029a14c1088c98b538ae923511d668b67ae742be7c636ab813",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Initiates an orderly shutdown in which requests previously submitted withsendorsendAsyncare run to completion, but no new request will be accepted."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Initiates an orderly shutdown in which requests previously submitted withsendorsendAsyncare run to completion, but no new request will be accepted.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883351",
+    "updatedDate": "2026-03-24T10:48:13.883352",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpClient/shutdownNow": {
+    "id": "java.net.http.HttpClient.shutdownNow",
+    "name": "shutdownNow",
+    "type": "method",
+    "parent": "HttpClient",
+    "signatures": [
+      "public void shutdownNow()"
+    ],
+    "signature_hash": "cbd98c01a6d606f8b2f08debe8d7362e2bea724199de2e62573bcc6235bff8fd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This method attempts to initiate an immediate shutdown."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method attempts to initiate an immediate shutdown.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883363",
+    "updatedDate": "2026-03-24T10:48:13.883364",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpClient/sslContext": {
+    "id": "java.net.http.HttpClient.sslContext",
+    "name": "sslContext",
+    "type": "method",
+    "parent": "HttpClient",
+    "signatures": [
+      "public abstract SSLContext sslContext()"
+    ],
+    "signature_hash": "f231b9e48a25291536f172e10d0827bd11ee4414d1e1e4de552ddfeafae0d108",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.html",
+    "parameters": [],
+    "return_type": "abstract SSLContext",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns this client'sSSLContext."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns this client'sSSLContext.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883374",
+    "updatedDate": "2026-03-24T10:48:13.883375",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/Builder/sslContext": {
+    "id": "java.net.http.Builder.sslContext",
+    "name": "sslContext",
+    "type": "method",
+    "parent": "Builder",
+    "signatures": [
+      "public HttpClient.Builder sslContext(SSLContext sslContext)"
+    ],
+    "signature_hash": "cd97f879cad9505e0e1b1b9c1b90ba760e3fb5686eaa986fcdb72a6f9d3a5325",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.Builder.html",
+    "parameters": [
+      {
+        "name": "sslContext",
+        "type": "SSLContext",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "HttpClient.Builder",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Sets anSSLContext."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets anSSLContext.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.884069",
+    "updatedDate": "2026-03-24T10:48:13.884070",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpClient/sslParameters": {
+    "id": "java.net.http.HttpClient.sslParameters",
+    "name": "sslParameters",
+    "type": "method",
+    "parent": "HttpClient",
+    "signatures": [
+      "public abstract SSLParameters sslParameters()"
+    ],
+    "signature_hash": "624a78ba11940eb4c42c0cb701b53a2f200e2651b3aabbc95763397b708c8d95",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.html",
+    "parameters": [],
+    "return_type": "abstract SSLParameters",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a copy of this client'sSSLParameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a copy of this client'sSSLParameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883386",
+    "updatedDate": "2026-03-24T10:48:13.883387",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/Builder/sslParameters": {
+    "id": "java.net.http.Builder.sslParameters",
+    "name": "sslParameters",
+    "type": "method",
+    "parent": "Builder",
+    "signatures": [
+      "public HttpClient.Builder sslParameters(SSLParameters sslParameters)"
+    ],
+    "signature_hash": "3c8f01df5a8dc6926e90ab579691acccf77df760c74b5c1dd2544fe105e165d4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.Builder.html",
+    "parameters": [
+      {
+        "name": "sslParameters",
+        "type": "SSLParameters",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "HttpClient.Builder",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Sets anSSLParameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets anSSLParameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.884086",
+    "updatedDate": "2026-03-24T10:48:13.884087",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse/sslSession": {
+    "id": "java.net.http.HttpResponse.sslSession",
+    "name": "sslSession",
+    "type": "method",
+    "parent": "HttpResponse",
+    "signatures": [
+      "public Optional<SSLSession> sslSession()"
+    ],
+    "signature_hash": "0bcf74c82fc726fc2b3aa2fb1499af786a2179ddf4ffcc6e014f3acb14d367ff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.html",
+    "parameters": [],
+    "return_type": "Optional<SSLSession>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns anOptionalcontaining theSSLSessionin effect for this response."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns anOptionalcontaining theSSLSessionin effect for this response.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883664",
+    "updatedDate": "2026-03-24T10:48:13.883665",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpResponse/statusCode": {
+    "id": "java.net.http.HttpResponse.statusCode",
+    "name": "statusCode",
+    "type": "method",
+    "parent": "HttpResponse",
+    "signatures": [
+      "public int statusCode()"
+    ],
+    "signature_hash": "f2fbfcea1cad7bc9151c3336de89adb0e7fb7a4e8212e208e0b641ec889de89b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the status code for this response."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the status code for this response.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883677",
+    "updatedDate": "2026-03-24T10:48:13.883678",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/ResponseInfo/statusCode": {
+    "id": "java.net.http.ResponseInfo.statusCode",
+    "name": "statusCode",
+    "type": "method",
+    "parent": "ResponseInfo",
+    "signatures": [
+      "public int statusCode()"
+    ],
+    "signature_hash": "f2fbfcea1cad7bc9151c3336de89adb0e7fb7a4e8212e208e0b641ec889de89b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Provides the response status code."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Provides the response status code.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.885971",
+    "updatedDate": "2026-03-24T10:48:13.885972",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/Builder/subprotocols": {
+    "id": "java.net.http.Builder.subprotocols",
+    "name": "subprotocols",
+    "type": "method",
+    "parent": "Builder",
+    "signatures": [
+      "public WebSocket.Builder subprotocols(String mostPreferred, String... lesserPreferred)"
+    ],
+    "signature_hash": "bddcf398e6dc0b17812f69c833f54762fdf18e64835227b228ebee6bb62ea480",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/WebSocket.Builder.html",
+    "parameters": [
+      {
+        "name": "mostPreferred",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "lesserPreferred",
+        "type": "String...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "WebSocket.Builder",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Sets a request for the given subprotocols."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets a request for the given subprotocols.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.886135",
+    "updatedDate": "2026-03-24T10:48:13.886136",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

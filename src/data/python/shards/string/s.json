@@ -1,0 +1,180 @@
+{
+  "string/Template/safe_substitute": {
+    "id": "string.Template.safe_substitute",
+    "name": "safe_substitute",
+    "type": "method",
+    "parent": "Template",
+    "signatures": [
+      "safe_substitute(mapping={}, /, **kwds)"
+    ],
+    "signature_hash": "02a9076e10953891e3be5e8aa8767b509be5dcde0a4c205fed19e563b693e35d",
+    "url": "https://docs.python.org/3/library/string.html#module-string#string.Template.safe_substitute",
+    "parameters": [
+      {
+        "name": "mapping",
+        "type": "",
+        "has_default": true,
+        "default_value": "{}",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "kwds",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Like substitute(), except that if placeholders are missing from mapping and kwds, instead of raising a KeyError exception, the original placeholder will appear in the resulting string intact. Also, unlike with substitute(), any other appearances of the $ will simply return $ instead of raising ValueError. While other exceptions may still occur, this method is called “safe” because it always tries to return a usable string instead of raising an exception. In another sense, safe_substitute() ma..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Like substitute(), except that if placeholders are missing from mapping and kwds, instead of raising a KeyError exception, the original placeholder will appear in the resulting string intact. Also, un...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.345960",
+    "updatedDate": "2026-03-24T10:48:12.345961",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "string/Template/substitute": {
+    "id": "string.Template.substitute",
+    "name": "substitute",
+    "type": "method",
+    "parent": "Template",
+    "signatures": [
+      "substitute(mapping={}, /, **kwds)"
+    ],
+    "signature_hash": "58ce7285366cd19ef5eb273e17ab8b33372d93f3c40f87d34508e9302ee95ff0",
+    "url": "https://docs.python.org/3/library/string.html#module-string#string.Template.substitute",
+    "parameters": [
+      {
+        "name": "mapping",
+        "type": "",
+        "has_default": true,
+        "default_value": "{}",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "kwds",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": true,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Performs the template substitution, returning a new string. mapping is any dictionary-like object with keys that match the placeholders in the template. Alternatively, you can provide keyword arguments, where the keywords are the placeholders. When both mapping and kwds are given and there are duplicates, the placeholders from kwds take precedence."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Performs the template substitution, returning a new string. mapping is any dictionary-like object with keys that match the placeholders in the template. Alternatively, you can provide keyword argument...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.345938",
+    "updatedDate": "2026-03-24T10:48:12.345939",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "string": {
+    "type": "module",
+    "name": "string",
+    "id": "string",
+    "description": "Module string",
+    "classes": [
+      "Formatter",
+      "Template"
+    ],
+    "constants": [
+      "ascii_letters",
+      "ascii_lowercase",
+      "ascii_uppercase",
+      "digits",
+      "hexdigits",
+      "octdigits",
+      "printable",
+      "punctuation",
+      "whitespace"
+    ],
+    "functions": [
+      "capwords"
+    ]
+  }
+}

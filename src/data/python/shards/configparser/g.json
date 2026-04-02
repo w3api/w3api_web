@@ -1,0 +1,414 @@
+{
+  "configparser/ConfigParser/get": {
+    "id": "configparser.ConfigParser.get",
+    "name": "get",
+    "type": "method",
+    "parent": "ConfigParser",
+    "signatures": [
+      "get(section, option, *, raw=False, vars=None[, fallback])"
+    ],
+    "signature_hash": "353547b9509c082fce2245ce3871efda3fa7c617fb3507f23c41093f532cf397",
+    "url": "https://docs.python.org/3/library/configparser.html#module-configparser#configparser.ConfigParser.get",
+    "parameters": [
+      {
+        "name": "section",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "option",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "raw",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "vars",
+        "type": "",
+        "has_default": true,
+        "default_value": "None[, fallback",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Get an option value for the named section. If vars is provided, it must be a dictionary. The option is looked up in vars (if provided), section, and in DEFAULTSECT in that order. If the key is not found and fallback is provided, it is used as a fallback value. None can be provided as a fallback value. All the '%' interpolations are expanded in the return values, unless the raw argument is true. Values for interpolation keys are looked up in the same manner as the option. Changed in version 3...."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get an option value for the named section. If vars is provided, it must be a dictionary. The option is looked up in vars (if provided), section, and in DEFAULTSECT in that order. If the key is not fou...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.176528",
+    "updatedDate": "2026-03-24T10:48:12.176529",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "configparser/ConfigParser/getboolean": {
+    "id": "configparser.ConfigParser.getboolean",
+    "name": "getboolean",
+    "type": "method",
+    "parent": "ConfigParser",
+    "signatures": [
+      "getboolean(section, option, *, raw=False, vars=None[, fallback])"
+    ],
+    "signature_hash": "6d1cfbd432802822288e04c0d4bc1799ad60363daf7b400173d77466e48d4095",
+    "url": "https://docs.python.org/3/library/configparser.html#module-configparser#configparser.ConfigParser.getboolean",
+    "parameters": [
+      {
+        "name": "section",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "option",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "raw",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "vars",
+        "type": "",
+        "has_default": true,
+        "default_value": "None[, fallback",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A convenience method which coerces the option in the specified section to a Boolean value. Note that the accepted values for the option are '1', 'yes', 'true', and 'on', which cause this method to return True, and '0', 'no', 'false', and 'off', which cause it to return False. These string values are checked in a case-insensitive manner. Any other value will cause it to raise ValueError. See get() for explanation of raw, vars and fallback."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A convenience method which coerces the option in the specified section to a Boolean value. Note that the accepted values for the option are '1', 'yes', 'true', and 'on', which cause this method to ret...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.176602",
+    "updatedDate": "2026-03-24T10:48:12.176603",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "configparser/ConfigParser/getfloat": {
+    "id": "configparser.ConfigParser.getfloat",
+    "name": "getfloat",
+    "type": "method",
+    "parent": "ConfigParser",
+    "signatures": [
+      "getfloat(section, option, *, raw=False, vars=None[, fallback])"
+    ],
+    "signature_hash": "1a3c94ae4d74c63ae6fa84c0b1e593dcc01c3ad6eafd8ff9af7a3ece471a6cf6",
+    "url": "https://docs.python.org/3/library/configparser.html#module-configparser#configparser.ConfigParser.getfloat",
+    "parameters": [
+      {
+        "name": "section",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "option",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "raw",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "vars",
+        "type": "",
+        "has_default": true,
+        "default_value": "None[, fallback",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A convenience method which coerces the option in the specified section to a floating-point number. See get() for explanation of raw, vars and fallback."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A convenience method which coerces the option in the specified section to a floating-point number. See get() for explanation of raw, vars and fallback.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.176575",
+    "updatedDate": "2026-03-24T10:48:12.176576",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "configparser/ConfigParser/getint": {
+    "id": "configparser.ConfigParser.getint",
+    "name": "getint",
+    "type": "method",
+    "parent": "ConfigParser",
+    "signatures": [
+      "getint(section, option, *, raw=False, vars=None[, fallback])"
+    ],
+    "signature_hash": "d6c8e65673edf7ac4243873c0ca361d90f62aaf4cf41201d61582ff59eb42e84",
+    "url": "https://docs.python.org/3/library/configparser.html#module-configparser#configparser.ConfigParser.getint",
+    "parameters": [
+      {
+        "name": "section",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "option",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "raw",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "vars",
+        "type": "",
+        "has_default": true,
+        "default_value": "None[, fallback",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A convenience method which coerces the option in the specified section to an integer. See get() for explanation of raw, vars and fallback."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A convenience method which coerces the option in the specified section to an integer. See get() for explanation of raw, vars and fallback.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.176550",
+    "updatedDate": "2026-03-24T10:48:12.176551",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

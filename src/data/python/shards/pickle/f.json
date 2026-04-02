@@ -1,0 +1,103 @@
+{
+  "pickle/Pickler/fast": {
+    "id": "pickle.Pickler.fast",
+    "name": "fast",
+    "type": "attribute",
+    "parent": "Pickler",
+    "signatures": [
+      "fast"
+    ],
+    "signature_hash": "115dc3606fbf8691fb69f2aefec86f2ecd302362a0502b3a9648bf2c4dc8290f",
+    "url": "https://docs.python.org/3/library/pickle.html#module-pickle#pickle.Pickler.fast",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated. Enable fast mode if set to a true value. The fast mode disables the usage of memo, therefore speeding the pickling process by not generating superfluous PUT opcodes. It should not be used with self-referential objects, doing otherwise will cause Pickler to recurse infinitely. Use pickletools.optimize() if you need more compact pickles."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated. Enable fast mode if set to a true value. The fast mode disables the usage of memo, therefore speeding the pickling process by not generating superfluous PUT opcodes. It should not be used ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.306976",
+    "updatedDate": "2026-03-24T10:48:12.306976",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pickle/Unpickler/find_class": {
+    "id": "pickle.Unpickler.find_class",
+    "name": "find_class",
+    "type": "method",
+    "parent": "Unpickler",
+    "signatures": [
+      "find_class(module, name)"
+    ],
+    "signature_hash": "128febd0f9ed85da9f2072ec26d1fe4f38a19bbc8ea427e874e06a5fafa745c8",
+    "url": "https://docs.python.org/3/library/pickle.html#module-pickle#pickle.Unpickler.find_class",
+    "parameters": [
+      {
+        "name": "module",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Import module if necessary and return the object called name from it, where the module and name arguments are str objects. Note, unlike its name suggests, find_class() is also used for finding functions. Subclasses may override this to gain control over what type of objects and how they can be loaded, potentially reducing security risks. Refer to Restricting Globals for details. Raises an auditing event pickle.find_class with arguments module, name."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Import module if necessary and return the object called name from it, where the module and name arguments are str objects. Note, unlike its name suggests, find_class() is also used for finding functio...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.307073",
+    "updatedDate": "2026-03-24T10:48:12.307074",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "java.lang.instrument/IllegalClassFormatException/IllegalClassFormatException": {
+    "id": "java.lang.instrument.IllegalClassFormatException.IllegalClassFormatException",
+    "name": "IllegalClassFormatException",
+    "type": "constructor",
+    "parent": "IllegalClassFormatException",
+    "signatures": [
+      "public IllegalClassFormatException()",
+      "public IllegalClassFormatException(String s)"
+    ],
+    "signature_hash": "a79ba8ce42fc74bcb946122982a1d7fd0735621b0eca1aad7e7f1d8a01d546b3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/IllegalClassFormatException.html",
+    "parameters": [
+      {
+        "name": "s",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructs anIllegalClassFormatExceptionwith no detail message."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs anIllegalClassFormatExceptionwith no detail message.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.826216",
+    "updatedDate": "2026-03-24T10:48:13.826217",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.instrument/IllegalClassFormatException": {
+    "id": "java.lang.instrument.IllegalClassFormatException",
+    "name": "IllegalClassFormatException",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "class IllegalClassFormatException"
+    ],
+    "signature_hash": "b5bccdcb8704d404e8d775c629505c2b80326bd340e813b71504710fe056307f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/IllegalClassFormatException.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.826198",
+    "updatedDate": "2026-03-24T10:48:13.826199",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "IllegalClassFormatException"
+    ]
+  },
+  "java.lang.instrument/Instrumentation": {
+    "id": "java.lang.instrument.Instrumentation",
+    "name": "Instrumentation",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Instrumentation"
+    ],
+    "signature_hash": "03c9db170d4d7fe6b3edcaa4e638ba0195b4e0bff5e1f9f665b3c93bd59a5da2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.825757",
+    "updatedDate": "2026-03-24T10:48:13.825757",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "addTransformer",
+      "appendToBootstrapClassLoaderSearch",
+      "appendToSystemClassLoaderSearch",
+      "getAllLoadedClasses",
+      "getInitiatedClasses",
+      "getObjectSize",
+      "isModifiableClass",
+      "isModifiableModule",
+      "isNativeMethodPrefixSupported",
+      "isRedefineClassesSupported",
+      "isRetransformClassesSupported",
+      "redefineClasses",
+      "redefineModule",
+      "removeTransformer",
+      "retransformClasses",
+      "setNativeMethodPrefix"
+    ]
+  },
+  "java.lang.instrument/Instrumentation/isModifiableClass": {
+    "id": "java.lang.instrument.Instrumentation.isModifiableClass",
+    "name": "isModifiableClass",
+    "type": "method",
+    "parent": "Instrumentation",
+    "signatures": [
+      "public boolean isModifiableClass(Class<?> theClass)"
+    ],
+    "signature_hash": "3f199338f451c2f821a02ef345640532697b2de49bcd64f8f08a35df87d33c85",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+    "parameters": [
+      {
+        "name": "theClass",
+        "type": "Class<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Tests whether a class is modifiable byretransformationorredefinition."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tests whether a class is modifiable byretransformationorredefinition.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.825887",
+    "updatedDate": "2026-03-24T10:48:13.825890",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.instrument/Instrumentation/isModifiableModule": {
+    "id": "java.lang.instrument.Instrumentation.isModifiableModule",
+    "name": "isModifiableModule",
+    "type": "method",
+    "parent": "Instrumentation",
+    "signatures": [
+      "public boolean isModifiableModule(Module module)"
+    ],
+    "signature_hash": "2e8db990ae79f13764001f45b15660262ea7f7e595a92433e06e23ce3e31ad01",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+    "parameters": [
+      {
+        "name": "module",
+        "type": "Module",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Tests whether a module can be modified withredefineModule."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Tests whether a module can be modified withredefineModule.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.825904",
+    "updatedDate": "2026-03-24T10:48:13.825905",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.instrument/Instrumentation/isNativeMethodPrefixSupported": {
+    "id": "java.lang.instrument.Instrumentation.isNativeMethodPrefixSupported",
+    "name": "isNativeMethodPrefixSupported",
+    "type": "method",
+    "parent": "Instrumentation",
+    "signatures": [
+      "public boolean isNativeMethodPrefixSupported()"
+    ],
+    "signature_hash": "be867316de3c5c5e027978cfc0eb1df08990fbd7cc65b96c4c0ef7702275cc73",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns whether the current JVM configuration supportssetting a native method prefix."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns whether the current JVM configuration supportssetting a native method prefix.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.825917",
+    "updatedDate": "2026-03-24T10:48:13.825918",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.instrument/Instrumentation/isRedefineClassesSupported": {
+    "id": "java.lang.instrument.Instrumentation.isRedefineClassesSupported",
+    "name": "isRedefineClassesSupported",
+    "type": "method",
+    "parent": "Instrumentation",
+    "signatures": [
+      "public boolean isRedefineClassesSupported()"
+    ],
+    "signature_hash": "53ff53f041a44803eab5816f4436f32136e0984c4139bf05bfcaf1d40495ab86",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns whether or not the current JVM configuration supports redefinition of classes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns whether or not the current JVM configuration supports redefinition of classes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.825929",
+    "updatedDate": "2026-03-24T10:48:13.825929",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.instrument/Instrumentation/isRetransformClassesSupported": {
+    "id": "java.lang.instrument.Instrumentation.isRetransformClassesSupported",
+    "name": "isRetransformClassesSupported",
+    "type": "method",
+    "parent": "Instrumentation",
+    "signatures": [
+      "public boolean isRetransformClassesSupported()"
+    ],
+    "signature_hash": "fbed7ee77b5f9aab0c634e7e3cc03402108f02fe5d0b7f0de8de0cf0acec19e1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns whether or not the current JVM configuration supports retransformation of classes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns whether or not the current JVM configuration supports retransformation of classes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.825941",
+    "updatedDate": "2026-03-24T10:48:13.825941",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

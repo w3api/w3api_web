@@ -1,0 +1,442 @@
+{
+  "javax.naming.event/NamingEvent": {
+    "id": "javax.naming.event.NamingEvent",
+    "name": "NamingEvent",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class NamingEvent"
+    ],
+    "signature_hash": "33329f4ded7833bde74899d72d2089c41be81ae5e17de1cfe149ca5c949be71f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/event/NamingEvent.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.307571",
+    "updatedDate": "2026-03-24T10:48:14.307572",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "NamingEvent"
+    ],
+    "attributes": [
+      "OBJECT_ADDED",
+      "OBJECT_CHANGED",
+      "OBJECT_REMOVED",
+      "OBJECT_RENAMED",
+      "changeInfo",
+      "newBinding",
+      "oldBinding",
+      "type"
+    ],
+    "methods": [
+      "dispatch",
+      "getChangeInfo",
+      "getEventContext",
+      "getNewBinding",
+      "getOldBinding",
+      "getType"
+    ]
+  },
+  "javax.naming.event/NamingEvent/NamingEvent": {
+    "id": "javax.naming.event.NamingEvent.NamingEvent",
+    "name": "NamingEvent",
+    "type": "constructor",
+    "parent": "NamingEvent",
+    "signatures": [
+      "public NamingEvent(EventContext source, int type, Binding newBd, Binding oldBd, Object changeInfo)"
+    ],
+    "signature_hash": "4d9fee758414a1e8233614aff1747cf01768488fa2825e502da278b56e53403b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/event/NamingEvent.html",
+    "parameters": [
+      {
+        "name": "source",
+        "type": "EventContext",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "newBd",
+        "type": "Binding",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "oldBd",
+        "type": "Binding",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "changeInfo",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructs an instance ofNamingEvent."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs an instance ofNamingEvent.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.307598",
+    "updatedDate": "2026-03-24T10:48:14.307599",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.naming.event/NamingExceptionEvent/NamingExceptionEvent": {
+    "id": "javax.naming.event.NamingExceptionEvent.NamingExceptionEvent",
+    "name": "NamingExceptionEvent",
+    "type": "constructor",
+    "parent": "NamingExceptionEvent",
+    "signatures": [
+      "public NamingExceptionEvent(EventContext source, NamingException exc)"
+    ],
+    "signature_hash": "d0d05fdbc225ce2e290fb4dce87dee9f71d8f1e65fcb5a6d36e7094518e0a166",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html",
+    "parameters": [
+      {
+        "name": "source",
+        "type": "EventContext",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "exc",
+        "type": "NamingException",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructs an instance ofNamingExceptionEventusing the context in which theNamingExceptionwas thrown and the exception that was thrown."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs an instance ofNamingExceptionEventusing the context in which theNamingExceptionwas thrown and the exception that was thrown.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.307815",
+    "updatedDate": "2026-03-24T10:48:14.307816",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.naming.event/NamingExceptionEvent": {
+    "id": "javax.naming.event.NamingExceptionEvent",
+    "name": "NamingExceptionEvent",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "class NamingExceptionEvent"
+    ],
+    "signature_hash": "6e865a3fc051f9244bc7e29c0af0f27cb6bfb7cd0e402aea63e3e9287529a3f8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.307785",
+    "updatedDate": "2026-03-24T10:48:14.307786",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "NamingExceptionEvent"
+    ],
+    "methods": [
+      "dispatch",
+      "getEventContext",
+      "getException"
+    ]
+  },
+  "javax.naming.event/NamingEvent/newBinding": {
+    "id": "javax.naming.event.NamingEvent.newBinding",
+    "name": "newBinding",
+    "type": "field",
+    "parent": "NamingEvent",
+    "signatures": [
+      "protected Binding newBinding"
+    ],
+    "signature_hash": "efebfa21c7730744e52fa9e241f1283c9a040d114f870886b1eb68dd805f3a95",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/event/NamingEvent.html",
+    "parameters": [],
+    "return_type": "protected Binding",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Contains information about the object after the change."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Contains information about the object after the change.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.307705",
+    "updatedDate": "2026-03-24T10:48:14.307705",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.naming.event/NamespaceChangeListener": {
+    "id": "javax.naming.event.NamespaceChangeListener",
+    "name": "NamespaceChangeListener",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface NamespaceChangeListener"
+    ],
+    "signature_hash": "63f6481220bcd14b27f72d0c1c309a73f311d82f9a1119b47513b5748d48b13b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.307513",
+    "updatedDate": "2026-03-24T10:48:14.307514",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "objectAdded",
+      "objectRemoved",
+      "objectRenamed"
+    ]
+  },
+  "javax.naming.event/NamingListener": {
+    "id": "javax.naming.event.NamingListener",
+    "name": "NamingListener",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface NamingListener"
+    ],
+    "signature_hash": "92cb775dc1abf5668cfc6dae9d6abf0b41cb273f5b7a7077859fd96bcbd48434",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/event/NamingListener.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.307898",
+    "updatedDate": "2026-03-24T10:48:14.307899",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "namingExceptionThrown"
+    ]
+  },
+  "javax.naming.event/NamingListener/namingExceptionThrown": {
+    "id": "javax.naming.event.NamingListener.namingExceptionThrown",
+    "name": "namingExceptionThrown",
+    "type": "method",
+    "parent": "NamingListener",
+    "signatures": [
+      "public void namingExceptionThrown(NamingExceptionEvent evt)"
+    ],
+    "signature_hash": "8f47e52bf8ba385670ba61b146c8e4314e64d15a8578acf1b512da92da9706fd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.naming/javax/naming/event/NamingListener.html",
+    "parameters": [
+      {
+        "name": "evt",
+        "type": "NamingExceptionEvent",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Called when a naming exception is thrown while attempting to fire aNamingEvent."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called when a naming exception is thrown while attempting to fire aNamingEvent.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.307917",
+    "updatedDate": "2026-03-24T10:48:14.307918",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

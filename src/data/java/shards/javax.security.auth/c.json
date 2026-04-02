@@ -1,0 +1,176 @@
+{
+  "javax.security.auth/Subject/callAs": {
+    "id": "javax.security.auth.Subject.callAs",
+    "name": "callAs",
+    "type": "method",
+    "parent": "Subject",
+    "signatures": [
+      "public static<T> T callAs(Subject subject, Callable<T> action)"
+    ],
+    "signature_hash": "14d1ec2579f2d93e3875cdfd69abf827693351779139af3922761a68ef9dc630",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/security/auth/Subject.html",
+    "parameters": [
+      {
+        "name": "subject",
+        "type": "Subject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "action",
+        "type": "Callable<T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> T",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "CompletionException",
+        "package": "java.util.concurrent"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Executes aCallablewithsubjectas the current subject."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Executes aCallablewithsubjectas the current subject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.385771",
+    "updatedDate": "2026-03-24T10:48:14.385772",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.security.auth/SubjectDomainCombiner/combine": {
+    "id": "javax.security.auth.SubjectDomainCombiner.combine",
+    "name": "combine",
+    "type": "method",
+    "parent": "SubjectDomainCombiner",
+    "signatures": [
+      "public ProtectionDomain[] combine(ProtectionDomain[]currentDomains, ProtectionDomain[]assignedDomains)"
+    ],
+    "signature_hash": "9081fe99ae4c8f30981cf246d087716a708040d8349023c23ee7825b41b6d65e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html",
+    "parameters": [
+      {
+        "name": "ProtectionDomain[]currentDomains",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "ProtectionDomain[]assignedDomains",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "ProtectionDomain[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated, for removal: This API element is subject to removal in a future version.Update the relevant ProtectionDomains with the Principals from theSubjectassociated with thisSubjectDomainCombiner."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated, for removal: This API element is subject to removal in a future version.Update the relevant ProtectionDomains with the Principals from theSubjectassociated with thisSubjectDomainCombiner.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.386046",
+    "updatedDate": "2026-03-24T10:48:14.386047",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.security.auth/Subject/current": {
+    "id": "javax.security.auth.Subject.current",
+    "name": "current",
+    "type": "method",
+    "parent": "Subject",
+    "signatures": [
+      "public static Subject current()"
+    ],
+    "signature_hash": "bcab612d7984706c00dc1d55088739d06247211caffafe62f3b1385675fb9865",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/javax/security/auth/Subject.html",
+    "parameters": [],
+    "return_type": "static Subject",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the current subject."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the current subject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.385783",
+    "updatedDate": "2026-03-24T10:48:14.385784",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

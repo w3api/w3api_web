@@ -1,0 +1,79 @@
+{
+  "functools/wraps": {
+    "id": "functools.wraps",
+    "name": "wraps",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@functools.wraps(wrapped, assigned=WRAPPER_ASSIGNMENTS, updated=WRAPPER_UPDATES)"
+    ],
+    "signature_hash": "1280d46033a960ea481445b63b27fe94d869fc9a739b68e7e89ac9a28141f486",
+    "url": "https://docs.python.org/3/library/functools.html#module-functools#functools.wraps",
+    "parameters": [
+      {
+        "name": "wrapped",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "assigned",
+        "type": "",
+        "has_default": true,
+        "default_value": "WRAPPER_ASSIGNMENTS",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "updated",
+        "type": "",
+        "has_default": true,
+        "default_value": "WRAPPER_UPDATES",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This is a convenience function for invoking update_wrapper() as a function decorator when defining a wrapper function. It is equivalent to partial(update_wrapper, wrapped=wrapped, assigned=assigned, updated=updated). For example: >>> from functools import wraps >>> def my_decorator(f): ... @wraps(f) ... def wrapper(*args, **kwds): ... print('Calling decorated function') ... return f(*args, **kwds) ... return wrapper ... >>> @my_decorator ... def example(): ... \"\"\"Docstring\"\"\" ... print('Calle..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This is a convenience function for invoking update_wrapper() as a function decorator when defining a wrapper function. It is equivalent to partial(update_wrapper, wrapped=wrapped, assigned=assigned, u...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220411",
+    "updatedDate": "2026-03-24T10:48:12.220412",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

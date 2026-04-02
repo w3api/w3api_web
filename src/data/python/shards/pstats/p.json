@@ -1,0 +1,320 @@
+{
+  "pstats/Profile": {
+    "id": "pstats.Profile",
+    "name": "Profile",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class profile.Profile(timer=None, timeunit=0.0, subcalls=True, builtins=True)"
+    ],
+    "signature_hash": "132d2e7c33df02e59eae4878ee6a6544e6fa716eb8edfcde11aa5f1bb69d0b95",
+    "url": "https://docs.python.org/3/library/profile.html#module-pstats#profile.Profile",
+    "parameters": [
+      {
+        "name": "timer",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "timeunit",
+        "type": "",
+        "has_default": true,
+        "default_value": "0.0",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "subcalls",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "builtins",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This class is normally only used if more precise control over profiling is needed than what the cProfile.run() function provides. A custom timer can be supplied for measuring how long code takes to run via the timer argument. This must be a function that returns a single number representing the current time. If the number is an integer, the timeunit specifies a multiplier that specifies the duration of each unit of time. For example, if the timer returns times measured in thousands of seconds..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This class is normally only used if more precise control over profiling is needed than what the cProfile.run() function provides. A custom timer can be supplied for measuring how long code takes to ru...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.309925",
+    "updatedDate": "2026-03-24T10:48:12.309926",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "create_stats",
+      "disable",
+      "dump_stats",
+      "enable",
+      "print_stats",
+      "run",
+      "runcall",
+      "runctx"
+    ]
+  },
+  "pstats/Stats/print_callees": {
+    "id": "pstats.Stats.print_callees",
+    "name": "print_callees",
+    "type": "method",
+    "parent": "Stats",
+    "signatures": [
+      "print_callees(*restrictions)"
+    ],
+    "signature_hash": "138fed2e382668a8a4783bd335b171ea2acab43ea784bbb16d2ce13a7991f691",
+    "url": "https://docs.python.org/3/library/profile.html#module-pstats#pstats.Stats.print_callees",
+    "parameters": [
+      {
+        "name": "restrictions",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This method for the Stats class prints a list of all function that were called by the indicated function. Aside from this reversal of direction of calls (re: called vs was called by), the arguments and ordering are identical to the print_callers() method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method for the Stats class prints a list of all function that were called by the indicated function. Aside from this reversal of direction of calls (re: called vs was called by), the arguments an...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.310330",
+    "updatedDate": "2026-03-24T10:48:12.310331",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pstats/Stats/print_callers": {
+    "id": "pstats.Stats.print_callers",
+    "name": "print_callers",
+    "type": "method",
+    "parent": "Stats",
+    "signatures": [
+      "print_callers(*restrictions)"
+    ],
+    "signature_hash": "f9d561fa756267262c41d76747d9737cf5f12bb608ef8747ea551735d5174b00",
+    "url": "https://docs.python.org/3/library/profile.html#module-pstats#pstats.Stats.print_callers",
+    "parameters": [
+      {
+        "name": "restrictions",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This method for the Stats class prints a list of all functions that called each function in the profiled database. The ordering is identical to that provided by print_stats(), and the definition of the restricting argument is also identical. Each caller is reported on its own line. The format differs slightly depending on the profiler that produced the stats: With profile, a number is shown in parentheses after each caller to show how many times this specific call was made. For convenience, a..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method for the Stats class prints a list of all functions that called each function in the profiled database. The ordering is identical to that provided by print_stats(), and the definition of th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.310313",
+    "updatedDate": "2026-03-24T10:48:12.310314",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pstats/Profile/print_stats": {
+    "id": "pstats.Profile.print_stats",
+    "name": "print_stats",
+    "type": "method",
+    "parent": "Profile",
+    "signatures": [
+      "print_stats(sort=-1)"
+    ],
+    "signature_hash": "1f0178ae60344231108c0641d50847a164a009cb1638f2ee922b34cccafbfdc9",
+    "url": "https://docs.python.org/3/library/profile.html#module-pstats#profile.Profile.print_stats",
+    "parameters": [
+      {
+        "name": "sort",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a Stats object based on the current profile and print the results to stdout. The sort parameter specifies the sorting order of the displayed statistics. It accepts a single key or a tuple of keys to enable multi-level sorting, as in Stats.sort_stats. Added in version 3.13: print_stats() now accepts a tuple of keys."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a Stats object based on the current profile and print the results to stdout. The sort parameter specifies the sorting order of the displayed statistics. It accepts a single key or a tuple of ke...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.309978",
+    "updatedDate": "2026-03-24T10:48:12.309979",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pstats/Stats/print_stats": {
+    "id": "pstats.Stats.print_stats",
+    "name": "print_stats",
+    "type": "method",
+    "parent": "Stats",
+    "signatures": [
+      "print_stats(*restrictions)"
+    ],
+    "signature_hash": "6a0c13460bf29b71b1063cbd56e53bf2fb733006fba5553d37a10b3cc42f2c90",
+    "url": "https://docs.python.org/3/library/profile.html#module-pstats#pstats.Stats.print_stats",
+    "parameters": [
+      {
+        "name": "restrictions",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This method for the Stats class prints out a report as described in the profile.run() definition. The order of the printing is based on the last sort_stats() operation done on the object (subject to caveats in add() and strip_dirs()). The arguments provided (if any) can be used to limit the list down to the significant entries. Initially, the list is taken to be the complete set of profiled functions. Each restriction is either an integer (to select a count of lines), or a decimal fraction be..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method for the Stats class prints out a report as described in the profile.run() definition. The order of the printing is based on the last sort_stats() operation done on the object (subject to c...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.310291",
+    "updatedDate": "2026-03-24T10:48:12.310293",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pstats": {
+    "type": "module",
+    "name": "pstats",
+    "id": "pstats",
+    "description": "Module pstats",
+    "classes": [
+      "Profile",
+      "Stats"
+    ],
+    "functions": [
+      "run",
+      "runctx"
+    ]
+  }
+}

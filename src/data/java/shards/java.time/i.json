@@ -1,0 +1,2594 @@
+{
+  "java.time/Instant": {
+    "id": "java.time.Instant",
+    "name": "Instant",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class Instant"
+    ],
+    "signature_hash": "32e668453b5d1a291ecf233b1a2886283fbda4cd00e3164c6923388cf999ce8d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Instant.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.990357",
+    "updatedDate": "2026-03-24T10:48:13.990358",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "EPOCH",
+      "MAX",
+      "MIN"
+    ],
+    "methods": [
+      "adjustInto",
+      "atOffset",
+      "atZone",
+      "compareTo",
+      "equals",
+      "from",
+      "get",
+      "getEpochSecond",
+      "getLong",
+      "getNano",
+      "hashCode",
+      "isAfter",
+      "isBefore",
+      "isSupported",
+      "minus",
+      "minusMillis",
+      "minusNanos",
+      "minusSeconds",
+      "now",
+      "ofEpochMilli",
+      "ofEpochSecond",
+      "parse",
+      "plus",
+      "plusMillis",
+      "plusNanos",
+      "plusSeconds",
+      "query",
+      "range",
+      "toEpochMilli",
+      "toString",
+      "truncatedTo",
+      "until",
+      "with"
+    ]
+  },
+  "java.time/InstantSource": {
+    "id": "java.time.InstantSource",
+    "name": "InstantSource",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface InstantSource"
+    ],
+    "signature_hash": "b6772ca17bf8f3ccbf7002accdb9fe60b7260c25f1e697f6f10ae01920025cd8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/InstantSource.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.010882",
+    "updatedDate": "2026-03-24T10:48:14.010882",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "fixed",
+      "instant",
+      "millis",
+      "offset",
+      "system",
+      "tick",
+      "withZone"
+    ]
+  },
+  "java.time/Clock/instant": {
+    "id": "java.time.Clock.instant",
+    "name": "instant",
+    "type": "method",
+    "parent": "Clock",
+    "signatures": [
+      "public abstract Instant instant()"
+    ],
+    "signature_hash": "df4c2652bdc164bd91b3f865a4ffc44a1f2b2ad750c1cce3e0a76e149cc164ba",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Clock.html",
+    "parameters": [],
+    "return_type": "abstract Instant",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Gets the current instant of the clock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Gets the current instant of the clock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.991119",
+    "updatedDate": "2026-03-24T10:48:13.991120",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/InstantSource/instant": {
+    "id": "java.time.InstantSource.instant",
+    "name": "instant",
+    "type": "method",
+    "parent": "InstantSource",
+    "signatures": [
+      "public Instant instant()"
+    ],
+    "signature_hash": "8d69fba5b60d6f9479a580ac9e330396a7d96a527553ccec28377ccd15b12469",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/InstantSource.html",
+    "parameters": [],
+    "return_type": "Instant",
+    "exceptions": [
+      {
+        "name": "DateTimeException",
+        "package": "java.time"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Gets the current instant of the source."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Gets the current instant of the source.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.010961",
+    "updatedDate": "2026-03-24T10:48:14.010961",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "17",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Instant/isAfter": {
+    "id": "java.time.Instant.isAfter",
+    "name": "isAfter",
+    "type": "method",
+    "parent": "Instant",
+    "signatures": [
+      "public boolean isAfter(Instant otherInstant)"
+    ],
+    "signature_hash": "e31f1743094fe2e156b7ae88146c207adf43e4821757e566eb0ae5e2365a85c6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Instant.html",
+    "parameters": [
+      {
+        "name": "otherInstant",
+        "type": "Instant",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Checks if this instant is after the specified instant."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this instant is after the specified instant.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.990566",
+    "updatedDate": "2026-03-24T10:48:13.990567",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalDate/isAfter": {
+    "id": "java.time.LocalDate.isAfter",
+    "name": "isAfter",
+    "type": "method",
+    "parent": "LocalDate",
+    "signatures": [
+      "public boolean isAfter(ChronoLocalDate other)"
+    ],
+    "signature_hash": "35eb13c0ecb6bf2560254c7a250fbfba72107f5500b9230d4fc52d98fcaf1832",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "ChronoLocalDate",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this date is after the specified date."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this date is after the specified date.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.991666",
+    "updatedDate": "2026-03-24T10:48:13.991667",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalTime/isAfter": {
+    "id": "java.time.LocalTime.isAfter",
+    "name": "isAfter",
+    "type": "method",
+    "parent": "LocalTime",
+    "signatures": [
+      "public boolean isAfter(LocalTime other)"
+    ],
+    "signature_hash": "f2453a0c6a4528b0fe12c8ff06245d2c7c2c4e84b74b67e0595282e5400c11a3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "LocalTime",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this time is after the specified time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this time is after the specified time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.992918",
+    "updatedDate": "2026-03-24T10:48:13.992918",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalDateTime/isAfter": {
+    "id": "java.time.LocalDateTime.isAfter",
+    "name": "isAfter",
+    "type": "method",
+    "parent": "LocalDateTime",
+    "signatures": [
+      "public boolean isAfter(ChronoLocalDateTime<?> other)"
+    ],
+    "signature_hash": "3dedd4b4e30fed2f544e5280afa5e1ccf781d79f0b97545ed944e1d14895ceb0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDateTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "ChronoLocalDateTime<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this date-time is after the specified date-time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this date-time is after the specified date-time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.994085",
+    "updatedDate": "2026-03-24T10:48:13.994086",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Year/isAfter": {
+    "id": "java.time.Year.isAfter",
+    "name": "isAfter",
+    "type": "method",
+    "parent": "Year",
+    "signatures": [
+      "public boolean isAfter(Year other)"
+    ],
+    "signature_hash": "ce9fde29d937bea76a6a44ebce1e1f33d9930527acac8d6bd54323eae3500f49",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Year.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "Year",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this year is after the specified year."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this year is after the specified year.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.002185",
+    "updatedDate": "2026-03-24T10:48:14.002186",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/YearMonth/isAfter": {
+    "id": "java.time.YearMonth.isAfter",
+    "name": "isAfter",
+    "type": "method",
+    "parent": "YearMonth",
+    "signatures": [
+      "public boolean isAfter(YearMonth other)"
+    ],
+    "signature_hash": "555796d094139e104b3603fc51431b4e23876afd9480f85d34f7581354fd3c22",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/YearMonth.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "YearMonth",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this year-month is after the specified year-month."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this year-month is after the specified year-month.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.003352",
+    "updatedDate": "2026-03-24T10:48:14.003352",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/MonthDay/isAfter": {
+    "id": "java.time.MonthDay.isAfter",
+    "name": "isAfter",
+    "type": "method",
+    "parent": "MonthDay",
+    "signatures": [
+      "public boolean isAfter(MonthDay other)"
+    ],
+    "signature_hash": "f26234e2e4e65803e65a945a0a2d79eb48426038f36eabb6b38bca2f4dc2a62d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/MonthDay.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "MonthDay",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this month-day is after the specified month-day."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this month-day is after the specified month-day.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.004658",
+    "updatedDate": "2026-03-24T10:48:14.004658",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/OffsetTime/isAfter": {
+    "id": "java.time.OffsetTime.isAfter",
+    "name": "isAfter",
+    "type": "method",
+    "parent": "OffsetTime",
+    "signatures": [
+      "public boolean isAfter(OffsetTime other)"
+    ],
+    "signature_hash": "0f3f318d7914151fd1d1cf4bbd19024ecedbf0f9a1fa24dd8b7580015a6d2c47",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/OffsetTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "OffsetTime",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the instant of thisOffsetTimeis after that of the specified time applying both times to a common date."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the instant of thisOffsetTimeis after that of the specified time applying both times to a common date.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.005632",
+    "updatedDate": "2026-03-24T10:48:14.005633",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/OffsetDateTime/isAfter": {
+    "id": "java.time.OffsetDateTime.isAfter",
+    "name": "isAfter",
+    "type": "method",
+    "parent": "OffsetDateTime",
+    "signatures": [
+      "public boolean isAfter(OffsetDateTime other)"
+    ],
+    "signature_hash": "0745a796416c695b8bc0822df8ae23ee95fcf373c5826138cafa9ac3e41efb87",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/OffsetDateTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "OffsetDateTime",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the instant of this date-time is after that of the specified date-time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the instant of this date-time is after that of the specified date-time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.008620",
+    "updatedDate": "2026-03-24T10:48:14.008620",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Instant/isBefore": {
+    "id": "java.time.Instant.isBefore",
+    "name": "isBefore",
+    "type": "method",
+    "parent": "Instant",
+    "signatures": [
+      "public boolean isBefore(Instant otherInstant)"
+    ],
+    "signature_hash": "24b1a0ce895da0118055c03688d3b1438a798c35ee6d775b96b0e357c7696902",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Instant.html",
+    "parameters": [
+      {
+        "name": "otherInstant",
+        "type": "Instant",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Checks if this instant is before the specified instant."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this instant is before the specified instant.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.990583",
+    "updatedDate": "2026-03-24T10:48:13.990584",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalDate/isBefore": {
+    "id": "java.time.LocalDate.isBefore",
+    "name": "isBefore",
+    "type": "method",
+    "parent": "LocalDate",
+    "signatures": [
+      "public boolean isBefore(ChronoLocalDate other)"
+    ],
+    "signature_hash": "9ccba453fd93596700663a5c6836d55bda3dbbb1d8cdb6ce68cde67d69f5bd0a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "ChronoLocalDate",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this date is before the specified date."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this date is before the specified date.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.991682",
+    "updatedDate": "2026-03-24T10:48:13.991683",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalTime/isBefore": {
+    "id": "java.time.LocalTime.isBefore",
+    "name": "isBefore",
+    "type": "method",
+    "parent": "LocalTime",
+    "signatures": [
+      "public boolean isBefore(LocalTime other)"
+    ],
+    "signature_hash": "d40bc16f14e76c35add15a691623f40d69af5eb7dfe6d64798030aa7c5c42f96",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "LocalTime",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this time is before the specified time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this time is before the specified time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.992935",
+    "updatedDate": "2026-03-24T10:48:13.992936",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalDateTime/isBefore": {
+    "id": "java.time.LocalDateTime.isBefore",
+    "name": "isBefore",
+    "type": "method",
+    "parent": "LocalDateTime",
+    "signatures": [
+      "public boolean isBefore(ChronoLocalDateTime<?> other)"
+    ],
+    "signature_hash": "23eef0aed0e4d3723cd70248bdedcfe5eafa6312829d07322169ce2a3bacda62",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDateTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "ChronoLocalDateTime<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this date-time is before the specified date-time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this date-time is before the specified date-time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.994128",
+    "updatedDate": "2026-03-24T10:48:13.994129",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Year/isBefore": {
+    "id": "java.time.Year.isBefore",
+    "name": "isBefore",
+    "type": "method",
+    "parent": "Year",
+    "signatures": [
+      "public boolean isBefore(Year other)"
+    ],
+    "signature_hash": "9e233a9692ea2b1cef22388fd532970dd6aeb8dfab37d6db621a657e659c2296",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Year.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "Year",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this year is before the specified year."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this year is before the specified year.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.002216",
+    "updatedDate": "2026-03-24T10:48:14.002217",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/YearMonth/isBefore": {
+    "id": "java.time.YearMonth.isBefore",
+    "name": "isBefore",
+    "type": "method",
+    "parent": "YearMonth",
+    "signatures": [
+      "public boolean isBefore(YearMonth other)"
+    ],
+    "signature_hash": "5a46b44891a9947ae3336245e76b883b12bc53a624aa695c6377b895e36f218b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/YearMonth.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "YearMonth",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this year-month is before the specified year-month."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this year-month is before the specified year-month.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.003384",
+    "updatedDate": "2026-03-24T10:48:14.003385",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/MonthDay/isBefore": {
+    "id": "java.time.MonthDay.isBefore",
+    "name": "isBefore",
+    "type": "method",
+    "parent": "MonthDay",
+    "signatures": [
+      "public boolean isBefore(MonthDay other)"
+    ],
+    "signature_hash": "1894e0b63be5b28bf32d6c34cb283c5f222222e54f08848cc780dd0cf1c1d99c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/MonthDay.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "MonthDay",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this month-day is before the specified month-day."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this month-day is before the specified month-day.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.004691",
+    "updatedDate": "2026-03-24T10:48:14.004692",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/OffsetTime/isBefore": {
+    "id": "java.time.OffsetTime.isBefore",
+    "name": "isBefore",
+    "type": "method",
+    "parent": "OffsetTime",
+    "signatures": [
+      "public boolean isBefore(OffsetTime other)"
+    ],
+    "signature_hash": "88767490746da9372a6f729add0b2cf425e6e1d5e4065e122fb5510a699c40f5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/OffsetTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "OffsetTime",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the instant of thisOffsetTimeis before that of the specified time applying both times to a common date."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the instant of thisOffsetTimeis before that of the specified time applying both times to a common date.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.005667",
+    "updatedDate": "2026-03-24T10:48:14.005668",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/OffsetDateTime/isBefore": {
+    "id": "java.time.OffsetDateTime.isBefore",
+    "name": "isBefore",
+    "type": "method",
+    "parent": "OffsetDateTime",
+    "signatures": [
+      "public boolean isBefore(OffsetDateTime other)"
+    ],
+    "signature_hash": "dcc19705be2be7b38e44ed8b6629b55f807fda9ac97ad5eaca9e6ebad2d4ae28",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/OffsetDateTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "OffsetDateTime",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the instant of this date-time is before that of the specified date-time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the instant of this date-time is before that of the specified date-time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.008659",
+    "updatedDate": "2026-03-24T10:48:14.008660",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalDate/isEqual": {
+    "id": "java.time.LocalDate.isEqual",
+    "name": "isEqual",
+    "type": "method",
+    "parent": "LocalDate",
+    "signatures": [
+      "public boolean isEqual(ChronoLocalDate other)"
+    ],
+    "signature_hash": "8af1f73e10d996e57af7f5f09a532e0b41be20847c760bea7ec4aaa82059c909",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "ChronoLocalDate",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this date is equal to the specified date."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this date is equal to the specified date.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.991698",
+    "updatedDate": "2026-03-24T10:48:13.991699",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalDateTime/isEqual": {
+    "id": "java.time.LocalDateTime.isEqual",
+    "name": "isEqual",
+    "type": "method",
+    "parent": "LocalDateTime",
+    "signatures": [
+      "public boolean isEqual(ChronoLocalDateTime<?> other)"
+    ],
+    "signature_hash": "d3bd5fb69ef69ddfd279d54021eeb89d3357513577a72cf63c2139c2ea25c2ae",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDateTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "ChronoLocalDateTime<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this date-time is equal to the specified date-time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this date-time is equal to the specified date-time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.994149",
+    "updatedDate": "2026-03-24T10:48:13.994150",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/OffsetTime/isEqual": {
+    "id": "java.time.OffsetTime.isEqual",
+    "name": "isEqual",
+    "type": "method",
+    "parent": "OffsetTime",
+    "signatures": [
+      "public boolean isEqual(OffsetTime other)"
+    ],
+    "signature_hash": "d5b8f45fe9d51d5a08069744e0c40307562c7cdb032e7a23fe797593fb01b45a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/OffsetTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "OffsetTime",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the instant of thisOffsetTimeis equal to that of the specified time applying both times to a common date."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the instant of thisOffsetTimeis equal to that of the specified time applying both times to a common date.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.005703",
+    "updatedDate": "2026-03-24T10:48:14.005704",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/OffsetDateTime/isEqual": {
+    "id": "java.time.OffsetDateTime.isEqual",
+    "name": "isEqual",
+    "type": "method",
+    "parent": "OffsetDateTime",
+    "signatures": [
+      "public boolean isEqual(OffsetDateTime other)"
+    ],
+    "signature_hash": "0e7ea65d3286e9668c31decbc090fbf216bca64b08eea30f1078c1df71e9ae3d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/OffsetDateTime.html",
+    "parameters": [
+      {
+        "name": "other",
+        "type": "OffsetDateTime",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the instant of this date-time is equal to that of the specified date-time."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the instant of this date-time is equal to that of the specified date-time.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.008698",
+    "updatedDate": "2026-03-24T10:48:14.008699",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Year/isLeap": {
+    "id": "java.time.Year.isLeap",
+    "name": "isLeap",
+    "type": "method",
+    "parent": "Year",
+    "signatures": [
+      "public boolean isLeap()",
+      "public static boolean isLeap(long year)"
+    ],
+    "signature_hash": "046821295fad2189a0a04cf68d3c27730d38b0d595b18438b5cb59ce6b5132b0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Year.html",
+    "parameters": [
+      {
+        "name": "year",
+        "has_default": false,
+        "default_value": null,
+        "type": "long",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the year is a leap year, according to the ISO proleptic calendar system rules."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the year is a leap year, according to the ISO proleptic calendar system rules.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.002251",
+    "updatedDate": "2026-03-24T10:48:14.002252",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalDate/isLeapYear": {
+    "id": "java.time.LocalDate.isLeapYear",
+    "name": "isLeapYear",
+    "type": "method",
+    "parent": "LocalDate",
+    "signatures": [
+      "public boolean isLeapYear()"
+    ],
+    "signature_hash": "25762b538e8be62cc828dd2deabce17ddcfe5b2bd254947cdd0a1c185fcd3fcb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the year is a leap year, according to the ISO proleptic calendar system rules."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the year is a leap year, according to the ISO proleptic calendar system rules.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.991712",
+    "updatedDate": "2026-03-24T10:48:13.991713",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/YearMonth/isLeapYear": {
+    "id": "java.time.YearMonth.isLeapYear",
+    "name": "isLeapYear",
+    "type": "method",
+    "parent": "YearMonth",
+    "signatures": [
+      "public boolean isLeapYear()"
+    ],
+    "signature_hash": "25762b538e8be62cc828dd2deabce17ddcfe5b2bd254947cdd0a1c185fcd3fcb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/YearMonth.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the year is a leap year, according to the ISO proleptic calendar system rules."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the year is a leap year, according to the ISO proleptic calendar system rules.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.003415",
+    "updatedDate": "2026-03-24T10:48:14.003416",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Duration/isNegative": {
+    "id": "java.time.Duration.isNegative",
+    "name": "isNegative",
+    "type": "method",
+    "parent": "Duration",
+    "signatures": [
+      "public boolean isNegative()"
+    ],
+    "signature_hash": "f9ca656c8d2e4cd56a93806caae129211ab658ce45134bb6b779d2abfb9431d6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this duration is negative, excluding zero."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this duration is negative, excluding zero.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.997726",
+    "updatedDate": "2026-03-24T10:48:13.997727",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Period/isNegative": {
+    "id": "java.time.Period.isNegative",
+    "name": "isNegative",
+    "type": "method",
+    "parent": "Period",
+    "signatures": [
+      "public boolean isNegative()"
+    ],
+    "signature_hash": "f9ca656c8d2e4cd56a93806caae129211ab658ce45134bb6b779d2abfb9431d6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Period.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if any of the three units of this period are negative."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if any of the three units of this period are negative.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.999392",
+    "updatedDate": "2026-03-24T10:48:13.999393",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Duration/isPositive": {
+    "id": "java.time.Duration.isPositive",
+    "name": "isPositive",
+    "type": "method",
+    "parent": "Duration",
+    "signatures": [
+      "public boolean isPositive()"
+    ],
+    "signature_hash": "861b5a63181c66037bddd8127ec5dd394eaa825cbdb355bff208a41996dfc29e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this duration is positive, excluding zero."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this duration is positive, excluding zero.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.997751",
+    "updatedDate": "2026-03-24T10:48:13.997751",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Instant/isSupported": {
+    "id": "java.time.Instant.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "Instant",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)",
+      "public boolean isSupported(TemporalUnit unit)"
+    ],
+    "signature_hash": "856616d6c670e89ff603f88bf8f44c7c227688d5b7d1203592dcfb16e01f7d5c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Instant.html",
+    "parameters": [
+      {
+        "name": "field",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalField",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.990605",
+    "updatedDate": "2026-03-24T10:48:13.990606",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalDate/isSupported": {
+    "id": "java.time.LocalDate.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "LocalDate",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)",
+      "public boolean isSupported(TemporalUnit unit)"
+    ],
+    "signature_hash": "856616d6c670e89ff603f88bf8f44c7c227688d5b7d1203592dcfb16e01f7d5c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html",
+    "parameters": [
+      {
+        "name": "field",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalField",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.991737",
+    "updatedDate": "2026-03-24T10:48:13.991738",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalTime/isSupported": {
+    "id": "java.time.LocalTime.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "LocalTime",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)",
+      "public boolean isSupported(TemporalUnit unit)"
+    ],
+    "signature_hash": "856616d6c670e89ff603f88bf8f44c7c227688d5b7d1203592dcfb16e01f7d5c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalTime.html",
+    "parameters": [
+      {
+        "name": "field",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalField",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.992959",
+    "updatedDate": "2026-03-24T10:48:13.992960",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/LocalDateTime/isSupported": {
+    "id": "java.time.LocalDateTime.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "LocalDateTime",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)",
+      "public boolean isSupported(TemporalUnit unit)"
+    ],
+    "signature_hash": "856616d6c670e89ff603f88bf8f44c7c227688d5b7d1203592dcfb16e01f7d5c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDateTime.html",
+    "parameters": [
+      {
+        "name": "field",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalField",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.994175",
+    "updatedDate": "2026-03-24T10:48:13.994176",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/ZonedDateTime/isSupported": {
+    "id": "java.time.ZonedDateTime.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "ZonedDateTime",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)",
+      "public boolean isSupported(TemporalUnit unit)"
+    ],
+    "signature_hash": "856616d6c670e89ff603f88bf8f44c7c227688d5b7d1203592dcfb16e01f7d5c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/ZonedDateTime.html",
+    "parameters": [
+      {
+        "name": "field",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalField",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.995677",
+    "updatedDate": "2026-03-24T10:48:13.995678",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Month/isSupported": {
+    "id": "java.time.Month.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "Month",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)"
+    ],
+    "signature_hash": "b9611c8880353d1d4ba3a3deab74b741a02b9d7812aee94a32cef95d05953b3e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Month.html",
+    "parameters": [
+      {
+        "name": "field",
+        "type": "TemporalField",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.000430",
+    "updatedDate": "2026-03-24T10:48:14.000431",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/DayOfWeek/isSupported": {
+    "id": "java.time.DayOfWeek.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "DayOfWeek",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)"
+    ],
+    "signature_hash": "b9611c8880353d1d4ba3a3deab74b741a02b9d7812aee94a32cef95d05953b3e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/DayOfWeek.html",
+    "parameters": [
+      {
+        "name": "field",
+        "type": "TemporalField",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.001331",
+    "updatedDate": "2026-03-24T10:48:14.001332",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Year/isSupported": {
+    "id": "java.time.Year.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "Year",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)",
+      "public boolean isSupported(TemporalUnit unit)"
+    ],
+    "signature_hash": "856616d6c670e89ff603f88bf8f44c7c227688d5b7d1203592dcfb16e01f7d5c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Year.html",
+    "parameters": [
+      {
+        "name": "field",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalField",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.002289",
+    "updatedDate": "2026-03-24T10:48:14.002290",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/YearMonth/isSupported": {
+    "id": "java.time.YearMonth.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "YearMonth",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)",
+      "public boolean isSupported(TemporalUnit unit)"
+    ],
+    "signature_hash": "856616d6c670e89ff603f88bf8f44c7c227688d5b7d1203592dcfb16e01f7d5c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/YearMonth.html",
+    "parameters": [
+      {
+        "name": "field",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalField",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.003455",
+    "updatedDate": "2026-03-24T10:48:14.003456",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/MonthDay/isSupported": {
+    "id": "java.time.MonthDay.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "MonthDay",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)"
+    ],
+    "signature_hash": "b9611c8880353d1d4ba3a3deab74b741a02b9d7812aee94a32cef95d05953b3e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/MonthDay.html",
+    "parameters": [
+      {
+        "name": "field",
+        "type": "TemporalField",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.004724",
+    "updatedDate": "2026-03-24T10:48:14.004725",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/OffsetTime/isSupported": {
+    "id": "java.time.OffsetTime.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "OffsetTime",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)",
+      "public boolean isSupported(TemporalUnit unit)"
+    ],
+    "signature_hash": "856616d6c670e89ff603f88bf8f44c7c227688d5b7d1203592dcfb16e01f7d5c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/OffsetTime.html",
+    "parameters": [
+      {
+        "name": "field",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalField",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.005743",
+    "updatedDate": "2026-03-24T10:48:14.005744",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/ZoneOffset/isSupported": {
+    "id": "java.time.ZoneOffset.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "ZoneOffset",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)"
+    ],
+    "signature_hash": "b9611c8880353d1d4ba3a3deab74b741a02b9d7812aee94a32cef95d05953b3e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/ZoneOffset.html",
+    "parameters": [
+      {
+        "name": "field",
+        "type": "TemporalField",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.007342",
+    "updatedDate": "2026-03-24T10:48:14.007343",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/OffsetDateTime/isSupported": {
+    "id": "java.time.OffsetDateTime.isSupported",
+    "name": "isSupported",
+    "type": "method",
+    "parent": "OffsetDateTime",
+    "signatures": [
+      "public boolean isSupported(TemporalField field)",
+      "public boolean isSupported(TemporalUnit unit)"
+    ],
+    "signature_hash": "856616d6c670e89ff603f88bf8f44c7c227688d5b7d1203592dcfb16e01f7d5c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/OffsetDateTime.html",
+    "parameters": [
+      {
+        "name": "field",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalField",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "unit",
+        "has_default": false,
+        "default_value": null,
+        "type": "TemporalUnit",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the specified field is supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the specified field is supported.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.008743",
+    "updatedDate": "2026-03-24T10:48:14.008744",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/YearMonth/isValidDay": {
+    "id": "java.time.YearMonth.isValidDay",
+    "name": "isValidDay",
+    "type": "method",
+    "parent": "YearMonth",
+    "signatures": [
+      "public boolean isValidDay(int dayOfMonth)"
+    ],
+    "signature_hash": "e6e7783932406942f78b459246ff2d07a12e39ffad7bb645904aae650982a292",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/YearMonth.html",
+    "parameters": [
+      {
+        "name": "dayOfMonth",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the day-of-month is valid for this year-month."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the day-of-month is valid for this year-month.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.003517",
+    "updatedDate": "2026-03-24T10:48:14.003519",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Year/isValidMonthDay": {
+    "id": "java.time.Year.isValidMonthDay",
+    "name": "isValidMonthDay",
+    "type": "method",
+    "parent": "Year",
+    "signatures": [
+      "public boolean isValidMonthDay(MonthDay monthDay)"
+    ],
+    "signature_hash": "c3ed81eaf8c3ae3b0d69f5f099f54d3bebf5f6eab800c56921279067cb397ef3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Year.html",
+    "parameters": [
+      {
+        "name": "monthDay",
+        "type": "MonthDay",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the month-day is valid for this year."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the month-day is valid for this year.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.002321",
+    "updatedDate": "2026-03-24T10:48:14.002322",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/MonthDay/isValidYear": {
+    "id": "java.time.MonthDay.isValidYear",
+    "name": "isValidYear",
+    "type": "method",
+    "parent": "MonthDay",
+    "signatures": [
+      "public boolean isValidYear(int year)"
+    ],
+    "signature_hash": "5f22ac24a176d4538ae64ffcce872b8ff2bd537c81bb619b7375cc3478e5a911",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/MonthDay.html",
+    "parameters": [
+      {
+        "name": "year",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if the year is valid for this month-day."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if the year is valid for this month-day.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.004757",
+    "updatedDate": "2026-03-24T10:48:14.004758",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Duration/isZero": {
+    "id": "java.time.Duration.isZero",
+    "name": "isZero",
+    "type": "method",
+    "parent": "Duration",
+    "signatures": [
+      "public boolean isZero()"
+    ],
+    "signature_hash": "4b79e3545523a0eb24f1dad90f67471c72d7ae1f65c81d3ec1936dd258ef2bd3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if this duration is zero length."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if this duration is zero length.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.997775",
+    "updatedDate": "2026-03-24T10:48:13.997776",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.time/Period/isZero": {
+    "id": "java.time.Period.isZero",
+    "name": "isZero",
+    "type": "method",
+    "parent": "Period",
+    "signatures": [
+      "public boolean isZero()"
+    ],
+    "signature_hash": "4b79e3545523a0eb24f1dad90f67471c72d7ae1f65c81d3ec1936dd258ef2bd3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Period.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Checks if all three units of this period are zero."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Checks if all three units of this period are zero.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.999418",
+    "updatedDate": "2026-03-24T10:48:13.999419",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

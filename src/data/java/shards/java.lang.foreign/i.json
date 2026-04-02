@@ -1,0 +1,320 @@
+{
+  "java.lang.foreign/FunctionDescriptor/insertArgumentLayouts": {
+    "id": "java.lang.foreign.FunctionDescriptor.insertArgumentLayouts",
+    "name": "insertArgumentLayouts",
+    "type": "method",
+    "parent": "FunctionDescriptor",
+    "signatures": [
+      "public FunctionDescriptor insertArgumentLayouts(int index, MemoryLayout... addedLayouts)"
+    ],
+    "signature_hash": "45b0017a1cad18a74d1fd5d08638cd879e5eace214a175700d0766c561dd5baf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html",
+    "parameters": [
+      {
+        "name": "index",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "addedLayouts",
+        "type": "MemoryLayout...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "FunctionDescriptor",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a function descriptor with the given argument layouts inserted at the given index, into the argument layout array of this function descriptor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a function descriptor with the given argument layouts inserted at the given index, into the argument layout array of this function descriptor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.822426",
+    "updatedDate": "2026-03-24T10:48:13.822427",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/isAccessibleBy": {
+    "id": "java.lang.foreign.MemorySegment.isAccessibleBy",
+    "name": "isAccessibleBy",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public boolean isAccessibleBy(Thread thread)"
+    ],
+    "signature_hash": "fbfb97873251b4c37518217afc90780b1062c41c80326cefbbdd405b7a03559d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [
+      {
+        "name": "thread",
+        "type": "Thread",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returnstrueif this segment can be accessed from the provided thread."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif this segment can be accessed from the provided thread.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821486",
+    "updatedDate": "2026-03-24T10:48:13.821487",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/Scope/isAlive": {
+    "id": "java.lang.foreign.Scope.isAlive",
+    "name": "isAlive",
+    "type": "method",
+    "parent": "Scope",
+    "signatures": [
+      "public boolean isAlive()"
+    ],
+    "signature_hash": "60197635298ccb91f8d31ad041ff050b33a738f730a72b1ee2ddf49ee0d11ce3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.Scope.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returnstrue, if the regions of memory backing the memory segments associated with this scope are still valid."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrue, if the regions of memory backing the memory segments associated with this scope are still valid.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.823648",
+    "updatedDate": "2026-03-24T10:48:13.823648",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/isLoaded": {
+    "id": "java.lang.foreign.MemorySegment.isLoaded",
+    "name": "isLoaded",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public boolean isLoaded()"
+    ],
+    "signature_hash": "d64252a951ada37d5dc62a72fbe06b72e730d0ec8a123949f7f400cca8aee798",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "WrongThreadException",
+        "package": "java.lang"
+      },
+      {
+        "name": "UnsupportedOperationException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Determines whether all the contents of this mapped segment are resident in physical memory."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Determines whether all the contents of this mapped segment are resident in physical memory.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821499",
+    "updatedDate": "2026-03-24T10:48:13.821500",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/isMapped": {
+    "id": "java.lang.foreign.MemorySegment.isMapped",
+    "name": "isMapped",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public boolean isMapped()"
+    ],
+    "signature_hash": "d25945f27ca60d6de8feb73d4bd8b70c2d6c9f18e6aa1bce4c402405b7fe8634",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returnstrueif this segment is a mapped segment."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif this segment is a mapped segment.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821511",
+    "updatedDate": "2026-03-24T10:48:13.821512",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/isNative": {
+    "id": "java.lang.foreign.MemorySegment.isNative",
+    "name": "isNative",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public boolean isNative()"
+    ],
+    "signature_hash": "d88feb9bf79d748baf648c1ea604ea7c95aa3e09cb5b2e1ec98928672cb48e87",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returnstrueif this segment is a native segment."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif this segment is a native segment.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821523",
+    "updatedDate": "2026-03-24T10:48:13.821523",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.lang.foreign/MemorySegment/isReadOnly": {
+    "id": "java.lang.foreign.MemorySegment.isReadOnly",
+    "name": "isReadOnly",
+    "type": "method",
+    "parent": "MemorySegment",
+    "signatures": [
+      "public boolean isReadOnly()"
+    ],
+    "signature_hash": "139539a8e6980466c2620d7c82308cbeb2e7a74c0c66c6593ea06a703a8aa864",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returnstrue, if this segment is read-only."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrue, if this segment is read-only.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.821534",
+    "updatedDate": "2026-03-24T10:48:13.821535",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "22",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

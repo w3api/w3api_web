@@ -1,0 +1,475 @@
+{
+  "pathlib.types/WindowsPath": {
+    "id": "pathlib.types.WindowsPath",
+    "name": "WindowsPath",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class pathlib.WindowsPath(*pathsegments)"
+    ],
+    "signature_hash": "e39ad0a77d81334468322c6dd4604c215adb2f66b612537afc24d7a3b5ae2d21",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib.types#pathlib.WindowsPath",
+    "parameters": [
+      {
+        "name": "pathsegments",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A subclass of Path and PureWindowsPath, this class represents concrete Windows filesystem paths: >>> WindowsPath('c:/', 'Users', 'Ximénez') WindowsPath('c:/Users/Ximénez') pathsegments is specified similarly to PurePath. Changed in version 3.13: Raises UnsupportedOperation on non-Windows platforms. In previous versions, NotImplementedError was raised instead."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A subclass of Path and PureWindowsPath, this class represents concrete Windows filesystem paths: >>> WindowsPath('c:/', 'Users', 'Ximénez') WindowsPath('c:/Users/Ximénez') pathsegments is specified si...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.305082",
+    "updatedDate": "2026-03-24T10:48:12.305083",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib.types/Path/walk": {
+    "id": "pathlib.types.Path.walk",
+    "name": "walk",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.walk(top_down=True, on_error=None, follow_symlinks=False)"
+    ],
+    "signature_hash": "e2674441c6cee8eac2b008d779325a1977e68bf71414ee79d09b5ad4c78440be",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib.types#pathlib.Path.walk",
+    "parameters": [
+      {
+        "name": "top_down",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "on_error",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Generate the file names in a directory tree by walking the tree either top-down or bottom-up. For each directory in the directory tree rooted at self (including self but excluding ‘.’ and ‘..’), the method yields a 3-tuple of (dirpath, dirnames, filenames). dirpath is a Path to the directory currently being walked, dirnames is a list of strings for the names of subdirectories in dirpath (excluding '.' and '..'), and filenames is a list of strings for the names of the non-directory files in di..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Generate the file names in a directory tree by walking the tree either top-down or bottom-up. For each directory in the directory tree rooted at self (including self but excluding ‘.’ and ‘..’), the m...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.305676",
+    "updatedDate": "2026-03-24T10:48:12.305677",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib.types/PurePath/with_name": {
+    "id": "pathlib.types.PurePath.with_name",
+    "name": "with_name",
+    "type": "method",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.with_name(name)"
+    ],
+    "signature_hash": "9473cc5e125fecdd1e541de396d9a0bc88eacf52afa241c0c56a08059fe4ec7d",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib.types#pathlib.PurePath.with_name",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a new path with the name changed. If the original path doesn’t have a name, ValueError is raised: >>> p = PureWindowsPath('c:/Downloads/pathlib.tar.gz') >>> p.with_name('setup.py') PureWindowsPath('c:/Downloads/setup.py') >>> p = PureWindowsPath('c:/') >>> p.with_name('setup.py') Traceback (most recent call last): File \"<stdin>\", line 1, in <module> File \"/home/antoine/cpython/default/Lib/pathlib.py\", line 751, in with_name raise ValueError(\"%r has an empty name\" % (self,)) ValueError:..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a new path with the name changed. If the original path doesn’t have a name, ValueError is raised: >>> p = PureWindowsPath('c:/Downloads/pathlib.tar.gz') >>> p.with_name('setup.py') PureWindowsP...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.304974",
+    "updatedDate": "2026-03-24T10:48:12.304975",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib.types/PurePath/with_segments": {
+    "id": "pathlib.types.PurePath.with_segments",
+    "name": "with_segments",
+    "type": "method",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.with_segments(*pathsegments)"
+    ],
+    "signature_hash": "7305915e6769a89b3c0a24bb4da3624f5e56ae1d67bceddaca2823e68608c8ba",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib.types#pathlib.PurePath.with_segments",
+    "parameters": [
+      {
+        "name": "pathsegments",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a new path object of the same type by combining the given pathsegments. This method is called whenever a derivative path is created, such as from parent and relative_to(). Subclasses may override this method to pass information to derivative paths, for example: from pathlib import PurePosixPath class MyPath(PurePosixPath): def __init__(self, *pathsegments, session_id): super().__init__(*pathsegments) self.session_id = session_id def with_segments(self, *pathsegments): return type(self)..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a new path object of the same type by combining the given pathsegments. This method is called whenever a derivative path is created, such as from parent and relative_to(). Subclasses may overri...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.305029",
+    "updatedDate": "2026-03-24T10:48:12.305030",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib.types/PurePath/with_stem": {
+    "id": "pathlib.types.PurePath.with_stem",
+    "name": "with_stem",
+    "type": "method",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.with_stem(stem)"
+    ],
+    "signature_hash": "93e4a3fcdc7a095d868026c729a9d8e7b9dbbb59808c045a72aacfeab28a7b5e",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib.types#pathlib.PurePath.with_stem",
+    "parameters": [
+      {
+        "name": "stem",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a new path with the stem changed. If the original path doesn’t have a name, ValueError is raised: >>> p = PureWindowsPath('c:/Downloads/draft.txt') >>> p.with_stem('final') PureWindowsPath('c:/Downloads/final.txt') >>> p = PureWindowsPath('c:/Downloads/pathlib.tar.gz') >>> p.with_stem('lib') PureWindowsPath('c:/Downloads/lib.gz') >>> p = PureWindowsPath('c:/') >>> p.with_stem('') Traceback (most recent call last): File \"<stdin>\", line 1, in <module> File \"/home/antoine/cpython/default/..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a new path with the stem changed. If the original path doesn’t have a name, ValueError is raised: >>> p = PureWindowsPath('c:/Downloads/draft.txt') >>> p.with_stem('final') PureWindowsPath('c:/...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.304992",
+    "updatedDate": "2026-03-24T10:48:12.304993",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.9.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib.types/PurePath/with_suffix": {
+    "id": "pathlib.types.PurePath.with_suffix",
+    "name": "with_suffix",
+    "type": "method",
+    "parent": "PurePath",
+    "signatures": [
+      "PurePath.with_suffix(suffix)"
+    ],
+    "signature_hash": "c81ec7f3bb2193f6e34389f00375c9084d20c852444d256d53239c7d0f513f94",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib.types#pathlib.PurePath.with_suffix",
+    "parameters": [
+      {
+        "name": "suffix",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a new path with the suffix changed. If the original path doesn’t have a suffix, the new suffix is appended instead. If the suffix is an empty string, the original suffix is removed: >>> p = PureWindowsPath('c:/Downloads/pathlib.tar.gz') >>> p.with_suffix('.bz2') PureWindowsPath('c:/Downloads/pathlib.tar.bz2') >>> p = PureWindowsPath('README') >>> p.with_suffix('.txt') PureWindowsPath('README.txt') >>> p = PureWindowsPath('README.txt') >>> p.with_suffix('') PureWindowsPath('README') Cha..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a new path with the suffix changed. If the original path doesn’t have a suffix, the new suffix is appended instead. If the suffix is an empty string, the original suffix is removed: >>> p = Pur...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.305010",
+    "updatedDate": "2026-03-24T10:48:12.305011",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib.types/Path/write_bytes": {
+    "id": "pathlib.types.Path.write_bytes",
+    "name": "write_bytes",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.write_bytes(data)"
+    ],
+    "signature_hash": "93b46ba3d82ed6fa3d2f20e5593dca8d00b9f0aa1b59aead50e73676656d50b0",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib.types#pathlib.Path.write_bytes",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Open the file pointed to in bytes mode, write data to it, and close the file: >>> p = Path('my_binary_file') >>> p.write_bytes(b'Binary file contents') 20 >>> p.read_bytes() b'Binary file contents' An existing file of the same name is overwritten. Added in version 3.5."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Open the file pointed to in bytes mode, write data to it, and close the file: >>> p = Path('my_binary_file') >>> p.write_bytes(b'Binary file contents') 20 >>> p.read_bytes() b'Binary file contents' An...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.305578",
+    "updatedDate": "2026-03-24T10:48:12.305579",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib.types/Path/write_text": {
+    "id": "pathlib.types.Path.write_text",
+    "name": "write_text",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.write_text(data, encoding=None, errors=None, newline=None)"
+    ],
+    "signature_hash": "83634ff1244e98c18933a0d85998bfc421934babbe66f3b47da36bb786e55444",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib.types#pathlib.Path.write_text",
+    "parameters": [
+      {
+        "name": "data",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "encoding",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "newline",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Open the file pointed to in text mode, write data to it, and close the file: >>> p = Path('my_text_file') >>> p.write_text('Text file contents') 18 >>> p.read_text() 'Text file contents' An existing file of the same name is overwritten. The optional parameters have the same meaning as in open(). Added in version 3.5. Changed in version 3.10: The newline parameter was added."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Open the file pointed to in text mode, write data to it, and close the file: >>> p = Path('my_text_file') >>> p.write_text('Text file contents') 18 >>> p.read_text() 'Text file contents' An existing f...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.305561",
+    "updatedDate": "2026-03-24T10:48:12.305562",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

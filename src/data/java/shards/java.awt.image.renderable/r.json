@@ -1,0 +1,673 @@
+{
+  "java.awt.image.renderable/RenderContext": {
+    "id": "java.awt.image.renderable.RenderContext",
+    "name": "RenderContext",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class RenderContext"
+    ],
+    "signature_hash": "361147649fd89faefc6a020539df403cc62d6a69cf985d427be94d769af3a506",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.628064",
+    "updatedDate": "2026-03-24T10:48:13.628065",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "RenderContext"
+    ],
+    "methods": [
+      "clone",
+      "concatenateTransform",
+      "concetenateTransform",
+      "getAreaOfInterest",
+      "getRenderingHints",
+      "getTransform",
+      "preConcatenateTransform",
+      "preConcetenateTransform",
+      "setAreaOfInterest",
+      "setRenderingHints",
+      "setTransform"
+    ]
+  },
+  "java.awt.image.renderable/RenderableImageOp": {
+    "id": "java.awt.image.renderable.RenderableImageOp",
+    "name": "RenderableImageOp",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class RenderableImageOp"
+    ],
+    "signature_hash": "052c3f45246205caf9d74dabbda05f8f3d59efb3ca7ae28f0106c5f01beea20b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.627665",
+    "updatedDate": "2026-03-24T10:48:13.627666",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "RenderableImageOp"
+    ],
+    "methods": [
+      "createDefaultRendering",
+      "createRendering",
+      "createScaledRendering",
+      "getHeight",
+      "getMinX",
+      "getMinY",
+      "getParameterBlock",
+      "getProperty",
+      "getPropertyNames",
+      "getSources",
+      "getWidth",
+      "isDynamic",
+      "setParameterBlock"
+    ]
+  },
+  "java.awt.image.renderable/RenderableImageProducer": {
+    "id": "java.awt.image.renderable.RenderableImageProducer",
+    "name": "RenderableImageProducer",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class RenderableImageProducer"
+    ],
+    "signature_hash": "e1906da6f4d1628b4a3defac6dec2f34233fa1ee79e1e314a570b5eb18073cc5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.627918",
+    "updatedDate": "2026-03-24T10:48:13.627918",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "RenderableImageProducer"
+    ],
+    "methods": [
+      "addConsumer",
+      "isConsumer",
+      "removeConsumer",
+      "requestTopDownLeftRightResend",
+      "run",
+      "setRenderContext",
+      "startProduction"
+    ]
+  },
+  "java.awt.image.renderable/RenderContext/RenderContext": {
+    "id": "java.awt.image.renderable.RenderContext.RenderContext",
+    "name": "RenderContext",
+    "type": "constructor",
+    "parent": "RenderContext",
+    "signatures": [
+      "public RenderContext(AffineTransform usr2dev)",
+      "public RenderContext(AffineTransform usr2dev, RenderingHints hints)",
+      "public RenderContext(AffineTransform usr2dev, Shape aoi)",
+      "public RenderContext(AffineTransform usr2dev, Shape aoi, RenderingHints hints)"
+    ],
+    "signature_hash": "d39626b49f722fd136143827d4c945eb5dc6c68f90914cee3e26b6a20ef3505a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html",
+    "parameters": [
+      {
+        "name": "usr2dev",
+        "has_default": false,
+        "default_value": null,
+        "type": "AffineTransform",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "hints",
+        "has_default": false,
+        "default_value": null,
+        "type": "RenderingHints",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "aoi",
+        "has_default": false,
+        "default_value": null,
+        "type": "Shape",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructs a RenderContext with a given transform."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a RenderContext with a given transform.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.628110",
+    "updatedDate": "2026-03-24T10:48:13.628111",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image.renderable/RenderableImageOp/RenderableImageOp": {
+    "id": "java.awt.image.renderable.RenderableImageOp.RenderableImageOp",
+    "name": "RenderableImageOp",
+    "type": "constructor",
+    "parent": "RenderableImageOp",
+    "signatures": [
+      "public RenderableImageOp(ContextualRenderedImageFactory CRIF, ParameterBlock paramBlock)"
+    ],
+    "signature_hash": "289dda9e62e5a35bca4d16fb7c56a72962b28f6fa13c8ee00938fedd92125e15",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html",
+    "parameters": [
+      {
+        "name": "CRIF",
+        "type": "ContextualRenderedImageFactory",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "paramBlock",
+        "type": "ParameterBlock",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructs a RenderedImageOp given a ContextualRenderedImageFactory object, and a ParameterBlock containing RenderableImage sources and other parameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a RenderedImageOp given a ContextualRenderedImageFactory object, and a ParameterBlock containing RenderableImage sources and other parameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.627686",
+    "updatedDate": "2026-03-24T10:48:13.627687",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image.renderable/RenderableImageProducer/RenderableImageProducer": {
+    "id": "java.awt.image.renderable.RenderableImageProducer.RenderableImageProducer",
+    "name": "RenderableImageProducer",
+    "type": "constructor",
+    "parent": "RenderableImageProducer",
+    "signatures": [
+      "public RenderableImageProducer(RenderableImage rdblImage, RenderContext rc)"
+    ],
+    "signature_hash": "e06d32d6664ffc7cc15fba01c170fd1fb38993c7caf4096628df776f34ab95e8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html",
+    "parameters": [
+      {
+        "name": "rdblImage",
+        "type": "RenderableImage",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "rc",
+        "type": "RenderContext",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructs a new RenderableImageProducer from a RenderableImage and a RenderContext."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a new RenderableImageProducer from a RenderableImage and a RenderContext.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.627937",
+    "updatedDate": "2026-03-24T10:48:13.627938",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image.renderable/RenderableImage": {
+    "id": "java.awt.image.renderable.RenderableImage",
+    "name": "RenderableImage",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface RenderableImage"
+    ],
+    "signature_hash": "70281c4a8bde105fc5ec2564b23bce75851db611edef759d64ce31bd4201781d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.627489",
+    "updatedDate": "2026-03-24T10:48:13.627490",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "HINTS_OBSERVED"
+    ],
+    "methods": [
+      "createDefaultRendering",
+      "createRendering",
+      "createScaledRendering",
+      "getHeight",
+      "getMinX",
+      "getMinY",
+      "getProperty",
+      "getPropertyNames",
+      "getSources",
+      "getWidth",
+      "isDynamic"
+    ]
+  },
+  "java.awt.image.renderable/RenderedImageFactory": {
+    "id": "java.awt.image.renderable.RenderedImageFactory",
+    "name": "RenderedImageFactory",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface RenderedImageFactory"
+    ],
+    "signature_hash": "f92b184680976d39222eb87009261d44e303a199f3b15b85e7a9c588b898bce4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.628322",
+    "updatedDate": "2026-03-24T10:48:13.628322",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "create"
+    ]
+  },
+  "java.awt.image.renderable/RenderableImageProducer/removeConsumer": {
+    "id": "java.awt.image.renderable.RenderableImageProducer.removeConsumer",
+    "name": "removeConsumer",
+    "type": "method",
+    "parent": "RenderableImageProducer",
+    "signatures": [
+      "public void removeConsumer(ImageConsumer ic)"
+    ],
+    "signature_hash": "d6b14daea42e2e2f1f662dd780e50c411c956e3f7e4614c9d835316dec8f75a8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html",
+    "parameters": [
+      {
+        "name": "ic",
+        "type": "ImageConsumer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Remove an ImageConsumer from the list of consumers interested in data for this image."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Remove an ImageConsumer from the list of consumers interested in data for this image.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.627989",
+    "updatedDate": "2026-03-24T10:48:13.627989",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image.renderable/ParameterBlock/removeParameters": {
+    "id": "java.awt.image.renderable.ParameterBlock.removeParameters",
+    "name": "removeParameters",
+    "type": "method",
+    "parent": "ParameterBlock",
+    "signatures": [
+      "public void removeParameters()"
+    ],
+    "signature_hash": "88a499a883bf6872264d029cbd2bcae5195b617e0a5e0391f37b6d5660e77848",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Clears the list of parameters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Clears the list of parameters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.627315",
+    "updatedDate": "2026-03-24T10:48:13.627316",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image.renderable/ParameterBlock/removeSources": {
+    "id": "java.awt.image.renderable.ParameterBlock.removeSources",
+    "name": "removeSources",
+    "type": "method",
+    "parent": "ParameterBlock",
+    "signatures": [
+      "public void removeSources()"
+    ],
+    "signature_hash": "05edbe472290f5e60e83780635f7b91d21151ca6d8a4540b78d58cb89f9bf6b4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Clears the list of source images."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Clears the list of source images.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.627327",
+    "updatedDate": "2026-03-24T10:48:13.627327",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image.renderable/RenderableImageProducer/requestTopDownLeftRightResend": {
+    "id": "java.awt.image.renderable.RenderableImageProducer.requestTopDownLeftRightResend",
+    "name": "requestTopDownLeftRightResend",
+    "type": "method",
+    "parent": "RenderableImageProducer",
+    "signatures": [
+      "public void requestTopDownLeftRightResend(ImageConsumer ic)"
+    ],
+    "signature_hash": "ac2ebac3f2c1283314548d9a1a966348040174194b1b010599730d34d28b1e18",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html",
+    "parameters": [
+      {
+        "name": "ic",
+        "type": "ImageConsumer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Requests that a given ImageConsumer have the image data delivered one more time in top-down, left-right order."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Requests that a given ImageConsumer have the image data delivered one more time in top-down, left-right order.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.628006",
+    "updatedDate": "2026-03-24T10:48:13.628006",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.awt.image.renderable/RenderableImageProducer/run": {
+    "id": "java.awt.image.renderable.RenderableImageProducer.run",
+    "name": "run",
+    "type": "method",
+    "parent": "RenderableImageProducer",
+    "signatures": [
+      "public void run()"
+    ],
+    "signature_hash": "4560d80c2474cc2770be19fbc06c60741920c59992e6b13524f8a5b688ec285a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The runnable method for this class."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The runnable method for this class.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.628019",
+    "updatedDate": "2026-03-24T10:48:13.628020",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

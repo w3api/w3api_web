@@ -1,0 +1,179 @@
+{
+  "runpy/run_module": {
+    "id": "runpy.run_module",
+    "name": "run_module",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "runpy.run_module(mod_name, init_globals=None, run_name=None, alter_sys=False)"
+    ],
+    "signature_hash": "e0f91033a64540be50c6850af568f3a023d8c5d7a862110f951eddf20b18dcf1",
+    "url": "https://docs.python.org/3/library/runpy.html#module-runpy#runpy.run_module",
+    "parameters": [
+      {
+        "name": "mod_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "init_globals",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "run_name",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "alter_sys",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Execute the code of the specified module and return the resulting module’s globals dictionary. The module’s code is first located using the standard import mechanism (refer to PEP 302 for details) and then executed in a fresh module namespace. The mod_name argument should be an absolute module name. If the module name refers to a package rather than a normal module, then that package is imported and the __main__ submodule within that package is then executed and the resulting module globals d..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Execute the code of the specified module and return the resulting module’s globals dictionary. The module’s code is first located using the standard import mechanism (refer to PEP 302 for details) and...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.313974",
+    "updatedDate": "2026-03-24T10:48:12.313975",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "runpy/run_path": {
+    "id": "runpy.run_path",
+    "name": "run_path",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "runpy.run_path(path_name, init_globals=None, run_name=None)"
+    ],
+    "signature_hash": "884f66cd3c4b7e7239acfb7c660bcab35f501d8424fa4e3c1ebba4aef32a0291",
+    "url": "https://docs.python.org/3/library/runpy.html#module-runpy#runpy.run_path",
+    "parameters": [
+      {
+        "name": "path_name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "init_globals",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "run_name",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Execute the code at the named filesystem location and return the resulting module’s globals dictionary. As with a script name supplied to the CPython command line, file_path may refer to a Python source file, a compiled bytecode file or a valid sys.path entry containing a __main__ module (e.g. a zipfile containing a top-level __main__.py file). For a simple script, the specified code is simply executed in a fresh module namespace. For a valid sys.path entry (typically a zipfile or directory),..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Execute the code at the named filesystem location and return the resulting module’s globals dictionary. As with a script name supplied to the CPython command line, file_path may refer to a Python sour...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.313995",
+    "updatedDate": "2026-03-24T10:48:12.313996",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "runpy": {
+    "type": "module",
+    "name": "runpy",
+    "id": "runpy",
+    "description": "Module runpy",
+    "functions": [
+      "run_module",
+      "run_path"
+    ]
+  }
+}

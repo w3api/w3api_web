@@ -1,0 +1,39 @@
+{
+  "queue/Queue/task_done": {
+    "id": "queue.Queue.task_done",
+    "name": "task_done",
+    "type": "method",
+    "parent": "Queue",
+    "signatures": [
+      "Queue.task_done()"
+    ],
+    "signature_hash": "77944ef71fee017281befc8b86f99fcb1a842d16032c7696fee643ff5a47182c",
+    "url": "https://docs.python.org/3/library/queue.html#module-queue#queue.Queue.task_done",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Indicate that a formerly enqueued task is complete. Used by queue consumer threads. For each get() used to fetch a task, a subsequent call to task_done() tells the queue that the processing on the task is complete. If a join() is currently blocking, it will resume when all items have been processed (meaning that a task_done() call was received for every item that had been put() into the queue). Raises a ValueError if called more times than there were items placed in the queue."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicate that a formerly enqueued task is complete. Used by queue consumer threads. For each get() used to fetch a task, a subsequent call to task_done() tells the queue that the processing on the tas...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.311097",
+    "updatedDate": "2026-03-24T10:48:12.311098",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

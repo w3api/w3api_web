@@ -1,0 +1,252 @@
+{
+  "javax.script/Invocable": {
+    "id": "javax.script.Invocable",
+    "name": "Invocable",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Invocable"
+    ],
+    "signature_hash": "31004454a3a6222e0a47b37990d49f531d00d834948b8687ba1fbae9da9af040",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.scripting/javax/script/Invocable.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.383485",
+    "updatedDate": "2026-03-24T10:48:14.383486",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getInterface",
+      "invokeFunction",
+      "invokeMethod"
+    ]
+  },
+  "javax.script/Invocable/invokeFunction": {
+    "id": "javax.script.Invocable.invokeFunction",
+    "name": "invokeFunction",
+    "type": "method",
+    "parent": "Invocable",
+    "signatures": [
+      "public Object invokeFunction(String name, Object... args)"
+    ],
+    "signature_hash": "cb1ed136deea6a451f2a85bf1ffd2148d45051c6b25ca10f038b35118cd4cb78",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.scripting/javax/script/Invocable.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "args",
+        "type": "Object...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Object",
+    "exceptions": [
+      {
+        "name": "ScriptException",
+        "package": "javax.script"
+      },
+      {
+        "name": "NoSuchMethodException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Used to call top-level procedures and functions defined in scripts."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Used to call top-level procedures and functions defined in scripts.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.383528",
+    "updatedDate": "2026-03-24T10:48:14.383529",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.script/Invocable/invokeMethod": {
+    "id": "javax.script.Invocable.invokeMethod",
+    "name": "invokeMethod",
+    "type": "method",
+    "parent": "Invocable",
+    "signatures": [
+      "public Object invokeMethod(Object thiz, String name, Object... args)"
+    ],
+    "signature_hash": "b3d57aa9451ac0b500201c216fda55b8e2bbf5f0b50533c72f3ce45761ee8613",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.scripting/javax/script/Invocable.html",
+    "parameters": [
+      {
+        "name": "thiz",
+        "type": "Object",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "args",
+        "type": "Object...",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Object",
+    "exceptions": [
+      {
+        "name": "ScriptException",
+        "package": "javax.script"
+      },
+      {
+        "name": "NoSuchMethodException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Calls a method on a script object compiled during a previous script execution, which is retained in the state of theScriptEngine."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Calls a method on a script object compiled during a previous script execution, which is retained in the state of theScriptEngine.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.383549",
+    "updatedDate": "2026-03-24T10:48:14.383550",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.script/SimpleBindings/isEmpty": {
+    "id": "javax.script.SimpleBindings.isEmpty",
+    "name": "isEmpty",
+    "type": "method",
+    "parent": "SimpleBindings",
+    "signatures": [
+      "public boolean isEmpty()"
+    ],
+    "signature_hash": "803915e853382ad445a6e2333fabb8beb8e4acd70e908a0d818400f7baac42af",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.scripting/javax/script/SimpleBindings.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returnstrueif this map contains no key-value mappings."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returnstrueif this map contains no key-value mappings.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.384899",
+    "updatedDate": "2026-03-24T10:48:14.384900",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

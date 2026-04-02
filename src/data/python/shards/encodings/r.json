@@ -1,0 +1,624 @@
+{
+  "encodings/readbuffer_encode": {
+    "id": "encodings.readbuffer_encode",
+    "name": "readbuffer_encode",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.readbuffer_encode(buffer, errors=None, /)"
+    ],
+    "signature_hash": "76f43c3cdd4244441b296d1c69ea2fd0f73f1b316fd072b35c5e33cae9d83c36",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.readbuffer_encode",
+    "parameters": [
+      {
+        "name": "buffer",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "errors",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a tuple containing the raw bytes of buffer, a buffer-compatible object or str (encoded to UTF-8 before processing), and their length in bytes. The errors argument is ignored. >>> codecs.readbuffer_encode(b\"Zito\") (b'Zito', 4)"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a tuple containing the raw bytes of buffer, a buffer-compatible object or str (encoded to UTF-8 before processing), and their length in bytes. The errors argument is ignored. >>> codecs.readbuf...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.211601",
+    "updatedDate": "2026-03-24T10:48:12.211602",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings/register": {
+    "id": "encodings.register",
+    "name": "register",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.register(search_function, /)"
+    ],
+    "signature_hash": "26487cf3a1e258e5189309974ce80fcb386d68cf87a9e1feb9f0e65e7114ea85",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.register",
+    "parameters": [
+      {
+        "name": "search_function",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Register a codec search function. Search functions are expected to take one argument, being the encoding name in all lower case letters with hyphens and spaces converted to underscores, and return a CodecInfo object. In case a search function cannot find a given encoding, it should return None. Changed in version 3.9: Hyphens and spaces are converted to underscore."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Register a codec search function. Search functions are expected to take one argument, being the encoding name in all lower case letters with hyphens and spaces converted to underscores, and return a C...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.211470",
+    "updatedDate": "2026-03-24T10:48:12.211470",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings/register_error": {
+    "id": "encodings.register_error",
+    "name": "register_error",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.register_error(name, error_handler, /)"
+    ],
+    "signature_hash": "83252bd2620ca0bf6d21df2eb79a5ceef58bb7422d733a0f4e47671d012ad615",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.register_error",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "error_handler",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Register the error handling function error_handler under the name name. The error_handler argument will be called during encoding and decoding in case of an error, when name is specified as the errors parameter. For encoding, error_handler will be called with a UnicodeEncodeError instance, which contains information about the location of the error. The error handler must either raise this or a different exception, or return a tuple with a replacement for the unencodable part of the input and ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Register the error handling function error_handler under the name name. The error_handler argument will be called during encoding and decoding in case of an error, when name is specified as the errors...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.211634",
+    "updatedDate": "2026-03-24T10:48:12.211635",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings/replace_errors": {
+    "id": "encodings.replace_errors",
+    "name": "replace_errors",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "codecs.replace_errors(exception)"
+    ],
+    "signature_hash": "ed88c92bb6676d91acf23d3270cd7c3a90bf64cdec46556335320fd9506044b3",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.replace_errors",
+    "parameters": [
+      {
+        "name": "exception",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Implements the 'replace' error handling. Substitutes ? (ASCII character) for encoding errors or � (U+FFFD, the official REPLACEMENT CHARACTER) for decoding errors."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements the 'replace' error handling. Substitutes ? (ASCII character) for encoding errors or � (U+FFFD, the official REPLACEMENT CHARACTER) for decoding errors.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.211688",
+    "updatedDate": "2026-03-24T10:48:12.211689",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings/StreamReader/read": {
+    "id": "encodings.StreamReader.read",
+    "name": "read",
+    "type": "method",
+    "parent": "StreamReader",
+    "signatures": [
+      "read(size=-1, chars=-1, firstline=False)"
+    ],
+    "signature_hash": "9b57c98ca20e5153e10d8cb474c8f47f5e8cf49c8043010de0b6841c169e848a",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.StreamReader.read",
+    "parameters": [
+      {
+        "name": "size",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "chars",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "firstline",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Decodes data from the stream and returns the resulting object. The chars argument indicates the number of decoded code points or bytes to return. The read() method will never return more data than requested, but it might return less, if there is not enough available. The size argument indicates the approximate maximum number of encoded bytes or code points to read for decoding. The decoder can modify this setting as appropriate. The default value -1 indicates to read and decode as much as pos..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Decodes data from the stream and returns the resulting object. The chars argument indicates the number of decoded code points or bytes to return. The read() method will never return more data than req...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.212080",
+    "updatedDate": "2026-03-24T10:48:12.212081",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings/StreamReader/readline": {
+    "id": "encodings.StreamReader.readline",
+    "name": "readline",
+    "type": "method",
+    "parent": "StreamReader",
+    "signatures": [
+      "readline(size=None, keepends=True)"
+    ],
+    "signature_hash": "562bc24ad50b7de68779711ac2ddb3ac89761aca2f74ff87ac3223fc4eecbee7",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.StreamReader.readline",
+    "parameters": [
+      {
+        "name": "size",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "keepends",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Read one line from the input stream and return the decoded data. size, if given, is passed as size argument to the stream’s read() method. If keepends is false line-endings will be stripped from the lines returned."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read one line from the input stream and return the decoded data. size, if given, is passed as size argument to the stream’s read() method. If keepends is false line-endings will be stripped from the l...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.212098",
+    "updatedDate": "2026-03-24T10:48:12.212099",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings/StreamReader/readlines": {
+    "id": "encodings.StreamReader.readlines",
+    "name": "readlines",
+    "type": "method",
+    "parent": "StreamReader",
+    "signatures": [
+      "readlines(sizehint=None, keepends=True)"
+    ],
+    "signature_hash": "7b48c083600f2c6dd61dd4889b10f062d32dcb16cb0d2f57ad894f1ecc83af0b",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.StreamReader.readlines",
+    "parameters": [
+      {
+        "name": "sizehint",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "keepends",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Read all lines available on the input stream and return them as a list of lines. Line-endings are implemented using the codec’s decode() method and are included in the list entries if keepends is true. sizehint, if given, is passed as the size argument to the stream’s read() method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read all lines available on the input stream and return them as a list of lines. Line-endings are implemented using the codec’s decode() method and are included in the list entries if keepends is true...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.212129",
+    "updatedDate": "2026-03-24T10:48:12.212130",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings/IncrementalEncoder/reset": {
+    "id": "encodings.IncrementalEncoder.reset",
+    "name": "reset",
+    "type": "method",
+    "parent": "IncrementalEncoder",
+    "signatures": [
+      "reset()"
+    ],
+    "signature_hash": "d493d79b4208be26507376249494e727beff3f2325f2fcec0d7ac55a12fe2413",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.IncrementalEncoder.reset",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Reset the encoder to the initial state. The output is discarded: call .encode(object, final=True), passing an empty byte or text string if necessary, to reset the encoder and to get the output."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reset the encoder to the initial state. The output is discarded: call .encode(object, final=True), passing an empty byte or text string if necessary, to reset the encoder and to get the output.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.211846",
+    "updatedDate": "2026-03-24T10:48:12.211847",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings/IncrementalDecoder/reset": {
+    "id": "encodings.IncrementalDecoder.reset",
+    "name": "reset",
+    "type": "method",
+    "parent": "IncrementalDecoder",
+    "signatures": [
+      "reset()"
+    ],
+    "signature_hash": "d493d79b4208be26507376249494e727beff3f2325f2fcec0d7ac55a12fe2413",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.IncrementalDecoder.reset",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Reset the decoder to the initial state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Reset the decoder to the initial state.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.211923",
+    "updatedDate": "2026-03-24T10:48:12.211924",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings/StreamWriter/reset": {
+    "id": "encodings.StreamWriter.reset",
+    "name": "reset",
+    "type": "method",
+    "parent": "StreamWriter",
+    "signatures": [
+      "reset()"
+    ],
+    "signature_hash": "d493d79b4208be26507376249494e727beff3f2325f2fcec0d7ac55a12fe2413",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.StreamWriter.reset",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Resets the codec buffers used for keeping internal state. Calling this method should ensure that the data on the output is put into a clean state that allows appending of new fresh data without having to rescan the whole stream to recover state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Resets the codec buffers used for keeping internal state. Calling this method should ensure that the data on the output is put into a clean state that allows appending of new fresh data without having...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.212037",
+    "updatedDate": "2026-03-24T10:48:12.212038",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "encodings/StreamReader/reset": {
+    "id": "encodings.StreamReader.reset",
+    "name": "reset",
+    "type": "method",
+    "parent": "StreamReader",
+    "signatures": [
+      "reset()"
+    ],
+    "signature_hash": "d493d79b4208be26507376249494e727beff3f2325f2fcec0d7ac55a12fe2413",
+    "url": "https://docs.python.org/3/library/codecs.html#module-encodings#codecs.StreamReader.reset",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Resets the codec buffers used for keeping internal state. Note that no stream repositioning should take place. This method is primarily intended to be able to recover from decoding errors."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Resets the codec buffers used for keeping internal state. Note that no stream repositioning should take place. This method is primarily intended to be able to recover from decoding errors.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.212143",
+    "updatedDate": "2026-03-24T10:48:12.212144",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

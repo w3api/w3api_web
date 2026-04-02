@@ -1,0 +1,164 @@
+{
+  "unittest.mock/Mock/side_effect": {
+    "id": "unittest.mock.Mock.side_effect",
+    "name": "side_effect",
+    "type": "attribute",
+    "parent": "Mock",
+    "signatures": [
+      "side_effect"
+    ],
+    "signature_hash": "b0ff0a3444a636d0e06efb15c4ab1e24400d5186b256edd6591b8b0015a77956",
+    "url": "https://docs.python.org/3/library/unittest.mock.html#module-unittest.mock#unittest.mock.Mock.side_effect",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This can either be a function to be called when the mock is called, an iterable or an exception (class or instance) to be raised. If you pass in a function it will be called with same arguments as the mock and unless the function returns the DEFAULT singleton the call to the mock will then return whatever the function returns. If the function returns DEFAULT then the mock will return its normal value (from the return_value). If you pass in an iterable, it is used to retrieve an iterator which..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This can either be a function to be called when the mock is called, an iterable or an exception (class or instance) to be raised. If you pass in a function it will be called with same arguments as the...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.414349",
+    "updatedDate": "2026-03-24T10:48:12.414350",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest.mock/mock/sentinel": {
+    "id": "unittest.mock.mock.sentinel",
+    "name": "sentinel",
+    "type": "constant",
+    "parent": "mock",
+    "signatures": [
+      "unittest.mock.sentinel"
+    ],
+    "signature_hash": "294de74a135bdd20978a3cd165cbd30fefbf0852ed23aee7fddeca265e1704dd",
+    "url": "https://docs.python.org/3/library/unittest.mock.html#module-unittest.mock#unittest.mock.sentinel",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The sentinel object provides a convenient way of providing unique objects for your tests. Attributes are created on demand when you access them by name. Accessing the same attribute will always return the same object. The objects returned have a sensible repr so that test failure messages are readable. Changed in version 3.7: The sentinel attributes now preserve their identity when they are copied or pickled."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The sentinel object provides a convenient way of providing unique objects for your tests. Attributes are created on demand when you access them by name. Accessing the same attribute will always return...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.414969",
+    "updatedDate": "2026-03-24T10:48:12.414969",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest.mock/seal": {
+    "id": "unittest.mock.seal",
+    "name": "seal",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "unittest.mock.seal(mock)"
+    ],
+    "signature_hash": "764106abc8f57e259ccdbd485eea5541e4d5940a7eafe854a88708e14f0644eb",
+    "url": "https://docs.python.org/3/library/unittest.mock.html#module-unittest.mock#unittest.mock.seal",
+    "parameters": [
+      {
+        "name": "mock",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Seal will disable the automatic creation of mocks when accessing an attribute of the mock being sealed or any of its attributes that are already mocks recursively. If a mock instance with a name or a spec is assigned to an attribute it won’t be considered in the sealing chain. This allows one to prevent seal from fixing part of the mock object. >>> mock = Mock() >>> mock.submock.attribute1 = 2 >>> mock.not_submock = mock.Mock(name=\"sample_name\") >>> seal(mock) >>> mock.new_attribute # This wi..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Seal will disable the automatic creation of mocks when accessing an attribute of the mock being sealed or any of its attributes that are already mocks recursively. If a mock instance with a name or a ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.415108",
+    "updatedDate": "2026-03-24T10:48:12.415108",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "unittest.mock/stopall": {
+    "id": "unittest.mock.stopall",
+    "name": "stopall",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "patch.stopall()"
+    ],
+    "signature_hash": "1c00ba233f12f906254aeaa327e55fe35738b1d49082c2000489fc1c5b1185ce",
+    "url": "https://docs.python.org/3/library/unittest.mock.html#module-unittest.mock#unittest.mock.patch.stopall",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Stop all active patches. Only stops patches started with start."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Stop all active patches. Only stops patches started with start.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.414919",
+    "updatedDate": "2026-03-24T10:48:12.414920",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

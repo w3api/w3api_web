@@ -1,0 +1,104 @@
+{
+  "zlib/Compress/flush": {
+    "id": "zlib.Compress.flush",
+    "name": "flush",
+    "type": "method",
+    "parent": "Compress",
+    "signatures": [
+      "Compress.flush([mode])"
+    ],
+    "signature_hash": "09436c797e5872c18e81768b1d17dff0360213380da2ea8a4e648a397e4c6609",
+    "url": "https://docs.python.org/3/library/zlib.html#module-zlib#zlib.Compress.flush",
+    "parameters": [
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "All pending input is processed, and a bytes object containing the remaining compressed output is returned. mode can be selected from the constants Z_NO_FLUSH, Z_PARTIAL_FLUSH, Z_SYNC_FLUSH, Z_FULL_FLUSH, Z_BLOCK, or Z_FINISH, defaulting to Z_FINISH. Except Z_FINISH, all constants allow compressing further bytestrings of data, while Z_FINISH finishes the compressed stream and prevents compressing any more data. After calling flush() with mode set to Z_FINISH, the compress() method cannot be ca..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "All pending input is processed, and a bytes object containing the remaining compressed output is returned. mode can be selected from the constants Z_NO_FLUSH, Z_PARTIAL_FLUSH, Z_SYNC_FLUSH, Z_FULL_FLU...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.443260",
+    "updatedDate": "2026-03-24T10:48:12.443261",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "zlib/Decompress/flush": {
+    "id": "zlib.Decompress.flush",
+    "name": "flush",
+    "type": "method",
+    "parent": "Decompress",
+    "signatures": [
+      "Decompress.flush([length])"
+    ],
+    "signature_hash": "748c394fe62b2ac40b32ca731a758817229c57a61c4b644f71ef753d205dbc3e",
+    "url": "https://docs.python.org/3/library/zlib.html#module-zlib#zlib.Decompress.flush",
+    "parameters": [
+      {
+        "name": "length",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "All pending input is processed, and a bytes object containing the remaining uncompressed output is returned. After calling flush(), the decompress() method cannot be called again; the only realistic action is to delete the object. The optional parameter length sets the initial size of the output buffer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "All pending input is processed, and a bytes object containing the remaining uncompressed output is returned. After calling flush(), the decompress() method cannot be called again; the only realistic a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.443358",
+    "updatedDate": "2026-03-24T10:48:12.443359",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

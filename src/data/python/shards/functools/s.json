@@ -1,0 +1,90 @@
+{
+  "functools/singledispatchmethod": {
+    "id": "functools.singledispatchmethod",
+    "name": "singledispatchmethod",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class functools.singledispatchmethod(func)"
+    ],
+    "signature_hash": "b0913f71ab5134ae8f90616a27464d3c3b66a754e167363b6ebd188740dde9f3",
+    "url": "https://docs.python.org/3/library/functools.html#module-functools#functools.singledispatchmethod",
+    "parameters": [
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Transform a method into a single-dispatch generic function. To define a generic method, decorate it with the @singledispatchmethod decorator. When defining a method using @singledispatchmethod, note that the dispatch happens on the type of the first non-self or non-cls argument: class Negator: @singledispatchmethod def neg(self, arg): raise NotImplementedError(\"Cannot negate a\") @neg.register def _(self, arg: int): return -arg @neg.register def _(self, arg: bool): return not arg @singledispat..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Transform a method into a single-dispatch generic function. To define a generic method, decorate it with the @singledispatchmethod decorator. When defining a method using @singledispatchmethod, note t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220363",
+    "updatedDate": "2026-03-24T10:48:12.220364",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "functools/singledispatch": {
+    "id": "functools.singledispatch",
+    "name": "singledispatch",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@functools.singledispatch"
+    ],
+    "signature_hash": "9edaf1d4a3c67a2d9113f94c0c36bb68338967432bfe68d8f3717d486e583afa",
+    "url": "https://docs.python.org/3/library/functools.html#module-functools#functools.singledispatch",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Transform a function into a single-dispatch generic function. To define a generic function, decorate it with the @singledispatch decorator. When defining a function using @singledispatch, note that the dispatch happens on the type of the first argument: >>> from functools import singledispatch >>> @singledispatch ... def fun(arg, verbose=False): ... if verbose: ... print(\"Let me just say,\", end=\" \") ... print(arg) To add overloaded implementations to the function, use the register() attribute..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Transform a function into a single-dispatch generic function. To define a generic function, decorate it with the @singledispatch decorator. When defining a function using @singledispatch, note that th...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.220346",
+    "updatedDate": "2026-03-24T10:48:12.220347",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

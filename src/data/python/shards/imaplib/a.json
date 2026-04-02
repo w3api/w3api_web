@@ -1,0 +1,193 @@
+{
+  "imaplib/abort": {
+    "id": "imaplib.abort",
+    "name": "abort",
+    "type": "exception",
+    "parent": null,
+    "signatures": [
+      "exception IMAP4.abort"
+    ],
+    "signature_hash": "6cd9b8251b88ce8c1ee2c83467aa3cab13e5e3615cab831ef08a0689db767e1c",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.abort",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "IMAP4 server errors cause this exception to be raised. This is a sub-class of IMAP4.error. Note that closing the instance and instantiating a new one will usually allow recovery from this exception."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "IMAP4 server errors cause this exception to be raised. This is a sub-class of IMAP4.error. Note that closing the instance and instantiating a new one will usually allow recovery from this exception.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.223433",
+    "updatedDate": "2026-03-24T10:48:12.223433",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/append": {
+    "id": "imaplib.IMAP4.append",
+    "name": "append",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.append(mailbox, flags, date_time, message)"
+    ],
+    "signature_hash": "2e1e79493f9f788ec9bd415950be731d64babd380137ff5f5df2f9d61992e2c3",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.append",
+    "parameters": [
+      {
+        "name": "mailbox",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "flags",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "date_time",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "message",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Append message to named mailbox."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Append message to named mailbox.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.223554",
+    "updatedDate": "2026-03-24T10:48:12.223554",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "imaplib/IMAP4/authenticate": {
+    "id": "imaplib.IMAP4.authenticate",
+    "name": "authenticate",
+    "type": "method",
+    "parent": "IMAP4",
+    "signatures": [
+      "IMAP4.authenticate(mechanism, authobject)"
+    ],
+    "signature_hash": "080cc6c2964faff67eb3697fec994c7e63a3849cd6e47dd18965f65ea5753e31",
+    "url": "https://docs.python.org/3/library/imaplib.html#module-imaplib#imaplib.IMAP4.authenticate",
+    "parameters": [
+      {
+        "name": "mechanism",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "authobject",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Authenticate command — requires response processing. mechanism specifies which authentication mechanism is to be used - it should appear in the instance variable capabilities in the form AUTH=mechanism. authobject must be a callable object: data = authobject(response) It will be called to process server continuation responses; the response argument it is passed will be bytes. It should return bytes data that will be base64 encoded and sent to the server. It should return None if the client ab..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Authenticate command — requires response processing. mechanism specifies which authentication mechanism is to be used - it should appear in the instance variable capabilities in the form AUTH=mechanis...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.223590",
+    "updatedDate": "2026-03-24T10:48:12.223591",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

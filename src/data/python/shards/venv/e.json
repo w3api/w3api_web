@@ -1,0 +1,219 @@
+{
+  "venv/EnvBuilder": {
+    "id": "venv.EnvBuilder",
+    "name": "EnvBuilder",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class venv.EnvBuilder(system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None, upgrade_deps=False, *, scm_ignore_files=frozenset())"
+    ],
+    "signature_hash": "049cc56bad567d406258ef091829b81bd6ac8bb1f1550c7220c7ba2dd8e75e46",
+    "url": "https://docs.python.org/3/library/venv.html#module-venv#venv.EnvBuilder",
+    "parameters": [
+      {
+        "name": "system_site_packages",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "clear",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "upgrade",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "with_pip",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "prompt",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "upgrade_deps",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "scm_ignore_files",
+        "type": "",
+        "has_default": true,
+        "default_value": "frozenset()",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The EnvBuilder class accepts the following keyword arguments on instantiation: system_site_packages – a boolean value indicating that the system Python site-packages should be available to the environment (defaults to False). clear – a boolean value which, if true, will delete the contents of any existing target directory, before creating the environment. symlinks – a boolean value indicating whether to attempt to symlink the Python binary rather than copying. upgrade – a boolean value which,..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The EnvBuilder class accepts the following keyword arguments on instantiation: system_site_packages – a boolean value indicating that the system Python site-packages should be available to the environ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.420454",
+    "updatedDate": "2026-03-24T10:48:12.420454",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.9.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "create",
+      "create_configuration",
+      "create_git_ignore_file",
+      "ensure_directories",
+      "install_scripts",
+      "post_setup",
+      "setup_python",
+      "setup_scripts",
+      "upgrade_dependencies"
+    ]
+  },
+  "venv/EnvBuilder/ensure_directories": {
+    "id": "venv.EnvBuilder.ensure_directories",
+    "name": "ensure_directories",
+    "type": "method",
+    "parent": "EnvBuilder",
+    "signatures": [
+      "ensure_directories(env_dir)"
+    ],
+    "signature_hash": "2e363c2e9b4bde413a8f959951c4381fe4be57294d7c25251e77afce37e62b3a",
+    "url": "https://docs.python.org/3/library/venv.html#module-venv#venv.EnvBuilder.ensure_directories",
+    "parameters": [
+      {
+        "name": "env_dir",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates the environment directory and all necessary subdirectories that don’t already exist, and returns a context object. This context object is just a holder for attributes (such as paths) for use by the other methods. If the EnvBuilder is created with the arg clear=True, contents of the environment directory will be cleared and then all necessary subdirectories will be recreated. The returned context object is a types.SimpleNamespace with the following attributes: env_dir - The location of..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates the environment directory and all necessary subdirectories that don’t already exist, and returns a context object. This context object is just a holder for attributes (such as paths) for use b...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.420487",
+    "updatedDate": "2026-03-24T10:48:12.420488",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

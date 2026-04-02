@@ -1,0 +1,1605 @@
+{
+  "java.util.prefs/PreferenceChangeEvent": {
+    "id": "java.util.prefs.PreferenceChangeEvent",
+    "name": "PreferenceChangeEvent",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class PreferenceChangeEvent"
+    ],
+    "signature_hash": "7f2b44ec927ad2d7b2e1509983c41ce8ab50e6c041ad25b0c5a4a92b4ba8faf7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194434",
+    "updatedDate": "2026-03-24T10:48:14.194434",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "PreferenceChangeEvent"
+    ],
+    "methods": [
+      "getKey",
+      "getNewValue",
+      "getNode"
+    ]
+  },
+  "java.util.prefs/Preferences": {
+    "id": "java.util.prefs.Preferences",
+    "name": "Preferences",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class Preferences"
+    ],
+    "signature_hash": "40e3046aa860136f594130698427ed26ddc925ce493a7820eb6a5d293eaa1e11",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193403",
+    "updatedDate": "2026-03-24T10:48:14.193404",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "Preferences"
+    ],
+    "attributes": [
+      "MAX_KEY_LENGTH",
+      "MAX_NAME_LENGTH",
+      "MAX_VALUE_LENGTH"
+    ],
+    "methods": [
+      "absolutePath",
+      "addNodeChangeListener",
+      "addPreferenceChangeListener",
+      "childrenNames",
+      "clear",
+      "exportNode",
+      "exportSubtree",
+      "flush",
+      "get",
+      "getBoolean",
+      "getByteArray",
+      "getDouble",
+      "getFloat",
+      "getInt",
+      "getLong",
+      "importPreferences",
+      "isUserNode",
+      "keys",
+      "name",
+      "node",
+      "nodeExists",
+      "parent",
+      "put",
+      "putBoolean",
+      "putByteArray",
+      "putDouble",
+      "putFloat",
+      "putInt",
+      "putLong",
+      "remove",
+      "removeNode",
+      "removeNodeChangeListener",
+      "removePreferenceChangeListener",
+      "sync",
+      "systemNodeForPackage",
+      "systemRoot",
+      "toString",
+      "userNodeForPackage",
+      "userRoot"
+    ]
+  },
+  "java.util.prefs/PreferenceChangeEvent/PreferenceChangeEvent": {
+    "id": "java.util.prefs.PreferenceChangeEvent.PreferenceChangeEvent",
+    "name": "PreferenceChangeEvent",
+    "type": "constructor",
+    "parent": "PreferenceChangeEvent",
+    "signatures": [
+      "public PreferenceChangeEvent(Preferences node, String key, String newValue)"
+    ],
+    "signature_hash": "edc77c8a5597c2dbb02d1871276e95ec64620e21d7ba8943e0c700b5bd11bfec",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html",
+    "parameters": [
+      {
+        "name": "node",
+        "type": "Preferences",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "newValue",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Constructs a newPreferenceChangeEventinstance."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Constructs a newPreferenceChangeEventinstance.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194458",
+    "updatedDate": "2026-03-24T10:48:14.194459",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/Preferences": {
+    "id": "java.util.prefs.Preferences.Preferences",
+    "name": "Preferences",
+    "type": "constructor",
+    "parent": "Preferences",
+    "signatures": [
+      "public Preferences()"
+    ],
+    "signature_hash": "32da2303065afb6e4bd578d6459ca3aef28051b39b044c7a232ecb03d2505409",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Sole constructor."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sole constructor.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193415",
+    "updatedDate": "2026-03-24T10:48:14.193416",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/PreferenceChangeListener": {
+    "id": "java.util.prefs.PreferenceChangeListener",
+    "name": "PreferenceChangeListener",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface PreferenceChangeListener"
+    ],
+    "signature_hash": "915b55d05c38e116374996cef3d1022cea0dbf7e7bf8fca256b70c540fc1f700",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194521",
+    "updatedDate": "2026-03-24T10:48:14.194522",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "preferenceChange"
+    ]
+  },
+  "java.util.prefs/PreferencesFactory": {
+    "id": "java.util.prefs.PreferencesFactory",
+    "name": "PreferencesFactory",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface PreferencesFactory"
+    ],
+    "signature_hash": "137cfe8688952312ef455f7343163d4c58a55a169f0fb92d2faa8ee78aaba8a1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194555",
+    "updatedDate": "2026-03-24T10:48:14.194555",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "systemRoot",
+      "userRoot"
+    ]
+  },
+  "java.util.prefs/AbstractPreferences/parent": {
+    "id": "java.util.prefs.AbstractPreferences.parent",
+    "name": "parent",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public Preferences parent()"
+    ],
+    "signature_hash": "1b3aad5eb7822e4bd64903fc5b8e1fd20387c8c8aa501bb90975448cce4c7ba0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [],
+    "return_type": "Preferences",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Implements theparentmethod as per the specification inPreferences.parent()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements theparentmethod as per the specification inPreferences.parent().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193076",
+    "updatedDate": "2026-03-24T10:48:14.193077",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/parent": {
+    "id": "java.util.prefs.Preferences.parent",
+    "name": "parent",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract Preferences parent()"
+    ],
+    "signature_hash": "13a46dcbe281dcc399ba8666f5d7724f67fee6677a3e820882ff5a0f269b1fe1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [],
+    "return_type": "abstract Preferences",
+    "exceptions": [
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns the parent of this preference node, ornullif this is the root."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the parent of this preference node, ornullif this is the root.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193830",
+    "updatedDate": "2026-03-24T10:48:14.193831",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/PreferenceChangeListener/preferenceChange": {
+    "id": "java.util.prefs.PreferenceChangeListener.preferenceChange",
+    "name": "preferenceChange",
+    "type": "method",
+    "parent": "PreferenceChangeListener",
+    "signatures": [
+      "public void preferenceChange(PreferenceChangeEvent evt)"
+    ],
+    "signature_hash": "2aeb2be70465b71ac6b18edcc3c442c871917df66ceaacea19903a64c7fd4058",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html",
+    "parameters": [
+      {
+        "name": "evt",
+        "type": "PreferenceChangeEvent",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This method gets called when a preference is added, removed or when its value is changed."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method gets called when a preference is added, removed or when its value is changed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194540",
+    "updatedDate": "2026-03-24T10:48:14.194541",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/put": {
+    "id": "java.util.prefs.AbstractPreferences.put",
+    "name": "put",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public void put(String key, String value)"
+    ],
+    "signature_hash": "239c940befd3c340f14defaaf354c56ad9c4a6d3d3f3ae3bb898f4a25c63f9e1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Implements theputmethod as per the specification inPreferences.put(String,String)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements theputmethod as per the specification inPreferences.put(String,String).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193094",
+    "updatedDate": "2026-03-24T10:48:14.193095",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/put": {
+    "id": "java.util.prefs.Preferences.put",
+    "name": "put",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract void put(String key, String value)"
+    ],
+    "signature_hash": "bf088e6aa6c62d2f8028ccfc0eca33cf6454b52ee1a7ecbfa35c9f6b38f83919",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Associates the specified value with the specified key in this preference node."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates the specified value with the specified key in this preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193849",
+    "updatedDate": "2026-03-24T10:48:14.193850",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/putBoolean": {
+    "id": "java.util.prefs.AbstractPreferences.putBoolean",
+    "name": "putBoolean",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public void putBoolean(String key, boolean value)"
+    ],
+    "signature_hash": "40523e0e19afc89ec968e3c01bf9bc236ed9adbe07deb03a2a397099b25fc0a5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Implements theputBooleanmethod as per the specification inPreferences.putBoolean(String,boolean)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements theputBooleanmethod as per the specification inPreferences.putBoolean(String,boolean).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193112",
+    "updatedDate": "2026-03-24T10:48:14.193113",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/putBoolean": {
+    "id": "java.util.prefs.Preferences.putBoolean",
+    "name": "putBoolean",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract void putBoolean(String key, boolean value)"
+    ],
+    "signature_hash": "b0b2f546d0d2690b2cef476c1871fff1cbfbcf0365aa401db8ce789aef070512",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Associates a string representing the specified boolean value with the specified key in this preference node."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates a string representing the specified boolean value with the specified key in this preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193871",
+    "updatedDate": "2026-03-24T10:48:14.193872",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/putByteArray": {
+    "id": "java.util.prefs.AbstractPreferences.putByteArray",
+    "name": "putByteArray",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public void putByteArray(String key, byte[]value)"
+    ],
+    "signature_hash": "cbe840495705a4cffe3a63469451adcf1d1943f2691a4d6cb29ef9e4a2e3db20",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "byte[]value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Implements theputByteArraymethod as per the specification inPreferences.putByteArray(String,byte[])."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements theputByteArraymethod as per the specification inPreferences.putByteArray(String,byte[]).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193131",
+    "updatedDate": "2026-03-24T10:48:14.193132",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/putByteArray": {
+    "id": "java.util.prefs.Preferences.putByteArray",
+    "name": "putByteArray",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract void putByteArray(String key, byte[]value)"
+    ],
+    "signature_hash": "00adacd07b46e436a758ac7459c3e50b1a8ea81feb4a4fac13fe91c7afce5977",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "byte[]value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Associates a string representing the specified byte array with the specified key in this preference node."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates a string representing the specified byte array with the specified key in this preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193899",
+    "updatedDate": "2026-03-24T10:48:14.193900",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/putDouble": {
+    "id": "java.util.prefs.AbstractPreferences.putDouble",
+    "name": "putDouble",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public void putDouble(String key, double value)"
+    ],
+    "signature_hash": "bb10b3e58ff484de356980f00bcb436b301c5e5368585431ecf9cda492e3793f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "double",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Implements theputDoublemethod as per the specification inPreferences.putDouble(String,double)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements theputDoublemethod as per the specification inPreferences.putDouble(String,double).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193149",
+    "updatedDate": "2026-03-24T10:48:14.193150",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/putDouble": {
+    "id": "java.util.prefs.Preferences.putDouble",
+    "name": "putDouble",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract void putDouble(String key, double value)"
+    ],
+    "signature_hash": "e293c4974be7c2bcae8aa50d657b184db23d7da4fd849e77396bbf275adbea52",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "double",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Associates a string representing the specified double value with the specified key in this preference node."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates a string representing the specified double value with the specified key in this preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193920",
+    "updatedDate": "2026-03-24T10:48:14.193921",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/putFloat": {
+    "id": "java.util.prefs.AbstractPreferences.putFloat",
+    "name": "putFloat",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public void putFloat(String key, float value)"
+    ],
+    "signature_hash": "a482c1e20e9747e47826236e4c5351ef5ca096f66ef4f07b2f309d45b63d6143",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "float",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Implements theputFloatmethod as per the specification inPreferences.putFloat(String,float)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements theputFloatmethod as per the specification inPreferences.putFloat(String,float).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193169",
+    "updatedDate": "2026-03-24T10:48:14.193170",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/putFloat": {
+    "id": "java.util.prefs.Preferences.putFloat",
+    "name": "putFloat",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract void putFloat(String key, float value)"
+    ],
+    "signature_hash": "1951c419ace4a939a582b6912569c3b684961aa94b805d4ae057c674dab54a5d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "float",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Associates a string representing the specified float value with the specified key in this preference node."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates a string representing the specified float value with the specified key in this preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193941",
+    "updatedDate": "2026-03-24T10:48:14.193942",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/putInt": {
+    "id": "java.util.prefs.AbstractPreferences.putInt",
+    "name": "putInt",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public void putInt(String key, int value)"
+    ],
+    "signature_hash": "eee1b692a9d89ac8e38ef44a30e77fd0f66b4dd21e5a04064a28609285272185",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Implements theputIntmethod as per the specification inPreferences.putInt(String,int)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements theputIntmethod as per the specification inPreferences.putInt(String,int).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193186",
+    "updatedDate": "2026-03-24T10:48:14.193187",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/putInt": {
+    "id": "java.util.prefs.Preferences.putInt",
+    "name": "putInt",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract void putInt(String key, int value)"
+    ],
+    "signature_hash": "2e185c6fa0b744aa7f447d5f3952b29c56fae6c7f7cffcb0492d661ebcc256db",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Associates a string representing the specified int value with the specified key in this preference node."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates a string representing the specified int value with the specified key in this preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193964",
+    "updatedDate": "2026-03-24T10:48:14.193964",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/putLong": {
+    "id": "java.util.prefs.AbstractPreferences.putLong",
+    "name": "putLong",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public void putLong(String key, long value)"
+    ],
+    "signature_hash": "99da3130e14fd2f1f995646e54b4642de7243a403805090dce703bd134065baf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Implements theputLongmethod as per the specification inPreferences.putLong(String,long)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements theputLongmethod as per the specification inPreferences.putLong(String,long).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193204",
+    "updatedDate": "2026-03-24T10:48:14.193205",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/putLong": {
+    "id": "java.util.prefs.Preferences.putLong",
+    "name": "putLong",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract void putLong(String key, long value)"
+    ],
+    "signature_hash": "53b9c149fc7f6771d56ff9444b44e35977ca549214148fb6653204aa79736eda",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "long",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Associates a string representing the specified long value with the specified key in this preference node."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Associates a string representing the specified long value with the specified key in this preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193986",
+    "updatedDate": "2026-03-24T10:48:14.193987",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/putSpi": {
+    "id": "java.util.prefs.AbstractPreferences.putSpi",
+    "name": "putSpi",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public protected abstract void putSpi(String key, String value)"
+    ],
+    "signature_hash": "e8f3c80c8625b0afc6271526ff4077fcf4aa7c21ea036564426009c87c815c66",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "value",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected abstract void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Put the given key-value association into this preference node."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Put the given key-value association into this preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193221",
+    "updatedDate": "2026-03-24T10:48:14.193222",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

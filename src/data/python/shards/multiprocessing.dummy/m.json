@@ -1,0 +1,228 @@
+{
+  "multiprocessing.dummy/Manager": {
+    "id": "multiprocessing.dummy.Manager",
+    "name": "Manager",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "multiprocessing.Manager()"
+    ],
+    "signature_hash": "80a629860010ca22dc4dc5b4d64aa899f036398a6a22fa6b08502ef807cec932",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.dummy#multiprocessing.Manager",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a started SyncManager object which can be used for sharing objects between processes. The returned manager object corresponds to a spawned child process and has methods which will create shared objects and return corresponding proxies."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a started SyncManager object which can be used for sharing objects between processes. The returned manager object corresponds to a spawned child process and has methods which will create share...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.257822",
+    "updatedDate": "2026-03-24T10:48:12.257823",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.dummy/Pool/map": {
+    "id": "multiprocessing.dummy.Pool.map",
+    "name": "map",
+    "type": "method",
+    "parent": "Pool",
+    "signatures": [
+      "map(func, iterable[, chunksize])"
+    ],
+    "signature_hash": "105a361aeb46398139a1b5546580c2732d96ede7c9d1eada6d3869169fbb3ea4",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.dummy#multiprocessing.pool.Pool.map",
+    "parameters": [
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "iterable[, chunksize",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A parallel equivalent of the map() built-in function (it supports only one iterable argument though, for multiple iterables see starmap()). It blocks until the result is ready. This method chops the iterable into a number of chunks which it submits to the process pool as separate tasks. The (approximate) size of these chunks can be specified by setting chunksize to a positive integer. Note that it may cause high memory usage for very long iterables. Consider using imap() or imap_unordered() w..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A parallel equivalent of the map() built-in function (it supports only one iterable argument though, for multiple iterables see starmap()). It blocks until the result is ready. This method chops the i...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.258753",
+    "updatedDate": "2026-03-24T10:48:12.258754",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.dummy/Pool/map_async": {
+    "id": "multiprocessing.dummy.Pool.map_async",
+    "name": "map_async",
+    "type": "method",
+    "parent": "Pool",
+    "signatures": [
+      "map_async(func, iterable[, chunksize[, callback[, error_callback]]])"
+    ],
+    "signature_hash": "9ad7e989e46635386485ef7d27a6456de46f0f2baeaf3cf27da8627e9a9ca16c",
+    "url": "https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.dummy#multiprocessing.pool.Pool.map_async",
+    "parameters": [
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "iterable[, chunksize[, callback[, error_callback",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A variant of the map() method which returns a AsyncResult object. If callback is specified then it should be a callable which accepts a single argument. When the result becomes ready callback is applied to it, that is unless the call failed, in which case the error_callback is applied instead. If error_callback is specified then it should be a callable which accepts a single argument. If the target function fails, then the error_callback is called with the exception instance. Callbacks should..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A variant of the map() method which returns a AsyncResult object. If callback is specified then it should be a callable which accepts a single argument. When the result becomes ready callback is appli...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.258780",
+    "updatedDate": "2026-03-24T10:48:12.258781",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "multiprocessing.dummy": {
+    "type": "module",
+    "name": "multiprocessing.dummy",
+    "id": "multiprocessing.dummy",
+    "description": "Module multiprocessing.dummy",
+    "classes": [
+      "AsyncResult",
+      "Barrier",
+      "BaseManager",
+      "BaseProxy",
+      "BoundedSemaphore",
+      "Condition",
+      "Connection",
+      "Event",
+      "JoinableQueue",
+      "Listener",
+      "Lock",
+      "Namespace",
+      "Pool",
+      "Process",
+      "Queue",
+      "RLock",
+      "Semaphore",
+      "SimpleQueue",
+      "SyncManager",
+      "ThreadPool"
+    ],
+    "exceptions": [
+      "AuthenticationError",
+      "BufferTooShort",
+      "ProcessError",
+      "TimeoutError"
+    ],
+    "functions": [
+      "Array",
+      "Client",
+      "Manager",
+      "Pipe",
+      "RawArray",
+      "RawValue",
+      "Value",
+      "active_children",
+      "answer_challenge",
+      "copy",
+      "cpu_count",
+      "current_process",
+      "deliver_challenge",
+      "freeze_support",
+      "get_all_start_methods",
+      "get_context",
+      "get_logger",
+      "get_start_method",
+      "log_to_stderr",
+      "parent_process",
+      "set_executable",
+      "set_forkserver_preload",
+      "set_start_method",
+      "synchronized",
+      "wait"
+    ]
+  }
+}

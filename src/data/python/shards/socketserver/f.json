@@ -1,0 +1,214 @@
+{
+  "socketserver/ForkingMixIn": {
+    "id": "socketserver.ForkingMixIn",
+    "name": "ForkingMixIn",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class socketserver.ForkingMixIn"
+    ],
+    "signature_hash": "5295000cc2f47bd66ba7f4a6899932f5a084c497593e530fcbf2a04e7109f942",
+    "url": "https://docs.python.org/3/library/socketserver.html#module-socketserver#socketserver.ForkingMixIn",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Forking and threading versions of each type of server can be created using these mix-in classes. For instance, ThreadingUDPServer is created as follows: class ThreadingUDPServer(ThreadingMixIn, UDPServer): pass The mix-in class comes first, since it overrides a method defined in UDPServer. Setting the various attributes also changes the behavior of the underlying server mechanism. ForkingMixIn and the Forking classes mentioned below are only available on POSIX platforms that support fork(). b..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Forking and threading versions of each type of server can be created using these mix-in classes. For instance, ThreadingUDPServer is created as follows: class ThreadingUDPServer(ThreadingMixIn, UDPSer...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338182",
+    "updatedDate": "2026-03-24T10:48:12.338183",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socketserver/ForkingTCPServer": {
+    "id": "socketserver.ForkingTCPServer",
+    "name": "ForkingTCPServer",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class socketserver.ForkingTCPServer"
+    ],
+    "signature_hash": "d7e307004300fcd4de191c08b07dc87e13f7d44093c8a03da5fbb46ab1922a4d",
+    "url": "https://docs.python.org/3/library/socketserver.html#module-socketserver#socketserver.ForkingTCPServer",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "These classes are pre-defined using the mix-in classes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "These classes are pre-defined using the mix-in classes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338256",
+    "updatedDate": "2026-03-24T10:48:12.338257",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socketserver/BaseServer/fileno": {
+    "id": "socketserver.BaseServer.fileno",
+    "name": "fileno",
+    "type": "method",
+    "parent": "BaseServer",
+    "signatures": [
+      "fileno()"
+    ],
+    "signature_hash": "3796d47bc9fe51d8ecd5e66e2592bdf7eceeee9b4bbd2d7b77230aca7f0c67de",
+    "url": "https://docs.python.org/3/library/socketserver.html#module-socketserver#socketserver.BaseServer.fileno",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return an integer file descriptor for the socket on which the server is listening. This function is most commonly passed to selectors, to allow monitoring multiple servers in the same process."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return an integer file descriptor for the socket on which the server is listening. This function is most commonly passed to selectors, to allow monitoring multiple servers in the same process.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338292",
+    "updatedDate": "2026-03-24T10:48:12.338293",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socketserver/BaseRequestHandler/finish": {
+    "id": "socketserver.BaseRequestHandler.finish",
+    "name": "finish",
+    "type": "method",
+    "parent": "BaseRequestHandler",
+    "signatures": [
+      "finish()"
+    ],
+    "signature_hash": "e70f336dea86f00db8f7e4bd77fa7b4ea9d9e4e116aafca94a2ae24f1889da88",
+    "url": "https://docs.python.org/3/library/socketserver.html#module-socketserver#socketserver.BaseRequestHandler.finish",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Called after the handle() method to perform any clean-up actions required. The default implementation does nothing. If setup() raises an exception, this function will not be called."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Called after the handle() method to perform any clean-up actions required. The default implementation does nothing. If setup() raises an exception, this function will not be called.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338683",
+    "updatedDate": "2026-03-24T10:48:12.338684",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "socketserver/BaseServer/finish_request": {
+    "id": "socketserver.BaseServer.finish_request",
+    "name": "finish_request",
+    "type": "method",
+    "parent": "BaseServer",
+    "signatures": [
+      "finish_request(request, client_address)"
+    ],
+    "signature_hash": "eafa0c26127aeaa1b836e559353a6030a3d2f8c1003cc217b5c65541996ce76a",
+    "url": "https://docs.python.org/3/library/socketserver.html#module-socketserver#socketserver.BaseServer.finish_request",
+    "parameters": [
+      {
+        "name": "request",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "client_address",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Actually processes the request by instantiating RequestHandlerClass and calling its handle() method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Actually processes the request by instantiating RequestHandlerClass and calling its handle() method.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338491",
+    "updatedDate": "2026-03-24T10:48:12.338492",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

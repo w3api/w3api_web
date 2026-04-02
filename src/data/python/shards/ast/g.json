@@ -1,0 +1,258 @@
+{
+  "ast/Global": {
+    "id": "ast.Global",
+    "name": "Global",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Global(names)"
+    ],
+    "signature_hash": "a170fef5c856f2200929ea8f62cab67a7fd7336d36300db8d898a8bdc03ec6de",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Global",
+    "parameters": [
+      {
+        "name": "names",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "global and nonlocal statements. names is a list of raw strings. >>> print(ast.dump(ast.parse('global x,y,z'), indent=4)) Module( body=[ Global( names=[ 'x', 'y', 'z'])]) >>> print(ast.dump(ast.parse('nonlocal x,y,z'), indent=4)) Module( body=[ Nonlocal( names=[ 'x', 'y', 'z'])])"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "global and nonlocal statements. names is a list of raw strings. >>> print(ast.dump(ast.parse('global x,y,z'), indent=4)) Module( body=[ Global( names=[ 'x', 'y', 'z'])]) >>> print(ast.dump(ast.parse('...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165789",
+    "updatedDate": "2026-03-24T10:48:12.165790",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/get_docstring": {
+    "id": "ast.get_docstring",
+    "name": "get_docstring",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ast.get_docstring(node, clean=True)"
+    ],
+    "signature_hash": "d1042db2a23892eaebb056627ad10f93ab454bb47334e5f72c3ecaece1c30d94",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.get_docstring",
+    "parameters": [
+      {
+        "name": "node",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "clean",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the docstring of the given node (which must be a FunctionDef, AsyncFunctionDef, ClassDef, or Module node), or None if it has no docstring. If clean is true, clean up the docstring’s indentation with inspect.cleandoc(). Changed in version 3.5: AsyncFunctionDef is now supported."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the docstring of the given node (which must be a FunctionDef, AsyncFunctionDef, ClassDef, or Module node), or None if it has no docstring. If clean is true, clean up the docstring’s indentation...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165990",
+    "updatedDate": "2026-03-24T10:48:12.165991",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/get_source_segment": {
+    "id": "ast.get_source_segment",
+    "name": "get_source_segment",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ast.get_source_segment(source, node, *, padded=False)"
+    ],
+    "signature_hash": "2f5c071ffeb4d81ff271daa4291ea24c96611e44401299474fd4805219e6b4ec",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.get_source_segment",
+    "parameters": [
+      {
+        "name": "source",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "node",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "padded",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Get source code segment of the source that generated node. If some location information (lineno, end_lineno, col_offset, or end_col_offset) is missing, return None. If padded is True, the first line of a multi-line statement will be padded with spaces to match its original position. Added in version 3.8."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Get source code segment of the source that generated node. If some location information (lineno, end_lineno, col_offset, or end_col_offset) is missing, return None. If padded is True, the first line o...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.166436",
+    "updatedDate": "2026-03-24T10:48:12.166437",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/NodeVisitor/generic_visit": {
+    "id": "ast.NodeVisitor.generic_visit",
+    "name": "generic_visit",
+    "type": "method",
+    "parent": "NodeVisitor",
+    "signatures": [
+      "generic_visit(node)"
+    ],
+    "signature_hash": "6f55f47ac705598bdcb84b363510c1aea8a91a50f7c4059c8d8cc28967b2ac4a",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.NodeVisitor.generic_visit",
+    "parameters": [
+      {
+        "name": "node",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This visitor calls visit() on all children of the node. Note that child nodes of nodes that have a custom visitor method won’t be visited unless the visitor calls generic_visit() or visits them itself."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This visitor calls visit() on all children of the node. Note that child nodes of nodes that have a custom visitor method won’t be visited unless the visitor calls generic_visit() or visits them itself...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.166613",
+    "updatedDate": "2026-03-24T10:48:12.166614",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "java.rmi.server/LogStream": {
+    "id": "java.rmi.server.LogStream",
+    "name": "LogStream",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class LogStream"
+    ],
+    "signature_hash": "a4a4015ce9eeb2a0a2fd67db9de9fbc65cec39dca992e7552daa3389e51e0593",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/LogStream.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.910413",
+    "updatedDate": "2026-03-24T10:48:13.910414",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "BRIEF",
+      "SILENT",
+      "VERBOSE"
+    ],
+    "methods": [
+      "getDefaultStream",
+      "getOutputStream",
+      "log",
+      "parseLevel",
+      "setDefaultStream",
+      "setOutputStream",
+      "toString",
+      "write"
+    ]
+  },
+  "java.rmi.server/LoaderHandler": {
+    "id": "java.rmi.server.LoaderHandler",
+    "name": "LoaderHandler",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface LoaderHandler"
+    ],
+    "signature_hash": "79a9340391768c6deae05920ebdfed54ecad6bde3902eba3dcd7dd61d3884106",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/LoaderHandler.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.910355",
+    "updatedDate": "2026-03-24T10:48:13.910356",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "packagePrefix"
+    ],
+    "methods": [
+      "getSecurityContext",
+      "loadClass"
+    ]
+  },
+  "java.rmi.server/LoaderHandler/loadClass": {
+    "id": "java.rmi.server.LoaderHandler.loadClass",
+    "name": "loadClass",
+    "type": "method",
+    "parent": "LoaderHandler",
+    "signatures": [
+      "public Class<?> loadClass(String name)",
+      "public Class<?> loadClass(URL codebase, String name)"
+    ],
+    "signature_hash": "1a7ec83ca466aab10cefbb50fdf13bc83482edc3151e2fb3c1c1b2fd1f05c4f2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/LoaderHandler.html",
+    "parameters": [
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "codebase",
+        "has_default": false,
+        "default_value": null,
+        "type": "URL",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Class<?>",
+    "exceptions": [
+      {
+        "name": "MalformedURLException",
+        "package": "java.net"
+      },
+      {
+        "name": "ClassNotFoundException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Deprecated.no replacement"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.no replacement",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.910392",
+    "updatedDate": "2026-03-24T10:48:13.910393",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.server/RMIClassLoader/loadClass": {
+    "id": "java.rmi.server.RMIClassLoader.loadClass",
+    "name": "loadClass",
+    "type": "method",
+    "parent": "RMIClassLoader",
+    "signatures": [
+      "public static Class<?> loadClass(String name)",
+      "public static Class<?> loadClass(String codebase, String name)",
+      "public static Class<?> loadClass(String codebase, String name, ClassLoader defaultLoader)",
+      "public static Class<?> loadClass(URL codebase, String name)"
+    ],
+    "signature_hash": "dcda51624cafc9803a5ce35c640013b624885353b17c08514a26664dd6f00808",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html",
+    "parameters": [
+      {
+        "name": "name",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "codebase",
+        "has_default": false,
+        "default_value": null,
+        "type": "String|URL",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "defaultLoader",
+        "has_default": false,
+        "default_value": null,
+        "type": "ClassLoader",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Class<?>",
+    "exceptions": [
+      {
+        "name": "MalformedURLException",
+        "package": "java.net"
+      },
+      {
+        "name": "ClassNotFoundException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Deprecated.replaced byloadClass(String,String)method"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.replaced byloadClass(String,String)method",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.911484",
+    "updatedDate": "2026-03-24T10:48:13.911484",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.server/RMIClassLoaderSpi/loadClass": {
+    "id": "java.rmi.server.RMIClassLoaderSpi.loadClass",
+    "name": "loadClass",
+    "type": "method",
+    "parent": "RMIClassLoaderSpi",
+    "signatures": [
+      "public abstract Class<?> loadClass(String codebase, String name, ClassLoader defaultLoader)"
+    ],
+    "signature_hash": "1b949322db1e3db7433a4cf9397eedbc98348985839f704661849ff38922e7d5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html",
+    "parameters": [
+      {
+        "name": "codebase",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "defaultLoader",
+        "type": "ClassLoader",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract Class<?>",
+    "exceptions": [
+      {
+        "name": "MalformedURLException",
+        "package": "java.net"
+      },
+      {
+        "name": "ClassNotFoundException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Provides the implementation forRMIClassLoader.loadClass(URL,String),RMIClassLoader.loadClass(String,String), andRMIClassLoader.loadClass(String,String,ClassLoader)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Provides the implementation forRMIClassLoader.loadClass(URL,String),RMIClassLoader.loadClass(String,String), andRMIClassLoader.loadClass(String,String,ClassLoader).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.911612",
+    "updatedDate": "2026-03-24T10:48:13.911613",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.server/RMIClassLoader/loadProxyClass": {
+    "id": "java.rmi.server.RMIClassLoader.loadProxyClass",
+    "name": "loadProxyClass",
+    "type": "method",
+    "parent": "RMIClassLoader",
+    "signatures": [
+      "public static Class<?> loadProxyClass(String codebase, String[]interfaces, ClassLoader defaultLoader)"
+    ],
+    "signature_hash": "59ec7967598b551a3062c8c12c1c56db3f936ed7a6046abf9a1065e20a64ed0b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html",
+    "parameters": [
+      {
+        "name": "codebase",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "String[]interfaces",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "defaultLoader",
+        "type": "ClassLoader",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Class<?>",
+    "exceptions": [
+      {
+        "name": "MalformedURLException",
+        "package": "java.net"
+      },
+      {
+        "name": "ClassNotFoundException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Loads a dynamic proxy class (seeProxy) that implements a set of interfaces with the given names from a codebase URL path."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Loads a dynamic proxy class (seeProxy) that implements a set of interfaces with the given names from a codebase URL path.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.911512",
+    "updatedDate": "2026-03-24T10:48:13.911513",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.server/RMIClassLoaderSpi/loadProxyClass": {
+    "id": "java.rmi.server.RMIClassLoaderSpi.loadProxyClass",
+    "name": "loadProxyClass",
+    "type": "method",
+    "parent": "RMIClassLoaderSpi",
+    "signatures": [
+      "public abstract Class<?> loadProxyClass(String codebase, String[]interfaces, ClassLoader defaultLoader)"
+    ],
+    "signature_hash": "e12d432dc0fa3c06e5bcf20e1280dbaf691621c887029fe0698ae84031966688",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html",
+    "parameters": [
+      {
+        "name": "codebase",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "String[]interfaces",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "defaultLoader",
+        "type": "ClassLoader",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "abstract Class<?>",
+    "exceptions": [
+      {
+        "name": "MalformedURLException",
+        "package": "java.net"
+      },
+      {
+        "name": "ClassNotFoundException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Provides the implementation forRMIClassLoader.loadProxyClass(String,String[],ClassLoader)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Provides the implementation forRMIClassLoader.loadProxyClass(String,String[],ClassLoader).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.911639",
+    "updatedDate": "2026-03-24T10:48:13.911640",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.rmi.server/LogStream/log": {
+    "id": "java.rmi.server.LogStream.log",
+    "name": "log",
+    "type": "method",
+    "parent": "LogStream",
+    "signatures": [
+      "public static LogStream log(String name)"
+    ],
+    "signature_hash": "e74a88c95f4fe0743a2868ee47d99b9fa57bee9fabe6e90171935c8a1ddfa093",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.rmi/java/rmi/server/LogStream.html",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static LogStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated.no replacement"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.no replacement",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.910452",
+    "updatedDate": "2026-03-24T10:48:13.910452",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.1",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

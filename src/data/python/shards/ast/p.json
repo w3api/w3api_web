@@ -1,0 +1,380 @@
+{
+  "ast/ParamSpec": {
+    "id": "ast.ParamSpec",
+    "name": "ParamSpec",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.ParamSpec(name, default_value)"
+    ],
+    "signature_hash": "747fc7782e917ce04b0cf4be82779533a41a24c8601f64bbe9561f6ecc654481",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.ParamSpec",
+    "parameters": [
+      {
+        "name": "name",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "default_value",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A typing.ParamSpec. name is the name of the parameter specification. default_value is the default value; if the ParamSpec has no default, this attribute will be set to None. >>> print(ast.dump(ast.parse(\"type Alias[**P = [int, str]] = Callable[P, int]\"), indent=4)) Module( body=[ TypeAlias( name=Name(id='Alias', ctx=Store()), type_params=[ ParamSpec( name='P', default_value=List( elts=[ Name(id='int', ctx=Load()), Name(id='str', ctx=Load())], ctx=Load()))], value=Subscript( value=Name(id='Cal..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A typing.ParamSpec. name is the name of the parameter specification. default_value is the default value; if the ParamSpec has no default, this attribute will be set to None. >>> print(ast.dump(ast.par...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165549",
+    "updatedDate": "2026-03-24T10:48:12.165549",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/Pass": {
+    "id": "ast.Pass",
+    "name": "Pass",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class ast.Pass"
+    ],
+    "signature_hash": "f4647b09ea607ce58434b20d2b0372a49cb25e801d01591a14090b9ea8d5f5a4",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.Pass",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A pass statement. >>> print(ast.dump(ast.parse('pass'), indent=4)) Module( body=[ Pass()])"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A pass statement. >>> print(ast.dump(ast.parse('pass'), indent=4)) Module( body=[ Pass()])",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.164937",
+    "updatedDate": "2026-03-24T10:48:12.164938",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/PyCF_ALLOW_TOP_LEVEL_AWAIT": {
+    "id": "ast.PyCF_ALLOW_TOP_LEVEL_AWAIT",
+    "name": "PyCF_ALLOW_TOP_LEVEL_AWAIT",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ast.PyCF_ALLOW_TOP_LEVEL_AWAIT"
+    ],
+    "signature_hash": "60659f128868eb6fe2446f0137911cbdab6b6a20d9c261ef21c1baca1c3f8a48",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.PyCF_ALLOW_TOP_LEVEL_AWAIT",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Enables support for top-level await, async for, async with and async comprehensions. Added in version 3.8."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enables support for top-level await, async for, async with and async comprehensions. Added in version 3.8.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.166696",
+    "updatedDate": "2026-03-24T10:48:12.166697",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/PyCF_ONLY_AST": {
+    "id": "ast.PyCF_ONLY_AST",
+    "name": "PyCF_ONLY_AST",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ast.PyCF_ONLY_AST"
+    ],
+    "signature_hash": "82c163fe47d4955605a15c1e782436943a2f96d4acbea52e913a896f3d999a47",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.PyCF_ONLY_AST",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Generates and returns an abstract syntax tree instead of returning a compiled code object."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Generates and returns an abstract syntax tree instead of returning a compiled code object.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.166710",
+    "updatedDate": "2026-03-24T10:48:12.166711",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/PyCF_OPTIMIZED_AST": {
+    "id": "ast.PyCF_OPTIMIZED_AST",
+    "name": "PyCF_OPTIMIZED_AST",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ast.PyCF_OPTIMIZED_AST"
+    ],
+    "signature_hash": "8ca04481a52a745a0f7a4bec51a00da06982cf7ad1ac8cf2d4df6202c8947df8",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.PyCF_OPTIMIZED_AST",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The returned AST is optimized according to the optimize argument in compile() or ast.parse(). Added in version 3.13."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The returned AST is optimized according to the optimize argument in compile() or ast.parse(). Added in version 3.13.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.166724",
+    "updatedDate": "2026-03-24T10:48:12.166725",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/PyCF_TYPE_COMMENTS": {
+    "id": "ast.PyCF_TYPE_COMMENTS",
+    "name": "PyCF_TYPE_COMMENTS",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "ast.PyCF_TYPE_COMMENTS"
+    ],
+    "signature_hash": "45aca8494d431c31bcb31d1ad0a21114b99c0ee001d5480b2e18a4c1cf86c7a0",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.PyCF_TYPE_COMMENTS",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Enables support for PEP 484 and PEP 526 style type comments (# type: <type>, # type: ignore <stuff>). Added in version 3.8."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Enables support for PEP 484 and PEP 526 style type comments (# type: <type>, # type: ignore <stuff>). Added in version 3.8.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.166739",
+    "updatedDate": "2026-03-24T10:48:12.166740",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "ast/parse": {
+    "id": "ast.parse",
+    "name": "parse",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "ast.parse(source, filename='<unknown>', mode='exec', *, type_comments=False, feature_version=None, optimize=-1)"
+    ],
+    "signature_hash": "174d374b8f4d5d64582678b9bcd071da6bac7329699508f1f1c729ce8322d958",
+    "url": "https://docs.python.org/3/library/ast.html#module-ast#ast.parse",
+    "parameters": [
+      {
+        "name": "source",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": true,
+        "default_value": "'<unknown>'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "mode",
+        "type": "",
+        "has_default": true,
+        "default_value": "'exec'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "type_comments",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "feature_version",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "optimize",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Parse the source into an AST node. Equivalent to compile(source, filename, mode, flags=FLAGS_VALUE, optimize=optimize), where FLAGS_VALUE is ast.PyCF_ONLY_AST if optimize <= 0 and ast.PyCF_OPTIMIZED_AST otherwise. If type_comments=True is given, the parser is modified to check and return type comments as specified by PEP 484 and PEP 526. This is equivalent to adding ast.PyCF_TYPE_COMMENTS to the flags passed to compile(). This will report syntax errors for misplaced type comments. Without thi..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parse the source into an AST node. Equivalent to compile(source, filename, mode, flags=FLAGS_VALUE, optimize=optimize), where FLAGS_VALUE is ast.PyCF_ONLY_AST if optimize <= 0 and ast.PyCF_OPTIMIZED_A...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.165922",
+    "updatedDate": "2026-03-24T10:48:12.165923",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

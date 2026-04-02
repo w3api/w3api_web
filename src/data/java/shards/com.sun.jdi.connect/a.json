@@ -1,0 +1,279 @@
+{
+  "com.sun.jdi.connect/Argument": {
+    "id": "com.sun.jdi.connect.Argument",
+    "name": "Argument",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Argument"
+    ],
+    "signature_hash": "2918e8d896ba93062b0de2ba34dd29cd28d36061d57fd19f1342449466960ab4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/Connector.Argument.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.341941",
+    "updatedDate": "2026-03-24T10:48:13.341942",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "description",
+      "isValid",
+      "label",
+      "mustSpecify",
+      "name",
+      "setValue",
+      "value"
+    ]
+  },
+  "com.sun.jdi.connect/AttachingConnector": {
+    "id": "com.sun.jdi.connect.AttachingConnector",
+    "name": "AttachingConnector",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface AttachingConnector"
+    ],
+    "signature_hash": "4aa7abdf6eb60da4f8a2d317b36c1afee74e88ac55923216840aa9b2b44d4146",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/AttachingConnector.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.341827",
+    "updatedDate": "2026-03-24T10:48:13.341828",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "attach"
+    ]
+  },
+  "com.sun.jdi.connect/ListeningConnector/accept": {
+    "id": "com.sun.jdi.connect.ListeningConnector.accept",
+    "name": "accept",
+    "type": "method",
+    "parent": "ListeningConnector",
+    "signatures": [
+      "public VirtualMachine accept(Map<String, ? extends Connector.Argument> arguments)"
+    ],
+    "signature_hash": "0d6a0c7545557b863ace844202c46ce982ab8ed26696c5d31b3d0a8d7e05150c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/ListeningConnector.html",
+    "parameters": [
+      {
+        "name": "Map<String",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "arguments",
+        "type": "? extends Connector.Argument>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "VirtualMachine",
+    "exceptions": [
+      {
+        "name": "TransportTimeoutException",
+        "package": "com.sun.jdi.connect"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalConnectorArgumentsException",
+        "package": "com.sun.jdi.connect"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Waits for a target VM to attach to this connector."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Waits for a target VM to attach to this connector.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.342774",
+    "updatedDate": "2026-03-24T10:48:13.342775",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi.connect/IllegalConnectorArgumentsException/argumentNames": {
+    "id": "com.sun.jdi.connect.IllegalConnectorArgumentsException.argumentNames",
+    "name": "argumentNames",
+    "type": "method",
+    "parent": "IllegalConnectorArgumentsException",
+    "signatures": [
+      "public List<String> argumentNames()"
+    ],
+    "signature_hash": "436f524bc0d9c84a2486db120a07de6e5f051955fbe63927cb23090ffd7cbcca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/IllegalConnectorArgumentsException.html",
+    "parameters": [],
+    "return_type": "List<String>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return aListcontaining the names of the invalid or inconsistent arguments."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return aListcontaining the names of the invalid or inconsistent arguments.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.342687",
+    "updatedDate": "2026-03-24T10:48:13.342688",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "com.sun.jdi.connect/AttachingConnector/attach": {
+    "id": "com.sun.jdi.connect.AttachingConnector.attach",
+    "name": "attach",
+    "type": "method",
+    "parent": "AttachingConnector",
+    "signatures": [
+      "public VirtualMachine attach(Map<String, ? extends Connector.Argument> arguments)"
+    ],
+    "signature_hash": "cf45a26d838789824760289de14afd632fa6523745f2c5daa087a39667f5fd0c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jdi/com/sun/jdi/connect/AttachingConnector.html",
+    "parameters": [
+      {
+        "name": "Map<String",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "arguments",
+        "type": "? extends Connector.Argument>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "VirtualMachine",
+    "exceptions": [
+      {
+        "name": "TransportTimeoutException",
+        "package": "com.sun.jdi.connect"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "IllegalConnectorArgumentsException",
+        "package": "com.sun.jdi.connect"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Attaches to a running application and returns a mirror of its VM."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Attaches to a running application and returns a mirror of its VM.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.341857",
+    "updatedDate": "2026-03-24T10:48:13.341858",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

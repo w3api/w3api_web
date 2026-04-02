@@ -1,0 +1,402 @@
+{
+  "org.xml.sax/Parser": {
+    "id": "org.xml.sax.Parser",
+    "name": "Parser",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Parser"
+    ],
+    "signature_hash": "f5b0093bc546b14a78abbd3bcc595f21fc0a448c66d544ba73fe2be05ae456dd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/org/xml/sax/Parser.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.339597",
+    "updatedDate": "2026-03-24T10:48:15.339597",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4, SAX 1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "parse",
+      "setDTDHandler",
+      "setDocumentHandler",
+      "setEntityResolver",
+      "setErrorHandler",
+      "setLocale"
+    ]
+  },
+  "org.xml.sax/Parser/parse": {
+    "id": "org.xml.sax.Parser.parse",
+    "name": "parse",
+    "type": "method",
+    "parent": "Parser",
+    "signatures": [
+      "public void parse(String systemId)",
+      "public void parse(InputSource source)"
+    ],
+    "signature_hash": "f52bea6bd538242810b827600dcbdde914df38a8c9602463bfba683d7b010262",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/org/xml/sax/Parser.html",
+    "parameters": [
+      {
+        "name": "systemId",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "source",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputSource",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SAXException",
+        "package": "org.xml.sax"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Deprecated.Parse an XML document from a system identifier (URI)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.Parse an XML document from a system identifier (URI).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.339621",
+    "updatedDate": "2026-03-24T10:48:15.339622",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4, SAX 1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.xml.sax/XMLReader/parse": {
+    "id": "org.xml.sax.XMLReader.parse",
+    "name": "parse",
+    "type": "method",
+    "parent": "XMLReader",
+    "signatures": [
+      "public void parse(String systemId)",
+      "public void parse(InputSource input)"
+    ],
+    "signature_hash": "d7d701f50ad363d0cfee464a940eb4acb936dac08eae3be22ca115d2eb1faa46",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/org/xml/sax/XMLReader.html",
+    "parameters": [
+      {
+        "name": "systemId",
+        "has_default": false,
+        "default_value": null,
+        "type": "String",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "input",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputSource",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SAXException",
+        "package": "org.xml.sax"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Parse an XML document from a system identifier (URI)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Parse an XML document from a system identifier (URI).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.339858",
+    "updatedDate": "2026-03-24T10:48:15.339859",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4, SAX 2.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.xml.sax/ContentHandler/processingInstruction": {
+    "id": "org.xml.sax.ContentHandler.processingInstruction",
+    "name": "processingInstruction",
+    "type": "method",
+    "parent": "ContentHandler",
+    "signatures": [
+      "public void processingInstruction(String target, String data)"
+    ],
+    "signature_hash": "e160ff4059c9927b5736b2ca4ed23e94ee72f969e79a9ec35f454f190e67d043",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/org/xml/sax/ContentHandler.html",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "data",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SAXException",
+        "package": "org.xml.sax"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Receive notification of a processing instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Receive notification of a processing instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.338313",
+    "updatedDate": "2026-03-24T10:48:15.338314",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4, SAX 2.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.xml.sax/DocumentHandler/processingInstruction": {
+    "id": "org.xml.sax.DocumentHandler.processingInstruction",
+    "name": "processingInstruction",
+    "type": "method",
+    "parent": "DocumentHandler",
+    "signatures": [
+      "public void processingInstruction(String target, String data)"
+    ],
+    "signature_hash": "e160ff4059c9927b5736b2ca4ed23e94ee72f969e79a9ec35f454f190e67d043",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/org/xml/sax/DocumentHandler.html",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "data",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SAXException",
+        "package": "org.xml.sax"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Deprecated.Receive notification of a processing instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.Receive notification of a processing instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.338505",
+    "updatedDate": "2026-03-24T10:48:15.338505",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4, SAX 1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "org.xml.sax/HandlerBase/processingInstruction": {
+    "id": "org.xml.sax.HandlerBase.processingInstruction",
+    "name": "processingInstruction",
+    "type": "method",
+    "parent": "HandlerBase",
+    "signatures": [
+      "public void processingInstruction(String target, String data)"
+    ],
+    "signature_hash": "e160ff4059c9927b5736b2ca4ed23e94ee72f969e79a9ec35f454f190e67d043",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/org/xml/sax/HandlerBase.html",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "data",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "SAXException",
+        "package": "org.xml.sax"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Deprecated.Receive notification of a processing instruction."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated.Receive notification of a processing instruction.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.338867",
+    "updatedDate": "2026-03-24T10:48:15.338868",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "unknown",
+      "added_version": "1.4, SAX 1.0",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

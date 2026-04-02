@@ -1,0 +1,385 @@
+{
+  "java.util.stream/BaseStream<T,S>>/parallel": {
+    "id": "java.util.stream.BaseStream<T,S>>.parallel",
+    "name": "parallel",
+    "type": "method",
+    "parent": "BaseStream<T,S>>",
+    "signatures": [
+      "public S parallel()"
+    ],
+    "signature_hash": "dd436e25a199d58d2bb0e06b5db356ffb8424d75cbf88f233f46b82a2b6d1e3e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/BaseStream.html",
+    "parameters": [],
+    "return_type": "S",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an equivalent stream that is parallel."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an equivalent stream that is parallel.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.203090",
+    "updatedDate": "2026-03-24T10:48:14.203091",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collectors/partitioningBy": {
+    "id": "java.util.stream.Collectors.partitioningBy",
+    "name": "partitioningBy",
+    "type": "method",
+    "parent": "Collectors",
+    "signatures": [
+      "public static<T> Collector<T, ?, Map<Boolean, List<T>>> partitioningBy(Predicate<? super T> predicate)",
+      "public static<T, D, A> Collector<T, ?, Map<Boolean, D>> partitioningBy(Predicate<? super T> predicate, Collector<? super T, A, D> downstream)"
+    ],
+    "signature_hash": "463b993d20433071bf2fc7e2a1cf94740cad508b47801390ffc602da2c7374f6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [
+      {
+        "name": "predicate",
+        "has_default": false,
+        "default_value": null,
+        "type": "Predicate<? super T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "T",
+        "has_default": false,
+        "default_value": null,
+        "type": "Collector<? super",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "A",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "downstream",
+        "has_default": false,
+        "default_value": null,
+        "type": "D>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> Collector<T, ?, Map<Boolean, List<T>>>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aCollectorwhich partitions the input elements according to aPredicate, and organizes them into aMap<Boolean, List<T>>."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aCollectorwhich partitions the input elements according to aPredicate, and organizes them into aMap<Boolean, List<T>>.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.201419",
+    "updatedDate": "2026-03-24T10:48:14.201420",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Stream/peek": {
+    "id": "java.util.stream.Stream.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "Stream",
+    "signatures": [
+      "public Stream<T> peek(Consumer<? super T> action)"
+    ],
+    "signature_hash": "cdead09171e636e3cc605fbe32923c751f7e18ef4afce2aa52e211b3667b17a1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html",
+    "parameters": [
+      {
+        "name": "action",
+        "type": "Consumer<? super T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Stream<T>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.198250",
+    "updatedDate": "2026-03-24T10:48:14.198251",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/IntStream/peek": {
+    "id": "java.util.stream.IntStream.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "IntStream",
+    "signatures": [
+      "public IntStream peek(IntConsumer action)"
+    ],
+    "signature_hash": "9b57cef23cda68df785a17cbf6035b15d8fd51d5d3e4865b339a19c11c9af122",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html",
+    "parameters": [
+      {
+        "name": "action",
+        "type": "IntConsumer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "IntStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.198971",
+    "updatedDate": "2026-03-24T10:48:14.198972",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/LongStream/peek": {
+    "id": "java.util.stream.LongStream.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "LongStream",
+    "signatures": [
+      "public LongStream peek(LongConsumer action)"
+    ],
+    "signature_hash": "c566b459c3b40f8f95dee5542f03eb387466d637ef38b89af247dd8a3e635223",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/LongStream.html",
+    "parameters": [
+      {
+        "name": "action",
+        "type": "LongConsumer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "LongStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199760",
+    "updatedDate": "2026-03-24T10:48:14.199761",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/DoubleStream/peek": {
+    "id": "java.util.stream.DoubleStream.peek",
+    "name": "peek",
+    "type": "method",
+    "parent": "DoubleStream",
+    "signatures": [
+      "public DoubleStream peek(DoubleConsumer action)"
+    ],
+    "signature_hash": "dbb6d828d9ed65453c4833ea87706f6a3ac98e2e741ac00a061b2e218595ab63",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.html",
+    "parameters": [
+      {
+        "name": "action",
+        "type": "DoubleConsumer",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "DoubleStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200574",
+    "updatedDate": "2026-03-24T10:48:14.200575",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Downstream/push": {
+    "id": "java.util.stream.Downstream.push",
+    "name": "push",
+    "type": "method",
+    "parent": "Downstream",
+    "signatures": [
+      "public boolean push(T element)"
+    ],
+    "signature_hash": "bd6809cb9c46ed6c34ad1cfe78f253de6a13181e19c64966567bd24fb3e3fc2d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Gatherer.Downstream.html",
+    "parameters": [
+      {
+        "name": "element",
+        "type": "T",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Pushes, if possible, the provided element downstream -- to the next stage in the pipeline."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Pushes, if possible, the provided element downstream -- to the next stage in the pipeline.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.203467",
+    "updatedDate": "2026-03-24T10:48:14.203468",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

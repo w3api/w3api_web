@@ -1,0 +1,107 @@
+{
+  "xml.sax.xmlreader/IncrementalParser": {
+    "id": "xml.sax.xmlreader.IncrementalParser",
+    "name": "IncrementalParser",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class xml.sax.xmlreader.IncrementalParser"
+    ],
+    "signature_hash": "c41da6509a052ff907cd1588141ec2d9d672769d2a6e02c0e31bb790c48bc521",
+    "url": "https://docs.python.org/3/library/xml.sax.reader.html#module-xml.sax.xmlreader#xml.sax.xmlreader.IncrementalParser",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "In some cases, it is desirable not to parse an input source at once, but to feed chunks of the document as they get available. Note that the reader will normally not read the entire file, but read it in chunks as well; still parse() won’t return until the entire document is processed. So these interfaces should be used if the blocking behaviour of parse() is not desirable. When the parser is instantiated it is ready to begin accepting data from the feed method immediately. After parsing has b..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "In some cases, it is desirable not to parse an input source at once, but to feed chunks of the document as they get available. Note that the reader will normally not read the entire file, but read it ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.440058",
+    "updatedDate": "2026-03-24T10:48:12.440058",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "close",
+      "feed",
+      "reset"
+    ]
+  },
+  "xml.sax.xmlreader/InputSource": {
+    "id": "xml.sax.xmlreader.InputSource",
+    "name": "InputSource",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class xml.sax.xmlreader.InputSource(system_id=None)"
+    ],
+    "signature_hash": "dfe441b52744303c3e9bfbf9c320938f3f982f723142cfdd9c8eb417f7b8d809",
+    "url": "https://docs.python.org/3/library/xml.sax.reader.html#module-xml.sax.xmlreader#xml.sax.xmlreader.InputSource",
+    "parameters": [
+      {
+        "name": "system_id",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Encapsulation of the information needed by the XMLReader to read entities. This class may include information about the public identifier, system identifier, byte stream (possibly with character encoding information) and/or the character stream of an entity. Applications will create objects of this class for use in the XMLReader.parse() method and for returning from EntityResolver.resolveEntity. An InputSource belongs to the application, the XMLReader is not allowed to modify InputSource obje..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Encapsulation of the information needed by the XMLReader to read entities. This class may include information about the public identifier, system identifier, byte stream (possibly with character encod...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.440086",
+    "updatedDate": "2026-03-24T10:48:12.440087",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "getByteStream",
+      "getCharacterStream",
+      "getEncoding",
+      "getPublicId",
+      "getSystemId",
+      "setByteStream",
+      "setCharacterStream",
+      "setEncoding",
+      "setPublicId",
+      "setSystemId"
+    ]
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "java.util.prefs/AbstractPreferences/sync": {
+    "id": "java.util.prefs.AbstractPreferences.sync",
+    "name": "sync",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public void sync()"
+    ],
+    "signature_hash": "54847c2a6e4d541da85f6849fcd0fd5532f6691ae30cd231087f45a3fad5dbe6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "BackingStoreException",
+        "package": "java.util.prefs"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Implements thesyncmethod as per the specification inPreferences.sync()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Implements thesyncmethod as per the specification inPreferences.sync().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193340",
+    "updatedDate": "2026-03-24T10:48:14.193340",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/sync": {
+    "id": "java.util.prefs.Preferences.sync",
+    "name": "sync",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public abstract void sync()"
+    ],
+    "signature_hash": "4a693d154c85fd76046511802a8b842af3100861840ff77297f7a85c516f4080",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [],
+    "return_type": "abstract void",
+    "exceptions": [
+      {
+        "name": "BackingStoreException",
+        "package": "java.util.prefs"
+      },
+      {
+        "name": "IllegalStateException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Ensures that future reads from this preference node and its descendants reflect any changes that were committed to the persistent store (from any VM) prior to thesyncinvocation."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Ensures that future reads from this preference node and its descendants reflect any changes that were committed to the persistent store (from any VM) prior to thesyncinvocation.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194077",
+    "updatedDate": "2026-03-24T10:48:14.194078",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/AbstractPreferences/syncSpi": {
+    "id": "java.util.prefs.AbstractPreferences.syncSpi",
+    "name": "syncSpi",
+    "type": "method",
+    "parent": "AbstractPreferences",
+    "signatures": [
+      "public protected abstract void syncSpi()"
+    ],
+    "signature_hash": "77c2a10039424b029b367ebb7c113635fbf3cc0517bfb33e847b698029391c53",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html",
+    "parameters": [],
+    "return_type": "protected abstract void",
+    "exceptions": [
+      {
+        "name": "BackingStoreException",
+        "package": "java.util.prefs"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "This method is invoked with this node locked."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method is invoked with this node locked.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.193353",
+    "updatedDate": "2026-03-24T10:48:14.193354",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/systemNodeForPackage": {
+    "id": "java.util.prefs.Preferences.systemNodeForPackage",
+    "name": "systemNodeForPackage",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public static Preferences systemNodeForPackage(Class<?> c)"
+    ],
+    "signature_hash": "1ee3cf7f9c4339fd9669db935a9ae14717061e6247275a1b04a2ee53b40ff363",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [
+      {
+        "name": "c",
+        "type": "Class<?>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Preferences",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns the preference node from the system preference tree that is associated (by convention) with the specified class's package."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the preference node from the system preference tree that is associated (by convention) with the specified class's package.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194096",
+    "updatedDate": "2026-03-24T10:48:14.194097",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/Preferences/systemRoot": {
+    "id": "java.util.prefs.Preferences.systemRoot",
+    "name": "systemRoot",
+    "type": "method",
+    "parent": "Preferences",
+    "signatures": [
+      "public static Preferences systemRoot()"
+    ],
+    "signature_hash": "e3432429ad2930c1cf792bcba67ef5fd2eea5d88b606c2803d93924c4357e87b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/Preferences.html",
+    "parameters": [],
+    "return_type": "static Preferences",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the root preference node for the system."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the root preference node for the system.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194111",
+    "updatedDate": "2026-03-24T10:48:14.194112",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.prefs/PreferencesFactory/systemRoot": {
+    "id": "java.util.prefs.PreferencesFactory.systemRoot",
+    "name": "systemRoot",
+    "type": "method",
+    "parent": "PreferencesFactory",
+    "signatures": [
+      "public Preferences systemRoot()"
+    ],
+    "signature_hash": "7b866eae9db56b63610b5da43d37c71b9ffcd7b63431abb9ac356cc7f89070c6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html",
+    "parameters": [],
+    "return_type": "Preferences",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the system root preference node."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the system root preference node.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.194570",
+    "updatedDate": "2026-03-24T10:48:14.194571",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.4",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

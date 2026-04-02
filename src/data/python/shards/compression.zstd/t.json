@@ -1,0 +1,103 @@
+{
+  "compression.zstd/CompressionParameter/target_length": {
+    "id": "compression.zstd.CompressionParameter.target_length",
+    "name": "target_length",
+    "type": "attribute",
+    "parent": "CompressionParameter",
+    "signatures": [
+      "target_length"
+    ],
+    "signature_hash": "381ef81ec54b01a5c765b306d0a6b6b4fc7e4228dedb677dbb03a2039fee9731",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.CompressionParameter.target_length",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The impact of this field depends on the selected Strategy. For strategies btopt, btultra and btultra2, the value is the length of a match considered “good enough” to stop searching. Larger values make compression ratios better, but compresses slower. For strategy fast, it is the distance between match sampling. Larger values make compression faster, but with a worse compression ratio. A value of zero causes the value to be selected automatically."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The impact of this field depends on the selected Strategy. For strategies btopt, btultra and btultra2, the value is the length of a match considered “good enough” to stop searching. Larger values make...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174650",
+    "updatedDate": "2026-03-24T10:48:12.174651",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "compression.zstd/train_dict": {
+    "id": "compression.zstd.train_dict",
+    "name": "train_dict",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "compression.zstd.train_dict(samples, dict_size)"
+    ],
+    "signature_hash": "9e25f2d775da2b77b4b7587f9eb45c39c5a380f71148f77f8a2e072d6b80b107",
+    "url": "https://docs.python.org/3/library/compression.zstd.html#module-compression.zstd#compression.zstd.train_dict",
+    "parameters": [
+      {
+        "name": "samples",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "dict_size",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Train a Zstandard dictionary, returning a ZstdDict instance. Zstandard dictionaries enable more efficient compression of smaller sizes of data, which is traditionally difficult to compress due to less repetition. If you are compressing multiple similar groups of data (such as similar files), Zstandard dictionaries can improve compression ratios and speed significantly. The samples argument (an iterable of bytes objects), is the population of samples used to train the Zstandard dictionary. The..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Train a Zstandard dictionary, returning a ZstdDict instance. Zstandard dictionaries enable more efficient compression of smaller sizes of data, which is traditionally difficult to compress due to less...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.174418",
+    "updatedDate": "2026-03-24T10:48:12.174419",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

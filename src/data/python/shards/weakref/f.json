@@ -1,0 +1,114 @@
+{
+  "weakref/finalize": {
+    "id": "weakref.finalize",
+    "name": "finalize",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class weakref.finalize(obj, func, /, *args, **kwargs)"
+    ],
+    "signature_hash": "9ea59269204d50a8e6d1816406f1b34d818da54c8ef3bdc56c720c0be89b0b64",
+    "url": "https://docs.python.org/3/library/weakref.html#module-weakref#weakref.finalize",
+    "parameters": [
+      {
+        "name": "obj",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "func",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "args",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": true,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "**kwargs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a callable finalizer object which will be called when obj is garbage collected. Unlike an ordinary weak reference, a finalizer will always survive until the reference object is collected, greatly simplifying lifecycle management. A finalizer is considered alive until it is called (either explicitly or at garbage collection), and after that it is dead. Calling a live finalizer returns the result of evaluating func(*arg, **kwargs), whereas calling a dead finalizer returns None. Exception..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a callable finalizer object which will be called when obj is garbage collected. Unlike an ordinary weak reference, a finalizer will always survive until the reference object is collected, great...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.421512",
+    "updatedDate": "2026-03-24T10:48:12.421513",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.4.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "attributes": [
+      "alive",
+      "atexit"
+    ],
+    "methods": [
+      "__call__",
+      "detach",
+      "peek"
+    ]
+  }
+}

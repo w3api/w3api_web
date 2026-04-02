@@ -1,0 +1,105 @@
+{
+  "glob/translate": {
+    "id": "glob.translate",
+    "name": "translate",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "glob.translate(pathname, *, recursive=False, include_hidden=False, seps=None)"
+    ],
+    "signature_hash": "b08e96708e7a470accc8cc455c5b4faea5e6d66be19a3b39f72481983561a059",
+    "url": "https://docs.python.org/3/library/glob.html#module-glob#glob.translate",
+    "parameters": [
+      {
+        "name": "pathname",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "recursive",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "include_hidden",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "seps",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Convert the given path specification to a regular expression for use with re.match(). The path specification can contain shell-style wildcards. For example: >>> import glob, re >>> >>> regex = glob.translate('**/*.txt', recursive=True, include_hidden=True) >>> regex '(?s:(?:.+/)?[^/]*\\\\.txt)\\\\z' >>> reobj = re.compile(regex) >>> reobj.match('foo/bar/baz.txt') <re.Match object; span=(0, 15), match='foo/bar/baz.txt'> Path separators and segments are meaningful to this function, unlike fnmatch.t..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convert the given path specification to a regular expression for use with re.match(). The path specification can contain shell-style wildcards. For example: >>> import glob, re >>> >>> regex = glob.tr...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.221746",
+    "updatedDate": "2026-03-24T10:48:12.221747",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.13.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,3383 @@
+{
+  "javax.sound.sampled/AudioSystem/getAudioFileFormat": {
+    "id": "javax.sound.sampled.AudioSystem.getAudioFileFormat",
+    "name": "getAudioFileFormat",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static AudioFileFormat getAudioFileFormat(File file)",
+      "public static AudioFileFormat getAudioFileFormat(InputStream stream)",
+      "public static AudioFileFormat getAudioFileFormat(URL url)"
+    ],
+    "signature_hash": "1e80700694bec89dff5165a046ad865f38df94ff3c29b173c882cf0b55c595fe",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "file",
+        "has_default": false,
+        "default_value": null,
+        "type": "File",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "stream",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "url",
+        "has_default": false,
+        "default_value": null,
+        "type": "URL",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static AudioFileFormat",
+    "exceptions": [
+      {
+        "name": "UnsupportedAudioFileException",
+        "package": "javax.sound.sampled"
+      },
+      {
+        "name": "IOException",
+        "package": "java.io"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Obtains the audio file format of the specifiedFile."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the audio file format of the specifiedFile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399413",
+    "updatedDate": "2026-03-24T10:48:14.399414",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getAudioFileTypes": {
+    "id": "javax.sound.sampled.AudioSystem.getAudioFileTypes",
+    "name": "getAudioFileTypes",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static AudioFileFormat.Type[] getAudioFileTypes()",
+      "public static AudioFileFormat.Type[] getAudioFileTypes(AudioInputStream stream)"
+    ],
+    "signature_hash": "b2d57d3de3c8b127be1cb6ad2745f23509774199da1ff4c93e9be04d0219f7fd",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "stream",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioInputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static AudioFileFormat.Type[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the file types for which file writing support is provided by the system."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the file types for which file writing support is provided by the system.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399435",
+    "updatedDate": "2026-03-24T10:48:14.399436",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getAudioInputStream": {
+    "id": "javax.sound.sampled.AudioSystem.getAudioInputStream",
+    "name": "getAudioInputStream",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static AudioInputStream getAudioInputStream(File file)",
+      "public static AudioInputStream getAudioInputStream(InputStream stream)",
+      "public static AudioInputStream getAudioInputStream(URL url)",
+      "public static AudioInputStream getAudioInputStream(AudioFormat.Encoding targetEncoding, AudioInputStream sourceStream)",
+      "public static AudioInputStream getAudioInputStream(AudioFormat targetFormat, AudioInputStream sourceStream)"
+    ],
+    "signature_hash": "f8230ecf1f6ce35819960dfbd813df220cef1ac9b0f0b29ff7a6939c25857e6f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "file",
+        "has_default": false,
+        "default_value": null,
+        "type": "File",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "stream",
+        "has_default": false,
+        "default_value": null,
+        "type": "InputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "url",
+        "has_default": false,
+        "default_value": null,
+        "type": "URL",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "targetEncoding",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFormat.Encoding",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "sourceStream",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioInputStream",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "targetFormat",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFormat",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static AudioInputStream",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Obtains an audio input stream from the providedFile."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains an audio input stream from the providedFile.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399487",
+    "updatedDate": "2026-03-24T10:48:14.399488",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/DataLine/getBufferSize": {
+    "id": "javax.sound.sampled.DataLine.getBufferSize",
+    "name": "getBufferSize",
+    "type": "method",
+    "parent": "DataLine",
+    "signatures": [
+      "public int getBufferSize()"
+    ],
+    "signature_hash": "2e6eda184436ee2e284ddcc9dbbe010f011ca3b9df271a0f8ee3fd2f7bf19efb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/DataLine.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the maximum number of bytes of data that will fit in the data line's internal buffer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the maximum number of bytes of data that will fit in the data line's internal buffer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400666",
+    "updatedDate": "2026-03-24T10:48:14.400667",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFileFormat/getByteLength": {
+    "id": "javax.sound.sampled.AudioFileFormat.getByteLength",
+    "name": "getByteLength",
+    "type": "method",
+    "parent": "AudioFileFormat",
+    "signatures": [
+      "public int getByteLength()"
+    ],
+    "signature_hash": "b338aac3b4ae6820f3ae3eb5ba4bcfdffb7f467fa5f4a3ba653889c1d256850f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the size in bytes of the entire audio file (not just its audio data)."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the size in bytes of the entire audio file (not just its audio data).",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398230",
+    "updatedDate": "2026-03-24T10:48:14.398231",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFormat/getChannels": {
+    "id": "javax.sound.sampled.AudioFormat.getChannels",
+    "name": "getChannels",
+    "type": "method",
+    "parent": "AudioFormat",
+    "signatures": [
+      "public int getChannels()"
+    ],
+    "signature_hash": "1ed2c7fd9a484a3aa985573002e1deb01b68148912bae8a638a75c17bd73f8ba",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the number of channels."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the number of channels.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398570",
+    "updatedDate": "2026-03-24T10:48:14.398571",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getClip": {
+    "id": "javax.sound.sampled.AudioSystem.getClip",
+    "name": "getClip",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static Clip getClip()",
+      "public static Clip getClip(Mixer.Info mixerInfo)"
+    ],
+    "signature_hash": "681b6ee0d2efb52fb41c629fd60945299424a4f5211a2af35421008e7d9439ff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "mixerInfo",
+        "has_default": false,
+        "default_value": null,
+        "type": "Mixer.Info",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Clip",
+    "exceptions": [
+      {
+        "name": "LineUnavailableException",
+        "package": "javax.sound.sampled"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Obtains a clip that can be used for playing back an audio file or an audio stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains a clip that can be used for playing back an audio file or an audio stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399509",
+    "updatedDate": "2026-03-24T10:48:14.399510",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Line/getControl": {
+    "id": "javax.sound.sampled.Line.getControl",
+    "name": "getControl",
+    "type": "method",
+    "parent": "Line",
+    "signatures": [
+      "public Control getControl(Control.Type control)"
+    ],
+    "signature_hash": "4f52b1e203cc1ecae86f767dbb9a6f2c9d7a8c75530c129d8f01bca2553cef35",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Line.html",
+    "parameters": [
+      {
+        "name": "control",
+        "type": "Control.Type",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Control",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains a control of the specified type, if there is any."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains a control of the specified type, if there is any.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400474",
+    "updatedDate": "2026-03-24T10:48:14.400475",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Line/getControls": {
+    "id": "javax.sound.sampled.Line.getControls",
+    "name": "getControls",
+    "type": "method",
+    "parent": "Line",
+    "signatures": [
+      "public Control[] getControls()"
+    ],
+    "signature_hash": "3635f1d7297d90ceaa66bce670e1ba985d161f5ec5f86bc9bb928e238f2ae564",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Line.html",
+    "parameters": [],
+    "return_type": "Control[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the set of controls associated with this line."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the set of controls associated with this line.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400490",
+    "updatedDate": "2026-03-24T10:48:14.400491",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/ReverbType/getDecayTime": {
+    "id": "javax.sound.sampled.ReverbType.getDecayTime",
+    "name": "getDecayTime",
+    "type": "method",
+    "parent": "ReverbType",
+    "signatures": [
+      "public final int getDecayTime()"
+    ],
+    "signature_hash": "567962dfb20d00b107259095fe7ccce91240e5544a048af21634af23d5a150bc",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/ReverbType.html",
+    "parameters": [],
+    "return_type": "final int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the decay time, which is the amount of time over which the late reflections attenuate to effective zero."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the decay time, which is the amount of time over which the late reflections attenuate to effective zero.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402819",
+    "updatedDate": "2026-03-24T10:48:14.402820",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Info/getDescription": {
+    "id": "javax.sound.sampled.Info.getDescription",
+    "name": "getDescription",
+    "type": "method",
+    "parent": "Info",
+    "signatures": [
+      "public final String getDescription()"
+    ],
+    "signature_hash": "0122cbaee75c3909b865486642695fe7fa4f51a526c44b638cf362c31a12c3e1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html",
+    "parameters": [],
+    "return_type": "final String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the description of the mixer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the description of the mixer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402371",
+    "updatedDate": "2026-03-24T10:48:14.402372",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/ReverbType/getEarlyReflectionDelay": {
+    "id": "javax.sound.sampled.ReverbType.getEarlyReflectionDelay",
+    "name": "getEarlyReflectionDelay",
+    "type": "method",
+    "parent": "ReverbType",
+    "signatures": [
+      "public final int getEarlyReflectionDelay()"
+    ],
+    "signature_hash": "a9001f1c62ff6723ec95368fb44ce66f14788f7d3329d8fa8c91370f6784d2a6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/ReverbType.html",
+    "parameters": [],
+    "return_type": "final int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the early reflection delay time in microseconds."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the early reflection delay time in microseconds.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402840",
+    "updatedDate": "2026-03-24T10:48:14.402841",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/ReverbType/getEarlyReflectionIntensity": {
+    "id": "javax.sound.sampled.ReverbType.getEarlyReflectionIntensity",
+    "name": "getEarlyReflectionIntensity",
+    "type": "method",
+    "parent": "ReverbType",
+    "signatures": [
+      "public final float getEarlyReflectionIntensity()"
+    ],
+    "signature_hash": "95825018a69337e62d9bccebe0ce2e720d7eba5b38ecd2398af63839ef39a764",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/ReverbType.html",
+    "parameters": [],
+    "return_type": "final float",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the early reflection intensity in decibels."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the early reflection intensity in decibels.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402862",
+    "updatedDate": "2026-03-24T10:48:14.402863",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFormat/getEncoding": {
+    "id": "javax.sound.sampled.AudioFormat.getEncoding",
+    "name": "getEncoding",
+    "type": "method",
+    "parent": "AudioFormat",
+    "signatures": [
+      "public AudioFormat.Encoding getEncoding()"
+    ],
+    "signature_hash": "085d37d31874e95a72875bc77da29b9dc5683f0dea0f9565bb1c29cf0e49ffe6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html",
+    "parameters": [],
+    "return_type": "AudioFormat.Encoding",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the type of encoding for sounds in this format."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the type of encoding for sounds in this format.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398584",
+    "updatedDate": "2026-03-24T10:48:14.398585",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Type/getExtension": {
+    "id": "javax.sound.sampled.Type.getExtension",
+    "name": "getExtension",
+    "type": "method",
+    "parent": "Type",
+    "signatures": [
+      "public String getExtension()"
+    ],
+    "signature_hash": "dd386f4d75b694f73345347a9b2e46289fee679d7748d4d3eee41cd501d6e88c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the common file name extension for this file type."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the common file name extension for this file type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398362",
+    "updatedDate": "2026-03-24T10:48:14.398363",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFileFormat/getFormat": {
+    "id": "javax.sound.sampled.AudioFileFormat.getFormat",
+    "name": "getFormat",
+    "type": "method",
+    "parent": "AudioFileFormat",
+    "signatures": [
+      "public AudioFormat getFormat()"
+    ],
+    "signature_hash": "d62604470f632dd206bf62822ca833c9911df8eb733e439ce0dc6dfae1719875",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.html",
+    "parameters": [],
+    "return_type": "AudioFormat",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the format of the audio data contained in the audio file."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the format of the audio data contained in the audio file.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398243",
+    "updatedDate": "2026-03-24T10:48:14.398243",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioInputStream/getFormat": {
+    "id": "javax.sound.sampled.AudioInputStream.getFormat",
+    "name": "getFormat",
+    "type": "method",
+    "parent": "AudioInputStream",
+    "signatures": [
+      "public AudioFormat getFormat()"
+    ],
+    "signature_hash": "d62604470f632dd206bf62822ca833c9911df8eb733e439ce0dc6dfae1719875",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html",
+    "parameters": [],
+    "return_type": "AudioFormat",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the audio format of the sound data in this audio input stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the audio format of the sound data in this audio input stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399157",
+    "updatedDate": "2026-03-24T10:48:14.399158",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/DataLine/getFormat": {
+    "id": "javax.sound.sampled.DataLine.getFormat",
+    "name": "getFormat",
+    "type": "method",
+    "parent": "DataLine",
+    "signatures": [
+      "public AudioFormat getFormat()"
+    ],
+    "signature_hash": "d62604470f632dd206bf62822ca833c9911df8eb733e439ce0dc6dfae1719875",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/DataLine.html",
+    "parameters": [],
+    "return_type": "AudioFormat",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the current format (encoding, sample rate, number of channels, etc.) of the data line's audio data."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the current format (encoding, sample rate, number of channels, etc.) of the data line's audio data.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400691",
+    "updatedDate": "2026-03-24T10:48:14.400692",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Info/getFormats": {
+    "id": "javax.sound.sampled.Info.getFormats",
+    "name": "getFormats",
+    "type": "method",
+    "parent": "Info",
+    "signatures": [
+      "public AudioFormat[] getFormats()"
+    ],
+    "signature_hash": "67ddd017a299dd4c2684e198287b9463f9d47f442d99287ee99acc901aa8fa5f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html",
+    "parameters": [],
+    "return_type": "AudioFormat[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains a set of audio formats supported by the data line."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains a set of audio formats supported by the data line.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400915",
+    "updatedDate": "2026-03-24T10:48:14.400916",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFileFormat/getFrameLength": {
+    "id": "javax.sound.sampled.AudioFileFormat.getFrameLength",
+    "name": "getFrameLength",
+    "type": "method",
+    "parent": "AudioFileFormat",
+    "signatures": [
+      "public int getFrameLength()"
+    ],
+    "signature_hash": "776cb8d8c63f222cf262e79750ea7941cad7c208a4f9ab112bec20c82b159add",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the length of the audio data contained in the file, expressed in sample frames."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the length of the audio data contained in the file, expressed in sample frames.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398255",
+    "updatedDate": "2026-03-24T10:48:14.398256",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioInputStream/getFrameLength": {
+    "id": "javax.sound.sampled.AudioInputStream.getFrameLength",
+    "name": "getFrameLength",
+    "type": "method",
+    "parent": "AudioInputStream",
+    "signatures": [
+      "public long getFrameLength()"
+    ],
+    "signature_hash": "e2e4049713dfa919639b7d66afde44ec4db968fe5792ac301ff5b722f2fa708f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the length of the stream, expressed in sample frames rather than bytes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the length of the stream, expressed in sample frames rather than bytes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399171",
+    "updatedDate": "2026-03-24T10:48:14.399172",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Clip/getFrameLength": {
+    "id": "javax.sound.sampled.Clip.getFrameLength",
+    "name": "getFrameLength",
+    "type": "method",
+    "parent": "Clip",
+    "signatures": [
+      "public int getFrameLength()"
+    ],
+    "signature_hash": "776cb8d8c63f222cf262e79750ea7941cad7c208a4f9ab112bec20c82b159add",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Clip.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the media length in sample frames."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the media length in sample frames.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400114",
+    "updatedDate": "2026-03-24T10:48:14.400115",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/DataLine/getFramePosition": {
+    "id": "javax.sound.sampled.DataLine.getFramePosition",
+    "name": "getFramePosition",
+    "type": "method",
+    "parent": "DataLine",
+    "signatures": [
+      "public int getFramePosition()"
+    ],
+    "signature_hash": "f5aec5d76bb05011775ff2981d6634c98683c2e40658d537669db01c72511af4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/DataLine.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the current position in the audio data, in sample frames."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the current position in the audio data, in sample frames.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400710",
+    "updatedDate": "2026-03-24T10:48:14.400711",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/LineEvent/getFramePosition": {
+    "id": "javax.sound.sampled.LineEvent.getFramePosition",
+    "name": "getFramePosition",
+    "type": "method",
+    "parent": "LineEvent",
+    "signatures": [
+      "public final long getFramePosition()"
+    ],
+    "signature_hash": "b4af1eddf5cf37e589b6934b96f036c79fec7cd5444ab290ed3a35f85422da0b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/LineEvent.html",
+    "parameters": [],
+    "return_type": "final long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the position in the line's audio data when the event occurred, expressed in sample frames."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the position in the line's audio data when the event occurred, expressed in sample frames.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401784",
+    "updatedDate": "2026-03-24T10:48:14.401785",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFormat/getFrameRate": {
+    "id": "javax.sound.sampled.AudioFormat.getFrameRate",
+    "name": "getFrameRate",
+    "type": "method",
+    "parent": "AudioFormat",
+    "signatures": [
+      "public float getFrameRate()"
+    ],
+    "signature_hash": "81612abcea0dc6607efb633204f688d2cc8c8f0721081f7f8504938650bae078",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html",
+    "parameters": [],
+    "return_type": "float",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the frame rate in frames per second."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the frame rate in frames per second.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398598",
+    "updatedDate": "2026-03-24T10:48:14.398598",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFormat/getFrameSize": {
+    "id": "javax.sound.sampled.AudioFormat.getFrameSize",
+    "name": "getFrameSize",
+    "type": "method",
+    "parent": "AudioFormat",
+    "signatures": [
+      "public int getFrameSize()"
+    ],
+    "signature_hash": "f0b17ec140e028939fa241e3ebb19e8d22cd308c1dfc8d9e04d7b7d96fb9a812",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the frame size in bytes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the frame size in bytes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398613",
+    "updatedDate": "2026-03-24T10:48:14.398613",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/ReverbType/getLateReflectionDelay": {
+    "id": "javax.sound.sampled.ReverbType.getLateReflectionDelay",
+    "name": "getLateReflectionDelay",
+    "type": "method",
+    "parent": "ReverbType",
+    "signatures": [
+      "public final int getLateReflectionDelay()"
+    ],
+    "signature_hash": "6c85c479d9abcf597311ac4e71d131ceed9866e757020c57dc80178a278299e0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/ReverbType.html",
+    "parameters": [],
+    "return_type": "final int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the late reflection delay time in microseconds."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the late reflection delay time in microseconds.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402882",
+    "updatedDate": "2026-03-24T10:48:14.402883",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/ReverbType/getLateReflectionIntensity": {
+    "id": "javax.sound.sampled.ReverbType.getLateReflectionIntensity",
+    "name": "getLateReflectionIntensity",
+    "type": "method",
+    "parent": "ReverbType",
+    "signatures": [
+      "public final float getLateReflectionIntensity()"
+    ],
+    "signature_hash": "b6d75fa1084a6edbced1acb765db7bda16fd42f6c316d31bb9d59e5c546f40de",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/ReverbType.html",
+    "parameters": [],
+    "return_type": "final float",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the late reflection intensity in decibels."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the late reflection intensity in decibels.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402903",
+    "updatedDate": "2026-03-24T10:48:14.402904",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/DataLine/getLevel": {
+    "id": "javax.sound.sampled.DataLine.getLevel",
+    "name": "getLevel",
+    "type": "method",
+    "parent": "DataLine",
+    "signatures": [
+      "public float getLevel()"
+    ],
+    "signature_hash": "6c1af62b8aa3df74c8a10892aa6ba809ae9532fccd9170b43936289e296e2257",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/DataLine.html",
+    "parameters": [],
+    "return_type": "float",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the current volume level for the line."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the current volume level for the line.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400726",
+    "updatedDate": "2026-03-24T10:48:14.400727",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getLine": {
+    "id": "javax.sound.sampled.AudioSystem.getLine",
+    "name": "getLine",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static Line getLine(Line.Info info)"
+    ],
+    "signature_hash": "b06888d342fe2f3a8eeb46eae8c27c81579726145e32a426114b0a9ecc197b9b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "info",
+        "type": "Line.Info",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Line",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains a line that matches the description in the specifiedLine.Infoobject."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains a line that matches the description in the specifiedLine.Infoobject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399559",
+    "updatedDate": "2026-03-24T10:48:14.399560",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/LineEvent/getLine": {
+    "id": "javax.sound.sampled.LineEvent.getLine",
+    "name": "getLine",
+    "type": "method",
+    "parent": "LineEvent",
+    "signatures": [
+      "public final Line getLine()"
+    ],
+    "signature_hash": "daf41c6ae794b896203749f59f57bb494eb58e0e93169ed47ec22f1044085141",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/LineEvent.html",
+    "parameters": [],
+    "return_type": "final Line",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the audio line that is the source of this event."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the audio line that is the source of this event.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401803",
+    "updatedDate": "2026-03-24T10:48:14.401804",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Mixer/getLine": {
+    "id": "javax.sound.sampled.Mixer.getLine",
+    "name": "getLine",
+    "type": "method",
+    "parent": "Mixer",
+    "signatures": [
+      "public Line getLine(Line.Info info)"
+    ],
+    "signature_hash": "f434c14cc7392375329b1f48fd290b153f87a60e96e241ed2ed4081e53021707",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.html",
+    "parameters": [
+      {
+        "name": "info",
+        "type": "Line.Info",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Line",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains a line that is available for use and that matches the description in the specifiedLine.Infoobject."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains a line that is available for use and that matches the description in the specifiedLine.Infoobject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402064",
+    "updatedDate": "2026-03-24T10:48:14.402065",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Info/getLineClass": {
+    "id": "javax.sound.sampled.Info.getLineClass",
+    "name": "getLineClass",
+    "type": "method",
+    "parent": "Info",
+    "signatures": [
+      "public Class<?> getLineClass()"
+    ],
+    "signature_hash": "425c92e590cc4111dbe30e4d010467f57fa893c52379a32291f95d4a6ba97168",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Line.Info.html",
+    "parameters": [],
+    "return_type": "Class<?>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the class of the line that thisLine.Infoobject describes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the class of the line that thisLine.Infoobject describes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401719",
+    "updatedDate": "2026-03-24T10:48:14.401720",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Line/getLineInfo": {
+    "id": "javax.sound.sampled.Line.getLineInfo",
+    "name": "getLineInfo",
+    "type": "method",
+    "parent": "Line",
+    "signatures": [
+      "public Line.Info getLineInfo()"
+    ],
+    "signature_hash": "ef5ce9f855ea099daecd53746f471b6939571064d907f41c1371b09de49fd7f7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Line.html",
+    "parameters": [],
+    "return_type": "Line.Info",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains theLine.Infoobject describing this line."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains theLine.Infoobject describing this line.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400506",
+    "updatedDate": "2026-03-24T10:48:14.400507",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/DataLine/getLongFramePosition": {
+    "id": "javax.sound.sampled.DataLine.getLongFramePosition",
+    "name": "getLongFramePosition",
+    "type": "method",
+    "parent": "DataLine",
+    "signatures": [
+      "public long getLongFramePosition()"
+    ],
+    "signature_hash": "aec4cbcd83ca0790780c84f70447048037dcca48fa86ea6bb3e119d4cd43f2d1",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/DataLine.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the current position in the audio data, in sample frames."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the current position in the audio data, in sample frames.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400744",
+    "updatedDate": "2026-03-24T10:48:14.400745",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Info/getMaxBufferSize": {
+    "id": "javax.sound.sampled.Info.getMaxBufferSize",
+    "name": "getMaxBufferSize",
+    "type": "method",
+    "parent": "Info",
+    "signatures": [
+      "public int getMaxBufferSize()"
+    ],
+    "signature_hash": "3af2540869d972253c11e99ee8f914c2436e648be87eb6d7e5bbf7ee5f6d8e58",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the maximum buffer size supported by the data line."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the maximum buffer size supported by the data line.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400958",
+    "updatedDate": "2026-03-24T10:48:14.400959",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/FloatControl/getMaxLabel": {
+    "id": "javax.sound.sampled.FloatControl.getMaxLabel",
+    "name": "getMaxLabel",
+    "type": "method",
+    "parent": "FloatControl",
+    "signatures": [
+      "public String getMaxLabel()"
+    ],
+    "signature_hash": "dddbbcecac258cd41c0fe95d1121020548ed38923a0a57ad8d5c30c4cc8e2156",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/FloatControl.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the label for the maximum value, such as \"Right\" or \"Full\"."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the label for the maximum value, such as \"Right\" or \"Full\".",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401316",
+    "updatedDate": "2026-03-24T10:48:14.401317",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Mixer/getMaxLines": {
+    "id": "javax.sound.sampled.Mixer.getMaxLines",
+    "name": "getMaxLines",
+    "type": "method",
+    "parent": "Mixer",
+    "signatures": [
+      "public int getMaxLines(Line.Info info)"
+    ],
+    "signature_hash": "823417d18792c5ec09c83387392f4cdad6bb96551c93863db0e22864772f3c21",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.html",
+    "parameters": [
+      {
+        "name": "info",
+        "type": "Line.Info",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the approximate maximum number of lines of the requested type that can be open simultaneously on the mixer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the approximate maximum number of lines of the requested type that can be open simultaneously on the mixer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402086",
+    "updatedDate": "2026-03-24T10:48:14.402087",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/FloatControl/getMaximum": {
+    "id": "javax.sound.sampled.FloatControl.getMaximum",
+    "name": "getMaximum",
+    "type": "method",
+    "parent": "FloatControl",
+    "signatures": [
+      "public float getMaximum()"
+    ],
+    "signature_hash": "91d845c40d5170d1ee3629a2513700004b7b93f943aff38ab9142e8591577ada",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/FloatControl.html",
+    "parameters": [],
+    "return_type": "float",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the maximum value permitted."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the maximum value permitted.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401298",
+    "updatedDate": "2026-03-24T10:48:14.401299",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/CompoundControl/getMemberControls": {
+    "id": "javax.sound.sampled.CompoundControl.getMemberControls",
+    "name": "getMemberControls",
+    "type": "method",
+    "parent": "CompoundControl",
+    "signatures": [
+      "public Control[] getMemberControls()"
+    ],
+    "signature_hash": "062d2d81093b808c8dbad987ca190cfd79dc3807924f1db1490b70218e3560d0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/CompoundControl.html",
+    "parameters": [],
+    "return_type": "Control[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the set of member controls that comprise the compound control."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the set of member controls that comprise the compound control.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400319",
+    "updatedDate": "2026-03-24T10:48:14.400320",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Clip/getMicrosecondLength": {
+    "id": "javax.sound.sampled.Clip.getMicrosecondLength",
+    "name": "getMicrosecondLength",
+    "type": "method",
+    "parent": "Clip",
+    "signatures": [
+      "public long getMicrosecondLength()"
+    ],
+    "signature_hash": "0546ad436a5c1cdd55d347d9ac0b6cd8df3607e8aa03a6b0cea007ee31f4256b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Clip.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the media duration in microseconds."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the media duration in microseconds.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400130",
+    "updatedDate": "2026-03-24T10:48:14.400130",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/DataLine/getMicrosecondPosition": {
+    "id": "javax.sound.sampled.DataLine.getMicrosecondPosition",
+    "name": "getMicrosecondPosition",
+    "type": "method",
+    "parent": "DataLine",
+    "signatures": [
+      "public long getMicrosecondPosition()"
+    ],
+    "signature_hash": "a9a8fbf7c443047f4ec132ac78873bc95fcd054006c9bc14818f0ef9dadd6f30",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/DataLine.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the current position in the audio data, in microseconds."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the current position in the audio data, in microseconds.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400761",
+    "updatedDate": "2026-03-24T10:48:14.400761",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/FloatControl/getMidLabel": {
+    "id": "javax.sound.sampled.FloatControl.getMidLabel",
+    "name": "getMidLabel",
+    "type": "method",
+    "parent": "FloatControl",
+    "signatures": [
+      "public String getMidLabel()"
+    ],
+    "signature_hash": "28dad2d45ac2be20378059e3db8cc8bfdb09af311fdfaac6bd7444b239b90633",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/FloatControl.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the label for the mid-point value, such as \"Center\" or \"Default\"."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the label for the mid-point value, such as \"Center\" or \"Default\".",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401333",
+    "updatedDate": "2026-03-24T10:48:14.401334",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Info/getMinBufferSize": {
+    "id": "javax.sound.sampled.Info.getMinBufferSize",
+    "name": "getMinBufferSize",
+    "type": "method",
+    "parent": "Info",
+    "signatures": [
+      "public int getMinBufferSize()"
+    ],
+    "signature_hash": "0bc219fa154307268bffcaf285ca2918fb68824e07f71868a175627f0f9d9b35",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the minimum buffer size supported by the data line."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the minimum buffer size supported by the data line.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400975",
+    "updatedDate": "2026-03-24T10:48:14.400976",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/FloatControl/getMinLabel": {
+    "id": "javax.sound.sampled.FloatControl.getMinLabel",
+    "name": "getMinLabel",
+    "type": "method",
+    "parent": "FloatControl",
+    "signatures": [
+      "public String getMinLabel()"
+    ],
+    "signature_hash": "0f5989812c084db6c6017898426fbd4ae2b33000a6c1eab472c498d6bd462d77",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/FloatControl.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the label for the minimum value, such as \"Left\" or \"Off\"."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the label for the minimum value, such as \"Left\" or \"Off\".",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401378",
+    "updatedDate": "2026-03-24T10:48:14.401379",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/FloatControl/getMinimum": {
+    "id": "javax.sound.sampled.FloatControl.getMinimum",
+    "name": "getMinimum",
+    "type": "method",
+    "parent": "FloatControl",
+    "signatures": [
+      "public float getMinimum()"
+    ],
+    "signature_hash": "68634fac7ddd49ed3e6aa6aef3aba0e4bd792100cab80b0a3f5b9b6e23bfb501",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/FloatControl.html",
+    "parameters": [],
+    "return_type": "float",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the minimum value permitted."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the minimum value permitted.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401351",
+    "updatedDate": "2026-03-24T10:48:14.401352",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getMixer": {
+    "id": "javax.sound.sampled.AudioSystem.getMixer",
+    "name": "getMixer",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static Mixer getMixer(Mixer.Info info)"
+    ],
+    "signature_hash": "bee4aa04e9f34fcb853004b29384111095fa68fe2821fa2f5808d634c9c87a1a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "info",
+        "type": "Mixer.Info",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Mixer",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the requested audio mixer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the requested audio mixer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399577",
+    "updatedDate": "2026-03-24T10:48:14.399578",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getMixerInfo": {
+    "id": "javax.sound.sampled.AudioSystem.getMixerInfo",
+    "name": "getMixerInfo",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static Mixer.Info[] getMixerInfo()"
+    ],
+    "signature_hash": "dfecc2835061efc0b9ba68ade3af587925aae6be7defe6488e5f2427633655ce",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [],
+    "return_type": "static Mixer.Info[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains an array of mixer info objects that represents the set of audio mixers that are currently installed on the system."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains an array of mixer info objects that represents the set of audio mixers that are currently installed on the system.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399592",
+    "updatedDate": "2026-03-24T10:48:14.399593",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Mixer/getMixerInfo": {
+    "id": "javax.sound.sampled.Mixer.getMixerInfo",
+    "name": "getMixerInfo",
+    "type": "method",
+    "parent": "Mixer",
+    "signatures": [
+      "public Mixer.Info getMixerInfo()"
+    ],
+    "signature_hash": "c2148d45f1694fdaf3667553842af8fa763c9d4e968660173507f720a016917b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.html",
+    "parameters": [],
+    "return_type": "Mixer.Info",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains information about this mixer, including the product's name, version, vendor, etc."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains information about this mixer, including the product's name, version, vendor, etc.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402105",
+    "updatedDate": "2026-03-24T10:48:14.402106",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Info/getName": {
+    "id": "javax.sound.sampled.Info.getName",
+    "name": "getName",
+    "type": "method",
+    "parent": "Info",
+    "signatures": [
+      "public final String getName()"
+    ],
+    "signature_hash": "a87db7f79e0ad152396e62c1412d6faf3b3367080baf087de82596cd5ad87031",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html",
+    "parameters": [],
+    "return_type": "final String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the name of the mixer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the name of the mixer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402390",
+    "updatedDate": "2026-03-24T10:48:14.402391",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/ReverbType/getName": {
+    "id": "javax.sound.sampled.ReverbType.getName",
+    "name": "getName",
+    "type": "method",
+    "parent": "ReverbType",
+    "signatures": [
+      "public String getName()"
+    ],
+    "signature_hash": "239fbe3eb64d679cbac1161825b07d6a8436ead3c6c3d140d9caec2275827023",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/ReverbType.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the name of this reverb type."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the name of this reverb type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402924",
+    "updatedDate": "2026-03-24T10:48:14.402924",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/FloatControl/getPrecision": {
+    "id": "javax.sound.sampled.FloatControl.getPrecision",
+    "name": "getPrecision",
+    "type": "method",
+    "parent": "FloatControl",
+    "signatures": [
+      "public float getPrecision()"
+    ],
+    "signature_hash": "587465d8f3b0545ee9d4111440f6848bb632910e03f9dda2304d81f6d15daca0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/FloatControl.html",
+    "parameters": [],
+    "return_type": "float",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the resolution or granularity of the control, in the units that the control measures."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the resolution or granularity of the control, in the units that the control measures.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401396",
+    "updatedDate": "2026-03-24T10:48:14.401397",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFileFormat/getProperty": {
+    "id": "javax.sound.sampled.AudioFileFormat.getProperty",
+    "name": "getProperty",
+    "type": "method",
+    "parent": "AudioFileFormat",
+    "signatures": [
+      "public Object getProperty(String key)"
+    ],
+    "signature_hash": "89768fcfa4d053d6716e7f67d3ce5daea7d6dad3ba79660cf571ccb9f214b49c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Object",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtain the property value specified by the key."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtain the property value specified by the key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398269",
+    "updatedDate": "2026-03-24T10:48:14.398270",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFormat/getProperty": {
+    "id": "javax.sound.sampled.AudioFormat.getProperty",
+    "name": "getProperty",
+    "type": "method",
+    "parent": "AudioFormat",
+    "signatures": [
+      "public Object getProperty(String key)"
+    ],
+    "signature_hash": "89768fcfa4d053d6716e7f67d3ce5daea7d6dad3ba79660cf571ccb9f214b49c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html",
+    "parameters": [
+      {
+        "name": "key",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Object",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtain the property value specified by the key."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtain the property value specified by the key.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398628",
+    "updatedDate": "2026-03-24T10:48:14.398629",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFormat/getSampleRate": {
+    "id": "javax.sound.sampled.AudioFormat.getSampleRate",
+    "name": "getSampleRate",
+    "type": "method",
+    "parent": "AudioFormat",
+    "signatures": [
+      "public float getSampleRate()"
+    ],
+    "signature_hash": "4613e25cf3954c611767022c073cfe63405d8606202ca56dc07f4eff68327dca",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html",
+    "parameters": [],
+    "return_type": "float",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the sample rate."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the sample rate.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398642",
+    "updatedDate": "2026-03-24T10:48:14.398642",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFormat/getSampleSizeInBits": {
+    "id": "javax.sound.sampled.AudioFormat.getSampleSizeInBits",
+    "name": "getSampleSizeInBits",
+    "type": "method",
+    "parent": "AudioFormat",
+    "signatures": [
+      "public int getSampleSizeInBits()"
+    ],
+    "signature_hash": "9635611f673755e0b63488a0854f520a2fd96fd17fe8a3b74191934206fed7d9",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the size of a sample."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the size of a sample.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398655",
+    "updatedDate": "2026-03-24T10:48:14.398655",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getSourceDataLine": {
+    "id": "javax.sound.sampled.AudioSystem.getSourceDataLine",
+    "name": "getSourceDataLine",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static SourceDataLine getSourceDataLine(AudioFormat format)",
+      "public static SourceDataLine getSourceDataLine(AudioFormat format, Mixer.Info mixerinfo)"
+    ],
+    "signature_hash": "a6ad6620e37232bffa12e0b53eb4b6f87ecc806e9bb33ee91a4be11f1dfdc219",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "format",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFormat",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "mixerinfo",
+        "has_default": false,
+        "default_value": null,
+        "type": "Mixer.Info",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static SourceDataLine",
+    "exceptions": [
+      {
+        "name": "LineUnavailableException",
+        "package": "javax.sound.sampled"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Obtains a source data line that can be used for playing back audio data in the format specified by theAudioFormatobject."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains a source data line that can be used for playing back audio data in the format specified by theAudioFormatobject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399622",
+    "updatedDate": "2026-03-24T10:48:14.399623",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getSourceLineInfo": {
+    "id": "javax.sound.sampled.AudioSystem.getSourceLineInfo",
+    "name": "getSourceLineInfo",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static Line.Info[] getSourceLineInfo(Line.Info info)"
+    ],
+    "signature_hash": "cd3e78c1a00bb0405bbe09a319f2d98724d71888a323f3edd390c33d81f3912d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "info",
+        "type": "Line.Info",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Line.Info[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains information about all source lines of a particular type that are supported by the installed mixers."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains information about all source lines of a particular type that are supported by the installed mixers.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399642",
+    "updatedDate": "2026-03-24T10:48:14.399643",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Mixer/getSourceLineInfo": {
+    "id": "javax.sound.sampled.Mixer.getSourceLineInfo",
+    "name": "getSourceLineInfo",
+    "type": "method",
+    "parent": "Mixer",
+    "signatures": [
+      "public Line.Info[] getSourceLineInfo()",
+      "public Line.Info[] getSourceLineInfo(Line.Info info)"
+    ],
+    "signature_hash": "205b3c5ca6de8a391cf49270ae366abfaab0aa22074b0f58739000edcde02f12",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.html",
+    "parameters": [
+      {
+        "name": "info",
+        "has_default": false,
+        "default_value": null,
+        "type": "Line.Info",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Line.Info[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains information about the set of source lines supported by this mixer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains information about the set of source lines supported by this mixer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402131",
+    "updatedDate": "2026-03-24T10:48:14.402132",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Mixer/getSourceLines": {
+    "id": "javax.sound.sampled.Mixer.getSourceLines",
+    "name": "getSourceLines",
+    "type": "method",
+    "parent": "Mixer",
+    "signatures": [
+      "public Line[] getSourceLines()"
+    ],
+    "signature_hash": "7e22376c64b76957606e2c6dd8f0f78c5de19bbafdb7268b7cc7b0afd87ee66b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.html",
+    "parameters": [],
+    "return_type": "Line[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the set of all source lines currently open to this mixer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the set of all source lines currently open to this mixer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402151",
+    "updatedDate": "2026-03-24T10:48:14.402152",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/BooleanControl/getStateLabel": {
+    "id": "javax.sound.sampled.BooleanControl.getStateLabel",
+    "name": "getStateLabel",
+    "type": "method",
+    "parent": "BooleanControl",
+    "signatures": [
+      "public String getStateLabel(boolean state)"
+    ],
+    "signature_hash": "a10a9a49ca1d10a1df48ccea7505e637c68124386cb6f3813a1550f88a5d829b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html",
+    "parameters": [
+      {
+        "name": "state",
+        "type": "boolean",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the label for the specified state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the label for the specified state.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399973",
+    "updatedDate": "2026-03-24T10:48:14.399974",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getTargetDataLine": {
+    "id": "javax.sound.sampled.AudioSystem.getTargetDataLine",
+    "name": "getTargetDataLine",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static TargetDataLine getTargetDataLine(AudioFormat format)",
+      "public static TargetDataLine getTargetDataLine(AudioFormat format, Mixer.Info mixerinfo)"
+    ],
+    "signature_hash": "2e6658a1ad9f5837da51a45dd97f6f456e0a5dace492be4c26ad7e164c403492",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "format",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFormat",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "mixerinfo",
+        "has_default": false,
+        "default_value": null,
+        "type": "Mixer.Info",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static TargetDataLine",
+    "exceptions": [
+      {
+        "name": "LineUnavailableException",
+        "package": "javax.sound.sampled"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Obtains a target data line that can be used for recording audio data in the format specified by theAudioFormatobject."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains a target data line that can be used for recording audio data in the format specified by theAudioFormatobject.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399672",
+    "updatedDate": "2026-03-24T10:48:14.399673",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getTargetEncodings": {
+    "id": "javax.sound.sampled.AudioSystem.getTargetEncodings",
+    "name": "getTargetEncodings",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static AudioFormat.Encoding[] getTargetEncodings(AudioFormat sourceFormat)",
+      "public static AudioFormat.Encoding[] getTargetEncodings(AudioFormat.Encoding sourceEncoding)"
+    ],
+    "signature_hash": "2e84f787883109e87f6513d0ae45b17b7ed02f833bc456310df2936effa13cef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "sourceFormat",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFormat",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "sourceEncoding",
+        "has_default": false,
+        "default_value": null,
+        "type": "AudioFormat.Encoding",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static AudioFormat.Encoding[]",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Obtains the encodings that the system can obtain from an audio input stream with the specified format using the set of installed format converters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the encodings that the system can obtain from an audio input stream with the specified format using the set of installed format converters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399702",
+    "updatedDate": "2026-03-24T10:48:14.399703",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getTargetFormats": {
+    "id": "javax.sound.sampled.AudioSystem.getTargetFormats",
+    "name": "getTargetFormats",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static AudioFormat[] getTargetFormats(AudioFormat.Encoding targetEncoding, AudioFormat sourceFormat)"
+    ],
+    "signature_hash": "27e2044a1331f7d607e5ac04abacd60e464d4200ca3677377b7c0dc0379118ef",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "targetEncoding",
+        "type": "AudioFormat.Encoding",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "sourceFormat",
+        "type": "AudioFormat",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static AudioFormat[]",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Obtains the formats that have a particular encoding and that the system can obtain from a stream of the specified format using the set of installed format converters."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the formats that have a particular encoding and that the system can obtain from a stream of the specified format using the set of installed format converters.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399729",
+    "updatedDate": "2026-03-24T10:48:14.399730",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioSystem/getTargetLineInfo": {
+    "id": "javax.sound.sampled.AudioSystem.getTargetLineInfo",
+    "name": "getTargetLineInfo",
+    "type": "method",
+    "parent": "AudioSystem",
+    "signatures": [
+      "public static Line.Info[] getTargetLineInfo(Line.Info info)"
+    ],
+    "signature_hash": "55cf3fa2f1a4a6e452ca1b7bfb1ea57d41333b083e686b2fd73aa8b18de8062f",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html",
+    "parameters": [
+      {
+        "name": "info",
+        "type": "Line.Info",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Line.Info[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains information about all target lines of a particular type that are supported by the installed mixers."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains information about all target lines of a particular type that are supported by the installed mixers.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399753",
+    "updatedDate": "2026-03-24T10:48:14.399754",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Mixer/getTargetLineInfo": {
+    "id": "javax.sound.sampled.Mixer.getTargetLineInfo",
+    "name": "getTargetLineInfo",
+    "type": "method",
+    "parent": "Mixer",
+    "signatures": [
+      "public Line.Info[] getTargetLineInfo()",
+      "public Line.Info[] getTargetLineInfo(Line.Info info)"
+    ],
+    "signature_hash": "889f3f267e7a14e339cdb802fd75aeabdba599b16c9f6cdbd7eb1aff1b58d4c5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.html",
+    "parameters": [
+      {
+        "name": "info",
+        "has_default": false,
+        "default_value": null,
+        "type": "Line.Info",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "Line.Info[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains information about the set of target lines supported by this mixer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains information about the set of target lines supported by this mixer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402175",
+    "updatedDate": "2026-03-24T10:48:14.402176",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Mixer/getTargetLines": {
+    "id": "javax.sound.sampled.Mixer.getTargetLines",
+    "name": "getTargetLines",
+    "type": "method",
+    "parent": "Mixer",
+    "signatures": [
+      "public Line[] getTargetLines()"
+    ],
+    "signature_hash": "47f8fa62f5f7a8fc8cd27a0fb11b442f35bdda952f6767c617ce6c0f7dd82029",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.html",
+    "parameters": [],
+    "return_type": "Line[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the set of all target lines currently open from this mixer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the set of all target lines currently open from this mixer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402194",
+    "updatedDate": "2026-03-24T10:48:14.402195",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/AudioFileFormat/getType": {
+    "id": "javax.sound.sampled.AudioFileFormat.getType",
+    "name": "getType",
+    "type": "method",
+    "parent": "AudioFileFormat",
+    "signatures": [
+      "public AudioFileFormat.Type getType()"
+    ],
+    "signature_hash": "fc2557496ca909b512ee82fd5f1aa7fad416ec6167ce8c6949058854e40a9e63",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.html",
+    "parameters": [],
+    "return_type": "AudioFileFormat.Type",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the audio file type, such asWAVEorAU."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the audio file type, such asWAVEorAU.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.398281",
+    "updatedDate": "2026-03-24T10:48:14.398282",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Control/getType": {
+    "id": "javax.sound.sampled.Control.getType",
+    "name": "getType",
+    "type": "method",
+    "parent": "Control",
+    "signatures": [
+      "public Control.Type getType()"
+    ],
+    "signature_hash": "34543d5ca07d63e5aab0677b9d988e8cc564abaced6c6cd4210952e14cbff648",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Control.html",
+    "parameters": [],
+    "return_type": "Control.Type",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the control's type."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the control's type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.400385",
+    "updatedDate": "2026-03-24T10:48:14.400386",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/LineEvent/getType": {
+    "id": "javax.sound.sampled.LineEvent.getType",
+    "name": "getType",
+    "type": "method",
+    "parent": "LineEvent",
+    "signatures": [
+      "public final LineEvent.Type getType()"
+    ],
+    "signature_hash": "82487828b22f675ae12bd95d980d3be51526381495f341615a1cb8dcacd97a22",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/LineEvent.html",
+    "parameters": [],
+    "return_type": "final LineEvent.Type",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the event's type."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the event's type.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401821",
+    "updatedDate": "2026-03-24T10:48:14.401822",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/FloatControl/getUnits": {
+    "id": "javax.sound.sampled.FloatControl.getUnits",
+    "name": "getUnits",
+    "type": "method",
+    "parent": "FloatControl",
+    "signatures": [
+      "public String getUnits()"
+    ],
+    "signature_hash": "058cc1b6eb757faa7306e57e3a199d9d71e537ec8a1fb9762a7bd2dfdd427600",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/FloatControl.html",
+    "parameters": [],
+    "return_type": "String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the label for the units in which the control's values are expressed, such as \"dB\" or \"frames per second.\""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the label for the units in which the control's values are expressed, such as \"dB\" or \"frames per second.\"",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401416",
+    "updatedDate": "2026-03-24T10:48:14.401417",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/FloatControl/getUpdatePeriod": {
+    "id": "javax.sound.sampled.FloatControl.getUpdatePeriod",
+    "name": "getUpdatePeriod",
+    "type": "method",
+    "parent": "FloatControl",
+    "signatures": [
+      "public int getUpdatePeriod()"
+    ],
+    "signature_hash": "7c279cee9488119b3b47afdb1e21d465c66c6fdcbba230caaed9bbb082004aae",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/FloatControl.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the smallest time interval, in microseconds, over which the control's value can change during a shift."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the smallest time interval, in microseconds, over which the control's value can change during a shift.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401434",
+    "updatedDate": "2026-03-24T10:48:14.401435",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/BooleanControl/getValue": {
+    "id": "javax.sound.sampled.BooleanControl.getValue",
+    "name": "getValue",
+    "type": "method",
+    "parent": "BooleanControl",
+    "signatures": [
+      "public boolean getValue()"
+    ],
+    "signature_hash": "69f9658bd7c84ef0bfb4e3b84d33c57a0690bf1787917558b884c075dee852a7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html",
+    "parameters": [],
+    "return_type": "boolean",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains this control's current value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains this control's current value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.399990",
+    "updatedDate": "2026-03-24T10:48:14.399991",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Control/getValue": {
+    "id": "javax.sound.sampled.Control.getValue",
+    "name": "getValue",
+    "type": "method",
+    "parent": "Control",
+    "signatures": [
+      "public Object getValue()"
+    ],
+    "signature_hash": "cc9131919df0823e8e8ee6054b03ea6d4a394f817422ddb0f9240211f097bcaf",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/EnumControl.html",
+    "parameters": [],
+    "return_type": "Object",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains this control's current value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains this control's current value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401096",
+    "updatedDate": "2026-03-24T10:48:14.401097",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/FloatControl/getValue": {
+    "id": "javax.sound.sampled.FloatControl.getValue",
+    "name": "getValue",
+    "type": "method",
+    "parent": "FloatControl",
+    "signatures": [
+      "public float getValue()"
+    ],
+    "signature_hash": "875eb4918e20f05856417a7a1eae0829852fb11067dcbf34f10f2a09bcacd7bb",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/FloatControl.html",
+    "parameters": [],
+    "return_type": "float",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains this control's current value."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains this control's current value.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401452",
+    "updatedDate": "2026-03-24T10:48:14.401453",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Control/getValues": {
+    "id": "javax.sound.sampled.Control.getValues",
+    "name": "getValues",
+    "type": "method",
+    "parent": "Control",
+    "signatures": [
+      "public Object[] getValues()"
+    ],
+    "signature_hash": "2e37b8d018cb62fa1b903237e7801931b2d20917a456425e1e07ccb16bfdb532",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/EnumControl.html",
+    "parameters": [],
+    "return_type": "Object[]",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the set of possible values for this control."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the set of possible values for this control.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.401114",
+    "updatedDate": "2026-03-24T10:48:14.401115",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Info/getVendor": {
+    "id": "javax.sound.sampled.Info.getVendor",
+    "name": "getVendor",
+    "type": "method",
+    "parent": "Info",
+    "signatures": [
+      "public final String getVendor()"
+    ],
+    "signature_hash": "1566ec0776ce4b2ea3468ef5606a63a4fab5a435bbbcd437278cbf386ee1eb14",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html",
+    "parameters": [],
+    "return_type": "final String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the vendor of the mixer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the vendor of the mixer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402410",
+    "updatedDate": "2026-03-24T10:48:14.402410",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "javax.sound.sampled/Info/getVersion": {
+    "id": "javax.sound.sampled.Info.getVersion",
+    "name": "getVersion",
+    "type": "method",
+    "parent": "Info",
+    "signatures": [
+      "public final String getVersion()"
+    ],
+    "signature_hash": "4bc11a217f3d6a1986fe995f31a7dce7b2723809b9be7f6f0df2290c9bbb7851",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html",
+    "parameters": [],
+    "return_type": "final String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Obtains the version of the mixer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Obtains the version of the mixer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.402429",
+    "updatedDate": "2026-03-24T10:48:14.402430",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.3",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

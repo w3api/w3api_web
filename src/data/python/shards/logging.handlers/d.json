@@ -1,0 +1,196 @@
+{
+  "logging.handlers/DatagramHandler": {
+    "id": "logging.handlers.DatagramHandler",
+    "name": "DatagramHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class logging.handlers.DatagramHandler(host, port)"
+    ],
+    "signature_hash": "add1b3289a287f09260ccf503d4cc661901f4435fe9be0e2ee58e856f94aa05a",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.DatagramHandler",
+    "parameters": [
+      {
+        "name": "host",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "port",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a new instance of the DatagramHandler class intended to communicate with a remote machine whose address is given by host and port. Note As UDP is not a streaming protocol, there is no persistent connection between an instance of this handler and host. For this reason, when using a network socket, a DNS lookup might have to be made each time an event is logged, which can introduce some latency into the system. If this affects you, you can do a lookup yourself and initialize this handle..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a new instance of the DatagramHandler class intended to communicate with a remote machine whose address is given by host and port. Note As UDP is not a streaming protocol, there is no persiste...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.242490",
+    "updatedDate": "2026-03-24T10:48:12.242491",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "emit",
+      "makeSocket",
+      "send"
+    ]
+  },
+  "logging.handlers/QueueListener/dequeue": {
+    "id": "logging.handlers.QueueListener.dequeue",
+    "name": "dequeue",
+    "type": "method",
+    "parent": "QueueListener",
+    "signatures": [
+      "dequeue(block)"
+    ],
+    "signature_hash": "792f2ef0e45df858272a4966436729329a17f32c6ec0f96be013d9f63bcec4c2",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.QueueListener.dequeue",
+    "parameters": [
+      {
+        "name": "block",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Dequeues a record and return it, optionally blocking. The base implementation uses get(). You may want to override this method if you want to use timeouts or work with custom queue implementations."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Dequeues a record and return it, optionally blocking. The base implementation uses get(). You may want to override this method if you want to use timeouts or work with custom queue implementations.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.243199",
+    "updatedDate": "2026-03-24T10:48:12.243200",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/RotatingFileHandler/doRollover": {
+    "id": "logging.handlers.RotatingFileHandler.doRollover",
+    "name": "doRollover",
+    "type": "method",
+    "parent": "RotatingFileHandler",
+    "signatures": [
+      "doRollover()"
+    ],
+    "signature_hash": "1cab868de91375ed83388785130e591b6159df38c37daf03abeec47635291d03",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.RotatingFileHandler.doRollover",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Does a rollover, as described above."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Does a rollover, as described above.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.242093",
+    "updatedDate": "2026-03-24T10:48:12.242094",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "logging.handlers/TimedRotatingFileHandler/doRollover": {
+    "id": "logging.handlers.TimedRotatingFileHandler.doRollover",
+    "name": "doRollover",
+    "type": "method",
+    "parent": "TimedRotatingFileHandler",
+    "signatures": [
+      "doRollover()"
+    ],
+    "signature_hash": "1cab868de91375ed83388785130e591b6159df38c37daf03abeec47635291d03",
+    "url": "https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers#logging.handlers.TimedRotatingFileHandler.doRollover",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Does a rollover, as described above."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Does a rollover, as described above.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.242220",
+    "updatedDate": "2026-03-24T10:48:12.242221",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

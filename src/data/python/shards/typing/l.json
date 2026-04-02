@@ -1,0 +1,140 @@
+{
+  "typing/List": {
+    "id": "typing.List",
+    "name": "List",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class typing.List(list, MutableSequence[T])"
+    ],
+    "signature_hash": "c69e2bc13d3aff06cd4bac1626089312cf6fbba1f818842140ac1d3e72dc3407",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.List",
+    "parameters": [
+      {
+        "name": "list",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "MutableSequence[T",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Deprecated alias to list. Note that to annotate arguments, it is preferred to use an abstract collection type such as Sequence or Iterable rather than to use list or typing.List. Deprecated since version 3.9: builtins.list now supports subscripting ([]). See PEP 585 and Generic Alias Type."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Deprecated alias to list. Note that to annotate arguments, it is preferred to use an abstract collection type such as Sequence or Iterable rather than to use list or typing.List. Deprecated since vers...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.410273",
+    "updatedDate": "2026-03-24T10:48:12.410274",
+    "metadata": {
+      "deprecated": true,
+      "deprecated_version": "3.9",
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/Literal": {
+    "id": "typing.Literal",
+    "name": "Literal",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "typing.Literal"
+    ],
+    "signature_hash": "faf320b664e1c8345a3c78a1bb3599107423e565d57751bfb35708a9c2dcb5b8",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.Literal",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Special typing form to define “literal types”. Literal can be used to indicate to type checkers that the annotated object has a value equivalent to one of the provided literals. For example: def validate_simple(data: Any) -> Literal[True]: # always returns True ... type Mode = Literal['r', 'rb', 'w', 'wb'] def open_helper(file: str, mode: Mode) -> str: ... open_helper('/some/path', 'r') # Passes type check open_helper('/other/path', 'typo') # Error in type checker Literal[...] cannot be subcl..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Special typing form to define “literal types”. Literal can be used to indicate to type checkers that the annotated object has a value equivalent to one of the provided literals. For example: def valid...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.408779",
+    "updatedDate": "2026-03-24T10:48:12.408780",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.8.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "typing/LiteralString": {
+    "id": "typing.LiteralString",
+    "name": "LiteralString",
+    "type": "constant",
+    "parent": null,
+    "signatures": [
+      "typing.LiteralString"
+    ],
+    "signature_hash": "b2d49dda9fd8bf82fe60271f21eed4fd84b5e3da7bb8f82ce80acb5cfe9751ee",
+    "url": "https://docs.python.org/3/library/typing.html#module-typing#typing.LiteralString",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Special type that includes only literal strings. Any string literal is compatible with LiteralString, as is another LiteralString. However, an object typed as just str is not. A string created by composing LiteralString-typed objects is also acceptable as a LiteralString. Example: def run_query(sql: LiteralString) -> None: ... def caller(arbitrary_string: str, literal_string: LiteralString) -> None: run_query(\"SELECT * FROM students\") # OK run_query(literal_string) # OK run_query(\"SELECT * FR..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Special type that includes only literal strings. Any string literal is compatible with LiteralString, as is another LiteralString. However, an object typed as just str is not. A string created by comp...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.408680",
+    "updatedDate": "2026-03-24T10:48:12.408681",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

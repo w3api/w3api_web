@@ -1,0 +1,1291 @@
+{
+  "java.util.stream/Collectors": {
+    "id": "java.util.stream.Collectors",
+    "name": "Collectors",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class Collectors"
+    ],
+    "signature_hash": "a9c18aa2ac9771342347f7adfc7a452b4e7dcef0fc039c4beab8d52ddeaac537",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200927",
+    "updatedDate": "2026-03-24T10:48:14.200928",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "averagingDouble",
+      "averagingInt",
+      "averagingLong",
+      "collectingAndThen",
+      "counting",
+      "filtering",
+      "flatMapping",
+      "groupingBy",
+      "groupingByConcurrent",
+      "joining",
+      "mapping",
+      "maxBy",
+      "minBy",
+      "partitioningBy",
+      "reducing",
+      "summarizingDouble",
+      "summarizingInt",
+      "summarizingLong",
+      "summingDouble",
+      "summingInt",
+      "summingLong",
+      "teeing",
+      "toCollection",
+      "toConcurrentMap",
+      "toList",
+      "toMap",
+      "toSet",
+      "toUnmodifiableList",
+      "toUnmodifiableMap",
+      "toUnmodifiableSet"
+    ]
+  },
+  "java.util.stream/Characteristics": {
+    "id": "java.util.stream.Characteristics",
+    "name": "Characteristics",
+    "type": "enum",
+    "parent": null,
+    "signatures": [
+      "enum Characteristics"
+    ],
+    "signature_hash": "fa5c230323f4e6881794b6e9207cde5e4429c723586b3e04cc4884013f0a474b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.Characteristics.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.203170",
+    "updatedDate": "2026-03-24T10:48:14.203171",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "enum_constants": [
+      "CONCURRENT",
+      "IDENTITY_FINISH",
+      "UNORDERED"
+    ],
+    "methods": [
+      "valueOf",
+      "values"
+    ]
+  },
+  "java.util.stream/Characteristics/CONCURRENT": {
+    "id": "java.util.stream.Characteristics.CONCURRENT",
+    "name": "CONCURRENT",
+    "type": "enum_constant",
+    "parent": "Characteristics",
+    "signatures": [
+      "CONCURRENT"
+    ],
+    "signature_hash": "852eda03ba687d3efce8cbc7d65421c0ac8726f80713b558978e035668ad9da7",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.Characteristics.html",
+    "parameters": [],
+    "return_type": "Characteristics",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Indicates that this collector isconcurrent, meaning that the result container can support the accumulator function being called concurrently with the same result container from multiple threads."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Indicates that this collector isconcurrent, meaning that the result container can support the accumulator function being called concurrently with the same result container from multiple threads.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.203235",
+    "updatedDate": "2026-03-24T10:48:14.203236",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collector": {
+    "id": "java.util.stream.Collector",
+    "name": "Collector",
+    "type": "interface",
+    "parent": null,
+    "signatures": [
+      "interface Collector<T,A,R>"
+    ],
+    "signature_hash": "e2b2b472f9dce251e0b3ec6e8f2c8a04780103fcce959843ee3f059fa004e632",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200730",
+    "updatedDate": "2026-03-24T10:48:14.200731",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "accumulator",
+      "characteristics",
+      "combiner",
+      "finisher",
+      "of",
+      "supplier"
+    ]
+  },
+  "java.util.stream/Collector/characteristics": {
+    "id": "java.util.stream.Collector.characteristics",
+    "name": "characteristics",
+    "type": "method",
+    "parent": "Collector",
+    "signatures": [
+      "public Set<Collector.Characteristics> characteristics()"
+    ],
+    "signature_hash": "a243780efa25e0ebc4b48481429a24209d156407b12a489a7144947379fe6c8c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html",
+    "parameters": [],
+    "return_type": "Set<Collector.Characteristics>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aSetofCollector.Characteristicsindicating the characteristics of this Collector."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aSetofCollector.Characteristicsindicating the characteristics of this Collector.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200766",
+    "updatedDate": "2026-03-24T10:48:14.200767",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/BaseStream<T,S>>/close": {
+    "id": "java.util.stream.BaseStream<T,S>>.close",
+    "name": "close",
+    "type": "method",
+    "parent": "BaseStream<T,S>>",
+    "signatures": [
+      "public void close()"
+    ],
+    "signature_hash": "5df6118bc0e745d8b18e0a6a99b2e3f2ddba8140cbeb1423ce2df50a9f140574",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/BaseStream.html",
+    "parameters": [],
+    "return_type": "void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Closes this stream, causing all close handlers for this stream pipeline to be called."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Closes this stream, causing all close handlers for this stream pipeline to be called.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.202999",
+    "updatedDate": "2026-03-24T10:48:14.203000",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Stream/collect": {
+    "id": "java.util.stream.Stream.collect",
+    "name": "collect",
+    "type": "method",
+    "parent": "Stream",
+    "signatures": [
+      "public <R> R collect(Supplier<R> supplier, BiConsumer<R, ? super T> accumulator, BiConsumer<R, R> combiner)",
+      "public <R, A> R collect(Collector<? super T, A, R> collector)"
+    ],
+    "signature_hash": "416c2ef26b62a1ff04a62701a462de7666b21d803717abf35d286da6a374366a",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html",
+    "parameters": [
+      {
+        "name": "supplier",
+        "has_default": false,
+        "default_value": null,
+        "type": "Supplier<R>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "BiConsumer<R",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "accumulator",
+        "has_default": false,
+        "default_value": null,
+        "type": "? super T>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "combiner",
+        "has_default": false,
+        "default_value": null,
+        "type": "R>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "T",
+        "has_default": false,
+        "default_value": null,
+        "type": "Collector<? super",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "A",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "collector",
+        "has_default": false,
+        "default_value": null,
+        "type": "R>",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "<R> R",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Performs amutable reductionoperation on the elements of this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Performs amutable reductionoperation on the elements of this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.197678",
+    "updatedDate": "2026-03-24T10:48:14.197679",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/IntStream/collect": {
+    "id": "java.util.stream.IntStream.collect",
+    "name": "collect",
+    "type": "method",
+    "parent": "IntStream",
+    "signatures": [
+      "public <R> R collect(Supplier<R> supplier, ObjIntConsumer<R> accumulator, BiConsumer<R, R> combiner)"
+    ],
+    "signature_hash": "20e27b9c6fb5fa28990f94410ef76b0afdbf8518d46c23e12c08e5b3c84a2a15",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html",
+    "parameters": [
+      {
+        "name": "supplier",
+        "type": "Supplier<R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "accumulator",
+        "type": "ObjIntConsumer<R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "BiConsumer<R",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "combiner",
+        "type": "R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "<R> R",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Performs amutable reductionoperation on the elements of this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Performs amutable reductionoperation on the elements of this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.198544",
+    "updatedDate": "2026-03-24T10:48:14.198545",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/LongStream/collect": {
+    "id": "java.util.stream.LongStream.collect",
+    "name": "collect",
+    "type": "method",
+    "parent": "LongStream",
+    "signatures": [
+      "public <R> R collect(Supplier<R> supplier, ObjLongConsumer<R> accumulator, BiConsumer<R, R> combiner)"
+    ],
+    "signature_hash": "7c88bab934f568b42da70fe79883365beea36776ed8a6df6ec46744fee042289",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/LongStream.html",
+    "parameters": [
+      {
+        "name": "supplier",
+        "type": "Supplier<R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "accumulator",
+        "type": "ObjLongConsumer<R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "BiConsumer<R",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "combiner",
+        "type": "R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "<R> R",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Performs amutable reductionoperation on the elements of this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Performs amutable reductionoperation on the elements of this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199274",
+    "updatedDate": "2026-03-24T10:48:14.199275",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/DoubleStream/collect": {
+    "id": "java.util.stream.DoubleStream.collect",
+    "name": "collect",
+    "type": "method",
+    "parent": "DoubleStream",
+    "signatures": [
+      "public <R> R collect(Supplier<R> supplier, ObjDoubleConsumer<R> accumulator, BiConsumer<R, R> combiner)"
+    ],
+    "signature_hash": "8f59ab164e1db646dd631d47decba88eb2bb9031c6a2d7f3aa7ef4e51e09500c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.html",
+    "parameters": [
+      {
+        "name": "supplier",
+        "type": "Supplier<R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "accumulator",
+        "type": "ObjDoubleConsumer<R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "BiConsumer<R",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "combiner",
+        "type": "R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "<R> R",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Performs amutable reductionoperation on the elements of this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Performs amutable reductionoperation on the elements of this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200074",
+    "updatedDate": "2026-03-24T10:48:14.200075",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collectors/collectingAndThen": {
+    "id": "java.util.stream.Collectors.collectingAndThen",
+    "name": "collectingAndThen",
+    "type": "method",
+    "parent": "Collectors",
+    "signatures": [
+      "public static<T, A, R, RR> Collector<T, A, RR> collectingAndThen(Collector<T, A, R> downstream, Function<R, RR> finisher)"
+    ],
+    "signature_hash": "f80e6d65f2460d5ce940b304a18a6a4ee02e994ed127e73647920263eddb20f5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [
+      {
+        "name": "Collector<T",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "A",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "downstream",
+        "type": "R>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "Function<R",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "finisher",
+        "type": "RR>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T, A, R, RR> Collector<T, A, RR>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Adapts aCollectorto perform an additional finishing transformation."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Adapts aCollectorto perform an additional finishing transformation.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.201037",
+    "updatedDate": "2026-03-24T10:48:14.201038",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collector/combiner": {
+    "id": "java.util.stream.Collector.combiner",
+    "name": "combiner",
+    "type": "method",
+    "parent": "Collector",
+    "signatures": [
+      "public BinaryOperator<A> combiner()"
+    ],
+    "signature_hash": "71049d6ee0c22fc272b18d61c64ef3c26c906e52db4c3a9c6b631bd2057ff451",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html",
+    "parameters": [],
+    "return_type": "BinaryOperator<A>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A function that accepts two partial results and merges them."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A function that accepts two partial results and merges them.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200783",
+    "updatedDate": "2026-03-24T10:48:14.200784",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Gatherer/combiner": {
+    "id": "java.util.stream.Gatherer.combiner",
+    "name": "combiner",
+    "type": "method",
+    "parent": "Gatherer",
+    "signatures": [
+      "public default BinaryOperator<A> combiner()"
+    ],
+    "signature_hash": "7e9ee0da5ede7a04652e33d33aea556494b0350781ba6576cd799800812d42e5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Gatherer.html",
+    "parameters": [],
+    "return_type": "default BinaryOperator<A>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A function which accepts two intermediate states and combines them into one."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A function which accepts two intermediate states and combines them into one.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.202054",
+    "updatedDate": "2026-03-24T10:48:14.202055",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "24",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Stream/concat": {
+    "id": "java.util.stream.Stream.concat",
+    "name": "concat",
+    "type": "method",
+    "parent": "Stream",
+    "signatures": [
+      "public static<T> Stream<T> concat(Stream<? extends T> a, Stream<? extends T> b)"
+    ],
+    "signature_hash": "7b442234e0b4259a09d44d751268136410b44b35c927cabd2ef9fc8e2af025b5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "Stream<? extends T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "b",
+        "type": "Stream<? extends T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T> Stream<T>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.197697",
+    "updatedDate": "2026-03-24T10:48:14.197698",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/IntStream/concat": {
+    "id": "java.util.stream.IntStream.concat",
+    "name": "concat",
+    "type": "method",
+    "parent": "IntStream",
+    "signatures": [
+      "public static IntStream concat(IntStream a, IntStream b)"
+    ],
+    "signature_hash": "2ce5ec3bdb60d946f82dd0f33e0f9bf2038ed3cc60f4a993c1b48cc577c9b8ae",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "IntStream",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "b",
+        "type": "IntStream",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static IntStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.198563",
+    "updatedDate": "2026-03-24T10:48:14.198564",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/LongStream/concat": {
+    "id": "java.util.stream.LongStream.concat",
+    "name": "concat",
+    "type": "method",
+    "parent": "LongStream",
+    "signatures": [
+      "public static LongStream concat(LongStream a, LongStream b)"
+    ],
+    "signature_hash": "2a3e652a127477240e2c74f14c1560d7086a3ee9aa6a2776a9db0c6e89028b9e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/LongStream.html",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "LongStream",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "b",
+        "type": "LongStream",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static LongStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199295",
+    "updatedDate": "2026-03-24T10:48:14.199296",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/DoubleStream/concat": {
+    "id": "java.util.stream.DoubleStream.concat",
+    "name": "concat",
+    "type": "method",
+    "parent": "DoubleStream",
+    "signatures": [
+      "public static DoubleStream concat(DoubleStream a, DoubleStream b)"
+    ],
+    "signature_hash": "3491b40db5b56bd8d18ad743baf469584024faf207e66ffd6e71c323495d61df",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.html",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "DoubleStream",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "b",
+        "type": "DoubleStream",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static DoubleStream",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200097",
+    "updatedDate": "2026-03-24T10:48:14.200098",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Stream/count": {
+    "id": "java.util.stream.Stream.count",
+    "name": "count",
+    "type": "method",
+    "parent": "Stream",
+    "signatures": [
+      "public long count()"
+    ],
+    "signature_hash": "404c470544471ee1db6abdf2d1681163ac1496fd7c4b8be9495aba3b6f2a1293",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the count of elements in this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the count of elements in this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.197709",
+    "updatedDate": "2026-03-24T10:48:14.197711",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/IntStream/count": {
+    "id": "java.util.stream.IntStream.count",
+    "name": "count",
+    "type": "method",
+    "parent": "IntStream",
+    "signatures": [
+      "public long count()"
+    ],
+    "signature_hash": "404c470544471ee1db6abdf2d1681163ac1496fd7c4b8be9495aba3b6f2a1293",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the count of elements in this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the count of elements in this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.198578",
+    "updatedDate": "2026-03-24T10:48:14.198579",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/LongStream/count": {
+    "id": "java.util.stream.LongStream.count",
+    "name": "count",
+    "type": "method",
+    "parent": "LongStream",
+    "signatures": [
+      "public long count()"
+    ],
+    "signature_hash": "404c470544471ee1db6abdf2d1681163ac1496fd7c4b8be9495aba3b6f2a1293",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/LongStream.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the count of elements in this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the count of elements in this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.199309",
+    "updatedDate": "2026-03-24T10:48:14.199310",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/DoubleStream/count": {
+    "id": "java.util.stream.DoubleStream.count",
+    "name": "count",
+    "type": "method",
+    "parent": "DoubleStream",
+    "signatures": [
+      "public long count()"
+    ],
+    "signature_hash": "404c470544471ee1db6abdf2d1681163ac1496fd7c4b8be9495aba3b6f2a1293",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/DoubleStream.html",
+    "parameters": [],
+    "return_type": "long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the count of elements in this stream."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the count of elements in this stream.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.200113",
+    "updatedDate": "2026-03-24T10:48:14.200114",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.stream/Collectors/counting": {
+    "id": "java.util.stream.Collectors.counting",
+    "name": "counting",
+    "type": "method",
+    "parent": "Collectors",
+    "signatures": [
+      "public static<T> Collector<T, ?, Long> counting()"
+    ],
+    "signature_hash": "406dfadc107b020388277272ee0eaad615253d07d6e7f4e877726b321c8455d2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html",
+    "parameters": [],
+    "return_type": "static<T> Collector<T, ?, Long>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aCollectoraccepting elements of typeTthat counts the number of input elements."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aCollectoraccepting elements of typeTthat counts the number of input elements.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.201056",
+    "updatedDate": "2026-03-24T10:48:14.201057",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

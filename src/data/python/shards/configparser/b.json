@@ -1,0 +1,76 @@
+{
+  "configparser/ConfigParser/BOOLEAN_STATES": {
+    "id": "configparser.ConfigParser.BOOLEAN_STATES",
+    "name": "BOOLEAN_STATES",
+    "type": "attribute",
+    "parent": "ConfigParser",
+    "signatures": [
+      "ConfigParser.BOOLEAN_STATES"
+    ],
+    "signature_hash": "a15fccc7d8013c157b5e14a25a9d5c8ea350b21e288f03ea983fa63545af4eae",
+    "url": "https://docs.python.org/3/library/configparser.html#module-configparser#configparser.ConfigParser.BOOLEAN_STATES",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "By default when using getboolean(), config parsers consider the following values True: '1', 'yes', 'true', 'on' and the following values False: '0', 'no', 'false', 'off'. You can override this by specifying a custom dictionary of strings and their Boolean outcomes. For example: >>> custom = configparser.ConfigParser() >>> custom['section1'] = {'funky': 'nope'} >>> custom['section1'].getboolean('funky') Traceback (most recent call last): ... ValueError: Not a boolean: nope >>> custom.BOOLEAN_S..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "By default when using getboolean(), config parsers consider the following values True: '1', 'yes', 'true', 'on' and the following values False: '0', 'no', 'false', 'off'. You can override this by spec...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.176233",
+    "updatedDate": "2026-03-24T10:48:12.176234",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "configparser/BasicInterpolation": {
+    "id": "configparser.BasicInterpolation",
+    "name": "BasicInterpolation",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class configparser.BasicInterpolation"
+    ],
+    "signature_hash": "8c603a07eafea6fa55b5c41176f712d939c7e18f4e8bc4032e3cf68d6d061ee5",
+    "url": "https://docs.python.org/3/library/configparser.html#module-configparser#configparser.BasicInterpolation",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The default implementation used by ConfigParser. It enables values to contain format strings which refer to other values in the same section, or values in the special default section [1]. Additional default values can be provided on initialization. For example: [Paths] home_dir: /Users my_dir: %(home_dir)s/lumberjack my_pictures: %(my_dir)s/Pictures [Escape] # use a %% to escape the % sign (% is the only character that needs to be escaped): gain: 80%% In the example above, ConfigParser with i..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The default implementation used by ConfigParser. It enables values to contain format strings which refer to other values in the same section, or values in the special default section [1]. Additional d...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.176180",
+    "updatedDate": "2026-03-24T10:48:12.176181",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

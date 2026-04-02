@@ -1,0 +1,130 @@
+{
+  "itertools/takewhile": {
+    "id": "itertools.takewhile",
+    "name": "takewhile",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.takewhile(predicate, iterable)"
+    ],
+    "signature_hash": "56cdd2ffa5583ef84818889f2573d3f96b96520a285d7978da079ed25c67df2f",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.takewhile",
+    "parameters": [
+      {
+        "name": "predicate",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "iterable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Make an iterator that returns elements from the iterable as long as the predicate is true. Roughly equivalent to: def takewhile(predicate, iterable): # takewhile(lambda x: x<5, [1,4,6,3,8]) → 1 4 for x in iterable: if not predicate(x): break yield x Note, the element that first fails the predicate condition is consumed from the input iterator and there is no way to access it. This could be an issue if an application wants to further consume the input iterator after takewhile has been run to e..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Make an iterator that returns elements from the iterable as long as the predicate is true. Roughly equivalent to: def takewhile(predicate, iterable): # takewhile(lambda x: x<5, [1,4,6,3,8]) → 1 4 for ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238320",
+    "updatedDate": "2026-03-24T10:48:12.238321",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "itertools/tee": {
+    "id": "itertools.tee",
+    "name": "tee",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.tee(iterable, n=2)"
+    ],
+    "signature_hash": "49863b1924f6c47fe82317b8060015a4a7892b99635e8689e94089c60b880fca",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.tee",
+    "parameters": [
+      {
+        "name": "iterable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "n",
+        "type": "",
+        "has_default": true,
+        "default_value": "2",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return n independent iterators from a single iterable. Roughly equivalent to: def tee(iterable, n=2): if n < 0: raise ValueError if n == 0: return () iterator = _tee(iterable) result = [iterator] for _ in range(n - 1): result.append(_tee(iterator)) return tuple(result) class _tee: def __init__(self, iterable): it = iter(iterable) if isinstance(it, _tee): self.iterator = it.iterator self.link = it.link else: self.iterator = it self.link = [None, None] def __iter__(self): return self def __next..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return n independent iterators from a single iterable. Roughly equivalent to: def tee(iterable, n=2): if n < 0: raise ValueError if n == 0: return () iterator = _tee(iterable) result = [iterator] for ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238337",
+    "updatedDate": "2026-03-24T10:48:12.238338",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

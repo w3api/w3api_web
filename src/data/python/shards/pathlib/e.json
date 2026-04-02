@@ -1,0 +1,167 @@
+{
+  "pathlib/Path/exists": {
+    "id": "pathlib.Path.exists",
+    "name": "exists",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.exists(*, follow_symlinks=True)"
+    ],
+    "signature_hash": "aeae8047cbc7d8526faf02ae8aee26e8f5cad2278576839421f61a40dcfffeb1",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.exists",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path points to an existing file or directory. False will be returned if the path is invalid, inaccessible or missing. Use Path.stat() to distinguish between these cases. This method normally follows symlinks; to check if a symlink exists, add the argument follow_symlinks=False. >>> Path('.').exists() True >>> Path('setup.py').exists() True >>> Path('/etc').exists() True >>> Path('nonexistentfile').exists() False Changed in version 3.12: The follow_symlinks parameter was added."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path points to an existing file or directory. False will be returned if the path is invalid, inaccessible or missing. Use Path.stat() to distinguish between these cases. This method...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302730",
+    "updatedDate": "2026-03-24T10:48:12.302731",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/PathInfo/exists": {
+    "id": "pathlib.PathInfo.exists",
+    "name": "exists",
+    "type": "method",
+    "parent": "PathInfo",
+    "signatures": [
+      "exists(*, follow_symlinks=True)"
+    ],
+    "signature_hash": "2fc8fa456dc3a2e3f7f8362ec65b1701dc4b95cd87f7dfdd0c9803a8041a5a99",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.types.PathInfo.exists",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the path is an existing file or directory, or any other kind of file; return False if the path doesn’t exist. If follow_symlinks is False, return True for symlinks without checking if their targets exist."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the path is an existing file or directory, or any other kind of file; return False if the path doesn’t exist. If follow_symlinks is False, return True for symlinks without checking if t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.304013",
+    "updatedDate": "2026-03-24T10:48:12.304014",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "pathlib/Path/expanduser": {
+    "id": "pathlib.Path.expanduser",
+    "name": "expanduser",
+    "type": "method",
+    "parent": "Path",
+    "signatures": [
+      "Path.expanduser()"
+    ],
+    "signature_hash": "39cc99c9dba1c0dc5b17dbbaf9bdacfd91cff3e50ba32eb2ba99ff777e613413",
+    "url": "https://docs.python.org/3/library/pathlib.html#module-pathlib#pathlib.Path.expanduser",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return a new path with expanded ~ and ~user constructs, as returned by os.path.expanduser(). If a home directory can’t be resolved, RuntimeError is raised. >>> p = PosixPath('~/films/Monty Python') >>> p.expanduser() PosixPath('/home/eric/films/Monty Python') Added in version 3.5."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return a new path with expanded ~ and ~user constructs, as returned by os.path.expanduser(). If a home directory can’t be resolved, RuntimeError is raised. >>> p = PosixPath('~/films/Monty Python') >>...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.302586",
+    "updatedDate": "2026-03-24T10:48:12.302587",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.5.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

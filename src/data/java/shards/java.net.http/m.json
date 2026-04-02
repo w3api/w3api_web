@@ -1,0 +1,222 @@
+{
+  "java.net.http/HttpHeaders/map": {
+    "id": "java.net.http.HttpHeaders.map",
+    "name": "map",
+    "type": "method",
+    "parent": "HttpHeaders",
+    "signatures": [
+      "public Map<String, List<String>> map()"
+    ],
+    "signature_hash": "9ddd004d3412241bdf99fed58229cc3484bcb7e2393d85245848bbca36b48673",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpHeaders.html",
+    "parameters": [],
+    "return_type": "Map<String, List<String>>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an unmodifiable multi Map view of this HttpHeaders."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an unmodifiable multi Map view of this HttpHeaders.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.884436",
+    "updatedDate": "2026-03-24T10:48:13.884437",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/BodySubscribers/mapping": {
+    "id": "java.net.http.BodySubscribers.mapping",
+    "name": "mapping",
+    "type": "method",
+    "parent": "BodySubscribers",
+    "signatures": [
+      "public static<T, U> HttpResponse.BodySubscriber<U> mapping(HttpResponse.BodySubscriber<T> upstream, Function<? super T, ? extends U> mapper)"
+    ],
+    "signature_hash": "9af26c712a5e8d47299d4526cb8ff95f7653eae1044bd949dcd3bc1f79c4e0c8",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+    "parameters": [
+      {
+        "name": "upstream",
+        "type": "HttpResponse.BodySubscriber<T>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "T",
+        "type": "Function<? super",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "mapper",
+        "type": "? extends U>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static<T, U> HttpResponse.BodySubscriber<U>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aBodySubscriberwhose response body value is that of the result of applying the given function to the body object of the givenupstreamBodySubscriber."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns aBodySubscriberwhose response body value is that of the result of applying the given function to the body object of the givenupstreamBodySubscriber.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.885637",
+    "updatedDate": "2026-03-24T10:48:13.885638",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/HttpRequest/method": {
+    "id": "java.net.http.HttpRequest.method",
+    "name": "method",
+    "type": "method",
+    "parent": "HttpRequest",
+    "signatures": [
+      "public abstract String method()"
+    ],
+    "signature_hash": "95a70c5b058445b745d3c14d4e18ba69c6c59cf54401db01b06f8d99d6aa5d89",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.html",
+    "parameters": [],
+    "return_type": "abstract String",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the request method for this request."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the request method for this request.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.883499",
+    "updatedDate": "2026-03-24T10:48:13.883500",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.net.http/Builder/method": {
+    "id": "java.net.http.Builder.method",
+    "name": "method",
+    "type": "method",
+    "parent": "Builder",
+    "signatures": [
+      "public HttpRequest.Builder method(String method, HttpRequest.BodyPublisher bodyPublisher)"
+    ],
+    "signature_hash": "19a1af506375bd2e075dd8467f06e0ff584b2447bf0bf25e1beb3c9f9b4548e4",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html",
+    "parameters": [
+      {
+        "name": "method",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "bodyPublisher",
+        "type": "HttpRequest.BodyPublisher",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "HttpRequest.Builder",
+    "exceptions": [
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Sets the request method and request body of this builder to the given values."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Sets the request method and request body of this builder to the given values.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:13.884885",
+    "updatedDate": "2026-03-24T10:48:13.884886",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "11",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

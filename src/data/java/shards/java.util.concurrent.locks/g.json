@@ -1,0 +1,1569 @@
+{
+  "java.util.concurrent.locks/LockSupport/getBlocker": {
+    "id": "java.util.concurrent.locks.LockSupport.getBlocker",
+    "name": "getBlocker",
+    "type": "method",
+    "parent": "LockSupport",
+    "signatures": [
+      "public static Object getBlocker(Thread t)"
+    ],
+    "signature_hash": "6aeafa82846fb373b0bfc1710c41c59f3b283822b59cd0635c17dcc3af46f4d6",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/LockSupport.html",
+    "parameters": [
+      {
+        "name": "t",
+        "type": "Thread",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static Object",
+    "exceptions": [
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns the blocker object supplied to the most recent invocation of a park method that has not yet unblocked, or null if not blocked."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the blocker object supplied to the most recent invocation of a park method that has not yet unblocked, or null if not blocked.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.181925",
+    "updatedDate": "2026-03-24T10:48:14.181926",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractOwnableSynchronizer/getExclusiveOwnerThread": {
+    "id": "java.util.concurrent.locks.AbstractOwnableSynchronizer.getExclusiveOwnerThread",
+    "name": "getExclusiveOwnerThread",
+    "type": "method",
+    "parent": "AbstractOwnableSynchronizer",
+    "signatures": [
+      "public protected final Thread getExclusiveOwnerThread()"
+    ],
+    "signature_hash": "6d0535d0a8e6e595493208b53d097b182b49e9e2d6653f96ba31e1b1d525e31e",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractOwnableSynchronizer.html",
+    "parameters": [],
+    "return_type": "protected final Thread",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the thread last set bysetExclusiveOwnerThread, ornullif never set."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the thread last set bysetExclusiveOwnerThread, ornullif never set.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.181873",
+    "updatedDate": "2026-03-24T10:48:14.181874",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedSynchronizer/getExclusiveQueuedThreads": {
+    "id": "java.util.concurrent.locks.AbstractQueuedSynchronizer.getExclusiveQueuedThreads",
+    "name": "getExclusiveQueuedThreads",
+    "type": "method",
+    "parent": "AbstractQueuedSynchronizer",
+    "signatures": [
+      "public final Collection<Thread> getExclusiveQueuedThreads()"
+    ],
+    "signature_hash": "f8450aeb6e24fa1fd2ea7239893d30033b0efef6607d6fb34705ff6d598f0eb3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html",
+    "parameters": [],
+    "return_type": "final Collection<Thread>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing threads that may be waiting to acquire in exclusive mode."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing threads that may be waiting to acquire in exclusive mode.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180735",
+    "updatedDate": "2026-03-24T10:48:14.180736",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedLongSynchronizer/getExclusiveQueuedThreads": {
+    "id": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer.getExclusiveQueuedThreads",
+    "name": "getExclusiveQueuedThreads",
+    "type": "method",
+    "parent": "AbstractQueuedLongSynchronizer",
+    "signatures": [
+      "public final Collection<Thread> getExclusiveQueuedThreads()"
+    ],
+    "signature_hash": "f8450aeb6e24fa1fd2ea7239893d30033b0efef6607d6fb34705ff6d598f0eb3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+    "parameters": [],
+    "return_type": "final Collection<Thread>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing threads that may be waiting to acquire in exclusive mode."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing threads that may be waiting to acquire in exclusive mode.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.181340",
+    "updatedDate": "2026-03-24T10:48:14.181341",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedSynchronizer/getFirstQueuedThread": {
+    "id": "java.util.concurrent.locks.AbstractQueuedSynchronizer.getFirstQueuedThread",
+    "name": "getFirstQueuedThread",
+    "type": "method",
+    "parent": "AbstractQueuedSynchronizer",
+    "signatures": [
+      "public final Thread getFirstQueuedThread()"
+    ],
+    "signature_hash": "da78189985db2dde8beccce503b5aa90ede3f8f3543b31a93519596b039f6ca2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html",
+    "parameters": [],
+    "return_type": "final Thread",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the first (longest-waiting) thread in the queue, ornullif no threads are currently queued."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the first (longest-waiting) thread in the queue, ornullif no threads are currently queued.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180749",
+    "updatedDate": "2026-03-24T10:48:14.180750",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedLongSynchronizer/getFirstQueuedThread": {
+    "id": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer.getFirstQueuedThread",
+    "name": "getFirstQueuedThread",
+    "type": "method",
+    "parent": "AbstractQueuedLongSynchronizer",
+    "signatures": [
+      "public final Thread getFirstQueuedThread()"
+    ],
+    "signature_hash": "da78189985db2dde8beccce503b5aa90ede3f8f3543b31a93519596b039f6ca2",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+    "parameters": [],
+    "return_type": "final Thread",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the first (longest-waiting) thread in the queue, ornullif no threads are currently queued."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the first (longest-waiting) thread in the queue, ornullif no threads are currently queued.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.181356",
+    "updatedDate": "2026-03-24T10:48:14.181356",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantLock/getHoldCount": {
+    "id": "java.util.concurrent.locks.ReentrantLock.getHoldCount",
+    "name": "getHoldCount",
+    "type": "method",
+    "parent": "ReentrantLock",
+    "signatures": [
+      "public int getHoldCount()"
+    ],
+    "signature_hash": "6a5b4ec085741902c6dc1f6f7665f5e8279864841044b9496ee2c11eba651405",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Queries the number of holds on this lock by the current thread."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Queries the number of holds on this lock by the current thread.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.179901",
+    "updatedDate": "2026-03-24T10:48:14.179902",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/WriteLock/getHoldCount": {
+    "id": "java.util.concurrent.locks.WriteLock.getHoldCount",
+    "name": "getHoldCount",
+    "type": "method",
+    "parent": "WriteLock",
+    "signatures": [
+      "public int getHoldCount()"
+    ],
+    "signature_hash": "6a5b4ec085741902c6dc1f6f7665f5e8279864841044b9496ee2c11eba651405",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Queries the number of holds on this write lock by the current thread."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Queries the number of holds on this write lock by the current thread.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.182252",
+    "updatedDate": "2026-03-24T10:48:14.182253",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantLock/getOwner": {
+    "id": "java.util.concurrent.locks.ReentrantLock.getOwner",
+    "name": "getOwner",
+    "type": "method",
+    "parent": "ReentrantLock",
+    "signatures": [
+      "public protected Thread getOwner()"
+    ],
+    "signature_hash": "266005d7bc827eb695fe173a6696ccca55728eb5b236012e08a8a0a7ff7dcb35",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html",
+    "parameters": [],
+    "return_type": "protected Thread",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the thread that currently owns this lock, ornullif not owned."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the thread that currently owns this lock, ornullif not owned.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.179913",
+    "updatedDate": "2026-03-24T10:48:14.179914",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantReadWriteLock/getOwner": {
+    "id": "java.util.concurrent.locks.ReentrantReadWriteLock.getOwner",
+    "name": "getOwner",
+    "type": "method",
+    "parent": "ReentrantReadWriteLock",
+    "signatures": [
+      "public protected Thread getOwner()"
+    ],
+    "signature_hash": "266005d7bc827eb695fe173a6696ccca55728eb5b236012e08a8a0a7ff7dcb35",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+    "parameters": [],
+    "return_type": "protected Thread",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the thread that currently owns the write lock, ornullif not owned."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the thread that currently owns the write lock, ornullif not owned.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180221",
+    "updatedDate": "2026-03-24T10:48:14.180222",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantLock/getQueueLength": {
+    "id": "java.util.concurrent.locks.ReentrantLock.getQueueLength",
+    "name": "getQueueLength",
+    "type": "method",
+    "parent": "ReentrantLock",
+    "signatures": [
+      "public final int getQueueLength()"
+    ],
+    "signature_hash": "f193d7bc0bef0d1ebac7e43f08cad09f25bddd17298e8d2784b5da238c07ee20",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html",
+    "parameters": [],
+    "return_type": "final int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an estimate of the number of threads waiting to acquire this lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an estimate of the number of threads waiting to acquire this lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.179938",
+    "updatedDate": "2026-03-24T10:48:14.179939",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantReadWriteLock/getQueueLength": {
+    "id": "java.util.concurrent.locks.ReentrantReadWriteLock.getQueueLength",
+    "name": "getQueueLength",
+    "type": "method",
+    "parent": "ReentrantReadWriteLock",
+    "signatures": [
+      "public final int getQueueLength()"
+    ],
+    "signature_hash": "f193d7bc0bef0d1ebac7e43f08cad09f25bddd17298e8d2784b5da238c07ee20",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+    "parameters": [],
+    "return_type": "final int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an estimate of the number of threads waiting to acquire either the read or write lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an estimate of the number of threads waiting to acquire either the read or write lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180277",
+    "updatedDate": "2026-03-24T10:48:14.180278",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedSynchronizer/getQueueLength": {
+    "id": "java.util.concurrent.locks.AbstractQueuedSynchronizer.getQueueLength",
+    "name": "getQueueLength",
+    "type": "method",
+    "parent": "AbstractQueuedSynchronizer",
+    "signatures": [
+      "public final int getQueueLength()"
+    ],
+    "signature_hash": "f193d7bc0bef0d1ebac7e43f08cad09f25bddd17298e8d2784b5da238c07ee20",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html",
+    "parameters": [],
+    "return_type": "final int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an estimate of the number of threads waiting to acquire."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an estimate of the number of threads waiting to acquire.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180804",
+    "updatedDate": "2026-03-24T10:48:14.180804",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedLongSynchronizer/getQueueLength": {
+    "id": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer.getQueueLength",
+    "name": "getQueueLength",
+    "type": "method",
+    "parent": "AbstractQueuedLongSynchronizer",
+    "signatures": [
+      "public final int getQueueLength()"
+    ],
+    "signature_hash": "f193d7bc0bef0d1ebac7e43f08cad09f25bddd17298e8d2784b5da238c07ee20",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+    "parameters": [],
+    "return_type": "final int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an estimate of the number of threads waiting to acquire."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an estimate of the number of threads waiting to acquire.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.181387",
+    "updatedDate": "2026-03-24T10:48:14.181388",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantReadWriteLock/getQueuedReaderThreads": {
+    "id": "java.util.concurrent.locks.ReentrantReadWriteLock.getQueuedReaderThreads",
+    "name": "getQueuedReaderThreads",
+    "type": "method",
+    "parent": "ReentrantReadWriteLock",
+    "signatures": [
+      "public protected Collection<Thread> getQueuedReaderThreads()"
+    ],
+    "signature_hash": "69870db0ff00d0958f5bd9a8419b34a1455a14e6eac01bfd221b0d27255f97a0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+    "parameters": [],
+    "return_type": "protected Collection<Thread>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing threads that may be waiting to acquire the read lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing threads that may be waiting to acquire the read lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180234",
+    "updatedDate": "2026-03-24T10:48:14.180235",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantLock/getQueuedThreads": {
+    "id": "java.util.concurrent.locks.ReentrantLock.getQueuedThreads",
+    "name": "getQueuedThreads",
+    "type": "method",
+    "parent": "ReentrantLock",
+    "signatures": [
+      "public protected Collection<Thread> getQueuedThreads()"
+    ],
+    "signature_hash": "ad005e5eb8e16564ceeecf8566619842c712fdfd20ed424881bbe22190837c99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html",
+    "parameters": [],
+    "return_type": "protected Collection<Thread>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing threads that may be waiting to acquire this lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing threads that may be waiting to acquire this lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.179925",
+    "updatedDate": "2026-03-24T10:48:14.179926",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantReadWriteLock/getQueuedThreads": {
+    "id": "java.util.concurrent.locks.ReentrantReadWriteLock.getQueuedThreads",
+    "name": "getQueuedThreads",
+    "type": "method",
+    "parent": "ReentrantReadWriteLock",
+    "signatures": [
+      "public protected Collection<Thread> getQueuedThreads()"
+    ],
+    "signature_hash": "ad005e5eb8e16564ceeecf8566619842c712fdfd20ed424881bbe22190837c99",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+    "parameters": [],
+    "return_type": "protected Collection<Thread>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing threads that may be waiting to acquire either the read or write lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing threads that may be waiting to acquire either the read or write lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180249",
+    "updatedDate": "2026-03-24T10:48:14.180250",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedSynchronizer/getQueuedThreads": {
+    "id": "java.util.concurrent.locks.AbstractQueuedSynchronizer.getQueuedThreads",
+    "name": "getQueuedThreads",
+    "type": "method",
+    "parent": "AbstractQueuedSynchronizer",
+    "signatures": [
+      "public final Collection<Thread> getQueuedThreads()"
+    ],
+    "signature_hash": "6d52939868618a846f4b51b7e238dfc65a595e941c196ebcf785c780a6356480",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html",
+    "parameters": [],
+    "return_type": "final Collection<Thread>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing threads that may be waiting to acquire."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing threads that may be waiting to acquire.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180789",
+    "updatedDate": "2026-03-24T10:48:14.180790",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedLongSynchronizer/getQueuedThreads": {
+    "id": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer.getQueuedThreads",
+    "name": "getQueuedThreads",
+    "type": "method",
+    "parent": "AbstractQueuedLongSynchronizer",
+    "signatures": [
+      "public final Collection<Thread> getQueuedThreads()"
+    ],
+    "signature_hash": "6d52939868618a846f4b51b7e238dfc65a595e941c196ebcf785c780a6356480",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+    "parameters": [],
+    "return_type": "final Collection<Thread>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing threads that may be waiting to acquire."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing threads that may be waiting to acquire.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.181371",
+    "updatedDate": "2026-03-24T10:48:14.181372",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantReadWriteLock/getQueuedWriterThreads": {
+    "id": "java.util.concurrent.locks.ReentrantReadWriteLock.getQueuedWriterThreads",
+    "name": "getQueuedWriterThreads",
+    "type": "method",
+    "parent": "ReentrantReadWriteLock",
+    "signatures": [
+      "public protected Collection<Thread> getQueuedWriterThreads()"
+    ],
+    "signature_hash": "1e7b9736e28f736c4a12765ecb013c04fdef621ff594ce0c9b0bca632b9140ec",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+    "parameters": [],
+    "return_type": "protected Collection<Thread>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing threads that may be waiting to acquire the write lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing threads that may be waiting to acquire the write lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180262",
+    "updatedDate": "2026-03-24T10:48:14.180263",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantReadWriteLock/getReadHoldCount": {
+    "id": "java.util.concurrent.locks.ReentrantReadWriteLock.getReadHoldCount",
+    "name": "getReadHoldCount",
+    "type": "method",
+    "parent": "ReentrantReadWriteLock",
+    "signatures": [
+      "public int getReadHoldCount()"
+    ],
+    "signature_hash": "f37c94a6f81835a5d33764e4dc9420de8bab89ac82d3b7caa20716491093006b",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Queries the number of reentrant read holds on this lock by the current thread."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Queries the number of reentrant read holds on this lock by the current thread.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180290",
+    "updatedDate": "2026-03-24T10:48:14.180290",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantReadWriteLock/getReadLockCount": {
+    "id": "java.util.concurrent.locks.ReentrantReadWriteLock.getReadLockCount",
+    "name": "getReadLockCount",
+    "type": "method",
+    "parent": "ReentrantReadWriteLock",
+    "signatures": [
+      "public int getReadLockCount()"
+    ],
+    "signature_hash": "28d74bc8db87ad334e27e575655586333f3ec615508775ff522e81d6dc7d4e4c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Queries the number of read locks held for this lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Queries the number of read locks held for this lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180302",
+    "updatedDate": "2026-03-24T10:48:14.180303",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/StampedLock/getReadLockCount": {
+    "id": "java.util.concurrent.locks.StampedLock.getReadLockCount",
+    "name": "getReadLockCount",
+    "type": "method",
+    "parent": "StampedLock",
+    "signatures": [
+      "public int getReadLockCount()"
+    ],
+    "signature_hash": "28d74bc8db87ad334e27e575655586333f3ec615508775ff522e81d6dc7d4e4c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/StampedLock.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Queries the number of read locks held for this lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Queries the number of read locks held for this lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.182484",
+    "updatedDate": "2026-03-24T10:48:14.182485",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.8",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedSynchronizer/getSharedQueuedThreads": {
+    "id": "java.util.concurrent.locks.AbstractQueuedSynchronizer.getSharedQueuedThreads",
+    "name": "getSharedQueuedThreads",
+    "type": "method",
+    "parent": "AbstractQueuedSynchronizer",
+    "signatures": [
+      "public final Collection<Thread> getSharedQueuedThreads()"
+    ],
+    "signature_hash": "08b51944f8d749e09bf2e0a5c26444f662fedcdb7f7a2ba3a6ad3a671bee4f61",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html",
+    "parameters": [],
+    "return_type": "final Collection<Thread>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing threads that may be waiting to acquire in shared mode."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing threads that may be waiting to acquire in shared mode.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180819",
+    "updatedDate": "2026-03-24T10:48:14.180820",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedLongSynchronizer/getSharedQueuedThreads": {
+    "id": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer.getSharedQueuedThreads",
+    "name": "getSharedQueuedThreads",
+    "type": "method",
+    "parent": "AbstractQueuedLongSynchronizer",
+    "signatures": [
+      "public final Collection<Thread> getSharedQueuedThreads()"
+    ],
+    "signature_hash": "08b51944f8d749e09bf2e0a5c26444f662fedcdb7f7a2ba3a6ad3a671bee4f61",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+    "parameters": [],
+    "return_type": "final Collection<Thread>",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing threads that may be waiting to acquire in shared mode."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing threads that may be waiting to acquire in shared mode.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.181403",
+    "updatedDate": "2026-03-24T10:48:14.181404",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedSynchronizer/getState": {
+    "id": "java.util.concurrent.locks.AbstractQueuedSynchronizer.getState",
+    "name": "getState",
+    "type": "method",
+    "parent": "AbstractQueuedSynchronizer",
+    "signatures": [
+      "public protected final int getState()"
+    ],
+    "signature_hash": "0e1302f0e99ee7d72195a716180ed16a2ab11f77e449285ea19c6a234cd6cbb3",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html",
+    "parameters": [],
+    "return_type": "protected final int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the current value of synchronization state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the current value of synchronization state.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180834",
+    "updatedDate": "2026-03-24T10:48:14.180834",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedLongSynchronizer/getState": {
+    "id": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer.getState",
+    "name": "getState",
+    "type": "method",
+    "parent": "AbstractQueuedLongSynchronizer",
+    "signatures": [
+      "public protected final long getState()"
+    ],
+    "signature_hash": "3255af660db0fdf77a3fceb316656861a0f7fe6dfed7908e4dcb226eb8e72afe",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+    "parameters": [],
+    "return_type": "protected final long",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the current value of synchronization state."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the current value of synchronization state.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.181420",
+    "updatedDate": "2026-03-24T10:48:14.181421",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantLock/getWaitQueueLength": {
+    "id": "java.util.concurrent.locks.ReentrantLock.getWaitQueueLength",
+    "name": "getWaitQueueLength",
+    "type": "method",
+    "parent": "ReentrantLock",
+    "signatures": [
+      "public int getWaitQueueLength(Condition condition)"
+    ],
+    "signature_hash": "e4d2a9e7e055690a81d2dbe6e10b5be3ac971bf748039c4560a471b8d84cca25",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html",
+    "parameters": [
+      {
+        "name": "condition",
+        "type": "Condition",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IllegalMonitorStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an estimate of the number of threads waiting on the given condition associated with this lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an estimate of the number of threads waiting on the given condition associated with this lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.179982",
+    "updatedDate": "2026-03-24T10:48:14.179983",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantReadWriteLock/getWaitQueueLength": {
+    "id": "java.util.concurrent.locks.ReentrantReadWriteLock.getWaitQueueLength",
+    "name": "getWaitQueueLength",
+    "type": "method",
+    "parent": "ReentrantReadWriteLock",
+    "signatures": [
+      "public int getWaitQueueLength(Condition condition)"
+    ],
+    "signature_hash": "e4d2a9e7e055690a81d2dbe6e10b5be3ac971bf748039c4560a471b8d84cca25",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+    "parameters": [
+      {
+        "name": "condition",
+        "type": "Condition",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "int",
+    "exceptions": [
+      {
+        "name": "IllegalMonitorStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an estimate of the number of threads waiting on the given condition associated with the write lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an estimate of the number of threads waiting on the given condition associated with the write lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180355",
+    "updatedDate": "2026-03-24T10:48:14.180356",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedSynchronizer/getWaitQueueLength": {
+    "id": "java.util.concurrent.locks.AbstractQueuedSynchronizer.getWaitQueueLength",
+    "name": "getWaitQueueLength",
+    "type": "method",
+    "parent": "AbstractQueuedSynchronizer",
+    "signatures": [
+      "public final int getWaitQueueLength(AbstractQueuedSynchronizer.ConditionObject condition)"
+    ],
+    "signature_hash": "ddd50598907a55afd7530bdc3b2303db81f8e1919a1849dff9748d7f95be9ce0",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html",
+    "parameters": [
+      {
+        "name": "condition",
+        "type": "AbstractQueuedSynchronizer.ConditionObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final int",
+    "exceptions": [
+      {
+        "name": "IllegalMonitorStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an estimate of the number of threads waiting on the given condition associated with this synchronizer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an estimate of the number of threads waiting on the given condition associated with this synchronizer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180884",
+    "updatedDate": "2026-03-24T10:48:14.180885",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedLongSynchronizer/getWaitQueueLength": {
+    "id": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer.getWaitQueueLength",
+    "name": "getWaitQueueLength",
+    "type": "method",
+    "parent": "AbstractQueuedLongSynchronizer",
+    "signatures": [
+      "public final int getWaitQueueLength(AbstractQueuedLongSynchronizer.ConditionObject condition)"
+    ],
+    "signature_hash": "be8846d78060ceea1a9cb1ac552fbab897375cb4f4ef3372ee215949e61e461c",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+    "parameters": [
+      {
+        "name": "condition",
+        "type": "AbstractQueuedLongSynchronizer.ConditionObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final int",
+    "exceptions": [
+      {
+        "name": "IllegalMonitorStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns an estimate of the number of threads waiting on the given condition associated with this synchronizer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns an estimate of the number of threads waiting on the given condition associated with this synchronizer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.181467",
+    "updatedDate": "2026-03-24T10:48:14.181468",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantLock/getWaitingThreads": {
+    "id": "java.util.concurrent.locks.ReentrantLock.getWaitingThreads",
+    "name": "getWaitingThreads",
+    "type": "method",
+    "parent": "ReentrantLock",
+    "signatures": [
+      "public protected Collection<Thread> getWaitingThreads(Condition condition)"
+    ],
+    "signature_hash": "f69ce1544218c0c9c23a7f0db82db30e2f4592a68058d43e1b747088965e4227",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html",
+    "parameters": [
+      {
+        "name": "condition",
+        "type": "Condition",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected Collection<Thread>",
+    "exceptions": [
+      {
+        "name": "IllegalMonitorStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing those threads that may be waiting on the given condition associated with this lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing those threads that may be waiting on the given condition associated with this lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.179955",
+    "updatedDate": "2026-03-24T10:48:14.179956",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantReadWriteLock/getWaitingThreads": {
+    "id": "java.util.concurrent.locks.ReentrantReadWriteLock.getWaitingThreads",
+    "name": "getWaitingThreads",
+    "type": "method",
+    "parent": "ReentrantReadWriteLock",
+    "signatures": [
+      "public protected Collection<Thread> getWaitingThreads(Condition condition)"
+    ],
+    "signature_hash": "f69ce1544218c0c9c23a7f0db82db30e2f4592a68058d43e1b747088965e4227",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+    "parameters": [
+      {
+        "name": "condition",
+        "type": "Condition",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected Collection<Thread>",
+    "exceptions": [
+      {
+        "name": "IllegalMonitorStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing those threads that may be waiting on the given condition associated with the write lock."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing those threads that may be waiting on the given condition associated with the write lock.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180338",
+    "updatedDate": "2026-03-24T10:48:14.180339",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedSynchronizer/getWaitingThreads": {
+    "id": "java.util.concurrent.locks.AbstractQueuedSynchronizer.getWaitingThreads",
+    "name": "getWaitingThreads",
+    "type": "method",
+    "parent": "AbstractQueuedSynchronizer",
+    "signatures": [
+      "public final Collection<Thread> getWaitingThreads(AbstractQueuedSynchronizer.ConditionObject condition)"
+    ],
+    "signature_hash": "6d3b0c5017f5ae5e0c9c10d399dbe210674d647f750a72a2c7f3041383948347",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html",
+    "parameters": [
+      {
+        "name": "condition",
+        "type": "AbstractQueuedSynchronizer.ConditionObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final Collection<Thread>",
+    "exceptions": [
+      {
+        "name": "IllegalMonitorStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing those threads that may be waiting on the given condition associated with this synchronizer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing those threads that may be waiting on the given condition associated with this synchronizer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180857",
+    "updatedDate": "2026-03-24T10:48:14.180858",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/AbstractQueuedLongSynchronizer/getWaitingThreads": {
+    "id": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer.getWaitingThreads",
+    "name": "getWaitingThreads",
+    "type": "method",
+    "parent": "AbstractQueuedLongSynchronizer",
+    "signatures": [
+      "public final Collection<Thread> getWaitingThreads(AbstractQueuedLongSynchronizer.ConditionObject condition)"
+    ],
+    "signature_hash": "3a3330e68188b98a60d6f0e63062ecd369a1d808f29bfc8235cd30cf13429bb5",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+    "parameters": [
+      {
+        "name": "condition",
+        "type": "AbstractQueuedLongSynchronizer.ConditionObject",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "final Collection<Thread>",
+    "exceptions": [
+      {
+        "name": "IllegalMonitorStateException",
+        "package": "java.lang"
+      },
+      {
+        "name": "IllegalArgumentException",
+        "package": "java.lang"
+      },
+      {
+        "name": "NullPointerException",
+        "package": "java.lang"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Returns a collection containing those threads that may be waiting on the given condition associated with this synchronizer."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns a collection containing those threads that may be waiting on the given condition associated with this synchronizer.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.181443",
+    "updatedDate": "2026-03-24T10:48:14.181444",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.6",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "java.util.concurrent.locks/ReentrantReadWriteLock/getWriteHoldCount": {
+    "id": "java.util.concurrent.locks.ReentrantReadWriteLock.getWriteHoldCount",
+    "name": "getWriteHoldCount",
+    "type": "method",
+    "parent": "ReentrantReadWriteLock",
+    "signatures": [
+      "public int getWriteHoldCount()"
+    ],
+    "signature_hash": "72e82ca1d4008096c5cea46556d13f31e12be65dad1cdc3270c694a3a56ce604",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+    "parameters": [],
+    "return_type": "int",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Queries the number of reentrant write holds on this lock by the current thread."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Queries the number of reentrant write holds on this lock by the current thread.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:14.180376",
+    "updatedDate": "2026-03-24T10:48:14.180377",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

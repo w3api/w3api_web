@@ -1,0 +1,117 @@
+{
+  "itertools/filterfalse": {
+    "id": "itertools.filterfalse",
+    "name": "filterfalse",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "itertools.filterfalse(predicate, iterable)"
+    ],
+    "signature_hash": "0ed9d80985dc22f2f8860b464ec9fc9c79eff00dcee64a73d7d930240ff96d4b",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.filterfalse",
+    "parameters": [
+      {
+        "name": "predicate",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "iterable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Make an iterator that filters elements from the iterable returning only those for which the predicate returns a false value. If predicate is None, returns the items that are false. Roughly equivalent to: def filterfalse(predicate, iterable): # filterfalse(lambda x: x<5, [1,4,6,3,8]) → 6 8 if predicate is None: predicate = bool for x in iterable: if not predicate(x): yield x"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Make an iterator that filters elements from the iterable returning only those for which the predicate returns a false value. If predicate is None, returns the items that are false. Roughly equivalent ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238186",
+    "updatedDate": "2026-03-24T10:48:12.238187",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "itertools/chain/from_iterable": {
+    "id": "itertools.chain.from_iterable",
+    "name": "from_iterable",
+    "type": "method",
+    "parent": "chain",
+    "signatures": [
+      "classmethod chain.from_iterable(iterable)"
+    ],
+    "signature_hash": "d1738a3018282808f3876fbfd685cd5aed7414260b98bbfd7cb30728646b450f",
+    "url": "https://docs.python.org/3/library/itertools.html#module-itertools#itertools.chain.from_iterable",
+    "parameters": [
+      {
+        "name": "iterable",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Alternate constructor for chain(). Gets chained inputs from a single iterable argument that is evaluated lazily. Roughly equivalent to: def from_iterable(iterables): # chain.from_iterable(['ABC', 'DEF']) → A B C D E F for iterable in iterables: yield from iterable"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Alternate constructor for chain(). Gets chained inputs from a single iterable argument that is evaluated lazily. Roughly equivalent to: def from_iterable(iterables): # chain.from_iterable(['ABC', 'DEF...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.238057",
+    "updatedDate": "2026-03-24T10:48:12.238058",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

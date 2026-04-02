@@ -1,0 +1,656 @@
+{
+  "jdk.jshell.execution/RemoteExecutionControl": {
+    "id": "jdk.jshell.execution.RemoteExecutionControl",
+    "name": "RemoteExecutionControl",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class RemoteExecutionControl"
+    ],
+    "signature_hash": "08538010d534ea4048380c335e1619385d716168226720b0b3d48b24440e8f10",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/execution/RemoteExecutionControl.html",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.296195",
+    "updatedDate": "2026-03-24T10:48:15.296196",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "constructors": [
+      "RemoteExecutionControl"
+    ],
+    "methods": [
+      "clientCodeEnter",
+      "main",
+      "redefine",
+      "stop",
+      "varValue"
+    ]
+  },
+  "jdk.jshell.execution/RemoteExecutionControl/RemoteExecutionControl": {
+    "id": "jdk.jshell.execution.RemoteExecutionControl.RemoteExecutionControl",
+    "name": "RemoteExecutionControl",
+    "type": "constructor",
+    "parent": "RemoteExecutionControl",
+    "signatures": [
+      "public RemoteExecutionControl()",
+      "public RemoteExecutionControl(LoaderDelegate loaderDelegate)"
+    ],
+    "signature_hash": "91644523a4ee571b94a39f15d537537e9c20f1a1943d2deec53df4db6811fa53",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/execution/RemoteExecutionControl.html",
+    "parameters": [
+      {
+        "name": "loaderDelegate",
+        "has_default": false,
+        "default_value": null,
+        "type": "LoaderDelegate",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create an instance using the default class loading."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create an instance using the default class loading.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.296215",
+    "updatedDate": "2026-03-24T10:48:15.296216",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell.execution/DirectExecutionControl/redefine": {
+    "id": "jdk.jshell.execution.DirectExecutionControl.redefine",
+    "name": "redefine",
+    "type": "method",
+    "parent": "DirectExecutionControl",
+    "signatures": [
+      "public void redefine(ExecutionControl.ClassBytecodes[]cbcs)"
+    ],
+    "signature_hash": "9c7d4d70b1ecc88e8e6e9d5df0b66bee6b7bdb394b9d5484fbf6cb5ef6120c22",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/execution/DirectExecutionControl.html",
+    "parameters": [
+      {
+        "name": "ExecutionControl.ClassBytecodes[]cbcs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "ExecutionControl.ClassInstallException"
+      },
+      {
+        "name": "ExecutionControl.NotImplementedException"
+      },
+      {
+        "name": "ExecutionControl.EngineTerminationException"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Attempts to redefine previously loaded classes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Attempts to redefine previously loaded classes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.295179",
+    "updatedDate": "2026-03-24T10:48:15.295180",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell.execution/JdiExecutionControl/redefine": {
+    "id": "jdk.jshell.execution.JdiExecutionControl.redefine",
+    "name": "redefine",
+    "type": "method",
+    "parent": "JdiExecutionControl",
+    "signatures": [
+      "public void redefine(ExecutionControl.ClassBytecodes[]cbcs)"
+    ],
+    "signature_hash": "9c7d4d70b1ecc88e8e6e9d5df0b66bee6b7bdb394b9d5484fbf6cb5ef6120c22",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/execution/JdiExecutionControl.html",
+    "parameters": [
+      {
+        "name": "ExecutionControl.ClassBytecodes[]cbcs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "ExecutionControl.ClassInstallException"
+      },
+      {
+        "name": "ExecutionControl.EngineTerminationException"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Redefine the specified classes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Redefine the specified classes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.295600",
+    "updatedDate": "2026-03-24T10:48:15.295601",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell.execution/RemoteExecutionControl/redefine": {
+    "id": "jdk.jshell.execution.RemoteExecutionControl.redefine",
+    "name": "redefine",
+    "type": "method",
+    "parent": "RemoteExecutionControl",
+    "signatures": [
+      "public void redefine(ExecutionControl.ClassBytecodes[]cbcs)"
+    ],
+    "signature_hash": "9c7d4d70b1ecc88e8e6e9d5df0b66bee6b7bdb394b9d5484fbf6cb5ef6120c22",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/execution/RemoteExecutionControl.html",
+    "parameters": [
+      {
+        "name": "ExecutionControl.ClassBytecodes[]cbcs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "ExecutionControl.ClassInstallException"
+      },
+      {
+        "name": "ExecutionControl.NotImplementedException"
+      },
+      {
+        "name": "ExecutionControl.EngineTerminationException"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Redefine processing on the remote end is only to register the redefined classes"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Redefine processing on the remote end is only to register the redefined classes",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.296275",
+    "updatedDate": "2026-03-24T10:48:15.296276",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell.execution/StreamingExecutionControl/redefine": {
+    "id": "jdk.jshell.execution.StreamingExecutionControl.redefine",
+    "name": "redefine",
+    "type": "method",
+    "parent": "StreamingExecutionControl",
+    "signatures": [
+      "public void redefine(ExecutionControl.ClassBytecodes[]cbcs)"
+    ],
+    "signature_hash": "9c7d4d70b1ecc88e8e6e9d5df0b66bee6b7bdb394b9d5484fbf6cb5ef6120c22",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/execution/StreamingExecutionControl.html",
+    "parameters": [
+      {
+        "name": "ExecutionControl.ClassBytecodes[]cbcs",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "void",
+    "exceptions": [
+      {
+        "name": "ExecutionControl.ClassInstallException"
+      },
+      {
+        "name": "ExecutionControl.NotImplementedException"
+      },
+      {
+        "name": "ExecutionControl.EngineTerminationException"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Attempts to redefine previously loaded classes."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Attempts to redefine previously loaded classes.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.296477",
+    "updatedDate": "2026-03-24T10:48:15.296478",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell.execution/JdiExecutionControl/referenceType": {
+    "id": "jdk.jshell.execution.JdiExecutionControl.referenceType",
+    "name": "referenceType",
+    "type": "method",
+    "parent": "JdiExecutionControl",
+    "signatures": [
+      "public protected ReferenceType referenceType(VirtualMachine vm, String name)"
+    ],
+    "signature_hash": "b2c53e989e442d79225cd40e51ac993c582ae59fa9580221f4cba63dd0f8dd32",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/execution/JdiExecutionControl.html",
+    "parameters": [
+      {
+        "name": "vm",
+        "type": "VirtualMachine",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected ReferenceType",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the JDIReferenceTypecorresponding to the specified class name."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Returns the JDIReferenceTypecorresponding to the specified class name.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.295618",
+    "updatedDate": "2026-03-24T10:48:15.295619",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell.execution/Util/remoteInputOutput": {
+    "id": "jdk.jshell.execution.Util.remoteInputOutput",
+    "name": "remoteInputOutput",
+    "type": "method",
+    "parent": "Util",
+    "signatures": [
+      "public static ExecutionControl remoteInputOutput(InputStream input, OutputStream output, Map<String, OutputStream> outputStreamMap, Map<String, InputStream> inputStreamMap, BiFunction<ObjectInput, ObjectOutput, ExecutionControl> factory)"
+    ],
+    "signature_hash": "93cf1b9f5cbc09c9bbec67baae52d223b6f209575be2632ab617a403f18deeff",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/execution/Util.html",
+    "parameters": [
+      {
+        "name": "input",
+        "type": "InputStream",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "output",
+        "type": "OutputStream",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "Map<String",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "outputStreamMap",
+        "type": "OutputStream>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "Map<String",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "inputStreamMap",
+        "type": "InputStream>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "BiFunction<ObjectInput",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "ObjectOutput",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "factory",
+        "type": "ExecutionControl>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "static ExecutionControl",
+    "exceptions": [
+      {
+        "name": "IOException",
+        "package": "java.io"
+      }
+    ],
+    "description": {
+      "es": "",
+      "en": "Creates an ExecutionControl for given packetized input and output."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Creates an ExecutionControl for given packetized input and output.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.296668",
+    "updatedDate": "2026-03-24T10:48:15.296669",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "jdk.jshell.execution/JdiInitiator/runListenProcess": {
+    "id": "jdk.jshell.execution.JdiInitiator.runListenProcess",
+    "name": "runListenProcess",
+    "type": "method",
+    "parent": "JdiInitiator",
+    "signatures": [
+      "public protected void runListenProcess(String jdiAddress, int jshellControlPort, List<String> remoteVMOptions, JdiInitiator.ProcessStarted setupVM)"
+    ],
+    "signature_hash": "debe79522d4f6f4dc00c69da7c501c318ae0d3849d77cb5a338bc55540adf27d",
+    "url": "https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jshell/jdk/jshell/execution/JdiInitiator.html",
+    "parameters": [
+      {
+        "name": "jdiAddress",
+        "type": "String",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "jshellControlPort",
+        "type": "int",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "remoteVMOptions",
+        "type": "List<String>",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "setupVM",
+        "type": "JdiInitiator.ProcessStarted",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "protected void",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a process that will attach to the given address."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a process that will attach to the given address.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:15.295889",
+    "updatedDate": "2026-03-24T10:48:15.295890",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "9",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

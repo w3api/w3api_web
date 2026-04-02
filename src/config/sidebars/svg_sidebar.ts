@@ -1,1093 +1,1093 @@
 export const sidebar = [
         {
-            label: 'Atributos',
+            label: 'Attributes',
             collapsed: true,
             items: [
                 {
                     label: 'accumulate',
-                    link: 'svg/Atributos/accumulate/'
+                    link: 'svg/Attributes/accumulate/'
                 },
                 {
                     label: 'additive',
-                    link: 'svg/Atributos/additive/'
+                    link: 'svg/Attributes/additive/'
                 },
                 {
                     label: 'alignment-baseline',
-                    link: 'svg/Atributos/alignment-baseline/'
+                    link: 'svg/Attributes/alignment-baseline/'
                 },
                 {
                     label: 'amplitude',
-                    link: 'svg/Atributos/amplitude/'
+                    link: 'svg/Attributes/amplitude/'
                 },
                 {
                     label: 'attributeName',
-                    link: 'svg/Atributos/attributeName/'
+                    link: 'svg/Attributes/attributeName/'
                 },
                 {
                     label: 'attributeType',
-                    link: 'svg/Atributos/attributeType/'
+                    link: 'svg/Attributes/attributeType/'
                 },
                 {
                     label: 'autofocus',
-                    link: 'svg/Atributos/autofocus/'
+                    link: 'svg/Attributes/autofocus/'
                 },
                 {
                     label: 'azimuth',
-                    link: 'svg/Atributos/azimuth/'
+                    link: 'svg/Attributes/azimuth/'
                 },
                 {
                     label: 'baseFrequency',
-                    link: 'svg/Atributos/baseFrequency/'
+                    link: 'svg/Attributes/baseFrequency/'
                 },
                 {
                     label: 'baseProfile',
-                    link: 'svg/Atributos/baseProfile/'
+                    link: 'svg/Attributes/baseProfile/'
                 },
                 {
                     label: 'baseline-shift',
-                    link: 'svg/Atributos/baseline-shift/'
+                    link: 'svg/Attributes/baseline-shift/'
                 },
                 {
                     label: 'begin',
-                    link: 'svg/Atributos/begin/'
+                    link: 'svg/Attributes/begin/'
                 },
                 {
                     label: 'bias',
-                    link: 'svg/Atributos/bias/'
+                    link: 'svg/Attributes/bias/'
                 },
                 {
                     label: 'by',
-                    link: 'svg/Atributos/by/'
+                    link: 'svg/Attributes/by/'
                 },
                 {
                     label: 'calcMode',
-                    link: 'svg/Atributos/calcMode/'
+                    link: 'svg/Attributes/calcMode/'
                 },
                 {
                     label: 'class',
-                    link: 'svg/Atributos/class/'
+                    link: 'svg/Attributes/class/'
                 },
                 {
                     label: 'clip',
-                    link: 'svg/Atributos/clip/'
+                    link: 'svg/Attributes/clip/'
                 },
                 {
                     label: 'clip-path',
-                    link: 'svg/Atributos/clip-path/'
+                    link: 'svg/Attributes/clip-path/'
                 },
                 {
                     label: 'clip-rule',
-                    link: 'svg/Atributos/clip-rule/'
+                    link: 'svg/Attributes/clip-rule/'
                 },
                 {
                     label: 'clipPathUnits',
-                    link: 'svg/Atributos/clipPathUnits/'
+                    link: 'svg/Attributes/clipPathUnits/'
                 },
                 {
                     label: 'color',
-                    link: 'svg/Atributos/color/'
+                    link: 'svg/Attributes/color/'
                 },
                 {
                     label: 'color-interpolation',
-                    link: 'svg/Atributos/color-interpolation/'
+                    link: 'svg/Attributes/color-interpolation/'
                 },
                 {
                     label: 'color-interpolation-filters',
-                    link: 'svg/Atributos/color-interpolation-filters/'
+                    link: 'svg/Attributes/color-interpolation-filters/'
                 },
                 {
                     label: 'crossorigin',
-                    link: 'svg/Atributos/crossorigin/'
+                    link: 'svg/Attributes/crossorigin/'
                 },
                 {
                     label: 'cursor',
-                    link: 'svg/Atributos/cursor/'
+                    link: 'svg/Attributes/cursor/'
                 },
                 {
                     label: 'cx',
-                    link: 'svg/Atributos/cx/'
+                    link: 'svg/Attributes/cx/'
                 },
                 {
                     label: 'cy',
-                    link: 'svg/Atributos/cy/'
+                    link: 'svg/Attributes/cy/'
                 },
                 {
                     label: 'd',
-                    link: 'svg/Atributos/d/'
+                    link: 'svg/Attributes/d/'
                 },
                 {
                     label: 'data-*',
-                    link: 'svg/Atributos/data-*/'
+                    link: 'svg/Attributes/data-*/'
                 },
                 {
                     label: 'decoding',
-                    link: 'svg/Atributos/decoding/'
+                    link: 'svg/Attributes/decoding/'
                 },
                 {
                     label: 'diffuseConstant',
-                    link: 'svg/Atributos/diffuseConstant/'
+                    link: 'svg/Attributes/diffuseConstant/'
                 },
                 {
                     label: 'direction',
-                    link: 'svg/Atributos/direction/'
+                    link: 'svg/Attributes/direction/'
                 },
                 {
                     label: 'display',
-                    link: 'svg/Atributos/display/'
+                    link: 'svg/Attributes/display/'
                 },
                 {
                     label: 'divisor',
-                    link: 'svg/Atributos/divisor/'
+                    link: 'svg/Attributes/divisor/'
                 },
                 {
                     label: 'dominant-baseline',
-                    link: 'svg/Atributos/dominant-baseline/'
+                    link: 'svg/Attributes/dominant-baseline/'
                 },
                 {
                     label: 'dur',
-                    link: 'svg/Atributos/dur/'
+                    link: 'svg/Attributes/dur/'
                 },
                 {
                     label: 'dx',
-                    link: 'svg/Atributos/dx/'
+                    link: 'svg/Attributes/dx/'
                 },
                 {
                     label: 'dy',
-                    link: 'svg/Atributos/dy/'
+                    link: 'svg/Attributes/dy/'
                 },
                 {
                     label: 'edgeMode',
-                    link: 'svg/Atributos/edgeMode/'
+                    link: 'svg/Attributes/edgeMode/'
                 },
                 {
                     label: 'elevation',
-                    link: 'svg/Atributos/elevation/'
+                    link: 'svg/Attributes/elevation/'
                 },
                 {
                     label: 'end',
-                    link: 'svg/Atributos/end/'
+                    link: 'svg/Attributes/end/'
                 },
                 {
                     label: 'exponent',
-                    link: 'svg/Atributos/exponent/'
+                    link: 'svg/Attributes/exponent/'
                 },
                 {
                     label: 'fetchpriority',
-                    link: 'svg/Atributos/fetchpriority/'
+                    link: 'svg/Attributes/fetchpriority/'
                 },
                 {
                     label: 'fill',
-                    link: 'svg/Atributos/fill/'
+                    link: 'svg/Attributes/fill/'
                 },
                 {
                     label: 'fill-opacity',
-                    link: 'svg/Atributos/fill-opacity/'
+                    link: 'svg/Attributes/fill-opacity/'
                 },
                 {
                     label: 'fill-rule',
-                    link: 'svg/Atributos/fill-rule/'
+                    link: 'svg/Attributes/fill-rule/'
                 },
                 {
                     label: 'filter',
-                    link: 'svg/Atributos/filter/'
+                    link: 'svg/Attributes/filter/'
                 },
                 {
                     label: 'filterUnits',
-                    link: 'svg/Atributos/filterUnits/'
+                    link: 'svg/Attributes/filterUnits/'
                 },
                 {
                     label: 'flood-color',
-                    link: 'svg/Atributos/flood-color/'
+                    link: 'svg/Attributes/flood-color/'
                 },
                 {
                     label: 'flood-opacity',
-                    link: 'svg/Atributos/flood-opacity/'
+                    link: 'svg/Attributes/flood-opacity/'
                 },
                 {
                     label: 'font-family',
-                    link: 'svg/Atributos/font-family/'
+                    link: 'svg/Attributes/font-family/'
                 },
                 {
                     label: 'font-size',
-                    link: 'svg/Atributos/font-size/'
+                    link: 'svg/Attributes/font-size/'
                 },
                 {
                     label: 'font-size-adjust',
-                    link: 'svg/Atributos/font-size-adjust/'
+                    link: 'svg/Attributes/font-size-adjust/'
                 },
                 {
                     label: 'font-stretch',
-                    link: 'svg/Atributos/font-stretch/'
+                    link: 'svg/Attributes/font-stretch/'
                 },
                 {
                     label: 'font-style',
-                    link: 'svg/Atributos/font-style/'
+                    link: 'svg/Attributes/font-style/'
                 },
                 {
                     label: 'font-variant',
-                    link: 'svg/Atributos/font-variant/'
+                    link: 'svg/Attributes/font-variant/'
                 },
                 {
                     label: 'font-weight',
-                    link: 'svg/Atributos/font-weight/'
+                    link: 'svg/Attributes/font-weight/'
                 },
                 {
                     label: 'fr',
-                    link: 'svg/Atributos/fr/'
+                    link: 'svg/Attributes/fr/'
                 },
                 {
                     label: 'from',
-                    link: 'svg/Atributos/from/'
+                    link: 'svg/Attributes/from/'
                 },
                 {
                     label: 'fx',
-                    link: 'svg/Atributos/fx/'
+                    link: 'svg/Attributes/fx/'
                 },
                 {
                     label: 'fy',
-                    link: 'svg/Atributos/fy/'
+                    link: 'svg/Attributes/fy/'
                 },
                 {
                     label: 'glyph-orientation-horizontal',
-                    link: 'svg/Atributos/glyph-orientation-horizontal/'
+                    link: 'svg/Attributes/glyph-orientation-horizontal/'
                 },
                 {
                     label: 'glyph-orientation-vertical',
-                    link: 'svg/Atributos/glyph-orientation-vertical/'
+                    link: 'svg/Attributes/glyph-orientation-vertical/'
                 },
                 {
                     label: 'gradientTransform',
-                    link: 'svg/Atributos/gradientTransform/'
+                    link: 'svg/Attributes/gradientTransform/'
                 },
                 {
                     label: 'gradientUnits',
-                    link: 'svg/Atributos/gradientUnits/'
+                    link: 'svg/Attributes/gradientUnits/'
                 },
                 {
                     label: 'height',
-                    link: 'svg/Atributos/height/'
+                    link: 'svg/Attributes/height/'
                 },
                 {
                     label: 'href',
-                    link: 'svg/Atributos/href/'
+                    link: 'svg/Attributes/href/'
                 },
                 {
                     label: 'hreflang',
-                    link: 'svg/Atributos/hreflang/'
+                    link: 'svg/Attributes/hreflang/'
                 },
                 {
                     label: 'id',
-                    link: 'svg/Atributos/id/'
+                    link: 'svg/Attributes/id/'
                 },
                 {
                     label: 'image-rendering',
-                    link: 'svg/Atributos/image-rendering/'
+                    link: 'svg/Attributes/image-rendering/'
                 },
                 {
                     label: 'in',
-                    link: 'svg/Atributos/in/'
+                    link: 'svg/Attributes/in/'
                 },
                 {
                     label: 'in2',
-                    link: 'svg/Atributos/in2/'
+                    link: 'svg/Attributes/in2/'
                 },
                 {
                     label: 'intercept',
-                    link: 'svg/Atributos/intercept/'
+                    link: 'svg/Attributes/intercept/'
                 },
                 {
                     label: 'k1',
-                    link: 'svg/Atributos/k1/'
+                    link: 'svg/Attributes/k1/'
                 },
                 {
                     label: 'k2',
-                    link: 'svg/Atributos/k2/'
+                    link: 'svg/Attributes/k2/'
                 },
                 {
                     label: 'k3',
-                    link: 'svg/Atributos/k3/'
+                    link: 'svg/Attributes/k3/'
                 },
                 {
                     label: 'k4',
-                    link: 'svg/Atributos/k4/'
+                    link: 'svg/Attributes/k4/'
                 },
                 {
                     label: 'kernelMatrix',
-                    link: 'svg/Atributos/kernelMatrix/'
+                    link: 'svg/Attributes/kernelMatrix/'
                 },
                 {
                     label: 'kernelUnitLength',
-                    link: 'svg/Atributos/kernelUnitLength/'
+                    link: 'svg/Attributes/kernelUnitLength/'
                 },
                 {
                     label: 'keyPoints',
-                    link: 'svg/Atributos/keyPoints/'
+                    link: 'svg/Attributes/keyPoints/'
                 },
                 {
                     label: 'keySplines',
-                    link: 'svg/Atributos/keySplines/'
+                    link: 'svg/Attributes/keySplines/'
                 },
                 {
                     label: 'keyTimes',
-                    link: 'svg/Atributos/keyTimes/'
+                    link: 'svg/Attributes/keyTimes/'
                 },
                 {
                     label: 'lang',
-                    link: 'svg/Atributos/lang/'
+                    link: 'svg/Attributes/lang/'
                 },
                 {
                     label: 'lengthAdjust',
-                    link: 'svg/Atributos/lengthAdjust/'
+                    link: 'svg/Attributes/lengthAdjust/'
                 },
                 {
                     label: 'letter-spacing',
-                    link: 'svg/Atributos/letter-spacing/'
+                    link: 'svg/Attributes/letter-spacing/'
                 },
                 {
                     label: 'lighting-color',
-                    link: 'svg/Atributos/lighting-color/'
+                    link: 'svg/Attributes/lighting-color/'
                 },
                 {
                     label: 'limitingConeAngle',
-                    link: 'svg/Atributos/limitingConeAngle/'
+                    link: 'svg/Attributes/limitingConeAngle/'
                 },
                 {
                     label: 'marker-end',
-                    link: 'svg/Atributos/marker-end/'
+                    link: 'svg/Attributes/marker-end/'
                 },
                 {
                     label: 'marker-mid',
-                    link: 'svg/Atributos/marker-mid/'
+                    link: 'svg/Attributes/marker-mid/'
                 },
                 {
                     label: 'marker-start',
-                    link: 'svg/Atributos/marker-start/'
+                    link: 'svg/Attributes/marker-start/'
                 },
                 {
                     label: 'markerHeight',
-                    link: 'svg/Atributos/markerHeight/'
+                    link: 'svg/Attributes/markerHeight/'
                 },
                 {
                     label: 'markerUnits',
-                    link: 'svg/Atributos/markerUnits/'
+                    link: 'svg/Attributes/markerUnits/'
                 },
                 {
                     label: 'markerWidth',
-                    link: 'svg/Atributos/markerWidth/'
+                    link: 'svg/Attributes/markerWidth/'
                 },
                 {
                     label: 'mask',
-                    link: 'svg/Atributos/mask/'
+                    link: 'svg/Attributes/mask/'
                 },
                 {
                     label: 'maskContentUnits',
-                    link: 'svg/Atributos/maskContentUnits/'
+                    link: 'svg/Attributes/maskContentUnits/'
                 },
                 {
                     label: 'maskUnits',
-                    link: 'svg/Atributos/maskUnits/'
+                    link: 'svg/Attributes/maskUnits/'
                 },
                 {
                     label: 'max',
-                    link: 'svg/Atributos/max/'
+                    link: 'svg/Attributes/max/'
                 },
                 {
                     label: 'media',
-                    link: 'svg/Atributos/media/'
+                    link: 'svg/Attributes/media/'
                 },
                 {
                     label: 'method',
-                    link: 'svg/Atributos/method/'
+                    link: 'svg/Attributes/method/'
                 },
                 {
                     label: 'min',
-                    link: 'svg/Atributos/min/'
+                    link: 'svg/Attributes/min/'
                 },
                 {
                     label: 'mode',
-                    link: 'svg/Atributos/mode/'
+                    link: 'svg/Attributes/mode/'
                 },
                 {
                     label: 'numOctaves',
-                    link: 'svg/Atributos/numOctaves/'
+                    link: 'svg/Attributes/numOctaves/'
                 },
                 {
                     label: 'offset',
-                    link: 'svg/Atributos/offset/'
+                    link: 'svg/Attributes/offset/'
                 },
                 {
                     label: 'opacity',
-                    link: 'svg/Atributos/opacity/'
+                    link: 'svg/Attributes/opacity/'
                 },
                 {
                     label: 'operator',
-                    link: 'svg/Atributos/operator/'
+                    link: 'svg/Attributes/operator/'
                 },
                 {
                     label: 'order',
-                    link: 'svg/Atributos/order/'
+                    link: 'svg/Attributes/order/'
                 },
                 {
                     label: 'orient',
-                    link: 'svg/Atributos/orient/'
+                    link: 'svg/Attributes/orient/'
                 },
                 {
                     label: 'origin',
-                    link: 'svg/Atributos/origin/'
+                    link: 'svg/Attributes/origin/'
                 },
                 {
                     label: 'overflow',
-                    link: 'svg/Atributos/overflow/'
+                    link: 'svg/Attributes/overflow/'
                 },
                 {
                     label: 'paint-order',
-                    link: 'svg/Atributos/paint-order/'
+                    link: 'svg/Attributes/paint-order/'
                 },
                 {
                     label: 'path',
-                    link: 'svg/Atributos/path/'
+                    link: 'svg/Attributes/path/'
                 },
                 {
                     label: 'pathLength',
-                    link: 'svg/Atributos/pathLength/'
+                    link: 'svg/Attributes/pathLength/'
                 },
                 {
                     label: 'patternContentUnits',
-                    link: 'svg/Atributos/patternContentUnits/'
+                    link: 'svg/Attributes/patternContentUnits/'
                 },
                 {
                     label: 'patternTransform',
-                    link: 'svg/Atributos/patternTransform/'
+                    link: 'svg/Attributes/patternTransform/'
                 },
                 {
                     label: 'patternUnits',
-                    link: 'svg/Atributos/patternUnits/'
+                    link: 'svg/Attributes/patternUnits/'
                 },
                 {
                     label: 'ping',
-                    link: 'svg/Atributos/ping/'
+                    link: 'svg/Attributes/ping/'
                 },
                 {
                     label: 'pointer-events',
-                    link: 'svg/Atributos/pointer-events/'
+                    link: 'svg/Attributes/pointer-events/'
                 },
                 {
                     label: 'points',
-                    link: 'svg/Atributos/points/'
+                    link: 'svg/Attributes/points/'
                 },
                 {
                     label: 'pointsAtX',
-                    link: 'svg/Atributos/pointsAtX/'
+                    link: 'svg/Attributes/pointsAtX/'
                 },
                 {
                     label: 'pointsAtY',
-                    link: 'svg/Atributos/pointsAtY/'
+                    link: 'svg/Attributes/pointsAtY/'
                 },
                 {
                     label: 'pointsAtZ',
-                    link: 'svg/Atributos/pointsAtZ/'
+                    link: 'svg/Attributes/pointsAtZ/'
                 },
                 {
                     label: 'preserveAlpha',
-                    link: 'svg/Atributos/preserveAlpha/'
+                    link: 'svg/Attributes/preserveAlpha/'
                 },
                 {
                     label: 'preserveAspectRatio',
-                    link: 'svg/Atributos/preserveAspectRatio/'
+                    link: 'svg/Attributes/preserveAspectRatio/'
                 },
                 {
                     label: 'primitiveUnits',
-                    link: 'svg/Atributos/primitiveUnits/'
+                    link: 'svg/Attributes/primitiveUnits/'
                 },
                 {
                     label: 'r',
-                    link: 'svg/Atributos/r/'
+                    link: 'svg/Attributes/r/'
                 },
                 {
                     label: 'radius',
-                    link: 'svg/Atributos/radius/'
+                    link: 'svg/Attributes/radius/'
                 },
                 {
                     label: 'refX',
-                    link: 'svg/Atributos/refX/'
+                    link: 'svg/Attributes/refX/'
                 },
                 {
                     label: 'refY',
-                    link: 'svg/Atributos/refY/'
+                    link: 'svg/Attributes/refY/'
                 },
                 {
                     label: 'referrerPolicy',
-                    link: 'svg/Atributos/referrerPolicy/'
+                    link: 'svg/Attributes/referrerPolicy/'
                 },
                 {
                     label: 'rel',
-                    link: 'svg/Atributos/rel/'
+                    link: 'svg/Attributes/rel/'
                 },
                 {
                     label: 'repeatCount',
-                    link: 'svg/Atributos/repeatCount/'
+                    link: 'svg/Attributes/repeatCount/'
                 },
                 {
                     label: 'repeatDur',
-                    link: 'svg/Atributos/repeatDur/'
+                    link: 'svg/Attributes/repeatDur/'
                 },
                 {
                     label: 'requiredExtensions',
-                    link: 'svg/Atributos/requiredExtensions/'
+                    link: 'svg/Attributes/requiredExtensions/'
                 },
                 {
                     label: 'requiredFeatures',
-                    link: 'svg/Atributos/requiredFeatures/'
+                    link: 'svg/Attributes/requiredFeatures/'
                 },
                 {
                     label: 'restart',
-                    link: 'svg/Atributos/restart/'
+                    link: 'svg/Attributes/restart/'
                 },
                 {
                     label: 'result',
-                    link: 'svg/Atributos/result/'
+                    link: 'svg/Attributes/result/'
                 },
                 {
                     label: 'rotate',
-                    link: 'svg/Atributos/rotate/'
+                    link: 'svg/Attributes/rotate/'
                 },
                 {
                     label: 'rx',
-                    link: 'svg/Atributos/rx/'
+                    link: 'svg/Attributes/rx/'
                 },
                 {
                     label: 'ry',
-                    link: 'svg/Atributos/ry/'
+                    link: 'svg/Attributes/ry/'
                 },
                 {
                     label: 'scale',
-                    link: 'svg/Atributos/scale/'
+                    link: 'svg/Attributes/scale/'
                 },
                 {
                     label: 'seed',
-                    link: 'svg/Atributos/seed/'
+                    link: 'svg/Attributes/seed/'
                 },
                 {
                     label: 'shape-rendering',
-                    link: 'svg/Atributos/shape-rendering/'
+                    link: 'svg/Attributes/shape-rendering/'
                 },
                 {
                     label: 'side',
-                    link: 'svg/Atributos/side/'
+                    link: 'svg/Attributes/side/'
                 },
                 {
                     label: 'slope',
-                    link: 'svg/Atributos/slope/'
+                    link: 'svg/Attributes/slope/'
                 },
                 {
                     label: 'spacing',
-                    link: 'svg/Atributos/spacing/'
+                    link: 'svg/Attributes/spacing/'
                 },
                 {
                     label: 'specularConstant',
-                    link: 'svg/Atributos/specularConstant/'
+                    link: 'svg/Attributes/specularConstant/'
                 },
                 {
                     label: 'specularExponent',
-                    link: 'svg/Atributos/specularExponent/'
+                    link: 'svg/Attributes/specularExponent/'
                 },
                 {
                     label: 'spreadMethod',
-                    link: 'svg/Atributos/spreadMethod/'
+                    link: 'svg/Attributes/spreadMethod/'
                 },
                 {
                     label: 'startOffset',
-                    link: 'svg/Atributos/startOffset/'
+                    link: 'svg/Attributes/startOffset/'
                 },
                 {
                     label: 'stdDeviation',
-                    link: 'svg/Atributos/stdDeviation/'
+                    link: 'svg/Attributes/stdDeviation/'
                 },
                 {
                     label: 'stitchTiles',
-                    link: 'svg/Atributos/stitchTiles/'
+                    link: 'svg/Attributes/stitchTiles/'
                 },
                 {
                     label: 'stop-color',
-                    link: 'svg/Atributos/stop-color/'
+                    link: 'svg/Attributes/stop-color/'
                 },
                 {
                     label: 'stop-opacity',
-                    link: 'svg/Atributos/stop-opacity/'
+                    link: 'svg/Attributes/stop-opacity/'
                 },
                 {
                     label: 'stroke',
-                    link: 'svg/Atributos/stroke/'
+                    link: 'svg/Attributes/stroke/'
                 },
                 {
                     label: 'stroke-dasharray',
-                    link: 'svg/Atributos/stroke-dasharray/'
+                    link: 'svg/Attributes/stroke-dasharray/'
                 },
                 {
                     label: 'stroke-dashoffset',
-                    link: 'svg/Atributos/stroke-dashoffset/'
+                    link: 'svg/Attributes/stroke-dashoffset/'
                 },
                 {
                     label: 'stroke-linecap',
-                    link: 'svg/Atributos/stroke-linecap/'
+                    link: 'svg/Attributes/stroke-linecap/'
                 },
                 {
                     label: 'stroke-linejoin',
-                    link: 'svg/Atributos/stroke-linejoin/'
+                    link: 'svg/Attributes/stroke-linejoin/'
                 },
                 {
                     label: 'stroke-miterlimit',
-                    link: 'svg/Atributos/stroke-miterlimit/'
+                    link: 'svg/Attributes/stroke-miterlimit/'
                 },
                 {
                     label: 'stroke-opacity',
-                    link: 'svg/Atributos/stroke-opacity/'
+                    link: 'svg/Attributes/stroke-opacity/'
                 },
                 {
                     label: 'stroke-width',
-                    link: 'svg/Atributos/stroke-width/'
+                    link: 'svg/Attributes/stroke-width/'
                 },
                 {
                     label: 'style',
-                    link: 'svg/Atributos/style/'
+                    link: 'svg/Attributes/style/'
                 },
                 {
                     label: 'surfaceScale',
-                    link: 'svg/Atributos/surfaceScale/'
+                    link: 'svg/Attributes/surfaceScale/'
                 },
                 {
                     label: 'systemLanguage',
-                    link: 'svg/Atributos/systemLanguage/'
+                    link: 'svg/Attributes/systemLanguage/'
                 },
                 {
                     label: 'tabindex',
-                    link: 'svg/Atributos/tabindex/'
+                    link: 'svg/Attributes/tabindex/'
                 },
                 {
                     label: 'tableValues',
-                    link: 'svg/Atributos/tableValues/'
+                    link: 'svg/Attributes/tableValues/'
                 },
                 {
                     label: 'target',
-                    link: 'svg/Atributos/target/'
+                    link: 'svg/Attributes/target/'
                 },
                 {
                     label: 'targetX',
-                    link: 'svg/Atributos/targetX/'
+                    link: 'svg/Attributes/targetX/'
                 },
                 {
                     label: 'targetY',
-                    link: 'svg/Atributos/targetY/'
+                    link: 'svg/Attributes/targetY/'
                 },
                 {
                     label: 'text-anchor',
-                    link: 'svg/Atributos/text-anchor/'
+                    link: 'svg/Attributes/text-anchor/'
                 },
                 {
                     label: 'text-decoration',
-                    link: 'svg/Atributos/text-decoration/'
+                    link: 'svg/Attributes/text-decoration/'
                 },
                 {
                     label: 'text-overflow',
-                    link: 'svg/Atributos/text-overflow/'
+                    link: 'svg/Attributes/text-overflow/'
                 },
                 {
                     label: 'text-rendering',
-                    link: 'svg/Atributos/text-rendering/'
+                    link: 'svg/Attributes/text-rendering/'
                 },
                 {
                     label: 'textLength',
-                    link: 'svg/Atributos/textLength/'
+                    link: 'svg/Attributes/textLength/'
                 },
                 {
                     label: 'to',
-                    link: 'svg/Atributos/to/'
+                    link: 'svg/Attributes/to/'
                 },
                 {
                     label: 'transform',
-                    link: 'svg/Atributos/transform/'
+                    link: 'svg/Attributes/transform/'
                 },
                 {
                     label: 'transform-origin',
-                    link: 'svg/Atributos/transform-origin/'
+                    link: 'svg/Attributes/transform-origin/'
                 },
                 {
                     label: 'type',
-                    link: 'svg/Atributos/type/'
+                    link: 'svg/Attributes/type/'
                 },
                 {
                     label: 'unicode-bidi',
-                    link: 'svg/Atributos/unicode-bidi/'
+                    link: 'svg/Attributes/unicode-bidi/'
                 },
                 {
                     label: 'values',
-                    link: 'svg/Atributos/values/'
+                    link: 'svg/Attributes/values/'
                 },
                 {
                     label: 'vector-effect',
-                    link: 'svg/Atributos/vector-effect/'
+                    link: 'svg/Attributes/vector-effect/'
                 },
                 {
                     label: 'version',
-                    link: 'svg/Atributos/version/'
+                    link: 'svg/Attributes/version/'
                 },
                 {
                     label: 'viewBox',
-                    link: 'svg/Atributos/viewBox/'
+                    link: 'svg/Attributes/viewBox/'
                 },
                 {
                     label: 'visibility',
-                    link: 'svg/Atributos/visibility/'
+                    link: 'svg/Attributes/visibility/'
                 },
                 {
                     label: 'white-space',
-                    link: 'svg/Atributos/white-space/'
+                    link: 'svg/Attributes/white-space/'
                 },
                 {
                     label: 'width',
-                    link: 'svg/Atributos/width/'
+                    link: 'svg/Attributes/width/'
                 },
                 {
                     label: 'word-spacing',
-                    link: 'svg/Atributos/word-spacing/'
+                    link: 'svg/Attributes/word-spacing/'
                 },
                 {
                     label: 'writing-mode',
-                    link: 'svg/Atributos/writing-mode/'
+                    link: 'svg/Attributes/writing-mode/'
                 },
                 {
                     label: 'x',
-                    link: 'svg/Atributos/x/'
+                    link: 'svg/Attributes/x/'
                 },
                 {
                     label: 'x1',
-                    link: 'svg/Atributos/x1/'
+                    link: 'svg/Attributes/x1/'
                 },
                 {
                     label: 'x2',
-                    link: 'svg/Atributos/x2/'
+                    link: 'svg/Attributes/x2/'
                 },
                 {
                     label: 'xChannelSelector',
-                    link: 'svg/Atributos/xChannelSelector/'
+                    link: 'svg/Attributes/xChannelSelector/'
                 },
                 {
                     label: 'xlink:actuate',
-                    link: 'svg/Atributos/xlink:actuate/'
+                    link: 'svg/Attributes/xlink:actuate/'
                 },
                 {
                     label: 'xlink:arcrole',
-                    link: 'svg/Atributos/xlink:arcrole/'
+                    link: 'svg/Attributes/xlink:arcrole/'
                 },
                 {
                     label: 'xlink:href',
-                    link: 'svg/Atributos/xlink:href/'
+                    link: 'svg/Attributes/xlink:href/'
                 },
                 {
                     label: 'xlink:role',
-                    link: 'svg/Atributos/xlink:role/'
+                    link: 'svg/Attributes/xlink:role/'
                 },
                 {
                     label: 'xlink:show',
-                    link: 'svg/Atributos/xlink:show/'
+                    link: 'svg/Attributes/xlink:show/'
                 },
                 {
                     label: 'xlink:title',
-                    link: 'svg/Atributos/xlink:title/'
+                    link: 'svg/Attributes/xlink:title/'
                 },
                 {
                     label: 'xlink:type',
-                    link: 'svg/Atributos/xlink:type/'
+                    link: 'svg/Attributes/xlink:type/'
                 },
                 {
                     label: 'xml:lang',
-                    link: 'svg/Atributos/xml:lang/'
+                    link: 'svg/Attributes/xml:lang/'
                 },
                 {
                     label: 'xml:space',
-                    link: 'svg/Atributos/xml:space/'
+                    link: 'svg/Attributes/xml:space/'
                 },
                 {
                     label: 'y',
-                    link: 'svg/Atributos/y/'
+                    link: 'svg/Attributes/y/'
                 },
                 {
                     label: 'y1',
-                    link: 'svg/Atributos/y1/'
+                    link: 'svg/Attributes/y1/'
                 },
                 {
                     label: 'y2',
-                    link: 'svg/Atributos/y2/'
+                    link: 'svg/Attributes/y2/'
                 },
                 {
                     label: 'yChannelSelector',
-                    link: 'svg/Atributos/yChannelSelector/'
+                    link: 'svg/Attributes/yChannelSelector/'
                 },
                 {
                     label: 'z',
-                    link: 'svg/Atributos/z/'
+                    link: 'svg/Attributes/z/'
                 },
                 {
                     label: 'zoomAndPan',
-                    link: 'svg/Atributos/zoomAndPan/'
+                    link: 'svg/Attributes/zoomAndPan/'
                 }
             ]
         },
         {
-            label: 'Elementos',
+            label: 'Elements',
             collapsed: true,
             items: [
                 {
                     label: 'a',
-                    link: 'svg/Elementos/a/'
+                    link: 'svg/Elements/a/'
                 },
                 {
                     label: 'animate',
-                    link: 'svg/Elementos/animate/'
+                    link: 'svg/Elements/animate/'
                 },
                 {
                     label: 'animateMotion',
-                    link: 'svg/Elementos/animateMotion/'
+                    link: 'svg/Elements/animateMotion/'
                 },
                 {
                     label: 'animateTransform',
-                    link: 'svg/Elementos/animateTransform/'
+                    link: 'svg/Elements/animateTransform/'
                 },
                 {
                     label: 'circle',
-                    link: 'svg/Elementos/circle/'
+                    link: 'svg/Elements/circle/'
                 },
                 {
                     label: 'clipPath',
-                    link: 'svg/Elementos/clipPath/'
+                    link: 'svg/Elements/clipPath/'
                 },
                 {
                     label: 'defs',
-                    link: 'svg/Elementos/defs/'
+                    link: 'svg/Elements/defs/'
                 },
                 {
                     label: 'desc',
-                    link: 'svg/Elementos/desc/'
+                    link: 'svg/Elements/desc/'
                 },
                 {
                     label: 'ellipse',
-                    link: 'svg/Elementos/ellipse/'
+                    link: 'svg/Elements/ellipse/'
                 },
                 {
                     label: 'feBlend',
-                    link: 'svg/Elementos/feBlend/'
+                    link: 'svg/Elements/feBlend/'
                 },
                 {
                     label: 'feColorMatrix',
-                    link: 'svg/Elementos/feColorMatrix/'
+                    link: 'svg/Elements/feColorMatrix/'
                 },
                 {
                     label: 'feComponentTransfer',
-                    link: 'svg/Elementos/feComponentTransfer/'
+                    link: 'svg/Elements/feComponentTransfer/'
                 },
                 {
                     label: 'feComposite',
-                    link: 'svg/Elementos/feComposite/'
+                    link: 'svg/Elements/feComposite/'
                 },
                 {
                     label: 'feConvolveMatrix',
-                    link: 'svg/Elementos/feConvolveMatrix/'
+                    link: 'svg/Elements/feConvolveMatrix/'
                 },
                 {
                     label: 'feDiffuseLighting',
-                    link: 'svg/Elementos/feDiffuseLighting/'
+                    link: 'svg/Elements/feDiffuseLighting/'
                 },
                 {
                     label: 'feDisplacementMap',
-                    link: 'svg/Elementos/feDisplacementMap/'
+                    link: 'svg/Elements/feDisplacementMap/'
                 },
                 {
                     label: 'feDistantLight',
-                    link: 'svg/Elementos/feDistantLight/'
+                    link: 'svg/Elements/feDistantLight/'
                 },
                 {
                     label: 'feDropShadow',
-                    link: 'svg/Elementos/feDropShadow/'
+                    link: 'svg/Elements/feDropShadow/'
                 },
                 {
                     label: 'feFlood',
-                    link: 'svg/Elementos/feFlood/'
+                    link: 'svg/Elements/feFlood/'
                 },
                 {
                     label: 'feFuncA',
-                    link: 'svg/Elementos/feFuncA/'
+                    link: 'svg/Elements/feFuncA/'
                 },
                 {
                     label: 'feFuncB',
-                    link: 'svg/Elementos/feFuncB/'
+                    link: 'svg/Elements/feFuncB/'
                 },
                 {
                     label: 'feFuncG',
-                    link: 'svg/Elementos/feFuncG/'
+                    link: 'svg/Elements/feFuncG/'
                 },
                 {
                     label: 'feFuncR',
-                    link: 'svg/Elementos/feFuncR/'
+                    link: 'svg/Elements/feFuncR/'
                 },
                 {
                     label: 'feGaussianBlur',
-                    link: 'svg/Elementos/feGaussianBlur/'
+                    link: 'svg/Elements/feGaussianBlur/'
                 },
                 {
                     label: 'feImage',
-                    link: 'svg/Elementos/feImage/'
+                    link: 'svg/Elements/feImage/'
                 },
                 {
                     label: 'feMerge',
-                    link: 'svg/Elementos/feMerge/'
+                    link: 'svg/Elements/feMerge/'
                 },
                 {
                     label: 'feMergeNode',
-                    link: 'svg/Elementos/feMergeNode/'
+                    link: 'svg/Elements/feMergeNode/'
                 },
                 {
                     label: 'feMorphology',
-                    link: 'svg/Elementos/feMorphology/'
+                    link: 'svg/Elements/feMorphology/'
                 },
                 {
                     label: 'feOffset',
-                    link: 'svg/Elementos/feOffset/'
+                    link: 'svg/Elements/feOffset/'
                 },
                 {
                     label: 'fePointLight',
-                    link: 'svg/Elementos/fePointLight/'
+                    link: 'svg/Elements/fePointLight/'
                 },
                 {
                     label: 'feSpecularLighting',
-                    link: 'svg/Elementos/feSpecularLighting/'
+                    link: 'svg/Elements/feSpecularLighting/'
                 },
                 {
                     label: 'feSpotLight',
-                    link: 'svg/Elementos/feSpotLight/'
+                    link: 'svg/Elements/feSpotLight/'
                 },
                 {
                     label: 'feTile',
-                    link: 'svg/Elementos/feTile/'
+                    link: 'svg/Elements/feTile/'
                 },
                 {
                     label: 'feTurbulence',
-                    link: 'svg/Elementos/feTurbulence/'
+                    link: 'svg/Elements/feTurbulence/'
                 },
                 {
                     label: 'filter',
-                    link: 'svg/Elementos/filter/'
+                    link: 'svg/Elements/filter/'
                 },
                 {
                     label: 'foreignObject',
-                    link: 'svg/Elementos/foreignObject/'
+                    link: 'svg/Elements/foreignObject/'
                 },
                 {
                     label: 'g',
-                    link: 'svg/Elementos/g/'
+                    link: 'svg/Elements/g/'
                 },
                 {
                     label: 'image',
-                    link: 'svg/Elementos/image/'
+                    link: 'svg/Elements/image/'
                 },
                 {
                     label: 'line',
-                    link: 'svg/Elementos/line/'
+                    link: 'svg/Elements/line/'
                 },
                 {
                     label: 'linearGradient',
-                    link: 'svg/Elementos/linearGradient/'
+                    link: 'svg/Elements/linearGradient/'
                 },
                 {
                     label: 'marker',
-                    link: 'svg/Elementos/marker/'
+                    link: 'svg/Elements/marker/'
                 },
                 {
                     label: 'mask',
-                    link: 'svg/Elementos/mask/'
+                    link: 'svg/Elements/mask/'
                 },
                 {
                     label: 'metadata',
-                    link: 'svg/Elementos/metadata/'
+                    link: 'svg/Elements/metadata/'
                 },
                 {
                     label: 'mpath',
-                    link: 'svg/Elementos/mpath/'
+                    link: 'svg/Elements/mpath/'
                 },
                 {
                     label: 'path',
-                    link: 'svg/Elementos/path/'
+                    link: 'svg/Elements/path/'
                 },
                 {
                     label: 'pattern',
-                    link: 'svg/Elementos/pattern/'
+                    link: 'svg/Elements/pattern/'
                 },
                 {
                     label: 'polygon',
-                    link: 'svg/Elementos/polygon/'
+                    link: 'svg/Elements/polygon/'
                 },
                 {
                     label: 'polyline',
-                    link: 'svg/Elementos/polyline/'
+                    link: 'svg/Elements/polyline/'
                 },
                 {
                     label: 'radialGradient',
-                    link: 'svg/Elementos/radialGradient/'
+                    link: 'svg/Elements/radialGradient/'
                 },
                 {
                     label: 'rect',
-                    link: 'svg/Elementos/rect/'
+                    link: 'svg/Elements/rect/'
                 },
                 {
                     label: 'script',
-                    link: 'svg/Elementos/script/'
+                    link: 'svg/Elements/script/'
                 },
                 {
                     label: 'set',
-                    link: 'svg/Elementos/set/'
+                    link: 'svg/Elements/set/'
                 },
                 {
                     label: 'stop',
-                    link: 'svg/Elementos/stop/'
+                    link: 'svg/Elements/stop/'
                 },
                 {
                     label: 'style',
-                    link: 'svg/Elementos/style/'
+                    link: 'svg/Elements/style/'
                 },
                 {
                     label: 'svg',
-                    link: 'svg/Elementos/svg/'
+                    link: 'svg/Elements/svg/'
                 },
                 {
                     label: 'switch',
-                    link: 'svg/Elementos/switch/'
+                    link: 'svg/Elements/switch/'
                 },
                 {
                     label: 'symbol',
-                    link: 'svg/Elementos/symbol/'
+                    link: 'svg/Elements/symbol/'
                 },
                 {
                     label: 'text',
-                    link: 'svg/Elementos/text/'
+                    link: 'svg/Elements/text/'
                 },
                 {
                     label: 'textPath',
-                    link: 'svg/Elementos/textPath/'
+                    link: 'svg/Elements/textPath/'
                 },
                 {
                     label: 'title',
-                    link: 'svg/Elementos/title/'
+                    link: 'svg/Elements/title/'
                 },
                 {
                     label: 'tspan',
-                    link: 'svg/Elementos/tspan/'
+                    link: 'svg/Elements/tspan/'
                 },
                 {
                     label: 'use',
-                    link: 'svg/Elementos/use/'
+                    link: 'svg/Elements/use/'
                 },
                 {
                     label: 'view',
-                    link: 'svg/Elementos/view/'
+                    link: 'svg/Elements/view/'
                 }
             ]
         }

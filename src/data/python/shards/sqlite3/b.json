@@ -1,0 +1,291 @@
+{
+  "sqlite3/Blob": {
+    "id": "sqlite3.Blob",
+    "name": "Blob",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class sqlite3.Blob"
+    ],
+    "signature_hash": "6674ac26c6b16c57209dfb8d126fa6f89cf4ab0ae780b8ab79416339a649606b",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Blob",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Added in version 3.11. A Blob instance is a file-like object that can read and write data in an SQLite BLOB. Call len(blob) to get the size (number of bytes) of the blob. Use indices and slices for direct access to the blob data. Use the Blob as a context manager to ensure that the blob handle is closed after use. con = sqlite3.connect(\":memory:\") con.execute(\"CREATE TABLE test(blob_col blob)\") con.execute(\"INSERT INTO test(blob_col) VALUES(zeroblob(13))\") # Write to our blob, using two write..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Added in version 3.11. A Blob instance is a file-like object that can read and write data in an SQLite BLOB. Call len(blob) to get the size (number of bytes) of the blob. Use indices and slices for di...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340025",
+    "updatedDate": "2026-03-24T10:48:12.340025",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "close",
+      "read",
+      "seek",
+      "tell",
+      "write"
+    ]
+  },
+  "sqlite3/Connection/backup": {
+    "id": "sqlite3.Connection.backup",
+    "name": "backup",
+    "type": "method",
+    "parent": "Connection",
+    "signatures": [
+      "backup(target, *, pages=-1, progress=None, name='main', sleep=0.250)"
+    ],
+    "signature_hash": "6f5e6f3434d2789239e99084ed0208a297b45fb5727dc865fb8cafb6ff0c8e27",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Connection.backup",
+    "parameters": [
+      {
+        "name": "target",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "pages",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "progress",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "type": "",
+        "has_default": true,
+        "default_value": "'main'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "sleep",
+        "type": "",
+        "has_default": true,
+        "default_value": "0.250",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Create a backup of an SQLite database. Works even if the database is being accessed by other clients or concurrently by the same connection. Parameters: target (Connection) – The database connection to save the backup to. pages (int) – The number of pages to copy at a time. If equal to or less than 0, the entire database is copied in a single step. Defaults to -1. progress (callback | None) – If set to a callable, it is invoked with three integer arguments for every backup iteration: the stat..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Create a backup of an SQLite database. Works even if the database is being accessed by other clients or concurrently by the same connection. Parameters: target (Connection) – The database connection t...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.339492",
+    "updatedDate": "2026-03-24T10:48:12.339493",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.7.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/Connection/blobopen": {
+    "id": "sqlite3.Connection.blobopen",
+    "name": "blobopen",
+    "type": "method",
+    "parent": "Connection",
+    "signatures": [
+      "blobopen(table, column, rowid, /, *, readonly=False, name='main')"
+    ],
+    "signature_hash": "d597318d9853fd1fbda2fce5b610145a80abc2ca3e0e4d05d3b549ef808029ae",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Connection.blobopen",
+    "parameters": [
+      {
+        "name": "table",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "column",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "rowid",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "readonly",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "name",
+        "type": "",
+        "has_default": true,
+        "default_value": "'main'",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Open a Blob handle to an existing BLOB. Parameters: table (str) – The name of the table where the blob is located. column (str) – The name of the column where the blob is located. rowid (int) – The row id where the blob is located. readonly (bool) – Set to True if the blob should be opened without write permissions. Defaults to False. name (str) – The name of the database where the blob is located. Defaults to \"main\". Raises: OperationalError – When trying to open a blob in a WITHOUT ROWID ta..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Open a Blob handle to an existing BLOB. Parameters: table (str) – The name of the table where the blob is located. column (str) – The name of the column where the blob is located. rowid (int) – The ro...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.339084",
+    "updatedDate": "2026-03-24T10:48:12.339085",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.11.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

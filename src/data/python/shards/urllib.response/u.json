@@ -1,0 +1,638 @@
+{
+  "urllib.response/Request/unverifiable": {
+    "id": "urllib.response.Request.unverifiable",
+    "name": "unverifiable",
+    "type": "attribute",
+    "parent": "Request",
+    "signatures": [
+      "Request.unverifiable"
+    ],
+    "signature_hash": "6a638a11f72de5c99d0d9ae929e2234429aa8631a10b8cb345f21d9877d25586",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.Request.unverifiable",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "boolean, indicates whether the request is unverifiable as defined by RFC 2965."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "boolean, indicates whether the request is unverifiable as defined by RFC 2965.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.418399",
+    "updatedDate": "2026-03-24T10:48:12.418400",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "urllib.response/addinfourl/url": {
+    "id": "urllib.response.addinfourl.url",
+    "name": "url",
+    "type": "attribute",
+    "parent": "addinfourl",
+    "signatures": [
+      "url"
+    ],
+    "signature_hash": "28e5ebabd9d8f6e237df63da2b503785093f0229241bc7021198f63c43b93269",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.response.addinfourl.url",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "URL of the resource retrieved, commonly used to determine if a redirect was followed."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "URL of the resource retrieved, commonly used to determine if a redirect was followed.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.419516",
+    "updatedDate": "2026-03-24T10:48:12.419517",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "urllib.response/UnknownHandler": {
+    "id": "urllib.response.UnknownHandler",
+    "name": "UnknownHandler",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class urllib.request.UnknownHandler"
+    ],
+    "signature_hash": "9b24e6c6b9e66a5971761ed8d1463ed48cfd434c5189970ed0dc09c61d7cf65f",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.UnknownHandler",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A catch-all class to handle unknown URLs."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A catch-all class to handle unknown URLs.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.418297",
+    "updatedDate": "2026-03-24T10:48:12.418298",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "unknown_open"
+    ]
+  },
+  "urllib.response/url2pathname": {
+    "id": "urllib.response.url2pathname",
+    "name": "url2pathname",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "urllib.request.url2pathname(url, *, require_scheme=False, resolve_host=False)"
+    ],
+    "signature_hash": "a4a48f4e964ff53bc52931e94beb4edf3c2836816fa781330d30f444367b3db0",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.url2pathname",
+    "parameters": [
+      {
+        "name": "url",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "require_scheme",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "resolve_host",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Convert the given file: URL to a local path. This function uses unquote() to decode the URL. If require_scheme is false (the default), the given value should omit a file: scheme prefix. If require_scheme is set to true, the given value should include the prefix; a URLError is raised if it doesn’t. The URL authority is discarded if it is empty, localhost, or the local hostname. Otherwise, if resolve_host is set to true, the authority is resolved using socket.gethostbyname() and discarded if it..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Convert the given file: URL to a local path. This function uses unquote() to decode the URL. If require_scheme is false (the default), the given value should omit a file: scheme prefix. If require_sch...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.417944",
+    "updatedDate": "2026-03-24T10:48:12.417945",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "urllib.response/urlcleanup": {
+    "id": "urllib.response.urlcleanup",
+    "name": "urlcleanup",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "urllib.request.urlcleanup()"
+    ],
+    "signature_hash": "d554b529e5fbcb3ab62ae3b0030890ef9a9bf9ce46efaa88573e518e2b122788",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.urlcleanup",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Cleans up temporary files that may have been left behind by previous calls to urlretrieve()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Cleans up temporary files that may have been left behind by previous calls to urlretrieve().",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.419479",
+    "updatedDate": "2026-03-24T10:48:12.419480",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "urllib.response/urlopen": {
+    "id": "urllib.response.urlopen",
+    "name": "urlopen",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "urllib.request.urlopen(url, data=None, [timeout, ]*, context=None)"
+    ],
+    "signature_hash": "d952702864286c5b5486d2155aecc76a1301b0870442d1790933c10af2ee19b8",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.urlopen",
+    "parameters": [
+      {
+        "name": "url",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "data",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "timeout, ]*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "context",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Open url, which can be either a string containing a valid, properly encoded URL, or a Request object. data must be an object specifying additional data to be sent to the server, or None if no such data is needed. See Request for details. urllib.request module uses HTTP/1.1 and includes Connection:close header in its HTTP requests. The optional timeout parameter specifies a timeout in seconds for blocking operations like the connection attempt (if not specified, the global default timeout sett..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Open url, which can be either a string containing a valid, properly encoded URL, or a Request object. data must be an object specifying additional data to be sent to the server, or None if no such dat...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.417869",
+    "updatedDate": "2026-03-24T10:48:12.417870",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "urllib.response/urlretrieve": {
+    "id": "urllib.response.urlretrieve",
+    "name": "urlretrieve",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "urllib.request.urlretrieve(url, filename=None, reporthook=None, data=None)"
+    ],
+    "signature_hash": "032fed4a29e1eb8ca0966c2104f37b6e0259e5d8bf6de978d2c40f6fef93e208",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.urlretrieve",
+    "parameters": [
+      {
+        "name": "url",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "filename",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "reporthook",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "data",
+        "type": "",
+        "has_default": true,
+        "default_value": "None",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Copy a network object denoted by a URL to a local file. If the URL points to a local file, the object will not be copied unless filename is supplied. Return a tuple (filename, headers) where filename is the local file name under which the object can be found, and headers is whatever the info() method of the object returned by urlopen() returned (for a remote object). Exceptions are the same as for urlopen(). The second argument, if present, specifies the file location to copy to (if absent, t..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Copy a network object denoted by a URL to a local file. If the URL points to a local file, the object will not be copied unless filename is supplied. Return a tuple (filename, headers) where filename ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.419453",
+    "updatedDate": "2026-03-24T10:48:12.419454",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "urllib.response/BaseHandler/unknown_open": {
+    "id": "urllib.response.BaseHandler.unknown_open",
+    "name": "unknown_open",
+    "type": "method",
+    "parent": "BaseHandler",
+    "signatures": [
+      "BaseHandler.unknown_open(req)"
+    ],
+    "signature_hash": "10c1f68637499e0c53c2e5c60f4cad208897357d29b4c2d14c9afd38683e0a64",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.BaseHandler.unknown_open",
+    "parameters": [
+      {
+        "name": "req",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "This method is not defined in BaseHandler, but subclasses should define it if they want to catch all URLs with no specific registered handler to open it. This method, if implemented, will be called by the parent OpenerDirector. Return values should be the same as for default_open()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "This method is not defined in BaseHandler, but subclasses should define it if they want to catch all URLs with no specific registered handler to open it. This method, if implemented, will be called by...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.418731",
+    "updatedDate": "2026-03-24T10:48:12.418732",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "urllib.response/UnknownHandler/unknown_open": {
+    "id": "urllib.response.UnknownHandler.unknown_open",
+    "name": "unknown_open",
+    "type": "method",
+    "parent": "UnknownHandler",
+    "signatures": [
+      "UnknownHandler.unknown_open()"
+    ],
+    "signature_hash": "3f4653178b30fca7fa80ee5678fbe02e262f9d8ea3d6f2fc256c0208ad8d0d19",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.UnknownHandler.unknown_open",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Raise a URLError exception."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Raise a URLError exception.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.419386",
+    "updatedDate": "2026-03-24T10:48:12.419387",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "urllib.response/HTTPPasswordMgrWithPriorAuth/update_authenticated": {
+    "id": "urllib.response.HTTPPasswordMgrWithPriorAuth.update_authenticated",
+    "name": "update_authenticated",
+    "type": "method",
+    "parent": "HTTPPasswordMgrWithPriorAuth",
+    "signatures": [
+      "HTTPPasswordMgrWithPriorAuth.update_authenticated(self, uri, is_authenticated=False)"
+    ],
+    "signature_hash": "f2e7a24fd1a739197619534ec02a57d7c18fe487c7d94443ecec5e94543319ae",
+    "url": "https://docs.python.org/3/library/urllib.request.html#module-urllib.response#urllib.request.HTTPPasswordMgrWithPriorAuth.update_authenticated",
+    "parameters": [
+      {
+        "name": "self",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "uri",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "is_authenticated",
+        "type": "",
+        "has_default": true,
+        "default_value": "False",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Update the is_authenticated flag for the given uri or list of URIs."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Update the is_authenticated flag for the given uri or list of URIs.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.419096",
+    "updatedDate": "2026-03-24T10:48:12.419096",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "urllib.response": {
+    "type": "module",
+    "name": "urllib.response",
+    "id": "urllib.response",
+    "description": "Module urllib.response",
+    "classes": [
+      "AbstractBasicAuthHandler",
+      "AbstractDigestAuthHandler",
+      "BaseHandler",
+      "CacheFTPHandler",
+      "DataHandler",
+      "FTPHandler",
+      "FileHandler",
+      "HTTPBasicAuthHandler",
+      "HTTPCookieProcessor",
+      "HTTPDefaultErrorHandler",
+      "HTTPDigestAuthHandler",
+      "HTTPErrorProcessor",
+      "HTTPHandler",
+      "HTTPPasswordMgr",
+      "HTTPPasswordMgrWithDefaultRealm",
+      "HTTPPasswordMgrWithPriorAuth",
+      "HTTPRedirectHandler",
+      "HTTPSHandler",
+      "OpenerDirector",
+      "ProxyBasicAuthHandler",
+      "ProxyDigestAuthHandler",
+      "ProxyHandler",
+      "Request",
+      "UnknownHandler",
+      "addinfourl"
+    ],
+    "functions": [
+      "build_opener",
+      "getproxies",
+      "install_opener",
+      "pathname2url",
+      "url2pathname",
+      "urlcleanup",
+      "urlopen",
+      "urlretrieve"
+    ],
+    "methods": [
+      "BaseHandler.http_error_nnnreq,fp,code,msg,hdrs",
+      "BaseHandler.protocol_openreq",
+      "BaseHandler.protocol_requestreq",
+      "BaseHandler.protocol_responsereq,response",
+      "ProxyHandler.protocol_openrequest"
+    ]
+  }
+}

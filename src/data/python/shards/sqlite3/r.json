@@ -1,0 +1,408 @@
+{
+  "sqlite3/Connection/row_factory": {
+    "id": "sqlite3.Connection.row_factory",
+    "name": "row_factory",
+    "type": "attribute",
+    "parent": "Connection",
+    "signatures": [
+      "row_factory"
+    ],
+    "signature_hash": "b770eb1e5b26e14d862877fae99314c5db715184c8442fa234b03b382b122a83",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Connection.row_factory",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The initial row_factory for Cursor objects created from this connection. Assigning to this attribute does not affect the row_factory of existing cursors belonging to this connection, only new ones. Is None by default, meaning each row is returned as a tuple. See How to create and use row factories for more details."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "The initial row_factory for Cursor objects created from this connection. Assigning to this attribute does not affect the row_factory of existing cursors belonging to this connection, only new ones. Is...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.339666",
+    "updatedDate": "2026-03-24T10:48:12.339666",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/Cursor/row_factory": {
+    "id": "sqlite3.Cursor.row_factory",
+    "name": "row_factory",
+    "type": "attribute",
+    "parent": "Cursor",
+    "signatures": [
+      "row_factory"
+    ],
+    "signature_hash": "b770eb1e5b26e14d862877fae99314c5db715184c8442fa234b03b382b122a83",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Cursor.row_factory",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Control how a row fetched from this Cursor is represented. If None, a row is represented as a tuple. Can be set to the included sqlite3.Row; or a callable that accepts two arguments, a Cursor object and the tuple of row values, and returns a custom object representing an SQLite row. Defaults to what Connection.row_factory was set to when the Cursor was created. Assigning to this attribute does not affect Connection.row_factory of the parent connection. See How to create and use row factories ..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Control how a row fetched from this Cursor is represented. If None, a row is represented as a tuple. Can be set to the included sqlite3.Row; or a callable that accepts two arguments, a Cursor object a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.339978",
+    "updatedDate": "2026-03-24T10:48:12.339979",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/Cursor/rowcount": {
+    "id": "sqlite3.Cursor.rowcount",
+    "name": "rowcount",
+    "type": "attribute",
+    "parent": "Cursor",
+    "signatures": [
+      "rowcount"
+    ],
+    "signature_hash": "35be99b38387de2b53a5180b6028ad01ef79fdfcda70b752e30f06bc50342352",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Cursor.rowcount",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Read-only attribute that provides the number of modified rows for INSERT, UPDATE, DELETE, and REPLACE statements; is -1 for other statements, including CTE queries. It is only updated by the execute() and executemany() methods, after the statement has run to completion. This means that any resulting rows must be fetched in order for rowcount to be updated."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read-only attribute that provides the number of modified rows for INSERT, UPDATE, DELETE, and REPLACE statements; is -1 for other statements, including CTE queries. It is only updated by the execute()...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.339962",
+    "updatedDate": "2026-03-24T10:48:12.339963",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/Row": {
+    "id": "sqlite3.Row",
+    "name": "Row",
+    "type": "class",
+    "parent": null,
+    "signatures": [
+      "class sqlite3.Row"
+    ],
+    "signature_hash": "fd057ebdede33c488c7212d975ba80e54e21f91a4f7d43d9456bb2855ee2df40",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Row",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A Row instance serves as a highly optimized row_factory for Connection objects. It supports iteration, equality testing, len(), and mapping access by column name and index. Two Row objects compare equal if they have identical column names and values. See How to create and use row factories for more details. keys()¶ Return a list of column names as strings. Immediately after a query, it is the first member of each tuple in Cursor.description. Changed in version 3.5: Added support of slicing."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "A Row instance serves as a highly optimized row_factory for Connection objects. It supports iteration, equality testing, len(), and mapping access by column name and index. Two Row objects compare equ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.339993",
+    "updatedDate": "2026-03-24T10:48:12.339994",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    },
+    "methods": [
+      "keys"
+    ]
+  },
+  "sqlite3/register_adapter": {
+    "id": "sqlite3.register_adapter",
+    "name": "register_adapter",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sqlite3.register_adapter(type, adapter, /)"
+    ],
+    "signature_hash": "2875c6abbe0e5e0e4a9a9938ec5b1f327c14672c2292b3f2a87853b2abe7f8fb",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.register_adapter",
+    "parameters": [
+      {
+        "name": "type",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "adapter",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Register an adapter callable to adapt the Python type type into an SQLite type. The adapter is called with a Python object of type type as its sole argument, and must return a value of a type that SQLite natively understands."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Register an adapter callable to adapt the Python type type into an SQLite type. The adapter is called with a Python object of type type as its sole argument, and must return a value of a type that SQL...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338882",
+    "updatedDate": "2026-03-24T10:48:12.338883",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/register_converter": {
+    "id": "sqlite3.register_converter",
+    "name": "register_converter",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "sqlite3.register_converter(typename, converter, /)"
+    ],
+    "signature_hash": "3a04b5c5ed54b05debb977ee13ff95bdddcbcc775187916a5a3b9d4d0041aaea",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.register_converter",
+    "parameters": [
+      {
+        "name": "typename",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "converter",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Register the converter callable to convert SQLite objects of type typename into a Python object of a specific type. The converter is invoked for all SQLite values of type typename; it is passed a bytes object and should return an object of the desired Python type. Consult the parameter detect_types of connect() for information regarding how type detection works. Note: typename and the name of the type in your query are matched case-insensitively."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Register the converter callable to convert SQLite objects of type typename into a Python object of a specific type. The converter is invoked for all SQLite values of type typename; it is passed a byte...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.338902",
+    "updatedDate": "2026-03-24T10:48:12.338903",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/Blob/read": {
+    "id": "sqlite3.Blob.read",
+    "name": "read",
+    "type": "method",
+    "parent": "Blob",
+    "signatures": [
+      "read(length=-1, /)"
+    ],
+    "signature_hash": "bf39e5320e8815f3f36ff6049ec1e54d856e7a089fb858e951a263b4bbd41c95",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Blob.read",
+    "parameters": [
+      {
+        "name": "length",
+        "type": "",
+        "has_default": true,
+        "default_value": "-1",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Read length bytes of data from the blob at the current offset position. If the end of the blob is reached, the data up to EOF will be returned. When length is not specified, or is negative, read() will read until the end of the blob."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Read length bytes of data from the blob at the current offset position. If the end of the blob is reached, the data up to EOF will be returned. When length is not specified, or is negative, read() wil...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.340068",
+    "updatedDate": "2026-03-24T10:48:12.340069",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "sqlite3/Connection/rollback": {
+    "id": "sqlite3.Connection.rollback",
+    "name": "rollback",
+    "type": "method",
+    "parent": "Connection",
+    "signatures": [
+      "rollback()"
+    ],
+    "signature_hash": "dbe5ba5e99efede64ad5c8b91adc5ccd43bb9beba4ccb86a17a8fb97e94af0c4",
+    "url": "https://docs.python.org/3/library/sqlite3.html#module-sqlite3#sqlite3.Connection.rollback",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Roll back to the start of any pending transaction. If autocommit is True, or there is no open transaction, this method does nothing. If autocommit is False, a new transaction is implicitly opened if a pending transaction was rolled back by this method."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Roll back to the start of any pending transaction. If autocommit is True, or there is no open transaction, this method does nothing. If autocommit is False, a new transaction is implicitly opened if a...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.339111",
+    "updatedDate": "2026-03-24T10:48:12.339112",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

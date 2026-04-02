@@ -1,0 +1,382 @@
+{
+  "os/initgroups": {
+    "id": "os.initgroups",
+    "name": "initgroups",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.initgroups(username, gid, /)"
+    ],
+    "signature_hash": "f0973b25f63324ee3898b54b318a5a05bd8fc3683c6469cc96967ba25ad0e6ba",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.initgroups",
+    "parameters": [
+      {
+        "name": "username",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "gid",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Call the system initgroups() to initialize the group access list with all of the groups of which the specified username is a member, plus the specified group id. Availability: Unix, not WASI, not Android. Added in version 3.2."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Call the system initgroups() to initialize the group access list with all of the groups of which the specified username is a member, plus the specified group id. Availability: Unix, not WASI, not Andr...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.290669",
+    "updatedDate": "2026-03-24T10:48:12.290674",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.2.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/isatty": {
+    "id": "os.isatty",
+    "name": "isatty",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "os.isatty(fd, /)"
+    ],
+    "signature_hash": "9e1b064369b6170edda9586288a2bb66439cf6e1f9009e2d803a5aebc1c57896",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.isatty",
+    "parameters": [
+      {
+        "name": "fd",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "/",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if the file descriptor fd is open and connected to a tty(-like) device, else False."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if the file descriptor fd is open and connected to a tty(-like) device, else False.",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.291802",
+    "updatedDate": "2026-03-24T10:48:12.291803",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/DirEntry/inode": {
+    "id": "os.DirEntry.inode",
+    "name": "inode",
+    "type": "method",
+    "parent": "DirEntry",
+    "signatures": [
+      "inode()"
+    ],
+    "signature_hash": "923d16290b945806febb2e656c67a93f04293fbb40721ec4a946b2a7a643f12a",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.DirEntry.inode",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return the inode number of the entry. The result is cached on the os.DirEntry object. Use os.stat(entry.path, follow_symlinks=False).st_ino to fetch up-to-date information. On the first, uncached call, a system call is required on Windows but not on Unix."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return the inode number of the entry. The result is cached on the os.DirEntry object. Use os.stat(entry.path, follow_symlinks=False).st_ino to fetch up-to-date information. On the first, uncached call...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.293861",
+    "updatedDate": "2026-03-24T10:48:12.293861",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/DirEntry/is_dir": {
+    "id": "os.DirEntry.is_dir",
+    "name": "is_dir",
+    "type": "method",
+    "parent": "DirEntry",
+    "signatures": [
+      "is_dir(*, follow_symlinks=True)"
+    ],
+    "signature_hash": "64ca2f779d6cf02718728d467ded4c0f5e67a4b2bd81a23e321a4238c122c1e2",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.DirEntry.is_dir",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if this entry is a directory or a symbolic link pointing to a directory; return False if the entry is or points to any other kind of file, or if it doesn’t exist anymore. If follow_symlinks is False, return True only if this entry is a directory (without following symlinks); return False if the entry is any other kind of file or if it doesn’t exist anymore. The result is cached on the os.DirEntry object, with a separate cache for follow_symlinks True and False. Call os.stat() alon..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if this entry is a directory or a symbolic link pointing to a directory; return False if the entry is or points to any other kind of file, or if it doesn’t exist anymore. If follow_symlink...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.293887",
+    "updatedDate": "2026-03-24T10:48:12.293888",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/DirEntry/is_file": {
+    "id": "os.DirEntry.is_file",
+    "name": "is_file",
+    "type": "method",
+    "parent": "DirEntry",
+    "signatures": [
+      "is_file(*, follow_symlinks=True)"
+    ],
+    "signature_hash": "0a9a476976fb2d413433d2afb2a6f43f2d674d417cb936ec3876359dd6a32956",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.DirEntry.is_file",
+    "parameters": [
+      {
+        "name": "*",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": true,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "follow_symlinks",
+        "type": "",
+        "has_default": true,
+        "default_value": "True",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if this entry is a file or a symbolic link pointing to a file; return False if the entry is or points to a directory or other non-file entry, or if it doesn’t exist anymore. If follow_symlinks is False, return True only if this entry is a file (without following symlinks); return False if the entry is a directory or other non-file entry, or if it doesn’t exist anymore. The result is cached on the os.DirEntry object. Caching, system calls made, and exceptions raised are as per is_d..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if this entry is a file or a symbolic link pointing to a file; return False if the entry is or points to a directory or other non-file entry, or if it doesn’t exist anymore. If follow_syml...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.293913",
+    "updatedDate": "2026-03-24T10:48:12.293914",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/DirEntry/is_junction": {
+    "id": "os.DirEntry.is_junction",
+    "name": "is_junction",
+    "type": "method",
+    "parent": "DirEntry",
+    "signatures": [
+      "is_junction()"
+    ],
+    "signature_hash": "f7a947a2ce08f617f7a7e8c159e4145c05511089d4807c44eec606f4dad47613",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.DirEntry.is_junction",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if this entry is a junction (even if broken); return False if the entry points to a regular directory, any kind of file, a symlink, or if it doesn’t exist anymore. The result is cached on the os.DirEntry object. Call os.path.isjunction() to fetch up-to-date information. Added in version 3.12."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if this entry is a junction (even if broken); return False if the entry points to a regular directory, any kind of file, a symlink, or if it doesn’t exist anymore. The result is cached on ...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.293955",
+    "updatedDate": "2026-03-24T10:48:12.293956",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": "3.12.",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "os/DirEntry/is_symlink": {
+    "id": "os.DirEntry.is_symlink",
+    "name": "is_symlink",
+    "type": "method",
+    "parent": "DirEntry",
+    "signatures": [
+      "is_symlink()"
+    ],
+    "signature_hash": "88dd240b21be7ba3a0584a857010c449b653d3350f75eb09d850ed12a866e66a",
+    "url": "https://docs.python.org/3/library/os.html#module-os#os.DirEntry.is_symlink",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Return True if this entry is a symbolic link (even if broken); return False if the entry points to a directory or any kind of file, or if it doesn’t exist anymore. The result is cached on the os.DirEntry object. Call os.path.islink() to fetch up-to-date information. On the first, uncached call, no system call is required in most cases. Specifically, neither Windows or Unix require a system call, except on certain Unix file systems, such as network file systems, that return dirent.d_type == DT..."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": "Return True if this entry is a symbolic link (even if broken); return False if the entry points to a directory or any kind of file, or if it doesn’t exist anymore. The result is cached on the os.DirEn...",
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-03-24T10:48:12.293935",
+    "updatedDate": "2026-03-24T10:48:12.293936",
+    "metadata": {
+      "deprecated": false,
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}
