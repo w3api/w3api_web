@@ -171,6 +171,12 @@ const breadcrumbTrail = buildBreadcrumbTrail();
               {t('deprecated', uiLanguage)}
             </span>
           )}
+
+          {doc.metadata?.status === "experimental" && (
+            <span class="sl-badge sl-badge-experimental">
+              Experimental
+            </span>
+          )}
         </div>
       </section>
 
@@ -348,5 +354,23 @@ const breadcrumbTrail = buildBreadcrumbTrail();
     .language-logo {
       font-size: 4rem;
     }
+  }
+
+  .sl-badge-experimental {
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+  }
+
+  .sl-badge-experimental svg {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+  }
+
+  [data-theme="dark"] .sl-badge-experimental {
+    background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
   }
 </style>
