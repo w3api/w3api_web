@@ -13,25 +13,32 @@
     "return_type": "",
     "exceptions": [],
     "description": {
-      "es": "El atributo `abbr` para el elemento `[th](/es/html/elements/th/)` se utilizaba para proporcionar una forma abreviada del contenido de la celda, lo cual podía ser útil para lectores de pantalla y otros agentes de usuario no visuales. Cuando estaba presente en un elemento `[th](/es/html/elements/th/)` (encabezado de tabla), ofrecía una alternativa más corta y concisa al texto completo del encabezado. Esto permitía a las tecnologías de asistencia anunciar una versión breve del encabezado, mejorando la experiencia del usuario al reducir la verbosidad, especialmente en tablas de datos complejas.\n\nSin embargo, el atributo `abbr` para `[th](/es/html/elements/th/)` ahora está obsoleto en `[html](/es/html/)`. Su funcionalidad ha sido en gran medida reemplazada por el atributo `[scope](/es/html/elements/th/#attr-scope)`, que define si la celda de encabezado se aplica a una fila, columna, grupo de filas o grupo de columnas. Aunque los navegadores antiguos aún podrían reconocer `abbr`, las prácticas modernas de desarrollo web recomiendan encarecidamente no usarlo. Para las tablas `[html](/es/html/)` actuales, céntrese en una estructura de tabla clara y el uso apropiado de los atributos `[scope](/es/html/elements/th/#attr-scope)` y `[headers](/es/html/attributes/headers/)` para garantizar una accesibilidad óptima. El uso de atributos obsoletos puede llevar a un comportamiento impredecible y a una compatibilidad reducida con futuras versiones de navegadores y tecnologías de asistencia.",
-      "en": "The `abbr` attribute for the `[th](/html/elements/th/)` element was used to provide an abbreviated form of the cell's content, which could be useful for screen readers and other non-visual user agents. When present on a `[th](/html/elements/th/)` (table header) element, it offered a shorter, more concise alternative to the full header text. This allowed assistive technologies to announce a brief version of the header, improving the user experience by reducing verbosity, especially in complex data tables.\n\nHowever, the `abbr` attribute for `[th](/html/elements/th/)` is now deprecated in `[html](/html/)`. Its functionality has largely been superseded by the `[scope](/html/elements/th/#attr-scope)` attribute, which defines whether the header cell applies to a row, column, or row group, or column group. While older browsers might still recognize `abbr`, modern web development practices strongly recommend against its use. For current `[html](/html/)` tables, focus on clear table structure and the appropriate use of `[scope](/html/elements/th/#attr-scope)` and `[headers](/html/attributes/headers/)` attributes to ensure optimal accessibility. Using deprecated attributes can lead to unpredictable behavior and reduced compatibility with future browser versions and assistive technologies."
+      "es": "El atributo `abbr`, cuando se aplicaba al elemento [`<th>`](/es/html/elements/th/), fue diseñado para proporcionar una forma abreviada del contenido de la celda. Su propósito principal era ofrecer una representación más corta y concisa del encabezado para agentes de usuario no visuales, como lectores de pantalla, para mejorar la accesibilidad y la experiencia del usuario al reducir la verbosidad.\n\nSin embargo, el atributo `abbr` en [`<th>`](/es/html/elements/th/) ahora está obsoleto en [`html`](/html/) y ya no debe utilizarse. Para el desarrollo web moderno, se recomienda usar el elemento [`<abbr>`](/es/html/elements/abbr/) directamente dentro del contenido del encabezado si una abreviatura necesita ser marcada semánticamente. Alternativamente, simplemente colocar la forma abreviada directamente en el contenido de [`<th>`](/es/html/elements/th/) suele ser suficiente, confiando en el contexto.\n\nLas mejores prácticas para la accesibilidad de tablas ahora se centran en un contenido claro de [`<th>`](/es/html/elements/th/), el uso adecuado del atributo [`scope`](/es/html/elements/th/#attr-scope), y la asociación de celdas de datos con encabezados usando los atributos [`id`](/es/html/global_attributes/#attr-id) y [`headers`](/es/html/elements/td/#attr-headers). El soporte de los navegadores para el atributo `abbr` obsoleto es inconsistente y poco fiable, lo que subraya aún más la necesidad de adoptar los estándares actuales de [`html`](/html/).",
+      "en": "The `abbr` attribute, when applied to the [`<th>`](/en/html/elements/th/) element, was designed to provide an abbreviated form of the cell's content. Its primary purpose was to offer a shorter, more concise representation of the heading for non-visual user agents, such as screen readers, to improve accessibility and user experience by reducing verbosity.\n\nHowever, the `abbr` attribute on [`<th>`](/en/html/elements/th/) is now deprecated in [`html`](/html/) and should no longer be used. For modern web development, it is recommended to use the [`<abbr>`](/en/html/elements/abbr/) element directly within the heading content if an abbreviation needs to be semantically marked up. Alternatively, simply placing the abbreviated form directly in the [`<th>`](/en/html/elements/th/) content is often sufficient, relying on context.\n\nBest practices for table accessibility now focus on clear [`<th>`](/en/html/elements/th/) content, proper use of the [`scope`](/en/html/elements/th/#attr-scope) attribute, and associating data cells with headers using [`id`](/en/html/global_attributes/#attr-id) and [`headers`](/en/html/elements/td/#attr-headers) attributes. Browser support for the deprecated `abbr` attribute is inconsistent and unreliable, further emphasizing the need to adopt current [`html`](/html/) standards."
     },
-    "example": "",
+    "example": "<table>\n  <thead>\n    <tr>\n      <th abbr=\"LocID\">Location ID</th>\n      <th abbr=\"ProdName\">Product Name</th>\n      <th abbr=\"Qty\">Quantity</th>\n      <th abbr=\"UnitCost\">Unit Cost</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>101</td>\n      <td>Laptop</td>\n      <td>5</td>\n      <td>1200.00</td>\n    </tr>\n    <tr>\n      <td>102</td>\n      <td>Mouse</td>\n      <td>20</td>\n      <td>25.00</td>\n    </tr>\n  </tbody>\n</table>",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A short, abbreviated description of the header cell's content provided as an alternative label to use for the header cell when referencing the cell in other contexts. Some user-agents, such as screen",
+      "excerpt": {
+        "es": "A short, abbreviated description of the header cell's content provided as an alternative label to use for the header cell when referencing the cell in other contexts. Some user-agents, such as screen",
+        "en": "A short, abbreviated description of the header cell's content provided as an alternative label to use for the header cell when referencing the cell in other contexts. Some user-agents, such as screen"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.320341",
-    "updatedDate": "2026-03-24T10:48:18.320342",
+    "createdDate": "2026-04-03T00:22:08.866214",
+    "updatedDate": "2026-04-03T00:22:08.866215",
     "metadata": {
-      "deprecated": false,
-      "deprecated_version": null,
-      "added_version": null,
-      "tags": [],
+      "status": "deprecated",
+      "deprecated_version": "HTML5",
+      "added_version": "HTML 4.01",
+      "tags": [
+        "accessibility",
+        "tables",
+        "deprecated"
+      ],
       "difficulty": null,
       "popularity_score": 0
     }
@@ -50,22 +57,25 @@
     "return_type": "",
     "exceptions": [],
     "description": {
-      "es": "El atributo `accept` en [`HTML`](/es/html/) se utiliza con elementos [`input`](/es/html/elements/input/) , específicamente cuando `type=\\",
-      "en": "The `accept` attribute in `[html](/html/)` is used with `[input](/html/elements/input/)` elements, specifically when `type=\"file\"`. Its primary purpose is to define a filter for the types of files that the user can pick from the file input dialog. This helps guide users to select appropriate files for upload, improving the user experience within `[form](/html/elements/form/)` submissions.\n\nFunctionally, the `accept` attribute takes a comma-separated list of unique file type specifiers. These can be file extensions (e.g., `.pdf`, `.doc`), a MIME type (e.g., `image/png`, `audio/mpeg`), or a generic type such as `image/*`, `audio/*`, or `video/*`. When the user clicks the file input, the operating system's file picker dialog will typically filter out files that do not match the specified types, making it easier for the user to find the correct files.\n\nWhile `accept` provides a client-side convenience and improves accessibility by indicating expected file types to screen readers and users, it is crucial to understand that it offers no security guarantees. Server-side validation of file types and content is absolutely essential to prevent malicious uploads and ensure data integrity. Browser support for `accept` is generally good, but the exact behavior of the file picker can vary slightly across different browsers and operating systems. Best practice dictates using `accept` for user experience while always implementing robust server-side checks."
+      "es": "",
+      "en": "Comma-separatedcontent typesthe server accepts.Note:This attribute has been deprecated and should not be used.Instead, use theacceptattribute on<input type=file>elements."
     },
     "example": "",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Comma-separatedcontent typesthe server accepts.Note:This attribute has been deprecated and should not be used.Instead, use theacceptattribute on<input type=file>elements.",
+      "excerpt": {
+        "es": "Comma-separatedcontent typesthe server accepts.Note:This attribute has been deprecated and should not be used.Instead, use theacceptattribute on<input type=file>elements.",
+        "en": "Comma-separatedcontent typesthe server accepts.Note:This attribute has been deprecated and should not be used.Instead, use theacceptattribute on<input type=file>elements."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.321620",
-    "updatedDate": "2026-03-24T10:48:18.321622",
+    "createdDate": "2026-04-03T00:22:08.867526",
+    "updatedDate": "2026-04-03T00:22:08.867527",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -94,15 +104,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Valid for thefileinput type only, theacceptattribute defines which file types are selectable in afileupload control. See thefileinput type.",
+      "excerpt": {
+        "es": "Valid for thefileinput type only, theacceptattribute defines which file types are selectable in afileupload control. See thefileinput type.",
+        "en": "Valid for thefileinput type only, theacceptattribute defines which file types are selectable in afileupload control. See thefileinput type."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.321838",
-    "updatedDate": "2026-03-24T10:48:18.321839",
+    "createdDate": "2026-04-03T00:22:08.867747",
+    "updatedDate": "2026-04-03T00:22:08.867748",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -131,15 +144,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Thecharacter encodingaccepted by the server. The specification allows a single case-insensitive value of\"UTF-8\", reflecting the ubiquity of this encoding (historically multiple character encodings cou",
+      "excerpt": {
+        "es": "Thecharacter encodingaccepted by the server. The specification allows a single case-insensitive value of\"UTF-8\", reflecting the ubiquity of this encoding (historically multiple character encodings cou",
+        "en": "Thecharacter encodingaccepted by the server. The specification allows a single case-insensitive value of\"UTF-8\", reflecting the ubiquity of this encoding (historically multiple character encodings cou"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.321652",
-    "updatedDate": "2026-03-24T10:48:18.321653",
+    "createdDate": "2026-04-03T00:22:08.867557",
+    "updatedDate": "2026-04-03T00:22:08.867558",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -168,15 +184,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Sets the alignment of the rule on the page. If no value is specified, the default value isleft.",
+      "excerpt": {
+        "es": "Sets the alignment of the rule on the page. If no value is specified, the default value isleft.",
+        "en": "Sets the alignment of the rule on the page. If no value is specified, the default value isleft."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.313279",
-    "updatedDate": "2026-03-24T10:48:18.313280",
+    "createdDate": "2026-04-03T00:22:08.858205",
+    "updatedDate": "2026-04-03T00:22:08.858206",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -205,15 +224,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies on which side of the table the caption should be displayed. The possibleenumeratedvalues areleft,top,right, orbottom. Use thecaption-sideandtext-alignCSS properties instead, as this attribut",
+      "excerpt": {
+        "es": "Specifies on which side of the table the caption should be displayed. The possibleenumeratedvalues areleft,top,right, orbottom. Use thecaption-sideandtext-alignCSS properties instead, as this attribut",
+        "en": "Specifies on which side of the table the caption should be displayed. The possibleenumeratedvalues areleft,top,right, orbottom. Use thecaption-sideandtext-alignCSS properties instead, as this attribut"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.319391",
-    "updatedDate": "2026-03-24T10:48:18.319392",
+    "createdDate": "2026-04-03T00:22:08.865237",
+    "updatedDate": "2026-04-03T00:22:08.865238",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -242,15 +264,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies the horizontal alignment of the table within its parent element. The possibleenumeratedvalues areleft,center, andright. Use themargin-inline-startandmargin-inline-endCSS properties instead,",
+      "excerpt": {
+        "es": "Specifies the horizontal alignment of the table within its parent element. The possibleenumeratedvalues areleft,center, andright. Use themargin-inline-startandmargin-inline-endCSS properties instead,",
+        "en": "Specifies the horizontal alignment of the table within its parent element. The possibleenumeratedvalues areleft,center, andright. Use themargin-inline-startandmargin-inline-endCSS properties instead,"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.319554",
-    "updatedDate": "2026-03-24T10:48:18.319555",
+    "createdDate": "2026-04-03T00:22:08.865410",
+    "updatedDate": "2026-04-03T00:22:08.865411",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -279,15 +304,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies the horizontal alignment of each body cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin",
+      "excerpt": {
+        "es": "Specifies the horizontal alignment of each body cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin",
+        "en": "Specifies the horizontal alignment of each body cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.319867",
-    "updatedDate": "2026-03-24T10:48:18.319869",
+    "createdDate": "2026-04-03T00:22:08.865730",
+    "updatedDate": "2026-04-03T00:22:08.865731",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -316,15 +344,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies the horizontal alignment of each foot cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin",
+      "excerpt": {
+        "es": "Specifies the horizontal alignment of each foot cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin",
+        "en": "Specifies the horizontal alignment of each foot cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.320166",
-    "updatedDate": "2026-03-24T10:48:18.320167",
+    "createdDate": "2026-04-03T00:22:08.866033",
+    "updatedDate": "2026-04-03T00:22:08.866034",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -353,15 +384,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies the horizontal alignment of each head cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin",
+      "excerpt": {
+        "es": "Specifies the horizontal alignment of each head cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin",
+        "en": "Specifies the horizontal alignment of each head cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character defin"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.320511",
-    "updatedDate": "2026-03-24T10:48:18.320512",
+    "createdDate": "2026-04-03T00:22:08.866424",
+    "updatedDate": "2026-04-03T00:22:08.866425",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -390,15 +424,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies the horizontal alignment of each row cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character define",
+      "excerpt": {
+        "es": "Specifies the horizontal alignment of each row cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character define",
+        "en": "Specifies the horizontal alignment of each row cell. The possibleenumeratedvalues areleft,center,right,justify, andchar. When supported, thecharvalue aligns the textual content on the character define"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.320697",
-    "updatedDate": "2026-03-24T10:48:18.320698",
+    "createdDate": "2026-04-03T00:22:08.866632",
+    "updatedDate": "2026-04-03T00:22:08.866633",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -427,15 +464,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies aPermissions Policyfor the<fencedframe>, which defines what features are available to the<fencedframe>based on the origin of the request. SeePermissions policies available to fenced framesfo",
+      "excerpt": {
+        "es": "Specifies aPermissions Policyfor the<fencedframe>, which defines what features are available to the<fencedframe>based on the origin of the request. SeePermissions policies available to fenced framesfo",
+        "en": "Specifies aPermissions Policyfor the<fencedframe>, which defines what features are available to the<fencedframe>based on the origin of the request. SeePermissions policies available to fenced framesfo"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.316266",
-    "updatedDate": "2026-03-24T10:48:18.316267",
+    "createdDate": "2026-04-03T00:22:08.862027",
+    "updatedDate": "2026-04-03T00:22:08.862028",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -464,15 +504,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies aPermissions Policyfor the<iframe>. The policy defines what features are available to the<iframe>(for example, access to the microphone, camera, battery, web-share, etc.) based on the origin",
+      "excerpt": {
+        "es": "Specifies aPermissions Policyfor the<iframe>. The policy defines what features are available to the<iframe>(for example, access to the microphone, camera, battery, web-share, etc.) based on the origin",
+        "en": "Specifies aPermissions Policyfor the<iframe>. The policy defines what features are available to the<iframe>(for example, access to the microphone, camera, battery, web-share, etc.) based on the origin"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.316346",
-    "updatedDate": "2026-03-24T10:48:18.316347",
+    "createdDate": "2026-04-03T00:22:08.862149",
+    "updatedDate": "2026-04-03T00:22:08.862150",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -501,15 +544,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Allows downloading files through an<a>or<area>element with thedownloadattribute, as well as through the navigation that leads to a download of a file. This works regardless of whether the user clicked",
+      "excerpt": {
+        "es": "Allows downloading files through an<a>or<area>element with thedownloadattribute, as well as through the navigation that leads to a download of a file. This works regardless of whether the user clicked",
+        "en": "Allows downloading files through an<a>or<area>element with thedownloadattribute, as well as through the navigation that leads to a download of a file. This works regardless of whether the user clicked"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.316897",
-    "updatedDate": "2026-03-24T10:48:18.316898",
+    "createdDate": "2026-04-03T00:22:08.862721",
+    "updatedDate": "2026-04-03T00:22:08.862722",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -538,15 +584,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Allows the page to submit forms. If this keyword is not used, a form will be displayed as normal, but submitting it will not trigger input validation, send data to a web server, or close a dialog.",
+      "excerpt": {
+        "es": "Allows the page to submit forms. If this keyword is not used, a form will be displayed as normal, but submitting it will not trigger input validation, send data to a web server, or close a dialog.",
+        "en": "Allows the page to submit forms. If this keyword is not used, a form will be displayed as normal, but submitting it will not trigger input validation, send data to a web server, or close a dialog."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.316919",
-    "updatedDate": "2026-03-24T10:48:18.316920",
+    "createdDate": "2026-04-03T00:22:08.862746",
+    "updatedDate": "2026-04-03T00:22:08.862747",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -575,15 +624,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Allows the page to open modal windows byWindow.alert(),Window.confirm(),Window.print()andWindow.prompt(), while opening a<dialog>is allowed regardless of this keyword. It also allows the page to recei",
+      "excerpt": {
+        "es": "Allows the page to open modal windows byWindow.alert(),Window.confirm(),Window.print()andWindow.prompt(), while opening a<dialog>is allowed regardless of this keyword. It also allows the page to recei",
+        "en": "Allows the page to open modal windows byWindow.alert(),Window.confirm(),Window.print()andWindow.prompt(), while opening a<dialog>is allowed regardless of this keyword. It also allows the page to recei"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.316941",
-    "updatedDate": "2026-03-24T10:48:18.316942",
+    "createdDate": "2026-04-03T00:22:08.862776",
+    "updatedDate": "2026-04-03T00:22:08.862778",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -612,15 +664,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Lets the resourcelock the screen orientation.",
+      "excerpt": {
+        "es": "Lets the resourcelock the screen orientation.",
+        "en": "Lets the resourcelock the screen orientation."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317091",
-    "updatedDate": "2026-03-24T10:48:18.317092",
+    "createdDate": "2026-04-03T00:22:08.862801",
+    "updatedDate": "2026-04-03T00:22:08.862802",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -649,15 +704,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Allows the page to use thePointer Lock API.",
+      "excerpt": {
+        "es": "Allows the page to use thePointer Lock API.",
+        "en": "Allows the page to use thePointer Lock API."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317115",
-    "updatedDate": "2026-03-24T10:48:18.317116",
+    "createdDate": "2026-04-03T00:22:08.862825",
+    "updatedDate": "2026-04-03T00:22:08.862826",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -686,15 +744,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Allows popups (created, for example, byWindow.open()ortarget=\"_blank\"). If this keyword is not used, such functionality will silently fail.",
+      "excerpt": {
+        "es": "Allows popups (created, for example, byWindow.open()ortarget=\"_blank\"). If this keyword is not used, such functionality will silently fail.",
+        "en": "Allows popups (created, for example, byWindow.open()ortarget=\"_blank\"). If this keyword is not used, such functionality will silently fail."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317137",
-    "updatedDate": "2026-03-24T10:48:18.317138",
+    "createdDate": "2026-04-03T00:22:08.862850",
+    "updatedDate": "2026-04-03T00:22:08.862851",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -723,15 +784,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Allows a sandboxed document to open a new browsing context without forcing the sandboxing flags upon it. This will allow, for example, a third-party advertisement to be safely sandboxed without forcin",
+      "excerpt": {
+        "es": "Allows a sandboxed document to open a new browsing context without forcing the sandboxing flags upon it. This will allow, for example, a third-party advertisement to be safely sandboxed without forcin",
+        "en": "Allows a sandboxed document to open a new browsing context without forcing the sandboxing flags upon it. This will allow, for example, a third-party advertisement to be safely sandboxed without forcin"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317171",
-    "updatedDate": "2026-03-24T10:48:18.317180",
+    "createdDate": "2026-04-03T00:22:08.862901",
+    "updatedDate": "2026-04-03T00:22:08.862902",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -760,15 +824,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Allows embedders to have control over whether an iframe can start apresentation session.",
+      "excerpt": {
+        "es": "Allows embedders to have control over whether an iframe can start apresentation session.",
+        "en": "Allows embedders to have control over whether an iframe can start apresentation session."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317216",
-    "updatedDate": "2026-03-24T10:48:18.317217",
+    "createdDate": "2026-04-03T00:22:08.862926",
+    "updatedDate": "2026-04-03T00:22:08.862927",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -797,15 +864,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "If this token is not used, the resource is treated as being from a special origin that always fails thesame-origin policy(potentially preventing access todata storage/cookiesand some JavaScript APIs).",
+      "excerpt": {
+        "es": "If this token is not used, the resource is treated as being from a special origin that always fails thesame-origin policy(potentially preventing access todata storage/cookiesand some JavaScript APIs).",
+        "en": "If this token is not used, the resource is treated as being from a special origin that always fails thesame-origin policy(potentially preventing access todata storage/cookiesand some JavaScript APIs)."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317239",
-    "updatedDate": "2026-03-24T10:48:18.317240",
+    "createdDate": "2026-04-03T00:22:08.862952",
+    "updatedDate": "2026-04-03T00:22:08.862953",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -834,15 +904,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Allows the page to run scripts (but not create pop-up windows). If this keyword is not used, this operation is not allowed.",
+      "excerpt": {
+        "es": "Allows the page to run scripts (but not create pop-up windows). If this keyword is not used, this operation is not allowed.",
+        "en": "Allows the page to run scripts (but not create pop-up windows). If this keyword is not used, this operation is not allowed."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317299",
-    "updatedDate": "2026-03-24T10:48:18.317300",
+    "createdDate": "2026-04-03T00:22:08.862977",
+    "updatedDate": "2026-04-03T00:22:08.862978",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -871,15 +944,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Allows a document loaded in the<iframe>to use theStorage Access APIto request access to unpartitioned cookies.",
+      "excerpt": {
+        "es": "Allows a document loaded in the<iframe>to use theStorage Access APIto request access to unpartitioned cookies.",
+        "en": "Allows a document loaded in the<iframe>to use theStorage Access APIto request access to unpartitioned cookies."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317325",
-    "updatedDate": "2026-03-24T10:48:18.317326",
+    "createdDate": "2026-04-03T00:22:08.863005",
+    "updatedDate": "2026-04-03T00:22:08.863006",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -908,15 +984,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Lets the resource navigate the top-level browsing context (the one named_top).",
+      "excerpt": {
+        "es": "Lets the resource navigate the top-level browsing context (the one named_top).",
+        "en": "Lets the resource navigate the top-level browsing context (the one named_top)."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317347",
-    "updatedDate": "2026-03-24T10:48:18.317348",
+    "createdDate": "2026-04-03T00:22:08.863030",
+    "updatedDate": "2026-04-03T00:22:08.863031",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -945,15 +1024,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Lets the resource navigate the top-level browsing context, but only if initiated by a user gesture.",
+      "excerpt": {
+        "es": "Lets the resource navigate the top-level browsing context, but only if initiated by a user gesture.",
+        "en": "Lets the resource navigate the top-level browsing context, but only if initiated by a user gesture."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317369",
-    "updatedDate": "2026-03-24T10:48:18.317370",
+    "createdDate": "2026-04-03T00:22:08.863057",
+    "updatedDate": "2026-04-03T00:22:08.863058",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -982,15 +1064,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Allows navigations to non-httpprotocols built into browser orregistered by a website. This feature is also activated byallow-popupsorallow-top-navigationkeyword.",
+      "excerpt": {
+        "es": "Allows navigations to non-httpprotocols built into browser orregistered by a website. This feature is also activated byallow-popupsorallow-top-navigationkeyword.",
+        "en": "Allows navigations to non-httpprotocols built into browser orregistered by a website. This feature is also activated byallow-popupsorallow-top-navigationkeyword."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317393",
-    "updatedDate": "2026-03-24T10:48:18.317394",
+    "createdDate": "2026-04-03T00:22:08.863084",
+    "updatedDate": "2026-04-03T00:22:08.863085",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1019,15 +1104,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Set totrueif the<iframe>can activate fullscreen mode by calling therequestFullscreen()method.Note:This attribute is considered a legacy attribute and redefined asallow=\"fullscreen *\".",
+      "excerpt": {
+        "es": "Set totrueif the<iframe>can activate fullscreen mode by calling therequestFullscreen()method.Note:This attribute is considered a legacy attribute and redefined asallow=\"fullscreen *\".",
+        "en": "Set totrueif the<iframe>can activate fullscreen mode by calling therequestFullscreen()method.Note:This attribute is considered a legacy attribute and redefined asallow=\"fullscreen *\"."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.316383",
-    "updatedDate": "2026-03-24T10:48:18.316384",
+    "createdDate": "2026-04-03T00:22:08.862201",
+    "updatedDate": "2026-04-03T00:22:08.862202",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1056,15 +1144,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Set totrueif a cross-origin<iframe>should be allowed to invoke thePayment Request API.Note:This attribute is considered a legacy attribute and redefined asallow=\"payment *\".",
+      "excerpt": {
+        "es": "Set totrueif a cross-origin<iframe>should be allowed to invoke thePayment Request API.Note:This attribute is considered a legacy attribute and redefined asallow=\"payment *\".",
+        "en": "Set totrueif a cross-origin<iframe>should be allowed to invoke thePayment Request API.Note:This attribute is considered a legacy attribute and redefined asallow=\"payment *\"."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.316405",
-    "updatedDate": "2026-03-24T10:48:18.316406",
+    "createdDate": "2026-04-03T00:22:08.862226",
+    "updatedDate": "2026-04-03T00:22:08.862227",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1093,15 +1184,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Valid for thecolorinput type only, thealphaattribute provides the end user with the ability to set the opacity of the color being selected.",
+      "excerpt": {
+        "es": "Valid for thecolorinput type only, thealphaattribute provides the end user with the ability to set the opacity of the color being selected.",
+        "en": "Valid for thecolorinput type only, thealphaattribute provides the end user with the ability to set the opacity of the color being selected."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.321866",
-    "updatedDate": "2026-03-24T10:48:18.321867",
+    "createdDate": "2026-04-03T00:22:08.867778",
+    "updatedDate": "2026-04-03T00:22:08.867779",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1130,15 +1224,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A text string alternative to display on browsers that do not display images. The text should be phrased so that it presents the user with the same kind of choice as the image would offer when displaye",
+      "excerpt": {
+        "es": "A text string alternative to display on browsers that do not display images. The text should be phrased so that it presents the user with the same kind of choice as the image would offer when displaye",
+        "en": "A text string alternative to display on browsers that do not display images. The text should be phrased so that it presents the user with the same kind of choice as the image would offer when displaye"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.314551",
-    "updatedDate": "2026-03-24T10:48:18.314552",
+    "createdDate": "2026-04-03T00:22:08.859477",
+    "updatedDate": "2026-04-03T00:22:08.859478",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1167,15 +1264,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Defines text that can replace the image in the page.Note:Browsers do not always display images. There are a number of situations in which a browser might not display images, such as:Non-visual browser",
+      "excerpt": {
+        "es": "Defines text that can replace the image in the page.Note:Browsers do not always display images. There are a number of situations in which a browser might not display images, such as:Non-visual browser",
+        "en": "Defines text that can replace the image in the page.Note:Browsers do not always display images. There are a number of situations in which a browser might not display images, such as:Non-visual browser"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.315025",
-    "updatedDate": "2026-03-24T10:48:18.315026",
+    "createdDate": "2026-04-03T00:22:08.860614",
+    "updatedDate": "2026-04-03T00:22:08.860615",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1204,15 +1304,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Valid for theimagebutton only, thealtattribute provides alternative text for the image, displaying the value of the attribute if the imagesrcis missing or otherwise fails to load. See theimageinput ty",
+      "excerpt": {
+        "es": "Valid for theimagebutton only, thealtattribute provides alternative text for the image, displaying the value of the attribute if the imagesrcis missing or otherwise fails to load. See theimageinput ty",
+        "en": "Valid for theimagebutton only, thealtattribute provides alternative text for the image, displaying the value of the attribute if the imagesrcis missing or otherwise fails to load. See theimageinput ty"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.321896",
-    "updatedDate": "2026-03-24T10:48:18.321897",
+    "createdDate": "2026-04-03T00:22:08.867809",
+    "updatedDate": "2026-04-03T00:22:08.867810",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1241,15 +1344,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A cross-origin request (i.e., with anOriginHTTP header) is performed, but no credential is sent (i.e., no cookie, X.509 certificate, or HTTP Basic authentication). If the server does not give credenti",
+      "excerpt": {
+        "es": "A cross-origin request (i.e., with anOriginHTTP header) is performed, but no credential is sent (i.e., no cookie, X.509 certificate, or HTTP Basic authentication). If the server does not give credenti",
+        "en": "A cross-origin request (i.e., with anOriginHTTP header) is performed, but no credential is sent (i.e., no cookie, X.509 certificate, or HTTP Basic authentication). If the server does not give credenti"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.311511",
-    "updatedDate": "2026-03-24T10:48:18.311512",
+    "createdDate": "2026-04-03T00:22:08.856930",
+    "updatedDate": "2026-04-03T00:22:08.856931",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1278,15 +1384,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Sends a cross-origin request without a credential. In other words, it sends theOrigin:HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not g",
+      "excerpt": {
+        "es": "Sends a cross-origin request without a credential. In other words, it sends theOrigin:HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not g",
+        "en": "Sends a cross-origin request without a credential. In other words, it sends theOrigin:HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not g"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.314859",
-    "updatedDate": "2026-03-24T10:48:18.314860",
+    "createdDate": "2026-04-03T00:22:08.860434",
+    "updatedDate": "2026-04-03T00:22:08.860435",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1315,15 +1424,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A CORS request is sent with credentials omitted (that is, nocookies,X.509 certificates, orAuthorizationrequest header).",
+      "excerpt": {
+        "es": "A CORS request is sent with credentials omitted (that is, nocookies,X.509 certificates, orAuthorizationrequest header).",
+        "en": "A CORS request is sent with credentials omitted (that is, nocookies,X.509 certificates, orAuthorizationrequest header)."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.315079",
-    "updatedDate": "2026-03-24T10:48:18.315080",
+    "createdDate": "2026-04-03T00:22:08.860686",
+    "updatedDate": "2026-04-03T00:22:08.860687",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1352,15 +1464,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Sends a cross-origin request without a credential. In other words, it sends theOrigin:HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not g",
+      "excerpt": {
+        "es": "Sends a cross-origin request without a credential. In other words, it sends theOrigin:HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not g",
+        "en": "Sends a cross-origin request without a credential. In other words, it sends theOrigin:HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not g"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.315899",
-    "updatedDate": "2026-03-24T10:48:18.315900",
+    "createdDate": "2026-04-03T00:22:08.861610",
+    "updatedDate": "2026-04-03T00:22:08.861611",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1389,15 +1504,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "The dialog can be dismissed using any of the three methods.",
+      "excerpt": {
+        "es": "The dialog can be dismissed using any of the three methods.",
+        "en": "The dialog can be dismissed using any of the three methods."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.325657",
-    "updatedDate": "2026-03-24T10:48:18.325658",
+    "createdDate": "2026-04-03T00:22:08.871338",
+    "updatedDate": "2026-04-03T00:22:08.871339",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1426,15 +1544,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A space-separated list of URIs for archives of resources for the object.",
+      "excerpt": {
+        "es": "A space-separated list of URIs for archives of resources for the object.",
+        "en": "A space-separated list of URIs for archives of resources for the object."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.317518",
-    "updatedDate": "2026-03-24T10:48:18.317519",
+    "createdDate": "2026-04-03T00:22:08.863210",
+    "updatedDate": "2026-04-03T00:22:08.863211",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1463,15 +1584,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This attribute is required whenrel=\"preload\"has been set on the<link>element, optional whenrel=\"modulepreload\"has been set, and otherwise should not be used. It specifies the type of content being loa",
+      "excerpt": {
+        "es": "This attribute is required whenrel=\"preload\"has been set on the<link>element, optional whenrel=\"modulepreload\"has been set, and otherwise should not be used. It specifies the type of content being loa",
+        "en": "This attribute is required whenrel=\"preload\"has been set on the<link>element, optional whenrel=\"modulepreload\"has been set, and otherwise should not be used. It specifies the type of content being loa"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.311475",
-    "updatedDate": "2026-03-24T10:48:18.311476",
+    "createdDate": "2026-04-03T00:22:08.856886",
+    "updatedDate": "2026-04-03T00:22:08.856887",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1500,15 +1624,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Decode the image asynchronously, after rendering and presenting the other DOM content.",
+      "excerpt": {
+        "es": "Decode the image asynchronously, after rendering and presenting the other DOM content.",
+        "en": "Decode the image asynchronously, after rendering and presenting the other DOM content."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.315162",
-    "updatedDate": "2026-03-24T10:48:18.315163",
+    "createdDate": "2026-04-03T00:22:08.860800",
+    "updatedDate": "2026-04-03T00:22:08.860801",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1537,15 +1664,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "For classic scripts, if theasyncattribute is present, then the classic script will be fetched in parallel to parsing and evaluated as soon as it is available.Formodule scripts, if theasyncattribute is",
+      "excerpt": {
+        "es": "For classic scripts, if theasyncattribute is present, then the classic script will be fetched in parallel to parsing and evaluated as soon as it is available.Formodule scripts, if theasyncattribute is",
+        "en": "For classic scripts, if theasyncattribute is present, then the classic script will be fetched in parallel to parsing and evaluated as soon as it is available.Formodule scripts, if theasyncattribute is"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.318507",
-    "updatedDate": "2026-03-24T10:48:18.318508",
+    "createdDate": "2026-04-03T00:22:08.864309",
+    "updatedDate": "2026-04-03T00:22:08.864310",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1574,15 +1704,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader. On the server-side this is used to trigger sending anAttribution-Reporting-Register-Sourceheader in the response, to",
+      "excerpt": {
+        "es": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader. On the server-side this is used to trigger sending anAttribution-Reporting-Register-Sourceheader in the response, to",
+        "en": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader. On the server-side this is used to trigger sending anAttribution-Reporting-Register-Sourceheader in the response, to"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.313757",
-    "updatedDate": "2026-03-24T10:48:18.313758",
+    "createdDate": "2026-04-03T00:22:08.858662",
+    "updatedDate": "2026-04-03T00:22:08.858664",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1611,15 +1744,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader along with the image request.On the server-side this is used to trigger sending anAttribution-Reporting-Register-Sour",
+      "excerpt": {
+        "es": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader along with the image request.On the server-side this is used to trigger sending anAttribution-Reporting-Register-Sour",
+        "en": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader along with the image request.On the server-side this is used to trigger sending anAttribution-Reporting-Register-Sour"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.315043",
-    "updatedDate": "2026-03-24T10:48:18.315044",
+    "createdDate": "2026-04-03T00:22:08.860636",
+    "updatedDate": "2026-04-03T00:22:08.860637",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1648,15 +1784,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader along with the script resource request. On the server-side this is used to trigger sending anAttribution-Reporting-Re",
+      "excerpt": {
+        "es": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader along with the script resource request. On the server-side this is used to trigger sending anAttribution-Reporting-Re",
+        "en": "Specifies that you want the browser to send anAttribution-Reporting-Eligibleheader along with the script resource request. On the server-side this is used to trigger sending anAttribution-Reporting-Re"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.318534",
-    "updatedDate": "2026-03-24T10:48:18.318535",
+    "createdDate": "2026-04-03T00:22:08.864339",
+    "updatedDate": "2026-04-03T00:22:08.864340",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1685,15 +1824,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Don't set a preference for the fetch priority. This is the default. It is used if no value or an invalid value is set.",
+      "excerpt": {
+        "es": "Don't set a preference for the fetch priority. This is the default. It is used if no value or an invalid value is set.",
+        "en": "Don't set a preference for the fetch priority. This is the default. It is used if no value or an invalid value is set."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.311599",
-    "updatedDate": "2026-03-24T10:48:18.311600",
+    "createdDate": "2026-04-03T00:22:08.857007",
+    "updatedDate": "2026-04-03T00:22:08.857008",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1722,15 +1864,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "No preference for the decoding mode; the browser decides what is best for the user. This is the default value.",
+      "excerpt": {
+        "es": "No preference for the decoding mode; the browser decides what is best for the user. This is the default value.",
+        "en": "No preference for the decoding mode; the browser decides what is best for the user. This is the default value."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.315180",
-    "updatedDate": "2026-03-24T10:48:18.315180",
+    "createdDate": "2026-04-03T00:22:08.860820",
+    "updatedDate": "2026-04-03T00:22:08.860821",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1759,15 +1904,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Don't set a preference for the fetch priority. This is the default. It is used if no value or an invalid value is set.",
+      "excerpt": {
+        "es": "Don't set a preference for the fetch priority. This is the default. It is used if no value or an invalid value is set.",
+        "en": "Don't set a preference for the fetch priority. This is the default. It is used if no value or an invalid value is set."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.318730",
-    "updatedDate": "2026-03-24T10:48:18.318731",
+    "createdDate": "2026-04-03T00:22:08.864674",
+    "updatedDate": "2026-04-03T00:22:08.864675",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1796,15 +1944,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Controls whether inputted text is automatically capitalized and, if so, in what manner. See theautocapitalizeglobal attribute page for more information.",
+      "excerpt": {
+        "es": "Controls whether inputted text is automatically capitalized and, if so, in what manner. See theautocapitalizeglobal attribute page for more information.",
+        "en": "Controls whether inputted text is automatically capitalized and, if so, in what manner. See theautocapitalizeglobal attribute page for more information."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.321682",
-    "updatedDate": "2026-03-24T10:48:18.321683",
+    "createdDate": "2026-04-03T00:22:08.867590",
+    "updatedDate": "2026-04-03T00:22:08.867591",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1833,15 +1984,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Controls whether inputted text is automatically capitalized and, if so, in what manner. See theautocapitalizeglobal attribute page for more information.",
+      "excerpt": {
+        "es": "Controls whether inputted text is automatically capitalized and, if so, in what manner. See theautocapitalizeglobal attribute page for more information.",
+        "en": "Controls whether inputted text is automatically capitalized and, if so, in what manner. See theautocapitalizeglobal attribute page for more information."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.321925",
-    "updatedDate": "2026-03-24T10:48:18.321926",
+    "createdDate": "2026-04-03T00:22:08.867842",
+    "updatedDate": "2026-04-03T00:22:08.867843",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1870,15 +2024,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Controls whether inputted text is automatically capitalized and, if so, in what manner.",
+      "excerpt": {
+        "es": "Controls whether inputted text is automatically capitalized and, if so, in what manner.",
+        "en": "Controls whether inputted text is automatically capitalized and, if so, in what manner."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.324394",
-    "updatedDate": "2026-03-24T10:48:18.324395",
+    "createdDate": "2026-04-03T00:22:08.870428",
+    "updatedDate": "2026-04-03T00:22:08.870429",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1907,15 +2064,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Indicates whether input elements can by default have their values automatically completed by the browser.autocompleteattributes on form elements override it on<form>. Possible values:off: The browser",
+      "excerpt": {
+        "es": "Indicates whether input elements can by default have their values automatically completed by the browser.autocompleteattributes on form elements override it on<form>. Possible values:off: The browser",
+        "en": "Indicates whether input elements can by default have their values automatically completed by the browser.autocompleteattributes on form elements override it on<form>. Possible values:off: The browser"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.321716",
-    "updatedDate": "2026-03-24T10:48:18.321717",
+    "createdDate": "2026-04-03T00:22:08.867622",
+    "updatedDate": "2026-04-03T00:22:08.867623",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1944,15 +2104,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "(Nota Boolean attribute!) Theautocompleteattribute takes as its value a space-separated string that describes what, if any, type of autocomplete functionality the input should provide. A typical imple",
+      "excerpt": {
+        "es": "(Nota Boolean attribute!) Theautocompleteattribute takes as its value a space-separated string that describes what, if any, type of autocomplete functionality the input should provide. A typical imple",
+        "en": "(Nota Boolean attribute!) Theautocompleteattribute takes as its value a space-separated string that describes what, if any, type of autocomplete functionality the input should provide. A typical imple"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.321955",
-    "updatedDate": "2026-03-24T10:48:18.321956",
+    "createdDate": "2026-04-03T00:22:08.867874",
+    "updatedDate": "2026-04-03T00:22:08.867875",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -1981,15 +2144,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A string providing a hint for auser agent'sautocomplete feature. SeeThe HTML autocomplete attributefor a complete list of values and details on how to use autocomplete.",
+      "excerpt": {
+        "es": "A string providing a hint for auser agent'sautocomplete feature. SeeThe HTML autocomplete attributefor a complete list of values and details on how to use autocomplete.",
+        "en": "A string providing a hint for auser agent'sautocomplete feature. SeeThe HTML autocomplete attributefor a complete list of values and details on how to use autocomplete."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.324084",
-    "updatedDate": "2026-03-24T10:48:18.324085",
+    "createdDate": "2026-04-03T00:22:08.870087",
+    "updatedDate": "2026-04-03T00:22:08.870089",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2018,15 +2184,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Controls whether entered text can be automatically completed by the browser. Possible values are:off: The user must explicitly enter a value into this field for every use, or the document provides its",
+      "excerpt": {
+        "es": "Controls whether entered text can be automatically completed by the browser. Possible values are:off: The user must explicitly enter a value into this field for every use, or the document provides its",
+        "en": "Controls whether entered text can be automatically completed by the browser. Possible values are:off: The user must explicitly enter a value into this field for every use, or the document provides its"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.324427",
-    "updatedDate": "2026-03-24T10:48:18.324428",
+    "createdDate": "2026-04-03T00:22:08.870463",
+    "updatedDate": "2026-04-03T00:22:08.870464",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2055,15 +2224,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Controls whether automatic spelling correction and processing of text is enabled while the user is editing thistextarea. Permitted values are:onEnable automatic spelling correction and text substituti",
+      "excerpt": {
+        "es": "Controls whether automatic spelling correction and processing of text is enabled while the user is editing thistextarea. Permitted values are:onEnable automatic spelling correction and text substituti",
+        "en": "Controls whether automatic spelling correction and processing of text is enabled while the user is editing thistextarea. Permitted values are:onEnable automatic spelling correction and text substituti"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.324459",
-    "updatedDate": "2026-03-24T10:48:18.324460",
+    "createdDate": "2026-04-03T00:22:08.870502",
+    "updatedDate": "2026-04-03T00:22:08.870503",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2092,15 +2264,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This Boolean attribute specifies that the button should have inputfocuswhen the page loads.Only one element in a document can have this attribute.",
+      "excerpt": {
+        "es": "This Boolean attribute specifies that the button should have inputfocuswhen the page loads.Only one element in a document can have this attribute.",
+        "en": "This Boolean attribute specifies that the button should have inputfocuswhen the page loads.Only one element in a document can have this attribute."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.320865",
-    "updatedDate": "2026-03-24T10:48:18.320866",
+    "createdDate": "2026-04-03T00:22:08.866813",
+    "updatedDate": "2026-04-03T00:22:08.866814",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2129,15 +2304,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A Boolean attribute which, if present, indicates that the input should automatically have focus when the page has finished loading (or when the<dialog>containing the element has been displayed).Note:A",
+      "excerpt": {
+        "es": "A Boolean attribute which, if present, indicates that the input should automatically have focus when the page has finished loading (or when the<dialog>containing the element has been displayed).Note:A",
+        "en": "A Boolean attribute which, if present, indicates that the input should automatically have focus when the page has finished loading (or when the<dialog>containing the element has been displayed).Note:A"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.321985",
-    "updatedDate": "2026-03-24T10:48:18.321986",
+    "createdDate": "2026-04-03T00:22:08.867906",
+    "updatedDate": "2026-04-03T00:22:08.867907",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2166,15 +2344,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form element in a document can have theautofocusattribute.",
+      "excerpt": {
+        "es": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form element in a document can have theautofocusattribute.",
+        "en": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form element in a document can have theautofocusattribute."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.324116",
-    "updatedDate": "2026-03-24T10:48:18.324117",
+    "createdDate": "2026-04-03T00:22:08.870122",
+    "updatedDate": "2026-04-03T00:22:08.870123",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2203,15 +2384,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form-associated element in a document can have this attribute specified.",
+      "excerpt": {
+        "es": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form-associated element in a document can have this attribute specified.",
+        "en": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form-associated element in a document can have this attribute specified."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.324553",
-    "updatedDate": "2026-03-24T10:48:18.324554",
+    "createdDate": "2026-04-03T00:22:08.870606",
+    "updatedDate": "2026-04-03T00:22:08.870607",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2240,15 +2424,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A boolean attribute that, when set totrue, specifies that the browser should immediately retrieve location data when the<geolocation>element is rendered, provided permission was previously granted. If",
+      "excerpt": {
+        "es": "A boolean attribute that, when set totrue, specifies that the browser should immediately retrieve location data when the<geolocation>element is rendered, provided permission was previously granted. If",
+        "en": "A boolean attribute that, when set totrue, specifies that the browser should immediately retrieve location data when the<geolocation>element is rendered, provided permission was previously granted. If"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.325819",
-    "updatedDate": "2026-03-24T10:48:18.325820",
+    "createdDate": "2026-04-03T00:22:08.871513",
+    "updatedDate": "2026-04-03T00:22:08.871514",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2277,15 +2464,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A Boolean attribute: if specified, the audio will automatically begin playback as soon as it can do so, without waiting for the entire audio file to finish downloading.Note:Sites that automatically pl",
+      "excerpt": {
+        "es": "A Boolean attribute: if specified, the audio will automatically begin playback as soon as it can do so, without waiting for the entire audio file to finish downloading.Note:Sites that automatically pl",
+        "en": "A Boolean attribute: if specified, the audio will automatically begin playback as soon as it can do so, without waiting for the entire audio file to finish downloading.Note:Sites that automatically pl"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.314789",
-    "updatedDate": "2026-03-24T10:48:18.314789",
+    "createdDate": "2026-04-03T00:22:08.859729",
+    "updatedDate": "2026-04-03T00:22:08.859731",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2314,15 +2504,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A Boolean attribute; if specified, the video automatically begins to play back as soon as it can without stopping to finish loading the data.Note:Modern browsers block audio (or videos with an unmuted",
+      "excerpt": {
+        "es": "A Boolean attribute; if specified, the video automatically begins to play back as soon as it can without stopping to finish loading the data.Note:Modern browsers block audio (or videos with an unmuted",
+        "en": "A Boolean attribute; if specified, the video automatically begins to play back as soon as it can without stopping to finish loading the data.Note:Modern browsers block audio (or videos with an unmuted"
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.315821",
-    "updatedDate": "2026-03-24T10:48:18.315822",
+    "createdDate": "2026-04-03T00:22:08.861519",
+    "updatedDate": "2026-04-03T00:22:08.861520",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2351,15 +2544,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+      "excerpt": {
+        "es": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+        "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.313927",
-    "updatedDate": "2026-03-24T10:48:18.313928",
+    "createdDate": "2026-04-03T00:22:08.858842",
+    "updatedDate": "2026-04-03T00:22:08.858843",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2400,15 +2596,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+      "excerpt": {
+        "es": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+        "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.313942",
-    "updatedDate": "2026-03-24T10:48:18.313943",
+    "createdDate": "2026-04-03T00:22:08.858860",
+    "updatedDate": "2026-04-03T00:22:08.858861",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2437,15 +2636,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Deprecated:This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped,...",
+      "excerpt": {
+        "es": "Deprecated:This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped,...",
+        "en": "Deprecated:This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped,..."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.327257",
-    "updatedDate": "2026-03-24T10:48:18.327258",
+    "createdDate": "2026-04-03T00:22:08.872060",
+    "updatedDate": "2026-04-03T00:22:08.872061",
     "metadata": {
-      "deprecated": true,
+      "status": "deprecated",
       "deprecated_version": "true",
       "added_version": null,
       "tags": [],
@@ -2474,15 +2676,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+      "excerpt": {
+        "es": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+        "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.312957",
-    "updatedDate": "2026-03-24T10:48:18.312958",
+    "createdDate": "2026-04-03T00:22:08.857837",
+    "updatedDate": "2026-04-03T00:22:08.857838",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2511,15 +2716,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+      "excerpt": {
+        "es": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+        "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.314771",
-    "updatedDate": "2026-03-24T10:48:18.314772",
+    "createdDate": "2026-04-03T00:22:08.859706",
+    "updatedDate": "2026-04-03T00:22:08.859707",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2560,15 +2768,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+      "excerpt": {
+        "es": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+        "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.312969",
-    "updatedDate": "2026-03-24T10:48:18.312970",
+    "createdDate": "2026-04-03T00:22:08.857851",
+    "updatedDate": "2026-04-03T00:22:08.857852",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2597,15 +2808,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+      "excerpt": {
+        "es": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+        "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.312981",
-    "updatedDate": "2026-03-24T10:48:18.312982",
+    "createdDate": "2026-04-03T00:22:08.857865",
+    "updatedDate": "2026-04-03T00:22:08.857866",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -2634,15 +2848,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+      "excerpt": {
+        "es": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+        "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.315007",
-    "updatedDate": "2026-03-24T10:48:18.315008",
+    "createdDate": "2026-04-03T00:22:08.860593",
+    "updatedDate": "2026-04-03T00:22:08.860594",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],

@@ -20,15 +20,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Typed version of collections.namedtuple(). Usage: class Employee(NamedTuple): name: str id: int This is equivalent to: Employee = collections.namedtuple('Employee', ['name', 'id']) To give a field a d...",
+      "excerpt": {
+        "es": "Typed version of collections.namedtuple(). Usage: class Employee(NamedTuple): name: str id: int This is equivalent to: Employee = collections.namedtuple('Employee', ['name', 'id']) To give a field a d...",
+        "en": "Typed version of collections.namedtuple(). Usage: class Employee(NamedTuple): name: str id: int This is equivalent to: Employee = collections.namedtuple('Employee', ['name', 'id']) To give a field a d..."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:12.409450",
-    "updatedDate": "2026-03-24T10:48:12.409451",
+    "createdDate": "2026-04-03T00:22:09.370201",
+    "updatedDate": "2026-04-03T00:22:09.370201",
     "metadata": {
-      "deprecated": true,
+      "status": "deprecated",
       "deprecated_version": "3.13",
       "added_version": null,
       "tags": [],
@@ -84,15 +87,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Helper class to create low-overhead distinct types. A NewType is considered a distinct type by a typechecker. At runtime, however, calling a NewType returns its argument unchanged. Usage: UserId = New...",
+      "excerpt": {
+        "es": "Helper class to create low-overhead distinct types. A NewType is considered a distinct type by a typechecker. At runtime, however, calling a NewType returns its argument unchanged. Usage: UserId = New...",
+        "en": "Helper class to create low-overhead distinct types. A NewType is considered a distinct type by a typechecker. At runtime, however, calling a NewType returns its argument unchanged. Usage: UserId = New..."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:12.409469",
-    "updatedDate": "2026-03-24T10:48:12.409470",
+    "createdDate": "2026-04-03T00:22:09.370219",
+    "updatedDate": "2026-04-03T00:22:09.370219",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": "3.5.2.",
       "tags": [],
@@ -126,15 +132,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Never and NoReturn represent the bottom type, a type that has no members. They can be used to indicate that a function never returns, such as sys.exit(): from typing import Never # or NoReturn def sto...",
+      "excerpt": {
+        "es": "Never and NoReturn represent the bottom type, a type that has no members. They can be used to indicate that a function never returns, such as sys.exit(): from typing import Never # or NoReturn def sto...",
+        "en": "Never and NoReturn represent the bottom type, a type that has no members. They can be used to indicate that a function never returns, such as sys.exit(): from typing import Never # or NoReturn def sto..."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:12.408696",
-    "updatedDate": "2026-03-24T10:48:12.408697",
+    "createdDate": "2026-04-03T00:22:09.369427",
+    "updatedDate": "2026-04-03T00:22:09.369427",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": "3.6.2",
       "tags": [],
@@ -163,15 +172,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "A sentinel object used to indicate that a type parameter has no default value. For example: >>> T = TypeVar(\"T\") >>> T.__default__ is typing.NoDefault True >>> S = TypeVar(\"S\", default=None) >>> S.__d...",
+      "excerpt": {
+        "es": "A sentinel object used to indicate that a type parameter has no default value. For example: >>> T = TypeVar(\"T\") >>> T.__default__ is typing.NoDefault True >>> S = TypeVar(\"S\", default=None) >>> S.__d...",
+        "en": "A sentinel object used to indicate that a type parameter has no default value. For example: >>> T = TypeVar(\"T\") >>> T.__default__ is typing.NoDefault True >>> S = TypeVar(\"S\", default=None) >>> S.__d..."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:12.410215",
-    "updatedDate": "2026-03-24T10:48:12.410215",
+    "createdDate": "2026-04-03T00:22:09.370927",
+    "updatedDate": "2026-04-03T00:22:09.370928",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": "3.13.",
       "tags": [],
@@ -200,15 +212,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Special typing construct to mark a TypedDict key as potentially missing. See TypedDict and PEP 655 for more details. Added in version 3.11.",
+      "excerpt": {
+        "es": "Special typing construct to mark a TypedDict key as potentially missing. See TypedDict and PEP 655 for more details. Added in version 3.11.",
+        "en": "Special typing construct to mark a TypedDict key as potentially missing. See TypedDict and PEP 655 for more details. Added in version 3.11."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:12.408840",
-    "updatedDate": "2026-03-24T10:48:12.408842",
+    "createdDate": "2026-04-03T00:22:09.369590",
+    "updatedDate": "2026-04-03T00:22:09.369591",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": "3.11.",
       "tags": [],
@@ -237,15 +252,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Decorator to indicate that annotations are not type hints. This works as a class or function decorator. With a class, it applies recursively to all methods and classes defined in that class (but not t...",
+      "excerpt": {
+        "es": "Decorator to indicate that annotations are not type hints. This works as a class or function decorator. With a class, it applies recursively to all methods and classes defined in that class (but not t...",
+        "en": "Decorator to indicate that annotations are not type hints. This works as a class or function decorator. With a class, it applies recursively to all methods and classes defined in that class (but not t..."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:12.409962",
-    "updatedDate": "2026-03-24T10:48:12.409963",
+    "createdDate": "2026-04-03T00:22:09.370677",
+    "updatedDate": "2026-04-03T00:22:09.370678",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -274,15 +292,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Decorator to give another decorator the no_type_check() effect. This wraps the decorator with something that wraps the decorated function in no_type_check(). Deprecated since version 3.13, will be rem...",
+      "excerpt": {
+        "es": "Decorator to give another decorator the no_type_check() effect. This wraps the decorator with something that wraps the decorated function in no_type_check(). Deprecated since version 3.13, will be rem...",
+        "en": "Decorator to give another decorator the no_type_check() effect. This wraps the decorator with something that wraps the decorated function in no_type_check(). Deprecated since version 3.13, will be rem..."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:12.409977",
-    "updatedDate": "2026-03-24T10:48:12.409978",
+    "createdDate": "2026-04-03T00:22:09.370692",
+    "updatedDate": "2026-04-03T00:22:09.370693",
     "metadata": {
-      "deprecated": true,
+      "status": "deprecated",
       "deprecated_version": "3.13",
       "added_version": null,
       "tags": [],

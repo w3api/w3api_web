@@ -13,25 +13,32 @@
     "return_type": "",
     "exceptions": [],
     "description": {
-      "es": "El [atributo global](/es/html/Global-Attributes/) `[accesskey](/es/html/Global-Attributes/accesskey/)` en [html](/es/html/) permite a los desarrolladores web especificar un atajo de teclado para activar o enfocar un elemento. Como [atributo global](/es/html/Global-Attributes/), puede aplicarse a cualquier elemento [html](/es/html/), proporcionando un mecanismo de navegación rápido para los usuarios que prefieren la interacción por teclado al ratón. No tiene un elemento padre específico, ya que su naturaleza global significa que se aplica a toda la estructura del documento.\n\nEl propósito principal de `[accesskey](/es/html/Global-Attributes/accesskey/)` es mejorar la accesibilidad y la usabilidad, permitiendo a los usuarios activar acciones o navegar a elementos utilizando una combinación de teclas (por ejemplo, `Alt` + tecla en Windows, `Ctrl` + `Alt` + tecla en Firefox, `Ctrl` + `Option` + tecla en Mac). Los casos de uso prácticos incluyen la asignación de atajos a acciones comunes como botones de \\",
-      "en": "The `[accesskey](html/Global-Attributes/accesskey/)` [Global-Attribute](html/Global-Attributes/) in [html](/html/) allows web developers to specify a keyboard shortcut to activate or focus an element. As a [Global-Attribute](html/Global-Attributes/), it can be applied to any [html](/html/) element, providing a quick navigation mechanism for users who prefer keyboard interaction over a mouse. It does not have a specific parent element, as its global nature means it applies across the entire document structure.\n\nThe primary purpose of `[accesskey](html/Global-Attributes/accesskey/)` is to enhance accessibility and usability by enabling users to trigger actions or navigate to elements using a single key combination (e.g., `Alt` + key on Windows, `Ctrl` + `Alt` + key on Firefox, `Ctrl` + `Option` + key on Mac). Practical use cases include assigning shortcuts to common actions like \"Submit\" buttons, navigation links, or form fields.\n\nWhile `[accesskey](html/Global-Attributes/accesskey/)` can improve efficiency for some users, its implementation requires careful consideration. Potential implications include conflicts with existing browser shortcuts or assistive technology keybindings, which can lead to a frustrating user experience. Best practices suggest avoiding common keys (like `s` for save, `p` for print) and instead using less common or context-specific keys. It's also crucial to inform users about available shortcuts, perhaps through tooltips or a dedicated help section. Browser support is generally good, but the specific modifier keys required vary, making consistent cross-browser behavior a challenge. Therefore, many developers prefer to implement custom keyboard shortcuts using JavaScript for greater control and predictability."
+      "es": "El atributo global [`accesskey`](/es/html/Global-Attributes/accesskey/) en [`html`](/html/) permite a los desarrolladores web especificar un atajo de teclado para activar o enfocar un elemento. Como un atributo de [`Global-Attributes`](/es/html/Global-Attributes/), puede aplicarse a cualquier elemento [`html`](/html/), sin tener un padre específico. Su propósito principal es mejorar la accesibilidad, proporcionando a los usuarios una forma rápida y directa de interactuar con elementos comunes como botones, enlaces o campos de entrada, evitando la necesidad de interacción con el ratón o un tabulado extenso.\n\nCuando se define un `accesskey`, los navegadores suelen combinarlo con una tecla modificadora (por ejemplo, `Alt` en Windows, `Ctrl` + `Option` en Mac, `Shift` + `Alt` en Firefox/Windows). La combinación exacta de teclas varía según el navegador y el sistema operativo, lo cual es una consideración clave para su uso práctico. Si bien mejora la navegación por teclado para algunos usuarios, la inconsistencia en el soporte de las teclas modificadoras por parte de los navegadores y los posibles conflictos con los atajos existentes del navegador o de las tecnologías de asistencia pueden llevar a una experiencia de usuario subóptima.\n\nLas mejores prácticas sugieren usar `accesskey` con moderación para elementos críticos y de uso frecuente, y asegurarse de que la tecla asignada no entre en conflicto con los atajos comunes del navegador. Además, es crucial comunicar visiblemente el `accesskey` al usuario, quizás a través de una descripción emergente (tooltip) o subrayando el carácter asociado, ya que el atributo por sí mismo no proporciona un indicador visual. El uso excesivo puede crear una confusa variedad de atajos, disminuyendo sus beneficios de accesibilidad. Para soluciones de accesibilidad más robustas, considere los atributos ARIA o el uso cuidadoso de [`html`](/html/) semántico.",
+      "en": "The `accesskey` global attribute in [`html`](/html/) allows web developers to specify a keyboard shortcut to activate or focus an element. As a [`Global-Attributes`](/en/html/Global-Attributes/) attribute, it can be applied to any [`html`](/html/) element, having no specific parent. Its primary purpose is to enhance accessibility by providing users with a quick, direct way to interact with common elements like buttons, links, or input fields, bypassing the need for mouse interaction or extensive tabbing.\n\nWhen an `accesskey` is defined, browsers typically combine it with a modifier key (e.g., `Alt` on Windows, `Ctrl` + `Option` on Mac, `Shift` + `Alt` on Firefox/Windows). The exact key combination varies by browser and operating system, which is a key consideration for its practical use. While it improves keyboard navigation for some users, inconsistent browser support for modifier keys and potential conflicts with existing browser or assistive technology shortcuts can lead to a suboptimal user experience.\n\nBest practices suggest using `accesskey` sparingly for critical, frequently used elements, and ensuring the assigned key does not conflict with common browser shortcuts. Furthermore, it's crucial to visibly communicate the `accesskey` to the user, perhaps through a tooltip or by underlining the associated character, as the attribute itself does not provide a visual indicator. Overuse can create a confusing array of shortcuts, diminishing its accessibility benefits. For more robust accessibility solutions, consider ARIA attributes or careful use of semantic [`html`](/html/)."
     },
-    "example": "",
+    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Accesskey Example</title>\n    <style>\n        body { font-family: sans-serif; margin: 20px; }\n        .container { display: flex; gap: 15px; margin-top: 20px; }\n        button { padding: 10px 15px; font-size: 1rem; }\n        a { display: inline-block; margin-right: 15px; }\n        label { display: block; margin-bottom: 5px; }\n        input[type=\"text\"] { padding: 8px; width: 200px; }\n        p { margin-bottom: 10px; }\n        .shortcut-info {\n            background-color: #f0f0f0;\n            border-left: 4px solid #007bff;\n            padding: 10px 15px;\n            margin-top: 20px;\n            font-size: 0.9em;\n        }\n    </style>\n</head>\n<body>\n    <h1>Accesskey Global Attribute Demonstration</h1>\n\n    <p>Try using `Alt + [key]` (Windows/Linux) or `Ctrl + Option + [key]` (Mac) to activate elements:</p>\n\n    <div class=\"shortcut-info\">\n        <p><strong>Note:</strong> Modifier keys vary by browser and OS. Common combinations are `Alt + key` (Windows/Linux) or `Ctrl + Option + key` (macOS).</p>\n        <p>On Firefox (Windows/Linux), use `Shift + Alt + key`.</p>\n    </div>\n\n    <div class=\"container\">\n        <button accesskey=\"h\" onclick=\"alert('Home clicked!')\"><u>H</u>ome</button>\n        <button accesskey=\"a\" onclick=\"alert('About clicked!')\"><u>A</u>bout Us</button>\n        <a href=\"#contact\" accesskey=\"c\"><u>C</u>ontact</a>\n    </div>\n\n    <div style=\"margin-top: 30px;\">\n        <label for=\"search-input\">Search (Accesskey: `s`):</label>\n        <input type=\"text\" id=\"search-input\" accesskey=\"s\" placeholder=\"Type here...\">\n    </div>\n\n    <div style=\"margin-top: 30px;\">\n        <p>Another link: <a href=\"https://example.com\" accesskey=\"e\" target=\"_blank\"><u>E</u>xample.com</a></p>\n    </div>\n\n    <h2 id=\"contact\">Contact Section</h2>\n    <p>This is the contact information.</p>\n\n</body>\n</html>",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+      "excerpt": {
+        "es": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.",
+        "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.329004",
-    "updatedDate": "2026-03-24T10:48:18.329005",
+    "createdDate": "2026-04-03T00:22:08.873878",
+    "updatedDate": "2026-04-03T00:22:08.873879",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
-      "added_version": null,
-      "tags": [],
+      "added_version": "HTML4.01",
+      "tags": [
+        "accessibility",
+        "keyboard-navigation",
+        "user-interface"
+      ],
       "difficulty": null,
       "popularity_score": 0
     }
@@ -50,25 +57,32 @@
     "return_type": "",
     "exceptions": [],
     "description": {
-      "es": "",
-      "en": "Non-standard:This feature is not standardized. We do not recommend using non-standard features in production, as they have limited browser support, and may change or be removed. However, they can be a suitable alternative in specific cases where no standard option exists."
+      "es": "El término `anchor` se asocia comúnmente con el elemento [`<a>`](/es/html/elements/a/) en [`html`](/html/), utilizado para crear hipervínculos y destinos con nombre dentro de un documento. Sin embargo, el atributo global `anchor`, tal como se referencia, apunta a una característica experimental conocida como **Fragmentos de texto con desplazamiento (Scroll-to-text fragments)**. Este mecanismo no es un atributo [`html`](/html/) tradicional aplicado a elementos, sino un componente especial dentro del identificador de fragmento de una URL.\n\nLos fragmentos de texto con desplazamiento permiten el enlace profundo directamente a un fragmento de texto específico en una página web. Al añadir `:~:text=` seguido del texto deseado a una URL, los navegadores pueden desplazarse automáticamente y resaltar ese contenido particular. Por ejemplo, `https://example.com/page.html#:~:text=frase%20específica`. Esto mejora significativamente la experiencia del usuario al permitir una navegación precisa a información relevante sin requerir que los autores definan explícitamente atributos [`id`](/es/html/Global-Attributes/id/) o anclas con nombre.\n\nLas implicaciones incluyen un soporte limitado del navegador, principalmente en navegadores basados en Chromium (por ejemplo, Chrome 102+). Las consideraciones de accesibilidad sugieren que, si bien es beneficioso para la navegación directa, puede omitir las señales estructurales definidas por el autor. Los desarrolladores deben ser conscientes de su estado experimental y su potencial de cambios futuros, asegurando una degradación elegante para los navegadores que no lo soporten. Las mejores prácticas implican usarlo con criterio, comprender su naturaleza no estándar y priorizar las anclas [`id`](/es/html/Global-Attributes/id/) estándar de [`html`](/html/) para un enlace profundo robusto y ampliamente compatible.",
+      "en": "The term `anchor` is commonly associated with the [`<a>`](/en/html/elements/a/) element in [`html`](/html/), used for creating hyperlinks and named destinations within a document. However, the `anchor` global-attribute, as referenced, points to an experimental feature known as **Scroll-to-text fragments**. This mechanism is not a traditional [`html`](/html/) attribute applied to elements, but rather a special component within a URL's fragment identifier.\n\nScroll-to-text fragments enable deep linking directly to a specific text snippet on a web page. By appending `:~:text=` followed by the desired text to a URL, browsers can automatically scroll to and highlight that particular content. For example, `https://example.com/page.html#:~:text=specific%20phrase`. This significantly enhances user experience by allowing precise navigation to relevant information without requiring authors to explicitly define [`id`](/en/html/Global-Attributes/id/) attributes or named anchors.\n\nImplications include limited browser support, primarily in Chromium-based browsers (e.g., Chrome 102+). Accessibility considerations suggest that while beneficial for direct navigation, it may bypass author-defined structural cues. Developers should be aware of its experimental status and potential for future changes, ensuring graceful degradation for non-supporting browsers. Best practices involve using it judiciously, understanding its non-standard nature, and prioritizing standard [`html`](/html/) [`id`](/en/html/Global-Attributes/id/) anchors for robust, widely supported deep linking."
     },
-    "example": "",
+    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Scroll-to-Text Fragment Example</title>\n    <style>\n        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 2em auto; padding: 0 1em; }\n        h1 { color: #333; }\n        p { margin-bottom: 1em; }\n    </style>\n</head>\n<body>\n    <h1>Understanding Web Technologies</h1>\n    <p>Web development encompasses a wide array of technologies and practices. From the foundational languages like HTML, CSS, and JavaScript, to complex frameworks and server-side operations, the field is constantly evolving.</p>\n    <p>One interesting aspect is how browsers handle navigation and linking. Traditional anchors using the `id` attribute have been a staple for deep linking within pages. However, modern browsers are exploring new ways to enhance user experience.</p>\n    <p>This document explores various methods of navigating web content efficiently. For instance, the **Scroll-to-text fragment** feature allows direct linking to specific textual content, improving precision in information retrieval.</p>\n    <p>Consider the implications for search engines and content delivery. The ability to precisely target content within a larger document could revolutionize how users interact with search results.</p>\n    <p>This is a test paragraph to ensure enough content for scrolling. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n</body>\n</html>",
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "Non-standard:This feature is not standardized. We do not recommend using non-standard features in production, as they have limited browser support, and may change or be removed. However, they can be a...",
+      "excerpt": {
+        "es": "Non-standard:This feature is not standardized. We do not recommend using non-standard features in production, as they have limited browser support, and may change or be removed. However, they can be a...",
+        "en": "Non-standard:This feature is not standardized. We do not recommend using non-standard features in production, as they have limited browser support, and may change or be removed. However, they can be a..."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.329027",
-    "updatedDate": "2026-03-24T10:48:18.329028",
+    "createdDate": "2026-04-03T00:22:08.873917",
+    "updatedDate": "2026-04-03T00:22:08.873918",
     "metadata": {
-      "deprecated": false,
+      "status": "experimental",
       "deprecated_version": null,
-      "added_version": null,
-      "tags": [],
+      "added_version": "Chrome 102",
+      "tags": [
+        "URL fragments",
+        "deep linking",
+        "text highlighting"
+      ],
       "difficulty": null,
       "popularity_score": 0
     }
@@ -94,15 +108,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is not Baseline because it does not work in some of the most widely-used browsers.",
+      "excerpt": {
+        "es": "This feature is not Baseline because it does not work in some of the most widely-used browsers.",
+        "en": "This feature is not Baseline because it does not work in some of the most widely-used browsers."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.329038",
-    "updatedDate": "2026-03-24T10:48:18.329039",
+    "createdDate": "2026-04-03T00:22:08.873928",
+    "updatedDate": "2026-04-03T00:22:08.873929",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -131,15 +148,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is not Baseline because it does not work in some of the most widely-used browsers.",
+      "excerpt": {
+        "es": "This feature is not Baseline because it does not work in some of the most widely-used browsers.",
+        "en": "This feature is not Baseline because it does not work in some of the most widely-used browsers."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.329048",
-    "updatedDate": "2026-03-24T10:48:18.329049",
+    "createdDate": "2026-04-03T00:22:08.873939",
+    "updatedDate": "2026-04-03T00:22:08.873940",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
@@ -168,15 +188,18 @@
     "articles": [],
     "info": {
       "status": "empty",
-      "excerpt": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since March 2023.",
+      "excerpt": {
+        "es": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since March 2023.",
+        "en": "This feature is well established and works across many devices and browser versions. It’s been available across browsers since March 2023."
+      },
       "keyword": "",
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-03-24T10:48:18.329059",
-    "updatedDate": "2026-03-24T10:48:18.329059",
+    "createdDate": "2026-04-03T00:22:08.873952",
+    "updatedDate": "2026-04-03T00:22:08.873953",
     "metadata": {
-      "deprecated": false,
+      "status": "current",
       "deprecated_version": null,
       "added_version": null,
       "tags": [],
