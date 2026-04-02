@@ -160,13 +160,13 @@ const breadcrumbTrail = buildBreadcrumbTrail();
             </span>
           )}
 
-          {doc.metadata?.deprecated && doc.metadata?.deprecated_version && doc.metadata.deprecated_version !== "unknown" && (
+          {doc.metadata?.status === "deprecated" && doc.metadata?.deprecated_version && doc.metadata.deprecated_version !== "unknown" && (
             <span class="sl-badge sl-badge-caution">
               {t('deprecatedIn', uiLanguage)} {doc.metadata.deprecated_version}
             </span>
           )}
 
-          {doc.metadata?.deprecated && (!doc.metadata?.deprecated_version || doc.metadata.deprecated_version === "unknown") && (
+          {doc.metadata?.status === "deprecated" && (!doc.metadata?.deprecated_version || doc.metadata.deprecated_version === "unknown") && (
             <span class="sl-badge sl-badge-caution">
               {t('deprecated', uiLanguage)}
             </span>
