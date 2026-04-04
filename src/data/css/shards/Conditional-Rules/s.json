@@ -1,0 +1,202 @@
+{
+  "Conditional-Rules/style-feature": {
+    "id": "Conditional-Rules.style-feature",
+    "name": "style-feature",
+    "type": "data-type",
+    "parent": null,
+    "signatures": [
+      "@container =@container<container-condition>#{<block-contents>}<container-condition> =[<container-name>?<container-query>?]!<container-name> =<custom-ident><container-query> =not<query-in-parens>|<query-in-parens>[[and<query-in-parens>]*|[or<query-in-parens>]*]<query-in-parens> =(<container-query>)|(<size-feature>)|style(<style-query>)|scroll-state(<scroll-state-query>)|<general-enclosed><style-query> =not<style-in-parens>|<style-in-parens>[[and<style-in-parens>]*|[or<style-in-parens>]*]|<style-feature><scroll-state-query> =not<scroll-state-in-parens>|<scroll-state-in-parens>[[and<scroll-state-in-parens>]*|[or<scroll-state-in-parens>]*]|<scroll-state-feature><general-enclosed> =[<function-token><any-value>?)]|[(<any-value>?)]<style-in-parens> =(<style-query>)|(<style-feature>)|<general-enclosed><style-feature> =<style-feature-plain>|<style-feature-boolean>|<style-range><scroll-state-in-parens> =(<scroll-state-query>)|(<scroll-state-feature>)|<general-enclosed><style-feature-plain> =<style-feature-name>:<style-feature-value><style-feature-boolean> =<style-feature-name><style-range> =<style-range-value><mf-comparison><style-range-value>|<style-range-value><mf-lt><style-range-value><mf-lt><style-range-value>|<style-range-value><mf-gt><style-range-value><mf-gt><style-range-value><style-range-value> =<custom-property-name>|<style-feature-value><mf-comparison> =<mf-lt>|<mf-gt>|<mf-eq><mf-lt> ='<' '='?<mf-gt> ='>' '='?<mf-eq> ='='"
+    ],
+    "signature_hash": "15d28126873595526b64d672f30ed5f395d9c49da04c2c40891853c2cf4602a2",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@container#container_style_queries",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "",
+        "en": ""
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-03T00:20:34.047886",
+    "updatedDate": "2026-04-03T00:20:34.047887",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Conditional-Rules/supports-condition": {
+    "id": "Conditional-Rules.supports-condition",
+    "name": "supports-condition",
+    "type": "data-type",
+    "parent": null,
+    "signatures": [
+      "@import =@import[<url>|<string>][layer|layer(<layer-name>)]?<import-conditions>;<layer-name> =<ident>['.'<ident>]*<import-conditions> =[supports([<supports-condition>|<declaration>])]?<media-query-list>?<supports-condition> =not<supports-in-parens>|<supports-in-parens>[and<supports-in-parens>]*|<supports-in-parens>[or<supports-in-parens>]*<supports-in-parens> =(<supports-condition>)|<supports-feature>|<general-enclosed><supports-feature> =<supports-selector-fn>|<supports-font-tech-fn>|<supports-font-format-fn>|<supports-at-rule-fn>|<supports-named-feature-fn>|<supports-decl><general-enclosed> =[<function-token><any-value>?)]|[(<any-value>?)]<supports-selector-fn> =selector(<complex-selector>)<supports-font-tech-fn> =font-tech(<font-tech>)<supports-font-format-fn> =font-format(<font-format>)<supports-at-rule-fn> =at-rule(<at-keyword-token>)<supports-named-feature-fn> =named-feature(<ident>)<supports-decl> =([<declaration>|<supports-condition-name>])<complex-selector> =<complex-selector-unit>[<combinator>?<complex-selector-unit>]*<font-tech> =<font-features-tech>|<color-font-tech>|variations|palettes|incremental<font-format> =<string>|collection|embedded-opentype|opentype|svg|truetype|woff|woff2<complex-selector-unit> =[<compound-selector>?<pseudo-compound-selector>*]!<combinator> ='>'|'+'|'~'|['|' '|']<font-features-tech> =features-opentype|features-aat|features-graphite<color-font-tech> =color-COLRv0|color-COLRv1|color-SVG|color-sbix|color-CBDT<compound-selector> =[<type-selector>?<subclass-selector>*]!<pseudo-compound-selector> =<pseudo-element-selector><pseudo-class-selector>*<type-selector> =<wq-name>|<ns-prefix>?'*'<subclass-selector> =<id-selector>|<class-selector>|<attribute-selector>|<pseudo-class-selector><pseudo-element-selector> =:<pseudo-class-selector>|<legacy-pseudo-element-selector><pseudo-class-selector> =:<ident-token>|:<function-token><any-value>)<wq-name> =<ns-prefix>?<ident-token><ns-prefix> =[<ident-token>|'*']?'|'<id-selector> =<hash-token><class-selector> ='.'<ident-token><attribute-selector> ='['<wq-name>']'|'['<wq-name><attr-matcher>[<string-token>|<ident-token>]<attr-modifier>?']'<legacy-pseudo-element-selector> =:[before|after|first-line|first-letter]<attr-matcher> =['~'|'|'|'^'|'$'|'*']?'='<attr-modifier> =i|s"
+    ],
+    "signature_hash": "867f2060fdad6215cf91e77d2cec161958ebefb0527fedc5e46dac9970f0d457",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@import#importing_css_rules_conditional_on_feature_support",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "",
+        "en": ""
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-03T00:20:34.048095",
+    "updatedDate": "2026-04-03T00:20:34.048096",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Conditional-Rules/selector": {
+    "id": "Conditional-Rules.selector",
+    "name": "selector",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@supports =@supports<supports-condition>{<rule-list>}<supports-condition> =not<supports-in-parens>|<supports-in-parens>[and<supports-in-parens>]*|<supports-in-parens>[or<supports-in-parens>]*<supports-in-parens> =(<supports-condition>)|<supports-feature>|<general-enclosed><supports-feature> =<supports-selector-fn>|<supports-font-tech-fn>|<supports-font-format-fn>|<supports-at-rule-fn>|<supports-named-feature-fn>|<supports-decl><general-enclosed> =[<function-token><any-value>?)]|[(<any-value>?)]<supports-selector-fn> =selector(<complex-selector>)<supports-font-tech-fn> =font-tech(<font-tech>)<supports-font-format-fn> =font-format(<font-format>)<supports-at-rule-fn> =at-rule(<at-keyword-token>)<supports-named-feature-fn> =named-feature(<ident>)<supports-decl> =([<declaration>|<supports-condition-name>])<complex-selector> =<complex-selector-unit>[<combinator>?<complex-selector-unit>]*<font-tech> =<font-features-tech>|<color-font-tech>|variations|palettes|incremental<font-format> =<string>|collection|embedded-opentype|opentype|svg|truetype|woff|woff2<complex-selector-unit> =[<compound-selector>?<pseudo-compound-selector>*]!<combinator> ='>'|'+'|'~'|['|' '|']<font-features-tech> =features-opentype|features-aat|features-graphite<color-font-tech> =color-COLRv0|color-COLRv1|color-SVG|color-sbix|color-CBDT<compound-selector> =[<type-selector>?<subclass-selector>*]!<pseudo-compound-selector> =<pseudo-element-selector><pseudo-class-selector>*<type-selector> =<wq-name>|<ns-prefix>?'*'<subclass-selector> =<id-selector>|<class-selector>|<attribute-selector>|<pseudo-class-selector><pseudo-element-selector> =:<pseudo-class-selector>|<legacy-pseudo-element-selector><pseudo-class-selector> =:<ident-token>|:<function-token><any-value>)<wq-name> =<ns-prefix>?<ident-token><ns-prefix> =[<ident-token>|'*']?'|'<id-selector> =<hash-token><class-selector> ='.'<ident-token><attribute-selector> ='['<wq-name>']'|'['<wq-name><attr-matcher>[<string-token>|<ident-token>]<attr-modifier>?']'<legacy-pseudo-element-selector> =:[before|after|first-line|first-letter]<attr-matcher> =['~'|'|'|'^'|'$'|'*']?'='<attr-modifier> =i|s"
+    ],
+    "signature_hash": "bd9d89e269e620788b015a3ae81017ba3f988ae574a556e2509a69fb98a908fd",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@supports#function_syntax",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "",
+        "en": ""
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-03T00:20:34.047490",
+    "updatedDate": "2026-04-03T00:20:34.047491",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Conditional-Rules/style": {
+    "id": "Conditional-Rules.style",
+    "name": "style",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@container =@container<container-condition>#{<block-contents>}<container-condition> =[<container-name>?<container-query>?]!<container-name> =<custom-ident><container-query> =not<query-in-parens>|<query-in-parens>[[and<query-in-parens>]*|[or<query-in-parens>]*]<query-in-parens> =(<container-query>)|(<size-feature>)|style(<style-query>)|scroll-state(<scroll-state-query>)|<general-enclosed><style-query> =not<style-in-parens>|<style-in-parens>[[and<style-in-parens>]*|[or<style-in-parens>]*]|<style-feature><scroll-state-query> =not<scroll-state-in-parens>|<scroll-state-in-parens>[[and<scroll-state-in-parens>]*|[or<scroll-state-in-parens>]*]|<scroll-state-feature><general-enclosed> =[<function-token><any-value>?)]|[(<any-value>?)]<style-in-parens> =(<style-query>)|(<style-feature>)|<general-enclosed><style-feature> =<style-feature-plain>|<style-feature-boolean>|<style-range><scroll-state-in-parens> =(<scroll-state-query>)|(<scroll-state-feature>)|<general-enclosed><style-feature-plain> =<style-feature-name>:<style-feature-value><style-feature-boolean> =<style-feature-name><style-range> =<style-range-value><mf-comparison><style-range-value>|<style-range-value><mf-lt><style-range-value><mf-lt><style-range-value>|<style-range-value><mf-gt><style-range-value><mf-gt><style-range-value><style-range-value> =<custom-property-name>|<style-feature-value><mf-comparison> =<mf-lt>|<mf-gt>|<mf-eq><mf-lt> ='<' '='?<mf-gt> ='>' '='?<mf-eq> ='='"
+    ],
+    "signature_hash": "15d28126873595526b64d672f30ed5f395d9c49da04c2c40891853c2cf4602a2",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@container#container_style_queries",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "",
+        "en": ""
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-03T00:20:34.047046",
+    "updatedDate": "2026-04-03T00:20:34.047047",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Conditional-Rules/supports": {
+    "id": "Conditional-Rules.supports",
+    "name": "supports",
+    "type": "function",
+    "parent": null,
+    "signatures": [
+      "@import =@import[<url>|<string>][layer|layer(<layer-name>)]?<import-conditions>;<layer-name> =<ident>['.'<ident>]*<import-conditions> =[supports([<supports-condition>|<declaration>])]?<media-query-list>?<supports-condition> =not<supports-in-parens>|<supports-in-parens>[and<supports-in-parens>]*|<supports-in-parens>[or<supports-in-parens>]*<supports-in-parens> =(<supports-condition>)|<supports-feature>|<general-enclosed><supports-feature> =<supports-selector-fn>|<supports-font-tech-fn>|<supports-font-format-fn>|<supports-at-rule-fn>|<supports-named-feature-fn>|<supports-decl><general-enclosed> =[<function-token><any-value>?)]|[(<any-value>?)]<supports-selector-fn> =selector(<complex-selector>)<supports-font-tech-fn> =font-tech(<font-tech>)<supports-font-format-fn> =font-format(<font-format>)<supports-at-rule-fn> =at-rule(<at-keyword-token>)<supports-named-feature-fn> =named-feature(<ident>)<supports-decl> =([<declaration>|<supports-condition-name>])<complex-selector> =<complex-selector-unit>[<combinator>?<complex-selector-unit>]*<font-tech> =<font-features-tech>|<color-font-tech>|variations|palettes|incremental<font-format> =<string>|collection|embedded-opentype|opentype|svg|truetype|woff|woff2<complex-selector-unit> =[<compound-selector>?<pseudo-compound-selector>*]!<combinator> ='>'|'+'|'~'|['|' '|']<font-features-tech> =features-opentype|features-aat|features-graphite<color-font-tech> =color-COLRv0|color-COLRv1|color-SVG|color-sbix|color-CBDT<compound-selector> =[<type-selector>?<subclass-selector>*]!<pseudo-compound-selector> =<pseudo-element-selector><pseudo-class-selector>*<type-selector> =<wq-name>|<ns-prefix>?'*'<subclass-selector> =<id-selector>|<class-selector>|<attribute-selector>|<pseudo-class-selector><pseudo-element-selector> =:<pseudo-class-selector>|<legacy-pseudo-element-selector><pseudo-class-selector> =:<ident-token>|:<function-token><any-value>)<wq-name> =<ns-prefix>?<ident-token><ns-prefix> =[<ident-token>|'*']?'|'<id-selector> =<hash-token><class-selector> ='.'<ident-token><attribute-selector> ='['<wq-name>']'|'['<wq-name><attr-matcher>[<string-token>|<ident-token>]<attr-modifier>?']'<legacy-pseudo-element-selector> =:[before|after|first-line|first-letter]<attr-matcher> =['~'|'|'|'^'|'$'|'*']?'='<attr-modifier> =i|s"
+    ],
+    "signature_hash": "867f2060fdad6215cf91e77d2cec161958ebefb0527fedc5e46dac9970f0d457",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@import#supports-condition",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": ""
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "",
+        "en": ""
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-03T00:20:34.047680",
+    "updatedDate": "2026-04-03T00:20:34.047681",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": null,
+      "added_version": null,
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -232,6 +232,10 @@ export const sidebar = [
                     link: 'svg/Attributes/font-weight/'
                 },
                 {
+                    label: 'font-width',
+                    link: 'svg/Attributes/font-width/'
+                },
+                {
                     label: 'fr',
                     link: 'svg/Attributes/fr/'
                 },
