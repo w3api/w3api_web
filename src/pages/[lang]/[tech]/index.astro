@@ -34,41 +34,47 @@ const sidebar = sidebarModule?.default || sidebarModule?.sidebar || [];
 
 // Importar módulos de distribución
 const distributionModules = import.meta.glob<any>('../../../data/*/modules/*.json', { eager: true });
-const moduleKey = Array.from(Object.keys(distributionModules)).find((key) =>
+const moduleKeys = Array.from(Object.keys(distributionModules)).filter((key) =>
   key.includes(`/data/${technology}/modules/`)
 );
-const distributionFile = moduleKey ? (distributionModules[moduleKey].default || distributionModules[moduleKey]) : [];
+const distributionFile = moduleKeys.flatMap((key) => {
+  const data = distributionModules[key].default || distributionModules[key];
+  return Array.isArray(data) ? data : [data];
+});
 
 // Importar shards
 const shardModules = import.meta.glob('../../../data/*/shards/**/*.json', { eager: true });
 
-// Procesar módulos para obtener información de paquetes
+// Procesar módulos para obtener información de paquetes/módulos
 const packages: any[] = [];
+
+// Determinar si esta tecnología tiene estructura de paquetes o solo módulos
+const hasPackageStructure = ['java', 'jquery', 'python'].includes(technology);
 
 if (Array.isArray(distributionFile)) {
   distributionFile.forEach((item: any) => {
-    if (item.slug && item.shard) {
-      const packageName = item.slug.split('/')[0];
-      
-      let pkg = packages.find((p) => p.name === packageName);
-      
-      if (!pkg) {
-        pkg = {
-          name: packageName,
-          slug: packageName,
-          totalElements: 0,
-          classes: 0,
-          interfaces: 0,
-          exceptions: 0,
-          enums: 0,
-          annotations: 0,
-          shard: item.shard,
-        };
-        packages.push(pkg);
-      }
-      
-      pkg.totalElements++;
+    // Determinar si este es un paquete (tiene /) o un módulo (no tiene /)
+    const hasPkg = item.slug && item.slug.includes('/');
+    const packageName = hasPkg ? item.slug.split('/')[0] : item.slug;
+    
+    let pkg = packages.find((p) => p.name === packageName);
+    
+    if (!pkg) {
+      pkg = {
+        name: packageName,
+        slug: packageName,
+        totalElements: 0,
+        classes: 0,
+        interfaces: 0,
+        exceptions: 0,
+        enums: 0,
+        annotations: 0,
+        shard: item.shard,
+      };
+      packages.push(pkg);
     }
+    
+    pkg.totalElements++;
   });
 }
 
@@ -128,13 +134,7 @@ const tableOfContents = headings.map((h) => ({
           <table class="packages-table">
             <thead>
               <tr>
-                <th>Package Name</th>
-                <th class="text-right">Classes</th>
-                <th class="text-right">Interfaces</th>
-                <th class="text-right">Exceptions</th>
-                <th class="text-right">Enums</th>
-                <th class="text-right">Annotations</th>
-                <th class="text-right">Total</th>
+                <th>{t(technologyFilter, uiLanguage)}</th>
               </tr>
             </thead>
             <tbody>
@@ -145,12 +145,6 @@ const tableOfContents = headings.map((h) => ({
                       {pkg.name}
                     </a>
                   </td>
-                  <td class="text-right">{pkg.classes || 0}</td>
-                  <td class="text-right">{pkg.interfaces || 0}</td>
-                  <td class="text-right">{pkg.exceptions || 0}</td>
-                  <td class="text-right">{pkg.enums || 0}</td>
-                  <td class="text-right">{pkg.annotations || 0}</td>
-                  <td class="text-right total">{pkg.totalElements}</td>
                 </tr>
               ))}
             </tbody>
