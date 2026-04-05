@@ -5,7 +5,7 @@ import { LANGUAGES } from '../../../config/languages';
 
 export async function getStaticPaths() {
   const UI_LANGUAGES: Language[] = ['en', 'es'];
-  const TECHS = ['java', 'jquery', 'python', 'xml', 'html', 'svg', 'css'];
+  const TECHS = ['css', 'html', 'java', 'javascript', 'jquery', 'python', 'svg', 'xml'];
   
   return UI_LANGUAGES.flatMap((lang) =>
     TECHS.map((tech) => ({

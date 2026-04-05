@@ -4,7 +4,7 @@ import type { Language } from '../../i18n';
 import { LANGUAGES } from '../../config/languages';
 
 export async function getStaticPaths() {
-  const TECHS = ['java', 'jquery', 'python', 'xml', 'html', 'svg', 'css'];
+  const TECHS = ['css', 'html', 'java', 'javascript', 'jquery', 'python', 'svg', 'xml'];
   
   return TECHS.map((tech) => ({
     params: { tech },

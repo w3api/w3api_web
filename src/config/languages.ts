@@ -1,9 +1,27 @@
 export const LANGUAGES = {
+  css: {
+    technology: 'css',
+    technologyName: 'CSS',
+    technologyCode: 'css',
+    technologyFilter: 'Propiedades',
+  },
+  html: {
+    technology: 'html',
+    technologyName: 'HTML',
+    technologyCode: 'html',
+    technologyFilter: 'Categorías',
+  },
   java: {
     technology: 'java',
     technologyName: 'Java',
     technologyCode: 'java',
     technologyFilter: 'Paquetes',
+  },
+  javascript: {
+    technology: 'javascript',
+    technologyName: 'JavaScript',
+    technologyCode: 'javascript',
+    technologyFilter: 'Módulos',
   },
   jquery: {
     technology: 'jquery',
@@ -17,28 +35,16 @@ export const LANGUAGES = {
     technologyCode: 'python',
     technologyFilter: 'Módulos',
   },
-  xml: {
-    technology: 'xml',
-    technologyName: 'XML',
-    technologyCode: 'xml',
-    technologyFilter: 'Módulos',
-  },
-  html: {
-    technology: 'html',
-    technologyName: 'HTML',
-    technologyCode: 'html',
-    technologyFilter: 'Categorías',
-  },
   svg: {
     technology: 'svg',
     technologyName: 'SVG',
     technologyCode: 'xml',
     technologyFilter: 'Categorías',
   },
-  css: {
-    technology: 'css',
-    technologyName: 'CSS',
-    technologyCode: 'css',
-    technologyFilter: 'Propiedades',
+  xml: {
+    technology: 'xml',
+    technologyName: 'XML',
+    technologyCode: 'xml',
+    technologyFilter: 'Módulos',
   },
 };
