@@ -35,4 +35,10 @@ export const LANGUAGES = {
     technologyCode: 'xml',
     technologyFilter: 'Categorías',
   },
+  css: {
+    technology: 'css',
+    technologyName: 'CSS',
+    technologyCode: 'css',
+    technologyFilter: 'Propiedades',
+  },
 };

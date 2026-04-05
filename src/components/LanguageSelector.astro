@@ -10,12 +10,13 @@ interface Props {
 const { currentLanguage = 'java', languageCode = 'es', hasLanguagePrefix = true } = Astro.props;
 
 const languages = [
+  { id: 'css', name: 'CSS', icon: 'devicon-css3-plain' },
+  { id: 'html', name: 'HTML', icon: 'devicon-html5-plain' },
   { id: 'java', name: 'Java', icon: 'devicon-java-plain' },
   { id: 'jquery', name: 'jQuery', icon: 'devicon-jquery-plain' },
-  { id: 'html', name: 'HTML', icon: 'devicon-html5-plain' },
   { id: 'python', name: 'Python', icon: 'devicon-python-plain' },
-  { id: 'xml', name: 'XML', icon: 'devicon-xml-plain' },
   { id: 'svg', name: 'SVG', icon: 'devicon-html5-plain colored"' },
+  { id: 'xml', name: 'XML', icon: 'devicon-xml-plain' },
 ].map((lang) => ({
   ...lang,
   href: hasLanguagePrefix ? `/${languageCode}/${lang.id}/` : `/${lang.id}/`,
