@@ -1,6 +1,6 @@
 ---
 import StarlightLayout from '../../layouts/StarlightLayout.astro';
-import type { Language } from '../../i18n';
+import { t, type Language } from '../../i18n';
 import { LANGUAGES } from '../../config/languages';
 
 export async function getStaticPaths() {
@@ -88,7 +88,7 @@ packages.forEach((pkg: any) => {
   }
 });
 
-const headings = [{ level: 2, title: 'Packages', id: 'packages' }];
+const headings = [{ level: 2, title: t(technologyFilter, uiLanguage), id: 'packages' }];
 
 const tableOfContents = headings.map((h) => ({
   depth: h.level,
@@ -116,7 +116,7 @@ const tableOfContents = headings.map((h) => ({
       <hr class="header-divider" />
 
       <section id="packages">
-        <h2>Packages</h2>
+        <h2>{t(technologyFilter, uiLanguage)}</h2>
 
         <div class="packages-table-container">
           <table class="packages-table">

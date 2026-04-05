@@ -1,5 +1,6 @@
 ---
 import LanguageSelector from './LanguageSelector.astro';
+import { t } from '../i18n';
 import type { Language } from '../i18n';
 
 interface SidebarItem {
@@ -35,7 +36,7 @@ const buildUrl = (link: string) => {
     <div class="sl-sidebar-inner">
       <LanguageSelector currentLanguage={currentTechnology} languageCode={languageCode} hasLanguagePrefix={hasLanguagePrefix} />
       <div class="sl-search-filter">
-        {technologyFilter && <label class="sl-search-label">{technologyFilter}</label>}
+        {technologyFilter && <label class="sl-search-label">{t(technologyFilter, languageCode)}</label>}
         <input 
           id="sidebar-search" 
           type="text" 
