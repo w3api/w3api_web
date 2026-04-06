@@ -6,6 +6,7 @@ import "astro-breadcrumbs/breadcrumbs.css";
 import DocumentAsidePanel from '../components/DocumentAsidePanel.astro';
 import { marked } from 'marked';
 import { t } from '../i18n';
+import { getElementTypeLabel } from '../config/elementTypes';
 import type { Language } from '../i18n';
 
 interface SidebarItem {
@@ -196,7 +197,7 @@ const breadcrumbTrail = buildBreadcrumbTrail();
         <section id="members">
           <h2>{t('members', uiLanguage)}</h2>
           {Object.entries(doc.membersByType).map(([type, members]: any) => {
-            const typeLabel = type.charAt(0).toUpperCase() + type.slice(1)
+            const typeLabel = getElementTypeLabel(technology, type, uiLanguage)
             return (
               <div class="members-category">
                 <h3>{typeLabel}</h3>

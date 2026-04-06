@@ -2,6 +2,7 @@
 import DocumentLayout from '../../layouts/DocumentLayout.astro';
 import { buildMembersByType, generateTableOfContents } from '../../utils/loadDocumentation';
 import { LANGUAGES } from '../../config/languages';
+import { getPluralName } from '../../config/elementTypes';
 import type { Language } from '../../i18n';
 
 export async function getStaticPaths() {
@@ -73,22 +74,73 @@ if (!routeMeta) {
   throw new Error(`Route not found: ${slug} in ${tech}`);
 }
 
-// Cargar shard
-const shardKey = Object.keys(shardsGlob || {}).find((key) =>
-  key.includes(routeMeta.shard)
+// Cargar shard - TODOS los archivos del módulo
+const shardKeys = Object.keys(shardsGlob || {}).filter((key) =>
+  (key.includes(routeMeta.shard) || key.includes(`shards/${packageName}/`)) && 
+  key.includes(`/data/${tech}/shards/`)
 );
-const shardModule = shardKey ? shardsGlob[shardKey] : null;
-const shard = shardModule ? (shardModule.default || shardModule) : {};
+
+const shard: Record<string, any> = {};
+shardKeys.forEach(key => {
+  const shardModule = shardsGlob[key];
+  const shardData = shardModule ? (shardModule.default || shardModule) : {};
+  Object.assign(shard, shardData);
+});
 
 const isPackageOnly = slug === packageName;
 let doc = shard[slug] || shard[packageName] || {};
 
+// Si es solo un módulo/paquete, siempre buscar en el shard para agregar elementos
+if (isPackageOnly) {
+  // Buscar TODOS los elementos en el shard que pertenecen a este paquete
+  const allElements: Record<string, any[]> = {};
+  const searchPrefix = `${packageName}/`;
+  
+  Object.entries(shard).forEach(([shardKey, value]: [string, any]) => {
+    // Incluir cualquier clave que empiece con "packageName/"
+    // Y filtrar: solo elementos de primer nivel (sin parent)
+    if (shardKey.startsWith(searchPrefix) && !value.parent) {
+      const type = value.type || 'other';
+      if (!allElements[type]) allElements[type] = [];
+      
+      // Agregar la propiedad slug desde la clave del shard
+      const element = {
+        ...value,
+        slug: shardKey, // Usar la clave como slug
+      };
+      allElements[type].push(element);
+    }
+  });
+
+  // Si encontramos elementos, actualizar doc
+  if (Object.keys(allElements).length > 0) {
+    // Construir membersByType directamente
+    const membersByType: Record<string, any[]> = {};
+    
+    Object.entries(allElements).forEach(([type, items]) => {
+      membersByType[type] = items;
+      
+      // Obtener nombre plural correcto desde la configuración
+      const propName = getPluralName(technology, type);
+      
+      // Asignar a doc
+      doc[propName as any] = items;
+    });
+    
+    doc.membersByType = membersByType;
+  }
+}
+
 // Asegurar que doc tiene la estructura necesaria
+const finalMembersByType = isPackageOnly && doc.membersByType && Object.keys(doc.membersByType).length > 0 
+  ? doc.membersByType 
+  : buildMembersByType(doc, packageName, technology as any);
+
 doc = {
   name: doc.name || slug,
   type: doc.type || (isPackageOnly ? 'Package' : 'Document'),
   description: doc.description || `${isPackageOnly ? 'Package' : 'Document'}: ${slug}`,
-  membersByType: buildMembersByType(doc, packageName, technology as any),
+  membersByType: finalMembersByType,
   signatures: Array.isArray(doc.signatures) ? doc.signatures : [],
   parameters: Array.isArray(doc.parameters) ? doc.parameters : [],
   constructors: Array.isArray(doc.constructors) ? doc.constructors : [],
