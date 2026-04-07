@@ -3,7 +3,7 @@ export const LANGUAGES = {
     technology: 'css',
     technologyName: 'CSS',
     technologyCode: 'css',
-    technologyFilter: 'filter_properties',
+    technologyFilter: 'filter_categories',
   },
   html: {
     technology: 'html',
