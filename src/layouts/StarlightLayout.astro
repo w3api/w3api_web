@@ -129,7 +129,7 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
           </button>
 
           <!-- Logo / Site Title -->
-          <a href="/" class="sl-site-title">
+          <a href={hasLanguagePrefix ? `/${uiLanguage}/` : "/"} class="sl-site-title">
             {logoSrc && <img src={logoSrc} alt={siteTitle} class="sl-logo" />}
             <span>{siteTitle}</span>
           </a>
