@@ -18,6 +18,8 @@ const { uiLanguage = 'en' } = Astro.props;
 const appId = import.meta.env.PUBLIC_ALGOLIA_APP_ID;
 const apiKey = import.meta.env.PUBLIC_ALGOLIA_SEARCH_KEY;
 const indexName = import.meta.env.PUBLIC_ALGOLIA_INDEX_NAME;
+
+const placeholderText = t('search_title', uiLanguage).charAt(0).toUpperCase() + t('search_title', uiLanguage).slice(1);
 ---
 
 <!-- Devicon CSS -->
@@ -31,7 +33,9 @@ const indexName = import.meta.env.PUBLIC_ALGOLIA_INDEX_NAME;
   title="Search (Ctrl+K)"
 >
   <div class="sl-search-button-left">
-    <span class="sl-search-icon">🔍</span>
+    <svg class="sl-search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
     <span class="sl-search-label">{t('search_title', uiLanguage).charAt(0).toUpperCase() + t('search_title', uiLanguage).slice(1)}</span>
   </div>
   <span class="sl-search-hint" id="search-shortcut">Ctrl K</span>
@@ -46,8 +50,8 @@ const indexName = import.meta.env.PUBLIC_ALGOLIA_INDEX_NAME;
         id="search-input"
         type="text"
         class="sl-search-modal-input"
-        placeholder="Search"
-        aria-label="Search"
+        placeholder={placeholderText}
+        aria-label={placeholderText}
       />
       <button
         id="search-close"
@@ -118,25 +122,31 @@ const indexName = import.meta.env.PUBLIC_ALGOLIA_INDEX_NAME;
   }
 
   .sl-search-icon {
-    font-size: 24px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
+    flex-shrink: 0;
+    color: var(--sl-color-text);
   }
 
   @media (max-width: 50rem) {
     .sl-search-icon {
-      font-size: 28px;
+      width: 24px;
+      height: 24px;
     }
   }
 
   @media (max-width: 600px) {
     .sl-search-icon {
-      font-size: 24px;
+      width: 20px;
+      height: 20px;
     }
   }
 
   @media (max-width: 450px) {
     .sl-search-icon {
-      font-size: 20px;
+      width: 18px;
+      height: 18px;
     }
   }
 
@@ -153,8 +163,7 @@ const indexName = import.meta.env.PUBLIC_ALGOLIA_INDEX_NAME;
 
     .sl-search-button-left {
       gap: 0;
-      flex: 1;
-      justify-content: flex-end;
+      flex: none;
     }
   }
 

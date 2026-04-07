@@ -374,6 +374,7 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
           flex: 1;
           justify-content: flex-end;
           padding: 0 0.5rem;
+          min-width: auto;
         }
       }
 
@@ -384,6 +385,12 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
         gap: 1.5rem;
         height: var(--sl-header-height);
         flex-shrink: 0;
+      }
+
+      @media (max-width: 768px) {
+        .sl-header-nav {
+          display: none;
+        }
       }
 
       .sl-nav-link {
@@ -403,6 +410,12 @@ const currentTechnology = hasLanguagePrefix ? (pathSegments[1] || 'java') : (pat
         height: var(--sl-header-height);
         flex-shrink: 0;
         min-width: 80px;
+      }
+
+      @media (max-width: 1024px) {
+        .sl-header-social {
+          display: none;
+        }
       }
 
       .sl-site-title {

@@ -131,6 +131,22 @@ const buildUrl = (link: string) => {
         </div>
         );
       })}
+      
+      <!-- Navigation Links (Mobile only) -->
+      <div class="sl-sidebar-nav-mobile">
+        <h3 class="sl-sidebar-section-title">Navegación</h3>
+        <ul class="sl-sidebar-mobile-links">
+          <li><a href={buildUrl('apis/')}>APIs</a></li>
+          <li><a href={buildUrl('lista-correo/')}>Lista de Correo</a></li>
+          <li><a href={buildUrl('blog/')}>Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Icons (Tablet and Mobile) -->
+      <div class="sl-sidebar-social-mobile">
+        <h3 class="sl-sidebar-section-title">Redes Sociales</h3>
+        <!-- Espacio para iconos de redes sociales -->
+      </div>
     </div>
   </nav>
 )}
@@ -302,6 +318,61 @@ const buildUrl = (link: string) => {
   [data-theme="dark"] .sl-badge-caution { background: #451a03; color: #fcd34d; }
   [data-theme="dark"] .sl-badge-danger  { background: #450a0a; color: #fca5a5; }
   [data-theme="dark"] .sl-badge-success { background: #14532d; color: #86efac; }
+
+  /* Mobile Navigation and Social Icons */
+  .sl-sidebar-nav-mobile,
+  .sl-sidebar-social-mobile {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .sl-sidebar-nav-mobile {
+      display: block;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .sl-sidebar-social-mobile {
+      display: block;
+    }
+  }
+
+  .sl-sidebar-section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sl-color-gray-4);
+    padding: 1rem 1rem 0.5rem 1rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .sl-sidebar-mobile-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sl-sidebar-mobile-links li {
+    padding: 0;
+  }
+
+  .sl-sidebar-mobile-links a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--sl-color-text);
+    text-decoration: none;
+    font-size: var(--sl-text-sm);
+    border-left: 3px solid transparent;
+    transition: all 0.15s ease;
+  }
+
+  .sl-sidebar-mobile-links a:hover {
+    background: var(--sl-color-bg-accent);
+    color: var(--sl-color-accent);
+    border-left-color: var(--sl-color-accent);
+  }
+
 </style>
 
 <script>
