@@ -28,8 +28,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-04-03T00:22:12.854382",
-    "updatedDate": "2026-04-03T00:22:12.854383",
+    "createdDate": "2026-04-07T09:54:11.870666",
+    "updatedDate": "2026-04-07T09:54:11.870667",
     "metadata": {
       "status": "deprecated",
       "deprecated_version": "unknown",
@@ -68,8 +68,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-04-03T00:22:12.854397",
-    "updatedDate": "2026-04-03T00:22:12.854397",
+    "createdDate": "2026-04-07T09:54:11.870680",
+    "updatedDate": "2026-04-07T09:54:11.870681",
     "metadata": {
       "status": "deprecated",
       "deprecated_version": "unknown",
@@ -99,8 +99,8 @@
         "is_var_args": false,
         "is_var_kwargs": false,
         "description": {
-          "es": "El ObjectName que identifica el MBean a ser añadido para observación. Debe referirse a un MBean válido registrado dentro del MBeanServer. Este parámetro especifica qué recurso gestionado el monitor rastreará.",
-          "en": "The ObjectName identifying the MBean to be added for observation. Must refer to a valid MBean registered within the MBeanServer. This parameter specifies which managed resource the monitor will track."
+          "es": "",
+          "en": ""
         }
       }
     ],
@@ -112,10 +112,10 @@
       }
     ],
     "description": {
-      "en": "The `addObservedObject` method, part of the [`Monitor`](java/javax.management.monitor/Monitor/) abstract class in the `javax.management.monitor` module, is fundamental for configuring a Java Management Extensions (JMX) monitor. Its primary function is to register a specific MBean, identified by its [`ObjectName`](java/javax.management/ObjectName/), for observation. Once an MBean is added, the [`Monitor`](java/javax.management.monitor/Monitor/) instance begins to track the value of a designated attribute on that MBean, enabling proactive management and alerting within a Java application.\n\nThis method allows a [`Monitor`](java/javax.management.monitor/Monitor/) subclass (like [`CounterMonitor`](java/javax.management.monitor/CounterMonitor/) or [`GaugeMonitor`](java/javax.management.monitor/GaugeMonitor/)) to observe multiple MBeans simultaneously. For practical usage, you typically create an [`ObjectName`](java/javax.management/ObjectName/) for the target MBean and then invoke `addObservedObject` on your monitor instance. This is a critical step before starting the monitor, as without observed objects, the monitor has no MBeans to inspect.\n\nFrom a best practices perspective, it's vital to ensure that the [`ObjectName`](java/javax.management/ObjectName/) provided refers to a valid and existing MBean within the MBean server. Adding non-existent MBeans will not cause immediate errors during addition but will prevent effective monitoring. While adding many observed objects is supported, consider the overhead if monitoring a very large number of MBeans, although JMX monitors are optimized for efficiency. Remember to use [`removeObservedObject`](java/javax.management.monitor/Monitor/removeObservedObject/) when an MBean no longer needs to be monitored to free up resources.",
-      "es": "El método `addObservedObject`, parte de la clase abstracta [`Monitor`](/es/java/javax.management.monitor/Monitor/) en el módulo `javax.management.monitor`, es fundamental para configurar un monitor de Java Management Extensions (JMX). Su función principal es registrar un MBean específico, identificado por su [`ObjectName`](/es/java/javax.management/ObjectName/), para su observación. Una vez que se agrega un MBean, la instancia de [`Monitor`](/es/java/javax.management.monitor/Monitor/) comienza a rastrear el valor de un atributo designado en ese MBean, lo que permite una gestión y alerta proactivas dentro de una aplicación Java.\n\nEste método permite que una subclase de [`Monitor`](/es/java/javax.management.monitor/Monitor/) (como [`CounterMonitor`](/es/java/javax.management.monitor/CounterMonitor/) o [`GaugeMonitor`](/es/java/javax.management.monitor/GaugeMonitor/)) observe múltiples MBeans simultáneamente. Para un uso práctico, normalmente se crea un [`ObjectName`](/es/java/javax.management/ObjectName/) para el MBean objetivo y luego se invoca `addObservedObject` en la instancia del monitor. Este es un paso crítico antes de iniciar el monitor, ya que sin objetos observados, el monitor no tiene MBeans que inspeccionar.\n\nDesde una perspectiva de mejores prácticas, es vital asegurarse de que el [`ObjectName`](/es/java/javax.management/ObjectName/) proporcionado se refiera a un MBean válido y existente dentro del servidor MBean. Agregar MBeans inexistentes no causará errores inmediatos durante la adición, pero evitará un monitoreo efectivo. Si bien se admite la adición de muchos objetos observados, considere la sobrecarga si se monitorea un número muy grande de MBeans, aunque los monitores JMX están optimizados para la eficiencia. Recuerde usar [`removeObservedObject`](/es/java/javax.management.monitor/Monitor/removeObservedObject/) cuando un MBean ya no necesite ser monitoreado para liberar recursos."
+      "es": "",
+      "en": "Adds the specified object in the set of observed MBeans, if this object is not already present."
     },
-    "example": "import javax.management.*;\nimport javax.management.monitor.CounterMonitor;\nimport java.lang.management.ManagementFactory;\n\npublic class MonitorUsage {\n\n    public static void main(String[] args) throws Exception {\n        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();\n\n        ObjectName mbeanName = new ObjectName(\"com.example:type=MySimpleBean\");\n        MySimpleBean mbean = new MySimpleBean();\n        mbs.registerMBean(mbean, mbeanName);\n\n        CounterMonitor monitor = new CounterMonitor();\n        monitor.setObservedAttribute(\"Value\");\n        monitor.setGranularityPeriod(500);\n        monitor.setThreshold(new Long(3));\n        monitor.setNotify(true);\n        monitor.setDifferenceMode(false);\n\n        mbs.registerMBean(monitor, new ObjectName(\"com.example:type=MyCounterMonitor\"));\n        monitor.addNotificationListener((notification, handback) -> {\n            System.out.println(\"Monitor Notification: \" + notification.getMessage());\n        }, null, null);\n\n        monitor.addObservedObject(mbeanName); // Key usage of addObservedObject\n\n        monitor.start();\n\n        for (int i = 0; i < 5; i++) {\n            Thread.sleep(1000);\n            mbean.incrementValue();\n            System.out.println(\"Bean Value: \" + mbean.getValue());\n        }\n\n        monitor.stop();\n        mbs.unregisterMBean(mbeanName);\n        mbs.unregisterMBean(new ObjectName(\"com.example:type=MyCounterMonitor\"));\n    }\n}\n\ninterface MySimpleBeanMXBean {\n    int getValue();\n    void incrementValue();\n}\n\nclass MySimpleBean implements MySimpleBeanMXBean {\n    private int value = 0;\n    @Override\n    public int getValue() { return value; }\n    @Override\n    public void incrementValue() { value++; }\n}",
+    "example": "",
     "articles": [],
     "info": {
       "status": "empty",
@@ -127,17 +127,15 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-04-03T00:22:12.854070",
-    "updatedDate": "2026-04-03T13:15:48.899010",
+    "createdDate": "2026-04-07T09:54:11.870358",
+    "updatedDate": "2026-04-07T09:54:11.870359",
     "metadata": {
-      "status": "current",
-      "added_version": "5",
-      "deprecated_version": null,
-      "tags": [
-        "JMX",
-        "Monitoring",
-        "MBean"
-      ]
+      "status": "deprecated",
+      "deprecated_version": "unknown",
+      "added_version": "1.5",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
     }
   },
   "javax.management.monitor/MonitorMBean/addObservedObject": {
@@ -160,8 +158,8 @@
         "is_var_args": false,
         "is_var_kwargs": false,
         "description": {
-          "es": "El ObjectName que identifica el MBean a ser añadido para observación. Debe referirse a un MBean válido registrado dentro del MBeanServer. Este parámetro especifica qué recurso gestionado el monitor rastreará.",
-          "en": "The ObjectName identifying the MBean to be added for observation. Must refer to a valid MBean registered within the MBeanServer. This parameter specifies which managed resource the monitor will track."
+          "es": "",
+          "en": ""
         }
       }
     ],
@@ -173,10 +171,10 @@
       }
     ],
     "description": {
-      "en": "The `addObservedObject` method, part of the [`MonitorMBean`](/java/javax.management.monitor/MonitorMBean/) interface in the `javax.management.monitor` module, is a fundamental operation within the Java Management Extensions (JMX) framework. Its primary function is to add a specific MBean, identified by its [`ObjectName`](/java/javax.management/ObjectName/), to the set of MBeans that the monitor is currently observing. This method is crucial for configuring JMX monitors like [`GaugeMonitor`](/java/javax.management.monitor/GaugeMonitor/) or [`CounterMonitor`](/java/javax.management.monitor/CounterMonitor/) to track changes in attributes of managed resources.\n\nWhen using `addObservedObject`, developers specify the MBean whose attributes need to be monitored for specific conditions, such as exceeding a threshold or changing value. This enables the monitor to periodically poll or actively listen for notifications from the designated MBean, triggering actions when predefined criteria are met. Practical use cases include monitoring application performance metrics like thread counts, memory usage, or custom business-specific counters.\n\nProper use of `addObservedObject` involves ensuring the [`ObjectName`](/java/javax.management/ObjectName/) refers to an MBean already registered with the [`MBeanServer`](/java/javax.management/MBeanServer/). While adding multiple observed objects can increase the monitoring overhead, JMX monitors are generally optimized for efficiency. Best practices suggest adding only necessary MBeans and ensuring the monitored attributes are simple and performant to retrieve. This method is a core component for robust and scalable Java application monitoring using the `javax.management.monitor` API.",
-      "es": "El método `addObservedObject`, parte de la interfaz [`MonitorMBean`](/es/java/javax.management.monitor/MonitorMBean/) en el módulo `javax.management.monitor`, es una operación fundamental dentro del framework Java Management Extensions (JMX). Su función principal es añadir un MBean específico, identificado por su [`ObjectName`](/es/java/javax.management/ObjectName/), al conjunto de MBeans que el monitor está observando actualmente. Este método es crucial para configurar monitores JMX como [`GaugeMonitor`](/es/java/javax.management.monitor/GaugeMonitor/) o [`CounterMonitor`](/es/java/javax.management.monitor/CounterMonitor/) para rastrear cambios en los atributos de los recursos gestionados.\n\nAl utilizar `addObservedObject`, los desarrolladores especifican el MBean cuyos atributos necesitan ser monitoreados para condiciones específicas, como exceder un umbral o cambiar de valor. Esto permite al monitor consultar periódicamente o escuchar activamente las notificaciones del MBean designado, desencadenando acciones cuando se cumplen los criterios predefinidos. Los casos de uso prácticos incluyen el monitoreo de métricas de rendimiento de aplicaciones como el número de hilos, el uso de memoria o contadores personalizados específicos del negocio.\n\nEl uso adecuado de `addObservedObject` implica asegurar que el [`ObjectName`](/es/java/javax.management/ObjectName/) se refiere a un MBean ya registrado con el [`MBeanServer`](/es/java/javax.management/MBeanServer/). Aunque añadir múltiples objetos observados puede aumentar la sobrecarga de monitoreo, los monitores JMX están generalmente optimizados para la eficiencia. Las mejores prácticas sugieren añadir solo los MBeans necesarios y asegurar que los atributos monitoreados sean simples y de alto rendimiento para recuperar. Este método es un componente central para una monitorización robusta y escalable de aplicaciones Java utilizando la API `javax.management.monitor`."
+      "es": "",
+      "en": "Adds the specified object in the set of observed MBeans."
     },
-    "example": "import javax.management.*;\nimport javax.management.monitor.GaugeMonitor;\nimport java.lang.management.ManagementFactory;\n\npublic class MonitorSetup {\n    public static void main(String[] args) throws Exception {\n        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();\n\n        class MyManagedObject implements MyManagedObjectMBean {\n            private int myValue = 0;\n            public int getMyValue() { return myValue; }\n            public void setMyValue(int myValue) { this.myValue = myValue; }\n        }\n        interface MyManagedObjectMBean {\n            int getMyValue();\n            void setMyValue(int myValue);\n        }\n\n        ObjectName observedObjectName = new ObjectName(\"com.example:type=MyService,id=001\");\n        MyManagedObject myObject = new MyManagedObject();\n        mbs.registerMBean(myObject, observedObjectName);\n\n        GaugeMonitor monitor = new GaugeMonitor();\n        ObjectName monitorObjectName = new ObjectName(\"com.example:type=MyMonitor,name=ValueMonitor\");\n        mbs.registerMBean(monitor, monitorObjectName);\n\n        monitor.setObservedAttribute(\"MyValue\");\n        monitor.setGranularityPeriod(1000L);\n        monitor.setNotifyHigh(true);\n        monitor.setHighThreshold(new Integer(10));\n\n        monitor.addObservedObject(observedObjectName);\n\n        monitor.start();\n        System.out.println(\"Monitor started, observing \" + observedObjectName);\n        \n        myObject.setMyValue(12);\n\n        Thread.sleep(2000); \n        monitor.stop();\n        mbs.unregisterMBean(monitorObjectName);\n        mbs.unregisterMBean(observedObjectName);\n    }\n}",
+    "example": "",
     "articles": [],
     "info": {
       "status": "empty",
@@ -188,17 +186,15 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-04-03T00:22:12.854567",
-    "updatedDate": "2026-04-03T13:15:48.899024",
+    "createdDate": "2026-04-07T09:54:11.870851",
+    "updatedDate": "2026-04-07T09:54:11.870852",
     "metadata": {
-      "status": "current",
+      "status": "deprecated",
+      "deprecated_version": "unknown",
       "added_version": "1.5",
-      "deprecated_version": null,
-      "tags": [
-        "JMX",
-        "Monitoring",
-        "MBean"
-      ]
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
     }
   }
 }

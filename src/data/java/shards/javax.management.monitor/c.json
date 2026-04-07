@@ -13,10 +13,10 @@
     "return_type": "",
     "exceptions": [],
     "description": {
-      "es": "La clase `javax.management.monitor.CounterMonitor` en [`java`](/java/) es un [`Monitor`](java/javax.management.monitor/Monitor/) MBean especializado diseñado para observar atributos numéricos que representan contadores. Extiende la funcionalidad de un monitor genérico para rastrear y reaccionar específicamente a los incrementos de un atributo de contador expuesto por otro [`MBean`](/es/java/jmx/mbean/).\n\nSu propósito principal es disparar eventos [`MonitorNotification`](java/javax.management.monitor/MonitorNotification/) cuando un contador observado alcanza o excede un [`threshold`](java/javax.management.monitor/CounterMonitor/setThreshold/) predefinido. Esto es muy útil para gestionar y automatizar respuestas al uso de recursos, tasas de error o finalización de tareas en un entorno [`JMX`](/es/java/jmx/). Los desarrolladores pueden configurar un `offset` y `modulus` para escenarios de monitoreo más complejos, como restablecer la detección del contador después de un cierto valor o monitorear la diferencia en los valores del contador a lo largo del tiempo a través de [`setDifferenceMode`](java/javax.management.monitor/CounterMonitor/setDifferenceMode/).\n\nLos casos de uso prácticos incluyen el monitoreo del número de solicitudes procesadas por un servicio, los bytes transferidos a través de una red o el recuento de eventos específicos que ocurren dentro de una aplicación. Las mejores prácticas implican asegurar que el atributo de contador del MBean observado se actualice consistentemente y elegir valores apropiados de `threshold`, [`offset`](java/javax.management.monitor/CounterMonitor/setOffset/) y [`modulus`](java/javax.management.monitor/CounterMonitor/setModulus/) para alertas precisas. Las implicaciones de rendimiento son mínimas, ya que la lógica de monitoreo es manejada eficientemente por el agente JMX. Recuerde [`start`](java/javax.management.monitor/CounterMonitor/start/) e [`stop`](java/javax.management.monitor/CounterMonitor/stop/) el monitor apropiadamente para gestionar su ciclo de vida.",
-      "en": "The `javax.management.monitor.CounterMonitor` class in [`java`](/java/) is a specialized [`Monitor`](java/javax.management.monitor/Monitor/) MBean designed for observing numeric attributes that represent counters. It extends the functionality of a generic monitor to specifically track and react to the increments of a counter attribute exposed by another [`MBean`](/java/jmx/mbean/).\n\nIts primary purpose is to trigger [`MonitorNotification`](java/javax.management.monitor/MonitorNotification/) events when an observed counter reaches or exceeds a predefined [`threshold`](java/javax.management.monitor/CounterMonitor/setThreshold/). This is highly useful for managing and automating responses to resource usage, error rates, or task completion in a [`JMX`](/java/jmx/) environment. Developers can configure an `offset` and `modulus` for more complex monitoring scenarios, such as resetting the counter detection after a certain value or monitoring the difference in counter values over time via [`setDifferenceMode`](java/javax.management.monitor/CounterMonitor/setDifferenceMode/).\n\nPractical use cases include monitoring the number of requests processed by a service, bytes transferred over a network, or the count of specific events occurring within an application. Best practices involve ensuring the observed MBean's counter attribute is consistently updated and choosing appropriate `threshold`, [`offset`](java/javax.management.monitor/CounterMonitor/setOffset/), and [`modulus`](java/javax.management.monitor/CounterMonitor/setModulus/) values for accurate alerts. Performance implications are minimal, as the monitoring logic is handled efficiently by the JMX agent. Remember to [`start`](java/javax.management.monitor/CounterMonitor/start/) and [`stop`](java/javax.management.monitor/CounterMonitor/stop/) the monitor appropriately to manage its lifecycle."
+      "es": "",
+      "en": ""
     },
-    "example": "import javax.management.*;\nimport javax.management.monitor.CounterMonitor;\nimport java.lang.management.ManagementFactory;\n\npublic class CounterMonitorUsage {\n    public static void main(String[] args) throws Exception {\n        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();\n\n        // A simple MBean to be observed\n        ObjectName observedObjectName = new ObjectName(\"com.example:type=ResourceUsage\");\n        ResourceUsage observedMBean = new ResourceUsage();\n        mbs.registerMBean(observedMBean, observedObjectName);\n\n        // Create and register the CounterMonitor\n        ObjectName monitorObjectName = new ObjectName(\"com.example:type=MyCounterMonitor\");\n        CounterMonitor counterMonitor = new CounterMonitor();\n        mbs.registerMBean(counterMonitor, monitorObjectName);\n\n        // Configure the CounterMonitor\n        counterMonitor.addObservedObject(observedObjectName);\n        counterMonitor.setObservedAttribute(\"RequestCount\");\n        counterMonitor.setGranularityPeriod(500L); // Check every 500ms\n        counterMonitor.setThreshold(new Long(5)); // Trigger when count reaches 5\n        counterMonitor.setNotify(true);\n        counterMonitor.setDifferenceMode(false); // Monitor absolute value\n\n        // Add a notification listener\n        counterMonitor.addNotificationListener((notification, handback) -> {\n            System.out.println(\"CounterMonitor Notification: \" + notification.getMessage());\n        }, null, null);\n\n        // Start the monitor\n        counterMonitor.start();\n        System.out.println(\"Monitor started. Incrementing counter...\");\n\n        // Simulate activity\n        for (int i = 0; i < 10; i++) {\n            Thread.sleep(300);\n            observedMBean.incrementRequestCount();\n            System.out.println(\"Current Request Count: \" + observedMBean.getRequestCount());\n        }\n\n        counterMonitor.stop();\n        mbs.unregisterMBean(monitorObjectName);\n        mbs.unregisterMBean(observedObjectName);\n    }\n\n    public interface ResourceUsageMBean {\n        Long getRequestCount();\n        void incrementRequestCount();\n    }\n\n    public static class ResourceUsage implements ResourceUsageMBean {\n        private Long requestCount = 0L;\n        @Override public Long getRequestCount() { return requestCount; }\n        @Override public synchronized void incrementRequestCount() { requestCount++; }\n    }\n}",
+    "example": "",
     "articles": [],
     "info": {
       "status": "empty",
@@ -28,17 +28,13 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-04-03T00:22:12.852882",
-    "updatedDate": "2026-04-03T00:22:12.852883",
+    "createdDate": "2026-04-07T09:54:11.869060",
+    "updatedDate": "2026-04-07T09:54:11.869061",
     "metadata": {
-      "status": "current",
-      "deprecated_version": null,
+      "status": "deprecated",
+      "deprecated_version": "unknown",
       "added_version": "1.5",
-      "tags": [
-        "JMX",
-        "Monitoring",
-        "MBean"
-      ],
+      "tags": [],
       "difficulty": null,
       "popularity_score": 0
     },
@@ -94,8 +90,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-04-03T00:22:12.852901",
-    "updatedDate": "2026-04-03T00:22:12.852902",
+    "createdDate": "2026-04-07T09:54:11.869078",
+    "updatedDate": "2026-04-07T09:54:11.869079",
     "metadata": {
       "status": "deprecated",
       "deprecated_version": "unknown",
@@ -134,8 +130,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-04-03T00:22:12.854412",
-    "updatedDate": "2026-04-03T00:22:12.854414",
+    "createdDate": "2026-04-07T09:54:11.870697",
+    "updatedDate": "2026-04-07T09:54:11.870698",
     "metadata": {
       "status": "deprecated",
       "deprecated_version": "unknown",
@@ -174,8 +170,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-04-03T00:22:12.853596",
-    "updatedDate": "2026-04-03T00:22:12.853597",
+    "createdDate": "2026-04-07T09:54:11.869818",
+    "updatedDate": "2026-04-07T09:54:11.869819",
     "metadata": {
       "status": "deprecated",
       "deprecated_version": "unknown",
@@ -221,18 +217,18 @@
         "is_var_args": false,
         "is_var_kwargs": false,
         "description": {
-          "es": "El ObjectName que identifica el MBean a ser añadido para observación. Debe referirse a un MBean válido registrado dentro del MBeanServer. Este parámetro especifica qué recurso gestionado el monitor rastreará.",
-          "en": "The ObjectName identifying the MBean to be added for observation. Must refer to a valid MBean registered within the MBeanServer. This parameter specifies which managed resource the monitor will track."
+          "es": "",
+          "en": ""
         }
       }
     ],
     "return_type": "boolean",
     "exceptions": [],
     "description": {
-      "en": "The [`containsObservedObject`](/java/javax.management.monitor/Monitor/containsObservedObject/) method, part of the [`Monitor`](/java/javax.management.monitor/Monitor/) abstract class in [`java`](/java/), provides a mechanism to verify if a specific MBean is currently being monitored. This method returns `true` if the provided [`ObjectName`](/java/javax.management/ObjectName/) corresponds to an MBean that has been registered for observation by this particular [`Monitor`](/java/javax.management.monitor/Monitor/) instance; otherwise, it returns `false`.\n\nIts primary purpose is to help manage the set of MBeans that a [`Monitor`](/java/javax.management.monitor/Monitor/) observes. Developers can use [`containsObservedObject`](/java/javax.management.monitor/Monitor/containsObservedObject/) to prevent redundant additions of the same MBean, ensuring the monitoring configuration remains clean and efficient. This is particularly useful in dynamic JMX environments where MBeans might be registered and unregistered frequently.\n\nFrom a practical perspective, invoking [`containsObservedObject`](/java/javax.management.monitor/Monitor/containsObservedObject/) offers a quick check before calling [`addObservedObject`](/java/javax.management.monitor/Monitor/addObservedObject/), thereby optimizing resource usage and avoiding unnecessary processing within the monitoring mechanism. While the performance impact of a single call is minimal, repeated calls in high-throughput scenarios should consider the underlying collection's lookup efficiency. Best practices suggest using this method for conditional logic rather than exhaustive searches across a large set of MBeans, leveraging the [`Monitor`](/java/javax.management.monitor/Monitor/)'s internal management of observed objects.",
-      "es": "El método [`containsObservedObject`](/java/javax.management.monitor/Monitor/containsObservedObject/), parte de la clase abstracta [`Monitor`](/java/javax.management.monitor/Monitor/) en [`java`](/java/), proporciona un mecanismo para verificar si un MBean específico está siendo monitorizado actualmente. Este método devuelve `true` si el [`ObjectName`](/java/javax.management/ObjectName/) proporcionado corresponde a un MBean que ha sido registrado para observación por esta instancia particular de [`Monitor`](/java/javax.management.monitor/Monitor/); de lo contrario, devuelve `false`.\n\nSu propósito principal es ayudar a gestionar el conjunto de MBeans que un [`Monitor`](/java/javax.management.monitor/Monitor/) observa. Los desarrolladores pueden usar [`containsObservedObject`](/java/javax.management.monitor/Monitor/containsObservedObject/) para evitar adiciones redundantes del mismo MBean, asegurando que la configuración de monitorización se mantenga limpia y eficiente. Esto es particularmente útil en entornos JMX dinámicos donde los MBeans pueden registrarse y desregistrarse con frecuencia.\n\nDesde una perspectiva práctica, invocar [`containsObservedObject`](/java/javax.management.monitor/Monitor/containsObservedObject/) ofrece una verificación rápida antes de llamar a [`addObservedObject`](/java/javax.management.monitor/Monitor/addObservedObject/), optimizando así el uso de recursos y evitando procesamiento innecesario dentro del mecanismo de monitorización. Si bien el impacto en el rendimiento de una sola llamada es mínimo, las llamadas repetidas en escenarios de alto rendimiento deben considerar la eficiencia de búsqueda de la colección subyacente. Las mejores prácticas sugieren usar este método para lógica condicional en lugar de búsquedas exhaustivas en un gran conjunto de MBeans, aprovechando la gestión interna de objetos observados del [`Monitor`](/java/javax.management.monitor/Monitor/)."
+      "es": "",
+      "en": "Tests whether the specified object is in the set of observed MBeans."
     },
-    "example": "import javax.management.MBeanServer;\nimport javax.management.MBeanServerFactory;\nimport javax.management.ObjectName;\nimport javax.management.monitor.StringMonitor;\n\npublic class MonitorContainsExample {\n    public static void main(String[] args) throws Exception {\n        MBeanServer mbs = MBeanServerFactory.createMBeanServer();\n\n        ObjectName mbeanName = new ObjectName(\"com.example:type=MyService,name=Status\");\n        mbs.registerMBean(new MyService(), mbeanName);\n\n        StringMonitor monitor = new StringMonitor();\n        monitor.setObservedAttribute(\"Status\");\n        monitor.setStringToCompare(\"ACTIVE\");\n        monitor.setGranularityPeriod(1000);\n\n        System.out.println(\"Before adding: \" + mbeanName + \" observed? \" + monitor.containsObservedObject(mbeanName));\n\n        monitor.addObservedObject(mbeanName);\n\n        boolean isObserved = monitor.containsObservedObject(mbeanName);\n        System.out.println(\"After adding: \" + mbeanName + \" observed? \" + isObserved);\n\n        ObjectName anotherMbeanName = new ObjectName(\"com.example:type=AnotherService,name=Config\");\n        boolean isAnotherObserved = monitor.containsObservedObject(anotherMbeanName);\n        System.out.println(\"Another MBean: \" + anotherMbeanName + \" observed? \" + isAnotherObserved);\n\n        monitor.removeObservedObject(mbeanName);\n        System.out.println(\"After removing: \" + mbeanName + \" observed? \" + monitor.containsObservedObject(mbeanName));\n\n        mbs.unregisterMBean(mbeanName);\n        monitor.stop();\n    }\n\n    public static class MyService implements MyServiceMBean {\n        private String status = \"INACTIVE\";\n        public String getStatus() { return status; }\n        public void setStatus(String status) { this.status = status; }\n    }\n\n    public static interface MyServiceMBean {\n        String getStatus();\n        void setStatus(String status);\n    }\n}",
+    "example": "",
     "articles": [],
     "info": {
       "status": "empty",
@@ -244,17 +240,15 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-04-03T00:22:12.854089",
-    "updatedDate": "2026-04-03T13:15:48.899030",
+    "createdDate": "2026-04-07T09:54:11.870379",
+    "updatedDate": "2026-04-07T09:54:11.870380",
     "metadata": {
-      "status": "current",
+      "status": "deprecated",
+      "deprecated_version": "unknown",
       "added_version": "1.5",
-      "deprecated_version": null,
-      "tags": [
-        "JMX",
-        "Monitoring",
-        "MBean"
-      ]
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
     }
   },
   "javax.management.monitor/MonitorMBean/containsObservedObject": {
@@ -300,8 +294,8 @@
       "seo_position": 0,
       "visits": 0
     },
-    "createdDate": "2026-04-03T00:22:12.854586",
-    "updatedDate": "2026-04-03T00:22:12.854587",
+    "createdDate": "2026-04-07T09:54:11.870872",
+    "updatedDate": "2026-04-07T09:54:11.870873",
     "metadata": {
       "status": "deprecated",
       "deprecated_version": "unknown",
