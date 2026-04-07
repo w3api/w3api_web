@@ -134,11 +134,11 @@ const buildUrl = (link: string) => {
       
       <!-- Navigation Links (Mobile only) -->
       <div class="sl-sidebar-nav-mobile">
-        <h3 class="sl-sidebar-section-title">Navegación</h3>
+        <h3 class="sl-sidebar-section-title">{t('nav_label', languageCode)}</h3>
         <ul class="sl-sidebar-mobile-links">
-          <li><a href={buildUrl('apis/')}>APIs</a></li>
-          <li><a href={buildUrl('lista-correo/')}>Lista de Correo</a></li>
-          <li><a href={buildUrl('blog/')}>Blog</a></li>
+          <li><a href={buildUrl('apis/')}>{t('nav_apis', languageCode)}</a></li>
+          <li><a href={buildUrl('lista-correo/')}>{t('nav_mailing_list', languageCode)}</a></li>
+          <li><a href={buildUrl('blog/')}>{t('nav_blog', languageCode)}</a></li>
         </ul>
       </div>
 
