@@ -45,7 +45,7 @@ export const LANGUAGES = {
     technology: 'webapi',
     technologyName: 'Web API',
     technologyCode: 'webapi',
-    technologyFilter: 'filter_modules',
+    technologyFilter: 'filter_apis',
   },
   xml: {
     technology: 'xml',
