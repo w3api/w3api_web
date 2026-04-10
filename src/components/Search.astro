@@ -383,6 +383,11 @@ const placeholderText = t('search_title', uiLanguage).charAt(0).toUpperCase() + 
     background: linear-gradient(135deg, #0868ac, #1e90ff);
   }
 
+  .icon.webapi {
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    color: white;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -524,7 +529,8 @@ const placeholderText = t('search_title', uiLanguage).charAt(0).toUpperCase() + 
         html: '#e0e0e0',
         xml: '#e0e0e0',
         svg: '#e0e0e0',
-        jquery: '#e0e0e0'
+        jquery: '#e0e0e0',
+        webapi: '#e0e0e0'
       };
 
       const devicons = {
@@ -535,7 +541,8 @@ const placeholderText = t('search_title', uiLanguage).charAt(0).toUpperCase() + 
         html: 'devicon-html5-plain',
         xml: 'devicon-xml-plain',
         svg: 'devicon-svg-plain',
-        jquery: 'devicon-jquery-plain'
+        jquery: 'devicon-jquery-plain',
+        webapi: 'devicon-chrome-plain'
       };
 
       resultsContainer.innerHTML = hits

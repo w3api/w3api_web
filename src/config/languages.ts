@@ -41,6 +41,12 @@ export const LANGUAGES = {
     technologyCode: 'xml',
     technologyFilter: 'filter_categories',
   },
+  webapi: {
+    technology: 'webapi',
+    technologyName: 'Web API',
+    technologyCode: 'webapi',
+    technologyFilter: 'filter_modules',
+  },
   xml: {
     technology: 'xml',
     technologyName: 'XML',

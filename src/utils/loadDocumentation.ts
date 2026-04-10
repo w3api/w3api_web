@@ -31,6 +31,12 @@ const LANGUAGE_MEMBER_CONFIGS = {
     elements: 'element',
     attributes: 'attribute',
   },
+  webapi: {
+    constructors: 'constructor',
+    events: 'event',
+    methods: 'method',
+    properties: 'property',
+  },
 } as const;
 
 type LanguageKey = keyof typeof LANGUAGE_MEMBER_CONFIGS;

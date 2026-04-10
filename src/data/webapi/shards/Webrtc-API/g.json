@@ -1,0 +1,1272 @@
+{
+  "Webrtc-API/RTCIceTransport/gatheringstatechange": {
+    "id": "Webrtc-API.RTCIceTransport.gatheringstatechange",
+    "name": "gatheringstatechange",
+    "type": "event",
+    "parent": "RTCIceTransport",
+    "signatures": [
+      "addEventListener(\"gatheringstatechange\", (event) => { })",
+      "ongatheringstatechange = (event) => { }"
+    ],
+    "signature_hash": "c1a768652354aa1c410779dda7fed150c6cc97fdc755afbff3901738c255a10e",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCIceTransport/gatheringstatechange_event",
+    "parameters": [
+      {
+        "name": "\"gatheringstatechange\"",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "(event",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "event",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Sent to theRTCIceTransportobject to indicate that the value of thegatheringStateproperty has changed, indicating a change in this transport's ICE candidate negotiation process. Also available through theongatheringstatechangeevent handler property."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Sent to theRTCIceTransportobject to indicate that the value of thegatheringStateproperty has changed, indicating a change in this transport's ICE candidate negotiation process. Also available through ...",
+        "en": "Sent to theRTCIceTransportobject to indicate that the value of thegatheringStateproperty has changed, indicating a change in this transport's ICE candidate negotiation process. Also available through ..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.474380",
+    "updatedDate": "2026-04-10T14:57:43.474381",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCPeerConnection/generateCertificate": {
+    "id": "Webrtc-API.RTCPeerConnection.generateCertificate",
+    "name": "generateCertificate",
+    "type": "method",
+    "parent": "RTCPeerConnection",
+    "signatures": [
+      "RTCPeerConnection.generateCertificate(keygenAlgorithm)"
+    ],
+    "signature_hash": "7182d5f42aa5cf95718c1476d864b0480feb965bb3847855039c6a7954b7ae9e",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate_static",
+    "parameters": [
+      {
+        "name": "keygenAlgorithm",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Creates an X.509 certificate and its corresponding private key, returning aPromisethat resolves with the newRTCCertificateonce it is generated."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Creates an X.509 certificate and its corresponding private key, returning aPromisethat resolves with the newRTCCertificateonce it is generated.",
+        "en": "Creates an X.509 certificate and its corresponding private key, returning aPromisethat resolves with the newRTCCertificateonce it is generated."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.472886",
+    "updatedDate": "2026-04-10T14:57:43.472887",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCRtpScriptTransformer/generateKeyFrame": {
+    "id": "Webrtc-API.RTCRtpScriptTransformer.generateKeyFrame",
+    "name": "generateKeyFrame",
+    "type": "method",
+    "parent": "RTCRtpScriptTransformer",
+    "signatures": [
+      "generateKeyFrame()",
+      "generateKeyFrame(rid)"
+    ],
+    "signature_hash": "6c808a3c298cef319e28c913e23fae43fdefe4c470d1f35becc7ffc60d4d4ddf",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpScriptTransformer/generateKeyFrame",
+    "parameters": [
+      {
+        "name": "rid",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Requests a video encoder generate a key frame. May be called by a transformer in the sender pipeline when processing outgoing frames."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Requests a video encoder generate a key frame. May be called by a transformer in the sender pipeline when processing outgoing frames.",
+        "en": "Requests a video encoder generate a key frame. May be called by a transformer in the sender pipeline when processing outgoing frames."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.475947",
+    "updatedDate": "2026-04-10T14:57:43.475947",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCStatsReport/get": {
+    "id": "Webrtc-API.RTCStatsReport.get",
+    "name": "get",
+    "type": "method",
+    "parent": "RTCStatsReport",
+    "signatures": [
+      "get(id)"
+    ],
+    "signature_hash": "e90adccdbdba569708109e0827d505c7afeaa75d4ceaa97bd153e36fa26c6732",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCStatsReport/get",
+    "parameters": [
+      {
+        "name": "id",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the statistics dictionary associated with the passedid, orundefinedif there is none."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns the statistics dictionary associated with the passedid, orundefinedif there is none.",
+        "en": "Returns the statistics dictionary associated with the passedid, orundefinedif there is none."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.475673",
+    "updatedDate": "2026-04-10T14:57:43.475674",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCRtpSender/getCapabilities": {
+    "id": "Webrtc-API.RTCRtpSender.getCapabilities",
+    "name": "getCapabilities",
+    "type": "method",
+    "parent": "RTCRtpSender",
+    "signatures": [
+      "RTCRtpSender.getCapabilities(kind)"
+    ],
+    "signature_hash": "74c057a6ebabf8ff75169ba4dc0d43d4a0e5fd3dde9ead10a1aa0f3bd30121ae",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getCapabilities_static",
+    "parameters": [
+      {
+        "name": "kind",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an object describing the system's capabilities for sending a specified kind of media data."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an object describing the system's capabilities for sending a specified kind of media data.",
+        "en": "Returns an object describing the system's capabilities for sending a specified kind of media data."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.473778",
+    "updatedDate": "2026-04-10T14:57:43.473779",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCRtpReceiver/getCapabilities": {
+    "id": "Webrtc-API.RTCRtpReceiver.getCapabilities",
+    "name": "getCapabilities",
+    "type": "method",
+    "parent": "RTCRtpReceiver",
+    "signatures": [
+      "RTCRtpReceiver.getCapabilities(kind)"
+    ],
+    "signature_hash": "e9aa01537149ae240e531437364ed94560b65f3f2a2c6f3fadc9fc9f35945e57",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getCapabilities_static",
+    "parameters": [
+      {
+        "name": "kind",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the most optimistic view of the capabilities of the system for receiving media of the given kind."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns the most optimistic view of the capabilities of the system for receiving media of the given kind.",
+        "en": "Returns the most optimistic view of the capabilities of the system for receiving media of the given kind."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.473940",
+    "updatedDate": "2026-04-10T14:57:43.473941",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCPeerConnection/getConfiguration": {
+    "id": "Webrtc-API.RTCPeerConnection.getConfiguration",
+    "name": "getConfiguration",
+    "type": "method",
+    "parent": "RTCPeerConnection",
+    "signatures": [
+      "getConfiguration()"
+    ],
+    "signature_hash": "ec17bb6e9493d62e331b0be63504831d391a68d9973b80ead3f9f835f9bb719a",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/getConfiguration",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an object which indicates the current configuration of the connection."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an object which indicates the current configuration of the connection.",
+        "en": "Returns an object which indicates the current configuration of the connection."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.472603",
+    "updatedDate": "2026-04-10T14:57:43.472604",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCRtpReceiver/getContributingSources": {
+    "id": "Webrtc-API.RTCRtpReceiver.getContributingSources",
+    "name": "getContributingSources",
+    "type": "method",
+    "parent": "RTCRtpReceiver",
+    "signatures": [
+      "getContributingSources()"
+    ],
+    "signature_hash": "878700b91c00f6c994c569b983fa13b99fbe72416e32a9426508a229eec3b698",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getContributingSources",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an array that contains an object for each unique CSRC (contributing source) identifier received by the currentRTCRtpReceiverin the last ten seconds."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an array that contains an object for each unique CSRC (contributing source) identifier received by the currentRTCRtpReceiverin the last ten seconds.",
+        "en": "Returns an array that contains an object for each unique CSRC (contributing source) identifier received by the currentRTCRtpReceiverin the last ten seconds."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.473860",
+    "updatedDate": "2026-04-10T14:57:43.473861",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCCertificate/getFingerprints": {
+    "id": "Webrtc-API.RTCCertificate.getFingerprints",
+    "name": "getFingerprints",
+    "type": "method",
+    "parent": "RTCCertificate",
+    "signatures": [
+      "getFingerprints()"
+    ],
+    "signature_hash": "2e346806a2429c79938879894bce9388af1853e1da0be4f6814631e4e1c72931",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCCertificate/getFingerprints",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an array of certificate fingerprints, calculated using the different algorithms supported by the browser."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an array of certificate fingerprints, calculated using the different algorithms supported by the browser.",
+        "en": "Returns an array of certificate fingerprints, calculated using the different algorithms supported by the browser."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.473570",
+    "updatedDate": "2026-04-10T14:57:43.473571",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCPeerConnection/getIdentityAssertion": {
+    "id": "Webrtc-API.RTCPeerConnection.getIdentityAssertion",
+    "name": "getIdentityAssertion",
+    "type": "method",
+    "parent": "RTCPeerConnection",
+    "signatures": [
+      "getIdentityAssertion()"
+    ],
+    "signature_hash": "13b5058c70bdb01a985c0166562cde8b7339d10d1a4203abbcbf010410016b20",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/getIdentityAssertion",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Initiates the gathering of an identity assertion and returns aPromisewhich resolves to an identity assertion encoded as a string. This has an effect only ifsignalingStateis notclosed."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Initiates the gathering of an identity assertion and returns aPromisewhich resolves to an identity assertion encoded as a string. This has an effect only ifsignalingStateis notclosed.",
+        "en": "Initiates the gathering of an identity assertion and returns aPromisewhich resolves to an identity assertion encoded as a string. This has an effect only ifsignalingStateis notclosed."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.472616",
+    "updatedDate": "2026-04-10T14:57:43.472616",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCIceTransport/getLocalCandidates": {
+    "id": "Webrtc-API.RTCIceTransport.getLocalCandidates",
+    "name": "getLocalCandidates",
+    "type": "method",
+    "parent": "RTCIceTransport",
+    "signatures": [
+      "getLocalCandidates()"
+    ],
+    "signature_hash": "25fbd94b42bf08734cab7d07aea7ae83f0d04e6ca1e6562cace7b5be6011f46f",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCIceTransport/getLocalCandidates",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an array ofRTCIceCandidateobjects, each describing one of the ICE candidates that have been gathered so far for the local device. These are the same candidates which have already been sent to the remote peer by sending anicecandidateevent to theRTCPeerConnectionfor transmission."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an array ofRTCIceCandidateobjects, each describing one of the ICE candidates that have been gathered so far for the local device. These are the same candidates which have already been sent to ...",
+        "en": "Returns an array ofRTCIceCandidateobjects, each describing one of the ICE candidates that have been gathered so far for the local device. These are the same candidates which have already been sent to ..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.474282",
+    "updatedDate": "2026-04-10T14:57:43.474283",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCIceTransport/getLocalParameters": {
+    "id": "Webrtc-API.RTCIceTransport.getLocalParameters",
+    "name": "getLocalParameters",
+    "type": "method",
+    "parent": "RTCIceTransport",
+    "signatures": [
+      "getLocalParameters()"
+    ],
+    "signature_hash": "659c26073346424be9784b9175028f0b5306e181b0a899526b77ac7c623ec828",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCIceTransport/getLocalParameters",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aRTCIceParametersobject describing the ICE parameters established by a call to theRTCPeerConnection.setLocalDescription()method. Returnsnullif parameters have not yet been received."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns aRTCIceParametersobject describing the ICE parameters established by a call to theRTCPeerConnection.setLocalDescription()method. Returnsnullif parameters have not yet been received.",
+        "en": "Returns aRTCIceParametersobject describing the ICE parameters established by a call to theRTCPeerConnection.setLocalDescription()method. Returnsnullif parameters have not yet been received."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.474298",
+    "updatedDate": "2026-04-10T14:57:43.474299",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCEncodedVideoFrame/getMetadata": {
+    "id": "Webrtc-API.RTCEncodedVideoFrame.getMetadata",
+    "name": "getMetadata",
+    "type": "method",
+    "parent": "RTCEncodedVideoFrame",
+    "signatures": [
+      "getMetadata()"
+    ],
+    "signature_hash": "ae9d8414ff5de042334b2bd8a1a49720ba99527cb5602d49e3d37e7d76b1a034",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCEncodedVideoFrame/getMetadata",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the metadata associated with the frame."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns the metadata associated with the frame.",
+        "en": "Returns the metadata associated with the frame."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.476572",
+    "updatedDate": "2026-04-10T14:57:43.476573",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCEncodedAudioFrame/getMetadata": {
+    "id": "Webrtc-API.RTCEncodedAudioFrame.getMetadata",
+    "name": "getMetadata",
+    "type": "method",
+    "parent": "RTCEncodedAudioFrame",
+    "signatures": [
+      "getMetadata()"
+    ],
+    "signature_hash": "ae9d8414ff5de042334b2bd8a1a49720ba99527cb5602d49e3d37e7d76b1a034",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCEncodedAudioFrame/getMetadata",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the metadata associated with the frame."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns the metadata associated with the frame.",
+        "en": "Returns the metadata associated with the frame."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.476693",
+    "updatedDate": "2026-04-10T14:57:43.476694",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCRtpSender/getParameters": {
+    "id": "Webrtc-API.RTCRtpSender.getParameters",
+    "name": "getParameters",
+    "type": "method",
+    "parent": "RTCRtpSender",
+    "signatures": [
+      "getParameters()"
+    ],
+    "signature_hash": "3ba77fd151c551bc37c0bab8c7b250d3dc5ae3d1f87b786a6c07c3d6f5388c35",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getParameters",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an object describing the current configuration for the encoding and transmission of media on thetrack."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an object describing the current configuration for the encoding and transmission of media on thetrack.",
+        "en": "Returns an object describing the current configuration for the encoding and transmission of media on thetrack."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.473652",
+    "updatedDate": "2026-04-10T14:57:43.473653",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCRtpReceiver/getParameters": {
+    "id": "Webrtc-API.RTCRtpReceiver.getParameters",
+    "name": "getParameters",
+    "type": "method",
+    "parent": "RTCRtpReceiver",
+    "signatures": [
+      "getParameters()"
+    ],
+    "signature_hash": "3ba77fd151c551bc37c0bab8c7b250d3dc5ae3d1f87b786a6c07c3d6f5388c35",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getParameters",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an object that contains information about how the RTC data is to be decoded."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an object that contains information about how the RTC data is to be decoded.",
+        "en": "Returns an object that contains information about how the RTC data is to be decoded."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.473894",
+    "updatedDate": "2026-04-10T14:57:43.473895",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCPeerConnection/getReceivers": {
+    "id": "Webrtc-API.RTCPeerConnection.getReceivers",
+    "name": "getReceivers",
+    "type": "method",
+    "parent": "RTCPeerConnection",
+    "signatures": [
+      "getReceivers()"
+    ],
+    "signature_hash": "b078c93fc8015aecd3dbe47445cd4a9b663587fdf26c3502d15f7c66837f6982",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/getReceivers",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an array ofRTCRtpReceiverobjects, each of which represents oneRTPreceiver."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an array ofRTCRtpReceiverobjects, each of which represents oneRTPreceiver.",
+        "en": "Returns an array ofRTCRtpReceiverobjects, each of which represents oneRTPreceiver."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.472627",
+    "updatedDate": "2026-04-10T14:57:43.472628",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCIceTransport/getRemoteCandidates": {
+    "id": "Webrtc-API.RTCIceTransport.getRemoteCandidates",
+    "name": "getRemoteCandidates",
+    "type": "method",
+    "parent": "RTCIceTransport",
+    "signatures": [
+      "getRemoteCandidates()"
+    ],
+    "signature_hash": "656b30bc13e0aa51b67af8630c05bde14a97e10ec782502d4cf054ae3219cdd8",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCIceTransport/getRemoteCandidates",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an array ofRTCIceCandidateobjects, one for each of the remote device's ICE candidates that have been received by the local end of theRTCPeerConnectionand delivered to ICE by callingaddIceCandidate()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an array ofRTCIceCandidateobjects, one for each of the remote device's ICE candidates that have been received by the local end of theRTCPeerConnectionand delivered to ICE by callingaddIceCandi...",
+        "en": "Returns an array ofRTCIceCandidateobjects, one for each of the remote device's ICE candidates that have been received by the local end of theRTCPeerConnectionand delivered to ICE by callingaddIceCandi..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.474314",
+    "updatedDate": "2026-04-10T14:57:43.474315",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCDtlsTransport/getRemoteCertificates": {
+    "id": "Webrtc-API.RTCDtlsTransport.getRemoteCertificates",
+    "name": "getRemoteCertificates",
+    "type": "method",
+    "parent": "RTCDtlsTransport",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an array ofArrayBuffercontaining the certificates of the remote peer of the connection."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an array ofArrayBuffercontaining the certificates of the remote peer of the connection.",
+        "en": "Returns an array ofArrayBuffercontaining the certificates of the remote peer of the connection."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.474125",
+    "updatedDate": "2026-04-10T14:57:43.474126",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCIceTransport/getRemoteParameters": {
+    "id": "Webrtc-API.RTCIceTransport.getRemoteParameters",
+    "name": "getRemoteParameters",
+    "type": "method",
+    "parent": "RTCIceTransport",
+    "signatures": [
+      "getRemoteParameters()"
+    ],
+    "signature_hash": "1457dfd81dd586ad0b769a43cb893b51373b4687af3123c04650a3099bc17c71",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCIceTransport/getRemoteParameters",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aRTCIceParametersobject containing the ICE parameters for the remote device, as set by a call toRTCPeerConnection.setRemoteDescription(). IfsetRemoteDescription()hasn't been called yet, the return value isnull."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns aRTCIceParametersobject containing the ICE parameters for the remote device, as set by a call toRTCPeerConnection.setRemoteDescription(). IfsetRemoteDescription()hasn't been called yet, the re...",
+        "en": "Returns aRTCIceParametersobject containing the ICE parameters for the remote device, as set by a call toRTCPeerConnection.setRemoteDescription(). IfsetRemoteDescription()hasn't been called yet, the re..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.474331",
+    "updatedDate": "2026-04-10T14:57:43.474331",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCIceTransport/getSelectedCandidatePair": {
+    "id": "Webrtc-API.RTCIceTransport.getSelectedCandidatePair",
+    "name": "getSelectedCandidatePair",
+    "type": "method",
+    "parent": "RTCIceTransport",
+    "signatures": [
+      "getSelectedCandidatePair()"
+    ],
+    "signature_hash": "faa6e791f058f86cd620efbde8bcc9f6e7b47d9882ec287c54da9424cfa9db44",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCIceTransport/getSelectedCandidatePair",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aRTCIceCandidatePairobject that identifies the two candidatesâone for each end of the connectionâthat have been selected so far. It's possible that a better pair will be found and selected later; if you need to keep up with this, watch for theselectedcandidatepairchangeevent. If no candidate pair has been selected yet, the return value isnull."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns aRTCIceCandidatePairobject that identifies the two candidatesâone for each end of the connectionâthat have been selected so far. It's possible that a better pair will be found and selected...",
+        "en": "Returns aRTCIceCandidatePairobject that identifies the two candidatesâone for each end of the connectionâthat have been selected so far. It's possible that a better pair will be found and selected..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.474348",
+    "updatedDate": "2026-04-10T14:57:43.474349",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCPeerConnection/getSenders": {
+    "id": "Webrtc-API.RTCPeerConnection.getSenders",
+    "name": "getSenders",
+    "type": "method",
+    "parent": "RTCPeerConnection",
+    "signatures": [
+      "getSenders()"
+    ],
+    "signature_hash": "77151a3629307fa19bbf74ff2653dbf91fb9064203b61adf660ac9c8c346a4ae",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/getSenders",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an array ofRTCRtpSenderobjects, each of which represents theRTPsender responsible for transmitting one track's data."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an array ofRTCRtpSenderobjects, each of which represents theRTPsender responsible for transmitting one track's data.",
+        "en": "Returns an array ofRTCRtpSenderobjects, each of which represents theRTPsender responsible for transmitting one track's data."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.472639",
+    "updatedDate": "2026-04-10T14:57:43.472639",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCPeerConnection/getStats": {
+    "id": "Webrtc-API.RTCPeerConnection.getStats",
+    "name": "getStats",
+    "type": "method",
+    "parent": "RTCPeerConnection",
+    "signatures": [
+      "getStats()",
+      "getStats(selector)",
+      "getStats(selector, successCallback, failureCallback) // deprecated"
+    ],
+    "signature_hash": "cde71e7fcfa3f322543b99cdfcae3fc732c64c59b49effd98ac0b048a6393aaa",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/getStats",
+    "parameters": [
+      {
+        "name": "selector",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "successCallback",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "failureCallback",
+        "has_default": false,
+        "default_value": null,
+        "type": "",
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aPromisewhich resolves with data providing statistics about either the overall connection or about the specifiedMediaStreamTrack."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns aPromisewhich resolves with data providing statistics about either the overall connection or about the specifiedMediaStreamTrack.",
+        "en": "Returns aPromisewhich resolves with data providing statistics about either the overall connection or about the specifiedMediaStreamTrack."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.472672",
+    "updatedDate": "2026-04-10T14:57:43.472672",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCRtpSender/getStats": {
+    "id": "Webrtc-API.RTCRtpSender.getStats",
+    "name": "getStats",
+    "type": "method",
+    "parent": "RTCRtpSender",
+    "signatures": [
+      "getStats()"
+    ],
+    "signature_hash": "add8852a6a1e7f0295a482502eeaad50e0b3bd14600511863260ca13e7bbebec",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getStats",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aPromisewhich is fulfilled with aRTCStatsReportwhich provides statistics data for all outbound streams being sent using thisRTCRtpSender."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns aPromisewhich is fulfilled with aRTCStatsReportwhich provides statistics data for all outbound streams being sent using thisRTCRtpSender.",
+        "en": "Returns aPromisewhich is fulfilled with aRTCStatsReportwhich provides statistics data for all outbound streams being sent using thisRTCRtpSender."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.473676",
+    "updatedDate": "2026-04-10T14:57:43.473677",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCRtpReceiver/getStats": {
+    "id": "Webrtc-API.RTCRtpReceiver.getStats",
+    "name": "getStats",
+    "type": "method",
+    "parent": "RTCRtpReceiver",
+    "signatures": [
+      "getStats()"
+    ],
+    "signature_hash": "add8852a6a1e7f0295a482502eeaad50e0b3bd14600511863260ca13e7bbebec",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getStats",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aPromisewhose fulfillment handler receives aRTCStatsReportwhich contains statistics about the incoming streams and their dependencies."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns aPromisewhose fulfillment handler receives aRTCStatsReportwhich contains statistics about the incoming streams and their dependencies.",
+        "en": "Returns aPromisewhose fulfillment handler receives aRTCStatsReportwhich contains statistics about the incoming streams and their dependencies."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.473908",
+    "updatedDate": "2026-04-10T14:57:43.473909",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCRtpReceiver/getSynchronizationSources": {
+    "id": "Webrtc-API.RTCRtpReceiver.getSynchronizationSources",
+    "name": "getSynchronizationSources",
+    "type": "method",
+    "parent": "RTCRtpReceiver",
+    "signatures": [
+      "getSynchronizationSources()"
+    ],
+    "signature_hash": "7a6393f8707355d5737137d30a602098b480ab03b9dbab7dfd09f8af8f56b407",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getSynchronizationSources",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns an array that contains an object for each unique SSRC (synchronization source) identifier received by the currentRTCRtpReceiverin the last ten seconds."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns an array that contains an object for each unique SSRC (synchronization source) identifier received by the currentRTCRtpReceiverin the last ten seconds.",
+        "en": "Returns an array that contains an object for each unique SSRC (synchronization source) identifier received by the currentRTCRtpReceiverin the last ten seconds."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.473923",
+    "updatedDate": "2026-04-10T14:57:43.473924",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCPeerConnection/getTransceivers": {
+    "id": "Webrtc-API.RTCPeerConnection.getTransceivers",
+    "name": "getTransceivers",
+    "type": "method",
+    "parent": "RTCPeerConnection",
+    "signatures": [
+      "getTransceivers()"
+    ],
+    "signature_hash": "ca3bd143577338621beae7b0774f9a2b4c4d5c668d13ac5b8574de7bba810557",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/getTransceivers",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns a list of all theRTCRtpTransceiverobjects being used to send and receive data on the connection."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns a list of all theRTCRtpTransceiverobjects being used to send and receive data on the connection.",
+        "en": "Returns a list of all theRTCRtpTransceiverobjects being used to send and receive data on the connection."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.472683",
+    "updatedDate": "2026-04-10T14:57:43.472684",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webrtc-API/RTCIceTransport/gatheringState": {
+    "id": "Webrtc-API.RTCIceTransport.gatheringState",
+    "name": "gatheringState",
+    "type": "property",
+    "parent": "RTCIceTransport",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCIceTransport/gatheringState",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A string indicating which current gathering state of the ICE agent:\"new\",\"gathering\", or\"complete\"."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "A string indicating which current gathering state of the ICE agent:\"new\",\"gathering\", or\"complete\".",
+        "en": "A string indicating which current gathering state of the ICE agent:\"new\",\"gathering\", or\"complete\"."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.474232",
+    "updatedDate": "2026-04-10T14:57:43.474233",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

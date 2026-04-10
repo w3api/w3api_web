@@ -1,0 +1,154 @@
+{
+  "Web-Authentication-API/PublicKeyCredential/rawId": {
+    "id": "Web-Authentication-API.PublicKeyCredential.rawId",
+    "name": "rawId",
+    "type": "property",
+    "parent": "PublicKeyCredential",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/rawId",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "AnArrayBufferthat holds the globally unique identifier for thisPublicKeyCredential. This identifier can be used to look up credentials for future calls tonavigator.credentials.get()."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "AnArrayBufferthat holds the globally unique identifier for thisPublicKeyCredential. This identifier can be used to look up credentials for future calls tonavigator.credentials.get().",
+        "en": "AnArrayBufferthat holds the globally unique identifier for thisPublicKeyCredential. This identifier can be used to look up credentials for future calls tonavigator.credentials.get()."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.456949",
+    "updatedDate": "2026-04-10T14:57:43.456950",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Web-Authentication-API/PublicKeyCredential/response": {
+    "id": "Web-Authentication-API.PublicKeyCredential.response",
+    "name": "response",
+    "type": "property",
+    "parent": "PublicKeyCredential",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/response",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An instance of anAuthenticatorResponseobject. It is either of typeAuthenticatorAttestationResponseif thePublicKeyCredentialwas the results of anavigator.credentials.create()call, or of typeAuthenticatorAssertionResponseif thePublicKeyCredentialwas the result of anavigator.credentials.get()call."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "An instance of anAuthenticatorResponseobject. It is either of typeAuthenticatorAttestationResponseif thePublicKeyCredentialwas the results of anavigator.credentials.create()call, or of typeAuthenticat...",
+        "en": "An instance of anAuthenticatorResponseobject. It is either of typeAuthenticatorAttestationResponseif thePublicKeyCredentialwas the results of anavigator.credentials.create()call, or of typeAuthenticat..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.456961",
+    "updatedDate": "2026-04-10T14:57:43.456962",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Web-Authentication-API/PublicKeyCredentialCreationOptions/rp": {
+    "id": "Web-Authentication-API.PublicKeyCredentialCreationOptions.rp",
+    "name": "rp",
+    "type": "property",
+    "parent": "PublicKeyCredentialCreationOptions",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org#rp",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "An object describing the relying party that requested the credential creation. It can contain the following properties:idOptionalA string representing the ID of the relying party. A public key credential can only be used for authentication with the same relying party (as identified by thepublicKey.rpIdin anavigator.credentials.get()call) it was registered with â the IDs need to match.Theidcannot include a port or scheme like a standard origin, but the domain scheme must behttpsscheme. Theidnee"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "An object describing the relying party that requested the credential creation. It can contain the following properties:idOptionalA string representing the ID of the relying party. A public key credent...",
+        "en": "An object describing the relying party that requested the credential creation. It can contain the following properties:idOptionalA string representing the ID of the relying party. A public key credent..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.457258",
+    "updatedDate": "2026-04-10T14:57:43.457259",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Web-Authentication-API/PublicKeyCredentialRequestOptions/rpIdOptional": {
+    "id": "Web-Authentication-API.PublicKeyCredentialRequestOptions.rpIdOptional",
+    "name": "rpIdOptional",
+    "type": "property",
+    "parent": "PublicKeyCredentialRequestOptions",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org#rpid",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A string that specifies the relying party's identifier (for example\"login.example.org\"). For security purposes:The browser verifies thatrpIdmatches the relying party's origin or is a domain suffix of the relying party's origin (for example,example.org).The authenticator verifies thatrpIdmatches therpIdof the credential used for the authentication ceremony.This value defaults to the current origin's domain."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "A string that specifies the relying party's identifier (for example\"login.example.org\"). For security purposes:The browser verifies thatrpIdmatches the relying party's origin or is a domain suffix of ...",
+        "en": "A string that specifies the relying party's identifier (for example\"login.example.org\"). For security purposes:The browser verifies thatrpIdmatches the relying party's origin or is a domain suffix of ..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.457366",
+    "updatedDate": "2026-04-10T14:57:43.457367",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

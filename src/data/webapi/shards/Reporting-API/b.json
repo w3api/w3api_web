@@ -1,0 +1,230 @@
+{
+  "Reporting-API/SecurityPolicyViolationEvent/blockedURI": {
+    "id": "Reporting-API.SecurityPolicyViolationEvent.blockedURI",
+    "name": "blockedURI",
+    "type": "property",
+    "parent": "SecurityPolicyViolationEvent",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/SecurityPolicyViolationEvent/blockedURI",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "A string representing the URI of the resource that was blocked because it violates a policy."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "A string representing the URI of the resource that was blocked because it violates a policy.",
+        "en": "A string representing the URI of the resource that was blocked because it violates a policy."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.425261",
+    "updatedDate": "2026-04-10T14:57:43.425262",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Reporting-API/COEPViolationReport/body": {
+    "id": "Reporting-API.COEPViolationReport.body",
+    "name": "body",
+    "type": "property",
+    "parent": "COEPViolationReport",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org#body",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The body of the report. This is an object with the following properties:typeA string representing the cause of the violation that triggered the report. This can have one of the following values:\"corp\"A document withCross-Origin-Embedder-Policyset torequire-corpattempted to load a cross-origin sub-resource that does not explicitly allow itself to be embedded (by setting an appropriateCross-Origin-Resource-Policy).\"navigation\"An<iframe>in a document that has either COEPrequire-corporcredentialless"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "The body of the report. This is an object with the following properties:typeA string representing the cause of the violation that triggered the report. This can have one of the following values:\"corp\"...",
+        "en": "The body of the report. This is an object with the following properties:typeA string representing the cause of the violation that triggered the report. This can have one of the following values:\"corp\"..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.424940",
+    "updatedDate": "2026-04-10T14:57:43.424941",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Reporting-API/CSPViolationReport/body": {
+    "id": "Reporting-API.CSPViolationReport.body",
+    "name": "body",
+    "type": "property",
+    "parent": "CSPViolationReport",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org#body",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The body of the report. This is an object with the following properties:blockedURLA string representing either the type or the URL of the resource that was blocked because it violates the CSP.columnNumberThe character position in the line of the script at which the violation occurred.dispositionA string indicating whether the violation was enforced or only reported. This can have the value\"enforce\"for violations of policies set withContent-Security-Policy, or\"reporting\"for policies set withConte"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "The body of the report. This is an object with the following properties:blockedURLA string representing either the type or the URL of the resource that was blocked because it violates the CSP.columnNu...",
+        "en": "The body of the report. This is an object with the following properties:blockedURLA string representing either the type or the URL of the resource that was blocked because it violates the CSP.columnNu..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.424981",
+    "updatedDate": "2026-04-10T14:57:43.424982",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Reporting-API/DeprecationReport/body": {
+    "id": "Reporting-API.DeprecationReport.body",
+    "name": "body",
+    "type": "property",
+    "parent": "DeprecationReport",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org#body",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The body of the report. This is an object with the following properties:idExperimentalA string representing the feature or API that is deprecated, for exampleNavigatorGetUserMedia. This can be used to group reports by deprecated feature.anticipatedRemovalExperimentalADateobject (rendered as a string) representing the date when the feature is expected to be removed from the current browser. If the date is not known, this property will returnnull. This value can be used to prioritize warnings. If"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "The body of the report. This is an object with the following properties:idExperimentalA string representing the feature or API that is deprecated, for exampleNavigatorGetUserMedia. This can be used to...",
+        "en": "The body of the report. This is an object with the following properties:idExperimentalA string representing the feature or API that is deprecated, for exampleNavigatorGetUserMedia. This can be used to..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.425020",
+    "updatedDate": "2026-04-10T14:57:43.425020",
+    "metadata": {
+      "status": "experimental",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Reporting-API/InterventionReport/body": {
+    "id": "Reporting-API.InterventionReport.body",
+    "name": "body",
+    "type": "property",
+    "parent": "InterventionReport",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org#body",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The body of the report. This is an object with the following properties:columnNumberExperimentalA string representing the character position in the source file line in which the intervention occurred, if known, ornullotherwise.idExperimentalA string representing the intervention that generated the report. This can be used to group reports.lineNumberExperimentalA string representing the line in the source file where the intervention occurred, if known, ornullotherwise.messageExperimentalA string"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "The body of the report. This is an object with the following properties:columnNumberExperimentalA string representing the character position in the source file line in which the intervention occurred,...",
+        "en": "The body of the report. This is an object with the following properties:columnNumberExperimentalA string representing the character position in the source file line in which the intervention occurred,..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.425059",
+    "updatedDate": "2026-04-10T14:57:43.425060",
+    "metadata": {
+      "status": "experimental",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Reporting-API/IntegrityViolationReport/body": {
+    "id": "Reporting-API.IntegrityViolationReport.body",
+    "name": "body",
+    "type": "property",
+    "parent": "IntegrityViolationReport",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org#body",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The body of the report. This is an object with the following properties:blockedURLA string representing the URL of the resource blocked by an enforced integrity policy (or just reported for areportOnlypolicy).documentURLA string representing the URL of the document that is attempting to load the resource.destinationA string indicating theRequest.destinationof the resource that was blocked. This can currently only be\"script\".reportOnlyA boolean:falseif the policy was enforced, andtrueif the viola"
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "The body of the report. This is an object with the following properties:blockedURLA string representing the URL of the resource blocked by an enforced integrity policy (or just reported for areportOnl...",
+        "en": "The body of the report. This is an object with the following properties:blockedURLA string representing the URL of the resource blocked by an enforced integrity policy (or just reported for areportOnl..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.425100",
+    "updatedDate": "2026-04-10T14:57:43.425100",
+    "metadata": {
+      "status": "current",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "Webusb-API/USBDevice/selectAlternateInterface": {
+    "id": "Webusb-API.USBDevice.selectAlternateInterface",
+    "name": "selectAlternateInterface",
+    "type": "method",
+    "parent": "USBDevice",
+    "signatures": [
+      "selectAlternateInterface(interfaceNumber, alternateSetting)"
+    ],
+    "signature_hash": "f5642c09184b628cc89c76f6e09e684bc855afe9e5801587375080372c1e479c",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/selectAlternateInterface",
+    "parameters": [
+      {
+        "name": "interfaceNumber",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "name": "alternateSetting",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aPromisethat resolves when the specified alternative endpoint is selected."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns aPromisethat resolves when the specified alternative endpoint is selected.",
+        "en": "Returns aPromisethat resolves when the specified alternative endpoint is selected."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.481292",
+    "updatedDate": "2026-04-10T14:57:43.481293",
+    "metadata": {
+      "status": "experimental",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webusb-API/USBDevice/selectConfiguration": {
+    "id": "Webusb-API.USBDevice.selectConfiguration",
+    "name": "selectConfiguration",
+    "type": "method",
+    "parent": "USBDevice",
+    "signatures": [
+      "selectConfiguration(configurationValue)"
+    ],
+    "signature_hash": "d14aba52aa4a24cabce2ac5a9de626b2d46da936dc4745b55b34f67bb01f576f",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/selectConfiguration",
+    "parameters": [
+      {
+        "name": "configurationValue",
+        "type": "",
+        "has_default": false,
+        "default_value": null,
+        "is_keyword_only": false,
+        "is_var_args": false,
+        "is_var_kwargs": false,
+        "description": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns aPromisethat resolves when the specified configuration is selected."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns aPromisethat resolves when the specified configuration is selected.",
+        "en": "Returns aPromisethat resolves when the specified configuration is selected."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.481311",
+    "updatedDate": "2026-04-10T14:57:43.481311",
+    "metadata": {
+      "status": "experimental",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webusb-API/USBDevice/serialNumber": {
+    "id": "Webusb-API.USBDevice.serialNumber",
+    "name": "serialNumber",
+    "type": "property",
+    "parent": "USBDevice",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/serialNumber",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "The manufacturer-defined serial number for the specific USB device."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "The manufacturer-defined serial number for the specific USB device.",
+        "en": "The manufacturer-defined serial number for the specific USB device."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.481034",
+    "updatedDate": "2026-04-10T14:57:43.481035",
+    "metadata": {
+      "status": "experimental",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webusb-API/USBInTransferResult/status": {
+    "id": "Webusb-API.USBInTransferResult.status",
+    "name": "status",
+    "type": "property",
+    "parent": "USBInTransferResult",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on the control endpoint does not need to be cleared. A stall on a bulk or interrupt endpoint must be cleared by callingclearHalt()beforetransferIn()can be called again.\"babble\"- The device responded with more data than was expected."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on the control endp...",
+        "en": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on the control endp..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.481593",
+    "updatedDate": "2026-04-10T14:57:43.481594",
+    "metadata": {
+      "status": "experimental",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webusb-API/USBIsochronousInTransferPacket/status": {
+    "id": "Webusb-API.USBIsochronousInTransferPacket.status",
+    "name": "status",
+    "type": "property",
+    "parent": "USBIsochronousInTransferPacket",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on an isochronous endpoint does not need to be cleared.\"babble\"- The device responded with more data than was expected."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on an isochronous e...",
+        "en": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on an isochronous e..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.481662",
+    "updatedDate": "2026-04-10T14:57:43.481663",
+    "metadata": {
+      "status": "experimental",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webusb-API/USBIsochronousOutTransferPacket/status": {
+    "id": "Webusb-API.USBIsochronousOutTransferPacket.status",
+    "name": "status",
+    "type": "property",
+    "parent": "USBIsochronousOutTransferPacket",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on an isochronous endpoint does not need to be cleared."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on an isochronous e...",
+        "en": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on an isochronous e..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.481774",
+    "updatedDate": "2026-04-10T14:57:43.481775",
+    "metadata": {
+      "status": "experimental",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  },
+  "Webusb-API/USBOutTransferResult/status": {
+    "id": "Webusb-API.USBOutTransferResult.status",
+    "name": "status",
+    "type": "property",
+    "parent": "USBOutTransferResult",
+    "signatures": [],
+    "signature_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "url": "https://developer.mozilla.org",
+    "parameters": [],
+    "return_type": "",
+    "exceptions": [],
+    "description": {
+      "es": "",
+      "en": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on a bulk or interrupt endpoint must be cleared by callingclearHalt()beforetransferOut()can be called again."
+    },
+    "example": "",
+    "articles": [],
+    "info": {
+      "status": "empty",
+      "excerpt": {
+        "es": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on a bulk or interr...",
+        "en": "Returns the status of the transfer request, one of:\"ok\"- The transfer was successful.\"stall\"- The device indicated an error by generating a stall condition on the endpoint. A stall on a bulk or interr..."
+      },
+      "keyword": "",
+      "seo_position": 0,
+      "visits": 0
+    },
+    "createdDate": "2026-04-10T14:57:43.481889",
+    "updatedDate": "2026-04-10T14:57:43.481890",
+    "metadata": {
+      "status": "experimental",
+      "deprecated_version": "",
+      "added_version": "",
+      "tags": [],
+      "difficulty": null,
+      "popularity_score": 0
+    }
+  }
+}

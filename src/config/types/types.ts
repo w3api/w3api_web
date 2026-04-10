@@ -60,6 +60,13 @@ export const elementTypesByTechnology = {
     'attribute': 'attributes',
     'element': 'elements',
   },
+  webapi: {
+    'constructor': 'constructors',
+    'event': 'events',
+    'interface': 'interfaces',
+    'method': 'methods',
+    'property': 'properties',
+  },
   xml: {
     'attribute': 'attributes',
     'element': 'elements',
